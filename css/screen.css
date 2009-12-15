@@ -81,27 +81,26 @@ div.site {
    padding: 1em;
 }
 
-/* header */
-.header {
-   clear: both;
-   margin-top: 2em;
-   padding-top: 1em;
-   border-top: 3px solid #777;
+.footer img.portrait {
+   border: 7px solid #668;
+   margin-left: 15px;
+   float: right;
 }
-.header .title {
+
+.title {
    font-weight: bold;
    margin-bottom: 0.7em;
-   float: left;
    margin-right: 2em;
 }
 
-.header .title a, .post h1 a {
+.title a, .post h1 a {
    color: white;
    font-size: 2.5em;
    text-decoration: none;
+   text-shadow: #333 2px 2px 4px;
 }
 
-.header .title a
+.title a
 {
   font-size: 1.25em;
 }
@@ -138,13 +137,17 @@ div.site {
 
 /* footer */
 .footer {
-   clear: both;
+  padding-top: 1em;
+  clear: both;
+  border-top: 3px solid #668;
+  margin: 1em 0 2em 0;
 }
 .footer .contact {
-   float: left;
+  text-align:right;
 }
 .footer .rss {
-   float: right;
+   float: left;
+   width: 150px;
 }
 
 .file {
