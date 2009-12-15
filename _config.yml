@@ -1,1 +1,4 @@
-permalink:  /:year/:month/:day/:title
+permalink:  /:year/:month/:title
+auto: true
+server: true
+lsi: true
