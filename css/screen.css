@@ -22,10 +22,15 @@ html, body {
 }
  
 body {
-  background-color: white;
+  background: #446;
   font: 10px "Lucida Grande", Verdanda, helvetica, arial, clean, sans-serif;
   *font-size: small;
   text-align: center;
+  color: #ddd;
+}
+
+ul {
+  margin-left:30px
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 }
  
 h1 {
-  margin-bottom: 1em;
+  margin: 0.5em 0 1em 0;
 }
  
 p {
@@ -41,7 +46,7 @@ p {
 }
  
 a {
-  color: #00a;
+  color: #ddd;
 }
  
 a:hover {
@@ -49,7 +54,7 @@ a:hover {
 }
  
 a:visited {
-  color: #a0a;
+  color: #bbb;
 }
 a img {
   border: none;
@@ -73,23 +78,32 @@ div.site {
    width: 65em;
    margin: 3em auto;
    line-height: 1.5em;
+   padding: 1em;
 }
 
 /* header */
 .header {
    clear: both;
+   margin-top: 2em;
+   padding-top: 1em;
+   border-top: 3px solid #777;
 }
 .header .title {
-   font-size: 150%;
    font-weight: bold;
    margin-bottom: 0.7em;
    float: left;
    margin-right: 2em;
 }
 
-.header .title a {
-   color: #55e;
+.header .title a, .post h1 a {
+   color: white;
+   font-size: 2.5em;
    text-decoration: none;
+}
+
+.header .title a
+{
+  font-size: 1.25em;
 }
 
 .header .title a:hover {
@@ -125,9 +139,6 @@ div.site {
 /* footer */
 .footer {
    clear: both;
-   margin-top: 2em;
-   border-top: 3px solid #777;
-   padding-top: 1em;
 }
 .footer .contact {
    float: left;
