@@ -12,7 +12,7 @@ We've recently started our own apprenticeship system at Eden, and I shared a few
 
 *Craftsmanship is not the same as Apprenticeship*. To use a computer science term, they are orthogonal: you can have one without the other. Craftsmanship is difficult to argue against and is rapidly becoming a consensus amongst a large section of our industry. Apprenticeship is a little more nascent and untested, and potentially carries more dangers. You don't need formal apprenticeship to embrace craftsmanship.
 
-*Everyone gets to be a craftsman*. Following on from this, all who want to can be craftsmen/crafters/codesmiths/whatever the most apt term is: there should be no pecking order. Indeed, the more senior among us should be taking the lower place of serving those who would learn from us. Being a craftsman is a state of mind than a level of ability or experience.
+*Everyone gets to be a craftsman*. Following on from this, all who want to can be craftsmen/crafters/codesmiths/whatever the most apt term is: there should be no pecking order. Indeed, the more senior among us should be taking the lower place of serving those who would learn from us. Being a craftsman is more a state of mind than a level of ability or experience.
 
 *Use verbs, not nouns*.  We are wherever possible using the terms as verbs not nouns in everyday use: "Richard is apprenticing to Chris", "Chris is mentoring James", for example. This prevent anyone "being" anything: it's rather what you do than who you are. Those who might have a job title of "apprentice" (or not) also "mentor" others (including seniors) in specific areas they are particularly strong in. 
 
