@@ -14,3 +14,4 @@ The task is to take this basic [github repository](http://github.com/chrismdp/sn
 
 If you'd like to try it yourself, feel free! Any patches to the features would be most welcome. Let me know how you get on.
 
+*UPDATE:* I've fixed a bug in the features (thanks [nickh](http://github.com/nickh)) and merged in a patch from [ohthatjames](http://github.com/ohthatjames) to provide some basic support files.
