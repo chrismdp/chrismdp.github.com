@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+
+<!--
+
+  Copyright (c) Chris Parsons 2005. Work distributed under the Creative Commons License 2.0. 
+	See http://creativecommons.org/licenses/by-nc-sa/2.0/ for more details.
+
+	Thanks to Douglas Johnston and D*I*Y Planner for inspiration for original concept.
+
+-->
+
+<svg width="3in" height="5in" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	<defs>
+		<filter id="blur" filterUnits="userSpaceOnUse">
+			<feGaussianBlur in="SourceAlpha" stdDeviation="1.25" result="image1" />
+		</filter>
+		<g id="box" style="fill:none; stroke:black; stroke-width:1">
+			<rect x="0mm" y="0mm" width="70mm" height="3.75mm"/>
+			<rect x="-0.65mm" y="0.85mm" width="2mm" height="2mm" style="fill:black; filter:url(#blur)"/>
+			<rect x="-0.75mm" y="0.75mm" width="2mm" height="2mm" style="fill:white"/>
+		</g>
+
+		<g id="page">
+			<text x="2mm" y="7mm" font-family="tahoma" style="font-size:5mm;
+			font-weight:bold">Checklist ______________</text>
+
+<!-- 			<rect x="35mm" y="2.5mm" width="39mm" height="5.5mm" style="fill:white; stroke:black; stroke-width:1"/> -->
+
+			<!-- DAILY -->
+
+<!-- 			<rect x="2mm" y="10mm" width="71mm" height="3mm" style="fill:black"/> -->
+
+<!-- 			<rect x="63mm" y="11.25mm" width="10mm" height="93.75mm" style="stroke:none; fill:#f4f4f4"/> -->
+
+			<use x="3mm" y="11.25mm" xlink:href="#box"/>
+			<use x="3mm" y="15mm" xlink:href="#box"/>
+			<use x="3mm" y="18.75mm" xlink:href="#box"/>
+			<use x="3mm" y="22.5mm" xlink:href="#box"/>
+			<use x="3mm" y="26.25mm" xlink:href="#box"/>
+			<use x="3mm" y="30mm" xlink:href="#box"/>
+			<use x="3mm" y="33.75mm" xlink:href="#box"/>
+			<use x="3mm" y="37.5mm" xlink:href="#box"/>
+			<use x="3mm" y="41.25mm" xlink:href="#box"/>
+			<use x="3mm" y="45mm" xlink:href="#box"/>
+			<use x="3mm" y="48.75mm" xlink:href="#box"/>
+			<use x="3mm" y="52.5mm" xlink:href="#box"/>
+			<use x="3mm" y="56.25mm" xlink:href="#box"/>
+			<use x="3mm" y="60mm" xlink:href="#box"/>
+			<use x="3mm" y="63.75mm" xlink:href="#box"/>
+			<use x="3mm" y="67.5mm" xlink:href="#box"/>
+			<use x="3mm" y="71.25mm" xlink:href="#box"/>
+			<use x="3mm" y="75mm" xlink:href="#box"/>
+			<use x="3mm" y="78.75mm" xlink:href="#box"/>
+			<use x="3mm" y="82.5mm" xlink:href="#box"/>
+			<use x="3mm" y="86.25mm" xlink:href="#box"/>
+			<use x="3mm" y="90mm" xlink:href="#box"/>
+			<use x="3mm" y="93.75mm" xlink:href="#box"/>
+			<use x="3mm" y="97.5mm" xlink:href="#box"/>
+			<use x="3mm" y="101.25mm" xlink:href="#box"/>
+
+			<!-- BOTTOM -->
+
+			<rect x="2mm" y="107mm" width="71mm" height="3mm" style="fill:black"/>
+			<text x="3mm" y="109.25mm" font-family="tahoma" style="fill:white; font-size:2mm; font-weight: bold;">NOTES</text>
+
+			<g style="fill:none; stroke:black; stroke-width:1">
+				<rect x="3mm" y="111mm" width="70mm" height="15mm" style="fill:white"/>
+				<line x1="3mm" x2="73mm" y1="114.75mm" y2="114.75mm" style="stroke-dasharray: 0.5mm"/>
+				<line x1="3mm" x2="73mm" y1="118.5mm" y2="118.5mm" style="stroke-dasharray: 0.5mm"/>
+				<line x1="3mm" x2="73mm" y1="122.25mm" y2="122.25mm" style="stroke-dasharray: 0.5mm"/>
+			</g>
+
+		</g>
+
+	</defs>
+
+	<rect x="0" y="0" width="100%" height="100%" style="fill:white"/>
+
+	<use y="-1mm" xlink:href="#page"/>
+
+</svg>

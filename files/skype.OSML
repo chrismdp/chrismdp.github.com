@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<onlife-scriplets>
+<onlife-scriplet>
+<description>This source retrieves the title of current Skype chats and calls.</description>
+<active value="no"/>
+<name value="Skype"/>
+<type value="Chat"/>
+<application value="Skype"/>
+<polling frequency="30" when="Running"/>
+<representation r-color="0.00" g-color="0.68" b-color="0.94" alpha-color="1" style="Continuous"/>
+<argumentorder title="1" body="2"/>
+<infolabels top="Title:" middle="Date:" bottom="Duration:"/>
+<infoarguments top="Title" middle="Date" bottom="Duration"/>
+<script value="skype.applescript"/>
+</onlife-scriplet>
+</onlife-scriplets>
+<!--
+Onlife scriptlet plugin
+
+Created by Chris Parsons from Eden Development
+www.edendevelopment.co.uk. Copyright 2007 Eden Development. BSD License.
+
+Code adapted from TextEdit plugin
+-->

@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+
+<!--
+
+  Copyright (c) Chris Parsons 2005. Work distributed under the Creative Commons License 2.0. 
+	See http://creativecommons.org/licenses/by-nc-sa/2.0/ for more details.
+
+	Thanks to Douglas Johnston and D*I*Y Planner for inspiration for original concept.
+
+-->
+
+<svg width="3in" height="5in" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	<defs>
+		<filter id="blur" filterUnits="userSpaceOnUse">
+			<feGaussianBlur in="SourceAlpha" stdDeviation="1.25" result="image1" />
+		</filter>
+
+		<g id="day"  style="fill:none; stroke:black; stroke-width:1">
+			<rect x="0mm" y="-0.75mm" width="35mm" height="3.75mm" style="fill:black"/>
+
+			<use xlink:href="#daybox" x="0mm" y="3mm"/>
+
+			<rect x="-0.9mm" y="-0.9mm" width="4.5mm" height="4.5mm" style="fill:black; filter:url(#blur)"/>
+			<rect x="-1mm" y="-1mm" width="4.5mm" height="4.5mm" style="fill:white"/>
+
+		</g>
+
+		<g id="daybox" style="fill:none; stroke:black; stroke-width:1">
+
+			<rect x="0mm" y="0mm" width="7mm" height="33.75mm" style="stroke:none; fill:#f4f4f4"/>
+			<rect x="0mm" y="0mm" width="35mm" height="33.75mm"/>
+			<line x1="0mm" x2="35mm" y1="3.75mm" y2="3.75mm" style="stroke-dasharray: 0.5mm"/>
+			<line x1="0mm" x2="35mm" y1="7.5mm" y2="7.5mm" style="stroke-dasharray: 0.5mm"/>
+			<line x1="0mm" x2="35mm" y1="11.25mm" y2="11.25mm" style="stroke-dasharray: 0.5mm"/>
+			<line x1="0mm" x2="35mm" y1="15mm" y2="15mm" style="stroke-dasharray: 0.5mm"/>
+			<line x1="0mm" x2="35mm" y1="18.75mm" y2="18.75mm" style="stroke-dasharray: 0.5mm"/>
+			<line x1="0mm" x2="35mm" y1="22.5mm" y2="22.5mm" style="stroke-dasharray: 0.5mm"/>
+			<line x1="0mm" x2="35mm" y1="26.25mm" y2="26.25mm" style="stroke-dasharray: 0.5mm"/>
+			<line x1="0mm" x2="35mm" y1="30mm" y2="30mm" style="stroke-dasharray: 0.5mm"/>
+		</g>
+
+		<g id="weekend" style="fill:none; stroke:black; stroke-width:1">
+			<rect x="0mm" y="-0.75mm" width="35mm" height="3.75mm" style="fill:black"/>
+
+			<use xlink:href="#weekendbox" x="0mm" y="3mm"/>
+
+			<rect x="-0.9mm" y="-0.9mm" width="4.5mm" height="4.5mm" style="fill:black; filter:url(#blur)"/>
+			<rect x="-1mm" y="-1mm" width="4.5mm" height="4.5mm" style="fill:white"/>
+
+		</g>
+
+		<g id="weekendbox" style="fill:none; stroke:black; stroke-width:1">
+
+			<rect x="0mm" y="0mm" width="7mm" height="15mm" style="stroke:none; fill:#f4f4f4"/>
+			<rect x="0mm" y="0mm" width="35mm" height="15mm"/>
+			<line x1="0mm" x2="35mm" y1="3.75mm" y2="3.75mm" style="stroke-dasharray: 0.5mm"/>
+			<line x1="0mm" x2="35mm" y1="7.5mm" y2="7.5mm" style="stroke-dasharray: 0.5mm"/>
+			<line x1="0mm" x2="35mm" y1="11.25mm" y2="11.25mm" style="stroke-dasharray: 0.5mm"/>
+		</g>
+		
+
+		<g id="week">
+			<use x="0mm" y="0mm" xlink:href="#day"/>
+			<use x="0mm" y="37.5mm" xlink:href="#day"/>
+			<use x="0mm" y="75mm" xlink:href="#day"/>
+			<use x="35mm" y="0mm" xlink:href="#day"/>
+			<use x="35mm" y="37.5mm" xlink:href="#day"/>
+			<use x="35mm" y="75mm" xlink:href="#weekend"/>
+			<use x="35mm" y="93.75mm" xlink:href="#weekend"/>
+
+			<g style="fill:white; font-size:2mm; font-weight: bold;">
+				<text x="5.5mm" y="1.75mm" font-family="tahoma">MONDAY</text>
+				<text x="5.5mm" y="39.25mm" font-family="tahoma">TUESDAY</text>
+				<text x="5.5mm" y="76.75mm" font-family="tahoma">WEDNESDAY</text>
+				<text x="40.5mm" y="1.75mm" font-family="tahoma">THURSDAY</text>
+				<text x="40.5mm" y="39.25mm" font-family="tahoma">FRIDAY</text>
+				<text x="40.5mm" y="76.75mm" font-family="tahoma">SATURDAY</text>
+				<text x="40.5mm" y="95.5mm" font-family="tahoma">SUNDAY</text>
+			</g>
+		</g>
+
+		<g id="page">
+			<text x="2mm" y="7mm" font-family="tahoma" style="font-size:5mm;
+			font-weight:bold">Week Plan</text>
+			<rect x="35mm" y="2.5mm" width="39mm" height="5.5mm" style="fill:white; stroke:black; stroke-width:1"/>
+
+			<use x="3mm" y="12.5mm" xlink:href="#week"/>
+
+		</g>
+
+	</defs>
+
+	<rect x="0" y="0" width="100%" height="100%" style="fill:white"/>
+
+	<use x="0mm" y="-1mm" xlink:href="#page"/>
+
+</svg>

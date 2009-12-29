@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+
+<!--
+
+  Copyright (c) Chris Parsons 2005. Work distributed under the Creative Commons License 2.0. 
+	See http://creativecommons.org/licenses/by-nc-sa/2.0/ for more details.
+
+	Thanks to Douglas Johnston and D*I*Y Planner for inspiration for original concept.
+
+-->
+
+<svg width="3in" height="5in" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	<defs>
+		<filter id="blur" filterUnits="userSpaceOnUse">
+			<feGaussianBlur in="SourceAlpha" stdDeviation="1.25" result="image1" />
+		</filter>
+		<g id="box" style="fill:none; stroke:black; stroke-width:1">
+			<rect x="0mm" y="0mm" width="38mm" height="7.5mm"/>
+			<line x1="0mm" x2="38mm" y1="3.75mm" y2="3.75mm" style="stroke-dasharray: 0.5mm"/>
+			<rect x="-0.65mm" y="-0.65mm" width="3.5mm" height="3.5mm" style="fill:black; filter:url(#blur)"/>
+			<rect x="-0.75mm" y="-0.75mm" width="3.5mm" height="3.5mm" style="fill:white"/>
+		</g>
+		<g id="greybox" style="fill:none; stroke:black; stroke-width:1">
+			<rect x="0mm" y="0mm" width="28mm" height="7.5mm" style="fill:#f4f4f4"/>
+			<line x1="0mm" x2="28mm" y1="3.75mm" y2="3.75mm" style="stroke-dasharray: 0.5mm"/>
+			<rect x="-0.65mm" y="0.85mm" width="2mm" height="2mm" style="fill:black; filter:url(#blur)"/>
+			<rect x="-0.75mm" y="0.75mm" width="2mm" height="2mm" style="fill:white"/>
+		</g>
+
+		<g id="page">
+			<text x="2mm" y="7mm" font-family="tahoma" style="font-size:5mm;
+			font-weight:bold">Day Keeper</text>
+
+			<rect x="35mm" y="2.5mm" width="39mm" height="5.5mm" style="fill:white; stroke:black; stroke-width:1"/>
+
+			<!-- DAILY -->
+
+			<rect x="2mm" y="10mm" width="40mm" height="3mm" style="fill:black"/>
+			<text x="3mm" y="12.25mm" font-family="tahoma" style="fill:white; font-size:2mm; font-weight: bold;">DAILY</text>
+
+			<use x="3mm" y="15mm" xlink:href="#box"/>
+			<use x="3mm" y="22.5mm" xlink:href="#box"/>
+			<use x="3mm" y="30mm" xlink:href="#box"/>
+			<use x="3mm" y="37.5mm" xlink:href="#box"/>
+			<use x="3mm" y="45mm" xlink:href="#box"/>
+			<use x="3mm" y="52.5mm" xlink:href="#box"/>
+			<use x="3mm" y="60mm" xlink:href="#box"/>
+			<use x="3mm" y="67.5mm" xlink:href="#box"/>
+			<use x="3mm" y="75mm" xlink:href="#box"/>
+			<use x="3mm" y="82.5mm" xlink:href="#box"/>
+			<use x="3mm" y="90mm" xlink:href="#box"/>
+			<use x="3mm" y="97.5mm" xlink:href="#box"/>
+
+			<!-- ACTIONS -->
+
+			<rect x="45mm" y="10mm" width="28mm" height="3mm" style="fill:black"/>
+			<text x="46mm" y="12.25mm" font-family="tahoma" style="fill:white; font-size:2mm; font-weight: bold;">ACTIONS</text>
+
+			<use x="45mm" y="15mm" xlink:href="#greybox"/>
+			<use x="45mm" y="22.5mm" xlink:href="#greybox"/>
+			<use x="45mm" y="30mm" xlink:href="#greybox"/>
+			<use x="45mm" y="37.5mm" xlink:href="#greybox"/>
+			<use x="45mm" y="45mm" xlink:href="#greybox"/>
+			<use x="45mm" y="52.5mm" xlink:href="#greybox"/>
+			<use x="45mm" y="60mm" xlink:href="#greybox"/>
+			<use x="45mm" y="67.5mm" xlink:href="#greybox"/>
+			<use x="45mm" y="75mm" xlink:href="#greybox"/>
+			<use x="45mm" y="82.5mm" xlink:href="#greybox"/>
+			<use x="45mm" y="90mm" xlink:href="#greybox"/>
+			<use x="45mm" y="97.5mm" xlink:href="#greybox"/>
+
+			<!-- BOTTOM -->
+
+			<rect x="2mm" y="107mm" width="71mm" height="3mm" style="fill:black"/>
+			<text x="3mm" y="109.25mm" font-family="tahoma" style="fill:white; font-size:2mm; font-weight: bold;">EVENING / NOTES</text>
+
+			<g style="fill:none; stroke:black; stroke-width:1">
+				<rect x="3mm" y="111mm" width="70mm" height="15mm" style="fill:white"/>
+				<line x1="3mm" x2="73mm" y1="114.75mm" y2="114.75mm" style="stroke-dasharray: 0.5mm"/>
+				<line x1="3mm" x2="73mm" y1="118.5mm" y2="118.5mm" style="stroke-dasharray: 0.5mm"/>
+				<line x1="3mm" x2="73mm" y1="122.25mm" y2="122.25mm" style="stroke-dasharray: 0.5mm"/>
+			</g>
+
+		</g>
+
+	</defs>
+
+	<rect x="0" y="0" width="100%" height="100%" style="fill:white"/>
+
+	<use y="-1mm" xlink:href="#page"/>
+
+</svg>
