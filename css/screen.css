@@ -92,6 +92,12 @@ div.site {
    margin-bottom: 0.7em;
    margin-right: 2em;
 }
+.notice 
+{
+  background: #335;
+  padding: 5px 15px;
+  margin: 10px 0;
+}
 
 .title a, .post h1 a {
    color: white;
