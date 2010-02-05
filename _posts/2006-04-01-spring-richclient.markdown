@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spring Richclient ~ A Journey
-date: 2006-04-01 00:00:00 +00:00
+date: 2006-04-01 12:00:00 +00:00
 categories:
   - spring richclient 
   - java 

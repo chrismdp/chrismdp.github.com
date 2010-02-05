@@ -2,4 +2,3 @@ permalink:  /:year/:month/:title
 auto: true
 server: true
 pygments: true
-lsi: true
