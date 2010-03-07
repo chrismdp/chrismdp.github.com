@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introducing Pushy - github notifications to google wave
-date: 2010-03-07 13:00:00 +00:00
+date: 2010-03-07 20:18:00 +00:00
 categories:
   -- google wave
   -- coding
