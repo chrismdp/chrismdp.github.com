@@ -45,3 +45,5 @@ Here's what the commit messages for github commits look like:
 The source code is at [github.com/chrismdp/pushy](http://github.com/chrismdp/pushy). It's my first Python project and first App Engine deployment, so be gentle :) I'd welcome forks and patches: especially if you extend the special formatting for other services.
 
 Enjoy! Do let me know if you use it for anything useful. 
+
+*UPDATE:* The wave forum post discussing the robot is [here](http://bit.ly/bKCOkV).
