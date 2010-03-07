@@ -24,7 +24,7 @@ Log on to [wave.google.com](http://wave.google.com) and add pushyrobot@appspot.c
 
 Then, when you post to this url (here I'm using curl):
 
-![Posting to Pushy](/files/pushy-2.png)
+{% highlight bash %}$ curl -d "testing pushy" http://pushyrobot.appspot.com/push/googlewave.com/fjWFoDWkf{% endhighlight %}
 
 It will add the message to the wave:
 
