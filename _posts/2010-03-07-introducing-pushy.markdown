@@ -47,3 +47,5 @@ The source code is at [github.com/chrismdp/pushy](http://github.com/chrismdp/pus
 Enjoy! Do let me know if you use it for anything useful. 
 
 *UPDATE:* The wave forum post discussing the robot is [here](http://bit.ly/bKCOkV).
+
+*UPDATE:* Pushy now supports google code's [PostCommitWebHooks](http://code.google.com/p/support/wiki/PostCommitWebHooks) and formats them in a similar way to github commits.
