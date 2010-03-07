@@ -16,7 +16,7 @@ So here's the results of my handiwork: Pushy.
 
 In simple terms, it's a robot which accepts any form of HTTP post and adds the content as a new message on the wave. It has special handling for github post-receive hooks: it formats them nicely using a gadget.
 
-h2. How to use it
+## How to use it
 
 Log on to [wave.google.com](http://wave.google.com) and add pushyrobot@appspot.com to a new wave. The robot will add a message giving you the URL to post to:
 
@@ -35,6 +35,12 @@ If you're using the github notifications, simply add the URL verbatim to your pr
 ![Github service hook configuration page](/files/pushy-4.png)
 
 Click "Test Hook" and the wave will update. Any new commits to this project should now appear.
+
+Here's what the commit messages for github commits look like:
+
+![Github commit message view](/files/pushy-5.png)
+
+## Source code
 
 The source code is at [github.com/chrismdp/pushy](http://github.com/chrismdp/pushy). It's my first Python project and first App Engine deployment, so be gentle :) I'd welcome forks and patches: especially if you extend the special formatting for other services.
 
