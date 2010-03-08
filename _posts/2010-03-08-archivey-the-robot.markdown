@@ -12,4 +12,4 @@ Potential other uses would be in a chatting context: you don't always want to se
 
 *To use, add archiveyrobot@appspot.com to a wave.* Be warned, as soon as a new message is added it will merrily start deleting messages, so be careful!
 
-Hope you like it: let me know if you find it useful.
+Source code on [github](http://github.com/chrismdp/archivey). Hope you like it: let me know if you find it useful.
