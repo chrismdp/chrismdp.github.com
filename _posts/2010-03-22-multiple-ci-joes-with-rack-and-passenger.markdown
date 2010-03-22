@@ -7,7 +7,7 @@ categories:
   - cijoe
   - howto
 ---
-I've recently set up several [CI Joe](http://github/com/defunkt/cijoe) instances to handle our various projects at [Eden](http://edendevelopment.co.uk). We've been using [Integrity](http://integrityapp.com) for several months, but it's caused us a few problems and I yearned for something simpler. CI Joe is about as simple as it gets, and the brevity of the code encourages hacking and customisation.
+I've recently set up several [CI Joe](http://github.com/defunkt/cijoe) instances to handle our various projects at [Eden](http://edendevelopment.co.uk). We've been using [Integrity](http://integrityapp.com) for several months, but it's caused us a few problems and I yearned for something simpler. CI Joe is about as simple as it gets, and the brevity of the code encourages hacking and customisation.
 
 I've now set it up to run multiple Joes using Rack and Passenger for the various different projects we run. Being as I didn't find much on the net about setting up CI Joe in this way, I thought a fairly detailed howto would be helpful. Let me know how you get on with it.
 
