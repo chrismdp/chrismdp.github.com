@@ -13,7 +13,7 @@ Here are the various iterations we've been through:
 
 # Iteration 1: Build status messages
 
-We've had a continuous integration server running on integrity for several months, and we wanted to make it obvious how we were doing, so we got an old mac mini out and plugged in a big monitor. That way everyone could see whether our builds were passing or failing. We set the mac to come on at 9am and turn off at 6pm in System Preferences, and used [Plainview](http://barbariansoftware.com/plainview) to display full screen.
+We've had a continuous integration server running on integrity for several months, and we wanted to make it obvious how we were doing, so we got an old mac mini out and plugged in a big monitor. That way everyone could see whether our builds were passing or failing. We set the mac to come on at 9am and turn off at 6pm in System Preferences, and used [Plainview](http://www.barbariangroup.com/software/plainview) to display full screen.
 
 This worked well, except that our builds don't fail that often: our current projects have short enough builds that developers can still get away with running all the tests locally.
 
