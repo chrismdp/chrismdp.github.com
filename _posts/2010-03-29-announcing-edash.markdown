@@ -26,7 +26,7 @@ That said, I've put together a short screencast showing it off, along with how t
 Here's a minimal set of steps to get it running:
 
 {% highlight bash %}
-gem install sinatra haml sass json pstore md5 eventmachine em-http-request
+gem install sinatra haml json eventmachine em-http-request
 git clone git://github.com/edendevelopment/edash.git
 cd edash
 git submodule update --init
