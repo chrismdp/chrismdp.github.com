@@ -13,7 +13,7 @@ I've been hinting at the dashboard application I've been hacking on recently and
 
 This is the version currently running on a screen at [Eden](http://edendevelopment.co.uk). 
 
-*IMPORTANT NOTE: This application only works on Chrome.* There is enough browser specific hackery to render it unusable in other browsers currently. Patches to fix this most welcome.
+*IMPORTANT NOTE: This application only works on [Chrome](http://google.com/chrome).* There is enough browser specific hackery to render it unusable in other browsers currently. Patches to fix this are most welcome.
 
 That said, I've put together a short screencast showing it off, along with how to get it running:
 
@@ -29,6 +29,7 @@ Here's a minimal set of steps to get it running:
 gem install sinatra haml sass json pstore md5 eventmachine em-http-request
 git clone git://github.com/edendevelopment/edash.git
 cd edash
+git submodule update --init
 # runs the websocket server, make sure port 8080 is readable from where you are. Use nohup to run as a daemon.
 scripts/server &
 # Run rackup in place, or use your favourite rack-compatible server
