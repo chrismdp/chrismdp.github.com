@@ -133,9 +133,9 @@ cd project
 git clone git@github.com/path/to/my/project.git app
 ln -sf ../config.ru
 # If you're using hooks:
-ln -sf /var/www/rails-apps/cijoe-repos/build-hook app/.git/config/build-worked
-ln -sf /var/www/rails-apps/cijoe-repos/build-hook app/.git/config/build-failed
-ln -sf /var/www/rails-apps/cijoe-repos/build-hook app/.git/config/after-reset
+ln -sf /var/www/rails-apps/cijoe-repos/build-hook app/.git/hooks/build-worked
+ln -sf /var/www/rails-apps/cijoe-repos/build-hook app/.git/hooks/build-failed
+ln -sf /var/www/rails-apps/cijoe-repos/build-hook app/.git/hooks/after-reset
 {% endhighlight %}
 
 Then you need to poke the apache vhost configuration to add another RackBaseURI and up the number of processes by 1.
