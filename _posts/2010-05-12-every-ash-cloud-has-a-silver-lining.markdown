@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Every Ash Cloud Has A Silver Lining
-date: 2010-05-12 15:05:00 +0100
+date: 2010-05-12 15:05:00 +01:00
 categories:
   - travel
   - chicago

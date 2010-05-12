@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Announcing edash
-date: 2010-03-29 22:05:00 +0100
+date: 2010-03-29 22:05:00 +01:00
 categories:
   - information radiator
 ---
