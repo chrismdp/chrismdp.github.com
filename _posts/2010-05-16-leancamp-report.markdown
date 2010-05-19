@@ -16,9 +16,13 @@ Leancamp was an [unconference](http://en.wikipedia.org/wiki/Unconference): the c
 
 Diving into the spirit of the whole thing, I ran three sessions. A brief report of each follows.
 
-## Lessons Learned Running a Lean Startup
+## Lessons Learned Bootstrapping a Service Company
 
-Most of the attendees were definitely in the startup arena. To this end, I did a very brief presentation on the accidentally lean startup of [Eden Development](http://edendevelopment.co.uk) (how we started the company with no cash and made it up as we went along). There was a company post-mortem afterwards, mostly centered around how I could have done it quicker and been even leaner. Maybe next time (if there ever is one) I'll do it better, who knows...
+Most of the attendees were definitely in the startup arena. To this end, I did a very brief presentation on the accidentally lean startup of [Eden Development](http://edendevelopment.co.uk) (how we started the company with no cash and made it up as we went along). 
+
+<div style="width:425px" id="__ss_4147733"><strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/chrismdp/lessons-learned-bootstrapping-a-service-company" title="Lessons learned bootstrapping a service company">Lessons learned bootstrapping a service company</a></strong><object id="__sse4147733" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=lessons-learned-bootstrapping-service-company-100519010728-phpapp02&stripped_title=lessons-learned-bootstrapping-a-service-company" /><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed name="__sse4147733" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=lessons-learned-bootstrapping-service-company-100519010728-phpapp02&stripped_title=lessons-learned-bootstrapping-a-service-company" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object><div style="padding:5px 0 12px">View more <a href="http://www.slideshare.net/">presentations</a> from <a href="http://www.slideshare.net/chrismdp">chrismdp</a>.</div></div>
+
+There was a company post-mortem afterwards, mostly centered around how I could have done it quicker and been even leaner. Maybe next time (if there ever is one) I'll do it better, who knows...
 
 ## Technical Incubation
 
