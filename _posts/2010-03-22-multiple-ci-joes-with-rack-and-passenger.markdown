@@ -129,6 +129,8 @@ To add a project to the structure:
 {% highlight bash %}
 cd cijoe-repos
 mkdir -p project/public
+cd cijoe
+mkdir -p /path/to/cijoe-repos/project/public project
 cd project
 git clone git@github.com/path/to/my/project.git app
 ln -sf ../config.ru
