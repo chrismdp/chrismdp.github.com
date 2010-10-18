@@ -82,7 +82,7 @@ blockquote {
 div.site {
    font-size: 125%;
    text-align: justify;
-   width: 45em;
+   width: 48em;
    margin: 3em auto;
    line-height: 1.75em;
    padding: 1em;
@@ -161,7 +161,7 @@ div.site {
 }
 .footer .rss {
    float: left;
-   width: 150px;
+   width: 100px;
 }
 
 .file {
