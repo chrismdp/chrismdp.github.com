@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How I'm writing my book using Git and Ruby"
+title: "How I'm writing my book using Vim, Git and Ruby"
 date: 2010-11-02 15:35:27 +0000
 categories:
   - git
