@@ -22,7 +22,7 @@ Using 750words also ensures that I write enough during any particular day. I kno
 
 ## Step 2: Organise my thoughts using Vim
 
-I copy and paste the best and most interesting snippets from 750words into [Vim](http://vim.org). Vim is a fantastic editor for editing text. In full screen mode it's distraction free, the model editing mean that I can move whole sentences around very easily without ever reaching for the mouse. I try to keep each file fairly short and express different thoughts and sections in different files. I'm using [maruku](http://maruku.rubyforge.org/maruku.html) (thanks to [@glv](http://twitter.com/glv)) to tag each text file with tags, such as 'first-draft', 'revised-draft', 'todo', and so on. My hope is that this will become useful later on when I start to pull things together.
+I copy and paste the best and most interesting snippets from 750words into [Vim](http://vim.org). Vim is a fantastic editor for editing text. In full screen mode it's distraction free, the modal editing mean that I can move whole sentences around very easily without ever reaching for the mouse. I try to keep each file fairly short and express different thoughts and sections in different files. I'm using [maruku](http://maruku.rubyforge.org/maruku.html) (thanks to [@glv](http://twitter.com/glv)) to tag each text file with tags, such as 'first-draft', 'revised-draft', 'todo', and so on. My hope is that this will become useful later on when I start to pull things together.
 
 These files are checked into [Git](http://git-scm.com) and I've put the repository on my [Dropbox](http://dropbox.com) folder so it's backed up. So far, so good.
 
