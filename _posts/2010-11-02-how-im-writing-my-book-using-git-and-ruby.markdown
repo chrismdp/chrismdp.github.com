@@ -14,11 +14,11 @@ Like any self-respecting geek trying to write a book, I've wasted a bunch of wri
 
 ## Step 1: Fling thoughts, ideas, and concepts into [750words](http://750words.com)
 
-I love 750words and have written about my use of the site [previously](2010/07/seven-hundred-and-fifty-words/). It's a great capture tool for random thoughts, words and feelings. I find it really helpful not to constrain my writing with too much structure to start with. It's a clean slate every day to write down what's inspiring me that particular day. I can also write these words from anywhere: on my phone as the moment strikes, on the iPad, whatever.
+I love 750words and have written about my use of the site [previously](/2010/07/seven-hundred-and-fifty-words/). It's a great capture tool for random thoughts, words and feelings. I find it really helpful not to constrain my writing with too much structure to start with. It's a clean slate every day to write down what's inspiring me that particular day. I can also write these words from anywhere: on my phone as the moment strikes, on the iPad, whatever.
 
 I try and get several hundred words done early in the morning: there's evidence that [your brain works better first thing in the morning](http://ezinearticles.com/?Alpha-Brain-Waves---How-to-Relax-Deeply&id=1905868). Whether or not this is true is debatable, but I know I'm certainly more aware of deeper thoughts and ideas first thing, and there are some fairly deep concepts in the book.
 
-Using 750words also ensures that I write enough during any particular day. I know that if I write that many words, then at least some of the content is going to be interesting enough for the next step. 
+Using 750words also ensures that I write enough during any particular day. I know that if I write that many words, then at least some of the content is going to be interesting enough for the next step.
 
 ## Step 2: Organise my thoughts using Vim
 
