@@ -69,3 +69,6 @@ I know if I blog for too much longer I'm going to fall into the [Rimmer Trap](ht
 Let me know if this is helpful, or if you plan to use a similar Ruby DSL: perhaps we can work together on the creation of it.
 
 Good luck to all my fellow PragProWriMo writers!
+
+*UPDATE:* Wow, what a lot of interest! There's now a repository for this gem [here](http://github.com/chrismdp/book) and an active community of developers already! Let me know if you want to be involved with coding it, and I'll keep this blog up to date with progress.
+
