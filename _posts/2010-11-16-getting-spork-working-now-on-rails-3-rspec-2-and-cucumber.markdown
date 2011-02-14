@@ -111,3 +111,7 @@ I'm really liking this setup. It makes rapid TDD possible again, even when deali
 Of course, we should be doing all we can to get the speed of our tests as high as possible: slow tests are a type of code smell. However, infrastructure load time is unavoidable and cutting it out is full of all kinds of win.
 
 Use this setup with [autotest](https://github.com/grosser/autotest) and [autotest-growl](https://github.com/svoop/autotest-growl) for maximum win. Autotest has come a long way recently: there's a lightweight alternative to ZenTest now, and easy growl support. Cutting out even the 'Oh, I should run my tests now step' totally nails your debug cycle: not sure it gets much tighter than that.
+
+## UPDATE: Even more speed!
+
+[Jo Liss](http://opinionated-programmer.com/) got in touch: she's made some performance gains by skipping the "bundle exec" and requiring a few extra files in the prefork block. Read about what she has to say [here](http://opinionated-programmer.com/2011/02/profiling-spork-for-faster-start-up-time/).
