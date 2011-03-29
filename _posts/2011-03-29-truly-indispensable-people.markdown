@@ -6,7 +6,7 @@ categories:
   - productivity
   - team
 ---
-<i>"Being a part of success is more important than being personally indispensable."</i>
+<p><i>"Being a part of success is more important than being personally indispensable."</i></p>
 
 -- Pat Riley, NBA Coach
 
