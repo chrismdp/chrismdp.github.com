@@ -8,7 +8,7 @@ categories:
 ---
 <p><i>"Being a part of success is more important than being personally indispensable."</i></p>
 
--- Pat Riley, NBA Coach
+-- [Pat Riley](http://en.wikipedia.org/wiki/Pat_Riley), NBA Coach
 
 There's this old adage that the best people make themselves indispensable to a team. Whilst I can understand the sentiment, it could do with some clarification.
 
