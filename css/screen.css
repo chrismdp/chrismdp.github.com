@@ -192,3 +192,9 @@ em {
   font-size:90%;
   color:#88a;
 }
+
+.strap iframe
+{
+  float: right;
+  margin-top: -15px;
+}
