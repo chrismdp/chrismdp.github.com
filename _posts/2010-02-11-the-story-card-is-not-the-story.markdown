@@ -3,13 +3,13 @@ layout: post
 title: The Story Card Is Not The Story
 date: 2010-02-11 15:55:00 +00:00
 categories:
-  -- xp
-  -- agile
-  -- pivotal tracker
-  -- balsamiq
-  -- basecamp
-  -- stories
-  -- kanban
+  - xp
+  - agile
+  - pivotal tracker
+  - balsamiq
+  - basecamp
+  - stories
+  - kanban
 ---
 At Eden we've used a number of different options for tracking work to be done on projects. In the early days we used Basecamp tasks. We then rolled our own system, which we've since abandoned due to a gradual shift in our business practices. We've used Pivotal Tracker extensively. Whilst we still use Tracker a fair amount, on one of our new projects we're currently using index cards stuck to a kanban board, with Google Wave for extended documentation and discussion.
 

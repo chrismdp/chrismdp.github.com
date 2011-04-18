@@ -1,28 +1,28 @@
 .clearfix:after {
-	content:".";
-	display:block;
-	height:0;
-	clear:both;
-	visibility:hidden;
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
 }
 .clearfix {display:inline-block;}
 /* Hide from IE Mac \*/
-	.clearfix {display:block;}
+  .clearfix {display:block;}
 /* End hide from IE Mac */
-	
+
 
 /* defaults */
 * {
   margin: 0;
   padding: 0;
 }
- 
+
 html, body {
   height: 100%;
 }
- 
+
 body {
-  background: #446;
+  background: #335;
   font: 10px "Lucida Grande", Verdanda, helvetica, arial, clean, sans-serif;
   *font-size: small;
   text-align: center;
@@ -37,7 +37,7 @@ ul {
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
 }
- 
+
 h1 {
   margin: 0.5em 0 0 0;
 }
@@ -52,15 +52,15 @@ h2 {
 p {
   margin: 1em 0;
 }
- 
+
 a {
   color: #88a;
 }
- 
+
 a:hover {
   color: black;
 }
- 
+
 a:visited {
   color: #aac;
 }
@@ -101,7 +101,7 @@ div.site {
    margin-bottom: 0.7em;
    margin-right: 2em;
 }
-.notice 
+.notice
 {
   background: #335;
   padding: 5px 15px;
@@ -173,7 +173,7 @@ div.site {
    background-color: #aaa;
    padding: 0.7em;
    border-bottom: 1px solid #777;
-   font-family: 
+   font-family:
 }
 
 .file .text {

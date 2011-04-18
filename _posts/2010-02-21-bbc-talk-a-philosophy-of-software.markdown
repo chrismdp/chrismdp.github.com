@@ -3,8 +3,8 @@ layout: post
 title: BBC Talk on A Philosophy of Software
 date: 2010-02-21 08:35:00 +00:00
 categories:
-  -- craftsmanship
-  -- apprenticeship
+  - craftsmanship
+  - apprenticeship
 ---
 Video of a talk I gave recently at the BBC about the nature of software development. We discuss craftsmanship, apprenticeship and the limitations of university education, amongst other topics. 
 

@@ -2,3 +2,4 @@ permalink:  /:year/:month/:title
 server: true
 pygments: true
 auto: true
+url: http://chrismdp.github.com

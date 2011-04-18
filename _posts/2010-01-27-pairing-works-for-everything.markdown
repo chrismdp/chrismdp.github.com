@@ -3,10 +3,10 @@ layout: post
 title: Pairing works for everything
 date: 2010-01-27 11:28:00 +00:00
 categories:
-  -- pair programming
-  -- xp
-  -- agile
-  -- productivity
+  - pair programming
+  - xp
+  - agile
+  - productivity
 ---
 We've all heard much discussion and general chatter about the value of pair programming. Amongst other benefits, it focuses the mind, speeds knowledge transfer, and builds in code review.
 

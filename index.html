@@ -6,13 +6,15 @@ title: Chris Parsons
   <div id="current" class="post">
     <div id="post" class="post">
       <h1><a href="{{ site.posts.first.url }}">{{ site.posts.first.title }}</a></h1>
-      <div class="strap">Chris Parsons • {{ site.posts.first.date | date: "%A %d %B %Y" }}</div>
+      <div class="strap">Chris Parsons • {{ site.posts.first.date | date: "%A %d %B %Y" }} • {{ site.posts.first.categories | array_to_sentence_string }}
+        <div class='tweet-button'><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="{{ site.url}}{{ site.posts.first.url}}" data-via="chrismdp">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>
+      </div>
       {{ site.posts.first.content  }}
     </div>
     <a href="{{ site.posts.first.url }}#comments">Click here</a> to comment.
   </div>
   <div class="archive">
-    <h1>Older Posts</h1>
+    <h1>Older Posts (<a href="/all.html">view all</a>)</h1>
     <ul class="posts">
       {% for post in site.posts %}
       {% if forloop.index < 7 and forloop.index > 1 %}<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>{% endif %}
