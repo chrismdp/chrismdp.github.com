@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Take one cucumber: add personality"
+title: "Cucumbers with personality"
 date: 2011-04-18 15:17:31 +0100
 categories:
   - cucumber
