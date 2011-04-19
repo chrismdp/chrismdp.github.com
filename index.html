@@ -6,7 +6,7 @@ title: Chris Parsons
   <div id="current" class="post">
     <div id="post" class="post">
       <h1><a href="{{ site.posts.first.url }}">{{ site.posts.first.title }}</a></h1>
-      <div class="strap">Chris Parsons • {{ site.posts.first.date | date: "%A %d %B %Y" }} • {{ site.posts.first.categories | array_to_sentence_string }}
+      <div class="strap">Chris Parsons • {{ site.posts.first.date | date: "%A %d %B %Y" }}
         <div class='tweet-button'><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="{{ site.url}}{{ site.posts.first.url}}" data-via="chrismdp">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>
       </div>
       {{ site.posts.first.content  }}
