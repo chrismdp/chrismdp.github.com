@@ -7,7 +7,7 @@ categories:
   - productivity
   - business
 ---
-<p><i>"The articifical separation of hourses and work creates introlerable rifts in people's inner lives."</i></p>
+<p><i>"The articifical separation of houses and work creates introlerable rifts in people's inner lives."</i></p>
 
 -- [Christopher Alexander](http://en.wikipedia.org/wiki/Christopher_Alexander)
 
