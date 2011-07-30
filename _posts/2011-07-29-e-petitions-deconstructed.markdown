@@ -8,13 +8,13 @@ categories:
   - adn
   - government
 ---
-The project that I've been working on at DirectGov for the last few weeks has just been launched. It's the new Government [e-petitions](http://epetitions.direct.gov.uk) service, which replaces the old Number 10 petitions website run by the previous government. Time to talk about the architecture, how we set the team up and the effect the project is having within government.
+The project that I've been working on at the Government Digital Service (GDS) for the last few weeks has just been launched. It's the new Government [e-petitions](http://epetitions.direct.gov.uk) service, which replaces the old Number 10 petitions website run by the previous government. Time to talk about the architecture, how we set the team up and the effect the project is having within government.
 
 ![e-petitions](/files/e-petitions.png)
 
 ## The project
 
-The project was overseen and run by [Skunkworks](http://twitter.com/HMGSkunks), a new government department within DirectGov that specialises in quick projects with small teams. They hired the [Agile Delivery Network](http://agiledelivery.net) (ADN) to do the work: this is a non-profit organisation I'm involved with that's trying to help government deliver IT projects more quickly.
+The project was overseen and run by [Skunkworks](http://twitter.com/HMGSkunks), the new innovation arm of the GDS that specialises in quick projects with small teams. They hired the [Agile Delivery Network](http://agiledelivery.net) (ADN) to do the work: this is a non-profit organisation I'm involved with that's trying to help government deliver IT projects more quickly.
 
 We put together a team consisting of myself and two other developers, a designer, a tester/project manager, our customer and an analyst to help with the copy and training the staff who will be moderating petitions.
 
@@ -47,3 +47,5 @@ Everyone who worked hard to make the site what it is: it was great fun working w
 * [Alan Thomas](http://www.unboxedconsulting.com/people/alan-thomas)
 * [Will Tomlins](http://www.unboxedconsulting.com/people/will-tomlins)
 * Me
+
+We're planning to get the code out on github soon. Hope you like the site and enjoy using it.
