@@ -6,7 +6,7 @@ categories:
   - travel
   - chicago
   - pairing
-  - coding
+  - code
   - ashcloud
 ---
 

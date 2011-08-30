@@ -3,7 +3,7 @@ layout: post
 title: "Call for coders: Children's Future International"
 date: 2010-10-18 19:42:33 +0100
 categories:
-  - coding
+  - code
   - charity
 ---
 

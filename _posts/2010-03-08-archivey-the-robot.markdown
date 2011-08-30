@@ -4,7 +4,7 @@ title: Archivey the Robot
 date: 2010-03-08 16:15:00 +00:00
 categories:
   - google wave
-  - coding
+  - code
 ---
 Following hot on the heels of [Pushy](/2010/03/introducing-pushy/), I've implemented the companion application Archivey. This will delete all but the last five messages on a wave, excepting the top message. It's meant to be used in conjunction with Pushy and any other chatty robots to keep the number of messages in a wave down to a manageable level.
 
