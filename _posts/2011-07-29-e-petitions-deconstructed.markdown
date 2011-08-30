@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "e-petitions, deconstructed"
+title: "e-petitions: deconstructed"
 date: 2011-07-29 15:57:09 +0100
 categories:
   - code
   - agile
   - adn
   - government
+  - e-petitions
 ---
 The project that I've been working on at the Government Digital Service (GDS) for the last few weeks has just been launched. It's the new Government [e-petitions](http://epetitions.direct.gov.uk) service, which replaces the old Number 10 petitions website run by the previous government. Time to talk about the architecture, how we set the team up and the effect the project is having within government.
 
@@ -40,12 +41,12 @@ The site has been well received by those outside government, but perhaps just as
 
 Everyone who worked hard to make the site what it is: it was great fun working with you!
 
-* [Tom Dickinson](http://www.unboxedconsulting.com/people/tom-dickinson)
+* [Tom Dickinson](http://www.unboxedconsulting.com/people/tom-dickinson) from [Unboxed](http://unboxedconsulting.com)
 * [Peter Herlihy](http://uk.linkedin.com/in/peterherlihy)
 * [Charlie MacLoughlin](http://uk.linkedin.com/pub/charlie-macloughlin/3/183/821)
-* [Jolyon Pawlyn](http://www.unboxedconsulting.com/people/jolyon-pawlyn)
-* [Alan Thomas](http://www.unboxedconsulting.com/people/alan-thomas)
-* [Will Tomlins](http://www.unboxedconsulting.com/people/will-tomlins)
+* [Jolyon Pawlyn](http://www.unboxedconsulting.com/people/jolyon-pawlyn) from [Unboxed](http://unboxedconsulting.com)
+* [Alan Thomas](http://www.unboxedconsulting.com/people/alan-thomas) from [Unboxed](http://unboxedconsulting.com)
+* [Will Tomlins](http://www.unboxedconsulting.com/people/will-tomlins) from [Unboxed](http://unboxedconsulting.com)
 * Me
 
 We're planning to get the code out on github soon. Hope you like the site and enjoy using it.
