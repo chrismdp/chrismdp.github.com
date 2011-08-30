@@ -3,7 +3,7 @@ layout: post
 title: Spring Richclient ~ Session Two ~ Hello World
 date: 2006-01-24 14:40:00 +00:00
 categories:
-  - spring richclient 
+  - richclient 
   - java 
   - spring
   - tutorial

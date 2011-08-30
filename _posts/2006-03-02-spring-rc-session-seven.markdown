@@ -3,7 +3,7 @@ layout: post
 title: Spring Richclient ~ Session Seven ~ Beating the Command Framework into Submission
 date: 2006-03-02 17:12:00 +00:00
 categories:
-  - spring richclient 
+  - richclient 
   - java 
   - spring
   - tutorial

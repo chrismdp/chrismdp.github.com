@@ -3,7 +3,7 @@ layout: post
 title: Spring Richclient ~ Introduction
 date: 2006-01-23 12:36:00 +00:00
 categories:
-  - spring richclient 
+  - richclient 
   - java 
   - spring
   - tutorial

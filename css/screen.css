@@ -115,13 +115,18 @@ div.site {
    text-shadow: #333 2px 2px 4px;
 }
 
+a.tag
+{
+  text-decoration: none
+}
+
 .title a
 {
   font-size: 1.25em;
 }
 
 .header .title a:hover {
-   color: black;
+   color: #999;
 }
 
 .header .menu {

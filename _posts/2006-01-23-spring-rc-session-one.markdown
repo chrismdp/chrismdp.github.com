@@ -3,7 +3,7 @@ layout: post
 title: Spring Richclient ~ Session One ~ Making Petclinic work
 date: 2006-01-23 14:31:00 +00:00
 categories:
-  - spring richclient 
+  - richclient 
   - java 
   - spring
   - tutorial

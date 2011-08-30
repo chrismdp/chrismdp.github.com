@@ -4,6 +4,7 @@ title: "Work with me"
 date: 2011-08-22 15:36:53 +0100
 categories:
   - code
+  - meta
   - agile
   - training
   - life

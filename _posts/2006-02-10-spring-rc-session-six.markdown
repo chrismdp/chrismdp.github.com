@@ -3,7 +3,7 @@ layout: post
 title: Spring Richclient ~ Session Six ~ The View
 date: 2006-02-10 10:07:00 +00:00
 categories:
-  - spring richclient 
+  - richclient 
   - java 
   - spring
   - tutorial

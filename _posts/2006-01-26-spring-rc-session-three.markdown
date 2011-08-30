@@ -3,7 +3,7 @@ layout: post
 title: Spring Richclient ~ Session Three ~ How did that work then?
 date: 2006-01-26 23:09:00 +00:00
 categories:
-  - spring richclient 
+  - richclient 
   - java 
   - spring
   - tutorial
