@@ -101,9 +101,10 @@ div.site {
    margin-bottom: 0.7em;
    margin-right: 2em;
 }
+
 .notice
 {
-  background: #335;
+  background: #224;
   padding: 5px 15px;
   margin: 10px 0;
 }
