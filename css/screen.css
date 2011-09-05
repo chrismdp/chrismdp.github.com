@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  margin: 0.5em 0 0 0;
+  margin: 0.5em 0 0.5em 0;
 }
 
 h2 {
@@ -96,6 +96,12 @@ div.site {
    float: right;
 }
 
+img.portfolio {
+  border: 7px solid #668;
+  margin-left: 25px;
+  float: right;
+}
+
 .title {
    font-weight: bold;
    margin-bottom: 0.7em;
@@ -111,9 +117,14 @@ div.site {
 
 .title a, .post h1 a {
    color: white;
-   font-size: 2em;
    text-decoration: none;
    text-shadow: #333 2px 2px 4px;
+}
+
+h1 {
+  color: white;
+  font-size: 2em;
+  text-shadow: #333 2px 2px 4px;
 }
 
 a.tag

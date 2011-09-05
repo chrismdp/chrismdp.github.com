@@ -3,6 +3,7 @@ layout: post
 title: How to test your node.js app
 date: 2010-05-23 11:05:00 +01:00
 categories:
+  - javascript
   - code
   - tdd
   - node.js
