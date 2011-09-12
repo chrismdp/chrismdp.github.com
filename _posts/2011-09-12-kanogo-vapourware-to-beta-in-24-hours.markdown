@@ -28,7 +28,7 @@ categories:
 
 ## The backstory
 
-A while back I agonising over which should be the next greatest feature for one of my products. I thought the best thing to do would be to conduct some Kano analysis on the product in question, and realised there wasn't an easy way of doing this. I've used [kanosurvey.com](http://kanyosurvey.com) in the past, but it didn't really feel like the right tool. How was I to get users to answer my survey?
+A while back I agonising over which should be the next greatest feature for one of my products. I thought the best thing to do would be to conduct some Kano analysis on the product in question, and realised there wasn't an easy way of doing this. I've used [kanosurvey.com](http://kanosurvey.com) in the past, but it didn't really feel like the right tool. How was I to get users to answer my survey?
 
 "Wouldn't it be great," I thought, "if I could embed a little survey box on the site that asked customers for me and provided my with Kano analysis stats?" The concept behind [Kanogo](http://kanogo.com) was born.
 
