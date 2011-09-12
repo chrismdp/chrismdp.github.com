@@ -30,7 +30,7 @@ categories:
 
 A while back I agonising over which should be the next greatest feature for one of my products. I thought the best thing to do would be to conduct some Kano analysis on the product in question, and realised there wasn't an easy way of doing this. I've used [kanosurvey.com](http://kanosurvey.com) in the past, but it didn't really feel like the right tool. How was I to get users to answer my survey?
 
-"Wouldn't it be great," I thought, "if I could embed a little survey box on the site that asked customers for me and provided my with Kano analysis stats?" The concept behind [Kanogo](http://kanogo.com) was born.
+"Wouldn't it be great," I thought, "if I could embed a little survey box on the site that asked customers what they thought and provided me with Kano analysis stats?" The concept behind [Kanogo](http://kanogo.com) was born.
 
 Fast forward several months to last week. I found myself with a few days spare and decided that the best use of them would be to build a beta of this product. Always up for a challenge, I decided to give myself 24 hours to build and launch.
 
@@ -50,7 +50,7 @@ That's not very long, so I had to hustle.
 
 *7 Sep: 05:53pm:* Embed done, quicker than expected. Took a break. Now feeling [cautiously optimistic](https://twitter.com/#!/chrismdp/status/111482135218626560).
 
-*7 Sep: 09:12pm:* Basic response mechansim in: now needed to apply the Kano analysis magic! Adrenalin took over from caffiene as primary stimulant.
+*7 Sep: 09:12pm:* Basic response mechanism in: now needed to apply the Kano analysis magic! Adrenalin took over from caffiene as primary stimulant.
 
 *7 Sep: 11:20pm:* Turned on twitter sign in as basic method of getting registered on the site. Removed redundant Campaign Monitor signup: emailed subscribers manually to ask them to sign in via twitter. Beta [went live!](https://twitter.com/#!/kanogoapp/status/111564545708929024)
 
@@ -74,9 +74,9 @@ Some of the things I've learned so far:
 
 * *Modern development tools rock.* I used Rails 3.1 for this app, which worked beautifully, and I love the use of sprockets to help manage the asset pipeline. Running the app on Heroku cedar went without a hitch. I used twitter for authentication, and it only took an hour to set up.
 
-* *There is no "quick and dirty".* The app is (almost) fully tested: I confess I left a couple of methods only covered by end-to-end tests (which doesn't really count). I definitely proved that the only way to go fast is to go clean: [Jason was right](http://agileage.blogspot.com/2011/07/slow-and-dirty-rant-by-jason-gorman-at.html) that there is no "quick and dirty" only "slow and dirty"). The technical debt came back to bite me instantly: the bits I didn't use specs for took me the longest to get working.
+* *There is no "quick and dirty".* The app is (almost) fully tested: I confess I left a couple of methods only covered by end-to-end tests (which doesn't really count). I definitely proved that the only way to go fast is to go clean: [Jason was right](http://agileage.blogspot.com/2011/07/slow-and-dirty-rant-by-jason-gorman-at.html) that there is no "quick and dirty" only "slow and dirty". This came back to bite me instantly: the code I didn't use specs for took me the longest to get working.
 
-* *Technology is the easy part.* It didn't take me long to build the site, but the trick is to build a business. After initial interest, the analytics on the site are way down as the next new thing appears on the internet and people move in. I plan to use my service to actually build the app my beta users want. Thankfully, quick feedback is what Kanogo does, so we're eating our own dogfood and asking our users what they think at every turn. This is already directing which features I work on next, which has to be the most efficient way of moving forward.
+* *Technology is the easy part.* It didn't take me long to build the site, but the trick is to build a business. After initial interest, the analytics on the site are way down as the next new thing appears on the internet and people move on. To gain traction I need to build the app my beta users actually want. Thankfully, quick feedback is what Kanogo does, so we're eating our own dogfood and asking our users what they think at every turn. This is already directing which features I work on next, which has to be the most efficient way of moving forward, right?
 
 ## What's next?
 
