@@ -22,6 +22,8 @@ categories:
   <iframe allowtransparency='true' frameborder='0' scrolling='no' src='http://kanogo.com/surveys/13/embed?' style='width: 100%; height: 120px'>
   </iframe>
 
+  <p>Sign up for the beta <a href='http://kanogo.com'>here</a>.</p>
+
 </div>
 
 ## The backstory
