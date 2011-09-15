@@ -8,7 +8,7 @@ categories:
   - agile
   - ux
 ---
-I blogged about Gokjo's thoughts on layers of abstraction [a week or so ago](/2011/09/layers-of-abstraction-bdd-ux.markdown), discussing three different ways we can think about the behaviour of any system. These way are: the business rules, the workflow of that system, and the specific activity the user is undertaking.
+I blogged about Gojko's thoughts on layers of abstraction [a week or so ago](/2011/09/layers-of-abstraction-bdd-ux.markdown), discussing three different ways we can think about the behaviour of any system. These way are: the business rules, the workflow of that system, and the specific activity the user is undertaking.
 
 Today I want to think about how we can leverage these insights to help us write really good cucumber features and step code.
 
