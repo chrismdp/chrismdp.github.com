@@ -147,4 +147,4 @@ This isn't an argument for or against Mocks or Stubs. Either technique can be us
 
 Take a good look at the test code for a project you recently worked on. You don't need to look at the production code yet: notice that I've not included any production code in these examples. You shouldn't need to see it to know whether it's of good quality or not: you can tell that by reading the tests.
 
-Which is the most annoying or bulky part of your test coe? Are your tests deceiving you about what they're testing? How could you improve the code to make this test code easier to maintain?
+Which is the most annoying or bulky part of your test code? Are your tests deceiving you about what they're testing? How could you improve the code to make this test code easier to maintain?
