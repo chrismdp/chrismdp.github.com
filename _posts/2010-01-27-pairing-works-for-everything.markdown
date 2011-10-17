@@ -3,7 +3,7 @@ layout: post
 title: Pairing works for everything
 date: 2010-01-27 11:28:00 +00:00
 categories:
-  - pair programming
+  - pairing
   - xp
   - agile
   - productivity
