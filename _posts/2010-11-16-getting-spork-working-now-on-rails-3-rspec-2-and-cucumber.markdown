@@ -114,4 +114,4 @@ Use this setup with [autotest](https://github.com/grosser/autotest) and [autotes
 
 ## UPDATE: Even more speed!
 
-[Jo Liss](http://opinionated-programmer.com/) got in touch: she's made some performance gains by skipping the "bundle exec" and requiring a few extra files in the prefork block. Read about what she has to say [here](http://opinionated-programmer.com/2011/02/profiling-spork-for-faster-start-up-time/).
+[Jo Liss](http://opinionatedprogrammer.com/) got in touch: she's made some performance gains by skipping the "bundle exec" and requiring a few extra files in the prefork block. Read about what she has to say [here](http://opinionatedprogrammer.com/2011/02/profiling-spork-for-faster-start-up-time/).
