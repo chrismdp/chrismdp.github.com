@@ -19,6 +19,7 @@ There are two main parts to working out how to test-drive applications on a new 
 
 The first of these steps is quite easy on iOS, but the second part is harder. In our case, we have some code which makes use of CoreLocation and the [Geonames](http://geonames.org) service to get an iPhone's location and look up the county name from a latitude and longitude. This means that our code relies on two external services to run, which we want to stub out: we don't want these services to be called each time our tests run. How were we to set this up correctly?
 
+
 ## Apple's documentation
 
 To kick off our testing adventure on iOS, we started with [Apple's own public documentation](http://developer.apple.com/library/ios/#documentation/Xcode/Conceptual/ios_development_workflow/135-Unit_Testing_Applications/unit_testing_applications.html) on how to test iOS. This is a fairly comprehensive guide on how to set up a project with built in testing, allowing you to write basic SenTest tests quite quickly.
