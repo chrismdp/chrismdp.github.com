@@ -7,7 +7,7 @@ categories:
   - cucumber
   - code
 ---
-I've [written a fair amount](/tags/cucumber) in the past about Cucumber and the way I like to structure my features. After reading these through, someone recently asked me about a particular workflow concerning multiple actors.
+I've [written a fair amount](/tag/cucumber) in the past about Cucumber and the way I like to structure my features. After reading these through, someone recently asked me about a particular workflow concerning multiple actors.
 
 They were starting from the following feature file:
 
