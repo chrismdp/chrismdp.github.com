@@ -54,6 +54,10 @@ Thankfully, it's not a complete rewrite as I'd already done a lot of thinking ab
 
 Even with using OpenGL [immediate mode](http://en.wikibooks.org/wiki/OpenGL_Programming/GLStart/Tut3#Immediate_Mode) (this is a bad thing) and rendering 10000 stars each frame (very inefficient), and a throwing bunch of particles onscreen, I'm still getting 300+ FPS on my 2009 MacbookPro and only using 30MB of memory. That's satisfying.
 
+*UPDATE:* By (very) popular demand, here's a screenshot. Be aware this is *three days work only*, and obviously not final artwork:
+
+<a href='/files/sol-trader-1.png'><img src='/files/sol-trader-1.png' width='500'/></a>
+
 Next I plan to add back in jumping between different planetary orbits, and then work on a very basic 'person-level view', so that you can get out of your ship and walk around.
 
 ## Was it the right decision?
