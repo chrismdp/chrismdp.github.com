@@ -11,6 +11,10 @@ categories:
   - game development
 
 ---
+<div class='notice'>
+  <b>UPDATE:</b> This post was pretty popular. I've posted a followup <a href="http://chrismdp.github.com/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on/">here</a>
+</div>
+
 After two months of Sol Trader development in Ruby, I took a difficult decision last Wednesday morning: I've decided to rewrite the game code from scratch in C++. Let me explain my reasons.
 
 <div class='notice'>
