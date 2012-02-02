@@ -43,11 +43,11 @@ Writing the initial bloom filter was fairly easy. Making it fast was *hard:* you
 
 A picture is worth a thousand words, so here are three:
 
-![bloom-1](files/sol-trader-bloom-1.png)
+![bloom-1](/files/sol-trader-bloom-1.png)
 
-![bloom-2](files/sol-trader-bloom-2.png)
+![bloom-2](/files/sol-trader-bloom-2.png)
 
-![bloom-3](files/sol-trader-bloom-3.png)
+![bloom-3](/files/sol-trader-bloom-3.png)
 
 I've deliberately upped the bloom exposure to show off the effect: it is much more obvious when it's moving. Hopefully you can see the volcanic eruptions on Venus are making the outline of the players' ship that much more hazy. The label of the planet also currently has the bloom effect applied: I'll be able to turn that off when I have a more functional GUI in place.
 
