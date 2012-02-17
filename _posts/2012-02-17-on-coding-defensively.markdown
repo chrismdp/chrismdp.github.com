@@ -5,6 +5,7 @@ date: 2012-02-17 18:57:25 +0000
 categories:
   - code
   - ruby
+  - craftsmanship
 
 ---
 
