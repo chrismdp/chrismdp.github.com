@@ -81,7 +81,7 @@ This is a tricky balance and it depends on the situation, but in general I think
 
 * *Is our method doing too much?* In the case of the above method our user might be wanting to pass the name of the product as a string, and look up the product to work out the price. We could support that, but this will encourage duplication: if we persist with keeping methods that do "A and B", we'll find over time we code will spring up additional methods which do "A" and "B" separately. Our method is now too complex and needs to be split into two.
 
-* *Be generous with types.* We have some advantages working in a weakly typed language such as Ruby. Use the power of Duck Typing: don't check if objects are certain types: check if they respond to the methods that we need to call on them.
+* *Be generous with types.* We have some advantages working in a dynamically typed language such as Ruby. Use the power of Duck Typing: don't check if objects are certain types: check if they respond to the methods that we need to call on them.
 
 * *Be generous at the edges of our code.* Being generous with private APIs and methods only used by ourselves in constrained circumstances is a waste of time: we should just ensure we're calling our own code correctly.
 
