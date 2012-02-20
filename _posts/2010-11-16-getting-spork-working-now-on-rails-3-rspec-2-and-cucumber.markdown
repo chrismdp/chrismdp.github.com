@@ -26,7 +26,7 @@ gem "rspec-rails", '>= 2.1.0'
 
 You'll need [my fork of Spork](http://github.com/chrismdp/spork) for a quick patch to the latest release candidate of Spork.
 
-*Add --drb on a new line in your .rspec file:*
+*Add `--drb` on a new line in your .rspec file:*
 
 If you don't have the .rspec file, create it.
 
