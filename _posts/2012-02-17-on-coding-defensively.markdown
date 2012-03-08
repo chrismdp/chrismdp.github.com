@@ -31,7 +31,7 @@ For example, consider this method:
 
 {% endhighlight %}
 
-If we accept a array as an argument, we could code defensively and allow a single product to be passed as well:
+If we accept an array as an argument, we could code defensively and allow a single product to be passed as well:
 
 {% highlight ruby %}
 
