@@ -62,7 +62,7 @@ This dumps a ZIP file containing all the different DLLs plus the executable and 
 
 Now when I push the code, I only have to wait a few minutes and Dropbox informs me of a new build available. Bliss.
 
-![Jenkins running](files/sol-jenkins-build.png)
+![Jenkins running](/files/sol-jenkins-build.png)
 
 ## Next steps
 
