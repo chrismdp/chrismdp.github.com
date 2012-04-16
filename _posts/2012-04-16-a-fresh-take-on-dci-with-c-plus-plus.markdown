@@ -7,6 +7,7 @@ categories:
   - c++
   - craftsmanship
   - dci
+  - sol trader
 
 ---
 
