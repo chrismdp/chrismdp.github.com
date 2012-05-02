@@ -19,6 +19,8 @@ After a hectic four months of early development <a href='http://soltrader.net'>S
 
 With this release, you can explore the known Solar System and make money through trading on the stock markets. There isn't much else there yet, but I'm planning a slew of improvements over the coming months.
 
+I've decided to charge right off the bat: you can buy the Alpha for £5 (about $8). This price will go up as I put more work into the game, and future game updates will be free until it's finished.
+
 ## Exciting yet terrifying
 
 This is both a wonderfully exciting and deeply terrifying moment for me. The game isn't near finished, yet I've released it on an unsuspecting set of game players. I've been reading the [Lean Startup](http://theleanstartup.com/) and I think it's ready for feedback. This is my [Minimum Viable Product](http://www.startuplessonslearned.com/2009/08/minimum-viable-product-guide.html).
