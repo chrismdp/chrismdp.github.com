@@ -11,7 +11,7 @@ categories:
 ---
 
 <div class='notice'>
-  If you'd like to receive announcements about Sol Trader or be part of the beta program, sign up at <a href='http://soltrader.net'>soltrader.net</a>.
+  If you'd like to purchase Sol Trader you can now do so at <a href='http://soltrader.net'>soltrader.net</a>!
 </div>
 
 Continous Deployment is difficult, time consuming to set up and tends to require a high level of buy in from your stakeholders in order to trust the work that you're doing.
@@ -76,5 +76,5 @@ This is all important infrastructure getting ready for a beta release. Putting i
 What do you think of the system so far? Any improvements I could make?
 
 <div class='notice'>
-  If you'd like to receive announcements about Sol Trader or be part of the beta program, sign up at <a href='http://soltrader.net'>soltrader.net</a>.
+  If you'd like to purchase Sol Trader you can now do so at <a href='http://soltrader.net'>soltrader.net</a>!
 </div>

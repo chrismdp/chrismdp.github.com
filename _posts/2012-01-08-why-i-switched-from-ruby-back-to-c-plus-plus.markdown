@@ -18,7 +18,7 @@ categories:
 After two months of Sol Trader development in Ruby, I took a difficult decision last Wednesday morning: I've decided to rewrite the game code from scratch in C++. Let me explain my reasons.
 
 <div class='notice'>
-  If you'd like to receive announcements about Sol Trader or be part of the beta program, sign up at <a href='http://soltrader.net'>soltrader.net</a>.
+  If you'd like to purchase Sol Trader you can now do so at <a href='http://soltrader.net'>soltrader.net</a>!
 </div>
 
 ## Why I did it
@@ -71,5 +71,5 @@ I'll know at the end of the project :) My feeling is though that it was the corr
 What do you think? Did I make the right call?
 
 <div class='notice'>
-  If you'd like to receive announcements about Sol Trader or be part of the beta program, sign up at <a href='http://soltrader.net'>soltrader.net</a>.
+  If you'd like to purchase Sol Trader you can now do so at <a href='http://soltrader.net'>soltrader.net</a>!
 </div>

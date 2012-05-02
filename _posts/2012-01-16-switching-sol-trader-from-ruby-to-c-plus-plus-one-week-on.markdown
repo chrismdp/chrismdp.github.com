@@ -30,5 +30,5 @@ I have a few more comparisons between Ruby and C++ which I'd like to share.
 I'll continue to post my learnings as I collect them.
 
 <div class='notice'>
-  If you'd like to receive announcements about Sol Trader or be part of the beta program, sign up at <a href='http://soltrader.net'>soltrader.net</a>.
+  If you'd like to purchase Sol Trader you can now do so at <a href='http://soltrader.net'>soltrader.net</a>!
 </div>
