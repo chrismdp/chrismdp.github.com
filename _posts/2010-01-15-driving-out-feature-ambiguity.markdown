@@ -13,7 +13,7 @@ categories:
 
 However there is one area of bugs that features don't catch so well, and even cause to some extent. These bugs are built right into the text in the form of ambiguity, sometimes through the constraint of features being executable.
 
-This came up recently in a conversation with [James](http://ohthatjames.github.com) and [Enrique](http://ecomba.github.com/) at [Eden Development](http://edendevelopment.co.uk) about James' apprentice task, the [Snakes and Ladders Kata](http://chrismdp.github.com/2009/12/snakes-and-ladders-kata). It turns out that the text of one of the features runs against the commonly understood way that Snakes and Ladders works:
+This came up recently in a conversation with [James](http://ohthatjames.github.com) and [Enrique](http://ecomba.github.com/) at [Eden Development](http://edendevelopment.co.uk) about James' apprentice task, the [Snakes and Ladders Kata](/2009/12/snakes-and-ladders-kata). It turns out that the text of one of the features runs against the commonly understood way that Snakes and Ladders works:
 
 {% highlight text %}
 Scenario: Win the game

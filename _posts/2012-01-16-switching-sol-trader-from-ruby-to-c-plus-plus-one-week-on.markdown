@@ -11,7 +11,7 @@ categories:
   - game development
 
 ---
-Well, I didn't quite expect that. My [previous post](http://chrismdp.github.com/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus/) about switching [Sol Trader](http://soltrader.net) development from Ruby back to C++ caused [quite a storm](http://news.ycombinator.com/item?id=3440596).
+Well, I didn't quite expect that. My [previous post](/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus/) about switching [Sol Trader](http://soltrader.net) development from Ruby back to C++ caused [quite a storm](http://news.ycombinator.com/item?id=3440596).
 
 Not being used to making waves on the mainstream Internet, I naively attempted to dive in and read and respond to every comment. It appears that feedback from the Internet at large tends towards the negative, so after a few hours I was feeling pretty discouraged, and only continued replying to some of the constructive feedback. Sorry if you didn't get a response.
 

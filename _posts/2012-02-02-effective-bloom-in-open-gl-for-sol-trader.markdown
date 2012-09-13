@@ -18,7 +18,7 @@ categories:
   <p>Skip to the <a href='#pictures'>pictures</a>.</p>
 </div>
 
-I've been working on and off on [Sol Trader](http://soltrader.net) ([C++ version](http://chrismdp.github.com/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus/)) for about a month now. At the beginning of this week, I've been coded up an effective type formatting system using freetype2 natively with OpenGL, which is now in and showing even rather esoteric fonts nicely.
+I've been working on and off on [Sol Trader](http://soltrader.net) ([C++ version](/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus/)) for about a month now. At the beginning of this week, I've been coded up an effective type formatting system using freetype2 natively with OpenGL, which is now in and showing even rather esoteric fonts nicely.
 
 The second half of this week was spent adding on a bloom filter to the graphics engine.
 
