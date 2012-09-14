@@ -5,7 +5,6 @@ date: 2012-09-14 14:06:40 +0100
 categories:
   - process
   - productivity
-  - lean
   - pairing
   - team
 
