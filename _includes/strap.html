@@ -1,3 +1,3 @@
 <div class="strap"><a href='/workwithme.html'>Chris Parsons</a> • {{ post.date | date: "%A %d %B %Y" }} • {% include taglist.html %}
-  <div class='tweet-button'><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="{{ site.url}}{{ post.url}}" data-via="chrismdp">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>
+  {% capture date_text %}{{ post.date | date: '%Y-%m-%d' }}{% endcapture %}<div class='tweet-button'><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="{% if date_text >= '2012-09-13' %}{{site.url}}{% else %}http://chrismdp.github.com{% endif %}{{ post.url }}" data-via="chrismdp">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>
 </div>
