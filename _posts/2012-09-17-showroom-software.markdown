@@ -15,7 +15,7 @@ Think about that for a second. That's five metres by five metres. It's an extroa
 
 ## The problem
 
-There's a problem with this kind of apartment though: *what would happen if you actually tried to recreate that exact layout in your own 25 square metre apartment?* If you went around the IKEA version and painstakingly wrote down all of the different pieces of furniture you'd need, loaded them into a van and took them home, you'd invariably find they wouldn't fit. You'd want to make some small changes here and there, which would unavoidably have knock-on effects in such a small space. You'd end up taking half of the furniture back as you couldn't use it. Uneven walls, annoying placed sockets and irksome light fittings would make a mess of the finely crafted design.
+There's a problem with this kind of apartment though: *what would happen if you actually tried to recreate that exact layout in your own 25 square metre apartment?* If you went around the IKEA version and painstakingly wrote down all of the different pieces of furniture you'd need, loaded them into a van and took them home, you'd invariably find they wouldn't fit. You'd want to make some small changes here and there, which would unavoidably have knock-on effects in such a small space. You'd end up taking half of the furniture back as you couldn't use it. Uneven walls, annoyingly placed sockets and irksome light fittings would make a mess of the finely crafted design.
 
 So what's the best way to fill a real apartment of this size? *Plan the furniture based around the exact contours of the apartment,* rather than trying to fit the apartment round the furniture. Better still, get in someone who knows what they're doing to help you. Buy as little furniture as possible and work with the space you have.
 
@@ -23,9 +23,9 @@ So what's the best way to fill a real apartment of this size? *Plan the furnitur
 
 Buying software is a little like this. Whether you're a startup or an existing business, it's tempting to buy an off the shelf solution to solve all your problems. It seems so easy, and the vendors often promise so much. It's like the beautiful showroom apartment: it's affordable, it all fits together so beautifully, and you can start using it straight away.
 
-This can work when the problem is well defined, you have a truly blank slate, or the software is just one piece of the puzzle, but most businesses are rougher round the edges that off the shelf software would like. The solution you've just purchased is never a solution to your specific problem: it's a general solution to the problem the vendor thought you would have a few months or years ago when they thought up the product. Inevitably the solution is for a slightly different problem to the one you have now. In the case of startups, which don't even know what the problem they're trying to solve is yet, you'll be constrained by off the shelf software extremely quickly.
+This can work when the problem is well defined, you have a truly blank slate, or the software is just one piece of the puzzle, but most businesses are rougher round the edges that off the shelf software would like. The solution you've just purchased is never a solution to your specific problem: it's a general solution to the problem the vendor thought you would have a few months or years ago when they thought up the product. Inevitably the solution is for a slightly different problem to the one you have now. In the case of startups, which don't even know what the problem they're trying to solve is yet, they can be constrained by off the shelf software extremely quickly.
 
-When there's not an exact fit, what can end up happening is one of two things:
+What can end up happening is one of two things:
 
 * *You fit your business around the software.* Your business processes become trapped in the workings of the software you're using, making your business less able to respond to change in the market. This is a dangerous situation for any business to be in.
 
