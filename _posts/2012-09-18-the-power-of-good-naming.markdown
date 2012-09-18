@@ -13,7 +13,7 @@ categories:
 
 -- Source: [Martin Fowler](http://martinfowler.com/bliki/TwoHardThings.html)
 
-Naming things is a hard. Why do we expend so much effort to get them right? Because naming programming concepts well gives us a big insight into how they fit into the system we're designing. Continually renaming things records our insights as we go: the right names for our objects, methods and variables will yield fresh insight and in turn shape the design of the system.
+Naming things is hard. Why do we expend so much effort to get them right? Because naming programming concepts well gives us a big insight into how they fit into the system we're designing. Continually renaming things records our insights as we go: the right names for our objects, methods and variables will yield fresh insight and in turn shape the design of the system.
 
 J.B. Rainsberger [talks about](http://www.jbrains.ca/permalink/the-four-elements-of-simple-design) names of classes, methods and variables going through four stages:
 
