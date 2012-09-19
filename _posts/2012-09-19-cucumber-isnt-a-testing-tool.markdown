@@ -6,6 +6,7 @@ categories:
   - cucumber
   - business
   - bdd
+  - team
   - testing
 
 ---
