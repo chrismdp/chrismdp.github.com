@@ -33,3 +33,4 @@ Because I use the time for fairly intense personal reflection, this practice unl
 The word-crunching statistics that are produced over time are very telling. I've noticed an interesting effect now I've been doing it for the last three weeks: at first I found it hard to stop and all my writing was concerned with the present. Now it's harder to think of what to write, but my thoughts are more valuable and much more reflective and deeper. I'm now using it to consider hard life decisions and priorities.
 
 I'd very much recommend you try morning pages, especially if you struggle to focus, get carried away by random disparate thoughts or find it difficult to concentrate. I'm getting a lot out of it.
+
