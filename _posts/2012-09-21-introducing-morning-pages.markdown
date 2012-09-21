@@ -19,7 +19,7 @@ In order to write my words, I used [750words.com](http://750words.com) for a num
 
 The result is the morning-pages gem. The gem has been available for a while, but starting today it'll record your progress on a central website. It only ever uploads aggregate statistics: the code is [open source](http://github.com/chrismdp/morning-pages) so you can check it out for yourself to make sure.
 
-For instructions, see the [accompanying website](http://morning-pages.me). There aren't any stats yet, but in future you'll be able to see any word streaks, what times of day you are most likely to write, etc. I've got some nice ideas for visualisation which I'll add as time permits: if you're impatient you can always [fork the website code](http://github.com/chrismdp/morning-pages.me) and create whatever stats you want!
+For instructions, see the [accompanying website](http://morning-pages.me). There aren't any aggregate stats yet, but in future you'll be able to see any word streaks, what times of day you are most likely to write, etc. I've got some nice ideas for visualisation which I'll add as time permits: if you're impatient you can always [fork the website code](http://github.com/chrismdp/morning-pages.me) and create whatever stats you want!
 
 ## What do I use my words for?
 
