@@ -24,6 +24,8 @@ Labelling people with job titles as shorthand is one thing, but if we're not car
 
 * *Labels reduce people to resources.* "We need 4.2 developer days for this project, with 2.4 designer days per developer day." Labels are interchangeable: people aren't. Some developers are orders of magnitude more productive than others, for example. By homogenising the team, we're extracting the soul from the company: we might as well be selling crude oil.
 
+I've recently tried to stop using labels to describe myself: see [my twitter bio](http://twitter.com/chrismdp) for example. It's been an interesting exercise, and I'd recommend it.
+
 ## Selling services by team, not label
 
 One problem we run into is when we run companies which sell client services by the hour. It's easy to put together a rate card for different job titles, but this exacerbates the label problem and embeds it into the economics. I prefer the method of selling whole team-weeks to the client, rather than individual developers: "This crack team of people will set you back £10,000 per week", for example.
