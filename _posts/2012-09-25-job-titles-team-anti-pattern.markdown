@@ -22,7 +22,7 @@ Labelling people with job titles as shorthand is one thing, but if we're not car
 
 * *People hide behind the label.* "That's designer work, that's not what I'm good at." This gets worse when we get more specific: "I'm a front end developer: I don't write Ruby." This stops techniques like Kanban working effectively as people are less likely to help each other, and creates silos of knowledge in the team.
 
-* *Labels reduce people to resources.* "We need 4.2 developer days for this project, with 2.4 designer days per developer day." Labels are interchangeable: people aren't. Some developers are orders of magnitude more productive than others, for example. By homogenising the team, we're extracting the soul from the company: we might as well be selling crude oil.
+* *Labels reduce people to resources.* "We need 4.2 developer days for this project, with 2.4 designer days per developer day." Labels are interchangeable: people aren't. Some developers are orders of magnitude more productive than others, for example. By homogenising the team, we're extracting the soul from the company: we might as well be selling crude oil, not people's expertise.
 
 I've recently tried to stop using labels to describe myself: see [my twitter bio](http://twitter.com/chrismdp) for example. It's been an interesting exercise, and I'd recommend it.
 
