@@ -18,7 +18,7 @@ Which is better?
 
 Labelling people with job titles as shorthand is one thing, but if we're not careful our use of them can be dysfunctional:
 
-* *Labels limit people's potential.* Our labels will limit what people will work on: they'll just stick to what their title says. This will happen even if they're good people: it's human nature to react to the culture which our team creates.
+* *Labels limit people's potential.* Our labels will limit what people will work on: they'll subconciously start to stick to what their title says. This will happen even if they're good people: it's human nature to react to the culture which our team creates.
 
 * *People hide behind the label.* "That's designer work, that's not what I'm good at." This gets worse when we get more specific: "I'm a front end developer: I don't write Ruby." This stops techniques like Kanban working effectively as people are less likely to help each other, and creates silos of knowledge in the team.
 
