@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Like twitter, but open
+title: "OStatus: like Twitter, but open"
 categories:
   - social
   - ostatus
