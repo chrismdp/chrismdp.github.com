@@ -9,7 +9,7 @@ categories:
 
 ---
 
-Recently Twitter decided to make it's terms of service [rather more restrictive](https://dev.twitter.com/blog/changes-coming-to-twitter-api). This has led to a number of web applications, [IFTTT](http://thenextweb.com/apps/2012/09/20/ifttt-removes-twitter-triggers-comply-new-api-policies/) in particular, change the way they interact with twitter.
+Recently Twitter decided to make its terms of service [rather more restrictive](https://dev.twitter.com/blog/changes-coming-to-twitter-api). This has led to a number of web applications, [IFTTT](http://thenextweb.com/apps/2012/09/20/ifttt-removes-twitter-triggers-comply-new-api-policies/) in particular, change the way they interact with twitter.
 
 Recently, [Tom Armitage](http://twitter.com/infovore) described Twitter as "a universal messaging bus". Unfortuantely that bus appears to be getting less and less open by the day.
 
