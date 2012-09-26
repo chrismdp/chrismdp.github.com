@@ -213,7 +213,13 @@ em {
 .strap iframe
 {
   float: right;
-  margin-top: -15px;
+  margin-top: -19px;
+  width: 87px !important;
+}
+
+.IN-widget {
+  float: right;
+  margin-top: -19px;
 }
 
 code {
