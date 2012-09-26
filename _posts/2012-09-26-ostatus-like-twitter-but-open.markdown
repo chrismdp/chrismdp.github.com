@@ -41,7 +41,7 @@ If you own a Twitter client, or know someone who does, *get in touch and offer t
 
 ## The future
 
-Once rstat.us has matured and core OStatus functionality is done, any project will be able to incorporate a status update setup into their website. For example, my game [Sol Trader](http://soltrader.net) has a list of status updates of the site, currently taken from the Twitter feed. Won't it be great when you can subscribe to those updates on your own node, just by subscribing to 'news@soltrader.net'?  And then reply to update and have your comment appear directly on the site? That's what we're working towards.
+Once rstat.us has matured and core OStatus functionality is done, any project will be able to incorporate a status update setup into their website. For example, my game [Sol Trader](http://soltrader.net) has a list of status updates of the site, currently taken from the Twitter feed. Won't it be great when you can subscribe to those updates on your own node, just by subscribing to 'news@soltrader.net'?  And then you reply to the update using your own node, and have your comment appear directly on the site? That's what we're working towards.
 
 ## The goal
 
