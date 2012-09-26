@@ -27,7 +27,7 @@ The [Diaspora\* project](http://diasporaproject.org/) is trying to solve a diffe
 
 This is more like it. The [OStatus](http://ostatus.org/faq) set of standards describe how a collection of nodes might publish status updates, reply to each other's updates, follow each other and more, all in a distributed fashion. You can implement the protocol in your app [step by step](http://ostatus.org/2010/10/04/how-ostatus-enable-your-application), so that you don't have a huge hurdle to overcome from the outset. There is now a [W3C community group](http://www.w3.org/community/ostatus/) and they're working on version 2.0.
 
-There are a few implementations out there, most notably [Status.net](http://status.net) which offers a paid hosted corporate version and a freely installable version, and the popular [identi.ca](http//identi.ca) service. These are implemented in PHP, but for those of us who are used to Ruby...
+There are a few implementations out there, most notably [Status.net](http://status.net) which offers a paid hosted corporate version and a freely installable version, and the popular [identi.ca](http://identi.ca) service. These are implemented in PHP, but for those of us who are used to Ruby...
 
 ## rstat.us
 
