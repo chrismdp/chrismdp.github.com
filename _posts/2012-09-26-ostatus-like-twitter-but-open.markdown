@@ -9,6 +9,8 @@ categories:
 
 ---
 
+*UPDATE:* I've [posted a followup](/2012/09/ostatus-what-ive-learnt-in-24-hours/) with some more learnings and links.
+
 Recently Twitter decided to make its terms of service [rather more restrictive](https://dev.twitter.com/blog/changes-coming-to-twitter-api). This has led to a number of web applications, [IFTTT](http://thenextweb.com/apps/2012/09/20/ifttt-removes-twitter-triggers-comply-new-api-policies/) in particular, change the way they interact with twitter.
 
 Recently, [Tom Armitage](http://twitter.com/infovore) described Twitter as "a universal messaging bus". Unfortuantely that bus appears to be getting less and less open by the day.
