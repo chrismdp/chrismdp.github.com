@@ -210,16 +210,24 @@ em {
   color:#88a;
 }
 
-.strap iframe
+.share
 {
   float: right;
-  margin-top: -19px;
+  padding: 15px 5px 0px 8px;
+  background: #557;
+  margin: 15px 0px 0px 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.share .tweet-button iframe
+{
   width: 87px !important;
+  margin-top: -5px;
 }
 
 .IN-widget {
-  float: right;
-  margin-top: -19px;
 }
 
 code {
