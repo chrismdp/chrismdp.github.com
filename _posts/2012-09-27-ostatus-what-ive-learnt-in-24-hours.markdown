@@ -9,9 +9,9 @@ categories:
 
 ---
 
-[Yesterday's post](/2012/09/ostatus-like-twitter-but-open/) was rather [popular.](http://news.ycombinator.com/item?id=4574858) Thanks to everyone for getting the word out.
+[Yesterday's post](/2012/09/ostatus-like-twitter-but-open/) was rather [popular.](http://news.ycombinator.com/item?id=4574858)
 
-Here are a few things I've learnt since yesterday:
+Here are a few things I've learnt since, from various commments, Hacker News posts and further reading:
 
 * *WordPress might be a tipping point for OStatus.* There's a [WordPress plugin](http://wordpress.org/extend/plugins/ostatus-for-wordpress/) which gives a fairly straightforward path to link any WordPress blog to the OStatus network. That would allow people to follow any blog through [rstat.us](http://rstat.us) (for example) and to reply directly on their own node and have the conversations appear on the original blog. There are [apparently 60 <i>million</i>](http://news.ycombinator.com/item?id=4575016) WordPress installs out there: this could be a huge gateway for the federated social web. Here are [some great ideas to market it](http://news.ycombinator.com/item?id=4575054): anyone able to help [pfefferle](http://profiles.wordpress.org/pfefferle/) out?
 
