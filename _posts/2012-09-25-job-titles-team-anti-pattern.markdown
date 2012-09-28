@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Job titles are a team anti-pattern
+date: 2012-09-25 20:48:24 +0100
 categories:
   - lean
   - agile

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Your code is a liability
+date: 2012-09-24 20:48:13 +0100
 categories:
   - code
   - craftsmanship
