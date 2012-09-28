@@ -10,6 +10,11 @@
   .clearfix {display:block;}
 /* End hide from IE Mac */
 
+anacronym {
+  border-bottom: 1px dotted white;
+
+}
+
 
 /* defaults */
 * {
