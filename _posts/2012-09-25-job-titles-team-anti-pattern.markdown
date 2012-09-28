@@ -31,3 +31,8 @@ I've recently tried to stop using labels to describe myself: see [my twitter bio
 One problem we run into is when we run companies which sell client services by the hour. It's easy to put together a rate card for different job titles, but this exacerbates the label problem and embeds it into the economics. I prefer the method of selling whole team-weeks to the client, rather than individual developers: "This crack team of people will set you back £10,000 per week", for example.
 
 Remember: the team environment is perfectly designed to achieve the result we're currently getting. How are our job titles and labels affecting the way our team works today?
+
+<div class='notice' style="display: inline-block">
+  <b>UPDATE:</b> Thanks to <a href="http://twitter.com/adrianh">Adrian Howard</a> and <a href="https://agilarium.wikispaces.com/Fabrice+Aimetti">Fabrice Aimetti</a>, this post has been <a href="https://agilarium.wikispaces.com/Les+intitul%C3%A9s+de+poste+sont+des+antipatterns+de+l%27%C3%A9quipe">translated into French here.</a>
+</div>
+
