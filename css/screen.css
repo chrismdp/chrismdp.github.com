@@ -215,10 +215,16 @@ em {
   float: right;
   padding: 15px 5px 0px 8px;
   background: #557;
-  margin: 15px 0px 0px 15px;
+  margin: 15px 0px 15px 25px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+}
+
+.share h1 {
+  font-size: 1.1em;
+  margin: -11px 0 9px 0;
+  text-shadow: none;
 }
 
 .share .tweet-button iframe
