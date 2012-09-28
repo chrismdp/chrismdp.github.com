@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "OStatus: like Twitter, but open"
+date: 2012-09-26 10:00:00 +0100
 categories:
   - social
   - ostatus

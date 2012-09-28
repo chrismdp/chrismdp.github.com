@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "OStatus: what I've learnt in 24 hours"
+date: 2012-09-27 20:24:54 +0100
 categories:
   - social
   - ostatus
