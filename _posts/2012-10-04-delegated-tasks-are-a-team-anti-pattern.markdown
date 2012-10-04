@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Detailed tasks are a team anti-pattern
+title: Delegated tasks are a team anti-pattern
 date: 2012-10-04 07:49:57 +0100
 categories:
   - team
