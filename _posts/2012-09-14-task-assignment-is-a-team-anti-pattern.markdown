@@ -7,6 +7,7 @@ categories:
   - productivity
   - pairing
   - team
+  - anti-pattern
 
 ---
 

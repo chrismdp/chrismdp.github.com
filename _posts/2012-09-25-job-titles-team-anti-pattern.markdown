@@ -6,6 +6,7 @@ categories:
   - lean
   - agile
   - team
+  - anti-pattern
 
 ---
 
