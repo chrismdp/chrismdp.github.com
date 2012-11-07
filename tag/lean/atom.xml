@@ -1,0 +1,269 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Chris Parsons: posts tagged lean</title>
+
+  <link href="http://chrismdp.com/"/>
+  <updated>2012-09-28T20:46:31+01:00</updated>
+  <id>http://chrismdp.com/tag/lean</id>
+  <author>
+    <name>Chris Parsons</name>
+    <email>chrismdp@gmail.com</email>
+  </author>
+<entry><title>Your framework is a liability</title><category term='code'/><category term='craftsmanship'/><category term='lean'/><category term='ruby'/><category term='agile'/><category term='liability'/><category term='sinatra'/><category term='paypal'/><link href='http://chrismdp.com/2012/09/your-framework-is-a-liability'/><updated>2012-09-28T20:46:31+01:00</updated><id>http://chrismdp.com/2012/09/your-framework-is-a-liability</id><content type='html'>Your framework is a liability.
+
+Every library you import before you start the project means more for someone else to digest and understand. Each complex 'clever' library equals another few minutes per team member trying to interpret why you imported it, how to use it, and where the configuration goes. Every framework you decide to use is a early decision about how your project will fundamentally work, which might turn out to be the wrong one. Each library is an opportunity for someone else to introduce a bug into your project.
+
+*The only asset a framework or library gives you is a faster route to your feature.* Anything else will drag you down.
+
+If your framework is heavy and onerous, then your code will have a large net negative liability before you've even begun. You'll be constrained to follow a certain set of patterns, which you might end up fighting against later on. Work on the app first: your &lt;anacronym title=&quot;minimum viable product&quot;&gt;MVP&lt;/anacronym&gt; might not even need the benefits your framework provides.
+
+A few examples of where I've benefited from not blindly installing the &quot;standard stack&quot;:
+
+* I've recently started building some new projects wholly in [Sinatra](http://sinatrarb.com), pulling in various gems only when I need to, rather than starting with Rails from the outset. [Sol Trader's website](http://soltrader.net) is pure Sinatra. It was simply much quicker to get started, and I found I could layer on functionality as I needed it. Several months on, I've yet to need to turn to a Rails app.
+
+* When I came to add Paypal integration to the site, I looked at various gems, and decided they were just going to drag me down with extra configuration and hassle. I ended up building Paypal IPN integration [in about 30 lines](https://gist.github.com/2768532) using pure ruby: no libraries. Most of that code was tests.
+
+Don't get me wrong: I still use frameworks for some of my projects, and libraries for all of them, but I'm learning to stop and think before cargo culting the latest stack of 25 different libraries before I can get anything done.
+
+Import a lightweight framework or library when you need to. Consider when you might be chaining yourself to it, which might make a later pivot difficult. It's much easier to add a framework than to remove one from your project: pick the easiest thing to move away from.
+</content></entry><entry><title>Job titles are a team anti-pattern</title><category term='lean'/><category term='agile'/><category term='team'/><category term='anti-pattern'/><link href='http://chrismdp.com/2012/09/job-titles-team-anti-pattern'/><updated>2012-09-25T20:48:24+01:00</updated><id>http://chrismdp.com/2012/09/job-titles-team-anti-pattern</id><content type='html'>&quot;We have two designers, two front-end developers, 2 back-end developers, and a tester.&quot;
+
+&quot;Allie and Jim tend to lay out most of the pages, with help from the others. Joe, Alice, Bob and Alan tend to write most of the code, with Bob and Alan working mainly on the server side of things. Darren makes sure our work matches up to what's expected.&quot;
+
+Which is better?
+
+## Job titles are labels
+
+Labelling people with job titles as shorthand is one thing, but if we're not careful our use of them can be dysfunctional:
+
+* *Labels limit people's potential.* Our labels will limit what people will work on: they'll subconciously start to stick to what their title says. This will happen even if they're good people: it's human nature to react to the culture which our team creates.
+
+* *People hide behind the label.* &quot;That's designer work, that's not what I'm good at.&quot; This gets worse when we get more specific: &quot;I'm a front end developer: I don't write Ruby.&quot; This stops techniques like Kanban working effectively as people are less likely to help each other, and creates silos of knowledge in the team.
+
+* *Labels reduce people to resources.* &quot;We need 4.2 developer days for this project, with 2.4 designer days per developer day.&quot; Labels are interchangeable: people aren't. Some developers are orders of magnitude more productive than others, for example. By homogenising the team, we're extracting the soul from the company: we might as well be selling crude oil, not people's expertise.
+
+I've recently tried to stop using labels to describe myself: see [my twitter bio](http://twitter.com/chrismdp) for example. It's been an interesting exercise, and I'd recommend it.
+
+## Selling services by team, not label
+
+One problem we run into is when we run companies which sell client services by the hour. It's easy to put together a rate card for different job titles, but this exacerbates the label problem and embeds it into the economics. I prefer the method of selling whole team-weeks to the client, rather than individual developers: &quot;This crack team of people will set you back £10,000 per week&quot;, for example.
+
+Remember: the team environment is perfectly designed to achieve the result we're currently getting. How are our job titles and labels affecting the way our team works today?
+
+&lt;div class='notice' style=&quot;display: inline-block&quot;&gt;
+  &lt;b&gt;UPDATE:&lt;/b&gt; Thanks to &lt;a href=&quot;http://twitter.com/adrianh&quot;&gt;Adrian Howard&lt;/a&gt; and &lt;a href=&quot;https://agilarium.wikispaces.com/Fabrice+Aimetti&quot;&gt;Fabrice Aimetti&lt;/a&gt;, this post has been &lt;a href=&quot;https://agilarium.wikispaces.com/Les+intitul%C3%A9s+de+poste+sont+des+antipatterns+de+l%27%C3%A9quipe&quot;&gt;translated into French here.&lt;/a&gt;
+&lt;/div&gt;
+
+</content></entry><entry><title>Your code is a liability</title><category term='code'/><category term='craftsmanship'/><category term='lean'/><category term='agile'/><category term='team'/><category term='liability'/><link href='http://chrismdp.com/2012/09/code-is-a-liability'/><updated>2012-09-24T20:48:13+01:00</updated><id>http://chrismdp.com/2012/09/code-is-a-liability</id><content type='html'>Your code is a liability.
+
+Every line you write means more for someone else to read, digest and understand. Each complex 'clever' regular expression represents another few minutes per team member trying to interpret what you wrote and why you wrote it. Every line you add limits your project's responsiveness to change.
+
+*Only the feature that your code provides is an asset.* The more that we reduce the amount of code we write, the lighter weight and more agile our software. The easier it is to understand, the less of a intellectual drag it is on the team.
+
+There used to be a lot of talk about getting into the &quot;programmer zone&quot;: that place of heightened focus where time rushes by as if a blur, and the number of lines of output a programmer produces per hour skyrockets... except that lines per hour was never the best measure of coder output to begin with. All that coder is doing is dragging down the project faster. Let's hope they're adding useful features during that process!
+
+It's my belief that the best code is written in conversation, not in the &quot;zone.&quot; A team discussion about the architecture and the arrangement of the different concepts into the simplest and lightest code structure we can fathom will always improve on our own ideas, when we implement them in isolation at a ridiculous rate.
+
+Lightweight, lean coding like this sets our features free from the drag of the code and allows them to soar: responsive to change requests, and easily debugged as the code isn't difficult to understand.
+</content></entry><entry><title>Showroom software</title><category term='products'/><category term='business'/><category term='lean'/><link href='http://chrismdp.com/2012/09/showroom-software'/><updated>2012-09-17T20:34:12+01:00</updated><id>http://chrismdp.com/2012/09/showroom-software</id><content type='html'>I went to IKEA recently to buy some more furniture for my office. Whilst wandering around trying to find the desk I wanted, I happened across a one-bedroom showroom apartment. The designers of this apartment had spent a lot of time and effort getting the most out of very limited space: so much so that they had fitted this entire home, including shower room, kitchenette, dining table, lounge with sofa bed and wardrobe storage into only &lt;i&gt;25 square metres.&lt;/i&gt;
+
+Think about that for a second. That's five metres by five metres. It's an extroadinarily small space to fit in a whole home, but they had managed it. What's more, it looked great! Everything was set up perfectly: you felt as if you could just move in there and then.
+
+## The problem
+
+There's a problem with this kind of apartment though: *what would happen if you actually tried to recreate that exact layout in your own 25 square metre apartment?* If you went around the IKEA version and painstakingly wrote down all of the different pieces of furniture you'd need, loaded them into a van and took them home, you'd invariably find they wouldn't fit. You'd want to make some small changes here and there, which would unavoidably have knock-on effects in such a small space. You'd end up taking half of the furniture back as you couldn't use it. Uneven walls, annoyingly placed sockets and irksome light fittings would make a mess of the finely crafted design.
+
+So what's the best way to fill a real apartment of this size? *Plan the furniture based around the exact contours of the apartment,* rather than trying to fit the apartment round the furniture. Better still, get in someone who knows what they're doing to help you. Buy as little furniture as possible and work with the space you have.
+
+## &quot;Off the shelf&quot; software is a showroom
+
+Buying software is a little like this. Whether you're a startup or an existing business, it's tempting to buy an off the shelf solution to solve all your problems. It seems so easy, and the vendors often promise so much. It's like the beautiful showroom apartment: it's affordable, it all fits together so beautifully, and you can start using it straight away.
+
+This can work when the problem is well defined, you have a truly blank slate, or the software is just one piece of the puzzle, but most businesses are rougher round the edges that off the shelf software would like. The solution you've just purchased is never a solution to your specific problem: it's a general solution to the problem the vendor thought you would have a few months or years ago when they thought up the product. Inevitably the solution is for a slightly different problem to the one you have now. In the case of startups, which don't even know what the problem they're trying to solve is yet, they can be constrained by off the shelf software extremely quickly.
+
+What can end up happening is one of two things:
+
+* *You fit your business around the software.* Your business processes become trapped in the workings of the software you're using, making your business less able to respond to change in the market. This is a dangerous situation for any business to be in.
+
+* *You shoehorn the software into your business.* You hire the vendor to customise the software for you, or you attempt to do it yourself. With a well written off the shelf system this may have some mileage. However, the danger is that the total cost ends up being a lot higher than you bargained for, and the system becomes a grostesque elephantine mess which only just hangs together.
+
+## A potential alternative
+
+What's the alternative? You could investigate building something that fits your business exactly. Bespoke software isn't always the best solution: it's always a trade off. However, I'd suggest always getting advice from a bespoke software developer before spending large amounts on any off the shelf system. A great developer should always help you spend as little as possible to get what you want, so your total cost might be less than you think.
+
+*The same is true for startups.* If your budget is really constrained, how about building something really small from scratch, pulling together as much existing code as possible? Don't reinvent the wheel - to extend the showroom analogy, that would be like building your own furniture from raw materials - but don't assume an off the shelf piece of software will run 90% of your business for you just the way you want it to.
+
+So for any moderately complex business problem, be careful of off-the-shelf one-size-fits-all &quot;it'll do everything you want for a fraction of the price!&quot; software products. Next time you make a decision like this, get some advice, and ask yourself whether you're purchasing the beautiful showroom apartment, and then trying to shoehorn it in to a place that it's never going to fit.
+</content></entry><entry><title>The power of feedback</title><category term='lean startup'/><category term='tdd'/><category term='bdd'/><category term='feedback'/><category term='lean'/><link href='http://chrismdp.com/2012/09/the-power-of-feedback'/><updated>2012-09-13T13:52:16+01:00</updated><id>http://chrismdp.com/2012/09/the-power-of-feedback</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;Everyone has a story that makes me stronger.&quot; -- Richard Simmons&lt;/i&gt;&lt;/p&gt;
+
+There's something about feedback. Whether it's the validation of your latest idea, a hit on your webpage showing up on Google Analytics, or something as simple as a passing test, it's a valuable and important motivational commodity, which can also shape the direction in which we're going very precisely.
+
+The effect of feedback is the engine at the root of software techniques as diverse as pairing, [TDD](http://en.wikipedia.org/wiki/Test-driven_development), [BDD](http://en.wikipedia.org/wiki/Behavior-driven_development) and the [Lean Startup movement](http://theleanstartup.com). Why is feedback so powerful?
+
+## Feedback shortens the loop
+
+Any sort of feedback represents the end of a creative loop that started when we began to work on whatever we're receiving feedback about. The shorter that loop, the more quickly we can respond to change, and the more agile we can be. It also helps us know when we're done working on something and it's time to move on.
+
+That's partly why TDD is so powerful: we receive instant feedback on what we're working on and we are never more than a few minutes away from a fully working system. It's also why good quality customer feedback is powerful: we're never more than a few iterations away from the feature the customer wants.
+
+## Feedback validates us and our work
+
+The validation of our work is one of the things that lies at the root of [pairing](/2010/01/pairing-works-for-everthing): the constant code review and the camaderie keeps us motivated and working on something longer than we can manage on our own. I've found programming on [Sol Trader](http://soltrader.net) alone to be an enlightening experience - I've learnt how important it is to have others working alongside me. I now have a graphics expert reviewing my code, and more design and artistic help to keep me motivated to turn out releases.
+
+It's also incredibly motivating to receive a &quot;thank you!&quot; or &quot;looks great!&quot; There's a lot of power in simple encouragement. If we know our work is appreciated and valued, we'll likely to work longer and with more energy on that next killer feature.
+
+However, there's a danger in only seeking pure validation, or (worse) coming to rely on it for motivatioW. If we receive too much positive validation, we'll end up getting proud of ourselves and demotivated to push for excellence, and we'll get terminally discouraged if we get too little. We should be seeking the kind of feedback that motivates us to shape our work for the better. We have to learn to ask the right questions.
+
+## Feedback shapes our work
+
+If we let it, feedback will change the work we do and how we do it. This applies no matter how we receive feedback about our work - the different types of feedback will change our work in different ways, and we must therefore strive to increase both the quality and the variety of the feedback we receive, without falling into the trap of simple validation.
+
+Done right, TDD offers more that just validation of our code; it gives us information about the quality of our code design. It causes us to shape our code differently and more carefully than code written without feedback. We can't operate in isolation though: TDD without feedback from stakeholders (whether that's through a technique such as Behaviour Driven Development or some other method) is incomplete: we get feedback that our code works, but nothing on whether it's the right code.
+
+There's more: conversations such as [Lean Startup](http://theleanstartup.com/) are taking the BDD ideas one stage further. Instead of relying on the guesses of the stakeholders to determine what the right features are, how about harnessing feedback from the actual customers using the product? This can be done in various ways, through automatic metrics gathering and [tracking experiments rather than features](https://speakerdeck.com/u/chrismdp/p/lean-startup-validated-learning-and-kanban-for-hypothesis).
+
+It's my opinion that the Lean Startup conversation is certainly as important as the BDD conversation, and potentially as important as the Agile conversation, as it improves the variety of the feedback we receive on our work.
+
+How are you finding feedback shapes your work? Are you getting the right kinds of feedback from a variety of sources? Or are you settling for pure validation?
+</content></entry><entry><title>Attempting validated learning with Sol Trader</title><category term='sol trader'/><category term='lean startup'/><category term='learning'/><category term='products'/><category term='agile'/><category term='lean'/><category term='business'/><link href='http://chrismdp.com/2012/05/attempting-validated-learning-with-sol-trader'/><updated>2012-05-14T10:18:47+01:00</updated><id>http://chrismdp.com/2012/05/attempting-validated-learning-with-sol-trader</id><content type='html'>&lt;div class='notice'&gt;
+  If you'd like to purchase Sol Trader you can do so at &lt;a href='http://soltrader.net'&gt;soltrader.net&lt;/a&gt;.
+&lt;/div&gt;
+
+Sol Trader has been out just about two weeks now. It's been great fun to actually launch the product and gain real feedback from people.
+
+*I've sold about forty copies.* It's a start, and a really good one. Thank you to those of you who have already purchased the game, and for all the feedback and encouraging emails I've received. I've learnt a huge amount already and it's really helped me guide the way ahead.
+
+The big question is: what's next? How do I go from these humble yet encouraging beginnings to turning this game into something truly wonderful?
+
+## Validated learning
+
+I've read Eric Ries' excellent book [The Lean Startup](http://lean.st/) recently. In it he introduces a concept called [Validated learning](http://lean.st/principles/validated-learning) and goes on to define learning as the one important progress metric of startups: much more important than 'customer numbers' or 'features'. Rather than define startups purely by 'profit' or 'growth figures', how can we ensure that we're learning about how our business as fast as possible?
+
+For Sol Trader, there are two main things that I need to find out.
+
+* How can I ensure that I'm creating a game that people want to play, want to come back to, and want to tell their friends about?
+* How can I ensure a steady stream of new players for the game?
+
+## The Sol Trader Hypothesis board
+
+In order to support this learning, I've created the Sol Trader hypothesis progress chart:
+
+![Sol Trader hypotheses chart](/files/sol-trader-hypotheses-chart.png)
+
+This is what I'm using to track my theories. A good week would be one where I've managed to prove or disprove a theory or two, rather than simply adding in more and more 'stuff'.
+
+Note the [Kanban limits to work in progress](http://leanca.mp/2011/12/better-learning-through-velocity-how-to-use-kanban-to-learn-better/). In order to get theories tested as fast as possible, it's important to get them through the process as fast as possible.
+
+*You can view and interact with the board for yourself:* it's [on Trello here](https://trello.com/board/sol-hypotheses/4fb0cbe79c2ff2de54036903). I'm determined to do as much of this learning in the open as possible. I'd love your input into the hypotheses that I'm testing: you can vote and comment on particular theories and tell me why you think they're a true (or completely wrong). Any input you give here will have an effect on what I work on next, so if you want to influence the development, then get involved!
+
+## Freed from featuritis
+
+I've really enjoyed freeing myself from the continual focus on &quot;features features features&quot;. Features by themselves mean nothing: they are actually a drag on your product, as you have to spend time and effort maintaining them. It's only the value that your customers gain from them that's important. Focusing on theories has meant that I'm always making progress, even if I'm simply learning what doesn't work.
+
+## Hang on: where is creativity in all this?
+
+There's a delicate balance here between listening to your customers and leading them in the direction you think they should go. I'm not going to sacrifice design flair and narrative to satisfy the baying (buying?) masses. This will likely always be a little bit of a niche game: there is a limit to the number of people interested in the genre. I plan to ultimately build the game I want to play, as opposed to the selling of something rubbish to satisfy everyone. Where's the fun in that?
+
+The important thing is to learn about your customer base, *within the context of your original vision.* If you cannot build a product within those constraints, time to look for a new business. Luckily, one of the earliest things I learnt through mailing list signups and a couple of [hacker news](/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus/) [appearances](/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on/) is that there's a fair amount of latent demand for the vision I've got for the game, which is what spurred me on to [get the alpha out](/2012/05/sol-trader-now-in-alpha) in the first place.
+
+What do you think of learning in public like this, and what do you think of my development approach?
+
+&lt;div class='notice'&gt;
+  If you'd like to purchase Sol Trader you can do so at &lt;a href='http://soltrader.net'&gt;soltrader.net&lt;/a&gt;.
+&lt;/div&gt;
+
+</content></entry><entry><title>Sol Trader now in Alpha</title><category term='sol trader'/><category term='products'/><category term='agile'/><category term='lean'/><category term='lean startup'/><link href='http://chrismdp.com/2012/05/sol-trader-now-in-alpha'/><updated>2012-05-02T15:37:44+01:00</updated><id>http://chrismdp.com/2012/05/sol-trader-now-in-alpha</id><content type='html'>## It's released!
+
+After a hectic four months of early development &lt;a href='http://soltrader.net'&gt;Sol Trader has gone into Alpha&lt;/a&gt;.
+
+&lt;a href='http://soltrader.net'&gt;&lt;img src='http://soltrader.net/files/sol-trader-hero.png' style='width: 48em'/&gt;&lt;/a&gt;
+
+With this release, you can explore the known Solar System and make money through trading on the stock markets. There isn't much else there yet, but I'm planning a slew of improvements over the coming months.
+
+I've decided to charge right off the bat: you can buy the Alpha for £5 (about $8). This price will go up as I put more work into the game, and future game updates will be free until it's finished.
+
+## Exciting yet terrifying
+
+This is both a wonderfully exciting and deeply terrifying moment for me. The game isn't near finished, yet I've released it on an unsuspecting set of game players. I've been reading the [Lean Startup](http://theleanstartup.com/) and I think it's ready for feedback. This is my [Minimum Viable Product](http://www.startuplessonslearned.com/2009/08/minimum-viable-product-guide.html).
+
+The exciting bit: I finally get a sense of whether I'm going in the right direction and whether people might enjoy the fairly simple mechanics that are on offer in this version. Seeing Paypal emails letting me know that people have bought the game is very gratifying, even if I have to manually activate every purchase with a knocked-together ruby script.
+
+The terrifying bit is: I finally get a sense of whether people actually might play this game. After all, if nobody likes it at all, there's not much point continuing.
+
+## How I'm going to improve the game
+
+I'm using [KISSMetrics](http://kissmetrics.com) to track both website activity and gameplay. So far it's working out well: I can see how people go through the site, make purchases, and then sign in and play the game.
+
+I've deliberately not worked on the code behind the game for a couple of days, to let the metrics filter through and inform me about what's next.  So far the reaction has been generally positive - my metrics have had good framerates and people are playing for an average of 15 minutes and making about a dozen visits to planets each.
+
+My first impressions based on early metrics and feedback: *I need to make the economy more realistic* as I think this will cause people to play the game for longer, and *I need to add a video of gameplay* to the front page to improve my sign up/purchase rates.
+
+More on how I'm following the Lean Startup approach over the next few weeks and months.
+
+## The long road
+
+This is where I need self-discipline more than ever. My weakness is that when I feel like I've achieved something (like launching an alpha), my tendency is straight away to look for the next thing. I'm determined not to let that happen here. *I feel like I've delivered on perhaps 5% of the vision for the game.* I'm passionate about seeing the rest of the vision fulfilled.
+
+The more of you who buy the game now and play it, the clearer the way forward becomes. I'm grateful for every purchase: thank you to the brave early adopters!
+
+If you've purchased the game, what can I do to improve it? If you haven't purchased it yet, what can I put on the website to better inform your decision? [Let me know](mailto:chris@soltrader.net).
+
+&lt;div class='notice'&gt;
+  If you'd like to purchase Sol Trader you can do so at &lt;a href='http://soltrader.net'&gt;soltrader.net&lt;/a&gt;.
+&lt;/div&gt;
+
+</content></entry><entry><title>Lean code: slides and feedback</title><category term='code'/><category term='lean'/><category term='presentation'/><category term='software craftsmanship'/><category term='sc2011'/><link href='http://chrismdp.com/2011/05/lean-code-slides-and-feedback'/><updated>2011-05-26T21:35:40+01:00</updated><id>http://chrismdp.com/2011/05/lean-code-slides-and-feedback</id><content type='html'>I facilitated a workshop at [SC2011](http://lanyrd.com/2011/software-craftsmanship/) today about how code might be thought of as Lean. The idea was to start a coding project and cope with shifting requirements to identify what happens when we deliver as fast as we can, whether testing is worth it, and what waste actually means.
+
+If you were there, please do [rate the talk](http://speakerrate.com/talks/7643-lean-code) so I can improve!
+
+A number of people expressed an interest in trying the exercise, so here are the slides if you're interested in trying it at home.
+
+&lt;object id=&quot;__sse8116737&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=lean-code-110526153405-phpapp02&amp;amp;stripped_title=lean-code&amp;amp;userName=chrismdp&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;/&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot;/&gt;&lt;embed name=&quot;__sse8116737&quot; src=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=lean-code-110526153405-phpapp02&amp;amp;stripped_title=lean-code&amp;amp;userName=chrismdp&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;/embed&gt;&lt;/object&gt;
+
+The session details are also [on Lanyrd](http://lanyrd.com/2011/software-craftsmanship/sfkgw/).
+
+Let me know how you get on, and if you need any help!
+</content></entry><entry><title>Leancamp Report</title><category term='lean'/><category term='conference'/><link href='http://chrismdp.com/2010/05/leancamp-report'/><updated>2010-05-16T10:15:00+01:00</updated><id>http://chrismdp.com/2010/05/leancamp-report</id><content type='html'>[Leancamp](http://leanca.mp) was on the 10th May, and a few Edenites including myself headed up to London to check it out.
+
+![Café area](http://farm5.static.flickr.com/4069/4597552919_d191c7c26d.jpg)
+
+Leancamp was an [unconference](http://en.wikipedia.org/wiki/Unconference): the content was almost entirely decided by the attendees themselves. The organisers chose a couple of notable speakers to get the ball rolling, but the rest was up to us.
+
+![The Blank Leancamp Schedule](http://farm2.static.flickr.com/1158/4598320700_6eb2c5383b.jpg)
+
+Diving into the spirit of the whole thing, I ran three sessions. A brief report of each follows.
+
+## Lessons Learned Bootstrapping a Service Company
+
+Most of the attendees were definitely in the startup arena. To this end, I did a very brief presentation on the accidentally lean startup of [Eden Development](http://edendevelopment.co.uk) (how we started the company with no cash and made it up as we went along). 
+
+&lt;div style=&quot;width:425px&quot; id=&quot;__ss_4147733&quot;&gt;&lt;strong style=&quot;display:block;margin:12px 0 4px&quot;&gt;&lt;a href=&quot;http://www.slideshare.net/chrismdp/lessons-learned-bootstrapping-a-service-company&quot; title=&quot;Lessons learned bootstrapping a service company&quot;&gt;Lessons learned bootstrapping a service company&lt;/a&gt;&lt;/strong&gt;&lt;object id=&quot;__sse4147733&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=lessons-learned-bootstrapping-service-company-100519010728-phpapp02&amp;amp;stripped_title=lessons-learned-bootstrapping-a-service-company&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;/&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot;/&gt;&lt;embed name=&quot;__sse4147733&quot; src=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=lessons-learned-bootstrapping-service-company-100519010728-phpapp02&amp;amp;stripped_title=lessons-learned-bootstrapping-a-service-company&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;div style=&quot;padding:5px 0 12px&quot;&gt;View more &lt;a href=&quot;http://www.slideshare.net/&quot;&gt;presentations&lt;/a&gt; from &lt;a href=&quot;http://www.slideshare.net/chrismdp&quot;&gt;chrismdp&lt;/a&gt;.&lt;/div&gt;&lt;/div&gt;
+
+There was a company post-mortem afterwards, mostly centered around how I could have done it quicker and been even leaner. Maybe next time (if there ever is one) I'll do it better, who knows...
+
+## Technical Incubation
+
+We spent half an hour discussing whether the concept of service companies such as Eden incubating startups was a good idea. The idea is that we could accept reduced rates in return for an equity stake. 
+
+There was a lot of animated discussion about this: many service professionals in the room were wary of equity work, having had bad experiences in the past. We agreed that in principle the concept could work, if the startup was built around a strong idea and the service company had either a controlling stake or real influence in the direction of the startup.
+
+I'm open to ideas in this direction - ping me if you want to discuss further.
+
+## Applying Lean Principles to Coding
+
+Rather dismayed by a lack of technical discussion, we decided to get together and have a bit of a chinwag about lean principles can be applied to coding. 
+
+Much was made of continuous improvement ideas (applied through practices like pair programming and code reviews) as well as the concept of minimizing waste (applied through [YAGNI](http://en.wikipedia.org/wiki/You_ain't_gonna_need_it) and the general allergy to [Big Design Up Front](http://en.wikipedia.org/wiki/Big_Design_Up_Front)).
+
+![Discussion at Leancamp](http://farm5.static.flickr.com/4010/4597860793_4e7ec18372.jpg)
+
+It was an excellent day, and I'm looking forward to the next one. I enjoyed the many hallway conversations I had and would love to continue them online.
+
+Did you attend? What did you get out of the day?
+
+(Photos by [Enrique](http://flickr.com/photos/ecomba) - see the rest of his photos of Leancamp [here](http://www.flickr.com/photos/ecomba/sets/72157623913929379/))
+</content></entry></feed>

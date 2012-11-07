@@ -1,0 +1,535 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Chris Parsons: posts tagged ruby</title>
+
+  <link href="http://chrismdp.com/"/>
+  <updated>2012-09-28T20:46:31+01:00</updated>
+  <id>http://chrismdp.com/tag/ruby</id>
+  <author>
+    <name>Chris Parsons</name>
+    <email>chrismdp@gmail.com</email>
+  </author>
+<entry><title>Your framework is a liability</title><category term='code'/><category term='craftsmanship'/><category term='lean'/><category term='ruby'/><category term='agile'/><category term='liability'/><category term='sinatra'/><category term='paypal'/><link href='http://chrismdp.com/2012/09/your-framework-is-a-liability'/><updated>2012-09-28T20:46:31+01:00</updated><id>http://chrismdp.com/2012/09/your-framework-is-a-liability</id><content type='html'>Your framework is a liability.
+
+Every library you import before you start the project means more for someone else to digest and understand. Each complex 'clever' library equals another few minutes per team member trying to interpret why you imported it, how to use it, and where the configuration goes. Every framework you decide to use is a early decision about how your project will fundamentally work, which might turn out to be the wrong one. Each library is an opportunity for someone else to introduce a bug into your project.
+
+*The only asset a framework or library gives you is a faster route to your feature.* Anything else will drag you down.
+
+If your framework is heavy and onerous, then your code will have a large net negative liability before you've even begun. You'll be constrained to follow a certain set of patterns, which you might end up fighting against later on. Work on the app first: your &lt;anacronym title=&quot;minimum viable product&quot;&gt;MVP&lt;/anacronym&gt; might not even need the benefits your framework provides.
+
+A few examples of where I've benefited from not blindly installing the &quot;standard stack&quot;:
+
+* I've recently started building some new projects wholly in [Sinatra](http://sinatrarb.com), pulling in various gems only when I need to, rather than starting with Rails from the outset. [Sol Trader's website](http://soltrader.net) is pure Sinatra. It was simply much quicker to get started, and I found I could layer on functionality as I needed it. Several months on, I've yet to need to turn to a Rails app.
+
+* When I came to add Paypal integration to the site, I looked at various gems, and decided they were just going to drag me down with extra configuration and hassle. I ended up building Paypal IPN integration [in about 30 lines](https://gist.github.com/2768532) using pure ruby: no libraries. Most of that code was tests.
+
+Don't get me wrong: I still use frameworks for some of my projects, and libraries for all of them, but I'm learning to stop and think before cargo culting the latest stack of 25 different libraries before I can get anything done.
+
+Import a lightweight framework or library when you need to. Consider when you might be chaining yourself to it, which might make a later pivot difficult. It's much easier to add a framework than to remove one from your project: pick the easiest thing to move away from.
+</content></entry><entry><title>Kickstart your team on BDD</title><category term='bddkickstart'/><category term='bdd'/><category term='cucumber'/><category term='code'/><category term='ruby'/><link href='http://chrismdp.com/2012/07/kickstart-your-team-on-bdd'/><updated>2012-07-27T08:13:22+01:00</updated><id>http://chrismdp.com/2012/07/kickstart-your-team-on-bdd</id><content type='html'>[Matt Wynne](http://mattwynne.net) and I have been running courses on BDD for the BBC Future Media division for the past year or two. They've been extremely well received, so we've decided to open them up to the wider public so everyone can benefit.
+
+The full details are at [bddkickstart.com](http://bddkickstart.com), but read on for a bit more info:
+
+## When/where is it?
+
+There are four seperate day-long workshops running in October, from 8th - 11th in Central London near Trafalgar Square. You can just come to one day, or all four.
+
+## What's the course material?
+
+Day 1 is entitled &quot;Just enough Ruby&quot;. It teaches programmers from other languages the basics of Ruby so that they are comfortable using cucumber effectively.
+
+Day 2 is a BDD workshop for the whole team. It builds awareness and enthusiasm for the concepts with a chance to practice collaboration in the way that makes BDD work.
+
+Day 3 is a practical day for programmers to learn about Cucumber: what it is, what it isn't, and how to write good cucumber code that can be maintained over time.
+
+Day 4 covers advanced BDD concepts and common pitfall people find when using these techniques in the real world.
+
+## Do I have to sign up for all four days?
+
+No, you can pick and choose, and just come to one day if you like. There's a small per day discount if you book all four days.
+
+## So which days are for me?
+
+&lt;p&gt;if you're a &lt;strong&gt;developer with Ruby experience&lt;/strong&gt;, you might want to skip the first day and come along to days 2, 3 or 4.&lt;/p&gt;
+
+&lt;p&gt;If you are a &lt;strong&gt;Product Owner, Business Analyst, Project Manager or UX specialist&lt;/strong&gt;, come along to just day 2, and understand why BDD is designed for you guys in the first place!&lt;/p&gt;
+
+&lt;p&gt;If you're a &lt;strong&gt;keen developer but not necessily very experienced in Ruby&lt;/strong&gt;, you should consider the &lt;a href=&quot;http://bdd.eventbrite.co.uk&quot;&gt;full four day course&lt;/a&gt;. We'll take you through the basics of Ruby, the reasons behind doing development this way, how to use Cucumber properly (saving you time in the long run) and some neat advanced tricks.&lt;/p&gt;
+
+## Are you running early bird tickets, or promotions?
+
+Glad you asked: if you use the code &lt;strong&gt;super-early-birdy&lt;/strong&gt; you'll get 20% of the list price until 1st August, just for reading this far down the page :)
+
+## How can I find out more or book my place?
+
+You can find more info and book at [bddkickstart.com](http://bddkickstart.com), or [send us mail](mailto::hello@bddkickstart.com) if you have specific questions.
+
+Hope to see you in October!
+</content></entry><entry><title>On coding defensively</title><category term='code'/><category term='ruby'/><category term='craftsmanship'/><link href='http://chrismdp.com/2012/02/on-coding-defensively'/><updated>2012-02-17T18:57:25+00:00</updated><id>http://chrismdp.com/2012/02/on-coding-defensively</id><content type='html'>When writing code that will be used by others (and we do that 100% of the time, even if the other user is ourselves in a few weeks time), there's a tricky balance to strike between being generous to the users of our code, and ensuring that they get the information they want to ensure they're calling our code correctly. There are two coding maxims: &quot;Be generous on input, and strict on output&quot;, and &quot;fail fast&quot;, which we need to hold in tension. This post explores the trade-offs between the two.
+
+## &quot;Be generous on input, and strict on output&quot;
+
+This is another way of saying *code defensively:* we should allow the user to use our code a number of different ways, yet be careful about what we return to them to ensure they can't be easily confused.
+
+For example, consider this method:
+
+{% highlight ruby %}
+
+    def calculate_total(products)
+      total = 0
+      products.each do |product|
+        total += product.price
+      end
+      return total
+    end
+
+    calculate_total([product1, product2])
+
+{% endhighlight %}
+
+If we accept an array as an argument, we could code defensively and allow a single product to be passed as well:
+
+{% highlight ruby %}
+
+    def calculate_total(products)
+      products = [products] unless.products.respond_to?(:each)
+      total = 0
+      products.each do |product|
+        total += product.price
+      end
+      return total
+    end
+
+    calculate_total(product) # also works now
+
+{% endhighlight %}
+
+This is a nice feature and potentially allows our code to be used more flexibly.
+
+Let's take this further. What happens when our user decides to pass in an invalid value, such as a string? Should we code defensively for that situation?
+
+{% highlight ruby %}
+
+    def calculate_total(products)
+      return 0 if product.is_a?(String)
+      products = [products] unless.products.respond_to?(:each)
+      total = 0
+      products.each do |product|
+        total += product.price
+      end
+      return total
+    end
+
+    calculate_total(&quot;product&quot;) # return 0
+
+{% endhighlight %}
+
+In this case, we could argue our code is being defensive: it avoided the crash that would have happened when we tried to call the non-existent `price` method on the passed in string. Is this desirable?
+
+## &quot;If we're going to fail, we should fail quickly.&quot;
+
+The programmer using our code probably made a mistake here. If we fail immediately, it's very easy for them to see where the error is. If we accept pretty much anything, and return '0' (or much worse, '-999' or some other abomination) we're just going to get incorrect prices: we're going to hide and propagate the error down the call stack and make it much harder to debug.
+
+This is a tricky balance and it depends on the situation, but in general I think these principles are helpful to deciding what to do:
+
+* *Fail if we cannot be strict with our output.* Coding defensively has two sides: generous with input, but also strict with output. If the output is changed by the way we recieve our argument, we're not being specific enough. In the above example, we're effectively giving a string a price of zero, which is extra behaviour we probably don't want. Likewise, make sure that if there's no way we can return a sensible result, then we should not accept the argument passed and fail instead.
+
+
+* *Is our method doing too much?* In the case of the above method our user might be wanting to pass the name of the product as a string, and look up the product to work out the price. We could support that, but this will encourage duplication: if we persist with keeping methods that do &quot;A and B&quot;, we'll find over time we code will spring up additional methods which do &quot;A&quot; and &quot;B&quot; separately. Our method is now too complex and needs to be split into two.
+
+* *Be generous with types.* We have some advantages working in a dynamically typed language such as Ruby. Use the power of Duck Typing: don't check if objects are certain types: check if they respond to the methods that we need to call on them.
+
+* *Be generous at the edges of our code.* Being generous with private APIs and methods only used by ourselves in constrained circumstances is a waste of time: we should just ensure we're calling our own code correctly.
+
+* *When we fail, we should fail hard. Really hard.* In its laudable determination to follow the [Principle of Least Astonishment](http://en.wikipedia.org/wiki/Principle_of_least_astonishment), Ruby has a weakness for over-generosity. It tends to return nil when it encounters an error in cases where in my opinion it should throw an exception. Programmers don't always check for the nils they receive correctly, which means they get passed around our codebase, eventually causing a crash when we least expect it. We should not return nil: that's not being specific enough with our outputs. We should throw an exception or terminate the program if we really need to get their attention.
+
+What do you think? Do you tend to learn more towards coding defensively, or failing early?
+
+(Thanks to [Alex Tomlins](http://www.unboxedconsulting.com/people/alex-tomlins) at Unboxed for the conversation that led to this post.)
+</content></entry><entry><title>Switching Sol Trader from Ruby to C++: one week on</title><category term='products'/><category term='ruby'/><category term='c++'/><category term='code'/><category term='sol trader'/><category term='game development'/><link href='http://chrismdp.com/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on'/><updated>2012-01-16T09:38:25+00:00</updated><id>http://chrismdp.com/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on</id><content type='html'>Well, I didn't quite expect that. My [previous post](/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus/) about switching [Sol Trader](http://soltrader.net) development from Ruby back to C++ caused [quite a storm](http://news.ycombinator.com/item?id=3440596).
+
+Not being used to making waves on the mainstream Internet, I naively attempted to dive in and read and respond to every comment. It appears that feedback from the Internet at large tends towards the negative, so after a few hours I was feeling pretty discouraged, and only continued replying to some of the constructive feedback. Sorry if you didn't get a response.
+
+I have a few more comparisons between Ruby and C++ which I'd like to share.
+
+* *I'm finding myself reinventing the wheel more.* In Ruby-land I found third-party code easier to read, easier to install and easier to use. Trying to use someone else's library is C++ is harder. Often people don't seem to write automated tests, which strongly recommends me against using them. I'm also concerned that new libraries might introduce hidden memory leaks which will waste me time massively when I come to hunt them down. I appreciate people don't release their code just for me, so I'm not complaining: I've just found it more difficult to trust third-party code. I hope to try and fix this tendency by releasing large extractions from my project as libraries in the future.
+
+* *Boost is awesome.* One notable exception to the above concern is the wonderful [Boost](http://boost.org) library suite. There is a library for almost everything you might need there, and the quality is very high. I'm already using the [Signals2](http://www.boost.org/libs/signals2) library for notifications (following the [Observer pattern](http://en.wikipedia.org/wiki/Observer_pattern)) and I plan to use the [Serialization](http://www.boost.org/libs/serialization) library for saving and loading games.
+
+* *What to test?* The testing profile of my C++ code is different to my Ruby code. Thanks to strong typing, my tests fail for longer during the 'red' stage, so I find I have to write fewer edge cases. There are only so many ways C++ types can fit together, whereas Ruby objects can be combined in any way you like. I'm not sure I've hit on the right level of coverage yet: I'm not writing any tests for the more visual parts of Sol Trader yet and I'd like to consider how to.
+
+* *I'm using a classist approach to testing.* In C++ I've tended to favour a [classical approach to TDD](http://martinfowler.com/articles/mocksArentStubs.html): that of testing a few small classes together from the outside using the public interface. Where I'm [coding to interfaces](http://stackoverflow.com/a/384067/1073735) I'm able to stub out that interface by inheriting from it in my test, but I'm not doing that often. Mostly I'm following my nose and attempting to keep my classes small and my collaborations few. I don't get all the design signals from my tests that I would like, but in my view that's better than exposing the internals of my class to the tests: that just complicates it unnecessarily. C++ is already difficult to read.
+
+* *Prototyping complex class structures in Ruby first is really useful.* I've often benefited from having an existing Ruby class structure to take as my lead when writing C++. Those subsystems that I'd already written in Ruby were at least twice as fast to write. Rather than typing, or getting past the syntax, I've found [learning to be the constraint](http://dannorth.net/2010/08/30/introducing-deliberate-discovery/) in a number of coding situations. I'm not sure I'd always write in Ruby first, but in a case where I was really stuck and wanted to explore possible options, I might consider a rapid Ruby prototype over [CRC card design](http://en.wikipedia.org/wiki/Class-responsibility-collaboration_card), for example.
+
+I'll continue to post my learnings as I collect them.
+
+&lt;div class='notice'&gt;
+  If you'd like to purchase Sol Trader you can now do so at &lt;a href='http://soltrader.net'&gt;soltrader.net&lt;/a&gt;!
+&lt;/div&gt;
+</content></entry><entry><title>Why I switched from Ruby back to C++</title><category term='products'/><category term='ruby'/><category term='c++'/><category term='code'/><category term='sol trader'/><category term='game development'/><link href='http://chrismdp.com/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus'/><updated>2012-01-08T20:21:41+00:00</updated><id>http://chrismdp.com/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus</id><content type='html'>&lt;div class='notice'&gt;
+  &lt;b&gt;UPDATE:&lt;/b&gt; This post was pretty popular. I've posted a followup &lt;a href=&quot;/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on/&quot;&gt;here&lt;/a&gt;.
+&lt;/div&gt;
+
+After two months of Sol Trader development in Ruby, I took a difficult decision last Wednesday morning: I've decided to rewrite the game code from scratch in C++. Let me explain my reasons.
+
+&lt;div class='notice'&gt;
+  If you'd like to purchase Sol Trader you can now do so at &lt;a href='http://soltrader.net'&gt;soltrader.net&lt;/a&gt;!
+&lt;/div&gt;
+
+## Why I did it
+
+* *Slow frames:* When working with Ruby, I use the excellent [Gosu](https://github.com/jlnr/gosu) library to do all my game specific coding. This initially worked great, but occasionally I'd just get slow frames coming up. My game is timed to run at 60 frames per second, which means that each frame should take no more than 16.67ms to run. Yet every so often my profiling would come up with a frame that would take 25ms or 45ms for no discernible reason. I just couldn't find the issue here: I turned every sub system in the game off. I disabled garbage collection. I hacked my slow frame detection code into the simplest gosu sample I could find, and they still existed. I didn't feel like I could quite trust the stack to deliver the framerate I needed, and I hadn't yet put in half the features I wanted to.
+
+* *Object explosion when bridging to C:* A lot of the libraries I was using were written in C, and therefore there was several thousand objects (mostly floats) being created each frame to act as a bridge between Ruby and C code. It feels like that that CPU time should be better spent in the AI improving the quality of the simulation, or on better effects, rather than loading the garbage collection with an unnecessary burden.
+
+* *Ease of packaging and distribution:* I feel like packaging is going to be a lot easier. I'm not too bothered about hiding the source code: I may well do that anyway to purchasers of the game. It's the running on Windows I'm worried about: from my research it feels like it's going to take some effort to push the game out on a non-Unix platform. And with a video game, releasing on Windows is a must.
+
+* *Manual memory management for performance:* The garbage collection is still too stuttery under MRI (even with Ruby 1.9.3, which is a huge improvement on what's gone before) - it still stops the world each time. I looked at other implementations, and even considered learning all about garbage collection to help improve Ruby myself, but then realised that getting royally distracted wouldn't help me ship a working game.
+
+## What do I miss about Ruby?
+
+* *I miss using RSpec hugely:* There are ways of doing [testing of C programs using RSpec](http://benmabey.com/2007/09/09/bdd-your-c.html) but it doesn't feel like I want to wrap each of my C++ classes with a SWIG interface just to check they're working. I may still do this for some form of Cucumber testing, I'm not sure. I'm using [UnitTest++](http://unittest-cpp.sourceforge.net/) for my testing at the moment, which is very lightweight and good enough for my purposes.
+
+* *Duck-typing:* defining interfaces for everything is a pain in the backside, although it does force you to think more clearly about the roles of your classes.
+
+
+* *Easy mockist testing:* There's no built in reflection in C++ so it also makes you have to code to interfaces if you want to do any mockist testing. I'm mostly returning to a classist style of testing with small well defined groups of classes being tested at once. It's not a perfect system and I still have much learning to do here.
+
+* *Terseness of syntax:* There's just a lot more characters to type, and a lot more ceremony for each class. This tempts you to larger classes and methods, which I'm resisting at the moment. I need to take the time to set up [c.vim](http://www.vim.org/scripts/script.php?script_id=213) exactly how I want it.
+
+Funnily enough, I don't miss the automatic memory management: I like having that level of control. Old habits die hard.
+
+## So how far have I got?
+
+Thankfully, it's not a complete rewrite as I'd already done a lot of thinking about the architecture and a lot of the basic classes translate directly over.  I worked really hard at the end of last week and got a lot done:
+
+* I put in [SDL](http://www.libsdl.org) to build the basic game framework: hopefully building on Windows will be a snap. I plan to have a working Windows build as soon as I can lay my hands on a cheap Windows 7 PC.
+* Basic testing using UnitTest++, with tests that are compiled and run as part of the build process.
+* Decoupled gameplay/physics updates from the graphical framerate using the techniques [here](http://gafferongames.com/game-physics/fix-your-timestep/). I have zero [temporal aliasing](http://en.wikipedia.org/wiki/Temporal_anti-aliasing) bugs right now, which makes for a super smooth 300+ FPS graphic loop with a fixed 60FPS physics loop.
+* Re-implemented physics using [Chipmunk](http://chipmunk-physics.net/), the same library I used in Ruby, which made it very easy to switch over.
+* Put in a brand new and much improved parallax-scrolled starfield.
+* Added a basic controllable spacecraft, planets and jumpgates back in: the player can fly around as before and collide successfully with other objects.
+* A simple particle system so the spacecraft give off exhaust smoke, and the jumpgates emit spooky purple mist.
+
+Even with using OpenGL [immediate mode](http://en.wikibooks.org/wiki/OpenGL_Programming/GLStart/Tut3#Immediate_Mode) (this is a bad thing) and rendering 10000 stars each frame (very inefficient), and a throwing bunch of particles onscreen, I'm still getting 300+ FPS on my 2009 MacbookPro and only using 30MB of memory. That's satisfying.
+
+*UPDATE:* By (very) popular demand, here's a screenshot. Be aware this is *three days work only*, and obviously not final artwork:
+
+&lt;a href='/files/sol-trader-1.png'&gt;&lt;img src='/files/sol-trader-1.png' width='500'/&gt;&lt;/a&gt;
+
+Next I plan to add back in jumping between different planetary orbits, and then work on a very basic 'person-level view', so that you can get out of your ship and walk around.
+
+## Was it the right decision?
+
+I'll know at the end of the project :) My feeling is though that it was the correct thing to do. Being really close to the metal will make it much easier to implement some of the really complex AI stuff I'd like to do later on. I already know C++ very well, and estimate it'll only delay me a week or two if I work hard. If I like, I can always bundle my project as a C++ library and control it from Ruby later on, but it's harder to go in the other direction.
+
+What do you think? Did I make the right call?
+
+&lt;div class='notice'&gt;
+  If you'd like to purchase Sol Trader you can now do so at &lt;a href='http://soltrader.net'&gt;soltrader.net&lt;/a&gt;!
+&lt;/div&gt;
+</content></entry><entry><title>A cache-busting http server script in ruby</title><category term='code'/><category term='javascript'/><category term='ruby'/><link href='http://chrismdp.com/2011/12/cache-busting-ruby-http-server'/><updated>2011-12-14T16:57:43+00:00</updated><id>http://chrismdp.com/2011/12/cache-busting-ruby-http-server</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;All of this can be yours/just give me what I want/and no one gets hurt&quot;&lt;/i&gt;&lt;/p&gt;
+
+-- Bono, Vertigo
+
+If you've done much Javascript development, or simple web development without a webserver backend, you don't want to set up a complex framework. Just give me the pages: I want to be able to start a simple webserver to give me the current directory structure as a website. You can't simply load the pages into a browser using `file://` because that screws up the relative paths that our sites rely on. What's the best way of doing this?
+
+## Python's SimpleHTTPServer
+
+One simple way is:
+
+{% highlight bash %}
+python -m SimpleHTTPServer
+{% endhighlight %}
+
+This does a great job, but there's one small problem: caching. Ordinarily during development you'll want the browser to request the HTML each time, and the python server doesn't do that out of the box.
+
+## Ruby's WEBrick with adding cache-busting
+
+Here's a small script I borrowed from [pmarti](http://github.com/pmarti) and tweaked. It lives in the `bin/http` file on my path: I just type `http` in the relevant folder and I'm set.
+
+{% highlight ruby %}
+#!/usr/bin/env ruby
+
+require 'webrick'
+class NonCachingFileHandler &lt; WEBrick::HTTPServlet::FileHandler
+  def prevent_caching(res)
+    res['ETag']          = nil
+    res['Last-Modified'] = Time.now + 100**4
+    res['Cache-Control'] = 'no-store, no-cache, must-revalidate, post-check=0, pre-check=0'
+    res['Pragma']        = 'no-cache'
+    res['Expires']       = Time.now - 100**4
+  end
+
+  def do_GET(req, res)
+    super
+    prevent_caching(res)
+  end
+end
+
+server = WEBrick::HTTPServer.new :Port =&gt; 8989
+
+server.mount '/', NonCachingFileHandler , Dir.pwd
+trap('INT') { server.stop }
+server.start
+{% endhighlight %}
+
+Hope it's helpful. Do you know of a better way of doing it? Feel free to share...
+</content></entry><entry><title>Kanogo: vapourware to beta in 24 hours</title><category term='code'/><category term='products'/><category term='business'/><category term='kano analysis'/><category term='rails'/><category term='heroku'/><category term='ruby'/><category term='kanogo'/><link href='http://chrismdp.com/2011/09/kanogo-vapourware-to-beta-in-24-hours'/><updated>2011-09-12T11:30:37+01:00</updated><id>http://chrismdp.com/2011/09/kanogo-vapourware-to-beta-in-24-hours</id><content type='html'>&lt;div class='notice'&gt;
+  &lt;h2&gt;TL;DR&lt;/h2&gt;
+
+  &lt;p&gt;Last week I built the first beta of a new web product called &lt;a href=&quot;http://kanogo.com&quot;&gt;Kanogo&lt;/a&gt;. It’s designed to gather feedback and perform &lt;a href=&quot;http://en.wikipedia.org/wiki/Kano_model&quot;&gt;Kano analysis&lt;/a&gt; to determine which direction you should take with your website.&lt;/p&gt;
+
+  &lt;p&gt;Here's an example, designed specifically for this blog. Thanks for your feedback!&lt;/p&gt;
+
+  &lt;iframe allowtransparency='true' frameborder='0' scrolling='no' src='http://kanogo.com/surveys/13/embed?' style='width: 100%; height: 120px'&gt;
+  &lt;/iframe&gt;
+
+  &lt;p&gt;Sign up for the beta &lt;a href='http://kanogo.com'&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;/div&gt;
+
+## The backstory
+
+A while back I agonising over which should be the next greatest feature for one of my products. I thought the best thing to do would be to conduct some Kano analysis on the product in question, and realised there wasn't an easy way of doing this. I've used [kanosurvey.com](http://kanosurvey.com) in the past, but it didn't really feel like the right tool. How was I to get users to answer my survey?
+
+&quot;Wouldn't it be great,&quot; I thought, &quot;if I could embed a little survey box on the site that asked customers what they thought and provided me with Kano analysis stats?&quot; The concept behind [Kanogo](http://kanogo.com) was born.
+
+Fast forward several months to last week. I found myself with a few days spare and decided that the best use of them would be to build a beta of this product. Always up for a challenge, I decided to give myself 24 hours to build and launch.
+
+That's not very long, so I had to hustle.
+
+## Timeline
+
+*7 Sep: 12:10am:* [I announced my intentions](https://twitter.com/#!/chrismdp/status/111214768651636736), mostly to motivate myself through fear of failing in public. I finally decided on a name, and registered the domain and the twitter account. I announced the product [to the world](https://twitter.com/#!/chrismdp/status/111240345341263872) (well, a [subset](https://twitter.com/#!/chrismdp/followers)).
+
+*7 Sep: 01:55am:* Got a new Rails 3.1 app running on Heroku cedar. It's a one page app using a Campaign Monitor signup form. Got my first beta signup. Finished for the night.
+
+*7 Sep: 07:40am:* Announced Kanogo again, just in case anyone had been sleeping at 2am :) Got another 3 beta signups and a bunch of feedback on spelling errors.
+
+*7 Sep: 10:13am:* Simple twitter sign in done using [Omniauth](https://github.com/intridea/omniauth) and this really useful [tutorial](https://github.com/RailsApps/rails3-mongoid-omniauth/wiki/Tutorial).
+
+*7 Sep: 02:45pm:* The USA woke up and I got more beta signups: now up to 5. Got the basic data entry for surveys and features done. Started work on the embed. Was feeling fairly pessimistic about a beta launch for that night, but didn't want to let myself down.
+
+*7 Sep: 05:53pm:* Embed done, quicker than expected. Took a break. Now feeling [cautiously optimistic](https://twitter.com/#!/chrismdp/status/111482135218626560).
+
+*7 Sep: 09:12pm:* Basic response mechanism in: now needed to apply the Kano analysis magic! Adrenalin took over from caffiene as primary stimulant.
+
+*7 Sep: 11:20pm:* Turned on twitter sign in as basic method of getting registered on the site. Removed redundant Campaign Monitor signup: emailed subscribers manually to ask them to sign in via twitter. Beta [went live!](https://twitter.com/#!/kanogoapp/status/111564545708929024)
+
+## The result
+
+![Embed](/files/kanogo-1.png)
+
+![Results](/files/kanogo-2.png)
+
+After 24 hours, I had a beta running, which worked. Granted, it wasn't great, but it was something that had some value.
+
+I spent the rest of the evening and following morning promoting the beta on mailing lists and on twitter. By the end of the following day I had 30 or so beta signups.
+
+It's already adding value to beta users. Two sites using the beta already on their own products. One beta user has now decied to implement a feature as he's realised his customers consider it a &quot;must have&quot;. There's no substitute for real feedback.
+
+## Learnings
+
+Some of the things I've learned so far:
+
+* *Cloud tools are the business.* It was so easy to register the domain with [dnsimple.com](http://dnsimple.com), start up a [twitter account](http://twitter.com/kanagoapp) for marketing and customer interaction, deploy to [Heroku](http://heroku.com), get initial beta signups with [Campaign Monitor](http://campaignmonitor.com).
+
+* *Modern development tools rock.* I used Rails 3.1 for this app, which worked beautifully, and I love the use of sprockets to help manage the asset pipeline. Running the app on Heroku cedar went without a hitch. I used twitter for authentication, and it only took an hour to set up.
+
+* *There is no &quot;quick and dirty&quot;.* The app is (almost) fully tested: I confess I left a couple of methods only covered by end-to-end tests (which doesn't really count). I definitely proved that the only way to go fast is to go clean: [Jason was right](http://agileage.blogspot.com/2011/07/slow-and-dirty-rant-by-jason-gorman-at.html) that there is no &quot;quick and dirty&quot; only &quot;slow and dirty&quot;. This came back to bite me instantly: the code I didn't use specs for took me the longest to get working.
+
+* *Technology is the easy part.* It didn't take me long to build the site, but the trick is to build a business. After initial interest, the analytics on the site are way down as the next new thing appears on the internet and people move on. To gain traction I need to build the app my beta users actually want. Thankfully, quick feedback is what Kanogo does, so we're eating our own dogfood and asking our users what they think at every turn. This is already directing which features I work on next, which has to be the most efficient way of moving forward, right?
+
+## What's next?
+
+I plan to continue working on this, listening to beta user feedback, refining the features, and accepting new beta signup for the moment. I hope to turn this into a paid product at some point, as I think there's a huge amount of value here to websites if I can get the messaging right.
+
+## Can I get involved?
+
+Sure! It's not too late to join the beta: you can [do so here](http://kanogo.com). I'd love your feedback on the product. It can give you value anywhere you have users of a website, even on a blog as shown above.
+</content></entry><entry><title>Pin in the map: customisable pin icons</title><category term='code'/><category term='cucumber'/><category term='ruby'/><category term='legacy'/><category term='products'/><category term='pininthemap'/><link href='http://chrismdp.com/2011/09/pininthemap-customisable-pin-icons'/><updated>2011-09-06T21:18:13+01:00</updated><id>http://chrismdp.com/2011/09/pininthemap-customisable-pin-icons</id><content type='html'>I've just spent some time updating my first ever Rails project, [Pin in the map](http://pininthemap.com). Now you can change the icons associated with premium (paid for) pins. There are over 100 new icons to choose from: [have fun!](http://pininthemap.com)
+
+![pininthemap example](/files/pininthemap-example.png)
+
+## Learnings
+
+This codebase is from 2006, so this has proved a nice little exercise in adding testing to a legacy project. I had no tests at all to speak of when I wrote the code five years ago, and the code shows it. I began by installing cucumber and rspec and quickly wrapping the two most common features in acceptance tests: creating and editing pins. Even on old code it was super easy to get capybara, cucumber and rspec up and running, thanks to the fact that we've upgraded the codebase to Rails 2 and started using bundler to manage gem dependencies. We stuck to Selenium for the tests as the code is very Google Maps heavy.
+
+It's always worth keeping old apps vaguely up to date: the less inertia surrounding a codebase the more likely you'll spend an afternoon adding an often-requested feature.
+</content></entry><entry><title>How to get Spork working NOW on Rails 3, Rspec 2 and Cucumber</title><category term='rails'/><category term='ruby'/><category term='rspec'/><category term='spork'/><category term='cucumber'/><link href='http://chrismdp.com/2010/11/getting-spork-working-now-on-rails-3-rspec-2-and-cucumber'/><updated>2010-11-16T21:41:57+00:00</updated><id>http://chrismdp.com/2010/11/getting-spork-working-now-on-rails-3-rspec-2-and-cucumber</id><content type='html'>I've spent the evening trying to get [Spork](https://github.com/timcharper/spork) to work with Rails 3 and RSpec 2. I've never felt the need for it before, but the Rails 3 start up time is fairly hefty and I'm crying out for the extra seconds more than ever.
+
+It's not that tricky, thankfully, and the following steps should see you running faster specs and features in no time.
+
+## RSpec 2
+
+Follow these instructions to get RSpec 2 working:
+
+*Install Spork into your Gemfile, and update rspec to 2.1:*
+
+{% highlight ruby %}
+gem &quot;spork&quot;, :git =&gt; &quot;git://github.com/chrismdp/spork.git&quot;
+gem &quot;rspec-rails&quot;, '&gt;= 2.1.0'
+{% endhighlight %}
+
+You'll need [my fork of Spork](http://github.com/chrismdp/spork) for a quick patch to the latest release candidate of Spork.
+
+*Add `--drb` on a new line in your .rspec file:*
+
+If you don't have the .rspec file, create it.
+
+*Modify your spec_helper.rb:*
+
+You could follow the installation instructions, but not everything is relevant to Rails 3 and Rspec 2. It's pretty simple anyway: add &quot;require 'spork'&quot; to the top of your spec_helper.rb file, and put everything else inside spec_helper.rb inside a Spork.pre_fork do ... end block:
+
+{% highlight ruby %}
+require 'spork'
+
+Spork.prefork do
+  ENV[&quot;RAILS_ENV&quot;] ||= 'test'
+  require File.expand_path(&quot;../../config/environment&quot;, __FILE__)
+  require 'rspec/rails'
+  ...
+end
+{% endhighlight %}
+
+That should be it. To start up the server, run:
+
+{% highlight bash %}
+$ bundle exec spork
+{% endhighlight %}
+
+...and then try running a spec or two. The following command takes about a second on my machine now, whereas it used to take about ten seconds!
+
+{% highlight bash %}
+$ bundle exec rspec spec/controllers/sessions_controller_spec.rb
+{% endhighlight %}
+
+## Cucumber
+
+It's important to note that for more than about 10-20 scenarios, Spork is *slower* than running cucumber normally. Therefore only turn it on for a few profiles, such as autotest (but not autotest-all), wip, etc.
+
+*Modify your cucumber.yml file:*
+
+{% highlight yaml %}
+wip: --drb -tags @wip:3 --wip features
+autotest: --drb --color --format progress --strict
+{% endhighlight %}
+
+Leave 'autotest-all' and 'default' alone.
+
+*Modify your features/support/env.rb:*
+
+This is just the same process as with the spec_helper.rb file for RSpec:
+
+{% highlight ruby %}
+require 'spork'
+
+Spork.prefork do
+  ENV[&quot;RAILS_ENV&quot;] ||= &quot;test&quot;
+  require File.expand_path(File.dirname(__FILE__) + '/../../config/environment')
+  require 'cucumber/formatter/unicode' # Remove this line if you don't want Cucumber Unicode support
+  require 'cucumber/rails/rspec'
+  ...
+end
+{% endhighlight %}
+
+Again, that should be it. Run the follow to try it out:
+
+{% highlight bash %}
+$ bundle exec spork cucumber
+{% endhighlight %}
+
+Now try running a single feature in rerun or autotest mode. I'm getting 20% speedups for about 10 scenarios.
+
+## Using them together
+
+The RSpec and Cucumber versions of spork use different ports, so there's no problem running them together. Normally I run both in the same terminal window, one as a background process:
+
+{% highlight bash %}
+$ bundle exec spork cucumber &amp; bundle exec spork
+{% endhighlight %}
+
+Then I run autotest in another window.
+
+## How do I use this?
+
+I'm really liking this setup. It makes rapid TDD possible again, even when dealing with fairly slow tests. 
+
+Of course, we should be doing all we can to get the speed of our tests as high as possible: slow tests are a type of code smell. However, infrastructure load time is unavoidable and cutting it out is full of all kinds of win.
+
+Use this setup with [autotest](https://github.com/grosser/autotest) and [autotest-growl](https://github.com/svoop/autotest-growl) for maximum win. Autotest has come a long way recently: there's a lightweight alternative to ZenTest now, and easy growl support. Cutting out even the 'Oh, I should run my tests now step' totally nails your debug cycle: not sure it gets much tighter than that.
+
+## UPDATE: Even more speed!
+
+[Jo Liss](http://opinionatedprogrammer.com/) got in touch: she's made some performance gains by skipping the &quot;bundle exec&quot; and requiring a few extra files in the prefork block. Read about what she has to say [here](http://opinionatedprogrammer.com/2011/02/profiling-spork-for-faster-start-up-time/).
+</content></entry><entry><title>How I'm writing my book using Vim, Git and Ruby</title><category term='git'/><category term='ruby'/><category term='writing'/><category term='pragprowrimo'/><link href='http://chrismdp.com/2010/11/how-im-writing-my-book-using-git-and-ruby'/><updated>2010-11-02T15:35:27+00:00</updated><id>http://chrismdp.com/2010/11/how-im-writing-my-book-using-git-and-ruby</id><content type='html'>I'm taking another shot at [PragProWriMo](http://forums.pragprog.com/forums/190) this year. For those who don't know, PragProWriMo is the Pragmatic Programmer's counterpart to [NaNoWriMo](http://www.nanowrimo.org/), which encourages participants to write a novel in a month, or at least make a good start. Last year, I got about 2,000 words into an interesting idea relating to the concept of quality, and I'm going to take that further this month.
+
+Like any self-respecting geek trying to write a book, I've wasted a bunch of writing time trying to find the optimal workflow for the project. I tried [the new version of Scrivener](http://www.literatureandlatte.com/scrivener.php), and while it is feature rich and powerful, I found I was missing my programmer tools far too much. I've now settled on quite a nice workflow using 750words, Vim and Git, and I thought I'd take a few minutes to pen it for posterity.
+
+## Step 1: Fling thoughts, ideas, and concepts into [750words](http://750words.com)
+
+I love 750words and have written about my use of the site [previously](/2010/07/seven-hundred-and-fifty-words/). It's a great capture tool for random thoughts, words and feelings. I find it really helpful not to constrain my writing with too much structure to start with. It's a clean slate every day to write down what's inspiring me that particular day. I can also write these words from anywhere: on my phone as the moment strikes, on the iPad, whatever.
+
+I try and get several hundred words done early in the morning: there's evidence that [your brain works better first thing in the morning](http://ezinearticles.com/?Alpha-Brain-Waves---How-to-Relax-Deeply&amp;id=1905868). Whether or not this is true is debatable, but I know I'm certainly more aware of deeper thoughts and ideas first thing, and there are some fairly deep concepts in the book.
+
+Using 750words also ensures that I write enough during any particular day. I know that if I write that many words, then at least some of the content is going to be interesting enough for the next step.
+
+## Step 2: Organise my thoughts using Vim
+
+I copy and paste the best and most interesting snippets from 750words into [Vim](http://vim.org). Vim is a fantastic editor for editing text. In full screen mode it's distraction free, the modal editing mean that I can move whole sentences around very easily without ever reaching for the mouse. I try to keep each file fairly short and express different thoughts and sections in different files. I'm using [maruku](http://maruku.rubyforge.org/maruku.html) (thanks to [@glv](http://twitter.com/glv)) to tag each text file with tags, such as 'first-draft', 'revised-draft', 'todo', and so on. My hope is that this will become useful later on when I start to pull things together.
+
+These files are checked into [Git](http://git-scm.com) and I've put the repository on my [Dropbox](http://dropbox.com) folder so it's backed up. So far, so good.
+
+## Step 3: Structure the content
+
+I've started on a super simple Ruby DSL for organising the content into a real book:
+
+{% highlight ruby %}
+book &quot;Title&quot; do
+  part &quot;Introduction&quot; do
+    section &quot;Section Title&quot;, &quot;documents/intro.md&quot;
+    section &quot;How to read this book&quot;, &quot;document/how_to_read_this_book.md&quot;
+  end
+
+  chapter &quot;The first chapter&quot; do
+    section &quot;Section Title&quot;, &quot;documents/intro_to_chapter_one.md&quot;
+  end
+end
+{% endhighlight %}
+
+This DSL currently has no code behind it, but it feels like it makes sense. It's easy to read and modify, and to swap sections of the book around as my thoughts take shape.
+
+## Step 4: The future
+
+That's enough workflow for now. In the future I want to write a gem that you can use in the following way:
+
+{% highlight bash %}
+# Open a random document tagged with draft in Vim
+$ book revise
+
+# Export the book to PDF (or epub, etc)
+$ book compile
+
+# Check how many pages/words are currently present in the final structure.
+# Perhaps even draw some graps and put together nifty stats from git...
+$ book stats
+
+# Check in everything to git for the day and write a comment
+$ book commit &lt;comment&gt;
+{% endhighlight %}
+
+I know if I blog for too much longer I'm going to fall into the [Rimmer Trap](http://en.wikipedia.org/wiki/Arnold_Rimmer#Life_on_board_Red_Dwarf), so back to the book :)
+
+Let me know if this is helpful, or if you plan to use a similar Ruby DSL: perhaps we can work together on the creation of it.
+
+Good luck to all my fellow PragProWriMo writers!
+
+*UPDATE:* Wow, what a lot of interest! There's now a repository for this gem [here](http://github.com/chrismdp/book) and an active community of developers already! Let me know if you want to be involved with coding it, and I'll keep this blog up to date with progress.
+
+</content></entry></feed>

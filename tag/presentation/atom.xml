@@ -1,0 +1,27 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Chris Parsons: posts tagged presentation</title>
+
+  <link href="http://chrismdp.com/"/>
+  <updated>2011-05-26T21:35:40+01:00</updated>
+  <id>http://chrismdp.com/tag/presentation</id>
+  <author>
+    <name>Chris Parsons</name>
+    <email>chrismdp@gmail.com</email>
+  </author>
+<entry><title>Lean code: slides and feedback</title><category term='code'/><category term='lean'/><category term='presentation'/><category term='software craftsmanship'/><category term='sc2011'/><link href='http://chrismdp.com/2011/05/lean-code-slides-and-feedback'/><updated>2011-05-26T21:35:40+01:00</updated><id>http://chrismdp.com/2011/05/lean-code-slides-and-feedback</id><content type='html'>I facilitated a workshop at [SC2011](http://lanyrd.com/2011/software-craftsmanship/) today about how code might be thought of as Lean. The idea was to start a coding project and cope with shifting requirements to identify what happens when we deliver as fast as we can, whether testing is worth it, and what waste actually means.
+
+If you were there, please do [rate the talk](http://speakerrate.com/talks/7643-lean-code) so I can improve!
+
+A number of people expressed an interest in trying the exercise, so here are the slides if you're interested in trying it at home.
+
+&lt;object id=&quot;__sse8116737&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=lean-code-110526153405-phpapp02&amp;amp;stripped_title=lean-code&amp;amp;userName=chrismdp&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;/&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot;/&gt;&lt;embed name=&quot;__sse8116737&quot; src=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=lean-code-110526153405-phpapp02&amp;amp;stripped_title=lean-code&amp;amp;userName=chrismdp&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;/embed&gt;&lt;/object&gt;
+
+The session details are also [on Lanyrd](http://lanyrd.com/2011/software-craftsmanship/sfkgw/).
+
+Let me know how you get on, and if you need any help!
+</content></entry></feed>

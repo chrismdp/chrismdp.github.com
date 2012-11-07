@@ -1,0 +1,113 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Chris Parsons: posts tagged pairing</title>
+
+  <link href="http://chrismdp.com/"/>
+  <updated>2012-09-14T14:06:40+01:00</updated>
+  <id>http://chrismdp.com/tag/pairing</id>
+  <author>
+    <name>Chris Parsons</name>
+    <email>chrismdp@gmail.com</email>
+  </author>
+<entry><title>Task assignment is a team anti-pattern</title><category term='process'/><category term='productivity'/><category term='pairing'/><category term='team'/><category term='anti-pattern'/><link href='http://chrismdp.com/2012/09/task-assignment-is-a-team-anti-pattern'/><updated>2012-09-14T14:06:40+01:00</updated><id>http://chrismdp.com/2012/09/task-assignment-is-a-team-anti-pattern</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;The way a team plays as a whole determines its success. You may have the greatest bunch of individual stars in the world, but if they don't play together, the club won't be worth a dime.&quot;&lt;/i&gt;&lt;/p&gt;
+
+-- [Babe Ruth](http://en.wikipedia.org/wiki/Babe_Ruth)
+
+Assigning tasks to individuals might feel like the most natural thing in the world, but in reality, when you are trying to create a highly functioning [team](/tag/team), it might be doing more harm than good. This is true even when tasks are self-assigned by team members, and certainly true when tasks are imposed upon individuals by managers. Here's why.
+
+Having one individual responsible for a task *takes responsibility away from the team* and instead focuses on the individual. This can be damaging in a number of ways, not least that the individual is under more pressure to deliver. Short termist management might think this encourages productivity, but the internal pressure this generates can be a short cut to burnout.  The focus needs to be on collective responsibility: it's the responsibility of the &lt;i&gt;team&lt;/i&gt; to release something, not the responsibility of the individual.
+
+*This issue is compounded if the team's work in progress limit is too high.* If there are nine team members, and nine things currently in progress, then in the best case each person will have nine things to do, and in the worst case one person will have all nine things to do and the other eight people will be sitting around waiting for them to finish, putting enormous pressure on those who are the bottleneck. The more items of work that are currently in progress, the more than a focus on assignment will bite you.
+
+Assignment *promotes a command and control attitude.* Sometimes, each member of a &quot;team&quot; is actually being managed individually and has their own stream of work. This can produce output in certain cases, but the individuals being managed are not a team: they're a collection of individuals who might happen to sit together.
+
+Individual assignment can *create silos of information.* If one person is responsible for a task, and everyone has their own tasks or types of work, then it's harder to work as a team: the knowledge is held only with a few people, rather than across everyone. [Pairing](/tag/pairing) dramatically helps break these silos down.
+
+Assignment can also give rise to the *hero anti-pattern:* where a few people are responsibility for the success of the entire team, and they end up pulling an all-nighter just to get the release out the door. The hero culture might seem appealing to short-sighted managers, but when eventually the hero inevitably fails to deliver, hero culture quickly turns to *blame culture.*
+
+## How to shift this culture?
+
+* *Reduce your team's work in progress limit.* Insist they don't start anything else until the team finishes what's in progress, and that they go to pair with those who are still working on tasks, even if it's [not their normal discipline](/2010/01/pairing-works-for-everything).
+
+* *Stop giving people things to do.* At the very least, ensure that the team are choosing their own tasks from a list rather than being managed individually.
+
+* *Stop tracking assignment.* Don't record on the task who is working on it. Simply track what's being worked on by talking about it each standup meeting.
+
+* *Avoid the trap of buck-passing.* If you're not careful, giving a weaker team collective responsibility means that they pass the buck. The thinking goes: &lt;i&gt;&quot;if I'm not individually responsible then I'm not responsible at all.&quot;&lt;/i&gt; The antidote is *team accountability:* [praise the entire team for their successes](/2011/04/the-team-is-the-atomic-unit) and ensure they all investigate the reasons for failure together. This includes the product owner and the user experience people - they are all part of the team.
+
+Does task assignment cause problems for you? What silos could be broken down by having more of a team assignment focus?
+</content></entry><entry><title>Pomodoros help you refactor</title><category term='code'/><category term='pomodoros'/><category term='tdd'/><category term='craftsmanship'/><category term='pairing'/><link href='http://chrismdp.com/2011/04/pomodoros-help-you-refactor'/><updated>2011-04-01T20:21:15+01:00</updated><id>http://chrismdp.com/2011/04/pomodoros-help-you-refactor</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;If you finish a task while the Pomodoro is still ticking, the following rule applies: If a Pomodoro Begins, It Has to Ring. It’s a good idea to take advantage of the opportunity for overlearning, using the remaining portion of the Pomodoro to review or repeat what you’ve done, make small improvements, and note down what you’ve learned until the Pomodoro rings.&quot;&lt;/i&gt;&lt;/p&gt;
+
+-- Francesco Cirillo, [The Pomodoro Technique](http://www.pomodorotechnique.com/)
+
+What's the single most important part of Test Driven Development not to miss? Refactoring. What's the part of TDD that's most often missed? Refactoring.
+
+With refactoring, we work our way toward a great design, clean code, and flexible organic tests. Without refactoring, we have ugly brittle test suites and uglier code. We know this. What I don't always do is take advantage of the moments I have when I can effectively refactor for free.
+
+At the end of a task, when the build is running, I've previously let my mind wander to the next thing, or check email, surf the net, and generally [get out of the zone](http://www.computus.org/journal/?p=982). This bad habit has been highlighted to me in [my use of the pomodoro technique recently](/2011/03/pomodoros-done-hopefully-right).
+
+I was doing the same for the shorter pauses during normal TDD. My pomodoros statistics were telling me that I'm very bad at concentrating whilst coding: the average time spent before I let my mind wander was 11.67 minutes. I was allowing my mind to drift whilst Rails started up to run whatever test I was working on. Not good.
+
+## Time to improve
+
+This week, I've been trying to take the time to look at my code critically for areas of improvement. A pomodoro is indivisible, which means I'm not _allowed_ to think about anything else.
+
+And guess what? I always find something to improve, and I feel that little bit better about my code.
+
+The also helps with the thing I've missed most about not pairing: that other person's critical eye on what you're doing, always thinking about the code being written. During the natural pauses, you can be that other person and ensure the code you write is great. Being two people is [more fun, too](http://www.pixar.com/shorts/gg/index.html).
+</content></entry><entry><title>Every Ash Cloud Has A Silver Lining</title><category term='travel'/><category term='chicago'/><category term='pairing'/><category term='code'/><category term='ashcloud'/><link href='http://chrismdp.com/2010/05/every-ash-cloud-has-a-silver-lining'/><updated>2010-05-12T15:05:00+01:00</updated><id>http://chrismdp.com/2010/05/every-ash-cloud-has-a-silver-lining</id><content type='html'>&lt;i&gt;Enrique and I recently became victims of the ash cloud, and spent rather longer in the US than we anticipated...&lt;/i&gt;
+
+I spent a weekend in Chicago last month chatting to some other exceptional companies about the way we all do business. I learnt a huge amount about Eden and how we want to make it better in the future. We were due to leave on Sunday night, but unfortunately the ash cloud had other ideas, and we were stuck in Chicago for a further five days. It wasn't much fun to be stranded, but when you're stuck somewhere, you might as well make the most of it...
+
+Whilst on my extended trip, I got to hang out at [8th Light](http://8thlight.com) and [Obtiva](http://obtiva.com), at the latter for several days. Thanks especially to Obtiva for hosting us for much of the week! Over the ten days I paired with [Micah Martin](http://twitter.com/slagyr), [Dave Hoover](http://twitter.com/redsquirrel), [Chad Prye](http://twitter.com/chadwpry), [Doug Bradbury](http://twitter.com/dougbradbury) and [Eric Smith](http://twitter.com/paytonrules). I hacked on RSpec2 briefly with [David Chelimsky](http://twitter.com/dchelimsky). I went to visit the new offices at Hashrocket Chicago. I spent several days sharing a little suite of rooms at our hotel with [Gustin](http://twitter.com/gustin) and [Enrique](http://twitter.com/ecomba), hacking on [edash](http://github.com/edendevelopment/edash). I wandered about the city, mostly looking up a lot. 
+
+In the evenings, I got to meet and have dinner with [Corey Haines](http://twitter.com/coreyhaines)' lovely girlfriend Sarah, to hang out with Chad and Joe from Obtiva at a [fascinating restaurant](http://www.avecrestaurant.com/), and ate at a [vegan place](http://www.karynsongreen.com/) - not normally on my radar, but it was an experience!
+
+These were some of the many highlights of a five day trip that turned into a ten day experience. Of course I'd have preferred that I wasn't delayed, but when life gives you lemons... you pair :)
+</content></entry><entry><title>Five things I learnt from Corey Haines</title><category term='craftsmanship'/><category term='pairing'/><category term='code'/><link href='http://chrismdp.com/2010/03/pairing-with-corey-haines'/><updated>2010-03-17T10:18:00+00:00</updated><id>http://chrismdp.com/2010/03/pairing-with-corey-haines</id><content type='html'>Recently I attended [QCon](http://qconlondon.com) and got a chance on the last day to pair with [Corey Haines](http://coreyhaines.com). We worked on a new rails project we're building with a few friends (that's the subject of another post). We'd spent a fair amount of time hanging out, but I hadn't had a chance to sit down and actually code with him. We paired for a couple of hours in the QCon expo area just as everyone was packing up.
+
+Here are a few lessons and some things I picked up.
+
+*REALLY learn vim.* Watching Corey fire around [vim](http://vim.org) was something else: my brain could barely keep up with where the cursor was sometimes. Sometimes it felt like he'd just moved the cursor to where he wanted it to be through Sheer Power of Thought. I'm no slouch in vim, but was impressed by just how much faster I'll be able to go someday, as I continue to practice.
+
+*resource_controller. formtastic. That is all.* These gems take out the legwork of building a thin restful resource-based rails app. You end up with a lot of tests and very little code to worry about. As webapps become more about [javascript and the front-end](/2009/12/rip-web-1-0/), rails apps are becoming thinner and thinner, and these gems make them really fast to write.
+
+*Alias everything.* Corey has a few really useful little bash tricks, like:
+
+{% highlight bash %}
+alias c='script/console'
+alias r='rake routes | grep'
+{% endhighlight %}
+
+..and some others I didn't catch. They save so much time and are so obvious that later I found myself banging 'c' into a console and wondering why it doesn't work. 
+
+The summary of these lessons is another more general one:
+
+*Work to remove whatever constrains you from getting the computer to do what you want.* We need to ensure that there is as little as possible in the way of getting stuff done. Everything else is [yak shaving](http://en.wikpedia.org/wiki/Yak_Shaving): slow typing, tool-illiteracy, whatever. Anytime we're not thinking about the problem, we're wasting time.
+
+And finally, a meta-lesson:
+
+*Extend your pairing gene pool.* It's amazing how much you learn when you pair with someone outside your immediate sphere. Rather like when I first paired with [Enrique](http://blog.nexwerk.com), I learnt about stuff I would never have heard of otherwise. 
+
+I spent two hours working with Corey and it was a pleasure. Sadly we live a few thousand miles apart, but I'm looking forward to remote pairing sessions in the future.
+</content></entry><entry><title>Pairing works for everything</title><category term='pairing'/><category term='xp'/><category term='agile'/><category term='productivity'/><link href='http://chrismdp.com/2010/01/pairing-works-for-everything'/><updated>2010-01-27T11:28:00+00:00</updated><id>http://chrismdp.com/2010/01/pairing-works-for-everything</id><content type='html'>We've all heard much discussion and general chatter about the value of pair programming. Amongst other benefits, it focuses the mind, speeds knowledge transfer, and builds in code review.
+
+What's not talked about so often is the value of pairing on non-coding tasks. Does it add the same level of value? Many of us would naturally pair up on demanding tasks, when we are doing things that require the input of several people, or when we're unsure about how to proceed. What happens if we make it an explicit part of our day to day work? What benefits would we see?
+
+I've been trying where possible to pair explicitly on tasks at Eden in the last few weeks and to encourage others to do the same. We've found the following so far:
+
+*Pairing works on UX and Design.* [Spencer](http://twitter.com/spencerturner) is currently teaching User Experience (UX) and Design skills to a number of people internally. Pairing on UX and design work really helps people to pick up skills in a particular tool such as Photoshop, but also drives discussion about design and flow which wouldn't normally have arisen. We've found the result to be better output, and an increased confidence in the person who's less experienced.
+
+*Pairing works on Sales and Business Development.* Last week I paired up with [Richard](http://twitter.com/disciplex), one of the guys I'm mentoring at the moment, to send some sales emails to three or four potential clients. One of these was to a potential new customer who I knew was interested in speaking to us, but whom I'd not emailled before. In explaining my reasoning for the words I was writing, he was able to learn about how to structure emails such as this, and I got valuable insight into how I should approach the task from someone with a different point of view.
+
+*Pairing even works on VAT returns!* When you're doing necessary and repetitive tasks such as the preparing the quarterly VAT return, it really helps to have someone beside you spurring you on. Last month I had to prepare one of these returns, and half-jokingly asked whether anyone was interested in helping me out. Thankfully, [Elliot](http://twitter.com/elliotcm) stepped up to the challenge. He started learning which expenses fall into the four or five VAT categories that exist, and how to prepare and submit a return online. Just by explaining the vagaries of EU, exempt, zero-rated, and outside-scope expenses to someone else, the job went much quicker, all the figures were double-checked, and it was simply much more fun.
+
+Clearly pairing isn't going to work all the time. People often need space from others to think, to avoid distraction, and to recharge. Rather than being dogmatic, what I'm asking is this: at the moment non-pairing in our work is the default, and pairing is the exception. What if this was reversed? What difference would this make to our teams?
+
+Next time you approach a non-coding task at work, perhaps have a think about whether a pair would be beneficial, or what someone might learn through working with you. I could well be wrong, but I've yet to find a task where pairing doesn't add some benefit. Can anyone think of one?
+
+</content></entry></feed>

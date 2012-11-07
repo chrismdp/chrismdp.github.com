@@ -1,0 +1,47 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Chris Parsons: posts tagged DIY Planner</title>
+
+  <link href="http://chrismdp.com/"/>
+  <updated>2006-10-24T01:00:00+01:00</updated>
+  <id>http://chrismdp.com/tag/DIY Planner</id>
+  <author>
+    <name>Chris Parsons</name>
+    <email>chrismdp@gmail.com</email>
+  </author>
+<entry><title>SVG Planner</title><category term='svg'/><category term='DIY Planner'/><category term='GTD'/><category term='productivity'/><link href='http://chrismdp.com/2006/10/svg-planner'/><updated>2006-10-24T01:00:00+01:00</updated><id>http://chrismdp.com/2006/10/svg-planner</id><content type='html'>&lt;div class='notice'&gt;&lt;h1&gt;By the way...&lt;/h1&gt;&lt;p&gt;This content is now pretty old: check &lt;a href='/'&gt;the homepage&lt;/a&gt; for the latest.&lt;/p&gt;&lt;/div&gt;
+
+Welcome to SVG Planner - D\*I\*Y Planner style 3x5 Index Cards implemented in SVG.
+
+Download
+--------
+
+* [Day Keeper](/files/daykeeper.png) ([Source](/files/daykeeper.svg))
+* [Week Plan](/files/week.png) ([Source](/files/week.svg))
+* [Next Actions (with notes)](/files/next_actions.png) ([Source](/files/next_actions.svg))
+* [Next Actions (without notes)](/files/next_actions_nonotes.png) ([Source](/files/next_actions_nonotes.svg))
+* [Checklist (with notes)](/files/checklist.png) ([Source](/files/checklist.svg))
+
+Why do this?
+------------
+
+I used to print out the Day Keeper from [D\*I\*Y Planner](http://www.douglasjohnston.net/weblog/archives/2005/03/28/diyplanner2/) for my [Hipster PDA](http://www.hipsterpda.com) every day, and fill it in by hand. I was also alternating between printing the cal-tex output of the Emacs Diary and trying to shoehorn that onto the cards, and filling in the Weekly Planners from D\*I\*Y planner.
+
+A few things bothered me about these approaches:
+
+* D\*I\*Y Planner cards aren't formatted in the right shape for an index card, so it always came out a little small when zoomed to fit on an index card (Update: Doug's now fixed this with his excellent [Hipster PDA version](http://www.douglasjohnston.net/templates/hipsterpda.html))
+* The pre-printed dates weren't enough for my (very) long day.
+* The resolution and contrast wasn't always correct for my laser printer.
+
+So I've created an alternative in SVG. There are a few tweaks, mostly thanks to the increased length a portrait index card gives you - the Day Keeper has a longer day, and the Week Plan has space for more entries
+The nice thing about doing it in SVG is that anyone with a copy of [Batik](http://xml.apache.org/batik/) can easily roll out PNGs for whatever resolution their printer supports, and it's very easy to edit and tweak for your own use. Feel free to do so; please send any useful mods so I can roll the best ones into this version
+If you want to ask questions or comment on any of this, feel free to &lt;a href='mailto:info@edendevelopment.co.uk'&gt;email me&lt;/a&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.douglasjohnston.net/weblog/archives/2005/03/28/diyplanner2/&quot;&gt;&lt;img src=&quot;http://www.douglasjohnston.net/templates/logos/logo_web_tiny.gif&quot; border=&quot;0&quot;/&gt;&lt;/a&gt;&lt;/p&gt;
+
+This product is a &lt;strong&gt;licensed derivative&lt;/strong&gt; of the official [D\*I\*Y Planner](http://www.douglasjohnston.net/templates/), and is so governed by the terms of the  original [Creative Commons Non-Commercial No-Derivatives license](http://www.creativecommons.org/licenses/by-nc-nd/2.0/) as owned and stipulated by Douglas Johnston of [a million monkeys typing](http://www.douglasjohnston.net/weblog/). It is therefore free to download and print for individual use, but not for any sort of enterprise or commercial printing, unless explicit permission is obtained from the copyright holder. Individual use within an enterprise is permitted, as this clause is waived.
+</content></entry></feed>

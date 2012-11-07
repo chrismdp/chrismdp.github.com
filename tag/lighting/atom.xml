@@ -1,0 +1,51 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Chris Parsons: posts tagged lighting</title>
+
+  <link href="http://chrismdp.com/"/>
+  <updated>2012-02-14T22:56:43+00:00</updated>
+  <id>http://chrismdp.com/tag/lighting</id>
+  <author>
+    <name>Chris Parsons</name>
+    <email>chrismdp@gmail.com</email>
+  </author>
+<entry><title>Sol Trader: on lighting</title><category term='products'/><category term='c++'/><category term='code'/><category term='opengl'/><category term='sol trader'/><category term='game development'/><category term='lighting'/><link href='http://chrismdp.com/2012/02/sol-trading-lighting'/><updated>2012-02-14T22:56:43+00:00</updated><id>http://chrismdp.com/2012/02/sol-trading-lighting</id><content type='html'>A quick update on the lighting code I've been working on. Now that I have normal maps and per-pixel bump mapping working, I can turn these:
+
+![ship-texture-1](/files/sol-trader-lighting-1.png)
+![ship-texture-2](/files/sol-trader-lighting-2.png)
+
+Into this:
+
+![ship-texture-3](/files/sol-trader-lighting-3.png)
+![ship-texture-4](/files/sol-trader-lighting-4.png)
+
+Check out how the ship appears lit from each side. It looks even better as you see it moving. Hey presto: a realistic 3D effect with only two triangles rendered.
+
+All I'm using is this simple GLSL fragment shader:
+
+{% highlight c %}
+
+    void main() {
+      vec4 color = texture(baseTexture, uv);
+      vFragColor = vertColor * color;
+      float alpha = vFragColor.a;
+
+      if (alpha &gt; 0.0 &amp;&amp; useNormal) {
+        vec3 lightDirection = normalize(vec3(0.2, 0.2, 0.0));
+        vec4 normal = normalize(texture(normalTexture, uv) * 2.0 - 1.0);
+        vec4 vEyeNormal = normalMatrix * normal;
+
+        float diffuse = max(0.0, dot(vEyeNormal.xyz, lightDirection));
+        vFragColor *= (diffuse * 3);
+        vFragColor.a = alpha;
+      }
+    }
+
+{% endhighlight %}
+
+[GLSL](http://en.wikipedia.org/wiki/GLSL) is great.
+</content></entry></feed>

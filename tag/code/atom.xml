@@ -1,0 +1,1235 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Chris Parsons: posts tagged code</title>
+
+  <link href="http://chrismdp.com/"/>
+  <updated>2012-09-28T20:46:31+01:00</updated>
+  <id>http://chrismdp.com/tag/code</id>
+  <author>
+    <name>Chris Parsons</name>
+    <email>chrismdp@gmail.com</email>
+  </author>
+<entry><title>Your framework is a liability</title><category term='code'/><category term='craftsmanship'/><category term='lean'/><category term='ruby'/><category term='agile'/><category term='liability'/><category term='sinatra'/><category term='paypal'/><link href='http://chrismdp.com/2012/09/your-framework-is-a-liability'/><updated>2012-09-28T20:46:31+01:00</updated><id>http://chrismdp.com/2012/09/your-framework-is-a-liability</id><content type='html'>Your framework is a liability.
+
+Every library you import before you start the project means more for someone else to digest and understand. Each complex 'clever' library equals another few minutes per team member trying to interpret why you imported it, how to use it, and where the configuration goes. Every framework you decide to use is a early decision about how your project will fundamentally work, which might turn out to be the wrong one. Each library is an opportunity for someone else to introduce a bug into your project.
+
+*The only asset a framework or library gives you is a faster route to your feature.* Anything else will drag you down.
+
+If your framework is heavy and onerous, then your code will have a large net negative liability before you've even begun. You'll be constrained to follow a certain set of patterns, which you might end up fighting against later on. Work on the app first: your &lt;anacronym title=&quot;minimum viable product&quot;&gt;MVP&lt;/anacronym&gt; might not even need the benefits your framework provides.
+
+A few examples of where I've benefited from not blindly installing the &quot;standard stack&quot;:
+
+* I've recently started building some new projects wholly in [Sinatra](http://sinatrarb.com), pulling in various gems only when I need to, rather than starting with Rails from the outset. [Sol Trader's website](http://soltrader.net) is pure Sinatra. It was simply much quicker to get started, and I found I could layer on functionality as I needed it. Several months on, I've yet to need to turn to a Rails app.
+
+* When I came to add Paypal integration to the site, I looked at various gems, and decided they were just going to drag me down with extra configuration and hassle. I ended up building Paypal IPN integration [in about 30 lines](https://gist.github.com/2768532) using pure ruby: no libraries. Most of that code was tests.
+
+Don't get me wrong: I still use frameworks for some of my projects, and libraries for all of them, but I'm learning to stop and think before cargo culting the latest stack of 25 different libraries before I can get anything done.
+
+Import a lightweight framework or library when you need to. Consider when you might be chaining yourself to it, which might make a later pivot difficult. It's much easier to add a framework than to remove one from your project: pick the easiest thing to move away from.
+</content></entry><entry><title>Your code is a liability</title><category term='code'/><category term='craftsmanship'/><category term='lean'/><category term='agile'/><category term='team'/><category term='liability'/><link href='http://chrismdp.com/2012/09/code-is-a-liability'/><updated>2012-09-24T20:48:13+01:00</updated><id>http://chrismdp.com/2012/09/code-is-a-liability</id><content type='html'>Your code is a liability.
+
+Every line you write means more for someone else to read, digest and understand. Each complex 'clever' regular expression represents another few minutes per team member trying to interpret what you wrote and why you wrote it. Every line you add limits your project's responsiveness to change.
+
+*Only the feature that your code provides is an asset.* The more that we reduce the amount of code we write, the lighter weight and more agile our software. The easier it is to understand, the less of a intellectual drag it is on the team.
+
+There used to be a lot of talk about getting into the &quot;programmer zone&quot;: that place of heightened focus where time rushes by as if a blur, and the number of lines of output a programmer produces per hour skyrockets... except that lines per hour was never the best measure of coder output to begin with. All that coder is doing is dragging down the project faster. Let's hope they're adding useful features during that process!
+
+It's my belief that the best code is written in conversation, not in the &quot;zone.&quot; A team discussion about the architecture and the arrangement of the different concepts into the simplest and lightest code structure we can fathom will always improve on our own ideas, when we implement them in isolation at a ridiculous rate.
+
+Lightweight, lean coding like this sets our features free from the drag of the code and allows them to soar: responsive to change requests, and easily debugged as the code isn't difficult to understand.
+</content></entry><entry><title>Never leave a failing test</title><category term='tdd'/><category term='craftsmanship'/><category term='code'/><category term='testing'/><link href='http://chrismdp.com/2012/09/failing-tests-rot'/><updated>2012-09-20T15:36:32+01:00</updated><id>http://chrismdp.com/2012/09/failing-tests-rot</id><content type='html'>&lt;p&gt;Imagine this: you're taking a guided tour of a nuclear power station. Just above the door as you come in there there are five lights marked Key Safety Indicators. One of the lights is flashing red.&lt;/p&gt;
+
+&quot;What's that flashing red light?&quot; you nervously ask your host.
+
+&quot;Oh, that light does that from time to time. We're not sure why; we just ignore it.&quot;
+
+There's an awkward silence. How confident are you feeling right now?
+
+## Failing tests fester.
+
+Red tests are like code rot. Catch it early and sort them out, and you'll be fine. If you don't, they'll spread through your code like a disease, causing all sorts of damage:
+
+* *Failures cause fear of change.* If we don't understand why a test is failing, we don't understand the code base. If we don't understand our code, we can't change it safely. All bets are off: any change we make will cause us to be that little bit more anxious.
+
+* *Failures breed failures.* If one test continually fails, then other coders are more likely to tolerate failing tests, and the number of failing tests will grow quickly.
+
+* *Failures kill urgency.* There's a scene in a well-known heist movie where a team of thieves has to break into a bank. Their strategy revolves around putting a remote-controlled car under a waste bin: they use this to cause the bin to move at night, setting off all the alarm sensors. The first time the alarm goes off, the place is filled with police in a matter of seconds. The fifth time the alarm goes off, only one squad car with two bored officers turn up, totally unprepared for the waiting thieves who quickly overpower them. The same is true with tests: if they fail all the time, developers will take a cavalier attitude to checking out the cause. This could cause a really serious failure to be missed.
+
+The only point at which failing tests are valid is when you've written them just before the code you plan to add. If the test should be failing, write code to make it work. If the test shouldn't be failing, change it or delete it. Never leave it to fester.
+</content></entry><entry><title>The power of good naming</title><category term='code'/><category term='craftsmanship'/><category term='refactoring'/><link href='http://chrismdp.com/2012/09/the-power-of-good-naming'/><updated>2012-09-18T20:43:02+01:00</updated><id>http://chrismdp.com/2012/09/the-power-of-good-naming</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;There are two hard problems in computer science: Cache invaliation, naming things, and off by one errors.&quot;&lt;/i&gt;&lt;/p&gt;
+
+-- Source: [Martin Fowler](http://martinfowler.com/bliki/TwoHardThings.html)
+
+Naming things is hard. Why do we expend so much effort to get them right? Because naming programming concepts well gives us a big insight into how they fit into the system we're designing. Continually renaming things records our insights as we go: the right names for our objects, methods and variables will yield fresh insight and in turn shape the design of the system.
+
+J.B. Rainsberger [talks about](http://www.jbrains.ca/permalink/the-four-elements-of-simple-design) names of classes, methods and variables going through four stages:
+
+* *Nonsense:* For example, we might extract a method from a larger one and quickly rename it `foo()` to get the refactor done and the tests passing.
+
+* *Accurate:* We rename the nonsense method to what it actually does, such as `processPayroll()`.
+
+* *Precise:* Once we realise what the method really does, we might refine the accurate name and give it more precision, such as `loopThroughEmployeesAndPayThem()`.
+
+* *Meaningful:* At this point, we've revealed the complexity of the method, and can look to split it up into two methods: `forEachEmployee()` and perhaps a `pay()` method on a seperate interface.
+
+Some simple rules of thumb to follow when naming things:
+
+* *Don't be afraid of nonesense names.* We shouldn't shy away from the early stages of naming. If we're not sure what something is yet, give it a nonsense name. The name `foo()` is fine, as long as it's only going to last fifteen minutes. Best not to commit it though :)
+
+* *If you don't like the code you're writing, use really long names.* If in doubt as to what or where something fits, use a really (really) long name: the longer and more precise the better. I will call a variable something like `computed_unsorted_project_task_matrix` especially if I don't like it and want to refactor it at some point. This is much better than `result` (or `res` or even `r`). I reveal the complexity of the object through the name, which helps reveal complexity in the code.
+
+* *Characters are cheap, confusion is costly.* Let's not make things harder for the programmers who come after us. Remember, this is just as likely to be ourselves in a few months. Let's avoid using a name like `prj` when `project` is only four characters more typing. Anything that reduces reading friction in our code is a good thing.
+
+How often do you rename your methods, objects, and classes? How does naming help you understand your code?
+</content></entry><entry><title>Kickstart your team on BDD</title><category term='bddkickstart'/><category term='bdd'/><category term='cucumber'/><category term='code'/><category term='ruby'/><link href='http://chrismdp.com/2012/07/kickstart-your-team-on-bdd'/><updated>2012-07-27T08:13:22+01:00</updated><id>http://chrismdp.com/2012/07/kickstart-your-team-on-bdd</id><content type='html'>[Matt Wynne](http://mattwynne.net) and I have been running courses on BDD for the BBC Future Media division for the past year or two. They've been extremely well received, so we've decided to open them up to the wider public so everyone can benefit.
+
+The full details are at [bddkickstart.com](http://bddkickstart.com), but read on for a bit more info:
+
+## When/where is it?
+
+There are four seperate day-long workshops running in October, from 8th - 11th in Central London near Trafalgar Square. You can just come to one day, or all four.
+
+## What's the course material?
+
+Day 1 is entitled &quot;Just enough Ruby&quot;. It teaches programmers from other languages the basics of Ruby so that they are comfortable using cucumber effectively.
+
+Day 2 is a BDD workshop for the whole team. It builds awareness and enthusiasm for the concepts with a chance to practice collaboration in the way that makes BDD work.
+
+Day 3 is a practical day for programmers to learn about Cucumber: what it is, what it isn't, and how to write good cucumber code that can be maintained over time.
+
+Day 4 covers advanced BDD concepts and common pitfall people find when using these techniques in the real world.
+
+## Do I have to sign up for all four days?
+
+No, you can pick and choose, and just come to one day if you like. There's a small per day discount if you book all four days.
+
+## So which days are for me?
+
+&lt;p&gt;if you're a &lt;strong&gt;developer with Ruby experience&lt;/strong&gt;, you might want to skip the first day and come along to days 2, 3 or 4.&lt;/p&gt;
+
+&lt;p&gt;If you are a &lt;strong&gt;Product Owner, Business Analyst, Project Manager or UX specialist&lt;/strong&gt;, come along to just day 2, and understand why BDD is designed for you guys in the first place!&lt;/p&gt;
+
+&lt;p&gt;If you're a &lt;strong&gt;keen developer but not necessily very experienced in Ruby&lt;/strong&gt;, you should consider the &lt;a href=&quot;http://bdd.eventbrite.co.uk&quot;&gt;full four day course&lt;/a&gt;. We'll take you through the basics of Ruby, the reasons behind doing development this way, how to use Cucumber properly (saving you time in the long run) and some neat advanced tricks.&lt;/p&gt;
+
+## Are you running early bird tickets, or promotions?
+
+Glad you asked: if you use the code &lt;strong&gt;super-early-birdy&lt;/strong&gt; you'll get 20% of the list price until 1st August, just for reading this far down the page :)
+
+## How can I find out more or book my place?
+
+You can find more info and book at [bddkickstart.com](http://bddkickstart.com), or [send us mail](mailto::hello@bddkickstart.com) if you have specific questions.
+
+Hope to see you in October!
+</content></entry><entry><title>Waxing Lyrical on Pathfinding</title><category term='code'/><category term='conference'/><category term='fun'/><category term='software craftsmanship'/><category term='sc2012'/><link href='http://chrismdp.com/2012/05/waxing-lyrical-on-pathfinding'/><updated>2012-05-15T16:02:40+01:00</updated><id>http://chrismdp.com/2012/05/waxing-lyrical-on-pathfinding</id><content type='html'>I've been attending and giving talks at the [Software Craftmanship](http://www.codemanship.co.uk/softwarecraftsmanship/) conference at Bletchley Park for a couple of years now. I've always found the crowd there engaging and great to hang out with, and I'd encourage you to come along if you're not doing much on June 14th. There are [still a few tickets left](http://www.codemanship.co.uk/softwarecraftsmanship/register.html) if you're quick.
+
+## My talk proposal: Pathfinding Peril
+
+This year my talk proposal is about pathfinding, a subject rather close to my heart since I started [building a game](http://soltrader.net). Finding the shortest path through a connected graph is a complex problem, and one which has a number of very useful applications, not just in the game sector.
+
+Thankfully there are some efficient algorithms out there which solve it well. The aim of my session will be to teach the popular A-Star pathfinding algorithm, along with the factors to consider when choosing appropriate algorithm weights to make the implementation efficient.
+
+A-star can be written in any language, but a simple (untested, probably buggy) version might look like this:
+
+{% highlight ruby %}
+
+    def find(goal)
+      closed_set = []
+      open_set = [ start_node ]
+      came_from = {}
+      while(!open_set.empty)
+        current = open_set.sort{|node| node.estimated_score }.first
+        return reconstruct_path(came_from, goal) if (current == goal)
+
+        open_set -= [current]
+        closed_set += [current]
+        current.neighbours.each do |neighbour|
+          next if closed_set.include?(neighbour)
+          possible_score = best_score[current] + current.cost_to(neighbour)
+          if !open_set.include?(neighbour) || possible_score &lt; node.running_score
+            open_set += [neighbour]
+            came_from[neighbour] = current
+            neighbour.running_score = possible_score
+            neighbour.estimated_score = neighbour.running_score + neighbour.cost_to(goal)
+          end
+        end
+      end
+      return 'failed'
+    end
+
+{% endhighlight %}
+
+The session will last a couple of hours. I'll take you through the basic A-Star implementation in the first 30 minutes of the session, and we'll spend some time getting that coded up in the second 30 minutes. After a break, we'll be running a tournament for an hour using Matt Wynne's [Robot Tournament engine](https://github.com/mattwynne/robot_tournament). Your robot will be one of two characters in a maze, and the idea is to find the exit as soon as possible without being eaten by the minotaur that roams randomly around it.
+
+You'll get points for exiting the maze within a certain timeframe, exiting first, and simply avoiding being eaten! If I get time, I'll write a basic ruby gem which allows you to parse the maze presented on stdin into nodes with connections.
+
+We'll run around 20 minute iterations, but probably reset the score every time so that the final score is the one that matters. It should be lots of fun!
+
+What do you think of the session idea? How could I improve it?
+</content></entry><entry><title>On coding defensively</title><category term='code'/><category term='ruby'/><category term='craftsmanship'/><link href='http://chrismdp.com/2012/02/on-coding-defensively'/><updated>2012-02-17T18:57:25+00:00</updated><id>http://chrismdp.com/2012/02/on-coding-defensively</id><content type='html'>When writing code that will be used by others (and we do that 100% of the time, even if the other user is ourselves in a few weeks time), there's a tricky balance to strike between being generous to the users of our code, and ensuring that they get the information they want to ensure they're calling our code correctly. There are two coding maxims: &quot;Be generous on input, and strict on output&quot;, and &quot;fail fast&quot;, which we need to hold in tension. This post explores the trade-offs between the two.
+
+## &quot;Be generous on input, and strict on output&quot;
+
+This is another way of saying *code defensively:* we should allow the user to use our code a number of different ways, yet be careful about what we return to them to ensure they can't be easily confused.
+
+For example, consider this method:
+
+{% highlight ruby %}
+
+    def calculate_total(products)
+      total = 0
+      products.each do |product|
+        total += product.price
+      end
+      return total
+    end
+
+    calculate_total([product1, product2])
+
+{% endhighlight %}
+
+If we accept an array as an argument, we could code defensively and allow a single product to be passed as well:
+
+{% highlight ruby %}
+
+    def calculate_total(products)
+      products = [products] unless.products.respond_to?(:each)
+      total = 0
+      products.each do |product|
+        total += product.price
+      end
+      return total
+    end
+
+    calculate_total(product) # also works now
+
+{% endhighlight %}
+
+This is a nice feature and potentially allows our code to be used more flexibly.
+
+Let's take this further. What happens when our user decides to pass in an invalid value, such as a string? Should we code defensively for that situation?
+
+{% highlight ruby %}
+
+    def calculate_total(products)
+      return 0 if product.is_a?(String)
+      products = [products] unless.products.respond_to?(:each)
+      total = 0
+      products.each do |product|
+        total += product.price
+      end
+      return total
+    end
+
+    calculate_total(&quot;product&quot;) # return 0
+
+{% endhighlight %}
+
+In this case, we could argue our code is being defensive: it avoided the crash that would have happened when we tried to call the non-existent `price` method on the passed in string. Is this desirable?
+
+## &quot;If we're going to fail, we should fail quickly.&quot;
+
+The programmer using our code probably made a mistake here. If we fail immediately, it's very easy for them to see where the error is. If we accept pretty much anything, and return '0' (or much worse, '-999' or some other abomination) we're just going to get incorrect prices: we're going to hide and propagate the error down the call stack and make it much harder to debug.
+
+This is a tricky balance and it depends on the situation, but in general I think these principles are helpful to deciding what to do:
+
+* *Fail if we cannot be strict with our output.* Coding defensively has two sides: generous with input, but also strict with output. If the output is changed by the way we recieve our argument, we're not being specific enough. In the above example, we're effectively giving a string a price of zero, which is extra behaviour we probably don't want. Likewise, make sure that if there's no way we can return a sensible result, then we should not accept the argument passed and fail instead.
+
+
+* *Is our method doing too much?* In the case of the above method our user might be wanting to pass the name of the product as a string, and look up the product to work out the price. We could support that, but this will encourage duplication: if we persist with keeping methods that do &quot;A and B&quot;, we'll find over time we code will spring up additional methods which do &quot;A&quot; and &quot;B&quot; separately. Our method is now too complex and needs to be split into two.
+
+* *Be generous with types.* We have some advantages working in a dynamically typed language such as Ruby. Use the power of Duck Typing: don't check if objects are certain types: check if they respond to the methods that we need to call on them.
+
+* *Be generous at the edges of our code.* Being generous with private APIs and methods only used by ourselves in constrained circumstances is a waste of time: we should just ensure we're calling our own code correctly.
+
+* *When we fail, we should fail hard. Really hard.* In its laudable determination to follow the [Principle of Least Astonishment](http://en.wikipedia.org/wiki/Principle_of_least_astonishment), Ruby has a weakness for over-generosity. It tends to return nil when it encounters an error in cases where in my opinion it should throw an exception. Programmers don't always check for the nils they receive correctly, which means they get passed around our codebase, eventually causing a crash when we least expect it. We should not return nil: that's not being specific enough with our outputs. We should throw an exception or terminate the program if we really need to get their attention.
+
+What do you think? Do you tend to learn more towards coding defensively, or failing early?
+
+(Thanks to [Alex Tomlins](http://www.unboxedconsulting.com/people/alex-tomlins) at Unboxed for the conversation that led to this post.)
+</content></entry><entry><title>Sol Trader: on lighting</title><category term='products'/><category term='c++'/><category term='code'/><category term='opengl'/><category term='sol trader'/><category term='game development'/><category term='lighting'/><link href='http://chrismdp.com/2012/02/sol-trading-lighting'/><updated>2012-02-14T22:56:43+00:00</updated><id>http://chrismdp.com/2012/02/sol-trading-lighting</id><content type='html'>A quick update on the lighting code I've been working on. Now that I have normal maps and per-pixel bump mapping working, I can turn these:
+
+![ship-texture-1](/files/sol-trader-lighting-1.png)
+![ship-texture-2](/files/sol-trader-lighting-2.png)
+
+Into this:
+
+![ship-texture-3](/files/sol-trader-lighting-3.png)
+![ship-texture-4](/files/sol-trader-lighting-4.png)
+
+Check out how the ship appears lit from each side. It looks even better as you see it moving. Hey presto: a realistic 3D effect with only two triangles rendered.
+
+All I'm using is this simple GLSL fragment shader:
+
+{% highlight c %}
+
+    void main() {
+      vec4 color = texture(baseTexture, uv);
+      vFragColor = vertColor * color;
+      float alpha = vFragColor.a;
+
+      if (alpha &gt; 0.0 &amp;&amp; useNormal) {
+        vec3 lightDirection = normalize(vec3(0.2, 0.2, 0.0));
+        vec4 normal = normalize(texture(normalTexture, uv) * 2.0 - 1.0);
+        vec4 vEyeNormal = normalMatrix * normal;
+
+        float diffuse = max(0.0, dot(vEyeNormal.xyz, lightDirection));
+        vFragColor *= (diffuse * 3);
+        vFragColor.a = alpha;
+      }
+    }
+
+{% endhighlight %}
+
+[GLSL](http://en.wikipedia.org/wiki/GLSL) is great.
+</content></entry><entry><title>Effective bloom in OpenGL for Sol Trader</title><category term='products'/><category term='c++'/><category term='code'/><category term='opengl'/><category term='bloom'/><category term='sol trader'/><category term='game development'/><link href='http://chrismdp.com/2012/02/effective-bloom-in-open-gl-for-sol-trader'/><updated>2012-02-02T16:28:30+00:00</updated><id>http://chrismdp.com/2012/02/effective-bloom-in-open-gl-for-sol-trader</id><content type='html'>&lt;div class='notice'&gt;
+  &lt;h2&gt;TL;DR&lt;/h2&gt;
+
+  &lt;p&gt;Skip to the &lt;a href='#pictures'&gt;pictures&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
+I've been working on and off on [Sol Trader](http://soltrader.net) ([C++ version](/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus/)) for about a month now. At the beginning of this week, I've been coded up an effective type formatting system using freetype2 natively with OpenGL, which is now in and showing even rather esoteric fonts nicely.
+
+The second half of this week was spent adding on a bloom filter to the graphics engine.
+
+## Bloom filtering: making your world stand out
+
+A bloom filter causes bright areas of the image to 'take over' their surrounding area, simulating the high dynamic range of real light. It stops your game world from looking dull and flat and really makes it stand out. See [this article](http://www.gamasutra.com/view/feature/2107/realtime_glow.php) for some nice screenshots from Tron 2.0 - it can also be used for all sorts of glow and blur effects.
+
+So how's it done? The trick is to render your scene to a texture, rather than to the screen. Once you've done that, you blur and downsample that texture a few times, and then display the results combined with the original texture.
+
+Specifically, this is the process my bloom filter follows:
+
+* Render to a texture
+* Copy that texture to two more textures, one a quarter of the screen size, and one an eighth of the screen size.
+* Blur the two smaller textures using gaussian blur. There are [clever techniques](http://prideout.net/archive/bloom/) which mean you only need six texture lookups to perform a 5x5 gaussian blur. Texture lookups are expensive, so it's worth doing as few as possible.
+* Add all these textures together and add an exposure function to cause the white to saturate for strong color values.
+
+Writing the initial bloom filter was fairly easy. Making it fast was *hard:* you have to work at combining the different aspects of the effect to get what you want, with the absolute minimum of effort for your graphics card. My first attempt ran at a paltry 27 frames a seconds, although it looked very nice: I eventually managed to get it to the point where it runs in roughly 150 frames per second and still looks 80% as good.
+
+&lt;div name=&quot;pictures&quot;&gt;
+  &lt;h2&gt;What's the result?&lt;/h2&gt;
+&lt;/div&gt;
+
+A picture is worth a thousand words, so here are three:
+
+![bloom-1](/files/sol-trader-bloom-1.png)
+
+![bloom-2](/files/sol-trader-bloom-2.png)
+
+![bloom-3](/files/sol-trader-bloom-3.png)
+
+I've deliberately upped the bloom exposure to show off the effect: it is much more obvious when it's moving. Hopefully you can see the volcanic eruptions on Venus are making the outline of the players' ship that much more hazy. The label of the planet also currently has the bloom effect applied: I'll be able to turn that off when I have a more functional GUI in place.
+
+I plan to use this effect for all sorts of things: laser fire, explosions, you name it.
+
+## Next...
+
+I'm going to tackle the gui. I now have AI characters with names trading on Earth's main commodity market: it's time the player joins them in making trades.
+
+&lt;div class='notice'&gt;
+  If you'd like to purchase Sol Trader you can now do so at &lt;a href='http://soltrader.net'&gt;soltrader.net&lt;/a&gt;!
+&lt;/div&gt;
+</content></entry><entry><title>Switching Sol Trader from Ruby to C++: one week on</title><category term='products'/><category term='ruby'/><category term='c++'/><category term='code'/><category term='sol trader'/><category term='game development'/><link href='http://chrismdp.com/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on'/><updated>2012-01-16T09:38:25+00:00</updated><id>http://chrismdp.com/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on</id><content type='html'>Well, I didn't quite expect that. My [previous post](/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus/) about switching [Sol Trader](http://soltrader.net) development from Ruby back to C++ caused [quite a storm](http://news.ycombinator.com/item?id=3440596).
+
+Not being used to making waves on the mainstream Internet, I naively attempted to dive in and read and respond to every comment. It appears that feedback from the Internet at large tends towards the negative, so after a few hours I was feeling pretty discouraged, and only continued replying to some of the constructive feedback. Sorry if you didn't get a response.
+
+I have a few more comparisons between Ruby and C++ which I'd like to share.
+
+* *I'm finding myself reinventing the wheel more.* In Ruby-land I found third-party code easier to read, easier to install and easier to use. Trying to use someone else's library is C++ is harder. Often people don't seem to write automated tests, which strongly recommends me against using them. I'm also concerned that new libraries might introduce hidden memory leaks which will waste me time massively when I come to hunt them down. I appreciate people don't release their code just for me, so I'm not complaining: I've just found it more difficult to trust third-party code. I hope to try and fix this tendency by releasing large extractions from my project as libraries in the future.
+
+* *Boost is awesome.* One notable exception to the above concern is the wonderful [Boost](http://boost.org) library suite. There is a library for almost everything you might need there, and the quality is very high. I'm already using the [Signals2](http://www.boost.org/libs/signals2) library for notifications (following the [Observer pattern](http://en.wikipedia.org/wiki/Observer_pattern)) and I plan to use the [Serialization](http://www.boost.org/libs/serialization) library for saving and loading games.
+
+* *What to test?* The testing profile of my C++ code is different to my Ruby code. Thanks to strong typing, my tests fail for longer during the 'red' stage, so I find I have to write fewer edge cases. There are only so many ways C++ types can fit together, whereas Ruby objects can be combined in any way you like. I'm not sure I've hit on the right level of coverage yet: I'm not writing any tests for the more visual parts of Sol Trader yet and I'd like to consider how to.
+
+* *I'm using a classist approach to testing.* In C++ I've tended to favour a [classical approach to TDD](http://martinfowler.com/articles/mocksArentStubs.html): that of testing a few small classes together from the outside using the public interface. Where I'm [coding to interfaces](http://stackoverflow.com/a/384067/1073735) I'm able to stub out that interface by inheriting from it in my test, but I'm not doing that often. Mostly I'm following my nose and attempting to keep my classes small and my collaborations few. I don't get all the design signals from my tests that I would like, but in my view that's better than exposing the internals of my class to the tests: that just complicates it unnecessarily. C++ is already difficult to read.
+
+* *Prototyping complex class structures in Ruby first is really useful.* I've often benefited from having an existing Ruby class structure to take as my lead when writing C++. Those subsystems that I'd already written in Ruby were at least twice as fast to write. Rather than typing, or getting past the syntax, I've found [learning to be the constraint](http://dannorth.net/2010/08/30/introducing-deliberate-discovery/) in a number of coding situations. I'm not sure I'd always write in Ruby first, but in a case where I was really stuck and wanted to explore possible options, I might consider a rapid Ruby prototype over [CRC card design](http://en.wikipedia.org/wiki/Class-responsibility-collaboration_card), for example.
+
+I'll continue to post my learnings as I collect them.
+
+&lt;div class='notice'&gt;
+  If you'd like to purchase Sol Trader you can now do so at &lt;a href='http://soltrader.net'&gt;soltrader.net&lt;/a&gt;!
+&lt;/div&gt;
+</content></entry><entry><title>Why I switched from Ruby back to C++</title><category term='products'/><category term='ruby'/><category term='c++'/><category term='code'/><category term='sol trader'/><category term='game development'/><link href='http://chrismdp.com/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus'/><updated>2012-01-08T20:21:41+00:00</updated><id>http://chrismdp.com/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus</id><content type='html'>&lt;div class='notice'&gt;
+  &lt;b&gt;UPDATE:&lt;/b&gt; This post was pretty popular. I've posted a followup &lt;a href=&quot;/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on/&quot;&gt;here&lt;/a&gt;.
+&lt;/div&gt;
+
+After two months of Sol Trader development in Ruby, I took a difficult decision last Wednesday morning: I've decided to rewrite the game code from scratch in C++. Let me explain my reasons.
+
+&lt;div class='notice'&gt;
+  If you'd like to purchase Sol Trader you can now do so at &lt;a href='http://soltrader.net'&gt;soltrader.net&lt;/a&gt;!
+&lt;/div&gt;
+
+## Why I did it
+
+* *Slow frames:* When working with Ruby, I use the excellent [Gosu](https://github.com/jlnr/gosu) library to do all my game specific coding. This initially worked great, but occasionally I'd just get slow frames coming up. My game is timed to run at 60 frames per second, which means that each frame should take no more than 16.67ms to run. Yet every so often my profiling would come up with a frame that would take 25ms or 45ms for no discernible reason. I just couldn't find the issue here: I turned every sub system in the game off. I disabled garbage collection. I hacked my slow frame detection code into the simplest gosu sample I could find, and they still existed. I didn't feel like I could quite trust the stack to deliver the framerate I needed, and I hadn't yet put in half the features I wanted to.
+
+* *Object explosion when bridging to C:* A lot of the libraries I was using were written in C, and therefore there was several thousand objects (mostly floats) being created each frame to act as a bridge between Ruby and C code. It feels like that that CPU time should be better spent in the AI improving the quality of the simulation, or on better effects, rather than loading the garbage collection with an unnecessary burden.
+
+* *Ease of packaging and distribution:* I feel like packaging is going to be a lot easier. I'm not too bothered about hiding the source code: I may well do that anyway to purchasers of the game. It's the running on Windows I'm worried about: from my research it feels like it's going to take some effort to push the game out on a non-Unix platform. And with a video game, releasing on Windows is a must.
+
+* *Manual memory management for performance:* The garbage collection is still too stuttery under MRI (even with Ruby 1.9.3, which is a huge improvement on what's gone before) - it still stops the world each time. I looked at other implementations, and even considered learning all about garbage collection to help improve Ruby myself, but then realised that getting royally distracted wouldn't help me ship a working game.
+
+## What do I miss about Ruby?
+
+* *I miss using RSpec hugely:* There are ways of doing [testing of C programs using RSpec](http://benmabey.com/2007/09/09/bdd-your-c.html) but it doesn't feel like I want to wrap each of my C++ classes with a SWIG interface just to check they're working. I may still do this for some form of Cucumber testing, I'm not sure. I'm using [UnitTest++](http://unittest-cpp.sourceforge.net/) for my testing at the moment, which is very lightweight and good enough for my purposes.
+
+* *Duck-typing:* defining interfaces for everything is a pain in the backside, although it does force you to think more clearly about the roles of your classes.
+
+
+* *Easy mockist testing:* There's no built in reflection in C++ so it also makes you have to code to interfaces if you want to do any mockist testing. I'm mostly returning to a classist style of testing with small well defined groups of classes being tested at once. It's not a perfect system and I still have much learning to do here.
+
+* *Terseness of syntax:* There's just a lot more characters to type, and a lot more ceremony for each class. This tempts you to larger classes and methods, which I'm resisting at the moment. I need to take the time to set up [c.vim](http://www.vim.org/scripts/script.php?script_id=213) exactly how I want it.
+
+Funnily enough, I don't miss the automatic memory management: I like having that level of control. Old habits die hard.
+
+## So how far have I got?
+
+Thankfully, it's not a complete rewrite as I'd already done a lot of thinking about the architecture and a lot of the basic classes translate directly over.  I worked really hard at the end of last week and got a lot done:
+
+* I put in [SDL](http://www.libsdl.org) to build the basic game framework: hopefully building on Windows will be a snap. I plan to have a working Windows build as soon as I can lay my hands on a cheap Windows 7 PC.
+* Basic testing using UnitTest++, with tests that are compiled and run as part of the build process.
+* Decoupled gameplay/physics updates from the graphical framerate using the techniques [here](http://gafferongames.com/game-physics/fix-your-timestep/). I have zero [temporal aliasing](http://en.wikipedia.org/wiki/Temporal_anti-aliasing) bugs right now, which makes for a super smooth 300+ FPS graphic loop with a fixed 60FPS physics loop.
+* Re-implemented physics using [Chipmunk](http://chipmunk-physics.net/), the same library I used in Ruby, which made it very easy to switch over.
+* Put in a brand new and much improved parallax-scrolled starfield.
+* Added a basic controllable spacecraft, planets and jumpgates back in: the player can fly around as before and collide successfully with other objects.
+* A simple particle system so the spacecraft give off exhaust smoke, and the jumpgates emit spooky purple mist.
+
+Even with using OpenGL [immediate mode](http://en.wikibooks.org/wiki/OpenGL_Programming/GLStart/Tut3#Immediate_Mode) (this is a bad thing) and rendering 10000 stars each frame (very inefficient), and a throwing bunch of particles onscreen, I'm still getting 300+ FPS on my 2009 MacbookPro and only using 30MB of memory. That's satisfying.
+
+*UPDATE:* By (very) popular demand, here's a screenshot. Be aware this is *three days work only*, and obviously not final artwork:
+
+&lt;a href='/files/sol-trader-1.png'&gt;&lt;img src='/files/sol-trader-1.png' width='500'/&gt;&lt;/a&gt;
+
+Next I plan to add back in jumping between different planetary orbits, and then work on a very basic 'person-level view', so that you can get out of your ship and walk around.
+
+## Was it the right decision?
+
+I'll know at the end of the project :) My feeling is though that it was the correct thing to do. Being really close to the metal will make it much easier to implement some of the really complex AI stuff I'd like to do later on. I already know C++ very well, and estimate it'll only delay me a week or two if I work hard. If I like, I can always bundle my project as a C++ library and control it from Ruby later on, but it's harder to go in the other direction.
+
+What do you think? Did I make the right call?
+
+&lt;div class='notice'&gt;
+  If you'd like to purchase Sol Trader you can now do so at &lt;a href='http://soltrader.net'&gt;soltrader.net&lt;/a&gt;!
+&lt;/div&gt;
+</content></entry><entry><title>Introducing Sol Trader</title><category term='products'/><category term='code'/><category term='life'/><category term='sol trader'/><category term='game development'/><link href='http://chrismdp.com/2012/01/introducing-sol-trader'/><updated>2012-01-03T14:53:53+00:00</updated><id>http://chrismdp.com/2012/01/introducing-sol-trader</id><content type='html'>Happy new year, everybody! It's been a little while in coming, but I've finally got to the point where I want to announce the project I've been working on privately for the last few months. I'm heading after a dream, and I want to share it with you.
+
+But first some background.
+
+## I love designing games
+
+I started my career in software development working on PC games back at the turn of the millennium. I worked for a fantastic little company called [Elixir Studios](http://en.wikipedia.org/wiki/Elixir_Studios), which sadly closed in 2005. I'll never forget them: they gave me my first break into software development and I studied my craft under some fantastic mentors, notably [Achim Stremplat](http://www.linkedin.com/in/achimstremplat) and [Jamie Doornbos](http://www.linkedin.com/profile/view?id=3207719&amp;locale=en_US&amp;trk=tyah). These guys taught me a love of good code, and a love of doing things right.
+
+On leaving Elixir, I moved away from the games industry and into web programming, leaving C++ and Microsoft Visual Studio far behind me. I spent a few years shifting through a number of languages (Perl, PHP, Java, Python) before settling on Ruby as my interpreted language of choice. I've never lost that love for building and designing games, though, and I've kept my hand in over the years. I've always been more interested in designing games, rather than playing them: as a kid I was always the Dungeon Master, or the guy [designing the adventure](http://en.wikipedia.org/wiki/HeroQuest). As an 11 year old I used to write games in BASIC on BBC Micros and sell them to my friends for 10p each. I guess you could say it's built in to my psyche.
+
+## Sol Trader
+
+Another realisation: one of the things that I've learnt in the last year is that I'd love to spend more time working on my own products. I have done this in a half-hearted fashion over the years, but my motivation tends to die off when the initial rush of enthusiasm fades. To help myself see it through to the end, I've decided to try to realise a long held dream. Alongside working with clients this year, I'm going to spend some of my remaining time building and releasing my first commercial game.
+
+I'm therefore very pleased to announce [Sol Trader](http://soltrader.net) - an open-ended space trading and exploration game set in our solar system in the near future.
+
+The game itself has been in development since the end of October last year: it started as a side project with my kids (we originally named it Spacestuff) but has blossomed and grown into something much more. There's some info [on the website](http://soltrader.net) I've been putting together, but more will be forthcoming shortly. I'm aware that I've not got any screenshots yet, but once the first artwork goes in I'll put some up. It's already playable: my kids are already having great fun travelling between Earth and Venus via jump gates and landing on the planets.
+
+When I'm ready for beta testers, I'll put an announcement out on the mailing list: [sign up at soltrader.net](http://soltrader.net).
+
+## Motivate me!
+
+One of the things I need to work on is the ability to complete my own projects. Working on a game is a great motivator, but I need help to keep my motivation up! I'd be very grateful if you'd drop me a note asking me how I'm getting on if you don't hear from me for a while. Write a comment on a blog post, retweet something, sign up to get emails, ping me [on twitter](http://twitter.com/chrismdp): every little bit of feedback I get (even if critical) helps to motivate me to work on it.
+
+More on the game in future posts, including some thoughts on architecture, language choice and whether or how to release the source code. Crafting this codebase has already proved a treasure trove of interesting thoughts on code quality and testing, which I plan to share on this blog over time. I'm also aware that I'm breaking a few &quot;indy game developer&quot; rules: I'll share my opinions about that, too.
+
+Will I finish? Will it be a success? I've no idea, but I plan to learn as much as possible from doing it. At the very least, I'm shooting after a dream, and I'll be pleased to finish 2012 having attempted it, whatever the outcome.
+
+Have you got a [half-baked dream](http://www.youtube.com/watch?v=_Klf8uWkvaw) you're going to turn into reality this year? If not, why not?
+
+</content></entry><entry><title>A cache-busting http server script in ruby</title><category term='code'/><category term='javascript'/><category term='ruby'/><link href='http://chrismdp.com/2011/12/cache-busting-ruby-http-server'/><updated>2011-12-14T16:57:43+00:00</updated><id>http://chrismdp.com/2011/12/cache-busting-ruby-http-server</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;All of this can be yours/just give me what I want/and no one gets hurt&quot;&lt;/i&gt;&lt;/p&gt;
+
+-- Bono, Vertigo
+
+If you've done much Javascript development, or simple web development without a webserver backend, you don't want to set up a complex framework. Just give me the pages: I want to be able to start a simple webserver to give me the current directory structure as a website. You can't simply load the pages into a browser using `file://` because that screws up the relative paths that our sites rely on. What's the best way of doing this?
+
+## Python's SimpleHTTPServer
+
+One simple way is:
+
+{% highlight bash %}
+python -m SimpleHTTPServer
+{% endhighlight %}
+
+This does a great job, but there's one small problem: caching. Ordinarily during development you'll want the browser to request the HTML each time, and the python server doesn't do that out of the box.
+
+## Ruby's WEBrick with adding cache-busting
+
+Here's a small script I borrowed from [pmarti](http://github.com/pmarti) and tweaked. It lives in the `bin/http` file on my path: I just type `http` in the relevant folder and I'm set.
+
+{% highlight ruby %}
+#!/usr/bin/env ruby
+
+require 'webrick'
+class NonCachingFileHandler &lt; WEBrick::HTTPServlet::FileHandler
+  def prevent_caching(res)
+    res['ETag']          = nil
+    res['Last-Modified'] = Time.now + 100**4
+    res['Cache-Control'] = 'no-store, no-cache, must-revalidate, post-check=0, pre-check=0'
+    res['Pragma']        = 'no-cache'
+    res['Expires']       = Time.now - 100**4
+  end
+
+  def do_GET(req, res)
+    super
+    prevent_caching(res)
+  end
+end
+
+server = WEBrick::HTTPServer.new :Port =&gt; 8989
+
+server.mount '/', NonCachingFileHandler , Dir.pwd
+trap('INT') { server.stop }
+server.start
+{% endhighlight %}
+
+Hope it's helpful. Do you know of a better way of doing it? Feel free to share...
+</content></entry><entry><title>Feature writing: multiple actors</title><category term='bdd'/><category term='cucumber'/><category term='code'/><link href='http://chrismdp.com/2011/12/feature-writing-multiple-actors'/><updated>2011-12-08T11:01:23+00:00</updated><id>http://chrismdp.com/2011/12/feature-writing-multiple-actors</id><content type='html'>I've [written a fair amount](/tag/cucumber) in the past about Cucumber and the way I like to structure my features. After reading these through, someone recently asked me about a particular workflow concerning multiple actors.
+
+They were starting from the following feature file:
+
+{% highlight cucumber %}
+Feature: Complimentary Accounts
+
+Scenario: Creating a complimentary account
+  Given I am signed-in to the admin area
+  When I create a new complimintary account with these details:
+    | Name  | John Smith           |
+    | Email | john.smith@gmail.com |
+  Then a welcome email should be sent to 'john.smith@gmail.com'
+
+Scenario: Receiving a welcome email
+  Given I have received a welcome email
+  When I follow the link
+  Then I should see a welcome page
+  And I should be signed-in
+  And I should see the details of my account
+  And I should be able to set my password
+{% endhighlight %}
+
+The concern was that the feature had more than one actor involved: there was the administrator creating the complimentary account, and the recipient of that account. The feature as written just didn't feel right to them: it's not clear who the actors are from the text, although the feature has a certain workflow. Also the check that recipient can set the password is an important one, but isn't clearly called out in the feature.
+
+How could this be written differently?
+
+## Setting the scene
+
+The first thing I noticed is that the feature is missing a preamble. People often leave these out, but I find them invaluable to set the context of the feature and to ensure there's a point to adding the feature at all.
+
+To write the scenarios, I would approach this from the point of view of the personas involved, who I would [normally give names](/2011/04/cucumbers-with-personality). In this case there are two obvious personas: Angie the Administrator, and Victor the VIP. There's a more subtle role at play here too: It's unlikely that Angie decides who gets a complimentary accoun. Therefore we also have the particular stakeholder who wants this feature, who we will call Buster the Business Development Director.
+
+This is how I'd structure the &quot;non-executing&quot; part of the feature:
+
+{% highlight cucumber %}
+Feature: Complimentary Accounts
+  In order to cater for certain special people that promote our
+    company in other ways
+  As Buster the Business development director
+  I want the ability to ask Angie the Administrator to create
+    special free accounts for special people
+
+  Scenario: Angie creates a complimentary account
+    ..
+  Scenario: Victor receives a welcome email
+    ..
+  Scenario: Victor can change his password
+    ..
+{% endhighlight %}
+
+I'd check this with the customer too, just to make sure it made sense. If the password changing is important to them, I'd make that a separate scenario.
+
+## Writing the scenarios
+
+I keep my [scenarios really short](/2011/09/layers-of-abstraction-writing-great-cucumber-code). So I'd try and push some of these details down into steps. Let's take the scenarios in turn:
+
+{% highlight cucumber %}
+@angie
+Scenario: Angie creates a complimentary account
+  When I create a new complimintary account for Victor
+  Then a welcome email should be sent to Victor
+{% endhighlight %}
+
+The `@angie` tag just ensures that Angie is signed in. It's neater than a separate `Given` step in my opinion. I don't include specifics such as email addresses: it's just noise.
+
+{% highlight cucumber %}
+@victor
+Scenario: Victor receives a welcome email
+  Given I have received a welcome email
+  When I follow the link
+  Then I am logged straight into my account
+{% endhighlight %}
+
+The fact that we've switched actor here isn't a problem in my view. It's still clear who &quot;I&quot; is in this case, because the scenario title is clear and descriptive.
+
+{% highlight cucumber %}
+@victor
+Scenario: Victor receives a welcome email
+  Given I have received a welcome email
+  When I follow the link
+  Then I can change my password from the first screen
+{% endhighlight %}
+
+This is a very similar scenario, but it's worth making it a separate one as the password change is an important business need for the customer. It's very tempting to tag the check onto the end of a previous scenario, but this reduces clarity and the perceived importance of that particular part of the feature in everybody's mind.
+
+Feature files are [bookmarks for conversation](/2010/02/the-story-card-is-not-the-story) in just the same way that other agile tracking methods are. If they don't accurate represent the shared thinking, they're worse than useless.
+
+## Get the customer input
+
+I'm not sure if this feature had originally been run past the customer, but this point is so important that it's worth restating anyway:
+
+*If you're not showing the customer the feature files you're missing out on 90% of the value of Cucumber.*
+
+I'm still sometimes guilty of not doing this. I feel like I must have covered every detail and that discussing it with a customer is a waste of time, but I can't remember ever showing a feature file to a customer where we didn't change the feature to make it better. There's always some ambiguity you [can drive out](/2010/01/driving-out-feature-ambiguity).
+
+&lt;p&gt;&lt;i&gt;Have you got any feature files you'd like some input on? Send them over and I'll do my best to give some insight if I can.&lt;/i&gt;&lt;/p&gt;
+
+</content></entry><entry><title>How I'm testing iPhone apps: part 2</title><category term='code'/><category term='ios'/><category term='tdd'/><category term='bdd'/><category term='testing ios'/><link href='http://chrismdp.com/2011/12/how-im-testing-iphone-apps-part-2'/><updated>2011-12-06T16:02:54+00:00</updated><id>http://chrismdp.com/2011/12/how-im-testing-iphone-apps-part-2</id><content type='html'>&lt;p&gt;&lt;i&gt;I've recently been doing some iOS development, and working out the best way to test-drive the development of iOS apps was high on my priority list. I know that the automated testing of iOS applications is still not widely practiced and isn't well documented, so I decided to write a series of posts to start to rectify that. You may wish to read &lt;a href=&quot;/2011/12/how-im-testing-iphone-apps-part-1&quot;&gt;part 1&lt;/a&gt; first.&lt;/i&gt;&lt;/p&gt;
+
+## Kiwi
+
+We were looking for a testing framework which supported iOS's asynchronous programming model and [Kiwi](https://github.com/allending/Kiwi) answered the call. It has a great syntax, [comprehensive set up assistance](https://github.com/allending/Kiwi/wiki/Guide:-Up-and-Running-with-Kiwi), asynchronous support and built in mocking. I'd highly recommend you check it out: the syntax helps me to think in the right way and it has pretty much all the features we needed.
+
+Kiwi's block syntax looks like this:
+
+{% highlight objectivec %}
+describe(@&quot;Team&quot;, ^{
+    context(@&quot;when newly created&quot;, ^{
+        it(@&quot;should have a name&quot;, ^{
+            id team = [Team team];
+            [[team.name should] equal:@&quot;Black Hawks&quot;];
+        });
+    });
+});
+{% endhighlight %}
+
+Much better than the old fashioned xUnit style of testing, in my opinion. You might hate it, of course. You can use Kiwi's features [without having to use the block syntax](https://github.com/allending/Kiwi/issues/73) if you want.
+
+## Objective-C's delegate model
+
+Many of the Apple core libraries use a delegate pattern for handling callbacks from a class. This is similar to Java's interfaces, and superficially similar to blocks in Ruby and anonymous functions in Javascript.
+
+As an example, let's take CoreLocation. When wanting to find the location of a phone, you create a new `CoreLocationManager` and call `startUpdatingLocation` on it:
+
+{% highlight objectivec %}
+CLLocationManager *manager = [[CLLocationManager alloc] init];
+[manager startUpdatingLocation];
+{% endhighlight %}
+
+This call returns immediately: so how do you execute code when the location is found? You use a delegate: an object with responds to the `locationManager: didUpdateToLocation: fromLocation` method:
+
+{% highlight objectivec %}
+-(void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
+{
+  NSLog(&quot;$@ I AM IN YOU&quot;, newLocation);
+  foundLocation = YES;
+}
+{% endhighlight %}
+
+Then you set this object to be the CLLocationManager's delegate before calling `startUpdatingLocation`. Often you set the delegate to `self` and define the delegate method on the calling object.
+
+{% highlight objectivec %}
+CLLocationManager *manager = [[CLLocationManager alloc] init];
+manager.delegate = self;
+[manager startUpdatingLocation];
+{% endhighlight %}
+
+There's more about this model in [this article from Apple](http://developer.apple.com/library/IOs/#documentation/iPhone/Conceptual/iPhone101/Articles/02_DesignPatterns.html).
+
+## Testing delegates
+
+This is tricky to test, because we can't simply do this:
+
+{% highlight objectivec %}
+it(&quot;should call the delegate when ready&quot;, ^{
+  [testObject startUpdatingLocation];
+  [[testObject.foundLocation should] equal:theValue(YES)];
+});
+{% endhighlight %}
+
+The test will call `startUpdatingLocation`, and then immediately check the `foundLocation` property to see whether it's been set. It won't have been, because the delegate won't have been called yet.
+
+How were we to stub endpoints such as the location system for for our app? We found two ways of doing this, with varying effectiveness:
+
+* Using Objective-C categories to redefine class methods
+* Using a Kiwi stub to inject a derived class which mocks out key methods
+
+Next post, I'll dive into some detail on both of these methods and show some of the pros and cons of each.
+
+&lt;i&gt;How are you testing iPhone apps? Do chime in throughout the series with suggestions and comments, and I'll edit the posts as appropriate.&lt;/i&gt;
+
+</content></entry><entry><title>How I'm testing iPhone apps: part 1</title><category term='code'/><category term='ios'/><category term='tdd'/><category term='bdd'/><category term='testing ios'/><link href='http://chrismdp.com/2011/12/how-im-testing-iphone-apps-part-1'/><updated>2011-12-01T22:45:35+00:00</updated><id>http://chrismdp.com/2011/12/how-im-testing-iphone-apps-part-1</id><content type='html'>&lt;p&gt;&lt;i&gt;This week I've been working with &lt;a href='http://shilling.co.uk'&gt;Shilling&lt;/a&gt; helping them get starting with iOS application development. Part of the deal was for me to learn it myself as we went: I've done hardly any iOS work and we've been learning how to do it together.&lt;/i&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;As part of this process, working out the best way to test-drive the development of iOS apps was high on my priority list. I know that the automated testing of iOS applications is still not widely practiced and isn't well documented, so I decided to write a series of posts to start to rectify that.&lt;/i&gt;&lt;/p&gt;
+
+## Our goal
+
+There are two main parts to working out how to test-drive applications on a new platform. One is to figure out the testing libraries and write simple `1 + 1 = 2` style tests to prove it can be done. The other half is working out how to apply common testing techniques such as stubbing external systems, isolating tests correctly and optionally driving the interface.
+
+The first of these steps is quite easy on iOS, but the second part is harder. In our case, we have some code which makes use of CoreLocation and the [Geonames](http://geonames.org) service to get an iPhone's location and look up the county name from a latitude and longitude. This means that our code relies on two external services to run, which we want to stub out: we don't want these services to be called each time our tests run. How were we to set this up correctly?
+
+
+## Apple's documentation
+
+To kick off our testing adventure on iOS, we started with [Apple's own public documentation](http://developer.apple.com/library/ios/#documentation/Xcode/Conceptual/ios_development_workflow/135-Unit_Testing_Applications/unit_testing_applications.html) on how to test iOS. This is a fairly comprehensive guide on how to set up a project with built in testing, allowing you to write basic SenTest tests quite quickly.
+
+Apple divides its definition of unit testing into two categories:
+
+* Logic tests: these are what I would normally call unit tests. They rely on very few external APIs and are run standalone without the use of a simulator.
+* Application tests: these are executed in the context of a running application on a simulator or iOS device.
+
+The document details how to set up both types in your project. There's a few things missing though:
+
+* They have good ideas about [how to write decent tests](http://developer.apple.com/library/ios/#documentation/Xcode/Conceptual/ios_development_workflow/135-Unit_Testing_Applications/unit_testing_applications.html#//apple_ref/doc/uid/TP40007959-CH20-SW12), but lack information on how to correctly mock system endpoints. I want to do this so that I don't have to rely on iOS location simulation, or HTTP response data, to make my tests work.
+* There was also nothing on how to test asynchronously, which is a real problem as iOS applications are mostly written in this way.
+* Application tests are executed in the context of your application, but without extra work it's not possible to support native UI testing, [Capybara](https://github.com/jnicklas/capybara) style. We are reduced to manipulating controllers directly, which is good enough for now. This assumes you have your user interface wired up correctly. As the app always has to be tested manually anyway then this isn't too much of a risk, but if you want to take a step further you could use [KIF](https://github.com/square/KIF), [Frank](https://github.com/moredip/Frank) or Apple's own [UIAutomation](http://developer.apple.com/library/ios/#documentation/DeveloperTools/Reference/UIAutomationRef/Introduction/Introduction.html). There's a good post comparing them [here](http://sgleadow.github.com/blog/2011/10/26/which-automated-ios-testing-tool-to-use/).
+
+So we followed through the basic set up instructions, and got a simple test running which added two numbers together. A good start, but useless for real work.
+
+Time to go in search of an asynchronous testing framework: and we found a great one. Next time, I'll talk about the wonderful [Kiwi](https://github.com/allending/Kiwi).
+
+&lt;i&gt;How are you testing iPhone apps? Do chime in throughout the series with suggestions and comments, and I'll edit the posts as appropriate.&lt;/i&gt;
+</content></entry><entry><title>Your tests are lying to you</title><category term='code'/><category term='cucumber'/><category term='craftsmanship'/><category term='bdd'/><category term='rspec'/><category term='rails'/><link href='http://chrismdp.com/2011/10/your-tests-are-lying-to-you'/><updated>2011-10-17T19:10:29+01:00</updated><id>http://chrismdp.com/2011/10/your-tests-are-lying-to-you</id><content type='html'>Using mocks within your test suite has gone rather out of fashion. Programmers everywhere have been lamenting the fact that mock-based tests are becoming more and more brittle: they're having to change the test code in multiple places each time there's the slightest code change. In fact, they seem to be changing the test code much much more often than the production code.
+
+Using mocks appear to require a lot of set up code for the object under test. Why not just fire up Factory Girl, create a bunch of objects we need to test this code, and just check the outputs?
+
+This works, and appears to work nicely. For a while.
+
+Eventually your tests will get to the point where they're lying to you: they're telling you your code works whereas actually it only works by coincidence. This post will examine the different techniques we can use to test code, and why some work better than others in the long term.
+
+## The problem
+
+To look at this further, let's try to write a conference simulator for a new website that tries to predict how many people might attend an upcoming event: 
+
+{% highlight ruby %}
+describe Conference do
+  it &quot;calculates total rating&quot; do
+    conference = Conference.new(:total_rating =&gt; 9)
+    conference.total_rating.should == 9
+  end
+end
+{% endhighlight %}
+
+A simple start, with equally simple production code. Next, we decide to extract our code for calculating the rating into &lt;code&gt;Speaker&lt;/code&gt; classes. We decide not to change the test suite much, and make the code work behind the scenes:
+
+{% highlight ruby %}
+describe Conference do
+  it &quot;calculates total rating&quot; do
+    conference = Conference.new(:speakers =&gt; [:chris, :paul])
+    conference.total_rating.should == 9
+  end
+end
+{% endhighlight %}
+
+A nice simple, easy change? You'll pay for this later. Where is the Speaker coming from? Your Conference class is creating it somewhere, or retrieving it from a factory. You've increased the number of collaborators for this class by at least one (possibly three), yet your test isn't showing the additional complexity. It's deceitfully hiding it, whilst you continue on in blissful ignorance.
+
+Your tests are now sitting around the outside of your system. There are no tests for the Speaker class at all, except that we co-incidentally check the rating it emits. Another developer is likely to miss the connection and remove the implied test whilst changing the code for a different reason later.
+
+This gets worse over time:
+
+{% highlight ruby %}
+describe Conference do
+  it &quot;calculates total rating&quot; do
+    conference = Conference.new(
+      :schedule =&gt; :nine_to_five,
+      :talks =&gt; [talk_for(:chris), talk_for(:paul)]
+    )
+    conference.total_rating.should == 9
+  end
+end
+{% endhighlight %}
+
+Can you see what's going on here? We've created some nice helper methods to make it easy to create the required talk objects we need. This test is fairly easy to read, but it's dressing up the problem. The test code is relying on far too many collaborators to function correctly to return the correct result.
+
+When you extract a class, your purely state based tests don't always require change. If you're not stubbing out or mocking systems, you can end up in a situation where you're relying on the code to work without realising it.
+
+How could it be improved?
+
+{% highlight ruby %}
+describe Conference do
+  let(:talk1) { double(:talk, :rating =&gt; 10) }
+  let(:talk2) { double(:talk, :rating =&gt; 6) }
+  let(:schedule) { double(:schedule, :rating =&gt; 10) }
+  before(:each) { Schedule.stub(:new =&gt; schedule) }
+  it &quot;calculates total rating&quot; do
+    conference = Conference.new(
+      :schedule =&gt; :nine_to_five,
+      :talks =&gt; [talk1, talk2]
+    )
+    conference.total_rating.should == 9
+  end
+end
+
+describe Speaker do
+end
+describe Schedule do
+end
+{% endhighlight %}
+
+Now we've isolated the method nicely from its collaborators, and ensured that its behaviour is correct: that it aggregates the ratings of the talks and the schedule. We also make sure that we're testing Conference correctly, also in isolation.
+
+The more you use refactoring methods such as Extract Class without cleaning up your tests, the more likely your tests will be lying to you. Little by little, those tests that you trusted are slowly testing more and more code. You add a multitude of edge cases at the edges, never thinking about the complexity within. You've resorted to using end-to-end tests to test basic correctness.
+
+This is a bad thing on many levels: for example, what happens to interface discovery? How will you know how the interface of your lower-level classes needs to behave if you're not mocking or stubbing it? You are resorting to guessing, rather than exercising the interface ahead of time in your tests. If you have tests around the edges, but not in the middle, you're not gaining the design input that tests give you in each layer of your system.
+
+## Your code stinks
+
+If you go the whole hog with testing in isolation, then you might end up here with something like this:
+
+{% highlight ruby %}
+describe Conference do
+  let(:talk1) { double(:talk, :rating =&gt; 10) }
+  let(:talk2) { double(:talk, :rating =&gt; 6) }
+  let(:talk3) { double(:talk, :rating =&gt; 2) }
+  let(:talk4) { double(:talk, :rating =&gt; 8) }
+  let(:track1) { double(:track, :talks =&gt; [talk1, talk3] }
+  let(:track2) { double(:track, :talks =&gt; [talk2, talk4] }
+
+  let(:venue1) { double(:venue, :nice_coffee_places =&gt; 3) }
+
+  let(:joe) { double(:announcer, :experience =&gt; 5) }
+
+  let(:schedule) { double(:schedule, :rating =&gt; 10, :accouncer =&gt; joe) }
+  before(:each) { Schedule.stub(:new =&gt; schedule) }
+
+  it &quot;calculates total rating&quot; do
+    conference = Conference.new(
+      :schedule =&gt; :nine_to_five,
+      :tracks =&gt; [track1, track2],
+      :organiser =&gt; joe,
+      :venues =&gt; [venue1, venue1]
+    )
+    conference.total_rating.should == 6.3945820
+  end
+end
+
+{% endhighlight %}
+
+I'm not surprised people moan about maintaining this: if any aspect of the Conference class changes, this test will break and need to be fixed. We can see that this test code is hard to write and difficult to read. It would be so much easier just to hide this setup in a few factory methods with some sensible defaults, right?
+
+Maybe it's not the test code that's the problem. Perhaps the code stinks. Perhaps the class simply has way too many collaborators, which is why your test code contains a large amount of set up.
+
+For this test code, we can see there are several objects leaking all over the conference code: to refactor this I'd probably get through a Scheduler, Caterer and perhaps a TrackAggregator before I was done. I'd ensure all these objects were tested in isolation, and ensure that there are acceptance tests all the way through to make sure the customer has what they need.
+
+_Well designed code is easy to test._ As a rule of thumb, anytime I get over about two or three lines of setup code for testing a method, I normally take a step back and ask myself if this method is doing too much.
+
+
+## Test speed
+
+The other advantage of running tests purely in isolation is that they're fast. Very fast. When I'm coding Rails apps these days, thanks to advice from [Corey Haines](http://twitter.com/coreyhaines) I'm running a &lt;code&gt;spec_no_rails&lt;/code&gt; folder which runs independently from the rest of my Rails app. Rails apps by default epitomise this problem: default model tests exercise the whole system from the database up. By running your tests independently you're not having to clean the database or start Rails each time you run your tests, which means that much of your interesting code can be tested in under a second. [Gary Bernhardt](http://twitter.com/garybernhardt) has more information on how to set this up in his excellent [Destroy All Software](http://destroyallsoftware.com) screencast series.
+
+## What I'm not saying
+
+This isn't an argument for or against Mocks or Stubs. Either technique can be used successfully to generate clean code. It's an argument about only exercising the code under test, and leave the rest of the system to take care of itself. The important thing is that you _don't exercise your collaborators:_ whether you check they've received messages or simply stub them to return input doesn't matter.
+
+*Don't forget end-to-end tests.* These are very important for business acceptance and for ensuring basic functionality. The important thing is to ensure that you're being intentional about your end-to-end tests and ensure your unit tests are not end-to-end tests by accident.
+
+Take a good look at the test code for a project you recently worked on. You don't need to look at the production code yet: notice that I've not included any production code in these examples. You shouldn't need to see it to know whether it's of good quality or not: you can tell that by reading the tests.
+
+Which is the most annoying or bulky part of your test code? Are your tests deceiving you about what they're testing? How could you improve the code to make this test code easier to maintain?
+</content></entry><entry><title>Kanogo: vapourware to beta in 24 hours</title><category term='code'/><category term='products'/><category term='business'/><category term='kano analysis'/><category term='rails'/><category term='heroku'/><category term='ruby'/><category term='kanogo'/><link href='http://chrismdp.com/2011/09/kanogo-vapourware-to-beta-in-24-hours'/><updated>2011-09-12T11:30:37+01:00</updated><id>http://chrismdp.com/2011/09/kanogo-vapourware-to-beta-in-24-hours</id><content type='html'>&lt;div class='notice'&gt;
+  &lt;h2&gt;TL;DR&lt;/h2&gt;
+
+  &lt;p&gt;Last week I built the first beta of a new web product called &lt;a href=&quot;http://kanogo.com&quot;&gt;Kanogo&lt;/a&gt;. It’s designed to gather feedback and perform &lt;a href=&quot;http://en.wikipedia.org/wiki/Kano_model&quot;&gt;Kano analysis&lt;/a&gt; to determine which direction you should take with your website.&lt;/p&gt;
+
+  &lt;p&gt;Here's an example, designed specifically for this blog. Thanks for your feedback!&lt;/p&gt;
+
+  &lt;iframe allowtransparency='true' frameborder='0' scrolling='no' src='http://kanogo.com/surveys/13/embed?' style='width: 100%; height: 120px'&gt;
+  &lt;/iframe&gt;
+
+  &lt;p&gt;Sign up for the beta &lt;a href='http://kanogo.com'&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;/div&gt;
+
+## The backstory
+
+A while back I agonising over which should be the next greatest feature for one of my products. I thought the best thing to do would be to conduct some Kano analysis on the product in question, and realised there wasn't an easy way of doing this. I've used [kanosurvey.com](http://kanosurvey.com) in the past, but it didn't really feel like the right tool. How was I to get users to answer my survey?
+
+&quot;Wouldn't it be great,&quot; I thought, &quot;if I could embed a little survey box on the site that asked customers what they thought and provided me with Kano analysis stats?&quot; The concept behind [Kanogo](http://kanogo.com) was born.
+
+Fast forward several months to last week. I found myself with a few days spare and decided that the best use of them would be to build a beta of this product. Always up for a challenge, I decided to give myself 24 hours to build and launch.
+
+That's not very long, so I had to hustle.
+
+## Timeline
+
+*7 Sep: 12:10am:* [I announced my intentions](https://twitter.com/#!/chrismdp/status/111214768651636736), mostly to motivate myself through fear of failing in public. I finally decided on a name, and registered the domain and the twitter account. I announced the product [to the world](https://twitter.com/#!/chrismdp/status/111240345341263872) (well, a [subset](https://twitter.com/#!/chrismdp/followers)).
+
+*7 Sep: 01:55am:* Got a new Rails 3.1 app running on Heroku cedar. It's a one page app using a Campaign Monitor signup form. Got my first beta signup. Finished for the night.
+
+*7 Sep: 07:40am:* Announced Kanogo again, just in case anyone had been sleeping at 2am :) Got another 3 beta signups and a bunch of feedback on spelling errors.
+
+*7 Sep: 10:13am:* Simple twitter sign in done using [Omniauth](https://github.com/intridea/omniauth) and this really useful [tutorial](https://github.com/RailsApps/rails3-mongoid-omniauth/wiki/Tutorial).
+
+*7 Sep: 02:45pm:* The USA woke up and I got more beta signups: now up to 5. Got the basic data entry for surveys and features done. Started work on the embed. Was feeling fairly pessimistic about a beta launch for that night, but didn't want to let myself down.
+
+*7 Sep: 05:53pm:* Embed done, quicker than expected. Took a break. Now feeling [cautiously optimistic](https://twitter.com/#!/chrismdp/status/111482135218626560).
+
+*7 Sep: 09:12pm:* Basic response mechanism in: now needed to apply the Kano analysis magic! Adrenalin took over from caffiene as primary stimulant.
+
+*7 Sep: 11:20pm:* Turned on twitter sign in as basic method of getting registered on the site. Removed redundant Campaign Monitor signup: emailed subscribers manually to ask them to sign in via twitter. Beta [went live!](https://twitter.com/#!/kanogoapp/status/111564545708929024)
+
+## The result
+
+![Embed](/files/kanogo-1.png)
+
+![Results](/files/kanogo-2.png)
+
+After 24 hours, I had a beta running, which worked. Granted, it wasn't great, but it was something that had some value.
+
+I spent the rest of the evening and following morning promoting the beta on mailing lists and on twitter. By the end of the following day I had 30 or so beta signups.
+
+It's already adding value to beta users. Two sites using the beta already on their own products. One beta user has now decied to implement a feature as he's realised his customers consider it a &quot;must have&quot;. There's no substitute for real feedback.
+
+## Learnings
+
+Some of the things I've learned so far:
+
+* *Cloud tools are the business.* It was so easy to register the domain with [dnsimple.com](http://dnsimple.com), start up a [twitter account](http://twitter.com/kanagoapp) for marketing and customer interaction, deploy to [Heroku](http://heroku.com), get initial beta signups with [Campaign Monitor](http://campaignmonitor.com).
+
+* *Modern development tools rock.* I used Rails 3.1 for this app, which worked beautifully, and I love the use of sprockets to help manage the asset pipeline. Running the app on Heroku cedar went without a hitch. I used twitter for authentication, and it only took an hour to set up.
+
+* *There is no &quot;quick and dirty&quot;.* The app is (almost) fully tested: I confess I left a couple of methods only covered by end-to-end tests (which doesn't really count). I definitely proved that the only way to go fast is to go clean: [Jason was right](http://agileage.blogspot.com/2011/07/slow-and-dirty-rant-by-jason-gorman-at.html) that there is no &quot;quick and dirty&quot; only &quot;slow and dirty&quot;. This came back to bite me instantly: the code I didn't use specs for took me the longest to get working.
+
+* *Technology is the easy part.* It didn't take me long to build the site, but the trick is to build a business. After initial interest, the analytics on the site are way down as the next new thing appears on the internet and people move on. To gain traction I need to build the app my beta users actually want. Thankfully, quick feedback is what Kanogo does, so we're eating our own dogfood and asking our users what they think at every turn. This is already directing which features I work on next, which has to be the most efficient way of moving forward, right?
+
+## What's next?
+
+I plan to continue working on this, listening to beta user feedback, refining the features, and accepting new beta signup for the moment. I hope to turn this into a paid product at some point, as I think there's a huge amount of value here to websites if I can get the messaging right.
+
+## Can I get involved?
+
+Sure! It's not too late to join the beta: you can [do so here](http://kanogo.com). I'd love your feedback on the product. It can give you value anywhere you have users of a website, even on a blog as shown above.
+</content></entry><entry><title>Pin in the map: customisable pin icons</title><category term='code'/><category term='cucumber'/><category term='ruby'/><category term='legacy'/><category term='products'/><category term='pininthemap'/><link href='http://chrismdp.com/2011/09/pininthemap-customisable-pin-icons'/><updated>2011-09-06T21:18:13+01:00</updated><id>http://chrismdp.com/2011/09/pininthemap-customisable-pin-icons</id><content type='html'>I've just spent some time updating my first ever Rails project, [Pin in the map](http://pininthemap.com). Now you can change the icons associated with premium (paid for) pins. There are over 100 new icons to choose from: [have fun!](http://pininthemap.com)
+
+![pininthemap example](/files/pininthemap-example.png)
+
+## Learnings
+
+This codebase is from 2006, so this has proved a nice little exercise in adding testing to a legacy project. I had no tests at all to speak of when I wrote the code five years ago, and the code shows it. I began by installing cucumber and rspec and quickly wrapping the two most common features in acceptance tests: creating and editing pins. Even on old code it was super easy to get capybara, cucumber and rspec up and running, thanks to the fact that we've upgraded the codebase to Rails 2 and started using bundler to manage gem dependencies. We stuck to Selenium for the tests as the code is very Google Maps heavy.
+
+It's always worth keeping old apps vaguely up to date: the less inertia surrounding a codebase the more likely you'll spend an afternoon adding an often-requested feature.
+</content></entry><entry><title>e-petitions: handling traffic</title><category term='code'/><category term='scaling'/><category term='agile'/><category term='adn'/><category term='e-petitions'/><category term='government'/><link href='http://chrismdp.com/2011/08/e-petitions-handling-traffic'/><updated>2011-08-30T13:51:38+01:00</updated><id>http://chrismdp.com/2011/08/e-petitions-handling-traffic</id><content type='html'>Since I [last blogged about e-petitions](/2011/07/e-petitions-deconstructed) we had what conservatively could be described as &quot;something of a traffic spike&quot;. The [amount of interest](http://www.bbc.co.uk/news/uk-politics-14474429) surrounding the site massively exceeded all our expectations.
+
+Given the time available to us, we had rated the site for about 10 requests a second, basing our expectations on 50% more usage than the original e-petitions site. However, during peak times we were seeing non-cached bursts of traffic through to the site of between 70-120 requests a second: we'd load tested up to about 40-50. This caused the site to intermittently produce [500 errors](http://epetitions.direct.gov.uk/500.html); this in turn [producing](http://www.thesun.co.uk/sol/homepage/news/3733792/E-petitions-website-down-on-first-day.html) [headlines](http://www.guardian.co.uk/politics/2011/aug/04/government-e-petition-website-crashes) that we really didn't want to see.
+
+Most perplexingly, we were still seeing intermittent failure messages in the logs when the site was getting about 20-30 requests a second, even though that had worked fine in testing. During this time none of the servers were under a huge amount of load, so we struggled to find the bottleneck.
+
+Eventually we discovered that the hardware firewall we'd put in place to help improve security wasn't able to handle the number of network connections required of it, and was randomly dropping network connections. This included connections on the internal network, which caused connectivity problems to the seach and database servers. This caused most of the intermittent failures people saw. The firewall had been set up after we had done our load testing and we'd not re-run our testing since then, so we hadn't spotted the problem
+.
+
+Once this had been fixed, we were on to more familiar territory. The dedicated solr server we were running for search was really struggling with only 4 CPUs, so we rebooted it using 8 CPUs and it started working much better.
+
+We also made a number of other changes to the site to make it more robust:
+
+* We brought an application server down, cloned the disk and set up a third application server within about half an hour. It's not as quick as running on Amazon EC2, but it's not a bad turnaround for a more traditionally hosted site.
+
+* We set up monitoring on the site using [Munin](http://munin-monitoring.org/), which is a brilliant server montoring tool. This helped us discover the solr issues much more quickly.
+
+* We went right through the code and turned on caching everywhere we hadn't yet thought of, including caching of more pages surrounding the signing step.
+
+* We worked around a sunspot issue which was causing a petition to reindex after every signature, stressing the search server further.
+
+## Lessons learnt
+
+* Run your load tests again after any configuration change, even if it shouldn't make a difference. If we'd done this, we'd have spotted the firewall configuration issue before the public did.
+* Set up proper measuring tools before the event. It took us a while to find the best cause of action with the search server because we were relying on [New Relic](http://newrelic.com) to monitor the application servers only. Once we had Munin running we could more easily make more CPUs available to the search server.
+
+The vast majority of the above changes were made within one (very late) night: from a customer point of view, being agile isn't just about how flexible you are during development, but how responsive you can be when there are problems. Our technology and stack choice really helped us out here, and I also particularly wanted to thank the Alpha.gov guys ([Ben Griffiths](http://twitter.com/beng), [James Stewart](http://twitter.com/jystewart) and [Matt Patterson](http://twitter.com/fidothe)) and [Alex Tomlins](http://www.unboxedconsulting.com/people/alex-tomlins) from [Unboxed](http://unboxedconsulting.com) for stepping in and helping [Jolyon](http://www.unboxedconsulting.com/people/jolyon-pawlyn) and myself out that evening.
+
+Jolyon and I are [giving a talk about e-petitions at LRUG](http://lanyrd.com/2011/lrug-september/sgzxr/) next month if you'd like to hear more.
+</content></entry><entry><title>Work with me</title><category term='code'/><category term='meta'/><category term='agile'/><category term='training'/><category term='life'/><category term='tdd'/><link href='http://chrismdp.com/2011/08/work-with-me'/><updated>2011-08-22T15:36:53+01:00</updated><id>http://chrismdp.com/2011/08/work-with-me</id><content type='html'>I've been taking a break from my work and blogging for the summer: but now I'm looking for work again from next week.
+
+To this end I've put up a [new page](/workwithme.html) on this site which has all the details of what I can offer, and my availability. If you'd like to work with me this autumn, do [get in touch](mailto:chris@thinkcodelearn.com).
+
+I also plan to start blogging again soon, with my first topic being [how we handled the massive site traffic](/2011/08/e-petitions-handling-traffic) we experienced on e-petitions [a couple of weeks ago](http://www.bbc.co.uk/news/uk-politics-14474429).
+</content></entry><entry><title>e-petitions: deconstructed</title><category term='code'/><category term='chef'/><category term='agile'/><category term='adn'/><category term='government'/><category term='e-petitions'/><link href='http://chrismdp.com/2011/07/e-petitions-deconstructed'/><updated>2011-07-29T15:57:09+01:00</updated><id>http://chrismdp.com/2011/07/e-petitions-deconstructed</id><content type='html'>&lt;div class='notice'&gt;Update: I've posted more about the massive traffic surge and how we responded &lt;a href='/2011/08/e-petitions-handling-traffic'&gt;here&lt;/a&gt;.&lt;/div&gt;
+
+The project that I've been working on at the Government Digital Service (GDS) for the last few weeks has just been launched. It's the new Government [e-petitions](http://epetitions.direct.gov.uk) service, which replaces the old Number 10 petitions website run by the previous government. Time to talk about the architecture, how we set the team up and the effect the project is having within government.
+
+![e-petitions](/files/e-petitions.png)
+
+## The project
+
+The project was overseen and run by [Skunkworks](http://twitter.com/HMGSkunks), the new innovation arm of the GDS that specialises in quick projects with small teams. They hired the [Agile Delivery Network](http://agiledelivery.net) (ADN) to do the work: this is a non-profit organisation I'm involved with that's trying to help government deliver IT projects more quickly.
+
+We put together a team consisting of myself and two other developers, a designer, a tester/project manager, our customer and an analyst to help with the copy and training the staff who will be moderating petitions.
+
+We originally started the project at the very beginning of June, knowing that we only had six weeks to get the site live. We ran three two-week iterations, during which requirements shifted around as the important deliverables came into focus.
+
+There were a number of major technical hurdles. We spent a lot of time getting the accessibility of the site right, and tweaking the feel of the search feature. Getting the site hosted was difficult: it's not straightforward finding website hosting for a government website that collects personal data.
+
+Whilst we tried to find the right place to host the site, we spent a lot of time using [Chef](http://www.opscode.com/chef) to test our build configuration on Amazon EC2. When the hosting came online, it was relatively simple (thankfully) to deploy the site to the production environment, as we'd already prepared all the configuration scripts in advance.
+
+## The tech
+
+We built the site in Rails, with a MySQL and a Solr search backend. It's running in production on two application servers, through nginx for static content with unicorn at the backend. There is one dedicated DB server, and one dedicated Solr server. Our JMeter testing showed that we may not need the dedicated Solr server, so that might also share CPU with a read-only MySQL slave in future if the site traffic gets heavier.
+
+For server configuration, we're running a customised version of chef-solo on each of the servers, bootstrapped with a little bespoke script. We didn't want to set up a chef server as we didn't get the hosting environment set up until quite late in the day, and we didn't want an external server with access to the production environment.
+
+Chef turned out to be awesome: it was very satisfying to watch all the scripts we'd built on EC2 &quot;just work&quot; (well, almost) on the live environment. Nginx + Unicorn was also a highlight: it's more Unix-y that Apache + Passenger and handles graceful restarting very nicely.
+
+## The reaction
+
+The site has been well received by those outside government, but perhaps just as importantly the way that we ran the project caused a bit of a stir within Whitehall too. Agile projects are still rare in government, and IT spending is a [hot topic](http://www.bbc.co.uk/news/uk-politics-14314935) right now. It's great that people are beginning to think about how to deliver software in better ways and the guys at Skunkworks are doing really well at promoting agile methods internally.
+
+## The team
+
+Everyone who worked hard to make the site what it is: it was great fun working with you!
+
+* [Tom Dickinson](http://www.unboxedconsulting.com/people/tom-dickinson) from [Unboxed](http://unboxedconsulting.com)
+* [Peter Herlihy](http://uk.linkedin.com/in/peterherlihy)
+* [Charlie MacLoughlin](http://uk.linkedin.com/pub/charlie-macloughlin/3/183/821)
+* [Jolyon Pawlyn](http://www.unboxedconsulting.com/people/jolyon-pawlyn) from [Unboxed](http://unboxedconsulting.com)
+* [Alan Thomas](http://www.unboxedconsulting.com/people/alan-thomas) from [Unboxed](http://unboxedconsulting.com)
+* [Will Tomlins](http://www.unboxedconsulting.com/people/will-tomlins) from [Unboxed](http://unboxedconsulting.com)
+* Me
+
+We're planning to get the code out on github soon. Hope you like the site and enjoy using it.
+</content></entry><entry><title>Lean code: slides and feedback</title><category term='code'/><category term='lean'/><category term='presentation'/><category term='software craftsmanship'/><category term='sc2011'/><link href='http://chrismdp.com/2011/05/lean-code-slides-and-feedback'/><updated>2011-05-26T21:35:40+01:00</updated><id>http://chrismdp.com/2011/05/lean-code-slides-and-feedback</id><content type='html'>I facilitated a workshop at [SC2011](http://lanyrd.com/2011/software-craftsmanship/) today about how code might be thought of as Lean. The idea was to start a coding project and cope with shifting requirements to identify what happens when we deliver as fast as we can, whether testing is worth it, and what waste actually means.
+
+If you were there, please do [rate the talk](http://speakerrate.com/talks/7643-lean-code) so I can improve!
+
+A number of people expressed an interest in trying the exercise, so here are the slides if you're interested in trying it at home.
+
+&lt;object id=&quot;__sse8116737&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=lean-code-110526153405-phpapp02&amp;amp;stripped_title=lean-code&amp;amp;userName=chrismdp&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;/&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot;/&gt;&lt;embed name=&quot;__sse8116737&quot; src=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=lean-code-110526153405-phpapp02&amp;amp;stripped_title=lean-code&amp;amp;userName=chrismdp&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;/embed&gt;&lt;/object&gt;
+
+The session details are also [on Lanyrd](http://lanyrd.com/2011/software-craftsmanship/sfkgw/).
+
+Let me know how you get on, and if you need any help!
+</content></entry><entry><title>Pomodoros help you refactor</title><category term='code'/><category term='pomodoros'/><category term='tdd'/><category term='craftsmanship'/><category term='pairing'/><link href='http://chrismdp.com/2011/04/pomodoros-help-you-refactor'/><updated>2011-04-01T20:21:15+01:00</updated><id>http://chrismdp.com/2011/04/pomodoros-help-you-refactor</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;If you finish a task while the Pomodoro is still ticking, the following rule applies: If a Pomodoro Begins, It Has to Ring. It’s a good idea to take advantage of the opportunity for overlearning, using the remaining portion of the Pomodoro to review or repeat what you’ve done, make small improvements, and note down what you’ve learned until the Pomodoro rings.&quot;&lt;/i&gt;&lt;/p&gt;
+
+-- Francesco Cirillo, [The Pomodoro Technique](http://www.pomodorotechnique.com/)
+
+What's the single most important part of Test Driven Development not to miss? Refactoring. What's the part of TDD that's most often missed? Refactoring.
+
+With refactoring, we work our way toward a great design, clean code, and flexible organic tests. Without refactoring, we have ugly brittle test suites and uglier code. We know this. What I don't always do is take advantage of the moments I have when I can effectively refactor for free.
+
+At the end of a task, when the build is running, I've previously let my mind wander to the next thing, or check email, surf the net, and generally [get out of the zone](http://www.computus.org/journal/?p=982). This bad habit has been highlighted to me in [my use of the pomodoro technique recently](/2011/03/pomodoros-done-hopefully-right).
+
+I was doing the same for the shorter pauses during normal TDD. My pomodoros statistics were telling me that I'm very bad at concentrating whilst coding: the average time spent before I let my mind wander was 11.67 minutes. I was allowing my mind to drift whilst Rails started up to run whatever test I was working on. Not good.
+
+## Time to improve
+
+This week, I've been trying to take the time to look at my code critically for areas of improvement. A pomodoro is indivisible, which means I'm not _allowed_ to think about anything else.
+
+And guess what? I always find something to improve, and I feel that little bit better about my code.
+
+The also helps with the thing I've missed most about not pairing: that other person's critical eye on what you're doing, always thinking about the code being written. During the natural pauses, you can be that other person and ensure the code you write is great. Being two people is [more fun, too](http://www.pixar.com/shorts/gg/index.html).
+</content></entry><entry><title>Call for coders: Children's Future International</title><category term='code'/><category term='charity'/><link href='http://chrismdp.com/2010/10/childrens-future-international'/><updated>2010-10-18T19:42:33+01:00</updated><id>http://chrismdp.com/2010/10/childrens-future-international</id><content type='html'>For the past few months [my company](http://edendevelopment.co.uk) has been involved with a charity in Cambodia called [Children's Future International](http://www.childrensfutureinternational.org/). They are a fantastic organisation dedicated to helping children in very challenging conditions; they enable them to live and be educated in a safe community. 
+
+We've been helping them to build a system to keep track of where their students live, which school they go to and which programmes they are involved with.
+
+This autumn we've decided to increase the number of developers working on the project. The charity have agreed to open source the code, so that anyone who wants to can pitch in and lend a hand. I've taken on co-ordinating this effort, and we need your help!
+
+## How do I help?
+
+The code is here:
+
+[http://github.com/edendevelopment/cfi](http://github.com/edendevelopment/cfi)
+
+We're currently running an issue tracker here:
+
+[http://github.com/edendevelopment/cfi/issues](http://github.com/edendevelopment/cfi/issues)
+
+See the [README](http://github.com/edendevelopment/cfi/blob/master/README.textile), but the gist is: grab the code, claim an issue (remove the 'you can help' tag and mark it with 'in progress'), write a patch, submit a pull request.
+
+We're picky about code quality. Your patches might get sent back for improvements in quality and/or test coverage. Pleased don't be offended if this happens to you :)
+
+## Why should I help?
+
+We don't often stop to think about this, but we coders have a unique gift which can be used to bring huge benefit to the world. We have the power to help people do _real tangible good._ The reward we get through helping out in this particular project is the satisfaction of helping to ensure that very vulnerable children get to live and go to school in a safe community. Oh, and your name on the commit list on the README :)
+
+There's more: thinking ahead a little, it's possible that we might be able to build a system which lots of charities can use for free to organise their processes, save themselves lots of money, leaving themselves more resources to do greater things. Wouldn't that be cool? This is starting already: there is another charity interested in building off the current codebase.
+
+So what are you waiting for? Check out the [issues list](http://github.com/edendevelopment/cfi/issues/) and lend a hand!
+
+</content></entry><entry><title>How to test your node.js app</title><category term='javascript'/><category term='code'/><category term='tdd'/><category term='node.js'/><link href='http://chrismdp.com/2010/05/tdd-with-node-js'/><updated>2010-05-23T11:05:00+01:00</updated><id>http://chrismdp.com/2010/05/tdd-with-node-js</id><content type='html'>I've wanted to hack on a [node.js](http://nodejs.org) project for a while, and a new app idea has given me the perfect excuse. My first question was: how do I test this? It's a fairly new field out there, and there isn't much help from node.js itself: it's much more like [Rack](http://rack.rubyforge.org/) than a proper framework. So I spent some time coming up with one way to do it.
+
+Disclaimer: I'm not that experienced with Javascript, particularly with the best way to define objects. I'd be grateful for patches to help improve the quality of the code here. I've also borrowed heavily from [apprentice-us](http://github.com/redsquirrel/apprentice-us) - thanks to [Dave](http://twitter.com/redsquirrel) and [Corey](http://twitter.com/coreyhaines)!
+
+## Overview 
+
+
+This is what I've got so far (the actual app I'm working will remain closed-source for the mo):
+
+[Example node.js github project](http://github.com/chrismdp/example-nodejs-project)
+
+You probably want to refer to the code whilst reading the rest of this article.
+
+To run the tests, run _rake_. To start the app, run _node app.js_ (you will need to have node.js installed obviously).
+
+If you install the [watchr](http://github.com/mynyml/watchr) gem, and run _watchr autotest.watchr_, you'll get robust autotest like functionality. I'm liking watchr much better than ZenTest right now.
+
+## How it works
+
+The basic premise is to decouple the request/response handler from the server (see *app.js*, *lib/http.js* and *lib/router.js*). The interesting bit is in *test/ integration/ user_sees_homepage.js* - this then calls the dispatch method directly, passing in dummy Request and Response objects.
+
+Note how I've [defined the Response object](http://github.com/chrismdp/example-nodejs-project/blob/master/test/integration/user_sees_homepage.js). This allows me currently to write an integration test that looks like this:
+
+{% highlight javascript %}
+router.dispatch(new Request(&quot;GET&quot;, &quot;/&quot;), new Response(function(headers, data) {
+  assert.contains(&quot;200&quot;, headers['status'])
+  assert.contains(&quot;Hello, world!&quot;, data)
+}));
+{% endhighlight %}
+
+The assert.contains() method is not part of node.js: it's implemented in _test/helper.js_.
+
+The reason you need the asserts to be fired in the end() function is that node.js is inherently asynchronous and will finish executing this file whilst waiting for the haml file to load in *lib/router.js*. Try it yourself: if you put an assert at the bottom of the file it will fire immediately.
+
+## Unit tests
+
+The plan is then to define whichever unit tests you need in *test/ unit/ (something)_test.js*, with the corresponding code in *lib/ models/ (something).js*. Just run javascript code in here and call methods on assert, and rake will execute it.
+
+## Improvements
+
+You could potentially use the Sinatra-like framework [Express](http://expressjs.com) to define *lib/router.js* - I've handrolled it for the moment. I'm of the opinion that you spot betterrefactorings by handrolling to start with: it could be that express.js isn't right for my app, and I can't easily tell yet.
+
+There are a number of javascript testing libraries out there, but at the moment I'm happy with my own handrolled version, which just relies on the 'assert' package that node.js provides. There's nothing to stop you using JSpec or some other javascript testing library: I wanted to keep things simple to start with. 
+
+I'm also aware that Cucumber [now supports javascript through V8](http://blog.josephwilk.net/ruby/testing-javascript-with-cucumber-in-javascript.html), which is an important step in the right direction. Unfortunately however it doesn't yet support the [commonjs](http://commonjs.org) package system, and doesn't run through node.js but through raw V8. This makes it hard to use with anything but toy examples. Ideally I've love to plug Cucumber in in the future, if we can get it to use node.js as the platform somehow.
+
+If you use it for something useful, let me know! I'd be very happy to receive patches and suggestions.
+</content></entry><entry><title>Every Ash Cloud Has A Silver Lining</title><category term='travel'/><category term='chicago'/><category term='pairing'/><category term='code'/><category term='ashcloud'/><link href='http://chrismdp.com/2010/05/every-ash-cloud-has-a-silver-lining'/><updated>2010-05-12T15:05:00+01:00</updated><id>http://chrismdp.com/2010/05/every-ash-cloud-has-a-silver-lining</id><content type='html'>&lt;i&gt;Enrique and I recently became victims of the ash cloud, and spent rather longer in the US than we anticipated...&lt;/i&gt;
+
+I spent a weekend in Chicago last month chatting to some other exceptional companies about the way we all do business. I learnt a huge amount about Eden and how we want to make it better in the future. We were due to leave on Sunday night, but unfortunately the ash cloud had other ideas, and we were stuck in Chicago for a further five days. It wasn't much fun to be stranded, but when you're stuck somewhere, you might as well make the most of it...
+
+Whilst on my extended trip, I got to hang out at [8th Light](http://8thlight.com) and [Obtiva](http://obtiva.com), at the latter for several days. Thanks especially to Obtiva for hosting us for much of the week! Over the ten days I paired with [Micah Martin](http://twitter.com/slagyr), [Dave Hoover](http://twitter.com/redsquirrel), [Chad Prye](http://twitter.com/chadwpry), [Doug Bradbury](http://twitter.com/dougbradbury) and [Eric Smith](http://twitter.com/paytonrules). I hacked on RSpec2 briefly with [David Chelimsky](http://twitter.com/dchelimsky). I went to visit the new offices at Hashrocket Chicago. I spent several days sharing a little suite of rooms at our hotel with [Gustin](http://twitter.com/gustin) and [Enrique](http://twitter.com/ecomba), hacking on [edash](http://github.com/edendevelopment/edash). I wandered about the city, mostly looking up a lot. 
+
+In the evenings, I got to meet and have dinner with [Corey Haines](http://twitter.com/coreyhaines)' lovely girlfriend Sarah, to hang out with Chad and Joe from Obtiva at a [fascinating restaurant](http://www.avecrestaurant.com/), and ate at a [vegan place](http://www.karynsongreen.com/) - not normally on my radar, but it was an experience!
+
+These were some of the many highlights of a five day trip that turned into a ten day experience. Of course I'd have preferred that I wasn't delayed, but when life gives you lemons... you pair :)
+</content></entry><entry><title>Radiating status at Eden</title><category term='agile'/><category term='code'/><category term='information radiator'/><link href='http://chrismdp.com/2010/03/radiating-stats-at-eden'/><updated>2010-03-22T13:55:00+00:00</updated><id>http://chrismdp.com/2010/03/radiating-stats-at-eden</id><content type='html'>[Information Radiators](http://www.agileadvice.com/archives/2005/05/information_rad.html) are always a good idea for software teams, and I've been pondering how best to show project state at [Eden Development](http://edendevelopment.co.uk) for a while.
+
+Here are the various iterations we've been through:
+
+## Iteration 1: Build status messages
+
+We've had a continuous integration server running on integrity for several months, and we wanted to make it obvious how we were doing, so we got an old mac mini out and plugged in a big monitor. That way everyone could see whether our builds were passing or failing. We set the mac to come on at 9am and turn off at 6pm in System Preferences, and used [Plainview](http://www.barbariangroup.com/software/plainview) to display full screen.
+
+This worked well, except that our builds don't fail that often: our current projects have short enough builds that developers can still get away with running all the tests locally.
+
+## Iteration 2: Enter the cycling metric_fu graphs
+
+We have metric_fu running on a [private site](http://metrics.edendevelopment.co.uk) anyway, but the stats weren't very visible. Wouldn't it be cool if we could see our code stats publicly across the whole company? So we split the screen into two halves using a frameset:
+
+![Our status board](/files/metric-fu.jpg)
+
+Each of our projects now cycles through the most important pages from the metric_fu library, for each of our live projects. That way, if there's a big change in the graphs one day, everyone can see that there's a problem and can dive in and fix it.
+
+## Iteration 3: Cramming more stuff in
+
+So far so good, but we had some blank space down the bottom left! So we shoehorned in part of [Pairyapp's](http://pairyapp.com) interface, so that everyone could see who was working with who.
+
+This was nice, because people can suddenly see who's working on a task on their own, and then jump in as needed. It stopped me trawling round the office just to find somebody: now I can easily see exactly who's doing what (picture at the bottom).
+
+## Iteration 4: First pass on our own build server dashboard
+
+This worked well, for about ten days... 
+
+...until we saw [this](http://www.panic.com/blog/2010/03/the-panic-status-board/). Our little solution was immediately not good enough and I set to work on make it shinier.
+
+At about the same time we changed to using [CI Joe](http://github.com/defunkt/cijoe) for building our projects. The way we got that working is [detailed here](/2010/03/multiple-ci-joes-with-rack-and-passenger).
+
+CI Joe doesn't come with an integrated dashboard, so I set to work writing my own. Here's where I've got to so far:
+
+![My dashboard app](/files/dashboard-1.png)
+
+It's not open source yet, but I plan to make it so soon. The pictures are of the person or pair who made the last commit.
+
+## Iteration 5: The final result
+
+And here's how our screen looks this morning:
+
+![The final result](/files/dashboard-2.jpg)
+
+(sorry about the censorship)
+
+It's not finished yet, I've plenty more plans. Expect another few posts on this in the future.
+
+*UPDATE:* Added link to CI Joe post and explained pictures on the dashboard app.
+</content></entry><entry><title>Five things I learnt from Corey Haines</title><category term='craftsmanship'/><category term='pairing'/><category term='code'/><link href='http://chrismdp.com/2010/03/pairing-with-corey-haines'/><updated>2010-03-17T10:18:00+00:00</updated><id>http://chrismdp.com/2010/03/pairing-with-corey-haines</id><content type='html'>Recently I attended [QCon](http://qconlondon.com) and got a chance on the last day to pair with [Corey Haines](http://coreyhaines.com). We worked on a new rails project we're building with a few friends (that's the subject of another post). We'd spent a fair amount of time hanging out, but I hadn't had a chance to sit down and actually code with him. We paired for a couple of hours in the QCon expo area just as everyone was packing up.
+
+Here are a few lessons and some things I picked up.
+
+*REALLY learn vim.* Watching Corey fire around [vim](http://vim.org) was something else: my brain could barely keep up with where the cursor was sometimes. Sometimes it felt like he'd just moved the cursor to where he wanted it to be through Sheer Power of Thought. I'm no slouch in vim, but was impressed by just how much faster I'll be able to go someday, as I continue to practice.
+
+*resource_controller. formtastic. That is all.* These gems take out the legwork of building a thin restful resource-based rails app. You end up with a lot of tests and very little code to worry about. As webapps become more about [javascript and the front-end](/2009/12/rip-web-1-0/), rails apps are becoming thinner and thinner, and these gems make them really fast to write.
+
+*Alias everything.* Corey has a few really useful little bash tricks, like:
+
+{% highlight bash %}
+alias c='script/console'
+alias r='rake routes | grep'
+{% endhighlight %}
+
+..and some others I didn't catch. They save so much time and are so obvious that later I found myself banging 'c' into a console and wondering why it doesn't work. 
+
+The summary of these lessons is another more general one:
+
+*Work to remove whatever constrains you from getting the computer to do what you want.* We need to ensure that there is as little as possible in the way of getting stuff done. Everything else is [yak shaving](http://en.wikpedia.org/wiki/Yak_Shaving): slow typing, tool-illiteracy, whatever. Anytime we're not thinking about the problem, we're wasting time.
+
+And finally, a meta-lesson:
+
+*Extend your pairing gene pool.* It's amazing how much you learn when you pair with someone outside your immediate sphere. Rather like when I first paired with [Enrique](http://blog.nexwerk.com), I learnt about stuff I would never have heard of otherwise. 
+
+I spent two hours working with Corey and it was a pleasure. Sadly we live a few thousand miles apart, but I'm looking forward to remote pairing sessions in the future.
+</content></entry><entry><title>Archivey the Robot</title><category term='google wave'/><category term='code'/><link href='http://chrismdp.com/2010/03/archivey-the-robot'/><updated>2010-03-08T16:15:00+00:00</updated><id>http://chrismdp.com/2010/03/archivey-the-robot</id><content type='html'>Following hot on the heels of [Pushy](/2010/03/introducing-pushy/), I've implemented the companion application Archivey. This will delete all but the last five messages on a wave, excepting the top message. It's meant to be used in conjunction with Pushy and any other chatty robots to keep the number of messages in a wave down to a manageable level.
+
+Potential other uses would be in a chatting context: you don't always want to see the complete history of a chat session and this could be a way to hide the noise. Remember that you can always see the complete history by clicking Playback on the wave, so the messages aren't lost: they're just archived.
+
+*To use, add archiveyrobot@appspot.com to a wave.* Be warned, as soon as a new message is added it will merrily start deleting messages, so be careful!
+
+Source code on [github](http://github.com/chrismdp/archivey). Hope you like it: let me know if you find it useful.
+</content></entry><entry><title>Introducing Pushy - github notifications to google wave</title><category term='google wave'/><category term='code'/><link href='http://chrismdp.com/2010/03/introducing-pushy'/><updated>2010-03-07T20:18:00+00:00</updated><id>http://chrismdp.com/2010/03/introducing-pushy</id><content type='html'>I've been having a bit of a love affair with [Google Wave](http://wave.google.com) recently. Like most people I watched the [long introductory video](http://wave.google.com/about.html#video), then tried out the sandbox last July and didn't really get it. I then read [this interesting post](http://blog.cubeofm.com/on-how-google-wave-surprisingly-changed-my-li) which spurred me on to try using it for actual work.
+
+Guess what? It works. Our conversations have become more structured and organised. We're finding that it does help with keeping everything together in one place, and is more 'alive' somehow than a traditional wiki. 
+
+So I thought: &quot;Wouldn't it be cool if you could have your github messages popping up in wave?&quot;
+
+So here's the results of my handiwork: Pushy.
+
+In simple terms, it's a robot which accepts any form of HTTP post and adds the content as a new message on the wave. It has special handling for github post-receive hooks: it formats them nicely using a gadget.
+
+## How to use it
+
+Log on to [wave.google.com](http://wave.google.com) and add pushyrobot@appspot.com to a new wave. The robot will add a message giving you the URL to post to:
+
+![Pushy's receive message](/files/pushy-1.png)
+
+Then, when you post to this url (here I'm using curl):
+
+{% highlight bash %}$ curl -d &quot;testing pushy&quot; http://pushyrobot.appspot.com/push/googlewave.com/fjWFoDWkf{% endhighlight %}
+
+It will add the message to the wave:
+
+![The message appears](/files/pushy-3.png)
+
+If you're using the github notifications, simply add the URL verbatim to your project's service hooks as a Post-Receive hook:
+
+![Github service hook configuration page](/files/pushy-4.png)
+
+Click &quot;Test Hook&quot; and the wave will update. Any new commits to this project should now appear.
+
+Here's what the commit messages for github commits look like:
+
+![Github commit message view](/files/pushy-5.png)
+
+## Source code
+
+The source code is at [github.com/chrismdp/pushy](http://github.com/chrismdp/pushy). It's my first Python project and first App Engine deployment, so be gentle :) I'd welcome forks and patches: especially if you extend the special formatting for other services.
+
+Enjoy! Do let me know if you use it for anything useful. 
+
+*UPDATE:* The wave forum post discussing the robot is [here](http://bit.ly/bKCOkV).
+
+*UPDATE:* Pushy now supports google code's [PostCommitWebHooks](http://code.google.com/p/support/wiki/PostCommitWebHooks) and formats them in a similar way to github commits.
+</content></entry></feed>

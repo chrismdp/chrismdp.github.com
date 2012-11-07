@@ -1,0 +1,681 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Chris Parsons: posts tagged craftsmanship</title>
+
+  <link href="http://chrismdp.com/"/>
+  <updated>2012-09-28T20:46:31+01:00</updated>
+  <id>http://chrismdp.com/tag/craftsmanship</id>
+  <author>
+    <name>Chris Parsons</name>
+    <email>chrismdp@gmail.com</email>
+  </author>
+<entry><title>Your framework is a liability</title><category term='code'/><category term='craftsmanship'/><category term='lean'/><category term='ruby'/><category term='agile'/><category term='liability'/><category term='sinatra'/><category term='paypal'/><link href='http://chrismdp.com/2012/09/your-framework-is-a-liability'/><updated>2012-09-28T20:46:31+01:00</updated><id>http://chrismdp.com/2012/09/your-framework-is-a-liability</id><content type='html'>Your framework is a liability.
+
+Every library you import before you start the project means more for someone else to digest and understand. Each complex 'clever' library equals another few minutes per team member trying to interpret why you imported it, how to use it, and where the configuration goes. Every framework you decide to use is a early decision about how your project will fundamentally work, which might turn out to be the wrong one. Each library is an opportunity for someone else to introduce a bug into your project.
+
+*The only asset a framework or library gives you is a faster route to your feature.* Anything else will drag you down.
+
+If your framework is heavy and onerous, then your code will have a large net negative liability before you've even begun. You'll be constrained to follow a certain set of patterns, which you might end up fighting against later on. Work on the app first: your &lt;anacronym title=&quot;minimum viable product&quot;&gt;MVP&lt;/anacronym&gt; might not even need the benefits your framework provides.
+
+A few examples of where I've benefited from not blindly installing the &quot;standard stack&quot;:
+
+* I've recently started building some new projects wholly in [Sinatra](http://sinatrarb.com), pulling in various gems only when I need to, rather than starting with Rails from the outset. [Sol Trader's website](http://soltrader.net) is pure Sinatra. It was simply much quicker to get started, and I found I could layer on functionality as I needed it. Several months on, I've yet to need to turn to a Rails app.
+
+* When I came to add Paypal integration to the site, I looked at various gems, and decided they were just going to drag me down with extra configuration and hassle. I ended up building Paypal IPN integration [in about 30 lines](https://gist.github.com/2768532) using pure ruby: no libraries. Most of that code was tests.
+
+Don't get me wrong: I still use frameworks for some of my projects, and libraries for all of them, but I'm learning to stop and think before cargo culting the latest stack of 25 different libraries before I can get anything done.
+
+Import a lightweight framework or library when you need to. Consider when you might be chaining yourself to it, which might make a later pivot difficult. It's much easier to add a framework than to remove one from your project: pick the easiest thing to move away from.
+</content></entry><entry><title>Your code is a liability</title><category term='code'/><category term='craftsmanship'/><category term='lean'/><category term='agile'/><category term='team'/><category term='liability'/><link href='http://chrismdp.com/2012/09/code-is-a-liability'/><updated>2012-09-24T20:48:13+01:00</updated><id>http://chrismdp.com/2012/09/code-is-a-liability</id><content type='html'>Your code is a liability.
+
+Every line you write means more for someone else to read, digest and understand. Each complex 'clever' regular expression represents another few minutes per team member trying to interpret what you wrote and why you wrote it. Every line you add limits your project's responsiveness to change.
+
+*Only the feature that your code provides is an asset.* The more that we reduce the amount of code we write, the lighter weight and more agile our software. The easier it is to understand, the less of a intellectual drag it is on the team.
+
+There used to be a lot of talk about getting into the &quot;programmer zone&quot;: that place of heightened focus where time rushes by as if a blur, and the number of lines of output a programmer produces per hour skyrockets... except that lines per hour was never the best measure of coder output to begin with. All that coder is doing is dragging down the project faster. Let's hope they're adding useful features during that process!
+
+It's my belief that the best code is written in conversation, not in the &quot;zone.&quot; A team discussion about the architecture and the arrangement of the different concepts into the simplest and lightest code structure we can fathom will always improve on our own ideas, when we implement them in isolation at a ridiculous rate.
+
+Lightweight, lean coding like this sets our features free from the drag of the code and allows them to soar: responsive to change requests, and easily debugged as the code isn't difficult to understand.
+</content></entry><entry><title>Never leave a failing test</title><category term='tdd'/><category term='craftsmanship'/><category term='code'/><category term='testing'/><link href='http://chrismdp.com/2012/09/failing-tests-rot'/><updated>2012-09-20T15:36:32+01:00</updated><id>http://chrismdp.com/2012/09/failing-tests-rot</id><content type='html'>&lt;p&gt;Imagine this: you're taking a guided tour of a nuclear power station. Just above the door as you come in there there are five lights marked Key Safety Indicators. One of the lights is flashing red.&lt;/p&gt;
+
+&quot;What's that flashing red light?&quot; you nervously ask your host.
+
+&quot;Oh, that light does that from time to time. We're not sure why; we just ignore it.&quot;
+
+There's an awkward silence. How confident are you feeling right now?
+
+## Failing tests fester.
+
+Red tests are like code rot. Catch it early and sort them out, and you'll be fine. If you don't, they'll spread through your code like a disease, causing all sorts of damage:
+
+* *Failures cause fear of change.* If we don't understand why a test is failing, we don't understand the code base. If we don't understand our code, we can't change it safely. All bets are off: any change we make will cause us to be that little bit more anxious.
+
+* *Failures breed failures.* If one test continually fails, then other coders are more likely to tolerate failing tests, and the number of failing tests will grow quickly.
+
+* *Failures kill urgency.* There's a scene in a well-known heist movie where a team of thieves has to break into a bank. Their strategy revolves around putting a remote-controlled car under a waste bin: they use this to cause the bin to move at night, setting off all the alarm sensors. The first time the alarm goes off, the place is filled with police in a matter of seconds. The fifth time the alarm goes off, only one squad car with two bored officers turn up, totally unprepared for the waiting thieves who quickly overpower them. The same is true with tests: if they fail all the time, developers will take a cavalier attitude to checking out the cause. This could cause a really serious failure to be missed.
+
+The only point at which failing tests are valid is when you've written them just before the code you plan to add. If the test should be failing, write code to make it work. If the test shouldn't be failing, change it or delete it. Never leave it to fester.
+</content></entry><entry><title>The power of good naming</title><category term='code'/><category term='craftsmanship'/><category term='refactoring'/><link href='http://chrismdp.com/2012/09/the-power-of-good-naming'/><updated>2012-09-18T20:43:02+01:00</updated><id>http://chrismdp.com/2012/09/the-power-of-good-naming</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;There are two hard problems in computer science: Cache invaliation, naming things, and off by one errors.&quot;&lt;/i&gt;&lt;/p&gt;
+
+-- Source: [Martin Fowler](http://martinfowler.com/bliki/TwoHardThings.html)
+
+Naming things is hard. Why do we expend so much effort to get them right? Because naming programming concepts well gives us a big insight into how they fit into the system we're designing. Continually renaming things records our insights as we go: the right names for our objects, methods and variables will yield fresh insight and in turn shape the design of the system.
+
+J.B. Rainsberger [talks about](http://www.jbrains.ca/permalink/the-four-elements-of-simple-design) names of classes, methods and variables going through four stages:
+
+* *Nonsense:* For example, we might extract a method from a larger one and quickly rename it `foo()` to get the refactor done and the tests passing.
+
+* *Accurate:* We rename the nonsense method to what it actually does, such as `processPayroll()`.
+
+* *Precise:* Once we realise what the method really does, we might refine the accurate name and give it more precision, such as `loopThroughEmployeesAndPayThem()`.
+
+* *Meaningful:* At this point, we've revealed the complexity of the method, and can look to split it up into two methods: `forEachEmployee()` and perhaps a `pay()` method on a seperate interface.
+
+Some simple rules of thumb to follow when naming things:
+
+* *Don't be afraid of nonesense names.* We shouldn't shy away from the early stages of naming. If we're not sure what something is yet, give it a nonsense name. The name `foo()` is fine, as long as it's only going to last fifteen minutes. Best not to commit it though :)
+
+* *If you don't like the code you're writing, use really long names.* If in doubt as to what or where something fits, use a really (really) long name: the longer and more precise the better. I will call a variable something like `computed_unsorted_project_task_matrix` especially if I don't like it and want to refactor it at some point. This is much better than `result` (or `res` or even `r`). I reveal the complexity of the object through the name, which helps reveal complexity in the code.
+
+* *Characters are cheap, confusion is costly.* Let's not make things harder for the programmers who come after us. Remember, this is just as likely to be ourselves in a few months. Let's avoid using a name like `prj` when `project` is only four characters more typing. Anything that reduces reading friction in our code is a good thing.
+
+How often do you rename your methods, objects, and classes? How does naming help you understand your code?
+</content></entry><entry><title>A fresh take on DCI with C++ (with example)</title><category term='coding'/><category term='c++'/><category term='craftsmanship'/><category term='dci'/><category term='sol trader'/><link href='http://chrismdp.com/2012/04/a-fresh-take-on-dci-with-c-plus-plus'/><updated>2012-04-16T12:20:48+01:00</updated><id>http://chrismdp.com/2012/04/a-fresh-take-on-dci-with-c-plus-plus</id><content type='html'>&lt;div class='notice'&gt;
+  If you'd like to purchase Sol Trader you can now do so at &lt;a href='http://soltrader.net'&gt;soltrader.net&lt;/a&gt;!
+&lt;/div&gt;
+
+I've been reading quite a lot about [DCI](http://en.wikipedia.org/wiki/Data,_Context,_and_Interaction) recently, both from the point of view of the [original paper](http://heim.ifi.uio.no/~trygver/2009/commonsense.pdf) published in 2009 and various other sources on the Internet. There's been a discussion around beginning to use it with Ruby on Rails, but at the moment I'm more interested in how to apply the principles to [Sol Trader](http://soltrader.net) in C++.
+
+## What is DCI?
+
+DCI stands for Data, Context and Interaction. It places behaviour at the forefront of your design by setting the stage for a particular use-case through Context objects, and having all the behaviour exist in Role objects seperate to your basic persisted Data objects.  For example, you might have an `Account` &quot;Data&quot; class, which just contains the data representation and basic methods such as `IncrementBalance` and `DecrementBalance`. You'd then have a use-case `TransferMoney` with two roles: `SourceAccount` and `DestinationAccount`. These roles would be played by `Account` objects, but the behaviour of the objects would depend on the roles they play in the use case. The behaviour of the system is therefore captured in one place: it's in the interaction between the roles within a particular use case context, rather than being spread all over different data classes.
+
+This design paradigm is very interesting. We've known for a while that if you mix persistence and behaviour you'll get into somewhat of a mess with your code design after a while. What's new is that whilst we avoid mixing persistence and behaviour, we still often mix *data* and behaviour: that is, we put code describing what the object *does* in the same class as the code which describes what it *is*. This is a subtle violation of the [Single Responsibility Principle](http://en.wikipedia.org/wiki/Single_responsibility_principle); I hadn't noticed this violation before reading about DCI.
+
+The  proponents of DCI advocate injecting methods describing the Role in any given use case directly into the data object when setting the use case up. This is easy in a language like Smalltalk or Ruby, but is considerably harder in C++. What approach should we take in C++ with Roles? Is this the right approach at all?
+
+## The templating method for injection of role behaviour
+
+One way around this it to use templates: subclass your Data objects with a templated class which includes the roles you want the object to play. For example, to take our account example earlier, we could have:
+
+{% highlight cpp %}
+
+    class DestinationAccount {
+    public:
+      virtual ~DestinationAccount() {}
+
+      virtual void DepositMoney(int amount) = 0;
+    };
+
+    template &lt;class DataClass&gt; class DestinationAccountCollaborator :
+      public DataClass, public DestinationAccount
+    {
+      DestinationAccountCollaborator(int id) : DataClass(id) {}
+      virtual void DepositMoney(int amount) {
+        DataClass::IncrementBalance(amount);
+      };
+    };
+{% endhighlight %}
+
+We would also have a similar set up for `SourceAccount`. This way we can pass a pointer to the `DestinationAccount` interface to our Context to set up the use case:
+
+{% highlight cpp %}
+
+    class TransferMoneyContext {
+      DestinationAccount&amp; _dest;
+      SourceAccount&amp; _source;
+    public:
+      TransferMoneyContext(DestinationAccount&amp; dest,
+        SourceAccount&amp; source) : _dest(dest), _source(source) {}
+    };
+
+    ...
+
+    DestinationAccountCollaborator&lt;Account&gt; dest(accountNumberId);
+    SourceAccountCollaborator&lt;Account&gt; source(sourceAccountId);
+    TransferMoneyContext context(dest, source);
+
+{% endhighlight %}
+
+The DataClass would then instantiate itself from the account id and the role contains the description of the behaviour.
+
+In practice however, I found this extremely unwieldy. My data classes all had slightly different interfaces, especially as many of them served as API endpoints. The templates ended up being 'clever' code - they saved very little space at the expense of a good amount of readability. The whole point of DCI is to try and capture behaviour in the Role classes to improve readability and create a cleaner design, and this approach wasn't serving that purpose. There might be better ways of doing it, and I'd be grateful if you'd let me know if you know of a better approach.
+
+## The composition method for roles
+
+The DCI literature teaches us to inject behaviour into the Data objects, to prevent [self schizophrenia](http://en.wikipedia.org/wiki/Schizophrenia_(object-oriented_programming)). For complex use cases, I can see that it would be useful for roles to have access to the methods defined on data objects: but perhaps it would be better to have simpler use cases and have roles only be defined in terms of other roles? In that instance, the roles can simply compose the data objects and expose whichever methods seem appropriate to the other roles in the use case.
+
+## A worked example
+
+As an example, consider this use case that came up recently in Sol Trader: I have a `MarketListing` object which contains a particlar `Good` (such as Grain, or Water) available at a certain price. The GUI displays a list of these `MarketListing` objects in a table format. Whenever a change was detected to any of the listings I would clear the table and reconstruct the gui elements, rather than updating the original elements.
+
+This worked fine, until I realised that the GUI library I'm using did not expect GUI elements to be deleted and recreated under the mouse cursor, and wouldn't fire &quot;click&quot; events correctly at the newly created elements.
+
+Therefore I needed a way to synchronise the GUI table with the `MarketListings` somehow, add new listings that have appeared, update the text of any existing listings, and remove old elements that refer to listings that no longer exist in the set. I decided to try to implement this using DCI, using the composition approach to roles I've discussed.
+
+The use case is quite simple:
+
+* For each source data structure:
+* Does it already exist? If so, update the elements
+* If not, create new elements
+* Remove any elements that weren't checked this run
+
+After writing some tests, I started with the following context object:
+
+{% highlight cpp %}
+
+    class RowUpdater {
+      role::TableSource&amp; _source;
+      role::TableRepresentation&amp; _table;
+      int _timestamp;
+    public:
+      RowUpdater(role::TableSource&amp; source, role::TableRepresentation&amp; table) : _source(source), _table(table), _timestamp(0) {}
+
+      void execute();
+      void checkRow(void const* rowIdentifier);
+    };
+{% endhighlight %}
+
+Note the two role objects, `TableSource` and `TableRepresentation`. I'll come back to those later.
+
+`execute()` and `checkRow()` were defined like this:
+
+{% highlight cpp %}
+
+    void RowUpdater::execute() {
+      _timestamp = SDL_GetTicks(); // Could be any unique number
+      _source.enumerateRows(boost::bind(&amp;RowUpdater::checkRow, this, _1));
+      _table.removeUncheckedRows(_timestamp);
+    }
+
+    void RowUpdater::checkRow(void const* rowIdentifier) {
+      if (_table.rowExists(rowIdentifier))
+        _table.updateRowFor(rowIdentifier, _source, _timestamp);
+      else
+        _table.addRowFor(rowIdentifier, _source, _timestamp);
+    }
+
+{% endhighlight %}
+
+(In C++ you can't easily enumerate, so I used boost::bind to call `checkRow()` on each row in the `_source` object.)
+
+This code is beautifully simple, and very close to the pseudo code I wrote earlier.
+
+### Implementing TableRepresentation
+
+What does this context require of the roles? Here are the methods needed for `TableRepresentation`, taken directly from the context above:
+
+{% highlight cpp %}
+
+    bool rowExists(void const* id);
+    void updateRowFor(void const* id, TableSource const&amp; source, int timestamp);
+    void addRowFor(void const* id, TableSource const&amp; source, int timestamp);
+    void removeUncheckedRows(int timestamp);
+
+{% endhighlight %}
+
+This object is created with the data it needs to manipulate: in this case a `Rocket::Core::Element` object. When it needs to update elements, it is passed a `TableSource` role to give it the relevent data. Here's some of the code for the `addRowFor()` method:
+
+{% highlight cpp %}
+
+    void TableRepresentation::addRowFor(void const* id, TableSource const&amp; source, int timestamp) {
+      Rocket::Core::Element* entry = _element-&gt;GetOwnerDocument()-&gt;CreateElement(&quot;li&quot;);
+      entry-&gt;SetAttribute(&quot;good&quot;, (void*)id);
+      std::vector&lt;std::string&gt; columnList;
+      source.fetchColumnList(columnList);
+      std::vector&lt;std::string&gt;::iterator it = columnList.begin();
+      for(; it != columnList.end(); it++) {
+        ChildContentTag(entry, &quot;div&quot;, it-&gt;c_str(), source.rowFor(it-&gt;c_str(), id).c_str());
+      }
+      _element-&gt;AppendChild(entry);
+      entry-&gt;RemoveReference();
+      entry-&gt;SetAttribute(&quot;updated_at&quot;, timestamp);
+    }
+
+{% endhighlight %}
+
+There's a lot of noise here, but note the use of `source`. The code creates a new `li` element, gets the column list from the source and then asks the source for the string data for a particular row using `rowFor()`. The roles are interacting to provide the behaviour of the use case.
+
+### Implementing TableSource
+
+`TableSource` needed to be an interface in the end to manage both viewing a series of `MarketListings` and also a player `Inventory`. Here are the methods:
+
+{% highlight cpp %}
+
+    virtual void enumerateRows(boost::function&lt;void(const void*)&gt; action) = 0;
+    virtual std::string rowFor(std::string const&amp; key, void const* id) const = 0;
+    virtual void fetchColumnList(std::vector&lt;std::string&gt;&amp; list) const = 0;
+
+{% endhighlight %}
+
+For a `MarketListing`, here's the implementation of the key methods that the `TableRepresentation` needs:
+
+{% highlight cpp %}
+
+    void CommodityMarketTableSource::fetchColumnList(std::vector&lt;std::string&gt;&amp; list) const {
+      list.push_back(&quot;name&quot;);
+      list.push_back(&quot;price&quot;);
+      list.push_back(&quot;quantity&quot;);
+    }
+
+    std::string CommodityMarketTableSource::rowFor(std::string const&amp; key, void const* id) const {
+      MarketListing const* listing = _market.listings()[(Good const*)id];
+      std::stringstream stream;
+      if (key == &quot;name&quot;)
+        return listing-&gt;name();
+      if (key == &quot;price&quot;) {
+        stream &lt;&lt; &quot;$&quot;;
+        stream &lt;&lt; listing-&gt;price().amount();
+        return stream.str();
+      }
+      if (key == &quot;quantity&quot;) {
+        stream &lt;&lt; listing-&gt;amountAtThisPrice();
+        return stream.str();
+      }
+    }
+{% endhighlight %}
+
+The player `Inventory` table source code is very similar.
+
+### Tying it together
+
+How do I use this thing? Inside my controller for updating the GUI window, I do the following:
+
+
+{% highlight cpp %}
+
+    void MarketController::syncInventory() {
+      Rocket::Core::Element* entries = _planetWindow-&gt;GetElementById(&quot;inventory&quot;)-&gt;GetLastChild();
+
+      gui::role::TableRepresentation tableRole(entries);
+      gui::role::InventoryTableSource sourceRole(_inventory);
+      gui::RowUpdater(sourceRole, tableRole).execute();
+    }
+
+    void MarketController::syncMarketListings() {
+      Rocket::Core::Element* entries = _planetWindow-&gt;GetElementById(&quot;market&quot;)-&gt;GetLastChild();
+
+      role::TableRepresentation tableRole(entries);
+      role::CommodityMarketTableSource sourceRole(_market);
+      gui::RowUpdater(sourceRole, tableRole).execute();
+    }
+
+{% endhighlight %}
+
+In each case the `TableRepresentation` is the same, with a different target element, and the source is different depending on what I want to show for that table.
+
+## In conclusion
+
+I could have simply used a list of `MarketListing` objects instead of my `TableSource`, and manipulated the `Element` objects in the GUI directly. That's what I did at first, but this approach gives me a number of advantages:
+
+* The code for enumerating rows, and exposing certain data to to the GUI is kept out of `MarketListing`, which is great: it only makes sense in this Context which is exactly what a role is for.
+* The actual guts of the synchronisation code is kept in the Context. I'm not sure this is the best place, but it's great to have it in one place.
+* It was trivial to add a `role::InventoryDataSource` object: in another 30 minutes or so I had TDDed out the display of inventories of goods using the same Context and slightly different roles.
+* I could potentially replace the `TableRepresentation` with anything which we need to sync lists of tabular data with.
+
+I tested this using some real `CommodityMarket` objects, which contain `MarketListing` objects: I poked new goods into them and checked the elements were being created and removed successfully.
+
+Here's a screenshot of the market at work:
+
+![Sol markets](/files/sol-trader-market-1.png)
+
+In summary, I'm very pleased with how this turned out. There is a bit more code than just hard wiring it, but all my behaviour is in one place, and I've not loaded my market and goods classes with yet more functionality. I'm now looking for other use cases to implement using a similar method, as I move on to building a realistic (as opposed to random) economy.
+
+How do you like my approach to DCI? Have I missed something profound, or how could I improve my approach?
+</content></entry><entry><title>On coding defensively</title><category term='code'/><category term='ruby'/><category term='craftsmanship'/><link href='http://chrismdp.com/2012/02/on-coding-defensively'/><updated>2012-02-17T18:57:25+00:00</updated><id>http://chrismdp.com/2012/02/on-coding-defensively</id><content type='html'>When writing code that will be used by others (and we do that 100% of the time, even if the other user is ourselves in a few weeks time), there's a tricky balance to strike between being generous to the users of our code, and ensuring that they get the information they want to ensure they're calling our code correctly. There are two coding maxims: &quot;Be generous on input, and strict on output&quot;, and &quot;fail fast&quot;, which we need to hold in tension. This post explores the trade-offs between the two.
+
+## &quot;Be generous on input, and strict on output&quot;
+
+This is another way of saying *code defensively:* we should allow the user to use our code a number of different ways, yet be careful about what we return to them to ensure they can't be easily confused.
+
+For example, consider this method:
+
+{% highlight ruby %}
+
+    def calculate_total(products)
+      total = 0
+      products.each do |product|
+        total += product.price
+      end
+      return total
+    end
+
+    calculate_total([product1, product2])
+
+{% endhighlight %}
+
+If we accept an array as an argument, we could code defensively and allow a single product to be passed as well:
+
+{% highlight ruby %}
+
+    def calculate_total(products)
+      products = [products] unless.products.respond_to?(:each)
+      total = 0
+      products.each do |product|
+        total += product.price
+      end
+      return total
+    end
+
+    calculate_total(product) # also works now
+
+{% endhighlight %}
+
+This is a nice feature and potentially allows our code to be used more flexibly.
+
+Let's take this further. What happens when our user decides to pass in an invalid value, such as a string? Should we code defensively for that situation?
+
+{% highlight ruby %}
+
+    def calculate_total(products)
+      return 0 if product.is_a?(String)
+      products = [products] unless.products.respond_to?(:each)
+      total = 0
+      products.each do |product|
+        total += product.price
+      end
+      return total
+    end
+
+    calculate_total(&quot;product&quot;) # return 0
+
+{% endhighlight %}
+
+In this case, we could argue our code is being defensive: it avoided the crash that would have happened when we tried to call the non-existent `price` method on the passed in string. Is this desirable?
+
+## &quot;If we're going to fail, we should fail quickly.&quot;
+
+The programmer using our code probably made a mistake here. If we fail immediately, it's very easy for them to see where the error is. If we accept pretty much anything, and return '0' (or much worse, '-999' or some other abomination) we're just going to get incorrect prices: we're going to hide and propagate the error down the call stack and make it much harder to debug.
+
+This is a tricky balance and it depends on the situation, but in general I think these principles are helpful to deciding what to do:
+
+* *Fail if we cannot be strict with our output.* Coding defensively has two sides: generous with input, but also strict with output. If the output is changed by the way we recieve our argument, we're not being specific enough. In the above example, we're effectively giving a string a price of zero, which is extra behaviour we probably don't want. Likewise, make sure that if there's no way we can return a sensible result, then we should not accept the argument passed and fail instead.
+
+
+* *Is our method doing too much?* In the case of the above method our user might be wanting to pass the name of the product as a string, and look up the product to work out the price. We could support that, but this will encourage duplication: if we persist with keeping methods that do &quot;A and B&quot;, we'll find over time we code will spring up additional methods which do &quot;A&quot; and &quot;B&quot; separately. Our method is now too complex and needs to be split into two.
+
+* *Be generous with types.* We have some advantages working in a dynamically typed language such as Ruby. Use the power of Duck Typing: don't check if objects are certain types: check if they respond to the methods that we need to call on them.
+
+* *Be generous at the edges of our code.* Being generous with private APIs and methods only used by ourselves in constrained circumstances is a waste of time: we should just ensure we're calling our own code correctly.
+
+* *When we fail, we should fail hard. Really hard.* In its laudable determination to follow the [Principle of Least Astonishment](http://en.wikipedia.org/wiki/Principle_of_least_astonishment), Ruby has a weakness for over-generosity. It tends to return nil when it encounters an error in cases where in my opinion it should throw an exception. Programmers don't always check for the nils they receive correctly, which means they get passed around our codebase, eventually causing a crash when we least expect it. We should not return nil: that's not being specific enough with our outputs. We should throw an exception or terminate the program if we really need to get their attention.
+
+What do you think? Do you tend to learn more towards coding defensively, or failing early?
+
+(Thanks to [Alex Tomlins](http://www.unboxedconsulting.com/people/alex-tomlins) at Unboxed for the conversation that led to this post.)
+</content></entry><entry><title>Your tests are lying to you</title><category term='code'/><category term='cucumber'/><category term='craftsmanship'/><category term='bdd'/><category term='rspec'/><category term='rails'/><link href='http://chrismdp.com/2011/10/your-tests-are-lying-to-you'/><updated>2011-10-17T19:10:29+01:00</updated><id>http://chrismdp.com/2011/10/your-tests-are-lying-to-you</id><content type='html'>Using mocks within your test suite has gone rather out of fashion. Programmers everywhere have been lamenting the fact that mock-based tests are becoming more and more brittle: they're having to change the test code in multiple places each time there's the slightest code change. In fact, they seem to be changing the test code much much more often than the production code.
+
+Using mocks appear to require a lot of set up code for the object under test. Why not just fire up Factory Girl, create a bunch of objects we need to test this code, and just check the outputs?
+
+This works, and appears to work nicely. For a while.
+
+Eventually your tests will get to the point where they're lying to you: they're telling you your code works whereas actually it only works by coincidence. This post will examine the different techniques we can use to test code, and why some work better than others in the long term.
+
+## The problem
+
+To look at this further, let's try to write a conference simulator for a new website that tries to predict how many people might attend an upcoming event: 
+
+{% highlight ruby %}
+describe Conference do
+  it &quot;calculates total rating&quot; do
+    conference = Conference.new(:total_rating =&gt; 9)
+    conference.total_rating.should == 9
+  end
+end
+{% endhighlight %}
+
+A simple start, with equally simple production code. Next, we decide to extract our code for calculating the rating into &lt;code&gt;Speaker&lt;/code&gt; classes. We decide not to change the test suite much, and make the code work behind the scenes:
+
+{% highlight ruby %}
+describe Conference do
+  it &quot;calculates total rating&quot; do
+    conference = Conference.new(:speakers =&gt; [:chris, :paul])
+    conference.total_rating.should == 9
+  end
+end
+{% endhighlight %}
+
+A nice simple, easy change? You'll pay for this later. Where is the Speaker coming from? Your Conference class is creating it somewhere, or retrieving it from a factory. You've increased the number of collaborators for this class by at least one (possibly three), yet your test isn't showing the additional complexity. It's deceitfully hiding it, whilst you continue on in blissful ignorance.
+
+Your tests are now sitting around the outside of your system. There are no tests for the Speaker class at all, except that we co-incidentally check the rating it emits. Another developer is likely to miss the connection and remove the implied test whilst changing the code for a different reason later.
+
+This gets worse over time:
+
+{% highlight ruby %}
+describe Conference do
+  it &quot;calculates total rating&quot; do
+    conference = Conference.new(
+      :schedule =&gt; :nine_to_five,
+      :talks =&gt; [talk_for(:chris), talk_for(:paul)]
+    )
+    conference.total_rating.should == 9
+  end
+end
+{% endhighlight %}
+
+Can you see what's going on here? We've created some nice helper methods to make it easy to create the required talk objects we need. This test is fairly easy to read, but it's dressing up the problem. The test code is relying on far too many collaborators to function correctly to return the correct result.
+
+When you extract a class, your purely state based tests don't always require change. If you're not stubbing out or mocking systems, you can end up in a situation where you're relying on the code to work without realising it.
+
+How could it be improved?
+
+{% highlight ruby %}
+describe Conference do
+  let(:talk1) { double(:talk, :rating =&gt; 10) }
+  let(:talk2) { double(:talk, :rating =&gt; 6) }
+  let(:schedule) { double(:schedule, :rating =&gt; 10) }
+  before(:each) { Schedule.stub(:new =&gt; schedule) }
+  it &quot;calculates total rating&quot; do
+    conference = Conference.new(
+      :schedule =&gt; :nine_to_five,
+      :talks =&gt; [talk1, talk2]
+    )
+    conference.total_rating.should == 9
+  end
+end
+
+describe Speaker do
+end
+describe Schedule do
+end
+{% endhighlight %}
+
+Now we've isolated the method nicely from its collaborators, and ensured that its behaviour is correct: that it aggregates the ratings of the talks and the schedule. We also make sure that we're testing Conference correctly, also in isolation.
+
+The more you use refactoring methods such as Extract Class without cleaning up your tests, the more likely your tests will be lying to you. Little by little, those tests that you trusted are slowly testing more and more code. You add a multitude of edge cases at the edges, never thinking about the complexity within. You've resorted to using end-to-end tests to test basic correctness.
+
+This is a bad thing on many levels: for example, what happens to interface discovery? How will you know how the interface of your lower-level classes needs to behave if you're not mocking or stubbing it? You are resorting to guessing, rather than exercising the interface ahead of time in your tests. If you have tests around the edges, but not in the middle, you're not gaining the design input that tests give you in each layer of your system.
+
+## Your code stinks
+
+If you go the whole hog with testing in isolation, then you might end up here with something like this:
+
+{% highlight ruby %}
+describe Conference do
+  let(:talk1) { double(:talk, :rating =&gt; 10) }
+  let(:talk2) { double(:talk, :rating =&gt; 6) }
+  let(:talk3) { double(:talk, :rating =&gt; 2) }
+  let(:talk4) { double(:talk, :rating =&gt; 8) }
+  let(:track1) { double(:track, :talks =&gt; [talk1, talk3] }
+  let(:track2) { double(:track, :talks =&gt; [talk2, talk4] }
+
+  let(:venue1) { double(:venue, :nice_coffee_places =&gt; 3) }
+
+  let(:joe) { double(:announcer, :experience =&gt; 5) }
+
+  let(:schedule) { double(:schedule, :rating =&gt; 10, :accouncer =&gt; joe) }
+  before(:each) { Schedule.stub(:new =&gt; schedule) }
+
+  it &quot;calculates total rating&quot; do
+    conference = Conference.new(
+      :schedule =&gt; :nine_to_five,
+      :tracks =&gt; [track1, track2],
+      :organiser =&gt; joe,
+      :venues =&gt; [venue1, venue1]
+    )
+    conference.total_rating.should == 6.3945820
+  end
+end
+
+{% endhighlight %}
+
+I'm not surprised people moan about maintaining this: if any aspect of the Conference class changes, this test will break and need to be fixed. We can see that this test code is hard to write and difficult to read. It would be so much easier just to hide this setup in a few factory methods with some sensible defaults, right?
+
+Maybe it's not the test code that's the problem. Perhaps the code stinks. Perhaps the class simply has way too many collaborators, which is why your test code contains a large amount of set up.
+
+For this test code, we can see there are several objects leaking all over the conference code: to refactor this I'd probably get through a Scheduler, Caterer and perhaps a TrackAggregator before I was done. I'd ensure all these objects were tested in isolation, and ensure that there are acceptance tests all the way through to make sure the customer has what they need.
+
+_Well designed code is easy to test._ As a rule of thumb, anytime I get over about two or three lines of setup code for testing a method, I normally take a step back and ask myself if this method is doing too much.
+
+
+## Test speed
+
+The other advantage of running tests purely in isolation is that they're fast. Very fast. When I'm coding Rails apps these days, thanks to advice from [Corey Haines](http://twitter.com/coreyhaines) I'm running a &lt;code&gt;spec_no_rails&lt;/code&gt; folder which runs independently from the rest of my Rails app. Rails apps by default epitomise this problem: default model tests exercise the whole system from the database up. By running your tests independently you're not having to clean the database or start Rails each time you run your tests, which means that much of your interesting code can be tested in under a second. [Gary Bernhardt](http://twitter.com/garybernhardt) has more information on how to set this up in his excellent [Destroy All Software](http://destroyallsoftware.com) screencast series.
+
+## What I'm not saying
+
+This isn't an argument for or against Mocks or Stubs. Either technique can be used successfully to generate clean code. It's an argument about only exercising the code under test, and leave the rest of the system to take care of itself. The important thing is that you _don't exercise your collaborators:_ whether you check they've received messages or simply stub them to return input doesn't matter.
+
+*Don't forget end-to-end tests.* These are very important for business acceptance and for ensuring basic functionality. The important thing is to ensure that you're being intentional about your end-to-end tests and ensure your unit tests are not end-to-end tests by accident.
+
+Take a good look at the test code for a project you recently worked on. You don't need to look at the production code yet: notice that I've not included any production code in these examples. You shouldn't need to see it to know whether it's of good quality or not: you can tell that by reading the tests.
+
+Which is the most annoying or bulky part of your test code? Are your tests deceiving you about what they're testing? How could you improve the code to make this test code easier to maintain?
+</content></entry><entry><title>Certification: recommendation mass produced</title><category term='business'/><category term='certification'/><category term='craftsmanship'/><link href='http://chrismdp.com/2011/04/on-certification'/><updated>2011-04-05T16:14:49+01:00</updated><id>http://chrismdp.com/2011/04/on-certification</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;Who knows a fool, must know his brother; For one will recommend another.&quot;&lt;/i&gt;&lt;/p&gt;
+
+-- [Benjamin Franklin](http://en.wikipedia.org/wiki/Benjamin_Franklin)
+
+It is often argued that certification is a bad thing. I would say that certification is not good or bad: it is rather the certifier and the manner of the certification that can be good or bad.
+
+*Certification is just recommendation mass produced.*
+
+Recommendation is very valuable, but only if I trust the recommender. If a trusted friend recommends the work of another, I will listen hard. If that recommender is a faceless corporation, then I won't pay so much attention. If that corporation has been paid to recommend someone to me, then I will pay even less attention.
+
+I suggest we seek to win the recommendations of trusted people through a good track record, rather than paying a corporation to recommend (read: certify) us. Those who have mass produced their recommendations through a paid certification scheme are not likely to carry weight with anyone after a while.
+</content></entry><entry><title>Pomodoros help you refactor</title><category term='code'/><category term='pomodoros'/><category term='tdd'/><category term='craftsmanship'/><category term='pairing'/><link href='http://chrismdp.com/2011/04/pomodoros-help-you-refactor'/><updated>2011-04-01T20:21:15+01:00</updated><id>http://chrismdp.com/2011/04/pomodoros-help-you-refactor</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;If you finish a task while the Pomodoro is still ticking, the following rule applies: If a Pomodoro Begins, It Has to Ring. It’s a good idea to take advantage of the opportunity for overlearning, using the remaining portion of the Pomodoro to review or repeat what you’ve done, make small improvements, and note down what you’ve learned until the Pomodoro rings.&quot;&lt;/i&gt;&lt;/p&gt;
+
+-- Francesco Cirillo, [The Pomodoro Technique](http://www.pomodorotechnique.com/)
+
+What's the single most important part of Test Driven Development not to miss? Refactoring. What's the part of TDD that's most often missed? Refactoring.
+
+With refactoring, we work our way toward a great design, clean code, and flexible organic tests. Without refactoring, we have ugly brittle test suites and uglier code. We know this. What I don't always do is take advantage of the moments I have when I can effectively refactor for free.
+
+At the end of a task, when the build is running, I've previously let my mind wander to the next thing, or check email, surf the net, and generally [get out of the zone](http://www.computus.org/journal/?p=982). This bad habit has been highlighted to me in [my use of the pomodoro technique recently](/2011/03/pomodoros-done-hopefully-right).
+
+I was doing the same for the shorter pauses during normal TDD. My pomodoros statistics were telling me that I'm very bad at concentrating whilst coding: the average time spent before I let my mind wander was 11.67 minutes. I was allowing my mind to drift whilst Rails started up to run whatever test I was working on. Not good.
+
+## Time to improve
+
+This week, I've been trying to take the time to look at my code critically for areas of improvement. A pomodoro is indivisible, which means I'm not _allowed_ to think about anything else.
+
+And guess what? I always find something to improve, and I feel that little bit better about my code.
+
+The also helps with the thing I've missed most about not pairing: that other person's critical eye on what you're doing, always thinking about the code being written. During the natural pauses, you can be that other person and ensure the code you write is great. Being two people is [more fun, too](http://www.pixar.com/shorts/gg/index.html).
+</content></entry><entry><title>Five things I learnt from Corey Haines</title><category term='craftsmanship'/><category term='pairing'/><category term='code'/><link href='http://chrismdp.com/2010/03/pairing-with-corey-haines'/><updated>2010-03-17T10:18:00+00:00</updated><id>http://chrismdp.com/2010/03/pairing-with-corey-haines</id><content type='html'>Recently I attended [QCon](http://qconlondon.com) and got a chance on the last day to pair with [Corey Haines](http://coreyhaines.com). We worked on a new rails project we're building with a few friends (that's the subject of another post). We'd spent a fair amount of time hanging out, but I hadn't had a chance to sit down and actually code with him. We paired for a couple of hours in the QCon expo area just as everyone was packing up.
+
+Here are a few lessons and some things I picked up.
+
+*REALLY learn vim.* Watching Corey fire around [vim](http://vim.org) was something else: my brain could barely keep up with where the cursor was sometimes. Sometimes it felt like he'd just moved the cursor to where he wanted it to be through Sheer Power of Thought. I'm no slouch in vim, but was impressed by just how much faster I'll be able to go someday, as I continue to practice.
+
+*resource_controller. formtastic. That is all.* These gems take out the legwork of building a thin restful resource-based rails app. You end up with a lot of tests and very little code to worry about. As webapps become more about [javascript and the front-end](/2009/12/rip-web-1-0/), rails apps are becoming thinner and thinner, and these gems make them really fast to write.
+
+*Alias everything.* Corey has a few really useful little bash tricks, like:
+
+{% highlight bash %}
+alias c='script/console'
+alias r='rake routes | grep'
+{% endhighlight %}
+
+..and some others I didn't catch. They save so much time and are so obvious that later I found myself banging 'c' into a console and wondering why it doesn't work. 
+
+The summary of these lessons is another more general one:
+
+*Work to remove whatever constrains you from getting the computer to do what you want.* We need to ensure that there is as little as possible in the way of getting stuff done. Everything else is [yak shaving](http://en.wikpedia.org/wiki/Yak_Shaving): slow typing, tool-illiteracy, whatever. Anytime we're not thinking about the problem, we're wasting time.
+
+And finally, a meta-lesson:
+
+*Extend your pairing gene pool.* It's amazing how much you learn when you pair with someone outside your immediate sphere. Rather like when I first paired with [Enrique](http://blog.nexwerk.com), I learnt about stuff I would never have heard of otherwise. 
+
+I spent two hours working with Corey and it was a pleasure. Sadly we live a few thousand miles apart, but I'm looking forward to remote pairing sessions in the future.
+</content></entry><entry><title>BBC Talk on A Philosophy of Software</title><category term='craftsmanship'/><category term='apprenticeship'/><link href='http://chrismdp.com/2010/02/bbc-talk-a-philosophy-of-software'/><updated>2010-02-21T08:35:00+00:00</updated><id>http://chrismdp.com/2010/02/bbc-talk-a-philosophy-of-software</id><content type='html'>Video of a talk I gave recently at the BBC about the nature of software development. We discuss craftsmanship, apprenticeship and the limitations of university education, amongst other topics. 
+
+Watch the video here:
+
+&lt;object width=&quot;499&quot; height=&quot;283&quot;&gt;&lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;&lt;param name=&quot;movie&quot; value=&quot;http://vimeo.com/moogaloop.swf?clip_id=9607007&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=1&amp;amp;show_portrait=0&amp;amp;color=c9ff23&amp;amp;fullscreen=1&quot; /&gt;&lt;embed src=&quot;http://vimeo.com/moogaloop.swf?clip_id=9607007&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=1&amp;amp;show_portrait=0&amp;amp;color=c9ff23&amp;amp;fullscreen=1&quot; type=&quot;application/x-shockwave-flash&quot; allowfullscreen=&quot;true&quot; allowscriptaccess=&quot;always&quot; width=&quot;499&quot; height=&quot;283&quot;&gt;&lt;/embed&gt;&lt;/object&gt;
+</content></entry><entry><title>Driving out feature ambiguity</title><category term='cucumber'/><category term='apprenticeship'/><category term='craftsmanship'/><category term='ambiguity'/><category term='katas'/><link href='http://chrismdp.com/2010/01/driving-out-feature-ambiguity'/><updated>2010-01-15T06:19:00+00:00</updated><id>http://chrismdp.com/2010/01/driving-out-feature-ambiguity</id><content type='html'>[Cucumber](http://cukes.info) features are very useful. The ability to spec out what the customer wants in detail in a format they can read and understand really helps to communicatate what needs to be done. This combined with the ability to execute the feature to ensure that it is completed correctly catches many bugs and incorrect assumptions.
+
+However there is one area of bugs that features don't catch so well, and even cause to some extent. These bugs are built right into the text in the form of ambiguity, sometimes through the constraint of features being executable.
+
+This came up recently in a conversation with [James](http://ohthatjames.github.com) and [Enrique](http://ecomba.github.com/) at [Eden Development](http://edendevelopment.co.uk) about James' apprentice task, the [Snakes and Ladders Kata](/2009/12/snakes-and-ladders-kata). It turns out that the text of one of the features runs against the commonly understood way that Snakes and Ladders works:
+
+{% highlight text %}
+Scenario: Win the game
+    Given player 1 is on position 97
+    And player 1 rolls 3
+    Then player 1 has won the game
+{% endhighlight %}
+
+Question: is that a valid scenario? Given the commonly understand rules of Snakes and Ladders, you cannot just start on position 97. Implementing it as written complicates the domain model. 
+
+How do you implement the first step? Do you go for a simple:
+
+{% highlight ruby %}
+Given /^player (.*?) is on position (.*?)$/ do |player, position|
+  @game.set_player_position(player, position)
+end
+{% endhighlight %}
+
+The potential issue with this is that you are exposing a method that in real life won't get called, just to set up a test. It's also tying your model down to a particular structure, by implying that the game stores an arbitraty position variable for a player. This might not be the best way to model the problem.
+
+The other option is to change the scenario such that the &quot;Win the game&quot; is tested in a similar way to the following:
+
+{% highlight text %}
+Scenario: Win the game
+    Given a game is started with two players
+    And the following dice are rolled:
+      |3|
+      |4|
+      |5|
+      |5|
+      (etc.)
+    Then player 1 has won the game
+{% endhighlight %}
+
+That satisfies our understand of Snakes and Ladders, and gives us more freedom in our domain model. In this case, we simply modify the agreed scenario in the code and sidestep the problem.
+
+Right? *Wrong.*
+
+The important thing to remember is that the customer is always right about how the software should behave, even when it violates our commonly understood assumptions about the world. The software they want you to build might require a different implementation of Snakes and Ladders. They might have a 3 year-old daughter they're planning to play the game with, who always wants to be given a headstart. In this case, we've not delivered what they want, simply because it makes life easier for us. We've let our assumptions and our concerns for good design drive out the features, rather than letting the features drive our design.
+
+There's another possibility: when the customer wrote this scenario, they simply used &quot;starts on position X&quot; as a shortcut and don't really care if it's possible to do this in real life. In this case, we can work with them to write the scenario so as not to cheapen our design for the sake of easier feature writing.
+
+*The key insight: there's no way that we can know which it is from reading the scenario. We have to ask the customer and drive out the ambiguity in the feature.*
+
+We mustn't let the necessary constraints of executable features build ambiguity into your conversations about what the customer really wants. And we must be constantly talking to the customer all the way through the iteration, especially if they're not on site.
+
+You might think &quot;It's only Snakes and Ladders, what does it matter?&quot; It matters a great deal: situations like this come up regularly in real life projects. Practising how to deal with these issues and the conversations that result is one of the many powerful things you gain by doing katas.
+
+What's your take on the above problem? Have you come across it in real life?
+</content></entry><entry><title>Craftsmanship vs. Apprenticeship</title><category term='craftsmanship'/><category term='apprenticeship'/><link href='http://chrismdp.com/2009/12/craftsmanship-vs-apprenticeship'/><updated>2009-12-15T20:48:00+00:00</updated><id>http://chrismdp.com/2009/12/craftsmanship-vs-apprenticeship</id><content type='html'>There's been a [lengthy discussion](http://groups.google.com/group/software_craftsmanship/browse_thread/thread/417bec17184ccfc2) on the [software craftsmanship mailing list](http://groups.google.com/group/software_craftsmanship) over the last couple of days regarding the dangers of the Apprentice - Journeyman - Master metaphor, and how this potentially threatens to put people off the idea of software craftmanship. The responses were thoughtful and well reasoned, which showed off the general level of maturity and professionalism on the list excellently.
+
+We've recently started our own apprenticeship system at Eden, and I shared a few lessons learned so far on the thread. I've repeated a few below, and expanded to reflect my own current thinking:
+
+*Craftsmanship is not the same as Apprenticeship.* To use a computer science term, they are orthogonal: you can have one without the other. Craftsmanship is difficult to argue against and is rapidly becoming a consensus amongst a large section of our industry. Apprenticeship is a little more nascent and untested, and potentially carries more dangers. You don't need formal apprenticeship to embrace craftsmanship.
+
+*Everyone gets to be a craftsman.* Following on from this, all who want to can be craftsmen/crafters/codesmiths/whatever the most apt term is: there should be no pecking order. Indeed, the more senior among us should be taking the lower place of serving those who would learn from us. Being a craftsman is more a state of mind than a level of ability or experience.
+
+*Use verbs, not nouns.*  We are wherever possible using the terms as verbs not nouns in everyday use: &quot;Richard is apprenticing to Chris&quot;, &quot;Chris is mentoring James&quot;, for example. This prevent anyone &quot;being&quot; anything: it's rather what you do than who you are. Those who might have a job title of &quot;apprentice&quot; (or not) also &quot;mentor&quot; others (including seniors) in specific areas they are particularly strong in. 
+
+*We don't need masters, we need mentors.* We're not taking the metaphor as far as the &quot;master&quot; at Eden: I just don't think that's helpful to anyone at the moment. All of us know people who are more experienced than us, who can &quot;mentor&quot; us. I say let's just leave it at that. Rather than seeking actively seeking &quot;apprentices&quot; (which indirectly sets ourselves up on a pedestal), let's be actively seeking &quot;mentors&quot; and passively open to &quot;apprenticing&quot; others who ask us. That way we'll be helpful and inclusive, taking the lowest place at the table.
+
+Hopefully that gives some insight in to how this language might in a professional environment. Waving loaded language around is like a waving a loaded weapon: it has powerful influence, but people can get hurt :) 
+
+We've purposely treaded very carefully at Eden to try and bring in the best of the &quot;apprenticeship&quot; metaphor without all the trappings.
+
+What are your thoughts on the debate? Is apprenticeship useful, or are there better metaphors?
+</content></entry></feed>

@@ -1,0 +1,73 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Chris Parsons: posts tagged open source</title>
+
+  <link href="http://chrismdp.com/"/>
+  <updated>2012-09-27T20:24:54+01:00</updated>
+  <id>http://chrismdp.com/tag/open source</id>
+  <author>
+    <name>Chris Parsons</name>
+    <email>chrismdp@gmail.com</email>
+  </author>
+<entry><title>OStatus: what I've learnt in 24 hours</title><category term='social'/><category term='ostatus'/><category term='open data'/><category term='open source'/><link href='http://chrismdp.com/2012/09/ostatus-what-ive-learnt-in-24-hours'/><updated>2012-09-27T20:24:54+01:00</updated><id>http://chrismdp.com/2012/09/ostatus-what-ive-learnt-in-24-hours</id><content type='html'>[Yesterday's post](/2012/09/ostatus-like-twitter-but-open/) was rather [popular.](http://news.ycombinator.com/item?id=4574858)
+
+Here are a few things I've learnt since, from various commments, Hacker News posts and further reading:
+
+* *WordPress might be a tipping point for OStatus.* There's a [WordPress plugin](http://wordpress.org/extend/plugins/ostatus-for-wordpress/) which gives a fairly straightforward path to link any WordPress blog to the OStatus network. That would allow people to follow any blog through [rstat.us](http://rstat.us) (for example) and to reply directly on their own node and have the conversations appear on the original blog. There are [apparently 60 &lt;i&gt;million&lt;/i&gt;](http://news.ycombinator.com/item?id=4575016) WordPress installs out there: this could be a huge gateway for the federated social web. Here are [some great ideas to market it](http://news.ycombinator.com/item?id=4575054): anyone able to help [pfefferle](http://profiles.wordpress.org/pfefferle/) out?
+
+* *Tent.io exists.* OStatus is a couple of years old, but someone else has attempted to solve the same problem recently: there's an [open source platform](http://tent.io) and a first class [implementation](http://tent.is), just launched. Apparently there are [scaling problems with the architecture](http://chrismdp.com/2012/09/ostatus-like-twitter-but-open/#comment-663156881), but it's good to see any sort of movement. Hopefully we can all learn from each other and move forward the conversation.
+
+* *The Developer Experience movement exists.* The [developer experience movement](http://blog.oshineye.com/2011/05/what-is-devexp.html) seeks to apply user experience techniques to design software other developers love to integrate with. This is very relevant to the OStatus movement: if the protocol is too complex, then it won't propagate as people won't be able to implement it. Arguably the hardest piece of OStatus to implement is the signed updates via Salmon, and it has a wealth of buggy half-done implementation out on the net. This means nodes are constantly tripping over each others bugs when trying to talk to each other. The antidote to these sick implementations? We need simple-to-use libraries for every language under the sun. Time to get to work!
+
+* *User acquisition isn't the only problem to consider.* It's obviously a big problem, but it's only one piece of the puzzle. My friend [Adewale Oshineye](https://plus.google.com/+AdeOshineye) has been thinking about this problem a lot, and lists a number of different problems on an [insightful Google+ thread.](https://plus.google.com/105037104815911535953/posts/RZY3SPcCndz) None of these problems are insurmountable though, and clever people are working on getting them solved, which is very encouraging.
+
+What can we do individually to push things forward? And how can we keep the conversation going?
+
+</content></entry><entry><title>OStatus: like Twitter, but open</title><category term='social'/><category term='ostatus'/><category term='open data'/><category term='open source'/><link href='http://chrismdp.com/2012/09/ostatus-like-twitter-but-open'/><updated>2012-09-26T10:00:00+01:00</updated><id>http://chrismdp.com/2012/09/ostatus-like-twitter-but-open</id><content type='html'>*UPDATE:* I've [posted a followup](/2012/09/ostatus-what-ive-learnt-in-24-hours/) with some more learnings and links.
+
+Recently Twitter decided to make its terms of service [rather more restrictive](https://dev.twitter.com/blog/changes-coming-to-twitter-api). This has led to a number of web applications, [IFTTT](http://thenextweb.com/apps/2012/09/20/ifttt-removes-twitter-triggers-comply-new-api-policies/) in particular, change the way they interact with twitter.
+
+Recently, [Tom Armitage](http://twitter.com/infovore) described Twitter as &quot;a universal messaging bus&quot;. Unfortuantely that bus appears to be getting less and less open by the day.
+
+I don't blame Twitter, they have a business to run and investors to satisfy. However these days I'm looking for more in a platform than what they appear to want to provide. Recently I did some research on alternatives:
+
+## Diaspora\*?
+
+The [Diaspora\* project](http://diasporaproject.org/) is trying to solve a different problem to the one I'm interested in: that of a closed invite-only social network a la Facebook. I'm interested in finding a solution for the public dissemination of status updates.
+
+## App.net?
+
+[App.net](http://app.net) is interesting (I've [signed up](http://alpha.app.net/chrismdp)) but it's still representative of the same problem: it's one company controlling the platform. Despite what they say about how they're going to remain open, it's just the wrong set up for me and exacerbates the problem.
+
+## Enter OStatus
+
+This is more like it. The [OStatus](http://ostatus.org/faq) set of standards describe how a collection of nodes might publish status updates, reply to each other's updates, follow each other and more, all in a distributed fashion. You can implement the protocol in your app [step by step](http://ostatus.org/2010/10/04/how-ostatus-enable-your-application), so that you don't have a huge hurdle to overcome from the outset. There is now a [W3C community group](http://www.w3.org/community/ostatus/) and they're working on version 2.0.
+
+There are a few implementations out there, most notably [Status.net](http://status.net) which offers a paid hosted corporate version and a freely installable version, and the popular [identi.ca](http://identi.ca) service. These are implemented in PHP, but for those of us who are used to Ruby...
+
+## rstat.us
+
+[rstat.us](http://rstat.us) is a great ruby project I've jumped on board with looking to implement a reference standard for OStatus in Ruby. We're at work implementing most of the core OStatus functionality, trying to push it down into shared gems, and provide a UI reference for a Twitter-like experience.
+
+The team is also hard at work implementing a Twitter-like API, which means that any of the disenfranchised Twitter clients out there will very soon simply allow the changing of the URL endpoint, and their app will &lt;i&gt;just work&lt;/i&gt; with rstat.us.
+
+So, a call to action: *if you can code, [get involved](http://github.com/hotsh/rstat.us) in the project and make it happen.*
+
+If you own a Twitter client, or know someone who does, *get in touch and offer to beta test the API using your client.*
+
+## The future
+
+Once rstat.us has matured and core OStatus functionality is done, any project will be able to incorporate a status update setup into their website. For example, my game [Sol Trader](http://soltrader.net) has a list of status updates of the site, currently taken from the Twitter feed. Won't it be great when you can subscribe to those updates on your own node, just by subscribing to 'news@soltrader.net'?  And then you reply to the update using your own node, and have your comment appear directly on the site? That's what we're working towards.
+
+## The goal
+
+I'd love to see App.net adopt OStatus. I've love to see Diaspora\* adopt OStatus when it reaches version 2.0, allowing for more private interaction.
+
+I'd love to see &lt;i&gt;Twitter&lt;/i&gt; adopt OStatus - if that happens, we've reached a huge milestone.
+
+You might say Twitter is for 'normals' and OStatus is just for us geeks. They said that about the web at first, too. This movement can gain traction: what's it going to take to make it happen?
+</content></entry></feed>

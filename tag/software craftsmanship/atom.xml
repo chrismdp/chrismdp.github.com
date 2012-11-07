@@ -1,0 +1,72 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Chris Parsons: posts tagged software craftsmanship</title>
+
+  <link href="http://chrismdp.com/"/>
+  <updated>2012-05-15T16:02:40+01:00</updated>
+  <id>http://chrismdp.com/tag/software craftsmanship</id>
+  <author>
+    <name>Chris Parsons</name>
+    <email>chrismdp@gmail.com</email>
+  </author>
+<entry><title>Waxing Lyrical on Pathfinding</title><category term='code'/><category term='conference'/><category term='fun'/><category term='software craftsmanship'/><category term='sc2012'/><link href='http://chrismdp.com/2012/05/waxing-lyrical-on-pathfinding'/><updated>2012-05-15T16:02:40+01:00</updated><id>http://chrismdp.com/2012/05/waxing-lyrical-on-pathfinding</id><content type='html'>I've been attending and giving talks at the [Software Craftmanship](http://www.codemanship.co.uk/softwarecraftsmanship/) conference at Bletchley Park for a couple of years now. I've always found the crowd there engaging and great to hang out with, and I'd encourage you to come along if you're not doing much on June 14th. There are [still a few tickets left](http://www.codemanship.co.uk/softwarecraftsmanship/register.html) if you're quick.
+
+## My talk proposal: Pathfinding Peril
+
+This year my talk proposal is about pathfinding, a subject rather close to my heart since I started [building a game](http://soltrader.net). Finding the shortest path through a connected graph is a complex problem, and one which has a number of very useful applications, not just in the game sector.
+
+Thankfully there are some efficient algorithms out there which solve it well. The aim of my session will be to teach the popular A-Star pathfinding algorithm, along with the factors to consider when choosing appropriate algorithm weights to make the implementation efficient.
+
+A-star can be written in any language, but a simple (untested, probably buggy) version might look like this:
+
+{% highlight ruby %}
+
+    def find(goal)
+      closed_set = []
+      open_set = [ start_node ]
+      came_from = {}
+      while(!open_set.empty)
+        current = open_set.sort{|node| node.estimated_score }.first
+        return reconstruct_path(came_from, goal) if (current == goal)
+
+        open_set -= [current]
+        closed_set += [current]
+        current.neighbours.each do |neighbour|
+          next if closed_set.include?(neighbour)
+          possible_score = best_score[current] + current.cost_to(neighbour)
+          if !open_set.include?(neighbour) || possible_score &lt; node.running_score
+            open_set += [neighbour]
+            came_from[neighbour] = current
+            neighbour.running_score = possible_score
+            neighbour.estimated_score = neighbour.running_score + neighbour.cost_to(goal)
+          end
+        end
+      end
+      return 'failed'
+    end
+
+{% endhighlight %}
+
+The session will last a couple of hours. I'll take you through the basic A-Star implementation in the first 30 minutes of the session, and we'll spend some time getting that coded up in the second 30 minutes. After a break, we'll be running a tournament for an hour using Matt Wynne's [Robot Tournament engine](https://github.com/mattwynne/robot_tournament). Your robot will be one of two characters in a maze, and the idea is to find the exit as soon as possible without being eaten by the minotaur that roams randomly around it.
+
+You'll get points for exiting the maze within a certain timeframe, exiting first, and simply avoiding being eaten! If I get time, I'll write a basic ruby gem which allows you to parse the maze presented on stdin into nodes with connections.
+
+We'll run around 20 minute iterations, but probably reset the score every time so that the final score is the one that matters. It should be lots of fun!
+
+What do you think of the session idea? How could I improve it?
+</content></entry><entry><title>Lean code: slides and feedback</title><category term='code'/><category term='lean'/><category term='presentation'/><category term='software craftsmanship'/><category term='sc2011'/><link href='http://chrismdp.com/2011/05/lean-code-slides-and-feedback'/><updated>2011-05-26T21:35:40+01:00</updated><id>http://chrismdp.com/2011/05/lean-code-slides-and-feedback</id><content type='html'>I facilitated a workshop at [SC2011](http://lanyrd.com/2011/software-craftsmanship/) today about how code might be thought of as Lean. The idea was to start a coding project and cope with shifting requirements to identify what happens when we deliver as fast as we can, whether testing is worth it, and what waste actually means.
+
+If you were there, please do [rate the talk](http://speakerrate.com/talks/7643-lean-code) so I can improve!
+
+A number of people expressed an interest in trying the exercise, so here are the slides if you're interested in trying it at home.
+
+&lt;object id=&quot;__sse8116737&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=lean-code-110526153405-phpapp02&amp;amp;stripped_title=lean-code&amp;amp;userName=chrismdp&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;/&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot;/&gt;&lt;embed name=&quot;__sse8116737&quot; src=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=lean-code-110526153405-phpapp02&amp;amp;stripped_title=lean-code&amp;amp;userName=chrismdp&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;/embed&gt;&lt;/object&gt;
+
+The session details are also [on Lanyrd](http://lanyrd.com/2011/software-craftsmanship/sfkgw/).
+
+Let me know how you get on, and if you need any help!
+</content></entry></feed>

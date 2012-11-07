@@ -1,0 +1,96 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Chris Parsons: posts tagged anti-pattern</title>
+
+  <link href="http://chrismdp.com/"/>
+  <updated>2012-10-04T07:49:57+01:00</updated>
+  <id>http://chrismdp.com/tag/anti-pattern</id>
+  <author>
+    <name>Chris Parsons</name>
+    <email>chrismdp@gmail.com</email>
+  </author>
+<entry><title>Delegated tasks are a team anti-pattern</title><category term='team'/><category term='anti-pattern'/><category term='process'/><category term='management'/><category term='leadership'/><category term='productivity'/><link href='http://chrismdp.com/2012/10/delegated-tasks-are-a-team-anti-pattern'/><updated>2012-10-04T07:49:57+01:00</updated><id>http://chrismdp.com/2012/10/delegated-tasks-are-a-team-anti-pattern</id><content type='html'>&quot;Jane, I'd like you to phone up the recruiter, and tell them we need a new agency person. Don't use Jim from Acme Recruitment again, you didn't get very far with him last time. Make sure you book whoever it is in for a week to work with us as a trial, like last time. That worked well.&quot;
+
+&quot;Jane, can you find us a great developer for the new website we mentioned in standup last week? Let me know if you need help.&quot;
+
+Which is better?
+
+## Goals, not tasks
+
+How about we give our team goals, not tasks? Let them shoot for something, and work out their own tasks, rather than giving them a simple list of things to do. Goals allow people to apply their own creativity and their own flair to a solution, and the end result will be stamped with their individuality.
+
+When learning a new skill, people need direction and tasks to follow. [Matt Wynne](http://blog.mattwynne.net) recently [re-iterated](http://blog.mattwynne.net/2012/09/25/breaking-out-of-the-shu/) the classic Su-Ha-Ri model of learning, where we start with very clear forms to follow, then break those forms as we try new things, then advanced to a place where we no longer need the forms at all. At first, we need to work closely with people, and *show them the tasks we perform to get something done.* Note that this is quite different to giving people a long list of tasks to complete to 'learn something.'
+
+Whenever we give something away, there's a risk that it won't be done in quite the way that we would like. The simple fact is: no, it won't. But assuming we've not overstretched someone, there's a good chance they'll get the job done at least 80% as well as we could have. And good people will cope with being stretched much further than we think.
+
+## There's delegation, then there's abdication
+
+When we take goal setting too far, we just tend to stop giving people goals altogether and let them figure out their own jobs. This is dangerous: the best people don't need managing, but they do need leading. Our role as a leader is to paint an exciting vision of the future, and then let our team figure out how to get there.
+
+## Micromanagement has many levels
+
+It's quite possible to micro-manage without realising it. We might think we're not micro-managing because we're not telling people *exactly* how to do something. However if we're leaving little room for doubt in our own minds, and creativity in theirs, then our team will feel less able to apply their own skills and talents to the problem. They'll get up feeling discouraged and insignificant.
+
+Ultimately it comes down to trust, and fear. How much do we trust our people to get the job done? How much do we fear losing control?
+
+The first step to fighting a task-oriented tendency is to realise it's probably not a problem with our team members, but with us.
+</content></entry><entry><title>Job titles are a team anti-pattern</title><category term='lean'/><category term='agile'/><category term='team'/><category term='anti-pattern'/><link href='http://chrismdp.com/2012/09/job-titles-team-anti-pattern'/><updated>2012-09-25T20:48:24+01:00</updated><id>http://chrismdp.com/2012/09/job-titles-team-anti-pattern</id><content type='html'>&quot;We have two designers, two front-end developers, 2 back-end developers, and a tester.&quot;
+
+&quot;Allie and Jim tend to lay out most of the pages, with help from the others. Joe, Alice, Bob and Alan tend to write most of the code, with Bob and Alan working mainly on the server side of things. Darren makes sure our work matches up to what's expected.&quot;
+
+Which is better?
+
+## Job titles are labels
+
+Labelling people with job titles as shorthand is one thing, but if we're not careful our use of them can be dysfunctional:
+
+* *Labels limit people's potential.* Our labels will limit what people will work on: they'll subconciously start to stick to what their title says. This will happen even if they're good people: it's human nature to react to the culture which our team creates.
+
+* *People hide behind the label.* &quot;That's designer work, that's not what I'm good at.&quot; This gets worse when we get more specific: &quot;I'm a front end developer: I don't write Ruby.&quot; This stops techniques like Kanban working effectively as people are less likely to help each other, and creates silos of knowledge in the team.
+
+* *Labels reduce people to resources.* &quot;We need 4.2 developer days for this project, with 2.4 designer days per developer day.&quot; Labels are interchangeable: people aren't. Some developers are orders of magnitude more productive than others, for example. By homogenising the team, we're extracting the soul from the company: we might as well be selling crude oil, not people's expertise.
+
+I've recently tried to stop using labels to describe myself: see [my twitter bio](http://twitter.com/chrismdp) for example. It's been an interesting exercise, and I'd recommend it.
+
+## Selling services by team, not label
+
+One problem we run into is when we run companies which sell client services by the hour. It's easy to put together a rate card for different job titles, but this exacerbates the label problem and embeds it into the economics. I prefer the method of selling whole team-weeks to the client, rather than individual developers: &quot;This crack team of people will set you back £10,000 per week&quot;, for example.
+
+Remember: the team environment is perfectly designed to achieve the result we're currently getting. How are our job titles and labels affecting the way our team works today?
+
+&lt;div class='notice' style=&quot;display: inline-block&quot;&gt;
+  &lt;b&gt;UPDATE:&lt;/b&gt; Thanks to &lt;a href=&quot;http://twitter.com/adrianh&quot;&gt;Adrian Howard&lt;/a&gt; and &lt;a href=&quot;https://agilarium.wikispaces.com/Fabrice+Aimetti&quot;&gt;Fabrice Aimetti&lt;/a&gt;, this post has been &lt;a href=&quot;https://agilarium.wikispaces.com/Les+intitul%C3%A9s+de+poste+sont+des+antipatterns+de+l%27%C3%A9quipe&quot;&gt;translated into French here.&lt;/a&gt;
+&lt;/div&gt;
+
+</content></entry><entry><title>Task assignment is a team anti-pattern</title><category term='process'/><category term='productivity'/><category term='pairing'/><category term='team'/><category term='anti-pattern'/><link href='http://chrismdp.com/2012/09/task-assignment-is-a-team-anti-pattern'/><updated>2012-09-14T14:06:40+01:00</updated><id>http://chrismdp.com/2012/09/task-assignment-is-a-team-anti-pattern</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;The way a team plays as a whole determines its success. You may have the greatest bunch of individual stars in the world, but if they don't play together, the club won't be worth a dime.&quot;&lt;/i&gt;&lt;/p&gt;
+
+-- [Babe Ruth](http://en.wikipedia.org/wiki/Babe_Ruth)
+
+Assigning tasks to individuals might feel like the most natural thing in the world, but in reality, when you are trying to create a highly functioning [team](/tag/team), it might be doing more harm than good. This is true even when tasks are self-assigned by team members, and certainly true when tasks are imposed upon individuals by managers. Here's why.
+
+Having one individual responsible for a task *takes responsibility away from the team* and instead focuses on the individual. This can be damaging in a number of ways, not least that the individual is under more pressure to deliver. Short termist management might think this encourages productivity, but the internal pressure this generates can be a short cut to burnout.  The focus needs to be on collective responsibility: it's the responsibility of the &lt;i&gt;team&lt;/i&gt; to release something, not the responsibility of the individual.
+
+*This issue is compounded if the team's work in progress limit is too high.* If there are nine team members, and nine things currently in progress, then in the best case each person will have nine things to do, and in the worst case one person will have all nine things to do and the other eight people will be sitting around waiting for them to finish, putting enormous pressure on those who are the bottleneck. The more items of work that are currently in progress, the more than a focus on assignment will bite you.
+
+Assignment *promotes a command and control attitude.* Sometimes, each member of a &quot;team&quot; is actually being managed individually and has their own stream of work. This can produce output in certain cases, but the individuals being managed are not a team: they're a collection of individuals who might happen to sit together.
+
+Individual assignment can *create silos of information.* If one person is responsible for a task, and everyone has their own tasks or types of work, then it's harder to work as a team: the knowledge is held only with a few people, rather than across everyone. [Pairing](/tag/pairing) dramatically helps break these silos down.
+
+Assignment can also give rise to the *hero anti-pattern:* where a few people are responsibility for the success of the entire team, and they end up pulling an all-nighter just to get the release out the door. The hero culture might seem appealing to short-sighted managers, but when eventually the hero inevitably fails to deliver, hero culture quickly turns to *blame culture.*
+
+## How to shift this culture?
+
+* *Reduce your team's work in progress limit.* Insist they don't start anything else until the team finishes what's in progress, and that they go to pair with those who are still working on tasks, even if it's [not their normal discipline](/2010/01/pairing-works-for-everything).
+
+* *Stop giving people things to do.* At the very least, ensure that the team are choosing their own tasks from a list rather than being managed individually.
+
+* *Stop tracking assignment.* Don't record on the task who is working on it. Simply track what's being worked on by talking about it each standup meeting.
+
+* *Avoid the trap of buck-passing.* If you're not careful, giving a weaker team collective responsibility means that they pass the buck. The thinking goes: &lt;i&gt;&quot;if I'm not individually responsible then I'm not responsible at all.&quot;&lt;/i&gt; The antidote is *team accountability:* [praise the entire team for their successes](/2011/04/the-team-is-the-atomic-unit) and ensure they all investigate the reasons for failure together. This includes the product owner and the user experience people - they are all part of the team.
+
+Does task assignment cause problems for you? What silos could be broken down by having more of a team assignment focus?
+</content></entry></feed>

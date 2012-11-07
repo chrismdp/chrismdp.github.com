@@ -1,0 +1,398 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Chris Parsons: posts tagged productivity</title>
+
+  <link href="http://chrismdp.com/"/>
+  <updated>2012-10-04T07:49:57+01:00</updated>
+  <id>http://chrismdp.com/tag/productivity</id>
+  <author>
+    <name>Chris Parsons</name>
+    <email>chrismdp@gmail.com</email>
+  </author>
+<entry><title>Delegated tasks are a team anti-pattern</title><category term='team'/><category term='anti-pattern'/><category term='process'/><category term='management'/><category term='leadership'/><category term='productivity'/><link href='http://chrismdp.com/2012/10/delegated-tasks-are-a-team-anti-pattern'/><updated>2012-10-04T07:49:57+01:00</updated><id>http://chrismdp.com/2012/10/delegated-tasks-are-a-team-anti-pattern</id><content type='html'>&quot;Jane, I'd like you to phone up the recruiter, and tell them we need a new agency person. Don't use Jim from Acme Recruitment again, you didn't get very far with him last time. Make sure you book whoever it is in for a week to work with us as a trial, like last time. That worked well.&quot;
+
+&quot;Jane, can you find us a great developer for the new website we mentioned in standup last week? Let me know if you need help.&quot;
+
+Which is better?
+
+## Goals, not tasks
+
+How about we give our team goals, not tasks? Let them shoot for something, and work out their own tasks, rather than giving them a simple list of things to do. Goals allow people to apply their own creativity and their own flair to a solution, and the end result will be stamped with their individuality.
+
+When learning a new skill, people need direction and tasks to follow. [Matt Wynne](http://blog.mattwynne.net) recently [re-iterated](http://blog.mattwynne.net/2012/09/25/breaking-out-of-the-shu/) the classic Su-Ha-Ri model of learning, where we start with very clear forms to follow, then break those forms as we try new things, then advanced to a place where we no longer need the forms at all. At first, we need to work closely with people, and *show them the tasks we perform to get something done.* Note that this is quite different to giving people a long list of tasks to complete to 'learn something.'
+
+Whenever we give something away, there's a risk that it won't be done in quite the way that we would like. The simple fact is: no, it won't. But assuming we've not overstretched someone, there's a good chance they'll get the job done at least 80% as well as we could have. And good people will cope with being stretched much further than we think.
+
+## There's delegation, then there's abdication
+
+When we take goal setting too far, we just tend to stop giving people goals altogether and let them figure out their own jobs. This is dangerous: the best people don't need managing, but they do need leading. Our role as a leader is to paint an exciting vision of the future, and then let our team figure out how to get there.
+
+## Micromanagement has many levels
+
+It's quite possible to micro-manage without realising it. We might think we're not micro-managing because we're not telling people *exactly* how to do something. However if we're leaving little room for doubt in our own minds, and creativity in theirs, then our team will feel less able to apply their own skills and talents to the problem. They'll get up feeling discouraged and insignificant.
+
+Ultimately it comes down to trust, and fear. How much do we trust our people to get the job done? How much do we fear losing control?
+
+The first step to fighting a task-oriented tendency is to realise it's probably not a problem with our team members, but with us.
+</content></entry><entry><title>Introducing Morning Pages</title><category term='life'/><category term='writing'/><category term='personal'/><category term='products'/><category term='productivity'/><link href='http://chrismdp.com/2012/09/introducing-morning-pages'/><updated>2012-09-21T13:25:13+01:00</updated><id>http://chrismdp.com/2012/09/introducing-morning-pages</id><content type='html'>I've [written before](/2010/07/seven-hundred-and-fifty-words) about the value of Morning Pages - a way of clearing your head in the mornings by writing down three pages on everything you're thinking and feeling.
+
+In order to write my words, I used [750words.com](http://750words.com) for a number of years, but I've become a little disenfranchised with having private writings stored permanently in the cloud. I also write fastest in vim, which means writing into a website slows me down. What I really wanted was to store my words privately on my laptop, and yet also include a public incentive system: this is what made 750words.com so effective at keeping me motivated.
+
+## gem install morning-pages
+
+The result is the morning-pages gem. The gem has been available for a while, but starting today it'll record your progress on a central website. It only ever uploads aggregate statistics: the code is [open source](http://github.com/chrismdp/morning-pages) so you can check it out for yourself to make sure.
+
+For instructions, see the [accompanying website](http://morning-pages.me). There aren't any aggregate stats yet, but in future you'll be able to see any word streaks, what times of day you are most likely to write, etc. I've got some nice ideas for visualisation which I'll add as time permits: if you're impatient you can always [fork the website code](http://github.com/chrismdp/morning-pages.me) and create whatever stats you want!
+
+## What do I use my words for?
+
+Writing three pages is still something I try and do each day: I had a 170 day streak going at one point. I use my words to plan and order my day, to negotiate with myself about what I can realistically achieve, and [for prayer and meditation](http://en.wikipedia.org/wiki/Christian_meditation) - I've found I pray best at the point of a metaphorical pen.
+
+Do you try to write each day? What do you use your words for?
+</content></entry><entry><title>Task assignment is a team anti-pattern</title><category term='process'/><category term='productivity'/><category term='pairing'/><category term='team'/><category term='anti-pattern'/><link href='http://chrismdp.com/2012/09/task-assignment-is-a-team-anti-pattern'/><updated>2012-09-14T14:06:40+01:00</updated><id>http://chrismdp.com/2012/09/task-assignment-is-a-team-anti-pattern</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;The way a team plays as a whole determines its success. You may have the greatest bunch of individual stars in the world, but if they don't play together, the club won't be worth a dime.&quot;&lt;/i&gt;&lt;/p&gt;
+
+-- [Babe Ruth](http://en.wikipedia.org/wiki/Babe_Ruth)
+
+Assigning tasks to individuals might feel like the most natural thing in the world, but in reality, when you are trying to create a highly functioning [team](/tag/team), it might be doing more harm than good. This is true even when tasks are self-assigned by team members, and certainly true when tasks are imposed upon individuals by managers. Here's why.
+
+Having one individual responsible for a task *takes responsibility away from the team* and instead focuses on the individual. This can be damaging in a number of ways, not least that the individual is under more pressure to deliver. Short termist management might think this encourages productivity, but the internal pressure this generates can be a short cut to burnout.  The focus needs to be on collective responsibility: it's the responsibility of the &lt;i&gt;team&lt;/i&gt; to release something, not the responsibility of the individual.
+
+*This issue is compounded if the team's work in progress limit is too high.* If there are nine team members, and nine things currently in progress, then in the best case each person will have nine things to do, and in the worst case one person will have all nine things to do and the other eight people will be sitting around waiting for them to finish, putting enormous pressure on those who are the bottleneck. The more items of work that are currently in progress, the more than a focus on assignment will bite you.
+
+Assignment *promotes a command and control attitude.* Sometimes, each member of a &quot;team&quot; is actually being managed individually and has their own stream of work. This can produce output in certain cases, but the individuals being managed are not a team: they're a collection of individuals who might happen to sit together.
+
+Individual assignment can *create silos of information.* If one person is responsible for a task, and everyone has their own tasks or types of work, then it's harder to work as a team: the knowledge is held only with a few people, rather than across everyone. [Pairing](/tag/pairing) dramatically helps break these silos down.
+
+Assignment can also give rise to the *hero anti-pattern:* where a few people are responsibility for the success of the entire team, and they end up pulling an all-nighter just to get the release out the door. The hero culture might seem appealing to short-sighted managers, but when eventually the hero inevitably fails to deliver, hero culture quickly turns to *blame culture.*
+
+## How to shift this culture?
+
+* *Reduce your team's work in progress limit.* Insist they don't start anything else until the team finishes what's in progress, and that they go to pair with those who are still working on tasks, even if it's [not their normal discipline](/2010/01/pairing-works-for-everything).
+
+* *Stop giving people things to do.* At the very least, ensure that the team are choosing their own tasks from a list rather than being managed individually.
+
+* *Stop tracking assignment.* Don't record on the task who is working on it. Simply track what's being worked on by talking about it each standup meeting.
+
+* *Avoid the trap of buck-passing.* If you're not careful, giving a weaker team collective responsibility means that they pass the buck. The thinking goes: &lt;i&gt;&quot;if I'm not individually responsible then I'm not responsible at all.&quot;&lt;/i&gt; The antidote is *team accountability:* [praise the entire team for their successes](/2011/04/the-team-is-the-atomic-unit) and ensure they all investigate the reasons for failure together. This includes the product owner and the user experience people - they are all part of the team.
+
+Does task assignment cause problems for you? What silos could be broken down by having more of a team assignment focus?
+</content></entry><entry><title>Don't miss your greatest achievement</title><category term='life'/><category term='productivity'/><link href='http://chrismdp.com/2011/05/don-t-miss-your-greatest-achievement'/><updated>2011-05-17T09:37:09+01:00</updated><id>http://chrismdp.com/2011/05/don-t-miss-your-greatest-achievement</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;There are known knowns. These are things we know that we know. There are known unknowns. That is to say, there are things that we know we don't know. But there are also unknown unknowns. There are things we don't know we don't know.&quot;&lt;/i&gt;&lt;/p&gt;
+
+-- [Donald Rumsfeld](http://en.wikipedia.org/wiki/Donald_Rumsfeld)
+
+My ten month old daughter started crawling this week.
+
+It's been quite a struggle for her, to be honest. First she was quite content with sitting and have toys passed to her by her over-eager brother and sister. After a little while she tired of this, and was determined to reach That Toy Over There that she hadn't been passed yet.
+
+First she reached out her arms towards it, and bent over double trying to get there whilst still sitting. As her arms are only tiny, she found this most frustrating. Then she found that she could flip her body over and land sideways, lying on her front. She already knew how to get back to sitting from that position, and when she did, she was about ten inches closer to the toy she wanted.
+
+This procedure reigned for several weeks, until finally after much clapping and encouragement she managed to get onto her hands and knees and shuffle over to whatever it was she wanted. She suddenly realised that this was much more efficient than the sideflip-sit-up method of travel and ended up crawling around the whole playroom. We were very proud of her, and eventually picked her up and took her in the other room to give her some lunch.
+
+When we returned however, we sat her back on the floor and expected her to pick up where she left off. Only she'd forgotten the whole thing: she was back to to the sideflip and couldn't remember how to shuffle along. It was only after much coaxing that we got her to remember how to do it, and this time it stuck.
+
+My daughter had made a great achievement: a landmark of child development. Yet she had no idea she'd done it.
+
+How often do we discover something good, great even, and let it pass us by, or give up before time? Frankly, I've no idea what the end result would have been of those ideas that I gave up for the wrong reasons. It's back to those unknown unknowns: for all we might laugh at the way he said it, Rumsfeld had a point. We could have stumbled into shuffling when all we know is sideflip-sit-up, yet we don't have the wisdom to see it yet. Then we give up because it's too hard, or we need to practice, or we don't have the right funding, or we're just too scared.
+</content></entry><entry><title>The Principle of Scattered Work</title><category term='life'/><category term='productivity'/><category term='business'/><link href='http://chrismdp.com/2011/05/the-principle-of-scattered-work'/><updated>2011-05-09T12:56:04+01:00</updated><id>http://chrismdp.com/2011/05/the-principle-of-scattered-work</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;The articifical separation of houses and work creates introlerable rifts in people's inner lives.&quot;&lt;/i&gt;&lt;/p&gt;
+
+-- [Christopher Alexander](http://en.wikipedia.org/wiki/Christopher_Alexander)
+
+Christopher Alexander is one of my heroes. His seminal work [The Timeless Way of Building](http://www.amazon.co.uk/gp/product/0195024028/ref=as_li_tf_tl?ie=UTF8&amp;tag=chrisparsonbl-21&amp;linkCode=as2&amp;camp=1634&amp;creative=6738&amp;creativeASIN=0195024028) is more than a study of architecture: it's about building things to support a way of life that has true quality about it. His work has huge relevance to software developers as we seek to create software that is alive and growing, but is generally applicable to the patterns of human life as a whole.
+
+His arguments in favour of &quot;Scattered Work&quot; really struck a chord with me. Putting the workplaces outside of the home environment and into a centralised location creates suburbs that are dead during the day, and soul-less business districts where children rarely venture. Yet this is how most of our cities are designed. This puts an enornmous pressure on the dreaded &quot;tea time&quot;: when the bread-winner comes home through the door at six o'clock it's the time that they're most tired and distracted, their children want to see them the most and need the most attention, and their partner needs the most help. Small wonder that this combination often generates arguments.
+
+Alexander advocated scattering the workplaces amongst people's homes so that &quot;each home is within 20-30 minutes of hundreds of workplaces.&quot; However, since he wrote his book back in the 1970's we have had a massive technology shift which has blown the hole out of the centralised workplace. Now more than ever it's possible to combine work and home life.
+
+I can testify to this: I am loving working from home. The combination of focused Pomodoros for work, siting my desk next to french doors out to my garden, using my 3-5 minute breaks to hold my baby and do a few small chores has taken the pressure off our busy lives. Thank God for the Internet and remote working.
+
+If you go into an office everyday, is there a way of making it easier to work from home? If you run a company, how can you make your workplaces more decentralised and local? Do you really need that big office, with countless drones scurrying around in front of you, for anything else other than your own ego?
+</content></entry><entry><title>On Flow, and Katas</title><category term='productivity'/><category term='flow'/><link href='http://chrismdp.com/2011/05/on-flow-and-katas'/><updated>2011-05-06T09:37:45+01:00</updated><id>http://chrismdp.com/2011/05/on-flow-and-katas</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;[Flow is] being completely involved in an activity for its own sake. The ego falls away. Time flies. Every action, movement, and thought follows inevitably from the previous one, like playing jazz. Your whole being is involved, and you're using your skills to the utmost.&quot;&lt;/i&gt;&lt;/p&gt;
+
+-- [Mihaly Csikszentmihalyi](http://en.wikipedia.org/wiki/Mihaly_Csikszentmihalyi)
+
+I first read about the concept of Flow when researching the psychology behind [the pomodoro technique](http://www.pomodorotechnique.com), when I [started using it](/2011/03/pomodoros-done-hopefully-right) at the beginning of April. Quite by chance [Keavy](http://twitter.com/keavy) put this slide up at the [Scottish Ruby Conference](http://scottishrubyconference.com) just afterwards:
+
+&lt;div style=&quot;background-color:white; padding:20px; margin-right:30px&quot;&gt;
+&lt;a href='http://en.wikipedia.org/wiki/File:Challenge_vs_skill.svg'&gt;&lt;img src=&quot;http://upload.wikimedia.org/wikipedia/commons/f/f6/Challenge_vs_skill.svg&quot; alt=&quot;Challenge vs Skill&quot;/&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+This diagram fascinates me. Perhaps this teaches us that the reason experts enjoy [Katas](/2011/03/are-coding-katas-really-worth-it) is that they're a form of relaxation, whereas perhaps they instil a sense of apathy in beginners.
+
+We have to encourage our apprentices to push through apathy, and even boredom, by gradually increasing the challenge level. As their skill level increases, the challenge level drops, so the same tasks become relaxing.
+
+Once that's the case, they should be ready for the highly challenging real world application of those concepts.
+
+What do you think? What else can we glean from this diagram?
+
+</content></entry><entry><title>A formula of motivation</title><category term='productivity'/><category term='pomodoros'/><category term='life'/><category term='gtd'/><link href='http://chrismdp.com/2011/04/a-formula-of-motivation'/><updated>2011-04-15T10:39:35+01:00</updated><id>http://chrismdp.com/2011/04/a-formula-of-motivation</id><content type='html'>When reading last year, I came across the following formula for describing motivation:
+
+&lt;pre style='font-size: 0.8em; font-family: Monaco, fixed'&gt;
+How much you want to do it   =   Confidence you can do it   *   Perceived Value of doing it
+                                 ----------------------------------------------------------
+                                 Proneness to being distracted * How long you have to do it
+&lt;/pre&gt;
+
+I'd be grateful if anyone can source this for me, as I can't find the reference and would love to link to it!
+
+It seems simple enough, but it's suprisingly effective at helping us out of a *motivation pit.* We've all had times when we have had something we need to do, yet we cannot seem to bring ourselves to get on with it. It's like we've fallen into a pit of despair about a certain task and cannot get out.
+
+So what can we do to boost our motivation? This formula gives us a few tools to help us complete that task. They're listed here in the order in which I've found them useful:
+
+*Break it down.* If it's too big to imagine completing it, break it down: what's the next thing you can do to progress it? Do that, then rinse and repeat. This is one of the main things I learnt from [GTD](http://en.wikipedia.org/wiki/Getting_Things_Done).
+
+*Ensure you can do it.* This is all about raising our confidence in whether we can get it done. Remind yourself that you have ability and knowledge to not only do it well, but knock it out the park! If you don't, either get someone to help you with the task or schedule another task to find out what you need to know. Both these things will raise your confidence and increase your motivation.
+
+*Remind yourself why you're doing it.* In other words, raise your perception of the value gained through doing the task. What is the task achieving for your? What good things will happen when it's done? Remember, the tasks you feel the least like doing are the ones you feel best about having done: there's value in that in itself. After this, if you still cannot see the value, why are you doing this in the first place?
+
+*Reduce distractions.* Some distraction is inevitable, but we can work hard to overcome it. This is where I've found [the pomodoro technique](/2011/03/pomodoros-done-hopefully-right) very useful. Change your environment and space to help you concentrate on what you're doing. Tracking your distractions and intentionally overcoming them can be very effective in helping to get something done.
+
+*Raise the bottom.* When do you have to do it by? If it's in six months time, then you're unlikely to want to bother now. But if the task is going to take six months (such as writing a dissertation, for example), then you will naturally doubt you can do it, and you're really going to struggle to get started.
+
+Instead, break the task down, and think: &quot;If I'm going to get this done, I have to do this first thing by next week at the latest.&quot; That will raise your confidence level (smaller task) and artificially reduce your deadline, both increasing your motivation.
+
+*Do it later.* In a week you'll have less time to get it done, and therefore you'll be a bit more motivated. I've found this is the least effective, as it plays into my natural tendency to procrastinate, but sometimes we have to question why we're doing this now at all, and get on with the really important tasks.
+
+Hope this formula helps you as much as it's helped me.
+</content></entry><entry><title>On the nature of time</title><category term='pomodoros'/><category term='life'/><category term='productivity'/><link href='http://chrismdp.com/2011/04/on-the-nature-of-time'/><updated>2011-04-04T14:27:24+01:00</updated><id>http://chrismdp.com/2011/04/on-the-nature-of-time</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;Time is not a reality, but a concept or a measure.&quot;&lt;/i&gt;&lt;/p&gt;
+
+-- [Antiphon the Sophist](http://en.wikipedia.org/wiki/Antiphon_(person%29)
+
+The concept of time is a difficult one to pin down. Through centuries the devising of a non-controversial way of defining it has eluded even the greatest scholars. I've been learning a bit about time from my use of the [pomodoro technique recently](/2011/03/pomodoros-done-hopefully-right), and I want to discuss two ways that we perceive time, specifically as it relates to getting stuff done.
+
+*The concept of &quot;becoming&quot;.* This is an abstract, dimensional way of seeing time. It gives rise to the measuring of time in minutes and hours, and the idea of &quot;not having enough time&quot; or of &quot;being late&quot;.
+
+*The succession of events.* The concept of something being &quot;before&quot; or &quot;after&quot; something else: I do this, then I do that. As children, this is the first understanding of time we grasp, before we learn about the abstract concept.
+
+## Why does this matter?
+
+The abstract concept of time is what creates stress. We worry that there's &quot;not enough time in the day&quot;, or that we're &quot;wasting time&quot;.
+
+Contrast this: &quot;I've been waiting _seven hours_ for my iPad, and I've only just got it!&quot; with: &quot;I waited in line, and then I got my iPad.&quot;
+
+Viewing time as a success of events creates rhythm. There's a certain natural orderly progression when talking about succession: I got up, I had breakfast, I went to work, I phoned Bill, I cleared my inbox, I had lunch, I queued, I bought an iPad... It's calming and relieves anxiety.
+
+## How can this make a difference?
+
+Next time you're stressing like crazy because you &quot;only have 3 hours left&quot; before the end of the day to get a lot of things done:
+
+*Stop.* Worrying will make it worse; you'll have even less time after you're done.
+
+*Work out what you can realistically achieve today.* Renegotiate everything else. You're not going to get it done anyway: why not let people know sooner rather than later?
+
+*Write down a list in order of what you're going to do.* Put &quot;go home&quot; at the end of the list.
+
+*Follow the list.* Don't pay much attention to the seconds and minutes. Go home when it tells you to.
+
+The subtler aspects of the Pomodoro technique are teaching me a lot. Thanks to Bergson and Minkowski as cited by [The Pomodoro Technique book](http://www.pomodorotechnique.com/) for the raw intel.
+
+&lt;p&gt;&lt;i&gt;Henri Bergson, L’evoluzione creatrice, Cortina Raffaello, 2002; ISBN 88-70-78780-X.&lt;/i&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;Eugène Minkowski, Il tempo vissuto, Einaudi Editore, Torino, 1971; ISBN 88-06-30767-3.&lt;/i&gt;&lt;/p&gt;
+</content></entry><entry><title>Learning to say Yes</title><category term='productivity'/><category term='life'/><link href='http://chrismdp.com/2011/03/learning-to-say-yes'/><updated>2011-03-30T14:02:47+01:00</updated><id>http://chrismdp.com/2011/03/learning-to-say-yes</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;Saying yes begins things. Saying yes is how things grow. Saying yes leads to knowledge. 'Yes' is for young people. So for as long as you have the strength to, say yes.&quot;&lt;/i&gt;&lt;/p&gt;
+
+-- [Stephen Colbert](http://en.wikipedia.org/wiki/Stephen_Colbert)
+
+Learning to say No is very important. Without that skill, we travel through our lives over-committing and under-delivering to our friends, our colleagues and our families. We find ourselves compulsively agreeing to a commitment or deadline through insecurity, or an unhealthy desire to please people. This will leave us stressed, unhappy and out of control. We know this.
+
+In the past few months I've been very busy rushing around to all sorts of meetings, networking events and trips to London. I'd gotten really good at saying No.
+
+*Trouble was, I wasn't saying Yes enough.*
+
+&lt;p&gt;&lt;i&gt;&quot;I can't really pair with you today, I'm heading to a meeting in 15 minutes.&quot;&lt;/i&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;&quot;Sorry, but I can't play that game now kids. Maybe we can do it tomorrow?&quot;&lt;/i&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;&quot;I don't think I can watch a film tonight darling, I've got to work.&quot;&lt;/i&gt;&lt;/p&gt;
+
+These sound like clichés, but I've heard them coming out of my mouth a lot recently.
+
+## Making a change
+
+This week I've found real pleasure saying things like:
+
+&lt;p&gt;&lt;i&gt;&quot;Yes, I'll take the kids to school.&quot;&lt;/i&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;&quot;Yes I'll have lunch now.&quot;&lt;/i&gt; (rather than later, at my desk, when you're out).&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;&quot;Yes, I'll do that today.&quot;&lt;/i&gt; (rather than fix it next week. Possibly).&lt;/p&gt;
+
+The [Pomodoro Technique](/2011/03/pomodoros-done-hopefully-right) is helping, because it's allowing me to plan my time much better, but it's also as simple (and as complicated) as letting go of Getting Everything Done Today.
+
+Which do you find harder: saying No, or saying Yes?
+</content></entry><entry><title>Truly indispensable people</title><category term='productivity'/><category term='team'/><link href='http://chrismdp.com/2011/03/truly-indispensable-people'/><updated>2011-03-29T11:42:03+01:00</updated><id>http://chrismdp.com/2011/03/truly-indispensable-people</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;Being a part of success is more important than being personally indispensable.&quot;&lt;/i&gt;&lt;/p&gt;
+
+-- [Pat Riley](http://en.wikipedia.org/wiki/Pat_Riley), NBA Coach
+
+There's this old adage that the best people make themselves indispensable to a team. Whilst I can understand the sentiment, it could do with some clarification.
+
+[Jason Gorman](http://twitter.com/jasongorman) talks a lot about [mortgage-driven development](http://parlezuml.com/blog/?postid=147): the idea that the best career move you can make on a software project is to make your self as &quot;indispensable&quot; as possible by making your code as complicated as possible. That way you'll hang around longer, and be more likely to pay off your mortgage.
+
+*In contrast, those who are truly indispensable are those that are able to make themselves dispensable.*
+
+They're the ones who don't just catalyse change within an organisation, they see it through and make sure the change will continue without them. They train up new leaders to lead their teams, and then hand their teams on to them. They do themselves out of a job at every opportunity.
+
+If you lost one of these people from your organisation, your company would not immediately fall apart, but you'll have lost a little piece of its soul: part of its ability to grow and change over time. That quality is an essential part of what makes an organisation alive.
+
+Identify the truly indispensable, encourage them, and hang on to them: they will replicate everything that's good in your organisation.
+</content></entry><entry><title>Pomodoros done (hopefully) right</title><category term='productivity'/><category term='life'/><link href='http://chrismdp.com/2011/03/pomodoros-done-hopefully-right'/><updated>2011-03-28T16:18:50+01:00</updated><id>http://chrismdp.com/2011/03/pomodoros-done-hopefully-right</id><content type='html'>It's been a while since I worked on my own, and one of the first things I did was *completely fail* to remember how to prioritise and structure my day effectively. I'd forgotten how to motivate myself when there's no standup meeting to energise you and no team members to be accountable to.
+
+To this end, I spent the first ten minutes of my first real &quot;day in the home office&quot; flailing around looking for the right thing to work on first. I decided to re-learn the [Pomodoro Technique](http://pomodorotechnique.com) in short order, and to attempt to use it how it's meant to be used.
+
+## How I'm doing it
+
+The technique appears straightforward at first glance. A pomodoro consists of an indivisible 25-minute block of time. You set a timer for 25 minutes and take a very short break afterwards. If you are interrupted, and you cannot deal with it within a few seconds, then that pomodoro is cancelled and a new one is started. Every 4 pomodoros you take a longer 15-30 break. What could be simpler?
+
+Well, it turns out there's quite a lot more to it than that, if you learn the whole technique. It goes something like this:
+
+*Planning:* At the start of the day, decide on the day's activities from your list.
+
+*Tracking:* Throughout the day, record pomodoros completed against tasks, and how many times you were interrupted. There's a number of other things you can record, such as whether a task was planned or not, or whether the interruption was &quot;external&quot; (someone demanded your attention) or &quot;internal&quot; (your mind wandered).
+
+*Recording:* At the end of the day, compile your notes into a recording of the day. I'm using a Google Spreadsheet for this, but a paper record works fine too.
+
+*Processing:* Think about the data you've recorded, and analyse it for information.
+
+*Visualising:* Visualise the data and perform a mini-retrospective on how your day went. When were the interruptions most frequent? When were you most tired? How can you improve your work timetable to be more effective? How can you get the same amount of work done in less pomodoros?
+
+After you've got this down, there are a number of techniques you can layer on, such as estimation, to give you even more data. If you want to know more check out the [Pomodoro Technique website](http://pomodorotechnique.com) and especially the [free book (pdf)](http://www.pomodorotechnique.com/resources/ThePomodoroTechnique_v1-3.pdf) for more info.
+
+## Why bother?
+
+At the moment I feel like I really need this. I'm working from home, on a flexible schedule. Ellie and my eight-month old baby are here much of the time. My two older kids come in from school around 4pm, and I've made the decision that at the moment I really want to stop work for a while when they come home.
+
+On top of this, I have some client work to finish and a lot of paperwork to do to close Eden. I also want to be spend quite a lot of time creatively thinking about what's next. I need some data on how I work effectively so I can make good decisions about when I do my work in the day, and when it's best for me to do different kinds of work.
+
+## Is it helping?
+
+It's a little early to tell, but I've already learnt a few lessons after just today:
+
+*The jobs you dread are the ones it feels great to get done.* By allocating a pomodoro for starting to process my inbox, I really got into it, scheduled a second one and managed to get it down to zero in only an hour. If I hadn't, I'd still be staring at it, fearing it.
+
+*I discovered internal interruptions dominated the early part of my day.* This showed me that I hadn't prioritised my work properly: my mind was drifting off the task I was on and was worrying about many of the things I hadn't originally scheduled. After finishing the current pomodoro, I re-prioritised, got the urgent stuff done and ended up feeling much better.
+
+I'll be really interested to see how this informs my work patterns and hopefully helps me find a good daily timetable for this season. It's already adding value after just a few hours.
+
+Have you used the technique before? What are your impressions: a fad, or a useful tool?
+</content></entry><entry><title>My Polyphasic Sleep Experiment</title><category term='productivity'/><category term='life'/><category term='sleep'/><link href='http://chrismdp.com/2010/07/polyphasic-sleep-experiment'/><updated>2010-07-29T09:45:00+01:00</updated><id>http://chrismdp.com/2010/07/polyphasic-sleep-experiment</id><content type='html'>&lt;p&gt;&lt;i&gt;I've always been one to try new things, and screwing with my sleep patterns to attempt to cram more into my day seemed like a fun thing to try :) I had a go at it a few weeks back, and wanted to share my experience.&lt;/i&gt;&lt;/p&gt;
+
+Polyphasic sleep is something that caught my eye a year ago, when I heard about the idea from [Nathaniel Talbott](http://twitter.com/ntalbott) at Bizconf last year. The idea is that you take a much shorter night's sleep (perhaps 3-5 hours) and make up for it with 20 minute naps spaced out during the day. There are some fixed schedules that have been shown to work, but the basic rule is that the shorter your nightly (or &quot;core&quot;) sleep, the more naps you need and the more fixed your nap schedule has to be during the day.
+
+The idea of getting loads more time in my day really appealed, so I finally decided to give it a go after I saw [Micah Martin](http://twitter.com/slagyr) was trying it too. 
+
+## My experience
+
+I went for a 3 hour core sleep from 10:30pm to 1:00am, with 3 naps spaced out during the day: one at 6 - 6:20am, one at 12:10pm - 12:30pm, and one at 5:10pm - 5:30pm. The idea was that I could get my first nap in before my kids awoke at 7am, and then nap once at lunchtime, and once just before I came home. 
+
+Full of anticipation of hours of extra time, I went to bed on Sunday night at 10:30pm, setting my alarm for 1am.
+
+Sure enough, the alarm went off and I dragged myself out of bed. I felt euphoric at the thought of having all this time, and my [750 words](/2010/07/seven-hundred-and-fifty-words) for the day proudly exclaimed the virtues of this sort of living. (I'm afraid I'm a serial [kool-aid drinker](/2009/12/jekyll). I took my naps at normal times, and it all worked wonderfully. My naps weren't wonderful: we have a very [open office](http://www.flickr.com/photos/edendevelopment/sets/72157622880494016/) and I couldn't easily find a good place to sleep for 20 minutes. I felt a little tired, but not too bad to be honest. That is, until 10:30pm where I promptly crashed. The fact that my baby daughter was asleep by then was great (later I found that this was a happy coincidence :). I slept very deeply until 1am the following day.
+
+Tuesday to Friday I felt much more tired, and found that I really needed my naps at the appointed time. It was like my body began to shut down at around midday and I knew I needed to go and sleep. The nights were much worse though. It was a real struggle to keep my eyes open between 1:00am and 6:00am after only three hours core sleep. I managed it though, and only had one short oversleep. 
+
+## Why I stopped
+
+The real problem, the one that ultimately caused me to abort after a week, was not the tiredness. I think that I could have gone on and persevered throught that. *The problem was scheduling the naps, the life adjustment and the flexibility.*
+
+Whilst you're adapting, it's really important not to deviate from your set nap schedule, yet I have three kids and a busy work schedule. Often this causes me to be out on trips at the weekend, and in London meeting clients midweek. I was looking at my diary a week ahead and thinking: &quot;How on earth am I going to survive Wednesday? And Saturday? Oh, and Sunday?&quot; 
+
+If I skipped a nap whilst adjusting, it would effectively had set me back several days in the adaptation process, and with my schedule I couldn't guarantee that I'd ever finish adapting. Some sleep deprivation is acceptable during adaptation, but go on for too long and it begins to affect your health. 
+
+Another difficulty: it was great to be awake in the middle of the night, the same time as my three-week old girl, and my wife got a good deal more sleep than she would have done normally. However it was difficult at 10:30pm: I simply had to be asleep at that time for it to work, and often the baby still needed settling around them. My wife was pretty good about this, but she was tired too, and it felt like I wasn't doing her any favours. I was basically getting more time for me, at the expense of being flexible for the family during the day/evening. As long as it didn't affect them much it was fine, but after a certain point I'm just being selfish.
+
+So, for multiple different reasons, I decided to call time on the experiment after about five days.
+
+It's important to stress that people who successfully implement a polyphasic sleep schedule persevere longer than I did, and have more success scheduling their naps. If I worked from home, with less commitments and meetings during the day, I can see how I might have been able to make it work. Ultimately, my life just isn't fundamentally set up for this sleep pattern, and to a certain extent that's reflected in society. It would have been difficult to find a place to crash for 20 minutes in central London, and it's not something I could easily have explained to people.
+
+## What did I learn? 
+
+*I got much better at napping.* I'm able to fall asleep more easily now, for short periods, when I need to.
+
+I learnt that *our society isn't set up for daytime naps.* This might improve in the future if it catches on, who knows?
+
+*Your cognitive performance is super impaired when your brain thinks you should be sleeping.* This sounds obvious :) but I didn't think of it before starting: I was expecting to have lots of tasks done, but looking through my list at 3am when I was super tired only elicted perhaps one or two things I could manage. A lot of my work requires a fair amount of concentration, and I just couldn't manage it. 
+
+This would hopefully have ceased to be a problem after a couple of weeks when I'd have stopped feeling so tired, but it also threw up another problem, and the biggest lesson I learnt: *many of the old tasks on your list aren't incomplete through lack of time, but through lack of motivation.* If you remove lack of time from the equation, you start to see what you've been procrastinating about because you really just don't want to do it. That was a challenge, and led me to think deeper about some of the things on my list that I've been putting on.
+
+## Would I try it again? 
+
+Perhaps. I think the life circumstances would need to be right, and the need for that extra time would need to be extreme. I don't regret the experience though, and I'm grateful for the lessons learnt.
+
+That was my story: what's yours? Have you tried and succeeded, or failed? Any tips to share?
+</content></entry><entry><title>750words.com + GTD = Focus</title><category term='personal'/><category term='life'/><category term='writing'/><category term='productivity'/><link href='http://chrismdp.com/2010/07/seven-hundred-and-fifty-words'/><updated>2010-07-12T22:45:00+01:00</updated><id>http://chrismdp.com/2010/07/seven-hundred-and-fifty-words</id><content type='html'>One of the best ways of managing your time and your tasks is David Allen's [Getting Things Done](http://en.wikipedia.org/wiki/Getting_Things_Done) (GTD) system. I've been a GTD adherent for the last four years. I've deviated a little from some of the practices in that time but never the principles (regular review, only care about stuff you can work on now, get it all out of your head). 
+
+However, one of the hardest things I've found to master is the concept of different levels of thinking to help you prioritise what to do next.
+
+In GTD, to decide which tasks are more important than others, first you look at the context you are in and only consider tasks within that context. For example, it's hard to blog when you're in the supermarket, but it's a handy time to remember you need to buy toothpaste. Then, you look at the time you have available (this isn't worth starting as I don't have time to finish it) and energy available (might not be a good idea to draft a difficult and taxing work proposal just before bed).
+
+If you still can't decide, then it gets interesting. GTD invites you to take a step back: moving from &quot;ground&quot; to &quot;10,000ft&quot;. Which project that these tasks are for will have the short-term effect I'm most interested in? Then step up another level, and another: which project advances my goals for the year? Which is the more important area I should be progressing now at this stage of my life? What meshes with my whole-life purpose?
+
+These are deep questions, and I used to struggle to apply them to everyday task prioritisation. It seemed hard to remember where in my life purpose some of my more mundane tasks fitted, partly because I was thinking about deeper things much less frequently. So I left the &quot;take a step back&quot; method alone, going with what just felt right instead (which isn't a bad way to prioritise to be honest).
+
+However, through the power of [750words.com](http://750words.com), I've finally managed to nail this part of GTD.
+
+## Morning Pages
+
+There are many ways to clear your head and get yourself to focus. One is to write down everything you're thinking about in an attempt to organise your thoughts. Some people call this [Morning Pages](http://paperartstudio.tripod.com/artistsway/id3.html): write three pages a day first thing in the morning, about anything and everything. 
+
+Morning pages is a great idea, but sometimes it's difficult to motivate yourself to get on with private writing. Three pages seems a tall order to write every morning. That was, until I discovered 750words.com. This handy little site ensures that you not only do it, but that you do it every day. Using a full-featured incentive system of points, badges and challenges, you really don't want to disappoint yourself by missing a day. The site gets you writing, and throws in some nifty writing statistics at the end of the process for some fun analysis of your state of mind. Heck, it even measures your typing speed, which comes in handy for [Learn to Type Week](http://vurl.me/TCK)!
+
+I thought I'd give it a go a few weeks ago, as I had a fair amount on my mind at the time. What I didn't realise was the effect it would have on my productivity. My mind was immediately clearer, and I was decisive and more focused. Blogging became easier again: once you've written 750 words of effectively brain-dump 'whatever-you-want' writing in the morning you are ready to keep on going with something more structured. 
+
+Because I use the time for fairly intense personal reflection, this practice unlocked the GTD prioritisation method. I've found that I'm moving up and down the GTD &quot;ground&quot;, &quot;10,000ft&quot;, &quot;40,000ft&quot; levels much more effectively. I often know just how a particular task fits into my life goal, as I've just written about that this morning. I'm naturally keeping the big picture in mind every day. 
+
+The word-crunching statistics that are produced over time are very telling. I've noticed an interesting effect now I've been doing it for the last three weeks: at first I found it hard to stop and all my writing was concerned with the present. Now it's harder to think of what to write, but my thoughts are more valuable and much more reflective and deeper. I'm now using it to consider hard life decisions and priorities.
+
+I'd very much recommend you try morning pages, especially if you struggle to focus, get carried away by random disparate thoughts or find it difficult to concentrate. I'm getting a lot out of it.
+
+</content></entry><entry><title>Pairing works for everything</title><category term='pairing'/><category term='xp'/><category term='agile'/><category term='productivity'/><link href='http://chrismdp.com/2010/01/pairing-works-for-everything'/><updated>2010-01-27T11:28:00+00:00</updated><id>http://chrismdp.com/2010/01/pairing-works-for-everything</id><content type='html'>We've all heard much discussion and general chatter about the value of pair programming. Amongst other benefits, it focuses the mind, speeds knowledge transfer, and builds in code review.
+
+What's not talked about so often is the value of pairing on non-coding tasks. Does it add the same level of value? Many of us would naturally pair up on demanding tasks, when we are doing things that require the input of several people, or when we're unsure about how to proceed. What happens if we make it an explicit part of our day to day work? What benefits would we see?
+
+I've been trying where possible to pair explicitly on tasks at Eden in the last few weeks and to encourage others to do the same. We've found the following so far:
+
+*Pairing works on UX and Design.* [Spencer](http://twitter.com/spencerturner) is currently teaching User Experience (UX) and Design skills to a number of people internally. Pairing on UX and design work really helps people to pick up skills in a particular tool such as Photoshop, but also drives discussion about design and flow which wouldn't normally have arisen. We've found the result to be better output, and an increased confidence in the person who's less experienced.
+
+*Pairing works on Sales and Business Development.* Last week I paired up with [Richard](http://twitter.com/disciplex), one of the guys I'm mentoring at the moment, to send some sales emails to three or four potential clients. One of these was to a potential new customer who I knew was interested in speaking to us, but whom I'd not emailled before. In explaining my reasoning for the words I was writing, he was able to learn about how to structure emails such as this, and I got valuable insight into how I should approach the task from someone with a different point of view.
+
+*Pairing even works on VAT returns!* When you're doing necessary and repetitive tasks such as the preparing the quarterly VAT return, it really helps to have someone beside you spurring you on. Last month I had to prepare one of these returns, and half-jokingly asked whether anyone was interested in helping me out. Thankfully, [Elliot](http://twitter.com/elliotcm) stepped up to the challenge. He started learning which expenses fall into the four or five VAT categories that exist, and how to prepare and submit a return online. Just by explaining the vagaries of EU, exempt, zero-rated, and outside-scope expenses to someone else, the job went much quicker, all the figures were double-checked, and it was simply much more fun.
+
+Clearly pairing isn't going to work all the time. People often need space from others to think, to avoid distraction, and to recharge. Rather than being dogmatic, what I'm asking is this: at the moment non-pairing in our work is the default, and pairing is the exception. What if this was reversed? What difference would this make to our teams?
+
+Next time you approach a non-coding task at work, perhaps have a think about whether a pair would be beneficial, or what someone might learn through working with you. I could well be wrong, but I've yet to find a task where pairing doesn't add some benefit. Can anyone think of one?
+
+</content></entry><entry><title>SVG Planner</title><category term='svg'/><category term='DIY Planner'/><category term='GTD'/><category term='productivity'/><link href='http://chrismdp.com/2006/10/svg-planner'/><updated>2006-10-24T01:00:00+01:00</updated><id>http://chrismdp.com/2006/10/svg-planner</id><content type='html'>&lt;div class='notice'&gt;&lt;h1&gt;By the way...&lt;/h1&gt;&lt;p&gt;This content is now pretty old: check &lt;a href='/'&gt;the homepage&lt;/a&gt; for the latest.&lt;/p&gt;&lt;/div&gt;
+
+Welcome to SVG Planner - D\*I\*Y Planner style 3x5 Index Cards implemented in SVG.
+
+Download
+--------
+
+* [Day Keeper](/files/daykeeper.png) ([Source](/files/daykeeper.svg))
+* [Week Plan](/files/week.png) ([Source](/files/week.svg))
+* [Next Actions (with notes)](/files/next_actions.png) ([Source](/files/next_actions.svg))
+* [Next Actions (without notes)](/files/next_actions_nonotes.png) ([Source](/files/next_actions_nonotes.svg))
+* [Checklist (with notes)](/files/checklist.png) ([Source](/files/checklist.svg))
+
+Why do this?
+------------
+
+I used to print out the Day Keeper from [D\*I\*Y Planner](http://www.douglasjohnston.net/weblog/archives/2005/03/28/diyplanner2/) for my [Hipster PDA](http://www.hipsterpda.com) every day, and fill it in by hand. I was also alternating between printing the cal-tex output of the Emacs Diary and trying to shoehorn that onto the cards, and filling in the Weekly Planners from D\*I\*Y planner.
+
+A few things bothered me about these approaches:
+
+* D\*I\*Y Planner cards aren't formatted in the right shape for an index card, so it always came out a little small when zoomed to fit on an index card (Update: Doug's now fixed this with his excellent [Hipster PDA version](http://www.douglasjohnston.net/templates/hipsterpda.html))
+* The pre-printed dates weren't enough for my (very) long day.
+* The resolution and contrast wasn't always correct for my laser printer.
+
+So I've created an alternative in SVG. There are a few tweaks, mostly thanks to the increased length a portrait index card gives you - the Day Keeper has a longer day, and the Week Plan has space for more entries
+The nice thing about doing it in SVG is that anyone with a copy of [Batik](http://xml.apache.org/batik/) can easily roll out PNGs for whatever resolution their printer supports, and it's very easy to edit and tweak for your own use. Feel free to do so; please send any useful mods so I can roll the best ones into this version
+If you want to ask questions or comment on any of this, feel free to &lt;a href='mailto:info@edendevelopment.co.uk'&gt;email me&lt;/a&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.douglasjohnston.net/weblog/archives/2005/03/28/diyplanner2/&quot;&gt;&lt;img src=&quot;http://www.douglasjohnston.net/templates/logos/logo_web_tiny.gif&quot; border=&quot;0&quot;/&gt;&lt;/a&gt;&lt;/p&gt;
+
+This product is a &lt;strong&gt;licensed derivative&lt;/strong&gt; of the official [D\*I\*Y Planner](http://www.douglasjohnston.net/templates/), and is so governed by the terms of the  original [Creative Commons Non-Commercial No-Derivatives license](http://www.creativecommons.org/licenses/by-nc-nd/2.0/) as owned and stipulated by Douglas Johnston of [a million monkeys typing](http://www.douglasjohnston.net/weblog/). It is therefore free to download and print for individual use, but not for any sort of enterprise or commercial printing, unless explicit permission is obtained from the copyright holder. Individual use within an enterprise is permitted, as this clause is waived.
+</content></entry></feed>

@@ -1,0 +1,48 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Chris Parsons: posts tagged Peter Drucker</title>
+
+  <link href="http://chrismdp.com/"/>
+  <updated>2009-12-23T21:41:00+00:00</updated>
+  <id>http://chrismdp.com/tag/Peter Drucker</id>
+  <author>
+    <name>Chris Parsons</name>
+    <email>chrismdp@gmail.com</email>
+  </author>
+<entry><title>R.I.P. Web 1.0</title><category term='ux'/><category term='business'/><category term='Peter Drucker'/><link href='http://chrismdp.com/2009/12/rip-web-1-0'/><updated>2009-12-23T21:41:00+00:00</updated><id>http://chrismdp.com/2009/12/rip-web-1-0</id><content type='html'>I'm reading an excellent book at the moment called [The Definitive Drucker](http://www.definitivedrucker.com/default.aspx). Peter Drucker, in case you haven't heard of him, was a bit of a legend when it comes to business management and marketing. Anyone who has a least a passing interest in business should read his books, especially the later ones.
+
+I've been pondering this set of pithy yet profound questions from the book:
+
+* What is our business?
+* Who is our customer?
+* What does our customer consider value?
+
+The answers may seem obvious at first glance. But can you really define who your customer is without thinking about it, and hard? And how about putting yourselves in their shoes and actually considering what they really want?
+
+I've been thinking hard about these questions this week, in light of my experiences at Eden this past year.
+
+*One key realisation: Web 1.0 is dead. Long live Web 2.0.* 
+
+If I was to pick one insight from carefully considering these questions, it's that the tolerance for the basic web 1.0 user experience over the last year has plummeted. We've always offered both, but 12 months ago a basic interface would have been their default option, especially for the internal apps we spend a lot of time building. Now customers expect a beautiful interface to come as standard, even for admin interfaces. The key difference is that they've stopped asking for it: they just assume it will happen.
+
+Whilst Web 2.0 was perhaps the big thing in 2008, the major shift in 2009 was less obvious: Web 1.0 died whilst no-one was looking.
+
+This shift has a number of major consequences to web developers. I've listed just a few here.
+
+*Every developer has to know UX now.* At Eden we've recently hired the wonderful [Spencer Turner](http://twitter.com/spencerturner), who is a very decent Rails developer as well as being a seasoned UX/design guru. He's helping every developer in our workshop to consider UX as part of everything they do. UX has to infuse into everything we build: it cannot be an afterthought.
+
+*Dev time increases subtly.* We need to ensure we're building development time into our projects to be able to make our interfaces sing. Web 2.0 interfaces take time to craft well, but the amount of time it takes to finesse them isn't always built correctly into estimates.
+
+*The &quot;standard&quot; stack is changing.* We've adapted our practice and our stack to handle this shift. Heavy Javascript interfaces are becoming standard, Rails layers are becoming ever thinner, and back-end data storage systems are becoming more flexible, even returning JSON which can be rendered directly into the browser if need be. We need flexible languages and frameworks which allow us to split the domain and the persistence layer easily, and put the logic in either the client, server or back-end as the situation demands. Rails 3 can't come soon enough, [node.js](http://nodejs.org) looks promising and we've had some great early successes with [MongoDB](http://mongodb.org).
+
+*We mustn't forget accessibility.* One fantastic advance made by the early web was that it was a great leveller: everyone on any computer and with any impairment could access the same data. We must take care to retain this advantage of our medium, rather than sliding backwards to only providing black-box interfaces that assistive technologies cannot comprehend. A simple functional interface to any mass-market web application should always be made available, even if it's a separate app.
+
+*Tolerance for IE6 is at last fading.* One piece of very good news: with the new interfaces out there now, people are at last jettisoning that bastion of bugs, the ancient Internet Explorer 6. If you're reading this blog in IE6 (yes, the 0.4% of you who accessed my blog in the last week with IE6, I'm looking at you), please get [yourself](http://apple.com/safari) [a](http://opera.com) [decent](http://getfirefox.com) [browser](http://google.com/chrome). Just about anything else will do.
+
+What do our customers consider value? Rich, tactile interfaces and a great user experience. Anything less is the past now. Are we web developers keeping up?
+
+</content></entry></feed>

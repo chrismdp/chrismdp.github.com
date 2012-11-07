@@ -1,0 +1,110 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Chris Parsons: posts tagged katas</title>
+
+  <link href="http://chrismdp.com/"/>
+  <updated>2011-03-31T13:20:29+01:00</updated>
+  <id>http://chrismdp.com/tag/katas</id>
+  <author>
+    <name>Chris Parsons</name>
+    <email>chrismdp@gmail.com</email>
+  </author>
+<entry><title>Are coding katas really worth it?</title><category term='katas'/><category term='karate'/><category term='life'/><category term='apprenticeship'/><link href='http://chrismdp.com/2011/03/are-coding-kata-really-worth-it'/><updated>2011-03-31T13:20:29+01:00</updated><id>http://chrismdp.com/2011/03/are-coding-kata-really-worth-it</id><content type='html'>Last year I took up [Wado-ryu Karate](http://en.wikipedia.org/wiki/Wad%C5%8D-ry%C5%AB). It's something that I've always wanted to do, and yet never quite got around to. I briefly took it up at university about 15 years ago, and put it down rather too quickly. About a year ago I decided it was time for me to stop saying &quot;I wished I'd learnt it&quot;, and got down to actually learning it.
+
+Karate as a discpline is ancient compared to that of my other discipline, writing software. There are many lessons that we can take from it, and I'm sure I'll be blogging more about this as I gain more insight. However, one big lesson I've learned so far is the value of a Kata.
+
+## What is a Kata?
+
+Admittedly, I'd not heard of the term until finding out about the Software Craftsmanship movement a couple of years back. It's the process of coding a solution to a fixed problem over and over again, trying new things and attempting to gain insight. On first hearing, I liked the concept, but in honesty I thought: &quot;yet another bunch of coders who want to be Samurai!&quot;
+
+On reflection however, and especially after hearing [Micah's viewpoint](http://rubyconf2008.confreaks.com/ruby-kata-and-sparring.html), I could see the potential value of practicing a certain number of steps over and over. Therefore I decided to give it a go. When trying the technique in 2009, before I started karate, I admit I couldn't connect katas to better programming performance. I published a [checkout kata](http://katas.softwarecraftsmanship.org/?p=42) late last year, and enjoyed working on it. However the jury was out on how much I learnt from it.
+
+That changed when I started Karate.
+
+## Katas in Karate
+
+In my particular school, katas are commonplace and begin after your third belt. They are specifically designed to teach certain techniques, and to ensure that your basics are correct (and remain correct over time). So far, I have learnt [Pinan Nidan](http://en.wikipedia.org/wiki/Pinan), the first kata in Wado-ryu. It's designed as a mock fight, where you take on eight imaginary opponents and dispatch them one by one using various techniques.
+
+Technically, this kata contains three types of blocks, two types of stances, one type of punch and a spearhand attack. It's very simple, and designed to ensure that your body can perform the basics in sequence easily. Once you've got the basic moves in the correct order, you then move on to ensuring that your position and strength is good when performing the Kata.
+
+When in a real sparring situation, you then instinctively use parts of the kata to help you. If all you've been doing is 'block, punch, block, punch' for several hours, then when someone actually comes to hit you, you block correctly and find you've thrown a punch without thinking. Watching black belts spar is fascinating: most of what they do is totolly instinctive.
+
+## How can we learn from this?
+
+*Rolling code without thinking is valuable.* I would love to be able to roll code automatically, in the same way that martial artists combine moves in sequence effortlessly. Wouldn't it be fantastic to be have thoughts and concepts appear on the screen without really even trying? Granted, our tools and methods do change over time, but we need to learn them inside out. Stick to one editor, for example (preferably a [decent](http://vim.org) [one](http://emacs.org)). Get to know a framework really well, so that you can make things happen without exercising your brain, leaving maximum energy to think about your problem.
+
+*Katas need to be designed well, and operate best as a set.* Perhaps what we need on our university courses and apprenticeship schemes is a list of basics (&quot;learn the syntax of Ruby/Haskell/Clojure&quot;), and then a simple problem (kata) to practice a solution for. Rather than have them complete the project and hand it in, they have to _perform_ it in front of an instructor. They might have to repeat this every two weeks. They should be able to perform old projects on demand. These will need to be designed well, so that they offer the maximum learning. A poorly designed Kata is fairly useless.
+
+*Please can we get over the 'coders who want to be samurai' thing?* There are a bunch of starry-eyed coders who would desperately love to be ninjas, and another group who quietly laugh at them. Both are missing the point. In Karate, katas aren't glamourous; they're difficult, frustrating and really hard work. But let's not discard them out of hand! There's ancient teaching and learning methods here that have proven effectiveness. Let's learn from them.
+
+I need to think more on this. Perhaps there's a specific set of katas that is tailored to a particular language that can be designed to really encourage speed of learning and growth. I do believe that a lot of the way we teach programming is inefficient and more about information than practice. Is there a better way?
+</content></entry><entry><title>Driving out feature ambiguity</title><category term='cucumber'/><category term='apprenticeship'/><category term='craftsmanship'/><category term='ambiguity'/><category term='katas'/><link href='http://chrismdp.com/2010/01/driving-out-feature-ambiguity'/><updated>2010-01-15T06:19:00+00:00</updated><id>http://chrismdp.com/2010/01/driving-out-feature-ambiguity</id><content type='html'>[Cucumber](http://cukes.info) features are very useful. The ability to spec out what the customer wants in detail in a format they can read and understand really helps to communicatate what needs to be done. This combined with the ability to execute the feature to ensure that it is completed correctly catches many bugs and incorrect assumptions.
+
+However there is one area of bugs that features don't catch so well, and even cause to some extent. These bugs are built right into the text in the form of ambiguity, sometimes through the constraint of features being executable.
+
+This came up recently in a conversation with [James](http://ohthatjames.github.com) and [Enrique](http://ecomba.github.com/) at [Eden Development](http://edendevelopment.co.uk) about James' apprentice task, the [Snakes and Ladders Kata](/2009/12/snakes-and-ladders-kata). It turns out that the text of one of the features runs against the commonly understood way that Snakes and Ladders works:
+
+{% highlight text %}
+Scenario: Win the game
+    Given player 1 is on position 97
+    And player 1 rolls 3
+    Then player 1 has won the game
+{% endhighlight %}
+
+Question: is that a valid scenario? Given the commonly understand rules of Snakes and Ladders, you cannot just start on position 97. Implementing it as written complicates the domain model. 
+
+How do you implement the first step? Do you go for a simple:
+
+{% highlight ruby %}
+Given /^player (.*?) is on position (.*?)$/ do |player, position|
+  @game.set_player_position(player, position)
+end
+{% endhighlight %}
+
+The potential issue with this is that you are exposing a method that in real life won't get called, just to set up a test. It's also tying your model down to a particular structure, by implying that the game stores an arbitraty position variable for a player. This might not be the best way to model the problem.
+
+The other option is to change the scenario such that the &quot;Win the game&quot; is tested in a similar way to the following:
+
+{% highlight text %}
+Scenario: Win the game
+    Given a game is started with two players
+    And the following dice are rolled:
+      |3|
+      |4|
+      |5|
+      |5|
+      (etc.)
+    Then player 1 has won the game
+{% endhighlight %}
+
+That satisfies our understand of Snakes and Ladders, and gives us more freedom in our domain model. In this case, we simply modify the agreed scenario in the code and sidestep the problem.
+
+Right? *Wrong.*
+
+The important thing to remember is that the customer is always right about how the software should behave, even when it violates our commonly understood assumptions about the world. The software they want you to build might require a different implementation of Snakes and Ladders. They might have a 3 year-old daughter they're planning to play the game with, who always wants to be given a headstart. In this case, we've not delivered what they want, simply because it makes life easier for us. We've let our assumptions and our concerns for good design drive out the features, rather than letting the features drive our design.
+
+There's another possibility: when the customer wrote this scenario, they simply used &quot;starts on position X&quot; as a shortcut and don't really care if it's possible to do this in real life. In this case, we can work with them to write the scenario so as not to cheapen our design for the sake of easier feature writing.
+
+*The key insight: there's no way that we can know which it is from reading the scenario. We have to ask the customer and drive out the ambiguity in the feature.*
+
+We mustn't let the necessary constraints of executable features build ambiguity into your conversations about what the customer really wants. And we must be constantly talking to the customer all the way through the iteration, especially if they're not on site.
+
+You might think &quot;It's only Snakes and Ladders, what does it matter?&quot; It matters a great deal: situations like this come up regularly in real life projects. Practising how to deal with these issues and the conversations that result is one of the many powerful things you gain by doing katas.
+
+What's your take on the above problem? Have you come across it in real life?
+</content></entry><entry><title>Snakes and Ladders Kata</title><category term='katas'/><category term='fun'/><link href='http://chrismdp.com/2009/12/snakes-and-ladders-kata'/><updated>2009-12-20T22:20:00+00:00</updated><id>http://chrismdp.com/2009/12/snakes-and-ladders-kata</id><content type='html'>I've been mentoring a couple of guys at Eden over the last few weeks. They've been working away on the [Binary Chop kata](http://codekata.pragprog.com/2007/01/kata_two_karate.html) and it's been generating some interesting discussions on what Test Driven Development actually is, and how to do it properly. 
+
+More on that in another post; today I want to outline the next task I've got prepared. Continuing on with the TDD theme, I've prepared a basic specification of Snakes and Ladders, using Cucumber features to give a simple outline.
+
+The task is to take this basic [github repository](http://github.com/chrismdp/snakesandladders) and prepare a kata which fully implements the features given using TDD.
+
+If you'd like to try it yourself, feel free! Any patches to the features would be most welcome. Let me know how you get on.
+
+*UPDATE:* I've fixed a bug in the features (thanks [nickh](http://github.com/nickh)) and merged in a patch from [ohthatjames](http://github.com/ohthatjames) to provide some basic support files.
+
+*UPDATE:* [Olly Legg](http://github.com/olly) commited a couple of tweaks and improvements.
+</content></entry></feed>

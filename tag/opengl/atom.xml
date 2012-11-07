@@ -1,0 +1,99 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Chris Parsons: posts tagged opengl</title>
+
+  <link href="http://chrismdp.com/"/>
+  <updated>2012-02-14T22:56:43+00:00</updated>
+  <id>http://chrismdp.com/tag/opengl</id>
+  <author>
+    <name>Chris Parsons</name>
+    <email>chrismdp@gmail.com</email>
+  </author>
+<entry><title>Sol Trader: on lighting</title><category term='products'/><category term='c++'/><category term='code'/><category term='opengl'/><category term='sol trader'/><category term='game development'/><category term='lighting'/><link href='http://chrismdp.com/2012/02/sol-trading-lighting'/><updated>2012-02-14T22:56:43+00:00</updated><id>http://chrismdp.com/2012/02/sol-trading-lighting</id><content type='html'>A quick update on the lighting code I've been working on. Now that I have normal maps and per-pixel bump mapping working, I can turn these:
+
+![ship-texture-1](/files/sol-trader-lighting-1.png)
+![ship-texture-2](/files/sol-trader-lighting-2.png)
+
+Into this:
+
+![ship-texture-3](/files/sol-trader-lighting-3.png)
+![ship-texture-4](/files/sol-trader-lighting-4.png)
+
+Check out how the ship appears lit from each side. It looks even better as you see it moving. Hey presto: a realistic 3D effect with only two triangles rendered.
+
+All I'm using is this simple GLSL fragment shader:
+
+{% highlight c %}
+
+    void main() {
+      vec4 color = texture(baseTexture, uv);
+      vFragColor = vertColor * color;
+      float alpha = vFragColor.a;
+
+      if (alpha &gt; 0.0 &amp;&amp; useNormal) {
+        vec3 lightDirection = normalize(vec3(0.2, 0.2, 0.0));
+        vec4 normal = normalize(texture(normalTexture, uv) * 2.0 - 1.0);
+        vec4 vEyeNormal = normalMatrix * normal;
+
+        float diffuse = max(0.0, dot(vEyeNormal.xyz, lightDirection));
+        vFragColor *= (diffuse * 3);
+        vFragColor.a = alpha;
+      }
+    }
+
+{% endhighlight %}
+
+[GLSL](http://en.wikipedia.org/wiki/GLSL) is great.
+</content></entry><entry><title>Effective bloom in OpenGL for Sol Trader</title><category term='products'/><category term='c++'/><category term='code'/><category term='opengl'/><category term='bloom'/><category term='sol trader'/><category term='game development'/><link href='http://chrismdp.com/2012/02/effective-bloom-in-open-gl-for-sol-trader'/><updated>2012-02-02T16:28:30+00:00</updated><id>http://chrismdp.com/2012/02/effective-bloom-in-open-gl-for-sol-trader</id><content type='html'>&lt;div class='notice'&gt;
+  &lt;h2&gt;TL;DR&lt;/h2&gt;
+
+  &lt;p&gt;Skip to the &lt;a href='#pictures'&gt;pictures&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
+I've been working on and off on [Sol Trader](http://soltrader.net) ([C++ version](/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus/)) for about a month now. At the beginning of this week, I've been coded up an effective type formatting system using freetype2 natively with OpenGL, which is now in and showing even rather esoteric fonts nicely.
+
+The second half of this week was spent adding on a bloom filter to the graphics engine.
+
+## Bloom filtering: making your world stand out
+
+A bloom filter causes bright areas of the image to 'take over' their surrounding area, simulating the high dynamic range of real light. It stops your game world from looking dull and flat and really makes it stand out. See [this article](http://www.gamasutra.com/view/feature/2107/realtime_glow.php) for some nice screenshots from Tron 2.0 - it can also be used for all sorts of glow and blur effects.
+
+So how's it done? The trick is to render your scene to a texture, rather than to the screen. Once you've done that, you blur and downsample that texture a few times, and then display the results combined with the original texture.
+
+Specifically, this is the process my bloom filter follows:
+
+* Render to a texture
+* Copy that texture to two more textures, one a quarter of the screen size, and one an eighth of the screen size.
+* Blur the two smaller textures using gaussian blur. There are [clever techniques](http://prideout.net/archive/bloom/) which mean you only need six texture lookups to perform a 5x5 gaussian blur. Texture lookups are expensive, so it's worth doing as few as possible.
+* Add all these textures together and add an exposure function to cause the white to saturate for strong color values.
+
+Writing the initial bloom filter was fairly easy. Making it fast was *hard:* you have to work at combining the different aspects of the effect to get what you want, with the absolute minimum of effort for your graphics card. My first attempt ran at a paltry 27 frames a seconds, although it looked very nice: I eventually managed to get it to the point where it runs in roughly 150 frames per second and still looks 80% as good.
+
+&lt;div name=&quot;pictures&quot;&gt;
+  &lt;h2&gt;What's the result?&lt;/h2&gt;
+&lt;/div&gt;
+
+A picture is worth a thousand words, so here are three:
+
+![bloom-1](/files/sol-trader-bloom-1.png)
+
+![bloom-2](/files/sol-trader-bloom-2.png)
+
+![bloom-3](/files/sol-trader-bloom-3.png)
+
+I've deliberately upped the bloom exposure to show off the effect: it is much more obvious when it's moving. Hopefully you can see the volcanic eruptions on Venus are making the outline of the players' ship that much more hazy. The label of the planet also currently has the bloom effect applied: I'll be able to turn that off when I have a more functional GUI in place.
+
+I plan to use this effect for all sorts of things: laser fire, explosions, you name it.
+
+## Next...
+
+I'm going to tackle the gui. I now have AI characters with names trading on Earth's main commodity market: it's time the player joins them in making trades.
+
+&lt;div class='notice'&gt;
+  If you'd like to purchase Sol Trader you can now do so at &lt;a href='http://soltrader.net'&gt;soltrader.net&lt;/a&gt;!
+&lt;/div&gt;
+</content></entry></feed>

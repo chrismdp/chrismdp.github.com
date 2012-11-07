@@ -1,0 +1,21 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Chris Parsons: posts tagged training</title>
+
+  <link href="http://chrismdp.com/"/>
+  <updated>2011-08-22T15:36:53+01:00</updated>
+  <id>http://chrismdp.com/tag/training</id>
+  <author>
+    <name>Chris Parsons</name>
+    <email>chrismdp@gmail.com</email>
+  </author>
+<entry><title>Work with me</title><category term='code'/><category term='meta'/><category term='agile'/><category term='training'/><category term='life'/><category term='tdd'/><link href='http://chrismdp.com/2011/08/work-with-me'/><updated>2011-08-22T15:36:53+01:00</updated><id>http://chrismdp.com/2011/08/work-with-me</id><content type='html'>I've been taking a break from my work and blogging for the summer: but now I'm looking for work again from next week.
+
+To this end I've put up a [new page](/workwithme.html) on this site which has all the details of what I can offer, and my availability. If you'd like to work with me this autumn, do [get in touch](mailto:chris@thinkcodelearn.com).
+
+I also plan to start blogging again soon, with my first topic being [how we handled the massive site traffic](/2011/08/e-petitions-handling-traffic) we experienced on e-petitions [a couple of weeks ago](http://www.bbc.co.uk/news/uk-politics-14474429).
+</content></entry></feed>

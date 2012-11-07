@@ -1,0 +1,330 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Chris Parsons: posts tagged business</title>
+
+  <link href="http://chrismdp.com/"/>
+  <updated>2012-09-19T17:41:22+01:00</updated>
+  <id>http://chrismdp.com/tag/business</id>
+  <author>
+    <name>Chris Parsons</name>
+    <email>chrismdp@gmail.com</email>
+  </author>
+<entry><title>Cucumber isn't a testing tool</title><category term='cucumber'/><category term='business'/><category term='bdd'/><category term='team'/><category term='testing'/><link href='http://chrismdp.com/2012/09/cucumber-isnt-a-testing-tool'/><updated>2012-09-19T17:41:22+01:00</updated><id>http://chrismdp.com/2012/09/cucumber-isnt-a-testing-tool</id><content type='html'>This is your periodic reminder that [Cucumber](/tag/cucumber) isn't a testing tool.
+
+Here's what it actually is:
+
+* *Cucumber is a great communication tool.* The great thing about collaborating on a cucumber feature is that the whole team get to stand in the same room and take part in the discussion. Everyone gets to argue about what should go in, what to keep out, and to help capture all the edge cases. The forming of the feature file facilitates that communication, with a great side effect of being able to check the finished feature still works at a later time. Cucumber excels as a communication tool, first and foremost: it's only incidentally a testing tool.
+
+* *Cucumber captures conversations.* A feature file is a [bookmark](/2010/02/the-story-card-is-not-the-story) for the real feature: *the shared understanding of what needs to be done* that exists in the minds of the team. When the arm-waving and the arguments are done, a well written feature will expertly capture the essence of the conversation - the [semi-formal nature](http://dannorth.net/whats-in-a-story) of a feature acts as a checklist to ensure that we've talked about everything we need to.
+
+* *Cucumber is for the team, not the developers.* Developers are often the gate-keepers of the feature files: if we're not careful we tend to write them, update them and run them without anyone else ever seeing them. We moan about how much more difficult features are to maintain than regular tests, whilst all the time we're missing the point: the features aren't for us, they're for those who can't read code!
+
+For more on this, [watch this video](http://video2012.scotlandonrails.com/D1_LB_03-Ruby1280_b.mp4) ([slides](https://speakerdeck.com/u/chrismdp/p/cucumber-its-about-talking-not-testing)) from Scottish Ruby Conference where I explore these points in more depth. Remember that at its heart, Cucumber simply translates plain language into executing code. Its power lies in its ability to express code in plain language. Let's not reduce it to a mere testing tool, without letting the stakeholders see the features. If you're doing that, you're better off using RSpec.
+</content></entry><entry><title>Showroom software</title><category term='products'/><category term='business'/><category term='lean'/><link href='http://chrismdp.com/2012/09/showroom-software'/><updated>2012-09-17T20:34:12+01:00</updated><id>http://chrismdp.com/2012/09/showroom-software</id><content type='html'>I went to IKEA recently to buy some more furniture for my office. Whilst wandering around trying to find the desk I wanted, I happened across a one-bedroom showroom apartment. The designers of this apartment had spent a lot of time and effort getting the most out of very limited space: so much so that they had fitted this entire home, including shower room, kitchenette, dining table, lounge with sofa bed and wardrobe storage into only &lt;i&gt;25 square metres.&lt;/i&gt;
+
+Think about that for a second. That's five metres by five metres. It's an extroadinarily small space to fit in a whole home, but they had managed it. What's more, it looked great! Everything was set up perfectly: you felt as if you could just move in there and then.
+
+## The problem
+
+There's a problem with this kind of apartment though: *what would happen if you actually tried to recreate that exact layout in your own 25 square metre apartment?* If you went around the IKEA version and painstakingly wrote down all of the different pieces of furniture you'd need, loaded them into a van and took them home, you'd invariably find they wouldn't fit. You'd want to make some small changes here and there, which would unavoidably have knock-on effects in such a small space. You'd end up taking half of the furniture back as you couldn't use it. Uneven walls, annoyingly placed sockets and irksome light fittings would make a mess of the finely crafted design.
+
+So what's the best way to fill a real apartment of this size? *Plan the furniture based around the exact contours of the apartment,* rather than trying to fit the apartment round the furniture. Better still, get in someone who knows what they're doing to help you. Buy as little furniture as possible and work with the space you have.
+
+## &quot;Off the shelf&quot; software is a showroom
+
+Buying software is a little like this. Whether you're a startup or an existing business, it's tempting to buy an off the shelf solution to solve all your problems. It seems so easy, and the vendors often promise so much. It's like the beautiful showroom apartment: it's affordable, it all fits together so beautifully, and you can start using it straight away.
+
+This can work when the problem is well defined, you have a truly blank slate, or the software is just one piece of the puzzle, but most businesses are rougher round the edges that off the shelf software would like. The solution you've just purchased is never a solution to your specific problem: it's a general solution to the problem the vendor thought you would have a few months or years ago when they thought up the product. Inevitably the solution is for a slightly different problem to the one you have now. In the case of startups, which don't even know what the problem they're trying to solve is yet, they can be constrained by off the shelf software extremely quickly.
+
+What can end up happening is one of two things:
+
+* *You fit your business around the software.* Your business processes become trapped in the workings of the software you're using, making your business less able to respond to change in the market. This is a dangerous situation for any business to be in.
+
+* *You shoehorn the software into your business.* You hire the vendor to customise the software for you, or you attempt to do it yourself. With a well written off the shelf system this may have some mileage. However, the danger is that the total cost ends up being a lot higher than you bargained for, and the system becomes a grostesque elephantine mess which only just hangs together.
+
+## A potential alternative
+
+What's the alternative? You could investigate building something that fits your business exactly. Bespoke software isn't always the best solution: it's always a trade off. However, I'd suggest always getting advice from a bespoke software developer before spending large amounts on any off the shelf system. A great developer should always help you spend as little as possible to get what you want, so your total cost might be less than you think.
+
+*The same is true for startups.* If your budget is really constrained, how about building something really small from scratch, pulling together as much existing code as possible? Don't reinvent the wheel - to extend the showroom analogy, that would be like building your own furniture from raw materials - but don't assume an off the shelf piece of software will run 90% of your business for you just the way you want it to.
+
+So for any moderately complex business problem, be careful of off-the-shelf one-size-fits-all &quot;it'll do everything you want for a fraction of the price!&quot; software products. Next time you make a decision like this, get some advice, and ask yourself whether you're purchasing the beautiful showroom apartment, and then trying to shoehorn it in to a place that it's never going to fit.
+</content></entry><entry><title>Attempting validated learning with Sol Trader</title><category term='sol trader'/><category term='lean startup'/><category term='learning'/><category term='products'/><category term='agile'/><category term='lean'/><category term='business'/><link href='http://chrismdp.com/2012/05/attempting-validated-learning-with-sol-trader'/><updated>2012-05-14T10:18:47+01:00</updated><id>http://chrismdp.com/2012/05/attempting-validated-learning-with-sol-trader</id><content type='html'>&lt;div class='notice'&gt;
+  If you'd like to purchase Sol Trader you can do so at &lt;a href='http://soltrader.net'&gt;soltrader.net&lt;/a&gt;.
+&lt;/div&gt;
+
+Sol Trader has been out just about two weeks now. It's been great fun to actually launch the product and gain real feedback from people.
+
+*I've sold about forty copies.* It's a start, and a really good one. Thank you to those of you who have already purchased the game, and for all the feedback and encouraging emails I've received. I've learnt a huge amount already and it's really helped me guide the way ahead.
+
+The big question is: what's next? How do I go from these humble yet encouraging beginnings to turning this game into something truly wonderful?
+
+## Validated learning
+
+I've read Eric Ries' excellent book [The Lean Startup](http://lean.st/) recently. In it he introduces a concept called [Validated learning](http://lean.st/principles/validated-learning) and goes on to define learning as the one important progress metric of startups: much more important than 'customer numbers' or 'features'. Rather than define startups purely by 'profit' or 'growth figures', how can we ensure that we're learning about how our business as fast as possible?
+
+For Sol Trader, there are two main things that I need to find out.
+
+* How can I ensure that I'm creating a game that people want to play, want to come back to, and want to tell their friends about?
+* How can I ensure a steady stream of new players for the game?
+
+## The Sol Trader Hypothesis board
+
+In order to support this learning, I've created the Sol Trader hypothesis progress chart:
+
+![Sol Trader hypotheses chart](/files/sol-trader-hypotheses-chart.png)
+
+This is what I'm using to track my theories. A good week would be one where I've managed to prove or disprove a theory or two, rather than simply adding in more and more 'stuff'.
+
+Note the [Kanban limits to work in progress](http://leanca.mp/2011/12/better-learning-through-velocity-how-to-use-kanban-to-learn-better/). In order to get theories tested as fast as possible, it's important to get them through the process as fast as possible.
+
+*You can view and interact with the board for yourself:* it's [on Trello here](https://trello.com/board/sol-hypotheses/4fb0cbe79c2ff2de54036903). I'm determined to do as much of this learning in the open as possible. I'd love your input into the hypotheses that I'm testing: you can vote and comment on particular theories and tell me why you think they're a true (or completely wrong). Any input you give here will have an effect on what I work on next, so if you want to influence the development, then get involved!
+
+## Freed from featuritis
+
+I've really enjoyed freeing myself from the continual focus on &quot;features features features&quot;. Features by themselves mean nothing: they are actually a drag on your product, as you have to spend time and effort maintaining them. It's only the value that your customers gain from them that's important. Focusing on theories has meant that I'm always making progress, even if I'm simply learning what doesn't work.
+
+## Hang on: where is creativity in all this?
+
+There's a delicate balance here between listening to your customers and leading them in the direction you think they should go. I'm not going to sacrifice design flair and narrative to satisfy the baying (buying?) masses. This will likely always be a little bit of a niche game: there is a limit to the number of people interested in the genre. I plan to ultimately build the game I want to play, as opposed to the selling of something rubbish to satisfy everyone. Where's the fun in that?
+
+The important thing is to learn about your customer base, *within the context of your original vision.* If you cannot build a product within those constraints, time to look for a new business. Luckily, one of the earliest things I learnt through mailing list signups and a couple of [hacker news](/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus/) [appearances](/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on/) is that there's a fair amount of latent demand for the vision I've got for the game, which is what spurred me on to [get the alpha out](/2012/05/sol-trader-now-in-alpha) in the first place.
+
+What do you think of learning in public like this, and what do you think of my development approach?
+
+&lt;div class='notice'&gt;
+  If you'd like to purchase Sol Trader you can do so at &lt;a href='http://soltrader.net'&gt;soltrader.net&lt;/a&gt;.
+&lt;/div&gt;
+
+</content></entry><entry><title>Kanogo: vapourware to beta in 24 hours</title><category term='code'/><category term='products'/><category term='business'/><category term='kano analysis'/><category term='rails'/><category term='heroku'/><category term='ruby'/><category term='kanogo'/><link href='http://chrismdp.com/2011/09/kanogo-vapourware-to-beta-in-24-hours'/><updated>2011-09-12T11:30:37+01:00</updated><id>http://chrismdp.com/2011/09/kanogo-vapourware-to-beta-in-24-hours</id><content type='html'>&lt;div class='notice'&gt;
+  &lt;h2&gt;TL;DR&lt;/h2&gt;
+
+  &lt;p&gt;Last week I built the first beta of a new web product called &lt;a href=&quot;http://kanogo.com&quot;&gt;Kanogo&lt;/a&gt;. It’s designed to gather feedback and perform &lt;a href=&quot;http://en.wikipedia.org/wiki/Kano_model&quot;&gt;Kano analysis&lt;/a&gt; to determine which direction you should take with your website.&lt;/p&gt;
+
+  &lt;p&gt;Here's an example, designed specifically for this blog. Thanks for your feedback!&lt;/p&gt;
+
+  &lt;iframe allowtransparency='true' frameborder='0' scrolling='no' src='http://kanogo.com/surveys/13/embed?' style='width: 100%; height: 120px'&gt;
+  &lt;/iframe&gt;
+
+  &lt;p&gt;Sign up for the beta &lt;a href='http://kanogo.com'&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;/div&gt;
+
+## The backstory
+
+A while back I agonising over which should be the next greatest feature for one of my products. I thought the best thing to do would be to conduct some Kano analysis on the product in question, and realised there wasn't an easy way of doing this. I've used [kanosurvey.com](http://kanosurvey.com) in the past, but it didn't really feel like the right tool. How was I to get users to answer my survey?
+
+&quot;Wouldn't it be great,&quot; I thought, &quot;if I could embed a little survey box on the site that asked customers what they thought and provided me with Kano analysis stats?&quot; The concept behind [Kanogo](http://kanogo.com) was born.
+
+Fast forward several months to last week. I found myself with a few days spare and decided that the best use of them would be to build a beta of this product. Always up for a challenge, I decided to give myself 24 hours to build and launch.
+
+That's not very long, so I had to hustle.
+
+## Timeline
+
+*7 Sep: 12:10am:* [I announced my intentions](https://twitter.com/#!/chrismdp/status/111214768651636736), mostly to motivate myself through fear of failing in public. I finally decided on a name, and registered the domain and the twitter account. I announced the product [to the world](https://twitter.com/#!/chrismdp/status/111240345341263872) (well, a [subset](https://twitter.com/#!/chrismdp/followers)).
+
+*7 Sep: 01:55am:* Got a new Rails 3.1 app running on Heroku cedar. It's a one page app using a Campaign Monitor signup form. Got my first beta signup. Finished for the night.
+
+*7 Sep: 07:40am:* Announced Kanogo again, just in case anyone had been sleeping at 2am :) Got another 3 beta signups and a bunch of feedback on spelling errors.
+
+*7 Sep: 10:13am:* Simple twitter sign in done using [Omniauth](https://github.com/intridea/omniauth) and this really useful [tutorial](https://github.com/RailsApps/rails3-mongoid-omniauth/wiki/Tutorial).
+
+*7 Sep: 02:45pm:* The USA woke up and I got more beta signups: now up to 5. Got the basic data entry for surveys and features done. Started work on the embed. Was feeling fairly pessimistic about a beta launch for that night, but didn't want to let myself down.
+
+*7 Sep: 05:53pm:* Embed done, quicker than expected. Took a break. Now feeling [cautiously optimistic](https://twitter.com/#!/chrismdp/status/111482135218626560).
+
+*7 Sep: 09:12pm:* Basic response mechanism in: now needed to apply the Kano analysis magic! Adrenalin took over from caffiene as primary stimulant.
+
+*7 Sep: 11:20pm:* Turned on twitter sign in as basic method of getting registered on the site. Removed redundant Campaign Monitor signup: emailed subscribers manually to ask them to sign in via twitter. Beta [went live!](https://twitter.com/#!/kanogoapp/status/111564545708929024)
+
+## The result
+
+![Embed](/files/kanogo-1.png)
+
+![Results](/files/kanogo-2.png)
+
+After 24 hours, I had a beta running, which worked. Granted, it wasn't great, but it was something that had some value.
+
+I spent the rest of the evening and following morning promoting the beta on mailing lists and on twitter. By the end of the following day I had 30 or so beta signups.
+
+It's already adding value to beta users. Two sites using the beta already on their own products. One beta user has now decied to implement a feature as he's realised his customers consider it a &quot;must have&quot;. There's no substitute for real feedback.
+
+## Learnings
+
+Some of the things I've learned so far:
+
+* *Cloud tools are the business.* It was so easy to register the domain with [dnsimple.com](http://dnsimple.com), start up a [twitter account](http://twitter.com/kanagoapp) for marketing and customer interaction, deploy to [Heroku](http://heroku.com), get initial beta signups with [Campaign Monitor](http://campaignmonitor.com).
+
+* *Modern development tools rock.* I used Rails 3.1 for this app, which worked beautifully, and I love the use of sprockets to help manage the asset pipeline. Running the app on Heroku cedar went without a hitch. I used twitter for authentication, and it only took an hour to set up.
+
+* *There is no &quot;quick and dirty&quot;.* The app is (almost) fully tested: I confess I left a couple of methods only covered by end-to-end tests (which doesn't really count). I definitely proved that the only way to go fast is to go clean: [Jason was right](http://agileage.blogspot.com/2011/07/slow-and-dirty-rant-by-jason-gorman-at.html) that there is no &quot;quick and dirty&quot; only &quot;slow and dirty&quot;. This came back to bite me instantly: the code I didn't use specs for took me the longest to get working.
+
+* *Technology is the easy part.* It didn't take me long to build the site, but the trick is to build a business. After initial interest, the analytics on the site are way down as the next new thing appears on the internet and people move on. To gain traction I need to build the app my beta users actually want. Thankfully, quick feedback is what Kanogo does, so we're eating our own dogfood and asking our users what they think at every turn. This is already directing which features I work on next, which has to be the most efficient way of moving forward, right?
+
+## What's next?
+
+I plan to continue working on this, listening to beta user feedback, refining the features, and accepting new beta signup for the moment. I hope to turn this into a paid product at some point, as I think there's a huge amount of value here to websites if I can get the messaging right.
+
+## Can I get involved?
+
+Sure! It's not too late to join the beta: you can [do so here](http://kanogo.com). I'd love your feedback on the product. It can give you value anywhere you have users of a website, even on a blog as shown above.
+</content></entry><entry><title>The Principle of Scattered Work</title><category term='life'/><category term='productivity'/><category term='business'/><link href='http://chrismdp.com/2011/05/the-principle-of-scattered-work'/><updated>2011-05-09T12:56:04+01:00</updated><id>http://chrismdp.com/2011/05/the-principle-of-scattered-work</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;The articifical separation of houses and work creates introlerable rifts in people's inner lives.&quot;&lt;/i&gt;&lt;/p&gt;
+
+-- [Christopher Alexander](http://en.wikipedia.org/wiki/Christopher_Alexander)
+
+Christopher Alexander is one of my heroes. His seminal work [The Timeless Way of Building](http://www.amazon.co.uk/gp/product/0195024028/ref=as_li_tf_tl?ie=UTF8&amp;tag=chrisparsonbl-21&amp;linkCode=as2&amp;camp=1634&amp;creative=6738&amp;creativeASIN=0195024028) is more than a study of architecture: it's about building things to support a way of life that has true quality about it. His work has huge relevance to software developers as we seek to create software that is alive and growing, but is generally applicable to the patterns of human life as a whole.
+
+His arguments in favour of &quot;Scattered Work&quot; really struck a chord with me. Putting the workplaces outside of the home environment and into a centralised location creates suburbs that are dead during the day, and soul-less business districts where children rarely venture. Yet this is how most of our cities are designed. This puts an enornmous pressure on the dreaded &quot;tea time&quot;: when the bread-winner comes home through the door at six o'clock it's the time that they're most tired and distracted, their children want to see them the most and need the most attention, and their partner needs the most help. Small wonder that this combination often generates arguments.
+
+Alexander advocated scattering the workplaces amongst people's homes so that &quot;each home is within 20-30 minutes of hundreds of workplaces.&quot; However, since he wrote his book back in the 1970's we have had a massive technology shift which has blown the hole out of the centralised workplace. Now more than ever it's possible to combine work and home life.
+
+I can testify to this: I am loving working from home. The combination of focused Pomodoros for work, siting my desk next to french doors out to my garden, using my 3-5 minute breaks to hold my baby and do a few small chores has taken the pressure off our busy lives. Thank God for the Internet and remote working.
+
+If you go into an office everyday, is there a way of making it easier to work from home? If you run a company, how can you make your workplaces more decentralised and local? Do you really need that big office, with countless drones scurrying around in front of you, for anything else other than your own ego?
+</content></entry><entry><title>On Office Politics</title><category term='team'/><category term='business'/><link href='http://chrismdp.com/2011/05/on-office-politics'/><updated>2011-05-04T14:32:00+01:00</updated><id>http://chrismdp.com/2011/05/on-office-politics</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;In politics, as on the sickbed, people toss from side to side, thinking they will be more comfortable.&quot;&lt;/i&gt;&lt;/p&gt;
+
+-- [Johann Wolfgang von Goethe](http://en.wikipedia.org/wiki/Johann_Wolfgang_von_Goethe)
+
+Office Politics starts to grow when people are not sure they are going to get what they want.
+
+In other words: *the amount of Office Politics in your team is in inverse proportion to how much you let them reveal their own greatness.*
+
+If you frustrate your team, they will find another way of achieving their own ends. They'll start discussing ways to &quot;make you think it was your idea&quot; (shudder) just to get things done. They will align themselves with the people they think have the greatest chance of making what they want happen. Factions start forming, with people flitting between them as things appear to change. Perception begins to rule people's decisions: (not &quot;is this the best thing to do?&quot; but &quot;how will this look?&quot;)
+
+If however you spend your time ensuring that everyone is aligned around a common vision, communicating clearly and uniformly, and promoting great discussion and debate, the details will fall into place. Peter Drucker calls this &quot;setting your team up to win&quot;: providing them with everything they need to fulfil the high level tasks you set them.
+
+For example, you ask your team to always have a build with passing tests, with well factored code. If you then load them with an unreasonable amount of work, or try and dictate the tools and processes they might use, they will feel frustrated and stop telling you what's going on. You'll lose trust and Politics, like weeds, will grow from the cracks that start appearing.
+
+Instead, ask them what they need, and how much time they need to do it. Set them up to win by protecting them from stakeholders and allow them to work out the details. They'll respond in kind by working with you, not against you.
+
+It's hard to eradicate Politics completely, but it's easy to start making it less necessary. Remember: your team is designed perfectly to produce the result you're currently getting.
+</content></entry><entry><title>Are apprenticeships scalable?</title><category term='business'/><category term='apprenticeship'/><link href='http://chrismdp.com/2011/04/are-apprenticeships-scalable'/><updated>2011-04-12T06:36:53+01:00</updated><id>http://chrismdp.com/2011/04/are-apprenticeships-scalable</id><content type='html'>Back at the beginning of the year I had lunch with a university professor interested in the notion of software craftsmanship. This is an extract from an email he sent me at the time:
+
+&lt;p&gt;&lt;i&gt;
+I wonder about how scalable the apprenticeship model is. It seems to be
+predicated upon mentorship, where each apprentice has a mentor. This
+means you need a large number of mentors if you have a large number of
+apprentices. They will have to be found and paid. This will cause difficulties...
+
+If you want 1 teacher per 10 students you'd have to find an pay
+10 times as many as now.
+
+How does the Software Craftsmanship movement intend to deal with this?
+&lt;/i&gt;&lt;/p&gt;
+
+Buried in this problem is an inherent assumption about the way programming is taught. It assumes the current university model of teaching undergraduates: employing researchers who spend most of their time away from their students doing what they'd really like to be doing, whilst having to teach classes to pay the bills.
+
+If you try and use an apprenticeship model in this context, you run into severe funding issues: who will pay for all the extra researchers?
+
+## A different way
+
+*Why don't universities do real software projects?* Why can't we have master practitioners being paid by real clients to do real work, and have the students along for a ride, learning as they go?
+
+The funding issues will be cleared up as business will be paying. Students work for free, or perhaps room and board. Either way they won't be saddled by exhorbitant fees.
+
+If this makes sitting in a lecture hall listening to information difficult to fund, then great. That's one of the most inefficient ways to learn: why do we persist in trying to sustain it? There is value in book learning, and the industry does currently rely on students to achieve that through university education. But the best way to pick up those principles is through real-world examples on real projects, supported by appropriate exercises designed to drive home specific points. It is certainly not through sitting in a lecture hall.
+
+Maybe this model is a step too far for a traditional university. Perhaps they're not be the best place to learn our craft.  Our current university system is designed to create great professors, not great practitioners. Perhaps it's time for a change.
+</content></entry><entry><title>The team is the atomic unit of success</title><category term='business'/><category term='team'/><link href='http://chrismdp.com/2011/04/the-team-is-the-atomic-unit'/><updated>2011-04-05T16:14:49+01:00</updated><id>http://chrismdp.com/2011/04/the-team-is-the-atomic-unit</id><content type='html'>When something goes wrong, it's not &quot;his fault&quot;, it's &quot;our fault&quot;.
+
+Unless we're in the unenviable position of hiring or firing team members, then we don't have to worry about individual team performance. When I asked how many people at the [recent software craftsmanship gathering](http://lanyrd.com/2011/how-can-craftsmanship-move-the-industry-forwards/) were in this position, less than 10% of the people there put their hands up. Chances are it isn't our job to worry about any individual's performance except our own.
+
+The team is the atomic unit of success or failure. When individuals screwed up at Eden, I used to say that I wasn't interested in whether they'd made a mistake, as mistakes are guaranteed to happen. What I'm more interested in is what caused the mistake to occur, and that they used the experience to improve the process or their own practice.
+
+_Your team or business is perfectly designed to achieve the result you are currently getting._ I've heard of people being fired on the spot for making mistakes. What a waste of all the learning they've just experienced.
+
+So next time Bob breaks the build (again), let's have a look at _why._ Is it because he's new to the team and no-one has told him how important a passing build is? Is it because the clients put him under a lot of pressure and he didn't feel that he had time to run the tests? If it's because he's forgetful and careless, how do we mitigate for that weakness? For example, would encouraging Bob to pair program help?
+
+Even if it does appear to come down to an individual issue, there are still process improvements to consider. Are we hiring slowly enough? Are we checking properly for a culture fit? Are we involving the team enough in pre-hire decisions?
+
+Each of these questions facilitates a team culture change: Bob didn't screw up, the team screwed up by not having quite the right culture or process, and the team will fix it.
+
+Clearly there are some cases where individuals need to be dealt with personally by those responsible, but it's less often than we think and normally not our problem. Let's not make it our problem and further destabilise our teams through a damaging witch hunt.
+</content></entry><entry><title>Certification: recommendation mass produced</title><category term='business'/><category term='certification'/><category term='craftsmanship'/><link href='http://chrismdp.com/2011/04/on-certification'/><updated>2011-04-05T16:14:49+01:00</updated><id>http://chrismdp.com/2011/04/on-certification</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;Who knows a fool, must know his brother; For one will recommend another.&quot;&lt;/i&gt;&lt;/p&gt;
+
+-- [Benjamin Franklin](http://en.wikipedia.org/wiki/Benjamin_Franklin)
+
+It is often argued that certification is a bad thing. I would say that certification is not good or bad: it is rather the certifier and the manner of the certification that can be good or bad.
+
+*Certification is just recommendation mass produced.*
+
+Recommendation is very valuable, but only if I trust the recommender. If a trusted friend recommends the work of another, I will listen hard. If that recommender is a faceless corporation, then I won't pay so much attention. If that corporation has been paid to recommend someone to me, then I will pay even less attention.
+
+I suggest we seek to win the recommendations of trusted people through a good track record, rather than paying a corporation to recommend (read: certify) us. Those who have mass produced their recommendations through a paid certification scheme are not likely to carry weight with anyone after a while.
+</content></entry><entry><title>Eden Development has closed</title><category term='business'/><category term='life'/><link href='http://chrismdp.com/2011/03/eden-development-closing'/><updated>2011-03-25T15:52:09+00:00</updated><id>http://chrismdp.com/2011/03/eden-development-closing</id><content type='html'>I'll dive right in: Eden Development ceased trading and closed its doors yesterday, 24th March 2011.
+
+The reasons are many, but the principle one is the very challenging market conditions in the UK right now. We had a number of things in our favour: a great team, wonderful premises and good contacts. The reality is that I haven't been able to find the right kind of projects for our setup at the right price.
+
+It's been a difficult road to travel for the last few months, and we thought that we'd make it through until quite recently. Unfortunately that wasn't the case: our fixed costs were too high to adapt and readily compete in the market.
+
+Ultimately Eden's value was in the team members: we didn't own any IP. I felt it was high time I stopped bleeding money away on fixed costs and allowed the team to reform as they wanted to as contractors, with individuals reaping the benefits. We managed to stay ahead of the game and close as best we can in a good financial position, without leaving it to the last minute.
+
+Back in January I took a decision to take on two apprentices for six months to train them, advance their careers and help us fulfil client projects better. It is a big source of sadness for me that we haven't been able to finish those apprenticeships, but I'm so glad to have had Alberto and Despo with us and to have had an opportunity to train them up until this point, and I know they'll both do very well.
+
+I'm sure some naysayers will jump on this as an excuse to say &quot;craftsmanship doesn't work&quot;. Rubbish. This is emphatically not an indictment on software craftsmanship: doing things right is a key component of providing a valuable service to clients. I still truly believe in those values and principles, and I will stand by them and continue to do my work according to them. We did a damn good job for our clients, and they were happy and satisfied with the quality of our work. Most are still working with Edenites in one form or another.
+
+One of the consequences of this is that you now have an opportunity to benefit from some fantastic people that we've been hoarding: experts in agile methods, ruby, rails, SQL, project managment, iOS, data modelling, you name it. Many of the team are going freelance in the next few weeks and months. [Keep an eye on them all](http://twitter.com/chrismdp/edenites), and hire them if you get the chance: you won't regret it. Eden as an entity may not be continuing, but the values are strong and bind us together, and I'm proud to call myself an Edenite. We are all looking forward to working together in the future in some capacity.
+
+As for me personally? I am still attending the [Scottish Ruby Conference](http://scottishrubyconference.com/), and delivering my talk with Steve. I'll be at a [few other events](http://lanyrd.com/people/chrismdp/) too. After that I'm not sure yet. I'm still passionate about writing great code and helping people achieve great things with software. I intend to blog more, write more, ponder more. I'm hopeful and excited for what's next: watch this space.
+
+It only remains for me to say thank you to our clients over the years, our contractors, our friends who have supported us and most of all our staff who have stuck with us through good times and difficult times. You guys are the greatest, and I look forward to working alongside you in the future.
+</content></entry><entry><title>User Experience Is Everything</title><category term='ux'/><category term='business'/><link href='http://chrismdp.com/2010/05/ux-is-everything'/><updated>2010-05-21T17:07:00+01:00</updated><id>http://chrismdp.com/2010/05/ux-is-everything</id><content type='html'>User Experience Design is a field which has been around as long at computer science itself, but has only recently come to the fore in the world of software development. While it's been an important component of the work we do for some time, I've recently realised that it's actually much more than that. It isn't a component of what we do, it is the entirety of what we do.
+
+How is a user to see the hard work we put in to fashioning a particular system, if it's not through the use of that system? Their experience using the system is key to what they think of it, and the benefit that they get out of it.
+
+When they encounter a bug with our software, it's a failure of user experience. The &quot;user&quot; should not have &quot;experienced&quot; a bug in the system. When we build software, we try our hardest through all sorts of techniques and practices to create a system that is bug free. We are unconsciously thinking of user experience, even if we're not aware of it.
+
+Obie Fernandez recently [gave a talk](http://skillsmatter.com/podcast/ajax-ria/obie-fernandez-blood-sweat-and-rails) in which he made the statement &quot;Perception is Reality&quot;. He's right. What a user perceives to be the case with the software they are using is what is real to them. 
+
+What use is it if our software is beautifully designed internally, but pig ugly to look at and difficult to use? The user's perception of the software will be that it's bad software. We might disagree with them all we like, but their perception is impossible to change, and we shouldn't try to change it. Let's instead change our software so that it's perceived to be good software.
+
+User experience goes so far beyond the common notion of &quot;web design&quot;. It's everything about the site that the user uses and interacts with. It's the feeling the user gets when they &quot;open the box&quot; - the login screen, the page load time, and the blank state. It's the presence or absence of features. It's the ease of accomplishing difficult tasks.
+
+An important corollary to this is that it's not desirable to build a piece of software that looks and feels beautiful, but internally is poorly implemented. It'll become obvious, especially over time. The system might work after a fashion now, but inevitably most software will need to change over time. If the cost of change is high the user experience will eventually diminish, as the essential features will be difficult if not impossible to finish. 
+
+What does all this mean for web developers? We must pay the same attention to how something feels to use as we currently do to how it works. We should ask ourselves: does it move well? Do the pages and clicks that make up the feature flow just so? Is it [juicy](http://2009.dconstruct.org/podcast/juicyfeedback/)?
+
+Is the user thinking about the task they want to perform, or how to make the system we've written do the task they want to perform? It's a subtle yet crucial difference.
+
+The last 5% we need to put into a feature will probably take us 50% of the total effort, but it's worth it. It's the last 5% that helps our web app rise above the sea of mediocre sites out there and be something truly great. It's doing the last 5% that separates great developers from merely good developers. Who wants to be merely good?
+
+User experience is everything. What can we do to put in that extra 5%, so our users can experience something wonderful?
+
+</content></entry><entry><title>R.I.P. Web 1.0</title><category term='ux'/><category term='business'/><category term='Peter Drucker'/><link href='http://chrismdp.com/2009/12/rip-web-1-0'/><updated>2009-12-23T21:41:00+00:00</updated><id>http://chrismdp.com/2009/12/rip-web-1-0</id><content type='html'>I'm reading an excellent book at the moment called [The Definitive Drucker](http://www.definitivedrucker.com/default.aspx). Peter Drucker, in case you haven't heard of him, was a bit of a legend when it comes to business management and marketing. Anyone who has a least a passing interest in business should read his books, especially the later ones.
+
+I've been pondering this set of pithy yet profound questions from the book:
+
+* What is our business?
+* Who is our customer?
+* What does our customer consider value?
+
+The answers may seem obvious at first glance. But can you really define who your customer is without thinking about it, and hard? And how about putting yourselves in their shoes and actually considering what they really want?
+
+I've been thinking hard about these questions this week, in light of my experiences at Eden this past year.
+
+*One key realisation: Web 1.0 is dead. Long live Web 2.0.* 
+
+If I was to pick one insight from carefully considering these questions, it's that the tolerance for the basic web 1.0 user experience over the last year has plummeted. We've always offered both, but 12 months ago a basic interface would have been their default option, especially for the internal apps we spend a lot of time building. Now customers expect a beautiful interface to come as standard, even for admin interfaces. The key difference is that they've stopped asking for it: they just assume it will happen.
+
+Whilst Web 2.0 was perhaps the big thing in 2008, the major shift in 2009 was less obvious: Web 1.0 died whilst no-one was looking.
+
+This shift has a number of major consequences to web developers. I've listed just a few here.
+
+*Every developer has to know UX now.* At Eden we've recently hired the wonderful [Spencer Turner](http://twitter.com/spencerturner), who is a very decent Rails developer as well as being a seasoned UX/design guru. He's helping every developer in our workshop to consider UX as part of everything they do. UX has to infuse into everything we build: it cannot be an afterthought.
+
+*Dev time increases subtly.* We need to ensure we're building development time into our projects to be able to make our interfaces sing. Web 2.0 interfaces take time to craft well, but the amount of time it takes to finesse them isn't always built correctly into estimates.
+
+*The &quot;standard&quot; stack is changing.* We've adapted our practice and our stack to handle this shift. Heavy Javascript interfaces are becoming standard, Rails layers are becoming ever thinner, and back-end data storage systems are becoming more flexible, even returning JSON which can be rendered directly into the browser if need be. We need flexible languages and frameworks which allow us to split the domain and the persistence layer easily, and put the logic in either the client, server or back-end as the situation demands. Rails 3 can't come soon enough, [node.js](http://nodejs.org) looks promising and we've had some great early successes with [MongoDB](http://mongodb.org).
+
+*We mustn't forget accessibility.* One fantastic advance made by the early web was that it was a great leveller: everyone on any computer and with any impairment could access the same data. We must take care to retain this advantage of our medium, rather than sliding backwards to only providing black-box interfaces that assistive technologies cannot comprehend. A simple functional interface to any mass-market web application should always be made available, even if it's a separate app.
+
+*Tolerance for IE6 is at last fading.* One piece of very good news: with the new interfaces out there now, people are at last jettisoning that bastion of bugs, the ancient Internet Explorer 6. If you're reading this blog in IE6 (yes, the 0.4% of you who accessed my blog in the last week with IE6, I'm looking at you), please get [yourself](http://apple.com/safari) [a](http://opera.com) [decent](http://getfirefox.com) [browser](http://google.com/chrome). Just about anything else will do.
+
+What do our customers consider value? Rich, tactile interfaces and a great user experience. Anything less is the past now. Are we web developers keeping up?
+
+</content></entry></feed>

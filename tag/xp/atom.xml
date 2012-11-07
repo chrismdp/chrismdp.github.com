@@ -1,0 +1,52 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Chris Parsons: posts tagged xp</title>
+
+  <link href="http://chrismdp.com/"/>
+  <updated>2010-02-11T15:55:00+00:00</updated>
+  <id>http://chrismdp.com/tag/xp</id>
+  <author>
+    <name>Chris Parsons</name>
+    <email>chrismdp@gmail.com</email>
+  </author>
+<entry><title>The Story Card Is Not The Story</title><category term='xp'/><category term='agile'/><category term='pivotal tracker'/><category term='balsamiq'/><category term='basecamp'/><category term='stories'/><category term='kanban'/><link href='http://chrismdp.com/2010/02/the-story-card-is-not-the-story'/><updated>2010-02-11T15:55:00+00:00</updated><id>http://chrismdp.com/2010/02/the-story-card-is-not-the-story</id><content type='html'>At Eden we've used a number of different options for tracking work to be done on projects. In the early days we used Basecamp tasks. We then rolled our own system, which we've since abandoned due to a gradual shift in our business practices. We've used Pivotal Tracker extensively. Whilst we still use Tracker a fair amount, on one of our new projects we're currently using index cards stuck to a kanban board, with Google Wave for extended documentation and discussion.
+
+In the past, we've spent a bunch of time arguing about which of these devices better and which is worse, with a view to settling on the &quot;best&quot; system. The merits of simple systems over complex ones, and digital over analogue, have been endlessly debated. I now think that all of these arguments miss the point.
+
+A couple of weeks ago, Enrique spent some time teaching us an early version of our one-day agile workshop. Through the ensuing discussion, I finally got to an important insight about what a story actually is, or rather what it isn't.
+
+The story is not the terminology, or which precise language you use to describe it. It's not the text on the card at all in the fact, or even the card itself. It's not the line in Pivotal Tracker and it's not the task in Basecamp.
+
+All of the tools we use represent some facet of the story, and help kick-start discussion. They remind us of the story, but they are not the story itself. 
+
+*The story is simply the team's understanding of the work to be done: nothing more.*
+
+This understanding reframed my view of the endless cards vs online vs Tracker vs everything else debate. These are merely useful props: methods of communicating within the team in order to achieving shared understanding. Granted, some tools are better than others. But they are just that: tools. Nothing should be sacrosanct: we should feel free to replace tools and methods that are failing for a particular client, even if they've succeeded on other projects. I now think settling on the &quot;best&quot; system is a vain exercise: we'd spend our time much better simply by properly listening to the customer and doing what they say.
+
+The same principle applies to the almost-as-endless UX/Design communication methods fight. Should we use Balsamiq mockups, or HTML wireframes, or Photoshop mockups, or Sharpies and paper? Answer: use what works. Use whatever tools you need to get your message out into the collective consciousness of the team (that includes developers, designers, testers and customers), so that the work can get done to the customer's satisfaction. These methods are simply ways of getting messages across: they have differing emphases, and carry different risks.
+
+Often I think the whole way we approach the tools debate is wrong. We ask: &quot;how can we use our favourite tool/method to track the metrics for this project?&quot; Shouldn't our question instead be: &quot;How can we ensure we are communicating properly with the customer so we can deliver what they really want?&quot; The tool question then becomes secondary and the critical issue of good communication becomes paramount.
+
+The story card is not the story. Let's ensure our projects serve the customer rather than our favourite tool. 
+
+</content></entry><entry><title>Pairing works for everything</title><category term='pairing'/><category term='xp'/><category term='agile'/><category term='productivity'/><link href='http://chrismdp.com/2010/01/pairing-works-for-everything'/><updated>2010-01-27T11:28:00+00:00</updated><id>http://chrismdp.com/2010/01/pairing-works-for-everything</id><content type='html'>We've all heard much discussion and general chatter about the value of pair programming. Amongst other benefits, it focuses the mind, speeds knowledge transfer, and builds in code review.
+
+What's not talked about so often is the value of pairing on non-coding tasks. Does it add the same level of value? Many of us would naturally pair up on demanding tasks, when we are doing things that require the input of several people, or when we're unsure about how to proceed. What happens if we make it an explicit part of our day to day work? What benefits would we see?
+
+I've been trying where possible to pair explicitly on tasks at Eden in the last few weeks and to encourage others to do the same. We've found the following so far:
+
+*Pairing works on UX and Design.* [Spencer](http://twitter.com/spencerturner) is currently teaching User Experience (UX) and Design skills to a number of people internally. Pairing on UX and design work really helps people to pick up skills in a particular tool such as Photoshop, but also drives discussion about design and flow which wouldn't normally have arisen. We've found the result to be better output, and an increased confidence in the person who's less experienced.
+
+*Pairing works on Sales and Business Development.* Last week I paired up with [Richard](http://twitter.com/disciplex), one of the guys I'm mentoring at the moment, to send some sales emails to three or four potential clients. One of these was to a potential new customer who I knew was interested in speaking to us, but whom I'd not emailled before. In explaining my reasoning for the words I was writing, he was able to learn about how to structure emails such as this, and I got valuable insight into how I should approach the task from someone with a different point of view.
+
+*Pairing even works on VAT returns!* When you're doing necessary and repetitive tasks such as the preparing the quarterly VAT return, it really helps to have someone beside you spurring you on. Last month I had to prepare one of these returns, and half-jokingly asked whether anyone was interested in helping me out. Thankfully, [Elliot](http://twitter.com/elliotcm) stepped up to the challenge. He started learning which expenses fall into the four or five VAT categories that exist, and how to prepare and submit a return online. Just by explaining the vagaries of EU, exempt, zero-rated, and outside-scope expenses to someone else, the job went much quicker, all the figures were double-checked, and it was simply much more fun.
+
+Clearly pairing isn't going to work all the time. People often need space from others to think, to avoid distraction, and to recharge. Rather than being dogmatic, what I'm asking is this: at the moment non-pairing in our work is the default, and pairing is the exception. What if this was reversed? What difference would this make to our teams?
+
+Next time you approach a non-coding task at work, perhaps have a think about whether a pair would be beneficial, or what someone might learn through working with you. I could well be wrong, but I've yet to find a task where pairing doesn't add some benefit. Can anyone think of one?
+
+</content></entry></feed>
