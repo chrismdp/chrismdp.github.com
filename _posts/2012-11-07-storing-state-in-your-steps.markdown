@@ -14,8 +14,8 @@ It's quite common to store state inside our cucumber steps in member variables, 
 
 {% highlight ruby %}
 
-    Given /^a person called "(.\*)"$/ do |person\_name|
-      @person = Person.create!(person\_name)
+    Given /^a person called "(.*)"$/ do |person_name|
+      @person = Person.create!(person_name)
     end
 
     When /^they order a waffle$/ do
