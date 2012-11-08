@@ -20,11 +20,15 @@ layout: nil
    {% for category in post.categories %}
    <category term="{{category}}" />
    {% endfor %}
+   <author>
+     <name>Chris Parsons</name>
+     <email>chrismdp@gmail.com</email>
+   </author>
    <link href="http://chrismdp.com{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>http://chrismdp.com{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
- 
+
 </feed>

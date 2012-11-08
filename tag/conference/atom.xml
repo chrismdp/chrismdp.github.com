@@ -13,88 +13,97 @@ layout: nil
     <name>Chris Parsons</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>Waxing Lyrical on Pathfinding</title><category term='code'/><category term='conference'/><category term='fun'/><category term='software craftsmanship'/><category term='sc2012'/><link href='http://chrismdp.com/2012/05/waxing-lyrical-on-pathfinding'/><updated>2012-05-15T16:02:40+01:00</updated><id>http://chrismdp.com/2012/05/waxing-lyrical-on-pathfinding</id><content type='html'>I've been attending and giving talks at the [Software Craftmanship](http://www.codemanship.co.uk/softwarecraftsmanship/) conference at Bletchley Park for a couple of years now. I've always found the crowd there engaging and great to hang out with, and I'd encourage you to come along if you're not doing much on June 14th. There are [still a few tickets left](http://www.codemanship.co.uk/softwarecraftsmanship/register.html) if you're quick.
+<entry><title>Waxing Lyrical on Pathfinding</title><category term='code'/><category term='conference'/><category term='fun'/><category term='software craftsmanship'/><category term='sc2012'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2012/05/waxing-lyrical-on-pathfinding'/><updated>2012-05-15T16:02:40+01:00</updated><id>http://chrismdp.com/2012/05/waxing-lyrical-on-pathfinding</id><content type='html'>&lt;p&gt;I’ve been attending and giving talks at the &lt;a href=&quot;http://www.codemanship.co.uk/softwarecraftsmanship/&quot;&gt;Software Craftmanship&lt;/a&gt; conference at Bletchley Park for a couple of years now. I’ve always found the crowd there engaging and great to hang out with, and I’d encourage you to come along if you’re not doing much on June 14th. There are &lt;a href=&quot;http://www.codemanship.co.uk/softwarecraftsmanship/register.html&quot;&gt;still a few tickets left&lt;/a&gt; if you’re quick.&lt;/p&gt;
 
-## My talk proposal: Pathfinding Peril
+&lt;h2 id=&quot;my-talk-proposal-pathfinding-peril&quot;&gt;My talk proposal: Pathfinding Peril&lt;/h2&gt;
 
-This year my talk proposal is about pathfinding, a subject rather close to my heart since I started [building a game](http://soltrader.net). Finding the shortest path through a connected graph is a complex problem, and one which has a number of very useful applications, not just in the game sector.
+&lt;p&gt;This year my talk proposal is about pathfinding, a subject rather close to my heart since I started &lt;a href=&quot;http://soltrader.net&quot;&gt;building a game&lt;/a&gt;. Finding the shortest path through a connected graph is a complex problem, and one which has a number of very useful applications, not just in the game sector.&lt;/p&gt;
 
-Thankfully there are some efficient algorithms out there which solve it well. The aim of my session will be to teach the popular A-Star pathfinding algorithm, along with the factors to consider when choosing appropriate algorithm weights to make the implementation efficient.
+&lt;p&gt;Thankfully there are some efficient algorithms out there which solve it well. The aim of my session will be to teach the popular A-Star pathfinding algorithm, along with the factors to consider when choosing appropriate algorithm weights to make the implementation efficient.&lt;/p&gt;
 
-A-star can be written in any language, but a simple (untested, probably buggy) version might look like this:
+&lt;p&gt;A-star can be written in any language, but a simple (untested, probably buggy) version might look like this:&lt;/p&gt;
 
-{% highlight ruby %}
+&lt;p&gt;{% highlight ruby %}&lt;/p&gt;
 
-    def find(goal)
-      closed_set = []
-      open_set = [ start_node ]
-      came_from = {}
-      while(!open_set.empty)
-        current = open_set.sort{|node| node.estimated_score }.first
-        return reconstruct_path(came_from, goal) if (current == goal)
+&lt;pre&gt;&lt;code&gt;def find(goal)
+  closed_set = []
+  open_set = [ start_node ]
+  came_from = {}
+  while(!open_set.empty)
+    current = open_set.sort{|node| node.estimated_score }.first
+    return reconstruct_path(came_from, goal) if (current == goal)
 
-        open_set -= [current]
-        closed_set += [current]
-        current.neighbours.each do |neighbour|
-          next if closed_set.include?(neighbour)
-          possible_score = best_score[current] + current.cost_to(neighbour)
-          if !open_set.include?(neighbour) || possible_score &lt; node.running_score
-            open_set += [neighbour]
-            came_from[neighbour] = current
-            neighbour.running_score = possible_score
-            neighbour.estimated_score = neighbour.running_score + neighbour.cost_to(goal)
-          end
-        end
+    open_set -= [current]
+    closed_set += [current]
+    current.neighbours.each do |neighbour|
+      next if closed_set.include?(neighbour)
+      possible_score = best_score[current] + current.cost_to(neighbour)
+      if !open_set.include?(neighbour) || possible_score &amp;lt; node.running_score
+        open_set += [neighbour]
+        came_from[neighbour] = current
+        neighbour.running_score = possible_score
+        neighbour.estimated_score = neighbour.running_score + neighbour.cost_to(goal)
       end
-      return 'failed'
     end
+  end
+  return 'failed'
+end
+&lt;/code&gt;&lt;/pre&gt;
 
-{% endhighlight %}
+&lt;p&gt;{% endhighlight %}&lt;/p&gt;
 
-The session will last a couple of hours. I'll take you through the basic A-Star implementation in the first 30 minutes of the session, and we'll spend some time getting that coded up in the second 30 minutes. After a break, we'll be running a tournament for an hour using Matt Wynne's [Robot Tournament engine](https://github.com/mattwynne/robot_tournament). Your robot will be one of two characters in a maze, and the idea is to find the exit as soon as possible without being eaten by the minotaur that roams randomly around it.
+&lt;p&gt;The session will last a couple of hours. I’ll take you through the basic A-Star implementation in the first 30 minutes of the session, and we’ll spend some time getting that coded up in the second 30 minutes. After a break, we’ll be running a tournament for an hour using Matt Wynne’s &lt;a href=&quot;https://github.com/mattwynne/robot_tournament&quot;&gt;Robot Tournament engine&lt;/a&gt;. Your robot will be one of two characters in a maze, and the idea is to find the exit as soon as possible without being eaten by the minotaur that roams randomly around it.&lt;/p&gt;
 
-You'll get points for exiting the maze within a certain timeframe, exiting first, and simply avoiding being eaten! If I get time, I'll write a basic ruby gem which allows you to parse the maze presented on stdin into nodes with connections.
+&lt;p&gt;You’ll get points for exiting the maze within a certain timeframe, exiting first, and simply avoiding being eaten! If I get time, I’ll write a basic ruby gem which allows you to parse the maze presented on stdin into nodes with connections.&lt;/p&gt;
 
-We'll run around 20 minute iterations, but probably reset the score every time so that the final score is the one that matters. It should be lots of fun!
+&lt;p&gt;We’ll run around 20 minute iterations, but probably reset the score every time so that the final score is the one that matters. It should be lots of fun!&lt;/p&gt;
 
-What do you think of the session idea? How could I improve it?
-</content></entry><entry><title>Leancamp Report</title><category term='lean'/><category term='conference'/><link href='http://chrismdp.com/2010/05/leancamp-report'/><updated>2010-05-16T10:15:00+01:00</updated><id>http://chrismdp.com/2010/05/leancamp-report</id><content type='html'>[Leancamp](http://leanca.mp) was on the 10th May, and a few Edenites including myself headed up to London to check it out.
+&lt;p&gt;What do you think of the session idea? How could I improve it?&lt;/p&gt;
+</content></entry><entry><title>Leancamp Report</title><category term='lean'/><category term='conference'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2010/05/leancamp-report'/><updated>2010-05-16T10:15:00+01:00</updated><id>http://chrismdp.com/2010/05/leancamp-report</id><content type='html'>&lt;p&gt;&lt;a href=&quot;http://leanca.mp&quot;&gt;Leancamp&lt;/a&gt; was on the 10th May, and a few Edenites including myself headed up to London to check it out.&lt;/p&gt;
 
-![Café area](http://farm5.static.flickr.com/4069/4597552919_d191c7c26d.jpg)
+&lt;p&gt;&lt;img src=&quot;http://farm5.static.flickr.com/4069/4597552919_d191c7c26d.jpg&quot; alt=&quot;Café area&quot; /&gt;&lt;/p&gt;
 
-Leancamp was an [unconference](http://en.wikipedia.org/wiki/Unconference): the content was almost entirely decided by the attendees themselves. The organisers chose a couple of notable speakers to get the ball rolling, but the rest was up to us.
+&lt;p&gt;Leancamp was an &lt;a href=&quot;http://en.wikipedia.org/wiki/Unconference&quot;&gt;unconference&lt;/a&gt;: the content was almost entirely decided by the attendees themselves. The organisers chose a couple of notable speakers to get the ball rolling, but the rest was up to us.&lt;/p&gt;
 
-![The Blank Leancamp Schedule](http://farm2.static.flickr.com/1158/4598320700_6eb2c5383b.jpg)
+&lt;p&gt;&lt;img src=&quot;http://farm2.static.flickr.com/1158/4598320700_6eb2c5383b.jpg&quot; alt=&quot;The Blank Leancamp Schedule&quot; /&gt;&lt;/p&gt;
 
-Diving into the spirit of the whole thing, I ran three sessions. A brief report of each follows.
+&lt;p&gt;Diving into the spirit of the whole thing, I ran three sessions. A brief report of each follows.&lt;/p&gt;
 
-## Lessons Learned Bootstrapping a Service Company
+&lt;h2 id=&quot;lessons-learned-bootstrapping-a-service-company&quot;&gt;Lessons Learned Bootstrapping a Service Company&lt;/h2&gt;
 
-Most of the attendees were definitely in the startup arena. To this end, I did a very brief presentation on the accidentally lean startup of [Eden Development](http://edendevelopment.co.uk) (how we started the company with no cash and made it up as we went along). 
+&lt;p&gt;Most of the attendees were definitely in the startup arena. To this end, I did a very brief presentation on the accidentally lean startup of &lt;a href=&quot;http://edendevelopment.co.uk&quot;&gt;Eden Development&lt;/a&gt; (how we started the company with no cash and made it up as we went along). &lt;/p&gt;
 
-&lt;div style=&quot;width:425px&quot; id=&quot;__ss_4147733&quot;&gt;&lt;strong style=&quot;display:block;margin:12px 0 4px&quot;&gt;&lt;a href=&quot;http://www.slideshare.net/chrismdp/lessons-learned-bootstrapping-a-service-company&quot; title=&quot;Lessons learned bootstrapping a service company&quot;&gt;Lessons learned bootstrapping a service company&lt;/a&gt;&lt;/strong&gt;&lt;object id=&quot;__sse4147733&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=lessons-learned-bootstrapping-service-company-100519010728-phpapp02&amp;amp;stripped_title=lessons-learned-bootstrapping-a-service-company&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;/&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot;/&gt;&lt;embed name=&quot;__sse4147733&quot; src=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=lessons-learned-bootstrapping-service-company-100519010728-phpapp02&amp;amp;stripped_title=lessons-learned-bootstrapping-a-service-company&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;div style=&quot;padding:5px 0 12px&quot;&gt;View more &lt;a href=&quot;http://www.slideshare.net/&quot;&gt;presentations&lt;/a&gt; from &lt;a href=&quot;http://www.slideshare.net/chrismdp&quot;&gt;chrismdp&lt;/a&gt;.&lt;/div&gt;&lt;/div&gt;
+&lt;div style=&quot;width:425px&quot; id=&quot;__ss_4147733&quot;&gt;&lt;strong style=&quot;display:block;margin:12px 0 4px&quot;&gt;&lt;a href=&quot;http://www.slideshare.net/chrismdp/lessons-learned-bootstrapping-a-service-company&quot; title=&quot;Lessons learned bootstrapping a service company&quot;&gt;Lessons learned bootstrapping a service company&lt;/a&gt;&lt;/strong&gt;&lt;object id=&quot;__sse4147733&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=lessons-learned-bootstrapping-service-company-100519010728-phpapp02&amp;amp;stripped_title=lessons-learned-bootstrapping-a-service-company&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot; /&gt;&lt;embed name=&quot;__sse4147733&quot; src=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=lessons-learned-bootstrapping-service-company-100519010728-phpapp02&amp;amp;stripped_title=lessons-learned-bootstrapping-a-service-company&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;355&quot; /&gt;&lt;/object&gt;&lt;div style=&quot;padding:5px 0 12px&quot;&gt;View more &lt;a href=&quot;http://www.slideshare.net/&quot;&gt;presentations&lt;/a&gt; from &lt;a href=&quot;http://www.slideshare.net/chrismdp&quot;&gt;chrismdp&lt;/a&gt;.&lt;/div&gt;&lt;/div&gt;
 
-There was a company post-mortem afterwards, mostly centered around how I could have done it quicker and been even leaner. Maybe next time (if there ever is one) I'll do it better, who knows...
+&lt;p&gt;There was a company post-mortem afterwards, mostly centered around how I could have done it quicker and been even leaner. Maybe next time (if there ever is one) I’ll do it better, who knows…&lt;/p&gt;
 
-## Technical Incubation
+&lt;h2 id=&quot;technical-incubation&quot;&gt;Technical Incubation&lt;/h2&gt;
 
-We spent half an hour discussing whether the concept of service companies such as Eden incubating startups was a good idea. The idea is that we could accept reduced rates in return for an equity stake. 
+&lt;p&gt;We spent half an hour discussing whether the concept of service companies such as Eden incubating startups was a good idea. The idea is that we could accept reduced rates in return for an equity stake. &lt;/p&gt;
 
-There was a lot of animated discussion about this: many service professionals in the room were wary of equity work, having had bad experiences in the past. We agreed that in principle the concept could work, if the startup was built around a strong idea and the service company had either a controlling stake or real influence in the direction of the startup.
+&lt;p&gt;There was a lot of animated discussion about this: many service professionals in the room were wary of equity work, having had bad experiences in the past. We agreed that in principle the concept could work, if the startup was built around a strong idea and the service company had either a controlling stake or real influence in the direction of the startup.&lt;/p&gt;
 
-I'm open to ideas in this direction - ping me if you want to discuss further.
+&lt;p&gt;I’m open to ideas in this direction - ping me if you want to discuss further.&lt;/p&gt;
 
-## Applying Lean Principles to Coding
+&lt;h2 id=&quot;applying-lean-principles-to-coding&quot;&gt;Applying Lean Principles to Coding&lt;/h2&gt;
 
-Rather dismayed by a lack of technical discussion, we decided to get together and have a bit of a chinwag about lean principles can be applied to coding. 
+&lt;p&gt;Rather dismayed by a lack of technical discussion, we decided to get together and have a bit of a chinwag about lean principles can be applied to coding. &lt;/p&gt;
 
-Much was made of continuous improvement ideas (applied through practices like pair programming and code reviews) as well as the concept of minimizing waste (applied through [YAGNI](http://en.wikipedia.org/wiki/You_ain't_gonna_need_it) and the general allergy to [Big Design Up Front](http://en.wikipedia.org/wiki/Big_Design_Up_Front)).
+&lt;p&gt;Much was made of continuous improvement ideas (applied through practices like pair programming and code reviews) as well as the concept of minimizing waste (applied through &lt;a href=&quot;http://en.wikipedia.org/wiki/You_ain't_gonna_need_it&quot;&gt;YAGNI&lt;/a&gt; and the general allergy to &lt;a href=&quot;http://en.wikipedia.org/wiki/Big_Design_Up_Front&quot;&gt;Big Design Up Front&lt;/a&gt;).&lt;/p&gt;
 
-![Discussion at Leancamp](http://farm5.static.flickr.com/4010/4597860793_4e7ec18372.jpg)
+&lt;p&gt;&lt;img src=&quot;http://farm5.static.flickr.com/4010/4597860793_4e7ec18372.jpg&quot; alt=&quot;Discussion at Leancamp&quot; /&gt;&lt;/p&gt;
 
-It was an excellent day, and I'm looking forward to the next one. I enjoyed the many hallway conversations I had and would love to continue them online.
+&lt;p&gt;It was an excellent day, and I’m looking forward to the next one. I enjoyed the many hallway conversations I had and would love to continue them online.&lt;/p&gt;
 
-Did you attend? What did you get out of the day?
+&lt;p&gt;Did you attend? What did you get out of the day?&lt;/p&gt;
 
-(Photos by [Enrique](http://flickr.com/photos/ecomba) - see the rest of his photos of Leancamp [here](http://www.flickr.com/photos/ecomba/sets/72157623913929379/))
+&lt;p&gt;(Photos by &lt;a href=&quot;http://flickr.com/photos/ecomba&quot;&gt;Enrique&lt;/a&gt; - see the rest of his photos of Leancamp &lt;a href=&quot;http://www.flickr.com/photos/ecomba/sets/72157623913929379/&quot;&gt;here&lt;/a&gt;)&lt;/p&gt;
 </content></entry></feed>

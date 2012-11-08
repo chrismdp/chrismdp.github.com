@@ -13,51 +13,57 @@ layout: nil
     <name>Chris Parsons</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>Attempting validated learning with Sol Trader</title><category term='sol trader'/><category term='lean startup'/><category term='learning'/><category term='products'/><category term='agile'/><category term='lean'/><category term='business'/><link href='http://chrismdp.com/2012/05/attempting-validated-learning-with-sol-trader'/><updated>2012-05-14T10:18:47+01:00</updated><id>http://chrismdp.com/2012/05/attempting-validated-learning-with-sol-trader</id><content type='html'>&lt;div class='notice'&gt;
-  If you'd like to purchase Sol Trader you can do so at &lt;a href='http://soltrader.net'&gt;soltrader.net&lt;/a&gt;.
+<entry><title>Attempting validated learning with Sol Trader</title><category term='sol trader'/><category term='lean startup'/><category term='learning'/><category term='products'/><category term='agile'/><category term='lean'/><category term='business'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2012/05/attempting-validated-learning-with-sol-trader'/><updated>2012-05-14T10:18:47+01:00</updated><id>http://chrismdp.com/2012/05/attempting-validated-learning-with-sol-trader</id><content type='html'>&lt;div class=&quot;notice&quot;&gt;
+  If you'd like to purchase Sol Trader you can do so at &lt;a href=&quot;http://soltrader.net&quot;&gt;soltrader.net&lt;/a&gt;.
 &lt;/div&gt;
 
-Sol Trader has been out just about two weeks now. It's been great fun to actually launch the product and gain real feedback from people.
+&lt;p&gt;Sol Trader has been out just about two weeks now. It’s been great fun to actually launch the product and gain real feedback from people.&lt;/p&gt;
 
-*I've sold about forty copies.* It's a start, and a really good one. Thank you to those of you who have already purchased the game, and for all the feedback and encouraging emails I've received. I've learnt a huge amount already and it's really helped me guide the way ahead.
+&lt;p&gt;&lt;em&gt;I’ve sold about forty copies.&lt;/em&gt; It’s a start, and a really good one. Thank you to those of you who have already purchased the game, and for all the feedback and encouraging emails I’ve received. I’ve learnt a huge amount already and it’s really helped me guide the way ahead.&lt;/p&gt;
 
-The big question is: what's next? How do I go from these humble yet encouraging beginnings to turning this game into something truly wonderful?
+&lt;p&gt;The big question is: what’s next? How do I go from these humble yet encouraging beginnings to turning this game into something truly wonderful?&lt;/p&gt;
 
-## Validated learning
+&lt;h2 id=&quot;validated-learning&quot;&gt;Validated learning&lt;/h2&gt;
 
-I've read Eric Ries' excellent book [The Lean Startup](http://lean.st/) recently. In it he introduces a concept called [Validated learning](http://lean.st/principles/validated-learning) and goes on to define learning as the one important progress metric of startups: much more important than 'customer numbers' or 'features'. Rather than define startups purely by 'profit' or 'growth figures', how can we ensure that we're learning about how our business as fast as possible?
+&lt;p&gt;I’ve read Eric Ries’ excellent book &lt;a href=&quot;http://lean.st/&quot;&gt;The Lean Startup&lt;/a&gt; recently. In it he introduces a concept called &lt;a href=&quot;http://lean.st/principles/validated-learning&quot;&gt;Validated learning&lt;/a&gt; and goes on to define learning as the one important progress metric of startups: much more important than ‘customer numbers’ or ‘features’. Rather than define startups purely by ‘profit’ or ‘growth figures’, how can we ensure that we’re learning about how our business as fast as possible?&lt;/p&gt;
 
-For Sol Trader, there are two main things that I need to find out.
+&lt;p&gt;For Sol Trader, there are two main things that I need to find out.&lt;/p&gt;
 
-* How can I ensure that I'm creating a game that people want to play, want to come back to, and want to tell their friends about?
-* How can I ensure a steady stream of new players for the game?
+&lt;ul&gt;
+  &lt;li&gt;How can I ensure that I’m creating a game that people want to play, want to come back to, and want to tell their friends about?&lt;/li&gt;
+  &lt;li&gt;How can I ensure a steady stream of new players for the game?&lt;/li&gt;
+&lt;/ul&gt;
 
-## The Sol Trader Hypothesis board
+&lt;h2 id=&quot;the-sol-trader-hypothesis-board&quot;&gt;The Sol Trader Hypothesis board&lt;/h2&gt;
 
-In order to support this learning, I've created the Sol Trader hypothesis progress chart:
+&lt;p&gt;In order to support this learning, I’ve created the Sol Trader hypothesis progress chart:&lt;/p&gt;
 
-![Sol Trader hypotheses chart](/files/sol-trader-hypotheses-chart.png)
+&lt;p&gt;&lt;img src=&quot;/files/sol-trader-hypotheses-chart.png&quot; alt=&quot;Sol Trader hypotheses chart&quot; /&gt;&lt;/p&gt;
 
-This is what I'm using to track my theories. A good week would be one where I've managed to prove or disprove a theory or two, rather than simply adding in more and more 'stuff'.
+&lt;p&gt;This is what I’m using to track my theories. A good week would be one where I’ve managed to prove or disprove a theory or two, rather than simply adding in more and more ‘stuff’.&lt;/p&gt;
 
-Note the [Kanban limits to work in progress](http://leanca.mp/2011/12/better-learning-through-velocity-how-to-use-kanban-to-learn-better/). In order to get theories tested as fast as possible, it's important to get them through the process as fast as possible.
+&lt;p&gt;Note the &lt;a href=&quot;http://leanca.mp/2011/12/better-learning-through-velocity-how-to-use-kanban-to-learn-better/&quot;&gt;Kanban limits to work in progress&lt;/a&gt;. In order to get theories tested as fast as possible, it’s important to get them through the process as fast as possible.&lt;/p&gt;
 
-*You can view and interact with the board for yourself:* it's [on Trello here](https://trello.com/board/sol-hypotheses/4fb0cbe79c2ff2de54036903). I'm determined to do as much of this learning in the open as possible. I'd love your input into the hypotheses that I'm testing: you can vote and comment on particular theories and tell me why you think they're a true (or completely wrong). Any input you give here will have an effect on what I work on next, so if you want to influence the development, then get involved!
+&lt;p&gt;&lt;em&gt;You can view and interact with the board for yourself:&lt;/em&gt; it’s &lt;a href=&quot;https://trello.com/board/sol-hypotheses/4fb0cbe79c2ff2de54036903&quot;&gt;on Trello here&lt;/a&gt;. I’m determined to do as much of this learning in the open as possible. I’d love your input into the hypotheses that I’m testing: you can vote and comment on particular theories and tell me why you think they’re a true (or completely wrong). Any input you give here will have an effect on what I work on next, so if you want to influence the development, then get involved!&lt;/p&gt;
 
-## Freed from featuritis
+&lt;h2 id=&quot;freed-from-featuritis&quot;&gt;Freed from featuritis&lt;/h2&gt;
 
-I've really enjoyed freeing myself from the continual focus on &quot;features features features&quot;. Features by themselves mean nothing: they are actually a drag on your product, as you have to spend time and effort maintaining them. It's only the value that your customers gain from them that's important. Focusing on theories has meant that I'm always making progress, even if I'm simply learning what doesn't work.
+&lt;p&gt;I’ve really enjoyed freeing myself from the continual focus on “features features features”. Features by themselves mean nothing: they are actually a drag on your product, as you have to spend time and effort maintaining them. It’s only the value that your customers gain from them that’s important. Focusing on theories has meant that I’m always making progress, even if I’m simply learning what doesn’t work.&lt;/p&gt;
 
-## Hang on: where is creativity in all this?
+&lt;h2 id=&quot;hang-on-where-is-creativity-in-all-this&quot;&gt;Hang on: where is creativity in all this?&lt;/h2&gt;
 
-There's a delicate balance here between listening to your customers and leading them in the direction you think they should go. I'm not going to sacrifice design flair and narrative to satisfy the baying (buying?) masses. This will likely always be a little bit of a niche game: there is a limit to the number of people interested in the genre. I plan to ultimately build the game I want to play, as opposed to the selling of something rubbish to satisfy everyone. Where's the fun in that?
+&lt;p&gt;There’s a delicate balance here between listening to your customers and leading them in the direction you think they should go. I’m not going to sacrifice design flair and narrative to satisfy the baying (buying?) masses. This will likely always be a little bit of a niche game: there is a limit to the number of people interested in the genre. I plan to ultimately build the game I want to play, as opposed to the selling of something rubbish to satisfy everyone. Where’s the fun in that?&lt;/p&gt;
 
-The important thing is to learn about your customer base, *within the context of your original vision.* If you cannot build a product within those constraints, time to look for a new business. Luckily, one of the earliest things I learnt through mailing list signups and a couple of [hacker news](/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus/) [appearances](/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on/) is that there's a fair amount of latent demand for the vision I've got for the game, which is what spurred me on to [get the alpha out](/2012/05/sol-trader-now-in-alpha) in the first place.
+&lt;p&gt;The important thing is to learn about your customer base, &lt;em&gt;within the context of your original vision.&lt;/em&gt; If you cannot build a product within those constraints, time to look for a new business. Luckily, one of the earliest things I learnt through mailing list signups and a couple of &lt;a href=&quot;/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus/&quot;&gt;hacker news&lt;/a&gt; &lt;a href=&quot;/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on/&quot;&gt;appearances&lt;/a&gt; is that there’s a fair amount of latent demand for the vision I’ve got for the game, which is what spurred me on to &lt;a href=&quot;/2012/05/sol-trader-now-in-alpha&quot;&gt;get the alpha out&lt;/a&gt; in the first place.&lt;/p&gt;
 
-What do you think of learning in public like this, and what do you think of my development approach?
+&lt;p&gt;What do you think of learning in public like this, and what do you think of my development approach?&lt;/p&gt;
 
-&lt;div class='notice'&gt;
-  If you'd like to purchase Sol Trader you can do so at &lt;a href='http://soltrader.net'&gt;soltrader.net&lt;/a&gt;.
+&lt;div class=&quot;notice&quot;&gt;
+  If you'd like to purchase Sol Trader you can do so at &lt;a href=&quot;http://soltrader.net&quot;&gt;soltrader.net&lt;/a&gt;.
 &lt;/div&gt;
 
 </content></entry></feed>

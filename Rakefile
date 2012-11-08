@@ -89,17 +89,25 @@ layout: nil
     <email>chrismdp@gmail.com</email>
   </author>
   HTML
-  posts.each do |post|
+  options = Jekyll.configuration({ 'markdown' => 'kramdown' })
+  converter = Jekyll::MarkdownConverter.new(options)
+  posts.each.with_index do |post, index|
     post_data = post.to_liquid
     html += "<entry>"
     html += "<title>#{post_data['title']}</title>"
     post.categories.each do |post_category|
       html += "<category term='#{post_category}'/>"
     end
+    html += <<-HTML
+    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+    HTML
     html += "<link href='http://chrismdp.com#{ post_data['url'] }'/>"
     html += "<updated>#{ post_data['date'].xmlschema}</updated>"
     html += "<id>http://chrismdp.com#{ post_data['id'] }</id>"
-    html += "<content type='html'>#{xml_escape(post_data['content'])}</content>"
+    html += "<content type='html'>#{ xml_escape(converter.convert(post_data['content'])) }</content>"
     html += "</entry>"
   end
   html += "</feed>"
@@ -144,7 +152,7 @@ task :tags do
   require 'jekyll'
   include Jekyll::Filters
 
-  options = Jekyll.configuration({})
+  options = Jekyll.configuration({ 'markdown' => 'kramdown' })
   site = Jekyll::Site.new(options)
   site.read_posts('')
   site.categories.sort.each do |category, posts|

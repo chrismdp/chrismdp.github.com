@@ -13,270 +13,304 @@ layout: nil
     <name>Chris Parsons</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>Layers of abstraction: writing great cucumber code</title><category term='bdd'/><category term='cucumber'/><category term='agile'/><category term='ux'/><link href='http://chrismdp.com/2011/09/layers-of-abstraction-writing-great-cucumber-code'/><updated>2011-09-15T07:44:41+01:00</updated><id>http://chrismdp.com/2011/09/layers-of-abstraction-writing-great-cucumber-code</id><content type='html'>I blogged about Gojko's thoughts on layers of abstraction [a week or so ago](/2011/09/layers-of-abstraction-bdd-ux), discussing three different ways we can think about the behaviour of any system. These way are: the business rules, the workflow of that system, and the specific activity the user is undertaking.
+<entry><title>Layers of abstraction: writing great cucumber code</title><category term='bdd'/><category term='cucumber'/><category term='agile'/><category term='ux'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2011/09/layers-of-abstraction-writing-great-cucumber-code'/><updated>2011-09-15T07:44:41+01:00</updated><id>http://chrismdp.com/2011/09/layers-of-abstraction-writing-great-cucumber-code</id><content type='html'>&lt;p&gt;I blogged about Gojko’s thoughts on layers of abstraction &lt;a href=&quot;/2011/09/layers-of-abstraction-bdd-ux&quot;&gt;a week or so ago&lt;/a&gt;, discussing three different ways we can think about the behaviour of any system. These way are: the business rules, the workflow of that system, and the specific activity the user is undertaking.&lt;/p&gt;
 
-Today I want to think about how we can leverage these insights to help us write really good cucumber features and step code.
+&lt;p&gt;Today I want to think about how we can leverage these insights to help us write really good cucumber features and step code.&lt;/p&gt;
 
-## I used to write terrible features
+&lt;h2 id=&quot;i-used-to-write-terrible-features&quot;&gt;I used to write terrible features&lt;/h2&gt;
 
-Do these look familiar?
+&lt;p&gt;Do these look familiar?&lt;/p&gt;
 
-{% highlight cucumber %}
+&lt;p&gt;{% highlight cucumber %}
 Feature: Paul pays employees
   In order to retain staff
-  As Paul the Payroll Manager I want to pay my staff
+  As Paul the Payroll Manager I want to pay my staff&lt;/p&gt;
 
-Scenario:
-  Given an admin user called &quot;Paul&quot; with a password &quot;password&quot;
-  And a user called &quot;Bob&quot;
-  And &quot;Bob&quot; is an employee
-  And &quot;Bob&quot; gets paid &quot;$2,000&quot; a month
+&lt;p&gt;Scenario:
+  Given an admin user called “Paul” with a password “password”
+  And a user called “Bob”
+  And “Bob” is an employee
+  And “Bob” gets paid “$2,000” a month
   When I visit the homepage
-  And I click on &quot;Log in&quot;
-  And I fill in &quot;username&quot; with &quot;Paul&quot;
-  And I fill in &quot;password&quot; with &quot;password&quot;
-  And I click &quot;Log in&quot;
-  And I click &quot;Payroll&quot;
-  And I click &quot;Bob&quot;
-  And I click &quot;Pay&quot;
-  And I enter &quot;$2,000&quot;
-  And I click &quot;Pay&quot;
-  Then I should see &quot;Bob has been paid&quot;
-{% endhighlight %}
+  And I click on “Log in”
+  And I fill in “username” with “Paul”
+  And I fill in “password” with “password”
+  And I click “Log in”
+  And I click “Payroll”
+  And I click “Bob”
+  And I click “Pay”
+  And I enter “$2,000”
+  And I click “Pay”
+  Then I should see “Bob has been paid”
+{% endhighlight %}&lt;/p&gt;
 
-We've all written features like this in the past: there's [plenty](http://benmabey.com/2008/05/19/imperative-vs-declarative-scenarios-in-user-stories.html) [of](http://dannorth.net/2011/01/31/whose-domain-is-it-anyway/) [guidance](http://elabs.se/blog/15-you-re-cuking-it-wrong) out there these days to help you write better features than this. However, rather than just accept &quot;best practices&quot; at face value, let's take a look under the hood and work out *why this is better.*
+&lt;p&gt;We’ve all written features like this in the past: there’s &lt;a href=&quot;http://benmabey.com/2008/05/19/imperative-vs-declarative-scenarios-in-user-stories.html&quot;&gt;plenty&lt;/a&gt; &lt;a href=&quot;http://dannorth.net/2011/01/31/whose-domain-is-it-anyway/&quot;&gt;of&lt;/a&gt; &lt;a href=&quot;http://elabs.se/blog/15-you-re-cuking-it-wrong&quot;&gt;guidance&lt;/a&gt; out there these days to help you write better features than this. However, rather than just accept “best practices” at face value, let’s take a look under the hood and work out &lt;em&gt;why this is better.&lt;/em&gt;&lt;/p&gt;
 
-## Variance revisited
+&lt;h2 id=&quot;variance-revisited&quot;&gt;Variance revisited&lt;/h2&gt;
 
-Last time I discussed this topic, I mentioned the key differentiator was variance. Business rules are unlikely to change significantly unless the company decides to pivot: this is more likely in a startup but still less likely overall. The workflow is normally fairly static, but the activity the user follows changes regularly.
+&lt;p&gt;Last time I discussed this topic, I mentioned the key differentiator was variance. Business rules are unlikely to change significantly unless the company decides to pivot: this is more likely in a startup but still less likely overall. The workflow is normally fairly static, but the activity the user follows changes regularly.&lt;/p&gt;
 
-Co-incidentally, there are three levels of behaviour implementation that we write when we work with Cucumber:
+&lt;p&gt;Co-incidentally, there are three levels of behaviour implementation that we write when we work with Cucumber:&lt;/p&gt;
 
-* *The feature files.* Ideally there are written in collaboration with the customer and are written out before coding begins.
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;The feature files.&lt;/em&gt; Ideally there are written in collaboration with the customer and are written out before coding begins.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;The step definitions.&lt;/em&gt; We implement each step of our feature with ruby code as we are writing the feature, sometimes reworking existing steps to be more powerful (often at our peril).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;Support code.&lt;/em&gt; Cucumber executes our steps inside a ‘world object’, which we can easily extend through the adding of modules and methods.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-* *The step definitions.* We implement each step of our feature with ruby code as we are writing the feature, sometimes reworking existing steps to be more powerful (often at our peril).
+&lt;p&gt;Each of these implementation levels is also differentiated in terms of variance:&lt;/p&gt;
 
-* *Support code.* Cucumber executes our steps inside a 'world object', which we can easily extend through the adding of modules and methods.
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;The feature files are the most difficult to change,&lt;/em&gt; as this ideally requires a conversation with the customer, and any wording changes have a knock on effect on step definitions.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;Step definitions can be tricky to change,&lt;/em&gt; especially if they are used by multiple feature files. Their implementation is closely tied to the regular expression they match, which can make them difficult to understand if highly reused: one case where Don’t Repeat Yourself can fall down quickly.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;Support code is easy to change&lt;/em&gt; as it’s plain ruby and as such very malleable: we can easily refactor and be careful with our naming to tease out duplication.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-Each of these implementation levels is also differentiated in terms of variance:
+&lt;h2 id=&quot;where-to-put-the-code&quot;&gt;Where to put the code?&lt;/h2&gt;
 
-* *The feature files are the most difficult to change,* as this ideally requires a conversation with the customer, and any wording changes have a knock on effect on step definitions.
+&lt;p&gt;If it’s easy to change support code, then it follows that we should put our higest varying code there: namely the code which describes specific activity. Normally only programmers are interested in this code and it’s easy enough to find and understand if the support methods are well-named.&lt;/p&gt;
 
-* *Step definitions can be tricky to change,* especially if they are used by multiple feature files. Their implementation is closely tied to the regular expression they match, which can make them difficult to understand if highly reused: one case where Don't Repeat Yourself can fall down quickly.
+&lt;p&gt;The workflow code lives best in individual steps which aren’t often reused and which have simple regular expressions. The people who are interested in this area are normally designers and User Experience people, who should be able to read well-named ruby code at a pinch and therefore can understand what’s going on.&lt;/p&gt;
 
-* *Support code is easy to change* as it's plain ruby and as such very malleable: we can easily refactor and be careful with our naming to tease out duplication.
+&lt;p&gt;The code that’s least likely to change (the business rules) can safely live in the feature files with impunity, where it can be discussed with product owners. The product owner is most interested in the rules of their system: they’re only moderately interested in the workflow and usually aren’t too opiniated about the specific activities. That’s partly why we struggle to write features with our clients: if we’re trying to discuss activity specifics like in the example feature above, we’re probably nailing down details too early and bore our product owner to tears. It’s hard enough for a programmer to read these sorts of features: how can we expect anyone else to understand them?&lt;/p&gt;
 
-## Where to put the code?
+&lt;h2 id=&quot;an-example&quot;&gt;An example&lt;/h2&gt;
 
-If it's easy to change support code, then it follows that we should put our higest varying code there: namely the code which describes specific activity. Normally only programmers are interested in this code and it's easy enough to find and understand if the support methods are well-named.
+&lt;p&gt;Given this, how would I refactor the feature above to improve things? After deleting web_steps.rb, I would rewrite the feature with my customer citing the business rule, rather than any specific workflow:&lt;/p&gt;
 
-The workflow code lives best in individual steps which aren't often reused and which have simple regular expressions. The people who are interested in this area are normally designers and User Experience people, who should be able to read well-named ruby code at a pinch and therefore can understand what's going on.
-
-The code that's least likely to change (the business rules) can safely live in the feature files with impunity, where it can be discussed with product owners. The product owner is most interested in the rules of their system: they're only moderately interested in the workflow and usually aren't too opiniated about the specific activities. That's partly why we struggle to write features with our clients: if we're trying to discuss activity specifics like in the example feature above, we're probably nailing down details too early and bore our product owner to tears. It's hard enough for a programmer to read these sorts of features: how can we expect anyone else to understand them?
-
-## An example
-
-Given this, how would I refactor the feature above to improve things? After deleting web\_steps.rb, I would rewrite the feature with my customer citing the business rule, rather than any specific workflow:
-
-{% highlight cucumber %}
+&lt;p&gt;{% highlight cucumber %}
 Feature: Paul pays employees
   In order to retain staff
-  As Paul the Payroll Manager I want to pay my staff
+  As Paul the Payroll Manager I want to pay my staff&lt;/p&gt;
 
-@paul_signed_in
+&lt;p&gt;@paul_signed_in
 Scenario:
-  Given an employee called &quot;Bob&quot;
-  Then I should be able to pay &quot;Bob&quot; his salary
-{% endhighlight %}
+  Given an employee called “Bob”
+  Then I should be able to pay “Bob” his salary
+{% endhighlight %}&lt;/p&gt;
 
-My step definitions would look something like this:
+&lt;p&gt;My step definitions would look something like this:&lt;/p&gt;
 
-{% highlight ruby %}
-Given /^an employee called &quot;([^&quot;]+)&quot;$/ do |employee_name|
+&lt;p&gt;{% highlight ruby %}
+Given /^an employee called “([^”]+)”$/ do |employee_name|
   create_employee(employee_name)
-end
+end&lt;/p&gt;
 
-Then /^I should be able to pay &quot;([^&quot;]+)&quot; his salary$/ do |employee_name|
+&lt;p&gt;Then /^I should be able to pay “([^”]+)” his salary$/ do |employee_name|
   pay_salary_to(employee_)
 end
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-And the support code might look roughly like this:
+&lt;p&gt;And the support code might look roughly like this:&lt;/p&gt;
 
-{% highlight ruby %}
-Before(&quot;paul_signed_in&quot;) do
-  paul = create_employee(&quot;Paul&quot;)
-  paul.assign_role(&quot;payroll&quot;)
+&lt;p&gt;{% highlight ruby %}
+Before(“paul_signed_in”) do
+  paul = create_employee(“Paul”)
+  paul.assign_role(“payroll”)
   sign_in_as(paul)
-end
+end&lt;/p&gt;
 
-def create_employee(name)
-  Employee.create!(:name =&gt; name, :username =&gt; name,
-    :password =&gt; &quot;password&quot;)
-end
+&lt;p&gt;def create_employee(name)
+  Employee.create!(:name =&amp;gt; name, :username =&amp;gt; name,
+    :password =&amp;gt; “password”)
+end&lt;/p&gt;
 
-def pay_salary_to(name)
+&lt;p&gt;def pay_salary_to(name)
   payee = Employee.find_by_name(name)
   visit payroll_employee_path(payee)
-  fill_ :salary, :with =&gt; payee.salary
-  click_button &quot;Pay&quot;
+  fill_ :salary, :with =&amp;gt; payee.salary
+  click_button “Pay”
 end
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-You're also free not to test the UI if you'd prefer not to in your support code. However, as we've given ourselves the ability to remove duplication, it's easy to change the code when the UI changes. So far I've not found UI brittleness to be too much of an issue.
+&lt;p&gt;You’re also free not to test the UI if you’d prefer not to in your support code. However, as we’ve given ourselves the ability to remove duplication, it’s easy to change the code when the UI changes. So far I’ve not found UI brittleness to be too much of an issue.&lt;/p&gt;
 
-## In conclusion
+&lt;h2 id=&quot;in-conclusion&quot;&gt;In conclusion&lt;/h2&gt;
 
-These are rules of thumb, but they can be very helpful in keeping the rate of development up as our codebase expands. One change that I've made recently to my own practice is to be more aggressive at pushing activity code down into support code, and it's really helped to keep feature code flexible and easy to change.
+&lt;p&gt;These are rules of thumb, but they can be very helpful in keeping the rate of development up as our codebase expands. One change that I’ve made recently to my own practice is to be more aggressive at pushing activity code down into support code, and it’s really helped to keep feature code flexible and easy to change.&lt;/p&gt;
 
-Many people have given up on Cucumber, citing long build times and the brittleness of the test code as primary reasons. Obie Fernandez recently [blogged](http://blog.obiefernandez.com/content/2011/05/the-dark-side-beckons.html) about finding &quot;high-ceremony&quot; development too much work in a startup. I think that's a real shame: it's a fantastic way to drill down to specific behaviour and ensure you're only building what you need. If you think about the behaviour of your system correctly, aggressively remove duplication in all your code (including test code), and only test code you own then you shouldn't be burdening yourself with too much of an overhead.
+&lt;p&gt;Many people have given up on Cucumber, citing long build times and the brittleness of the test code as primary reasons. Obie Fernandez recently &lt;a href=&quot;http://blog.obiefernandez.com/content/2011/05/the-dark-side-beckons.html&quot;&gt;blogged&lt;/a&gt; about finding “high-ceremony” development too much work in a startup. I think that’s a real shame: it’s a fantastic way to drill down to specific behaviour and ensure you’re only building what you need. If you think about the behaviour of your system correctly, aggressively remove duplication in all your code (including test code), and only test code you own then you shouldn’t be burdening yourself with too much of an overhead.&lt;/p&gt;
 
-Have you given up using Cucumber? Or if you use it, is this the way you do it or do you have a better method?
+&lt;p&gt;Have you given up using Cucumber? Or if you use it, is this the way you do it or do you have a better method?&lt;/p&gt;
 
-</content></entry><entry><title>Layers of abstraction: combining BDD and UX</title><category term='bdd'/><category term='cucumber'/><category term='agile'/><category term='ux'/><link href='http://chrismdp.com/2011/09/layers-of-abstraction-bdd-ux'/><updated>2011-09-05T20:44:03+01:00</updated><id>http://chrismdp.com/2011/09/layers-of-abstraction-bdd-ux</id><content type='html'>I first came across [Gokjo Adzic's thoughts on the different levels of UI test automation](http://gojko.net/2010/04/13/how-to-implement-ui-testing-without-shooting-yourself-in-the-foot-2/) some time ago: it's a really nice way to think not just about test automation, but about the different levels of behaviour in any software project.
+</content></entry><entry><title>Layers of abstraction: combining BDD and UX</title><category term='bdd'/><category term='cucumber'/><category term='agile'/><category term='ux'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2011/09/layers-of-abstraction-bdd-ux'/><updated>2011-09-05T20:44:03+01:00</updated><id>http://chrismdp.com/2011/09/layers-of-abstraction-bdd-ux</id><content type='html'>&lt;p&gt;I first came across &lt;a href=&quot;http://gojko.net/2010/04/13/how-to-implement-ui-testing-without-shooting-yourself-in-the-foot-2/&quot;&gt;Gokjo Adzic’s thoughts on the different levels of UI test automation&lt;/a&gt; some time ago: it’s a really nice way to think not just about test automation, but about the different levels of behaviour in any software project.&lt;/p&gt;
 
-I've been considering the similarities between these levels of behaviour and the user experience discipline, and how we might leverage that thinking to iterate towards a better way of combining agile methods with UX.
+&lt;p&gt;I’ve been considering the similarities between these levels of behaviour and the user experience discipline, and how we might leverage that thinking to iterate towards a better way of combining agile methods with UX.&lt;/p&gt;
 
-## Three ways to think of behaviour
+&lt;h2 id=&quot;three-ways-to-think-of-behaviour&quot;&gt;Three ways to think of behaviour&lt;/h2&gt;
 
-Applying these rules to any software system gives us three ways to think about the behaviour of that system.
+&lt;p&gt;Applying these rules to any software system gives us three ways to think about the behaviour of that system.&lt;/p&gt;
 
-*The business rules.* These are high level and abstract. To take the example of a Payroll system: the business rules represent such things as &quot;Staff members always get paid on the last Friday of the month&quot;, or &quot;Temporary staff workers must submit a timesheet before being paid.&quot;
+&lt;p&gt;&lt;em&gt;The business rules.&lt;/em&gt; These are high level and abstract. To take the example of a Payroll system: the business rules represent such things as “Staff members always get paid on the last Friday of the month”, or “Temporary staff workers must submit a timesheet before being paid.”&lt;/p&gt;
 
-*The workflow.* The workflow represents the logical steps a user might go through to fulfil a business rule. For example: &quot;As a HR person, I want to see a list of temporary workers and pay those who are shown to have submitted a timesheet.&quot;
+&lt;p&gt;&lt;em&gt;The workflow.&lt;/em&gt; The workflow represents the logical steps a user might go through to fulfil a business rule. For example: “As a HR person, I want to see a list of temporary workers and pay those who are shown to have submitted a timesheet.”&lt;/p&gt;
 
-*The specific activity.* The detailed steps a user goes through to achieve the workflow: &quot;I click on the 'show temp workers' link; I see an icon next to those who have submitted timesheets, along with the last date they submitted; I click the 'Pay' button...&quot;
+&lt;p&gt;&lt;em&gt;The specific activity.&lt;/em&gt; The detailed steps a user goes through to achieve the workflow: “I click on the ‘show temp workers’ link; I see an icon next to those who have submitted timesheets, along with the last date they submitted; I click the ‘Pay’ button…”&lt;/p&gt;
 
-The key differentiator here is *variance.* The business rules of a system are the least likely to change: changing these might represent a [pivot](http://venturebeat.com/2010/04/14/business-plan-not-working-time-to-pivot/) and will incur significant development cost.
+&lt;p&gt;The key differentiator here is &lt;em&gt;variance.&lt;/em&gt; The business rules of a system are the least likely to change: changing these might represent a &lt;a href=&quot;http://venturebeat.com/2010/04/14/business-plan-not-working-time-to-pivot/&quot;&gt;pivot&lt;/a&gt; and will incur significant development cost.&lt;/p&gt;
 
-The specific activities change most often: perhaps at a designer's whim, or through localisation or other text changes. We should therefore strive to ensure that changing the activities incurs as small a development cost as possible.
+&lt;p&gt;The specific activities change most often: perhaps at a designer’s whim, or through localisation or other text changes. We should therefore strive to ensure that changing the activities incurs as small a development cost as possible.&lt;/p&gt;
 
-## The agile / user experience process is similar
+&lt;h2 id=&quot;the-agile--user-experience-process-is-similar&quot;&gt;The agile / user experience process is similar&lt;/h2&gt;
 
-If you think about it, the three layers represent the different and progressive stages of thinking that we go through when designing the user experience of new applications.
+&lt;p&gt;If you think about it, the three layers represent the different and progressive stages of thinking that we go through when designing the user experience of new applications.&lt;/p&gt;
 
-*Business rules of the system are laid down by the product owner at the start of a project.* When considering the user experience of the application, we are careful to first understand a high level overview of the purpose of the software, getting as much useful information as possible from the product owner at an inception.
+&lt;p&gt;&lt;em&gt;Business rules of the system are laid down by the product owner at the start of a project.&lt;/em&gt; When considering the user experience of the application, we are careful to first understand a high level overview of the purpose of the software, getting as much useful information as possible from the product owner at an inception.&lt;/p&gt;
 
-*Workflow design is led by the UX team and happens when a new story is created.* When creating a new slice of functionality, we carefully think through the workflow of that particular feature, using wireframing, [personas](/2011/04/cucumbers-with-personality) or [whatever works](/2010/02/the-story-card-is-not-the-story) combined with [lots of discussion](/2010/02/the-story-card-is-not-the-story). The net result is a basic step by step workflow of the new feature, without too much detail added.
+&lt;p&gt;&lt;em&gt;Workflow design is led by the UX team and happens when a new story is created.&lt;/em&gt; When creating a new slice of functionality, we carefully think through the workflow of that particular feature, using wireframing, &lt;a href=&quot;/2011/04/cucumbers-with-personality&quot;&gt;personas&lt;/a&gt; or &lt;a href=&quot;/2010/02/the-story-card-is-not-the-story&quot;&gt;whatever works&lt;/a&gt; combined with &lt;a href=&quot;/2010/02/the-story-card-is-not-the-story&quot;&gt;lots of discussion&lt;/a&gt;. The net result is a basic step by step workflow of the new feature, without too much detail added.&lt;/p&gt;
 
-*Specific activities are created by developers and graphic designers.* Developers and designers make a thousand little decisions about the user experience of the application as they build the feature, hopefully discussing their thoughts with the UX experts on their team if they feel out of their depth.
+&lt;p&gt;&lt;em&gt;Specific activities are created by developers and graphic designers.&lt;/em&gt; Developers and designers make a thousand little decisions about the user experience of the application as they build the feature, hopefully discussing their thoughts with the UX experts on their team if they feel out of their depth.&lt;/p&gt;
 
-## From general to specific
+&lt;h2 id=&quot;from-general-to-specific&quot;&gt;From general to specific&lt;/h2&gt;
 
-As we create features, we are iterating from the general to the specific; from the high level to the detail. To determine all the granular behaviour up front (and all the precise graphical designs) is inefficient: we are likely to change our minds about the detail. Yet this is what many user experience practioners and designers try to do: if not for the whole project, then for whole sections of the project.
+&lt;p&gt;As we create features, we are iterating from the general to the specific; from the high level to the detail. To determine all the granular behaviour up front (and all the precise graphical designs) is inefficient: we are likely to change our minds about the detail. Yet this is what many user experience practioners and designers try to do: if not for the whole project, then for whole sections of the project.&lt;/p&gt;
 
-For example, if you're doing more than a dozen wireframes or so in advance, are you doing too much thinking ahead of time? Why not resist, have more agility, and let the completion of some of the features guide your future thinking? Likewise, I have often been presented with dozens of perfect photoshop mockups to code up, often without any clear direction on the behaviour represented within them. It is more agile to keep things as high level as possible for as long as possible. How about producing a guidance mockup and a style guide, and then sitting down and guiding the developers on the design when they come to build the feature?
+&lt;p&gt;For example, if you’re doing more than a dozen wireframes or so in advance, are you doing too much thinking ahead of time? Why not resist, have more agility, and let the completion of some of the features guide your future thinking? Likewise, I have often been presented with dozens of perfect photoshop mockups to code up, often without any clear direction on the behaviour represented within them. It is more agile to keep things as high level as possible for as long as possible. How about producing a guidance mockup and a style guide, and then sitting down and guiding the developers on the design when they come to build the feature?&lt;/p&gt;
 
-This doesn't mean you can avoid the detail. You need both ends of the behaviour spectrum: neglect the detail of the experience and you [settle for mediocrity](/2010/05/ux-is-everything). Conversly if we neglect the high level our application becomes a ship without a rudder and the user experience will become confused.
+&lt;p&gt;This doesn’t mean you can avoid the detail. You need both ends of the behaviour spectrum: neglect the detail of the experience and you &lt;a href=&quot;/2010/05/ux-is-everything&quot;&gt;settle for mediocrity&lt;/a&gt;. Conversly if we neglect the high level our application becomes a ship without a rudder and the user experience will become confused.&lt;/p&gt;
 
-In the future I plan to discuss how the use of [Cucumber](http://cukes.info) fits in to this, and how we can progressively iterate our cucumber features as we get more and more specific about a particular feature.
-</content></entry><entry><title>Cucumbers with personality</title><category term='cucumber'/><category term='personas'/><category term='agile'/><category term='ux'/><link href='http://chrismdp.com/2011/04/cucumbers-with-personality'/><updated>2011-04-18T15:17:31+01:00</updated><id>http://chrismdp.com/2011/04/cucumbers-with-personality</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;Personality is everything in art and poetry.&quot;&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;In the future I plan to discuss how the use of &lt;a href=&quot;http://cukes.info&quot;&gt;Cucumber&lt;/a&gt; fits in to this, and how we can progressively iterate our cucumber features as we get more and more specific about a particular feature.&lt;/p&gt;
+</content></entry><entry><title>Cucumbers with personality</title><category term='cucumber'/><category term='personas'/><category term='agile'/><category term='ux'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2011/04/cucumbers-with-personality'/><updated>2011-04-18T15:17:31+01:00</updated><id>http://chrismdp.com/2011/04/cucumbers-with-personality</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;Personality is everything in art and poetry.&quot;&lt;/i&gt;&lt;/p&gt;
 
--- [Johann Wolfgang von Goethe](http://en.wikipedia.org/wiki/Johann_Wolfgang_von_Goethe)
+&lt;p&gt;– &lt;a href=&quot;http://en.wikipedia.org/wiki/Johann_Wolfgang_von_Goethe&quot;&gt;Johann Wolfgang von Goethe&lt;/a&gt;&lt;/p&gt;
 
-One element of Cucumber feature-writing that is often neglected is the *role.* This is the section that sits between the well known *In order that* and *I want to.*
+&lt;p&gt;One element of Cucumber feature-writing that is often neglected is the &lt;em&gt;role.&lt;/em&gt; This is the section that sits between the well known &lt;em&gt;In order that&lt;/em&gt; and &lt;em&gt;I want to.&lt;/em&gt;&lt;/p&gt;
 
-It's very easy to concentrate on *what* we wish to accomplish, and *why* we want to do it. The role that we're in, however, affects the *way* that we do it, and how the action is perceived as it is carried out. It is in fact, *the key to user experience of the feature.*
+&lt;p&gt;It’s very easy to concentrate on &lt;em&gt;what&lt;/em&gt; we wish to accomplish, and &lt;em&gt;why&lt;/em&gt; we want to do it. The role that we’re in, however, affects the &lt;em&gt;way&lt;/em&gt; that we do it, and how the action is perceived as it is carried out. It is in fact, &lt;em&gt;the key to user experience of the feature.&lt;/em&gt;&lt;/p&gt;
 
-How often have we lazily written features like this?
+&lt;p&gt;How often have we lazily written features like this?&lt;/p&gt;
 
-{% highlight &quot;text&quot; %}
+&lt;p&gt;{% highlight “text” %}
 In order to know how much money I am making
 As a user
 I want to see a report of widgets sold this month
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-What we want is clear, as is why we want it. What's not clear is who is doing the asking, and therefore there's no clue as to what the user experience should be like.
+&lt;p&gt;What we want is clear, as is why we want it. What’s not clear is who is doing the asking, and therefore there’s no clue as to what the user experience should be like.&lt;/p&gt;
 
-## A sprinkling of personality
+&lt;h2 id=&quot;a-sprinkling-of-personality&quot;&gt;A sprinkling of personality&lt;/h2&gt;
 
-Next time we find ourselves writing &quot;as a user&quot;, let's take a minute to stop and think whether we can be more specific.
+&lt;p&gt;Next time we find ourselves writing “as a user”, let’s take a minute to stop and think whether we can be more specific.&lt;/p&gt;
 
-Consider this feature:
+&lt;p&gt;Consider this feature:&lt;/p&gt;
 
-{% highlight &quot;text&quot; %}
+&lt;p&gt;{% highlight “text” %}
 In order to know how much money I am making
 As the head of the company
 I want to see a report of widgets sold this month
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-This guy is time poor, and just wants the facts, right now. Sure, he might want it to look good, but doesn't care much beyond the numbers.
+&lt;p&gt;This guy is time poor, and just wants the facts, right now. Sure, he might want it to look good, but doesn’t care much beyond the numbers.&lt;/p&gt;
 
-Now how about this one?
+&lt;p&gt;Now how about this one?&lt;/p&gt;
 
-{% highlight &quot;text&quot; %}
+&lt;p&gt;{% highlight “text” %}
 In order to know how much money I am making
 As a design assistant responsible for collating reports
 I want to see a report of widgets sold this month
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-This person possibly has a little more time on their hands, and their overriding concern might be to impress their boss. Therefore the aesthetics of the report layout might be very important, and it might not matter so much if the page is slower to load.
+&lt;p&gt;This person possibly has a little more time on their hands, and their overriding concern might be to impress their boss. Therefore the aesthetics of the report layout might be very important, and it might not matter so much if the page is slower to load.&lt;/p&gt;
 
-## Personas driving stories
+&lt;h2 id=&quot;personas-driving-stories&quot;&gt;Personas driving stories&lt;/h2&gt;
 
-On a recent project for a coaching company we took this a step further. We produced some great personas during the inception (Bob Coachee, Jean Coach), and then went so far as to use them in our features:
+&lt;p&gt;On a recent project for a coaching company we took this a step further. We produced some great personas during the inception (Bob Coachee, Jean Coach), and then went so far as to use them in our features:&lt;/p&gt;
 
-{% highlight &quot;text&quot; %}
+&lt;p&gt;{% highlight “text” %}
 In order to know who I am coaching next
 As Jean the coach
-I want to see a calendar showing today's appointments
-{% endhighlight %}
+I want to see a calendar showing today’s appointments
+{% endhighlight %}&lt;/p&gt;
 
-Because everyone on the project knew the background behind these characters, the resulting features communicated a lot of knowledge. We all knew exactly how they were using the system, and what they needed out of it. We had about six personas in total, and they proved very helping in communicating the user experience of the feature to the team.
+&lt;p&gt;Because everyone on the project knew the background behind these characters, the resulting features communicated a lot of knowledge. We all knew exactly how they were using the system, and what they needed out of it. We had about six personas in total, and they proved very helping in communicating the user experience of the feature to the team.&lt;/p&gt;
 
-Do you create specific personas for your projects, and have you ever used them when writing your features? Did you see a benefit?
-</content></entry><entry><title>User Experience Is Everything</title><category term='ux'/><category term='business'/><link href='http://chrismdp.com/2010/05/ux-is-everything'/><updated>2010-05-21T17:07:00+01:00</updated><id>http://chrismdp.com/2010/05/ux-is-everything</id><content type='html'>User Experience Design is a field which has been around as long at computer science itself, but has only recently come to the fore in the world of software development. While it's been an important component of the work we do for some time, I've recently realised that it's actually much more than that. It isn't a component of what we do, it is the entirety of what we do.
+&lt;p&gt;Do you create specific personas for your projects, and have you ever used them when writing your features? Did you see a benefit?&lt;/p&gt;
+</content></entry><entry><title>User Experience Is Everything</title><category term='ux'/><category term='business'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2010/05/ux-is-everything'/><updated>2010-05-21T17:07:00+01:00</updated><id>http://chrismdp.com/2010/05/ux-is-everything</id><content type='html'>&lt;p&gt;User Experience Design is a field which has been around as long at computer science itself, but has only recently come to the fore in the world of software development. While it’s been an important component of the work we do for some time, I’ve recently realised that it’s actually much more than that. It isn’t a component of what we do, it is the entirety of what we do.&lt;/p&gt;
 
-How is a user to see the hard work we put in to fashioning a particular system, if it's not through the use of that system? Their experience using the system is key to what they think of it, and the benefit that they get out of it.
+&lt;p&gt;How is a user to see the hard work we put in to fashioning a particular system, if it’s not through the use of that system? Their experience using the system is key to what they think of it, and the benefit that they get out of it.&lt;/p&gt;
 
-When they encounter a bug with our software, it's a failure of user experience. The &quot;user&quot; should not have &quot;experienced&quot; a bug in the system. When we build software, we try our hardest through all sorts of techniques and practices to create a system that is bug free. We are unconsciously thinking of user experience, even if we're not aware of it.
+&lt;p&gt;When they encounter a bug with our software, it’s a failure of user experience. The “user” should not have “experienced” a bug in the system. When we build software, we try our hardest through all sorts of techniques and practices to create a system that is bug free. We are unconsciously thinking of user experience, even if we’re not aware of it.&lt;/p&gt;
 
-Obie Fernandez recently [gave a talk](http://skillsmatter.com/podcast/ajax-ria/obie-fernandez-blood-sweat-and-rails) in which he made the statement &quot;Perception is Reality&quot;. He's right. What a user perceives to be the case with the software they are using is what is real to them. 
+&lt;p&gt;Obie Fernandez recently &lt;a href=&quot;http://skillsmatter.com/podcast/ajax-ria/obie-fernandez-blood-sweat-and-rails&quot;&gt;gave a talk&lt;/a&gt; in which he made the statement “Perception is Reality”. He’s right. What a user perceives to be the case with the software they are using is what is real to them. &lt;/p&gt;
 
-What use is it if our software is beautifully designed internally, but pig ugly to look at and difficult to use? The user's perception of the software will be that it's bad software. We might disagree with them all we like, but their perception is impossible to change, and we shouldn't try to change it. Let's instead change our software so that it's perceived to be good software.
+&lt;p&gt;What use is it if our software is beautifully designed internally, but pig ugly to look at and difficult to use? The user’s perception of the software will be that it’s bad software. We might disagree with them all we like, but their perception is impossible to change, and we shouldn’t try to change it. Let’s instead change our software so that it’s perceived to be good software.&lt;/p&gt;
 
-User experience goes so far beyond the common notion of &quot;web design&quot;. It's everything about the site that the user uses and interacts with. It's the feeling the user gets when they &quot;open the box&quot; - the login screen, the page load time, and the blank state. It's the presence or absence of features. It's the ease of accomplishing difficult tasks.
+&lt;p&gt;User experience goes so far beyond the common notion of “web design”. It’s everything about the site that the user uses and interacts with. It’s the feeling the user gets when they “open the box” - the login screen, the page load time, and the blank state. It’s the presence or absence of features. It’s the ease of accomplishing difficult tasks.&lt;/p&gt;
 
-An important corollary to this is that it's not desirable to build a piece of software that looks and feels beautiful, but internally is poorly implemented. It'll become obvious, especially over time. The system might work after a fashion now, but inevitably most software will need to change over time. If the cost of change is high the user experience will eventually diminish, as the essential features will be difficult if not impossible to finish. 
+&lt;p&gt;An important corollary to this is that it’s not desirable to build a piece of software that looks and feels beautiful, but internally is poorly implemented. It’ll become obvious, especially over time. The system might work after a fashion now, but inevitably most software will need to change over time. If the cost of change is high the user experience will eventually diminish, as the essential features will be difficult if not impossible to finish. &lt;/p&gt;
 
-What does all this mean for web developers? We must pay the same attention to how something feels to use as we currently do to how it works. We should ask ourselves: does it move well? Do the pages and clicks that make up the feature flow just so? Is it [juicy](http://2009.dconstruct.org/podcast/juicyfeedback/)?
+&lt;p&gt;What does all this mean for web developers? We must pay the same attention to how something feels to use as we currently do to how it works. We should ask ourselves: does it move well? Do the pages and clicks that make up the feature flow just so? Is it &lt;a href=&quot;http://2009.dconstruct.org/podcast/juicyfeedback/&quot;&gt;juicy&lt;/a&gt;?&lt;/p&gt;
 
-Is the user thinking about the task they want to perform, or how to make the system we've written do the task they want to perform? It's a subtle yet crucial difference.
+&lt;p&gt;Is the user thinking about the task they want to perform, or how to make the system we’ve written do the task they want to perform? It’s a subtle yet crucial difference.&lt;/p&gt;
 
-The last 5% we need to put into a feature will probably take us 50% of the total effort, but it's worth it. It's the last 5% that helps our web app rise above the sea of mediocre sites out there and be something truly great. It's doing the last 5% that separates great developers from merely good developers. Who wants to be merely good?
+&lt;p&gt;The last 5% we need to put into a feature will probably take us 50% of the total effort, but it’s worth it. It’s the last 5% that helps our web app rise above the sea of mediocre sites out there and be something truly great. It’s doing the last 5% that separates great developers from merely good developers. Who wants to be merely good?&lt;/p&gt;
 
-User experience is everything. What can we do to put in that extra 5%, so our users can experience something wonderful?
+&lt;p&gt;User experience is everything. What can we do to put in that extra 5%, so our users can experience something wonderful?&lt;/p&gt;
 
-</content></entry><entry><title>R.I.P. Web 1.0</title><category term='ux'/><category term='business'/><category term='Peter Drucker'/><link href='http://chrismdp.com/2009/12/rip-web-1-0'/><updated>2009-12-23T21:41:00+00:00</updated><id>http://chrismdp.com/2009/12/rip-web-1-0</id><content type='html'>I'm reading an excellent book at the moment called [The Definitive Drucker](http://www.definitivedrucker.com/default.aspx). Peter Drucker, in case you haven't heard of him, was a bit of a legend when it comes to business management and marketing. Anyone who has a least a passing interest in business should read his books, especially the later ones.
+</content></entry><entry><title>R.I.P. Web 1.0</title><category term='ux'/><category term='business'/><category term='Peter Drucker'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2009/12/rip-web-1-0'/><updated>2009-12-23T21:41:00+00:00</updated><id>http://chrismdp.com/2009/12/rip-web-1-0</id><content type='html'>&lt;p&gt;I’m reading an excellent book at the moment called &lt;a href=&quot;http://www.definitivedrucker.com/default.aspx&quot;&gt;The Definitive Drucker&lt;/a&gt;. Peter Drucker, in case you haven’t heard of him, was a bit of a legend when it comes to business management and marketing. Anyone who has a least a passing interest in business should read his books, especially the later ones.&lt;/p&gt;
 
-I've been pondering this set of pithy yet profound questions from the book:
+&lt;p&gt;I’ve been pondering this set of pithy yet profound questions from the book:&lt;/p&gt;
 
-* What is our business?
-* Who is our customer?
-* What does our customer consider value?
+&lt;ul&gt;
+  &lt;li&gt;What is our business?&lt;/li&gt;
+  &lt;li&gt;Who is our customer?&lt;/li&gt;
+  &lt;li&gt;What does our customer consider value?&lt;/li&gt;
+&lt;/ul&gt;
 
-The answers may seem obvious at first glance. But can you really define who your customer is without thinking about it, and hard? And how about putting yourselves in their shoes and actually considering what they really want?
+&lt;p&gt;The answers may seem obvious at first glance. But can you really define who your customer is without thinking about it, and hard? And how about putting yourselves in their shoes and actually considering what they really want?&lt;/p&gt;
 
-I've been thinking hard about these questions this week, in light of my experiences at Eden this past year.
+&lt;p&gt;I’ve been thinking hard about these questions this week, in light of my experiences at Eden this past year.&lt;/p&gt;
 
-*One key realisation: Web 1.0 is dead. Long live Web 2.0.* 
+&lt;p&gt;&lt;em&gt;One key realisation: Web 1.0 is dead. Long live Web 2.0.&lt;/em&gt; &lt;/p&gt;
 
-If I was to pick one insight from carefully considering these questions, it's that the tolerance for the basic web 1.0 user experience over the last year has plummeted. We've always offered both, but 12 months ago a basic interface would have been their default option, especially for the internal apps we spend a lot of time building. Now customers expect a beautiful interface to come as standard, even for admin interfaces. The key difference is that they've stopped asking for it: they just assume it will happen.
+&lt;p&gt;If I was to pick one insight from carefully considering these questions, it’s that the tolerance for the basic web 1.0 user experience over the last year has plummeted. We’ve always offered both, but 12 months ago a basic interface would have been their default option, especially for the internal apps we spend a lot of time building. Now customers expect a beautiful interface to come as standard, even for admin interfaces. The key difference is that they’ve stopped asking for it: they just assume it will happen.&lt;/p&gt;
 
-Whilst Web 2.0 was perhaps the big thing in 2008, the major shift in 2009 was less obvious: Web 1.0 died whilst no-one was looking.
+&lt;p&gt;Whilst Web 2.0 was perhaps the big thing in 2008, the major shift in 2009 was less obvious: Web 1.0 died whilst no-one was looking.&lt;/p&gt;
 
-This shift has a number of major consequences to web developers. I've listed just a few here.
+&lt;p&gt;This shift has a number of major consequences to web developers. I’ve listed just a few here.&lt;/p&gt;
 
-*Every developer has to know UX now.* At Eden we've recently hired the wonderful [Spencer Turner](http://twitter.com/spencerturner), who is a very decent Rails developer as well as being a seasoned UX/design guru. He's helping every developer in our workshop to consider UX as part of everything they do. UX has to infuse into everything we build: it cannot be an afterthought.
+&lt;p&gt;&lt;em&gt;Every developer has to know UX now.&lt;/em&gt; At Eden we’ve recently hired the wonderful &lt;a href=&quot;http://twitter.com/spencerturner&quot;&gt;Spencer Turner&lt;/a&gt;, who is a very decent Rails developer as well as being a seasoned UX/design guru. He’s helping every developer in our workshop to consider UX as part of everything they do. UX has to infuse into everything we build: it cannot be an afterthought.&lt;/p&gt;
 
-*Dev time increases subtly.* We need to ensure we're building development time into our projects to be able to make our interfaces sing. Web 2.0 interfaces take time to craft well, but the amount of time it takes to finesse them isn't always built correctly into estimates.
+&lt;p&gt;&lt;em&gt;Dev time increases subtly.&lt;/em&gt; We need to ensure we’re building development time into our projects to be able to make our interfaces sing. Web 2.0 interfaces take time to craft well, but the amount of time it takes to finesse them isn’t always built correctly into estimates.&lt;/p&gt;
 
-*The &quot;standard&quot; stack is changing.* We've adapted our practice and our stack to handle this shift. Heavy Javascript interfaces are becoming standard, Rails layers are becoming ever thinner, and back-end data storage systems are becoming more flexible, even returning JSON which can be rendered directly into the browser if need be. We need flexible languages and frameworks which allow us to split the domain and the persistence layer easily, and put the logic in either the client, server or back-end as the situation demands. Rails 3 can't come soon enough, [node.js](http://nodejs.org) looks promising and we've had some great early successes with [MongoDB](http://mongodb.org).
+&lt;p&gt;&lt;em&gt;The “standard” stack is changing.&lt;/em&gt; We’ve adapted our practice and our stack to handle this shift. Heavy Javascript interfaces are becoming standard, Rails layers are becoming ever thinner, and back-end data storage systems are becoming more flexible, even returning JSON which can be rendered directly into the browser if need be. We need flexible languages and frameworks which allow us to split the domain and the persistence layer easily, and put the logic in either the client, server or back-end as the situation demands. Rails 3 can’t come soon enough, &lt;a href=&quot;http://nodejs.org&quot;&gt;node.js&lt;/a&gt; looks promising and we’ve had some great early successes with &lt;a href=&quot;http://mongodb.org&quot;&gt;MongoDB&lt;/a&gt;.&lt;/p&gt;
 
-*We mustn't forget accessibility.* One fantastic advance made by the early web was that it was a great leveller: everyone on any computer and with any impairment could access the same data. We must take care to retain this advantage of our medium, rather than sliding backwards to only providing black-box interfaces that assistive technologies cannot comprehend. A simple functional interface to any mass-market web application should always be made available, even if it's a separate app.
+&lt;p&gt;&lt;em&gt;We mustn’t forget accessibility.&lt;/em&gt; One fantastic advance made by the early web was that it was a great leveller: everyone on any computer and with any impairment could access the same data. We must take care to retain this advantage of our medium, rather than sliding backwards to only providing black-box interfaces that assistive technologies cannot comprehend. A simple functional interface to any mass-market web application should always be made available, even if it’s a separate app.&lt;/p&gt;
 
-*Tolerance for IE6 is at last fading.* One piece of very good news: with the new interfaces out there now, people are at last jettisoning that bastion of bugs, the ancient Internet Explorer 6. If you're reading this blog in IE6 (yes, the 0.4% of you who accessed my blog in the last week with IE6, I'm looking at you), please get [yourself](http://apple.com/safari) [a](http://opera.com) [decent](http://getfirefox.com) [browser](http://google.com/chrome). Just about anything else will do.
+&lt;p&gt;&lt;em&gt;Tolerance for IE6 is at last fading.&lt;/em&gt; One piece of very good news: with the new interfaces out there now, people are at last jettisoning that bastion of bugs, the ancient Internet Explorer 6. If you’re reading this blog in IE6 (yes, the 0.4% of you who accessed my blog in the last week with IE6, I’m looking at you), please get &lt;a href=&quot;http://apple.com/safari&quot;&gt;yourself&lt;/a&gt; &lt;a href=&quot;http://opera.com&quot;&gt;a&lt;/a&gt; &lt;a href=&quot;http://getfirefox.com&quot;&gt;decent&lt;/a&gt; &lt;a href=&quot;http://google.com/chrome&quot;&gt;browser&lt;/a&gt;. Just about anything else will do.&lt;/p&gt;
 
-What do our customers consider value? Rich, tactile interfaces and a great user experience. Anything less is the past now. Are we web developers keeping up?
+&lt;p&gt;What do our customers consider value? Rich, tactile interfaces and a great user experience. Anything less is the past now. Are we web developers keeping up?&lt;/p&gt;
 
 </content></entry></feed>

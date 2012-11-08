@@ -13,47 +13,57 @@ layout: nil
     <name>Chris Parsons</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>Should we store state in our steps?</title><category term='cucumber'/><category term='bdd'/><category term='ruby'/><category term='state'/><link href='http://chrismdp.com/2012/11/storing-state-in-your-steps'/><updated>2012-11-07T23:50:39+00:00</updated><id>http://chrismdp.com/2012/11/storing-state-in-your-steps</id><content type='html'>It's quite common to store state inside our cucumber steps in member variables, like so:
+<entry><title>Should we store state in our steps?</title><category term='cucumber'/><category term='bdd'/><category term='ruby'/><category term='state'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2012/11/storing-state-in-your-steps'/><updated>2012-11-07T23:50:39+00:00</updated><id>http://chrismdp.com/2012/11/storing-state-in-your-steps</id><content type='html'>&lt;p&gt;It’s quite common to store state inside our cucumber steps in member variables, like so:&lt;/p&gt;
 
-{% highlight ruby %}
+&lt;p&gt;{% highlight ruby %}&lt;/p&gt;
 
-    Given /^a person called &quot;(.\*)&quot;$/ do |person\_name|
-      @person = Person.create!(person\_name)
-    end
+&lt;pre&gt;&lt;code&gt;Given /^a person called &quot;(.*)&quot;$/ do |person_name|
+  @person = Person.create!(person_name)
+end
 
-    When /^they order a waffle$/ do
-      @person.order!(:waffle)
-    end
+When /^they order a waffle$/ do
+  @person.order!(:waffle)
+end
+&lt;/code&gt;&lt;/pre&gt;
 
-{% endhighlight %}
+&lt;p&gt;{% endhighlight %}&lt;/p&gt;
 
-What are the consequences of making this design choice?
+&lt;p&gt;What are the consequences of making this design choice?&lt;/p&gt;
 
-## It leads to more readable steps
+&lt;h2 id=&quot;it-leads-to-more-readable-steps&quot;&gt;It leads to more readable steps&lt;/h2&gt;
 
-Shorter, more readable steps are always helpful, as long as sensible names are used. This allows people to get up to speed more quickly to the project. In addition, more readable code is more likely to be modified confidently by others, rather than feared, ignored and ultimately deleted.
+&lt;p&gt;Shorter, more readable steps are always helpful, as long as sensible names are used. This allows people to get up to speed more quickly to the project. In addition, more readable code is more likely to be modified confidently by others, rather than feared, ignored and ultimately deleted.&lt;/p&gt;
 
-## We lose referential transparency for our steps
+&lt;h2 id=&quot;we-lose-referential-transparency-for-our-steps&quot;&gt;We lose referential transparency for our steps&lt;/h2&gt;
 
-[Referential transparency](http://en.wikipedia.org/wiki/Referential_transparency_%28computer_science%29) is the property of a piece of code that describes whether it only changes its behaviour when its arguments change. It's important because if a piece of code can react in lots of different ways depending on how the program state is set up, it becomes very hard to tell if the code is correct or not.
+&lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Referential_transparency_%28computer_science%29&quot;&gt;Referential transparency&lt;/a&gt; is the property of a piece of code that describes whether it only changes its behaviour when its arguments change. It’s important because if a piece of code can react in lots of different ways depending on how the program state is set up, it becomes very hard to tell if the code is correct or not.&lt;/p&gt;
 
-Therefore, if we're tracking state inside our steps, the other steps which preceed our step are more important. In the example above, the `@person` variable has to be set to what we expect. This decreases our ability to reuse these steps again in other files.
+&lt;p&gt;Therefore, if we’re tracking state inside our steps, the other steps which preceed our step are more important. In the example above, the &lt;code&gt;@person&lt;/code&gt; variable has to be set to what we expect. This decreases our ability to reuse these steps again in other files.&lt;/p&gt;
 
-## Is it worth it?
+&lt;h2 id=&quot;is-it-worth-it&quot;&gt;Is it worth it?&lt;/h2&gt;
 
-I try to work towards referential transparency when I can: I'm planning on posting more about the dangers of overreliance on state in a future blog post series. However, I think this is less important in this context, for the following reasons:
+&lt;p&gt;I try to work towards referential transparency when I can: I’m planning on posting more about the dangers of overreliance on state in a future blog post series. However, I think this is less important in this context, for the following reasons:&lt;/p&gt;
 
-* *We're relying on state anyway.* Normally our `Given` steps are setting up some state that we rely on in our later steps. Whether it is stored in member variables is immaterial - referential transparency at a step level normally doesn't exist practically.
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;We’re relying on state anyway.&lt;/em&gt; Normally our &lt;code&gt;Given&lt;/code&gt; steps are setting up some state that we rely on in our later steps. Whether it is stored in member variables is immaterial - referential transparency at a step level normally doesn’t exist practically.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;I’m not a big fan of step reuse.&lt;/em&gt; I prefer lots of very descriptive steps related directly to one feature, only a little reuse between steps, and short step definitions that in turn call other methods in module code. Therefore I generally treat a series of steps as one ‘unit’, to be treated as a whole, which means I can normally rely on what comes before and after a particular step.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-* *I'm not a big fan of step reuse.* I prefer lots of very descriptive steps related directly to one feature, only a little reuse between steps, and short step definitions that in turn call other methods in module code. Therefore I generally treat a series of steps as one 'unit', to be treated as a whole, which means I can normally rely on what comes before and after a particular step.
+&lt;p&gt;In the end, as with most things in programming, it comes down to a trade off. Is it worth trading tighter dependencies between our steps to get a more little readability and useability? I think that in many cases it is.&lt;/p&gt;
 
-In the end, as with most things in programming, it comes down to a trade off. Is it worth trading tighter dependencies between our steps to get a more little readability and useability? I think that in many cases it is.
+&lt;h2 id=&quot;use-member-variables-with-care&quot;&gt;Use member variables with care&lt;/h2&gt;
 
-## Use member variables with care
+&lt;p&gt;If we decide to use member variables, I suggest we use them with care. Let’s make sure we use names that are &lt;a href=&quot;/2012/09/the-power-of-good-naming&quot;&gt;as meaningful as possible&lt;/a&gt; for all our instance variables in our steps.&lt;/p&gt;
 
-If we decide to use member variables, I suggest we use them with care. Let's make sure we use names that are [as meaningful as possible](/2012/09/the-power-of-good-naming) for all our instance variables in our steps.
+&lt;p&gt;Commonality is important too: in a large project I recently worked on, we had only used about three different instance variable names throughout several hundred steps, which referred to key domain objects: e.g. &lt;code&gt;@person&lt;/code&gt;, &lt;code&gt;@project&lt;/code&gt;, &lt;code&gt;@customer&lt;/code&gt;.&lt;/p&gt;
 
-Commonality is important too: in a large project I recently worked on, we had only used about three different instance variable names throughout several hundred steps, which referred to key domain objects: e.g. `@person`, `@project`, `@customer`.
-
-If we use too many names, then we're tightening up depedencies between specific steps, and we're making them harder to read.
+&lt;p&gt;If we use too many names, then we’re tightening up depedencies between specific steps, and we’re making them harder to read.&lt;/p&gt;
 </content></entry></feed>

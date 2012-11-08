@@ -13,18 +13,26 @@ layout: nil
     <name>Chris Parsons</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>Spring Richclient ~ That's a wrap</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/><link href='http://chrismdp.com/2006/04/spring-rc-thats-a-wrap'/><updated>2006-04-11T16:25:00+01:00</updated><id>http://chrismdp.com/2006/04/spring-rc-thats-a-wrap</id><content type='html'>&lt;div class='notice'&gt;&lt;h1&gt;By the way...&lt;/h1&gt;&lt;p&gt;This content is now pretty old: check &lt;a href='/'&gt;the homepage&lt;/a&gt; for the latest.&lt;/p&gt;&lt;/div&gt;
-          
+<entry><title>Spring Richclient ~ That's a wrap</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2006/04/spring-rc-thats-a-wrap'/><updated>2006-04-11T16:25:00+01:00</updated><id>http://chrismdp.com/2006/04/spring-rc-thats-a-wrap</id><content type='html'>&lt;div class=&quot;notice&quot;&gt;&lt;h1&gt;By the way...&lt;/h1&gt;&lt;p&gt;This content is now pretty old: check &lt;a href=&quot;/&quot;&gt;the homepage&lt;/a&gt; for the latest.&lt;/p&gt;&lt;/div&gt;
+
 &lt;p&gt;My project is shrink-wrapped in virtual plastic and the client is happy, so that just about wraps up my look at Spring Rich Client. &lt;/p&gt;
 &lt;p&gt;After writing a full app from conception to completion, I thought that it was a useful and powerful framework deserving of attention. There are plenty of features you get thrown in for free, such as decent localisation support and excellent form binding capabilities. A couple of closing thoughts follow...&lt;/p&gt;
 &lt;p&gt;The framework needs more documentation. Once you master the basics you're ok, but I get the nagging feeling I missed whole sets of features simply because I didn't know they were there.&lt;/p&gt;
 &lt;p&gt;A maintained stable release would be a significant step forward. Once the project was easier to download and try out I think many more people would at least evaluate it. The more people using it, the more developers that might come forward, which has to be a good thing for the project.&lt;/p&gt;
 &lt;p&gt;I hope you enjoyed our little jaunt. Best of luck on your own Spring Rich Client journey.&lt;/p&gt;
 &lt;p&gt;&lt;b&gt;Update:&lt;/b&gt; It looks like Spring: Rich Client have released 0.1.0 on sourceforge; the first stable revision! Should have checked before I wrote this post :) Congratulations to the Rich Client team - hopefully the project will move forward in leaps and bounds now.&lt;/p&gt;
-</content></entry><entry><title>Spring Richclient ~ A Journey</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/><link href='http://chrismdp.com/2006/04/spring-richclient'/><updated>2006-04-01T13:00:00+01:00</updated><id>http://chrismdp.com/2006/04/spring-richclient</id><content type='html'>&lt;div class='notice'&gt;&lt;h1&gt;By the way...&lt;/h1&gt;&lt;p&gt;This content is now pretty old: check &lt;a href='/'&gt;the homepage&lt;/a&gt; for the latest.&lt;/p&gt;&lt;/div&gt;
-          
+</content></entry><entry><title>Spring Richclient ~ A Journey</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2006/04/spring-richclient'/><updated>2006-04-01T13:00:00+01:00</updated><id>http://chrismdp.com/2006/04/spring-richclient</id><content type='html'>&lt;div class=&quot;notice&quot;&gt;&lt;h1&gt;By the way...&lt;/h1&gt;&lt;p&gt;This content is now pretty old: check &lt;a href=&quot;/&quot;&gt;the homepage&lt;/a&gt; for the latest.&lt;/p&gt;&lt;/div&gt;
+
 &lt;p&gt;This series of articles documented my journey through the depths of Spring Rich Client in an attempt to learn how it all works.&lt;/p&gt;
-    
+
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;/2006/01/spring-rc-introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;/2006/01/spring-rc-session-one&quot;&gt;Session One: Making Petclinic work&lt;/a&gt;&lt;/li&gt;
@@ -37,8 +45,12 @@ layout: nil
 &lt;li&gt;&lt;a href=&quot;/2006/03/spring-rc-session-eight&quot;&gt;Session Eight: Such a Bind&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;/2006/04/spring-rc-thats-a-wrap&quot;&gt;That's a wrap: Closing Thoughts&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content></entry><entry><title>Spring Richclient ~ Session Eight ~ Such a bind</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/><link href='http://chrismdp.com/2006/03/spring-rc-session-eight'/><updated>2006-03-09T09:46:00+00:00</updated><id>http://chrismdp.com/2006/03/spring-rc-session-eight</id><content type='html'>&lt;div class='notice'&gt;&lt;h1&gt;By the way...&lt;/h1&gt;&lt;p&gt;This content is now pretty old: check &lt;a href='/'&gt;the homepage&lt;/a&gt; for the latest.&lt;/p&gt;&lt;/div&gt;
-          
+</content></entry><entry><title>Spring Richclient ~ Session Eight ~ Such a bind</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2006/03/spring-rc-session-eight'/><updated>2006-03-09T09:46:00+00:00</updated><id>http://chrismdp.com/2006/03/spring-rc-session-eight</id><content type='html'>&lt;div class=&quot;notice&quot;&gt;&lt;h1&gt;By the way...&lt;/h1&gt;&lt;p&gt;This content is now pretty old: check &lt;a href=&quot;/&quot;&gt;the homepage&lt;/a&gt; for the latest.&lt;/p&gt;&lt;/div&gt;
+
 &lt;p&gt;Let's look at the binding framework today. I've got an options dialog to write, and it looks like the binding framework could be just the ticket...&lt;/p&gt;
 &lt;p&gt;For the uninitiated, when we talk about &quot;binding&quot; we mean linking values in a text field on a form to values in our Java class. Essentially we want to turn:&lt;/p&gt;
 &lt;p&gt;{% highlight java %}
@@ -48,12 +60,12 @@ layout: nil
   }
 {% endhighlight %}&lt;/p&gt;
 &lt;p&gt;into this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/files/rcp-8-0.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/files/rcp-8-0.png&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;And when the user hits &quot;Save&quot;, we want the values in our java object to change.&lt;/p&gt;
 &lt;p&gt;This is a standard well-defined problem for which there exists a number of solutions. So what does Spring Rich Client give us to aid us in our quest? Let's have a look.&lt;/p&gt;
 &lt;h2&gt;How do we make a form?&lt;/h2&gt;
 &lt;p&gt;The first example that comes to mind of a view with fields on it is the &quot;owner properties view&quot; in the petclinic sample. This is shown when we right click an owner:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/files/rcp-8-1.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/files/rcp-8-1.png&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Let's have a look at the code which created this page, from OwnerManagerView.java:&lt;/p&gt;
 &lt;p&gt;{% highlight java %}
   public void execute() {
@@ -103,16 +115,16 @@ layout: nil
 &lt;h2&gt;Having a go at an options dialog&lt;/h2&gt;
 &lt;p&gt;Ok, first things first - create an options command in commands-context.xml and add it to the edit menu. I was going for the tools menu, but I don't need one for this app, so I'll just call the menu option 'Preferences' and be all 'mac-like' :)&lt;/p&gt;
 &lt;p&gt;{% highlight xml %}
-&lt;bean id=&quot;optionsCommand&quot; class=&quot;uk.co.myco.myproj.command.OptionsCommand&quot;&gt;&lt;/p&gt;
-&lt;property name=&quot;optionsDao&quot;&gt;&lt;ref bean=&quot;myDao&quot;/&gt;&lt;/property&gt;
+&lt;bean id=&quot;optionsCommand&quot; class=&quot;uk.co.myco.myproj.command.OptionsCommand&quot;&gt;
+&lt;property name=&quot;optionsDao&quot;&gt;&lt;ref bean=&quot;myDao&quot; /&gt;&lt;/property&gt;
 &lt;/bean&gt;
 ...
-&lt;bean id=&quot;editMenu&quot; class=&quot;org.springframework.richclient.command.CommandGroupFactoryBean&quot;&gt;&lt;/p&gt;
+&lt;bean id=&quot;editMenu&quot; class=&quot;org.springframework.richclient.command.CommandGroupFactoryBean&quot;&gt;
 &lt;property name=&quot;members&quot;&gt;
 &lt;list&gt;
       &lt;value&gt;selectAllCommand&lt;/value&gt;
       &lt;value&gt;separator&lt;/value&gt;
-      &lt;ref bean=&quot;optionsCommand&quot;/&gt;
+      &lt;ref bean=&quot;optionsCommand&quot; /&gt;
     &lt;/list&gt;
   &lt;/property&gt;
 &lt;/bean&gt;
@@ -181,12 +193,16 @@ user.label=&amp;amp;Username
 {% endhighlight %}&lt;/p&gt;
 &lt;p&gt;(Password already seems to have an internal Spring Rich Client label set up, so I didn't bother adding it)&lt;/p&gt;
 &lt;p&gt;And... we're done. We're done? Surely not!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/files/rcp-8-2.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/files/rcp-8-2.png&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;No, we really are done. That wasn't at all hard, was it? When I first implemented this, after I got it compiling, it actually worked first time, too, which shows how little code I needed to write to make it work; if there was any more than a tiny amount of code to write, I would have made a mistake :)&lt;/p&gt;
 &lt;p&gt;Regular Swing types are probably thinking: &quot;That's &lt;i&gt;it&lt;/i&gt;? There must be some catch!&quot; No, that really is all the coding you have to do to get a bound form up and running in Spring Rich Client; and there's not a GridBagLayout in sight. This framework is rather good, isn't it? :)&lt;/p&gt;
 &lt;p&gt;Next time, we'll probably look the validation framework to ensure the user actually types in valid values...&lt;/p&gt;
-</content></entry><entry><title>Spring Richclient ~ Session Seven ~ Beating the Command Framework into Submission</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/><link href='http://chrismdp.com/2006/03/spring-rc-session-seven'/><updated>2006-03-02T17:12:00+00:00</updated><id>http://chrismdp.com/2006/03/spring-rc-session-seven</id><content type='html'>&lt;div class='notice'&gt;&lt;h1&gt;By the way...&lt;/h1&gt;&lt;p&gt;This content is now pretty old: check &lt;a href='/'&gt;the homepage&lt;/a&gt; for the latest.&lt;/p&gt;&lt;/div&gt;
-          
+</content></entry><entry><title>Spring Richclient ~ Session Seven ~ Beating the Command Framework into Submission</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2006/03/spring-rc-session-seven'/><updated>2006-03-02T17:12:00+00:00</updated><id>http://chrismdp.com/2006/03/spring-rc-session-seven</id><content type='html'>&lt;div class=&quot;notice&quot;&gt;&lt;h1&gt;By the way...&lt;/h1&gt;&lt;p&gt;This content is now pretty old: check &lt;a href=&quot;/&quot;&gt;the homepage&lt;/a&gt; for the latest.&lt;/p&gt;&lt;/div&gt;
+
 &lt;p&gt;There's been a bit of a gap between the last session and this one; mostly because I've been actually doing coding rather than just writing about coding. It's always worth actually doing a bit of coding once in a while; it's quite fun really, and as I also happen to like eating most days (as does my family), some real work is necessary from time to time...&lt;/p&gt;
 &lt;p&gt;Anyhow, I apologise for the delay. On with our journey.&lt;/p&gt;
 &lt;p&gt;We left off last time looking at the ownerManagerView, and seeing how that was put together. I promised at the end or that session to look at the command framework next, and try and work it out. So here goes.&lt;/p&gt;
@@ -195,20 +211,18 @@ user.label=&amp;amp;Username
 &lt;h3&gt;How does &quot;new owner&quot; work?&lt;/h3&gt;
 &lt;p&gt;Right, time to find the new owner command. It turns out that it's defined in commands-context.xml. This useful little file maps various different command locations (menus, toolbars, that sort of thing) to actual commands that do stuff. Let's look for the new owner command - it's in there:&lt;/p&gt;
 &lt;p&gt;{% highlight xml %}
-  &lt;bean id=&quot;newOwnerCommand&quot;
-    class=&quot;org.springframework.richclient.command.TargetableActionCommand&quot;&gt;&lt;/p&gt;
+  &lt;bean id=&quot;newOwnerCommand&quot; class=&quot;org.springframework.richclient.command.TargetableActionCommand&quot;&gt;
 &lt;property name=&quot;commandExecutor&quot;&gt;
-      &lt;ref bean=&quot;newOwnerWizard&quot;/&gt;
+      &lt;ref bean=&quot;newOwnerWizard&quot; /&gt;
     &lt;/property&gt;
   &lt;/bean&gt;
 {% endhighlight %}&lt;/p&gt;
 &lt;p&gt;It's referenced by the &quot;new menu&quot;, which is turn is referenced from the toolbar and the file menu. Neat.&lt;/p&gt;
 &lt;p&gt;So what does the command actually do? It runs the executor &quot;newOwnerWizard&quot;. This bean is defined rather simply in the richclient-application-context.xml file:&lt;/p&gt;
 &lt;p&gt;{% highlight xml %}
-  &lt;bean id=&quot;newOwnerWizard&quot;
-	class=&quot;org.springframework.richclient.samples.petclinic.ui.NewOwnerWizard&quot;&gt;&lt;/p&gt;
+  &lt;bean id=&quot;newOwnerWizard&quot; class=&quot;org.springframework.richclient.samples.petclinic.ui.NewOwnerWizard&quot;&gt;
 &lt;property name=&quot;clinic&quot;&gt;
-      &lt;ref bean=&quot;clinic&quot;/&gt;
+      &lt;ref bean=&quot;clinic&quot; /&gt;
     &lt;/property&gt;
   &lt;/bean&gt;
 {% endhighlight %}&lt;/p&gt;
@@ -228,7 +242,7 @@ user.label=&amp;amp;Username
 public void onApplicationEvent(ApplicationEvent e) {
   if (e instanceof LifecycleApplicationEvent) {
     LifecycleApplicationEvent le = (LifecycleApplicationEvent)e;
-    if (le.getEventType() == LifecycleApplicationEvent.CREATED &amp;amp;&amp; le.objectIs(Owner.class)) {
+    if (le.getEventType() == LifecycleApplicationEvent.CREATED &amp;amp;&amp;amp; le.objectIs(Owner.class)) {
       if (ownersTree != null) {
         DefaultMutableTreeNode root = (DefaultMutableTreeNode)ownersTreeModel.getRoot();
         root.add(new DefaultMutableTreeNode(le.getObject()));
@@ -245,8 +259,7 @@ public void onApplicationEvent(ApplicationEvent e) {
 &lt;h3&gt;Approach One - fire an event to the application context&lt;/h3&gt;
 &lt;p&gt;Ok, so I thought I'd set up my command like this:&lt;/p&gt;
 &lt;p&gt;{% highlight xml %}
-  &lt;bean id=&quot;openFolderCommand&quot;
-        class=&quot;uk.co.mintcontent.uploader.command.OpenFolderCommand&quot;/&gt;
+  &lt;bean id=&quot;openFolderCommand&quot; class=&quot;uk.co.mintcontent.uploader.command.OpenFolderCommand&quot; /&gt;
 {% endhighlight %}&lt;/p&gt;
 &lt;p&gt;This is a tiny bit of java classage that handles the file dialog (OpenFolderCommand.java):&lt;/p&gt;
 &lt;p&gt;{% highlight java %}
@@ -282,21 +295,19 @@ public void onApplicationEvent(ApplicationEvent e)
 &lt;p&gt;Let's do what petclinic appears to do and use a TargetableActionCommand. &lt;a href=&quot;http://www.ditchnet.org/wp/2005/06/05/remedial-spring-rcp-episode-2-targetableactioncommands-and-the-edt/&quot;&gt;This blog post&lt;/a&gt; helped me out setting one of these up.&lt;/p&gt;
 &lt;p&gt;So here's the latest definition of the command:&lt;/p&gt;
 &lt;p&gt;{% highlight xml %}
-  &lt;bean id=&quot;openFolderCommand&quot;
-	class=&quot;org.springframework.richclient.command.TargetableActionCommand&quot;&gt;&lt;/p&gt;
+  &lt;bean id=&quot;openFolderCommand&quot; class=&quot;org.springframework.richclient.command.TargetableActionCommand&quot;&gt;
 &lt;property name=&quot;commandExecutor&quot;&gt;
-      &lt;ref bean=&quot;fileListView&quot;/&gt;
+      &lt;ref bean=&quot;fileListView&quot; /&gt;
     &lt;/property&gt;
   &lt;/bean&gt;
 {% endhighlight %}&lt;/p&gt;
 &lt;p&gt;This unfortunately didn't work. I can't wire into the fileListView as it's wrapped up inside a view descriptor object:&lt;/p&gt;
 &lt;p&gt;{% highlight xml %}
-  &lt;bean id=&quot;fileListView&quot;
-        class=&quot;org.springframework.richclient.application.support.DefaultViewDescriptor&quot;&gt;&lt;/p&gt;
+  &lt;bean id=&quot;fileListView&quot; class=&quot;org.springframework.richclient.application.support.DefaultViewDescriptor&quot;&gt;
 &lt;property name=&quot;viewClass&quot;&gt;
     &lt;value&gt;uk.co.mintcontent.uploader.ui.FileListView&lt;/value&gt;
   &lt;/property&gt;
-{% endhighlight %}&lt;/p&gt;
+{% endhighlight %}
 &lt;p&gt;I don't want to write some sort of proxy object to handle this in the main application context either - that seems overkill.&lt;/p&gt;
 &lt;h3&gt;Approach Four - Cheat (sort of)&lt;/h3&gt;
 &lt;p&gt;Aha - what about this?&lt;/p&gt;
@@ -315,19 +326,23 @@ public void onApplicationEvent(ApplicationEvent e)
 &lt;/ol&gt;
 &lt;p&gt;I'm sure there's a better and more Richclient-ish way to do much of this. If you know of one, please let me know!&lt;/p&gt;
 &lt;p&gt;Next session, I'll probably be looking at either the Master/Detail stuff, or perhaps getting my app onto Java Web Start successfully.&lt;/p&gt;
-</content></entry><entry><title>Spring Richclient ~ Session Six ~ The View</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/><link href='http://chrismdp.com/2006/02/spring-rc-session-six'/><updated>2006-02-10T10:07:00+00:00</updated><id>http://chrismdp.com/2006/02/spring-rc-session-six</id><content type='html'>&lt;div class='notice'&gt;&lt;h1&gt;By the way...&lt;/h1&gt;&lt;p&gt;This content is now pretty old: check &lt;a href='/'&gt;the homepage&lt;/a&gt; for the latest.&lt;/p&gt;&lt;/div&gt;
+&lt;/bean&gt;&lt;/p&gt;
+</content></entry><entry><title>Spring Richclient ~ Session Six ~ The View</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2006/02/spring-rc-session-six'/><updated>2006-02-10T10:07:00+00:00</updated><id>http://chrismdp.com/2006/02/spring-rc-session-six</id><content type='html'>&lt;div class=&quot;notice&quot;&gt;&lt;h1&gt;By the way...&lt;/h1&gt;&lt;p&gt;This content is now pretty old: check &lt;a href=&quot;/&quot;&gt;the homepage&lt;/a&gt; for the latest.&lt;/p&gt;&lt;/div&gt;
 &lt;p&gt;In this session we will look at the ownerManagerView and its associated descriptor. This is the bit which displays the tree view on the &quot;Owner Manager&quot; screen of the Petclinic sample application. Looks like the author got the bean name right :) (What's the hardest problem in computer science? It's naming a class well, so that the next coder can understand what the class does. Believe it).&lt;/p&gt;
 &lt;p&gt;Ok, let's have a look at the view descriptor and see how one of those is defined.&lt;/p&gt;
 &lt;p&gt;{% highlight xml %}
-&lt;bean id=&quot;ownerManagerView&quot;
-	class=&quot;org.springframework.richclient.application.support.DefaultViewDescriptor&quot;&gt;&lt;/p&gt;
+&lt;bean id=&quot;ownerManagerView&quot; class=&quot;org.springframework.richclient.application.support.DefaultViewDescriptor&quot;&gt;
 &lt;property name=&quot;viewClass&quot;&gt;
 		&lt;value&gt;org.springframework.richclient.samples.petclinic.ui.OwnerManagerView&lt;/value&gt;
 	&lt;/property&gt;
 &lt;property name=&quot;viewProperties&quot;&gt;
 		&lt;map&gt;
 			&lt;entry key=&quot;clinic&quot;&gt;
-				&lt;ref bean=&quot;clinic&quot;/&gt;
+				&lt;ref bean=&quot;clinic&quot; /&gt;
 			&lt;/entry&gt;
 		&lt;/map&gt;
 	&lt;/property&gt;
@@ -336,7 +351,7 @@ public void onApplicationEvent(ApplicationEvent e)
 &lt;p&gt;This is fairly straightforward - a descriptor has a class name to instantiate, and what looks like a list of properties to apply to that class on creation. &lt;/p&gt;
 &lt;p&gt;The view is created by the descriptor, using the createView() method. This, amongst other things, adds the view to the 'ApplicationEventMulticaster' (defined in richclient-application-context.xml) if the view of type ApplicationListener. I guess this is so the view can get messages from the outside world if necessary. So far, so good.&lt;/p&gt;
 &lt;p&gt;So what does this view look like: The main window looks like this, with the ownerManagerView defined in the centre:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/files/rcp-6-1.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/files/rcp-6-1.jpg&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Let's see how we define each segment of this view.&lt;/p&gt;
 &lt;h3&gt;View Caption&lt;/h3&gt;
 &lt;p&gt;AbstractView contains a bunch of accessor methods (that's a fancy word for a 'get' method, in case you weren't aware) to define things like caption, description, display name etc. These are mostly got from the descriptor class. In this case, our descriptor doesn't appear to define them - perhaps it uses defaults. Let's skip a few steps and cheat: We'll search for the caption text and see what we come up with.&lt;/p&gt;
@@ -344,7 +359,7 @@ public void onApplicationEvent(ApplicationEvent e)
 &lt;p&gt;Aha. Our old friend messages.properties. Let's see what happens if we change this.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;messages.properties: ownerManagerView.label=&amp;amp;Chris' Owner Manager&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Sure enough:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/files/rcp-6-2.jpg&quot;&gt; &lt;img src=&quot;/files/rcp-6-3.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/files/rcp-6-2.jpg&quot; /&gt; &lt;img src=&quot;/files/rcp-6-3.jpg&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Looks like to define a caption name, it looks like you define the &quot;&amp;lt;viewName&amp;gt;.label&quot; message. And even better, you can define the name in one place and it's changed across the whole application, including in the menus. Neat.&lt;/p&gt;
 &lt;p&gt;I'm guessing the icon and other text options are defined in the same way.&lt;/p&gt;
 &lt;h3&gt;Laying out the view&lt;/h3&gt;
@@ -367,13 +382,13 @@ protected JComponent createControl() {
 &lt;p&gt;That refers to our plumbed in icon source bean, which we looked at in &lt;a href=&quot;/node/11&quot;&gt;Session Four&lt;/a&gt;. Let's be mischievous and change this icon to the spring logo, and see what happens:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;owner.bullet=spring-logo.gif&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;This is what we get:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/files/rcp-6-4.jpg&quot;&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/files/rcp-6-4.jpg&quot; /&gt; &lt;/p&gt;
 &lt;p&gt;Hmm - that doesn't look like the spring logo... But hang on, what's that on standard output?&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;WARNING: Unable to load image resource at 'class path resource [images/spring-logo.gif]';
 returning the broken image indicator.&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Oops. Looks like I typed the name incorrectly. Let's try:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;owner.bullet=spring-logo.png&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/files/rcp-6-5.jpg&quot;&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/files/rcp-6-5.jpg&quot; /&gt; &lt;/p&gt;
 &lt;p&gt;That's better. It's looks awful, but that's what you get for sticking so large an image on a tree cell. I'm surprised it worked at all, actually :)&lt;/p&gt;
 &lt;h3&gt;Tree Events&lt;/h3&gt;
 &lt;p&gt;How do we handle events generated by this tree? Check out this cool Spring Rich Client utility class, TreeStatusBarUpdater:&lt;/p&gt;
@@ -406,20 +421,23 @@ returning the broken image indicator.&lt;/code&gt;&lt;/p&gt;
 &lt;h3&gt;Summary&lt;/h3&gt;
 &lt;p&gt;This session, we learned how to create and lay out views in Spring Rich Client. We looked at the view descriptor and how it uses default labels to display captions and icons. We saw how easy it is to create tree components that feel 'right', and we oohed at the really useful utility classes Spring Rich Client provides to lay out controls and handle events.&lt;/p&gt;
 &lt;p&gt;Next time, let's have a look at all those commands and executors we've seen inside the OwnerManagerView.java, and try to work all that out.&lt;/p&gt;
-          
-</content></entry><entry><title>Spring Richclient ~ Session Five ~ Applications, windows, views</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/><link href='http://chrismdp.com/2006/02/spring-rc-session-five'/><updated>2006-02-03T15:21:00+00:00</updated><id>http://chrismdp.com/2006/02/spring-rc-session-five</id><content type='html'>&lt;div class='notice'&gt;&lt;h1&gt;By the way...&lt;/h1&gt;&lt;p&gt;This content is now pretty old: check &lt;a href='/'&gt;the homepage&lt;/a&gt; for the latest.&lt;/p&gt;&lt;/div&gt;
-          
+
+</content></entry><entry><title>Spring Richclient ~ Session Five ~ Applications, windows, views</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2006/02/spring-rc-session-five'/><updated>2006-02-03T15:21:00+00:00</updated><id>http://chrismdp.com/2006/02/spring-rc-session-five</id><content type='html'>&lt;div class=&quot;notice&quot;&gt;&lt;h1&gt;By the way...&lt;/h1&gt;&lt;p&gt;This content is now pretty old: check &lt;a href=&quot;/&quot;&gt;the homepage&lt;/a&gt; for the latest.&lt;/p&gt;&lt;/div&gt;
+
 &lt;p&gt;Thanks to the recently discovered &lt;a href=&quot;http://opensource2.atlassian.com/confluence/spring/display/RCP/Home&quot;&gt;Spring Rich Client wiki&lt;/a&gt;, I've discoved the basic architecture of a Rich Client application. &lt;/p&gt;
 &lt;p&gt;After reading the &lt;a href=&quot;http://opensource2.atlassian.com/confluence/spring/display/RCP/Introduction#Introduction-PlatformOverview&quot;&gt;platform overview section&lt;/a&gt; on the wiki, I was at a bit of a loss with all the terms, so I thought I'd better draw a diagram. I cranked up OpenOffice Draw and the GIMP, and came up with this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/files/rcp-layout.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/files/rcp-layout.jpg&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Basically, we've got an Application object, which contains one or more windows. Each of these contains a page, which in turn contains one or more views laid out upon it. The page manages the views, passing them lifecycle notifications and arranging them as it sees fit.&lt;/p&gt;
 &lt;p&gt;Ok, that makes more sense now it's in a diagram. Let's have a look at the Petclinic application, and see how that fits into this mould.&lt;/p&gt;
 &lt;p&gt;Taking a look back at our old friend richclient-application-context.xml, we can now understand Application and ApplicationDescriptor much more clearly. The ApplicationDescriptor simply defines properties of the standard Application object that's instantiated.&lt;/p&gt;
 &lt;p&gt;We were correct about the PetclinicLifecycleAdvisor: it backs the Application object and allows us to control coarse-grained application behaviour. There's an example of this sort of control on &lt;a href=&quot;http://opensource2.atlassian.com/confluence/spring/display/RCP/Core+Concepts&quot;&gt;this wiki page&lt;/a&gt; which shows us how to add a confirmation window before closing the application. We've also got other examples in the PetclinicLifecycleAdvisor implementation - the &quot;setupWizard&quot; window is thrown up before the main application window is starting. See &lt;a href=&quot;/node/10&quot;&gt;Session Three&lt;/a&gt; for the code.&lt;/p&gt;
 &lt;p&gt;Ok, so where in Petclinic are the main application windows defined? From running the application, we can clearly see that there's only one of them. Unfortunately looking at richclient-application-context.xml wasn't very helpful. In the end I did a search for ownerManagerView, which I figured must be added to the ApplicationPage somewhere. In my search I noticed that we pass the ownerManagerView into the Lifecycle advisor configuration:&lt;/p&gt;
 &lt;p&gt;{% highlight xml %}
-	&lt;bean id=&quot;petclinicLifecycleAdvisor&quot;
-		class=&quot;org.springframework.richclient.samples.petclinic.PetClinicLifecycleAdvisor&quot;&gt;&lt;/p&gt;
+	&lt;bean id=&quot;petclinicLifecycleAdvisor&quot; class=&quot;org.springframework.richclient.samples.petclinic.PetClinicLifecycleAdvisor&quot;&gt;
 &lt;property name=&quot;windowCommandBarDefinitions&quot;&gt;
 			&lt;value&gt;org/springframework/richclient/samples/petclinic/ui/commands-context.xml&lt;/value&gt;
 		&lt;/property&gt;
@@ -455,8 +473,12 @@ private void launchMyRichClient() {
 &lt;h3&gt;Summary&lt;/h3&gt;
 &lt;p&gt;We've learnt today how the main windows of applications are defined. It appears that creating your first main window is as simple as passing either PageDescriptor or a ViewDescriptor into the standard ApplicationLifecycleAdvisor. If you pass a PageDescriptor, an ApplicationPage will be created according to the descriptor object you pass. If, however, you pass ViewDescriptor, an ApplicationPage will be created with one view, created again according to the descriptor you passed in.&lt;/p&gt;
 &lt;p&gt;Next session, we'll have a look at that &quot;ownerManagerView&quot; ViewDescriptor, take it apart, and work out how to change it.&lt;/p&gt;
-</content></entry><entry><title>Spring Richclient ~ Session One ~ Beans, Shmeans and services</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/><link href='http://chrismdp.com/2006/01/spring-rc-session-four'/><updated>2006-01-28T12:48:00+00:00</updated><id>http://chrismdp.com/2006/01/spring-rc-session-four</id><content type='html'>&lt;div class='notice'&gt;&lt;h1&gt;By the way...&lt;/h1&gt;&lt;p&gt;This content is now pretty old: check &lt;a href='/'&gt;the homepage&lt;/a&gt; for the latest.&lt;/p&gt;&lt;/div&gt;
-          
+</content></entry><entry><title>Spring Richclient ~ Session One ~ Beans, Shmeans and services</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2006/01/spring-rc-session-four'/><updated>2006-01-28T12:48:00+00:00</updated><id>http://chrismdp.com/2006/01/spring-rc-session-four</id><content type='html'>&lt;div class=&quot;notice&quot;&gt;&lt;h1&gt;By the way...&lt;/h1&gt;&lt;p&gt;This content is now pretty old: check &lt;a href=&quot;/&quot;&gt;the homepage&lt;/a&gt; for the latest.&lt;/p&gt;&lt;/div&gt;
+
 &lt;p&gt;This session, let's have a brief look at some of the other in the richclient-application-context.xml file, and see if we can at least work out roughly what they're for. First however, a word about ApplicationServices.&lt;/p&gt;
 &lt;h3&gt;The ApplicationServices singleton&lt;/h3&gt;
 &lt;p&gt;It looks like ApplicationServices is implemented as an old fashioned singleton bean. Have a look at the method below as an example of a service initialisation performed in this class:&lt;/p&gt;
@@ -484,17 +506,16 @@ private void launchMyRichClient() {
 &lt;h3&gt;componentFactory&lt;/h3&gt;
 &lt;p&gt;The componentFactory is of type DefaultComponentFactory, and is one of the Application Services mentioned in the previous section.&lt;/p&gt;
 &lt;p&gt;{% highlight bash %}$ grep -nH -r componentFactory *
-richclient-application-context.xml:53:	&lt;bean id=&quot;componentFactory&quot;
+richclient-application-context.xml:53:	&amp;lt;bean id=&quot;componentFactory&quot;
 {% endhighlight %}&lt;/p&gt;
 &lt;p&gt;Searching for files which access ApplicationServices' getComponentFactory() method turns up a whole bunch of results in the Rich Client source, but not very much in the Petclinic source. Looks like the component factory is used to create components all over the place in the main Rich Client source. I'm guessing that the Petclinic does not require the ability to create many components - and a quick look at some of the code confirms this to be the case. More on this later.&lt;/p&gt;
 &lt;h3&gt;imageSource&lt;/h3&gt;
 &lt;p&gt;Here's the &quot;imageSource&quot; bean definition:&lt;/p&gt;
 &lt;p&gt;{% highlight xml %}
-	&lt;bean id=&quot;imageSource&quot;
-		class=&quot;org.springframework.richclient.image.DefaultImageSource&quot;&gt;
+	&lt;bean id=&quot;imageSource&quot; class=&quot;org.springframework.richclient.image.DefaultImageSource&quot;&gt;
 		&lt;constructor-arg index=&quot;0&quot;&gt;
-			&lt;ref bean=&quot;imageResourcesFactory&quot;/&gt;
-		&lt;/constructor-arg&gt;&lt;/p&gt;
+			&lt;ref bean=&quot;imageResourcesFactory&quot; /&gt;
+		&lt;/constructor-arg&gt;
 &lt;property name=&quot;brokenImageIndicator&quot;&gt;
 			&lt;value&gt;images/alert/error_obj.gif&lt;/value&gt;
 		&lt;/property&gt;
@@ -503,8 +524,7 @@ richclient-application-context.xml:53:	&lt;bean id=&quot;componentFactory&quot;
 &lt;p&gt;This provides a &quot;broken image indicator&quot; path - useful, so we can actually see the dodgy images like on a web page, rather than just having invisible ones). &lt;/p&gt;
 &lt;p&gt;The bean references imageResourcesFactory, which create a Map of strings to resource locations, for the imageSource bean to use, from a couple more properties files.&lt;/p&gt;
 &lt;p&gt;{% highlight xml %}
-	&lt;bean id=&quot;imageResourcesFactory&quot;
-		class=&quot;org.springframework.context.support.ResourceMapFactoryBean&quot;&gt;&lt;/p&gt;
+	&lt;bean id=&quot;imageResourcesFactory&quot; class=&quot;org.springframework.context.support.ResourceMapFactoryBean&quot;&gt;
 &lt;property name=&quot;locations&quot;&gt;
 &lt;list&gt;
 				&lt;value&gt;classpath:org/springframework/richclient/image/images.properties&lt;/value&gt;
@@ -528,8 +548,12 @@ richclient-application-context.xml:53:	&lt;bean id=&quot;componentFactory&quot;
 &lt;p&gt;We've come some way today in understanding the Rich Client architecture, and how the core ApplicationServices code initialises and configures itself. We discussed the ApplicationServices class and it's usefulness/right to exist, without really knowing the answer. Comments welcome.&lt;/p&gt;
 &lt;p&gt;We also went through a few more of the beans in the richclient-application-context.xml and didn't learn all that much, apart from one important thing - we've come to the end of this file's usefulness in teaching us anything new.&lt;/p&gt;
 &lt;p&gt;Next session: windows, views, dialog boxes and perhaps even a field or two.&lt;/p&gt;
-</content></entry><entry><title>Spring Richclient ~ Session Three ~ How did that work then?</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/><link href='http://chrismdp.com/2006/01/spring-rc-session-three'/><updated>2006-01-26T23:09:00+00:00</updated><id>http://chrismdp.com/2006/01/spring-rc-session-three</id><content type='html'>&lt;div class='notice'&gt;&lt;h1&gt;By the way...&lt;/h1&gt;&lt;p&gt;This content is now pretty old: check &lt;a href='/'&gt;the homepage&lt;/a&gt; for the latest.&lt;/p&gt;&lt;/div&gt;
-          
+</content></entry><entry><title>Spring Richclient ~ Session Three ~ How did that work then?</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2006/01/spring-rc-session-three'/><updated>2006-01-26T23:09:00+00:00</updated><id>http://chrismdp.com/2006/01/spring-rc-session-three</id><content type='html'>&lt;div class=&quot;notice&quot;&gt;&lt;h1&gt;By the way...&lt;/h1&gt;&lt;p&gt;This content is now pretty old: check &lt;a href=&quot;/&quot;&gt;the homepage&lt;/a&gt; for the latest.&lt;/p&gt;&lt;/div&gt;
+
 &lt;p&gt;At the end of the last session, we'd managed to get the Petclinic application up and running in its own directory, and located the main configuration file (richclient-application-context.xml). We'd also worked out what a few beans in there actually did, although there were many more still to look at. In the next couple of sessions, I'm going to have a closer look at the Rich Client specific beans in richclient-application-context.xml and work out what they do. &lt;/p&gt;
 &lt;p&gt;This session, let's find out how my &quot;Hello, world!&quot; change actually worked, by following the bean definitions through richclient-application-context.xml. We might even learn something about the Rich Client architecture on the way. Here goes...&lt;/p&gt;
 &lt;h3&gt;The Lifecycle Advisor&lt;/h3&gt;
@@ -554,8 +578,7 @@ PetClinicLifecycleAdvisor.java:33:        if (getApplicationServices().containsB
 &lt;h3&gt;The &quot;setupWizard&quot; bean&lt;/h3&gt;
 &lt;p&gt;Here's the bean configuration from richclient-application-context.xml:&lt;/p&gt;
 &lt;p&gt;{% highlight xml %}
-	&lt;bean id=&quot;setupWizard&quot;
-		class=&quot;org.springframework.richclient.application.setup.SetupWizard&quot;&gt;&lt;/p&gt;
+	&lt;bean id=&quot;setupWizard&quot; class=&quot;org.springframework.richclient.application.setup.SetupWizard&quot;&gt;
 &lt;property name=&quot;licenseTextLocation&quot;&gt;
 			&lt;value&gt;/org/springframework/richclient/samples/petclinic/license.html&lt;/value&gt;
 		&lt;/property&gt;
@@ -583,8 +606,7 @@ PetClinicLifecycleAdvisor.java:33:        if (getApplicationServices().containsB
 &lt;p&gt;This calls getMessage() on the application context. In a standard application context object, such as ours, this method looks for a bean with name &quot;messageSource&quot; and attempts to resolve the message key. Let's have a look at the &quot;messageSource&quot; bean next.&lt;/p&gt;
 &lt;h3&gt;The &quot;messageSource&quot; bean&lt;/h3&gt;
 &lt;p&gt;{% highlight xml %}
-	&lt;bean id=&quot;messageSource&quot;
-		class=&quot;org.springframework.context.support.ResourceBundleMessageSource&quot;&gt;&lt;/p&gt;
+	&lt;bean id=&quot;messageSource&quot; class=&quot;org.springframework.context.support.ResourceBundleMessageSource&quot;&gt;
 &lt;property name=&quot;basenames&quot;&gt;
 &lt;list&gt;
 				&lt;value&gt;org.springframework.richclient.samples.petclinic.ui.messages&lt;/value&gt;
@@ -600,7 +622,7 @@ PetClinicLifecycleAdvisor.java:33:        if (getApplicationServices().containsB
    (so messages_fr.properties if we have a french locale)
 ./src/org/springframework/richclient/samples/petclinic/ui/messages.properties
 ./src/org/springframework/richclient/application/messages_&lt;language&gt;.properties
-{% endhighlight %}&lt;/p&gt;
+{% endhighlight %}
 &lt;p&gt;The last path here refers to a &quot;standard&quot; Rich Client properties files which ships with the Rich Client framework. Looking inside, this defines words for things like &quot;File&quot;, &quot;Edit&quot;, &quot;Paste&quot;, and standard icons used in many applications. The really neat thing is that these are already translated into French, German and Dutch for me, which gives me a whole lot of localisation for free! This framework really is awesome.&lt;/p&gt;
 &lt;p&gt;Oh look, we've traced our message back through the bean hierarchy. That wasn't too bad at all, was it?&lt;/p&gt;
 &lt;h3&gt;Summary&lt;/h3&gt;
@@ -612,8 +634,13 @@ PetClinicLifecycleAdvisor.java:33:        if (getApplicationServices().containsB
 &lt;/ul&gt;
 &lt;p&gt;Much of spring configuration we've looked at today looks like boilerplate xml to me - I don't think I'll need to change much at all. The only thing that looks like it needs changing here are the application specific messages.properties files, so that I can add the messages I want to appear.&lt;/p&gt;
 &lt;p&gt;Next session, we'll have a look at some of the other beans which use &quot;messageSource&quot;.&lt;/p&gt;
-</content></entry><entry><title>Spring Richclient ~ Session Two ~ Hello World</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/><link href='http://chrismdp.com/2006/01/spring-rc-session-two'/><updated>2006-01-24T14:40:00+00:00</updated><id>http://chrismdp.com/2006/01/spring-rc-session-two</id><content type='html'>&lt;div class='notice'&gt;&lt;h1&gt;By the way...&lt;/h1&gt;&lt;p&gt;This content is now pretty old: check &lt;a href='/'&gt;the homepage&lt;/a&gt; for the latest.&lt;/p&gt;&lt;/div&gt;
-          
+&lt;/language&gt;&lt;/language&gt;&lt;/p&gt;
+</content></entry><entry><title>Spring Richclient ~ Session Two ~ Hello World</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2006/01/spring-rc-session-two'/><updated>2006-01-24T14:40:00+00:00</updated><id>http://chrismdp.com/2006/01/spring-rc-session-two</id><content type='html'>&lt;div class=&quot;notice&quot;&gt;&lt;h1&gt;By the way...&lt;/h1&gt;&lt;p&gt;This content is now pretty old: check &lt;a href=&quot;/&quot;&gt;the homepage&lt;/a&gt; for the latest.&lt;/p&gt;&lt;/div&gt;
+
 &lt;p&gt;Ok. Today, it's time to look under the hood.&lt;/p&gt;
 &lt;p&gt;Firstly, I decided to move the petclinic application to its own directory and clean up the paths a bit so that they reflected the usual way I organise java applications. Also, I wanted this to be a standalone application and therefore I needed to remove some of the relative paths in project.properties so that we didn't need the Rich Client source around to compile and run it. Finally, to satisfy my TDD cravings, I added junit test build targets in and created a dummy test to ensure junit was up and running. &lt;/p&gt;
 &lt;p&gt;After fixing a number of little build.xml bugs, I got the project compiling again in its own directory. So far, so good. Right, time to look at how this all works. &lt;/p&gt;
@@ -647,7 +674,7 @@ application splash screen.
 &lt;p&gt;Excellent. That must be what stuck that frog picture on my screen in session one. Let's have a look at the richclient-startup-context.xml file:&lt;/p&gt;
 &lt;p&gt;{% highlight xml %}
   &lt;beans&gt;
-    &lt;bean id=&quot;splashScreen&quot; class=&quot;org.springframework.richclient.application.SplashScreen&quot; singleton=&quot;false&quot;&gt;&lt;/p&gt;
+    &lt;bean id=&quot;splashScreen&quot; class=&quot;org.springframework.richclient.application.SplashScreen&quot; singleton=&quot;false&quot;&gt;
 &lt;property name=&quot;imageResourcePath&quot;&gt;
         &lt;value&gt;/images/splash-screen.jpg&lt;/value&gt;
       &lt;/property&gt;
@@ -666,17 +693,15 @@ application splash screen.
 &lt;p&gt;That leaves us with richclient-application-context.xml, which is all new. I have to say at this point I baulked slightly at the sheer number of new beans to learn. But hey, somebody wrote it, so someone must understand it, right? Therefore it must be possible to figure it out... &lt;/p&gt;
 &lt;p&gt;With that in mind, let's start with the first three beans:&lt;/p&gt;
 &lt;p&gt;{% highlight xml %}
-  &lt;bean id=&quot;application&quot;
-    class=&quot;org.springframework.richclient.application.Application&quot;&gt;
+  &lt;bean id=&quot;application&quot; class=&quot;org.springframework.richclient.application.Application&quot;&gt;
     &lt;constructor-arg index=&quot;0&quot;&gt;
-      &lt;ref bean=&quot;applicationDescriptor&quot;/&gt;
+      &lt;ref bean=&quot;applicationDescriptor&quot; /&gt;
     &lt;/constructor-arg&gt;
     &lt;constructor-arg index=&quot;1&quot;&gt;
-      &lt;ref bean=&quot;petclinicLifecycleAdvisor&quot;/&gt;
+      &lt;ref bean=&quot;petclinicLifecycleAdvisor&quot; /&gt;
     &lt;/constructor-arg&gt;
   &lt;/bean&gt;&lt;/p&gt;
-&lt;p&gt;  &lt;bean id=&quot;applicationDescriptor&quot;
-    class=&quot;org.springframework.richclient.application.support.DefaultApplicationDescriptor&quot;&gt;&lt;/p&gt;
+&lt;p&gt;  &lt;bean id=&quot;applicationDescriptor&quot; class=&quot;org.springframework.richclient.application.support.DefaultApplicationDescriptor&quot;&gt;
 &lt;property name=&quot;version&quot;&gt;
       &lt;value&gt;1.0&lt;/value&gt;
     &lt;/property&gt;
@@ -684,8 +709,7 @@ application splash screen.
       &lt;value&gt;20041025001&lt;/value&gt;
     &lt;/property&gt;
   &lt;/bean&gt;&lt;/p&gt;
-&lt;p&gt;  &lt;bean id=&quot;petclinicLifecycleAdvisor&quot;
-    class=&quot;org.springframework.richclient.samples.petclinic.PetClinicLifecycleAdvisor&quot;&gt;&lt;/p&gt;
+&lt;p&gt;  &lt;bean id=&quot;petclinicLifecycleAdvisor&quot; class=&quot;org.springframework.richclient.samples.petclinic.PetClinicLifecycleAdvisor&quot;&gt;
 &lt;property name=&quot;windowCommandBarDefinitions&quot;&gt;
       &lt;value&gt;org/springframework/richclient/samples/petclinic/ui/commands-context.xml&lt;/value&gt;
     &lt;/property&gt;
@@ -700,11 +724,10 @@ application splash screen.
 &lt;h3&gt;Look and Feel&lt;/h3&gt;
 &lt;p&gt;At this point I notice that the JGoodies support I raved about earlier is neatly encapsulated in one bean:&lt;/p&gt;
 &lt;p&gt;{% highlight xml %}
-  &lt;bean id=&quot;lookAndFeelConfigurer&quot;
-    class=&quot;org.springframework.richclient.application.config.JGoodiesLooksConfigurer&quot;&gt;
+  &lt;bean id=&quot;lookAndFeelConfigurer&quot; class=&quot;org.springframework.richclient.application.config.JGoodiesLooksConfigurer&quot;&gt;
 &lt;property name=&quot;popupDropShadowEnabled&quot; value=&quot;false&quot; /&gt;
 &lt;property name=&quot;theme&quot;&gt;
-      &lt;bean class=&quot;com.jgoodies.looks.plastic.theme.ExperienceBlue&quot;/&gt;
+      &lt;bean class=&quot;com.jgoodies.looks.plastic.theme.ExperienceBlue&quot; /&gt;
     &lt;/property&gt;
   &lt;/bean&gt;
 {% endhighlight %}&lt;/p&gt;
@@ -714,8 +737,7 @@ application splash screen.
 &lt;h3&gt;Changing the Setup Wizard&lt;/h3&gt;
 &lt;p&gt;Most of the rest of the beans I think I'll have to leave for this session, save the last one - the &quot;setupWizard&quot;:&lt;/p&gt;
 &lt;p&gt;{% highlight xml %}
-  &lt;bean id=&quot;setupWizard&quot;
-    class=&quot;org.springframework.richclient.application.setup.SetupWizard&quot;&gt;
+  &lt;bean id=&quot;setupWizard&quot; class=&quot;org.springframework.richclient.application.setup.SetupWizard&quot;&gt;
 &lt;property name=&quot;licenseTextLocation&quot;&gt;
       &lt;value&gt;/org/springframework/richclient/samples/petclinic/license.html&lt;/value&gt;
     &lt;/property&gt;
@@ -732,7 +754,7 @@ that I can trivially change a text file and by making text appear
 differently, I can impress my peers without really knowing what I'm
 doing.&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;A quick recompile, and here's the result:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/files/spring-richclient-2-1.jpg&quot;/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/files/spring-richclient-2-1.jpg&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;It's not that impressive, I grant you. But at least it shows that if a Rich Client application is written correctly, you can leverage Spring's built in message support. This is vital for things like localisation.&lt;/p&gt;
 &lt;h3&gt;Summary&lt;/h3&gt;
 &lt;p&gt;A quick summary of what we've learnt in this session:&lt;/p&gt;
@@ -744,8 +766,12 @@ doing.&lt;/code&gt;&lt;/p&gt;
 &lt;li&gt;The setup wizard shipped with the Rich Client framework uses standard spring messaging by default, allowing us to trivially customise the text.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Next session, we'll look at some those of the other beans in richclient-application-context.xml and work out what on earth they're for. Stay tuned.&lt;/p&gt;
-</content></entry><entry><title>Spring Richclient ~ Session One ~ Making Petclinic work</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/><link href='http://chrismdp.com/2006/01/spring-rc-session-one'/><updated>2006-01-23T14:31:00+00:00</updated><id>http://chrismdp.com/2006/01/spring-rc-session-one</id><content type='html'>&lt;div class='notice'&gt;&lt;h1&gt;By the way...&lt;/h1&gt;&lt;p&gt;This content is now pretty old: check &lt;a href='/'&gt;the homepage&lt;/a&gt; for the latest.&lt;/p&gt;&lt;/div&gt;
-          
+</content></entry><entry><title>Spring Richclient ~ Session One ~ Making Petclinic work</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2006/01/spring-rc-session-one'/><updated>2006-01-23T14:31:00+00:00</updated><id>http://chrismdp.com/2006/01/spring-rc-session-one</id><content type='html'>&lt;div class=&quot;notice&quot;&gt;&lt;h1&gt;By the way...&lt;/h1&gt;&lt;p&gt;This content is now pretty old: check &lt;a href=&quot;/&quot;&gt;the homepage&lt;/a&gt; for the latest.&lt;/p&gt;&lt;/div&gt;
+
 &lt;p&gt;Right, here goes.&lt;/p&gt;
 &lt;p&gt;Initially I wasn't sure where to begin. I searched for &quot;Spring Rich Client&quot; on google, looking for a tutorial and found zero. I found the &lt;a href=&quot;http://www.springframework.org/spring-rcp&quot;&gt;Rich Client homepage&lt;/a&gt; on the spring site, which was a start, and read the rather text-heavy introduction carefully.&lt;/p&gt;
 &lt;p&gt;I was rather suprised at this point that there wasn't an alpha release to download, but never mind, I suppose the framework is still in early development; and hey, I'm supposed to be a coder, and coders can handle checking out CVS, right? :)&lt;/p&gt;
@@ -764,11 +790,11 @@ doing.&lt;/code&gt;&lt;/p&gt;
 Petclinic Rich sample application build file
 ------------------------------------------------------
 Available targets are:
-clean  --&gt; Clean output dirs
-build  --&gt; Compile main Java sources and copy libraries
-build-standalone  --&gt; Compile standalone main Java sources and copy libraries
-warfile  --&gt; Create WAR deployment units
-javadoc  --&gt; Create API documentation
+clean  --&amp;gt; Clean output dirs
+build  --&amp;gt; Compile main Java sources and copy libraries
+build-standalone  --&amp;gt; Compile standalone main Java sources and copy libraries
+warfile  --&amp;gt; Create WAR deployment units
+javadoc  --&amp;gt; Create API documentation
 {% endhighlight %}&lt;/p&gt;
 &lt;p&gt;Hmm. Clean, build and javadoc I understand, but what's with the standalone and warfile variants? This is initially rather confusing, as I figured that there wouldn't be any need to run a web application to use Spring Rich Client. I peer at the build.xml file for a bit longer, until I see the Java Web Start (JWS) references and figure the web application must just be to demonstrate a Rich Client application running through JWS.&lt;/p&gt;
 &lt;p&gt;(Note: it's only later that I saw that you need a web application because petclinic can be a client-server application - this wasn't at all clear on first read. Perhaps two samples would be clearer, rather&lt;br /&gt;
@@ -778,17 +804,21 @@ than combining both in the same place? Or perhaps a simple &quot;Hello, World?&q
 &lt;p&gt;More whirring text, with the petclinic jar placed in the 'dist' directory. Excellent - it seems all is well so far and I didn't need the web application stuff. Ok, let's give it a go. Thinking that it's ten to one I've missed something, I try:&lt;/p&gt;
 &lt;p&gt;{% highlight bash %}$ java -jar petclinic-standalone.jar{% endhighlight %}&lt;/p&gt;
 &lt;p&gt;Ooo. A splash screen. A frog, even better. And then, to my great delight:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/files/spring-rcp-1.jpg&quot;/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/files/spring-rcp-1.jpg&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Wow. &lt;a href=&quot;http://www.jgoodies.com&quot;&gt;JGoodies&lt;/a&gt; support right out of the box. I couldn't have hoped for anything better.&lt;/p&gt;
 &lt;p&gt;After clicking next a few times, and bypassing the login screen with a &quot;Cancel&quot;, I get:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/files/spring-rcp-2.jpg&quot;/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/files/spring-rcp-2.jpg&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Wonderful. I've now got the source code compiling and I've a sample application I can tweak and see what happens - the only way I can really learn anything. I'm set.&lt;/p&gt;
 &lt;p&gt;A couple of thoughts before I close out this session. Firstly it's clear the bad old days of ugly java apps are over. I'm blown away by how good the application looks, for a java application. That's partly due to the wonders of JGoodies, but it looks like Spring Rich Client is going to help me produce a lovely looking application for the client. Excellent.&lt;/p&gt;
 &lt;p&gt;Secondly, I'm pleased that there really weren't that many steps for the average java developer who's used to ant to go through before getting this working. The only real hurdles were finding the right CVS module, and deciphering the ant build targets which at first glance are rather impeneterable. I'm also pleased it compiled straight from CVS and (almost) all the tests passed; a failing build, and I would have mostly likely given up there and then.&lt;/p&gt;
 &lt;p&gt;Coming soon: &quot;Session Two: Hello, world!&quot;&lt;/p&gt;
 
-</content></entry><entry><title>Spring Richclient ~ Introduction</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/><link href='http://chrismdp.com/2006/01/spring-rc-introduction'/><updated>2006-01-23T12:36:00+00:00</updated><id>http://chrismdp.com/2006/01/spring-rc-introduction</id><content type='html'>&lt;div class='notice'&gt;&lt;h1&gt;By the way...&lt;/h1&gt;&lt;p&gt;This content is now pretty old: check &lt;a href='/'&gt;the homepage&lt;/a&gt; for the latest.&lt;/p&gt;&lt;/div&gt;
-          
+</content></entry><entry><title>Spring Richclient ~ Introduction</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2006/01/spring-rc-introduction'/><updated>2006-01-23T12:36:00+00:00</updated><id>http://chrismdp.com/2006/01/spring-rc-introduction</id><content type='html'>&lt;div class=&quot;notice&quot;&gt;&lt;h1&gt;By the way...&lt;/h1&gt;&lt;p&gt;This content is now pretty old: check &lt;a href=&quot;/&quot;&gt;the homepage&lt;/a&gt; for the latest.&lt;/p&gt;&lt;/div&gt;
+
 &lt;p&gt;Right, time to learn Spring Rich Client.&lt;/p&gt;
 &lt;p&gt;I've been meaning to learn this project for a while, but haven't yet quite got round to it. Now is the time. A client wants a piece of work done that see
 ms very well suited to using this framework, and it's an ideal time to work it all out.&lt;/p&gt;

@@ -13,32 +13,52 @@ layout: nil
     <name>Chris Parsons</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>Work with me</title><category term='code'/><category term='meta'/><category term='agile'/><category term='training'/><category term='life'/><category term='tdd'/><link href='http://chrismdp.com/2011/08/work-with-me'/><updated>2011-08-22T15:36:53+01:00</updated><id>http://chrismdp.com/2011/08/work-with-me</id><content type='html'>I've been taking a break from my work and blogging for the summer: but now I'm looking for work again from next week.
+<entry><title>Work with me</title><category term='code'/><category term='meta'/><category term='agile'/><category term='training'/><category term='life'/><category term='tdd'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2011/08/work-with-me'/><updated>2011-08-22T15:36:53+01:00</updated><id>http://chrismdp.com/2011/08/work-with-me</id><content type='html'>&lt;p&gt;I’ve been taking a break from my work and blogging for the summer: but now I’m looking for work again from next week.&lt;/p&gt;
 
-To this end I've put up a [new page](/workwithme.html) on this site which has all the details of what I can offer, and my availability. If you'd like to work with me this autumn, do [get in touch](mailto:chris@thinkcodelearn.com).
+&lt;p&gt;To this end I’ve put up a &lt;a href=&quot;/workwithme.html&quot;&gt;new page&lt;/a&gt; on this site which has all the details of what I can offer, and my availability. If you’d like to work with me this autumn, do &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#099;&amp;#104;&amp;#114;&amp;#105;&amp;#115;&amp;#064;&amp;#116;&amp;#104;&amp;#105;&amp;#110;&amp;#107;&amp;#099;&amp;#111;&amp;#100;&amp;#101;&amp;#108;&amp;#101;&amp;#097;&amp;#114;&amp;#110;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;get in touch&lt;/a&gt;.&lt;/p&gt;
 
-I also plan to start blogging again soon, with my first topic being [how we handled the massive site traffic](/2011/08/e-petitions-handling-traffic) we experienced on e-petitions [a couple of weeks ago](http://www.bbc.co.uk/news/uk-politics-14474429).
-</content></entry><entry><title>Old blog articles from yesteryear</title><category term='meta'/><link href='http://chrismdp.com/2009/12/old-blog-articles'/><updated>2009-12-29T22:45:00+00:00</updated><id>http://chrismdp.com/2009/12/old-blog-articles</id><content type='html'>I've spent the evening importing some old articles from my past blogging days, so they're all in one place. By all means peruse the following pieces of history:
+&lt;p&gt;I also plan to start blogging again soon, with my first topic being &lt;a href=&quot;/2011/08/e-petitions-handling-traffic&quot;&gt;how we handled the massive site traffic&lt;/a&gt; we experienced on e-petitions &lt;a href=&quot;http://www.bbc.co.uk/news/uk-politics-14474429&quot;&gt;a couple of weeks ago&lt;/a&gt;.&lt;/p&gt;
+</content></entry><entry><title>Old blog articles from yesteryear</title><category term='meta'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2009/12/old-blog-articles'/><updated>2009-12-29T22:45:00+00:00</updated><id>http://chrismdp.com/2009/12/old-blog-articles</id><content type='html'>&lt;p&gt;I’ve spent the evening importing some old articles from my past blogging days, so they’re all in one place. By all means peruse the following pieces of history:&lt;/p&gt;
 
-* [The Spring: Richclient series](/2006/04/spring-richclient)
-* [SVG Planner Index cards](/2006/10/svg-planner)
-* [TDD: Tortoise and the the Hare](/2006/02/tdd-the-tortoise-and-the-hare)
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/2006/04/spring-richclient&quot;&gt;The Spring: Richclient series&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/2006/10/svg-planner&quot;&gt;SVG Planner Index cards&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/2006/02/tdd-the-tortoise-and-the-hare&quot;&gt;TDD: Tortoise and the the Hare&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-I'm moving servers and these would have previously vanished from the net. They still get plenty of traffic so it makes sense to keep them around for posterity. Drop me a line if you find them interesting!
-</content></entry><entry><title>Jekyll, the blog engine of kings</title><category term='meta'/><link href='http://chrismdp.com/2009/12/jekyll'/><updated>2009-12-14T17:10:00+00:00</updated><id>http://chrismdp.com/2009/12/jekyll</id><content type='html'>May I mention how cool [Jekyll](http://wiki.github.com/mojombo/jekyll) is? I achieved the following:
+&lt;p&gt;I’m moving servers and these would have previously vanished from the net. They still get plenty of traffic so it makes sense to keep them around for posterity. Drop me a line if you find them interesting!&lt;/p&gt;
+</content></entry><entry><title>Jekyll, the blog engine of kings</title><category term='meta'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2009/12/jekyll'/><updated>2009-12-14T17:10:00+00:00</updated><id>http://chrismdp.com/2009/12/jekyll</id><content type='html'>&lt;p&gt;May I mention how cool &lt;a href=&quot;http://wiki.github.com/mojombo/jekyll&quot;&gt;Jekyll&lt;/a&gt; is? I achieved the following:&lt;/p&gt;
 
-* Forked a whole blog (yes, a whole blog, git is great too) from [James](http://github.com/ohthatjames/ohthatjames.github.com).
-* Vimmed and ackked my way through, changing all James' references to my own
-* Wrote my first post
-* Set up feedburner to point to the correct blog
-* Aggregated my blog feed on our new [staff blogs feed](http://edendevelopment.co.uk/blogs/).
-* Set up Disqus for commenting
+&lt;ul&gt;
+  &lt;li&gt;Forked a whole blog (yes, a whole blog, git is great too) from &lt;a href=&quot;http://github.com/ohthatjames/ohthatjames.github.com&quot;&gt;James&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Vimmed and ackked my way through, changing all James’ references to my own&lt;/li&gt;
+  &lt;li&gt;Wrote my first post&lt;/li&gt;
+  &lt;li&gt;Set up feedburner to point to the correct blog&lt;/li&gt;
+  &lt;li&gt;Aggregated my blog feed on our new &lt;a href=&quot;http://edendevelopment.co.uk/blogs/&quot;&gt;staff blogs feed&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Set up Disqus for commenting&lt;/li&gt;
+&lt;/ul&gt;
 
-But how long, how long, I hear you ask? _Twenty minutes_, that's how long. Previously I spent about _three hours_ fiddling around with drupal to set up my last blog. The joys of simple tools, doing one thing stupidly well.
-</content></entry><entry><title>Welcome</title><category term='meta'/><link href='http://chrismdp.com/2009/12/first-post'/><updated>2009-12-14T16:50:00+00:00</updated><id>http://chrismdp.com/2009/12/first-post</id><content type='html'>Welcome to my new github blog. This blog will contain wonderful insightful witty comment on many things, such as business, code, crafting and life.
+&lt;p&gt;But how long, how long, I hear you ask? &lt;em&gt;Twenty minutes&lt;/em&gt;, that’s how long. Previously I spent about &lt;em&gt;three hours&lt;/em&gt; fiddling around with drupal to set up my last blog. The joys of simple tools, doing one thing stupidly well.&lt;/p&gt;
+</content></entry><entry><title>Welcome</title><category term='meta'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2009/12/first-post'/><updated>2009-12-14T16:50:00+00:00</updated><id>http://chrismdp.com/2009/12/first-post</id><content type='html'>&lt;p&gt;Welcome to my new github blog. This blog will contain wonderful insightful witty comment on many things, such as business, code, crafting and life.&lt;/p&gt;
 
-It's likely to stay fairly technical (this is a github page after all), and include updates from the mentoring of the awesome developers I'm currently mentoring, [James Hunt](http://ohthatjames.github.com) and [Richard Patching](http://edendevelopment.co.uk/blogs/richard).
+&lt;p&gt;It’s likely to stay fairly technical (this is a github page after all), and include updates from the mentoring of the awesome developers I’m currently mentoring, &lt;a href=&quot;http://ohthatjames.github.com&quot;&gt;James Hunt&lt;/a&gt; and &lt;a href=&quot;http://edendevelopment.co.uk/blogs/richard&quot;&gt;Richard Patching&lt;/a&gt;.&lt;/p&gt;
 
-Do [subscribe](http://feeds.feedburner.com/ChrisParsons) if you want to be kept up to date.
- 
+&lt;p&gt;Do &lt;a href=&quot;http://feeds.feedburner.com/ChrisParsons&quot;&gt;subscribe&lt;/a&gt; if you want to be kept up to date.&lt;/p&gt;
+
 </content></entry></feed>

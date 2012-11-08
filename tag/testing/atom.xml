@@ -13,34 +13,54 @@ layout: nil
     <name>Chris Parsons</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>Never leave a failing test</title><category term='tdd'/><category term='craftsmanship'/><category term='code'/><category term='testing'/><link href='http://chrismdp.com/2012/09/failing-tests-rot'/><updated>2012-09-20T15:36:32+01:00</updated><id>http://chrismdp.com/2012/09/failing-tests-rot</id><content type='html'>&lt;p&gt;Imagine this: you're taking a guided tour of a nuclear power station. Just above the door as you come in there there are five lights marked Key Safety Indicators. One of the lights is flashing red.&lt;/p&gt;
+<entry><title>Never leave a failing test</title><category term='tdd'/><category term='craftsmanship'/><category term='code'/><category term='testing'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2012/09/failing-tests-rot'/><updated>2012-09-20T15:36:32+01:00</updated><id>http://chrismdp.com/2012/09/failing-tests-rot</id><content type='html'>&lt;p&gt;Imagine this: you're taking a guided tour of a nuclear power station. Just above the door as you come in there there are five lights marked Key Safety Indicators. One of the lights is flashing red.&lt;/p&gt;
 
-&quot;What's that flashing red light?&quot; you nervously ask your host.
+&lt;p&gt;“What’s that flashing red light?” you nervously ask your host.&lt;/p&gt;
 
-&quot;Oh, that light does that from time to time. We're not sure why; we just ignore it.&quot;
+&lt;p&gt;“Oh, that light does that from time to time. We’re not sure why; we just ignore it.”&lt;/p&gt;
 
-There's an awkward silence. How confident are you feeling right now?
+&lt;p&gt;There’s an awkward silence. How confident are you feeling right now?&lt;/p&gt;
 
-## Failing tests fester.
+&lt;h2 id=&quot;failing-tests-fester&quot;&gt;Failing tests fester.&lt;/h2&gt;
 
-Red tests are like code rot. Catch it early and sort them out, and you'll be fine. If you don't, they'll spread through your code like a disease, causing all sorts of damage:
+&lt;p&gt;Red tests are like code rot. Catch it early and sort them out, and you’ll be fine. If you don’t, they’ll spread through your code like a disease, causing all sorts of damage:&lt;/p&gt;
 
-* *Failures cause fear of change.* If we don't understand why a test is failing, we don't understand the code base. If we don't understand our code, we can't change it safely. All bets are off: any change we make will cause us to be that little bit more anxious.
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;Failures cause fear of change.&lt;/em&gt; If we don’t understand why a test is failing, we don’t understand the code base. If we don’t understand our code, we can’t change it safely. All bets are off: any change we make will cause us to be that little bit more anxious.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;Failures breed failures.&lt;/em&gt; If one test continually fails, then other coders are more likely to tolerate failing tests, and the number of failing tests will grow quickly.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;Failures kill urgency.&lt;/em&gt; There’s a scene in a well-known heist movie where a team of thieves has to break into a bank. Their strategy revolves around putting a remote-controlled car under a waste bin: they use this to cause the bin to move at night, setting off all the alarm sensors. The first time the alarm goes off, the place is filled with police in a matter of seconds. The fifth time the alarm goes off, only one squad car with two bored officers turn up, totally unprepared for the waiting thieves who quickly overpower them. The same is true with tests: if they fail all the time, developers will take a cavalier attitude to checking out the cause. This could cause a really serious failure to be missed.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-* *Failures breed failures.* If one test continually fails, then other coders are more likely to tolerate failing tests, and the number of failing tests will grow quickly.
+&lt;p&gt;The only point at which failing tests are valid is when you’ve written them just before the code you plan to add. If the test should be failing, write code to make it work. If the test shouldn’t be failing, change it or delete it. Never leave it to fester.&lt;/p&gt;
+</content></entry><entry><title>Cucumber isn't a testing tool</title><category term='cucumber'/><category term='business'/><category term='bdd'/><category term='team'/><category term='testing'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2012/09/cucumber-isnt-a-testing-tool'/><updated>2012-09-19T17:41:22+01:00</updated><id>http://chrismdp.com/2012/09/cucumber-isnt-a-testing-tool</id><content type='html'>&lt;p&gt;This is your periodic reminder that &lt;a href=&quot;/tag/cucumber&quot;&gt;Cucumber&lt;/a&gt; isn’t a testing tool.&lt;/p&gt;
 
-* *Failures kill urgency.* There's a scene in a well-known heist movie where a team of thieves has to break into a bank. Their strategy revolves around putting a remote-controlled car under a waste bin: they use this to cause the bin to move at night, setting off all the alarm sensors. The first time the alarm goes off, the place is filled with police in a matter of seconds. The fifth time the alarm goes off, only one squad car with two bored officers turn up, totally unprepared for the waiting thieves who quickly overpower them. The same is true with tests: if they fail all the time, developers will take a cavalier attitude to checking out the cause. This could cause a really serious failure to be missed.
+&lt;p&gt;Here’s what it actually is:&lt;/p&gt;
 
-The only point at which failing tests are valid is when you've written them just before the code you plan to add. If the test should be failing, write code to make it work. If the test shouldn't be failing, change it or delete it. Never leave it to fester.
-</content></entry><entry><title>Cucumber isn't a testing tool</title><category term='cucumber'/><category term='business'/><category term='bdd'/><category term='team'/><category term='testing'/><link href='http://chrismdp.com/2012/09/cucumber-isnt-a-testing-tool'/><updated>2012-09-19T17:41:22+01:00</updated><id>http://chrismdp.com/2012/09/cucumber-isnt-a-testing-tool</id><content type='html'>This is your periodic reminder that [Cucumber](/tag/cucumber) isn't a testing tool.
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;Cucumber is a great communication tool.&lt;/em&gt; The great thing about collaborating on a cucumber feature is that the whole team get to stand in the same room and take part in the discussion. Everyone gets to argue about what should go in, what to keep out, and to help capture all the edge cases. The forming of the feature file facilitates that communication, with a great side effect of being able to check the finished feature still works at a later time. Cucumber excels as a communication tool, first and foremost: it’s only incidentally a testing tool.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;Cucumber captures conversations.&lt;/em&gt; A feature file is a &lt;a href=&quot;/2010/02/the-story-card-is-not-the-story&quot;&gt;bookmark&lt;/a&gt; for the real feature: &lt;em&gt;the shared understanding of what needs to be done&lt;/em&gt; that exists in the minds of the team. When the arm-waving and the arguments are done, a well written feature will expertly capture the essence of the conversation - the &lt;a href=&quot;http://dannorth.net/whats-in-a-story&quot;&gt;semi-formal nature&lt;/a&gt; of a feature acts as a checklist to ensure that we’ve talked about everything we need to.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;Cucumber is for the team, not the developers.&lt;/em&gt; Developers are often the gate-keepers of the feature files: if we’re not careful we tend to write them, update them and run them without anyone else ever seeing them. We moan about how much more difficult features are to maintain than regular tests, whilst all the time we’re missing the point: the features aren’t for us, they’re for those who can’t read code!&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-Here's what it actually is:
-
-* *Cucumber is a great communication tool.* The great thing about collaborating on a cucumber feature is that the whole team get to stand in the same room and take part in the discussion. Everyone gets to argue about what should go in, what to keep out, and to help capture all the edge cases. The forming of the feature file facilitates that communication, with a great side effect of being able to check the finished feature still works at a later time. Cucumber excels as a communication tool, first and foremost: it's only incidentally a testing tool.
-
-* *Cucumber captures conversations.* A feature file is a [bookmark](/2010/02/the-story-card-is-not-the-story) for the real feature: *the shared understanding of what needs to be done* that exists in the minds of the team. When the arm-waving and the arguments are done, a well written feature will expertly capture the essence of the conversation - the [semi-formal nature](http://dannorth.net/whats-in-a-story) of a feature acts as a checklist to ensure that we've talked about everything we need to.
-
-* *Cucumber is for the team, not the developers.* Developers are often the gate-keepers of the feature files: if we're not careful we tend to write them, update them and run them without anyone else ever seeing them. We moan about how much more difficult features are to maintain than regular tests, whilst all the time we're missing the point: the features aren't for us, they're for those who can't read code!
-
-For more on this, [watch this video](http://video2012.scotlandonrails.com/D1_LB_03-Ruby1280_b.mp4) ([slides](https://speakerdeck.com/u/chrismdp/p/cucumber-its-about-talking-not-testing)) from Scottish Ruby Conference where I explore these points in more depth. Remember that at its heart, Cucumber simply translates plain language into executing code. Its power lies in its ability to express code in plain language. Let's not reduce it to a mere testing tool, without letting the stakeholders see the features. If you're doing that, you're better off using RSpec.
+&lt;p&gt;For more on this, &lt;a href=&quot;http://video2012.scotlandonrails.com/D1_LB_03-Ruby1280_b.mp4&quot;&gt;watch this video&lt;/a&gt; (&lt;a href=&quot;https://speakerdeck.com/u/chrismdp/p/cucumber-its-about-talking-not-testing&quot;&gt;slides&lt;/a&gt;) from Scottish Ruby Conference where I explore these points in more depth. Remember that at its heart, Cucumber simply translates plain language into executing code. Its power lies in its ability to express code in plain language. Let’s not reduce it to a mere testing tool, without letting the stakeholders see the features. If you’re doing that, you’re better off using RSpec.&lt;/p&gt;
 </content></entry></feed>

@@ -13,15 +13,19 @@ layout: nil
     <name>Chris Parsons</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>Lean code: slides and feedback</title><category term='code'/><category term='lean'/><category term='presentation'/><category term='software craftsmanship'/><category term='sc2011'/><link href='http://chrismdp.com/2011/05/lean-code-slides-and-feedback'/><updated>2011-05-26T21:35:40+01:00</updated><id>http://chrismdp.com/2011/05/lean-code-slides-and-feedback</id><content type='html'>I facilitated a workshop at [SC2011](http://lanyrd.com/2011/software-craftsmanship/) today about how code might be thought of as Lean. The idea was to start a coding project and cope with shifting requirements to identify what happens when we deliver as fast as we can, whether testing is worth it, and what waste actually means.
+<entry><title>Lean code: slides and feedback</title><category term='code'/><category term='lean'/><category term='presentation'/><category term='software craftsmanship'/><category term='sc2011'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2011/05/lean-code-slides-and-feedback'/><updated>2011-05-26T21:35:40+01:00</updated><id>http://chrismdp.com/2011/05/lean-code-slides-and-feedback</id><content type='html'>&lt;p&gt;I facilitated a workshop at &lt;a href=&quot;http://lanyrd.com/2011/software-craftsmanship/&quot;&gt;SC2011&lt;/a&gt; today about how code might be thought of as Lean. The idea was to start a coding project and cope with shifting requirements to identify what happens when we deliver as fast as we can, whether testing is worth it, and what waste actually means.&lt;/p&gt;
 
-If you were there, please do [rate the talk](http://speakerrate.com/talks/7643-lean-code) so I can improve!
+&lt;p&gt;If you were there, please do &lt;a href=&quot;http://speakerrate.com/talks/7643-lean-code&quot;&gt;rate the talk&lt;/a&gt; so I can improve!&lt;/p&gt;
 
-A number of people expressed an interest in trying the exercise, so here are the slides if you're interested in trying it at home.
+&lt;p&gt;A number of people expressed an interest in trying the exercise, so here are the slides if you’re interested in trying it at home.&lt;/p&gt;
 
-&lt;object id=&quot;__sse8116737&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=lean-code-110526153405-phpapp02&amp;amp;stripped_title=lean-code&amp;amp;userName=chrismdp&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;/&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot;/&gt;&lt;embed name=&quot;__sse8116737&quot; src=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=lean-code-110526153405-phpapp02&amp;amp;stripped_title=lean-code&amp;amp;userName=chrismdp&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;/embed&gt;&lt;/object&gt;
+&lt;object id=&quot;__sse8116737&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=lean-code-110526153405-phpapp02&amp;amp;stripped_title=lean-code&amp;amp;userName=chrismdp&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot; /&gt;&lt;embed name=&quot;__sse8116737&quot; src=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=lean-code-110526153405-phpapp02&amp;amp;stripped_title=lean-code&amp;amp;userName=chrismdp&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;355&quot; /&gt;&lt;/object&gt;
 
-The session details are also [on Lanyrd](http://lanyrd.com/2011/software-craftsmanship/sfkgw/).
+&lt;p&gt;The session details are also &lt;a href=&quot;http://lanyrd.com/2011/software-craftsmanship/sfkgw/&quot;&gt;on Lanyrd&lt;/a&gt;.&lt;/p&gt;
 
-Let me know how you get on, and if you need any help!
+&lt;p&gt;Let me know how you get on, and if you need any help!&lt;/p&gt;
 </content></entry></feed>

@@ -13,98 +13,105 @@ layout: nil
     <name>Chris Parsons</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>A cache-busting http server script in ruby</title><category term='code'/><category term='javascript'/><category term='ruby'/><link href='http://chrismdp.com/2011/12/cache-busting-ruby-http-server'/><updated>2011-12-14T16:57:43+00:00</updated><id>http://chrismdp.com/2011/12/cache-busting-ruby-http-server</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;All of this can be yours/just give me what I want/and no one gets hurt&quot;&lt;/i&gt;&lt;/p&gt;
+<entry><title>A cache-busting http server script in ruby</title><category term='code'/><category term='javascript'/><category term='ruby'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2011/12/cache-busting-ruby-http-server'/><updated>2011-12-14T16:57:43+00:00</updated><id>http://chrismdp.com/2011/12/cache-busting-ruby-http-server</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;All of this can be yours/just give me what I want/and no one gets hurt&quot;&lt;/i&gt;&lt;/p&gt;
 
--- Bono, Vertigo
+&lt;p&gt;– Bono, Vertigo&lt;/p&gt;
 
-If you've done much Javascript development, or simple web development without a webserver backend, you don't want to set up a complex framework. Just give me the pages: I want to be able to start a simple webserver to give me the current directory structure as a website. You can't simply load the pages into a browser using `file://` because that screws up the relative paths that our sites rely on. What's the best way of doing this?
+&lt;p&gt;If you’ve done much Javascript development, or simple web development without a webserver backend, you don’t want to set up a complex framework. Just give me the pages: I want to be able to start a simple webserver to give me the current directory structure as a website. You can’t simply load the pages into a browser using &lt;code&gt;file://&lt;/code&gt; because that screws up the relative paths that our sites rely on. What’s the best way of doing this?&lt;/p&gt;
 
-## Python's SimpleHTTPServer
+&lt;h2 id=&quot;pythons-simplehttpserver&quot;&gt;Python’s SimpleHTTPServer&lt;/h2&gt;
 
-One simple way is:
+&lt;p&gt;One simple way is:&lt;/p&gt;
 
-{% highlight bash %}
+&lt;p&gt;{% highlight bash %}
 python -m SimpleHTTPServer
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-This does a great job, but there's one small problem: caching. Ordinarily during development you'll want the browser to request the HTML each time, and the python server doesn't do that out of the box.
+&lt;p&gt;This does a great job, but there’s one small problem: caching. Ordinarily during development you’ll want the browser to request the HTML each time, and the python server doesn’t do that out of the box.&lt;/p&gt;
 
-## Ruby's WEBrick with adding cache-busting
+&lt;h2 id=&quot;rubys-webrick-with-adding-cache-busting&quot;&gt;Ruby’s WEBrick with adding cache-busting&lt;/h2&gt;
 
-Here's a small script I borrowed from [pmarti](http://github.com/pmarti) and tweaked. It lives in the `bin/http` file on my path: I just type `http` in the relevant folder and I'm set.
+&lt;p&gt;Here’s a small script I borrowed from &lt;a href=&quot;http://github.com/pmarti&quot;&gt;pmarti&lt;/a&gt; and tweaked. It lives in the &lt;code&gt;bin/http&lt;/code&gt; file on my path: I just type &lt;code&gt;http&lt;/code&gt; in the relevant folder and I’m set.&lt;/p&gt;
 
-{% highlight ruby %}
-#!/usr/bin/env ruby
+&lt;p&gt;{% highlight ruby %}
+#!/usr/bin/env ruby&lt;/p&gt;
 
-require 'webrick'
-class NonCachingFileHandler &lt; WEBrick::HTTPServlet::FileHandler
+&lt;p&gt;require ‘webrick’
+class NonCachingFileHandler &amp;lt; WEBrick::HTTPServlet::FileHandler
   def prevent_caching(res)
-    res['ETag']          = nil
-    res['Last-Modified'] = Time.now + 100**4
-    res['Cache-Control'] = 'no-store, no-cache, must-revalidate, post-check=0, pre-check=0'
-    res['Pragma']        = 'no-cache'
-    res['Expires']       = Time.now - 100**4
-  end
+    res[‘ETag’]          = nil
+    res[‘Last-Modified’] = Time.now + 100&lt;strong&gt;4
+    res[‘Cache-Control’] = ‘no-store, no-cache, must-revalidate, post-check=0, pre-check=0’
+    res[‘Pragma’]        = ‘no-cache’
+    res[‘Expires’]       = Time.now - 100&lt;/strong&gt;4
+  end&lt;/p&gt;
 
-  def do_GET(req, res)
+&lt;p&gt;def do_GET(req, res)
     super
     prevent_caching(res)
   end
-end
+end&lt;/p&gt;
 
-server = WEBrick::HTTPServer.new :Port =&gt; 8989
+&lt;p&gt;server = WEBrick::HTTPServer.new :Port =&amp;gt; 8989&lt;/p&gt;
 
-server.mount '/', NonCachingFileHandler , Dir.pwd
-trap('INT') { server.stop }
+&lt;p&gt;server.mount ‘/’, NonCachingFileHandler , Dir.pwd
+trap(‘INT’) { server.stop }
 server.start
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-Hope it's helpful. Do you know of a better way of doing it? Feel free to share...
-</content></entry><entry><title>How to test your node.js app</title><category term='javascript'/><category term='code'/><category term='tdd'/><category term='node.js'/><link href='http://chrismdp.com/2010/05/tdd-with-node-js'/><updated>2010-05-23T11:05:00+01:00</updated><id>http://chrismdp.com/2010/05/tdd-with-node-js</id><content type='html'>I've wanted to hack on a [node.js](http://nodejs.org) project for a while, and a new app idea has given me the perfect excuse. My first question was: how do I test this? It's a fairly new field out there, and there isn't much help from node.js itself: it's much more like [Rack](http://rack.rubyforge.org/) than a proper framework. So I spent some time coming up with one way to do it.
+&lt;p&gt;Hope it’s helpful. Do you know of a better way of doing it? Feel free to share…&lt;/p&gt;
+</content></entry><entry><title>How to test your node.js app</title><category term='javascript'/><category term='code'/><category term='tdd'/><category term='node.js'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2010/05/tdd-with-node-js'/><updated>2010-05-23T11:05:00+01:00</updated><id>http://chrismdp.com/2010/05/tdd-with-node-js</id><content type='html'>&lt;p&gt;I’ve wanted to hack on a &lt;a href=&quot;http://nodejs.org&quot;&gt;node.js&lt;/a&gt; project for a while, and a new app idea has given me the perfect excuse. My first question was: how do I test this? It’s a fairly new field out there, and there isn’t much help from node.js itself: it’s much more like &lt;a href=&quot;http://rack.rubyforge.org/&quot;&gt;Rack&lt;/a&gt; than a proper framework. So I spent some time coming up with one way to do it.&lt;/p&gt;
 
-Disclaimer: I'm not that experienced with Javascript, particularly with the best way to define objects. I'd be grateful for patches to help improve the quality of the code here. I've also borrowed heavily from [apprentice-us](http://github.com/redsquirrel/apprentice-us) - thanks to [Dave](http://twitter.com/redsquirrel) and [Corey](http://twitter.com/coreyhaines)!
+&lt;p&gt;Disclaimer: I’m not that experienced with Javascript, particularly with the best way to define objects. I’d be grateful for patches to help improve the quality of the code here. I’ve also borrowed heavily from &lt;a href=&quot;http://github.com/redsquirrel/apprentice-us&quot;&gt;apprentice-us&lt;/a&gt; - thanks to &lt;a href=&quot;http://twitter.com/redsquirrel&quot;&gt;Dave&lt;/a&gt; and &lt;a href=&quot;http://twitter.com/coreyhaines&quot;&gt;Corey&lt;/a&gt;!&lt;/p&gt;
 
-## Overview 
+&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
 
+&lt;p&gt;This is what I’ve got so far (the actual app I’m working will remain closed-source for the mo):&lt;/p&gt;
 
-This is what I've got so far (the actual app I'm working will remain closed-source for the mo):
+&lt;p&gt;&lt;a href=&quot;http://github.com/chrismdp/example-nodejs-project&quot;&gt;Example node.js github project&lt;/a&gt;&lt;/p&gt;
 
-[Example node.js github project](http://github.com/chrismdp/example-nodejs-project)
+&lt;p&gt;You probably want to refer to the code whilst reading the rest of this article.&lt;/p&gt;
 
-You probably want to refer to the code whilst reading the rest of this article.
+&lt;p&gt;To run the tests, run &lt;em&gt;rake&lt;/em&gt;. To start the app, run &lt;em&gt;node app.js&lt;/em&gt; (you will need to have node.js installed obviously).&lt;/p&gt;
 
-To run the tests, run _rake_. To start the app, run _node app.js_ (you will need to have node.js installed obviously).
+&lt;p&gt;If you install the &lt;a href=&quot;http://github.com/mynyml/watchr&quot;&gt;watchr&lt;/a&gt; gem, and run &lt;em&gt;watchr autotest.watchr&lt;/em&gt;, you’ll get robust autotest like functionality. I’m liking watchr much better than ZenTest right now.&lt;/p&gt;
 
-If you install the [watchr](http://github.com/mynyml/watchr) gem, and run _watchr autotest.watchr_, you'll get robust autotest like functionality. I'm liking watchr much better than ZenTest right now.
+&lt;h2 id=&quot;how-it-works&quot;&gt;How it works&lt;/h2&gt;
 
-## How it works
+&lt;p&gt;The basic premise is to decouple the request/response handler from the server (see &lt;em&gt;app.js&lt;/em&gt;, &lt;em&gt;lib/http.js&lt;/em&gt; and &lt;em&gt;lib/router.js&lt;/em&gt;). The interesting bit is in &lt;em&gt;test/ integration/ user_sees_homepage.js&lt;/em&gt; - this then calls the dispatch method directly, passing in dummy Request and Response objects.&lt;/p&gt;
 
-The basic premise is to decouple the request/response handler from the server (see *app.js*, *lib/http.js* and *lib/router.js*). The interesting bit is in *test/ integration/ user_sees_homepage.js* - this then calls the dispatch method directly, passing in dummy Request and Response objects.
+&lt;p&gt;Note how I’ve &lt;a href=&quot;http://github.com/chrismdp/example-nodejs-project/blob/master/test/integration/user_sees_homepage.js&quot;&gt;defined the Response object&lt;/a&gt;. This allows me currently to write an integration test that looks like this:&lt;/p&gt;
 
-Note how I've [defined the Response object](http://github.com/chrismdp/example-nodejs-project/blob/master/test/integration/user_sees_homepage.js). This allows me currently to write an integration test that looks like this:
-
-{% highlight javascript %}
-router.dispatch(new Request(&quot;GET&quot;, &quot;/&quot;), new Response(function(headers, data) {
-  assert.contains(&quot;200&quot;, headers['status'])
-  assert.contains(&quot;Hello, world!&quot;, data)
+&lt;p&gt;{% highlight javascript %}
+router.dispatch(new Request(“GET”, “/”), new Response(function(headers, data) {
+  assert.contains(“200”, headers[‘status’])
+  assert.contains(“Hello, world!”, data)
 }));
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-The assert.contains() method is not part of node.js: it's implemented in _test/helper.js_.
+&lt;p&gt;The assert.contains() method is not part of node.js: it’s implemented in &lt;em&gt;test/helper.js&lt;/em&gt;.&lt;/p&gt;
 
-The reason you need the asserts to be fired in the end() function is that node.js is inherently asynchronous and will finish executing this file whilst waiting for the haml file to load in *lib/router.js*. Try it yourself: if you put an assert at the bottom of the file it will fire immediately.
+&lt;p&gt;The reason you need the asserts to be fired in the end() function is that node.js is inherently asynchronous and will finish executing this file whilst waiting for the haml file to load in &lt;em&gt;lib/router.js&lt;/em&gt;. Try it yourself: if you put an assert at the bottom of the file it will fire immediately.&lt;/p&gt;
 
-## Unit tests
+&lt;h2 id=&quot;unit-tests&quot;&gt;Unit tests&lt;/h2&gt;
 
-The plan is then to define whichever unit tests you need in *test/ unit/ (something)_test.js*, with the corresponding code in *lib/ models/ (something).js*. Just run javascript code in here and call methods on assert, and rake will execute it.
+&lt;p&gt;The plan is then to define whichever unit tests you need in &lt;em&gt;test/ unit/ (something)_test.js&lt;/em&gt;, with the corresponding code in &lt;em&gt;lib/ models/ (something).js&lt;/em&gt;. Just run javascript code in here and call methods on assert, and rake will execute it.&lt;/p&gt;
 
-## Improvements
+&lt;h2 id=&quot;improvements&quot;&gt;Improvements&lt;/h2&gt;
 
-You could potentially use the Sinatra-like framework [Express](http://expressjs.com) to define *lib/router.js* - I've handrolled it for the moment. I'm of the opinion that you spot betterrefactorings by handrolling to start with: it could be that express.js isn't right for my app, and I can't easily tell yet.
+&lt;p&gt;You could potentially use the Sinatra-like framework &lt;a href=&quot;http://expressjs.com&quot;&gt;Express&lt;/a&gt; to define &lt;em&gt;lib/router.js&lt;/em&gt; - I’ve handrolled it for the moment. I’m of the opinion that you spot betterrefactorings by handrolling to start with: it could be that express.js isn’t right for my app, and I can’t easily tell yet.&lt;/p&gt;
 
-There are a number of javascript testing libraries out there, but at the moment I'm happy with my own handrolled version, which just relies on the 'assert' package that node.js provides. There's nothing to stop you using JSpec or some other javascript testing library: I wanted to keep things simple to start with. 
+&lt;p&gt;There are a number of javascript testing libraries out there, but at the moment I’m happy with my own handrolled version, which just relies on the ‘assert’ package that node.js provides. There’s nothing to stop you using JSpec or some other javascript testing library: I wanted to keep things simple to start with. &lt;/p&gt;
 
-I'm also aware that Cucumber [now supports javascript through V8](http://blog.josephwilk.net/ruby/testing-javascript-with-cucumber-in-javascript.html), which is an important step in the right direction. Unfortunately however it doesn't yet support the [commonjs](http://commonjs.org) package system, and doesn't run through node.js but through raw V8. This makes it hard to use with anything but toy examples. Ideally I've love to plug Cucumber in in the future, if we can get it to use node.js as the platform somehow.
+&lt;p&gt;I’m also aware that Cucumber &lt;a href=&quot;http://blog.josephwilk.net/ruby/testing-javascript-with-cucumber-in-javascript.html&quot;&gt;now supports javascript through V8&lt;/a&gt;, which is an important step in the right direction. Unfortunately however it doesn’t yet support the &lt;a href=&quot;http://commonjs.org&quot;&gt;commonjs&lt;/a&gt; package system, and doesn’t run through node.js but through raw V8. This makes it hard to use with anything but toy examples. Ideally I’ve love to plug Cucumber in in the future, if we can get it to use node.js as the platform somehow.&lt;/p&gt;
 
-If you use it for something useful, let me know! I'd be very happy to receive patches and suggestions.
+&lt;p&gt;If you use it for something useful, let me know! I’d be very happy to receive patches and suggestions.&lt;/p&gt;
 </content></entry></feed>

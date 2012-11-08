@@ -13,101 +13,133 @@ layout: nil
     <name>Chris Parsons</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>Should we store state in our steps?</title><category term='cucumber'/><category term='bdd'/><category term='ruby'/><category term='state'/><link href='http://chrismdp.com/2012/11/storing-state-in-your-steps'/><updated>2012-11-07T23:50:39+00:00</updated><id>http://chrismdp.com/2012/11/storing-state-in-your-steps</id><content type='html'>It's quite common to store state inside our cucumber steps in member variables, like so:
+<entry><title>Should we store state in our steps?</title><category term='cucumber'/><category term='bdd'/><category term='ruby'/><category term='state'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2012/11/storing-state-in-your-steps'/><updated>2012-11-07T23:50:39+00:00</updated><id>http://chrismdp.com/2012/11/storing-state-in-your-steps</id><content type='html'>&lt;p&gt;It’s quite common to store state inside our cucumber steps in member variables, like so:&lt;/p&gt;
 
-{% highlight ruby %}
+&lt;p&gt;{% highlight ruby %}&lt;/p&gt;
 
-    Given /^a person called &quot;(.\*)&quot;$/ do |person\_name|
-      @person = Person.create!(person\_name)
-    end
+&lt;pre&gt;&lt;code&gt;Given /^a person called &quot;(.*)&quot;$/ do |person_name|
+  @person = Person.create!(person_name)
+end
 
-    When /^they order a waffle$/ do
-      @person.order!(:waffle)
-    end
+When /^they order a waffle$/ do
+  @person.order!(:waffle)
+end
+&lt;/code&gt;&lt;/pre&gt;
 
-{% endhighlight %}
+&lt;p&gt;{% endhighlight %}&lt;/p&gt;
 
-What are the consequences of making this design choice?
+&lt;p&gt;What are the consequences of making this design choice?&lt;/p&gt;
 
-## It leads to more readable steps
+&lt;h2 id=&quot;it-leads-to-more-readable-steps&quot;&gt;It leads to more readable steps&lt;/h2&gt;
 
-Shorter, more readable steps are always helpful, as long as sensible names are used. This allows people to get up to speed more quickly to the project. In addition, more readable code is more likely to be modified confidently by others, rather than feared, ignored and ultimately deleted.
+&lt;p&gt;Shorter, more readable steps are always helpful, as long as sensible names are used. This allows people to get up to speed more quickly to the project. In addition, more readable code is more likely to be modified confidently by others, rather than feared, ignored and ultimately deleted.&lt;/p&gt;
 
-## We lose referential transparency for our steps
+&lt;h2 id=&quot;we-lose-referential-transparency-for-our-steps&quot;&gt;We lose referential transparency for our steps&lt;/h2&gt;
 
-[Referential transparency](http://en.wikipedia.org/wiki/Referential_transparency_%28computer_science%29) is the property of a piece of code that describes whether it only changes its behaviour when its arguments change. It's important because if a piece of code can react in lots of different ways depending on how the program state is set up, it becomes very hard to tell if the code is correct or not.
+&lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Referential_transparency_%28computer_science%29&quot;&gt;Referential transparency&lt;/a&gt; is the property of a piece of code that describes whether it only changes its behaviour when its arguments change. It’s important because if a piece of code can react in lots of different ways depending on how the program state is set up, it becomes very hard to tell if the code is correct or not.&lt;/p&gt;
 
-Therefore, if we're tracking state inside our steps, the other steps which preceed our step are more important. In the example above, the `@person` variable has to be set to what we expect. This decreases our ability to reuse these steps again in other files.
+&lt;p&gt;Therefore, if we’re tracking state inside our steps, the other steps which preceed our step are more important. In the example above, the &lt;code&gt;@person&lt;/code&gt; variable has to be set to what we expect. This decreases our ability to reuse these steps again in other files.&lt;/p&gt;
 
-## Is it worth it?
+&lt;h2 id=&quot;is-it-worth-it&quot;&gt;Is it worth it?&lt;/h2&gt;
 
-I try to work towards referential transparency when I can: I'm planning on posting more about the dangers of overreliance on state in a future blog post series. However, I think this is less important in this context, for the following reasons:
+&lt;p&gt;I try to work towards referential transparency when I can: I’m planning on posting more about the dangers of overreliance on state in a future blog post series. However, I think this is less important in this context, for the following reasons:&lt;/p&gt;
 
-* *We're relying on state anyway.* Normally our `Given` steps are setting up some state that we rely on in our later steps. Whether it is stored in member variables is immaterial - referential transparency at a step level normally doesn't exist practically.
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;We’re relying on state anyway.&lt;/em&gt; Normally our &lt;code&gt;Given&lt;/code&gt; steps are setting up some state that we rely on in our later steps. Whether it is stored in member variables is immaterial - referential transparency at a step level normally doesn’t exist practically.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;I’m not a big fan of step reuse.&lt;/em&gt; I prefer lots of very descriptive steps related directly to one feature, only a little reuse between steps, and short step definitions that in turn call other methods in module code. Therefore I generally treat a series of steps as one ‘unit’, to be treated as a whole, which means I can normally rely on what comes before and after a particular step.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-* *I'm not a big fan of step reuse.* I prefer lots of very descriptive steps related directly to one feature, only a little reuse between steps, and short step definitions that in turn call other methods in module code. Therefore I generally treat a series of steps as one 'unit', to be treated as a whole, which means I can normally rely on what comes before and after a particular step.
+&lt;p&gt;In the end, as with most things in programming, it comes down to a trade off. Is it worth trading tighter dependencies between our steps to get a more little readability and useability? I think that in many cases it is.&lt;/p&gt;
 
-In the end, as with most things in programming, it comes down to a trade off. Is it worth trading tighter dependencies between our steps to get a more little readability and useability? I think that in many cases it is.
+&lt;h2 id=&quot;use-member-variables-with-care&quot;&gt;Use member variables with care&lt;/h2&gt;
 
-## Use member variables with care
+&lt;p&gt;If we decide to use member variables, I suggest we use them with care. Let’s make sure we use names that are &lt;a href=&quot;/2012/09/the-power-of-good-naming&quot;&gt;as meaningful as possible&lt;/a&gt; for all our instance variables in our steps.&lt;/p&gt;
 
-If we decide to use member variables, I suggest we use them with care. Let's make sure we use names that are [as meaningful as possible](/2012/09/the-power-of-good-naming) for all our instance variables in our steps.
+&lt;p&gt;Commonality is important too: in a large project I recently worked on, we had only used about three different instance variable names throughout several hundred steps, which referred to key domain objects: e.g. &lt;code&gt;@person&lt;/code&gt;, &lt;code&gt;@project&lt;/code&gt;, &lt;code&gt;@customer&lt;/code&gt;.&lt;/p&gt;
 
-Commonality is important too: in a large project I recently worked on, we had only used about three different instance variable names throughout several hundred steps, which referred to key domain objects: e.g. `@person`, `@project`, `@customer`.
-
-If we use too many names, then we're tightening up depedencies between specific steps, and we're making them harder to read.
-</content></entry><entry><title>How to write a great story</title><category term='cucumber'/><category term='bdd'/><category term='bddkickstart'/><link href='http://chrismdp.com/2012/10/how-to-write-a-great-story'/><updated>2012-10-30T22:50:00+00:00</updated><id>http://chrismdp.com/2012/10/how-to-write-a-great-story</id><content type='html'>&lt;p&gt;Second in my mini-series of Cucumber videos: a quick introduction on writing a great story.&lt;/p&gt;
+&lt;p&gt;If we use too many names, then we’re tightening up depedencies between specific steps, and we’re making them harder to read.&lt;/p&gt;
+</content></entry><entry><title>How to write a great story</title><category term='cucumber'/><category term='bdd'/><category term='bddkickstart'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2012/10/how-to-write-a-great-story'/><updated>2012-10-30T22:50:00+00:00</updated><id>http://chrismdp.com/2012/10/how-to-write-a-great-story</id><content type='html'>&lt;p&gt;Second in my mini-series of Cucumber videos: a quick introduction on writing a great story.&lt;/p&gt;
 
 &lt;iframe width=&quot;445&quot; height=&quot;300&quot; src=&quot;http://www.youtube.com/embed/RJ3UiK1IEj4&quot; frameborder=&quot;0&quot;&gt;
 
 &lt;/iframe&gt;
 
-&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; This approach works best when starting off a brand new feature in the system. When changing existing features, we need to work to keep our preamble up to date. &lt;a href='http://blog.mattwynne.net/2010/10/22/features-user-stories/'&gt;Matt Wynne's blog post&lt;/a&gt; shows you how.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; This approach works best when starting off a brand new feature in the system. When changing existing features, we need to work to keep our preamble up to date. &lt;a href=&quot;http://blog.mattwynne.net/2010/10/22/features-user-stories/&quot;&gt;Matt Wynne's blog post&lt;/a&gt; shows you how.&lt;/p&gt;
 
-&lt;p&gt;If you like what you see, and you'd like to learn more, a quick reminder that Matt and I are running &lt;a href='http://bddkickstart.com'&gt;BDD Kickstart&lt;/a&gt; in London this coming December: the early bird ends November 4th.
+&lt;p&gt;If you like what you see, and you'd like to learn more, a quick reminder that Matt and I are running &lt;a href=&quot;http://bddkickstart.com&quot;&gt;BDD Kickstart&lt;/a&gt; in London this coming December: the early bird ends November 4th.
 &lt;/p&gt;
-</content></entry><entry><title>The simplest Cucumber project ever</title><category term='cucumber'/><category term='bdd'/><category term='bddkickstart'/><link href='http://chrismdp.com/2012/10/the-simplest-cucumber-project'/><updated>2012-10-25T20:47:16+01:00</updated><id>http://chrismdp.com/2012/10/the-simplest-cucumber-project</id><content type='html'>Cucumber can be really very simple. Here's a short video to show how you can get started in two minutes flat, using only two files: a simple feature file, and a few lines of ruby to execute it.
+</content></entry><entry><title>The simplest Cucumber project ever</title><category term='cucumber'/><category term='bdd'/><category term='bddkickstart'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2012/10/the-simplest-cucumber-project'/><updated>2012-10-25T20:47:16+01:00</updated><id>http://chrismdp.com/2012/10/the-simplest-cucumber-project</id><content type='html'>&lt;p&gt;Cucumber can be really very simple. Here’s a short video to show how you can get started in two minutes flat, using only two files: a simple feature file, and a few lines of ruby to execute it.&lt;/p&gt;
 
 &lt;iframe width=&quot;445&quot; height=&quot;300&quot; src=&quot;http://www.youtube.com/embed/8LtAmj17WtI&quot; frameborder=&quot;0&quot;&gt;
 
 &lt;/iframe&gt;
 
-&lt;p&gt;If you like what you see, and you'd like to learn more, a quick reminder that &lt;a href='http://mattwynne.net'&gt;Matt Wynne&lt;/a&gt; and I are running &lt;a href='http://bddkickstart.com'&gt;BDD Kickstart&lt;/a&gt; in London this coming December: the early bird ends November 4th.
+&lt;p&gt;If you like what you see, and you'd like to learn more, a quick reminder that &lt;a href=&quot;http://mattwynne.net&quot;&gt;Matt Wynne&lt;/a&gt; and I are running &lt;a href=&quot;http://bddkickstart.com&quot;&gt;BDD Kickstart&lt;/a&gt; in London this coming December: the early bird ends November 4th.
 &lt;/p&gt;
-</content></entry><entry><title>Cucumber isn't a testing tool</title><category term='cucumber'/><category term='business'/><category term='bdd'/><category term='team'/><category term='testing'/><link href='http://chrismdp.com/2012/09/cucumber-isnt-a-testing-tool'/><updated>2012-09-19T17:41:22+01:00</updated><id>http://chrismdp.com/2012/09/cucumber-isnt-a-testing-tool</id><content type='html'>This is your periodic reminder that [Cucumber](/tag/cucumber) isn't a testing tool.
+</content></entry><entry><title>Cucumber isn't a testing tool</title><category term='cucumber'/><category term='business'/><category term='bdd'/><category term='team'/><category term='testing'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2012/09/cucumber-isnt-a-testing-tool'/><updated>2012-09-19T17:41:22+01:00</updated><id>http://chrismdp.com/2012/09/cucumber-isnt-a-testing-tool</id><content type='html'>&lt;p&gt;This is your periodic reminder that &lt;a href=&quot;/tag/cucumber&quot;&gt;Cucumber&lt;/a&gt; isn’t a testing tool.&lt;/p&gt;
 
-Here's what it actually is:
+&lt;p&gt;Here’s what it actually is:&lt;/p&gt;
 
-* *Cucumber is a great communication tool.* The great thing about collaborating on a cucumber feature is that the whole team get to stand in the same room and take part in the discussion. Everyone gets to argue about what should go in, what to keep out, and to help capture all the edge cases. The forming of the feature file facilitates that communication, with a great side effect of being able to check the finished feature still works at a later time. Cucumber excels as a communication tool, first and foremost: it's only incidentally a testing tool.
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;Cucumber is a great communication tool.&lt;/em&gt; The great thing about collaborating on a cucumber feature is that the whole team get to stand in the same room and take part in the discussion. Everyone gets to argue about what should go in, what to keep out, and to help capture all the edge cases. The forming of the feature file facilitates that communication, with a great side effect of being able to check the finished feature still works at a later time. Cucumber excels as a communication tool, first and foremost: it’s only incidentally a testing tool.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;Cucumber captures conversations.&lt;/em&gt; A feature file is a &lt;a href=&quot;/2010/02/the-story-card-is-not-the-story&quot;&gt;bookmark&lt;/a&gt; for the real feature: &lt;em&gt;the shared understanding of what needs to be done&lt;/em&gt; that exists in the minds of the team. When the arm-waving and the arguments are done, a well written feature will expertly capture the essence of the conversation - the &lt;a href=&quot;http://dannorth.net/whats-in-a-story&quot;&gt;semi-formal nature&lt;/a&gt; of a feature acts as a checklist to ensure that we’ve talked about everything we need to.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;Cucumber is for the team, not the developers.&lt;/em&gt; Developers are often the gate-keepers of the feature files: if we’re not careful we tend to write them, update them and run them without anyone else ever seeing them. We moan about how much more difficult features are to maintain than regular tests, whilst all the time we’re missing the point: the features aren’t for us, they’re for those who can’t read code!&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-* *Cucumber captures conversations.* A feature file is a [bookmark](/2010/02/the-story-card-is-not-the-story) for the real feature: *the shared understanding of what needs to be done* that exists in the minds of the team. When the arm-waving and the arguments are done, a well written feature will expertly capture the essence of the conversation - the [semi-formal nature](http://dannorth.net/whats-in-a-story) of a feature acts as a checklist to ensure that we've talked about everything we need to.
+&lt;p&gt;For more on this, &lt;a href=&quot;http://video2012.scotlandonrails.com/D1_LB_03-Ruby1280_b.mp4&quot;&gt;watch this video&lt;/a&gt; (&lt;a href=&quot;https://speakerdeck.com/u/chrismdp/p/cucumber-its-about-talking-not-testing&quot;&gt;slides&lt;/a&gt;) from Scottish Ruby Conference where I explore these points in more depth. Remember that at its heart, Cucumber simply translates plain language into executing code. Its power lies in its ability to express code in plain language. Let’s not reduce it to a mere testing tool, without letting the stakeholders see the features. If you’re doing that, you’re better off using RSpec.&lt;/p&gt;
+</content></entry><entry><title>Kickstart your team on BDD</title><category term='bddkickstart'/><category term='bdd'/><category term='cucumber'/><category term='code'/><category term='ruby'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2012/07/kickstart-your-team-on-bdd'/><updated>2012-07-27T08:13:22+01:00</updated><id>http://chrismdp.com/2012/07/kickstart-your-team-on-bdd</id><content type='html'>&lt;p&gt;&lt;a href=&quot;http://mattwynne.net&quot;&gt;Matt Wynne&lt;/a&gt; and I have been running courses on BDD for the BBC Future Media division for the past year or two. They’ve been extremely well received, so we’ve decided to open them up to the wider public so everyone can benefit.&lt;/p&gt;
 
-* *Cucumber is for the team, not the developers.* Developers are often the gate-keepers of the feature files: if we're not careful we tend to write them, update them and run them without anyone else ever seeing them. We moan about how much more difficult features are to maintain than regular tests, whilst all the time we're missing the point: the features aren't for us, they're for those who can't read code!
+&lt;p&gt;The full details are at &lt;a href=&quot;http://bddkickstart.com&quot;&gt;bddkickstart.com&lt;/a&gt;, but read on for a bit more info:&lt;/p&gt;
 
-For more on this, [watch this video](http://video2012.scotlandonrails.com/D1_LB_03-Ruby1280_b.mp4) ([slides](https://speakerdeck.com/u/chrismdp/p/cucumber-its-about-talking-not-testing)) from Scottish Ruby Conference where I explore these points in more depth. Remember that at its heart, Cucumber simply translates plain language into executing code. Its power lies in its ability to express code in plain language. Let's not reduce it to a mere testing tool, without letting the stakeholders see the features. If you're doing that, you're better off using RSpec.
-</content></entry><entry><title>Kickstart your team on BDD</title><category term='bddkickstart'/><category term='bdd'/><category term='cucumber'/><category term='code'/><category term='ruby'/><link href='http://chrismdp.com/2012/07/kickstart-your-team-on-bdd'/><updated>2012-07-27T08:13:22+01:00</updated><id>http://chrismdp.com/2012/07/kickstart-your-team-on-bdd</id><content type='html'>[Matt Wynne](http://mattwynne.net) and I have been running courses on BDD for the BBC Future Media division for the past year or two. They've been extremely well received, so we've decided to open them up to the wider public so everyone can benefit.
+&lt;h2 id=&quot;whenwhere-is-it&quot;&gt;When/where is it?&lt;/h2&gt;
 
-The full details are at [bddkickstart.com](http://bddkickstart.com), but read on for a bit more info:
+&lt;p&gt;There are four seperate day-long workshops running in October, from 8th - 11th in Central London near Trafalgar Square. You can just come to one day, or all four.&lt;/p&gt;
 
-## When/where is it?
+&lt;h2 id=&quot;whats-the-course-material&quot;&gt;What’s the course material?&lt;/h2&gt;
 
-There are four seperate day-long workshops running in October, from 8th - 11th in Central London near Trafalgar Square. You can just come to one day, or all four.
+&lt;p&gt;Day 1 is entitled “Just enough Ruby”. It teaches programmers from other languages the basics of Ruby so that they are comfortable using cucumber effectively.&lt;/p&gt;
 
-## What's the course material?
+&lt;p&gt;Day 2 is a BDD workshop for the whole team. It builds awareness and enthusiasm for the concepts with a chance to practice collaboration in the way that makes BDD work.&lt;/p&gt;
 
-Day 1 is entitled &quot;Just enough Ruby&quot;. It teaches programmers from other languages the basics of Ruby so that they are comfortable using cucumber effectively.
+&lt;p&gt;Day 3 is a practical day for programmers to learn about Cucumber: what it is, what it isn’t, and how to write good cucumber code that can be maintained over time.&lt;/p&gt;
 
-Day 2 is a BDD workshop for the whole team. It builds awareness and enthusiasm for the concepts with a chance to practice collaboration in the way that makes BDD work.
+&lt;p&gt;Day 4 covers advanced BDD concepts and common pitfall people find when using these techniques in the real world.&lt;/p&gt;
 
-Day 3 is a practical day for programmers to learn about Cucumber: what it is, what it isn't, and how to write good cucumber code that can be maintained over time.
+&lt;h2 id=&quot;do-i-have-to-sign-up-for-all-four-days&quot;&gt;Do I have to sign up for all four days?&lt;/h2&gt;
 
-Day 4 covers advanced BDD concepts and common pitfall people find when using these techniques in the real world.
+&lt;p&gt;No, you can pick and choose, and just come to one day if you like. There’s a small per day discount if you book all four days.&lt;/p&gt;
 
-## Do I have to sign up for all four days?
-
-No, you can pick and choose, and just come to one day if you like. There's a small per day discount if you book all four days.
-
-## So which days are for me?
+&lt;h2 id=&quot;so-which-days-are-for-me&quot;&gt;So which days are for me?&lt;/h2&gt;
 
 &lt;p&gt;if you're a &lt;strong&gt;developer with Ruby experience&lt;/strong&gt;, you might want to skip the first day and come along to days 2, 3 or 4.&lt;/p&gt;
 
@@ -115,606 +147,649 @@ No, you can pick and choose, and just come to one day if you like. There's a sma
 
 &lt;p&gt;If you're a &lt;strong&gt;keen developer but not necessily very experienced in Ruby&lt;/strong&gt;, you should consider the &lt;a href=&quot;http://bdd.eventbrite.co.uk&quot;&gt;full four day course&lt;/a&gt;. We'll take you through the basics of Ruby, the reasons behind doing development this way, how to use Cucumber properly (saving you time in the long run) and some neat advanced tricks.&lt;/p&gt;
 
-## Are you running early bird tickets, or promotions?
+&lt;h2 id=&quot;are-you-running-early-bird-tickets-or-promotions&quot;&gt;Are you running early bird tickets, or promotions?&lt;/h2&gt;
 
-Glad you asked: if you use the code &lt;strong&gt;super-early-birdy&lt;/strong&gt; you'll get 20% of the list price until 1st August, just for reading this far down the page :)
+&lt;p&gt;Glad you asked: if you use the code &lt;strong&gt;super-early-birdy&lt;/strong&gt; you’ll get 20% of the list price until 1st August, just for reading this far down the page :)&lt;/p&gt;
 
-## How can I find out more or book my place?
+&lt;h2 id=&quot;how-can-i-find-out-more-or-book-my-place&quot;&gt;How can I find out more or book my place?&lt;/h2&gt;
 
-You can find more info and book at [bddkickstart.com](http://bddkickstart.com), or [send us mail](mailto::hello@bddkickstart.com) if you have specific questions.
+&lt;p&gt;You can find more info and book at &lt;a href=&quot;http://bddkickstart.com&quot;&gt;bddkickstart.com&lt;/a&gt;, or &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#058;&amp;#104;&amp;#101;&amp;#108;&amp;#108;&amp;#111;&amp;#064;&amp;#098;&amp;#100;&amp;#100;&amp;#107;&amp;#105;&amp;#099;&amp;#107;&amp;#115;&amp;#116;&amp;#097;&amp;#114;&amp;#116;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;send us mail&lt;/a&gt; if you have specific questions.&lt;/p&gt;
 
-Hope to see you in October!
-</content></entry><entry><title>Feature writing: multiple actors</title><category term='bdd'/><category term='cucumber'/><category term='code'/><link href='http://chrismdp.com/2011/12/feature-writing-multiple-actors'/><updated>2011-12-08T11:01:23+00:00</updated><id>http://chrismdp.com/2011/12/feature-writing-multiple-actors</id><content type='html'>I've [written a fair amount](/tag/cucumber) in the past about Cucumber and the way I like to structure my features. After reading these through, someone recently asked me about a particular workflow concerning multiple actors.
+&lt;p&gt;Hope to see you in October!&lt;/p&gt;
+</content></entry><entry><title>Feature writing: multiple actors</title><category term='bdd'/><category term='cucumber'/><category term='code'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2011/12/feature-writing-multiple-actors'/><updated>2011-12-08T11:01:23+00:00</updated><id>http://chrismdp.com/2011/12/feature-writing-multiple-actors</id><content type='html'>&lt;p&gt;I’ve &lt;a href=&quot;/tag/cucumber&quot;&gt;written a fair amount&lt;/a&gt; in the past about Cucumber and the way I like to structure my features. After reading these through, someone recently asked me about a particular workflow concerning multiple actors.&lt;/p&gt;
 
-They were starting from the following feature file:
+&lt;p&gt;They were starting from the following feature file:&lt;/p&gt;
 
-{% highlight cucumber %}
-Feature: Complimentary Accounts
+&lt;p&gt;{% highlight cucumber %}
+Feature: Complimentary Accounts&lt;/p&gt;
 
-Scenario: Creating a complimentary account
+&lt;p&gt;Scenario: Creating a complimentary account
   Given I am signed-in to the admin area
   When I create a new complimintary account with these details:
     | Name  | John Smith           |
     | Email | john.smith@gmail.com |
-  Then a welcome email should be sent to 'john.smith@gmail.com'
+  Then a welcome email should be sent to ‘john.smith@gmail.com’&lt;/p&gt;
 
-Scenario: Receiving a welcome email
+&lt;p&gt;Scenario: Receiving a welcome email
   Given I have received a welcome email
   When I follow the link
   Then I should see a welcome page
   And I should be signed-in
   And I should see the details of my account
   And I should be able to set my password
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-The concern was that the feature had more than one actor involved: there was the administrator creating the complimentary account, and the recipient of that account. The feature as written just didn't feel right to them: it's not clear who the actors are from the text, although the feature has a certain workflow. Also the check that recipient can set the password is an important one, but isn't clearly called out in the feature.
+&lt;p&gt;The concern was that the feature had more than one actor involved: there was the administrator creating the complimentary account, and the recipient of that account. The feature as written just didn’t feel right to them: it’s not clear who the actors are from the text, although the feature has a certain workflow. Also the check that recipient can set the password is an important one, but isn’t clearly called out in the feature.&lt;/p&gt;
 
-How could this be written differently?
+&lt;p&gt;How could this be written differently?&lt;/p&gt;
 
-## Setting the scene
+&lt;h2 id=&quot;setting-the-scene&quot;&gt;Setting the scene&lt;/h2&gt;
 
-The first thing I noticed is that the feature is missing a preamble. People often leave these out, but I find them invaluable to set the context of the feature and to ensure there's a point to adding the feature at all.
+&lt;p&gt;The first thing I noticed is that the feature is missing a preamble. People often leave these out, but I find them invaluable to set the context of the feature and to ensure there’s a point to adding the feature at all.&lt;/p&gt;
 
-To write the scenarios, I would approach this from the point of view of the personas involved, who I would [normally give names](/2011/04/cucumbers-with-personality). In this case there are two obvious personas: Angie the Administrator, and Victor the VIP. There's a more subtle role at play here too: It's unlikely that Angie decides who gets a complimentary accoun. Therefore we also have the particular stakeholder who wants this feature, who we will call Buster the Business Development Director.
+&lt;p&gt;To write the scenarios, I would approach this from the point of view of the personas involved, who I would &lt;a href=&quot;/2011/04/cucumbers-with-personality&quot;&gt;normally give names&lt;/a&gt;. In this case there are two obvious personas: Angie the Administrator, and Victor the VIP. There’s a more subtle role at play here too: It’s unlikely that Angie decides who gets a complimentary accoun. Therefore we also have the particular stakeholder who wants this feature, who we will call Buster the Business Development Director.&lt;/p&gt;
 
-This is how I'd structure the &quot;non-executing&quot; part of the feature:
+&lt;p&gt;This is how I’d structure the “non-executing” part of the feature:&lt;/p&gt;
 
-{% highlight cucumber %}
+&lt;p&gt;{% highlight cucumber %}
 Feature: Complimentary Accounts
   In order to cater for certain special people that promote our
     company in other ways
   As Buster the Business development director
   I want the ability to ask Angie the Administrator to create
-    special free accounts for special people
+    special free accounts for special people&lt;/p&gt;
 
-  Scenario: Angie creates a complimentary account
+&lt;p&gt;Scenario: Angie creates a complimentary account
     ..
   Scenario: Victor receives a welcome email
     ..
   Scenario: Victor can change his password
     ..
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-I'd check this with the customer too, just to make sure it made sense. If the password changing is important to them, I'd make that a separate scenario.
+&lt;p&gt;I’d check this with the customer too, just to make sure it made sense. If the password changing is important to them, I’d make that a separate scenario.&lt;/p&gt;
 
-## Writing the scenarios
+&lt;h2 id=&quot;writing-the-scenarios&quot;&gt;Writing the scenarios&lt;/h2&gt;
 
-I keep my [scenarios really short](/2011/09/layers-of-abstraction-writing-great-cucumber-code). So I'd try and push some of these details down into steps. Let's take the scenarios in turn:
+&lt;p&gt;I keep my &lt;a href=&quot;/2011/09/layers-of-abstraction-writing-great-cucumber-code&quot;&gt;scenarios really short&lt;/a&gt;. So I’d try and push some of these details down into steps. Let’s take the scenarios in turn:&lt;/p&gt;
 
-{% highlight cucumber %}
+&lt;p&gt;{% highlight cucumber %}
 @angie
 Scenario: Angie creates a complimentary account
   When I create a new complimintary account for Victor
   Then a welcome email should be sent to Victor
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-The `@angie` tag just ensures that Angie is signed in. It's neater than a separate `Given` step in my opinion. I don't include specifics such as email addresses: it's just noise.
+&lt;p&gt;The &lt;code&gt;@angie&lt;/code&gt; tag just ensures that Angie is signed in. It’s neater than a separate &lt;code&gt;Given&lt;/code&gt; step in my opinion. I don’t include specifics such as email addresses: it’s just noise.&lt;/p&gt;
 
-{% highlight cucumber %}
+&lt;p&gt;{% highlight cucumber %}
 @victor
 Scenario: Victor receives a welcome email
   Given I have received a welcome email
   When I follow the link
   Then I am logged straight into my account
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-The fact that we've switched actor here isn't a problem in my view. It's still clear who &quot;I&quot; is in this case, because the scenario title is clear and descriptive.
+&lt;p&gt;The fact that we’ve switched actor here isn’t a problem in my view. It’s still clear who “I” is in this case, because the scenario title is clear and descriptive.&lt;/p&gt;
 
-{% highlight cucumber %}
+&lt;p&gt;{% highlight cucumber %}
 @victor
 Scenario: Victor receives a welcome email
   Given I have received a welcome email
   When I follow the link
   Then I can change my password from the first screen
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-This is a very similar scenario, but it's worth making it a separate one as the password change is an important business need for the customer. It's very tempting to tag the check onto the end of a previous scenario, but this reduces clarity and the perceived importance of that particular part of the feature in everybody's mind.
+&lt;p&gt;This is a very similar scenario, but it’s worth making it a separate one as the password change is an important business need for the customer. It’s very tempting to tag the check onto the end of a previous scenario, but this reduces clarity and the perceived importance of that particular part of the feature in everybody’s mind.&lt;/p&gt;
 
-Feature files are [bookmarks for conversation](/2010/02/the-story-card-is-not-the-story) in just the same way that other agile tracking methods are. If they don't accurate represent the shared thinking, they're worse than useless.
+&lt;p&gt;Feature files are &lt;a href=&quot;/2010/02/the-story-card-is-not-the-story&quot;&gt;bookmarks for conversation&lt;/a&gt; in just the same way that other agile tracking methods are. If they don’t accurate represent the shared thinking, they’re worse than useless.&lt;/p&gt;
 
-## Get the customer input
+&lt;h2 id=&quot;get-the-customer-input&quot;&gt;Get the customer input&lt;/h2&gt;
 
-I'm not sure if this feature had originally been run past the customer, but this point is so important that it's worth restating anyway:
+&lt;p&gt;I’m not sure if this feature had originally been run past the customer, but this point is so important that it’s worth restating anyway:&lt;/p&gt;
 
-*If you're not showing the customer the feature files you're missing out on 90% of the value of Cucumber.*
+&lt;p&gt;&lt;em&gt;If you’re not showing the customer the feature files you’re missing out on 90% of the value of Cucumber.&lt;/em&gt;&lt;/p&gt;
 
-I'm still sometimes guilty of not doing this. I feel like I must have covered every detail and that discussing it with a customer is a waste of time, but I can't remember ever showing a feature file to a customer where we didn't change the feature to make it better. There's always some ambiguity you [can drive out](/2010/01/driving-out-feature-ambiguity).
+&lt;p&gt;I’m still sometimes guilty of not doing this. I feel like I must have covered every detail and that discussing it with a customer is a waste of time, but I can’t remember ever showing a feature file to a customer where we didn’t change the feature to make it better. There’s always some ambiguity you &lt;a href=&quot;/2010/01/driving-out-feature-ambiguity&quot;&gt;can drive out&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;i&gt;Have you got any feature files you'd like some input on? Send them over and I'll do my best to give some insight if I can.&lt;/i&gt;&lt;/p&gt;
 
-</content></entry><entry><title>Your tests are lying to you</title><category term='code'/><category term='cucumber'/><category term='craftsmanship'/><category term='bdd'/><category term='rspec'/><category term='rails'/><link href='http://chrismdp.com/2011/10/your-tests-are-lying-to-you'/><updated>2011-10-17T19:10:29+01:00</updated><id>http://chrismdp.com/2011/10/your-tests-are-lying-to-you</id><content type='html'>Using mocks within your test suite has gone rather out of fashion. Programmers everywhere have been lamenting the fact that mock-based tests are becoming more and more brittle: they're having to change the test code in multiple places each time there's the slightest code change. In fact, they seem to be changing the test code much much more often than the production code.
+</content></entry><entry><title>Your tests are lying to you</title><category term='code'/><category term='cucumber'/><category term='craftsmanship'/><category term='bdd'/><category term='rspec'/><category term='rails'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2011/10/your-tests-are-lying-to-you'/><updated>2011-10-17T19:10:29+01:00</updated><id>http://chrismdp.com/2011/10/your-tests-are-lying-to-you</id><content type='html'>&lt;p&gt;Using mocks within your test suite has gone rather out of fashion. Programmers everywhere have been lamenting the fact that mock-based tests are becoming more and more brittle: they’re having to change the test code in multiple places each time there’s the slightest code change. In fact, they seem to be changing the test code much much more often than the production code.&lt;/p&gt;
 
-Using mocks appear to require a lot of set up code for the object under test. Why not just fire up Factory Girl, create a bunch of objects we need to test this code, and just check the outputs?
+&lt;p&gt;Using mocks appear to require a lot of set up code for the object under test. Why not just fire up Factory Girl, create a bunch of objects we need to test this code, and just check the outputs?&lt;/p&gt;
 
-This works, and appears to work nicely. For a while.
+&lt;p&gt;This works, and appears to work nicely. For a while.&lt;/p&gt;
 
-Eventually your tests will get to the point where they're lying to you: they're telling you your code works whereas actually it only works by coincidence. This post will examine the different techniques we can use to test code, and why some work better than others in the long term.
+&lt;p&gt;Eventually your tests will get to the point where they’re lying to you: they’re telling you your code works whereas actually it only works by coincidence. This post will examine the different techniques we can use to test code, and why some work better than others in the long term.&lt;/p&gt;
 
-## The problem
+&lt;h2 id=&quot;the-problem&quot;&gt;The problem&lt;/h2&gt;
 
-To look at this further, let's try to write a conference simulator for a new website that tries to predict how many people might attend an upcoming event: 
+&lt;p&gt;To look at this further, let’s try to write a conference simulator for a new website that tries to predict how many people might attend an upcoming event: &lt;/p&gt;
 
-{% highlight ruby %}
+&lt;p&gt;{% highlight ruby %}
 describe Conference do
-  it &quot;calculates total rating&quot; do
-    conference = Conference.new(:total_rating =&gt; 9)
+  it “calculates total rating” do
+    conference = Conference.new(:total_rating =&amp;gt; 9)
     conference.total_rating.should == 9
   end
 end
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-A simple start, with equally simple production code. Next, we decide to extract our code for calculating the rating into &lt;code&gt;Speaker&lt;/code&gt; classes. We decide not to change the test suite much, and make the code work behind the scenes:
+&lt;p&gt;A simple start, with equally simple production code. Next, we decide to extract our code for calculating the rating into &lt;code&gt;Speaker&lt;/code&gt; classes. We decide not to change the test suite much, and make the code work behind the scenes:&lt;/p&gt;
 
-{% highlight ruby %}
+&lt;p&gt;{% highlight ruby %}
 describe Conference do
-  it &quot;calculates total rating&quot; do
-    conference = Conference.new(:speakers =&gt; [:chris, :paul])
+  it “calculates total rating” do
+    conference = Conference.new(:speakers =&amp;gt; [:chris, :paul])
     conference.total_rating.should == 9
   end
 end
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-A nice simple, easy change? You'll pay for this later. Where is the Speaker coming from? Your Conference class is creating it somewhere, or retrieving it from a factory. You've increased the number of collaborators for this class by at least one (possibly three), yet your test isn't showing the additional complexity. It's deceitfully hiding it, whilst you continue on in blissful ignorance.
+&lt;p&gt;A nice simple, easy change? You’ll pay for this later. Where is the Speaker coming from? Your Conference class is creating it somewhere, or retrieving it from a factory. You’ve increased the number of collaborators for this class by at least one (possibly three), yet your test isn’t showing the additional complexity. It’s deceitfully hiding it, whilst you continue on in blissful ignorance.&lt;/p&gt;
 
-Your tests are now sitting around the outside of your system. There are no tests for the Speaker class at all, except that we co-incidentally check the rating it emits. Another developer is likely to miss the connection and remove the implied test whilst changing the code for a different reason later.
+&lt;p&gt;Your tests are now sitting around the outside of your system. There are no tests for the Speaker class at all, except that we co-incidentally check the rating it emits. Another developer is likely to miss the connection and remove the implied test whilst changing the code for a different reason later.&lt;/p&gt;
 
-This gets worse over time:
+&lt;p&gt;This gets worse over time:&lt;/p&gt;
 
-{% highlight ruby %}
+&lt;p&gt;{% highlight ruby %}
 describe Conference do
-  it &quot;calculates total rating&quot; do
+  it “calculates total rating” do
     conference = Conference.new(
-      :schedule =&gt; :nine_to_five,
-      :talks =&gt; [talk_for(:chris), talk_for(:paul)]
+      :schedule =&amp;gt; :nine_to_five,
+      :talks =&amp;gt; [talk_for(:chris), talk_for(:paul)]
     )
     conference.total_rating.should == 9
   end
 end
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-Can you see what's going on here? We've created some nice helper methods to make it easy to create the required talk objects we need. This test is fairly easy to read, but it's dressing up the problem. The test code is relying on far too many collaborators to function correctly to return the correct result.
+&lt;p&gt;Can you see what’s going on here? We’ve created some nice helper methods to make it easy to create the required talk objects we need. This test is fairly easy to read, but it’s dressing up the problem. The test code is relying on far too many collaborators to function correctly to return the correct result.&lt;/p&gt;
 
-When you extract a class, your purely state based tests don't always require change. If you're not stubbing out or mocking systems, you can end up in a situation where you're relying on the code to work without realising it.
+&lt;p&gt;When you extract a class, your purely state based tests don’t always require change. If you’re not stubbing out or mocking systems, you can end up in a situation where you’re relying on the code to work without realising it.&lt;/p&gt;
 
-How could it be improved?
+&lt;p&gt;How could it be improved?&lt;/p&gt;
 
-{% highlight ruby %}
+&lt;p&gt;{% highlight ruby %}
 describe Conference do
-  let(:talk1) { double(:talk, :rating =&gt; 10) }
-  let(:talk2) { double(:talk, :rating =&gt; 6) }
-  let(:schedule) { double(:schedule, :rating =&gt; 10) }
-  before(:each) { Schedule.stub(:new =&gt; schedule) }
-  it &quot;calculates total rating&quot; do
+  let(:talk1) { double(:talk, :rating =&amp;gt; 10) }
+  let(:talk2) { double(:talk, :rating =&amp;gt; 6) }
+  let(:schedule) { double(:schedule, :rating =&amp;gt; 10) }
+  before(:each) { Schedule.stub(:new =&amp;gt; schedule) }
+  it “calculates total rating” do
     conference = Conference.new(
-      :schedule =&gt; :nine_to_five,
-      :talks =&gt; [talk1, talk2]
+      :schedule =&amp;gt; :nine_to_five,
+      :talks =&amp;gt; [talk1, talk2]
     )
     conference.total_rating.should == 9
   end
-end
+end&lt;/p&gt;
 
-describe Speaker do
+&lt;p&gt;describe Speaker do
 end
 describe Schedule do
 end
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-Now we've isolated the method nicely from its collaborators, and ensured that its behaviour is correct: that it aggregates the ratings of the talks and the schedule. We also make sure that we're testing Conference correctly, also in isolation.
+&lt;p&gt;Now we’ve isolated the method nicely from its collaborators, and ensured that its behaviour is correct: that it aggregates the ratings of the talks and the schedule. We also make sure that we’re testing Conference correctly, also in isolation.&lt;/p&gt;
 
-The more you use refactoring methods such as Extract Class without cleaning up your tests, the more likely your tests will be lying to you. Little by little, those tests that you trusted are slowly testing more and more code. You add a multitude of edge cases at the edges, never thinking about the complexity within. You've resorted to using end-to-end tests to test basic correctness.
+&lt;p&gt;The more you use refactoring methods such as Extract Class without cleaning up your tests, the more likely your tests will be lying to you. Little by little, those tests that you trusted are slowly testing more and more code. You add a multitude of edge cases at the edges, never thinking about the complexity within. You’ve resorted to using end-to-end tests to test basic correctness.&lt;/p&gt;
 
-This is a bad thing on many levels: for example, what happens to interface discovery? How will you know how the interface of your lower-level classes needs to behave if you're not mocking or stubbing it? You are resorting to guessing, rather than exercising the interface ahead of time in your tests. If you have tests around the edges, but not in the middle, you're not gaining the design input that tests give you in each layer of your system.
+&lt;p&gt;This is a bad thing on many levels: for example, what happens to interface discovery? How will you know how the interface of your lower-level classes needs to behave if you’re not mocking or stubbing it? You are resorting to guessing, rather than exercising the interface ahead of time in your tests. If you have tests around the edges, but not in the middle, you’re not gaining the design input that tests give you in each layer of your system.&lt;/p&gt;
 
-## Your code stinks
+&lt;h2 id=&quot;your-code-stinks&quot;&gt;Your code stinks&lt;/h2&gt;
 
-If you go the whole hog with testing in isolation, then you might end up here with something like this:
+&lt;p&gt;If you go the whole hog with testing in isolation, then you might end up here with something like this:&lt;/p&gt;
 
-{% highlight ruby %}
+&lt;p&gt;{% highlight ruby %}
 describe Conference do
-  let(:talk1) { double(:talk, :rating =&gt; 10) }
-  let(:talk2) { double(:talk, :rating =&gt; 6) }
-  let(:talk3) { double(:talk, :rating =&gt; 2) }
-  let(:talk4) { double(:talk, :rating =&gt; 8) }
-  let(:track1) { double(:track, :talks =&gt; [talk1, talk3] }
-  let(:track2) { double(:track, :talks =&gt; [talk2, talk4] }
+  let(:talk1) { double(:talk, :rating =&amp;gt; 10) }
+  let(:talk2) { double(:talk, :rating =&amp;gt; 6) }
+  let(:talk3) { double(:talk, :rating =&amp;gt; 2) }
+  let(:talk4) { double(:talk, :rating =&amp;gt; 8) }
+  let(:track1) { double(:track, :talks =&amp;gt; [talk1, talk3] }
+  let(:track2) { double(:track, :talks =&amp;gt; [talk2, talk4] }&lt;/p&gt;
 
-  let(:venue1) { double(:venue, :nice_coffee_places =&gt; 3) }
+&lt;p&gt;let(:venue1) { double(:venue, :nice_coffee_places =&amp;gt; 3) }&lt;/p&gt;
 
-  let(:joe) { double(:announcer, :experience =&gt; 5) }
+&lt;p&gt;let(:joe) { double(:announcer, :experience =&amp;gt; 5) }&lt;/p&gt;
 
-  let(:schedule) { double(:schedule, :rating =&gt; 10, :accouncer =&gt; joe) }
-  before(:each) { Schedule.stub(:new =&gt; schedule) }
+&lt;p&gt;let(:schedule) { double(:schedule, :rating =&amp;gt; 10, :accouncer =&amp;gt; joe) }
+  before(:each) { Schedule.stub(:new =&amp;gt; schedule) }&lt;/p&gt;
 
-  it &quot;calculates total rating&quot; do
+&lt;p&gt;it “calculates total rating” do
     conference = Conference.new(
-      :schedule =&gt; :nine_to_five,
-      :tracks =&gt; [track1, track2],
-      :organiser =&gt; joe,
-      :venues =&gt; [venue1, venue1]
+      :schedule =&amp;gt; :nine_to_five,
+      :tracks =&amp;gt; [track1, track2],
+      :organiser =&amp;gt; joe,
+      :venues =&amp;gt; [venue1, venue1]
     )
     conference.total_rating.should == 6.3945820
   end
-end
+end&lt;/p&gt;
 
-{% endhighlight %}
+&lt;p&gt;{% endhighlight %}&lt;/p&gt;
 
-I'm not surprised people moan about maintaining this: if any aspect of the Conference class changes, this test will break and need to be fixed. We can see that this test code is hard to write and difficult to read. It would be so much easier just to hide this setup in a few factory methods with some sensible defaults, right?
+&lt;p&gt;I’m not surprised people moan about maintaining this: if any aspect of the Conference class changes, this test will break and need to be fixed. We can see that this test code is hard to write and difficult to read. It would be so much easier just to hide this setup in a few factory methods with some sensible defaults, right?&lt;/p&gt;
 
-Maybe it's not the test code that's the problem. Perhaps the code stinks. Perhaps the class simply has way too many collaborators, which is why your test code contains a large amount of set up.
+&lt;p&gt;Maybe it’s not the test code that’s the problem. Perhaps the code stinks. Perhaps the class simply has way too many collaborators, which is why your test code contains a large amount of set up.&lt;/p&gt;
 
-For this test code, we can see there are several objects leaking all over the conference code: to refactor this I'd probably get through a Scheduler, Caterer and perhaps a TrackAggregator before I was done. I'd ensure all these objects were tested in isolation, and ensure that there are acceptance tests all the way through to make sure the customer has what they need.
+&lt;p&gt;For this test code, we can see there are several objects leaking all over the conference code: to refactor this I’d probably get through a Scheduler, Caterer and perhaps a TrackAggregator before I was done. I’d ensure all these objects were tested in isolation, and ensure that there are acceptance tests all the way through to make sure the customer has what they need.&lt;/p&gt;
 
-_Well designed code is easy to test._ As a rule of thumb, anytime I get over about two or three lines of setup code for testing a method, I normally take a step back and ask myself if this method is doing too much.
+&lt;p&gt;&lt;em&gt;Well designed code is easy to test.&lt;/em&gt; As a rule of thumb, anytime I get over about two or three lines of setup code for testing a method, I normally take a step back and ask myself if this method is doing too much.&lt;/p&gt;
 
+&lt;h2 id=&quot;test-speed&quot;&gt;Test speed&lt;/h2&gt;
 
-## Test speed
+&lt;p&gt;The other advantage of running tests purely in isolation is that they’re fast. Very fast. When I’m coding Rails apps these days, thanks to advice from &lt;a href=&quot;http://twitter.com/coreyhaines&quot;&gt;Corey Haines&lt;/a&gt; I’m running a &lt;code&gt;spec_no_rails&lt;/code&gt; folder which runs independently from the rest of my Rails app. Rails apps by default epitomise this problem: default model tests exercise the whole system from the database up. By running your tests independently you’re not having to clean the database or start Rails each time you run your tests, which means that much of your interesting code can be tested in under a second. &lt;a href=&quot;http://twitter.com/garybernhardt&quot;&gt;Gary Bernhardt&lt;/a&gt; has more information on how to set this up in his excellent &lt;a href=&quot;http://destroyallsoftware.com&quot;&gt;Destroy All Software&lt;/a&gt; screencast series.&lt;/p&gt;
 
-The other advantage of running tests purely in isolation is that they're fast. Very fast. When I'm coding Rails apps these days, thanks to advice from [Corey Haines](http://twitter.com/coreyhaines) I'm running a &lt;code&gt;spec_no_rails&lt;/code&gt; folder which runs independently from the rest of my Rails app. Rails apps by default epitomise this problem: default model tests exercise the whole system from the database up. By running your tests independently you're not having to clean the database or start Rails each time you run your tests, which means that much of your interesting code can be tested in under a second. [Gary Bernhardt](http://twitter.com/garybernhardt) has more information on how to set this up in his excellent [Destroy All Software](http://destroyallsoftware.com) screencast series.
+&lt;h2 id=&quot;what-im-not-saying&quot;&gt;What I’m not saying&lt;/h2&gt;
 
-## What I'm not saying
+&lt;p&gt;This isn’t an argument for or against Mocks or Stubs. Either technique can be used successfully to generate clean code. It’s an argument about only exercising the code under test, and leave the rest of the system to take care of itself. The important thing is that you &lt;em&gt;don’t exercise your collaborators:&lt;/em&gt; whether you check they’ve received messages or simply stub them to return input doesn’t matter.&lt;/p&gt;
 
-This isn't an argument for or against Mocks or Stubs. Either technique can be used successfully to generate clean code. It's an argument about only exercising the code under test, and leave the rest of the system to take care of itself. The important thing is that you _don't exercise your collaborators:_ whether you check they've received messages or simply stub them to return input doesn't matter.
+&lt;p&gt;&lt;em&gt;Don’t forget end-to-end tests.&lt;/em&gt; These are very important for business acceptance and for ensuring basic functionality. The important thing is to ensure that you’re being intentional about your end-to-end tests and ensure your unit tests are not end-to-end tests by accident.&lt;/p&gt;
 
-*Don't forget end-to-end tests.* These are very important for business acceptance and for ensuring basic functionality. The important thing is to ensure that you're being intentional about your end-to-end tests and ensure your unit tests are not end-to-end tests by accident.
+&lt;p&gt;Take a good look at the test code for a project you recently worked on. You don’t need to look at the production code yet: notice that I’ve not included any production code in these examples. You shouldn’t need to see it to know whether it’s of good quality or not: you can tell that by reading the tests.&lt;/p&gt;
 
-Take a good look at the test code for a project you recently worked on. You don't need to look at the production code yet: notice that I've not included any production code in these examples. You shouldn't need to see it to know whether it's of good quality or not: you can tell that by reading the tests.
+&lt;p&gt;Which is the most annoying or bulky part of your test code? Are your tests deceiving you about what they’re testing? How could you improve the code to make this test code easier to maintain?&lt;/p&gt;
+</content></entry><entry><title>Layers of abstraction: writing great cucumber code</title><category term='bdd'/><category term='cucumber'/><category term='agile'/><category term='ux'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2011/09/layers-of-abstraction-writing-great-cucumber-code'/><updated>2011-09-15T07:44:41+01:00</updated><id>http://chrismdp.com/2011/09/layers-of-abstraction-writing-great-cucumber-code</id><content type='html'>&lt;p&gt;I blogged about Gojko’s thoughts on layers of abstraction &lt;a href=&quot;/2011/09/layers-of-abstraction-bdd-ux&quot;&gt;a week or so ago&lt;/a&gt;, discussing three different ways we can think about the behaviour of any system. These way are: the business rules, the workflow of that system, and the specific activity the user is undertaking.&lt;/p&gt;
 
-Which is the most annoying or bulky part of your test code? Are your tests deceiving you about what they're testing? How could you improve the code to make this test code easier to maintain?
-</content></entry><entry><title>Layers of abstraction: writing great cucumber code</title><category term='bdd'/><category term='cucumber'/><category term='agile'/><category term='ux'/><link href='http://chrismdp.com/2011/09/layers-of-abstraction-writing-great-cucumber-code'/><updated>2011-09-15T07:44:41+01:00</updated><id>http://chrismdp.com/2011/09/layers-of-abstraction-writing-great-cucumber-code</id><content type='html'>I blogged about Gojko's thoughts on layers of abstraction [a week or so ago](/2011/09/layers-of-abstraction-bdd-ux), discussing three different ways we can think about the behaviour of any system. These way are: the business rules, the workflow of that system, and the specific activity the user is undertaking.
+&lt;p&gt;Today I want to think about how we can leverage these insights to help us write really good cucumber features and step code.&lt;/p&gt;
 
-Today I want to think about how we can leverage these insights to help us write really good cucumber features and step code.
+&lt;h2 id=&quot;i-used-to-write-terrible-features&quot;&gt;I used to write terrible features&lt;/h2&gt;
 
-## I used to write terrible features
+&lt;p&gt;Do these look familiar?&lt;/p&gt;
 
-Do these look familiar?
-
-{% highlight cucumber %}
+&lt;p&gt;{% highlight cucumber %}
 Feature: Paul pays employees
   In order to retain staff
-  As Paul the Payroll Manager I want to pay my staff
+  As Paul the Payroll Manager I want to pay my staff&lt;/p&gt;
 
-Scenario:
-  Given an admin user called &quot;Paul&quot; with a password &quot;password&quot;
-  And a user called &quot;Bob&quot;
-  And &quot;Bob&quot; is an employee
-  And &quot;Bob&quot; gets paid &quot;$2,000&quot; a month
+&lt;p&gt;Scenario:
+  Given an admin user called “Paul” with a password “password”
+  And a user called “Bob”
+  And “Bob” is an employee
+  And “Bob” gets paid “$2,000” a month
   When I visit the homepage
-  And I click on &quot;Log in&quot;
-  And I fill in &quot;username&quot; with &quot;Paul&quot;
-  And I fill in &quot;password&quot; with &quot;password&quot;
-  And I click &quot;Log in&quot;
-  And I click &quot;Payroll&quot;
-  And I click &quot;Bob&quot;
-  And I click &quot;Pay&quot;
-  And I enter &quot;$2,000&quot;
-  And I click &quot;Pay&quot;
-  Then I should see &quot;Bob has been paid&quot;
-{% endhighlight %}
+  And I click on “Log in”
+  And I fill in “username” with “Paul”
+  And I fill in “password” with “password”
+  And I click “Log in”
+  And I click “Payroll”
+  And I click “Bob”
+  And I click “Pay”
+  And I enter “$2,000”
+  And I click “Pay”
+  Then I should see “Bob has been paid”
+{% endhighlight %}&lt;/p&gt;
 
-We've all written features like this in the past: there's [plenty](http://benmabey.com/2008/05/19/imperative-vs-declarative-scenarios-in-user-stories.html) [of](http://dannorth.net/2011/01/31/whose-domain-is-it-anyway/) [guidance](http://elabs.se/blog/15-you-re-cuking-it-wrong) out there these days to help you write better features than this. However, rather than just accept &quot;best practices&quot; at face value, let's take a look under the hood and work out *why this is better.*
+&lt;p&gt;We’ve all written features like this in the past: there’s &lt;a href=&quot;http://benmabey.com/2008/05/19/imperative-vs-declarative-scenarios-in-user-stories.html&quot;&gt;plenty&lt;/a&gt; &lt;a href=&quot;http://dannorth.net/2011/01/31/whose-domain-is-it-anyway/&quot;&gt;of&lt;/a&gt; &lt;a href=&quot;http://elabs.se/blog/15-you-re-cuking-it-wrong&quot;&gt;guidance&lt;/a&gt; out there these days to help you write better features than this. However, rather than just accept “best practices” at face value, let’s take a look under the hood and work out &lt;em&gt;why this is better.&lt;/em&gt;&lt;/p&gt;
 
-## Variance revisited
+&lt;h2 id=&quot;variance-revisited&quot;&gt;Variance revisited&lt;/h2&gt;
 
-Last time I discussed this topic, I mentioned the key differentiator was variance. Business rules are unlikely to change significantly unless the company decides to pivot: this is more likely in a startup but still less likely overall. The workflow is normally fairly static, but the activity the user follows changes regularly.
+&lt;p&gt;Last time I discussed this topic, I mentioned the key differentiator was variance. Business rules are unlikely to change significantly unless the company decides to pivot: this is more likely in a startup but still less likely overall. The workflow is normally fairly static, but the activity the user follows changes regularly.&lt;/p&gt;
 
-Co-incidentally, there are three levels of behaviour implementation that we write when we work with Cucumber:
+&lt;p&gt;Co-incidentally, there are three levels of behaviour implementation that we write when we work with Cucumber:&lt;/p&gt;
 
-* *The feature files.* Ideally there are written in collaboration with the customer and are written out before coding begins.
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;The feature files.&lt;/em&gt; Ideally there are written in collaboration with the customer and are written out before coding begins.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;The step definitions.&lt;/em&gt; We implement each step of our feature with ruby code as we are writing the feature, sometimes reworking existing steps to be more powerful (often at our peril).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;Support code.&lt;/em&gt; Cucumber executes our steps inside a ‘world object’, which we can easily extend through the adding of modules and methods.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-* *The step definitions.* We implement each step of our feature with ruby code as we are writing the feature, sometimes reworking existing steps to be more powerful (often at our peril).
+&lt;p&gt;Each of these implementation levels is also differentiated in terms of variance:&lt;/p&gt;
 
-* *Support code.* Cucumber executes our steps inside a 'world object', which we can easily extend through the adding of modules and methods.
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;The feature files are the most difficult to change,&lt;/em&gt; as this ideally requires a conversation with the customer, and any wording changes have a knock on effect on step definitions.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;Step definitions can be tricky to change,&lt;/em&gt; especially if they are used by multiple feature files. Their implementation is closely tied to the regular expression they match, which can make them difficult to understand if highly reused: one case where Don’t Repeat Yourself can fall down quickly.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;Support code is easy to change&lt;/em&gt; as it’s plain ruby and as such very malleable: we can easily refactor and be careful with our naming to tease out duplication.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-Each of these implementation levels is also differentiated in terms of variance:
+&lt;h2 id=&quot;where-to-put-the-code&quot;&gt;Where to put the code?&lt;/h2&gt;
 
-* *The feature files are the most difficult to change,* as this ideally requires a conversation with the customer, and any wording changes have a knock on effect on step definitions.
+&lt;p&gt;If it’s easy to change support code, then it follows that we should put our higest varying code there: namely the code which describes specific activity. Normally only programmers are interested in this code and it’s easy enough to find and understand if the support methods are well-named.&lt;/p&gt;
 
-* *Step definitions can be tricky to change,* especially if they are used by multiple feature files. Their implementation is closely tied to the regular expression they match, which can make them difficult to understand if highly reused: one case where Don't Repeat Yourself can fall down quickly.
+&lt;p&gt;The workflow code lives best in individual steps which aren’t often reused and which have simple regular expressions. The people who are interested in this area are normally designers and User Experience people, who should be able to read well-named ruby code at a pinch and therefore can understand what’s going on.&lt;/p&gt;
 
-* *Support code is easy to change* as it's plain ruby and as such very malleable: we can easily refactor and be careful with our naming to tease out duplication.
+&lt;p&gt;The code that’s least likely to change (the business rules) can safely live in the feature files with impunity, where it can be discussed with product owners. The product owner is most interested in the rules of their system: they’re only moderately interested in the workflow and usually aren’t too opiniated about the specific activities. That’s partly why we struggle to write features with our clients: if we’re trying to discuss activity specifics like in the example feature above, we’re probably nailing down details too early and bore our product owner to tears. It’s hard enough for a programmer to read these sorts of features: how can we expect anyone else to understand them?&lt;/p&gt;
 
-## Where to put the code?
+&lt;h2 id=&quot;an-example&quot;&gt;An example&lt;/h2&gt;
 
-If it's easy to change support code, then it follows that we should put our higest varying code there: namely the code which describes specific activity. Normally only programmers are interested in this code and it's easy enough to find and understand if the support methods are well-named.
+&lt;p&gt;Given this, how would I refactor the feature above to improve things? After deleting web_steps.rb, I would rewrite the feature with my customer citing the business rule, rather than any specific workflow:&lt;/p&gt;
 
-The workflow code lives best in individual steps which aren't often reused and which have simple regular expressions. The people who are interested in this area are normally designers and User Experience people, who should be able to read well-named ruby code at a pinch and therefore can understand what's going on.
-
-The code that's least likely to change (the business rules) can safely live in the feature files with impunity, where it can be discussed with product owners. The product owner is most interested in the rules of their system: they're only moderately interested in the workflow and usually aren't too opiniated about the specific activities. That's partly why we struggle to write features with our clients: if we're trying to discuss activity specifics like in the example feature above, we're probably nailing down details too early and bore our product owner to tears. It's hard enough for a programmer to read these sorts of features: how can we expect anyone else to understand them?
-
-## An example
-
-Given this, how would I refactor the feature above to improve things? After deleting web\_steps.rb, I would rewrite the feature with my customer citing the business rule, rather than any specific workflow:
-
-{% highlight cucumber %}
+&lt;p&gt;{% highlight cucumber %}
 Feature: Paul pays employees
   In order to retain staff
-  As Paul the Payroll Manager I want to pay my staff
+  As Paul the Payroll Manager I want to pay my staff&lt;/p&gt;
 
-@paul_signed_in
+&lt;p&gt;@paul_signed_in
 Scenario:
-  Given an employee called &quot;Bob&quot;
-  Then I should be able to pay &quot;Bob&quot; his salary
-{% endhighlight %}
+  Given an employee called “Bob”
+  Then I should be able to pay “Bob” his salary
+{% endhighlight %}&lt;/p&gt;
 
-My step definitions would look something like this:
+&lt;p&gt;My step definitions would look something like this:&lt;/p&gt;
 
-{% highlight ruby %}
-Given /^an employee called &quot;([^&quot;]+)&quot;$/ do |employee_name|
+&lt;p&gt;{% highlight ruby %}
+Given /^an employee called “([^”]+)”$/ do |employee_name|
   create_employee(employee_name)
-end
+end&lt;/p&gt;
 
-Then /^I should be able to pay &quot;([^&quot;]+)&quot; his salary$/ do |employee_name|
+&lt;p&gt;Then /^I should be able to pay “([^”]+)” his salary$/ do |employee_name|
   pay_salary_to(employee_)
 end
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-And the support code might look roughly like this:
+&lt;p&gt;And the support code might look roughly like this:&lt;/p&gt;
 
-{% highlight ruby %}
-Before(&quot;paul_signed_in&quot;) do
-  paul = create_employee(&quot;Paul&quot;)
-  paul.assign_role(&quot;payroll&quot;)
+&lt;p&gt;{% highlight ruby %}
+Before(“paul_signed_in”) do
+  paul = create_employee(“Paul”)
+  paul.assign_role(“payroll”)
   sign_in_as(paul)
-end
+end&lt;/p&gt;
 
-def create_employee(name)
-  Employee.create!(:name =&gt; name, :username =&gt; name,
-    :password =&gt; &quot;password&quot;)
-end
+&lt;p&gt;def create_employee(name)
+  Employee.create!(:name =&amp;gt; name, :username =&amp;gt; name,
+    :password =&amp;gt; “password”)
+end&lt;/p&gt;
 
-def pay_salary_to(name)
+&lt;p&gt;def pay_salary_to(name)
   payee = Employee.find_by_name(name)
   visit payroll_employee_path(payee)
-  fill_ :salary, :with =&gt; payee.salary
-  click_button &quot;Pay&quot;
+  fill_ :salary, :with =&amp;gt; payee.salary
+  click_button “Pay”
 end
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-You're also free not to test the UI if you'd prefer not to in your support code. However, as we've given ourselves the ability to remove duplication, it's easy to change the code when the UI changes. So far I've not found UI brittleness to be too much of an issue.
+&lt;p&gt;You’re also free not to test the UI if you’d prefer not to in your support code. However, as we’ve given ourselves the ability to remove duplication, it’s easy to change the code when the UI changes. So far I’ve not found UI brittleness to be too much of an issue.&lt;/p&gt;
 
-## In conclusion
+&lt;h2 id=&quot;in-conclusion&quot;&gt;In conclusion&lt;/h2&gt;
 
-These are rules of thumb, but they can be very helpful in keeping the rate of development up as our codebase expands. One change that I've made recently to my own practice is to be more aggressive at pushing activity code down into support code, and it's really helped to keep feature code flexible and easy to change.
+&lt;p&gt;These are rules of thumb, but they can be very helpful in keeping the rate of development up as our codebase expands. One change that I’ve made recently to my own practice is to be more aggressive at pushing activity code down into support code, and it’s really helped to keep feature code flexible and easy to change.&lt;/p&gt;
 
-Many people have given up on Cucumber, citing long build times and the brittleness of the test code as primary reasons. Obie Fernandez recently [blogged](http://blog.obiefernandez.com/content/2011/05/the-dark-side-beckons.html) about finding &quot;high-ceremony&quot; development too much work in a startup. I think that's a real shame: it's a fantastic way to drill down to specific behaviour and ensure you're only building what you need. If you think about the behaviour of your system correctly, aggressively remove duplication in all your code (including test code), and only test code you own then you shouldn't be burdening yourself with too much of an overhead.
+&lt;p&gt;Many people have given up on Cucumber, citing long build times and the brittleness of the test code as primary reasons. Obie Fernandez recently &lt;a href=&quot;http://blog.obiefernandez.com/content/2011/05/the-dark-side-beckons.html&quot;&gt;blogged&lt;/a&gt; about finding “high-ceremony” development too much work in a startup. I think that’s a real shame: it’s a fantastic way to drill down to specific behaviour and ensure you’re only building what you need. If you think about the behaviour of your system correctly, aggressively remove duplication in all your code (including test code), and only test code you own then you shouldn’t be burdening yourself with too much of an overhead.&lt;/p&gt;
 
-Have you given up using Cucumber? Or if you use it, is this the way you do it or do you have a better method?
+&lt;p&gt;Have you given up using Cucumber? Or if you use it, is this the way you do it or do you have a better method?&lt;/p&gt;
 
-</content></entry><entry><title>Pin in the map: customisable pin icons</title><category term='code'/><category term='cucumber'/><category term='ruby'/><category term='legacy'/><category term='products'/><category term='pininthemap'/><link href='http://chrismdp.com/2011/09/pininthemap-customisable-pin-icons'/><updated>2011-09-06T21:18:13+01:00</updated><id>http://chrismdp.com/2011/09/pininthemap-customisable-pin-icons</id><content type='html'>I've just spent some time updating my first ever Rails project, [Pin in the map](http://pininthemap.com). Now you can change the icons associated with premium (paid for) pins. There are over 100 new icons to choose from: [have fun!](http://pininthemap.com)
+</content></entry><entry><title>Pin in the map: customisable pin icons</title><category term='code'/><category term='cucumber'/><category term='ruby'/><category term='legacy'/><category term='products'/><category term='pininthemap'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2011/09/pininthemap-customisable-pin-icons'/><updated>2011-09-06T21:18:13+01:00</updated><id>http://chrismdp.com/2011/09/pininthemap-customisable-pin-icons</id><content type='html'>&lt;p&gt;I’ve just spent some time updating my first ever Rails project, &lt;a href=&quot;http://pininthemap.com&quot;&gt;Pin in the map&lt;/a&gt;. Now you can change the icons associated with premium (paid for) pins. There are over 100 new icons to choose from: &lt;a href=&quot;http://pininthemap.com&quot;&gt;have fun!&lt;/a&gt;&lt;/p&gt;
 
-![pininthemap example](/files/pininthemap-example.png)
+&lt;p&gt;&lt;img src=&quot;/files/pininthemap-example.png&quot; alt=&quot;pininthemap example&quot; /&gt;&lt;/p&gt;
 
-## Learnings
+&lt;h2 id=&quot;learnings&quot;&gt;Learnings&lt;/h2&gt;
 
-This codebase is from 2006, so this has proved a nice little exercise in adding testing to a legacy project. I had no tests at all to speak of when I wrote the code five years ago, and the code shows it. I began by installing cucumber and rspec and quickly wrapping the two most common features in acceptance tests: creating and editing pins. Even on old code it was super easy to get capybara, cucumber and rspec up and running, thanks to the fact that we've upgraded the codebase to Rails 2 and started using bundler to manage gem dependencies. We stuck to Selenium for the tests as the code is very Google Maps heavy.
+&lt;p&gt;This codebase is from 2006, so this has proved a nice little exercise in adding testing to a legacy project. I had no tests at all to speak of when I wrote the code five years ago, and the code shows it. I began by installing cucumber and rspec and quickly wrapping the two most common features in acceptance tests: creating and editing pins. Even on old code it was super easy to get capybara, cucumber and rspec up and running, thanks to the fact that we’ve upgraded the codebase to Rails 2 and started using bundler to manage gem dependencies. We stuck to Selenium for the tests as the code is very Google Maps heavy.&lt;/p&gt;
 
-It's always worth keeping old apps vaguely up to date: the less inertia surrounding a codebase the more likely you'll spend an afternoon adding an often-requested feature.
-</content></entry><entry><title>Layers of abstraction: combining BDD and UX</title><category term='bdd'/><category term='cucumber'/><category term='agile'/><category term='ux'/><link href='http://chrismdp.com/2011/09/layers-of-abstraction-bdd-ux'/><updated>2011-09-05T20:44:03+01:00</updated><id>http://chrismdp.com/2011/09/layers-of-abstraction-bdd-ux</id><content type='html'>I first came across [Gokjo Adzic's thoughts on the different levels of UI test automation](http://gojko.net/2010/04/13/how-to-implement-ui-testing-without-shooting-yourself-in-the-foot-2/) some time ago: it's a really nice way to think not just about test automation, but about the different levels of behaviour in any software project.
+&lt;p&gt;It’s always worth keeping old apps vaguely up to date: the less inertia surrounding a codebase the more likely you’ll spend an afternoon adding an often-requested feature.&lt;/p&gt;
+</content></entry><entry><title>Layers of abstraction: combining BDD and UX</title><category term='bdd'/><category term='cucumber'/><category term='agile'/><category term='ux'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2011/09/layers-of-abstraction-bdd-ux'/><updated>2011-09-05T20:44:03+01:00</updated><id>http://chrismdp.com/2011/09/layers-of-abstraction-bdd-ux</id><content type='html'>&lt;p&gt;I first came across &lt;a href=&quot;http://gojko.net/2010/04/13/how-to-implement-ui-testing-without-shooting-yourself-in-the-foot-2/&quot;&gt;Gokjo Adzic’s thoughts on the different levels of UI test automation&lt;/a&gt; some time ago: it’s a really nice way to think not just about test automation, but about the different levels of behaviour in any software project.&lt;/p&gt;
 
-I've been considering the similarities between these levels of behaviour and the user experience discipline, and how we might leverage that thinking to iterate towards a better way of combining agile methods with UX.
+&lt;p&gt;I’ve been considering the similarities between these levels of behaviour and the user experience discipline, and how we might leverage that thinking to iterate towards a better way of combining agile methods with UX.&lt;/p&gt;
 
-## Three ways to think of behaviour
+&lt;h2 id=&quot;three-ways-to-think-of-behaviour&quot;&gt;Three ways to think of behaviour&lt;/h2&gt;
 
-Applying these rules to any software system gives us three ways to think about the behaviour of that system.
+&lt;p&gt;Applying these rules to any software system gives us three ways to think about the behaviour of that system.&lt;/p&gt;
 
-*The business rules.* These are high level and abstract. To take the example of a Payroll system: the business rules represent such things as &quot;Staff members always get paid on the last Friday of the month&quot;, or &quot;Temporary staff workers must submit a timesheet before being paid.&quot;
+&lt;p&gt;&lt;em&gt;The business rules.&lt;/em&gt; These are high level and abstract. To take the example of a Payroll system: the business rules represent such things as “Staff members always get paid on the last Friday of the month”, or “Temporary staff workers must submit a timesheet before being paid.”&lt;/p&gt;
 
-*The workflow.* The workflow represents the logical steps a user might go through to fulfil a business rule. For example: &quot;As a HR person, I want to see a list of temporary workers and pay those who are shown to have submitted a timesheet.&quot;
+&lt;p&gt;&lt;em&gt;The workflow.&lt;/em&gt; The workflow represents the logical steps a user might go through to fulfil a business rule. For example: “As a HR person, I want to see a list of temporary workers and pay those who are shown to have submitted a timesheet.”&lt;/p&gt;
 
-*The specific activity.* The detailed steps a user goes through to achieve the workflow: &quot;I click on the 'show temp workers' link; I see an icon next to those who have submitted timesheets, along with the last date they submitted; I click the 'Pay' button...&quot;
+&lt;p&gt;&lt;em&gt;The specific activity.&lt;/em&gt; The detailed steps a user goes through to achieve the workflow: “I click on the ‘show temp workers’ link; I see an icon next to those who have submitted timesheets, along with the last date they submitted; I click the ‘Pay’ button…”&lt;/p&gt;
 
-The key differentiator here is *variance.* The business rules of a system are the least likely to change: changing these might represent a [pivot](http://venturebeat.com/2010/04/14/business-plan-not-working-time-to-pivot/) and will incur significant development cost.
+&lt;p&gt;The key differentiator here is &lt;em&gt;variance.&lt;/em&gt; The business rules of a system are the least likely to change: changing these might represent a &lt;a href=&quot;http://venturebeat.com/2010/04/14/business-plan-not-working-time-to-pivot/&quot;&gt;pivot&lt;/a&gt; and will incur significant development cost.&lt;/p&gt;
 
-The specific activities change most often: perhaps at a designer's whim, or through localisation or other text changes. We should therefore strive to ensure that changing the activities incurs as small a development cost as possible.
+&lt;p&gt;The specific activities change most often: perhaps at a designer’s whim, or through localisation or other text changes. We should therefore strive to ensure that changing the activities incurs as small a development cost as possible.&lt;/p&gt;
 
-## The agile / user experience process is similar
+&lt;h2 id=&quot;the-agile--user-experience-process-is-similar&quot;&gt;The agile / user experience process is similar&lt;/h2&gt;
 
-If you think about it, the three layers represent the different and progressive stages of thinking that we go through when designing the user experience of new applications.
+&lt;p&gt;If you think about it, the three layers represent the different and progressive stages of thinking that we go through when designing the user experience of new applications.&lt;/p&gt;
 
-*Business rules of the system are laid down by the product owner at the start of a project.* When considering the user experience of the application, we are careful to first understand a high level overview of the purpose of the software, getting as much useful information as possible from the product owner at an inception.
+&lt;p&gt;&lt;em&gt;Business rules of the system are laid down by the product owner at the start of a project.&lt;/em&gt; When considering the user experience of the application, we are careful to first understand a high level overview of the purpose of the software, getting as much useful information as possible from the product owner at an inception.&lt;/p&gt;
 
-*Workflow design is led by the UX team and happens when a new story is created.* When creating a new slice of functionality, we carefully think through the workflow of that particular feature, using wireframing, [personas](/2011/04/cucumbers-with-personality) or [whatever works](/2010/02/the-story-card-is-not-the-story) combined with [lots of discussion](/2010/02/the-story-card-is-not-the-story). The net result is a basic step by step workflow of the new feature, without too much detail added.
+&lt;p&gt;&lt;em&gt;Workflow design is led by the UX team and happens when a new story is created.&lt;/em&gt; When creating a new slice of functionality, we carefully think through the workflow of that particular feature, using wireframing, &lt;a href=&quot;/2011/04/cucumbers-with-personality&quot;&gt;personas&lt;/a&gt; or &lt;a href=&quot;/2010/02/the-story-card-is-not-the-story&quot;&gt;whatever works&lt;/a&gt; combined with &lt;a href=&quot;/2010/02/the-story-card-is-not-the-story&quot;&gt;lots of discussion&lt;/a&gt;. The net result is a basic step by step workflow of the new feature, without too much detail added.&lt;/p&gt;
 
-*Specific activities are created by developers and graphic designers.* Developers and designers make a thousand little decisions about the user experience of the application as they build the feature, hopefully discussing their thoughts with the UX experts on their team if they feel out of their depth.
+&lt;p&gt;&lt;em&gt;Specific activities are created by developers and graphic designers.&lt;/em&gt; Developers and designers make a thousand little decisions about the user experience of the application as they build the feature, hopefully discussing their thoughts with the UX experts on their team if they feel out of their depth.&lt;/p&gt;
 
-## From general to specific
+&lt;h2 id=&quot;from-general-to-specific&quot;&gt;From general to specific&lt;/h2&gt;
 
-As we create features, we are iterating from the general to the specific; from the high level to the detail. To determine all the granular behaviour up front (and all the precise graphical designs) is inefficient: we are likely to change our minds about the detail. Yet this is what many user experience practioners and designers try to do: if not for the whole project, then for whole sections of the project.
+&lt;p&gt;As we create features, we are iterating from the general to the specific; from the high level to the detail. To determine all the granular behaviour up front (and all the precise graphical designs) is inefficient: we are likely to change our minds about the detail. Yet this is what many user experience practioners and designers try to do: if not for the whole project, then for whole sections of the project.&lt;/p&gt;
 
-For example, if you're doing more than a dozen wireframes or so in advance, are you doing too much thinking ahead of time? Why not resist, have more agility, and let the completion of some of the features guide your future thinking? Likewise, I have often been presented with dozens of perfect photoshop mockups to code up, often without any clear direction on the behaviour represented within them. It is more agile to keep things as high level as possible for as long as possible. How about producing a guidance mockup and a style guide, and then sitting down and guiding the developers on the design when they come to build the feature?
+&lt;p&gt;For example, if you’re doing more than a dozen wireframes or so in advance, are you doing too much thinking ahead of time? Why not resist, have more agility, and let the completion of some of the features guide your future thinking? Likewise, I have often been presented with dozens of perfect photoshop mockups to code up, often without any clear direction on the behaviour represented within them. It is more agile to keep things as high level as possible for as long as possible. How about producing a guidance mockup and a style guide, and then sitting down and guiding the developers on the design when they come to build the feature?&lt;/p&gt;
 
-This doesn't mean you can avoid the detail. You need both ends of the behaviour spectrum: neglect the detail of the experience and you [settle for mediocrity](/2010/05/ux-is-everything). Conversly if we neglect the high level our application becomes a ship without a rudder and the user experience will become confused.
+&lt;p&gt;This doesn’t mean you can avoid the detail. You need both ends of the behaviour spectrum: neglect the detail of the experience and you &lt;a href=&quot;/2010/05/ux-is-everything&quot;&gt;settle for mediocrity&lt;/a&gt;. Conversly if we neglect the high level our application becomes a ship without a rudder and the user experience will become confused.&lt;/p&gt;
 
-In the future I plan to discuss how the use of [Cucumber](http://cukes.info) fits in to this, and how we can progressively iterate our cucumber features as we get more and more specific about a particular feature.
-</content></entry><entry><title>Cucumbers with personality</title><category term='cucumber'/><category term='personas'/><category term='agile'/><category term='ux'/><link href='http://chrismdp.com/2011/04/cucumbers-with-personality'/><updated>2011-04-18T15:17:31+01:00</updated><id>http://chrismdp.com/2011/04/cucumbers-with-personality</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;Personality is everything in art and poetry.&quot;&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;In the future I plan to discuss how the use of &lt;a href=&quot;http://cukes.info&quot;&gt;Cucumber&lt;/a&gt; fits in to this, and how we can progressively iterate our cucumber features as we get more and more specific about a particular feature.&lt;/p&gt;
+</content></entry><entry><title>Cucumbers with personality</title><category term='cucumber'/><category term='personas'/><category term='agile'/><category term='ux'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2011/04/cucumbers-with-personality'/><updated>2011-04-18T15:17:31+01:00</updated><id>http://chrismdp.com/2011/04/cucumbers-with-personality</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;Personality is everything in art and poetry.&quot;&lt;/i&gt;&lt;/p&gt;
 
--- [Johann Wolfgang von Goethe](http://en.wikipedia.org/wiki/Johann_Wolfgang_von_Goethe)
+&lt;p&gt;– &lt;a href=&quot;http://en.wikipedia.org/wiki/Johann_Wolfgang_von_Goethe&quot;&gt;Johann Wolfgang von Goethe&lt;/a&gt;&lt;/p&gt;
 
-One element of Cucumber feature-writing that is often neglected is the *role.* This is the section that sits between the well known *In order that* and *I want to.*
+&lt;p&gt;One element of Cucumber feature-writing that is often neglected is the &lt;em&gt;role.&lt;/em&gt; This is the section that sits between the well known &lt;em&gt;In order that&lt;/em&gt; and &lt;em&gt;I want to.&lt;/em&gt;&lt;/p&gt;
 
-It's very easy to concentrate on *what* we wish to accomplish, and *why* we want to do it. The role that we're in, however, affects the *way* that we do it, and how the action is perceived as it is carried out. It is in fact, *the key to user experience of the feature.*
+&lt;p&gt;It’s very easy to concentrate on &lt;em&gt;what&lt;/em&gt; we wish to accomplish, and &lt;em&gt;why&lt;/em&gt; we want to do it. The role that we’re in, however, affects the &lt;em&gt;way&lt;/em&gt; that we do it, and how the action is perceived as it is carried out. It is in fact, &lt;em&gt;the key to user experience of the feature.&lt;/em&gt;&lt;/p&gt;
 
-How often have we lazily written features like this?
+&lt;p&gt;How often have we lazily written features like this?&lt;/p&gt;
 
-{% highlight &quot;text&quot; %}
+&lt;p&gt;{% highlight “text” %}
 In order to know how much money I am making
 As a user
 I want to see a report of widgets sold this month
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-What we want is clear, as is why we want it. What's not clear is who is doing the asking, and therefore there's no clue as to what the user experience should be like.
+&lt;p&gt;What we want is clear, as is why we want it. What’s not clear is who is doing the asking, and therefore there’s no clue as to what the user experience should be like.&lt;/p&gt;
 
-## A sprinkling of personality
+&lt;h2 id=&quot;a-sprinkling-of-personality&quot;&gt;A sprinkling of personality&lt;/h2&gt;
 
-Next time we find ourselves writing &quot;as a user&quot;, let's take a minute to stop and think whether we can be more specific.
+&lt;p&gt;Next time we find ourselves writing “as a user”, let’s take a minute to stop and think whether we can be more specific.&lt;/p&gt;
 
-Consider this feature:
+&lt;p&gt;Consider this feature:&lt;/p&gt;
 
-{% highlight &quot;text&quot; %}
+&lt;p&gt;{% highlight “text” %}
 In order to know how much money I am making
 As the head of the company
 I want to see a report of widgets sold this month
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-This guy is time poor, and just wants the facts, right now. Sure, he might want it to look good, but doesn't care much beyond the numbers.
+&lt;p&gt;This guy is time poor, and just wants the facts, right now. Sure, he might want it to look good, but doesn’t care much beyond the numbers.&lt;/p&gt;
 
-Now how about this one?
+&lt;p&gt;Now how about this one?&lt;/p&gt;
 
-{% highlight &quot;text&quot; %}
+&lt;p&gt;{% highlight “text” %}
 In order to know how much money I am making
 As a design assistant responsible for collating reports
 I want to see a report of widgets sold this month
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-This person possibly has a little more time on their hands, and their overriding concern might be to impress their boss. Therefore the aesthetics of the report layout might be very important, and it might not matter so much if the page is slower to load.
+&lt;p&gt;This person possibly has a little more time on their hands, and their overriding concern might be to impress their boss. Therefore the aesthetics of the report layout might be very important, and it might not matter so much if the page is slower to load.&lt;/p&gt;
 
-## Personas driving stories
+&lt;h2 id=&quot;personas-driving-stories&quot;&gt;Personas driving stories&lt;/h2&gt;
 
-On a recent project for a coaching company we took this a step further. We produced some great personas during the inception (Bob Coachee, Jean Coach), and then went so far as to use them in our features:
+&lt;p&gt;On a recent project for a coaching company we took this a step further. We produced some great personas during the inception (Bob Coachee, Jean Coach), and then went so far as to use them in our features:&lt;/p&gt;
 
-{% highlight &quot;text&quot; %}
+&lt;p&gt;{% highlight “text” %}
 In order to know who I am coaching next
 As Jean the coach
-I want to see a calendar showing today's appointments
-{% endhighlight %}
+I want to see a calendar showing today’s appointments
+{% endhighlight %}&lt;/p&gt;
 
-Because everyone on the project knew the background behind these characters, the resulting features communicated a lot of knowledge. We all knew exactly how they were using the system, and what they needed out of it. We had about six personas in total, and they proved very helping in communicating the user experience of the feature to the team.
+&lt;p&gt;Because everyone on the project knew the background behind these characters, the resulting features communicated a lot of knowledge. We all knew exactly how they were using the system, and what they needed out of it. We had about six personas in total, and they proved very helping in communicating the user experience of the feature to the team.&lt;/p&gt;
 
-Do you create specific personas for your projects, and have you ever used them when writing your features? Did you see a benefit?
-</content></entry><entry><title>How to get Spork working NOW on Rails 3, Rspec 2 and Cucumber</title><category term='rails'/><category term='ruby'/><category term='rspec'/><category term='spork'/><category term='cucumber'/><link href='http://chrismdp.com/2010/11/getting-spork-working-now-on-rails-3-rspec-2-and-cucumber'/><updated>2010-11-16T21:41:57+00:00</updated><id>http://chrismdp.com/2010/11/getting-spork-working-now-on-rails-3-rspec-2-and-cucumber</id><content type='html'>I've spent the evening trying to get [Spork](https://github.com/timcharper/spork) to work with Rails 3 and RSpec 2. I've never felt the need for it before, but the Rails 3 start up time is fairly hefty and I'm crying out for the extra seconds more than ever.
+&lt;p&gt;Do you create specific personas for your projects, and have you ever used them when writing your features? Did you see a benefit?&lt;/p&gt;
+</content></entry><entry><title>How to get Spork working NOW on Rails 3, Rspec 2 and Cucumber</title><category term='rails'/><category term='ruby'/><category term='rspec'/><category term='spork'/><category term='cucumber'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2010/11/getting-spork-working-now-on-rails-3-rspec-2-and-cucumber'/><updated>2010-11-16T21:41:57+00:00</updated><id>http://chrismdp.com/2010/11/getting-spork-working-now-on-rails-3-rspec-2-and-cucumber</id><content type='html'>&lt;p&gt;I’ve spent the evening trying to get &lt;a href=&quot;https://github.com/timcharper/spork&quot;&gt;Spork&lt;/a&gt; to work with Rails 3 and RSpec 2. I’ve never felt the need for it before, but the Rails 3 start up time is fairly hefty and I’m crying out for the extra seconds more than ever.&lt;/p&gt;
 
-It's not that tricky, thankfully, and the following steps should see you running faster specs and features in no time.
+&lt;p&gt;It’s not that tricky, thankfully, and the following steps should see you running faster specs and features in no time.&lt;/p&gt;
 
-## RSpec 2
+&lt;h2 id=&quot;rspec-2&quot;&gt;RSpec 2&lt;/h2&gt;
 
-Follow these instructions to get RSpec 2 working:
+&lt;p&gt;Follow these instructions to get RSpec 2 working:&lt;/p&gt;
 
-*Install Spork into your Gemfile, and update rspec to 2.1:*
+&lt;p&gt;&lt;em&gt;Install Spork into your Gemfile, and update rspec to 2.1:&lt;/em&gt;&lt;/p&gt;
 
-{% highlight ruby %}
-gem &quot;spork&quot;, :git =&gt; &quot;git://github.com/chrismdp/spork.git&quot;
-gem &quot;rspec-rails&quot;, '&gt;= 2.1.0'
-{% endhighlight %}
+&lt;p&gt;{% highlight ruby %}
+gem “spork”, :git =&amp;gt; “git://github.com/chrismdp/spork.git”
+gem “rspec-rails”, ‘&amp;gt;= 2.1.0’
+{% endhighlight %}&lt;/p&gt;
 
-You'll need [my fork of Spork](http://github.com/chrismdp/spork) for a quick patch to the latest release candidate of Spork.
+&lt;p&gt;You’ll need &lt;a href=&quot;http://github.com/chrismdp/spork&quot;&gt;my fork of Spork&lt;/a&gt; for a quick patch to the latest release candidate of Spork.&lt;/p&gt;
 
-*Add `--drb` on a new line in your .rspec file:*
+&lt;p&gt;&lt;em&gt;Add &lt;code&gt;--drb&lt;/code&gt; on a new line in your .rspec file:&lt;/em&gt;&lt;/p&gt;
 
-If you don't have the .rspec file, create it.
+&lt;p&gt;If you don’t have the .rspec file, create it.&lt;/p&gt;
 
-*Modify your spec_helper.rb:*
+&lt;p&gt;&lt;em&gt;Modify your spec_helper.rb:&lt;/em&gt;&lt;/p&gt;
 
-You could follow the installation instructions, but not everything is relevant to Rails 3 and Rspec 2. It's pretty simple anyway: add &quot;require 'spork'&quot; to the top of your spec_helper.rb file, and put everything else inside spec_helper.rb inside a Spork.pre_fork do ... end block:
+&lt;p&gt;You could follow the installation instructions, but not everything is relevant to Rails 3 and Rspec 2. It’s pretty simple anyway: add “require ‘spork’” to the top of your spec_helper.rb file, and put everything else inside spec_helper.rb inside a Spork.pre_fork do … end block:&lt;/p&gt;
 
-{% highlight ruby %}
-require 'spork'
+&lt;p&gt;{% highlight ruby %}
+require ‘spork’&lt;/p&gt;
 
-Spork.prefork do
-  ENV[&quot;RAILS_ENV&quot;] ||= 'test'
-  require File.expand_path(&quot;../../config/environment&quot;, __FILE__)
-  require 'rspec/rails'
-  ...
+&lt;p&gt;Spork.prefork do
+  ENV[“RAILS_ENV”] ||= ‘test’
+  require File.expand_path(“../../config/environment”, &lt;strong&gt;FILE&lt;/strong&gt;)
+  require ‘rspec/rails’
+  …
 end
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-That should be it. To start up the server, run:
+&lt;p&gt;That should be it. To start up the server, run:&lt;/p&gt;
 
-{% highlight bash %}
+&lt;p&gt;{% highlight bash %}
 $ bundle exec spork
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-...and then try running a spec or two. The following command takes about a second on my machine now, whereas it used to take about ten seconds!
+&lt;p&gt;…and then try running a spec or two. The following command takes about a second on my machine now, whereas it used to take about ten seconds!&lt;/p&gt;
 
-{% highlight bash %}
+&lt;p&gt;{% highlight bash %}
 $ bundle exec rspec spec/controllers/sessions_controller_spec.rb
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-## Cucumber
+&lt;h2 id=&quot;cucumber&quot;&gt;Cucumber&lt;/h2&gt;
 
-It's important to note that for more than about 10-20 scenarios, Spork is *slower* than running cucumber normally. Therefore only turn it on for a few profiles, such as autotest (but not autotest-all), wip, etc.
+&lt;p&gt;It’s important to note that for more than about 10-20 scenarios, Spork is &lt;em&gt;slower&lt;/em&gt; than running cucumber normally. Therefore only turn it on for a few profiles, such as autotest (but not autotest-all), wip, etc.&lt;/p&gt;
 
-*Modify your cucumber.yml file:*
+&lt;p&gt;&lt;em&gt;Modify your cucumber.yml file:&lt;/em&gt;&lt;/p&gt;
 
-{% highlight yaml %}
-wip: --drb -tags @wip:3 --wip features
-autotest: --drb --color --format progress --strict
-{% endhighlight %}
+&lt;p&gt;{% highlight yaml %}
+wip: –drb -tags @wip:3 –wip features
+autotest: –drb –color –format progress –strict
+{% endhighlight %}&lt;/p&gt;
 
-Leave 'autotest-all' and 'default' alone.
+&lt;p&gt;Leave ‘autotest-all’ and ‘default’ alone.&lt;/p&gt;
 
-*Modify your features/support/env.rb:*
+&lt;p&gt;&lt;em&gt;Modify your features/support/env.rb:&lt;/em&gt;&lt;/p&gt;
 
-This is just the same process as with the spec_helper.rb file for RSpec:
+&lt;p&gt;This is just the same process as with the spec_helper.rb file for RSpec:&lt;/p&gt;
 
-{% highlight ruby %}
-require 'spork'
+&lt;p&gt;{% highlight ruby %}
+require ‘spork’&lt;/p&gt;
 
-Spork.prefork do
-  ENV[&quot;RAILS_ENV&quot;] ||= &quot;test&quot;
-  require File.expand_path(File.dirname(__FILE__) + '/../../config/environment')
-  require 'cucumber/formatter/unicode' # Remove this line if you don't want Cucumber Unicode support
-  require 'cucumber/rails/rspec'
-  ...
+&lt;p&gt;Spork.prefork do
+  ENV[“RAILS_ENV”] ||= “test”
+  require File.expand_path(File.dirname(&lt;strong&gt;FILE&lt;/strong&gt;) + ‘/../../config/environment’)
+  require ‘cucumber/formatter/unicode’ # Remove this line if you don’t want Cucumber Unicode support
+  require ‘cucumber/rails/rspec’
+  …
 end
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-Again, that should be it. Run the follow to try it out:
+&lt;p&gt;Again, that should be it. Run the follow to try it out:&lt;/p&gt;
 
-{% highlight bash %}
+&lt;p&gt;{% highlight bash %}
 $ bundle exec spork cucumber
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-Now try running a single feature in rerun or autotest mode. I'm getting 20% speedups for about 10 scenarios.
+&lt;p&gt;Now try running a single feature in rerun or autotest mode. I’m getting 20% speedups for about 10 scenarios.&lt;/p&gt;
 
-## Using them together
+&lt;h2 id=&quot;using-them-together&quot;&gt;Using them together&lt;/h2&gt;
 
-The RSpec and Cucumber versions of spork use different ports, so there's no problem running them together. Normally I run both in the same terminal window, one as a background process:
+&lt;p&gt;The RSpec and Cucumber versions of spork use different ports, so there’s no problem running them together. Normally I run both in the same terminal window, one as a background process:&lt;/p&gt;
 
-{% highlight bash %}
-$ bundle exec spork cucumber &amp; bundle exec spork
-{% endhighlight %}
+&lt;p&gt;{% highlight bash %}
+$ bundle exec spork cucumber &amp;amp; bundle exec spork
+{% endhighlight %}&lt;/p&gt;
 
-Then I run autotest in another window.
+&lt;p&gt;Then I run autotest in another window.&lt;/p&gt;
 
-## How do I use this?
+&lt;h2 id=&quot;how-do-i-use-this&quot;&gt;How do I use this?&lt;/h2&gt;
 
-I'm really liking this setup. It makes rapid TDD possible again, even when dealing with fairly slow tests. 
+&lt;p&gt;I’m really liking this setup. It makes rapid TDD possible again, even when dealing with fairly slow tests. &lt;/p&gt;
 
-Of course, we should be doing all we can to get the speed of our tests as high as possible: slow tests are a type of code smell. However, infrastructure load time is unavoidable and cutting it out is full of all kinds of win.
+&lt;p&gt;Of course, we should be doing all we can to get the speed of our tests as high as possible: slow tests are a type of code smell. However, infrastructure load time is unavoidable and cutting it out is full of all kinds of win.&lt;/p&gt;
 
-Use this setup with [autotest](https://github.com/grosser/autotest) and [autotest-growl](https://github.com/svoop/autotest-growl) for maximum win. Autotest has come a long way recently: there's a lightweight alternative to ZenTest now, and easy growl support. Cutting out even the 'Oh, I should run my tests now step' totally nails your debug cycle: not sure it gets much tighter than that.
+&lt;p&gt;Use this setup with &lt;a href=&quot;https://github.com/grosser/autotest&quot;&gt;autotest&lt;/a&gt; and &lt;a href=&quot;https://github.com/svoop/autotest-growl&quot;&gt;autotest-growl&lt;/a&gt; for maximum win. Autotest has come a long way recently: there’s a lightweight alternative to ZenTest now, and easy growl support. Cutting out even the ‘Oh, I should run my tests now step’ totally nails your debug cycle: not sure it gets much tighter than that.&lt;/p&gt;
 
-## UPDATE: Even more speed!
+&lt;h2 id=&quot;update-even-more-speed&quot;&gt;UPDATE: Even more speed!&lt;/h2&gt;
 
-[Jo Liss](http://opinionatedprogrammer.com/) got in touch: she's made some performance gains by skipping the &quot;bundle exec&quot; and requiring a few extra files in the prefork block. Read about what she has to say [here](http://opinionatedprogrammer.com/2011/02/profiling-spork-for-faster-start-up-time/).
-</content></entry><entry><title>Driving out feature ambiguity</title><category term='cucumber'/><category term='apprenticeship'/><category term='craftsmanship'/><category term='ambiguity'/><category term='katas'/><link href='http://chrismdp.com/2010/01/driving-out-feature-ambiguity'/><updated>2010-01-15T06:19:00+00:00</updated><id>http://chrismdp.com/2010/01/driving-out-feature-ambiguity</id><content type='html'>[Cucumber](http://cukes.info) features are very useful. The ability to spec out what the customer wants in detail in a format they can read and understand really helps to communicatate what needs to be done. This combined with the ability to execute the feature to ensure that it is completed correctly catches many bugs and incorrect assumptions.
+&lt;p&gt;&lt;a href=&quot;http://opinionatedprogrammer.com/&quot;&gt;Jo Liss&lt;/a&gt; got in touch: she’s made some performance gains by skipping the “bundle exec” and requiring a few extra files in the prefork block. Read about what she has to say &lt;a href=&quot;http://opinionatedprogrammer.com/2011/02/profiling-spork-for-faster-start-up-time/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</content></entry><entry><title>Driving out feature ambiguity</title><category term='cucumber'/><category term='apprenticeship'/><category term='craftsmanship'/><category term='ambiguity'/><category term='katas'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2010/01/driving-out-feature-ambiguity'/><updated>2010-01-15T06:19:00+00:00</updated><id>http://chrismdp.com/2010/01/driving-out-feature-ambiguity</id><content type='html'>&lt;p&gt;&lt;a href=&quot;http://cukes.info&quot;&gt;Cucumber&lt;/a&gt; features are very useful. The ability to spec out what the customer wants in detail in a format they can read and understand really helps to communicatate what needs to be done. This combined with the ability to execute the feature to ensure that it is completed correctly catches many bugs and incorrect assumptions.&lt;/p&gt;
 
-However there is one area of bugs that features don't catch so well, and even cause to some extent. These bugs are built right into the text in the form of ambiguity, sometimes through the constraint of features being executable.
+&lt;p&gt;However there is one area of bugs that features don’t catch so well, and even cause to some extent. These bugs are built right into the text in the form of ambiguity, sometimes through the constraint of features being executable.&lt;/p&gt;
 
-This came up recently in a conversation with [James](http://ohthatjames.github.com) and [Enrique](http://ecomba.github.com/) at [Eden Development](http://edendevelopment.co.uk) about James' apprentice task, the [Snakes and Ladders Kata](/2009/12/snakes-and-ladders-kata). It turns out that the text of one of the features runs against the commonly understood way that Snakes and Ladders works:
+&lt;p&gt;This came up recently in a conversation with &lt;a href=&quot;http://ohthatjames.github.com&quot;&gt;James&lt;/a&gt; and &lt;a href=&quot;http://ecomba.github.com/&quot;&gt;Enrique&lt;/a&gt; at &lt;a href=&quot;http://edendevelopment.co.uk&quot;&gt;Eden Development&lt;/a&gt; about James’ apprentice task, the &lt;a href=&quot;/2009/12/snakes-and-ladders-kata&quot;&gt;Snakes and Ladders Kata&lt;/a&gt;. It turns out that the text of one of the features runs against the commonly understood way that Snakes and Ladders works:&lt;/p&gt;
 
-{% highlight text %}
+&lt;p&gt;{% highlight text %}
 Scenario: Win the game
     Given player 1 is on position 97
     And player 1 rolls 3
     Then player 1 has won the game
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-Question: is that a valid scenario? Given the commonly understand rules of Snakes and Ladders, you cannot just start on position 97. Implementing it as written complicates the domain model. 
+&lt;p&gt;Question: is that a valid scenario? Given the commonly understand rules of Snakes and Ladders, you cannot just start on position 97. Implementing it as written complicates the domain model. &lt;/p&gt;
 
-How do you implement the first step? Do you go for a simple:
+&lt;p&gt;How do you implement the first step? Do you go for a simple:&lt;/p&gt;
 
-{% highlight ruby %}
-Given /^player (.*?) is on position (.*?)$/ do |player, position|
+&lt;p&gt;{% highlight ruby %}
+Given /^player (.&lt;em&gt;?) is on position (.&lt;/em&gt;?)$/ do |player, position|
   @game.set_player_position(player, position)
 end
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-The potential issue with this is that you are exposing a method that in real life won't get called, just to set up a test. It's also tying your model down to a particular structure, by implying that the game stores an arbitraty position variable for a player. This might not be the best way to model the problem.
+&lt;p&gt;The potential issue with this is that you are exposing a method that in real life won’t get called, just to set up a test. It’s also tying your model down to a particular structure, by implying that the game stores an arbitraty position variable for a player. This might not be the best way to model the problem.&lt;/p&gt;
 
-The other option is to change the scenario such that the &quot;Win the game&quot; is tested in a similar way to the following:
+&lt;p&gt;The other option is to change the scenario such that the “Win the game” is tested in a similar way to the following:&lt;/p&gt;
 
-{% highlight text %}
+&lt;p&gt;{% highlight text %}
 Scenario: Win the game
     Given a game is started with two players
     And the following dice are rolled:
@@ -724,21 +799,21 @@ Scenario: Win the game
       |5|
       (etc.)
     Then player 1 has won the game
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-That satisfies our understand of Snakes and Ladders, and gives us more freedom in our domain model. In this case, we simply modify the agreed scenario in the code and sidestep the problem.
+&lt;p&gt;That satisfies our understand of Snakes and Ladders, and gives us more freedom in our domain model. In this case, we simply modify the agreed scenario in the code and sidestep the problem.&lt;/p&gt;
 
-Right? *Wrong.*
+&lt;p&gt;Right? &lt;em&gt;Wrong.&lt;/em&gt;&lt;/p&gt;
 
-The important thing to remember is that the customer is always right about how the software should behave, even when it violates our commonly understood assumptions about the world. The software they want you to build might require a different implementation of Snakes and Ladders. They might have a 3 year-old daughter they're planning to play the game with, who always wants to be given a headstart. In this case, we've not delivered what they want, simply because it makes life easier for us. We've let our assumptions and our concerns for good design drive out the features, rather than letting the features drive our design.
+&lt;p&gt;The important thing to remember is that the customer is always right about how the software should behave, even when it violates our commonly understood assumptions about the world. The software they want you to build might require a different implementation of Snakes and Ladders. They might have a 3 year-old daughter they’re planning to play the game with, who always wants to be given a headstart. In this case, we’ve not delivered what they want, simply because it makes life easier for us. We’ve let our assumptions and our concerns for good design drive out the features, rather than letting the features drive our design.&lt;/p&gt;
 
-There's another possibility: when the customer wrote this scenario, they simply used &quot;starts on position X&quot; as a shortcut and don't really care if it's possible to do this in real life. In this case, we can work with them to write the scenario so as not to cheapen our design for the sake of easier feature writing.
+&lt;p&gt;There’s another possibility: when the customer wrote this scenario, they simply used “starts on position X” as a shortcut and don’t really care if it’s possible to do this in real life. In this case, we can work with them to write the scenario so as not to cheapen our design for the sake of easier feature writing.&lt;/p&gt;
 
-*The key insight: there's no way that we can know which it is from reading the scenario. We have to ask the customer and drive out the ambiguity in the feature.*
+&lt;p&gt;&lt;em&gt;The key insight: there’s no way that we can know which it is from reading the scenario. We have to ask the customer and drive out the ambiguity in the feature.&lt;/em&gt;&lt;/p&gt;
 
-We mustn't let the necessary constraints of executable features build ambiguity into your conversations about what the customer really wants. And we must be constantly talking to the customer all the way through the iteration, especially if they're not on site.
+&lt;p&gt;We mustn’t let the necessary constraints of executable features build ambiguity into your conversations about what the customer really wants. And we must be constantly talking to the customer all the way through the iteration, especially if they’re not on site.&lt;/p&gt;
 
-You might think &quot;It's only Snakes and Ladders, what does it matter?&quot; It matters a great deal: situations like this come up regularly in real life projects. Practising how to deal with these issues and the conversations that result is one of the many powerful things you gain by doing katas.
+&lt;p&gt;You might think “It’s only Snakes and Ladders, what does it matter?” It matters a great deal: situations like this come up regularly in real life projects. Practising how to deal with these issues and the conversations that result is one of the many powerful things you gain by doing katas.&lt;/p&gt;
 
-What's your take on the above problem? Have you come across it in real life?
+&lt;p&gt;What’s your take on the above problem? Have you come across it in real life?&lt;/p&gt;
 </content></entry></feed>

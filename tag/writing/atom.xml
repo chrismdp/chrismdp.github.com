@@ -13,109 +13,121 @@ layout: nil
     <name>Chris Parsons</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>Introducing Morning Pages</title><category term='life'/><category term='writing'/><category term='personal'/><category term='products'/><category term='productivity'/><link href='http://chrismdp.com/2012/09/introducing-morning-pages'/><updated>2012-09-21T13:25:13+01:00</updated><id>http://chrismdp.com/2012/09/introducing-morning-pages</id><content type='html'>I've [written before](/2010/07/seven-hundred-and-fifty-words) about the value of Morning Pages - a way of clearing your head in the mornings by writing down three pages on everything you're thinking and feeling.
+<entry><title>Introducing Morning Pages</title><category term='life'/><category term='writing'/><category term='personal'/><category term='products'/><category term='productivity'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2012/09/introducing-morning-pages'/><updated>2012-09-21T13:25:13+01:00</updated><id>http://chrismdp.com/2012/09/introducing-morning-pages</id><content type='html'>&lt;p&gt;I’ve &lt;a href=&quot;/2010/07/seven-hundred-and-fifty-words&quot;&gt;written before&lt;/a&gt; about the value of Morning Pages - a way of clearing your head in the mornings by writing down three pages on everything you’re thinking and feeling.&lt;/p&gt;
 
-In order to write my words, I used [750words.com](http://750words.com) for a number of years, but I've become a little disenfranchised with having private writings stored permanently in the cloud. I also write fastest in vim, which means writing into a website slows me down. What I really wanted was to store my words privately on my laptop, and yet also include a public incentive system: this is what made 750words.com so effective at keeping me motivated.
+&lt;p&gt;In order to write my words, I used &lt;a href=&quot;http://750words.com&quot;&gt;750words.com&lt;/a&gt; for a number of years, but I’ve become a little disenfranchised with having private writings stored permanently in the cloud. I also write fastest in vim, which means writing into a website slows me down. What I really wanted was to store my words privately on my laptop, and yet also include a public incentive system: this is what made 750words.com so effective at keeping me motivated.&lt;/p&gt;
 
-## gem install morning-pages
+&lt;h2 id=&quot;gem-install-morning-pages&quot;&gt;gem install morning-pages&lt;/h2&gt;
 
-The result is the morning-pages gem. The gem has been available for a while, but starting today it'll record your progress on a central website. It only ever uploads aggregate statistics: the code is [open source](http://github.com/chrismdp/morning-pages) so you can check it out for yourself to make sure.
+&lt;p&gt;The result is the morning-pages gem. The gem has been available for a while, but starting today it’ll record your progress on a central website. It only ever uploads aggregate statistics: the code is &lt;a href=&quot;http://github.com/chrismdp/morning-pages&quot;&gt;open source&lt;/a&gt; so you can check it out for yourself to make sure.&lt;/p&gt;
 
-For instructions, see the [accompanying website](http://morning-pages.me). There aren't any aggregate stats yet, but in future you'll be able to see any word streaks, what times of day you are most likely to write, etc. I've got some nice ideas for visualisation which I'll add as time permits: if you're impatient you can always [fork the website code](http://github.com/chrismdp/morning-pages.me) and create whatever stats you want!
+&lt;p&gt;For instructions, see the &lt;a href=&quot;http://morning-pages.me&quot;&gt;accompanying website&lt;/a&gt;. There aren’t any aggregate stats yet, but in future you’ll be able to see any word streaks, what times of day you are most likely to write, etc. I’ve got some nice ideas for visualisation which I’ll add as time permits: if you’re impatient you can always &lt;a href=&quot;http://github.com/chrismdp/morning-pages.me&quot;&gt;fork the website code&lt;/a&gt; and create whatever stats you want!&lt;/p&gt;
 
-## What do I use my words for?
+&lt;h2 id=&quot;what-do-i-use-my-words-for&quot;&gt;What do I use my words for?&lt;/h2&gt;
 
-Writing three pages is still something I try and do each day: I had a 170 day streak going at one point. I use my words to plan and order my day, to negotiate with myself about what I can realistically achieve, and [for prayer and meditation](http://en.wikipedia.org/wiki/Christian_meditation) - I've found I pray best at the point of a metaphorical pen.
+&lt;p&gt;Writing three pages is still something I try and do each day: I had a 170 day streak going at one point. I use my words to plan and order my day, to negotiate with myself about what I can realistically achieve, and &lt;a href=&quot;http://en.wikipedia.org/wiki/Christian_meditation&quot;&gt;for prayer and meditation&lt;/a&gt; - I’ve found I pray best at the point of a metaphorical pen.&lt;/p&gt;
 
-Do you try to write each day? What do you use your words for?
-</content></entry><entry><title>How I'm writing my book using Vim, Git and Ruby</title><category term='git'/><category term='ruby'/><category term='writing'/><category term='pragprowrimo'/><link href='http://chrismdp.com/2010/11/how-im-writing-my-book-using-git-and-ruby'/><updated>2010-11-02T15:35:27+00:00</updated><id>http://chrismdp.com/2010/11/how-im-writing-my-book-using-git-and-ruby</id><content type='html'>I'm taking another shot at [PragProWriMo](http://forums.pragprog.com/forums/190) this year. For those who don't know, PragProWriMo is the Pragmatic Programmer's counterpart to [NaNoWriMo](http://www.nanowrimo.org/), which encourages participants to write a novel in a month, or at least make a good start. Last year, I got about 2,000 words into an interesting idea relating to the concept of quality, and I'm going to take that further this month.
+&lt;p&gt;Do you try to write each day? What do you use your words for?&lt;/p&gt;
+</content></entry><entry><title>How I'm writing my book using Vim, Git and Ruby</title><category term='git'/><category term='ruby'/><category term='writing'/><category term='pragprowrimo'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2010/11/how-im-writing-my-book-using-git-and-ruby'/><updated>2010-11-02T15:35:27+00:00</updated><id>http://chrismdp.com/2010/11/how-im-writing-my-book-using-git-and-ruby</id><content type='html'>&lt;p&gt;I’m taking another shot at &lt;a href=&quot;http://forums.pragprog.com/forums/190&quot;&gt;PragProWriMo&lt;/a&gt; this year. For those who don’t know, PragProWriMo is the Pragmatic Programmer’s counterpart to &lt;a href=&quot;http://www.nanowrimo.org/&quot;&gt;NaNoWriMo&lt;/a&gt;, which encourages participants to write a novel in a month, or at least make a good start. Last year, I got about 2,000 words into an interesting idea relating to the concept of quality, and I’m going to take that further this month.&lt;/p&gt;
 
-Like any self-respecting geek trying to write a book, I've wasted a bunch of writing time trying to find the optimal workflow for the project. I tried [the new version of Scrivener](http://www.literatureandlatte.com/scrivener.php), and while it is feature rich and powerful, I found I was missing my programmer tools far too much. I've now settled on quite a nice workflow using 750words, Vim and Git, and I thought I'd take a few minutes to pen it for posterity.
+&lt;p&gt;Like any self-respecting geek trying to write a book, I’ve wasted a bunch of writing time trying to find the optimal workflow for the project. I tried &lt;a href=&quot;http://www.literatureandlatte.com/scrivener.php&quot;&gt;the new version of Scrivener&lt;/a&gt;, and while it is feature rich and powerful, I found I was missing my programmer tools far too much. I’ve now settled on quite a nice workflow using 750words, Vim and Git, and I thought I’d take a few minutes to pen it for posterity.&lt;/p&gt;
 
-## Step 1: Fling thoughts, ideas, and concepts into [750words](http://750words.com)
+&lt;h2 id=&quot;step-1-fling-thoughts-ideas-and-concepts-into-750wordshttp750wordscom&quot;&gt;Step 1: Fling thoughts, ideas, and concepts into &lt;a href=&quot;http://750words.com&quot;&gt;750words&lt;/a&gt;&lt;/h2&gt;
 
-I love 750words and have written about my use of the site [previously](/2010/07/seven-hundred-and-fifty-words/). It's a great capture tool for random thoughts, words and feelings. I find it really helpful not to constrain my writing with too much structure to start with. It's a clean slate every day to write down what's inspiring me that particular day. I can also write these words from anywhere: on my phone as the moment strikes, on the iPad, whatever.
+&lt;p&gt;I love 750words and have written about my use of the site &lt;a href=&quot;/2010/07/seven-hundred-and-fifty-words/&quot;&gt;previously&lt;/a&gt;. It’s a great capture tool for random thoughts, words and feelings. I find it really helpful not to constrain my writing with too much structure to start with. It’s a clean slate every day to write down what’s inspiring me that particular day. I can also write these words from anywhere: on my phone as the moment strikes, on the iPad, whatever.&lt;/p&gt;
 
-I try and get several hundred words done early in the morning: there's evidence that [your brain works better first thing in the morning](http://ezinearticles.com/?Alpha-Brain-Waves---How-to-Relax-Deeply&amp;id=1905868). Whether or not this is true is debatable, but I know I'm certainly more aware of deeper thoughts and ideas first thing, and there are some fairly deep concepts in the book.
+&lt;p&gt;I try and get several hundred words done early in the morning: there’s evidence that &lt;a href=&quot;http://ezinearticles.com/?Alpha-Brain-Waves---How-to-Relax-Deeply&amp;amp;id=1905868&quot;&gt;your brain works better first thing in the morning&lt;/a&gt;. Whether or not this is true is debatable, but I know I’m certainly more aware of deeper thoughts and ideas first thing, and there are some fairly deep concepts in the book.&lt;/p&gt;
 
-Using 750words also ensures that I write enough during any particular day. I know that if I write that many words, then at least some of the content is going to be interesting enough for the next step.
+&lt;p&gt;Using 750words also ensures that I write enough during any particular day. I know that if I write that many words, then at least some of the content is going to be interesting enough for the next step.&lt;/p&gt;
 
-## Step 2: Organise my thoughts using Vim
+&lt;h2 id=&quot;step-2-organise-my-thoughts-using-vim&quot;&gt;Step 2: Organise my thoughts using Vim&lt;/h2&gt;
 
-I copy and paste the best and most interesting snippets from 750words into [Vim](http://vim.org). Vim is a fantastic editor for editing text. In full screen mode it's distraction free, the modal editing mean that I can move whole sentences around very easily without ever reaching for the mouse. I try to keep each file fairly short and express different thoughts and sections in different files. I'm using [maruku](http://maruku.rubyforge.org/maruku.html) (thanks to [@glv](http://twitter.com/glv)) to tag each text file with tags, such as 'first-draft', 'revised-draft', 'todo', and so on. My hope is that this will become useful later on when I start to pull things together.
+&lt;p&gt;I copy and paste the best and most interesting snippets from 750words into &lt;a href=&quot;http://vim.org&quot;&gt;Vim&lt;/a&gt;. Vim is a fantastic editor for editing text. In full screen mode it’s distraction free, the modal editing mean that I can move whole sentences around very easily without ever reaching for the mouse. I try to keep each file fairly short and express different thoughts and sections in different files. I’m using &lt;a href=&quot;http://maruku.rubyforge.org/maruku.html&quot;&gt;maruku&lt;/a&gt; (thanks to &lt;a href=&quot;http://twitter.com/glv&quot;&gt;@glv&lt;/a&gt;) to tag each text file with tags, such as ‘first-draft’, ‘revised-draft’, ‘todo’, and so on. My hope is that this will become useful later on when I start to pull things together.&lt;/p&gt;
 
-These files are checked into [Git](http://git-scm.com) and I've put the repository on my [Dropbox](http://dropbox.com) folder so it's backed up. So far, so good.
+&lt;p&gt;These files are checked into &lt;a href=&quot;http://git-scm.com&quot;&gt;Git&lt;/a&gt; and I’ve put the repository on my &lt;a href=&quot;http://dropbox.com&quot;&gt;Dropbox&lt;/a&gt; folder so it’s backed up. So far, so good.&lt;/p&gt;
 
-## Step 3: Structure the content
+&lt;h2 id=&quot;step-3-structure-the-content&quot;&gt;Step 3: Structure the content&lt;/h2&gt;
 
-I've started on a super simple Ruby DSL for organising the content into a real book:
+&lt;p&gt;I’ve started on a super simple Ruby DSL for organising the content into a real book:&lt;/p&gt;
 
-{% highlight ruby %}
-book &quot;Title&quot; do
-  part &quot;Introduction&quot; do
-    section &quot;Section Title&quot;, &quot;documents/intro.md&quot;
-    section &quot;How to read this book&quot;, &quot;document/how_to_read_this_book.md&quot;
-  end
+&lt;p&gt;{% highlight ruby %}
+book “Title” do
+  part “Introduction” do
+    section “Section Title”, “documents/intro.md”
+    section “How to read this book”, “document/how_to_read_this_book.md”
+  end&lt;/p&gt;
 
-  chapter &quot;The first chapter&quot; do
-    section &quot;Section Title&quot;, &quot;documents/intro_to_chapter_one.md&quot;
+&lt;p&gt;chapter “The first chapter” do
+    section “Section Title”, “documents/intro_to_chapter_one.md”
   end
 end
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-This DSL currently has no code behind it, but it feels like it makes sense. It's easy to read and modify, and to swap sections of the book around as my thoughts take shape.
+&lt;p&gt;This DSL currently has no code behind it, but it feels like it makes sense. It’s easy to read and modify, and to swap sections of the book around as my thoughts take shape.&lt;/p&gt;
 
-## Step 4: The future
+&lt;h2 id=&quot;step-4-the-future&quot;&gt;Step 4: The future&lt;/h2&gt;
 
-That's enough workflow for now. In the future I want to write a gem that you can use in the following way:
+&lt;p&gt;That’s enough workflow for now. In the future I want to write a gem that you can use in the following way:&lt;/p&gt;
 
-{% highlight bash %}
+&lt;p&gt;{% highlight bash %}
 # Open a random document tagged with draft in Vim
-$ book revise
+$ book revise&lt;/p&gt;
 
-# Export the book to PDF (or epub, etc)
-$ book compile
+&lt;h1 id=&quot;export-the-book-to-pdf-or-epub-etc&quot;&gt;Export the book to PDF (or epub, etc)&lt;/h1&gt;
+&lt;p&gt;$ book compile&lt;/p&gt;
 
-# Check how many pages/words are currently present in the final structure.
-# Perhaps even draw some graps and put together nifty stats from git...
-$ book stats
+&lt;h1 id=&quot;check-how-many-pageswords-are-currently-present-in-the-final-structure&quot;&gt;Check how many pages/words are currently present in the final structure.&lt;/h1&gt;
+&lt;p&gt;# Perhaps even draw some graps and put together nifty stats from git…
+$ book stats&lt;/p&gt;
 
-# Check in everything to git for the day and write a comment
-$ book commit &lt;comment&gt;
-{% endhighlight %}
+&lt;h1 id=&quot;check-in-everything-to-git-for-the-day-and-write-a-comment&quot;&gt;Check in everything to git for the day and write a comment&lt;/h1&gt;
+&lt;p&gt;$ book commit &lt;comment&gt;
+{% endhighlight %}&lt;/comment&gt;&lt;/p&gt;
 
-I know if I blog for too much longer I'm going to fall into the [Rimmer Trap](http://en.wikipedia.org/wiki/Arnold_Rimmer#Life_on_board_Red_Dwarf), so back to the book :)
+&lt;p&gt;I know if I blog for too much longer I’m going to fall into the &lt;a href=&quot;http://en.wikipedia.org/wiki/Arnold_Rimmer#Life_on_board_Red_Dwarf&quot;&gt;Rimmer Trap&lt;/a&gt;, so back to the book :)&lt;/p&gt;
 
-Let me know if this is helpful, or if you plan to use a similar Ruby DSL: perhaps we can work together on the creation of it.
+&lt;p&gt;Let me know if this is helpful, or if you plan to use a similar Ruby DSL: perhaps we can work together on the creation of it.&lt;/p&gt;
 
-Good luck to all my fellow PragProWriMo writers!
+&lt;p&gt;Good luck to all my fellow PragProWriMo writers!&lt;/p&gt;
 
-*UPDATE:* Wow, what a lot of interest! There's now a repository for this gem [here](http://github.com/chrismdp/book) and an active community of developers already! Let me know if you want to be involved with coding it, and I'll keep this blog up to date with progress.
+&lt;p&gt;&lt;em&gt;UPDATE:&lt;/em&gt; Wow, what a lot of interest! There’s now a repository for this gem &lt;a href=&quot;http://github.com/chrismdp/book&quot;&gt;here&lt;/a&gt; and an active community of developers already! Let me know if you want to be involved with coding it, and I’ll keep this blog up to date with progress.&lt;/p&gt;
 
-</content></entry><entry><title>750words.com + GTD = Focus</title><category term='personal'/><category term='life'/><category term='writing'/><category term='productivity'/><link href='http://chrismdp.com/2010/07/seven-hundred-and-fifty-words'/><updated>2010-07-12T22:45:00+01:00</updated><id>http://chrismdp.com/2010/07/seven-hundred-and-fifty-words</id><content type='html'>One of the best ways of managing your time and your tasks is David Allen's [Getting Things Done](http://en.wikipedia.org/wiki/Getting_Things_Done) (GTD) system. I've been a GTD adherent for the last four years. I've deviated a little from some of the practices in that time but never the principles (regular review, only care about stuff you can work on now, get it all out of your head). 
+</content></entry><entry><title>750words.com + GTD = Focus</title><category term='personal'/><category term='life'/><category term='writing'/><category term='productivity'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2010/07/seven-hundred-and-fifty-words'/><updated>2010-07-12T22:45:00+01:00</updated><id>http://chrismdp.com/2010/07/seven-hundred-and-fifty-words</id><content type='html'>&lt;p&gt;One of the best ways of managing your time and your tasks is David Allen’s &lt;a href=&quot;http://en.wikipedia.org/wiki/Getting_Things_Done&quot;&gt;Getting Things Done&lt;/a&gt; (GTD) system. I’ve been a GTD adherent for the last four years. I’ve deviated a little from some of the practices in that time but never the principles (regular review, only care about stuff you can work on now, get it all out of your head). &lt;/p&gt;
 
-However, one of the hardest things I've found to master is the concept of different levels of thinking to help you prioritise what to do next.
+&lt;p&gt;However, one of the hardest things I’ve found to master is the concept of different levels of thinking to help you prioritise what to do next.&lt;/p&gt;
 
-In GTD, to decide which tasks are more important than others, first you look at the context you are in and only consider tasks within that context. For example, it's hard to blog when you're in the supermarket, but it's a handy time to remember you need to buy toothpaste. Then, you look at the time you have available (this isn't worth starting as I don't have time to finish it) and energy available (might not be a good idea to draft a difficult and taxing work proposal just before bed).
+&lt;p&gt;In GTD, to decide which tasks are more important than others, first you look at the context you are in and only consider tasks within that context. For example, it’s hard to blog when you’re in the supermarket, but it’s a handy time to remember you need to buy toothpaste. Then, you look at the time you have available (this isn’t worth starting as I don’t have time to finish it) and energy available (might not be a good idea to draft a difficult and taxing work proposal just before bed).&lt;/p&gt;
 
-If you still can't decide, then it gets interesting. GTD invites you to take a step back: moving from &quot;ground&quot; to &quot;10,000ft&quot;. Which project that these tasks are for will have the short-term effect I'm most interested in? Then step up another level, and another: which project advances my goals for the year? Which is the more important area I should be progressing now at this stage of my life? What meshes with my whole-life purpose?
+&lt;p&gt;If you still can’t decide, then it gets interesting. GTD invites you to take a step back: moving from “ground” to “10,000ft”. Which project that these tasks are for will have the short-term effect I’m most interested in? Then step up another level, and another: which project advances my goals for the year? Which is the more important area I should be progressing now at this stage of my life? What meshes with my whole-life purpose?&lt;/p&gt;
 
-These are deep questions, and I used to struggle to apply them to everyday task prioritisation. It seemed hard to remember where in my life purpose some of my more mundane tasks fitted, partly because I was thinking about deeper things much less frequently. So I left the &quot;take a step back&quot; method alone, going with what just felt right instead (which isn't a bad way to prioritise to be honest).
+&lt;p&gt;These are deep questions, and I used to struggle to apply them to everyday task prioritisation. It seemed hard to remember where in my life purpose some of my more mundane tasks fitted, partly because I was thinking about deeper things much less frequently. So I left the “take a step back” method alone, going with what just felt right instead (which isn’t a bad way to prioritise to be honest).&lt;/p&gt;
 
-However, through the power of [750words.com](http://750words.com), I've finally managed to nail this part of GTD.
+&lt;p&gt;However, through the power of &lt;a href=&quot;http://750words.com&quot;&gt;750words.com&lt;/a&gt;, I’ve finally managed to nail this part of GTD.&lt;/p&gt;
 
-## Morning Pages
+&lt;h2 id=&quot;morning-pages&quot;&gt;Morning Pages&lt;/h2&gt;
 
-There are many ways to clear your head and get yourself to focus. One is to write down everything you're thinking about in an attempt to organise your thoughts. Some people call this [Morning Pages](http://paperartstudio.tripod.com/artistsway/id3.html): write three pages a day first thing in the morning, about anything and everything. 
+&lt;p&gt;There are many ways to clear your head and get yourself to focus. One is to write down everything you’re thinking about in an attempt to organise your thoughts. Some people call this &lt;a href=&quot;http://paperartstudio.tripod.com/artistsway/id3.html&quot;&gt;Morning Pages&lt;/a&gt;: write three pages a day first thing in the morning, about anything and everything. &lt;/p&gt;
 
-Morning pages is a great idea, but sometimes it's difficult to motivate yourself to get on with private writing. Three pages seems a tall order to write every morning. That was, until I discovered 750words.com. This handy little site ensures that you not only do it, but that you do it every day. Using a full-featured incentive system of points, badges and challenges, you really don't want to disappoint yourself by missing a day. The site gets you writing, and throws in some nifty writing statistics at the end of the process for some fun analysis of your state of mind. Heck, it even measures your typing speed, which comes in handy for [Learn to Type Week](http://vurl.me/TCK)!
+&lt;p&gt;Morning pages is a great idea, but sometimes it’s difficult to motivate yourself to get on with private writing. Three pages seems a tall order to write every morning. That was, until I discovered 750words.com. This handy little site ensures that you not only do it, but that you do it every day. Using a full-featured incentive system of points, badges and challenges, you really don’t want to disappoint yourself by missing a day. The site gets you writing, and throws in some nifty writing statistics at the end of the process for some fun analysis of your state of mind. Heck, it even measures your typing speed, which comes in handy for &lt;a href=&quot;http://vurl.me/TCK&quot;&gt;Learn to Type Week&lt;/a&gt;!&lt;/p&gt;
 
-I thought I'd give it a go a few weeks ago, as I had a fair amount on my mind at the time. What I didn't realise was the effect it would have on my productivity. My mind was immediately clearer, and I was decisive and more focused. Blogging became easier again: once you've written 750 words of effectively brain-dump 'whatever-you-want' writing in the morning you are ready to keep on going with something more structured. 
+&lt;p&gt;I thought I’d give it a go a few weeks ago, as I had a fair amount on my mind at the time. What I didn’t realise was the effect it would have on my productivity. My mind was immediately clearer, and I was decisive and more focused. Blogging became easier again: once you’ve written 750 words of effectively brain-dump ‘whatever-you-want’ writing in the morning you are ready to keep on going with something more structured. &lt;/p&gt;
 
-Because I use the time for fairly intense personal reflection, this practice unlocked the GTD prioritisation method. I've found that I'm moving up and down the GTD &quot;ground&quot;, &quot;10,000ft&quot;, &quot;40,000ft&quot; levels much more effectively. I often know just how a particular task fits into my life goal, as I've just written about that this morning. I'm naturally keeping the big picture in mind every day. 
+&lt;p&gt;Because I use the time for fairly intense personal reflection, this practice unlocked the GTD prioritisation method. I’ve found that I’m moving up and down the GTD “ground”, “10,000ft”, “40,000ft” levels much more effectively. I often know just how a particular task fits into my life goal, as I’ve just written about that this morning. I’m naturally keeping the big picture in mind every day. &lt;/p&gt;
 
-The word-crunching statistics that are produced over time are very telling. I've noticed an interesting effect now I've been doing it for the last three weeks: at first I found it hard to stop and all my writing was concerned with the present. Now it's harder to think of what to write, but my thoughts are more valuable and much more reflective and deeper. I'm now using it to consider hard life decisions and priorities.
+&lt;p&gt;The word-crunching statistics that are produced over time are very telling. I’ve noticed an interesting effect now I’ve been doing it for the last three weeks: at first I found it hard to stop and all my writing was concerned with the present. Now it’s harder to think of what to write, but my thoughts are more valuable and much more reflective and deeper. I’m now using it to consider hard life decisions and priorities.&lt;/p&gt;
 
-I'd very much recommend you try morning pages, especially if you struggle to focus, get carried away by random disparate thoughts or find it difficult to concentrate. I'm getting a lot out of it.
+&lt;p&gt;I’d very much recommend you try morning pages, especially if you struggle to focus, get carried away by random disparate thoughts or find it difficult to concentrate. I’m getting a lot out of it.&lt;/p&gt;
 
 </content></entry></feed>

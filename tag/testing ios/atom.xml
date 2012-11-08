@@ -13,109 +13,122 @@ layout: nil
     <name>Chris Parsons</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>How I'm testing iPhone apps: part 2</title><category term='code'/><category term='ios'/><category term='tdd'/><category term='bdd'/><category term='testing ios'/><link href='http://chrismdp.com/2011/12/how-im-testing-iphone-apps-part-2'/><updated>2011-12-06T16:02:54+00:00</updated><id>http://chrismdp.com/2011/12/how-im-testing-iphone-apps-part-2</id><content type='html'>&lt;p&gt;&lt;i&gt;I've recently been doing some iOS development, and working out the best way to test-drive the development of iOS apps was high on my priority list. I know that the automated testing of iOS applications is still not widely practiced and isn't well documented, so I decided to write a series of posts to start to rectify that. You may wish to read &lt;a href=&quot;/2011/12/how-im-testing-iphone-apps-part-1&quot;&gt;part 1&lt;/a&gt; first.&lt;/i&gt;&lt;/p&gt;
+<entry><title>How I'm testing iPhone apps: part 2</title><category term='code'/><category term='ios'/><category term='tdd'/><category term='bdd'/><category term='testing ios'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2011/12/how-im-testing-iphone-apps-part-2'/><updated>2011-12-06T16:02:54+00:00</updated><id>http://chrismdp.com/2011/12/how-im-testing-iphone-apps-part-2</id><content type='html'>&lt;p&gt;&lt;i&gt;I've recently been doing some iOS development, and working out the best way to test-drive the development of iOS apps was high on my priority list. I know that the automated testing of iOS applications is still not widely practiced and isn't well documented, so I decided to write a series of posts to start to rectify that. You may wish to read &lt;a href=&quot;/2011/12/how-im-testing-iphone-apps-part-1&quot;&gt;part 1&lt;/a&gt; first.&lt;/i&gt;&lt;/p&gt;
 
-## Kiwi
+&lt;h2 id=&quot;kiwi&quot;&gt;Kiwi&lt;/h2&gt;
 
-We were looking for a testing framework which supported iOS's asynchronous programming model and [Kiwi](https://github.com/allending/Kiwi) answered the call. It has a great syntax, [comprehensive set up assistance](https://github.com/allending/Kiwi/wiki/Guide:-Up-and-Running-with-Kiwi), asynchronous support and built in mocking. I'd highly recommend you check it out: the syntax helps me to think in the right way and it has pretty much all the features we needed.
+&lt;p&gt;We were looking for a testing framework which supported iOS’s asynchronous programming model and &lt;a href=&quot;https://github.com/allending/Kiwi&quot;&gt;Kiwi&lt;/a&gt; answered the call. It has a great syntax, &lt;a href=&quot;https://github.com/allending/Kiwi/wiki/Guide:-Up-and-Running-with-Kiwi&quot;&gt;comprehensive set up assistance&lt;/a&gt;, asynchronous support and built in mocking. I’d highly recommend you check it out: the syntax helps me to think in the right way and it has pretty much all the features we needed.&lt;/p&gt;
 
-Kiwi's block syntax looks like this:
+&lt;p&gt;Kiwi’s block syntax looks like this:&lt;/p&gt;
 
-{% highlight objectivec %}
-describe(@&quot;Team&quot;, ^{
-    context(@&quot;when newly created&quot;, ^{
-        it(@&quot;should have a name&quot;, ^{
+&lt;p&gt;{% highlight objectivec %}
+describe(@”Team”, ^{
+    context(@”when newly created”, ^{
+        it(@”should have a name”, ^{
             id team = [Team team];
-            [[team.name should] equal:@&quot;Black Hawks&quot;];
+            [[team.name should] equal:@”Black Hawks”];
         });
     });
 });
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-Much better than the old fashioned xUnit style of testing, in my opinion. You might hate it, of course. You can use Kiwi's features [without having to use the block syntax](https://github.com/allending/Kiwi/issues/73) if you want.
+&lt;p&gt;Much better than the old fashioned xUnit style of testing, in my opinion. You might hate it, of course. You can use Kiwi’s features &lt;a href=&quot;https://github.com/allending/Kiwi/issues/73&quot;&gt;without having to use the block syntax&lt;/a&gt; if you want.&lt;/p&gt;
 
-## Objective-C's delegate model
+&lt;h2 id=&quot;objective-cs-delegate-model&quot;&gt;Objective-C’s delegate model&lt;/h2&gt;
 
-Many of the Apple core libraries use a delegate pattern for handling callbacks from a class. This is similar to Java's interfaces, and superficially similar to blocks in Ruby and anonymous functions in Javascript.
+&lt;p&gt;Many of the Apple core libraries use a delegate pattern for handling callbacks from a class. This is similar to Java’s interfaces, and superficially similar to blocks in Ruby and anonymous functions in Javascript.&lt;/p&gt;
 
-As an example, let's take CoreLocation. When wanting to find the location of a phone, you create a new `CoreLocationManager` and call `startUpdatingLocation` on it:
+&lt;p&gt;As an example, let’s take CoreLocation. When wanting to find the location of a phone, you create a new &lt;code&gt;CoreLocationManager&lt;/code&gt; and call &lt;code&gt;startUpdatingLocation&lt;/code&gt; on it:&lt;/p&gt;
 
-{% highlight objectivec %}
+&lt;p&gt;{% highlight objectivec %}
 CLLocationManager *manager = [[CLLocationManager alloc] init];
 [manager startUpdatingLocation];
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-This call returns immediately: so how do you execute code when the location is found? You use a delegate: an object with responds to the `locationManager: didUpdateToLocation: fromLocation` method:
+&lt;p&gt;This call returns immediately: so how do you execute code when the location is found? You use a delegate: an object with responds to the &lt;code&gt;locationManager: didUpdateToLocation: fromLocation&lt;/code&gt; method:&lt;/p&gt;
 
-{% highlight objectivec %}
+&lt;p&gt;{% highlight objectivec %}
 -(void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
 {
-  NSLog(&quot;$@ I AM IN YOU&quot;, newLocation);
+  NSLog(“$@ I AM IN YOU”, newLocation);
   foundLocation = YES;
 }
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-Then you set this object to be the CLLocationManager's delegate before calling `startUpdatingLocation`. Often you set the delegate to `self` and define the delegate method on the calling object.
+&lt;p&gt;Then you set this object to be the CLLocationManager’s delegate before calling &lt;code&gt;startUpdatingLocation&lt;/code&gt;. Often you set the delegate to &lt;code&gt;self&lt;/code&gt; and define the delegate method on the calling object.&lt;/p&gt;
 
-{% highlight objectivec %}
+&lt;p&gt;{% highlight objectivec %}
 CLLocationManager *manager = [[CLLocationManager alloc] init];
 manager.delegate = self;
 [manager startUpdatingLocation];
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-There's more about this model in [this article from Apple](http://developer.apple.com/library/IOs/#documentation/iPhone/Conceptual/iPhone101/Articles/02_DesignPatterns.html).
+&lt;p&gt;There’s more about this model in &lt;a href=&quot;http://developer.apple.com/library/IOs/#documentation/iPhone/Conceptual/iPhone101/Articles/02_DesignPatterns.html&quot;&gt;this article from Apple&lt;/a&gt;.&lt;/p&gt;
 
-## Testing delegates
+&lt;h2 id=&quot;testing-delegates&quot;&gt;Testing delegates&lt;/h2&gt;
 
-This is tricky to test, because we can't simply do this:
+&lt;p&gt;This is tricky to test, because we can’t simply do this:&lt;/p&gt;
 
-{% highlight objectivec %}
-it(&quot;should call the delegate when ready&quot;, ^{
+&lt;p&gt;{% highlight objectivec %}
+it(“should call the delegate when ready”, ^{
   [testObject startUpdatingLocation];
   [[testObject.foundLocation should] equal:theValue(YES)];
 });
-{% endhighlight %}
+{% endhighlight %}&lt;/p&gt;
 
-The test will call `startUpdatingLocation`, and then immediately check the `foundLocation` property to see whether it's been set. It won't have been, because the delegate won't have been called yet.
+&lt;p&gt;The test will call &lt;code&gt;startUpdatingLocation&lt;/code&gt;, and then immediately check the &lt;code&gt;foundLocation&lt;/code&gt; property to see whether it’s been set. It won’t have been, because the delegate won’t have been called yet.&lt;/p&gt;
 
-How were we to stub endpoints such as the location system for for our app? We found two ways of doing this, with varying effectiveness:
+&lt;p&gt;How were we to stub endpoints such as the location system for for our app? We found two ways of doing this, with varying effectiveness:&lt;/p&gt;
 
-* Using Objective-C categories to redefine class methods
-* Using a Kiwi stub to inject a derived class which mocks out key methods
+&lt;ul&gt;
+  &lt;li&gt;Using Objective-C categories to redefine class methods&lt;/li&gt;
+  &lt;li&gt;Using a Kiwi stub to inject a derived class which mocks out key methods&lt;/li&gt;
+&lt;/ul&gt;
 
-Next post, I'll dive into some detail on both of these methods and show some of the pros and cons of each.
+&lt;p&gt;Next post, I’ll dive into some detail on both of these methods and show some of the pros and cons of each.&lt;/p&gt;
 
-&lt;i&gt;How are you testing iPhone apps? Do chime in throughout the series with suggestions and comments, and I'll edit the posts as appropriate.&lt;/i&gt;
+&lt;p&gt;&lt;i&gt;How are you testing iPhone apps? Do chime in throughout the series with suggestions and comments, and I’ll edit the posts as appropriate.&lt;/i&gt;&lt;/p&gt;
 
-</content></entry><entry><title>How I'm testing iPhone apps: part 1</title><category term='code'/><category term='ios'/><category term='tdd'/><category term='bdd'/><category term='testing ios'/><link href='http://chrismdp.com/2011/12/how-im-testing-iphone-apps-part-1'/><updated>2011-12-01T22:45:35+00:00</updated><id>http://chrismdp.com/2011/12/how-im-testing-iphone-apps-part-1</id><content type='html'>&lt;p&gt;&lt;i&gt;This week I've been working with &lt;a href='http://shilling.co.uk'&gt;Shilling&lt;/a&gt; helping them get starting with iOS application development. Part of the deal was for me to learn it myself as we went: I've done hardly any iOS work and we've been learning how to do it together.&lt;/i&gt;&lt;/p&gt;
+</content></entry><entry><title>How I'm testing iPhone apps: part 1</title><category term='code'/><category term='ios'/><category term='tdd'/><category term='bdd'/><category term='testing ios'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2011/12/how-im-testing-iphone-apps-part-1'/><updated>2011-12-01T22:45:35+00:00</updated><id>http://chrismdp.com/2011/12/how-im-testing-iphone-apps-part-1</id><content type='html'>&lt;p&gt;&lt;i&gt;This week I've been working with &lt;a href=&quot;http://shilling.co.uk&quot;&gt;Shilling&lt;/a&gt; helping them get starting with iOS application development. Part of the deal was for me to learn it myself as we went: I've done hardly any iOS work and we've been learning how to do it together.&lt;/i&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;i&gt;As part of this process, working out the best way to test-drive the development of iOS apps was high on my priority list. I know that the automated testing of iOS applications is still not widely practiced and isn't well documented, so I decided to write a series of posts to start to rectify that.&lt;/i&gt;&lt;/p&gt;
 
-## Our goal
+&lt;h2 id=&quot;our-goal&quot;&gt;Our goal&lt;/h2&gt;
 
-There are two main parts to working out how to test-drive applications on a new platform. One is to figure out the testing libraries and write simple `1 + 1 = 2` style tests to prove it can be done. The other half is working out how to apply common testing techniques such as stubbing external systems, isolating tests correctly and optionally driving the interface.
+&lt;p&gt;There are two main parts to working out how to test-drive applications on a new platform. One is to figure out the testing libraries and write simple &lt;code&gt;1 + 1 = 2&lt;/code&gt; style tests to prove it can be done. The other half is working out how to apply common testing techniques such as stubbing external systems, isolating tests correctly and optionally driving the interface.&lt;/p&gt;
 
-The first of these steps is quite easy on iOS, but the second part is harder. In our case, we have some code which makes use of CoreLocation and the [Geonames](http://geonames.org) service to get an iPhone's location and look up the county name from a latitude and longitude. This means that our code relies on two external services to run, which we want to stub out: we don't want these services to be called each time our tests run. How were we to set this up correctly?
+&lt;p&gt;The first of these steps is quite easy on iOS, but the second part is harder. In our case, we have some code which makes use of CoreLocation and the &lt;a href=&quot;http://geonames.org&quot;&gt;Geonames&lt;/a&gt; service to get an iPhone’s location and look up the county name from a latitude and longitude. This means that our code relies on two external services to run, which we want to stub out: we don’t want these services to be called each time our tests run. How were we to set this up correctly?&lt;/p&gt;
 
+&lt;h2 id=&quot;apples-documentation&quot;&gt;Apple’s documentation&lt;/h2&gt;
 
-## Apple's documentation
+&lt;p&gt;To kick off our testing adventure on iOS, we started with &lt;a href=&quot;http://developer.apple.com/library/ios/#documentation/Xcode/Conceptual/ios_development_workflow/135-Unit_Testing_Applications/unit_testing_applications.html&quot;&gt;Apple’s own public documentation&lt;/a&gt; on how to test iOS. This is a fairly comprehensive guide on how to set up a project with built in testing, allowing you to write basic SenTest tests quite quickly.&lt;/p&gt;
 
-To kick off our testing adventure on iOS, we started with [Apple's own public documentation](http://developer.apple.com/library/ios/#documentation/Xcode/Conceptual/ios_development_workflow/135-Unit_Testing_Applications/unit_testing_applications.html) on how to test iOS. This is a fairly comprehensive guide on how to set up a project with built in testing, allowing you to write basic SenTest tests quite quickly.
+&lt;p&gt;Apple divides its definition of unit testing into two categories:&lt;/p&gt;
 
-Apple divides its definition of unit testing into two categories:
+&lt;ul&gt;
+  &lt;li&gt;Logic tests: these are what I would normally call unit tests. They rely on very few external APIs and are run standalone without the use of a simulator.&lt;/li&gt;
+  &lt;li&gt;Application tests: these are executed in the context of a running application on a simulator or iOS device.&lt;/li&gt;
+&lt;/ul&gt;
 
-* Logic tests: these are what I would normally call unit tests. They rely on very few external APIs and are run standalone without the use of a simulator.
-* Application tests: these are executed in the context of a running application on a simulator or iOS device.
+&lt;p&gt;The document details how to set up both types in your project. There’s a few things missing though:&lt;/p&gt;
 
-The document details how to set up both types in your project. There's a few things missing though:
+&lt;ul&gt;
+  &lt;li&gt;They have good ideas about &lt;a href=&quot;http://developer.apple.com/library/ios/#documentation/Xcode/Conceptual/ios_development_workflow/135-Unit_Testing_Applications/unit_testing_applications.html#//apple_ref/doc/uid/TP40007959-CH20-SW12&quot;&gt;how to write decent tests&lt;/a&gt;, but lack information on how to correctly mock system endpoints. I want to do this so that I don’t have to rely on iOS location simulation, or HTTP response data, to make my tests work.&lt;/li&gt;
+  &lt;li&gt;There was also nothing on how to test asynchronously, which is a real problem as iOS applications are mostly written in this way.&lt;/li&gt;
+  &lt;li&gt;Application tests are executed in the context of your application, but without extra work it’s not possible to support native UI testing, &lt;a href=&quot;https://github.com/jnicklas/capybara&quot;&gt;Capybara&lt;/a&gt; style. We are reduced to manipulating controllers directly, which is good enough for now. This assumes you have your user interface wired up correctly. As the app always has to be tested manually anyway then this isn’t too much of a risk, but if you want to take a step further you could use &lt;a href=&quot;https://github.com/square/KIF&quot;&gt;KIF&lt;/a&gt;, &lt;a href=&quot;https://github.com/moredip/Frank&quot;&gt;Frank&lt;/a&gt; or Apple’s own &lt;a href=&quot;http://developer.apple.com/library/ios/#documentation/DeveloperTools/Reference/UIAutomationRef/Introduction/Introduction.html&quot;&gt;UIAutomation&lt;/a&gt;. There’s a good post comparing them &lt;a href=&quot;http://sgleadow.github.com/blog/2011/10/26/which-automated-ios-testing-tool-to-use/&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
 
-* They have good ideas about [how to write decent tests](http://developer.apple.com/library/ios/#documentation/Xcode/Conceptual/ios_development_workflow/135-Unit_Testing_Applications/unit_testing_applications.html#//apple_ref/doc/uid/TP40007959-CH20-SW12), but lack information on how to correctly mock system endpoints. I want to do this so that I don't have to rely on iOS location simulation, or HTTP response data, to make my tests work.
-* There was also nothing on how to test asynchronously, which is a real problem as iOS applications are mostly written in this way.
-* Application tests are executed in the context of your application, but without extra work it's not possible to support native UI testing, [Capybara](https://github.com/jnicklas/capybara) style. We are reduced to manipulating controllers directly, which is good enough for now. This assumes you have your user interface wired up correctly. As the app always has to be tested manually anyway then this isn't too much of a risk, but if you want to take a step further you could use [KIF](https://github.com/square/KIF), [Frank](https://github.com/moredip/Frank) or Apple's own [UIAutomation](http://developer.apple.com/library/ios/#documentation/DeveloperTools/Reference/UIAutomationRef/Introduction/Introduction.html). There's a good post comparing them [here](http://sgleadow.github.com/blog/2011/10/26/which-automated-ios-testing-tool-to-use/).
+&lt;p&gt;So we followed through the basic set up instructions, and got a simple test running which added two numbers together. A good start, but useless for real work.&lt;/p&gt;
 
-So we followed through the basic set up instructions, and got a simple test running which added two numbers together. A good start, but useless for real work.
+&lt;p&gt;Time to go in search of an asynchronous testing framework: and we found a great one. Next time, I’ll talk about the wonderful &lt;a href=&quot;https://github.com/allending/Kiwi&quot;&gt;Kiwi&lt;/a&gt;.&lt;/p&gt;
 
-Time to go in search of an asynchronous testing framework: and we found a great one. Next time, I'll talk about the wonderful [Kiwi](https://github.com/allending/Kiwi).
-
-&lt;i&gt;How are you testing iPhone apps? Do chime in throughout the series with suggestions and comments, and I'll edit the posts as appropriate.&lt;/i&gt;
+&lt;p&gt;&lt;i&gt;How are you testing iPhone apps? Do chime in throughout the series with suggestions and comments, and I’ll edit the posts as appropriate.&lt;/i&gt;&lt;/p&gt;
 </content></entry></feed>

@@ -13,97 +13,104 @@ layout: nil
     <name>Chris Parsons</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>Announcing edash</title><category term='information radiator'/><link href='http://chrismdp.com/2010/03/announcing-edash'/><updated>2010-03-29T22:05:00+01:00</updated><id>http://chrismdp.com/2010/03/announcing-edash</id><content type='html'>I've been hinting at the dashboard application I've been hacking on recently and after showing it off to a few people at the [Scottish Ruby Conference](http://scottishrubyconference.com) it's about time I released it open source.
+<entry><title>Announcing edash</title><category term='information radiator'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2010/03/announcing-edash'/><updated>2010-03-29T22:05:00+01:00</updated><id>http://chrismdp.com/2010/03/announcing-edash</id><content type='html'>&lt;p&gt;I’ve been hinting at the dashboard application I’ve been hacking on recently and after showing it off to a few people at the &lt;a href=&quot;http://scottishrubyconference.com&quot;&gt;Scottish Ruby Conference&lt;/a&gt; it’s about time I released it open source.&lt;/p&gt;
 
-## Introducing edash
+&lt;h2 id=&quot;introducing-edash&quot;&gt;Introducing edash&lt;/h2&gt;
 
-![edash screenshot](/files/edash-1.png)
+&lt;p&gt;&lt;img src=&quot;/files/edash-1.png&quot; alt=&quot;edash screenshot&quot; /&gt;&lt;/p&gt;
 
-This is the version currently running on a screen at [Eden](http://edendevelopment.co.uk). 
+&lt;p&gt;This is the version currently running on a screen at &lt;a href=&quot;http://edendevelopment.co.uk&quot;&gt;Eden&lt;/a&gt;. &lt;/p&gt;
 
-*IMPORTANT NOTE: This application only works on [Chrome](http://google.com/chrome).* There is enough browser specific hackery to render it unusable in other browsers currently. Patches to fix this are most welcome.
+&lt;p&gt;&lt;em&gt;IMPORTANT NOTE: This application only works on &lt;a href=&quot;http://google.com/chrome&quot;&gt;Chrome&lt;/a&gt;.&lt;/em&gt; There is enough browser specific hackery to render it unusable in other browsers currently. Patches to fix this are most welcome.&lt;/p&gt;
 
-That said, I've put together a short screencast showing it off, along with how to get it running:
+&lt;p&gt;That said, I’ve put together a short screencast showing it off, along with how to get it running:&lt;/p&gt;
 
-&lt;object width=&quot;550&quot; height=&quot;344&quot;&gt;&lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;&lt;param name=&quot;movie&quot; value=&quot;http://vimeo.com/moogaloop.swf?clip_id=10535751&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=1&amp;amp;show_portrait=0&amp;amp;color=c9ff23&amp;amp;fullscreen=1&quot; /&gt;&lt;embed src=&quot;http://vimeo.com/moogaloop.swf?clip_id=10535751&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=1&amp;amp;show_portrait=0&amp;amp;color=c9ff23&amp;amp;fullscreen=1&quot; type=&quot;application/x-shockwave-flash&quot; allowfullscreen=&quot;true&quot; allowscriptaccess=&quot;always&quot; width=&quot;550&quot; height=&quot;344&quot;&gt;&lt;/embed&gt;&lt;/object&gt;
+&lt;object width=&quot;550&quot; height=&quot;344&quot;&gt;&lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;&lt;param name=&quot;movie&quot; value=&quot;http://vimeo.com/moogaloop.swf?clip_id=10535751&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=1&amp;amp;show_portrait=0&amp;amp;color=c9ff23&amp;amp;fullscreen=1&quot; /&gt;&lt;embed src=&quot;http://vimeo.com/moogaloop.swf?clip_id=10535751&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=1&amp;amp;show_portrait=0&amp;amp;color=c9ff23&amp;amp;fullscreen=1&quot; type=&quot;application/x-shockwave-flash&quot; allowfullscreen=&quot;true&quot; allowscriptaccess=&quot;always&quot; width=&quot;550&quot; height=&quot;344&quot; /&gt;&lt;/object&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://vimeo.com/10535751&quot;&gt;edash demo and usage instructions&lt;/a&gt; from &lt;a href=&quot;http://vimeo.com/user2596622&quot;&gt;Chris Parsons&lt;/a&gt; on &lt;a href=&quot;http://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
 
-## Getting it running
+&lt;h2 id=&quot;getting-it-running&quot;&gt;Getting it running&lt;/h2&gt;
 
-Here's a minimal set of steps to get it running:
+&lt;p&gt;Here’s a minimal set of steps to get it running:&lt;/p&gt;
 
-{% highlight bash %}
+&lt;p&gt;{% highlight bash %}
 gem install sinatra haml json eventmachine em-http-request
 git clone git://github.com/edendevelopment/edash.git
 cd edash
-git submodule update --init
+git submodule update –init
 # runs the websocket server, make sure port 8080 is readable from where you are. Use nohup to run as a daemon.
-scripts/server &amp;
+scripts/server &amp;amp;
 # Run rackup in place, or use your favourite rack-compatible server
-rackup &amp;
+rackup &amp;amp;
 # post a message to the server. Add a form of this to your build hooks.
-curl -d &quot;project=&lt;project&gt;&quot; -d &quot;status=&lt;pass|fail|building&gt;&quot; [-d &quot;author=Name &lt;email&gt;&quot;] -- http://localhost:9292/build
-{% endhighlight %}
+curl -d “project=&lt;project&gt;&quot; -d &quot;status=&amp;lt;pass|fail|building&amp;gt;&quot; [-d &quot;author=Name &lt;email&gt;&quot;] -- http://localhost:9292/build
+{% endhighlight %}&lt;/email&gt;&lt;/project&gt;&lt;/p&gt;
 
-Check out the screencast for a walkthrough.
+&lt;p&gt;Check out the screencast for a walkthrough.&lt;/p&gt;
 
-## Under the hood
+&lt;h2 id=&quot;under-the-hood&quot;&gt;Under the hood&lt;/h2&gt;
 
-The code is [on github](http://github.com/edendevelopment/edash).
+&lt;p&gt;The code is &lt;a href=&quot;http://github.com/edendevelopment/edash&quot;&gt;on github&lt;/a&gt;.&lt;/p&gt;
 
-Check it out and let me know if you find it useful. I'm trying to keep it pretty thin and build server agnostic: it should work with a number of build servers out of the box just by configuring (hacking) your server to fire off HTTP posts as shown in the screencast.
+&lt;p&gt;Check it out and let me know if you find it useful. I’m trying to keep it pretty thin and build server agnostic: it should work with a number of build servers out of the box just by configuring (hacking) your server to fire off HTTP posts as shown in the screencast.&lt;/p&gt;
 
-I'd welcome patches and fixes: it should be under fairly active development in the next few weeks. The plan is to add a generic statistic tracking module that will allow us to keep track of MetricFu stats, and you to keep track of almost anything... watch this blog for updates.
+&lt;p&gt;I’d welcome patches and fixes: it should be under fairly active development in the next few weeks. The plan is to add a generic statistic tracking module that will allow us to keep track of MetricFu stats, and you to keep track of almost anything… watch this blog for updates.&lt;/p&gt;
 
+</content></entry><entry><title>Radiating status at Eden</title><category term='agile'/><category term='code'/><category term='information radiator'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2010/03/radiating-stats-at-eden'/><updated>2010-03-22T13:55:00+00:00</updated><id>http://chrismdp.com/2010/03/radiating-stats-at-eden</id><content type='html'>&lt;p&gt;&lt;a href=&quot;http://www.agileadvice.com/archives/2005/05/information_rad.html&quot;&gt;Information Radiators&lt;/a&gt; are always a good idea for software teams, and I’ve been pondering how best to show project state at &lt;a href=&quot;http://edendevelopment.co.uk&quot;&gt;Eden Development&lt;/a&gt; for a while.&lt;/p&gt;
 
-</content></entry><entry><title>Radiating status at Eden</title><category term='agile'/><category term='code'/><category term='information radiator'/><link href='http://chrismdp.com/2010/03/radiating-stats-at-eden'/><updated>2010-03-22T13:55:00+00:00</updated><id>http://chrismdp.com/2010/03/radiating-stats-at-eden</id><content type='html'>[Information Radiators](http://www.agileadvice.com/archives/2005/05/information_rad.html) are always a good idea for software teams, and I've been pondering how best to show project state at [Eden Development](http://edendevelopment.co.uk) for a while.
+&lt;p&gt;Here are the various iterations we’ve been through:&lt;/p&gt;
 
-Here are the various iterations we've been through:
+&lt;h2 id=&quot;iteration-1-build-status-messages&quot;&gt;Iteration 1: Build status messages&lt;/h2&gt;
 
-## Iteration 1: Build status messages
+&lt;p&gt;We’ve had a continuous integration server running on integrity for several months, and we wanted to make it obvious how we were doing, so we got an old mac mini out and plugged in a big monitor. That way everyone could see whether our builds were passing or failing. We set the mac to come on at 9am and turn off at 6pm in System Preferences, and used &lt;a href=&quot;http://www.barbariangroup.com/software/plainview&quot;&gt;Plainview&lt;/a&gt; to display full screen.&lt;/p&gt;
 
-We've had a continuous integration server running on integrity for several months, and we wanted to make it obvious how we were doing, so we got an old mac mini out and plugged in a big monitor. That way everyone could see whether our builds were passing or failing. We set the mac to come on at 9am and turn off at 6pm in System Preferences, and used [Plainview](http://www.barbariangroup.com/software/plainview) to display full screen.
+&lt;p&gt;This worked well, except that our builds don’t fail that often: our current projects have short enough builds that developers can still get away with running all the tests locally.&lt;/p&gt;
 
-This worked well, except that our builds don't fail that often: our current projects have short enough builds that developers can still get away with running all the tests locally.
+&lt;h2 id=&quot;iteration-2-enter-the-cycling-metricfu-graphs&quot;&gt;Iteration 2: Enter the cycling metric_fu graphs&lt;/h2&gt;
 
-## Iteration 2: Enter the cycling metric_fu graphs
+&lt;p&gt;We have metric_fu running on a &lt;a href=&quot;http://metrics.edendevelopment.co.uk&quot;&gt;private site&lt;/a&gt; anyway, but the stats weren’t very visible. Wouldn’t it be cool if we could see our code stats publicly across the whole company? So we split the screen into two halves using a frameset:&lt;/p&gt;
 
-We have metric_fu running on a [private site](http://metrics.edendevelopment.co.uk) anyway, but the stats weren't very visible. Wouldn't it be cool if we could see our code stats publicly across the whole company? So we split the screen into two halves using a frameset:
+&lt;p&gt;&lt;img src=&quot;/files/metric-fu.jpg&quot; alt=&quot;Our status board&quot; /&gt;&lt;/p&gt;
 
-![Our status board](/files/metric-fu.jpg)
+&lt;p&gt;Each of our projects now cycles through the most important pages from the metric_fu library, for each of our live projects. That way, if there’s a big change in the graphs one day, everyone can see that there’s a problem and can dive in and fix it.&lt;/p&gt;
 
-Each of our projects now cycles through the most important pages from the metric_fu library, for each of our live projects. That way, if there's a big change in the graphs one day, everyone can see that there's a problem and can dive in and fix it.
+&lt;h2 id=&quot;iteration-3-cramming-more-stuff-in&quot;&gt;Iteration 3: Cramming more stuff in&lt;/h2&gt;
 
-## Iteration 3: Cramming more stuff in
+&lt;p&gt;So far so good, but we had some blank space down the bottom left! So we shoehorned in part of &lt;a href=&quot;http://pairyapp.com&quot;&gt;Pairyapp’s&lt;/a&gt; interface, so that everyone could see who was working with who.&lt;/p&gt;
 
-So far so good, but we had some blank space down the bottom left! So we shoehorned in part of [Pairyapp's](http://pairyapp.com) interface, so that everyone could see who was working with who.
+&lt;p&gt;This was nice, because people can suddenly see who’s working on a task on their own, and then jump in as needed. It stopped me trawling round the office just to find somebody: now I can easily see exactly who’s doing what (picture at the bottom).&lt;/p&gt;
 
-This was nice, because people can suddenly see who's working on a task on their own, and then jump in as needed. It stopped me trawling round the office just to find somebody: now I can easily see exactly who's doing what (picture at the bottom).
+&lt;h2 id=&quot;iteration-4-first-pass-on-our-own-build-server-dashboard&quot;&gt;Iteration 4: First pass on our own build server dashboard&lt;/h2&gt;
 
-## Iteration 4: First pass on our own build server dashboard
+&lt;p&gt;This worked well, for about ten days… &lt;/p&gt;
 
-This worked well, for about ten days... 
+&lt;p&gt;…until we saw &lt;a href=&quot;http://www.panic.com/blog/2010/03/the-panic-status-board/&quot;&gt;this&lt;/a&gt;. Our little solution was immediately not good enough and I set to work on make it shinier.&lt;/p&gt;
 
-...until we saw [this](http://www.panic.com/blog/2010/03/the-panic-status-board/). Our little solution was immediately not good enough and I set to work on make it shinier.
+&lt;p&gt;At about the same time we changed to using &lt;a href=&quot;http://github.com/defunkt/cijoe&quot;&gt;CI Joe&lt;/a&gt; for building our projects. The way we got that working is &lt;a href=&quot;/2010/03/multiple-ci-joes-with-rack-and-passenger&quot;&gt;detailed here&lt;/a&gt;.&lt;/p&gt;
 
-At about the same time we changed to using [CI Joe](http://github.com/defunkt/cijoe) for building our projects. The way we got that working is [detailed here](/2010/03/multiple-ci-joes-with-rack-and-passenger).
+&lt;p&gt;CI Joe doesn’t come with an integrated dashboard, so I set to work writing my own. Here’s where I’ve got to so far:&lt;/p&gt;
 
-CI Joe doesn't come with an integrated dashboard, so I set to work writing my own. Here's where I've got to so far:
+&lt;p&gt;&lt;img src=&quot;/files/dashboard-1.png&quot; alt=&quot;My dashboard app&quot; /&gt;&lt;/p&gt;
 
-![My dashboard app](/files/dashboard-1.png)
+&lt;p&gt;It’s not open source yet, but I plan to make it so soon. The pictures are of the person or pair who made the last commit.&lt;/p&gt;
 
-It's not open source yet, but I plan to make it so soon. The pictures are of the person or pair who made the last commit.
+&lt;h2 id=&quot;iteration-5-the-final-result&quot;&gt;Iteration 5: The final result&lt;/h2&gt;
 
-## Iteration 5: The final result
+&lt;p&gt;And here’s how our screen looks this morning:&lt;/p&gt;
 
-And here's how our screen looks this morning:
+&lt;p&gt;&lt;img src=&quot;/files/dashboard-2.jpg&quot; alt=&quot;The final result&quot; /&gt;&lt;/p&gt;
 
-![The final result](/files/dashboard-2.jpg)
+&lt;p&gt;(sorry about the censorship)&lt;/p&gt;
 
-(sorry about the censorship)
+&lt;p&gt;It’s not finished yet, I’ve plenty more plans. Expect another few posts on this in the future.&lt;/p&gt;
 
-It's not finished yet, I've plenty more plans. Expect another few posts on this in the future.
-
-*UPDATE:* Added link to CI Joe post and explained pictures on the dashboard app.
+&lt;p&gt;&lt;em&gt;UPDATE:&lt;/em&gt; Added link to CI Joe post and explained pictures on the dashboard app.&lt;/p&gt;
 </content></entry></feed>

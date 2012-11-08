@@ -13,32 +13,45 @@ layout: nil
     <name>Chris Parsons</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>Your framework is a liability</title><category term='code'/><category term='craftsmanship'/><category term='lean'/><category term='ruby'/><category term='agile'/><category term='liability'/><category term='sinatra'/><category term='paypal'/><link href='http://chrismdp.com/2012/09/your-framework-is-a-liability'/><updated>2012-09-28T20:46:31+01:00</updated><id>http://chrismdp.com/2012/09/your-framework-is-a-liability</id><content type='html'>Your framework is a liability.
+<entry><title>Your framework is a liability</title><category term='code'/><category term='craftsmanship'/><category term='lean'/><category term='ruby'/><category term='agile'/><category term='liability'/><category term='sinatra'/><category term='paypal'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2012/09/your-framework-is-a-liability'/><updated>2012-09-28T20:46:31+01:00</updated><id>http://chrismdp.com/2012/09/your-framework-is-a-liability</id><content type='html'>&lt;p&gt;Your framework is a liability.&lt;/p&gt;
 
-Every library you import before you start the project means more for someone else to digest and understand. Each complex 'clever' library equals another few minutes per team member trying to interpret why you imported it, how to use it, and where the configuration goes. Every framework you decide to use is a early decision about how your project will fundamentally work, which might turn out to be the wrong one. Each library is an opportunity for someone else to introduce a bug into your project.
+&lt;p&gt;Every library you import before you start the project means more for someone else to digest and understand. Each complex ‘clever’ library equals another few minutes per team member trying to interpret why you imported it, how to use it, and where the configuration goes. Every framework you decide to use is a early decision about how your project will fundamentally work, which might turn out to be the wrong one. Each library is an opportunity for someone else to introduce a bug into your project.&lt;/p&gt;
 
-*The only asset a framework or library gives you is a faster route to your feature.* Anything else will drag you down.
+&lt;p&gt;&lt;em&gt;The only asset a framework or library gives you is a faster route to your feature.&lt;/em&gt; Anything else will drag you down.&lt;/p&gt;
 
-If your framework is heavy and onerous, then your code will have a large net negative liability before you've even begun. You'll be constrained to follow a certain set of patterns, which you might end up fighting against later on. Work on the app first: your &lt;anacronym title=&quot;minimum viable product&quot;&gt;MVP&lt;/anacronym&gt; might not even need the benefits your framework provides.
+&lt;p&gt;If your framework is heavy and onerous, then your code will have a large net negative liability before you’ve even begun. You’ll be constrained to follow a certain set of patterns, which you might end up fighting against later on. Work on the app first: your &lt;anacronym title=&quot;minimum viable product&quot;&gt;MVP&lt;/anacronym&gt; might not even need the benefits your framework provides.&lt;/p&gt;
 
-A few examples of where I've benefited from not blindly installing the &quot;standard stack&quot;:
+&lt;p&gt;A few examples of where I’ve benefited from not blindly installing the “standard stack”:&lt;/p&gt;
 
-* I've recently started building some new projects wholly in [Sinatra](http://sinatrarb.com), pulling in various gems only when I need to, rather than starting with Rails from the outset. [Sol Trader's website](http://soltrader.net) is pure Sinatra. It was simply much quicker to get started, and I found I could layer on functionality as I needed it. Several months on, I've yet to need to turn to a Rails app.
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;I’ve recently started building some new projects wholly in &lt;a href=&quot;http://sinatrarb.com&quot;&gt;Sinatra&lt;/a&gt;, pulling in various gems only when I need to, rather than starting with Rails from the outset. &lt;a href=&quot;http://soltrader.net&quot;&gt;Sol Trader’s website&lt;/a&gt; is pure Sinatra. It was simply much quicker to get started, and I found I could layer on functionality as I needed it. Several months on, I’ve yet to need to turn to a Rails app.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;When I came to add Paypal integration to the site, I looked at various gems, and decided they were just going to drag me down with extra configuration and hassle. I ended up building Paypal IPN integration &lt;a href=&quot;https://gist.github.com/2768532&quot;&gt;in about 30 lines&lt;/a&gt; using pure ruby: no libraries. Most of that code was tests.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-* When I came to add Paypal integration to the site, I looked at various gems, and decided they were just going to drag me down with extra configuration and hassle. I ended up building Paypal IPN integration [in about 30 lines](https://gist.github.com/2768532) using pure ruby: no libraries. Most of that code was tests.
+&lt;p&gt;Don’t get me wrong: I still use frameworks for some of my projects, and libraries for all of them, but I’m learning to stop and think before cargo culting the latest stack of 25 different libraries before I can get anything done.&lt;/p&gt;
 
-Don't get me wrong: I still use frameworks for some of my projects, and libraries for all of them, but I'm learning to stop and think before cargo culting the latest stack of 25 different libraries before I can get anything done.
+&lt;p&gt;Import a lightweight framework or library when you need to. Consider when you might be chaining yourself to it, which might make a later pivot difficult. It’s much easier to add a framework than to remove one from your project: pick the easiest thing to move away from.&lt;/p&gt;
+</content></entry><entry><title>Your code is a liability</title><category term='code'/><category term='craftsmanship'/><category term='lean'/><category term='agile'/><category term='team'/><category term='liability'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2012/09/code-is-a-liability'/><updated>2012-09-24T20:48:13+01:00</updated><id>http://chrismdp.com/2012/09/code-is-a-liability</id><content type='html'>&lt;p&gt;Your code is a liability.&lt;/p&gt;
 
-Import a lightweight framework or library when you need to. Consider when you might be chaining yourself to it, which might make a later pivot difficult. It's much easier to add a framework than to remove one from your project: pick the easiest thing to move away from.
-</content></entry><entry><title>Your code is a liability</title><category term='code'/><category term='craftsmanship'/><category term='lean'/><category term='agile'/><category term='team'/><category term='liability'/><link href='http://chrismdp.com/2012/09/code-is-a-liability'/><updated>2012-09-24T20:48:13+01:00</updated><id>http://chrismdp.com/2012/09/code-is-a-liability</id><content type='html'>Your code is a liability.
+&lt;p&gt;Every line you write means more for someone else to read, digest and understand. Each complex ‘clever’ regular expression represents another few minutes per team member trying to interpret what you wrote and why you wrote it. Every line you add limits your project’s responsiveness to change.&lt;/p&gt;
 
-Every line you write means more for someone else to read, digest and understand. Each complex 'clever' regular expression represents another few minutes per team member trying to interpret what you wrote and why you wrote it. Every line you add limits your project's responsiveness to change.
+&lt;p&gt;&lt;em&gt;Only the feature that your code provides is an asset.&lt;/em&gt; The more that we reduce the amount of code we write, the lighter weight and more agile our software. The easier it is to understand, the less of a intellectual drag it is on the team.&lt;/p&gt;
 
-*Only the feature that your code provides is an asset.* The more that we reduce the amount of code we write, the lighter weight and more agile our software. The easier it is to understand, the less of a intellectual drag it is on the team.
+&lt;p&gt;There used to be a lot of talk about getting into the “programmer zone”: that place of heightened focus where time rushes by as if a blur, and the number of lines of output a programmer produces per hour skyrockets… except that lines per hour was never the best measure of coder output to begin with. All that coder is doing is dragging down the project faster. Let’s hope they’re adding useful features during that process!&lt;/p&gt;
 
-There used to be a lot of talk about getting into the &quot;programmer zone&quot;: that place of heightened focus where time rushes by as if a blur, and the number of lines of output a programmer produces per hour skyrockets... except that lines per hour was never the best measure of coder output to begin with. All that coder is doing is dragging down the project faster. Let's hope they're adding useful features during that process!
+&lt;p&gt;It’s my belief that the best code is written in conversation, not in the “zone.” A team discussion about the architecture and the arrangement of the different concepts into the simplest and lightest code structure we can fathom will always improve on our own ideas, when we implement them in isolation at a ridiculous rate.&lt;/p&gt;
 
-It's my belief that the best code is written in conversation, not in the &quot;zone.&quot; A team discussion about the architecture and the arrangement of the different concepts into the simplest and lightest code structure we can fathom will always improve on our own ideas, when we implement them in isolation at a ridiculous rate.
-
-Lightweight, lean coding like this sets our features free from the drag of the code and allows them to soar: responsive to change requests, and easily debugged as the code isn't difficult to understand.
+&lt;p&gt;Lightweight, lean coding like this sets our features free from the drag of the code and allows them to soar: responsive to change requests, and easily debugged as the code isn’t difficult to understand.&lt;/p&gt;
 </content></entry></feed>

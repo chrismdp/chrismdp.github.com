@@ -13,29 +13,46 @@ layout: nil
     <name>Chris Parsons</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>The power of good naming</title><category term='code'/><category term='craftsmanship'/><category term='refactoring'/><link href='http://chrismdp.com/2012/09/the-power-of-good-naming'/><updated>2012-09-18T20:43:02+01:00</updated><id>http://chrismdp.com/2012/09/the-power-of-good-naming</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;There are two hard problems in computer science: Cache invaliation, naming things, and off by one errors.&quot;&lt;/i&gt;&lt;/p&gt;
+<entry><title>The power of good naming</title><category term='code'/><category term='craftsmanship'/><category term='refactoring'/>    <author>
+      <name>Chris Parsons</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2012/09/the-power-of-good-naming'/><updated>2012-09-18T20:43:02+01:00</updated><id>http://chrismdp.com/2012/09/the-power-of-good-naming</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;There are two hard problems in computer science: Cache invaliation, naming things, and off by one errors.&quot;&lt;/i&gt;&lt;/p&gt;
 
--- Source: [Martin Fowler](http://martinfowler.com/bliki/TwoHardThings.html)
+&lt;p&gt;– Source: &lt;a href=&quot;http://martinfowler.com/bliki/TwoHardThings.html&quot;&gt;Martin Fowler&lt;/a&gt;&lt;/p&gt;
 
-Naming things is hard. Why do we expend so much effort to get them right? Because naming programming concepts well gives us a big insight into how they fit into the system we're designing. Continually renaming things records our insights as we go: the right names for our objects, methods and variables will yield fresh insight and in turn shape the design of the system.
+&lt;p&gt;Naming things is hard. Why do we expend so much effort to get them right? Because naming programming concepts well gives us a big insight into how they fit into the system we’re designing. Continually renaming things records our insights as we go: the right names for our objects, methods and variables will yield fresh insight and in turn shape the design of the system.&lt;/p&gt;
 
-J.B. Rainsberger [talks about](http://www.jbrains.ca/permalink/the-four-elements-of-simple-design) names of classes, methods and variables going through four stages:
+&lt;p&gt;J.B. Rainsberger &lt;a href=&quot;http://www.jbrains.ca/permalink/the-four-elements-of-simple-design&quot;&gt;talks about&lt;/a&gt; names of classes, methods and variables going through four stages:&lt;/p&gt;
 
-* *Nonsense:* For example, we might extract a method from a larger one and quickly rename it `foo()` to get the refactor done and the tests passing.
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;Nonsense:&lt;/em&gt; For example, we might extract a method from a larger one and quickly rename it &lt;code&gt;foo()&lt;/code&gt; to get the refactor done and the tests passing.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;Accurate:&lt;/em&gt; We rename the nonsense method to what it actually does, such as &lt;code&gt;processPayroll()&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;Precise:&lt;/em&gt; Once we realise what the method really does, we might refine the accurate name and give it more precision, such as &lt;code&gt;loopThroughEmployeesAndPayThem()&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;Meaningful:&lt;/em&gt; At this point, we’ve revealed the complexity of the method, and can look to split it up into two methods: &lt;code&gt;forEachEmployee()&lt;/code&gt; and perhaps a &lt;code&gt;pay()&lt;/code&gt; method on a seperate interface.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-* *Accurate:* We rename the nonsense method to what it actually does, such as `processPayroll()`.
+&lt;p&gt;Some simple rules of thumb to follow when naming things:&lt;/p&gt;
 
-* *Precise:* Once we realise what the method really does, we might refine the accurate name and give it more precision, such as `loopThroughEmployeesAndPayThem()`.
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;Don’t be afraid of nonesense names.&lt;/em&gt; We shouldn’t shy away from the early stages of naming. If we’re not sure what something is yet, give it a nonsense name. The name &lt;code&gt;foo()&lt;/code&gt; is fine, as long as it’s only going to last fifteen minutes. Best not to commit it though :)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;If you don’t like the code you’re writing, use really long names.&lt;/em&gt; If in doubt as to what or where something fits, use a really (really) long name: the longer and more precise the better. I will call a variable something like &lt;code&gt;computed_unsorted_project_task_matrix&lt;/code&gt; especially if I don’t like it and want to refactor it at some point. This is much better than &lt;code&gt;result&lt;/code&gt; (or &lt;code&gt;res&lt;/code&gt; or even &lt;code&gt;r&lt;/code&gt;). I reveal the complexity of the object through the name, which helps reveal complexity in the code.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;Characters are cheap, confusion is costly.&lt;/em&gt; Let’s not make things harder for the programmers who come after us. Remember, this is just as likely to be ourselves in a few months. Let’s avoid using a name like &lt;code&gt;prj&lt;/code&gt; when &lt;code&gt;project&lt;/code&gt; is only four characters more typing. Anything that reduces reading friction in our code is a good thing.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-* *Meaningful:* At this point, we've revealed the complexity of the method, and can look to split it up into two methods: `forEachEmployee()` and perhaps a `pay()` method on a seperate interface.
-
-Some simple rules of thumb to follow when naming things:
-
-* *Don't be afraid of nonesense names.* We shouldn't shy away from the early stages of naming. If we're not sure what something is yet, give it a nonsense name. The name `foo()` is fine, as long as it's only going to last fifteen minutes. Best not to commit it though :)
-
-* *If you don't like the code you're writing, use really long names.* If in doubt as to what or where something fits, use a really (really) long name: the longer and more precise the better. I will call a variable something like `computed_unsorted_project_task_matrix` especially if I don't like it and want to refactor it at some point. This is much better than `result` (or `res` or even `r`). I reveal the complexity of the object through the name, which helps reveal complexity in the code.
-
-* *Characters are cheap, confusion is costly.* Let's not make things harder for the programmers who come after us. Remember, this is just as likely to be ourselves in a few months. Let's avoid using a name like `prj` when `project` is only four characters more typing. Anything that reduces reading friction in our code is a good thing.
-
-How often do you rename your methods, objects, and classes? How does naming help you understand your code?
+&lt;p&gt;How often do you rename your methods, objects, and classes? How does naming help you understand your code?&lt;/p&gt;
 </content></entry></feed>
