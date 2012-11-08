@@ -17,86 +17,12 @@ layout: nil
       <name>Chris Parsons</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/10/delegated-tasks-are-a-team-anti-pattern'/><updated>2012-10-04T07:49:57+01:00</updated><id>http://chrismdp.com/2012/10/delegated-tasks-are-a-team-anti-pattern</id><content type='html'>&lt;p&gt;“Jane, I’d like you to phone up the recruiter, and tell them we need a new agency person. Don’t use Jim from Acme Recruitment again, you didn’t get very far with him last time. Make sure you book whoever it is in for a week to work with us as a trial, like last time. That worked well.”&lt;/p&gt;
-
-&lt;p&gt;“Jane, can you find us a great developer for the new website we mentioned in standup last week? Let me know if you need help.”&lt;/p&gt;
-
-&lt;p&gt;Which is better?&lt;/p&gt;
-
-&lt;h2 id=&quot;goals-not-tasks&quot;&gt;Goals, not tasks&lt;/h2&gt;
-
-&lt;p&gt;How about we give our team goals, not tasks? Let them shoot for something, and work out their own tasks, rather than giving them a simple list of things to do. Goals allow people to apply their own creativity and their own flair to a solution, and the end result will be stamped with their individuality.&lt;/p&gt;
-
-&lt;p&gt;When learning a new skill, people need direction and tasks to follow. &lt;a href=&quot;http://blog.mattwynne.net&quot;&gt;Matt Wynne&lt;/a&gt; recently &lt;a href=&quot;http://blog.mattwynne.net/2012/09/25/breaking-out-of-the-shu/&quot;&gt;re-iterated&lt;/a&gt; the classic Su-Ha-Ri model of learning, where we start with very clear forms to follow, then break those forms as we try new things, then advanced to a place where we no longer need the forms at all. At first, we need to work closely with people, and &lt;em&gt;show them the tasks we perform to get something done.&lt;/em&gt; Note that this is quite different to giving people a long list of tasks to complete to ‘learn something.’&lt;/p&gt;
-
-&lt;p&gt;Whenever we give something away, there’s a risk that it won’t be done in quite the way that we would like. The simple fact is: no, it won’t. But assuming we’ve not overstretched someone, there’s a good chance they’ll get the job done at least 80% as well as we could have. And good people will cope with being stretched much further than we think.&lt;/p&gt;
-
-&lt;h2 id=&quot;theres-delegation-then-theres-abdication&quot;&gt;There’s delegation, then there’s abdication&lt;/h2&gt;
-
-&lt;p&gt;When we take goal setting too far, we just tend to stop giving people goals altogether and let them figure out their own jobs. This is dangerous: the best people don’t need managing, but they do need leading. Our role as a leader is to paint an exciting vision of the future, and then let our team figure out how to get there.&lt;/p&gt;
-
-&lt;h2 id=&quot;micromanagement-has-many-levels&quot;&gt;Micromanagement has many levels&lt;/h2&gt;
-
-&lt;p&gt;It’s quite possible to micro-manage without realising it. We might think we’re not micro-managing because we’re not telling people &lt;em&gt;exactly&lt;/em&gt; how to do something. However if we’re leaving little room for doubt in our own minds, and creativity in theirs, then our team will feel less able to apply their own skills and talents to the problem. They’ll get up feeling discouraged and insignificant.&lt;/p&gt;
-
-&lt;p&gt;Ultimately it comes down to trust, and fear. How much do we trust our people to get the job done? How much do we fear losing control?&lt;/p&gt;
-
-&lt;p&gt;The first step to fighting a task-oriented tendency is to realise it’s probably not a problem with our team members, but with us.&lt;/p&gt;
-</content></entry><entry><title>Task assignment is a team anti-pattern</title><category term='process'/><category term='productivity'/><category term='pairing'/><category term='team'/><category term='anti-pattern'/>    <author>
+<link href='http://chrismdp.com/2012/10/delegated-tasks-are-a-team-anti-pattern'/><updated>2012-10-04T07:49:57+01:00</updated><id>http://chrismdp.com/2012/10/delegated-tasks-are-a-team-anti-pattern</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/10/delegated-tasks-are-a-team-anti-pattern" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Task assignment is a team anti-pattern</title><category term='process'/><category term='productivity'/><category term='pairing'/><category term='team'/><category term='anti-pattern'/>    <author>
       <name>Chris Parsons</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/09/task-assignment-is-a-team-anti-pattern'/><updated>2012-09-14T14:06:40+01:00</updated><id>http://chrismdp.com/2012/09/task-assignment-is-a-team-anti-pattern</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;The way a team plays as a whole determines its success. You may have the greatest bunch of individual stars in the world, but if they don't play together, the club won't be worth a dime.&quot;&lt;/i&gt;&lt;/p&gt;
-
-&lt;p&gt;– &lt;a href=&quot;http://en.wikipedia.org/wiki/Babe_Ruth&quot;&gt;Babe Ruth&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Assigning tasks to individuals might feel like the most natural thing in the world, but in reality, when you are trying to create a highly functioning &lt;a href=&quot;/tag/team&quot;&gt;team&lt;/a&gt;, it might be doing more harm than good. This is true even when tasks are self-assigned by team members, and certainly true when tasks are imposed upon individuals by managers. Here’s why.&lt;/p&gt;
-
-&lt;p&gt;Having one individual responsible for a task &lt;em&gt;takes responsibility away from the team&lt;/em&gt; and instead focuses on the individual. This can be damaging in a number of ways, not least that the individual is under more pressure to deliver. Short termist management might think this encourages productivity, but the internal pressure this generates can be a short cut to burnout.  The focus needs to be on collective responsibility: it’s the responsibility of the &lt;i&gt;team&lt;/i&gt; to release something, not the responsibility of the individual.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;This issue is compounded if the team’s work in progress limit is too high.&lt;/em&gt; If there are nine team members, and nine things currently in progress, then in the best case each person will have nine things to do, and in the worst case one person will have all nine things to do and the other eight people will be sitting around waiting for them to finish, putting enormous pressure on those who are the bottleneck. The more items of work that are currently in progress, the more than a focus on assignment will bite you.&lt;/p&gt;
-
-&lt;p&gt;Assignment &lt;em&gt;promotes a command and control attitude.&lt;/em&gt; Sometimes, each member of a “team” is actually being managed individually and has their own stream of work. This can produce output in certain cases, but the individuals being managed are not a team: they’re a collection of individuals who might happen to sit together.&lt;/p&gt;
-
-&lt;p&gt;Individual assignment can &lt;em&gt;create silos of information.&lt;/em&gt; If one person is responsible for a task, and everyone has their own tasks or types of work, then it’s harder to work as a team: the knowledge is held only with a few people, rather than across everyone. &lt;a href=&quot;/tag/pairing&quot;&gt;Pairing&lt;/a&gt; dramatically helps break these silos down.&lt;/p&gt;
-
-&lt;p&gt;Assignment can also give rise to the &lt;em&gt;hero anti-pattern:&lt;/em&gt; where a few people are responsibility for the success of the entire team, and they end up pulling an all-nighter just to get the release out the door. The hero culture might seem appealing to short-sighted managers, but when eventually the hero inevitably fails to deliver, hero culture quickly turns to &lt;em&gt;blame culture.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;how-to-shift-this-culture&quot;&gt;How to shift this culture?&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;em&gt;Reduce your team’s work in progress limit.&lt;/em&gt; Insist they don’t start anything else until the team finishes what’s in progress, and that they go to pair with those who are still working on tasks, even if it’s &lt;a href=&quot;/2010/01/pairing-works-for-everything&quot;&gt;not their normal discipline&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;em&gt;Stop giving people things to do.&lt;/em&gt; At the very least, ensure that the team are choosing their own tasks from a list rather than being managed individually.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;em&gt;Stop tracking assignment.&lt;/em&gt; Don’t record on the task who is working on it. Simply track what’s being worked on by talking about it each standup meeting.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;em&gt;Avoid the trap of buck-passing.&lt;/em&gt; If you’re not careful, giving a weaker team collective responsibility means that they pass the buck. The thinking goes: &lt;i&gt;“if I’m not individually responsible then I’m not responsible at all.”&lt;/i&gt; The antidote is &lt;em&gt;team accountability:&lt;/em&gt; &lt;a href=&quot;/2011/04/the-team-is-the-atomic-unit&quot;&gt;praise the entire team for their successes&lt;/a&gt; and ensure they all investigate the reasons for failure together. This includes the product owner and the user experience people - they are all part of the team.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Does task assignment cause problems for you? What silos could be broken down by having more of a team assignment focus?&lt;/p&gt;
-</content></entry><entry><title>Card Of The Day: Actually Do Retrospective Actions</title><category term='agile'/><category term='retrospectives'/><category term='process'/><category term='index cards'/>    <author>
+<link href='http://chrismdp.com/2012/09/task-assignment-is-a-team-anti-pattern'/><updated>2012-09-14T14:06:40+01:00</updated><id>http://chrismdp.com/2012/09/task-assignment-is-a-team-anti-pattern</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/task-assignment-is-a-team-anti-pattern" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Card Of The Day: Actually Do Retrospective Actions</title><category term='agile'/><category term='retrospectives'/><category term='process'/><category term='index cards'/>    <author>
       <name>Chris Parsons</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/07/card-of-the-day'/><updated>2010-07-22T10:45:00+01:00</updated><id>http://chrismdp.com/2010/07/card-of-the-day</id><content type='html'>&lt;p&gt;&lt;img src=&quot;/files/card-of-the-day-1.png&quot; alt=&quot;Current cards of the day at eden&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Our current Card Of The Day board at Eden&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Retrospectives are something we’ve been doing regularly for quite a while at Eden, but we’ve hit a problem. It’s very easy to come up with a great list of actionable items, and then very easy never to look at them again. Don’t tell me you’ve never done this :)&lt;/p&gt;
-
-&lt;p&gt;We’ve started doing something slightly different at Eden to try and stop this happening: we’re using a method we’ve called Card Of The Day.  &lt;/p&gt;
-
-&lt;p&gt;When the retrospective is finished, we take all of the cards with &lt;a href=&quot;http://en.wikipedia.org/wiki/SMART_criteria&quot;&gt;SMART&lt;/a&gt; action goals and put them on our company kanban board to ensure they’re done. Then we take all the cards that are a little more hazy (the sort of cards that say: “Be better at X”), we pin them up on the wall, and every morning after standup we read one out at random to the team.&lt;/p&gt;
-
-&lt;p&gt;Normally this has a “ahh, yes” effect on the team. Sometimes it generates a conversation, sometimes an action we hadn’t thought of yet and something else to go on the Backlog. There’s always something that comes out of it.&lt;/p&gt;
-
-&lt;p&gt;It’s not a perfect method, but it’s working better than the alternative: feeling guilty at the beginning of the next retrospective about all the terribly important things we haven’t done.&lt;/p&gt;
-
-&lt;p&gt;Have you tried something similar? Or do you have an alternative way to remember to do retrospective actions?&lt;/p&gt;
-</content></entry></feed>
+<link href='http://chrismdp.com/2010/07/card-of-the-day'/><updated>2010-07-22T10:45:00+01:00</updated><id>http://chrismdp.com/2010/07/card-of-the-day</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/07/card-of-the-day" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

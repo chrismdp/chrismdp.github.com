@@ -17,19 +17,4 @@ layout: nil
       <name>Chris Parsons</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/07/card-of-the-day'/><updated>2010-07-22T10:45:00+01:00</updated><id>http://chrismdp.com/2010/07/card-of-the-day</id><content type='html'>&lt;p&gt;&lt;img src=&quot;/files/card-of-the-day-1.png&quot; alt=&quot;Current cards of the day at eden&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Our current Card Of The Day board at Eden&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Retrospectives are something we’ve been doing regularly for quite a while at Eden, but we’ve hit a problem. It’s very easy to come up with a great list of actionable items, and then very easy never to look at them again. Don’t tell me you’ve never done this :)&lt;/p&gt;
-
-&lt;p&gt;We’ve started doing something slightly different at Eden to try and stop this happening: we’re using a method we’ve called Card Of The Day.  &lt;/p&gt;
-
-&lt;p&gt;When the retrospective is finished, we take all of the cards with &lt;a href=&quot;http://en.wikipedia.org/wiki/SMART_criteria&quot;&gt;SMART&lt;/a&gt; action goals and put them on our company kanban board to ensure they’re done. Then we take all the cards that are a little more hazy (the sort of cards that say: “Be better at X”), we pin them up on the wall, and every morning after standup we read one out at random to the team.&lt;/p&gt;
-
-&lt;p&gt;Normally this has a “ahh, yes” effect on the team. Sometimes it generates a conversation, sometimes an action we hadn’t thought of yet and something else to go on the Backlog. There’s always something that comes out of it.&lt;/p&gt;
-
-&lt;p&gt;It’s not a perfect method, but it’s working better than the alternative: feeling guilty at the beginning of the next retrospective about all the terribly important things we haven’t done.&lt;/p&gt;
-
-&lt;p&gt;Have you tried something similar? Or do you have an alternative way to remember to do retrospective actions?&lt;/p&gt;
-</content></entry></feed>
+<link href='http://chrismdp.com/2010/07/card-of-the-day'/><updated>2010-07-22T10:45:00+01:00</updated><id>http://chrismdp.com/2010/07/card-of-the-day</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/07/card-of-the-day" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

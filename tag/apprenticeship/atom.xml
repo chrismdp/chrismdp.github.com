@@ -17,152 +17,20 @@ layout: nil
       <name>Chris Parsons</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/04/are-apprenticeships-scalable'/><updated>2011-04-12T06:36:53+01:00</updated><id>http://chrismdp.com/2011/04/are-apprenticeships-scalable</id><content type='html'>&lt;p&gt;Back at the beginning of the year I had lunch with a university professor interested in the notion of software craftsmanship. This is an extract from an email he sent me at the time:&lt;/p&gt;
-
-&lt;p&gt;&lt;i&gt;
-I wonder about how scalable the apprenticeship model is. It seems to be
-predicated upon mentorship, where each apprentice has a mentor. This
-means you need a large number of mentors if you have a large number of
-apprentices. They will have to be found and paid. This will cause difficulties...
-
-If you want 1 teacher per 10 students you'd have to find an pay
-10 times as many as now.
-
-How does the Software Craftsmanship movement intend to deal with this?
-&lt;/i&gt;&lt;/p&gt;
-
-&lt;p&gt;Buried in this problem is an inherent assumption about the way programming is taught. It assumes the current university model of teaching undergraduates: employing researchers who spend most of their time away from their students doing what they’d really like to be doing, whilst having to teach classes to pay the bills.&lt;/p&gt;
-
-&lt;p&gt;If you try and use an apprenticeship model in this context, you run into severe funding issues: who will pay for all the extra researchers?&lt;/p&gt;
-
-&lt;h2 id=&quot;a-different-way&quot;&gt;A different way&lt;/h2&gt;
-
-&lt;p&gt;&lt;em&gt;Why don’t universities do real software projects?&lt;/em&gt; Why can’t we have master practitioners being paid by real clients to do real work, and have the students along for a ride, learning as they go?&lt;/p&gt;
-
-&lt;p&gt;The funding issues will be cleared up as business will be paying. Students work for free, or perhaps room and board. Either way they won’t be saddled by exhorbitant fees.&lt;/p&gt;
-
-&lt;p&gt;If this makes sitting in a lecture hall listening to information difficult to fund, then great. That’s one of the most inefficient ways to learn: why do we persist in trying to sustain it? There is value in book learning, and the industry does currently rely on students to achieve that through university education. But the best way to pick up those principles is through real-world examples on real projects, supported by appropriate exercises designed to drive home specific points. It is certainly not through sitting in a lecture hall.&lt;/p&gt;
-
-&lt;p&gt;Maybe this model is a step too far for a traditional university. Perhaps they’re not be the best place to learn our craft.  Our current university system is designed to create great professors, not great practitioners. Perhaps it’s time for a change.&lt;/p&gt;
-</content></entry><entry><title>Are coding katas really worth it?</title><category term='katas'/><category term='karate'/><category term='life'/><category term='apprenticeship'/>    <author>
+<link href='http://chrismdp.com/2011/04/are-apprenticeships-scalable'/><updated>2011-04-12T06:36:53+01:00</updated><id>http://chrismdp.com/2011/04/are-apprenticeships-scalable</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/04/are-apprenticeships-scalable" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Are coding katas really worth it?</title><category term='katas'/><category term='karate'/><category term='life'/><category term='apprenticeship'/>    <author>
       <name>Chris Parsons</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/03/are-coding-kata-really-worth-it'/><updated>2011-03-31T13:20:29+01:00</updated><id>http://chrismdp.com/2011/03/are-coding-kata-really-worth-it</id><content type='html'>&lt;p&gt;Last year I took up &lt;a href=&quot;http://en.wikipedia.org/wiki/Wad%C5%8D-ry%C5%AB&quot;&gt;Wado-ryu Karate&lt;/a&gt;. It’s something that I’ve always wanted to do, and yet never quite got around to. I briefly took it up at university about 15 years ago, and put it down rather too quickly. About a year ago I decided it was time for me to stop saying “I wished I’d learnt it”, and got down to actually learning it.&lt;/p&gt;
-
-&lt;p&gt;Karate as a discpline is ancient compared to that of my other discipline, writing software. There are many lessons that we can take from it, and I’m sure I’ll be blogging more about this as I gain more insight. However, one big lesson I’ve learned so far is the value of a Kata.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-is-a-kata&quot;&gt;What is a Kata?&lt;/h2&gt;
-
-&lt;p&gt;Admittedly, I’d not heard of the term until finding out about the Software Craftsmanship movement a couple of years back. It’s the process of coding a solution to a fixed problem over and over again, trying new things and attempting to gain insight. On first hearing, I liked the concept, but in honesty I thought: “yet another bunch of coders who want to be Samurai!”&lt;/p&gt;
-
-&lt;p&gt;On reflection however, and especially after hearing &lt;a href=&quot;http://rubyconf2008.confreaks.com/ruby-kata-and-sparring.html&quot;&gt;Micah’s viewpoint&lt;/a&gt;, I could see the potential value of practicing a certain number of steps over and over. Therefore I decided to give it a go. When trying the technique in 2009, before I started karate, I admit I couldn’t connect katas to better programming performance. I published a &lt;a href=&quot;http://katas.softwarecraftsmanship.org/?p=42&quot;&gt;checkout kata&lt;/a&gt; late last year, and enjoyed working on it. However the jury was out on how much I learnt from it.&lt;/p&gt;
-
-&lt;p&gt;That changed when I started Karate.&lt;/p&gt;
-
-&lt;h2 id=&quot;katas-in-karate&quot;&gt;Katas in Karate&lt;/h2&gt;
-
-&lt;p&gt;In my particular school, katas are commonplace and begin after your third belt. They are specifically designed to teach certain techniques, and to ensure that your basics are correct (and remain correct over time). So far, I have learnt &lt;a href=&quot;http://en.wikipedia.org/wiki/Pinan&quot;&gt;Pinan Nidan&lt;/a&gt;, the first kata in Wado-ryu. It’s designed as a mock fight, where you take on eight imaginary opponents and dispatch them one by one using various techniques.&lt;/p&gt;
-
-&lt;p&gt;Technically, this kata contains three types of blocks, two types of stances, one type of punch and a spearhand attack. It’s very simple, and designed to ensure that your body can perform the basics in sequence easily. Once you’ve got the basic moves in the correct order, you then move on to ensuring that your position and strength is good when performing the Kata.&lt;/p&gt;
-
-&lt;p&gt;When in a real sparring situation, you then instinctively use parts of the kata to help you. If all you’ve been doing is ‘block, punch, block, punch’ for several hours, then when someone actually comes to hit you, you block correctly and find you’ve thrown a punch without thinking. Watching black belts spar is fascinating: most of what they do is totolly instinctive.&lt;/p&gt;
-
-&lt;h2 id=&quot;how-can-we-learn-from-this&quot;&gt;How can we learn from this?&lt;/h2&gt;
-
-&lt;p&gt;&lt;em&gt;Rolling code without thinking is valuable.&lt;/em&gt; I would love to be able to roll code automatically, in the same way that martial artists combine moves in sequence effortlessly. Wouldn’t it be fantastic to be have thoughts and concepts appear on the screen without really even trying? Granted, our tools and methods do change over time, but we need to learn them inside out. Stick to one editor, for example (preferably a &lt;a href=&quot;http://vim.org&quot;&gt;decent&lt;/a&gt; &lt;a href=&quot;http://emacs.org&quot;&gt;one&lt;/a&gt;). Get to know a framework really well, so that you can make things happen without exercising your brain, leaving maximum energy to think about your problem.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Katas need to be designed well, and operate best as a set.&lt;/em&gt; Perhaps what we need on our university courses and apprenticeship schemes is a list of basics (“learn the syntax of Ruby/Haskell/Clojure”), and then a simple problem (kata) to practice a solution for. Rather than have them complete the project and hand it in, they have to &lt;em&gt;perform&lt;/em&gt; it in front of an instructor. They might have to repeat this every two weeks. They should be able to perform old projects on demand. These will need to be designed well, so that they offer the maximum learning. A poorly designed Kata is fairly useless.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Please can we get over the ‘coders who want to be samurai’ thing?&lt;/em&gt; There are a bunch of starry-eyed coders who would desperately love to be ninjas, and another group who quietly laugh at them. Both are missing the point. In Karate, katas aren’t glamourous; they’re difficult, frustrating and really hard work. But let’s not discard them out of hand! There’s ancient teaching and learning methods here that have proven effectiveness. Let’s learn from them.&lt;/p&gt;
-
-&lt;p&gt;I need to think more on this. Perhaps there’s a specific set of katas that is tailored to a particular language that can be designed to really encourage speed of learning and growth. I do believe that a lot of the way we teach programming is inefficient and more about information than practice. Is there a better way?&lt;/p&gt;
-</content></entry><entry><title>BBC Talk on A Philosophy of Software</title><category term='craftsmanship'/><category term='apprenticeship'/>    <author>
+<link href='http://chrismdp.com/2011/03/are-coding-kata-really-worth-it'/><updated>2011-03-31T13:20:29+01:00</updated><id>http://chrismdp.com/2011/03/are-coding-kata-really-worth-it</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/03/are-coding-kata-really-worth-it" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>BBC Talk on A Philosophy of Software</title><category term='craftsmanship'/><category term='apprenticeship'/>    <author>
       <name>Chris Parsons</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/02/bbc-talk-a-philosophy-of-software'/><updated>2010-02-21T08:35:00+00:00</updated><id>http://chrismdp.com/2010/02/bbc-talk-a-philosophy-of-software</id><content type='html'>&lt;p&gt;Video of a talk I gave recently at the BBC about the nature of software development. We discuss craftsmanship, apprenticeship and the limitations of university education, amongst other topics. &lt;/p&gt;
-
-&lt;p&gt;Watch the video here:&lt;/p&gt;
-
-&lt;object width=&quot;499&quot; height=&quot;283&quot;&gt;&lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;&lt;param name=&quot;movie&quot; value=&quot;http://vimeo.com/moogaloop.swf?clip_id=9607007&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=1&amp;amp;show_portrait=0&amp;amp;color=c9ff23&amp;amp;fullscreen=1&quot; /&gt;&lt;embed src=&quot;http://vimeo.com/moogaloop.swf?clip_id=9607007&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=1&amp;amp;show_portrait=0&amp;amp;color=c9ff23&amp;amp;fullscreen=1&quot; type=&quot;application/x-shockwave-flash&quot; allowfullscreen=&quot;true&quot; allowscriptaccess=&quot;always&quot; width=&quot;499&quot; height=&quot;283&quot; /&gt;&lt;/object&gt;
-</content></entry><entry><title>Driving out feature ambiguity</title><category term='cucumber'/><category term='apprenticeship'/><category term='craftsmanship'/><category term='ambiguity'/><category term='katas'/>    <author>
+<link href='http://chrismdp.com/2010/02/bbc-talk-a-philosophy-of-software'/><updated>2010-02-21T08:35:00+00:00</updated><id>http://chrismdp.com/2010/02/bbc-talk-a-philosophy-of-software</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/02/bbc-talk-a-philosophy-of-software" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Driving out feature ambiguity</title><category term='cucumber'/><category term='apprenticeship'/><category term='craftsmanship'/><category term='ambiguity'/><category term='katas'/>    <author>
       <name>Chris Parsons</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/01/driving-out-feature-ambiguity'/><updated>2010-01-15T06:19:00+00:00</updated><id>http://chrismdp.com/2010/01/driving-out-feature-ambiguity</id><content type='html'>&lt;p&gt;&lt;a href=&quot;http://cukes.info&quot;&gt;Cucumber&lt;/a&gt; features are very useful. The ability to spec out what the customer wants in detail in a format they can read and understand really helps to communicatate what needs to be done. This combined with the ability to execute the feature to ensure that it is completed correctly catches many bugs and incorrect assumptions.&lt;/p&gt;
-
-&lt;p&gt;However there is one area of bugs that features don’t catch so well, and even cause to some extent. These bugs are built right into the text in the form of ambiguity, sometimes through the constraint of features being executable.&lt;/p&gt;
-
-&lt;p&gt;This came up recently in a conversation with &lt;a href=&quot;http://ohthatjames.github.com&quot;&gt;James&lt;/a&gt; and &lt;a href=&quot;http://ecomba.github.com/&quot;&gt;Enrique&lt;/a&gt; at &lt;a href=&quot;http://edendevelopment.co.uk&quot;&gt;Eden Development&lt;/a&gt; about James’ apprentice task, the &lt;a href=&quot;/2009/12/snakes-and-ladders-kata&quot;&gt;Snakes and Ladders Kata&lt;/a&gt;. It turns out that the text of one of the features runs against the commonly understood way that Snakes and Ladders works:&lt;/p&gt;
-
-&lt;p&gt;{% highlight text %}
-Scenario: Win the game
-    Given player 1 is on position 97
-    And player 1 rolls 3
-    Then player 1 has won the game
-{% endhighlight %}&lt;/p&gt;
-
-&lt;p&gt;Question: is that a valid scenario? Given the commonly understand rules of Snakes and Ladders, you cannot just start on position 97. Implementing it as written complicates the domain model. &lt;/p&gt;
-
-&lt;p&gt;How do you implement the first step? Do you go for a simple:&lt;/p&gt;
-
-&lt;p&gt;{% highlight ruby %}
-Given /^player (.&lt;em&gt;?) is on position (.&lt;/em&gt;?)$/ do |player, position|
-  @game.set_player_position(player, position)
-end
-{% endhighlight %}&lt;/p&gt;
-
-&lt;p&gt;The potential issue with this is that you are exposing a method that in real life won’t get called, just to set up a test. It’s also tying your model down to a particular structure, by implying that the game stores an arbitraty position variable for a player. This might not be the best way to model the problem.&lt;/p&gt;
-
-&lt;p&gt;The other option is to change the scenario such that the “Win the game” is tested in a similar way to the following:&lt;/p&gt;
-
-&lt;p&gt;{% highlight text %}
-Scenario: Win the game
-    Given a game is started with two players
-    And the following dice are rolled:
-      |3|
-      |4|
-      |5|
-      |5|
-      (etc.)
-    Then player 1 has won the game
-{% endhighlight %}&lt;/p&gt;
-
-&lt;p&gt;That satisfies our understand of Snakes and Ladders, and gives us more freedom in our domain model. In this case, we simply modify the agreed scenario in the code and sidestep the problem.&lt;/p&gt;
-
-&lt;p&gt;Right? &lt;em&gt;Wrong.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;The important thing to remember is that the customer is always right about how the software should behave, even when it violates our commonly understood assumptions about the world. The software they want you to build might require a different implementation of Snakes and Ladders. They might have a 3 year-old daughter they’re planning to play the game with, who always wants to be given a headstart. In this case, we’ve not delivered what they want, simply because it makes life easier for us. We’ve let our assumptions and our concerns for good design drive out the features, rather than letting the features drive our design.&lt;/p&gt;
-
-&lt;p&gt;There’s another possibility: when the customer wrote this scenario, they simply used “starts on position X” as a shortcut and don’t really care if it’s possible to do this in real life. In this case, we can work with them to write the scenario so as not to cheapen our design for the sake of easier feature writing.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The key insight: there’s no way that we can know which it is from reading the scenario. We have to ask the customer and drive out the ambiguity in the feature.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;We mustn’t let the necessary constraints of executable features build ambiguity into your conversations about what the customer really wants. And we must be constantly talking to the customer all the way through the iteration, especially if they’re not on site.&lt;/p&gt;
-
-&lt;p&gt;You might think “It’s only Snakes and Ladders, what does it matter?” It matters a great deal: situations like this come up regularly in real life projects. Practising how to deal with these issues and the conversations that result is one of the many powerful things you gain by doing katas.&lt;/p&gt;
-
-&lt;p&gt;What’s your take on the above problem? Have you come across it in real life?&lt;/p&gt;
-</content></entry><entry><title>Craftsmanship vs. Apprenticeship</title><category term='craftsmanship'/><category term='apprenticeship'/>    <author>
+<link href='http://chrismdp.com/2010/01/driving-out-feature-ambiguity'/><updated>2010-01-15T06:19:00+00:00</updated><id>http://chrismdp.com/2010/01/driving-out-feature-ambiguity</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/01/driving-out-feature-ambiguity" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Craftsmanship vs. Apprenticeship</title><category term='craftsmanship'/><category term='apprenticeship'/>    <author>
       <name>Chris Parsons</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2009/12/craftsmanship-vs-apprenticeship'/><updated>2009-12-15T20:48:00+00:00</updated><id>http://chrismdp.com/2009/12/craftsmanship-vs-apprenticeship</id><content type='html'>&lt;p&gt;There’s been a &lt;a href=&quot;http://groups.google.com/group/software_craftsmanship/browse_thread/thread/417bec17184ccfc2&quot;&gt;lengthy discussion&lt;/a&gt; on the &lt;a href=&quot;http://groups.google.com/group/software_craftsmanship&quot;&gt;software craftsmanship mailing list&lt;/a&gt; over the last couple of days regarding the dangers of the Apprentice - Journeyman - Master metaphor, and how this potentially threatens to put people off the idea of software craftmanship. The responses were thoughtful and well reasoned, which showed off the general level of maturity and professionalism on the list excellently.&lt;/p&gt;
-
-&lt;p&gt;We’ve recently started our own apprenticeship system at Eden, and I shared a few lessons learned so far on the thread. I’ve repeated a few below, and expanded to reflect my own current thinking:&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Craftsmanship is not the same as Apprenticeship.&lt;/em&gt; To use a computer science term, they are orthogonal: you can have one without the other. Craftsmanship is difficult to argue against and is rapidly becoming a consensus amongst a large section of our industry. Apprenticeship is a little more nascent and untested, and potentially carries more dangers. You don’t need formal apprenticeship to embrace craftsmanship.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Everyone gets to be a craftsman.&lt;/em&gt; Following on from this, all who want to can be craftsmen/crafters/codesmiths/whatever the most apt term is: there should be no pecking order. Indeed, the more senior among us should be taking the lower place of serving those who would learn from us. Being a craftsman is more a state of mind than a level of ability or experience.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Use verbs, not nouns.&lt;/em&gt;  We are wherever possible using the terms as verbs not nouns in everyday use: “Richard is apprenticing to Chris”, “Chris is mentoring James”, for example. This prevent anyone “being” anything: it’s rather what you do than who you are. Those who might have a job title of “apprentice” (or not) also “mentor” others (including seniors) in specific areas they are particularly strong in. &lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;We don’t need masters, we need mentors.&lt;/em&gt; We’re not taking the metaphor as far as the “master” at Eden: I just don’t think that’s helpful to anyone at the moment. All of us know people who are more experienced than us, who can “mentor” us. I say let’s just leave it at that. Rather than seeking actively seeking “apprentices” (which indirectly sets ourselves up on a pedestal), let’s be actively seeking “mentors” and passively open to “apprenticing” others who ask us. That way we’ll be helpful and inclusive, taking the lowest place at the table.&lt;/p&gt;
-
-&lt;p&gt;Hopefully that gives some insight in to how this language might in a professional environment. Waving loaded language around is like a waving a loaded weapon: it has powerful influence, but people can get hurt :) &lt;/p&gt;
-
-&lt;p&gt;We’ve purposely treaded very carefully at Eden to try and bring in the best of the “apprenticeship” metaphor without all the trappings.&lt;/p&gt;
-
-&lt;p&gt;What are your thoughts on the debate? Is apprenticeship useful, or are there better metaphors?&lt;/p&gt;
-</content></entry></feed>
+<link href='http://chrismdp.com/2009/12/craftsmanship-vs-apprenticeship'/><updated>2009-12-15T20:48:00+00:00</updated><id>http://chrismdp.com/2009/12/craftsmanship-vs-apprenticeship</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2009/12/craftsmanship-vs-apprenticeship" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

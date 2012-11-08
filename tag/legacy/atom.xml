@@ -17,13 +17,4 @@ layout: nil
       <name>Chris Parsons</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/09/pininthemap-customisable-pin-icons'/><updated>2011-09-06T21:18:13+01:00</updated><id>http://chrismdp.com/2011/09/pininthemap-customisable-pin-icons</id><content type='html'>&lt;p&gt;I’ve just spent some time updating my first ever Rails project, &lt;a href=&quot;http://pininthemap.com&quot;&gt;Pin in the map&lt;/a&gt;. Now you can change the icons associated with premium (paid for) pins. There are over 100 new icons to choose from: &lt;a href=&quot;http://pininthemap.com&quot;&gt;have fun!&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/files/pininthemap-example.png&quot; alt=&quot;pininthemap example&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;learnings&quot;&gt;Learnings&lt;/h2&gt;
-
-&lt;p&gt;This codebase is from 2006, so this has proved a nice little exercise in adding testing to a legacy project. I had no tests at all to speak of when I wrote the code five years ago, and the code shows it. I began by installing cucumber and rspec and quickly wrapping the two most common features in acceptance tests: creating and editing pins. Even on old code it was super easy to get capybara, cucumber and rspec up and running, thanks to the fact that we’ve upgraded the codebase to Rails 2 and started using bundler to manage gem dependencies. We stuck to Selenium for the tests as the code is very Google Maps heavy.&lt;/p&gt;
-
-&lt;p&gt;It’s always worth keeping old apps vaguely up to date: the less inertia surrounding a codebase the more likely you’ll spend an afternoon adding an often-requested feature.&lt;/p&gt;
-</content></entry></feed>
+<link href='http://chrismdp.com/2011/09/pininthemap-customisable-pin-icons'/><updated>2011-09-06T21:18:13+01:00</updated><id>http://chrismdp.com/2011/09/pininthemap-customisable-pin-icons</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/09/pininthemap-customisable-pin-icons" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

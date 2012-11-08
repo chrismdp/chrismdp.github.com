@@ -17,95 +17,12 @@ layout: nil
       <name>Chris Parsons</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/04/a-formula-of-motivation'/><updated>2011-04-15T10:39:35+01:00</updated><id>http://chrismdp.com/2011/04/a-formula-of-motivation</id><content type='html'>&lt;p&gt;When reading last year, I came across the following formula for describing motivation:&lt;/p&gt;
-
-&lt;pre style=&quot;font-size: 0.8em; font-family: Monaco, fixed&quot;&gt;
-How much you want to do it   =   Confidence you can do it   *   Perceived Value of doing it
-                                 ----------------------------------------------------------
-                                 Proneness to being distracted * How long you have to do it
-&lt;/pre&gt;
-
-&lt;p&gt;I’d be grateful if anyone can source this for me, as I can’t find the reference and would love to link to it!&lt;/p&gt;
-
-&lt;p&gt;It seems simple enough, but it’s suprisingly effective at helping us out of a &lt;em&gt;motivation pit.&lt;/em&gt; We’ve all had times when we have had something we need to do, yet we cannot seem to bring ourselves to get on with it. It’s like we’ve fallen into a pit of despair about a certain task and cannot get out.&lt;/p&gt;
-
-&lt;p&gt;So what can we do to boost our motivation? This formula gives us a few tools to help us complete that task. They’re listed here in the order in which I’ve found them useful:&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Break it down.&lt;/em&gt; If it’s too big to imagine completing it, break it down: what’s the next thing you can do to progress it? Do that, then rinse and repeat. This is one of the main things I learnt from &lt;a href=&quot;http://en.wikipedia.org/wiki/Getting_Things_Done&quot;&gt;GTD&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Ensure you can do it.&lt;/em&gt; This is all about raising our confidence in whether we can get it done. Remind yourself that you have ability and knowledge to not only do it well, but knock it out the park! If you don’t, either get someone to help you with the task or schedule another task to find out what you need to know. Both these things will raise your confidence and increase your motivation.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Remind yourself why you’re doing it.&lt;/em&gt; In other words, raise your perception of the value gained through doing the task. What is the task achieving for your? What good things will happen when it’s done? Remember, the tasks you feel the least like doing are the ones you feel best about having done: there’s value in that in itself. After this, if you still cannot see the value, why are you doing this in the first place?&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Reduce distractions.&lt;/em&gt; Some distraction is inevitable, but we can work hard to overcome it. This is where I’ve found &lt;a href=&quot;/2011/03/pomodoros-done-hopefully-right&quot;&gt;the pomodoro technique&lt;/a&gt; very useful. Change your environment and space to help you concentrate on what you’re doing. Tracking your distractions and intentionally overcoming them can be very effective in helping to get something done.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Raise the bottom.&lt;/em&gt; When do you have to do it by? If it’s in six months time, then you’re unlikely to want to bother now. But if the task is going to take six months (such as writing a dissertation, for example), then you will naturally doubt you can do it, and you’re really going to struggle to get started.&lt;/p&gt;
-
-&lt;p&gt;Instead, break the task down, and think: “If I’m going to get this done, I have to do this first thing by next week at the latest.” That will raise your confidence level (smaller task) and artificially reduce your deadline, both increasing your motivation.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Do it later.&lt;/em&gt; In a week you’ll have less time to get it done, and therefore you’ll be a bit more motivated. I’ve found this is the least effective, as it plays into my natural tendency to procrastinate, but sometimes we have to question why we’re doing this now at all, and get on with the really important tasks.&lt;/p&gt;
-
-&lt;p&gt;Hope this formula helps you as much as it’s helped me.&lt;/p&gt;
-</content></entry><entry><title>On the nature of time</title><category term='pomodoros'/><category term='life'/><category term='productivity'/>    <author>
+<link href='http://chrismdp.com/2011/04/a-formula-of-motivation'/><updated>2011-04-15T10:39:35+01:00</updated><id>http://chrismdp.com/2011/04/a-formula-of-motivation</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/04/a-formula-of-motivation" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>On the nature of time</title><category term='pomodoros'/><category term='life'/><category term='productivity'/>    <author>
       <name>Chris Parsons</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/04/on-the-nature-of-time'/><updated>2011-04-04T14:27:24+01:00</updated><id>http://chrismdp.com/2011/04/on-the-nature-of-time</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;Time is not a reality, but a concept or a measure.&quot;&lt;/i&gt;&lt;/p&gt;
-
-&lt;p&gt;– [Antiphon the Sophist](http://en.wikipedia.org/wiki/Antiphon_(person%29)&lt;/p&gt;
-
-&lt;p&gt;The concept of time is a difficult one to pin down. Through centuries the devising of a non-controversial way of defining it has eluded even the greatest scholars. I’ve been learning a bit about time from my use of the &lt;a href=&quot;/2011/03/pomodoros-done-hopefully-right&quot;&gt;pomodoro technique recently&lt;/a&gt;, and I want to discuss two ways that we perceive time, specifically as it relates to getting stuff done.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The concept of “becoming”.&lt;/em&gt; This is an abstract, dimensional way of seeing time. It gives rise to the measuring of time in minutes and hours, and the idea of “not having enough time” or of “being late”.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The succession of events.&lt;/em&gt; The concept of something being “before” or “after” something else: I do this, then I do that. As children, this is the first understanding of time we grasp, before we learn about the abstract concept.&lt;/p&gt;
-
-&lt;h2 id=&quot;why-does-this-matter&quot;&gt;Why does this matter?&lt;/h2&gt;
-
-&lt;p&gt;The abstract concept of time is what creates stress. We worry that there’s “not enough time in the day”, or that we’re “wasting time”.&lt;/p&gt;
-
-&lt;p&gt;Contrast this: “I’ve been waiting &lt;em&gt;seven hours&lt;/em&gt; for my iPad, and I’ve only just got it!” with: “I waited in line, and then I got my iPad.”&lt;/p&gt;
-
-&lt;p&gt;Viewing time as a success of events creates rhythm. There’s a certain natural orderly progression when talking about succession: I got up, I had breakfast, I went to work, I phoned Bill, I cleared my inbox, I had lunch, I queued, I bought an iPad… It’s calming and relieves anxiety.&lt;/p&gt;
-
-&lt;h2 id=&quot;how-can-this-make-a-difference&quot;&gt;How can this make a difference?&lt;/h2&gt;
-
-&lt;p&gt;Next time you’re stressing like crazy because you “only have 3 hours left” before the end of the day to get a lot of things done:&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Stop.&lt;/em&gt; Worrying will make it worse; you’ll have even less time after you’re done.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Work out what you can realistically achieve today.&lt;/em&gt; Renegotiate everything else. You’re not going to get it done anyway: why not let people know sooner rather than later?&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Write down a list in order of what you’re going to do.&lt;/em&gt; Put “go home” at the end of the list.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Follow the list.&lt;/em&gt; Don’t pay much attention to the seconds and minutes. Go home when it tells you to.&lt;/p&gt;
-
-&lt;p&gt;The subtler aspects of the Pomodoro technique are teaching me a lot. Thanks to Bergson and Minkowski as cited by &lt;a href=&quot;http://www.pomodorotechnique.com/&quot;&gt;The Pomodoro Technique book&lt;/a&gt; for the raw intel.&lt;/p&gt;
-
-&lt;p&gt;&lt;i&gt;Henri Bergson, L’evoluzione creatrice, Cortina Raffaello, 2002; ISBN 88-70-78780-X.&lt;/i&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;i&gt;Eugène Minkowski, Il tempo vissuto, Einaudi Editore, Torino, 1971; ISBN 88-06-30767-3.&lt;/i&gt;&lt;/p&gt;
-</content></entry><entry><title>Pomodoros help you refactor</title><category term='code'/><category term='pomodoros'/><category term='tdd'/><category term='craftsmanship'/><category term='pairing'/>    <author>
+<link href='http://chrismdp.com/2011/04/on-the-nature-of-time'/><updated>2011-04-04T14:27:24+01:00</updated><id>http://chrismdp.com/2011/04/on-the-nature-of-time</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/04/on-the-nature-of-time" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Pomodoros help you refactor</title><category term='code'/><category term='pomodoros'/><category term='tdd'/><category term='craftsmanship'/><category term='pairing'/>    <author>
       <name>Chris Parsons</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/04/pomodoros-help-you-refactor'/><updated>2011-04-01T20:21:15+01:00</updated><id>http://chrismdp.com/2011/04/pomodoros-help-you-refactor</id><content type='html'>&lt;p&gt;&lt;i&gt;&quot;If you finish a task while the Pomodoro is still ticking, the following rule applies: If a Pomodoro Begins, It Has to Ring. It’s a good idea to take advantage of the opportunity for overlearning, using the remaining portion of the Pomodoro to review or repeat what you’ve done, make small improvements, and note down what you’ve learned until the Pomodoro rings.&quot;&lt;/i&gt;&lt;/p&gt;
-
-&lt;p&gt;– Francesco Cirillo, &lt;a href=&quot;http://www.pomodorotechnique.com/&quot;&gt;The Pomodoro Technique&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;What’s the single most important part of Test Driven Development not to miss? Refactoring. What’s the part of TDD that’s most often missed? Refactoring.&lt;/p&gt;
-
-&lt;p&gt;With refactoring, we work our way toward a great design, clean code, and flexible organic tests. Without refactoring, we have ugly brittle test suites and uglier code. We know this. What I don’t always do is take advantage of the moments I have when I can effectively refactor for free.&lt;/p&gt;
-
-&lt;p&gt;At the end of a task, when the build is running, I’ve previously let my mind wander to the next thing, or check email, surf the net, and generally &lt;a href=&quot;http://www.computus.org/journal/?p=982&quot;&gt;get out of the zone&lt;/a&gt;. This bad habit has been highlighted to me in &lt;a href=&quot;/2011/03/pomodoros-done-hopefully-right&quot;&gt;my use of the pomodoro technique recently&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I was doing the same for the shorter pauses during normal TDD. My pomodoros statistics were telling me that I’m very bad at concentrating whilst coding: the average time spent before I let my mind wander was 11.67 minutes. I was allowing my mind to drift whilst Rails started up to run whatever test I was working on. Not good.&lt;/p&gt;
-
-&lt;h2 id=&quot;time-to-improve&quot;&gt;Time to improve&lt;/h2&gt;
-
-&lt;p&gt;This week, I’ve been trying to take the time to look at my code critically for areas of improvement. A pomodoro is indivisible, which means I’m not &lt;em&gt;allowed&lt;/em&gt; to think about anything else.&lt;/p&gt;
-
-&lt;p&gt;And guess what? I always find something to improve, and I feel that little bit better about my code.&lt;/p&gt;
-
-&lt;p&gt;The also helps with the thing I’ve missed most about not pairing: that other person’s critical eye on what you’re doing, always thinking about the code being written. During the natural pauses, you can be that other person and ensure the code you write is great. Being two people is &lt;a href=&quot;http://www.pixar.com/shorts/gg/index.html&quot;&gt;more fun, too&lt;/a&gt;.&lt;/p&gt;
-</content></entry></feed>
+<link href='http://chrismdp.com/2011/04/pomodoros-help-you-refactor'/><updated>2011-04-01T20:21:15+01:00</updated><id>http://chrismdp.com/2011/04/pomodoros-help-you-refactor</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/04/pomodoros-help-you-refactor" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

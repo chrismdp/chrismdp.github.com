@@ -17,69 +17,12 @@ layout: nil
       <name>Chris Parsons</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/10/how-to-write-a-great-story'/><updated>2012-10-30T22:50:00+00:00</updated><id>http://chrismdp.com/2012/10/how-to-write-a-great-story</id><content type='html'>&lt;p&gt;Second in my mini-series of Cucumber videos: a quick introduction on writing a great story.&lt;/p&gt;
-
-&lt;iframe width=&quot;445&quot; height=&quot;300&quot; src=&quot;http://www.youtube.com/embed/RJ3UiK1IEj4&quot; frameborder=&quot;0&quot;&gt;
-
-&lt;/iframe&gt;
-
-&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; This approach works best when starting off a brand new feature in the system. When changing existing features, we need to work to keep our preamble up to date. &lt;a href=&quot;http://blog.mattwynne.net/2010/10/22/features-user-stories/&quot;&gt;Matt Wynne's blog post&lt;/a&gt; shows you how.&lt;/p&gt;
-
-&lt;p&gt;If you like what you see, and you'd like to learn more, a quick reminder that Matt and I are running &lt;a href=&quot;http://bddkickstart.com&quot;&gt;BDD Kickstart&lt;/a&gt; in London this coming December: the early bird ends November 4th.
-&lt;/p&gt;
-</content></entry><entry><title>The simplest Cucumber project ever</title><category term='cucumber'/><category term='bdd'/><category term='bddkickstart'/>    <author>
+<link href='http://chrismdp.com/2012/10/how-to-write-a-great-story'/><updated>2012-10-30T22:50:00+00:00</updated><id>http://chrismdp.com/2012/10/how-to-write-a-great-story</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/10/how-to-write-a-great-story" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>The simplest Cucumber project ever</title><category term='cucumber'/><category term='bdd'/><category term='bddkickstart'/>    <author>
       <name>Chris Parsons</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/10/the-simplest-cucumber-project'/><updated>2012-10-25T20:47:16+01:00</updated><id>http://chrismdp.com/2012/10/the-simplest-cucumber-project</id><content type='html'>&lt;p&gt;Cucumber can be really very simple. Here’s a short video to show how you can get started in two minutes flat, using only two files: a simple feature file, and a few lines of ruby to execute it.&lt;/p&gt;
-
-&lt;iframe width=&quot;445&quot; height=&quot;300&quot; src=&quot;http://www.youtube.com/embed/8LtAmj17WtI&quot; frameborder=&quot;0&quot;&gt;
-
-&lt;/iframe&gt;
-
-&lt;p&gt;If you like what you see, and you'd like to learn more, a quick reminder that &lt;a href=&quot;http://mattwynne.net&quot;&gt;Matt Wynne&lt;/a&gt; and I are running &lt;a href=&quot;http://bddkickstart.com&quot;&gt;BDD Kickstart&lt;/a&gt; in London this coming December: the early bird ends November 4th.
-&lt;/p&gt;
-</content></entry><entry><title>Kickstart your team on BDD</title><category term='bddkickstart'/><category term='bdd'/><category term='cucumber'/><category term='code'/><category term='ruby'/>    <author>
+<link href='http://chrismdp.com/2012/10/the-simplest-cucumber-project'/><updated>2012-10-25T20:47:16+01:00</updated><id>http://chrismdp.com/2012/10/the-simplest-cucumber-project</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/10/the-simplest-cucumber-project" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Kickstart your team on BDD</title><category term='bddkickstart'/><category term='bdd'/><category term='cucumber'/><category term='code'/><category term='ruby'/>    <author>
       <name>Chris Parsons</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/07/kickstart-your-team-on-bdd'/><updated>2012-07-27T08:13:22+01:00</updated><id>http://chrismdp.com/2012/07/kickstart-your-team-on-bdd</id><content type='html'>&lt;p&gt;&lt;a href=&quot;http://mattwynne.net&quot;&gt;Matt Wynne&lt;/a&gt; and I have been running courses on BDD for the BBC Future Media division for the past year or two. They’ve been extremely well received, so we’ve decided to open them up to the wider public so everyone can benefit.&lt;/p&gt;
-
-&lt;p&gt;The full details are at &lt;a href=&quot;http://bddkickstart.com&quot;&gt;bddkickstart.com&lt;/a&gt;, but read on for a bit more info:&lt;/p&gt;
-
-&lt;h2 id=&quot;whenwhere-is-it&quot;&gt;When/where is it?&lt;/h2&gt;
-
-&lt;p&gt;There are four seperate day-long workshops running in October, from 8th - 11th in Central London near Trafalgar Square. You can just come to one day, or all four.&lt;/p&gt;
-
-&lt;h2 id=&quot;whats-the-course-material&quot;&gt;What’s the course material?&lt;/h2&gt;
-
-&lt;p&gt;Day 1 is entitled “Just enough Ruby”. It teaches programmers from other languages the basics of Ruby so that they are comfortable using cucumber effectively.&lt;/p&gt;
-
-&lt;p&gt;Day 2 is a BDD workshop for the whole team. It builds awareness and enthusiasm for the concepts with a chance to practice collaboration in the way that makes BDD work.&lt;/p&gt;
-
-&lt;p&gt;Day 3 is a practical day for programmers to learn about Cucumber: what it is, what it isn’t, and how to write good cucumber code that can be maintained over time.&lt;/p&gt;
-
-&lt;p&gt;Day 4 covers advanced BDD concepts and common pitfall people find when using these techniques in the real world.&lt;/p&gt;
-
-&lt;h2 id=&quot;do-i-have-to-sign-up-for-all-four-days&quot;&gt;Do I have to sign up for all four days?&lt;/h2&gt;
-
-&lt;p&gt;No, you can pick and choose, and just come to one day if you like. There’s a small per day discount if you book all four days.&lt;/p&gt;
-
-&lt;h2 id=&quot;so-which-days-are-for-me&quot;&gt;So which days are for me?&lt;/h2&gt;
-
-&lt;p&gt;if you're a &lt;strong&gt;developer with Ruby experience&lt;/strong&gt;, you might want to skip the first day and come along to days 2, 3 or 4.&lt;/p&gt;
-
-&lt;p&gt;If you are a &lt;strong&gt;Product Owner, Business Analyst, Project Manager or UX specialist&lt;/strong&gt;, come along to just day 2, and understand why BDD is designed for you guys in the first place!&lt;/p&gt;
-
-&lt;p&gt;If you're a &lt;strong&gt;keen developer but not necessily very experienced in Ruby&lt;/strong&gt;, you should consider the &lt;a href=&quot;http://bdd.eventbrite.co.uk&quot;&gt;full four day course&lt;/a&gt;. We'll take you through the basics of Ruby, the reasons behind doing development this way, how to use Cucumber properly (saving you time in the long run) and some neat advanced tricks.&lt;/p&gt;
-
-&lt;h2 id=&quot;are-you-running-early-bird-tickets-or-promotions&quot;&gt;Are you running early bird tickets, or promotions?&lt;/h2&gt;
-
-&lt;p&gt;Glad you asked: if you use the code &lt;strong&gt;super-early-birdy&lt;/strong&gt; you’ll get 20% of the list price until 1st August, just for reading this far down the page :)&lt;/p&gt;
-
-&lt;h2 id=&quot;how-can-i-find-out-more-or-book-my-place&quot;&gt;How can I find out more or book my place?&lt;/h2&gt;
-
-&lt;p&gt;You can find more info and book at &lt;a href=&quot;http://bddkickstart.com&quot;&gt;bddkickstart.com&lt;/a&gt;, or &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#058;&amp;#104;&amp;#101;&amp;#108;&amp;#108;&amp;#111;&amp;#064;&amp;#098;&amp;#100;&amp;#100;&amp;#107;&amp;#105;&amp;#099;&amp;#107;&amp;#115;&amp;#116;&amp;#097;&amp;#114;&amp;#116;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;send us mail&lt;/a&gt; if you have specific questions.&lt;/p&gt;
-
-&lt;p&gt;Hope to see you in October!&lt;/p&gt;
-</content></entry></feed>
+<link href='http://chrismdp.com/2012/07/kickstart-your-team-on-bdd'/><updated>2012-07-27T08:13:22+01:00</updated><id>http://chrismdp.com/2012/07/kickstart-your-team-on-bdd</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/07/kickstart-your-team-on-bdd" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

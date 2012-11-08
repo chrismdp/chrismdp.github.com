@@ -17,9 +17,4 @@ layout: nil
       <name>Chris Parsons</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/08/work-with-me'/><updated>2011-08-22T15:36:53+01:00</updated><id>http://chrismdp.com/2011/08/work-with-me</id><content type='html'>&lt;p&gt;I’ve been taking a break from my work and blogging for the summer: but now I’m looking for work again from next week.&lt;/p&gt;
-
-&lt;p&gt;To this end I’ve put up a &lt;a href=&quot;/workwithme.html&quot;&gt;new page&lt;/a&gt; on this site which has all the details of what I can offer, and my availability. If you’d like to work with me this autumn, do &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#099;&amp;#104;&amp;#114;&amp;#105;&amp;#115;&amp;#064;&amp;#116;&amp;#104;&amp;#105;&amp;#110;&amp;#107;&amp;#099;&amp;#111;&amp;#100;&amp;#101;&amp;#108;&amp;#101;&amp;#097;&amp;#114;&amp;#110;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;get in touch&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I also plan to start blogging again soon, with my first topic being &lt;a href=&quot;/2011/08/e-petitions-handling-traffic&quot;&gt;how we handled the massive site traffic&lt;/a&gt; we experienced on e-petitions &lt;a href=&quot;http://www.bbc.co.uk/news/uk-politics-14474429&quot;&gt;a couple of weeks ago&lt;/a&gt;.&lt;/p&gt;
-</content></entry></feed>
+<link href='http://chrismdp.com/2011/08/work-with-me'/><updated>2011-08-22T15:36:53+01:00</updated><id>http://chrismdp.com/2011/08/work-with-me</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/08/work-with-me" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

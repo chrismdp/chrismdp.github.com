@@ -17,32 +17,4 @@ layout: nil
       <name>Chris Parsons</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/10/childrens-future-international'/><updated>2010-10-18T19:42:33+01:00</updated><id>http://chrismdp.com/2010/10/childrens-future-international</id><content type='html'>&lt;p&gt;For the past few months &lt;a href=&quot;http://edendevelopment.co.uk&quot;&gt;my company&lt;/a&gt; has been involved with a charity in Cambodia called &lt;a href=&quot;http://www.childrensfutureinternational.org/&quot;&gt;Children’s Future International&lt;/a&gt;. They are a fantastic organisation dedicated to helping children in very challenging conditions; they enable them to live and be educated in a safe community. &lt;/p&gt;
-
-&lt;p&gt;We’ve been helping them to build a system to keep track of where their students live, which school they go to and which programmes they are involved with.&lt;/p&gt;
-
-&lt;p&gt;This autumn we’ve decided to increase the number of developers working on the project. The charity have agreed to open source the code, so that anyone who wants to can pitch in and lend a hand. I’ve taken on co-ordinating this effort, and we need your help!&lt;/p&gt;
-
-&lt;h2 id=&quot;how-do-i-help&quot;&gt;How do I help?&lt;/h2&gt;
-
-&lt;p&gt;The code is here:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://github.com/edendevelopment/cfi&quot;&gt;http://github.com/edendevelopment/cfi&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;We’re currently running an issue tracker here:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://github.com/edendevelopment/cfi/issues&quot;&gt;http://github.com/edendevelopment/cfi/issues&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;See the &lt;a href=&quot;http://github.com/edendevelopment/cfi/blob/master/README.textile&quot;&gt;README&lt;/a&gt;, but the gist is: grab the code, claim an issue (remove the ‘you can help’ tag and mark it with ‘in progress’), write a patch, submit a pull request.&lt;/p&gt;
-
-&lt;p&gt;We’re picky about code quality. Your patches might get sent back for improvements in quality and/or test coverage. Pleased don’t be offended if this happens to you :)&lt;/p&gt;
-
-&lt;h2 id=&quot;why-should-i-help&quot;&gt;Why should I help?&lt;/h2&gt;
-
-&lt;p&gt;We don’t often stop to think about this, but we coders have a unique gift which can be used to bring huge benefit to the world. We have the power to help people do &lt;em&gt;real tangible good.&lt;/em&gt; The reward we get through helping out in this particular project is the satisfaction of helping to ensure that very vulnerable children get to live and go to school in a safe community. Oh, and your name on the commit list on the README :)&lt;/p&gt;
-
-&lt;p&gt;There’s more: thinking ahead a little, it’s possible that we might be able to build a system which lots of charities can use for free to organise their processes, save themselves lots of money, leaving themselves more resources to do greater things. Wouldn’t that be cool? This is starting already: there is another charity interested in building off the current codebase.&lt;/p&gt;
-
-&lt;p&gt;So what are you waiting for? Check out the &lt;a href=&quot;http://github.com/edendevelopment/cfi/issues/&quot;&gt;issues list&lt;/a&gt; and lend a hand!&lt;/p&gt;
-
-</content></entry></feed>
+<link href='http://chrismdp.com/2010/10/childrens-future-international'/><updated>2010-10-18T19:42:33+01:00</updated><id>http://chrismdp.com/2010/10/childrens-future-international</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/10/childrens-future-international" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

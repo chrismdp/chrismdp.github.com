@@ -17,58 +17,8 @@ layout: nil
       <name>Chris Parsons</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/03/archivey-the-robot'/><updated>2010-03-08T16:15:00+00:00</updated><id>http://chrismdp.com/2010/03/archivey-the-robot</id><content type='html'>&lt;p&gt;Following hot on the heels of &lt;a href=&quot;/2010/03/introducing-pushy/&quot;&gt;Pushy&lt;/a&gt;, I’ve implemented the companion application Archivey. This will delete all but the last five messages on a wave, excepting the top message. It’s meant to be used in conjunction with Pushy and any other chatty robots to keep the number of messages in a wave down to a manageable level.&lt;/p&gt;
-
-&lt;p&gt;Potential other uses would be in a chatting context: you don’t always want to see the complete history of a chat session and this could be a way to hide the noise. Remember that you can always see the complete history by clicking Playback on the wave, so the messages aren’t lost: they’re just archived.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;To use, add archiveyrobot@appspot.com to a wave.&lt;/em&gt; Be warned, as soon as a new message is added it will merrily start deleting messages, so be careful!&lt;/p&gt;
-
-&lt;p&gt;Source code on &lt;a href=&quot;http://github.com/chrismdp/archivey&quot;&gt;github&lt;/a&gt;. Hope you like it: let me know if you find it useful.&lt;/p&gt;
-</content></entry><entry><title>Introducing Pushy - github notifications to google wave</title><category term='google wave'/><category term='code'/>    <author>
+<link href='http://chrismdp.com/2010/03/archivey-the-robot'/><updated>2010-03-08T16:15:00+00:00</updated><id>http://chrismdp.com/2010/03/archivey-the-robot</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/03/archivey-the-robot" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Introducing Pushy - github notifications to google wave</title><category term='google wave'/><category term='code'/>    <author>
       <name>Chris Parsons</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/03/introducing-pushy'/><updated>2010-03-07T20:18:00+00:00</updated><id>http://chrismdp.com/2010/03/introducing-pushy</id><content type='html'>&lt;p&gt;I’ve been having a bit of a love affair with &lt;a href=&quot;http://wave.google.com&quot;&gt;Google Wave&lt;/a&gt; recently. Like most people I watched the &lt;a href=&quot;http://wave.google.com/about.html#video&quot;&gt;long introductory video&lt;/a&gt;, then tried out the sandbox last July and didn’t really get it. I then read &lt;a href=&quot;http://blog.cubeofm.com/on-how-google-wave-surprisingly-changed-my-li&quot;&gt;this interesting post&lt;/a&gt; which spurred me on to try using it for actual work.&lt;/p&gt;
-
-&lt;p&gt;Guess what? It works. Our conversations have become more structured and organised. We’re finding that it does help with keeping everything together in one place, and is more ‘alive’ somehow than a traditional wiki. &lt;/p&gt;
-
-&lt;p&gt;So I thought: “Wouldn’t it be cool if you could have your github messages popping up in wave?”&lt;/p&gt;
-
-&lt;p&gt;So here’s the results of my handiwork: Pushy.&lt;/p&gt;
-
-&lt;p&gt;In simple terms, it’s a robot which accepts any form of HTTP post and adds the content as a new message on the wave. It has special handling for github post-receive hooks: it formats them nicely using a gadget.&lt;/p&gt;
-
-&lt;h2 id=&quot;how-to-use-it&quot;&gt;How to use it&lt;/h2&gt;
-
-&lt;p&gt;Log on to &lt;a href=&quot;http://wave.google.com&quot;&gt;wave.google.com&lt;/a&gt; and add pushyrobot@appspot.com to a new wave. The robot will add a message giving you the URL to post to:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/files/pushy-1.png&quot; alt=&quot;Pushy's receive message&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Then, when you post to this url (here I’m using curl):&lt;/p&gt;
-
-&lt;p&gt;{% highlight bash %}$ curl -d “testing pushy” http://pushyrobot.appspot.com/push/googlewave.com/fjWFoDWkf{% endhighlight %}&lt;/p&gt;
-
-&lt;p&gt;It will add the message to the wave:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/files/pushy-3.png&quot; alt=&quot;The message appears&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;If you’re using the github notifications, simply add the URL verbatim to your project’s service hooks as a Post-Receive hook:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/files/pushy-4.png&quot; alt=&quot;Github service hook configuration page&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Click “Test Hook” and the wave will update. Any new commits to this project should now appear.&lt;/p&gt;
-
-&lt;p&gt;Here’s what the commit messages for github commits look like:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/files/pushy-5.png&quot; alt=&quot;Github commit message view&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;source-code&quot;&gt;Source code&lt;/h2&gt;
-
-&lt;p&gt;The source code is at &lt;a href=&quot;http://github.com/chrismdp/pushy&quot;&gt;github.com/chrismdp/pushy&lt;/a&gt;. It’s my first Python project and first App Engine deployment, so be gentle :) I’d welcome forks and patches: especially if you extend the special formatting for other services.&lt;/p&gt;
-
-&lt;p&gt;Enjoy! Do let me know if you use it for anything useful. &lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;UPDATE:&lt;/em&gt; The wave forum post discussing the robot is &lt;a href=&quot;http://bit.ly/bKCOkV&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;UPDATE:&lt;/em&gt; Pushy now supports google code’s &lt;a href=&quot;http://code.google.com/p/support/wiki/PostCommitWebHooks&quot;&gt;PostCommitWebHooks&lt;/a&gt; and formats them in a similar way to github commits.&lt;/p&gt;
-</content></entry></feed>
+<link href='http://chrismdp.com/2010/03/introducing-pushy'/><updated>2010-03-07T20:18:00+00:00</updated><id>http://chrismdp.com/2010/03/introducing-pushy</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/03/introducing-pushy" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>
