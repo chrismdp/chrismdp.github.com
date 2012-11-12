@@ -10,11 +10,11 @@ layout: nil
   <updated>2011-09-06T21:18:13+01:00</updated>
   <id>http://chrismdp.com/tag/legacy</id>
   <author>
-    <name>Chris Parsons</name>
+    <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
 <entry><title>Pin in the map: customisable pin icons</title><category term='code'/><category term='cucumber'/><category term='ruby'/><category term='legacy'/><category term='products'/><category term='pininthemap'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/09/pininthemap-customisable-pin-icons'/><updated>2011-09-06T21:18:13+01:00</updated><id>http://chrismdp.com/2011/09/pininthemap-customisable-pin-icons</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/09/pininthemap-customisable-pin-icons" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

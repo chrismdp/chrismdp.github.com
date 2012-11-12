@@ -10,11 +10,11 @@ layout: nil
   <updated>2011-04-18T15:17:31+01:00</updated>
   <id>http://chrismdp.com/tag/personas</id>
   <author>
-    <name>Chris Parsons</name>
+    <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
 <entry><title>Cucumbers with personality</title><category term='cucumber'/><category term='personas'/><category term='agile'/><category term='ux'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/04/cucumbers-with-personality'/><updated>2011-04-18T15:17:31+01:00</updated><id>http://chrismdp.com/2011/04/cucumbers-with-personality</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/04/cucumbers-with-personality" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

@@ -10,55 +10,55 @@ layout: nil
   <updated>2012-11-07T23:50:39+00:00</updated>
   <id>http://chrismdp.com/tag/bdd</id>
   <author>
-    <name>Chris Parsons</name>
+    <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
 <entry><title>Should we store state in our steps?</title><category term='cucumber'/><category term='bdd'/><category term='ruby'/><category term='state'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/11/storing-state-in-your-steps'/><updated>2012-11-07T23:50:39+00:00</updated><id>http://chrismdp.com/2012/11/storing-state-in-your-steps</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/11/storing-state-in-your-steps" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>How to write a great story</title><category term='cucumber'/><category term='bdd'/><category term='bddkickstart'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/10/how-to-write-a-great-story'/><updated>2012-10-30T22:50:00+00:00</updated><id>http://chrismdp.com/2012/10/how-to-write-a-great-story</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/10/how-to-write-a-great-story" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>The simplest Cucumber project ever</title><category term='cucumber'/><category term='bdd'/><category term='bddkickstart'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/10/the-simplest-cucumber-project'/><updated>2012-10-25T20:47:16+01:00</updated><id>http://chrismdp.com/2012/10/the-simplest-cucumber-project</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/10/the-simplest-cucumber-project" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Cucumber isn't a testing tool</title><category term='cucumber'/><category term='business'/><category term='bdd'/><category term='team'/><category term='testing'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/09/cucumber-isnt-a-testing-tool'/><updated>2012-09-19T17:41:22+01:00</updated><id>http://chrismdp.com/2012/09/cucumber-isnt-a-testing-tool</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/cucumber-isnt-a-testing-tool" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>The power of feedback</title><category term='lean startup'/><category term='tdd'/><category term='bdd'/><category term='feedback'/><category term='lean'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/09/the-power-of-feedback'/><updated>2012-09-13T13:52:16+01:00</updated><id>http://chrismdp.com/2012/09/the-power-of-feedback</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/the-power-of-feedback" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Kickstart your team on BDD</title><category term='bddkickstart'/><category term='bdd'/><category term='cucumber'/><category term='code'/><category term='ruby'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/07/kickstart-your-team-on-bdd'/><updated>2012-07-27T08:13:22+01:00</updated><id>http://chrismdp.com/2012/07/kickstart-your-team-on-bdd</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/07/kickstart-your-team-on-bdd" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Feature writing: multiple actors</title><category term='bdd'/><category term='cucumber'/><category term='code'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/12/feature-writing-multiple-actors'/><updated>2011-12-08T11:01:23+00:00</updated><id>http://chrismdp.com/2011/12/feature-writing-multiple-actors</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/12/feature-writing-multiple-actors" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>How I'm testing iPhone apps: part 2</title><category term='code'/><category term='ios'/><category term='tdd'/><category term='bdd'/><category term='testing ios'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/12/how-im-testing-iphone-apps-part-2'/><updated>2011-12-06T16:02:54+00:00</updated><id>http://chrismdp.com/2011/12/how-im-testing-iphone-apps-part-2</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/12/how-im-testing-iphone-apps-part-2" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>How I'm testing iPhone apps: part 1</title><category term='code'/><category term='ios'/><category term='tdd'/><category term='bdd'/><category term='testing ios'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/12/how-im-testing-iphone-apps-part-1'/><updated>2011-12-01T22:45:35+00:00</updated><id>http://chrismdp.com/2011/12/how-im-testing-iphone-apps-part-1</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/12/how-im-testing-iphone-apps-part-1" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Your tests are lying to you</title><category term='code'/><category term='cucumber'/><category term='craftsmanship'/><category term='bdd'/><category term='rspec'/><category term='rails'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/10/your-tests-are-lying-to-you'/><updated>2011-10-17T19:10:29+01:00</updated><id>http://chrismdp.com/2011/10/your-tests-are-lying-to-you</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/10/your-tests-are-lying-to-you" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Layers of abstraction: writing great cucumber code</title><category term='bdd'/><category term='cucumber'/><category term='agile'/><category term='ux'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/09/layers-of-abstraction-writing-great-cucumber-code'/><updated>2011-09-15T07:44:41+01:00</updated><id>http://chrismdp.com/2011/09/layers-of-abstraction-writing-great-cucumber-code</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/09/layers-of-abstraction-writing-great-cucumber-code" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Layers of abstraction: combining BDD and UX</title><category term='bdd'/><category term='cucumber'/><category term='agile'/><category term='ux'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/09/layers-of-abstraction-bdd-ux'/><updated>2011-09-05T20:44:03+01:00</updated><id>http://chrismdp.com/2011/09/layers-of-abstraction-bdd-ux</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/09/layers-of-abstraction-bdd-ux" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

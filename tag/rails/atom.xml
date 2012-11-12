@@ -10,19 +10,19 @@ layout: nil
   <updated>2011-10-17T19:10:29+01:00</updated>
   <id>http://chrismdp.com/tag/rails</id>
   <author>
-    <name>Chris Parsons</name>
+    <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
 <entry><title>Your tests are lying to you</title><category term='code'/><category term='cucumber'/><category term='craftsmanship'/><category term='bdd'/><category term='rspec'/><category term='rails'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/10/your-tests-are-lying-to-you'/><updated>2011-10-17T19:10:29+01:00</updated><id>http://chrismdp.com/2011/10/your-tests-are-lying-to-you</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/10/your-tests-are-lying-to-you" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Kanogo: vapourware to beta in 24 hours</title><category term='code'/><category term='products'/><category term='business'/><category term='kano analysis'/><category term='rails'/><category term='heroku'/><category term='ruby'/><category term='kanogo'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/09/kanogo-vapourware-to-beta-in-24-hours'/><updated>2011-09-12T11:30:37+01:00</updated><id>http://chrismdp.com/2011/09/kanogo-vapourware-to-beta-in-24-hours</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/09/kanogo-vapourware-to-beta-in-24-hours" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>How to get Spork working NOW on Rails 3, Rspec 2 and Cucumber</title><category term='rails'/><category term='ruby'/><category term='rspec'/><category term='spork'/><category term='cucumber'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2010/11/getting-spork-working-now-on-rails-3-rspec-2-and-cucumber'/><updated>2010-11-16T21:41:57+00:00</updated><id>http://chrismdp.com/2010/11/getting-spork-working-now-on-rails-3-rspec-2-and-cucumber</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/11/getting-spork-working-now-on-rails-3-rspec-2-and-cucumber" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

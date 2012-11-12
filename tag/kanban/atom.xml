@@ -10,11 +10,11 @@ layout: nil
   <updated>2010-02-11T15:55:00+00:00</updated>
   <id>http://chrismdp.com/tag/kanban</id>
   <author>
-    <name>Chris Parsons</name>
+    <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
 <entry><title>The Story Card Is Not The Story</title><category term='xp'/><category term='agile'/><category term='pivotal tracker'/><category term='balsamiq'/><category term='basecamp'/><category term='stories'/><category term='kanban'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2010/02/the-story-card-is-not-the-story'/><updated>2010-02-11T15:55:00+00:00</updated><id>http://chrismdp.com/2010/02/the-story-card-is-not-the-story</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/02/the-story-card-is-not-the-story" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

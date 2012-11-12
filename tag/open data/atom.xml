@@ -10,15 +10,15 @@ layout: nil
   <updated>2012-09-27T20:24:54+01:00</updated>
   <id>http://chrismdp.com/tag/open data</id>
   <author>
-    <name>Chris Parsons</name>
+    <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
 <entry><title>OStatus: what I've learnt in 24 hours</title><category term='social'/><category term='ostatus'/><category term='open data'/><category term='open source'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/09/ostatus-what-ive-learnt-in-24-hours'/><updated>2012-09-27T20:24:54+01:00</updated><id>http://chrismdp.com/2012/09/ostatus-what-ive-learnt-in-24-hours</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/ostatus-what-ive-learnt-in-24-hours" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>OStatus: like Twitter, but open</title><category term='social'/><category term='ostatus'/><category term='open data'/><category term='open source'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/09/ostatus-like-twitter-but-open'/><updated>2012-09-26T10:00:00+01:00</updated><id>http://chrismdp.com/2012/09/ostatus-like-twitter-but-open</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/ostatus-like-twitter-but-open" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

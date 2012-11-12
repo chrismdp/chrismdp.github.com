@@ -10,19 +10,19 @@ layout: nil
   <updated>2011-03-31T13:20:29+01:00</updated>
   <id>http://chrismdp.com/tag/katas</id>
   <author>
-    <name>Chris Parsons</name>
+    <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
 <entry><title>Are coding katas really worth it?</title><category term='katas'/><category term='karate'/><category term='life'/><category term='apprenticeship'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/03/are-coding-kata-really-worth-it'/><updated>2011-03-31T13:20:29+01:00</updated><id>http://chrismdp.com/2011/03/are-coding-kata-really-worth-it</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/03/are-coding-kata-really-worth-it" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Driving out feature ambiguity</title><category term='cucumber'/><category term='apprenticeship'/><category term='craftsmanship'/><category term='ambiguity'/><category term='katas'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2010/01/driving-out-feature-ambiguity'/><updated>2010-01-15T06:19:00+00:00</updated><id>http://chrismdp.com/2010/01/driving-out-feature-ambiguity</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/01/driving-out-feature-ambiguity" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Snakes and Ladders Kata</title><category term='katas'/><category term='fun'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2009/12/snakes-and-ladders-kata'/><updated>2009-12-20T22:20:00+00:00</updated><id>http://chrismdp.com/2009/12/snakes-and-ladders-kata</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2009/12/snakes-and-ladders-kata" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

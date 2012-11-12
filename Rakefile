@@ -85,7 +85,7 @@ layout: nil
   <updated>#{ posts.first.to_liquid['date'].xmlschema }</updated>
   <id>http://chrismdp.com/tag/#{category}</id>
   <author>
-    <name>Chris Parsons</name>
+    <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
   HTML
@@ -98,7 +98,7 @@ layout: nil
     end
     html += <<-HTML
     <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
     HTML

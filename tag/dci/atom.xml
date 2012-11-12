@@ -10,11 +10,11 @@ layout: nil
   <updated>2012-04-16T12:20:48+01:00</updated>
   <id>http://chrismdp.com/tag/dci</id>
   <author>
-    <name>Chris Parsons</name>
+    <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
 <entry><title>A fresh take on DCI with C++ (with example)</title><category term='coding'/><category term='c++'/><category term='craftsmanship'/><category term='dci'/><category term='sol trader'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/04/a-fresh-take-on-dci-with-c-plus-plus'/><updated>2012-04-16T12:20:48+01:00</updated><id>http://chrismdp.com/2012/04/a-fresh-take-on-dci-with-c-plus-plus</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/04/a-fresh-take-on-dci-with-c-plus-plus" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

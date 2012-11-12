@@ -10,15 +10,15 @@ layout: nil
   <updated>2012-09-21T13:25:13+01:00</updated>
   <id>http://chrismdp.com/tag/personal</id>
   <author>
-    <name>Chris Parsons</name>
+    <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
 <entry><title>Introducing Morning Pages</title><category term='life'/><category term='writing'/><category term='personal'/><category term='products'/><category term='productivity'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/09/introducing-morning-pages'/><updated>2012-09-21T13:25:13+01:00</updated><id>http://chrismdp.com/2012/09/introducing-morning-pages</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/introducing-morning-pages" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>750words.com + GTD = Focus</title><category term='personal'/><category term='life'/><category term='writing'/><category term='productivity'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2010/07/seven-hundred-and-fifty-words'/><updated>2010-07-12T22:45:00+01:00</updated><id>http://chrismdp.com/2010/07/seven-hundred-and-fifty-words</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/07/seven-hundred-and-fifty-words" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

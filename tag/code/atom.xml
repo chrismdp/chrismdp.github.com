@@ -10,131 +10,131 @@ layout: nil
   <updated>2012-09-28T20:46:31+01:00</updated>
   <id>http://chrismdp.com/tag/code</id>
   <author>
-    <name>Chris Parsons</name>
+    <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
 <entry><title>Your framework is a liability</title><category term='code'/><category term='craftsmanship'/><category term='lean'/><category term='ruby'/><category term='agile'/><category term='liability'/><category term='sinatra'/><category term='paypal'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/09/your-framework-is-a-liability'/><updated>2012-09-28T20:46:31+01:00</updated><id>http://chrismdp.com/2012/09/your-framework-is-a-liability</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/your-framework-is-a-liability" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Your code is a liability</title><category term='code'/><category term='craftsmanship'/><category term='lean'/><category term='agile'/><category term='team'/><category term='liability'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/09/code-is-a-liability'/><updated>2012-09-24T20:48:13+01:00</updated><id>http://chrismdp.com/2012/09/code-is-a-liability</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/code-is-a-liability" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Never leave a failing test</title><category term='tdd'/><category term='craftsmanship'/><category term='code'/><category term='testing'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/09/failing-tests-rot'/><updated>2012-09-20T15:36:32+01:00</updated><id>http://chrismdp.com/2012/09/failing-tests-rot</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/failing-tests-rot" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>The power of good naming</title><category term='code'/><category term='craftsmanship'/><category term='refactoring'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/09/the-power-of-good-naming'/><updated>2012-09-18T20:43:02+01:00</updated><id>http://chrismdp.com/2012/09/the-power-of-good-naming</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/the-power-of-good-naming" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Kickstart your team on BDD</title><category term='bddkickstart'/><category term='bdd'/><category term='cucumber'/><category term='code'/><category term='ruby'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/07/kickstart-your-team-on-bdd'/><updated>2012-07-27T08:13:22+01:00</updated><id>http://chrismdp.com/2012/07/kickstart-your-team-on-bdd</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/07/kickstart-your-team-on-bdd" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Waxing Lyrical on Pathfinding</title><category term='code'/><category term='conference'/><category term='fun'/><category term='software craftsmanship'/><category term='sc2012'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/05/waxing-lyrical-on-pathfinding'/><updated>2012-05-15T16:02:40+01:00</updated><id>http://chrismdp.com/2012/05/waxing-lyrical-on-pathfinding</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/05/waxing-lyrical-on-pathfinding" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>On coding defensively</title><category term='code'/><category term='ruby'/><category term='craftsmanship'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/02/on-coding-defensively'/><updated>2012-02-17T18:57:25+00:00</updated><id>http://chrismdp.com/2012/02/on-coding-defensively</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/02/on-coding-defensively" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Sol Trader: on lighting</title><category term='products'/><category term='c++'/><category term='code'/><category term='opengl'/><category term='sol trader'/><category term='game development'/><category term='lighting'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/02/sol-trading-lighting'/><updated>2012-02-14T22:56:43+00:00</updated><id>http://chrismdp.com/2012/02/sol-trading-lighting</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/02/sol-trading-lighting" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Effective bloom in OpenGL for Sol Trader</title><category term='products'/><category term='c++'/><category term='code'/><category term='opengl'/><category term='bloom'/><category term='sol trader'/><category term='game development'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/02/effective-bloom-in-open-gl-for-sol-trader'/><updated>2012-02-02T16:28:30+00:00</updated><id>http://chrismdp.com/2012/02/effective-bloom-in-open-gl-for-sol-trader</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/02/effective-bloom-in-open-gl-for-sol-trader" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Switching Sol Trader from Ruby to C++: one week on</title><category term='products'/><category term='ruby'/><category term='c++'/><category term='code'/><category term='sol trader'/><category term='game development'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on'/><updated>2012-01-16T09:38:25+00:00</updated><id>http://chrismdp.com/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Why I switched from Ruby back to C++</title><category term='products'/><category term='ruby'/><category term='c++'/><category term='code'/><category term='sol trader'/><category term='game development'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus'/><updated>2012-01-08T20:21:41+00:00</updated><id>http://chrismdp.com/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Introducing Sol Trader</title><category term='products'/><category term='code'/><category term='life'/><category term='sol trader'/><category term='game development'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/01/introducing-sol-trader'/><updated>2012-01-03T14:53:53+00:00</updated><id>http://chrismdp.com/2012/01/introducing-sol-trader</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/01/introducing-sol-trader" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>A cache-busting http server script in ruby</title><category term='code'/><category term='javascript'/><category term='ruby'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/12/cache-busting-ruby-http-server'/><updated>2011-12-14T16:57:43+00:00</updated><id>http://chrismdp.com/2011/12/cache-busting-ruby-http-server</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/12/cache-busting-ruby-http-server" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Feature writing: multiple actors</title><category term='bdd'/><category term='cucumber'/><category term='code'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/12/feature-writing-multiple-actors'/><updated>2011-12-08T11:01:23+00:00</updated><id>http://chrismdp.com/2011/12/feature-writing-multiple-actors</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/12/feature-writing-multiple-actors" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>How I'm testing iPhone apps: part 2</title><category term='code'/><category term='ios'/><category term='tdd'/><category term='bdd'/><category term='testing ios'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/12/how-im-testing-iphone-apps-part-2'/><updated>2011-12-06T16:02:54+00:00</updated><id>http://chrismdp.com/2011/12/how-im-testing-iphone-apps-part-2</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/12/how-im-testing-iphone-apps-part-2" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>How I'm testing iPhone apps: part 1</title><category term='code'/><category term='ios'/><category term='tdd'/><category term='bdd'/><category term='testing ios'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/12/how-im-testing-iphone-apps-part-1'/><updated>2011-12-01T22:45:35+00:00</updated><id>http://chrismdp.com/2011/12/how-im-testing-iphone-apps-part-1</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/12/how-im-testing-iphone-apps-part-1" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Your tests are lying to you</title><category term='code'/><category term='cucumber'/><category term='craftsmanship'/><category term='bdd'/><category term='rspec'/><category term='rails'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/10/your-tests-are-lying-to-you'/><updated>2011-10-17T19:10:29+01:00</updated><id>http://chrismdp.com/2011/10/your-tests-are-lying-to-you</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/10/your-tests-are-lying-to-you" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Kanogo: vapourware to beta in 24 hours</title><category term='code'/><category term='products'/><category term='business'/><category term='kano analysis'/><category term='rails'/><category term='heroku'/><category term='ruby'/><category term='kanogo'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/09/kanogo-vapourware-to-beta-in-24-hours'/><updated>2011-09-12T11:30:37+01:00</updated><id>http://chrismdp.com/2011/09/kanogo-vapourware-to-beta-in-24-hours</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/09/kanogo-vapourware-to-beta-in-24-hours" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Pin in the map: customisable pin icons</title><category term='code'/><category term='cucumber'/><category term='ruby'/><category term='legacy'/><category term='products'/><category term='pininthemap'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/09/pininthemap-customisable-pin-icons'/><updated>2011-09-06T21:18:13+01:00</updated><id>http://chrismdp.com/2011/09/pininthemap-customisable-pin-icons</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/09/pininthemap-customisable-pin-icons" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>e-petitions: handling traffic</title><category term='code'/><category term='scaling'/><category term='agile'/><category term='adn'/><category term='e-petitions'/><category term='government'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/08/e-petitions-handling-traffic'/><updated>2011-08-30T13:51:38+01:00</updated><id>http://chrismdp.com/2011/08/e-petitions-handling-traffic</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/08/e-petitions-handling-traffic" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Work with me</title><category term='code'/><category term='meta'/><category term='agile'/><category term='training'/><category term='life'/><category term='tdd'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/08/work-with-me'/><updated>2011-08-22T15:36:53+01:00</updated><id>http://chrismdp.com/2011/08/work-with-me</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/08/work-with-me" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>e-petitions: deconstructed</title><category term='code'/><category term='chef'/><category term='agile'/><category term='adn'/><category term='government'/><category term='e-petitions'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/07/e-petitions-deconstructed'/><updated>2011-07-29T15:57:09+01:00</updated><id>http://chrismdp.com/2011/07/e-petitions-deconstructed</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/07/e-petitions-deconstructed" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Lean code: slides and feedback</title><category term='code'/><category term='lean'/><category term='presentation'/><category term='software craftsmanship'/><category term='sc2011'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/05/lean-code-slides-and-feedback'/><updated>2011-05-26T21:35:40+01:00</updated><id>http://chrismdp.com/2011/05/lean-code-slides-and-feedback</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/05/lean-code-slides-and-feedback" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Pomodoros help you refactor</title><category term='code'/><category term='pomodoros'/><category term='tdd'/><category term='craftsmanship'/><category term='pairing'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/04/pomodoros-help-you-refactor'/><updated>2011-04-01T20:21:15+01:00</updated><id>http://chrismdp.com/2011/04/pomodoros-help-you-refactor</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/04/pomodoros-help-you-refactor" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Call for coders: Children's Future International</title><category term='code'/><category term='charity'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2010/10/childrens-future-international'/><updated>2010-10-18T19:42:33+01:00</updated><id>http://chrismdp.com/2010/10/childrens-future-international</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/10/childrens-future-international" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>How to test your node.js app</title><category term='javascript'/><category term='code'/><category term='tdd'/><category term='node.js'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2010/05/tdd-with-node-js'/><updated>2010-05-23T11:05:00+01:00</updated><id>http://chrismdp.com/2010/05/tdd-with-node-js</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/05/tdd-with-node-js" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Every Ash Cloud Has A Silver Lining</title><category term='travel'/><category term='chicago'/><category term='pairing'/><category term='code'/><category term='ashcloud'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2010/05/every-ash-cloud-has-a-silver-lining'/><updated>2010-05-12T15:05:00+01:00</updated><id>http://chrismdp.com/2010/05/every-ash-cloud-has-a-silver-lining</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/05/every-ash-cloud-has-a-silver-lining" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Radiating status at Eden</title><category term='agile'/><category term='code'/><category term='information radiator'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2010/03/radiating-stats-at-eden'/><updated>2010-03-22T13:55:00+00:00</updated><id>http://chrismdp.com/2010/03/radiating-stats-at-eden</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/03/radiating-stats-at-eden" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Five things I learnt from Corey Haines</title><category term='craftsmanship'/><category term='pairing'/><category term='code'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2010/03/pairing-with-corey-haines'/><updated>2010-03-17T10:18:00+00:00</updated><id>http://chrismdp.com/2010/03/pairing-with-corey-haines</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/03/pairing-with-corey-haines" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Archivey the Robot</title><category term='google wave'/><category term='code'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2010/03/archivey-the-robot'/><updated>2010-03-08T16:15:00+00:00</updated><id>http://chrismdp.com/2010/03/archivey-the-robot</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/03/archivey-the-robot" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Introducing Pushy - github notifications to google wave</title><category term='google wave'/><category term='code'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2010/03/introducing-pushy'/><updated>2010-03-07T20:18:00+00:00</updated><id>http://chrismdp.com/2010/03/introducing-pushy</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/03/introducing-pushy" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

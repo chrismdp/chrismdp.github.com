@@ -10,67 +10,67 @@ layout: nil
   <updated>2012-09-28T20:46:31+01:00</updated>
   <id>http://chrismdp.com/tag/agile</id>
   <author>
-    <name>Chris Parsons</name>
+    <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
 <entry><title>Your framework is a liability</title><category term='code'/><category term='craftsmanship'/><category term='lean'/><category term='ruby'/><category term='agile'/><category term='liability'/><category term='sinatra'/><category term='paypal'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/09/your-framework-is-a-liability'/><updated>2012-09-28T20:46:31+01:00</updated><id>http://chrismdp.com/2012/09/your-framework-is-a-liability</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/your-framework-is-a-liability" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Job titles are a team anti-pattern</title><category term='lean'/><category term='agile'/><category term='team'/><category term='anti-pattern'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/09/job-titles-team-anti-pattern'/><updated>2012-09-25T20:48:24+01:00</updated><id>http://chrismdp.com/2012/09/job-titles-team-anti-pattern</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/job-titles-team-anti-pattern" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Your code is a liability</title><category term='code'/><category term='craftsmanship'/><category term='lean'/><category term='agile'/><category term='team'/><category term='liability'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/09/code-is-a-liability'/><updated>2012-09-24T20:48:13+01:00</updated><id>http://chrismdp.com/2012/09/code-is-a-liability</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/code-is-a-liability" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Attempting validated learning with Sol Trader</title><category term='sol trader'/><category term='lean startup'/><category term='learning'/><category term='products'/><category term='agile'/><category term='lean'/><category term='business'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/05/attempting-validated-learning-with-sol-trader'/><updated>2012-05-14T10:18:47+01:00</updated><id>http://chrismdp.com/2012/05/attempting-validated-learning-with-sol-trader</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/05/attempting-validated-learning-with-sol-trader" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Sol Trader now in Alpha</title><category term='sol trader'/><category term='products'/><category term='agile'/><category term='lean'/><category term='lean startup'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/05/sol-trader-now-in-alpha'/><updated>2012-05-02T15:37:44+01:00</updated><id>http://chrismdp.com/2012/05/sol-trader-now-in-alpha</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/05/sol-trader-now-in-alpha" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Layers of abstraction: writing great cucumber code</title><category term='bdd'/><category term='cucumber'/><category term='agile'/><category term='ux'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/09/layers-of-abstraction-writing-great-cucumber-code'/><updated>2011-09-15T07:44:41+01:00</updated><id>http://chrismdp.com/2011/09/layers-of-abstraction-writing-great-cucumber-code</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/09/layers-of-abstraction-writing-great-cucumber-code" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Layers of abstraction: combining BDD and UX</title><category term='bdd'/><category term='cucumber'/><category term='agile'/><category term='ux'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/09/layers-of-abstraction-bdd-ux'/><updated>2011-09-05T20:44:03+01:00</updated><id>http://chrismdp.com/2011/09/layers-of-abstraction-bdd-ux</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/09/layers-of-abstraction-bdd-ux" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>e-petitions: handling traffic</title><category term='code'/><category term='scaling'/><category term='agile'/><category term='adn'/><category term='e-petitions'/><category term='government'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/08/e-petitions-handling-traffic'/><updated>2011-08-30T13:51:38+01:00</updated><id>http://chrismdp.com/2011/08/e-petitions-handling-traffic</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/08/e-petitions-handling-traffic" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Work with me</title><category term='code'/><category term='meta'/><category term='agile'/><category term='training'/><category term='life'/><category term='tdd'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/08/work-with-me'/><updated>2011-08-22T15:36:53+01:00</updated><id>http://chrismdp.com/2011/08/work-with-me</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/08/work-with-me" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>e-petitions: deconstructed</title><category term='code'/><category term='chef'/><category term='agile'/><category term='adn'/><category term='government'/><category term='e-petitions'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/07/e-petitions-deconstructed'/><updated>2011-07-29T15:57:09+01:00</updated><id>http://chrismdp.com/2011/07/e-petitions-deconstructed</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/07/e-petitions-deconstructed" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Cucumbers with personality</title><category term='cucumber'/><category term='personas'/><category term='agile'/><category term='ux'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/04/cucumbers-with-personality'/><updated>2011-04-18T15:17:31+01:00</updated><id>http://chrismdp.com/2011/04/cucumbers-with-personality</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/04/cucumbers-with-personality" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Card Of The Day: Actually Do Retrospective Actions</title><category term='agile'/><category term='retrospectives'/><category term='process'/><category term='index cards'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2010/07/card-of-the-day'/><updated>2010-07-22T10:45:00+01:00</updated><id>http://chrismdp.com/2010/07/card-of-the-day</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/07/card-of-the-day" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Radiating status at Eden</title><category term='agile'/><category term='code'/><category term='information radiator'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2010/03/radiating-stats-at-eden'/><updated>2010-03-22T13:55:00+00:00</updated><id>http://chrismdp.com/2010/03/radiating-stats-at-eden</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/03/radiating-stats-at-eden" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>The Story Card Is Not The Story</title><category term='xp'/><category term='agile'/><category term='pivotal tracker'/><category term='balsamiq'/><category term='basecamp'/><category term='stories'/><category term='kanban'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2010/02/the-story-card-is-not-the-story'/><updated>2010-02-11T15:55:00+00:00</updated><id>http://chrismdp.com/2010/02/the-story-card-is-not-the-story</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/02/the-story-card-is-not-the-story" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Pairing works for everything</title><category term='pairing'/><category term='xp'/><category term='agile'/><category term='productivity'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2010/01/pairing-works-for-everything'/><updated>2010-01-27T11:28:00+00:00</updated><id>http://chrismdp.com/2010/01/pairing-works-for-everything</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/01/pairing-works-for-everything" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

@@ -10,51 +10,51 @@ layout: nil
   <updated>2006-04-11T16:25:00+01:00</updated>
   <id>http://chrismdp.com/tag/tutorial</id>
   <author>
-    <name>Chris Parsons</name>
+    <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
 <entry><title>Spring Richclient ~ That's a wrap</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2006/04/spring-rc-thats-a-wrap'/><updated>2006-04-11T16:25:00+01:00</updated><id>http://chrismdp.com/2006/04/spring-rc-thats-a-wrap</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2006/04/spring-rc-thats-a-wrap" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Spring Richclient ~ A Journey</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2006/04/spring-richclient'/><updated>2006-04-01T13:00:00+01:00</updated><id>http://chrismdp.com/2006/04/spring-richclient</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2006/04/spring-richclient" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Spring Richclient ~ Session Eight ~ Such a bind</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2006/03/spring-rc-session-eight'/><updated>2006-03-09T09:46:00+00:00</updated><id>http://chrismdp.com/2006/03/spring-rc-session-eight</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2006/03/spring-rc-session-eight" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Spring Richclient ~ Session Seven ~ Beating the Command Framework into Submission</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2006/03/spring-rc-session-seven'/><updated>2006-03-02T17:12:00+00:00</updated><id>http://chrismdp.com/2006/03/spring-rc-session-seven</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2006/03/spring-rc-session-seven" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Spring Richclient ~ Session Six ~ The View</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2006/02/spring-rc-session-six'/><updated>2006-02-10T10:07:00+00:00</updated><id>http://chrismdp.com/2006/02/spring-rc-session-six</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2006/02/spring-rc-session-six" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Spring Richclient ~ Session Five ~ Applications, windows, views</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2006/02/spring-rc-session-five'/><updated>2006-02-03T15:21:00+00:00</updated><id>http://chrismdp.com/2006/02/spring-rc-session-five</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2006/02/spring-rc-session-five" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Spring Richclient ~ Session One ~ Beans, Shmeans and services</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2006/01/spring-rc-session-four'/><updated>2006-01-28T12:48:00+00:00</updated><id>http://chrismdp.com/2006/01/spring-rc-session-four</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2006/01/spring-rc-session-four" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Spring Richclient ~ Session Three ~ How did that work then?</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2006/01/spring-rc-session-three'/><updated>2006-01-26T23:09:00+00:00</updated><id>http://chrismdp.com/2006/01/spring-rc-session-three</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2006/01/spring-rc-session-three" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Spring Richclient ~ Session Two ~ Hello World</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2006/01/spring-rc-session-two'/><updated>2006-01-24T14:40:00+00:00</updated><id>http://chrismdp.com/2006/01/spring-rc-session-two</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2006/01/spring-rc-session-two" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Spring Richclient ~ Session One ~ Making Petclinic work</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2006/01/spring-rc-session-one'/><updated>2006-01-23T14:31:00+00:00</updated><id>http://chrismdp.com/2006/01/spring-rc-session-one</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2006/01/spring-rc-session-one" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Spring Richclient ~ Introduction</title><category term='richclient'/><category term='java'/><category term='spring'/><category term='tutorial'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2006/01/spring-rc-introduction'/><updated>2006-01-23T12:36:00+00:00</updated><id>http://chrismdp.com/2006/01/spring-rc-introduction</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2006/01/spring-rc-introduction" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

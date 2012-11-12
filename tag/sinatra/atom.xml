@@ -10,11 +10,11 @@ layout: nil
   <updated>2012-09-28T20:46:31+01:00</updated>
   <id>http://chrismdp.com/tag/sinatra</id>
   <author>
-    <name>Chris Parsons</name>
+    <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
 <entry><title>Your framework is a liability</title><category term='code'/><category term='craftsmanship'/><category term='lean'/><category term='ruby'/><category term='agile'/><category term='liability'/><category term='sinatra'/><category term='paypal'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/09/your-framework-is-a-liability'/><updated>2012-09-28T20:46:31+01:00</updated><id>http://chrismdp.com/2012/09/your-framework-is-a-liability</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/your-framework-is-a-liability" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

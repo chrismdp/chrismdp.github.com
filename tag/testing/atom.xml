@@ -10,15 +10,15 @@ layout: nil
   <updated>2012-09-20T15:36:32+01:00</updated>
   <id>http://chrismdp.com/tag/testing</id>
   <author>
-    <name>Chris Parsons</name>
+    <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
 <entry><title>Never leave a failing test</title><category term='tdd'/><category term='craftsmanship'/><category term='code'/><category term='testing'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/09/failing-tests-rot'/><updated>2012-09-20T15:36:32+01:00</updated><id>http://chrismdp.com/2012/09/failing-tests-rot</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/failing-tests-rot" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Cucumber isn't a testing tool</title><category term='cucumber'/><category term='business'/><category term='bdd'/><category term='team'/><category term='testing'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/09/cucumber-isnt-a-testing-tool'/><updated>2012-09-19T17:41:22+01:00</updated><id>http://chrismdp.com/2012/09/cucumber-isnt-a-testing-tool</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/cucumber-isnt-a-testing-tool" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

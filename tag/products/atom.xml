@@ -10,55 +10,55 @@ layout: nil
   <updated>2012-09-21T13:25:13+01:00</updated>
   <id>http://chrismdp.com/tag/products</id>
   <author>
-    <name>Chris Parsons</name>
+    <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
 <entry><title>Introducing Morning Pages</title><category term='life'/><category term='writing'/><category term='personal'/><category term='products'/><category term='productivity'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/09/introducing-morning-pages'/><updated>2012-09-21T13:25:13+01:00</updated><id>http://chrismdp.com/2012/09/introducing-morning-pages</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/introducing-morning-pages" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Showroom software</title><category term='products'/><category term='business'/><category term='lean'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/09/showroom-software'/><updated>2012-09-17T20:34:12+01:00</updated><id>http://chrismdp.com/2012/09/showroom-software</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/showroom-software" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Attempting validated learning with Sol Trader</title><category term='sol trader'/><category term='lean startup'/><category term='learning'/><category term='products'/><category term='agile'/><category term='lean'/><category term='business'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/05/attempting-validated-learning-with-sol-trader'/><updated>2012-05-14T10:18:47+01:00</updated><id>http://chrismdp.com/2012/05/attempting-validated-learning-with-sol-trader</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/05/attempting-validated-learning-with-sol-trader" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Sol Trader now in Alpha</title><category term='sol trader'/><category term='products'/><category term='agile'/><category term='lean'/><category term='lean startup'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/05/sol-trader-now-in-alpha'/><updated>2012-05-02T15:37:44+01:00</updated><id>http://chrismdp.com/2012/05/sol-trader-now-in-alpha</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/05/sol-trader-now-in-alpha" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Sol Trader: a continuous deployment story</title><category term='sol trader'/><category term='windows'/><category term='jenkins'/><category term='products'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/03/sol-trader-continuous-deployment'/><updated>2012-03-23T12:13:27+00:00</updated><id>http://chrismdp.com/2012/03/sol-trader-continuous-deployment</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/03/sol-trader-continuous-deployment" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Sol Trader: on lighting</title><category term='products'/><category term='c++'/><category term='code'/><category term='opengl'/><category term='sol trader'/><category term='game development'/><category term='lighting'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/02/sol-trading-lighting'/><updated>2012-02-14T22:56:43+00:00</updated><id>http://chrismdp.com/2012/02/sol-trading-lighting</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/02/sol-trading-lighting" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Effective bloom in OpenGL for Sol Trader</title><category term='products'/><category term='c++'/><category term='code'/><category term='opengl'/><category term='bloom'/><category term='sol trader'/><category term='game development'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/02/effective-bloom-in-open-gl-for-sol-trader'/><updated>2012-02-02T16:28:30+00:00</updated><id>http://chrismdp.com/2012/02/effective-bloom-in-open-gl-for-sol-trader</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/02/effective-bloom-in-open-gl-for-sol-trader" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Switching Sol Trader from Ruby to C++: one week on</title><category term='products'/><category term='ruby'/><category term='c++'/><category term='code'/><category term='sol trader'/><category term='game development'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on'/><updated>2012-01-16T09:38:25+00:00</updated><id>http://chrismdp.com/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Why I switched from Ruby back to C++</title><category term='products'/><category term='ruby'/><category term='c++'/><category term='code'/><category term='sol trader'/><category term='game development'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus'/><updated>2012-01-08T20:21:41+00:00</updated><id>http://chrismdp.com/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Introducing Sol Trader</title><category term='products'/><category term='code'/><category term='life'/><category term='sol trader'/><category term='game development'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/01/introducing-sol-trader'/><updated>2012-01-03T14:53:53+00:00</updated><id>http://chrismdp.com/2012/01/introducing-sol-trader</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/01/introducing-sol-trader" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Kanogo: vapourware to beta in 24 hours</title><category term='code'/><category term='products'/><category term='business'/><category term='kano analysis'/><category term='rails'/><category term='heroku'/><category term='ruby'/><category term='kanogo'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/09/kanogo-vapourware-to-beta-in-24-hours'/><updated>2011-09-12T11:30:37+01:00</updated><id>http://chrismdp.com/2011/09/kanogo-vapourware-to-beta-in-24-hours</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/09/kanogo-vapourware-to-beta-in-24-hours" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Pin in the map: customisable pin icons</title><category term='code'/><category term='cucumber'/><category term='ruby'/><category term='legacy'/><category term='products'/><category term='pininthemap'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/09/pininthemap-customisable-pin-icons'/><updated>2011-09-06T21:18:13+01:00</updated><id>http://chrismdp.com/2011/09/pininthemap-customisable-pin-icons</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/09/pininthemap-customisable-pin-icons" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

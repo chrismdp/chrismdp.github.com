@@ -10,11 +10,11 @@ layout: nil
   <updated>2010-07-29T09:45:00+01:00</updated>
   <id>http://chrismdp.com/tag/sleep</id>
   <author>
-    <name>Chris Parsons</name>
+    <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
 <entry><title>My Polyphasic Sleep Experiment</title><category term='productivity'/><category term='life'/><category term='sleep'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2010/07/polyphasic-sleep-experiment'/><updated>2010-07-29T09:45:00+01:00</updated><id>http://chrismdp.com/2010/07/polyphasic-sleep-experiment</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/07/polyphasic-sleep-experiment" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

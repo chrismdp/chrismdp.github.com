@@ -10,11 +10,11 @@ layout: nil
   <updated>2009-12-23T21:41:00+00:00</updated>
   <id>http://chrismdp.com/tag/Peter Drucker</id>
   <author>
-    <name>Chris Parsons</name>
+    <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
 <entry><title>R.I.P. Web 1.0</title><category term='ux'/><category term='business'/><category term='Peter Drucker'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2009/12/rip-web-1-0'/><updated>2009-12-23T21:41:00+00:00</updated><id>http://chrismdp.com/2009/12/rip-web-1-0</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2009/12/rip-web-1-0" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

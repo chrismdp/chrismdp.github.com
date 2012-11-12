@@ -10,27 +10,27 @@ layout: nil
   <updated>2012-09-14T14:06:40+01:00</updated>
   <id>http://chrismdp.com/tag/pairing</id>
   <author>
-    <name>Chris Parsons</name>
+    <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
 <entry><title>Task assignment is a team anti-pattern</title><category term='process'/><category term='productivity'/><category term='pairing'/><category term='team'/><category term='anti-pattern'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/09/task-assignment-is-a-team-anti-pattern'/><updated>2012-09-14T14:06:40+01:00</updated><id>http://chrismdp.com/2012/09/task-assignment-is-a-team-anti-pattern</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/task-assignment-is-a-team-anti-pattern" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Pomodoros help you refactor</title><category term='code'/><category term='pomodoros'/><category term='tdd'/><category term='craftsmanship'/><category term='pairing'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/04/pomodoros-help-you-refactor'/><updated>2011-04-01T20:21:15+01:00</updated><id>http://chrismdp.com/2011/04/pomodoros-help-you-refactor</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/04/pomodoros-help-you-refactor" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Every Ash Cloud Has A Silver Lining</title><category term='travel'/><category term='chicago'/><category term='pairing'/><category term='code'/><category term='ashcloud'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2010/05/every-ash-cloud-has-a-silver-lining'/><updated>2010-05-12T15:05:00+01:00</updated><id>http://chrismdp.com/2010/05/every-ash-cloud-has-a-silver-lining</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/05/every-ash-cloud-has-a-silver-lining" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Five things I learnt from Corey Haines</title><category term='craftsmanship'/><category term='pairing'/><category term='code'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2010/03/pairing-with-corey-haines'/><updated>2010-03-17T10:18:00+00:00</updated><id>http://chrismdp.com/2010/03/pairing-with-corey-haines</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/03/pairing-with-corey-haines" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Pairing works for everything</title><category term='pairing'/><category term='xp'/><category term='agile'/><category term='productivity'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2010/01/pairing-works-for-everything'/><updated>2010-01-27T11:28:00+00:00</updated><id>http://chrismdp.com/2010/01/pairing-works-for-everything</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/01/pairing-works-for-everything" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

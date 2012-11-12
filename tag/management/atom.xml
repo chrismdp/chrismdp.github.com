@@ -10,11 +10,11 @@ layout: nil
   <updated>2012-10-04T07:49:57+01:00</updated>
   <id>http://chrismdp.com/tag/management</id>
   <author>
-    <name>Chris Parsons</name>
+    <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
 <entry><title>Delegated tasks are a team anti-pattern</title><category term='team'/><category term='anti-pattern'/><category term='process'/><category term='management'/><category term='leadership'/><category term='productivity'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/10/delegated-tasks-are-a-team-anti-pattern'/><updated>2012-10-04T07:49:57+01:00</updated><id>http://chrismdp.com/2012/10/delegated-tasks-are-a-team-anti-pattern</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/10/delegated-tasks-are-a-team-anti-pattern" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

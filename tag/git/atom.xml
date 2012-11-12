@@ -10,11 +10,11 @@ layout: nil
   <updated>2010-11-02T15:35:27+00:00</updated>
   <id>http://chrismdp.com/tag/git</id>
   <author>
-    <name>Chris Parsons</name>
+    <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
 <entry><title>How I'm writing my book using Vim, Git and Ruby</title><category term='git'/><category term='ruby'/><category term='writing'/><category term='pragprowrimo'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2010/11/how-im-writing-my-book-using-git-and-ruby'/><updated>2010-11-02T15:35:27+00:00</updated><id>http://chrismdp.com/2010/11/how-im-writing-my-book-using-git-and-ruby</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/11/how-im-writing-my-book-using-git-and-ruby" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

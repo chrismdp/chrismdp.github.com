@@ -10,19 +10,19 @@ layout: nil
   <updated>2011-04-15T10:39:35+01:00</updated>
   <id>http://chrismdp.com/tag/pomodoros</id>
   <author>
-    <name>Chris Parsons</name>
+    <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
 <entry><title>A formula of motivation</title><category term='productivity'/><category term='pomodoros'/><category term='life'/><category term='gtd'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/04/a-formula-of-motivation'/><updated>2011-04-15T10:39:35+01:00</updated><id>http://chrismdp.com/2011/04/a-formula-of-motivation</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/04/a-formula-of-motivation" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>On the nature of time</title><category term='pomodoros'/><category term='life'/><category term='productivity'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/04/on-the-nature-of-time'/><updated>2011-04-04T14:27:24+01:00</updated><id>http://chrismdp.com/2011/04/on-the-nature-of-time</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/04/on-the-nature-of-time" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Pomodoros help you refactor</title><category term='code'/><category term='pomodoros'/><category term='tdd'/><category term='craftsmanship'/><category term='pairing'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2011/04/pomodoros-help-you-refactor'/><updated>2011-04-01T20:21:15+01:00</updated><id>http://chrismdp.com/2011/04/pomodoros-help-you-refactor</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/04/pomodoros-help-you-refactor" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

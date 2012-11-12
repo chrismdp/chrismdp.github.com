@@ -10,11 +10,11 @@ layout: nil
   <updated>2012-02-14T22:56:43+00:00</updated>
   <id>http://chrismdp.com/tag/lighting</id>
   <author>
-    <name>Chris Parsons</name>
+    <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
 <entry><title>Sol Trader: on lighting</title><category term='products'/><category term='c++'/><category term='code'/><category term='opengl'/><category term='sol trader'/><category term='game development'/><category term='lighting'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/02/sol-trading-lighting'/><updated>2012-02-14T22:56:43+00:00</updated><id>http://chrismdp.com/2012/02/sol-trading-lighting</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/02/sol-trading-lighting" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

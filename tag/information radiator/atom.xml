@@ -10,15 +10,15 @@ layout: nil
   <updated>2010-03-29T22:05:00+01:00</updated>
   <id>http://chrismdp.com/tag/information radiator</id>
   <author>
-    <name>Chris Parsons</name>
+    <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
 <entry><title>Announcing edash</title><category term='information radiator'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2010/03/announcing-edash'/><updated>2010-03-29T22:05:00+01:00</updated><id>http://chrismdp.com/2010/03/announcing-edash</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/03/announcing-edash" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Radiating status at Eden</title><category term='agile'/><category term='code'/><category term='information radiator'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2010/03/radiating-stats-at-eden'/><updated>2010-03-22T13:55:00+00:00</updated><id>http://chrismdp.com/2010/03/radiating-stats-at-eden</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/03/radiating-stats-at-eden" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>

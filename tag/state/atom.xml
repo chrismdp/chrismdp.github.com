@@ -10,11 +10,11 @@ layout: nil
   <updated>2012-11-07T23:50:39+00:00</updated>
   <id>http://chrismdp.com/tag/state</id>
   <author>
-    <name>Chris Parsons</name>
+    <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
 <entry><title>Should we store state in our steps?</title><category term='cucumber'/><category term='bdd'/><category term='ruby'/><category term='state'/>    <author>
-      <name>Chris Parsons</name>
+      <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2012/11/storing-state-in-your-steps'/><updated>2012-11-07T23:50:39+00:00</updated><id>http://chrismdp.com/2012/11/storing-state-in-your-steps</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/11/storing-state-in-your-steps" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>
