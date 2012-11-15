@@ -13,8 +13,22 @@ layout: nil
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>Attempting validated learning with Sol Trader</title><category term='sol trader'/><category term='lean startup'/><category term='learning'/><category term='products'/><category term='agile'/><category term='lean'/><category term='business'/>    <author>
+<entry>
+<title>Attempting validated learning with Sol Trader</title>
+<category term='sol trader'/>
+<category term='lean startup'/>
+<category term='learning'/>
+<category term='products'/>
+<category term='agile'/>
+<category term='lean'/>
+<category term='business'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/05/attempting-validated-learning-with-sol-trader'/><updated>2012-05-14T10:18:47+01:00</updated><id>http://chrismdp.com/2012/05/attempting-validated-learning-with-sol-trader</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/05/attempting-validated-learning-with-sol-trader" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>
+<link href='http://chrismdp.com/2012/05/attempting-validated-learning-with-sol-trader'/>
+<updated>2012-05-14T10:18:47+01:00</updated>
+<id>http://chrismdp.com/2012/05/attempting-validated-learning-with-sol-trader</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/05/attempting-validated-learning-with-sol-trader" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+</feed>

@@ -13,8 +13,20 @@ layout: nil
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>Every Ash Cloud Has A Silver Lining</title><category term='travel'/><category term='chicago'/><category term='pairing'/><category term='code'/><category term='ashcloud'/>    <author>
+<entry>
+<title>Every Ash Cloud Has A Silver Lining</title>
+<category term='travel'/>
+<category term='chicago'/>
+<category term='pairing'/>
+<category term='code'/>
+<category term='ashcloud'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/05/every-ash-cloud-has-a-silver-lining'/><updated>2010-05-12T15:05:00+01:00</updated><id>http://chrismdp.com/2010/05/every-ash-cloud-has-a-silver-lining</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/05/every-ash-cloud-has-a-silver-lining" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>
+<link href='http://chrismdp.com/2010/05/every-ash-cloud-has-a-silver-lining'/>
+<updated>2010-05-12T15:05:00+01:00</updated>
+<id>http://chrismdp.com/2010/05/every-ash-cloud-has-a-silver-lining</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2010/05/every-ash-cloud-has-a-silver-lining" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+</feed>

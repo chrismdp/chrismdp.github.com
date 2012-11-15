@@ -13,8 +13,23 @@ layout: nil
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>Kanogo: vapourware to beta in 24 hours</title><category term='code'/><category term='products'/><category term='business'/><category term='kano analysis'/><category term='rails'/><category term='heroku'/><category term='ruby'/><category term='kanogo'/>    <author>
+<entry>
+<title>Kanogo: vapourware to beta in 24 hours</title>
+<category term='code'/>
+<category term='products'/>
+<category term='business'/>
+<category term='kano analysis'/>
+<category term='rails'/>
+<category term='heroku'/>
+<category term='ruby'/>
+<category term='kanogo'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/09/kanogo-vapourware-to-beta-in-24-hours'/><updated>2011-09-12T11:30:37+01:00</updated><id>http://chrismdp.com/2011/09/kanogo-vapourware-to-beta-in-24-hours</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/09/kanogo-vapourware-to-beta-in-24-hours" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>
+<link href='http://chrismdp.com/2011/09/kanogo-vapourware-to-beta-in-24-hours'/>
+<updated>2011-09-12T11:30:37+01:00</updated>
+<id>http://chrismdp.com/2011/09/kanogo-vapourware-to-beta-in-24-hours</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2011/09/kanogo-vapourware-to-beta-in-24-hours" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+</feed>

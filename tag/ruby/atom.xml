@@ -13,48 +13,183 @@ layout: nil
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>Should we store state in our steps?</title><category term='cucumber'/><category term='bdd'/><category term='ruby'/><category term='state'/>    <author>
+<entry>
+<title>Should we store state in our steps?</title>
+<category term='cucumber'/>
+<category term='bdd'/>
+<category term='ruby'/>
+<category term='state'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/11/storing-state-in-your-steps'/><updated>2012-11-07T23:50:39+00:00</updated><id>http://chrismdp.com/2012/11/storing-state-in-your-steps</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/11/storing-state-in-your-steps" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Your framework is a liability</title><category term='code'/><category term='craftsmanship'/><category term='lean'/><category term='ruby'/><category term='agile'/><category term='liability'/><category term='sinatra'/><category term='paypal'/>    <author>
+<link href='http://chrismdp.com/2012/11/storing-state-in-your-steps'/>
+<updated>2012-11-07T23:50:39+00:00</updated>
+<id>http://chrismdp.com/2012/11/storing-state-in-your-steps</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/11/storing-state-in-your-steps" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Your framework is a liability</title>
+<category term='code'/>
+<category term='craftsmanship'/>
+<category term='lean'/>
+<category term='ruby'/>
+<category term='agile'/>
+<category term='liability'/>
+<category term='sinatra'/>
+<category term='paypal'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/09/your-framework-is-a-liability'/><updated>2012-09-28T20:46:31+01:00</updated><id>http://chrismdp.com/2012/09/your-framework-is-a-liability</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/your-framework-is-a-liability" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Kickstart your team on BDD</title><category term='bddkickstart'/><category term='bdd'/><category term='cucumber'/><category term='code'/><category term='ruby'/>    <author>
+<link href='http://chrismdp.com/2012/09/your-framework-is-a-liability'/>
+<updated>2012-09-28T20:46:31+01:00</updated>
+<id>http://chrismdp.com/2012/09/your-framework-is-a-liability</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/your-framework-is-a-liability" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Kickstart your team on BDD</title>
+<category term='bddkickstart'/>
+<category term='bdd'/>
+<category term='cucumber'/>
+<category term='code'/>
+<category term='ruby'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/07/kickstart-your-team-on-bdd'/><updated>2012-07-27T08:13:22+01:00</updated><id>http://chrismdp.com/2012/07/kickstart-your-team-on-bdd</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/07/kickstart-your-team-on-bdd" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>On coding defensively</title><category term='code'/><category term='ruby'/><category term='craftsmanship'/>    <author>
+<link href='http://chrismdp.com/2012/07/kickstart-your-team-on-bdd'/>
+<updated>2012-07-27T08:13:22+01:00</updated>
+<id>http://chrismdp.com/2012/07/kickstart-your-team-on-bdd</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/07/kickstart-your-team-on-bdd" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>On coding defensively</title>
+<category term='code'/>
+<category term='ruby'/>
+<category term='craftsmanship'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/02/on-coding-defensively'/><updated>2012-02-17T18:57:25+00:00</updated><id>http://chrismdp.com/2012/02/on-coding-defensively</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/02/on-coding-defensively" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Switching Sol Trader from Ruby to C++: one week on</title><category term='products'/><category term='ruby'/><category term='c++'/><category term='code'/><category term='sol trader'/><category term='game development'/>    <author>
+<link href='http://chrismdp.com/2012/02/on-coding-defensively'/>
+<updated>2012-02-17T18:57:25+00:00</updated>
+<id>http://chrismdp.com/2012/02/on-coding-defensively</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/02/on-coding-defensively" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Switching Sol Trader from Ruby to C++: one week on</title>
+<category term='products'/>
+<category term='ruby'/>
+<category term='c++'/>
+<category term='code'/>
+<category term='sol trader'/>
+<category term='game development'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on'/><updated>2012-01-16T09:38:25+00:00</updated><id>http://chrismdp.com/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Why I switched from Ruby back to C++</title><category term='products'/><category term='ruby'/><category term='c++'/><category term='code'/><category term='sol trader'/><category term='game development'/>    <author>
+<link href='http://chrismdp.com/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on'/>
+<updated>2012-01-16T09:38:25+00:00</updated>
+<id>http://chrismdp.com/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Why I switched from Ruby back to C++</title>
+<category term='products'/>
+<category term='ruby'/>
+<category term='c++'/>
+<category term='code'/>
+<category term='sol trader'/>
+<category term='game development'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus'/><updated>2012-01-08T20:21:41+00:00</updated><id>http://chrismdp.com/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>A cache-busting http server script in ruby</title><category term='code'/><category term='javascript'/><category term='ruby'/>    <author>
+<link href='http://chrismdp.com/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus'/>
+<updated>2012-01-08T20:21:41+00:00</updated>
+<id>http://chrismdp.com/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>A cache-busting http server script in ruby</title>
+<category term='code'/>
+<category term='javascript'/>
+<category term='ruby'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/12/cache-busting-ruby-http-server'/><updated>2011-12-14T16:57:43+00:00</updated><id>http://chrismdp.com/2011/12/cache-busting-ruby-http-server</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/12/cache-busting-ruby-http-server" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Kanogo: vapourware to beta in 24 hours</title><category term='code'/><category term='products'/><category term='business'/><category term='kano analysis'/><category term='rails'/><category term='heroku'/><category term='ruby'/><category term='kanogo'/>    <author>
+<link href='http://chrismdp.com/2011/12/cache-busting-ruby-http-server'/>
+<updated>2011-12-14T16:57:43+00:00</updated>
+<id>http://chrismdp.com/2011/12/cache-busting-ruby-http-server</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2011/12/cache-busting-ruby-http-server" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Kanogo: vapourware to beta in 24 hours</title>
+<category term='code'/>
+<category term='products'/>
+<category term='business'/>
+<category term='kano analysis'/>
+<category term='rails'/>
+<category term='heroku'/>
+<category term='ruby'/>
+<category term='kanogo'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/09/kanogo-vapourware-to-beta-in-24-hours'/><updated>2011-09-12T11:30:37+01:00</updated><id>http://chrismdp.com/2011/09/kanogo-vapourware-to-beta-in-24-hours</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/09/kanogo-vapourware-to-beta-in-24-hours" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Pin in the map: customisable pin icons</title><category term='code'/><category term='cucumber'/><category term='ruby'/><category term='legacy'/><category term='products'/><category term='pininthemap'/>    <author>
+<link href='http://chrismdp.com/2011/09/kanogo-vapourware-to-beta-in-24-hours'/>
+<updated>2011-09-12T11:30:37+01:00</updated>
+<id>http://chrismdp.com/2011/09/kanogo-vapourware-to-beta-in-24-hours</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2011/09/kanogo-vapourware-to-beta-in-24-hours" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Pin in the map: customisable pin icons</title>
+<category term='code'/>
+<category term='cucumber'/>
+<category term='ruby'/>
+<category term='legacy'/>
+<category term='products'/>
+<category term='pininthemap'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/09/pininthemap-customisable-pin-icons'/><updated>2011-09-06T21:18:13+01:00</updated><id>http://chrismdp.com/2011/09/pininthemap-customisable-pin-icons</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/09/pininthemap-customisable-pin-icons" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>How to get Spork working NOW on Rails 3, Rspec 2 and Cucumber</title><category term='rails'/><category term='ruby'/><category term='rspec'/><category term='spork'/><category term='cucumber'/>    <author>
+<link href='http://chrismdp.com/2011/09/pininthemap-customisable-pin-icons'/>
+<updated>2011-09-06T21:18:13+01:00</updated>
+<id>http://chrismdp.com/2011/09/pininthemap-customisable-pin-icons</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2011/09/pininthemap-customisable-pin-icons" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>How to get Spork working NOW on Rails 3, Rspec 2 and Cucumber</title>
+<category term='rails'/>
+<category term='ruby'/>
+<category term='rspec'/>
+<category term='spork'/>
+<category term='cucumber'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/11/getting-spork-working-now-on-rails-3-rspec-2-and-cucumber'/><updated>2010-11-16T21:41:57+00:00</updated><id>http://chrismdp.com/2010/11/getting-spork-working-now-on-rails-3-rspec-2-and-cucumber</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/11/getting-spork-working-now-on-rails-3-rspec-2-and-cucumber" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>How I'm writing my book using Vim, Git and Ruby</title><category term='git'/><category term='ruby'/><category term='writing'/><category term='pragprowrimo'/>    <author>
+<link href='http://chrismdp.com/2010/11/getting-spork-working-now-on-rails-3-rspec-2-and-cucumber'/>
+<updated>2010-11-16T21:41:57+00:00</updated>
+<id>http://chrismdp.com/2010/11/getting-spork-working-now-on-rails-3-rspec-2-and-cucumber</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2010/11/getting-spork-working-now-on-rails-3-rspec-2-and-cucumber" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>How I'm writing my book using Vim, Git and Ruby</title>
+<category term='git'/>
+<category term='ruby'/>
+<category term='writing'/>
+<category term='pragprowrimo'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/11/how-im-writing-my-book-using-git-and-ruby'/><updated>2010-11-02T15:35:27+00:00</updated><id>http://chrismdp.com/2010/11/how-im-writing-my-book-using-git-and-ruby</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/11/how-im-writing-my-book-using-git-and-ruby" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>
+<link href='http://chrismdp.com/2010/11/how-im-writing-my-book-using-git-and-ruby'/>
+<updated>2010-11-02T15:35:27+00:00</updated>
+<id>http://chrismdp.com/2010/11/how-im-writing-my-book-using-git-and-ruby</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2010/11/how-im-writing-my-book-using-git-and-ruby" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+</feed>

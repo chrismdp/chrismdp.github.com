@@ -7,62 +7,225 @@ layout: nil
   <title>Chris Parsons: posts tagged cucumber</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2012-11-07T23:50:39+00:00</updated>
+  <updated>2012-11-15T17:04:26+00:00</updated>
   <id>http://chrismdp.com/tag/cucumber</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>Should we store state in our steps?</title><category term='cucumber'/><category term='bdd'/><category term='ruby'/><category term='state'/>    <author>
+<entry>
+<title>Cucumber: the integration testing trap</title>
+<category term='cucumber'/>
+<category term='bdd'/>
+<category term='testing'/>
+<category term='tdd'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/11/storing-state-in-your-steps'/><updated>2012-11-07T23:50:39+00:00</updated><id>http://chrismdp.com/2012/11/storing-state-in-your-steps</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/11/storing-state-in-your-steps" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>How to write a great story</title><category term='cucumber'/><category term='bdd'/><category term='bddkickstart'/>    <author>
+<link href='http://chrismdp.com/2012/11/the-integration-testing-trap'/>
+<updated>2012-11-15T17:04:26+00:00</updated>
+<id>http://chrismdp.com/2012/11/the-integration-testing-trap</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/11/the-integration-testing-trap" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Should we store state in our steps?</title>
+<category term='cucumber'/>
+<category term='bdd'/>
+<category term='ruby'/>
+<category term='state'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/10/how-to-write-a-great-story'/><updated>2012-10-30T22:50:00+00:00</updated><id>http://chrismdp.com/2012/10/how-to-write-a-great-story</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/10/how-to-write-a-great-story" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>The simplest Cucumber project ever</title><category term='cucumber'/><category term='bdd'/><category term='bddkickstart'/>    <author>
+<link href='http://chrismdp.com/2012/11/storing-state-in-your-steps'/>
+<updated>2012-11-07T23:50:39+00:00</updated>
+<id>http://chrismdp.com/2012/11/storing-state-in-your-steps</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/11/storing-state-in-your-steps" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>How to write a great story</title>
+<category term='cucumber'/>
+<category term='bdd'/>
+<category term='bddkickstart'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/10/the-simplest-cucumber-project'/><updated>2012-10-25T20:47:16+01:00</updated><id>http://chrismdp.com/2012/10/the-simplest-cucumber-project</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/10/the-simplest-cucumber-project" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Cucumber isn't a testing tool</title><category term='cucumber'/><category term='business'/><category term='bdd'/><category term='team'/><category term='testing'/>    <author>
+<link href='http://chrismdp.com/2012/10/how-to-write-a-great-story'/>
+<updated>2012-10-30T22:50:00+00:00</updated>
+<id>http://chrismdp.com/2012/10/how-to-write-a-great-story</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/10/how-to-write-a-great-story" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>The simplest Cucumber project ever</title>
+<category term='cucumber'/>
+<category term='bdd'/>
+<category term='bddkickstart'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/09/cucumber-isnt-a-testing-tool'/><updated>2012-09-19T17:41:22+01:00</updated><id>http://chrismdp.com/2012/09/cucumber-isnt-a-testing-tool</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/cucumber-isnt-a-testing-tool" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Kickstart your team on BDD</title><category term='bddkickstart'/><category term='bdd'/><category term='cucumber'/><category term='code'/><category term='ruby'/>    <author>
+<link href='http://chrismdp.com/2012/10/the-simplest-cucumber-project'/>
+<updated>2012-10-25T20:47:16+01:00</updated>
+<id>http://chrismdp.com/2012/10/the-simplest-cucumber-project</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/10/the-simplest-cucumber-project" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Cucumber isn't a testing tool</title>
+<category term='cucumber'/>
+<category term='business'/>
+<category term='bdd'/>
+<category term='team'/>
+<category term='testing'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/07/kickstart-your-team-on-bdd'/><updated>2012-07-27T08:13:22+01:00</updated><id>http://chrismdp.com/2012/07/kickstart-your-team-on-bdd</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/07/kickstart-your-team-on-bdd" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Feature writing: multiple actors</title><category term='bdd'/><category term='cucumber'/><category term='code'/>    <author>
+<link href='http://chrismdp.com/2012/09/cucumber-isnt-a-testing-tool'/>
+<updated>2012-09-19T17:41:22+01:00</updated>
+<id>http://chrismdp.com/2012/09/cucumber-isnt-a-testing-tool</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/cucumber-isnt-a-testing-tool" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Kickstart your team on BDD</title>
+<category term='bddkickstart'/>
+<category term='bdd'/>
+<category term='cucumber'/>
+<category term='code'/>
+<category term='ruby'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/12/feature-writing-multiple-actors'/><updated>2011-12-08T11:01:23+00:00</updated><id>http://chrismdp.com/2011/12/feature-writing-multiple-actors</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/12/feature-writing-multiple-actors" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Your tests are lying to you</title><category term='code'/><category term='cucumber'/><category term='craftsmanship'/><category term='bdd'/><category term='rspec'/><category term='rails'/>    <author>
+<link href='http://chrismdp.com/2012/07/kickstart-your-team-on-bdd'/>
+<updated>2012-07-27T08:13:22+01:00</updated>
+<id>http://chrismdp.com/2012/07/kickstart-your-team-on-bdd</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/07/kickstart-your-team-on-bdd" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Feature writing: multiple actors</title>
+<category term='bdd'/>
+<category term='cucumber'/>
+<category term='code'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/10/your-tests-are-lying-to-you'/><updated>2011-10-17T19:10:29+01:00</updated><id>http://chrismdp.com/2011/10/your-tests-are-lying-to-you</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/10/your-tests-are-lying-to-you" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Layers of abstraction: writing great cucumber code</title><category term='bdd'/><category term='cucumber'/><category term='agile'/><category term='ux'/>    <author>
+<link href='http://chrismdp.com/2011/12/feature-writing-multiple-actors'/>
+<updated>2011-12-08T11:01:23+00:00</updated>
+<id>http://chrismdp.com/2011/12/feature-writing-multiple-actors</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2011/12/feature-writing-multiple-actors" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Your tests are lying to you</title>
+<category term='code'/>
+<category term='cucumber'/>
+<category term='craftsmanship'/>
+<category term='bdd'/>
+<category term='rspec'/>
+<category term='rails'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/09/layers-of-abstraction-writing-great-cucumber-code'/><updated>2011-09-15T07:44:41+01:00</updated><id>http://chrismdp.com/2011/09/layers-of-abstraction-writing-great-cucumber-code</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/09/layers-of-abstraction-writing-great-cucumber-code" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Pin in the map: customisable pin icons</title><category term='code'/><category term='cucumber'/><category term='ruby'/><category term='legacy'/><category term='products'/><category term='pininthemap'/>    <author>
+<link href='http://chrismdp.com/2011/10/your-tests-are-lying-to-you'/>
+<updated>2011-10-17T19:10:29+01:00</updated>
+<id>http://chrismdp.com/2011/10/your-tests-are-lying-to-you</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2011/10/your-tests-are-lying-to-you" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Layers of abstraction: writing great cucumber code</title>
+<category term='bdd'/>
+<category term='cucumber'/>
+<category term='agile'/>
+<category term='ux'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/09/pininthemap-customisable-pin-icons'/><updated>2011-09-06T21:18:13+01:00</updated><id>http://chrismdp.com/2011/09/pininthemap-customisable-pin-icons</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/09/pininthemap-customisable-pin-icons" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Layers of abstraction: combining BDD and UX</title><category term='bdd'/><category term='cucumber'/><category term='agile'/><category term='ux'/>    <author>
+<link href='http://chrismdp.com/2011/09/layers-of-abstraction-writing-great-cucumber-code'/>
+<updated>2011-09-15T07:44:41+01:00</updated>
+<id>http://chrismdp.com/2011/09/layers-of-abstraction-writing-great-cucumber-code</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2011/09/layers-of-abstraction-writing-great-cucumber-code" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Pin in the map: customisable pin icons</title>
+<category term='code'/>
+<category term='cucumber'/>
+<category term='ruby'/>
+<category term='legacy'/>
+<category term='products'/>
+<category term='pininthemap'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/09/layers-of-abstraction-bdd-ux'/><updated>2011-09-05T20:44:03+01:00</updated><id>http://chrismdp.com/2011/09/layers-of-abstraction-bdd-ux</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/09/layers-of-abstraction-bdd-ux" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Cucumbers with personality</title><category term='cucumber'/><category term='personas'/><category term='agile'/><category term='ux'/>    <author>
+<link href='http://chrismdp.com/2011/09/pininthemap-customisable-pin-icons'/>
+<updated>2011-09-06T21:18:13+01:00</updated>
+<id>http://chrismdp.com/2011/09/pininthemap-customisable-pin-icons</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2011/09/pininthemap-customisable-pin-icons" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Layers of abstraction: combining BDD and UX</title>
+<category term='bdd'/>
+<category term='cucumber'/>
+<category term='agile'/>
+<category term='ux'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/04/cucumbers-with-personality'/><updated>2011-04-18T15:17:31+01:00</updated><id>http://chrismdp.com/2011/04/cucumbers-with-personality</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/04/cucumbers-with-personality" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>How to get Spork working NOW on Rails 3, Rspec 2 and Cucumber</title><category term='rails'/><category term='ruby'/><category term='rspec'/><category term='spork'/><category term='cucumber'/>    <author>
+<link href='http://chrismdp.com/2011/09/layers-of-abstraction-bdd-ux'/>
+<updated>2011-09-05T20:44:03+01:00</updated>
+<id>http://chrismdp.com/2011/09/layers-of-abstraction-bdd-ux</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2011/09/layers-of-abstraction-bdd-ux" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Cucumbers with personality</title>
+<category term='cucumber'/>
+<category term='personas'/>
+<category term='agile'/>
+<category term='ux'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/11/getting-spork-working-now-on-rails-3-rspec-2-and-cucumber'/><updated>2010-11-16T21:41:57+00:00</updated><id>http://chrismdp.com/2010/11/getting-spork-working-now-on-rails-3-rspec-2-and-cucumber</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/11/getting-spork-working-now-on-rails-3-rspec-2-and-cucumber" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Driving out feature ambiguity</title><category term='cucumber'/><category term='apprenticeship'/><category term='craftsmanship'/><category term='ambiguity'/><category term='katas'/>    <author>
+<link href='http://chrismdp.com/2011/04/cucumbers-with-personality'/>
+<updated>2011-04-18T15:17:31+01:00</updated>
+<id>http://chrismdp.com/2011/04/cucumbers-with-personality</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2011/04/cucumbers-with-personality" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>How to get Spork working NOW on Rails 3, Rspec 2 and Cucumber</title>
+<category term='rails'/>
+<category term='ruby'/>
+<category term='rspec'/>
+<category term='spork'/>
+<category term='cucumber'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/01/driving-out-feature-ambiguity'/><updated>2010-01-15T06:19:00+00:00</updated><id>http://chrismdp.com/2010/01/driving-out-feature-ambiguity</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/01/driving-out-feature-ambiguity" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>
+<link href='http://chrismdp.com/2010/11/getting-spork-working-now-on-rails-3-rspec-2-and-cucumber'/>
+<updated>2010-11-16T21:41:57+00:00</updated>
+<id>http://chrismdp.com/2010/11/getting-spork-working-now-on-rails-3-rspec-2-and-cucumber</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2010/11/getting-spork-working-now-on-rails-3-rspec-2-and-cucumber" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Driving out feature ambiguity</title>
+<category term='cucumber'/>
+<category term='apprenticeship'/>
+<category term='craftsmanship'/>
+<category term='ambiguity'/>
+<category term='katas'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2010/01/driving-out-feature-ambiguity'/>
+<updated>2010-01-15T06:19:00+00:00</updated>
+<id>http://chrismdp.com/2010/01/driving-out-feature-ambiguity</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2010/01/driving-out-feature-ambiguity" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+</feed>

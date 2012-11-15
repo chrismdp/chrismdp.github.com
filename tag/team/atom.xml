@@ -13,36 +13,124 @@ layout: nil
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>Delegated tasks are a team anti-pattern</title><category term='team'/><category term='anti-pattern'/><category term='process'/><category term='management'/><category term='leadership'/><category term='productivity'/>    <author>
+<entry>
+<title>Delegated tasks are a team anti-pattern</title>
+<category term='team'/>
+<category term='anti-pattern'/>
+<category term='process'/>
+<category term='management'/>
+<category term='leadership'/>
+<category term='productivity'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/10/delegated-tasks-are-a-team-anti-pattern'/><updated>2012-10-04T07:49:57+01:00</updated><id>http://chrismdp.com/2012/10/delegated-tasks-are-a-team-anti-pattern</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/10/delegated-tasks-are-a-team-anti-pattern" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Job titles are a team anti-pattern</title><category term='lean'/><category term='agile'/><category term='team'/><category term='anti-pattern'/>    <author>
+<link href='http://chrismdp.com/2012/10/delegated-tasks-are-a-team-anti-pattern'/>
+<updated>2012-10-04T07:49:57+01:00</updated>
+<id>http://chrismdp.com/2012/10/delegated-tasks-are-a-team-anti-pattern</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/10/delegated-tasks-are-a-team-anti-pattern" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Job titles are a team anti-pattern</title>
+<category term='lean'/>
+<category term='agile'/>
+<category term='team'/>
+<category term='anti-pattern'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/09/job-titles-team-anti-pattern'/><updated>2012-09-25T20:48:24+01:00</updated><id>http://chrismdp.com/2012/09/job-titles-team-anti-pattern</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/job-titles-team-anti-pattern" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Your code is a liability</title><category term='code'/><category term='craftsmanship'/><category term='lean'/><category term='agile'/><category term='team'/><category term='liability'/>    <author>
+<link href='http://chrismdp.com/2012/09/job-titles-team-anti-pattern'/>
+<updated>2012-09-25T20:48:24+01:00</updated>
+<id>http://chrismdp.com/2012/09/job-titles-team-anti-pattern</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/job-titles-team-anti-pattern" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Your code is a liability</title>
+<category term='code'/>
+<category term='craftsmanship'/>
+<category term='lean'/>
+<category term='agile'/>
+<category term='team'/>
+<category term='liability'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/09/code-is-a-liability'/><updated>2012-09-24T20:48:13+01:00</updated><id>http://chrismdp.com/2012/09/code-is-a-liability</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/code-is-a-liability" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Cucumber isn't a testing tool</title><category term='cucumber'/><category term='business'/><category term='bdd'/><category term='team'/><category term='testing'/>    <author>
+<link href='http://chrismdp.com/2012/09/code-is-a-liability'/>
+<updated>2012-09-24T20:48:13+01:00</updated>
+<id>http://chrismdp.com/2012/09/code-is-a-liability</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/code-is-a-liability" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Cucumber isn't a testing tool</title>
+<category term='cucumber'/>
+<category term='business'/>
+<category term='bdd'/>
+<category term='team'/>
+<category term='testing'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/09/cucumber-isnt-a-testing-tool'/><updated>2012-09-19T17:41:22+01:00</updated><id>http://chrismdp.com/2012/09/cucumber-isnt-a-testing-tool</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/cucumber-isnt-a-testing-tool" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Task assignment is a team anti-pattern</title><category term='process'/><category term='productivity'/><category term='pairing'/><category term='team'/><category term='anti-pattern'/>    <author>
+<link href='http://chrismdp.com/2012/09/cucumber-isnt-a-testing-tool'/>
+<updated>2012-09-19T17:41:22+01:00</updated>
+<id>http://chrismdp.com/2012/09/cucumber-isnt-a-testing-tool</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/cucumber-isnt-a-testing-tool" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Task assignment is a team anti-pattern</title>
+<category term='process'/>
+<category term='productivity'/>
+<category term='pairing'/>
+<category term='team'/>
+<category term='anti-pattern'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/09/task-assignment-is-a-team-anti-pattern'/><updated>2012-09-14T14:06:40+01:00</updated><id>http://chrismdp.com/2012/09/task-assignment-is-a-team-anti-pattern</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/task-assignment-is-a-team-anti-pattern" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>On Office Politics</title><category term='team'/><category term='business'/>    <author>
+<link href='http://chrismdp.com/2012/09/task-assignment-is-a-team-anti-pattern'/>
+<updated>2012-09-14T14:06:40+01:00</updated>
+<id>http://chrismdp.com/2012/09/task-assignment-is-a-team-anti-pattern</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/task-assignment-is-a-team-anti-pattern" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>On Office Politics</title>
+<category term='team'/>
+<category term='business'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/05/on-office-politics'/><updated>2011-05-04T14:32:00+01:00</updated><id>http://chrismdp.com/2011/05/on-office-politics</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/05/on-office-politics" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>The team is the atomic unit of success</title><category term='business'/><category term='team'/>    <author>
+<link href='http://chrismdp.com/2011/05/on-office-politics'/>
+<updated>2011-05-04T14:32:00+01:00</updated>
+<id>http://chrismdp.com/2011/05/on-office-politics</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2011/05/on-office-politics" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>The team is the atomic unit of success</title>
+<category term='business'/>
+<category term='team'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/04/the-team-is-the-atomic-unit'/><updated>2011-04-05T16:14:49+01:00</updated><id>http://chrismdp.com/2011/04/the-team-is-the-atomic-unit</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/04/the-team-is-the-atomic-unit" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Truly indispensable people</title><category term='productivity'/><category term='team'/>    <author>
+<link href='http://chrismdp.com/2011/04/the-team-is-the-atomic-unit'/>
+<updated>2011-04-05T16:14:49+01:00</updated>
+<id>http://chrismdp.com/2011/04/the-team-is-the-atomic-unit</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2011/04/the-team-is-the-atomic-unit" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Truly indispensable people</title>
+<category term='productivity'/>
+<category term='team'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/03/truly-indispensable-people'/><updated>2011-03-29T11:42:03+01:00</updated><id>http://chrismdp.com/2011/03/truly-indispensable-people</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/03/truly-indispensable-people" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>
+<link href='http://chrismdp.com/2011/03/truly-indispensable-people'/>
+<updated>2011-03-29T11:42:03+01:00</updated>
+<id>http://chrismdp.com/2011/03/truly-indispensable-people</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2011/03/truly-indispensable-people" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+</feed>

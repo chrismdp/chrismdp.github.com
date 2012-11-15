@@ -13,16 +13,52 @@ layout: nil
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>Delegated tasks are a team anti-pattern</title><category term='team'/><category term='anti-pattern'/><category term='process'/><category term='management'/><category term='leadership'/><category term='productivity'/>    <author>
+<entry>
+<title>Delegated tasks are a team anti-pattern</title>
+<category term='team'/>
+<category term='anti-pattern'/>
+<category term='process'/>
+<category term='management'/>
+<category term='leadership'/>
+<category term='productivity'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/10/delegated-tasks-are-a-team-anti-pattern'/><updated>2012-10-04T07:49:57+01:00</updated><id>http://chrismdp.com/2012/10/delegated-tasks-are-a-team-anti-pattern</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/10/delegated-tasks-are-a-team-anti-pattern" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Job titles are a team anti-pattern</title><category term='lean'/><category term='agile'/><category term='team'/><category term='anti-pattern'/>    <author>
+<link href='http://chrismdp.com/2012/10/delegated-tasks-are-a-team-anti-pattern'/>
+<updated>2012-10-04T07:49:57+01:00</updated>
+<id>http://chrismdp.com/2012/10/delegated-tasks-are-a-team-anti-pattern</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/10/delegated-tasks-are-a-team-anti-pattern" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Job titles are a team anti-pattern</title>
+<category term='lean'/>
+<category term='agile'/>
+<category term='team'/>
+<category term='anti-pattern'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/09/job-titles-team-anti-pattern'/><updated>2012-09-25T20:48:24+01:00</updated><id>http://chrismdp.com/2012/09/job-titles-team-anti-pattern</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/job-titles-team-anti-pattern" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Task assignment is a team anti-pattern</title><category term='process'/><category term='productivity'/><category term='pairing'/><category term='team'/><category term='anti-pattern'/>    <author>
+<link href='http://chrismdp.com/2012/09/job-titles-team-anti-pattern'/>
+<updated>2012-09-25T20:48:24+01:00</updated>
+<id>http://chrismdp.com/2012/09/job-titles-team-anti-pattern</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/job-titles-team-anti-pattern" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Task assignment is a team anti-pattern</title>
+<category term='process'/>
+<category term='productivity'/>
+<category term='pairing'/>
+<category term='team'/>
+<category term='anti-pattern'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/09/task-assignment-is-a-team-anti-pattern'/><updated>2012-09-14T14:06:40+01:00</updated><id>http://chrismdp.com/2012/09/task-assignment-is-a-team-anti-pattern</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/task-assignment-is-a-team-anti-pattern" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>
+<link href='http://chrismdp.com/2012/09/task-assignment-is-a-team-anti-pattern'/>
+<updated>2012-09-14T14:06:40+01:00</updated>
+<id>http://chrismdp.com/2012/09/task-assignment-is-a-team-anti-pattern</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/task-assignment-is-a-team-anti-pattern" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+</feed>

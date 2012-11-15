@@ -13,12 +13,37 @@ layout: nil
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>The Story Card Is Not The Story</title><category term='xp'/><category term='agile'/><category term='pivotal tracker'/><category term='balsamiq'/><category term='basecamp'/><category term='stories'/><category term='kanban'/>    <author>
+<entry>
+<title>The Story Card Is Not The Story</title>
+<category term='xp'/>
+<category term='agile'/>
+<category term='pivotal tracker'/>
+<category term='balsamiq'/>
+<category term='basecamp'/>
+<category term='stories'/>
+<category term='kanban'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/02/the-story-card-is-not-the-story'/><updated>2010-02-11T15:55:00+00:00</updated><id>http://chrismdp.com/2010/02/the-story-card-is-not-the-story</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/02/the-story-card-is-not-the-story" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Pairing works for everything</title><category term='pairing'/><category term='xp'/><category term='agile'/><category term='productivity'/>    <author>
+<link href='http://chrismdp.com/2010/02/the-story-card-is-not-the-story'/>
+<updated>2010-02-11T15:55:00+00:00</updated>
+<id>http://chrismdp.com/2010/02/the-story-card-is-not-the-story</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2010/02/the-story-card-is-not-the-story" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Pairing works for everything</title>
+<category term='pairing'/>
+<category term='xp'/>
+<category term='agile'/>
+<category term='productivity'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/01/pairing-works-for-everything'/><updated>2010-01-27T11:28:00+00:00</updated><id>http://chrismdp.com/2010/01/pairing-works-for-everything</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/01/pairing-works-for-everything" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>
+<link href='http://chrismdp.com/2010/01/pairing-works-for-everything'/>
+<updated>2010-01-27T11:28:00+00:00</updated>
+<id>http://chrismdp.com/2010/01/pairing-works-for-everything</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2010/01/pairing-works-for-everything" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+</feed>

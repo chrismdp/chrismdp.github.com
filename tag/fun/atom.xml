@@ -13,12 +13,33 @@ layout: nil
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>Waxing Lyrical on Pathfinding</title><category term='code'/><category term='conference'/><category term='fun'/><category term='software craftsmanship'/><category term='sc2012'/>    <author>
+<entry>
+<title>Waxing Lyrical on Pathfinding</title>
+<category term='code'/>
+<category term='conference'/>
+<category term='fun'/>
+<category term='software craftsmanship'/>
+<category term='sc2012'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/05/waxing-lyrical-on-pathfinding'/><updated>2012-05-15T16:02:40+01:00</updated><id>http://chrismdp.com/2012/05/waxing-lyrical-on-pathfinding</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/05/waxing-lyrical-on-pathfinding" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Snakes and Ladders Kata</title><category term='katas'/><category term='fun'/>    <author>
+<link href='http://chrismdp.com/2012/05/waxing-lyrical-on-pathfinding'/>
+<updated>2012-05-15T16:02:40+01:00</updated>
+<id>http://chrismdp.com/2012/05/waxing-lyrical-on-pathfinding</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/05/waxing-lyrical-on-pathfinding" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Snakes and Ladders Kata</title>
+<category term='katas'/>
+<category term='fun'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2009/12/snakes-and-ladders-kata'/><updated>2009-12-20T22:20:00+00:00</updated><id>http://chrismdp.com/2009/12/snakes-and-ladders-kata</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2009/12/snakes-and-ladders-kata" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>
+<link href='http://chrismdp.com/2009/12/snakes-and-ladders-kata'/>
+<updated>2009-12-20T22:20:00+00:00</updated>
+<id>http://chrismdp.com/2009/12/snakes-and-ladders-kata</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2009/12/snakes-and-ladders-kata" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+</feed>

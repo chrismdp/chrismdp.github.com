@@ -13,8 +13,19 @@ layout: nil
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>Card Of The Day: Actually Do Retrospective Actions</title><category term='agile'/><category term='retrospectives'/><category term='process'/><category term='index cards'/>    <author>
+<entry>
+<title>Card Of The Day: Actually Do Retrospective Actions</title>
+<category term='agile'/>
+<category term='retrospectives'/>
+<category term='process'/>
+<category term='index cards'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/07/card-of-the-day'/><updated>2010-07-22T10:45:00+01:00</updated><id>http://chrismdp.com/2010/07/card-of-the-day</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/07/card-of-the-day" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>
+<link href='http://chrismdp.com/2010/07/card-of-the-day'/>
+<updated>2010-07-22T10:45:00+01:00</updated>
+<id>http://chrismdp.com/2010/07/card-of-the-day</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2010/07/card-of-the-day" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+</feed>

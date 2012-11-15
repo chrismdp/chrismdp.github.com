@@ -13,8 +13,19 @@ layout: nil
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>Are coding katas really worth it?</title><category term='katas'/><category term='karate'/><category term='life'/><category term='apprenticeship'/>    <author>
+<entry>
+<title>Are coding katas really worth it?</title>
+<category term='katas'/>
+<category term='karate'/>
+<category term='life'/>
+<category term='apprenticeship'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/03/are-coding-kata-really-worth-it'/><updated>2011-03-31T13:20:29+01:00</updated><id>http://chrismdp.com/2011/03/are-coding-kata-really-worth-it</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/03/are-coding-kata-really-worth-it" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>
+<link href='http://chrismdp.com/2011/03/are-coding-kata-really-worth-it'/>
+<updated>2011-03-31T13:20:29+01:00</updated>
+<id>http://chrismdp.com/2011/03/are-coding-kata-really-worth-it</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2011/03/are-coding-kata-really-worth-it" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+</feed>

@@ -13,8 +13,17 @@ layout: nil
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>Call for coders: Children's Future International</title><category term='code'/><category term='charity'/>    <author>
+<entry>
+<title>Call for coders: Children's Future International</title>
+<category term='code'/>
+<category term='charity'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/10/childrens-future-international'/><updated>2010-10-18T19:42:33+01:00</updated><id>http://chrismdp.com/2010/10/childrens-future-international</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/10/childrens-future-international" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>
+<link href='http://chrismdp.com/2010/10/childrens-future-international'/>
+<updated>2010-10-18T19:42:33+01:00</updated>
+<id>http://chrismdp.com/2010/10/childrens-future-international</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2010/10/childrens-future-international" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+</feed>

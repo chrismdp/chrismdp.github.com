@@ -13,8 +13,21 @@ layout: nil
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>e-petitions: deconstructed</title><category term='code'/><category term='chef'/><category term='agile'/><category term='adn'/><category term='government'/><category term='e-petitions'/>    <author>
+<entry>
+<title>e-petitions: deconstructed</title>
+<category term='code'/>
+<category term='chef'/>
+<category term='agile'/>
+<category term='adn'/>
+<category term='government'/>
+<category term='e-petitions'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/07/e-petitions-deconstructed'/><updated>2011-07-29T15:57:09+01:00</updated><id>http://chrismdp.com/2011/07/e-petitions-deconstructed</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/07/e-petitions-deconstructed" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>
+<link href='http://chrismdp.com/2011/07/e-petitions-deconstructed'/>
+<updated>2011-07-29T15:57:09+01:00</updated>
+<id>http://chrismdp.com/2011/07/e-petitions-deconstructed</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2011/07/e-petitions-deconstructed" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+</feed>

@@ -13,12 +13,40 @@ layout: nil
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>Sol Trader: on lighting</title><category term='products'/><category term='c++'/><category term='code'/><category term='opengl'/><category term='sol trader'/><category term='game development'/><category term='lighting'/>    <author>
+<entry>
+<title>Sol Trader: on lighting</title>
+<category term='products'/>
+<category term='c++'/>
+<category term='code'/>
+<category term='opengl'/>
+<category term='sol trader'/>
+<category term='game development'/>
+<category term='lighting'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/02/sol-trading-lighting'/><updated>2012-02-14T22:56:43+00:00</updated><id>http://chrismdp.com/2012/02/sol-trading-lighting</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/02/sol-trading-lighting" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Effective bloom in OpenGL for Sol Trader</title><category term='products'/><category term='c++'/><category term='code'/><category term='opengl'/><category term='bloom'/><category term='sol trader'/><category term='game development'/>    <author>
+<link href='http://chrismdp.com/2012/02/sol-trading-lighting'/>
+<updated>2012-02-14T22:56:43+00:00</updated>
+<id>http://chrismdp.com/2012/02/sol-trading-lighting</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/02/sol-trading-lighting" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Effective bloom in OpenGL for Sol Trader</title>
+<category term='products'/>
+<category term='c++'/>
+<category term='code'/>
+<category term='opengl'/>
+<category term='bloom'/>
+<category term='sol trader'/>
+<category term='game development'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/02/effective-bloom-in-open-gl-for-sol-trader'/><updated>2012-02-02T16:28:30+00:00</updated><id>http://chrismdp.com/2012/02/effective-bloom-in-open-gl-for-sol-trader</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/02/effective-bloom-in-open-gl-for-sol-trader" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>
+<link href='http://chrismdp.com/2012/02/effective-bloom-in-open-gl-for-sol-trader'/>
+<updated>2012-02-02T16:28:30+00:00</updated>
+<id>http://chrismdp.com/2012/02/effective-bloom-in-open-gl-for-sol-trader</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/02/effective-bloom-in-open-gl-for-sol-trader" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+</feed>

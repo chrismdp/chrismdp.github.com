@@ -7,42 +7,148 @@ layout: nil
   <title>Chris Parsons: posts tagged tdd</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2012-09-20T15:36:32+01:00</updated>
+  <updated>2012-11-15T17:04:26+00:00</updated>
   <id>http://chrismdp.com/tag/tdd</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>Never leave a failing test</title><category term='tdd'/><category term='craftsmanship'/><category term='code'/><category term='testing'/>    <author>
+<entry>
+<title>Cucumber: the integration testing trap</title>
+<category term='cucumber'/>
+<category term='bdd'/>
+<category term='testing'/>
+<category term='tdd'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/09/failing-tests-rot'/><updated>2012-09-20T15:36:32+01:00</updated><id>http://chrismdp.com/2012/09/failing-tests-rot</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/failing-tests-rot" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>The power of feedback</title><category term='lean startup'/><category term='tdd'/><category term='bdd'/><category term='feedback'/><category term='lean'/>    <author>
+<link href='http://chrismdp.com/2012/11/the-integration-testing-trap'/>
+<updated>2012-11-15T17:04:26+00:00</updated>
+<id>http://chrismdp.com/2012/11/the-integration-testing-trap</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/11/the-integration-testing-trap" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Never leave a failing test</title>
+<category term='tdd'/>
+<category term='craftsmanship'/>
+<category term='code'/>
+<category term='testing'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/09/the-power-of-feedback'/><updated>2012-09-13T13:52:16+01:00</updated><id>http://chrismdp.com/2012/09/the-power-of-feedback</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/the-power-of-feedback" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>How I'm testing iPhone apps: part 2</title><category term='code'/><category term='ios'/><category term='tdd'/><category term='bdd'/><category term='testing ios'/>    <author>
+<link href='http://chrismdp.com/2012/09/failing-tests-rot'/>
+<updated>2012-09-20T15:36:32+01:00</updated>
+<id>http://chrismdp.com/2012/09/failing-tests-rot</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/failing-tests-rot" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>The power of feedback</title>
+<category term='lean startup'/>
+<category term='tdd'/>
+<category term='bdd'/>
+<category term='feedback'/>
+<category term='lean'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/12/how-im-testing-iphone-apps-part-2'/><updated>2011-12-06T16:02:54+00:00</updated><id>http://chrismdp.com/2011/12/how-im-testing-iphone-apps-part-2</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/12/how-im-testing-iphone-apps-part-2" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>How I'm testing iPhone apps: part 1</title><category term='code'/><category term='ios'/><category term='tdd'/><category term='bdd'/><category term='testing ios'/>    <author>
+<link href='http://chrismdp.com/2012/09/the-power-of-feedback'/>
+<updated>2012-09-13T13:52:16+01:00</updated>
+<id>http://chrismdp.com/2012/09/the-power-of-feedback</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/the-power-of-feedback" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>How I'm testing iPhone apps: part 2</title>
+<category term='code'/>
+<category term='ios'/>
+<category term='tdd'/>
+<category term='bdd'/>
+<category term='testing ios'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/12/how-im-testing-iphone-apps-part-1'/><updated>2011-12-01T22:45:35+00:00</updated><id>http://chrismdp.com/2011/12/how-im-testing-iphone-apps-part-1</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/12/how-im-testing-iphone-apps-part-1" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Work with me</title><category term='code'/><category term='meta'/><category term='agile'/><category term='training'/><category term='life'/><category term='tdd'/>    <author>
+<link href='http://chrismdp.com/2011/12/how-im-testing-iphone-apps-part-2'/>
+<updated>2011-12-06T16:02:54+00:00</updated>
+<id>http://chrismdp.com/2011/12/how-im-testing-iphone-apps-part-2</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2011/12/how-im-testing-iphone-apps-part-2" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>How I'm testing iPhone apps: part 1</title>
+<category term='code'/>
+<category term='ios'/>
+<category term='tdd'/>
+<category term='bdd'/>
+<category term='testing ios'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/08/work-with-me'/><updated>2011-08-22T15:36:53+01:00</updated><id>http://chrismdp.com/2011/08/work-with-me</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/08/work-with-me" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Pomodoros help you refactor</title><category term='code'/><category term='pomodoros'/><category term='tdd'/><category term='craftsmanship'/><category term='pairing'/>    <author>
+<link href='http://chrismdp.com/2011/12/how-im-testing-iphone-apps-part-1'/>
+<updated>2011-12-01T22:45:35+00:00</updated>
+<id>http://chrismdp.com/2011/12/how-im-testing-iphone-apps-part-1</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2011/12/how-im-testing-iphone-apps-part-1" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Work with me</title>
+<category term='code'/>
+<category term='meta'/>
+<category term='agile'/>
+<category term='training'/>
+<category term='life'/>
+<category term='tdd'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/04/pomodoros-help-you-refactor'/><updated>2011-04-01T20:21:15+01:00</updated><id>http://chrismdp.com/2011/04/pomodoros-help-you-refactor</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/04/pomodoros-help-you-refactor" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>How to test your node.js app</title><category term='javascript'/><category term='code'/><category term='tdd'/><category term='node.js'/>    <author>
+<link href='http://chrismdp.com/2011/08/work-with-me'/>
+<updated>2011-08-22T15:36:53+01:00</updated>
+<id>http://chrismdp.com/2011/08/work-with-me</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2011/08/work-with-me" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Pomodoros help you refactor</title>
+<category term='code'/>
+<category term='pomodoros'/>
+<category term='tdd'/>
+<category term='craftsmanship'/>
+<category term='pairing'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/05/tdd-with-node-js'/><updated>2010-05-23T11:05:00+01:00</updated><id>http://chrismdp.com/2010/05/tdd-with-node-js</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/05/tdd-with-node-js" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>TDD ~ The Tortoise and the Hare</title><category term='tdd'/>    <author>
+<link href='http://chrismdp.com/2011/04/pomodoros-help-you-refactor'/>
+<updated>2011-04-01T20:21:15+01:00</updated>
+<id>http://chrismdp.com/2011/04/pomodoros-help-you-refactor</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2011/04/pomodoros-help-you-refactor" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>How to test your node.js app</title>
+<category term='javascript'/>
+<category term='code'/>
+<category term='tdd'/>
+<category term='node.js'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2006/02/tdd-the-tortoise-and-the-hare'/><updated>2006-02-16T09:43:00+00:00</updated><id>http://chrismdp.com/2006/02/tdd-the-tortoise-and-the-hare</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2006/02/tdd-the-tortoise-and-the-hare" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>
+<link href='http://chrismdp.com/2010/05/tdd-with-node-js'/>
+<updated>2010-05-23T11:05:00+01:00</updated>
+<id>http://chrismdp.com/2010/05/tdd-with-node-js</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2010/05/tdd-with-node-js" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>TDD ~ The Tortoise and the Hare</title>
+<category term='tdd'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2006/02/tdd-the-tortoise-and-the-hare'/>
+<updated>2006-02-16T09:43:00+00:00</updated>
+<id>http://chrismdp.com/2006/02/tdd-the-tortoise-and-the-hare</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2006/02/tdd-the-tortoise-and-the-hare" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+</feed>

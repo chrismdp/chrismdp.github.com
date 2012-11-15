@@ -13,52 +13,178 @@ layout: nil
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>Cucumber isn't a testing tool</title><category term='cucumber'/><category term='business'/><category term='bdd'/><category term='team'/><category term='testing'/>    <author>
+<entry>
+<title>Cucumber isn't a testing tool</title>
+<category term='cucumber'/>
+<category term='business'/>
+<category term='bdd'/>
+<category term='team'/>
+<category term='testing'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/09/cucumber-isnt-a-testing-tool'/><updated>2012-09-19T17:41:22+01:00</updated><id>http://chrismdp.com/2012/09/cucumber-isnt-a-testing-tool</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/cucumber-isnt-a-testing-tool" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Showroom software</title><category term='products'/><category term='business'/><category term='lean'/>    <author>
+<link href='http://chrismdp.com/2012/09/cucumber-isnt-a-testing-tool'/>
+<updated>2012-09-19T17:41:22+01:00</updated>
+<id>http://chrismdp.com/2012/09/cucumber-isnt-a-testing-tool</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/cucumber-isnt-a-testing-tool" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Showroom software</title>
+<category term='products'/>
+<category term='business'/>
+<category term='lean'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/09/showroom-software'/><updated>2012-09-17T20:34:12+01:00</updated><id>http://chrismdp.com/2012/09/showroom-software</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/showroom-software" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Attempting validated learning with Sol Trader</title><category term='sol trader'/><category term='lean startup'/><category term='learning'/><category term='products'/><category term='agile'/><category term='lean'/><category term='business'/>    <author>
+<link href='http://chrismdp.com/2012/09/showroom-software'/>
+<updated>2012-09-17T20:34:12+01:00</updated>
+<id>http://chrismdp.com/2012/09/showroom-software</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/showroom-software" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Attempting validated learning with Sol Trader</title>
+<category term='sol trader'/>
+<category term='lean startup'/>
+<category term='learning'/>
+<category term='products'/>
+<category term='agile'/>
+<category term='lean'/>
+<category term='business'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/05/attempting-validated-learning-with-sol-trader'/><updated>2012-05-14T10:18:47+01:00</updated><id>http://chrismdp.com/2012/05/attempting-validated-learning-with-sol-trader</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/05/attempting-validated-learning-with-sol-trader" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Kanogo: vapourware to beta in 24 hours</title><category term='code'/><category term='products'/><category term='business'/><category term='kano analysis'/><category term='rails'/><category term='heroku'/><category term='ruby'/><category term='kanogo'/>    <author>
+<link href='http://chrismdp.com/2012/05/attempting-validated-learning-with-sol-trader'/>
+<updated>2012-05-14T10:18:47+01:00</updated>
+<id>http://chrismdp.com/2012/05/attempting-validated-learning-with-sol-trader</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/05/attempting-validated-learning-with-sol-trader" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Kanogo: vapourware to beta in 24 hours</title>
+<category term='code'/>
+<category term='products'/>
+<category term='business'/>
+<category term='kano analysis'/>
+<category term='rails'/>
+<category term='heroku'/>
+<category term='ruby'/>
+<category term='kanogo'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/09/kanogo-vapourware-to-beta-in-24-hours'/><updated>2011-09-12T11:30:37+01:00</updated><id>http://chrismdp.com/2011/09/kanogo-vapourware-to-beta-in-24-hours</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/09/kanogo-vapourware-to-beta-in-24-hours" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>The Principle of Scattered Work</title><category term='life'/><category term='productivity'/><category term='business'/>    <author>
+<link href='http://chrismdp.com/2011/09/kanogo-vapourware-to-beta-in-24-hours'/>
+<updated>2011-09-12T11:30:37+01:00</updated>
+<id>http://chrismdp.com/2011/09/kanogo-vapourware-to-beta-in-24-hours</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2011/09/kanogo-vapourware-to-beta-in-24-hours" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>The Principle of Scattered Work</title>
+<category term='life'/>
+<category term='productivity'/>
+<category term='business'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/05/the-principle-of-scattered-work'/><updated>2011-05-09T12:56:04+01:00</updated><id>http://chrismdp.com/2011/05/the-principle-of-scattered-work</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/05/the-principle-of-scattered-work" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>On Office Politics</title><category term='team'/><category term='business'/>    <author>
+<link href='http://chrismdp.com/2011/05/the-principle-of-scattered-work'/>
+<updated>2011-05-09T12:56:04+01:00</updated>
+<id>http://chrismdp.com/2011/05/the-principle-of-scattered-work</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2011/05/the-principle-of-scattered-work" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>On Office Politics</title>
+<category term='team'/>
+<category term='business'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/05/on-office-politics'/><updated>2011-05-04T14:32:00+01:00</updated><id>http://chrismdp.com/2011/05/on-office-politics</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/05/on-office-politics" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Are apprenticeships scalable?</title><category term='business'/><category term='apprenticeship'/>    <author>
+<link href='http://chrismdp.com/2011/05/on-office-politics'/>
+<updated>2011-05-04T14:32:00+01:00</updated>
+<id>http://chrismdp.com/2011/05/on-office-politics</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2011/05/on-office-politics" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Are apprenticeships scalable?</title>
+<category term='business'/>
+<category term='apprenticeship'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/04/are-apprenticeships-scalable'/><updated>2011-04-12T06:36:53+01:00</updated><id>http://chrismdp.com/2011/04/are-apprenticeships-scalable</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/04/are-apprenticeships-scalable" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>The team is the atomic unit of success</title><category term='business'/><category term='team'/>    <author>
+<link href='http://chrismdp.com/2011/04/are-apprenticeships-scalable'/>
+<updated>2011-04-12T06:36:53+01:00</updated>
+<id>http://chrismdp.com/2011/04/are-apprenticeships-scalable</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2011/04/are-apprenticeships-scalable" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>The team is the atomic unit of success</title>
+<category term='business'/>
+<category term='team'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/04/the-team-is-the-atomic-unit'/><updated>2011-04-05T16:14:49+01:00</updated><id>http://chrismdp.com/2011/04/the-team-is-the-atomic-unit</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/04/the-team-is-the-atomic-unit" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Certification: recommendation mass produced</title><category term='business'/><category term='certification'/><category term='craftsmanship'/>    <author>
+<link href='http://chrismdp.com/2011/04/the-team-is-the-atomic-unit'/>
+<updated>2011-04-05T16:14:49+01:00</updated>
+<id>http://chrismdp.com/2011/04/the-team-is-the-atomic-unit</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2011/04/the-team-is-the-atomic-unit" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Certification: recommendation mass produced</title>
+<category term='business'/>
+<category term='certification'/>
+<category term='craftsmanship'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/04/on-certification'/><updated>2011-04-05T16:14:49+01:00</updated><id>http://chrismdp.com/2011/04/on-certification</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/04/on-certification" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Eden Development has closed</title><category term='business'/><category term='life'/>    <author>
+<link href='http://chrismdp.com/2011/04/on-certification'/>
+<updated>2011-04-05T16:14:49+01:00</updated>
+<id>http://chrismdp.com/2011/04/on-certification</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2011/04/on-certification" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Eden Development has closed</title>
+<category term='business'/>
+<category term='life'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/03/eden-development-closing'/><updated>2011-03-25T15:52:09+00:00</updated><id>http://chrismdp.com/2011/03/eden-development-closing</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/03/eden-development-closing" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>User Experience Is Everything</title><category term='ux'/><category term='business'/>    <author>
+<link href='http://chrismdp.com/2011/03/eden-development-closing'/>
+<updated>2011-03-25T15:52:09+00:00</updated>
+<id>http://chrismdp.com/2011/03/eden-development-closing</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2011/03/eden-development-closing" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>User Experience Is Everything</title>
+<category term='ux'/>
+<category term='business'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/05/ux-is-everything'/><updated>2010-05-21T17:07:00+01:00</updated><id>http://chrismdp.com/2010/05/ux-is-everything</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/05/ux-is-everything" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>R.I.P. Web 1.0</title><category term='ux'/><category term='business'/><category term='Peter Drucker'/>    <author>
+<link href='http://chrismdp.com/2010/05/ux-is-everything'/>
+<updated>2010-05-21T17:07:00+01:00</updated>
+<id>http://chrismdp.com/2010/05/ux-is-everything</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2010/05/ux-is-everything" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>R.I.P. Web 1.0</title>
+<category term='ux'/>
+<category term='business'/>
+<category term='Peter Drucker'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2009/12/rip-web-1-0'/><updated>2009-12-23T21:41:00+00:00</updated><id>http://chrismdp.com/2009/12/rip-web-1-0</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2009/12/rip-web-1-0" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>
+<link href='http://chrismdp.com/2009/12/rip-web-1-0'/>
+<updated>2009-12-23T21:41:00+00:00</updated>
+<id>http://chrismdp.com/2009/12/rip-web-1-0</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2009/12/rip-web-1-0" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+</feed>

@@ -13,8 +13,19 @@ layout: nil
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>Sol Trader: a continuous deployment story</title><category term='sol trader'/><category term='windows'/><category term='jenkins'/><category term='products'/>    <author>
+<entry>
+<title>Sol Trader: a continuous deployment story</title>
+<category term='sol trader'/>
+<category term='windows'/>
+<category term='jenkins'/>
+<category term='products'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/03/sol-trader-continuous-deployment'/><updated>2012-03-23T12:13:27+00:00</updated><id>http://chrismdp.com/2012/03/sol-trader-continuous-deployment</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/03/sol-trader-continuous-deployment" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>
+<link href='http://chrismdp.com/2012/03/sol-trader-continuous-deployment'/>
+<updated>2012-03-23T12:13:27+00:00</updated>
+<id>http://chrismdp.com/2012/03/sol-trader-continuous-deployment</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/03/sol-trader-continuous-deployment" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+</feed>

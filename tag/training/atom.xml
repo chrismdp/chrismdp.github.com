@@ -13,8 +13,21 @@ layout: nil
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>Work with me</title><category term='code'/><category term='meta'/><category term='agile'/><category term='training'/><category term='life'/><category term='tdd'/>    <author>
+<entry>
+<title>Work with me</title>
+<category term='code'/>
+<category term='meta'/>
+<category term='agile'/>
+<category term='training'/>
+<category term='life'/>
+<category term='tdd'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/08/work-with-me'/><updated>2011-08-22T15:36:53+01:00</updated><id>http://chrismdp.com/2011/08/work-with-me</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2011/08/work-with-me" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>
+<link href='http://chrismdp.com/2011/08/work-with-me'/>
+<updated>2011-08-22T15:36:53+01:00</updated>
+<id>http://chrismdp.com/2011/08/work-with-me</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2011/08/work-with-me" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+</feed>

@@ -13,12 +13,33 @@ layout: nil
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>Waxing Lyrical on Pathfinding</title><category term='code'/><category term='conference'/><category term='fun'/><category term='software craftsmanship'/><category term='sc2012'/>    <author>
+<entry>
+<title>Waxing Lyrical on Pathfinding</title>
+<category term='code'/>
+<category term='conference'/>
+<category term='fun'/>
+<category term='software craftsmanship'/>
+<category term='sc2012'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/05/waxing-lyrical-on-pathfinding'/><updated>2012-05-15T16:02:40+01:00</updated><id>http://chrismdp.com/2012/05/waxing-lyrical-on-pathfinding</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/05/waxing-lyrical-on-pathfinding" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Leancamp Report</title><category term='lean'/><category term='conference'/>    <author>
+<link href='http://chrismdp.com/2012/05/waxing-lyrical-on-pathfinding'/>
+<updated>2012-05-15T16:02:40+01:00</updated>
+<id>http://chrismdp.com/2012/05/waxing-lyrical-on-pathfinding</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/05/waxing-lyrical-on-pathfinding" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Leancamp Report</title>
+<category term='lean'/>
+<category term='conference'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/05/leancamp-report'/><updated>2010-05-16T10:15:00+01:00</updated><id>http://chrismdp.com/2010/05/leancamp-report</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2010/05/leancamp-report" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>
+<link href='http://chrismdp.com/2010/05/leancamp-report'/>
+<updated>2010-05-16T10:15:00+01:00</updated>
+<id>http://chrismdp.com/2010/05/leancamp-report</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2010/05/leancamp-report" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+</feed>

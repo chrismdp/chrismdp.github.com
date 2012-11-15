@@ -91,10 +91,10 @@ layout: nil
   HTML
   posts.each.with_index do |post, index|
     post_data = post.to_liquid
-    html += "<entry>"
-    html += "<title>#{post_data['title']}</title>"
+    html += "<entry>\n"
+    html += "<title>#{post_data['title']}</title>\n"
     post.categories.each do |post_category|
-      html += "<category term='#{post_category}'/>"
+      html += "<category term='#{post_category}'/>\n"
     end
     html += <<-HTML
     <author>
@@ -102,13 +102,13 @@ layout: nil
       <email>chrismdp@gmail.com</email>
     </author>
     HTML
-    html += "<link href='http://chrismdp.com#{ post_data['url'] }'/>"
-    html += "<updated>#{ post_data['date'].xmlschema}</updated>"
-    html += "<id>http://chrismdp.com#{ post_data['id'] }</id>"
-    html += "<content type='html'>{% for post in site.posts %}{% if post.id == \"#{ post_data['id']}\" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>"
-    html += "</entry>"
+    html += "<link href='http://chrismdp.com#{ post_data['url'] }'/>\n"
+    html += "<updated>#{ post_data['date'].xmlschema}</updated>\n"
+    html += "<id>http://chrismdp.com#{ post_data['id'] }</id>\n"
+    html += "<content type='html'>{% for post in site.posts %}{% if post.id == \"#{ post_data['id']}\" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>\n"
+    html += "</entry>\n"
   end
-  html += "</feed>"
+  html += "</feed>\n"
   html
 end
 

@@ -13,16 +13,48 @@ layout: nil
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
-<entry><title>How to write a great story</title><category term='cucumber'/><category term='bdd'/><category term='bddkickstart'/>    <author>
+<entry>
+<title>How to write a great story</title>
+<category term='cucumber'/>
+<category term='bdd'/>
+<category term='bddkickstart'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/10/how-to-write-a-great-story'/><updated>2012-10-30T22:50:00+00:00</updated><id>http://chrismdp.com/2012/10/how-to-write-a-great-story</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/10/how-to-write-a-great-story" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>The simplest Cucumber project ever</title><category term='cucumber'/><category term='bdd'/><category term='bddkickstart'/>    <author>
+<link href='http://chrismdp.com/2012/10/how-to-write-a-great-story'/>
+<updated>2012-10-30T22:50:00+00:00</updated>
+<id>http://chrismdp.com/2012/10/how-to-write-a-great-story</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/10/how-to-write-a-great-story" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>The simplest Cucumber project ever</title>
+<category term='cucumber'/>
+<category term='bdd'/>
+<category term='bddkickstart'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/10/the-simplest-cucumber-project'/><updated>2012-10-25T20:47:16+01:00</updated><id>http://chrismdp.com/2012/10/the-simplest-cucumber-project</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/10/the-simplest-cucumber-project" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry><entry><title>Kickstart your team on BDD</title><category term='bddkickstart'/><category term='bdd'/><category term='cucumber'/><category term='code'/><category term='ruby'/>    <author>
+<link href='http://chrismdp.com/2012/10/the-simplest-cucumber-project'/>
+<updated>2012-10-25T20:47:16+01:00</updated>
+<id>http://chrismdp.com/2012/10/the-simplest-cucumber-project</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/10/the-simplest-cucumber-project" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Kickstart your team on BDD</title>
+<category term='bddkickstart'/>
+<category term='bdd'/>
+<category term='cucumber'/>
+<category term='code'/>
+<category term='ruby'/>
+    <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/07/kickstart-your-team-on-bdd'/><updated>2012-07-27T08:13:22+01:00</updated><id>http://chrismdp.com/2012/07/kickstart-your-team-on-bdd</id><content type='html'>{% for post in site.posts %}{% if post.id == "/2012/07/kickstart-your-team-on-bdd" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content></entry></feed>
+<link href='http://chrismdp.com/2012/07/kickstart-your-team-on-bdd'/>
+<updated>2012-07-27T08:13:22+01:00</updated>
+<id>http://chrismdp.com/2012/07/kickstart-your-team-on-bdd</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/07/kickstart-your-team-on-bdd" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+</feed>
