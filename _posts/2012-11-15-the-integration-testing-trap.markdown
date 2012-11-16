@@ -41,3 +41,9 @@ If this is happening, I suggest you take the ideas back to first principles and 
 Ask them to describe the feature in their own words, and work together to get something down on paper which makes sense to both of you. If we remember that this feature isn't for us to test our system's correctness, but a blueprint to guide our development direction, then there should be no conflict. Try to adopt their words for the different concepts in your system, rather than defaulting to your own pat terms (perhaps shoppers, not users, for example.) If in doubt, defer to the customer's wording: don't try and impose you're own structure except for ensuring the bare minimum to get the feature to run.
 
 I've often said before that if no one is reading our features, we're better off using RSpec. My thinking has evolved: perhaps many people miss the point of the outer part of the BDD cycle entirely - the tests are about the customer, not us. If we're only using Cucumber for integration testing, we are better off using RSpec. Whatever tool we use, we need to make sure it's giving value to customers, not layering on integration tests for our own benefit.
+
+
+<div class='notice'>
+  <p>If you like what you read, and you'd like to learn more, a quick reminder that Matt Wynne and I are running <a href='http://bddkickstart.com'>BDD Kickstart</a> in London <a href='http://bddkickstart.com/dates#london'>this coming December</a>.
+  </p>
+  </div>
