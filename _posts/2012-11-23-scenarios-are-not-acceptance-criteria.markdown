@@ -28,7 +28,7 @@ It's very easy to conflate the concept of scenarios with acceptance criteria: th
 
 Here's a feature without acceptance criteria:
 
-{% highlight cucumber %}
+{% highlight plain %}
 
     Feature: Relating two people
 
@@ -48,7 +48,7 @@ Example scenarios aren't good at describing design and user experience constrain
 
 We might be tempted to shoe-horn all that information into the scenario:
 
-{% highlight cucumber %}
+{% highlight plain %}
 
     Scenario: Relating two people
       Given a father and two children
@@ -66,7 +66,7 @@ This isn't a real scenario any more. We're trying to describe several different 
 
 Let's try and combine both these techniques:
 
-{% highlight cucumber %}
+{% highlight plain %}
 
     Feature: Relating two people
       As Robert the royal historian, I want to show parent/child relationships
