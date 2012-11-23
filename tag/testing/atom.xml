@@ -7,12 +7,27 @@ layout: nil
   <title>Chris Parsons: posts tagged testing</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2012-11-15T17:04:26+00:00</updated>
+  <updated>2012-11-23T08:55:47+00:00</updated>
   <id>http://chrismdp.com/tag/testing</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>Scenarios are not Acceptance Criteria</title>
+<category term='cucumber'/>
+<category term='bdd'/>
+<category term='testing'/>
+<category term='tdd'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2012/11/scenarios-are-not-acceptance-criteria'/>
+<updated>2012-11-23T08:55:47+00:00</updated>
+<id>http://chrismdp.com/2012/11/scenarios-are-not-acceptance-criteria</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/11/scenarios-are-not-acceptance-criteria" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>Cucumber: the integration testing trap</title>
 <category term='cucumber'/>
