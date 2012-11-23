@@ -88,7 +88,7 @@ Let's try and combine both these techniques:
       Then Bob and Elaine are shown as brother and sister
 
     Scenario: Bill is the adopted father of Elaine and Bob
-    Scanario: Charlie is too young to be the father of Joe
+    Scenario: Charlie is too young to be the father of Joe
 
 {% endhighlight %}
 
