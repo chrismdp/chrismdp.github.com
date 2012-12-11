@@ -7,12 +7,28 @@ layout: nil
   <title>Chris Parsons: posts tagged testing</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2012-11-23T08:55:47+00:00</updated>
+  <updated>2012-12-11T08:01:19+00:00</updated>
   <id>http://chrismdp.com/tag/testing</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>Cucumber: keeping the build passing</title>
+<category term='cucumber'/>
+<category term='bdd'/>
+<category term='testing'/>
+<category term='process'/>
+<category term='code'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2012/12/post'/>
+<updated>2012-12-11T08:01:19+00:00</updated>
+<id>http://chrismdp.com/2012/12/post</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/12/post" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>Scenarios are not Acceptance Criteria</title>
 <category term='cucumber'/>
