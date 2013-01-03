@@ -45,3 +45,5 @@ We have big plans for the new year. Through partnerships with [Julien "Cucumber 
 We're also thinking about running some different Kickstart courses this year: we have had enquiries about a course teaching basic Ruby, for example. If you're interested in a Ruby Kickstart course, please [let us know](mailto:hello@bddkickstart.com).
 
 If you'd like to join in the fun, then [join our mailing list](http://bddkickstart.com) for news and latest course dates.
+
+<p><i>Thanks to <a href='http://twitter.com/rchatley'>Rob Chatley</a> for the photos used in this article.</i></p>
