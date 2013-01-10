@@ -30,7 +30,7 @@ categories:
 	</bean>
 {% endhighlight %}</p>
 <p>Interesting. Time to look up "startingPageId" in ApplicationLifecycleAdvisor.java. The most helpful thing we run into is the afterPropertiesSet() method. This method, if it exists, this is called by the regular Spring Framework to allow people to check values were set correctly at the time of application launch. The relevant bit of Java code is below:</p>
-<p>{% highlight Java %}
+<p>{% highlight java %}
 public void afterPropertiesSet() throws Exception {
   final Properties systemProperties = System.getProperties();
   if (systemProperties.get(EXCEPTION_HANDLER_KEY) == null) {

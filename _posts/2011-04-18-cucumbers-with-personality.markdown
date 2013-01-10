@@ -18,7 +18,7 @@ It's very easy to concentrate on *what* we wish to accomplish, and *why* we want
 
 How often have we lazily written features like this?
 
-{% highlight "text" %}
+{% highlight text %}
 In order to know how much money I am making
 As a user
 I want to see a report of widgets sold this month
@@ -32,7 +32,7 @@ Next time we find ourselves writing "as a user", let's take a minute to stop and
 
 Consider this feature:
 
-{% highlight "text" %}
+{% highlight text %}
 In order to know how much money I am making
 As the head of the company
 I want to see a report of widgets sold this month
@@ -42,7 +42,7 @@ This guy is time poor, and just wants the facts, right now. Sure, he might want 
 
 Now how about this one?
 
-{% highlight "text" %}
+{% highlight text %}
 In order to know how much money I am making
 As a design assistant responsible for collating reports
 I want to see a report of widgets sold this month
@@ -54,7 +54,7 @@ This person possibly has a little more time on their hands, and their overriding
 
 On a recent project for a coaching company we took this a step further. We produced some great personas during the inception (Bob Coachee, Jean Coach), and then went so far as to use them in our features:
 
-{% highlight "text" %}
+{% highlight text %}
 In order to know who I am coaching next
 As Jean the coach
 I want to see a calendar showing today's appointments
