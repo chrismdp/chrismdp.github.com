@@ -91,7 +91,7 @@ I would never say it was *bad* to have dependent objects fixed in our code: ever
 
 Use dependency injection liberally, based on your judgement as to whether it improves the quality of your system. This applies whatever language you're using.
 
-Use Inversion of Control containers if you find them helpful, but consider the cost. It's often better to simply wire up your objects in code.
+Use Inversion of Control containers if you find them helpful, but consider the cost. In my experience, it's better to simply wire up your objects in code.
 
 Study other language communities and reason carefully about whether their paradigms and patterns are useful. After all, if Ruby programmers hadn't done that, we wouldn't have [Rack](http://rack.github.com/) (which came from Python) or [Cucumber](/tag/cucumber) (which came originally from JBehave, written in Java.)
 
