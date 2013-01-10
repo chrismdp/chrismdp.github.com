@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Dependency injection != Inversion of Control"
+title: "Dependency injection is not Inversion of Control"
 date: 2013-01-10 13:25:44 +0000
 categories:
   - ruby
