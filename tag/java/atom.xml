@@ -7,12 +7,28 @@ layout: nil
   <title>Chris Parsons: posts tagged java</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2006-04-11T16:25:00+01:00</updated>
+  <updated>2013-01-10T13:25:44+00:00</updated>
   <id>http://chrismdp.com/tag/java</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>Dependency injection != Inversion of Control</title>
+<category term='ruby'/>
+<category term='code'/>
+<category term='java'/>
+<category term='cucumber'/>
+<category term='bdd'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2013/01/dependency-injection-not-ioc'/>
+<updated>2013-01-10T13:25:44+00:00</updated>
+<id>http://chrismdp.com/2013/01/dependency-injection-not-ioc</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/01/dependency-injection-not-ioc" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>Spring Richclient ~ That's a wrap</title>
 <category term='richclient'/>

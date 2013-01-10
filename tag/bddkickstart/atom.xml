@@ -14,7 +14,7 @@ layout: nil
     <email>chrismdp@gmail.com</email>
   </author>
 <entry>
-<title>BDD Kickstart update</title>
+<title>BDD Kickstart: London and 2013 plans</title>
 <category term='bddkickstart'/>
 <category term='bdd'/>
 <category term='ruby'/>
@@ -22,10 +22,10 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2013/01/bddkickstart-london-a-retrospective'/>
+<link href='http://chrismdp.com/2013/01/bddkickstart-london-and-2013'/>
 <updated>2013-01-03T07:31:11+00:00</updated>
-<id>http://chrismdp.com/2013/01/bddkickstart-london-a-retrospective</id>
-<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/01/bddkickstart-london-a-retrospective" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+<id>http://chrismdp.com/2013/01/bddkickstart-london-and-2013</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/01/bddkickstart-london-and-2013" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
 </entry>
 <entry>
 <title>How to write a great story</title>

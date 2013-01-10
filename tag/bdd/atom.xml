@@ -7,14 +7,30 @@ layout: nil
   <title>Chris Parsons: posts tagged bdd</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2013-01-03T07:31:11+00:00</updated>
+  <updated>2013-01-10T13:25:44+00:00</updated>
   <id>http://chrismdp.com/tag/bdd</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
 <entry>
-<title>BDD Kickstart update</title>
+<title>Dependency injection != Inversion of Control</title>
+<category term='ruby'/>
+<category term='code'/>
+<category term='java'/>
+<category term='cucumber'/>
+<category term='bdd'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2013/01/dependency-injection-not-ioc'/>
+<updated>2013-01-10T13:25:44+00:00</updated>
+<id>http://chrismdp.com/2013/01/dependency-injection-not-ioc</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/01/dependency-injection-not-ioc" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>BDD Kickstart: London and 2013 plans</title>
 <category term='bddkickstart'/>
 <category term='bdd'/>
 <category term='ruby'/>
@@ -22,10 +38,10 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2013/01/bddkickstart-london-a-retrospective'/>
+<link href='http://chrismdp.com/2013/01/bddkickstart-london-and-2013'/>
 <updated>2013-01-03T07:31:11+00:00</updated>
-<id>http://chrismdp.com/2013/01/bddkickstart-london-a-retrospective</id>
-<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/01/bddkickstart-london-a-retrospective" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+<id>http://chrismdp.com/2013/01/bddkickstart-london-and-2013</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/01/bddkickstart-london-and-2013" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
 </entry>
 <entry>
 <title>Cucumber: keeping the build passing</title>
