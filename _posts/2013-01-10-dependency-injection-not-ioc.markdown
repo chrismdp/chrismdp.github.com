@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Dependency injection is not Inversion of Control"
+title: "Dependency injection != Inversion of Control"
 date: 2013-01-10 13:25:44 +0000
 categories:
   - ruby
@@ -23,33 +23,8 @@ Dependency injection is the practice of passing in the our object's collaborator
 
 Here's an example of a class which uses a collaborator directly:
 
-{% highlight ruby %}
-
-    class Waffle
-      def cook(time)
-        @burnt = true if (time > CookingTime.for(self))
-      end
-    end
-
-    waffle = Waffle.new
-    waffle.cook(10.minutes)
-
-{% endhighlight %}
-
 Insead of using `CookingTime` directly in the class, we might choose to "inject" the collaborators into the object:
 
-{% highlight ruby %}
-
-    class Waffle
-      def cook(time, times)
-        @burnt = true if (time > times.for(self))
-      end
-    end
-
-    waffle = Waffle.new
-    waffle.cook(10.minutes, CookingTime)
-
-{% endhighlight %}
 
 It seems a trivial change, and perhaps even a backwards step. However, now our `Waffle` object is isolated from our `CookingTime` code in a way that it wasn't before - we can now vary the `Waffle` and the list of `CookingTime` objects independently. (They're still reasonably closely coupled by implication: the `Waffle` still expects an object to be passed in which responds to the `for` method and returns a time. Another step to isolate this object further would be to pass in a `CookingTime` value object to the `Waffle` object directly.)
 
@@ -71,15 +46,6 @@ However, the concept of dependency injection as described above is very useful. 
 
 For example, consider this short class:
 
-{% highlight ruby %}
-
-    class Waffle
-      def time_since_cooked
-        Time.now - cooked_at
-      end
-    end
-
-{% endhighlight %}
 
 Even though we can refer to a Time.now class in Ruby from within an object, and stub it externally for testing, the object above still has an explicit dependency on the `Time` class: specifically on the `now` factory method which creates the `Time` object. When we bury these references in our code, it becomes hard to see what our collaborators are. It could then be beneficial to inject them into the class via the constructor, rather than referring to them directly.
 
