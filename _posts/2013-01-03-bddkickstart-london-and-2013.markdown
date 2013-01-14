@@ -15,15 +15,15 @@ Fancy an update on BDD Kickstart? Here's a quick summary of where we got to at t
 
 [Matt Wynne](http://mattwynne.net) and I finished running the inaugural [BDD Kickstart](http://bddkickstart.com) event in London at the beginning of last month. People from every different product discipline got together and learnt about Behaviour Driven Development (BDD) principles, and how to apply them to their own projects.
 
-![bdd-kickstart-matt](/files/bdd-kickstart-matt.jpg)
+![bdd-kickstart-matt](http://chrismdp.com/files/bdd-kickstart-matt.jpg)
 
 Matt led the first day, covering the BDD onion skin principles at a high level. We discussed business goals, acceptance criteria, scenarios and how all these concepts fit together. BDD is really just great TDD practiced formalised, so getting the definitions right is much of the work. We also explained how code quality is central to whole process, tying it all together.
 
-![bdd-kickstart-testing](/files/bdd-kickstart-testing.jpg)
+![bdd-kickstart-testing](http://chrismdp.com/files/bdd-kickstart-testing.jpg)
 
 On the second day, I covered some of the more practical elements of getting running with Cucumber, one of the most widely used BDD tools. We covered the simplest cucumber project ever, to get a feel for how the tool worked. We looked at different ways of writing and implementing scenarios, along with the practical implications. We took people right through the BDD cycle, showing everyone exactly where to switch between acceptance tests and unit tests, and giving plenty of opportunity to practice. At the end of the day, we introduced some specific techniques to help people test web applications.
 
-![bdd-kickstart-chris](/files/bdd-kickstart-chris.jpg)
+![bdd-kickstart-chris](http://chrismdp.com/files/bdd-kickstart-chris.jpg)
 
 The third day was a "connection day" - the aim is to help people to apply the concepts they've learnt with their real world work, and the problems they face when at their desks as opposed to sitting in a training room. We encouraged people to bring their own software projects on this day so that we could make real progress on their projects. We began by setting goals with the individual groups, and then allowed people to work towards those goals, helping them as needed along the way.
 
