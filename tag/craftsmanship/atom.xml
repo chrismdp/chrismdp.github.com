@@ -7,12 +7,27 @@ layout: nil
   <title>Chris Parsons: posts tagged craftsmanship</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2012-09-28T20:46:31+01:00</updated>
+  <updated>2013-01-16T20:23:24+00:00</updated>
   <id>http://chrismdp.com/tag/craftsmanship</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>You're not doing BDD, you're just writing Cucumber</title>
+<category term='bdd'/>
+<category term='cucumber'/>
+<category term='tdd'/>
+<category term='craftsmanship'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2013/01/bdd-is-not-cucumber'/>
+<updated>2013-01-16T20:23:24+00:00</updated>
+<id>http://chrismdp.com/2013/01/bdd-is-not-cucumber</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/01/bdd-is-not-cucumber" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>Your framework is a liability</title>
 <category term='code'/>
