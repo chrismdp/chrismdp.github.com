@@ -56,5 +56,14 @@
             print "</li>"
           end
     .widget
+      %h4 More
+      %ul.list-style
+        %li
+          %i.icon-chevron-right
+          %a{:href => '/all'} Archives
+        %li
+          %i.icon-chevron-right
+          %a{:href => '/tags'} All Categories
+    .widget
       :plain
         {% include hello.html %}

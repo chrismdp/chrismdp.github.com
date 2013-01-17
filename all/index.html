@@ -2,16 +2,19 @@
 layout: default
 title: "Chris Parsons: all posts"
 ---
-<div id="home">
-  <div id="current" class="post">
-    <div id="post" class="post">
-      <h1><a>all posts</a></h1>
-      <div class='strap'>last updated {{ site.posts.first.date | date_to_string }}</div>
-      <ul>
-        {% for post in site.posts %}
-          {% include post_list_entry.html %}
-        {% endfor %}
-      </ul>
-    </div>
+<div class='hero-unit'>
+  <p>
+    <a href='{{ site.url }}'>a blog by Chris Parsons</a>
+  </p>
+  <h1>
+    all posts
+  </h1>
+</div>
+<hr />
+<div class='row' id='post'>
+  <div class='span8'>
+    {% for post in site.posts %}
+      {% include post_list_entry.html %}
+    {% endfor %}
   </div>
 </div>

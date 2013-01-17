@@ -23,12 +23,19 @@ layout: default
 title: Tags
 type: A tag cloud
 ---
-<div id="home">
-  <div id="current" class="post">
-    <div id="post" class="post">
-      <h1><a>tag cloud</a></h1>
-
+<div class='hero-unit'>
+  <p>
+    <a href='{{ site.url }}'>a blog by Chris Parsons</a>
+  </p>
+  <h1>
+   Tag cloud
+  </h1>
+</div>
+<hr />
+<div class='row' id='post'>
+  <div class='span8'>
       <p>Click on a tag to see the relevant posts.</p>
+      <ul class='tags'>
   HTML
 
   site.categories.sort.each do |category, posts|
@@ -37,11 +44,27 @@ type: A tag cloud
     HTML
 
     s = posts.count
-    font_size = 12 + (s*1.5);
-    html << "<a class='tag' href=\"/tag/#{category}/\" title=\"Entries tagged #{category}\" style=\"font-size: #{font_size}px; line-height:#{font_size}px\">#{category}</a> "
+    font_size = 12;
+    html << "<li><a class='tag' href=\"/tag/#{category}/\" title=\"Entries tagged #{category}\" style=\"font-size: #{font_size}px;\">#{category}</a></li>"
   end
 
-  html << "<p>You may also wish to browse the <a href=\"/all/\" title=\"Archives for {{site.title}}\">archives</a>.</div></div></div>"
+  html << <<-HTML
+  </ul>
+  <br/><br/>
+  </div>
+
+  <div class='sidebar span4'>
+    <div class='widget'>
+      <ul class='list-style'>
+        <li>
+          <i class='icon-chevron-right'></i>
+          <a href='/all'>Archives</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  HTML
 
 
   File.open('tags/index.html', 'w+') do |file|
@@ -101,26 +124,53 @@ layout: default
 title: Entries tagged "#{category}"
 type: "#{category.gsub(/\b\w/){$&.upcase}}"
 ---
-<div id="home">
-  <div id="current" class="post">
-    <div id="post" class="post">
-    <h1 id="#{category}"><a>entries tagged "#{category}"</a></h1>
-    <p>&laquo; <a href="/tags/" title="Tag cloud for {{site.title}}">show all tags</a></p>
+<div class='hero-unit'>
+  <p>
+    <a href='{{ site.url }}'>a blog by Chris Parsons</a>
+  </p>
+  <h1>
+    Posts tagged "#{category}"
+  </h1>
+</div>
+<hr />
+<div class='row' id='post'>
+  <div class='span8'>
   HTML
 
-  html << '<ul class="posting_list">'
   posts.each do |post|
     post_data = post.to_liquid
     html << <<-HTML
-        <li>
-          <span>#{post_data['date'].strftime("%d %b %Y")}</span> &raquo; <a href="#{post.url}">#{post_data['title']}</a>
-          <div class='strap'>#{ post.categories.map {|tag| "<a class='tag' href='/tag/#{tag}/'>#{tag}</a>" }.join(' ') }</div>
-        </li>
+<article class="post">
+  <div class="entry-body">
+    <a href="#{post.url}">
+      <h2 class="entry-title">#{post_data['title']}</h2>
+    </a>
+  </div>
+  <div class="entry-meta">
+    <span class="entry-date">#{post_data['date'].strftime("%d %b %Y")}</span>
+  </div>
+</article>
     HTML
   end
-  html << '</ul>'
+  html << <<-HTML
+  </div>
+  <div class='span4 sidebar'>
+    <div class='widget'>
+      <ul class='list-style'>
+        <li>
+          <i class='icon-chevron-right'></i>
+          <a href='/all'>Archives</a>
+        </li>
+        <li>
+          <i class='icon-chevron-right'></i>
+          <a href='/tags'>All Categories</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  HTML
 
-  html << '<p>You may also be interested in browsing the <a href="/all/" title="Archives">archives</a> or seeing <a href="/tags/" title="Tag cloud">the tag cloud</a>.</div></div></div>'
   html
 end
 

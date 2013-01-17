@@ -1,4 +1,12 @@
-<li>
-  <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
-  <div class='strap'>{% include taglist.html %}</div>
-</li>
+<article class="post">
+  <div class="entry-body">
+    <a href="{{ post.url }}">
+      <h2 class="entry-title">{{ post.title }}</h2>
+    </a>
+
+    {{ post.content | truncatewords: 30 }}
+  </div>
+  <div class="entry-meta">
+    <span class="entry-date">{{ post.date | date_to_string }}</span>
+  </div>
+</article>
