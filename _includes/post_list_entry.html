@@ -3,8 +3,6 @@
     <a href="{{ post.url }}">
       <h2 class="entry-title">{{ post.title }}</h2>
     </a>
-
-    {{ post.content | truncatewords: 30 }}
   </div>
   <div class="entry-meta">
     <span class="entry-date">{{ post.date | date_to_string }}</span>
