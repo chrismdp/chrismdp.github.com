@@ -38,7 +38,7 @@ TDD is also universally introduced using a form of practice called the "TDD cycl
 
 Scrum is a series of practices and tools used to illustrate agile concepts. Unfortunately, unlike with TDD, many who practice Scrum have never got past these practices to the principles behind them. Some people view Scrum as the Standup, or the Sprint, or perhaps the Backlog. The important concepts of team synchronisation, regular cadence, and progressive iteration can be lost in the noise.
 
-If the concepts cannot outgrow the tools and practices we use to express them, then the concepts are weak, or the tools and practices are weak (or weakly understood.) Further, if we cannot envisage discarding a practice or tool, perhaps we haven't fully grasped the concepts behind them yet.
+If the concepts cannot outgrow the tools and practices we use to express them, then the concepts are weak, or the tools and practices are weak (or weakly understood.) Further, if we cannot envisage discarding a practice or tool, perhaps we haven't fully grasped the concepts behind it yet.
 
 ## We still need the practices
 
