@@ -51,7 +51,7 @@
           site.categories.sort.each do |category, posts|
             next if (posts.length <= 2)
             print "<li>"
-            print "<a href=\"/tags/#{category.gsub(/\s+/,'-')}.html\">"
+            print "<a href=\"/tag/#{category.gsub(/\s+/,'-')}/\">"
             print "#{category} (#{posts.length})</a>"
             print "</li>"
           end
