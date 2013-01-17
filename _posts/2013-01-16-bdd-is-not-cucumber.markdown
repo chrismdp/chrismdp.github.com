@@ -10,9 +10,11 @@ categories:
 
 ---
 
-Continuing in the vein of "concept and values vs concrete tools" ([see my previous post about dependency injection](http://chrismdp.com/2013/01/dependency-injection-not-ioc)), I'd like to highlight a common fallacy about Behaviour-driven Development (BDD) and Cucumber, and BDD and story-writing; namely, that they're all the same thing. BDD is a set of concepts and values, and Cucumber is one of many tools which we can use to work with those values. Using a tool such as Cucumber, or following a practice such as feature-writing does not mean that you've internalised the values of BDD yet or understand what it really means.
+Continuing in the vein of "concept and values vs concrete tools" ([see my previous post about dependency injection](http://chrismdp.com/2013/01/dependency-injection-not-ioc)), I'd like to highlight a common fallacy about Behaviour-driven Development (BDD) and Cucumber, and BDD and story-writing; namely, that they're all the same thing.
 
-Before I get into that, let me clearly explain the differences in my mind between the different terms.
+BDD is a set of concepts and values, and Cucumber is one of many tools which we can use to work with those values. Using a tool such as Cucumber, or following a practice such as feature-writing does not mean that you've internalised the values of BDD yet or understand what it really means.
+
+Before I get into that, let me clearly explain the distinctions in my mind between the different terms.
 
 ## Concepts, practices and tools
 
