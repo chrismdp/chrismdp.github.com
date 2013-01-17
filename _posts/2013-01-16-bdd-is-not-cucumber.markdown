@@ -42,7 +42,7 @@ If the concepts cannot outgrow the tools and practices we use to express them, t
 
 ## We still need the practices
 
-That's not to say we can internalise concepts without good practices. We can't just bleat "write clean, reliable code!" at someone and expect them to know what clean, reliable code truly is, and how to continue to write it when it's difficult to do so. Without the understanding that comes from diligently applying "Red, Green, Refactor" over a long period, we will never gain full insight into how to apply a value appropriately. I've been apply TDD practices for several years now, and I am still learning about the relationships between objects and how they can be improved.
+That's not to say we can internalise concepts without good practices. We can't just bleat "write clean, reliable code!" at someone and expect them to know what clean, reliable code truly is, and how to continue to write it when it's difficult to do so. Without the understanding that comes from diligently applying "Red, Green, Refactor" over a long period, we will never gain full insight into the values behind TDD. I've been applying TDD practices for several years now, and I am still learning about the relationships between objects and how they can be improved.
 
 In the same way, good tools more suited to the practices we are trying to use will help us internalise concepts and values more quickly. For example, the way that RSpec changed the language we use when writing unit tests helps us to focus on behaviour rather than pure correctness.
 
