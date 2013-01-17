@@ -5,11 +5,11 @@
   ---
   {% assign post = site.posts.first %}
 .hero-unit
+  %p
+    %a{:href => "{{ site.url }}" } a blog by Chris Parsons
   %h1
     %a{:href => "{{ post.url }}"}
       {{ post.title }}
-  %p
-    a blog by Chris Parsons
 
 %hr
 
