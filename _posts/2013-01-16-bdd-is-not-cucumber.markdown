@@ -36,7 +36,7 @@ Test-driven development (TDD) is a good example of a series of concepts that has
 
 TDD is also universally introduced using a form of practice called the "TDD cycle." We are encouraged to write tests, then write code, then refactor. However, as the coder becomes more familar with this cycle and follows it instinctively, TDD becomes much more about design than about "Red, Green, Refactor." The coder outgrows the practice (although they may never abandon it entirely) and becomes intimately associated with the concept. This concept in TDD's case can be quite difficult to describe, but might be partially summarised as *clean, reliable code.*
 
-Scrum is a series of practices and tools used to illustrate agile concepts. Unfortunately, unlike with TDD, many who practice Scrum have never got past these practices to the principles behind them. For Some people view Scrum as the Standup, or the Sprint, or perhaps the Backlog. The important concepts of team synchronisation, regular cadence, and progressive iteration can be lost in the noise.
+Scrum is a series of practices and tools used to illustrate agile concepts. Unfortunately, unlike with TDD, many who practice Scrum have never got past these practices to the principles behind them. Some people view Scrum as the Standup, or the Sprint, or perhaps the Backlog. The important concepts of team synchronisation, regular cadence, and progressive iteration can be lost in the noise.
 
 If the concepts cannot outgrow the tools and practices we use to express them, then the concepts are weak, or the tools and practices are weak (or weakly understood.) Further, if we cannot envisage discarding a practice or tool, perhaps we haven't fully grasped the concepts behind them yet.
 
