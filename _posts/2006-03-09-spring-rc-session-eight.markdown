@@ -8,7 +8,7 @@ categories:
   - spring
   - tutorial
 ---
-<div class='notice'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
+<div class='alert'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
           
 <p>Let's look at the binding framework today. I've got an options dialog to write, and it looks like the binding framework could be just the ticket...</p>
 <p>For the uninitiated, when we talk about "binding" we mean linking values in a text field on a form to values in our Java class. Essentially we want to turn:</p>

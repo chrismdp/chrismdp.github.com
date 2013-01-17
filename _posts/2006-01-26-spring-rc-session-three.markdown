@@ -8,7 +8,7 @@ categories:
   - spring
   - tutorial
 ---
-<div class='notice'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
+<div class='alert'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
           
 <p>At the end of the last session, we'd managed to get the Petclinic application up and running in its own directory, and located the main configuration file (richclient-application-context.xml). We'd also worked out what a few beans in there actually did, although there were many more still to look at. In the next couple of sessions, I'm going to have a closer look at the Rich Client specific beans in richclient-application-context.xml and work out what they do. </p>
 <p>This session, let's find out how my "Hello, world!" change actually worked, by following the bean definitions through richclient-application-context.xml. We might even learn something about the Rich Client architecture on the way. Here goes...</p>

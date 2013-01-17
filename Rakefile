@@ -1,29 +1,10 @@
-task :cloud_basic do
-    puts 'Generating tag cloud...'
-    require 'rubygems'
-    require 'jekyll'
-    include Jekyll::Filters
+rule '.html' => [ proc { |name| name.sub(/\.html/,'_haml.haml') } ] do |t|
+  sh %{ haml -E utf-8 #{t.source} #{t.name.sub(/_haml\./,'.')} }
+end
 
-    options = Jekyll.configuration({})
-    site = Jekyll::Site.new(options)
-    site.read_posts('')
-
-    html = ''
-
-    site.categories.sort.each do |category, posts|
-
-      s = posts.count
-      font_size = 12 + (s*1.2);
-      html << "<a href=\"/tag/#{category}/\" title=\"Pages tagged #{category}\" style=\"font-size: #{font_size}px; line-height:#{font_size}px\" rel=\"tag\">#{category}</a> "
-    end
-
-    File.open('_includes/tags.html', 'w+') do |file|
-      file.puts html
-    end
-
-    puts 'Done.'
-  end
-
+rule '.css' => ['.scss'] do |t|
+    sh %{ sass -t compressed #{t.source} #{t.name} }
+end
 
 task :cloud do
   puts 'Generating tag cloud...'

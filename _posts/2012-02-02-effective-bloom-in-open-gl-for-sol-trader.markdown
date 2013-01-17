@@ -12,7 +12,7 @@ categories:
   - game development
 
 ---
-<div class='notice'>
+<div class='alert alert-block alert-info'>
   <h2>TL;DR</h2>
 
   <p>Skip to the <a href='#pictures'>pictures</a>.</p>
@@ -57,6 +57,6 @@ I plan to use this effect for all sorts of things: laser fire, explosions, you n
 
 I'm going to tackle the gui. I now have AI characters with names trading on Earth's main commodity market: it's time the player joins them in making trades.
 
-<div class='notice'>
+<div class='alert alert-info'>
   If you'd like to purchase Sol Trader you can now do so at <a href='http://soltrader.net'>soltrader.net</a>!
 </div>

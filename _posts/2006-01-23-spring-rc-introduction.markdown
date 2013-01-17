@@ -8,7 +8,7 @@ categories:
   - spring
   - tutorial
 ---
-<div class='notice'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
+<div class='alert'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
           
 <p>Right, time to learn Spring Rich Client.</p>
 <p>I've been meaning to learn this project for a while, but haven't yet quite got round to it. Now is the time. A client wants a piece of work done that see

@@ -10,7 +10,7 @@ categories:
   - government
   - e-petitions
 ---
-<div class='notice'>Update: I've posted more about the massive traffic surge and how we responded <a href='/2011/08/e-petitions-handling-traffic'>here</a>.</div>
+<div class='alert'>Update: I've posted more about the massive traffic surge and how we responded <a href='/2011/08/e-petitions-handling-traffic'>here</a>.</div>
 
 The project that I've been working on at the Government Digital Service (GDS) for the last few weeks has just been launched. It's the new Government [e-petitions](http://epetitions.direct.gov.uk) service, which replaces the old Number 10 petitions website run by the previous government. Time to talk about the architecture, how we set the team up and the effect the project is having within government.
 

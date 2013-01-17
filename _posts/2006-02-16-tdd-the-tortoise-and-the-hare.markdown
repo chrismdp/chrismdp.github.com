@@ -5,7 +5,7 @@ date: 2006-02-16 09:43:00 +00:00
 categories:
   - tdd
 ---
-<div class='notice'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
+<div class='alert'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
 <p>Test Driven Development. Some people just don't get it.</p>
 <p>Some people say: "A test for each feature? But that would mean writing twice as much code!"</p>
 <p>These people usually go on to say: "It's just not worth it. I've finished my code, and it works, and you're still writing the test! I leave you in dust, 

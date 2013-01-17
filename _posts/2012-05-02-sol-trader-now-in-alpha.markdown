@@ -47,7 +47,7 @@ The more of you who buy the game now and play it, the clearer the way forward be
 
 If you've purchased the game, what can I do to improve it? If you haven't purchased it yet, what can I put on the website to better inform your decision? [Let me know](mailto:chris@soltrader.net).
 
-<div class='notice'>
+<div class='alert alert-info'>
   If you'd like to purchase Sol Trader you can do so at <a href='http://soltrader.net'>soltrader.net</a>.
 </div>
 

@@ -11,13 +11,13 @@ categories:
   - game development
 
 ---
-<div class='notice'>
+<div class='alert alert-info'>
   <b>UPDATE:</b> This post was pretty popular. I've posted a followup <a href="/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on/">here</a>.
 </div>
 
 After two months of Sol Trader development in Ruby, I took a difficult decision last Wednesday morning: I've decided to rewrite the game code from scratch in C++. Let me explain my reasons.
 
-<div class='notice'>
+<div class='alert alert-info'>
   If you'd like to purchase Sol Trader you can now do so at <a href='http://soltrader.net'>soltrader.net</a>!
 </div>
 
@@ -70,6 +70,6 @@ I'll know at the end of the project :) My feeling is though that it was the corr
 
 What do you think? Did I make the right call?
 
-<div class='notice'>
+<div class='alert alert-info'>
   If you'd like to purchase Sol Trader you can now do so at <a href='http://soltrader.net'>soltrader.net</a>!
 </div>

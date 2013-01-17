@@ -8,7 +8,7 @@ categories:
   - spring
   - tutorial
 ---
-<div class='notice'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
+<div class='alert'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
           
 <p>This session, let's have a brief look at some of the other in the richclient-application-context.xml file, and see if we can at least work out roughly what they're for. First however, a word about ApplicationServices.</p>
 <h3>The ApplicationServices singleton</h3>

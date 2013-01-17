@@ -29,6 +29,6 @@ I have a few more comparisons between Ruby and C++ which I'd like to share.
 
 I'll continue to post my learnings as I collect them.
 
-<div class='notice'>
+<div class='alert alert-info'>
   If you'd like to purchase Sol Trader you can now do so at <a href='http://soltrader.net'>soltrader.net</a>!
 </div>

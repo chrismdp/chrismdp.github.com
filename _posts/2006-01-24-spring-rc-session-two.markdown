@@ -8,7 +8,7 @@ categories:
   - spring
   - tutorial
 ---
-<div class='notice'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
+<div class='alert'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
           
 <p>Ok. Today, it's time to look under the hood.</p>
 <p>Firstly, I decided to move the petclinic application to its own directory and clean up the paths a bit so that they reflected the usual way I organise java applications. Also, I wanted this to be a standalone application and therefore I needed to remove some of the relative paths in project.properties so that we didn't need the Rich Client source around to compile and run it. Finally, to satisfy my TDD cravings, I added junit test build targets in and created a dummy test to ensure junit was up and running. </p>

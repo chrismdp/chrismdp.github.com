@@ -8,7 +8,7 @@ categories:
   - GTD
   - productivity
 ---
-<div class='notice'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
+<div class='alert'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
 
 Welcome to SVG Planner - D\*I\*Y Planner style 3x5 Index Cards implemented in SVG.
 

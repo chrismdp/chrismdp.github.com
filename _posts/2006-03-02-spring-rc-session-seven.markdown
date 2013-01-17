@@ -8,7 +8,7 @@ categories:
   - spring
   - tutorial
 ---
-<div class='notice'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
+<div class='alert'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
           
 <p>There's been a bit of a gap between the last session and this one; mostly because I've been actually doing coding rather than just writing about coding. It's always worth actually doing a bit of coding once in a while; it's quite fun really, and as I also happen to like eating most days (as does my family), some real work is necessary from time to time...</p>
 <p>Anyhow, I apologise for the delay. On with our journey.</p>

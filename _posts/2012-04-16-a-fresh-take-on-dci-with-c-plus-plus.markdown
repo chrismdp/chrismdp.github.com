@@ -11,7 +11,7 @@ categories:
 
 ---
 
-<div class='notice'>
+<div class='alert alert-info'>
   If you'd like to purchase Sol Trader you can now do so at <a href='http://soltrader.net'>soltrader.net</a>!
 </div>
 

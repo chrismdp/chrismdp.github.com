@@ -1,0 +1,60 @@
+:plain
+  ---
+  layout: default
+  title: Chris Parsons
+  ---
+  {% assign post = site.posts.first %}
+.hero-unit
+  %h1
+    %a{:href => "{{ post.url }}"}
+      {{ post.title }}
+  %p
+    a blog by Chris Parsons
+
+%hr
+
+#post.row
+  .span8
+    %article.post.single-post
+      .entry-content
+        {{ post.content }}
+        %p
+          %a{:href => "{{ site.posts.first.url }}#comments"} Click here
+          to comment.
+
+  .sidebar.span4
+    %p
+      Posted {{ post.date | date: "%B %d, %Y" }}
+    .widget
+      %h4 Share this
+      :plain
+        {% include strap.html %}
+    .widget
+      %h4 Recent posts
+      %ul.list-style
+        :plain
+          {% for post in site.posts %}
+          {% if forloop.index < 7 and forloop.index > 1 %}<li><i class="icon-chevron-right"></i> <a href="{{ post.url }}">{{ post.title }}</a><br/><span class='muted'>{{ post.date | date_to_string }}</span></li>{% endif %}
+          {% endfor %}
+
+    .widget
+      %h4 Popular Categories
+      %ul.tags
+        :ruby
+          require 'rubygems'
+          require 'jekyll'
+          puts "<!--"
+          options = Jekyll.configuration({})
+          site = Jekyll::Site.new(options)
+          site.read_posts('')
+          puts "-->"
+          site.categories.sort.each do |category, posts|
+            next if (posts.length <= 2)
+            print "<li>"
+            print "<a href=\"/tags/#{category.gsub(/\s+/,'-')}.html\">"
+            print "#{category} (#{posts.length})</a>"
+            print "</li>"
+          end
+    .widget
+      :plain
+        {% include hello.html %}

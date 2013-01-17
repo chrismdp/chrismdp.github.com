@@ -13,7 +13,7 @@ categories:
 
 ---
 
-<div class='notice'>
+<div class='alert alert-info'>
   If you'd like to purchase Sol Trader you can do so at <a href='http://soltrader.net'>soltrader.net</a>.
 </div>
 
@@ -56,7 +56,7 @@ The important thing is to learn about your customer base, *within the context of
 
 What do you think of learning in public like this, and what do you think of my development approach?
 
-<div class='notice'>
+<div class='alert alert-info'>
   If you'd like to purchase Sol Trader you can do so at <a href='http://soltrader.net'>soltrader.net</a>.
 </div>
 

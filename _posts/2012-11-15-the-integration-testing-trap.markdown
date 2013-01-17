@@ -43,7 +43,7 @@ Ask them to describe the feature in their own words, and work together to get so
 I've often said before that if no one is reading our features, we're better off using RSpec. My thinking has evolved: perhaps many people miss the point of the outer part of the BDD cycle entirely - the tests are about the customer, not us. If we're only using Cucumber for integration testing, we are better off using RSpec. Whatever tool we use, we need to make sure it's giving value to customers, not layering on integration tests for our own benefit.
 
 
-<div class='notice'>
+<div class='alert alert-info'>
   <p>If you like what you read, and you'd like to learn more, a quick reminder that Matt Wynne and I are running <a href='http://bddkickstart.com'>BDD Kickstart</a> in London <a href='http://bddkickstart.com/dates#london'>this coming December</a>.
   </p>
   </div>

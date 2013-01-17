@@ -2,22 +2,56 @@
 layout: default
 title: Chris Parsons
 ---
-<div id="home">
-  <div id="current" class="post">
-    <div id="post" class="post">
-      <h1><a href="{{ site.posts.first.url }}">{{ site.posts.first.title }}</a></h1>
-      {% assign post = site.posts.first %}{% include strap.html %}
-
-      {{ site.posts.first.content  }}
-    </div>
-    <a href="{{ site.posts.first.url }}#comments">Click here</a> to comment.
+{% assign post = site.posts.first %}
+<div class='hero-unit'>
+  <h1>
+    <a href='{{ post.url }}'>
+      {{ post.title }}
+    </a>
+  </h1>
+  <p>
+    a blog by Chris Parsons
+  </p>
+</div>
+<hr />
+<div class='row' id='post'>
+  <div class='span8'>
+    <article class='post single-post'>
+      <div class='entry-content'>
+        {{ post.content }}
+        <p>
+          <a href='{{ site.posts.first.url }}#comments'>Click here</a>
+          to comment.
+        </p>
+      </div>
+    </article>
   </div>
-  <div class="archive">
-    <h1>Older Posts (<a href="/all/">view all</a>)</h1>
-    <ul class="posts">
-      {% for post in site.posts %}
-      {% if forloop.index < 7 and forloop.index > 1 %}<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>{% endif %}
-      {% endfor %}
-    </ul>
+  <div class='sidebar span4'>
+    <p>
+      Posted {{ post.date | date: "%B %d, %Y" }}
+    </p>
+    <div class='widget'>
+      <h4>Share this</h4>
+      {% include strap.html %}
+    </div>
+    <div class='widget'>
+      <h4>Recent posts</h4>
+      <ul class='list-style'>
+        {% for post in site.posts %}
+        {% if forloop.index < 7 and forloop.index > 1 %}<li><i class="icon-chevron-right"></i> <a href="{{ post.url }}">{{ post.title }}</a><br/><span class='muted'>{{ post.date | date_to_string }}</span></li>{% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+    <div class='widget'>
+      <h4>Popular Categories</h4>
+      <ul class='tags'>
+<!--
+Configuration from /Users/chris/blog/chrismdp.github.com/_config.yml
+-->
+<li><a href="/tags/agile.html">agile (15)</a></li><li><a href="/tags/anti-pattern.html">anti-pattern (3)</a></li><li><a href="/tags/apprenticeship.html">apprenticeship (5)</a></li><li><a href="/tags/bdd.html">bdd (18)</a></li><li><a href="/tags/bddkickstart.html">bddkickstart (4)</a></li><li><a href="/tags/business.html">business (12)</a></li><li><a href="/tags/c++.html">c++ (5)</a></li><li><a href="/tags/code.html">code (33)</a></li><li><a href="/tags/craftsmanship.html">craftsmanship (14)</a></li><li><a href="/tags/cucumber.html">cucumber (18)</a></li><li><a href="/tags/game-development.html">game development (5)</a></li><li><a href="/tags/java.html">java (12)</a></li><li><a href="/tags/katas.html">katas (3)</a></li><li><a href="/tags/lean.html">lean (9)</a></li><li><a href="/tags/lean-startup.html">lean startup (3)</a></li><li><a href="/tags/life.html">life (13)</a></li><li><a href="/tags/meta.html">meta (4)</a></li><li><a href="/tags/pairing.html">pairing (5)</a></li><li><a href="/tags/pomodoros.html">pomodoros (3)</a></li><li><a href="/tags/process.html">process (4)</a></li><li><a href="/tags/productivity.html">productivity (15)</a></li><li><a href="/tags/products.html">products (12)</a></li><li><a href="/tags/rails.html">rails (3)</a></li><li><a href="/tags/richclient.html">richclient (11)</a></li><li><a href="/tags/ruby.html">ruby (13)</a></li><li><a href="/tags/sol-trader.html">sol trader (9)</a></li><li><a href="/tags/spring.html">spring (11)</a></li><li><a href="/tags/tdd.html">tdd (11)</a></li><li><a href="/tags/team.html">team (8)</a></li><li><a href="/tags/testing.html">testing (5)</a></li><li><a href="/tags/tutorial.html">tutorial (11)</a></li><li><a href="/tags/ux.html">ux (5)</a></li><li><a href="/tags/writing.html">writing (3)</a></li>      </ul>
+    </div>
+    <div class='widget'>
+      {% include hello.html %}
+    </div>
   </div>
 </div>

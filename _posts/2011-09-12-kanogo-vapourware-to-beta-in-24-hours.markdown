@@ -12,7 +12,7 @@ categories:
   - ruby
   - kanogo
 ---
-<div class='notice'>
+<div class='alert alert-info alert-block'>
   <h2>TL;DR</h2>
 
   <p>Last week I built the first beta of a new web product called <a href="http://kanogo.com">Kanogo</a>. It’s designed to gather feedback and perform <a href="http://en.wikipedia.org/wiki/Kano_model">Kano analysis</a> to determine which direction you should take with your website.</p>

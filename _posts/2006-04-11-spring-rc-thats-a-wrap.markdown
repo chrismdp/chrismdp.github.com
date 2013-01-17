@@ -8,7 +8,7 @@ categories:
   - spring
   - tutorial
 ---
-<div class='notice'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
+<div class='alert'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
           
 <p>My project is shrink-wrapped in virtual plastic and the client is happy, so that just about wraps up my look at Spring Rich Client. </p>
 <p>After writing a full app from conception to completion, I thought that it was a useful and powerful framework deserving of attention. There are plenty of features you get thrown in for free, such as decent localisation support and excellent form binding capabilities. A couple of closing thoughts follow...</p>

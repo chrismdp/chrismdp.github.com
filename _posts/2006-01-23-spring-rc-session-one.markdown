@@ -8,7 +8,7 @@ categories:
   - spring
   - tutorial
 ---
-<div class='notice'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
+<div class='alert'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
           
 <p>Right, here goes.</p>
 <p>Initially I wasn't sure where to begin. I searched for "Spring Rich Client" on google, looking for a tutorial and found zero. I found the <a href="http://www.springframework.org/spring-rcp">Rich Client homepage</a> on the spring site, which was a start, and read the rather text-heavy introduction carefully.</p>
