@@ -7,12 +7,28 @@ layout: nil
   <title>Chris Parsons: posts tagged craftsmanship</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2013-01-16T20:57:57+00:00</updated>
+  <updated>2013-01-21T15:29:25+00:00</updated>
   <id>http://chrismdp.com/tag/craftsmanship</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>"Project velocity is a useless metric." Discuss.</title>
+<category term='process'/>
+<category term='productivity'/>
+<category term='bdd'/>
+<category term='craftsmanship'/>
+<category term='feedback'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2013/01/project-velocity-is-a-useless-metric-discuss'/>
+<updated>2013-01-21T15:29:25+00:00</updated>
+<id>http://chrismdp.com/2013/01/project-velocity-is-a-useless-metric-discuss</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/01/project-velocity-is-a-useless-metric-discuss" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>That's not BDD, that's just Cucumber</title>
 <category term='bdd'/>

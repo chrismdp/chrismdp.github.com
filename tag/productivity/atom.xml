@@ -7,12 +7,28 @@ layout: nil
   <title>Chris Parsons: posts tagged productivity</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2012-10-04T07:49:57+01:00</updated>
+  <updated>2013-01-21T15:29:25+00:00</updated>
   <id>http://chrismdp.com/tag/productivity</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>"Project velocity is a useless metric." Discuss.</title>
+<category term='process'/>
+<category term='productivity'/>
+<category term='bdd'/>
+<category term='craftsmanship'/>
+<category term='feedback'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2013/01/project-velocity-is-a-useless-metric-discuss'/>
+<updated>2013-01-21T15:29:25+00:00</updated>
+<id>http://chrismdp.com/2013/01/project-velocity-is-a-useless-metric-discuss</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/01/project-velocity-is-a-useless-metric-discuss" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>Delegated tasks are a team anti-pattern</title>
 <category term='team'/>
