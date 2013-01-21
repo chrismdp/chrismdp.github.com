@@ -43,7 +43,7 @@ Matt Wynne: "Specifically, I'm saying stakeholders tend not to trust: 1) you're 
 
 Matt: "Even with a fixed deadline, the project owners share the responsibility for finding the scope that's possible."
 
-Chris: "My experience at GOV.UK is we hardly ever get asked when something will be done."
+Chris: "My experience on my current project is we hardly ever get asked when something will be done."
 
 Matt: "Perfect."
 
