@@ -7,12 +7,28 @@ layout: nil
   <title>Chris Parsons: posts tagged craftsmanship</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2013-01-21T15:29:25+00:00</updated>
+  <updated>2013-02-07T07:27:02+00:00</updated>
   <id>http://chrismdp.com/tag/craftsmanship</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>The perils of curiosity</title>
+<category term='bdd'/>
+<category term='testing'/>
+<category term='craftsmanship'/>
+<category term='products'/>
+<category term='sol trader'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2013/02/the-perils-of-ignoring-behaviour'/>
+<updated>2013-02-07T07:27:02+00:00</updated>
+<id>http://chrismdp.com/2013/02/the-perils-of-ignoring-behaviour</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/02/the-perils-of-ignoring-behaviour" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>"Project velocity is a useless metric." Discuss.</title>
 <category term='process'/>
