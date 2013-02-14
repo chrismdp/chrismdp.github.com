@@ -24,10 +24,10 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2013/02/the-perils-of-ignoring-behaviour'/>
+<link href='http://chrismdp.com/2013/02/the-perils-of-curiosity'/>
 <updated>2013-02-07T07:27:02+00:00</updated>
-<id>http://chrismdp.com/2013/02/the-perils-of-ignoring-behaviour</id>
-<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/02/the-perils-of-ignoring-behaviour" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+<id>http://chrismdp.com/2013/02/the-perils-of-curiosity</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/02/the-perils-of-curiosity" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
 </entry>
 <entry>
 <title>Cucumber: keeping the build passing</title>

@@ -6,6 +6,10 @@ rule '.css' => ['.scss'] do |t|
     sh %{ sass -t compressed #{t.source} #{t.name} }
 end
 
+task :tag do
+  raise "Doesn't exist"
+end
+
 task :cloud do
   puts 'Generating tag cloud...'
   require 'rubygems'
