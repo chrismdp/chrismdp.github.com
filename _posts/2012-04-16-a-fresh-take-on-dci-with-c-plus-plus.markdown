@@ -3,7 +3,7 @@ layout: post
 title: "A fresh take on DCI with C++ (with example)"
 date: 2012-04-16 12:20:48 +0100
 categories:
-  - coding
+  - code
   - c++
   - craftsmanship
   - dci

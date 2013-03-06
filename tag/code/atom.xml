@@ -7,12 +7,26 @@ layout: nil
   <title>Chris Parsons: posts tagged code</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2013-01-10T13:25:44+00:00</updated>
+  <updated>2013-03-06T07:07:05+00:00</updated>
   <id>http://chrismdp.com/tag/code</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>BDD with shell script</title>
+<category term='bdd'/>
+<category term='shell script'/>
+<category term='code'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2013/03/bdd-with-shell-script'/>
+<updated>2013-03-06T07:07:05+00:00</updated>
+<id>http://chrismdp.com/2013/03/bdd-with-shell-script</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/03/bdd-with-shell-script" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>Dependency injection != Inversion of Control</title>
 <category term='ruby'/>
@@ -141,6 +155,22 @@ layout: nil
 <updated>2012-05-15T16:02:40+01:00</updated>
 <id>http://chrismdp.com/2012/05/waxing-lyrical-on-pathfinding</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/05/waxing-lyrical-on-pathfinding" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>A fresh take on DCI with C++ (with example)</title>
+<category term='code'/>
+<category term='c++'/>
+<category term='craftsmanship'/>
+<category term='dci'/>
+<category term='sol trader'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2012/04/a-fresh-take-on-dci-with-c-plus-plus'/>
+<updated>2012-04-16T12:20:48+01:00</updated>
+<id>http://chrismdp.com/2012/04/a-fresh-take-on-dci-with-c-plus-plus</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/04/a-fresh-take-on-dci-with-c-plus-plus" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
 </entry>
 <entry>
 <title>On coding defensively</title>

@@ -1,0 +1,30 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Chris Parsons: posts tagged shell script</title>
+
+  <link href="http://chrismdp.com/"/>
+  <updated>2013-03-06T07:07:05+00:00</updated>
+  <id>http://chrismdp.com/tag/shell script</id>
+  <author>
+    <name>Chris</name>
+    <email>chrismdp@gmail.com</email>
+  </author>
+<entry>
+<title>BDD with shell script</title>
+<category term='bdd'/>
+<category term='shell script'/>
+<category term='code'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2013/03/bdd-with-shell-script'/>
+<updated>2013-03-06T07:07:05+00:00</updated>
+<id>http://chrismdp.com/2013/03/bdd-with-shell-script</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/03/bdd-with-shell-script" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+</feed>

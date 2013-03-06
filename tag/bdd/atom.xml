@@ -7,12 +7,26 @@ layout: nil
   <title>Chris Parsons: posts tagged bdd</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2013-02-07T07:27:02+00:00</updated>
+  <updated>2013-03-06T07:07:05+00:00</updated>
   <id>http://chrismdp.com/tag/bdd</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>BDD with shell script</title>
+<category term='bdd'/>
+<category term='shell script'/>
+<category term='code'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2013/03/bdd-with-shell-script'/>
+<updated>2013-03-06T07:07:05+00:00</updated>
+<id>http://chrismdp.com/2013/03/bdd-with-shell-script</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/03/bdd-with-shell-script" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>The perils of curiosity</title>
 <category term='bdd'/>
