@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "BDD with shell script"
+title: "BDD without tools: testing shell script"
 date: 2013-03-06 08:49:20 +0000
 categories:
   - bdd
