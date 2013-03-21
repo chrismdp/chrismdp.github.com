@@ -29,7 +29,7 @@ In a simplified example case, we need to take an input CSV file, clean the urls 
     # Given a mapping of /new-url to /real-new-url
     cat > /tmp/remap <<!
     Old Url,New Url,Status
-    http://gov.uk/new-url,http://gov.uk/real-new-url,301
+    http://gov.uk/new-url,https://gov.uk/real-new-url,301
     !
 
     # And a mapping from old to new which needs sanitization
@@ -126,7 +126,7 @@ There's nothing to stop you going through this process using Cucumber and Aruba 
 
 The tests we have above will cause us to tend to writing unit tests around small standalone tools doing one thing well, which is a [old and proven philosophy of systems architecture](http://en.wikipedia.org/wiki/Unix_philosophy).
 
-However, I don't think I'd necessarily persist with this approach long term. We have an earlier form of this approach running on the project now, but we may well switch to a more standard testing library. The point is to that BDD can easly be applied without the trappings of tools: we don't need to use BDD tools to use BDD principles.
+However, I don't think I'd necessarily persist with this approach long term. We have an earlier form of this approach running on the project now, but we may well switch to a more standard testing library. The point is that BDD can easly be applied without the trappings of tools: we don't need to use BDD tools to use BDD principles.
 
 Are you doing anything similar? How are you using BDD principles without the "standard" toolset?
 
