@@ -255,3 +255,10 @@ Next time I plan to talk about how I'm performing more complex operations by fee
 [^cukes]: See my [previous post](http://chrismdp.com/2013/04/features-are-documentation-not-tests/) for some examples of how I'm writing the Cucumber features for this project.
 
 [^actor]: Read more about the [Actor Model](http://en.wikipedia.org/wiki/Actor_model) here.
+
+<div class='alert alert-info'>
+<h5>Like what you've read?</h5>
+
+<p>I'm running <a style='text-decoration: underline' href='http://bddkickstart.com'>BDD Kickstart</a> in London on May 22-24, teaching teams how to work together to quickly build reliable software.
+<a style='text-decoration: underline' href='http://bddkickstart.com/dates#london'>Tickets available here.</a></p>
+</div>
