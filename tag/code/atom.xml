@@ -7,12 +7,32 @@ layout: nil
   <title>Chris Parsons: posts tagged code</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2013-03-06T08:49:20+00:00</updated>
+  <updated>2013-05-09T10:34:52+01:00</updated>
   <id>http://chrismdp.com/tag/code</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>Extreme isolation in web apps: part 1</title>
+<category term='ruby'/>
+<category term='state'/>
+<category term='craftsmanship'/>
+<category term='refactoring'/>
+<category term='sol trader'/>
+<category term='code'/>
+<category term='cucumber'/>
+<category term='testing'/>
+<category term='extreme isolation'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2013/05/extreme-isolation-in-web-apps-part-1'/>
+<updated>2013-05-09T10:34:52+01:00</updated>
+<id>http://chrismdp.com/2013/05/extreme-isolation-in-web-apps-part-1</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/05/extreme-isolation-in-web-apps-part-1" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>BDD without tools: testing shell script</title>
 <category term='bdd'/>

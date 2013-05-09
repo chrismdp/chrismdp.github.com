@@ -7,7 +7,7 @@ layout: nil
   <title>Chris Parsons: posts tagged bdd</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2013-04-26T07:32:53+01:00</updated>
+  <updated>2013-04-26T08:50:13+01:00</updated>
   <id>http://chrismdp.com/tag/bdd</id>
   <author>
     <name>Chris</name>
@@ -17,12 +17,15 @@ layout: nil
 <title>Features are documentation, not tests</title>
 <category term='bdd'/>
 <category term='cucumber'/>
+<category term='state'/>
+<category term='ruby'/>
+<category term='sol trader'/>
     <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2013/04/features-are-documentation-not-tests'/>
-<updated>2013-04-26T07:32:53+01:00</updated>
+<updated>2013-04-26T08:50:13+01:00</updated>
 <id>http://chrismdp.com/2013/04/features-are-documentation-not-tests</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2013/04/features-are-documentation-not-tests" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
 </entry>

@@ -4,11 +4,11 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title>Chris Parsons: posts tagged refactoring</title>
+  <title>Chris Parsons: posts tagged extreme isolation</title>
 
   <link href="http://chrismdp.com/"/>
   <updated>2013-05-09T10:34:52+01:00</updated>
-  <id>http://chrismdp.com/tag/refactoring</id>
+  <id>http://chrismdp.com/tag/extreme isolation</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
@@ -32,19 +32,5 @@ layout: nil
 <updated>2013-05-09T10:34:52+01:00</updated>
 <id>http://chrismdp.com/2013/05/extreme-isolation-in-web-apps-part-1</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2013/05/extreme-isolation-in-web-apps-part-1" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
-</entry>
-<entry>
-<title>The power of good naming</title>
-<category term='code'/>
-<category term='craftsmanship'/>
-<category term='refactoring'/>
-    <author>
-      <name>Chris</name>
-      <email>chrismdp@gmail.com</email>
-    </author>
-<link href='http://chrismdp.com/2012/09/the-power-of-good-naming'/>
-<updated>2012-09-18T20:43:02+01:00</updated>
-<id>http://chrismdp.com/2012/09/the-power-of-good-naming</id>
-<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/the-power-of-good-naming" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
 </entry>
 </feed>
