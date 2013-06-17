@@ -7,12 +7,27 @@ layout: nil
   <title>Chris Parsons: posts tagged sol trader</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2013-05-09T10:34:52+01:00</updated>
+  <updated>2013-06-17T15:28:34+01:00</updated>
   <id>http://chrismdp.com/tag/sol trader</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>Rack::Usermanual - Cucumber features as in-app user manual</title>
+<category term='cucumber'/>
+<category term='bdd'/>
+<category term='code'/>
+<category term='sol trader'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2013/06/rack-usermanual'/>
+<updated>2013-06-17T15:28:34+01:00</updated>
+<id>http://chrismdp.com/2013/06/rack-usermanual</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/06/rack-usermanual" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>Extreme isolation in web apps: part 1</title>
 <category term='ruby'/>

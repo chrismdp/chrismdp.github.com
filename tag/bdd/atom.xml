@@ -7,12 +7,27 @@ layout: nil
   <title>Chris Parsons: posts tagged bdd</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2013-04-26T08:50:13+01:00</updated>
+  <updated>2013-06-17T15:28:34+01:00</updated>
   <id>http://chrismdp.com/tag/bdd</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>Rack::Usermanual - Cucumber features as in-app user manual</title>
+<category term='cucumber'/>
+<category term='bdd'/>
+<category term='code'/>
+<category term='sol trader'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2013/06/rack-usermanual'/>
+<updated>2013-06-17T15:28:34+01:00</updated>
+<id>http://chrismdp.com/2013/06/rack-usermanual</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/06/rack-usermanual" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>Features are documentation, not tests</title>
 <category term='bdd'/>
