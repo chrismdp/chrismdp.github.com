@@ -24,3 +24,5 @@ I've [blogged many of these ideas before](http://chrismdp.com/tag/team), but it'
 The conversations that the talk generated were fascinating and I hope to spend more time speaking about this subject in the future - particularly the difference between the actual visible hierarchy in an organisation, and the invisible hierarchy of influence, which is usually much more real than the visible one.
 
 <script async='async' class="speakerdeck-embed" data-id="3e2a44c09e1501308e951a9333edbc11" data-ratio="1.74446337308348" src="//speakerdeck.com/assets/embed.js"></script>
+
+UPDATE: Here's [the video](http://vimeo.com/66884238).
