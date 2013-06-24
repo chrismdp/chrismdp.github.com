@@ -20,7 +20,7 @@ Last week, I spent a little time working on getting the cucumber features in the
 
 Here's an example of what the format looks like:
 
-![example shot](/files/rack-usermanual-1.png)
+![example shot](http://chrismdp.com/files/rack-usermanual-1.png)
 
 There are lots more live examples [on the Sol Trader help section](http://online.soltrader.net/help).
 
@@ -55,13 +55,13 @@ Although the conversion to sentences needs some more work, I think the second ve
 
 If a feature or scenario has the `@pending` tag, then we warn the reader the feature might not be available. Empty scenarios are also shown with a explanatory message:
 
-![example shot](/files/rack-usermanual-2.png)
+![example shot](http://chrismdp.com/files/rack-usermanual-2.png)
 
 ### Backgrounds convert to a note
 
 If there's a Background attached to the feature, then we show a note above the list of the examples:
 
-![example shot](/files/rack-usermanual-3.png)
+![example shot](http://chrismdp.com/files/rack-usermanual-3.png)
 
 ## Available as a Ruby gem!
 
