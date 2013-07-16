@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Extreme isolation part 2: separate the domain from the changes"
-date: 2013-07-15 22:58:44 +0100
+date: 2013-07-16 09:37:39 +0100
 categories:
   - ruby
   - state
