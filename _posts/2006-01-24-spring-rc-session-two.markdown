@@ -43,8 +43,8 @@ application splash screen.
 <p>Excellent. That must be what stuck that frog picture on my screen in session one. Let's have a look at the richclient-startup-context.xml file:</p>
 <p>{% highlight xml %}
   <beans>
-    <bean id="splashScreen" class="org.springframework.richclient.application.SplashScreen" singleton="false"></p>
-<property name="imageResourcePath">
+    <bean id="splashScreen" class="org.springframework.richclient.application.SplashScreen" singleton="false">
+      <property name="imageResourcePath">
         <value>/images/splash-screen.jpg</value>
       </property>
     </bean>
@@ -61,7 +61,8 @@ application splash screen.
 <h3>richclient-application-context.xml</h3>
 <p>That leaves us with richclient-application-context.xml, which is all new. I have to say at this point I baulked slightly at the sheer number of new beans to learn. But hey, somebody wrote it, so someone must understand it, right? Therefore it must be possible to figure it out... </p>
 <p>With that in mind, let's start with the first three beans:</p>
-<p>{% highlight xml %}
+{% highlight xml %}
+<p>
   <bean id="application"
     class="org.springframework.richclient.application.Application">
     <constructor-arg index="0">
@@ -71,25 +72,27 @@ application splash screen.
       <ref bean="petclinicLifecycleAdvisor"/>
     </constructor-arg>
   </bean></p>
-<p>  <bean id="applicationDescriptor"
-    class="org.springframework.richclient.application.support.DefaultApplicationDescriptor"></p>
-<property name="version">
+  <p>
+  <bean id="applicationDescriptor" class="org.springframework.richclient.application.support.DefaultApplicationDescriptor">
+    <property name="version">
       <value>1.0</value>
     </property>
-<property name="buildId">
+    <property name="buildId">
       <value>20041025001</value>
     </property>
-  </bean></p>
-<p>  <bean id="petclinicLifecycleAdvisor"
-    class="org.springframework.richclient.samples.petclinic.PetClinicLifecycleAdvisor"></p>
+  </bean>
+  </p>
+  <p>
+    <bean id="petclinicLifecycleAdvisor"
+    class="org.springframework.richclient.samples.petclinic.PetClinicLifecycleAdvisor">
 <property name="windowCommandBarDefinitions">
       <value>org/springframework/richclient/samples/petclinic/ui/commands-context.xml</value>
     </property>
 <property name="startingPageId">
       <value>ownerManagerView</value>
     </property>
-  </bean>
-{% endhighlight %}</p>
+  </bean></p>
+{% endhighlight %}
 <p>From looking at ApplicationLauncher, "application" is a "magic name" for a bean - that is, the framework looks specifically for a bean called "application" in one of its XML files. It's set up with two other beans - applicationDescriptor and a lifecycle advisor. ApplicationDescriptor looks very straightforward - a version and a build number. I'm guessing that goes in the title, and perhaps an automated "Help - About" screen later on (here's hoping, anyway :).</p>
 <p>The lifecycle advisor looks a little more involved. It appears to be configured with another xml file, which I'll look at in a bit, and a "starting page id" which refers to an "owner manager view". Looking at ApplicationLauncher (again), it appears that on launch a window is opened with this "owner manager view" page displayed first. After that, onPostStartup() is called on the lifecycle advisor. </p>
 <p>From this it looks like the lifecycle advisor is used here as the application flow manager. The two methods overridden for the petclinic application look like they create the Setup Wizard and the login screen. I guess that there are many things one could add to this to perform custom actions at various points within the application.</p>

@@ -74,11 +74,11 @@ categories:
 <h2>Having a go at an options dialog</h2>
 <p>Ok, first things first - create an options command in commands-context.xml and add it to the edit menu. I was going for the tools menu, but I don't need one for this app, so I'll just call the menu option 'Preferences' and be all 'mac-like' :)</p>
 <p>{% highlight xml %}
-<bean id="optionsCommand" class="uk.co.myco.myproj.command.OptionsCommand"></p>
+<bean id="optionsCommand" class="uk.co.myco.myproj.command.OptionsCommand">
 <property name="optionsDao"><ref bean="myDao"/></property>
 </bean>
 ...
-<bean id="editMenu" class="org.springframework.richclient.command.CommandGroupFactoryBean"></p>
+<bean id="editMenu" class="org.springframework.richclient.command.CommandGroupFactoryBean">
 <property name="members">
 <list>
       <value>selectAllCommand</value>

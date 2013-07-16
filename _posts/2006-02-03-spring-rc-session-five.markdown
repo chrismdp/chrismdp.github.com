@@ -20,7 +20,7 @@ categories:
 <p>Ok, so where in Petclinic are the main application windows defined? From running the application, we can clearly see that there's only one of them. Unfortunately looking at richclient-application-context.xml wasn't very helpful. In the end I did a search for ownerManagerView, which I figured must be added to the ApplicationPage somewhere. In my search I noticed that we pass the ownerManagerView into the Lifecycle advisor configuration:</p>
 <p>{% highlight xml %}
 	<bean id="petclinicLifecycleAdvisor"
-		class="org.springframework.richclient.samples.petclinic.PetClinicLifecycleAdvisor"></p>
+		class="org.springframework.richclient.samples.petclinic.PetClinicLifecycleAdvisor">
 <property name="windowCommandBarDefinitions">
 			<value>org/springframework/richclient/samples/petclinic/ui/commands-context.xml</value>
 		</property>

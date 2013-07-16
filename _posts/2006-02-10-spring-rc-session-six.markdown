@@ -13,7 +13,7 @@ categories:
 <p>Ok, let's have a look at the view descriptor and see how one of those is defined.</p>
 <p>{% highlight xml %}
 <bean id="ownerManagerView"
-	class="org.springframework.richclient.application.support.DefaultViewDescriptor"></p>
+	class="org.springframework.richclient.application.support.DefaultViewDescriptor">
 <property name="viewClass">
 		<value>org.springframework.richclient.samples.petclinic.ui.OwnerManagerView</value>
 	</property>

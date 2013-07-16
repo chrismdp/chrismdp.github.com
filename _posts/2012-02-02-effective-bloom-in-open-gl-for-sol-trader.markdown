@@ -12,9 +12,9 @@ categories:
   - game development
 
 ---
+
 <div class='alert alert-block alert-info'>
   <h2>TL;DR</h2>
-
   <p>Skip to the <a href='#pictures'>pictures</a>.</p>
 </div>
 

@@ -37,7 +37,7 @@ categories:
 <h3>componentFactory</h3>
 <p>The componentFactory is of type DefaultComponentFactory, and is one of the Application Services mentioned in the previous section.</p>
 <p>{% highlight bash %}$ grep -nH -r componentFactory *
-richclient-application-context.xml:53:	<bean id="componentFactory"
+richclient-application-context.xml:53:	&lt;bean id="componentFactory"
 {% endhighlight %}</p>
 <p>Searching for files which access ApplicationServices' getComponentFactory() method turns up a whole bunch of results in the Rich Client source, but not very much in the Petclinic source. Looks like the component factory is used to create components all over the place in the main Rich Client source. I'm guessing that the Petclinic does not require the ability to create many components - and a quick look at some of the code confirms this to be the case. More on this later.</p>
 <h3>imageSource</h3>
@@ -47,7 +47,7 @@ richclient-application-context.xml:53:	<bean id="componentFactory"
 		class="org.springframework.richclient.image.DefaultImageSource">
 		<constructor-arg index="0">
 			<ref bean="imageResourcesFactory"/>
-		</constructor-arg></p>
+		</constructor-arg>
 <property name="brokenImageIndicator">
 			<value>images/alert/error_obj.gif</value>
 		</property>
@@ -57,7 +57,7 @@ richclient-application-context.xml:53:	<bean id="componentFactory"
 <p>The bean references imageResourcesFactory, which create a Map of strings to resource locations, for the imageSource bean to use, from a couple more properties files.</p>
 <p>{% highlight xml %}
 	<bean id="imageResourcesFactory"
-		class="org.springframework.context.support.ResourceMapFactoryBean"></p>
+		class="org.springframework.context.support.ResourceMapFactoryBean">
 <property name="locations">
 <list>
 				<value>classpath:org/springframework/richclient/image/images.properties</value>

@@ -35,7 +35,7 @@ PetClinicLifecycleAdvisor.java:33:        if (getApplicationServices().containsB
 <p>Here's the bean configuration from richclient-application-context.xml:</p>
 <p>{% highlight xml %}
 	<bean id="setupWizard"
-		class="org.springframework.richclient.application.setup.SetupWizard"></p>
+		class="org.springframework.richclient.application.setup.SetupWizard">
 <property name="licenseTextLocation">
 			<value>/org/springframework/richclient/samples/petclinic/license.html</value>
 		</property>
@@ -64,7 +64,7 @@ PetClinicLifecycleAdvisor.java:33:        if (getApplicationServices().containsB
 <h3>The "messageSource" bean</h3>
 <p>{% highlight xml %}
 	<bean id="messageSource"
-		class="org.springframework.context.support.ResourceBundleMessageSource"></p>
+		class="org.springframework.context.support.ResourceBundleMessageSource">
 <property name="basenames">
 <list>
 				<value>org.springframework.richclient.samples.petclinic.ui.messages</value>
@@ -76,10 +76,10 @@ PetClinicLifecycleAdvisor.java:33:        if (getApplicationServices().containsB
 <p>Familiar Spring territory here. This is a standard Spring ResourceBundleMessageSource. Check the javadocs for ResourceBundleMessageSource if you need more explanation of this one.</p>
 <p>Give the above configuration, ResourceBundleMessageSource will try these locations in this order to find the message key we supply:</p>
 <p>{% highlight text %}
-./src/org/springframework/richclient/samples/petclinic/ui/messages_<language>.properties
+./src/org/springframework/richclient/samples/petclinic/ui/messages_&lt;language&gt;.properties
    (so messages_fr.properties if we have a french locale)
 ./src/org/springframework/richclient/samples/petclinic/ui/messages.properties
-./src/org/springframework/richclient/application/messages_<language>.properties
+./src/org/springframework/richclient/application/messages_&lt;language&gt;.properties
 {% endhighlight %}</p>
 <p>The last path here refers to a "standard" Rich Client properties files which ships with the Rich Client framework. Looking inside, this defines words for things like "File", "Edit", "Paste", and standard icons used in many applications. The really neat thing is that these are already translated into French, German and Dutch for me, which gives me a whole lot of localisation for free! This framework really is awesome.</p>
 <p>Oh look, we've traced our message back through the bean hierarchy. That wasn't too bad at all, was it?</p>

@@ -1,4 +1,6 @@
 permalink:  /:year/:month/:title
 pygments: true
-server: true
+safe: true
+lsi: false
+markdown: kramdown
 url: http://chrismdp.com

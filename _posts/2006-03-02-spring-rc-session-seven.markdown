@@ -19,7 +19,7 @@ categories:
 <p>Right, time to find the new owner command. It turns out that it's defined in commands-context.xml. This useful little file maps various different command locations (menus, toolbars, that sort of thing) to actual commands that do stuff. Let's look for the new owner command - it's in there:</p>
 <p>{% highlight xml %}
   <bean id="newOwnerCommand"
-    class="org.springframework.richclient.command.TargetableActionCommand"></p>
+    class="org.springframework.richclient.command.TargetableActionCommand">
 <property name="commandExecutor">
       <ref bean="newOwnerWizard"/>
     </property>
@@ -29,7 +29,7 @@ categories:
 <p>So what does the command actually do? It runs the executor "newOwnerWizard". This bean is defined rather simply in the richclient-application-context.xml file:</p>
 <p>{% highlight xml %}
   <bean id="newOwnerWizard"
-	class="org.springframework.richclient.samples.petclinic.ui.NewOwnerWizard"></p>
+	class="org.springframework.richclient.samples.petclinic.ui.NewOwnerWizard">
 <property name="clinic">
       <ref bean="clinic"/>
     </property>
@@ -51,7 +51,7 @@ categories:
 public void onApplicationEvent(ApplicationEvent e) {
   if (e instanceof LifecycleApplicationEvent) {
     LifecycleApplicationEvent le = (LifecycleApplicationEvent)e;
-    if (le.getEventType() == LifecycleApplicationEvent.CREATED &amp;& le.objectIs(Owner.class)) {
+    if (le.getEventType() == LifecycleApplicationEvent.CREATED &amp;&amp; le.objectIs(Owner.class)) {
       if (ownersTree != null) {
         DefaultMutableTreeNode root = (DefaultMutableTreeNode)ownersTreeModel.getRoot();
         root.add(new DefaultMutableTreeNode(le.getObject()));
@@ -106,7 +106,7 @@ public void onApplicationEvent(ApplicationEvent e)
 <p>So here's the latest definition of the command:</p>
 <p>{% highlight xml %}
   <bean id="openFolderCommand"
-	class="org.springframework.richclient.command.TargetableActionCommand"></p>
+	class="org.springframework.richclient.command.TargetableActionCommand">
 <property name="commandExecutor">
       <ref bean="fileListView"/>
     </property>
@@ -115,10 +115,11 @@ public void onApplicationEvent(ApplicationEvent e)
 <p>This unfortunately didn't work. I can't wire into the fileListView as it's wrapped up inside a view descriptor object:</p>
 <p>{% highlight xml %}
   <bean id="fileListView"
-        class="org.springframework.richclient.application.support.DefaultViewDescriptor"></p>
+        class="org.springframework.richclient.application.support.DefaultViewDescriptor">
 <property name="viewClass">
     <value>uk.co.mintcontent.uploader.ui.FileListView</value>
   </property>
+  </bean>
 {% endhighlight %}</p>
 <p>I don't want to write some sort of proxy object to handle this in the main application context either - that seems overkill.</p>
 <h3>Approach Four - Cheat (sort of)</h3>
