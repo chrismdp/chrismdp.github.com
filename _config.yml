@@ -2,5 +2,5 @@ permalink:  /:year/:month/:title
 pygments: true
 safe: true
 lsi: false
-markdown: kramdown
+markdown: rdiscount
 url: http://chrismdp.com
