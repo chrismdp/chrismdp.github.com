@@ -16,4 +16,6 @@ It can be learned very quickly, and is great fun to play. You can win if you're 
 
 The game is playable with **just one pack of playing cards and a token to represent each player,** so there's no excuse not to give it a go! We started with lego bricks and have moved on to little plastic ships from another game.
 
+[http://cardpirates.com](http://cardpirates.com)
+
 Try it out and let me know what you think, either here or on the [Card Pirates](http://cardpirates.com/stories) site. I'd be grateful for feedback!
