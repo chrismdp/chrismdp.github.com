@@ -4,11 +4,11 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title>Chris Parsons: posts tagged DIY Planner</title>
+  <title>Chris Parsons: posts tagged diy planner</title>
 
   <link href="http://chrismdp.com/"/>
   <updated>2006-10-24T01:00:00+01:00</updated>
-  <id>http://chrismdp.com/tag/DIY Planner</id>
+  <id>http://chrismdp.com/tag/diy planner</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
@@ -16,8 +16,8 @@ layout: nil
 <entry>
 <title>SVG Planner</title>
 <category term='svg'/>
-<category term='DIY Planner'/>
-<category term='GTD'/>
+<category term='diy planner'/>
+<category term='gtd'/>
 <category term='productivity'/>
     <author>
       <name>Chris</name>

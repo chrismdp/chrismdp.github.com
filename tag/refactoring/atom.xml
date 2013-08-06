@@ -7,7 +7,7 @@ layout: nil
   <title>Chris Parsons: posts tagged refactoring</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2013-07-15T22:58:44+01:00</updated>
+  <updated>2013-07-16T09:37:39+01:00</updated>
   <id>http://chrismdp.com/tag/refactoring</id>
   <author>
     <name>Chris</name>
@@ -29,7 +29,7 @@ layout: nil
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2013/07/extreme-isolation-part-2'/>
-<updated>2013-07-15T22:58:44+01:00</updated>
+<updated>2013-07-16T09:37:39+01:00</updated>
 <id>http://chrismdp.com/2013/07/extreme-isolation-part-2</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2013/07/extreme-isolation-part-2" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
 </entry>

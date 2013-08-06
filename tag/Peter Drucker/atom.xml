@@ -4,11 +4,11 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title>Chris Parsons: posts tagged Peter Drucker</title>
+  <title>Chris Parsons: posts tagged peter drucker</title>
 
   <link href="http://chrismdp.com/"/>
   <updated>2009-12-23T21:41:00+00:00</updated>
-  <id>http://chrismdp.com/tag/Peter Drucker</id>
+  <id>http://chrismdp.com/tag/peter drucker</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
@@ -17,7 +17,7 @@ layout: nil
 <title>R.I.P. Web 1.0</title>
 <category term='ux'/>
 <category term='business'/>
-<category term='Peter Drucker'/>
+<category term='peter drucker'/>
     <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
