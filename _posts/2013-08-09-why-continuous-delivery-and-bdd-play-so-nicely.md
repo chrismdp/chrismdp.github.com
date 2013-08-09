@@ -5,7 +5,6 @@ date: 2013-08-09 09:40:25 +0100
 categories:
   - bdd
   - continuous delivery
-  - bddkickstart
   - kickstart
 
 ---
