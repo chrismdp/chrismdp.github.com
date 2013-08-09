@@ -30,7 +30,10 @@ Continuous Delivery is a collection of practices and processes which allow us to
 
 One of the reasons I'm excited about running this course is that Continuous Delivery concepts and practices dovetail beautifully with [Behaviour Driven Development](http://chrismdp.com/tag/bdd). BDD focuses on small stories and deliberate discovery; Continuous Delivery gets those stories into production as quickly as possible. BDD encourages great testing practice and build quality; this gives business folks enough trust in their system to implement Continuous Delivery in the first place.
 
-We can practice Continuous Delivery without doing BDD. However, given that BDD helps teams discover exactly what needs to be built, and gives them the skills to build it right first time, it's dangerous to practice Continuous Delivery without safeguards like the ones BDD gives us!
+We can practice Continuous Delivery without doing BDD. There are a couple of pitfalls we should be aware of though:
+
+* BDD helps teams discover exactly what needs to be built, and gives them the skills to build it right first time. It's dangerous to practice Continuous Delivery without build quality safeguards like the ones BDD gives us.
+* Doing BDD well gives us very finely sliced stories. Without small stories, we won't get the full benefits of delivering continuously, as our automatic releases will end up being just as spaced out as before.
 
 Likewise, we can "do BDD" without delivering continuously, but the benefits we gain through BDD are more fully realised the more automatic and streamlined our release processes are.
 
