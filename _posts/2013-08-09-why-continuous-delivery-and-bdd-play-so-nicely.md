@@ -24,7 +24,7 @@ Continuous Delivery is a collection of practices and processes which allow us to
 
 * *Eliminate human error when releasing.* Deploy processes can often be long and complex with many manual steps. This breeds human error, which in turn can cause consternation in the business, slows down future release cycles and makes the business less responsive as a result. Doing away with as many manual steps as possible will reverse this cycle.
 
-* *Give products a massive boost to market responsiveness.* The more often we're releasing, the quicker we can make changes to our software in response to market conditions. If the new release of your project causes 20% drop in revenuw, we want to correct that as quickly as possible: Continuous Delivery gives us the tools to do just that.
+* *Give products a massive boost to market responsiveness.* The more often we're releasing, the quicker we can make changes to our software in response to market conditions. If the new release of your project causes 20% drop in revenue, we want to correct that as quickly as possible: Continuous Delivery gives us the tools to do just that.
 
 ## The perfect partner to BDD
 
