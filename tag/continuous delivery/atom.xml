@@ -1,0 +1,31 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Chris Parsons: posts tagged continuous delivery</title>
+
+  <link href="http://chrismdp.com/"/>
+  <updated>2013-08-09T09:40:25+01:00</updated>
+  <id>http://chrismdp.com/tag/continuous delivery</id>
+  <author>
+    <name>Chris</name>
+    <email>chrismdp@gmail.com</email>
+  </author>
+<entry>
+<title>Why Continuous Delivery and BDD play so nicely</title>
+<category term='bdd'/>
+<category term='continuous delivery'/>
+<category term='bddkickstart'/>
+<category term='kickstart'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2013/08/why-continuous-delivery-and-bdd-play-so-nicely'/>
+<updated>2013-08-09T09:40:25+01:00</updated>
+<id>http://chrismdp.com/2013/08/why-continuous-delivery-and-bdd-play-so-nicely</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/08/why-continuous-delivery-and-bdd-play-so-nicely" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+</feed>

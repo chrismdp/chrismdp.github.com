@@ -7,12 +7,27 @@ layout: nil
   <title>Chris Parsons: posts tagged bddkickstart</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2013-01-03T07:31:11+00:00</updated>
+  <updated>2013-08-09T09:40:25+01:00</updated>
   <id>http://chrismdp.com/tag/bddkickstart</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>Why Continuous Delivery and BDD play so nicely</title>
+<category term='bdd'/>
+<category term='continuous delivery'/>
+<category term='bddkickstart'/>
+<category term='kickstart'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2013/08/why-continuous-delivery-and-bdd-play-so-nicely'/>
+<updated>2013-08-09T09:40:25+01:00</updated>
+<id>http://chrismdp.com/2013/08/why-continuous-delivery-and-bdd-play-so-nicely</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/08/why-continuous-delivery-and-bdd-play-so-nicely" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>BDD Kickstart: London and 2013 plans</title>
 <category term='bddkickstart'/>
