@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "BDD: How to deal stories into features"
-date: 2013-08-30 17:26:59 +0100
+date: 2013-08-29 16:18:44 +0100
 categories:
   - stories
   - cucumber
