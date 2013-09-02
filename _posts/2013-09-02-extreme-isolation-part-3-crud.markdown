@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Extreme isolation part 3: a CRUD demo app (with source code)"
+title: "Extreme isolation part 3: coding a CRUD app (with full example)"
 date: 2013-09-02 11:22:27 +0100
 categories:
   - ruby
