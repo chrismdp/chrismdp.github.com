@@ -14,10 +14,9 @@ categories:
 
 ---
 
-![Crud graffitti](http://chrismdp.com/files/crud.jpg)
+<a href="http://www.flickr.com/photos/9790232@N05/1298814620/" title="Street Crud by Jeremy Doucette, on Flickr"><img src="http://farm2.staticflickr.com/1086/1298814620_5c902c6fef_z.jpg" width="640" height="427" alt="Street Crud"></a>
 
-*CRUD apps start simple, yet often get messy and nasty really fast. They are a great test bed for Extreme Isolation.
-Image: [Graffiti.org](http://www.graffiti.org/dj/n-igma7/london2.html).*
+*CRUD apps start simple, yet often get messy and nasty really fast. They are a great test bed for Extreme Isolation.*
 
 I started a few months ago looking at a [fresh new way of architecting web applications](http://chrismdp.com/tag/extreme%20isolation). I suggest you read parts [one](http://chrismdp.com/2013/05/extreme-isolation-in-web-apps-part-1) and [two](http://chrismdp.com/2013/07/extreme-isolation-part-2) first.
 
