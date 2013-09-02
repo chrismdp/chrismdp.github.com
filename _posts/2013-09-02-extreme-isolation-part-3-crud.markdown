@@ -20,7 +20,7 @@ categories:
 
 I started a few months ago looking at a [fresh new way of architecting web applications](http://chrismdp.com/tag/extreme%20isolation). I suggest you read parts [one](http://chrismdp.com/2013/05/extreme-isolation-in-web-apps-part-1) and [two](http://chrismdp.com/2013/07/extreme-isolation-part-2) first.
 
-The app I've been mainly working on using this new method is an online version of [Sol Trader](http://soltrader.net), which isn't really a typical web application most people write. I've since applied this paradigm to a directory application called "Discover" I've been working on for the [Trust Thamesmead](http://trust-thamesmead.org.uk) charity, and I thought I'd share the results.
+The app I've been mainly working on using this new method is an online version of [Sol Trader](http://soltrader.net), which isn't really a typical web application most people write. I've since applied this paradigm to a directory application called "Discover" I've been working on for the [Trust Thamesmead](http://trust-thamesmead.co.uk) charity, and I thought I'd share the results.
 
 Discover is a much more traditional "CRUD style" application. The administrators define audiences for a local area (people who go to school, or want to find a job) and add places to a site, grouped into topics for that audience. For example, if you're into music (the "music" audience) you might want to see places in the "music shops", "gig venues" and "music video shoot locations" for a particular area.
 
