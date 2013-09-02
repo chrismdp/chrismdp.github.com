@@ -7,12 +7,26 @@ layout: nil
   <title>Chris Parsons: posts tagged bdd</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2013-08-09T09:40:25+01:00</updated>
+  <updated>2013-08-29T16:18:44+01:00</updated>
   <id>http://chrismdp.com/tag/bdd</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>BDD: How to deal stories into features</title>
+<category term='stories'/>
+<category term='cucumber'/>
+<category term='bdd'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2013/08/dealing-stories-into-features'/>
+<updated>2013-08-29T16:18:44+01:00</updated>
+<id>http://chrismdp.com/2013/08/dealing-stories-into-features</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/08/dealing-stories-into-features" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>Why Continuous Delivery and BDD play so nicely</title>
 <category term='bdd'/>
@@ -389,7 +403,7 @@ layout: nil
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2013/08/dealing-stories-into-features'/>
-<updated>2013-08-29T16:18:44+01:00</updated>
+<updated>2013-08-30T17:26:59+01:00</updated>
 <id>http://chrismdp.com/2013/08/dealing-stories-into-features</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2013/08/dealing-stories-into-features" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
 </entry>

@@ -7,12 +7,26 @@ layout: nil
   <title>Chris Parsons: posts tagged stories</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2010-02-11T15:55:00+00:00</updated>
+  <updated>2013-08-29T16:18:44+01:00</updated>
   <id>http://chrismdp.com/tag/stories</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>BDD: How to deal stories into features</title>
+<category term='stories'/>
+<category term='cucumber'/>
+<category term='bdd'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2013/08/dealing-stories-into-features'/>
+<updated>2013-08-29T16:18:44+01:00</updated>
+<id>http://chrismdp.com/2013/08/dealing-stories-into-features</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/08/dealing-stories-into-features" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>The Story Card Is Not The Story</title>
 <category term='xp'/>
@@ -41,7 +55,7 @@ layout: nil
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2013/08/dealing-stories-into-features'/>
-<updated>2013-08-29T16:18:44+01:00</updated>
+<updated>2013-08-30T17:26:59+01:00</updated>
 <id>http://chrismdp.com/2013/08/dealing-stories-into-features</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2013/08/dealing-stories-into-features" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
 </entry>

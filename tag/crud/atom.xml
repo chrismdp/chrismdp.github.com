@@ -1,0 +1,35 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Chris Parsons: posts tagged crud</title>
+
+  <link href="http://chrismdp.com/"/>
+  <updated>2013-09-02T11:22:27+01:00</updated>
+  <id>http://chrismdp.com/tag/crud</id>
+  <author>
+    <name>Chris</name>
+    <email>chrismdp@gmail.com</email>
+  </author>
+<entry>
+<title>Extreme isolation part 3: a CRUD demo app (with source code)</title>
+<category term='ruby'/>
+<category term='state'/>
+<category term='craftsmanship'/>
+<category term='crud'/>
+<category term='code'/>
+<category term='cucumber'/>
+<category term='testing'/>
+<category term='extreme isolation'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2013/09/extreme-isolation-part-3-crud'/>
+<updated>2013-09-02T11:22:27+01:00</updated>
+<id>http://chrismdp.com/2013/09/extreme-isolation-part-3-crud</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/09/extreme-isolation-part-3-crud" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+</feed>
