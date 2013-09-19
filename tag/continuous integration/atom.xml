@@ -28,10 +28,10 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2013/09/ruby-development-tool-maturity'/>
+<link href='http://chrismdp.com/2013/09/the-toolchain-of-dreams'/>
 <updated>2013-09-19T15:11:58+01:00</updated>
-<id>http://chrismdp.com/2013/09/ruby-development-tool-maturity</id>
-<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/09/ruby-development-tool-maturity" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+<id>http://chrismdp.com/2013/09/the-toolchain-of-dreams</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/09/the-toolchain-of-dreams" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
 </entry>
 <entry>
 <title>Multiple CI Joes with Rack and Passenger</title>

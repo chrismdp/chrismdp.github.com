@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CDAAS: The toolchain of dreams"
+title: "The toolchain of dreams"
 date: 2013-09-19 15:11:58 +0100
 categories:
   - ruby
