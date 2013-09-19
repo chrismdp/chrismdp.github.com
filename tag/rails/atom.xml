@@ -7,12 +7,32 @@ layout: nil
   <title>Chris Parsons: posts tagged rails</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2011-10-17T19:10:29+01:00</updated>
+  <updated>2013-09-19T15:11:58+01:00</updated>
   <id>http://chrismdp.com/tag/rails</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>CDAAS: The toolchain of dreams</title>
+<category term='ruby'/>
+<category term='continuous delivery'/>
+<category term='continuous integration'/>
+<category term='tools'/>
+<category term='code'/>
+<category term='rails'/>
+<category term='git'/>
+<category term='craftsmanship'/>
+<category term='bdd'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2013/09/ruby-development-tool-maturity'/>
+<updated>2013-09-19T15:11:58+01:00</updated>
+<id>http://chrismdp.com/2013/09/ruby-development-tool-maturity</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/09/ruby-development-tool-maturity" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>Your tests are lying to you</title>
 <category term='code'/>
