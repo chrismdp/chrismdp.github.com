@@ -4,11 +4,11 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title>Chris Parsons: posts tagged howto</title>
+  <title>Chris Parsons: posts tagged markdown</title>
 
   <link href="http://chrismdp.com/"/>
   <updated>2013-10-07T20:23:24+01:00</updated>
-  <id>http://chrismdp.com/tag/howto</id>
+  <id>http://chrismdp.com/tag/markdown</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
@@ -29,19 +29,5 @@ layout: nil
 <updated>2013-10-07T20:23:24+01:00</updated>
 <id>http://chrismdp.com/2013/10/using-markdown-to-send-html-email-via-mutt</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2013/10/using-markdown-to-send-html-email-via-mutt" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
-</entry>
-<entry>
-<title>Multiple CI Joes with Rack and Passenger</title>
-<category term='continuous integration'/>
-<category term='cijoe'/>
-<category term='howto'/>
-    <author>
-      <name>Chris</name>
-      <email>chrismdp@gmail.com</email>
-    </author>
-<link href='http://chrismdp.com/2010/03/multiple-ci-joes-with-rack-and-passenger'/>
-<updated>2010-03-22T20:18:00+00:00</updated>
-<id>http://chrismdp.com/2010/03/multiple-ci-joes-with-rack-and-passenger</id>
-<content type='html'>{% for post in site.posts %}{% if post.id == "/2010/03/multiple-ci-joes-with-rack-and-passenger" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
 </entry>
 </feed>
