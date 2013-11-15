@@ -7,12 +7,27 @@ layout: nil
   <title>Chris Parsons: posts tagged testing</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2013-09-02T11:22:27+01:00</updated>
+  <updated>2013-11-11T17:55:51+00:00</updated>
   <id>http://chrismdp.com/tag/testing</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>How I learned to stop worrying and love (some) detailed Cucumber features</title>
+<category term='ruby'/>
+<category term='cucumber'/>
+<category term='testing'/>
+<category term='training'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2013/11/how-i-learned-to-stop-worrying-and-love-some-detailed-cucumber-features'/>
+<updated>2013-11-11T17:55:51+00:00</updated>
+<id>http://chrismdp.com/2013/11/how-i-learned-to-stop-worrying-and-love-some-detailed-cucumber-features</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/11/how-i-learned-to-stop-worrying-and-love-some-detailed-cucumber-features" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>Extreme isolation part 3: coding a CRUD app (with full example)</title>
 <category term='ruby'/>
