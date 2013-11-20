@@ -7,12 +7,30 @@ layout: nil
   <title>Chris Parsons: posts tagged continuous delivery</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2013-09-19T15:11:58+01:00</updated>
+  <updated>2013-11-19T16:23:43+00:00</updated>
   <id>http://chrismdp.com/tag/continuous delivery</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>BDD Kickstart is dead. Long live...</title>
+<category term='bdd'/>
+<category term='cucumber'/>
+<category term='bddkickstart'/>
+<category term='training'/>
+<category term='continuous delivery'/>
+<category term='kickstart'/>
+<category term='business'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2013/11/bdd-kickstart-is-dead-long-live'/>
+<updated>2013-11-19T16:23:43+00:00</updated>
+<id>http://chrismdp.com/2013/11/bdd-kickstart-is-dead-long-live</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/11/bdd-kickstart-is-dead-long-live" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>The toolchain of dreams</title>
 <category term='ruby'/>
