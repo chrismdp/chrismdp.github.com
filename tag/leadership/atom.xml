@@ -24,10 +24,10 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2013/11/give-bdd-a-chance'/>
+<link href='http://chrismdp.com/2013/11/how-to-give-bdd-a-chance'/>
 <updated>2013-11-26T17:59:30+00:00</updated>
-<id>http://chrismdp.com/2013/11/give-bdd-a-chance</id>
-<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/11/give-bdd-a-chance" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+<id>http://chrismdp.com/2013/11/how-to-give-bdd-a-chance</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/11/how-to-give-bdd-a-chance" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
 </entry>
 <entry>
 <title>Slides for "Leading software teams well"</title>
