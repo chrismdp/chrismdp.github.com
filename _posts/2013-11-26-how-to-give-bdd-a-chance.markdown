@@ -41,7 +41,7 @@ Let me burst the bubble: leads have no more intrinsic ability to drive adoption 
 
 Sure, a lead could try and mandate a switch to BDD, but that's not going to work. Here's a newsflash: [the only people we can control are ourselves](http://chrismdp.com/2013/05/leading-software-teams-well/).
 
-If leads try to control people in the switch to BDD, at worst they'll get a flat out rebellion. At best, they'll get "mannikin BDD": a team that goes through the motions but loses its soul, and delivers none of the benefits. We've all seen how that worked out for mandatory large-scale Agile switchovers.
+If leads try to control people in the switch to BDD, at worst they'll get a flat out rebellion. At best, they'll get "mannequin BDD": a team that goes through the motions but loses its soul, and delivers none of the benefits. We've all seen how that worked out for mandatory large-scale Agile switchovers.
 
 ## How to give BDD a chance
 
