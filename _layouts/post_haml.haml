@@ -52,6 +52,12 @@
             <li><i class="icon-chevron-right"></i> <a href="{{ post.url }}">{{ post.title }}</a><br/><span class='muted'>{{ post.date | date_to_string }}</span></li>
           {% endfor %}
     .widget
+      :plain
+        {% include soltrader.html %}
+    .widget
+      :plain
+        {% include cardpirates.html %}
+    .widget
       %h4 More
       %ul.list-style
         %li
@@ -60,12 +66,6 @@
         %li
           %i.icon-chevron-right
           %a{:href => '/tags'} All Categories
-    .widget
-      :plain
-        {% include soltrader.html %}
-    .widget
-      :plain
-        {% include cardpirates.html %}
 
     .widget
       :plain
