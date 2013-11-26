@@ -7,12 +7,28 @@ layout: nil
   <title>Chris Parsons: posts tagged management</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2012-10-04T07:49:57+01:00</updated>
+  <updated>2013-11-26T17:59:30+00:00</updated>
   <id>http://chrismdp.com/tag/management</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>How to give BDD a chance</title>
+<category term='bdd'/>
+<category term='team'/>
+<category term='agile'/>
+<category term='leadership'/>
+<category term='management'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2013/11/give-bdd-a-chance'/>
+<updated>2013-11-26T17:59:30+00:00</updated>
+<id>http://chrismdp.com/2013/11/give-bdd-a-chance</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/11/give-bdd-a-chance" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>Delegated tasks are a team anti-pattern</title>
 <category term='team'/>
