@@ -16,13 +16,13 @@ categories:
 
 I blogged recently about taking our cucumber features [one step further](http://chrismdp.com/2013/04/features-are-documentation-not-tests/) and allowing them to become true documentation rather than tests.
 
-Last week, I spent a little time working on getting the cucumber features in the [online version of Sol Trader](http://online.soltrader.net) working as true user manual style documentation, available from `/help`. I've also packaged this up into a [ruby gem](http://rubygems.org/gems/rack-usermanual) - more info on that below.
+Last week, I spent a little time working on getting the cucumber features in the online version of Sol Trader working as true user manual style documentation, available from `/help`. I've also packaged this up into a [ruby gem](http://rubygems.org/gems/rack-usermanual) - more info on that below.
 
 Here's an example of what the format looks like:
 
 ![example shot](http://chrismdp.com/files/rack-usermanual-1.png)
 
-There are lots more live examples [on the Sol Trader help section](http://online.soltrader.net/help).
+There are lots more live examples [on the Sol Trader help section](http://soltrader-online.herokuapp.com/help).
 
 # How it works
 
