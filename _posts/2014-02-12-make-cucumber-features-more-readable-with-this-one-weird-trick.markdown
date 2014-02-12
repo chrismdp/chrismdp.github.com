@@ -6,7 +6,7 @@ categories:
   - bdd
   - agile
   - cucumber
-  - proceess
+  - process
 
 ---
 

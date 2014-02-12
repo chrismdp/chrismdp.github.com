@@ -7,12 +7,27 @@ layout: nil
   <title>Chris Parsons: posts tagged agile</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2013-11-26T17:59:30+00:00</updated>
+  <updated>2014-02-12T10:15:06+00:00</updated>
   <id>http://chrismdp.com/tag/agile</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>Make Cucumber features more readable with this one weird trick</title>
+<category term='bdd'/>
+<category term='agile'/>
+<category term='cucumber'/>
+<category term='process'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2014/02/make-cucumber-features-more-readable-with-this-one-weird-trick'/>
+<updated>2014-02-12T10:15:06+00:00</updated>
+<id>http://chrismdp.com/2014/02/make-cucumber-features-more-readable-with-this-one-weird-trick</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2014/02/make-cucumber-features-more-readable-with-this-one-weird-trick" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>How to give BDD a chance</title>
 <category term='bdd'/>
