@@ -12,7 +12,7 @@ categories:
 
 *"Sorry I've written such a long letter; I didn't have time to write a short one."*
 
--- [Oscar Wilde](http://en.wikipedia.org/wiki/Oscar_Wilde)
+-- [Blaise Pascal](http://en.wikipedia.org/wiki/Blaise_Pascal)
 
 If you've got an issue with your customers not reading your feature files, then try this: it'll help ensure their eyes stop glazing over.
 
