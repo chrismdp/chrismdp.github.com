@@ -7,12 +7,27 @@ layout: nil
   <title>Chris Parsons: posts tagged stories</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2013-08-29T16:18:44+01:00</updated>
+  <updated>2014-04-14T17:22:12+01:00</updated>
   <id>http://chrismdp.com/tag/stories</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>How to layer context into your features using Real Narrative</title>
+<category term='bdd'/>
+<category term='stories'/>
+<category term='cucumber'/>
+<category term='craftsmanship'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2014/04/how-to-layer-context-into-your-features-using-real-narrative'/>
+<updated>2014-04-14T17:22:12+01:00</updated>
+<id>http://chrismdp.com/2014/04/how-to-layer-context-into-your-features-using-real-narrative</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2014/04/how-to-layer-context-into-your-features-using-real-narrative" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>BDD: How to deal stories into features</title>
 <category term='stories'/>
