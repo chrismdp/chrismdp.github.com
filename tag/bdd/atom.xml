@@ -7,12 +7,28 @@ layout: nil
   <title>Chris Parsons: posts tagged bdd</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2014-04-14T17:22:12+01:00</updated>
+  <updated>2014-04-16T18:05:32+01:00</updated>
   <id>http://chrismdp.com/tag/bdd</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>4 questions to discover if you're *really* agile...</title>
+<category term='agile'/>
+<category term='anti-pattern'/>
+<category term='process'/>
+<category term='tools'/>
+<category term='bdd'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2014/04/four-questions-to-discover-if-youre-really-agile'/>
+<updated>2014-04-16T18:05:32+01:00</updated>
+<id>http://chrismdp.com/2014/04/four-questions-to-discover-if-youre-really-agile</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2014/04/four-questions-to-discover-if-youre-really-agile" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>How to layer context into your features using Real Narrative</title>
 <category term='bdd'/>
