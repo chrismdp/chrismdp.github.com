@@ -1,0 +1,35 @@
+<script type="text/javascript">
+    $(document).ready(function() {
+
+    // your twitch channel name
+    var twitchName = 'chrismdp_';
+
+    // an element on your page to put the widget into
+    var elementSelector = '#streaming';
+
+    // HTML to display while waiting for data
+    var loadingHTML = "<b class='twitchLoading'>Querying twitch.tv...</b> <a href='http://www.twitch.tv/" + twitchName + "'>http://www.twitch.tv/" + twitchName + "</a>"
+
+    $(elementSelector).html(loadingHTML);
+
+    $.getJSON(
+        'http://api.justin.tv/api/stream/list.json?channel=' + twitchName + '&jsonp=?',
+
+        function (twitchData) {
+          console.log(twitchData[0]);
+            if (twitchData && twitchData[0]) {
+                if (twitchData[0].stream_type && twitchData[0].stream_type === 'live') {
+                  $(elementSelector).html("<h4>CHRIS IS LIVE CODING <b>NOW</b></h4> <img src='/files/lightbulb_on.png' style='float:left; width: 48px; padding: 16px 31px 0px 15px'/> " + twitchData[0].title + "<br/><br/><a href='http://www.twitch.tv/" + twitchName + "'>Watch on Twitch TV</a>")
+                } else {
+                  $(elementSelector).html("<h4>NOT CURRENTLY LIVE CODING</h4> <img src='/files/lightbulb.png' style='float:left; width: 48px; padding: 16px 31px 0px 15px'/> See highlights and register for notifications for new live coding sessions:<br/><a href='http://www.twitch.tv/" + twitchName + "'>http://www.twitch.tv/" + twitchName + "</a>")
+  
+                }
+            } else {
+                // no data or invalid data from twitch
+                $(elementSelector).html("<h4>NOT CURRENTLY LIVE CODING</b> <a href='http://www.twitch.tv/" + twitchName + "'>http://www.twitch.tv/" + twitchName + "</a>")
+            }
+        }
+    )
+})
+</script>
+<div id='streaming'></div>
