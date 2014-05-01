@@ -13,7 +13,7 @@
       function (twitchData) {
         if (twitchData && twitchData[0]) {
           if (twitchData[0].stream_type && twitchData[0].stream_type === 'live') {
-            $(elementSelector).html("<h4>CHRIS IS LIVE CODING <b>NOW</b></h4> <img src='/files/lightbulb_on.png' style='float:left; width: 48px; padding: 16px 31px 0px 15px'/> " + twitchData[0].title + "<br/><br/><a id='watch_now' href='#'>Click to open video</a><div style='margin-top:20px' id='embedded_twitch_video'></div>");
+            $(elementSelector).html("<h4>CHRIS IS LIVE CODING <b>NOW</b></h4> <img src='/files/lightbulb_on.png' style='float:left; width: 48px; padding: 16px 31px 0px 15px'/> " + twitchData[0].title + "<br/><br/><a id='watch_now' href='#'>Click to toggle video</a><div style='margin-top:15px' id='embedded_twitch_video'></div>");
             var show_video = false;
             $('#watch_now').click(function() {
               show_video = !show_video;
