@@ -1,35 +1,37 @@
 <script type="text/javascript">
-    $(document).ready(function() {
+  $(document).ready(function() {
 
-    // your twitch channel name
     var twitchName = 'chrismdp_';
-
-    // an element on your page to put the widget into
     var elementSelector = '#streaming';
-
-    // HTML to display while waiting for data
     var loadingHTML = "<b class='twitchLoading'>Querying twitch.tv...</b> <a href='http://www.twitch.tv/" + twitchName + "'>http://www.twitch.tv/" + twitchName + "</a>"
 
     $(elementSelector).html(loadingHTML);
 
     $.getJSON(
-        'http://api.justin.tv/api/stream/list.json?channel=' + twitchName + '&jsonp=?',
+      'http://api.justin.tv/api/stream/list.json?channel=' + twitchName + '&jsonp=?',
 
-        function (twitchData) {
-          console.log(twitchData[0]);
-            if (twitchData && twitchData[0]) {
-                if (twitchData[0].stream_type && twitchData[0].stream_type === 'live') {
-                  $(elementSelector).html("<h4>CHRIS IS LIVE CODING <b>NOW</b></h4> <img src='/files/lightbulb_on.png' style='float:left; width: 48px; padding: 16px 31px 0px 15px'/> " + twitchData[0].title + "<br/><br/><a href='http://www.twitch.tv/" + twitchName + "'>Watch on Twitch TV</a>")
-                } else {
-                  $(elementSelector).html("<h4>NOT CURRENTLY LIVE CODING</h4> <img src='/files/lightbulb.png' style='float:left; width: 48px; padding: 16px 31px 0px 15px'/> See highlights and register for notifications for new live coding sessions:<br/><a href='http://www.twitch.tv/" + twitchName + "'>http://www.twitch.tv/" + twitchName + "</a>")
-  
-                }
-            } else {
-                // no data or invalid data from twitch
-                  $(elementSelector).html("<h4>NOT CURRENTLY LIVE CODING</h4> <img src='/files/lightbulb.png' style='float:left; width: 48px; padding: 16px 31px 0px 15px'/> See highlights and register for notifications for new live coding sessions:<br/><a href='http://www.twitch.tv/" + twitchName + "'>http://www.twitch.tv/" + twitchName + "</a>")
-            }
+      function (twitchData) {
+        if (twitchData && twitchData[0]) {
+          if (twitchData[0].stream_type && twitchData[0].stream_type === 'live') {
+            $(elementSelector).html("<h4>CHRIS IS LIVE CODING <b>NOW</b></h4> <img src='/files/lightbulb_on.png' style='float:left; width: 48px; padding: 16px 31px 0px 15px'/> " + twitchData[0].title + "<br/><br/><a id='watch_now' href='#'>Click to open video</a><div style='margin-top:20px' id='embedded_twitch_video'></div>");
+            var show_video = false;
+            $('#watch_now').click(function() {
+              show_video = !show_video;
+              if (show_video) {
+                $('#embedded_twitch_video').html("<object type='application/x-shockwave-flash' height='225' width='300' id='live_embed_player_flash' data='http://www.twitch.tv/widgets/live_embed_player.swf?channel=chrismdp_' bgcolor='#000000'><param name='allowFullScreen' value='true' /><param name='allowScriptAccess' value='always' /><param name='allowNetworking' value='all' /><param name='movie' value='http://www.twitch.tv/widgets/live_embed_player.swf' /><param name='flashvars' value='hostname=www.twitch.tv&channel=chrismdp_&auto_play=true&start_volume=25' /></object><a href='http://www.twitch.tv/chrismdp_' style='padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px;text-decoration:underline; text-align:center;'>Watch live video from chrismdp_ on www.twitch.tv</a>");
+              } else {
+                $('#embedded_twitch_video').html("");
+              }
+            });
+          } else {
+            $(elementSelector).html("<h4>NOT CURRENTLY LIVE CODING</h4> <img src='/files/lightbulb.png' style='float:left; width: 48px; padding: 16px 31px 0px 15px'/> See highlights and register for notifications for new live coding sessions:<br/><a href='http://www.twitch.tv/" + twitchName + "'>http://www.twitch.tv/" + twitchName + "</a>");
+          }
+        } else {
+          // no data or invalid data from twitch
+          $(elementSelector).html("<h4>NOT CURRENTLY LIVE CODING</h4> <img src='/files/lightbulb.png' style='float:left; width: 48px; padding: 16px 31px 0px 15px'/> See highlights and register for notifications for new live coding sessions:<br/><a href='http://www.twitch.tv/" + twitchName + "'>http://www.twitch.tv/" + twitchName + "</a>")
         }
+      }
     )
-})
+  })
 </script>
 <div id='streaming'></div>
