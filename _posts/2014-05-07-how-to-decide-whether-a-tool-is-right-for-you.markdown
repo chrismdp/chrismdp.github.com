@@ -33,7 +33,7 @@ So why do we get so hung up on one particular tool? When something works for us,
 
 [Gary Bernhardt](https://www.destroyallsoftware.com/blog/2014/tdd-straw-men-and-rhetoric) has a point. Test speeds do matter - the faster the better. Fast tests are a powerful tool.
 
-[Uncle Bob](http://blog.8thlight.com/uncle-bob/2014/05/01/Design-Damage.html) has a point. It's not just about fast tests: seperating concerns in order to promote changeability in code is a useful skill to learn.
+[Uncle Bob](http://blog.8thlight.com/uncle-bob/2014/05/01/Design-Damage.html) has a point. It's not just about fast tests: separating concerns in order to promote changeability in code is a useful skill to learn.
 
 [Tom Stuart](http://codon.com/how-testability-can-help) has a point. TDD is a useful tool because it gives you another client for your code, encouraging us to think harder about what it's doing.
 
