@@ -7,12 +7,28 @@ layout: nil
   <title>Chris Parsons: posts tagged bdd</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2014-04-16T18:05:32+01:00</updated>
+  <updated>2014-05-07T13:10:47+01:00</updated>
   <id>http://chrismdp.com/tag/bdd</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>How to decide whether a software tool is right for you</title>
+<category term='tools'/>
+<category term='anti-pattern'/>
+<category term='process'/>
+<category term='craftsmanship'/>
+<category term='bdd'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2014/05/how-to-decide-whether-a-software-tool-is-right-for-you'/>
+<updated>2014-05-07T13:10:47+01:00</updated>
+<id>http://chrismdp.com/2014/05/how-to-decide-whether-a-software-tool-is-right-for-you</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2014/05/how-to-decide-whether-a-software-tool-is-right-for-you" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>4 questions to discover if you're *really* agile...</title>
 <category term='agile'/>
