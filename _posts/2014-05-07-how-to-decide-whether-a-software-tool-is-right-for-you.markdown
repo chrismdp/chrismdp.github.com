@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to decide whether a software tool is right for you
+title: How to decide whether a tool is right for you
 date: 2014-05-07 13:10:47 +0100
 categories:
   - tools
