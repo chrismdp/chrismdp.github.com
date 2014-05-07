@@ -11,7 +11,7 @@ categories:
 
 ---
 
-[![tools]({{BASE_PATH}}/files/tools.jpg)](https://flic.kr/p/5YWuWk)
+[![tools](http://chrismdp.com/files/tools.jpg)](https://flic.kr/p/5YWuWk)
 
 We are only at the beginning of our journey in building software. Our discipline is barely a few decades old. We have only a very little experience in how to correctly write code and a limited range of tools and skills to do it with. We should be actively looking for new tools, not wasting our time either promoting our toolset exclusively or disparaging the toolsets of others.
 
