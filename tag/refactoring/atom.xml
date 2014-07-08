@@ -7,12 +7,26 @@ layout: nil
   <title>Chris Parsons: posts tagged refactoring</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2013-07-16T09:37:39+01:00</updated>
+  <updated>2014-07-08T16:53:34+01:00</updated>
   <id>http://chrismdp.com/tag/refactoring</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>How not to check in temporary code</title>
+<category term='code'/>
+<category term='refactoring'/>
+<category term='bdd'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2014/07/how-not-to-check-in-temporary-code'/>
+<updated>2014-07-08T16:53:34+01:00</updated>
+<id>http://chrismdp.com/2014/07/how-not-to-check-in-temporary-code</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2014/07/how-not-to-check-in-temporary-code" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>Extreme isolation part 2: separate the domain from the changes</title>
 <category term='ruby'/>
