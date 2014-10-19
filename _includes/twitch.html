@@ -3,7 +3,7 @@
     $(document).ready(function() {
       $('#streaming').html("<b class='twitchLoading'>Querying twitch.tv...</b> <a href='http://www.twitch.tv/chrismdp_'>http://www.twitch.tv/chrismdp_</a>");
       if (data && data['stream']) {
-        $("#streaming").html("<h4>CHRIS IS LIVE CODING <b>NOW</b> (" + data["stream"]["viewers"] + " WATCHING)</h4> <img src='/files/lightbulb_on.png' style='float:left; width: 48px; padding: 16px 31px 0px 15px'/> " + data['stream']['title'] + "<br/><br/><a id='watch_now' href='#'>Click to toggle video</a><div style='margin-top:15px' id='embedded_twitch_video'></div>");
+        $("#streaming").html("<h4>CHRIS IS LIVE CODING <b>NOW</b> (" + data["stream"]["viewers"] + " WATCHING)</h4> <img src='/files/lightbulb_on.png' style='float:left; width: 48px; padding: 16px 31px 0px 15px'/> " + data['stream']['channel']['status'] + "<br/><br/><a id='watch_now' href='#'>Click to toggle video</a><div style='margin-top:15px' id='embedded_twitch_video'></div>");
         var show_video = false;
         $('#watch_now').click(function() {
           show_video = !show_video;
@@ -14,7 +14,7 @@
           }
         });
       } else {
-        $("#streaming").html("<h4>NOT CURRENTLY LIVE CODING</h4> <img src='/files/lightbulb.png' style='float:left; width: 48px; padding: 16px 31px 0px 15px'/> See highlights and register for notifications for new live coding sessions:<br/><a href='http://www.twitch.tv/chrismdp_'>http://www.twitch.tv/chrismdp_</a>");
+        $("#streaming").html("<h4>NOT CURRENTLY LIVE CODING</h4> <img src='/files/lightbulb.png' style='float:left; width: 48px; padding: 16px 31px 0px 15px'/><a href='http://www.twitch.tv/chrismdp_'>Follow for notifications of new live coding sessions</a><br/><a href='https://www.youtube.com/watch?v=u2ZOfYEuRHI&list=PLGQLg2DFLiGiMOzv8gZpEGczM_O2B5iah'>View Sol Trader livestream archives on YouTube</a>");
       }
     });
   }
