@@ -17,7 +17,7 @@ which you are attempting to do it.
 
 Software development is hard, and it's [harder the greater the
 scale](http://agilecoach.typepad.com/agile-coaching/2014/06/the-folly-of-scaling-agile.html)
-as Rachel's post eloquently aruges. However, I don't think the scale is always
+as Rachel's post eloquently argues. However, I don't think the scale is always
 the limiting factor here.
 
 I've seen small teams with such a lack of trust that they burden themselves
