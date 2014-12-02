@@ -25,7 +25,7 @@ with suffocating process, and larger organisations with so much trust that
 they're able to operate at the speed of organisations a quarter of their size.
 
 As organisations get bigger, the trust required gets greater. If the trust
-exists, teams are able to remain independent and don't get burdened by process.
+exists, teams are able to remain independent and don't get burdened with process.
 
 If you need to work at one thing to make your large organisation more agile,
 work on building trust between teams, and between teams and management. Try
