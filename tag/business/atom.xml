@@ -7,12 +7,28 @@ layout: nil
   <title>Chris Parsons: posts tagged business</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2013-11-19T16:23:43+00:00</updated>
+  <updated>2015-01-07T09:57:58+00:00</updated>
   <id>http://chrismdp.com/tag/business</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>New for 2015: Sol Trader now on Kickstarter</title>
+<category term='sol trader'/>
+<category term='indie games'/>
+<category term='business'/>
+<category term='kickstarter'/>
+<category term='game development'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2015/01/new-for-2015-sol-trader-on-kickstarter'/>
+<updated>2015-01-07T09:57:58+00:00</updated>
+<id>http://chrismdp.com/2015/01/new-for-2015-sol-trader-on-kickstarter</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/01/new-for-2015-sol-trader-on-kickstarter" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>BDD Kickstart is dead. Long live...</title>
 <category term='bdd'/>

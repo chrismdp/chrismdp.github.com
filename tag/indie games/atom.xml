@@ -1,0 +1,32 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Chris Parsons: posts tagged indie games</title>
+
+  <link href="http://chrismdp.com/"/>
+  <updated>2015-01-07T09:57:58+00:00</updated>
+  <id>http://chrismdp.com/tag/indie games</id>
+  <author>
+    <name>Chris</name>
+    <email>chrismdp@gmail.com</email>
+  </author>
+<entry>
+<title>New for 2015: Sol Trader now on Kickstarter</title>
+<category term='sol trader'/>
+<category term='indie games'/>
+<category term='business'/>
+<category term='kickstarter'/>
+<category term='game development'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2015/01/new-for-2015-sol-trader-on-kickstarter'/>
+<updated>2015-01-07T09:57:58+00:00</updated>
+<id>http://chrismdp.com/2015/01/new-for-2015-sol-trader-on-kickstarter</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/01/new-for-2015-sol-trader-on-kickstarter" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+</feed>
