@@ -7,12 +7,28 @@ layout: nil
   <title>Chris Parsons: posts tagged sol trader</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2015-01-07T09:57:58+00:00</updated>
+  <updated>2015-01-07T14:26:40+00:00</updated>
   <id>http://chrismdp.com/tag/sol trader</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>7 things I've learnt in 3 years coding my first indie game</title>
+<category term='sol trader'/>
+<category term='code'/>
+<category term='business'/>
+<category term='kickstarter'/>
+<category term='game development'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2015/01/seven-things-i-ve-learnt-in-3-years-coding-my-first-indie-game'/>
+<updated>2015-01-07T14:26:40+00:00</updated>
+<id>http://chrismdp.com/2015/01/seven-things-i-ve-learnt-in-3-years-coding-my-first-indie-game</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/01/seven-things-i-ve-learnt-in-3-years-coding-my-first-indie-game" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>New for 2015: Sol Trader now on Kickstarter</title>
 <category term='sol trader'/>
