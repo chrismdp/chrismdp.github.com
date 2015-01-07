@@ -34,6 +34,9 @@
         {% assign post = page %}
         {% include strap.html %}
     .widget
+      :plain
+        {% include kickstarter.html %}
+    .widget
       %h4 Post Categories
       %ul.tags
         :plain
@@ -51,13 +54,7 @@
         {% include twitch.html %}
     .widget
       :plain
-        {% include soltrader.html %}
-    .widget
-      :plain
         {% include cardpirates.html %}
-    .widget
-      :plain
-        {% include conferences.html %}
     .widget
       %h4 More
       %ul.list-style

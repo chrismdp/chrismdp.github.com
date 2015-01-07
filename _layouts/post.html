@@ -31,6 +31,9 @@ layout: default
       {% include strap.html %}
     </div>
     <div class='widget'>
+      {% include kickstarter.html %}
+    </div>
+    <div class='widget'>
       <h4>Post Categories</h4>
       <ul class='tags'>
         {% for tag in page.categories limit: 4 %}<li><a class='tag' href='/tag/{{ tag }}/'>{{tag}}</a></li>{% endfor %}
@@ -48,13 +51,7 @@ layout: default
       {% include twitch.html %}
     </div>
     <div class='widget'>
-      {% include soltrader.html %}
-    </div>
-    <div class='widget'>
       {% include cardpirates.html %}
-    </div>
-    <div class='widget'>
-      {% include conferences.html %}
     </div>
     <div class='widget'>
       <h4>More</h4>
