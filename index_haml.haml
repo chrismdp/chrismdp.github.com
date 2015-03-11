@@ -19,9 +19,6 @@
       .entry-content
         {{ post.content }}
 
-        :plain
-          {% include kickstart.html %}
-
         %p
           %a{:href => "{{ site.posts.first.url }}#comments"} Click here
           to comment.
@@ -36,9 +33,9 @@
     .widget
       :plain
         {% include twitch.html %}
-    .widget
-      :plain
-        {% include kickstarter.html %}
+    -#.widget
+      -#:plain
+        -#{% include kickstarter.html %}
     .widget
       %h4 Recent posts
       %ul.list-style
@@ -46,6 +43,9 @@
           {% for post in site.posts %}
           {% if forloop.index < 7 and forloop.index > 1 %}<li><i class="icon-chevron-right"></i> <a href="{{ post.url }}">{{ post.title }}</a><br/><span class='muted'>{{ post.date | date_to_string }}</span></li>{% endif %}
           {% endfor %}
+    .widget
+      :plain
+        {% include soltrader.html %}
     .widget
       :plain
         {% include cardpirates.html %}

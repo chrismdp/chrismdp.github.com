@@ -19,7 +19,6 @@ title: Chris Parsons
     <article class='post single-post'>
       <div class='entry-content'>
         {{ post.content }}
-        {% include kickstart.html %}
         <p>
           <a href='{{ site.posts.first.url }}#comments'>Click here</a>
           to comment.
@@ -39,15 +38,15 @@ title: Chris Parsons
       {% include twitch.html %}
     </div>
     <div class='widget'>
-      {% include kickstarter.html %}
-    </div>
-    <div class='widget'>
       <h4>Recent posts</h4>
       <ul class='list-style'>
         {% for post in site.posts %}
         {% if forloop.index < 7 and forloop.index > 1 %}<li><i class="icon-chevron-right"></i> <a href="{{ post.url }}">{{ post.title }}</a><br/><span class='muted'>{{ post.date | date_to_string }}</span></li>{% endif %}
         {% endfor %}
       </ul>
+    </div>
+    <div class='widget'>
+      {% include soltrader.html %}
     </div>
     <div class='widget'>
       {% include cardpirates.html %}
