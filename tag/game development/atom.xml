@@ -7,12 +7,29 @@ layout: nil
   <title>Chris Parsons: posts tagged game development</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2015-01-07T14:26:40+00:00</updated>
+  <updated>2015-03-11T10:37:37+00:00</updated>
   <id>http://chrismdp.com/tag/game development</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>Why video game coders don't use TDD, and why it matters</title>
+<category term='sol trader'/>
+<category term='tdd'/>
+<category term='indie games'/>
+<category term='game development'/>
+<category term='testing'/>
+<category term='code'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2015/03/why-games-coders-dont-use-tdd-and-why-it-matters'/>
+<updated>2015-03-11T10:37:37+00:00</updated>
+<id>http://chrismdp.com/2015/03/why-games-coders-dont-use-tdd-and-why-it-matters</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/03/why-games-coders-dont-use-tdd-and-why-it-matters" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>7 things I've learnt in 3 years coding my first indie game</title>
 <category term='sol trader'/>

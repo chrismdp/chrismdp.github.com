@@ -7,12 +7,29 @@ layout: nil
   <title>Chris Parsons: posts tagged testing</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2013-11-11T17:55:51+00:00</updated>
+  <updated>2015-03-11T10:37:37+00:00</updated>
   <id>http://chrismdp.com/tag/testing</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>Why video game coders don't use TDD, and why it matters</title>
+<category term='sol trader'/>
+<category term='tdd'/>
+<category term='indie games'/>
+<category term='game development'/>
+<category term='testing'/>
+<category term='code'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2015/03/why-games-coders-dont-use-tdd-and-why-it-matters'/>
+<updated>2015-03-11T10:37:37+00:00</updated>
+<id>http://chrismdp.com/2015/03/why-games-coders-dont-use-tdd-and-why-it-matters</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/03/why-games-coders-dont-use-tdd-and-why-it-matters" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>How I learned to stop worrying and love (some) detailed Cucumber features</title>
 <category term='ruby'/>
