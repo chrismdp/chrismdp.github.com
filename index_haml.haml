@@ -23,6 +23,10 @@
           %a{:href => "{{ site.posts.first.url }}#comments"} Click here
           to comment.
 
+        :plain
+          {% include postscript.html %}
+
+
   .sidebar.span4
     %p
       Posted {{ post.date | date: "%B %d, %Y" }}
