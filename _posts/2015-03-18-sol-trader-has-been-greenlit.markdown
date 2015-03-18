@@ -17,6 +17,10 @@ I've not yet announced this properly, and it deserves a proper announcement:
 Sol Trader was recently [greenlit by
 Steam](http://steamcommunity.com/sharedfiles/filedetails/?id=93098528)!
 
+This means that on release you'll be able to buy the game on Steam, giving us
+more publicity and exposure, along with an easy way to buy and play. It's great
+news for the game!
+
 It's been quite a journey. I originally released the game on Steam Greenlight
 about three years ago, when the Greenlight process was [officially launched](http://store.steampowered.com/news/8761/). At
 that point, the game wasn't really ready for Greenlight. The alpha was rough,
