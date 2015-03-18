@@ -7,12 +7,28 @@ layout: nil
   <title>Chris Parsons: posts tagged game development</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2015-03-11T10:37:37+00:00</updated>
+  <updated>2015-03-18T09:17:03+00:00</updated>
   <id>http://chrismdp.com/tag/game development</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>After a long journey, Sol Trader has been greenlit!</title>
+<category term='sol trader'/>
+<category term='indie games'/>
+<category term='steam'/>
+<category term='game development'/>
+<category term='marketing'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2015/03/sol-trader-has-been-greenlit'/>
+<updated>2015-03-18T09:17:03+00:00</updated>
+<id>http://chrismdp.com/2015/03/sol-trader-has-been-greenlit</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/03/sol-trader-has-been-greenlit" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>Why video game coders don't use TDD, and why it matters</title>
 <category term='sol trader'/>

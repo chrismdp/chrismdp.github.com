@@ -1,0 +1,32 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Chris Parsons: posts tagged marketing</title>
+
+  <link href="http://chrismdp.com/"/>
+  <updated>2015-03-18T09:17:03+00:00</updated>
+  <id>http://chrismdp.com/tag/marketing</id>
+  <author>
+    <name>Chris</name>
+    <email>chrismdp@gmail.com</email>
+  </author>
+<entry>
+<title>After a long journey, Sol Trader has been greenlit!</title>
+<category term='sol trader'/>
+<category term='indie games'/>
+<category term='steam'/>
+<category term='game development'/>
+<category term='marketing'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2015/03/sol-trader-has-been-greenlit'/>
+<updated>2015-03-18T09:17:03+00:00</updated>
+<id>http://chrismdp.com/2015/03/sol-trader-has-been-greenlit</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/03/sol-trader-has-been-greenlit" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+</feed>
