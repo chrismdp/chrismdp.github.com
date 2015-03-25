@@ -7,12 +7,27 @@ layout: nil
   <title>Chris Parsons: posts tagged game development</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2015-03-18T09:17:03+00:00</updated>
+  <updated>2015-03-25T10:39:12+00:00</updated>
   <id>http://chrismdp.com/tag/game development</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>4 things every space game must have</title>
+<category term='sol trader'/>
+<category term='game development'/>
+<category term='game design'/>
+<category term='indie games'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2015/03/four-things-every-space-game-must-have'/>
+<updated>2015-03-25T10:39:12+00:00</updated>
+<id>http://chrismdp.com/2015/03/four-things-every-space-game-must-have</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/03/four-things-every-space-game-must-have" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>After a long journey, Sol Trader has been greenlit!</title>
 <category term='sol trader'/>

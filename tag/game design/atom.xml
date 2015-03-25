@@ -1,0 +1,31 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Chris Parsons: posts tagged game design</title>
+
+  <link href="http://chrismdp.com/"/>
+  <updated>2015-03-25T10:39:12+00:00</updated>
+  <id>http://chrismdp.com/tag/game design</id>
+  <author>
+    <name>Chris</name>
+    <email>chrismdp@gmail.com</email>
+  </author>
+<entry>
+<title>4 things every space game must have</title>
+<category term='sol trader'/>
+<category term='game development'/>
+<category term='game design'/>
+<category term='indie games'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2015/03/four-things-every-space-game-must-have'/>
+<updated>2015-03-25T10:39:12+00:00</updated>
+<id>http://chrismdp.com/2015/03/four-things-every-space-game-must-have</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/03/four-things-every-space-game-must-have" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+</feed>
