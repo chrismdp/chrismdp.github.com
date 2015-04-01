@@ -29,7 +29,7 @@ slow. It's probably the thing that's most holding your CPU back right now.
 Memory has been gradually increasing in speed over the last few decades, but at
 10% of the rate of CPU speed:
 
-![memory vs. CPU speed incrase](files/memory-cpu-speed-increase.png)
+![memory vs. CPU speed incrase](/files/memory-cpu-speed-increase.png)
 
 Memory cache misses cause the CPU to stall, losing several hundred cycles each
 time it happens. Every year, cache misses become a more and more significant
