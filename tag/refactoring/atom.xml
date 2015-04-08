@@ -7,12 +7,31 @@ layout: nil
   <title>Chris Parsons: posts tagged refactoring</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2014-07-08T16:53:34+01:00</updated>
+  <updated>2015-04-08T14:04:44+01:00</updated>
   <id>http://chrismdp.com/tag/refactoring</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>Your abstractions are a liability</title>
+<category term='code'/>
+<category term='c++'/>
+<category term='object oriented'/>
+<category term='game development'/>
+<category term='refactoring'/>
+<category term='state'/>
+<category term='functional programming'/>
+<category term='liability'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2015/04/your-abstractions-are-a-liability'/>
+<updated>2015-04-08T14:04:44+01:00</updated>
+<id>http://chrismdp.com/2015/04/your-abstractions-are-a-liability</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/04/your-abstractions-are-a-liability" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>How not to check in temporary code</title>
 <category term='code'/>

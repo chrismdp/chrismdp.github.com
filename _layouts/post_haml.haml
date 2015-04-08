@@ -40,7 +40,7 @@
       %h4 Post Categories
       %ul.tags
         :plain
-          {% for tag in page.categories limit: 4 %}<li><a class='tag' href='/tag/{{ tag }}/'>{{tag}}</a></li>{% endfor %}
+          {% for tag in page.categories %}<li><a class='tag' href='/tag/{{ tag }}/'>{{tag}}</a></li>{% endfor %}
 
     .widget
       %h4 Related posts

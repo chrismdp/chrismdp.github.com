@@ -7,6 +7,7 @@ categories:
   - code
   - game development
   - c++
+  - object oriented
 
 ---
 

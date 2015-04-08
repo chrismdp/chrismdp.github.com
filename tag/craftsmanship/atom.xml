@@ -130,6 +130,8 @@ layout: nil
 <category term='craftsmanship'/>
 <category term='products'/>
 <category term='sol trader'/>
+<category term='functional programming'/>
+<category term='object oriented'/>
     <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
@@ -161,6 +163,7 @@ layout: nil
 <category term='cucumber'/>
 <category term='tdd'/>
 <category term='craftsmanship'/>
+<category term='functional programming'/>
     <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>

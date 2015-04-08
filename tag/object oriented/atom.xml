@@ -4,11 +4,11 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title>Chris Parsons: posts tagged liability</title>
+  <title>Chris Parsons: posts tagged object oriented</title>
 
   <link href="http://chrismdp.com/"/>
   <updated>2015-04-08T14:04:44+01:00</updated>
-  <id>http://chrismdp.com/tag/liability</id>
+  <id>http://chrismdp.com/tag/object oriented</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
@@ -33,39 +33,37 @@ layout: nil
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/04/your-abstractions-are-a-liability" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
 </entry>
 <entry>
-<title>Your framework is a liability</title>
+<title>How I doubled the speed of my game by giving up on C++</title>
+<category term='sol trader'/>
 <category term='code'/>
-<category term='craftsmanship'/>
-<category term='lean'/>
-<category term='ruby'/>
-<category term='agile'/>
-<category term='liability'/>
-<category term='sinatra'/>
-<category term='paypal'/>
+<category term='game development'/>
+<category term='c++'/>
+<category term='object oriented'/>
     <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/09/your-framework-is-a-liability'/>
-<updated>2012-09-28T20:46:31+01:00</updated>
-<id>http://chrismdp.com/2012/09/your-framework-is-a-liability</id>
-<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/your-framework-is-a-liability" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+<link href='http://chrismdp.com/2015/04/how-i-doubled-the-speed-of-my-game-by-giving-up-on-c-plus-plus'/>
+<updated>2015-04-01T12:49:53+01:00</updated>
+<id>http://chrismdp.com/2015/04/how-i-doubled-the-speed-of-my-game-by-giving-up-on-c-plus-plus</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/04/how-i-doubled-the-speed-of-my-game-by-giving-up-on-c-plus-plus" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
 </entry>
 <entry>
-<title>Your code is a liability</title>
-<category term='code'/>
+<title>The perils of curiosity</title>
+<category term='bdd'/>
+<category term='testing'/>
 <category term='craftsmanship'/>
-<category term='lean'/>
-<category term='agile'/>
-<category term='team'/>
-<category term='liability'/>
+<category term='products'/>
+<category term='sol trader'/>
+<category term='functional programming'/>
+<category term='object oriented'/>
     <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/09/code-is-a-liability'/>
-<updated>2012-09-24T20:48:13+01:00</updated>
-<id>http://chrismdp.com/2012/09/code-is-a-liability</id>
-<content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/code-is-a-liability" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+<link href='http://chrismdp.com/2013/02/the-perils-of-curiosity'/>
+<updated>2013-02-07T07:27:02+00:00</updated>
+<id>http://chrismdp.com/2013/02/the-perils-of-curiosity</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2013/02/the-perils-of-curiosity" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
 </entry>
 </feed>

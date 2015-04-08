@@ -21,6 +21,7 @@ layout: nil
 <category term='game development'/>
 <category term='testing'/>
 <category term='code'/>
+<category term='functional programming'/>
     <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
@@ -36,6 +37,7 @@ layout: nil
 <category term='cucumber'/>
 <category term='tdd'/>
 <category term='craftsmanship'/>
+<category term='functional programming'/>
     <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>

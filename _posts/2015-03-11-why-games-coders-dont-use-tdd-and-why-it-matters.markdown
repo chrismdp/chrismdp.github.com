@@ -9,6 +9,7 @@ categories:
   - game development
   - testing
   - code
+  - functional programming
 
 ---
 

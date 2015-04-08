@@ -7,18 +7,38 @@ layout: nil
   <title>Chris Parsons: posts tagged code</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2015-04-01T12:49:53+01:00</updated>
+  <updated>2015-04-08T14:04:44+01:00</updated>
   <id>http://chrismdp.com/tag/code</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
 <entry>
+<title>Your abstractions are a liability</title>
+<category term='code'/>
+<category term='c++'/>
+<category term='object oriented'/>
+<category term='game development'/>
+<category term='refactoring'/>
+<category term='state'/>
+<category term='functional programming'/>
+<category term='liability'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2015/04/your-abstractions-are-a-liability'/>
+<updated>2015-04-08T14:04:44+01:00</updated>
+<id>http://chrismdp.com/2015/04/your-abstractions-are-a-liability</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/04/your-abstractions-are-a-liability" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
 <title>How I doubled the speed of my game by giving up on C++</title>
 <category term='sol trader'/>
 <category term='code'/>
 <category term='game development'/>
 <category term='c++'/>
+<category term='object oriented'/>
     <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
@@ -36,6 +56,7 @@ layout: nil
 <category term='game development'/>
 <category term='testing'/>
 <category term='code'/>
+<category term='functional programming'/>
     <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>

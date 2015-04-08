@@ -7,6 +7,7 @@ categories:
   - cucumber
   - tdd
   - craftsmanship
+  - functional programming
 
 ---
 

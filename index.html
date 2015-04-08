@@ -39,6 +39,12 @@ title: Chris Parsons
       {% include twitch.html %}
     </div>
     <div class='widget'>
+      <h4>Post Categories</h4>
+      <ul class='tags'>
+        {% for tag in post.categories %}<li><a class='tag' href='/tag/{{ tag }}/'>{{tag}}</a></li>{% endfor %}
+      </ul>
+    </div>
+    <div class='widget'>
       <h4>Recent posts</h4>
       <ul class='list-style'>
         {% for post in site.posts %}

@@ -41,6 +41,11 @@
       -#:plain
         -#{% include kickstarter.html %}
     .widget
+      %h4 Post Categories
+      %ul.tags
+        :plain
+          {% for tag in post.categories %}<li><a class='tag' href='/tag/{{ tag }}/'>{{tag}}</a></li>{% endfor %}
+    .widget
       %h4 Recent posts
       %ul.list-style
         :plain

@@ -8,6 +8,8 @@ categories:
   - craftsmanship
   - products
   - sol trader
+  - functional programming
+  - object oriented
 
 ---
 
