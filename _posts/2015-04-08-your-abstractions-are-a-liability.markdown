@@ -84,7 +84,7 @@ Let's remove the `_running` member variable and use a local variable instead:
       void run() {
         init();
         bool running = true;
-        while(_running) {
+        while(running) {
           running = update();
           draw();
         }
@@ -111,7 +111,7 @@ You can take this further and inline the other objects:
         Music music;
         music.init();
         bool running = true;
-        while(_running) {
+        while(running) {
           running = update();
           draw();
         }
