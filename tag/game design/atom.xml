@@ -7,12 +7,27 @@ layout: nil
   <title>Chris Parsons: posts tagged game design</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2015-03-25T10:39:12+00:00</updated>
+  <updated>2015-04-15T13:39:44+01:00</updated>
   <id>http://chrismdp.com/tag/game design</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>How to choose between realism and fun in game design</title>
+<category term='sol trader'/>
+<category term='game development'/>
+<category term='game design'/>
+<category term='indie games'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2015/04/realism-vs-gameplay'/>
+<updated>2015-04-15T13:39:44+01:00</updated>
+<id>http://chrismdp.com/2015/04/realism-vs-gameplay</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/04/realism-vs-gameplay" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>4 things every space game must have</title>
 <category term='sol trader'/>
