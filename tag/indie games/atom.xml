@@ -23,10 +23,10 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/04/realism-vs-gameplay'/>
+<link href='http://chrismdp.com/2015/04/how-to-choose-between-realism-and-fun'/>
 <updated>2015-04-15T13:39:44+01:00</updated>
-<id>http://chrismdp.com/2015/04/realism-vs-gameplay</id>
-<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/04/realism-vs-gameplay" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+<id>http://chrismdp.com/2015/04/how-to-choose-between-realism-and-fun</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/04/how-to-choose-between-realism-and-fun" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
 </entry>
 <entry>
 <title>4 things every space game must have</title>
