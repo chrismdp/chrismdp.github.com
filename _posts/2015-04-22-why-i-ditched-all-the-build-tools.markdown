@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why I ditched all the build tools in favour of a simple script"
-date: 2015-04-22 10:48:16 +0100
+date: 2015-04-22 11:42:46 +0100
 categories:
   - code
   - tools
