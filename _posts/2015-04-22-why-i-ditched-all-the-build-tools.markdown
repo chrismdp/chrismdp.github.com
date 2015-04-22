@@ -25,7 +25,7 @@ I'm not talking about continuous integration tools such as [Jenkins](http://jenk
 
 One of the main aims of a compilation tool is to allow us to divide all the pieces of a system up into component parts to be built individually (another main aim is portability, which I'll address below). This allows us to only build the part of the code which changed each time, and link all the compiled pieces together at the end.
 
-However every time we build a source file, we have to grab a piece of code, grab *all the dependencies of that code* from disk. The disk is probably the slowest thing in our machines, and we have to grab everything from desk every time, for each source file we're building. If we're building a lot of files, this can get very slow.
+However every time we build a source file, we have to grab a piece of code, grab *all the dependencies of that code* from disk. The disk is probably the slowest thing in our machines, and we have to grab everything from disk every time, for each source file we're building. If we're building a lot of files, this can get very slow.
 
 The second problem with this is when we change an often-reused piece of code, such as a header file, we have to compile the whole lot again. In order to cut the amount of things to build down, we can set up complex dependency management systems to try to limit the amount of things built. We can also set up a precompiled header which tries to minimise disk access by building a lot of the code in advance for us, but more and more of our time is handling the side effects of pushing for an incremental build system.
 

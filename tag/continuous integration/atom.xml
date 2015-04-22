@@ -7,7 +7,7 @@ layout: nil
   <title>Chris Parsons: posts tagged continuous integration</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2015-04-22T10:48:16+01:00</updated>
+  <updated>2015-04-22T11:42:46+01:00</updated>
   <id>http://chrismdp.com/tag/continuous integration</id>
   <author>
     <name>Chris</name>
@@ -25,7 +25,7 @@ layout: nil
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2015/04/why-i-ditched-all-the-build-tools'/>
-<updated>2015-04-22T10:48:16+01:00</updated>
+<updated>2015-04-22T11:42:46+01:00</updated>
 <id>http://chrismdp.com/2015/04/why-i-ditched-all-the-build-tools</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/04/why-i-ditched-all-the-build-tools" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
 </entry>
