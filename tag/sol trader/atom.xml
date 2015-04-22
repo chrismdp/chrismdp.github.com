@@ -7,12 +7,28 @@ layout: nil
   <title>Chris Parsons: posts tagged sol trader</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2015-04-15T13:39:44+01:00</updated>
+  <updated>2015-04-22T10:48:16+01:00</updated>
   <id>http://chrismdp.com/tag/sol trader</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>Why I ditched all the build tools in favour of a simple script</title>
+<category term='code'/>
+<category term='tools'/>
+<category term='game development'/>
+<category term='continuous integration'/>
+<category term='sol trader'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2015/04/why-i-ditched-all-the-build-tools'/>
+<updated>2015-04-22T10:48:16+01:00</updated>
+<id>http://chrismdp.com/2015/04/why-i-ditched-all-the-build-tools</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/04/why-i-ditched-all-the-build-tools" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>How to choose between realism and fun in game design</title>
 <category term='sol trader'/>
