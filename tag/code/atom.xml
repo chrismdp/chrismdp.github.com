@@ -7,12 +7,28 @@ layout: nil
   <title>Chris Parsons: posts tagged code</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2015-04-22T11:42:46+01:00</updated>
+  <updated>2015-04-28T21:01:22+01:00</updated>
   <id>http://chrismdp.com/tag/code</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>How I'm using Proxemics in Sol Trader's game design</title>
+<category term='game design'/>
+<category term='sol trader'/>
+<category term='game development'/>
+<category term='code'/>
+<category term='psychology'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2015/04/how-i-m-using-proxemics-in-sol-trader-s-game-design'/>
+<updated>2015-04-28T21:01:22+01:00</updated>
+<id>http://chrismdp.com/2015/04/how-i-m-using-proxemics-in-sol-trader-s-game-design</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/04/how-i-m-using-proxemics-in-sol-trader-s-game-design" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>Why I ditched all the build tools in favour of a simple script</title>
 <category term='code'/>
