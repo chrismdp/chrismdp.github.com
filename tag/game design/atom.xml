@@ -7,12 +7,27 @@ layout: nil
   <title>Chris Parsons: posts tagged game design</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2015-05-13T16:29:47+01:00</updated>
+  <updated>2015-05-27T11:45:08+01:00</updated>
   <id>http://chrismdp.com/tag/game design</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>How tone of voice works in Sol Trader's dialogue system</title>
+<category term='game design'/>
+<category term='sol trader'/>
+<category term='game development'/>
+<category term='code'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2015/05/tone-of-voice-in-sol-trader'/>
+<updated>2015-05-27T11:45:08+01:00</updated>
+<id>http://chrismdp.com/2015/05/tone-of-voice-in-sol-trader</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/05/tone-of-voice-in-sol-trader" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>How dialogue works in Sol Trader</title>
 <category term='game design'/>
