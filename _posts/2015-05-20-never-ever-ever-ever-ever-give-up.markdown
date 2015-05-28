@@ -28,7 +28,7 @@ Don't know how to continue? Try the [formula for motivation](/2011/04/a-formula-
 
 Creativity is hard. We get the first 90% through, [then we hit the second 90%](http://en.wikipedia.org/wiki/Ninety-ninety_rule). It's so easy to give up, but we might [miss our greatest achievement](/2011/05/don-t-miss-your-greatest-achievement/).
 
-Sure, if you need to make a positive decision to move on from something that isn't working, that's fine. But most of the time I'm kidding myself when I give up on thngs. If it's the courageous decision to move on, move on. If it's the courageous decision to keep going, *keep going.*
+Sure, if you need to make a positive decision to move on from something that isn't working, that's fine. But most of the time I'm kidding myself when I give up on things. If it's the courageous decision to move on, move on. If it's the courageous decision to keep going, *keep going.*
 
 Never give up. You can make it. It is possible.  Don't listen to me: listen to Churchill:
 
