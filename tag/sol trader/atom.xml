@@ -7,12 +7,27 @@ layout: nil
   <title>Chris Parsons: posts tagged sol trader</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2015-05-27T11:45:08+01:00</updated>
+  <updated>2015-06-03T11:17:09+01:00</updated>
   <id>http://chrismdp.com/tag/sol trader</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>The huge difference a good Entity System could make to your game</title>
+<category term='game design'/>
+<category term='sol trader'/>
+<category term='game development'/>
+<category term='code'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2015/06/the-huge-difference-a-good-entity-system-could-make-to-your-game'/>
+<updated>2015-06-03T11:17:09+01:00</updated>
+<id>http://chrismdp.com/2015/06/the-huge-difference-a-good-entity-system-could-make-to-your-game</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/06/the-huge-difference-a-good-entity-system-could-make-to-your-game" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>How tone of voice works in Sol Trader's dialogue system</title>
 <category term='game design'/>
