@@ -7,12 +7,30 @@ layout: nil
   <title>Chris Parsons: posts tagged c++</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2015-04-08T14:04:44+01:00</updated>
+  <updated>2015-06-10T18:30:04+01:00</updated>
   <id>http://chrismdp.com/tag/c++</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>How to quickly add bloom to your game engine</title>
+<category term='game design'/>
+<category term='sol trader'/>
+<category term='game development'/>
+<category term='code'/>
+<category term='opengl'/>
+<category term='bloom'/>
+<category term='c++'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2015/06/how-to-quickly-add-bloom-to-your-engine'/>
+<updated>2015-06-10T18:30:04+01:00</updated>
+<id>http://chrismdp.com/2015/06/how-to-quickly-add-bloom-to-your-engine</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/06/how-to-quickly-add-bloom-to-your-engine" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>Your abstractions are a liability</title>
 <category term='code'/>
