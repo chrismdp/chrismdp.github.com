@@ -7,12 +7,27 @@ layout: nil
   <title>Chris Parsons: posts tagged productivity</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2015-05-20T09:46:59+01:00</updated>
+  <updated>2015-06-17T08:53:57+01:00</updated>
   <id>http://chrismdp.com/tag/productivity</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>The difference review and planning makes to indie development</title>
+<category term='game development'/>
+<category term='sol trader'/>
+<category term='code'/>
+<category term='productivity'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2015/06/the-difference-review-and-planning-makes-to-indie-development'/>
+<updated>2015-06-17T08:53:57+01:00</updated>
+<id>http://chrismdp.com/2015/06/the-difference-review-and-planning-makes-to-indie-development</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/06/the-difference-review-and-planning-makes-to-indie-development" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>Never, ever, ever, ever, ever give up</title>
 <category term='motivation'/>
