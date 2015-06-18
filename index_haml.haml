@@ -35,12 +35,6 @@
       :plain
         {% include strap.html %}
     .widget
-      :plain
-        {% include twitch.html %}
-    -#.widget
-      -#:plain
-        -#{% include kickstarter.html %}
-    .widget
       %h4 Post Categories
       %ul.tags
         :plain
@@ -54,28 +48,19 @@
           {% endfor %}
     .widget
       :plain
+        {% include hello.html %}
+    -#.widget
+      -#:plain
+        -#{% include kickstarter.html %}
+    .widget
+      :plain
         {% include soltrader.html %}
     .widget
       :plain
         {% include cardpirates.html %}
     .widget
-      %h4 Popular Categories
-      %ul.tags
-        :ruby
-          require 'rubygems'
-          require 'jekyll'
-          puts "<!--"
-          options = Jekyll.configuration({})
-          site = Jekyll::Site.new(options)
-          site.read_posts('')
-          puts "-->"
-          site.categories.sort.each do |category, posts|
-            next if (posts.length <= 2)
-            print "<li>"
-            print "<a href=\"/tag/#{category.gsub(/\s+/,'%20')}/\">"
-            print "#{category} (#{posts.length})</a>"
-            print "</li>"
-          end
+      :plain
+        {% include twitch.html %}
     .widget
       %h4 More
       %ul.list-style
@@ -85,6 +70,3 @@
         %li
           %i.icon-chevron-right
           %a{:href => '/tags'} All Categories
-    .widget
-      :plain
-        {% include hello.html %}

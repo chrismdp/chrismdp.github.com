@@ -51,13 +51,16 @@
           {% endfor %}
     .widget
       :plain
-        {% include twitch.html %}
+        {% include hello.html %}
     .widget
       :plain
         {% include soltrader.html %}
     .widget
       :plain
         {% include cardpirates.html %}
+    .widget
+      :plain
+        {% include twitch.html %}
     .widget
       %h4 More
       %ul.list-style
@@ -67,7 +70,3 @@
         %li
           %i.icon-chevron-right
           %a{:href => '/tags'} All Categories
-
-    .widget
-      :plain
-        {% include hello.html %}
