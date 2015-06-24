@@ -7,12 +7,26 @@ layout: nil
   <title>Chris Parsons: posts tagged game development</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2015-06-17T08:53:57+01:00</updated>
+  <updated>2015-06-24T07:29:05+01:00</updated>
   <id>http://chrismdp.com/tag/game development</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>How Sol Trader uses information as currency</title>
+<category term='game design'/>
+<category term='sol trader'/>
+<category term='game development'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2015/06/how-sol-trader-uses-information-as-currency'/>
+<updated>2015-06-24T07:29:05+01:00</updated>
+<id>http://chrismdp.com/2015/06/how-sol-trader-uses-information-as-currency</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/06/how-sol-trader-uses-information-as-currency" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>The difference review and planning makes to indie development</title>
 <category term='game development'/>
