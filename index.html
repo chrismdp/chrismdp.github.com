@@ -19,12 +19,21 @@ title: Chris Parsons
     <article class='post single-post'>
       <div class='entry-content'>
         {{ post.content }}
-        <p>
-          <a href='{{ site.posts.first.url }}#comments'>Click here</a>
-          to comment.
-        </p>
         {% include postscript.html %}
       </div>
+      <div class='clr'></div>
+      <section id='comments'>
+        <script>
+          var disqus_shortname = 'chrismdp';
+          var disqus_identifier = '{{ post.id }}';
+          var disqus_url = '{{ post.url }}';
+          (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+      </section>
     </article>
   </div>
   <div class='sidebar span4'>
