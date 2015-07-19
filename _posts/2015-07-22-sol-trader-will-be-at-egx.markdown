@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Sol Trader is coming to EGX in September!"
-date: 2015-07-20 08:00:00 +0100
+title: "Sol Trader will be at EGX in September!"
+date: 2015-07-22 08:00:00 +0100
 categories:
   - sol trader
   - game development
