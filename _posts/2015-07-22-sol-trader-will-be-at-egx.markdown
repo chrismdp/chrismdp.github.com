@@ -28,10 +28,11 @@ major thing to do is to revamp the space mode again. We now have a continuous
 space model: it's now possible to fly from one end of the Solar System to
 another, but it'll just take a (very) long time...
 
-Starting today, I'm adding jump gates back in to allow faster travel to and
-landing on the different planets. After that we'll put back the particles, AI
-ships, weapons and trading systems. Finally I'll be balancing the
-interaction between characters, and adding simple missions.
+This week, I've been adding jump gates back in to allow faster travel to and
+landing on the different planets, and I'm in the middle of adding particles
+back in. After that we'll put back the AI ships, weapons and trading systems.
+Finally I'll be balancing the interaction between characters, and adding simple
+missions.
 
 By the time EGX comes around, we should have a playable demo and a new
 Kickstarter campaign running to to raise funds for a marketing push. Spending
