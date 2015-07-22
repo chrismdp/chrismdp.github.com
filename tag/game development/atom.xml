@@ -7,12 +7,28 @@ layout: nil
   <title>Chris Parsons: posts tagged game development</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2015-07-18T13:55:35+01:00</updated>
+  <updated>2015-07-22T08:00:00+01:00</updated>
   <id>http://chrismdp.com/tag/game development</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>Sol Trader will be at EGX in September!</title>
+<category term='sol trader'/>
+<category term='game development'/>
+<category term='conference'/>
+<category term='egx'/>
+<category term='marketing'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2015/07/sol-trader-will-be-at-egx'/>
+<updated>2015-07-22T08:00:00+01:00</updated>
+<id>http://chrismdp.com/2015/07/sol-trader-will-be-at-egx</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/07/sol-trader-will-be-at-egx" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>3 new screenshots of Sol Trader's new interface</title>
 <category term='sol trader'/>
