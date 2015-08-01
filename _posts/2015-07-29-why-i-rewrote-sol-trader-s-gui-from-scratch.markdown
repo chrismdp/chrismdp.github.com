@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why I wrote Sol Trader's GUI code from scratch"
-date: 2015-07-29 08:00:000 +0100
+date: 2015-08-01 23:25:02 +0100
 categories:
   - sol trader
   - game development
@@ -17,7 +17,7 @@ A decision to rework a major piece of infrastructure late on in a game's develop
 
 Yet three weeks back, after plenty of profiling, I took the decision to remove the GUI library I was using from Sol Trader's codebase and replaced it with my own.
 
-The library I was using, [libRocket](http://librocket.com) has many useful features and it got me a long way during the game's prototyping stage. It is however written in C++ and extensively uses a large class inheritance tree with lots of virtual methods. I've written before about how this can [potentially be a speed problem](/2015/04/how-i-doubled-the-speed-of-my-game-by-giving-up-on-c-plus-plus/), and it turns out through profiling that this was indeed the case for my game. Because parts of the game are very GUI heavy, these performance problems surfaced quite quickly after building the final interface structure for city mode.
+The library I was using, [libRocket](http://librocket.com), has many useful features and it got me a long way during the game's prototyping stage. It is however written in C++ and extensively uses a large class inheritance tree with lots of virtual methods. I've written before about how this can [potentially be a speed problem](/2015/04/how-i-doubled-the-speed-of-my-game-by-giving-up-on-c-plus-plus/), and it turns out through profiling that this was indeed the case for my game. Because parts of the game are very GUI heavy, these performance problems surfaced quite quickly after building the final interface structure for city mode.
 
 So, on 1st July, I set out to write a minimal GUI as quickly as possible, whilst at the same time reskinning the prototype GUI I had with the new look and feel. It took about 60 hours to both write the GUI infrastructure and reskin the interface. In that time I also implemented live code editing, revamped the asset system and vastly improved the efficiency of the renderer.
 
@@ -39,8 +39,8 @@ This is a fancy way of saying "the game code fits together well." Now I'm writin
 
 ## Summary: Is the "Not Invented Here" principle overrated?
 
-In hindsight, I definitely made the right decision. Build speed is so important because the shorter your debug loop the faster you can [iterate towards fun](/2015/04/how-to-choose-between-realism-and-fun/). Writing my own tiny GUI library within my game has meant that now there are no external barriers to a smooth frame rate.
+In hindsight, I definitely made the right decision. Build speed is so important because the shorter our debug loop the faster we can [iterate towards fun](/2015/04/how-to-choose-between-realism-and-fun/). Writing my own tiny GUI library within my game has meant that now there are no external barriers to a smooth frame rate.
 
-I can now understand why there aren't that many well established game GUI libraries out there. It's relatively easy to write just enough GUI for what you need, and really very difficult to write enough GUI so that everyone can use it.
+I can now understand why there aren't that many well established game GUI libraries out there. It's relatively easy to write just enough GUI for what we need, and relatively difficult to write enough GUI so that everyone can use it.
 
 I think "Not Invented Here" is overrated. As developers we're often tempted to reinvent the wheel, and often that's unnecessary. However, as long as we understand the concepts, sometimes it's ok to rewrite the code without resolving the problem. Perhaps we need to focus more on not reinventing concepts and less on not rewriting code.

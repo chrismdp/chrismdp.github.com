@@ -7,12 +7,27 @@ layout: nil
   <title>Chris Parsons: posts tagged c++</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2015-06-10T18:30:04+01:00</updated>
+  <updated>2015-08-01T23:25:02+01:00</updated>
   <id>http://chrismdp.com/tag/c++</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>Why I wrote Sol Trader's GUI code from scratch</title>
+<category term='sol trader'/>
+<category term='game development'/>
+<category term='code'/>
+<category term='c++'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2015/08/why-i-rewrote-sol-trader-s-gui-from-scratch'/>
+<updated>2015-08-01T23:25:02+01:00</updated>
+<id>http://chrismdp.com/2015/08/why-i-rewrote-sol-trader-s-gui-from-scratch</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/08/why-i-rewrote-sol-trader-s-gui-from-scratch" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>How to quickly add bloom to your game engine</title>
 <category term='game design'/>
