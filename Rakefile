@@ -37,7 +37,7 @@ type: A tag cloud
 </div>
 <hr />
 <div class='row' id='post'>
-  <div class='span8'>
+  <div class='col-sm-8'>
       <p>Click on a tag to see the relevant posts.</p>
       <ul class='tags'>
   HTML
@@ -57,9 +57,9 @@ type: A tag cloud
   <br/><br/>
   </div>
 
-  <div class='sidebar span4'>
+  <div class='sidebar col-sm-4'>
     <div class='widget'>
-      <ul class='list-style'>
+      <ul class='list-unstyled'>
         <li>
           <i class='icon-chevron-right'></i>
           <a href='/all'>Archives</a>
@@ -138,7 +138,7 @@ type: "#{category.gsub(/\b\w/){$&.upcase}}"
 </div>
 <hr />
 <div class='row' id='post'>
-  <div class='span8'>
+  <div class='col-sm-8'>
   HTML
 
   posts.each do |post|
@@ -158,9 +158,9 @@ type: "#{category.gsub(/\b\w/){$&.upcase}}"
   end
   html << <<-HTML
   </div>
-  <div class='span4 sidebar'>
+  <div class='col-sm-4 sidebar'>
     <div class='widget'>
-      <ul class='list-style'>
+      <ul class='list-unstyled'>
         <li>
           <i class='icon-chevron-right'></i>
           <a href='/all'>Archives</a>
