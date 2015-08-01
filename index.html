@@ -3,19 +3,20 @@ layout: default
 title: Chris Parsons
 ---
 {% assign post = site.posts.first %}
-<div class='hero-unit'>
-  <p>
-    a blog by Chris Parsons
-  </p>
-  <h1>
-    <a href='{{ post.url }}'>
-      {{ post.title }}
-    </a>
-  </h1>
+<div class='row'>
+  <div class='col-xs-12 page-header'>
+    <p>
+      a blog by Chris Parsons
+    </p>
+    <h1>
+      <a href='{{ post.url }}'>
+        {{ post.title }}
+      </a>
+    </h1>
+  </div>
 </div>
-<hr>
 <div class='row' id='post'>
-  <div class='span8'>
+  <div class='col-sm-8'>
     <article class='post single-post'>
       <div class='entry-content'>
         {{ post.content }}
@@ -36,7 +37,7 @@ title: Chris Parsons
       </section>
     </article>
   </div>
-  <div class='sidebar span4'>
+  <div class='sidebar col-sm-4'>
     <p>
       Posted {{ post.date | date: "%B %d, %Y" }}
     </p>
@@ -52,11 +53,13 @@ title: Chris Parsons
     </div>
     <div class='widget'>
       <h4>Recent posts</h4>
-      <ul class='list-style'>
-        {% for post in site.posts %}
-        {% if forloop.index < 7 and forloop.index > 1 %}<li><i class="icon-chevron-right"></i> <a href="{{ post.url }}">{{ post.title }}</a><br/><span class='muted'>{{ post.date | date_to_string }}</span></li>{% endif %}
-        {% endfor %}
-      </ul>
+      {% for post in site.posts %}
+      {% if forloop.index < 7 and forloop.index > 1 %}
+      <p>
+        <a href="{{ post.url }}">{{ post.title }}</a><br/><span class='text-muted'>{{ post.date | date_to_string }}</span>
+      </p>
+      {% endif %}
+      {% endfor %}
     </div>
     <div class='widget'>
       {% include hello.html %}
@@ -72,7 +75,7 @@ title: Chris Parsons
     </div>
     <div class='widget'>
       <h4>More</h4>
-      <ul class='list-style'>
+      <ul class='list-unstyled'>
         <li>
           <i class='icon-chevron-right'></i>
           <a href='/all'>Archives</a>

@@ -28,7 +28,7 @@
       /* ]]> */
     </script>
 
-    <!-- Custom css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href="/css/style.min.css" rel="stylesheet">
 
     <link href="/css/font-awesome/font-awesome.css" rel="stylesheet">
@@ -61,8 +61,13 @@
     </script>
 
   :css
+    img {
+      display: block;
+      height: auto;
+      max-width: 100%;
+     }
     .post .entry-content { font-size: 1.1em; }
-    .entry-content h2, .entry-content h1 { font-size: 18px; }
+    .entry-content h2, .entry-content h1 { margin: 25px 0px 15px 0; }
 %body
   -#:plain
     -#<a href="http://kickstartacademy.io/dates#bdd-london"><img style="position: fixed; top: 0; right: 0; border: 0; width: 175px" src="http://bddkickstart.com/images/promo-ribbon.png"/></a>
@@ -73,10 +78,10 @@
   %footer
     .container
       .row
-        .span2.social-networks
+        .col-sm-2.social-networks
           %p Subscribe:
           %a.icon-file{:href => "http://feeds.feedburner.com/ChrisParsons"}
-        .span4.social-networks
+        .col-sm-4.social-networks
           %p Find me on:
           %a.icon-twitter{:href => "http://twitter.com/chrismdp"}
           %a.icon-github{:href => "http://github.com/chrismdp"}
@@ -87,13 +92,13 @@
   #footer-extra
     .container
       .row
-        .span4
+        .col-sm-4
           &copy;
           :ruby
             print Time.now.year
           Chris Parsons
-        .span4
-        .span4
+        .col-sm-4
+        .col-sm-4
           %i.icon-envelope
           %a{:href => 'mailto:chris@thinkcodelearn.com'} chris@thinkcodelearn.com
 
