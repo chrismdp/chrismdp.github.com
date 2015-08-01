@@ -15,7 +15,7 @@ categories:
 
 A decision to rework a major piece of infrastructure late on in a game's development is pretty significant. It's especially so if we're replacing it with our own code written from scratch.
 
-Yet three weeks back, after plenty of profiling, I took the decision to remove the GUI library I was using from Sol Trader's codebase and replaced it with my own.
+Yet about a month back, after plenty of profiling, I took the decision to remove the GUI library I was using from Sol Trader's codebase and replaced it with my own.
 
 The library I was using, [libRocket](http://librocket.com), has many useful features and it got me a long way during the game's prototyping stage. It is however written in C++ and extensively uses a large class inheritance tree with lots of virtual methods. I've written before about how this can [potentially be a speed problem](/2015/04/how-i-doubled-the-speed-of-my-game-by-giving-up-on-c-plus-plus/), and it turns out through profiling that this was indeed the case for my game. Because parts of the game are very GUI heavy, these performance problems surfaced quite quickly after building the final interface structure for city mode.
 
