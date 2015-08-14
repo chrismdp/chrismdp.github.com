@@ -57,7 +57,7 @@ class Monster : public Destroyable {
 
 {% endhighlight %}
 
-However, this becomes quickly unworkable. Inheritance hierarchies are fairly rigid, and this increases with complexity. It's not easy or desirable to specify in advance all of the different behaviours that our entity might want to have. If for example we wanted to share two different types of behaviour between two other entities, then we might be stuck at that point.
+However, this quickly becomes unworkable. Inheritance hierarchies are fairly rigid, and this increases with complexity. It's not easy or desirable to specify in advance all of the different behaviours that our entity might want to have. If for example we wanted to share two different types of behaviour between two other entities, then we might be stuck at that point.
 
 In theory you could use multiple inheritance, but this is a bad idea. See the [deadly diamond of death](http://en.wikipedia.org/wiki/Multiple_inheritance#The_diamond_problem) if you're not familiar with why this could be a problem. Also these designs can rely on virtual functions to override behaviour, which are [fundamentally slower to execute](/2015/04/how-i-doubled-the-speed-of-my-game-by-giving-up-on-c-plus-plus/#virtual-function-calls-are-slow).
 
@@ -90,7 +90,7 @@ Here's a snippet of the initialisation code from [Sol Trader](http://soltrader.n
 {% highlight c++ %}
 
 // Human
-uint32 humanId = pushhuman(state);
+uint32 humanId = pushEntity(state);
 pushEventful(state->history, arena, humanId);
 pushHistoricalFigure(state->history, arena, humanId);
 pushNameable(state, humanId)->type = NAMEABLE_HUMAN;
