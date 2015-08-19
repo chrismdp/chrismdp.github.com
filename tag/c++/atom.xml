@@ -7,12 +7,28 @@ layout: nil
   <title>Chris Parsons: posts tagged c++</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2015-08-01T23:25:02+01:00</updated>
+  <updated>2015-08-19T09:55:34+01:00</updated>
   <id>http://chrismdp.com/tag/c++</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>How to add live code reload to your game</title>
+<category term='sol trader'/>
+<category term='game development'/>
+<category term='code'/>
+<category term='c++'/>
+<category term='productivity'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2015/08/how-to-add-live-code-reload-to-your-game'/>
+<updated>2015-08-19T09:55:34+01:00</updated>
+<id>http://chrismdp.com/2015/08/how-to-add-live-code-reload-to-your-game</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/08/how-to-add-live-code-reload-to-your-game" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>Why I wrote Sol Trader's GUI code from scratch</title>
 <category term='sol trader'/>
