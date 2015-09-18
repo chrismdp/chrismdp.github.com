@@ -7,12 +7,27 @@ layout: nil
   <title>Chris Parsons: posts tagged kickstarter</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2015-09-03T06:21:40+01:00</updated>
+  <updated>2015-09-18T16:08:02+01:00</updated>
   <id>http://chrismdp.com/tag/kickstarter</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>Three days to go</title>
+<category term='sol trader'/>
+<category term='kickstarter'/>
+<category term='game design'/>
+<category term='game development'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2015/09/three-days-to-go'/>
+<updated>2015-09-18T16:08:02+01:00</updated>
+<id>http://chrismdp.com/2015/09/three-days-to-go</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/09/three-days-to-go" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>Gossip as a game mechanic</title>
 <category term='game design'/>
