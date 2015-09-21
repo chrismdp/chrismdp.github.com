@@ -41,6 +41,9 @@ layout: default
       {% include strap.html %}
     </div>
     <div class='widget'>
+      {% include kickstarter.html %}
+    </div>
+    <div class='widget'>
       <h4>Post Categories</h4>
       <ul class='tags'>
         {% for tag in page.categories %}<li><a class='tag' href='/tag/{{ tag }}/'>{{tag}}</a></li>{% endfor %}
