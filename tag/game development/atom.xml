@@ -22,8 +22,23 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/09/three-days-to-go'/>
+<link href='http://chrismdp.com/2015/09/sol-trader-kickstarter-now-live'/>
 <updated>2015-09-21T19:48:37+01:00</updated>
+<id>http://chrismdp.com/2015/09/sol-trader-kickstarter-now-live</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/09/sol-trader-kickstarter-now-live" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>Three days to go</title>
+<category term='sol trader'/>
+<category term='kickstarter'/>
+<category term='game design'/>
+<category term='game development'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2015/09/three-days-to-go'/>
+<updated>2015-09-18T16:08:02+01:00</updated>
 <id>http://chrismdp.com/2015/09/three-days-to-go</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/09/three-days-to-go" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
 </entry>
