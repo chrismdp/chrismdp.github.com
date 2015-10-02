@@ -7,12 +7,26 @@ layout: nil
   <title>Chris Parsons: posts tagged business</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2015-01-07T14:26:40+00:00</updated>
+  <updated>2015-10-02T16:10:38+01:00</updated>
   <id>http://chrismdp.com/tag/business</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>Why (I hope) I will weather the Indiepocalypse</title>
+<category term='indie games'/>
+<category term='business'/>
+<category term='sol trader'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2015/10/why-i-hope-I-will-weather-the-indiepocalypse'/>
+<updated>2015-10-02T16:10:38+01:00</updated>
+<id>http://chrismdp.com/2015/10/why-i-hope-I-will-weather-the-indiepocalypse</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/10/why-i-hope-I-will-weather-the-indiepocalypse" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>7 things I've learnt in 3 years coding my first indie game</title>
 <category term='sol trader'/>

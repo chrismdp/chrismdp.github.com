@@ -7,12 +7,26 @@ layout: nil
   <title>Chris Parsons: posts tagged sol trader</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2015-09-21T19:48:37+01:00</updated>
+  <updated>2015-10-02T16:10:38+01:00</updated>
   <id>http://chrismdp.com/tag/sol trader</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>Why (I hope) I will weather the Indiepocalypse</title>
+<category term='indie games'/>
+<category term='business'/>
+<category term='sol trader'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2015/10/why-i-hope-I-will-weather-the-indiepocalypse'/>
+<updated>2015-10-02T16:10:38+01:00</updated>
+<id>http://chrismdp.com/2015/10/why-i-hope-I-will-weather-the-indiepocalypse</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/10/why-i-hope-I-will-weather-the-indiepocalypse" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>Sol Trader Kickstarter now live!</title>
 <category term='sol trader'/>
