@@ -22,10 +22,10 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/10/why-i-hope-I-will-weather-the-indiepocalypse'/>
+<link href='http://chrismdp.com/2015/10/why-i-hope-i-ll-weather-the-indiepocalypse'/>
 <updated>2015-10-02T20:37:29+01:00</updated>
-<id>http://chrismdp.com/2015/10/why-i-hope-I-will-weather-the-indiepocalypse</id>
-<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/10/why-i-hope-I-will-weather-the-indiepocalypse" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+<id>http://chrismdp.com/2015/10/why-i-hope-i-ll-weather-the-indiepocalypse</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/10/why-i-hope-i-ll-weather-the-indiepocalypse" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
 </entry>
 <entry>
 <title>Never, ever, ever, ever, ever give up</title>
