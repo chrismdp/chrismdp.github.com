@@ -38,9 +38,7 @@ I don't think indie games are doomed, but some indie developers will have to qui
 
 ## I have another income stream
 
-Firstly, I have an alternative career. I train and coach teams of developers,
-which allows me time in the day to work on Sol Trader without worrying (too
-much) about whether my family will eat next month.
+Firstly, I have an alternative career. I train and coach teams of developers, and work part time locally, which allows me time in the day to work on Sol Trader without worrying (too much) about whether my family will eat next month.
 
 Sol Trader has been four years in development, but I've only worked on it
 significantly during the day in the last year. I've used savings from
@@ -52,8 +50,7 @@ I can avoid crashing out financially.
 I've been building the Sol Trader community from day one, as everyone is
 advised to do. However, I've come to believe that the important thing is to
 have something for people to do in response when we communicate with them.  We
-need a great [call to
-action.](https://en.wikipedia.org/wiki/Call_to_action_%28marketing%29);
+need a great [call to action](https://en.wikipedia.org/wiki/Call_to_action_%28marketing%29).
 
 For example, Sol Trader has been available purchase on Alpha Access since May
 2012, and on Kickstarter for Alpha of Beta access since the beginning of the
