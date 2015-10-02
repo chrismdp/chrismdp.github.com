@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why (I hope) I will weather the Indiepocalypse"
-date: 2015-10-02 16:10:38 +0100
+date: 2015-10-02 20:37:29 +0100
 categories:
   - indie games
   - business
