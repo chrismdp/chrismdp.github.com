@@ -49,10 +49,10 @@ I can avoid crashing out financially.
 
 ## There's always something to do
 
-I've been building the Sol Trader community from day one, as everyone advises
-people to do. However, I've come to believe that the important thing is to have
-something for people to do in response when we communicate with them.  We need
-a great [call to
+I've been building the Sol Trader community from day one, as everyone is
+advised to do. However, I've come to believe that the important thing is to
+have something for people to do in response when we communicate with them.  We
+need a great [call to
 action.](https://en.wikipedia.org/wiki/Call_to_action_%28marketing%29);
 
 For example, Sol Trader has been available purchase on Alpha Access since May
