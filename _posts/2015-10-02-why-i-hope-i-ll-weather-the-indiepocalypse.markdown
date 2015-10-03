@@ -20,6 +20,7 @@ Plenty of people have been writing about the 'Indiepocalypse' - the alleged deat
 * [Good isn't good enough](http://www.gamasutra.com/blogs/DanielWest/20150908/253040/Good_isnt_good_enough__releasing_an_indie_game_in_2015.php)
 * [Causes of the indie apocalypse (maybe)](http://positech.co.uk/cliffsblog/2015/09/19/causes-of-the-indie-apocalypse-maybe/)
 * [The 5 myths of the Indiepocalypse](http://gamasutra.com/blogs/RyanClark/20150908/253087/The_5_Myths_of_the_Indiepocalypse.php)
+* [Indiepocalypse? More like INDIESCHMOCALYPSE!](http://www.butterscotch-shenanigans.com/2015/10/indiepocalypse-more-like.html)
 
 Here follows my take, as I embark on the final phase of the perilous four year journey of finishing [my first indie game](http://soltrader.net), with plenty of people on the internet telling me that I've wasted my time.
 
