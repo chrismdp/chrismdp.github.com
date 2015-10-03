@@ -54,7 +54,7 @@ have something for people to do in response when we communicate with them.  We
 need a great [call to action](https://en.wikipedia.org/wiki/Call_to_action_%28marketing%29).
 
 For example, Sol Trader has been available purchase on Alpha Access since May
-2012, and on Kickstarter for Alpha of Beta access since the beginning of the
+2012, and on Kickstarter for Alpha or Beta access since the beginning of the
 year. Even when we paused sales on the game this year, people could still sign
 up to our mailing list for news, updates and articles.
 
