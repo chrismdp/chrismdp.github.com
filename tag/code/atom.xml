@@ -7,12 +7,28 @@ layout: nil
   <title>Chris Parsons: posts tagged code</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2015-08-19T09:55:34+01:00</updated>
+  <updated>2015-11-11T17:03:57+00:00</updated>
   <id>http://chrismdp.com/tag/code</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>Sol Trader combat preview</title>
+<category term='indie games'/>
+<category term='game design'/>
+<category term='game development'/>
+<category term='sol trader'/>
+<category term='code'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2015/11/sol-trader-combat'/>
+<updated>2015-11-11T17:03:57+00:00</updated>
+<id>http://chrismdp.com/2015/11/sol-trader-combat</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/11/sol-trader-combat" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>How to add live code reload to your game</title>
 <category term='sol trader'/>
