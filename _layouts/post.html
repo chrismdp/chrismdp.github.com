@@ -20,9 +20,10 @@ layout: default
       <section id='comments'>
         <div id="disqus_thread"></div>
         <script>
-          var disqus_config = function() {
-            this.page.url = "http://chrismdp.com{{ page.url }}";
-            this.page.identifier = '{{ page.id }}';
+          function disqus_config() {
+            this.page.url = 'http://chrismdp.com{{ page.url }}/';
+            this.page.identifier = '{{ page.id }}/';
+            this.page.title = '{{ page.title }}';
           };
           (function() { // DON'T EDIT BELOW THIS LINE
           var d = document, s = d.createElement('script');
@@ -33,6 +34,7 @@ layout: default
           (d.head || d.body).appendChild(s);
           })();
         </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
       </section>
     </article>
   </div>

@@ -26,9 +26,10 @@ title: Chris Parsons
       <section id='comments'>
         <div id="disqus_thread"></div>
         <script>
-          var disqus_config = function() {
-            this.page.url = "http://chrismdp.com{{ post.url }}";
-            this.page.identifier = '{{ post.id }}';
+          function disqus_config() {
+            this.page.url = 'http://chrismdp.com{{ post.url }}/';
+            this.page.identifier = '{{ post.id }}/';
+            this.page.title = '{{ post.title }}';
           };
           (function() { // DON'T EDIT BELOW THIS LINE
           var d = document, s = d.createElement('script');
@@ -39,6 +40,7 @@ title: Chris Parsons
           (d.head || d.body).appendChild(s);
           })();
         </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
       </section>
     </article>
   </div>
