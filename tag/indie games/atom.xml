@@ -7,12 +7,28 @@ layout: nil
   <title>Chris Parsons: posts tagged indie games</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2015-12-02T10:20:28+00:00</updated>
+  <updated>2015-12-24T07:43:19+00:00</updated>
   <id>http://chrismdp.com/tag/indie games</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>The Sol Trader Christmas Eve update: moddable missions</title>
+<category term='indie games'/>
+<category term='game design'/>
+<category term='game development'/>
+<category term='sol trader'/>
+<category term='code'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2015/12/the-christmas-eve-update-with-moddable-missions'/>
+<updated>2015-12-24T07:43:19+00:00</updated>
+<id>http://chrismdp.com/2015/12/the-christmas-eve-update-with-moddable-missions</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2015/12/the-christmas-eve-update-with-moddable-missions" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>New Sol Trader beta: the science of blame and unforgiveness</title>
 <category term='indie games'/>
