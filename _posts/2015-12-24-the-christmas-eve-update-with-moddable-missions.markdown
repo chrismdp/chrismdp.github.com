@@ -17,7 +17,7 @@ This build is now available [on the forums](http://forums.soltrader.net) should 
 
 ![kill mission](http://i.imgur.com/x08Gprc.png)
 
-I've built a few missions to start with, including delivering parcels for business or personal reasons, taking characters to on business trips and making other characters disappear. It's great fun to have a variety of things to do for characters now and adds yet more colour to the game. Because it's completely moddable, I'm also excited to see what storylines other people come up with!
+I've built a few missions to start with, including delivering parcels for business or personal reasons, taking characters on business trips and making other characters disappear. It's great fun to have a variety of things to do for characters now and adds yet more colour to the game. Because it's completely moddable, I'm also excited to see what storylines other people come up with!
 
 ## Under the hood
 
