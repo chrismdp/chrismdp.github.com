@@ -7,12 +7,27 @@ layout: nil
   <title>Chris Parsons: posts tagged indie games</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2016-01-01T16:34:55+00:00</updated>
+  <updated>2016-01-12T05:56:28+00:00</updated>
   <id>http://chrismdp.com/tag/indie games</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>The cunning plans of Sol Trader</title>
+<category term='indie games'/>
+<category term='game design'/>
+<category term='game development'/>
+<category term='sol trader'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2016/01/the-cunning-plans-of-sol-trader'/>
+<updated>2016-01-12T05:56:28+00:00</updated>
+<id>http://chrismdp.com/2016/01/the-cunning-plans-of-sol-trader</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2016/01/the-cunning-plans-of-sol-trader" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>Full disclosure: Sol Trader conversation upgrades</title>
 <category term='indie games'/>
