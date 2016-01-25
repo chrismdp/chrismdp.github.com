@@ -7,12 +7,25 @@ layout: nil
   <title>Chris Parsons: posts tagged indie games</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2016-01-25T09:54:32+00:00</updated>
+  <updated>2016-01-28T14:15:26+00:00</updated>
   <id>http://chrismdp.com/tag/indie games</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>The top 5 space games of 2015</title>
+<category term='indie games'/>
+<category term='game design'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2016/01/top-5-space-games-of-2015'/>
+<updated>2016-01-28T14:15:26+00:00</updated>
+<id>http://chrismdp.com/2016/01/top-5-space-games-of-2015</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2016/01/top-5-space-games-of-2015" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>Sol Trader at EGX Rezzed: 7-9 April 2016</title>
 <category term='indie games'/>
