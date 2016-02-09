@@ -7,12 +7,27 @@ layout: nil
   <title>Chris Parsons: posts tagged sol trader</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2016-01-25T09:54:32+00:00</updated>
+  <updated>2016-02-09T07:20:37+00:00</updated>
   <id>http://chrismdp.com/tag/sol trader</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>Gossip: the best new Sol Trader feature for ages</title>
+<category term='indie games'/>
+<category term='game design'/>
+<category term='game development'/>
+<category term='sol trader'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2016/02/gossip-the-best-new-sol-trader-feature-for-ages'/>
+<updated>2016-02-09T07:20:37+00:00</updated>
+<id>http://chrismdp.com/2016/02/gossip-the-best-new-sol-trader-feature-for-ages</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2016/02/gossip-the-best-new-sol-trader-feature-for-ages" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>Sol Trader at EGX Rezzed: 7-9 April 2016</title>
 <category term='indie games'/>

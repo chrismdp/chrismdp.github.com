@@ -7,12 +7,27 @@ layout: nil
   <title>Chris Parsons: posts tagged indie games</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2016-01-28T14:15:26+00:00</updated>
+  <updated>2016-02-09T07:20:37+00:00</updated>
   <id>http://chrismdp.com/tag/indie games</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>Gossip: the best new Sol Trader feature for ages</title>
+<category term='indie games'/>
+<category term='game design'/>
+<category term='game development'/>
+<category term='sol trader'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2016/02/gossip-the-best-new-sol-trader-feature-for-ages'/>
+<updated>2016-02-09T07:20:37+00:00</updated>
+<id>http://chrismdp.com/2016/02/gossip-the-best-new-sol-trader-feature-for-ages</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2016/02/gossip-the-best-new-sol-trader-feature-for-ages" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>The top 5 space games of 2015</title>
 <category term='indie games'/>
