@@ -1,81 +1,113 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
- 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="not-ie" lang="en"> <!--<![endif]-->
 <head>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title>Oops</title>
-   <meta name="author" content="Chris Parsons" />
-
-   <link href="http://chrismdp.com/atom.xml" rel="alternate" title="Chris Parsons" type="application/atom+xml" />
-
-   <!-- syntax highlighting CSS -->
-   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
- 
-   <!-- Homepage CSS -->
-   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+  <meta charset='utf-8'>
+  <title>{{ page.title }}</title>
+  <meta name="author" content="Chris Parsons" />
+  <meta name="description" content="a blog by Chris Parsons" />
+  
+  <link href="http://chrismdp.com/atom.xml" rel="alternate" title="Chris Parsons" type="application/atom+xml" />
+  
+  <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+  
+  <script type="text/javascript">
+   /* <![CDATA[ */
+     (function() {
+       var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+         s.type = 'text/javascript';
+           s.async = true;
+          s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+          t.parentNode.insertBefore(s, t);
+      })();
+    /* ]]> */
+  </script>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href="/css/style.min.css" rel="stylesheet">
+  
+  <link href="/css/font-awesome/font-awesome.css" rel="stylesheet">
+  <!--[if IE 7]>
+    <link href="css/font-awesome/font-awesome-ie7.css" rel="stylesheet">
+  <![endif]-->
+  
+  <!-- Load Open sans from Google Font Directory -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery-1.8.3.min.js"%3E%3C/script%3E'))</script>
+  <script type="text/javascript">
+  
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-431118-3']);
+    _gaq.push(['_trackPageview']);
+  
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  
+  </script>
+  <style>
+    img {
+      display: block;
+      height: auto;
+      max-width: 100%;
+     }
+    .post .entry-content { font-size: 1.1em; }
+    .entry-content h2, .entry-content h1 { margin: 25px 0px 15px 0; }
+  </style>
 </head>
 <body>
-
-
-  <div class="site">
-    <div class="post">
+  <div class='container' id='content'>
       <h1><a href="/">Hmm, can't find that page.</a></h1>
-
-      <p>Looks like you're looking for some content which has expired, or moved, or perhaps you didn't type the right URL in.</p>
-
-      <p>I've recently moved my online stuff around: you might be looking for one of these things:</p>
-
-      <ul> 
-        <li><a href='/2006/04/spring-richclient'>The Spring: Richclient series</a></li> 
-        <li><a href='/2006/10/svg-planner'>SVG Planner Index cards</a></li> 
-        <li><a href='/2006/02/tdd-the-tortoise-and-the-hare'>TDD: Tortoise and the the Hare</a></li> 
-      </ul> 
- 
-      <p>Sorry for the inconvenience. How about visiting the <a href="/">homepage?</a></p>
   </div>
-    <div class="footer clearfix">
-
-      <div class="rss">
-        <a href="http://feeds.feedburner.com/ChrisParsons"><img src="/images/feed-icon.png" title="feed" /></a>
+  <footer>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-sm-2 social-networks'>
+          <p>Subscribe:</p>
+          <a class='icon-file' href='http://feeds.feedburner.com/ChrisParsons'></a>
+        </div>
+        <div class='col-sm-4 social-networks'>
+          <p>Find me on:</p>
+          <a class='icon-twitter' href='http://twitter.com/chrismdp'></a>
+          <a class='icon-github' href='http://github.com/chrismdp'></a>
+          <a class='icon-linkedin' href='http://linkedin.com/in/chrisparsons'></a>
+          <a class='icon-bullhorn' href='http://lanyrd.com/chrismdp'></a>
+          <br>
+          <br>
+        </div>
       </div>
-      <div class="contact">
-        <img class="portrait" src="/images/chris.png"/>
-        <div class="title"><a href="/">a blog by Chris Parsons</a></div>
-        <div>my <a href="http://twitter.com/chrismdp">twitter</a> and <a href="http://github.com/chrismdp">github</a> pages</div>
-        <div>my company <a href="http://edendevelopment.co.uk">Eden Development</a> (we make amazing software)</div>
-        <div>read blogs from the <a href="http://edendevelopment.co.uk/blogs">Eden team</a> and the <a href="http://edendevelopment.co.uk/blogs/company">company blog</a></div>
+    </div>
+  </footer>
+  <div id='footer-extra'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-sm-4'>
+          &copy;
+          Chris Parsons
+        </div>
+        <div class='col-sm-4'></div>
+        <div class='col-sm-4'>
+          <i class='icon-envelope'></i>
+          <a href='mailto:chris@thinkcodelearn.com'>chris@thinkcodelearn.com</a>
+        </div>
       </div>
-
     </div>
   </div>
-
-<script type="text/javascript">
-//<![CDATA[
-(function() {
-	var links = document.getElementsByTagName('a');
-	var query = '?';
-	for(var i = 0; i < links.length; i++) {
-	if(links[i].href.indexOf('#disqus_thread') >= 0) {
-		query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
-	}
-	}
-	document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/chrismdp/get_num_replies.js' + query + '"></' + 'script>');
-})();
-//]]>
-</script>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-431118-3']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
-  })();
-
-</script>
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.isotope.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.touchSwipe.js"></script>
+  <script type="text/javascript" src="/js/jquery.hotkeys.min.js"></script>
+  <script type="text/javascript" src="/js/functions.min.js?v=2"></script>
 </body>
 </html>
