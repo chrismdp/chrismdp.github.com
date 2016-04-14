@@ -12,6 +12,14 @@
 #post.row
   .col-sm-8
     %article.post.single-post
+      :plain
+        {% for tag in page.categories %}{% if tag == 'bdd' or tag == 'cucumber' %}{% assign bdd_article = true %}{% endif %}{% endfor %}
+        {% if bdd_article == true %}
+        <div class='alert alert-info' role='alert'>
+          <strong>I'm teaching BDD &amp; Cucumber from scratch on 16th May in London!</strong><br/>
+          <a style='text-decoration: underline' href='http://www.whiteoctoberevents.co.uk/event/intro-to-bdd/?utm_campaign=chris-parsons-blog&utm_source=blog-header&utm_medium=web'>Book on my 1-day course</a>
+        </div>
+        {% endif %}
       .entry-content
         {{ content }}
 
