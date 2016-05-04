@@ -22,7 +22,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2013/03/bdd-with-shell-script'/>
+<link href='http://chrismdp.com/2013/03/bdd-with-shell-script/'/>
 <updated>2013-03-06T08:49:20+00:00</updated>
 <id>http://chrismdp.com/2013/03/bdd-with-shell-script</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2013/03/bdd-with-shell-script" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>

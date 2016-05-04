@@ -24,7 +24,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/04/why-i-ditched-all-the-build-tools'/>
+<link href='http://chrismdp.com/2015/04/why-i-ditched-all-the-build-tools/'/>
 <updated>2015-04-22T11:42:46+01:00</updated>
 <id>http://chrismdp.com/2015/04/why-i-ditched-all-the-build-tools</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/04/why-i-ditched-all-the-build-tools" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -44,7 +44,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2013/09/the-toolchain-of-dreams'/>
+<link href='http://chrismdp.com/2013/09/the-toolchain-of-dreams/'/>
 <updated>2013-09-19T15:11:58+01:00</updated>
 <id>http://chrismdp.com/2013/09/the-toolchain-of-dreams</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2013/09/the-toolchain-of-dreams" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -58,7 +58,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/03/multiple-ci-joes-with-rack-and-passenger'/>
+<link href='http://chrismdp.com/2010/03/multiple-ci-joes-with-rack-and-passenger/'/>
 <updated>2010-03-22T20:18:00+00:00</updated>
 <id>http://chrismdp.com/2010/03/multiple-ci-joes-with-rack-and-passenger</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2010/03/multiple-ci-joes-with-rack-and-passenger" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>

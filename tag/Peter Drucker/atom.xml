@@ -4,11 +4,11 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title>Chris Parsons: posts tagged peter drucker</title>
+  <title>Chris Parsons: posts tagged Peter Drucker</title>
 
   <link href="http://chrismdp.com/"/>
   <updated>2009-12-23T21:41:00+00:00</updated>
-  <id>http://chrismdp.com/tag/peter drucker</id>
+  <id>http://chrismdp.com/tag/Peter Drucker</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
@@ -17,12 +17,12 @@ layout: nil
 <title>R.I.P. Web 1.0</title>
 <category term='ux'/>
 <category term='business'/>
-<category term='peter drucker'/>
+<category term='Peter Drucker'/>
     <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2009/12/rip-web-1-0'/>
+<link href='http://chrismdp.com/2009/12/rip-web-1-0/'/>
 <updated>2009-12-23T21:41:00+00:00</updated>
 <id>http://chrismdp.com/2009/12/rip-web-1-0</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2009/12/rip-web-1-0" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>

@@ -25,7 +25,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/08/work-with-me'/>
+<link href='http://chrismdp.com/2011/08/work-with-me/'/>
 <updated>2011-08-22T15:36:53+01:00</updated>
 <id>http://chrismdp.com/2011/08/work-with-me</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2011/08/work-with-me" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -37,7 +37,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2009/12/old-blog-articles'/>
+<link href='http://chrismdp.com/2009/12/old-blog-articles/'/>
 <updated>2009-12-29T22:45:00+00:00</updated>
 <id>http://chrismdp.com/2009/12/old-blog-articles</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2009/12/old-blog-articles" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -49,7 +49,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2009/12/jekyll'/>
+<link href='http://chrismdp.com/2009/12/jekyll/'/>
 <updated>2009-12-14T17:10:00+00:00</updated>
 <id>http://chrismdp.com/2009/12/jekyll</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2009/12/jekyll" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -61,7 +61,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2009/12/first-post'/>
+<link href='http://chrismdp.com/2009/12/first-post/'/>
 <updated>2009-12-14T16:50:00+00:00</updated>
 <id>http://chrismdp.com/2009/12/first-post</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2009/12/first-post" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>

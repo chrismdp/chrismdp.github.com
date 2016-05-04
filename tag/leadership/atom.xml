@@ -24,7 +24,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2014/12/why-you-can-scale-agile-with-the-right-attitudes'/>
+<link href='http://chrismdp.com/2014/12/why-you-can-scale-agile-with-the-right-attitudes/'/>
 <updated>2014-12-02T17:16:38+00:00</updated>
 <id>http://chrismdp.com/2014/12/why-you-can-scale-agile-with-the-right-attitudes</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2014/12/why-you-can-scale-agile-with-the-right-attitudes" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -40,7 +40,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2013/11/how-to-give-bdd-a-chance'/>
+<link href='http://chrismdp.com/2013/11/how-to-give-bdd-a-chance/'/>
 <updated>2013-11-26T17:59:30+00:00</updated>
 <id>http://chrismdp.com/2013/11/how-to-give-bdd-a-chance</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2013/11/how-to-give-bdd-a-chance" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -54,7 +54,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2013/05/leading-software-teams-well'/>
+<link href='http://chrismdp.com/2013/05/leading-software-teams-well/'/>
 <updated>2013-05-14T14:01:21+01:00</updated>
 <id>http://chrismdp.com/2013/05/leading-software-teams-well</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2013/05/leading-software-teams-well" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -71,7 +71,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/10/delegated-tasks-are-a-team-anti-pattern'/>
+<link href='http://chrismdp.com/2012/10/delegated-tasks-are-a-team-anti-pattern/'/>
 <updated>2012-10-04T07:49:57+01:00</updated>
 <id>http://chrismdp.com/2012/10/delegated-tasks-are-a-team-anti-pattern</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/10/delegated-tasks-are-a-team-anti-pattern" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>

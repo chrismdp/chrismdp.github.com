@@ -24,7 +24,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/09/task-assignment-is-a-team-anti-pattern'/>
+<link href='http://chrismdp.com/2012/09/task-assignment-is-a-team-anti-pattern/'/>
 <updated>2012-09-14T14:06:40+01:00</updated>
 <id>http://chrismdp.com/2012/09/task-assignment-is-a-team-anti-pattern</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/task-assignment-is-a-team-anti-pattern" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -40,7 +40,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/04/pomodoros-help-you-refactor'/>
+<link href='http://chrismdp.com/2011/04/pomodoros-help-you-refactor/'/>
 <updated>2011-04-01T20:21:15+01:00</updated>
 <id>http://chrismdp.com/2011/04/pomodoros-help-you-refactor</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2011/04/pomodoros-help-you-refactor" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -56,7 +56,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/05/every-ash-cloud-has-a-silver-lining'/>
+<link href='http://chrismdp.com/2010/05/every-ash-cloud-has-a-silver-lining/'/>
 <updated>2010-05-12T15:05:00+01:00</updated>
 <id>http://chrismdp.com/2010/05/every-ash-cloud-has-a-silver-lining</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2010/05/every-ash-cloud-has-a-silver-lining" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -70,7 +70,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/03/pairing-with-corey-haines'/>
+<link href='http://chrismdp.com/2010/03/pairing-with-corey-haines/'/>
 <updated>2010-03-17T10:18:00+00:00</updated>
 <id>http://chrismdp.com/2010/03/pairing-with-corey-haines</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2010/03/pairing-with-corey-haines" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -85,7 +85,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/01/pairing-works-for-everything'/>
+<link href='http://chrismdp.com/2010/01/pairing-works-for-everything/'/>
 <updated>2010-01-27T11:28:00+00:00</updated>
 <id>http://chrismdp.com/2010/01/pairing-works-for-everything</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2010/01/pairing-works-for-everything" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>

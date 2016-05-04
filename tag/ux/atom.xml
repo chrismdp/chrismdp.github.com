@@ -23,7 +23,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/09/layers-of-abstraction-writing-great-cucumber-code'/>
+<link href='http://chrismdp.com/2011/09/layers-of-abstraction-writing-great-cucumber-code/'/>
 <updated>2011-09-15T07:44:41+01:00</updated>
 <id>http://chrismdp.com/2011/09/layers-of-abstraction-writing-great-cucumber-code</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2011/09/layers-of-abstraction-writing-great-cucumber-code" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -38,7 +38,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/09/layers-of-abstraction-bdd-ux'/>
+<link href='http://chrismdp.com/2011/09/layers-of-abstraction-bdd-ux/'/>
 <updated>2011-09-05T20:44:03+01:00</updated>
 <id>http://chrismdp.com/2011/09/layers-of-abstraction-bdd-ux</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2011/09/layers-of-abstraction-bdd-ux" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -53,7 +53,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/04/cucumbers-with-personality'/>
+<link href='http://chrismdp.com/2011/04/cucumbers-with-personality/'/>
 <updated>2011-04-18T15:17:31+01:00</updated>
 <id>http://chrismdp.com/2011/04/cucumbers-with-personality</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2011/04/cucumbers-with-personality" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -66,7 +66,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/05/ux-is-everything'/>
+<link href='http://chrismdp.com/2010/05/ux-is-everything/'/>
 <updated>2010-05-21T17:07:00+01:00</updated>
 <id>http://chrismdp.com/2010/05/ux-is-everything</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2010/05/ux-is-everything" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -75,12 +75,12 @@ layout: nil
 <title>R.I.P. Web 1.0</title>
 <category term='ux'/>
 <category term='business'/>
-<category term='peter drucker'/>
+<category term='Peter Drucker'/>
     <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2009/12/rip-web-1-0'/>
+<link href='http://chrismdp.com/2009/12/rip-web-1-0/'/>
 <updated>2009-12-23T21:41:00+00:00</updated>
 <id>http://chrismdp.com/2009/12/rip-web-1-0</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2009/12/rip-web-1-0" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>

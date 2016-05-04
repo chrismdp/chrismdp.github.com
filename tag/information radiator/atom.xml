@@ -20,7 +20,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/03/announcing-edash'/>
+<link href='http://chrismdp.com/2010/03/announcing-edash/'/>
 <updated>2010-03-29T22:05:00+01:00</updated>
 <id>http://chrismdp.com/2010/03/announcing-edash</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2010/03/announcing-edash" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -34,7 +34,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/03/radiating-stats-at-eden'/>
+<link href='http://chrismdp.com/2010/03/radiating-stats-at-eden/'/>
 <updated>2010-03-22T13:55:00+00:00</updated>
 <id>http://chrismdp.com/2010/03/radiating-stats-at-eden</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2010/03/radiating-stats-at-eden" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>

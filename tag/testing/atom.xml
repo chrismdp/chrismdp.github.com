@@ -26,7 +26,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/03/why-games-coders-dont-use-tdd-and-why-it-matters'/>
+<link href='http://chrismdp.com/2015/03/why-games-coders-dont-use-tdd-and-why-it-matters/'/>
 <updated>2015-03-11T10:37:37+00:00</updated>
 <id>http://chrismdp.com/2015/03/why-games-coders-dont-use-tdd-and-why-it-matters</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/03/why-games-coders-dont-use-tdd-and-why-it-matters" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -41,7 +41,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2013/11/how-i-learned-to-stop-worrying-and-love-some-detailed-cucumber-features'/>
+<link href='http://chrismdp.com/2013/11/how-i-learned-to-stop-worrying-and-love-some-detailed-cucumber-features/'/>
 <updated>2013-11-11T17:55:51+00:00</updated>
 <id>http://chrismdp.com/2013/11/how-i-learned-to-stop-worrying-and-love-some-detailed-cucumber-features</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2013/11/how-i-learned-to-stop-worrying-and-love-some-detailed-cucumber-features" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -60,7 +60,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2013/09/extreme-isolation-part-3-crud'/>
+<link href='http://chrismdp.com/2013/09/extreme-isolation-part-3-crud/'/>
 <updated>2013-09-02T11:22:27+01:00</updated>
 <id>http://chrismdp.com/2013/09/extreme-isolation-part-3-crud</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2013/09/extreme-isolation-part-3-crud" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -80,7 +80,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2013/07/extreme-isolation-part-2'/>
+<link href='http://chrismdp.com/2013/07/extreme-isolation-part-2/'/>
 <updated>2013-07-16T09:37:39+01:00</updated>
 <id>http://chrismdp.com/2013/07/extreme-isolation-part-2</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2013/07/extreme-isolation-part-2" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -100,7 +100,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2013/05/extreme-isolation-in-web-apps-part-1'/>
+<link href='http://chrismdp.com/2013/05/extreme-isolation-in-web-apps-part-1/'/>
 <updated>2013-05-09T10:34:52+01:00</updated>
 <id>http://chrismdp.com/2013/05/extreme-isolation-in-web-apps-part-1</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2013/05/extreme-isolation-in-web-apps-part-1" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -118,7 +118,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2013/02/the-perils-of-curiosity'/>
+<link href='http://chrismdp.com/2013/02/the-perils-of-curiosity/'/>
 <updated>2013-02-07T07:27:02+00:00</updated>
 <id>http://chrismdp.com/2013/02/the-perils-of-curiosity</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2013/02/the-perils-of-curiosity" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -134,7 +134,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/12/cucumber-keeping-the-build-passing'/>
+<link href='http://chrismdp.com/2012/12/cucumber-keeping-the-build-passing/'/>
 <updated>2012-12-11T08:40:48+00:00</updated>
 <id>http://chrismdp.com/2012/12/cucumber-keeping-the-build-passing</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/12/cucumber-keeping-the-build-passing" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -149,7 +149,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/11/scenarios-are-not-acceptance-criteria'/>
+<link href='http://chrismdp.com/2012/11/scenarios-are-not-acceptance-criteria/'/>
 <updated>2012-11-23T08:55:47+00:00</updated>
 <id>http://chrismdp.com/2012/11/scenarios-are-not-acceptance-criteria</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/11/scenarios-are-not-acceptance-criteria" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -164,7 +164,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/11/the-integration-testing-trap'/>
+<link href='http://chrismdp.com/2012/11/the-integration-testing-trap/'/>
 <updated>2012-11-15T17:04:26+00:00</updated>
 <id>http://chrismdp.com/2012/11/the-integration-testing-trap</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/11/the-integration-testing-trap" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -179,7 +179,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/09/failing-tests-rot'/>
+<link href='http://chrismdp.com/2012/09/failing-tests-rot/'/>
 <updated>2012-09-20T15:36:32+01:00</updated>
 <id>http://chrismdp.com/2012/09/failing-tests-rot</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/failing-tests-rot" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -195,7 +195,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/09/cucumber-isnt-a-testing-tool'/>
+<link href='http://chrismdp.com/2012/09/cucumber-isnt-a-testing-tool/'/>
 <updated>2012-09-19T17:41:22+01:00</updated>
 <id>http://chrismdp.com/2012/09/cucumber-isnt-a-testing-tool</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/cucumber-isnt-a-testing-tool" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>

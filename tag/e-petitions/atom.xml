@@ -25,7 +25,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/08/e-petitions-handling-traffic'/>
+<link href='http://chrismdp.com/2011/08/e-petitions-handling-traffic/'/>
 <updated>2011-08-30T13:51:38+01:00</updated>
 <id>http://chrismdp.com/2011/08/e-petitions-handling-traffic</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2011/08/e-petitions-handling-traffic" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -42,7 +42,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/07/e-petitions-deconstructed'/>
+<link href='http://chrismdp.com/2011/07/e-petitions-deconstructed/'/>
 <updated>2011-07-29T15:57:09+01:00</updated>
 <id>http://chrismdp.com/2011/07/e-petitions-deconstructed</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2011/07/e-petitions-deconstructed" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>

@@ -24,7 +24,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/08/how-to-add-live-code-reload-to-your-game'/>
+<link href='http://chrismdp.com/2015/08/how-to-add-live-code-reload-to-your-game/'/>
 <updated>2015-08-19T09:55:34+01:00</updated>
 <id>http://chrismdp.com/2015/08/how-to-add-live-code-reload-to-your-game</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/08/how-to-add-live-code-reload-to-your-game" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -39,7 +39,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/08/why-i-rewrote-sol-trader-s-gui-from-scratch'/>
+<link href='http://chrismdp.com/2015/08/why-i-rewrote-sol-trader-s-gui-from-scratch/'/>
 <updated>2015-08-01T23:25:02+01:00</updated>
 <id>http://chrismdp.com/2015/08/why-i-rewrote-sol-trader-s-gui-from-scratch</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/08/why-i-rewrote-sol-trader-s-gui-from-scratch" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -57,7 +57,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/06/how-to-quickly-add-bloom-to-your-engine'/>
+<link href='http://chrismdp.com/2015/06/how-to-quickly-add-bloom-to-your-engine/'/>
 <updated>2015-06-10T18:30:04+01:00</updated>
 <id>http://chrismdp.com/2015/06/how-to-quickly-add-bloom-to-your-engine</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/06/how-to-quickly-add-bloom-to-your-engine" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -76,7 +76,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/04/your-abstractions-are-a-liability'/>
+<link href='http://chrismdp.com/2015/04/your-abstractions-are-a-liability/'/>
 <updated>2015-04-08T14:04:44+01:00</updated>
 <id>http://chrismdp.com/2015/04/your-abstractions-are-a-liability</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/04/your-abstractions-are-a-liability" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -92,7 +92,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/04/how-i-doubled-the-speed-of-my-game-by-giving-up-on-c-plus-plus'/>
+<link href='http://chrismdp.com/2015/04/how-i-doubled-the-speed-of-my-game-by-giving-up-on-c-plus-plus/'/>
 <updated>2015-04-01T12:49:53+01:00</updated>
 <id>http://chrismdp.com/2015/04/how-i-doubled-the-speed-of-my-game-by-giving-up-on-c-plus-plus</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/04/how-i-doubled-the-speed-of-my-game-by-giving-up-on-c-plus-plus" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -108,7 +108,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/04/a-fresh-take-on-dci-with-c-plus-plus'/>
+<link href='http://chrismdp.com/2012/04/a-fresh-take-on-dci-with-c-plus-plus/'/>
 <updated>2012-04-16T12:20:48+01:00</updated>
 <id>http://chrismdp.com/2012/04/a-fresh-take-on-dci-with-c-plus-plus</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/04/a-fresh-take-on-dci-with-c-plus-plus" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -126,7 +126,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/02/sol-trading-lighting'/>
+<link href='http://chrismdp.com/2012/02/sol-trading-lighting/'/>
 <updated>2012-02-14T22:56:43+00:00</updated>
 <id>http://chrismdp.com/2012/02/sol-trading-lighting</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/02/sol-trading-lighting" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -144,7 +144,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/02/effective-bloom-in-open-gl-for-sol-trader'/>
+<link href='http://chrismdp.com/2012/02/effective-bloom-in-open-gl-for-sol-trader/'/>
 <updated>2012-02-02T16:28:30+00:00</updated>
 <id>http://chrismdp.com/2012/02/effective-bloom-in-open-gl-for-sol-trader</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/02/effective-bloom-in-open-gl-for-sol-trader" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -161,7 +161,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on'/>
+<link href='http://chrismdp.com/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on/'/>
 <updated>2012-01-16T09:38:25+00:00</updated>
 <id>http://chrismdp.com/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -178,7 +178,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus'/>
+<link href='http://chrismdp.com/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus/'/>
 <updated>2012-01-08T20:21:41+00:00</updated>
 <id>http://chrismdp.com/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>

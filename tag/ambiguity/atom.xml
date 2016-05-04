@@ -24,7 +24,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/01/driving-out-feature-ambiguity'/>
+<link href='http://chrismdp.com/2010/01/driving-out-feature-ambiguity/'/>
 <updated>2010-01-15T06:19:00+00:00</updated>
 <id>http://chrismdp.com/2010/01/driving-out-feature-ambiguity</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2010/01/driving-out-feature-ambiguity" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>

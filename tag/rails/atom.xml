@@ -28,7 +28,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2013/09/the-toolchain-of-dreams'/>
+<link href='http://chrismdp.com/2013/09/the-toolchain-of-dreams/'/>
 <updated>2013-09-19T15:11:58+01:00</updated>
 <id>http://chrismdp.com/2013/09/the-toolchain-of-dreams</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2013/09/the-toolchain-of-dreams" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -45,7 +45,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/10/your-tests-are-lying-to-you'/>
+<link href='http://chrismdp.com/2011/10/your-tests-are-lying-to-you/'/>
 <updated>2011-10-17T19:10:29+01:00</updated>
 <id>http://chrismdp.com/2011/10/your-tests-are-lying-to-you</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2011/10/your-tests-are-lying-to-you" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -64,7 +64,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/09/kanogo-vapourware-to-beta-in-24-hours'/>
+<link href='http://chrismdp.com/2011/09/kanogo-vapourware-to-beta-in-24-hours/'/>
 <updated>2011-09-12T11:30:37+01:00</updated>
 <id>http://chrismdp.com/2011/09/kanogo-vapourware-to-beta-in-24-hours</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2011/09/kanogo-vapourware-to-beta-in-24-hours" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -80,7 +80,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/11/getting-spork-working-now-on-rails-3-rspec-2-and-cucumber'/>
+<link href='http://chrismdp.com/2010/11/getting-spork-working-now-on-rails-3-rspec-2-and-cucumber/'/>
 <updated>2010-11-16T21:41:57+00:00</updated>
 <id>http://chrismdp.com/2010/11/getting-spork-working-now-on-rails-3-rspec-2-and-cucumber</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2010/11/getting-spork-working-now-on-rails-3-rspec-2-and-cucumber" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>

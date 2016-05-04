@@ -27,7 +27,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/04/your-abstractions-are-a-liability'/>
+<link href='http://chrismdp.com/2015/04/your-abstractions-are-a-liability/'/>
 <updated>2015-04-08T14:04:44+01:00</updated>
 <id>http://chrismdp.com/2015/04/your-abstractions-are-a-liability</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/04/your-abstractions-are-a-liability" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -46,7 +46,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2013/09/extreme-isolation-part-3-crud'/>
+<link href='http://chrismdp.com/2013/09/extreme-isolation-part-3-crud/'/>
 <updated>2013-09-02T11:22:27+01:00</updated>
 <id>http://chrismdp.com/2013/09/extreme-isolation-part-3-crud</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2013/09/extreme-isolation-part-3-crud" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -66,7 +66,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2013/07/extreme-isolation-part-2'/>
+<link href='http://chrismdp.com/2013/07/extreme-isolation-part-2/'/>
 <updated>2013-07-16T09:37:39+01:00</updated>
 <id>http://chrismdp.com/2013/07/extreme-isolation-part-2</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2013/07/extreme-isolation-part-2" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -86,7 +86,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2013/05/extreme-isolation-in-web-apps-part-1'/>
+<link href='http://chrismdp.com/2013/05/extreme-isolation-in-web-apps-part-1/'/>
 <updated>2013-05-09T10:34:52+01:00</updated>
 <id>http://chrismdp.com/2013/05/extreme-isolation-in-web-apps-part-1</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2013/05/extreme-isolation-in-web-apps-part-1" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -102,7 +102,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2013/04/features-are-documentation-not-tests'/>
+<link href='http://chrismdp.com/2013/04/features-are-documentation-not-tests/'/>
 <updated>2013-04-26T08:50:13+01:00</updated>
 <id>http://chrismdp.com/2013/04/features-are-documentation-not-tests</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2013/04/features-are-documentation-not-tests" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -117,7 +117,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/11/storing-state-in-your-steps'/>
+<link href='http://chrismdp.com/2012/11/storing-state-in-your-steps/'/>
 <updated>2012-11-07T23:50:39+00:00</updated>
 <id>http://chrismdp.com/2012/11/storing-state-in-your-steps</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/11/storing-state-in-your-steps" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>

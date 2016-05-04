@@ -7,12 +7,27 @@ layout: nil
   <title>Chris Parsons: posts tagged lean startup</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2012-09-13T13:52:16+01:00</updated>
+  <updated>2016-05-04T09:51:54+01:00</updated>
   <id>http://chrismdp.com/tag/lean startup</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>Extreme YAGNI: How BDD nails your prototyping stage</title>
+<category term='bdd'/>
+<category term='cucumber'/>
+<category term='team'/>
+<category term='lean startup'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2016/05/how-bdd-nails-your-prototyping-stage/'/>
+<updated>2016-05-04T09:51:54+01:00</updated>
+<id>http://chrismdp.com/2016/05/how-bdd-nails-your-prototyping-stage</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2016/05/how-bdd-nails-your-prototyping-stage" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>The power of feedback</title>
 <category term='lean startup'/>
@@ -24,7 +39,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/09/the-power-of-feedback'/>
+<link href='http://chrismdp.com/2012/09/the-power-of-feedback/'/>
 <updated>2012-09-13T13:52:16+01:00</updated>
 <id>http://chrismdp.com/2012/09/the-power-of-feedback</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/the-power-of-feedback" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -42,7 +57,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/05/attempting-validated-learning-with-sol-trader'/>
+<link href='http://chrismdp.com/2012/05/attempting-validated-learning-with-sol-trader/'/>
 <updated>2012-05-14T10:18:47+01:00</updated>
 <id>http://chrismdp.com/2012/05/attempting-validated-learning-with-sol-trader</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/05/attempting-validated-learning-with-sol-trader" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -58,7 +73,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/05/sol-trader-now-in-alpha'/>
+<link href='http://chrismdp.com/2012/05/sol-trader-now-in-alpha/'/>
 <updated>2012-05-02T15:37:44+01:00</updated>
 <id>http://chrismdp.com/2012/05/sol-trader-now-in-alpha</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/05/sol-trader-now-in-alpha" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>

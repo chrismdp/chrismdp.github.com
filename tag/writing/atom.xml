@@ -24,7 +24,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/09/introducing-morning-pages'/>
+<link href='http://chrismdp.com/2012/09/introducing-morning-pages/'/>
 <updated>2012-09-21T13:25:13+01:00</updated>
 <id>http://chrismdp.com/2012/09/introducing-morning-pages</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/introducing-morning-pages" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -39,7 +39,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/11/how-im-writing-my-book-using-git-and-ruby'/>
+<link href='http://chrismdp.com/2010/11/how-im-writing-my-book-using-git-and-ruby/'/>
 <updated>2010-11-02T15:35:27+00:00</updated>
 <id>http://chrismdp.com/2010/11/how-im-writing-my-book-using-git-and-ruby</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2010/11/how-im-writing-my-book-using-git-and-ruby" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -54,7 +54,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/07/seven-hundred-and-fifty-words'/>
+<link href='http://chrismdp.com/2010/07/seven-hundred-and-fifty-words/'/>
 <updated>2010-07-12T22:45:00+01:00</updated>
 <id>http://chrismdp.com/2010/07/seven-hundred-and-fifty-words</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2010/07/seven-hundred-and-fifty-words" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>

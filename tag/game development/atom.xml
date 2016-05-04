@@ -23,7 +23,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2016/02/gossip-the-best-new-sol-trader-feature-for-ages'/>
+<link href='http://chrismdp.com/2016/02/gossip-the-best-new-sol-trader-feature-for-ages/'/>
 <updated>2016-02-09T07:20:37+00:00</updated>
 <id>http://chrismdp.com/2016/02/gossip-the-best-new-sol-trader-feature-for-ages</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2016/02/gossip-the-best-new-sol-trader-feature-for-ages" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -38,7 +38,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2016/01/the-cunning-plans-of-sol-trader'/>
+<link href='http://chrismdp.com/2016/01/the-cunning-plans-of-sol-trader/'/>
 <updated>2016-01-12T05:56:28+00:00</updated>
 <id>http://chrismdp.com/2016/01/the-cunning-plans-of-sol-trader</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2016/01/the-cunning-plans-of-sol-trader" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -53,7 +53,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2016/01/full-disclosure-sol-trader-conversation-upgrades'/>
+<link href='http://chrismdp.com/2016/01/full-disclosure-sol-trader-conversation-upgrades/'/>
 <updated>2016-01-01T16:34:55+00:00</updated>
 <id>http://chrismdp.com/2016/01/full-disclosure-sol-trader-conversation-upgrades</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2016/01/full-disclosure-sol-trader-conversation-upgrades" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -69,7 +69,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/12/the-christmas-eve-update-with-moddable-missions'/>
+<link href='http://chrismdp.com/2015/12/the-christmas-eve-update-with-moddable-missions/'/>
 <updated>2015-12-24T07:43:19+00:00</updated>
 <id>http://chrismdp.com/2015/12/the-christmas-eve-update-with-moddable-missions</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/12/the-christmas-eve-update-with-moddable-missions" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -85,7 +85,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/12/the-science-of-blame-and-unforgiveness'/>
+<link href='http://chrismdp.com/2015/12/the-science-of-blame-and-unforgiveness/'/>
 <updated>2015-12-02T10:20:28+00:00</updated>
 <id>http://chrismdp.com/2015/12/the-science-of-blame-and-unforgiveness</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/12/the-science-of-blame-and-unforgiveness" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -101,7 +101,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/11/modelling-opinions-and-prejudice-in-sol-trader'/>
+<link href='http://chrismdp.com/2015/11/modelling-opinions-and-prejudice-in-sol-trader/'/>
 <updated>2015-11-27T16:51:31+00:00</updated>
 <id>http://chrismdp.com/2015/11/modelling-opinions-and-prejudice-in-sol-trader</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/11/modelling-opinions-and-prejudice-in-sol-trader" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -117,7 +117,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/11/sol-trader-combat'/>
+<link href='http://chrismdp.com/2015/11/sol-trader-combat/'/>
 <updated>2015-11-11T17:03:57+00:00</updated>
 <id>http://chrismdp.com/2015/11/sol-trader-combat</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/11/sol-trader-combat" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -131,7 +131,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/09/sol-trader-kickstarter-now-live'/>
+<link href='http://chrismdp.com/2015/09/sol-trader-kickstarter-now-live/'/>
 <updated>2015-09-21T19:48:37+01:00</updated>
 <id>http://chrismdp.com/2015/09/sol-trader-kickstarter-now-live</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/09/sol-trader-kickstarter-now-live" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -146,7 +146,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/09/three-days-to-go'/>
+<link href='http://chrismdp.com/2015/09/three-days-to-go/'/>
 <updated>2015-09-18T16:08:02+01:00</updated>
 <id>http://chrismdp.com/2015/09/three-days-to-go</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/09/three-days-to-go" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -161,7 +161,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/09/gossip-as-a-game-mechanic'/>
+<link href='http://chrismdp.com/2015/09/gossip-as-a-game-mechanic/'/>
 <updated>2015-09-03T06:21:40+01:00</updated>
 <id>http://chrismdp.com/2015/09/gossip-as-a-game-mechanic</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/09/gossip-as-a-game-mechanic" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -177,7 +177,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/08/how-to-add-live-code-reload-to-your-game'/>
+<link href='http://chrismdp.com/2015/08/how-to-add-live-code-reload-to-your-game/'/>
 <updated>2015-08-19T09:55:34+01:00</updated>
 <id>http://chrismdp.com/2015/08/how-to-add-live-code-reload-to-your-game</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/08/how-to-add-live-code-reload-to-your-game" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -192,7 +192,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/08/why-i-rewrote-sol-trader-s-gui-from-scratch'/>
+<link href='http://chrismdp.com/2015/08/why-i-rewrote-sol-trader-s-gui-from-scratch/'/>
 <updated>2015-08-01T23:25:02+01:00</updated>
 <id>http://chrismdp.com/2015/08/why-i-rewrote-sol-trader-s-gui-from-scratch</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/08/why-i-rewrote-sol-trader-s-gui-from-scratch" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -202,13 +202,13 @@ layout: nil
 <category term='sol trader'/>
 <category term='game development'/>
 <category term='conference'/>
-<category term='egx'/>
+<category term='EGX'/>
 <category term='marketing'/>
     <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/07/sol-trader-will-be-at-egx'/>
+<link href='http://chrismdp.com/2015/07/sol-trader-will-be-at-egx/'/>
 <updated>2015-07-22T08:00:00+01:00</updated>
 <id>http://chrismdp.com/2015/07/sol-trader-will-be-at-egx</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/07/sol-trader-will-be-at-egx" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -221,7 +221,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/07/three-new-screenshots'/>
+<link href='http://chrismdp.com/2015/07/three-new-screenshots/'/>
 <updated>2015-07-18T13:55:35+01:00</updated>
 <id>http://chrismdp.com/2015/07/three-new-screenshots</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/07/three-new-screenshots" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -234,7 +234,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/07/new-sol-trader-gameplay-trailer'/>
+<link href='http://chrismdp.com/2015/07/new-sol-trader-gameplay-trailer/'/>
 <updated>2015-07-17T17:16:10+01:00</updated>
 <id>http://chrismdp.com/2015/07/new-sol-trader-gameplay-trailer</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/07/new-sol-trader-gameplay-trailer" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -248,7 +248,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/06/how-sol-trader-uses-information-as-currency'/>
+<link href='http://chrismdp.com/2015/06/how-sol-trader-uses-information-as-currency/'/>
 <updated>2015-06-24T07:29:05+01:00</updated>
 <id>http://chrismdp.com/2015/06/how-sol-trader-uses-information-as-currency</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/06/how-sol-trader-uses-information-as-currency" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -263,7 +263,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/06/the-difference-review-and-planning-makes-to-indie-development'/>
+<link href='http://chrismdp.com/2015/06/the-difference-review-and-planning-makes-to-indie-development/'/>
 <updated>2015-06-17T08:53:57+01:00</updated>
 <id>http://chrismdp.com/2015/06/the-difference-review-and-planning-makes-to-indie-development</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/06/the-difference-review-and-planning-makes-to-indie-development" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -281,7 +281,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/06/how-to-quickly-add-bloom-to-your-engine'/>
+<link href='http://chrismdp.com/2015/06/how-to-quickly-add-bloom-to-your-engine/'/>
 <updated>2015-06-10T18:30:04+01:00</updated>
 <id>http://chrismdp.com/2015/06/how-to-quickly-add-bloom-to-your-engine</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/06/how-to-quickly-add-bloom-to-your-engine" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -296,7 +296,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/06/the-huge-difference-a-good-entity-system-could-make-to-your-game'/>
+<link href='http://chrismdp.com/2015/06/the-huge-difference-a-good-entity-system-could-make-to-your-game/'/>
 <updated>2015-06-03T11:17:09+01:00</updated>
 <id>http://chrismdp.com/2015/06/the-huge-difference-a-good-entity-system-could-make-to-your-game</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/06/the-huge-difference-a-good-entity-system-could-make-to-your-game" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -311,7 +311,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/05/tone-of-voice-in-sol-trader'/>
+<link href='http://chrismdp.com/2015/05/tone-of-voice-in-sol-trader/'/>
 <updated>2015-05-27T11:45:08+01:00</updated>
 <id>http://chrismdp.com/2015/05/tone-of-voice-in-sol-trader</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/05/tone-of-voice-in-sol-trader" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -326,7 +326,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/05/never-ever-ever-ever-ever-give-up'/>
+<link href='http://chrismdp.com/2015/05/never-ever-ever-ever-ever-give-up/'/>
 <updated>2015-05-20T09:46:59+01:00</updated>
 <id>http://chrismdp.com/2015/05/never-ever-ever-ever-ever-give-up</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/05/never-ever-ever-ever-ever-give-up" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -341,7 +341,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/05/how-dialogue-works-in-sol-trader'/>
+<link href='http://chrismdp.com/2015/05/how-dialogue-works-in-sol-trader/'/>
 <updated>2015-05-13T16:29:47+01:00</updated>
 <id>http://chrismdp.com/2015/05/how-dialogue-works-in-sol-trader</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/05/how-dialogue-works-in-sol-trader" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -356,7 +356,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/05/how-face-generation-works-in-sol-trader'/>
+<link href='http://chrismdp.com/2015/05/how-face-generation-works-in-sol-trader/'/>
 <updated>2015-05-06T10:52:27+01:00</updated>
 <id>http://chrismdp.com/2015/05/how-face-generation-works-in-sol-trader</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/05/how-face-generation-works-in-sol-trader" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -372,7 +372,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/04/how-i-m-using-proxemics-in-sol-trader-s-game-design'/>
+<link href='http://chrismdp.com/2015/04/how-i-m-using-proxemics-in-sol-trader-s-game-design/'/>
 <updated>2015-04-28T21:01:22+01:00</updated>
 <id>http://chrismdp.com/2015/04/how-i-m-using-proxemics-in-sol-trader-s-game-design</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/04/how-i-m-using-proxemics-in-sol-trader-s-game-design" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -388,7 +388,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/04/why-i-ditched-all-the-build-tools'/>
+<link href='http://chrismdp.com/2015/04/why-i-ditched-all-the-build-tools/'/>
 <updated>2015-04-22T11:42:46+01:00</updated>
 <id>http://chrismdp.com/2015/04/why-i-ditched-all-the-build-tools</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/04/why-i-ditched-all-the-build-tools" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -403,7 +403,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/04/how-to-choose-between-realism-and-fun'/>
+<link href='http://chrismdp.com/2015/04/how-to-choose-between-realism-and-fun/'/>
 <updated>2015-04-15T13:39:44+01:00</updated>
 <id>http://chrismdp.com/2015/04/how-to-choose-between-realism-and-fun</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/04/how-to-choose-between-realism-and-fun" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -422,7 +422,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/04/your-abstractions-are-a-liability'/>
+<link href='http://chrismdp.com/2015/04/your-abstractions-are-a-liability/'/>
 <updated>2015-04-08T14:04:44+01:00</updated>
 <id>http://chrismdp.com/2015/04/your-abstractions-are-a-liability</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/04/your-abstractions-are-a-liability" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -438,7 +438,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/04/how-i-doubled-the-speed-of-my-game-by-giving-up-on-c-plus-plus'/>
+<link href='http://chrismdp.com/2015/04/how-i-doubled-the-speed-of-my-game-by-giving-up-on-c-plus-plus/'/>
 <updated>2015-04-01T12:49:53+01:00</updated>
 <id>http://chrismdp.com/2015/04/how-i-doubled-the-speed-of-my-game-by-giving-up-on-c-plus-plus</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/04/how-i-doubled-the-speed-of-my-game-by-giving-up-on-c-plus-plus" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -453,7 +453,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/03/four-things-every-space-game-must-have'/>
+<link href='http://chrismdp.com/2015/03/four-things-every-space-game-must-have/'/>
 <updated>2015-03-25T10:39:12+00:00</updated>
 <id>http://chrismdp.com/2015/03/four-things-every-space-game-must-have</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/03/four-things-every-space-game-must-have" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -469,7 +469,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/03/sol-trader-has-been-greenlit'/>
+<link href='http://chrismdp.com/2015/03/sol-trader-has-been-greenlit/'/>
 <updated>2015-03-18T09:17:03+00:00</updated>
 <id>http://chrismdp.com/2015/03/sol-trader-has-been-greenlit</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/03/sol-trader-has-been-greenlit" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -487,7 +487,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/03/why-games-coders-dont-use-tdd-and-why-it-matters'/>
+<link href='http://chrismdp.com/2015/03/why-games-coders-dont-use-tdd-and-why-it-matters/'/>
 <updated>2015-03-11T10:37:37+00:00</updated>
 <id>http://chrismdp.com/2015/03/why-games-coders-dont-use-tdd-and-why-it-matters</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/03/why-games-coders-dont-use-tdd-and-why-it-matters" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -503,7 +503,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/01/seven-things-i-ve-learnt-in-3-years-coding-my-first-indie-game'/>
+<link href='http://chrismdp.com/2015/01/seven-things-i-ve-learnt-in-3-years-coding-my-first-indie-game/'/>
 <updated>2015-01-07T14:26:40+00:00</updated>
 <id>http://chrismdp.com/2015/01/seven-things-i-ve-learnt-in-3-years-coding-my-first-indie-game</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/01/seven-things-i-ve-learnt-in-3-years-coding-my-first-indie-game" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -519,7 +519,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/01/new-for-2015-sol-trader-on-kickstarter'/>
+<link href='http://chrismdp.com/2015/01/new-for-2015-sol-trader-on-kickstarter/'/>
 <updated>2015-01-07T09:57:58+00:00</updated>
 <id>http://chrismdp.com/2015/01/new-for-2015-sol-trader-on-kickstarter</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/01/new-for-2015-sol-trader-on-kickstarter" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -532,7 +532,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2013/08/card-pirates'/>
+<link href='http://chrismdp.com/2013/08/card-pirates/'/>
 <updated>2013-08-06T06:59:36+01:00</updated>
 <id>http://chrismdp.com/2013/08/card-pirates</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2013/08/card-pirates" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -550,7 +550,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/02/sol-trading-lighting'/>
+<link href='http://chrismdp.com/2012/02/sol-trading-lighting/'/>
 <updated>2012-02-14T22:56:43+00:00</updated>
 <id>http://chrismdp.com/2012/02/sol-trading-lighting</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/02/sol-trading-lighting" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -568,7 +568,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/02/effective-bloom-in-open-gl-for-sol-trader'/>
+<link href='http://chrismdp.com/2012/02/effective-bloom-in-open-gl-for-sol-trader/'/>
 <updated>2012-02-02T16:28:30+00:00</updated>
 <id>http://chrismdp.com/2012/02/effective-bloom-in-open-gl-for-sol-trader</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/02/effective-bloom-in-open-gl-for-sol-trader" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -585,7 +585,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on'/>
+<link href='http://chrismdp.com/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on/'/>
 <updated>2012-01-16T09:38:25+00:00</updated>
 <id>http://chrismdp.com/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -602,7 +602,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus'/>
+<link href='http://chrismdp.com/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus/'/>
 <updated>2012-01-08T20:21:41+00:00</updated>
 <id>http://chrismdp.com/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -618,7 +618,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/01/introducing-sol-trader'/>
+<link href='http://chrismdp.com/2012/01/introducing-sol-trader/'/>
 <updated>2012-01-03T14:53:53+00:00</updated>
 <id>http://chrismdp.com/2012/01/introducing-sol-trader</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/01/introducing-sol-trader" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>

@@ -24,7 +24,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2014/12/why-you-can-scale-agile-with-the-right-attitudes'/>
+<link href='http://chrismdp.com/2014/12/why-you-can-scale-agile-with-the-right-attitudes/'/>
 <updated>2014-12-02T17:16:38+00:00</updated>
 <id>http://chrismdp.com/2014/12/why-you-can-scale-agile-with-the-right-attitudes</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2014/12/why-you-can-scale-agile-with-the-right-attitudes" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -40,7 +40,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2014/08/why-bdd-works-solo'/>
+<link href='http://chrismdp.com/2014/08/why-bdd-works-solo/'/>
 <updated>2014-08-04T15:55:58+01:00</updated>
 <id>http://chrismdp.com/2014/08/why-bdd-works-solo</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2014/08/why-bdd-works-solo" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -56,7 +56,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2014/05/how-to-decide-whether-a-tool-is-right-for-you'/>
+<link href='http://chrismdp.com/2014/05/how-to-decide-whether-a-tool-is-right-for-you/'/>
 <updated>2014-05-07T13:10:47+01:00</updated>
 <id>http://chrismdp.com/2014/05/how-to-decide-whether-a-tool-is-right-for-you</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2014/05/how-to-decide-whether-a-tool-is-right-for-you" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -72,7 +72,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2014/04/four-questions-to-discover-if-youre-really-agile'/>
+<link href='http://chrismdp.com/2014/04/four-questions-to-discover-if-youre-really-agile/'/>
 <updated>2014-04-16T18:05:32+01:00</updated>
 <id>http://chrismdp.com/2014/04/four-questions-to-discover-if-youre-really-agile</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2014/04/four-questions-to-discover-if-youre-really-agile" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -87,7 +87,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2014/02/make-cucumber-features-more-readable-with-this-one-weird-trick'/>
+<link href='http://chrismdp.com/2014/02/make-cucumber-features-more-readable-with-this-one-weird-trick/'/>
 <updated>2014-02-12T10:15:06+00:00</updated>
 <id>http://chrismdp.com/2014/02/make-cucumber-features-more-readable-with-this-one-weird-trick</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2014/02/make-cucumber-features-more-readable-with-this-one-weird-trick" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -103,7 +103,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2013/01/project-velocity-is-a-useless-metric-discuss'/>
+<link href='http://chrismdp.com/2013/01/project-velocity-is-a-useless-metric-discuss/'/>
 <updated>2013-01-21T15:29:25+00:00</updated>
 <id>http://chrismdp.com/2013/01/project-velocity-is-a-useless-metric-discuss</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2013/01/project-velocity-is-a-useless-metric-discuss" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -119,7 +119,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/12/cucumber-keeping-the-build-passing'/>
+<link href='http://chrismdp.com/2012/12/cucumber-keeping-the-build-passing/'/>
 <updated>2012-12-11T08:40:48+00:00</updated>
 <id>http://chrismdp.com/2012/12/cucumber-keeping-the-build-passing</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/12/cucumber-keeping-the-build-passing" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -136,7 +136,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/10/delegated-tasks-are-a-team-anti-pattern'/>
+<link href='http://chrismdp.com/2012/10/delegated-tasks-are-a-team-anti-pattern/'/>
 <updated>2012-10-04T07:49:57+01:00</updated>
 <id>http://chrismdp.com/2012/10/delegated-tasks-are-a-team-anti-pattern</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/10/delegated-tasks-are-a-team-anti-pattern" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -152,7 +152,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/09/task-assignment-is-a-team-anti-pattern'/>
+<link href='http://chrismdp.com/2012/09/task-assignment-is-a-team-anti-pattern/'/>
 <updated>2012-09-14T14:06:40+01:00</updated>
 <id>http://chrismdp.com/2012/09/task-assignment-is-a-team-anti-pattern</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/task-assignment-is-a-team-anti-pattern" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -167,7 +167,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/07/card-of-the-day'/>
+<link href='http://chrismdp.com/2010/07/card-of-the-day/'/>
 <updated>2010-07-22T10:45:00+01:00</updated>
 <id>http://chrismdp.com/2010/07/card-of-the-day</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2010/07/card-of-the-day" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>

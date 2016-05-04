@@ -18,13 +18,13 @@ layout: nil
 <category term='sol trader'/>
 <category term='game development'/>
 <category term='conference'/>
-<category term='egx'/>
+<category term='EGX'/>
 <category term='marketing'/>
     <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/07/sol-trader-will-be-at-egx'/>
+<link href='http://chrismdp.com/2015/07/sol-trader-will-be-at-egx/'/>
 <updated>2015-07-22T08:00:00+01:00</updated>
 <id>http://chrismdp.com/2015/07/sol-trader-will-be-at-egx</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/07/sol-trader-will-be-at-egx" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -40,7 +40,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/03/sol-trader-has-been-greenlit'/>
+<link href='http://chrismdp.com/2015/03/sol-trader-has-been-greenlit/'/>
 <updated>2015-03-18T09:17:03+00:00</updated>
 <id>http://chrismdp.com/2015/03/sol-trader-has-been-greenlit</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/03/sol-trader-has-been-greenlit" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>

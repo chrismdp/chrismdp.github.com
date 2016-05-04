@@ -24,7 +24,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/04/why-i-ditched-all-the-build-tools'/>
+<link href='http://chrismdp.com/2015/04/why-i-ditched-all-the-build-tools/'/>
 <updated>2015-04-22T11:42:46+01:00</updated>
 <id>http://chrismdp.com/2015/04/why-i-ditched-all-the-build-tools</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/04/why-i-ditched-all-the-build-tools" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -40,7 +40,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2014/05/how-to-decide-whether-a-tool-is-right-for-you'/>
+<link href='http://chrismdp.com/2014/05/how-to-decide-whether-a-tool-is-right-for-you/'/>
 <updated>2014-05-07T13:10:47+01:00</updated>
 <id>http://chrismdp.com/2014/05/how-to-decide-whether-a-tool-is-right-for-you</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2014/05/how-to-decide-whether-a-tool-is-right-for-you" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -56,7 +56,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2014/04/four-questions-to-discover-if-youre-really-agile'/>
+<link href='http://chrismdp.com/2014/04/four-questions-to-discover-if-youre-really-agile/'/>
 <updated>2014-04-16T18:05:32+01:00</updated>
 <id>http://chrismdp.com/2014/04/four-questions-to-discover-if-youre-really-agile</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2014/04/four-questions-to-discover-if-youre-really-agile" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -76,7 +76,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2013/09/the-toolchain-of-dreams'/>
+<link href='http://chrismdp.com/2013/09/the-toolchain-of-dreams/'/>
 <updated>2013-09-19T15:11:58+01:00</updated>
 <id>http://chrismdp.com/2013/09/the-toolchain-of-dreams</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2013/09/the-toolchain-of-dreams" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>

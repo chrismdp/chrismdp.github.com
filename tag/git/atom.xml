@@ -28,7 +28,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2013/09/the-toolchain-of-dreams'/>
+<link href='http://chrismdp.com/2013/09/the-toolchain-of-dreams/'/>
 <updated>2013-09-19T15:11:58+01:00</updated>
 <id>http://chrismdp.com/2013/09/the-toolchain-of-dreams</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2013/09/the-toolchain-of-dreams" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -43,7 +43,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/11/how-im-writing-my-book-using-git-and-ruby'/>
+<link href='http://chrismdp.com/2010/11/how-im-writing-my-book-using-git-and-ruby/'/>
 <updated>2010-11-02T15:35:27+00:00</updated>
 <id>http://chrismdp.com/2010/11/how-im-writing-my-book-using-git-and-ruby</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2010/11/how-im-writing-my-book-using-git-and-ruby" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>

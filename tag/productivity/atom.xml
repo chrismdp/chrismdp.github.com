@@ -24,7 +24,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/08/how-to-add-live-code-reload-to-your-game'/>
+<link href='http://chrismdp.com/2015/08/how-to-add-live-code-reload-to-your-game/'/>
 <updated>2015-08-19T09:55:34+01:00</updated>
 <id>http://chrismdp.com/2015/08/how-to-add-live-code-reload-to-your-game</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/08/how-to-add-live-code-reload-to-your-game" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -39,7 +39,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/06/the-difference-review-and-planning-makes-to-indie-development'/>
+<link href='http://chrismdp.com/2015/06/the-difference-review-and-planning-makes-to-indie-development/'/>
 <updated>2015-06-17T08:53:57+01:00</updated>
 <id>http://chrismdp.com/2015/06/the-difference-review-and-planning-makes-to-indie-development</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/06/the-difference-review-and-planning-makes-to-indie-development" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -54,7 +54,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/05/never-ever-ever-ever-ever-give-up'/>
+<link href='http://chrismdp.com/2015/05/never-ever-ever-ever-ever-give-up/'/>
 <updated>2015-05-20T09:46:59+01:00</updated>
 <id>http://chrismdp.com/2015/05/never-ever-ever-ever-ever-give-up</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/05/never-ever-ever-ever-ever-give-up" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -70,7 +70,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2013/01/project-velocity-is-a-useless-metric-discuss'/>
+<link href='http://chrismdp.com/2013/01/project-velocity-is-a-useless-metric-discuss/'/>
 <updated>2013-01-21T15:29:25+00:00</updated>
 <id>http://chrismdp.com/2013/01/project-velocity-is-a-useless-metric-discuss</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2013/01/project-velocity-is-a-useless-metric-discuss" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -87,7 +87,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/10/delegated-tasks-are-a-team-anti-pattern'/>
+<link href='http://chrismdp.com/2012/10/delegated-tasks-are-a-team-anti-pattern/'/>
 <updated>2012-10-04T07:49:57+01:00</updated>
 <id>http://chrismdp.com/2012/10/delegated-tasks-are-a-team-anti-pattern</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/10/delegated-tasks-are-a-team-anti-pattern" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -103,7 +103,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/09/introducing-morning-pages'/>
+<link href='http://chrismdp.com/2012/09/introducing-morning-pages/'/>
 <updated>2012-09-21T13:25:13+01:00</updated>
 <id>http://chrismdp.com/2012/09/introducing-morning-pages</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/introducing-morning-pages" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -119,7 +119,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/09/task-assignment-is-a-team-anti-pattern'/>
+<link href='http://chrismdp.com/2012/09/task-assignment-is-a-team-anti-pattern/'/>
 <updated>2012-09-14T14:06:40+01:00</updated>
 <id>http://chrismdp.com/2012/09/task-assignment-is-a-team-anti-pattern</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/task-assignment-is-a-team-anti-pattern" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -132,7 +132,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/05/don-t-miss-your-greatest-achievement'/>
+<link href='http://chrismdp.com/2011/05/don-t-miss-your-greatest-achievement/'/>
 <updated>2011-05-17T09:37:09+01:00</updated>
 <id>http://chrismdp.com/2011/05/don-t-miss-your-greatest-achievement</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2011/05/don-t-miss-your-greatest-achievement" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -146,7 +146,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/05/the-principle-of-scattered-work'/>
+<link href='http://chrismdp.com/2011/05/the-principle-of-scattered-work/'/>
 <updated>2011-05-09T12:56:04+01:00</updated>
 <id>http://chrismdp.com/2011/05/the-principle-of-scattered-work</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2011/05/the-principle-of-scattered-work" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -159,7 +159,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/05/on-flow-and-katas'/>
+<link href='http://chrismdp.com/2011/05/on-flow-and-katas/'/>
 <updated>2011-05-06T09:37:45+01:00</updated>
 <id>http://chrismdp.com/2011/05/on-flow-and-katas</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2011/05/on-flow-and-katas" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -174,7 +174,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/04/a-formula-of-motivation'/>
+<link href='http://chrismdp.com/2011/04/a-formula-of-motivation/'/>
 <updated>2011-04-15T10:39:35+01:00</updated>
 <id>http://chrismdp.com/2011/04/a-formula-of-motivation</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2011/04/a-formula-of-motivation" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -188,7 +188,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/04/on-the-nature-of-time'/>
+<link href='http://chrismdp.com/2011/04/on-the-nature-of-time/'/>
 <updated>2011-04-04T14:27:24+01:00</updated>
 <id>http://chrismdp.com/2011/04/on-the-nature-of-time</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2011/04/on-the-nature-of-time" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -201,7 +201,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/03/learning-to-say-yes'/>
+<link href='http://chrismdp.com/2011/03/learning-to-say-yes/'/>
 <updated>2011-03-30T14:02:47+01:00</updated>
 <id>http://chrismdp.com/2011/03/learning-to-say-yes</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2011/03/learning-to-say-yes" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -214,7 +214,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/03/truly-indispensable-people'/>
+<link href='http://chrismdp.com/2011/03/truly-indispensable-people/'/>
 <updated>2011-03-29T11:42:03+01:00</updated>
 <id>http://chrismdp.com/2011/03/truly-indispensable-people</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2011/03/truly-indispensable-people" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -227,7 +227,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/03/pomodoros-done-hopefully-right'/>
+<link href='http://chrismdp.com/2011/03/pomodoros-done-hopefully-right/'/>
 <updated>2011-03-28T16:18:50+01:00</updated>
 <id>http://chrismdp.com/2011/03/pomodoros-done-hopefully-right</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2011/03/pomodoros-done-hopefully-right" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -241,7 +241,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/07/polyphasic-sleep-experiment'/>
+<link href='http://chrismdp.com/2010/07/polyphasic-sleep-experiment/'/>
 <updated>2010-07-29T09:45:00+01:00</updated>
 <id>http://chrismdp.com/2010/07/polyphasic-sleep-experiment</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2010/07/polyphasic-sleep-experiment" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -256,7 +256,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/07/seven-hundred-and-fifty-words'/>
+<link href='http://chrismdp.com/2010/07/seven-hundred-and-fifty-words/'/>
 <updated>2010-07-12T22:45:00+01:00</updated>
 <id>http://chrismdp.com/2010/07/seven-hundred-and-fifty-words</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2010/07/seven-hundred-and-fifty-words" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -271,7 +271,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/01/pairing-works-for-everything'/>
+<link href='http://chrismdp.com/2010/01/pairing-works-for-everything/'/>
 <updated>2010-01-27T11:28:00+00:00</updated>
 <id>http://chrismdp.com/2010/01/pairing-works-for-everything</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2010/01/pairing-works-for-everything" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -279,14 +279,14 @@ layout: nil
 <entry>
 <title>SVG Planner</title>
 <category term='svg'/>
-<category term='diy planner'/>
-<category term='gtd'/>
+<category term='DIY Planner'/>
+<category term='GTD'/>
 <category term='productivity'/>
     <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2006/10/svg-planner'/>
+<link href='http://chrismdp.com/2006/10/svg-planner/'/>
 <updated>2006-10-24T01:00:00+01:00</updated>
 <id>http://chrismdp.com/2006/10/svg-planner</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2006/10/svg-planner" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>

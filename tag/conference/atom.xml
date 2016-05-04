@@ -18,13 +18,13 @@ layout: nil
 <category term='sol trader'/>
 <category term='game development'/>
 <category term='conference'/>
-<category term='egx'/>
+<category term='EGX'/>
 <category term='marketing'/>
     <author>
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/07/sol-trader-will-be-at-egx'/>
+<link href='http://chrismdp.com/2015/07/sol-trader-will-be-at-egx/'/>
 <updated>2015-07-22T08:00:00+01:00</updated>
 <id>http://chrismdp.com/2015/07/sol-trader-will-be-at-egx</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/07/sol-trader-will-be-at-egx" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -38,7 +38,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2013/05/leading-software-teams-well'/>
+<link href='http://chrismdp.com/2013/05/leading-software-teams-well/'/>
 <updated>2013-05-14T14:01:21+01:00</updated>
 <id>http://chrismdp.com/2013/05/leading-software-teams-well</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2013/05/leading-software-teams-well" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -54,7 +54,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/05/waxing-lyrical-on-pathfinding'/>
+<link href='http://chrismdp.com/2012/05/waxing-lyrical-on-pathfinding/'/>
 <updated>2012-05-15T16:02:40+01:00</updated>
 <id>http://chrismdp.com/2012/05/waxing-lyrical-on-pathfinding</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/05/waxing-lyrical-on-pathfinding" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -67,7 +67,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/05/leancamp-report'/>
+<link href='http://chrismdp.com/2010/05/leancamp-report/'/>
 <updated>2010-05-16T10:15:00+01:00</updated>
 <id>http://chrismdp.com/2010/05/leancamp-report</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2010/05/leancamp-report" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>

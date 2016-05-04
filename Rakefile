@@ -18,7 +18,7 @@ task :cloud do
 
   options = Jekyll.configuration({})
   site = Jekyll::Site.new(options)
-  site.read_posts('')
+  site.read
 
 
   html =<<-HTML
@@ -101,7 +101,7 @@ layout: nil
     post_data = post.to_liquid
     html += "<entry>\n"
     html += "<title>#{post_data['title']}</title>\n"
-    post.categories.each do |post_category|
+    post_data.fetch('categories').each do |post_category|
       html += "<category term='#{post_category}'/>\n"
     end
     html += <<-HTML
@@ -187,11 +187,9 @@ task :tags do
 
   options = Jekyll.configuration({ 'markdown' => 'kramdown' })
   site = Jekyll::Site.new(options)
-  site.read_posts('')
+  site.read
   site.categories.sort.each do |category, posts|
     next if category == ".net"
-
-    posts.reverse!
 
     FileUtils.mkdir_p "tag/#{category}"
 

@@ -23,7 +23,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2014/04/how-to-layer-context-into-your-features-using-real-narrative'/>
+<link href='http://chrismdp.com/2014/04/how-to-layer-context-into-your-features-using-real-narrative/'/>
 <updated>2014-04-14T17:22:12+01:00</updated>
 <id>http://chrismdp.com/2014/04/how-to-layer-context-into-your-features-using-real-narrative</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2014/04/how-to-layer-context-into-your-features-using-real-narrative" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -37,7 +37,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2013/08/dealing-stories-into-features'/>
+<link href='http://chrismdp.com/2013/08/dealing-stories-into-features/'/>
 <updated>2013-08-29T16:18:44+01:00</updated>
 <id>http://chrismdp.com/2013/08/dealing-stories-into-features</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2013/08/dealing-stories-into-features" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -55,7 +55,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/02/the-story-card-is-not-the-story'/>
+<link href='http://chrismdp.com/2010/02/the-story-card-is-not-the-story/'/>
 <updated>2010-02-11T15:55:00+00:00</updated>
 <id>http://chrismdp.com/2010/02/the-story-card-is-not-the-story</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2010/02/the-story-card-is-not-the-story" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>

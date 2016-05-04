@@ -22,7 +22,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/12/cache-busting-ruby-http-server'/>
+<link href='http://chrismdp.com/2011/12/cache-busting-ruby-http-server/'/>
 <updated>2011-12-14T16:57:43+00:00</updated>
 <id>http://chrismdp.com/2011/12/cache-busting-ruby-http-server</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2011/12/cache-busting-ruby-http-server" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -37,7 +37,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/05/tdd-with-node-js'/>
+<link href='http://chrismdp.com/2010/05/tdd-with-node-js/'/>
 <updated>2010-05-23T11:05:00+01:00</updated>
 <id>http://chrismdp.com/2010/05/tdd-with-node-js</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2010/05/tdd-with-node-js" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>

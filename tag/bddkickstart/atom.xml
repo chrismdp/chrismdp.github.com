@@ -26,7 +26,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2013/11/bdd-kickstart-is-dead-long-live'/>
+<link href='http://chrismdp.com/2013/11/bdd-kickstart-is-dead-long-live/'/>
 <updated>2013-11-19T16:23:43+00:00</updated>
 <id>http://chrismdp.com/2013/11/bdd-kickstart-is-dead-long-live</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2013/11/bdd-kickstart-is-dead-long-live" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -40,7 +40,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2013/01/bddkickstart-london-and-2013'/>
+<link href='http://chrismdp.com/2013/01/bddkickstart-london-and-2013/'/>
 <updated>2013-01-03T07:31:11+00:00</updated>
 <id>http://chrismdp.com/2013/01/bddkickstart-london-and-2013</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2013/01/bddkickstart-london-and-2013" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -54,7 +54,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/10/how-to-write-a-great-story'/>
+<link href='http://chrismdp.com/2012/10/how-to-write-a-great-story/'/>
 <updated>2012-10-30T22:50:00+00:00</updated>
 <id>http://chrismdp.com/2012/10/how-to-write-a-great-story</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/10/how-to-write-a-great-story" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -68,7 +68,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/10/the-simplest-cucumber-project'/>
+<link href='http://chrismdp.com/2012/10/the-simplest-cucumber-project/'/>
 <updated>2012-10-25T20:47:16+01:00</updated>
 <id>http://chrismdp.com/2012/10/the-simplest-cucumber-project</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/10/the-simplest-cucumber-project" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -84,7 +84,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/07/kickstart-your-team-on-bdd'/>
+<link href='http://chrismdp.com/2012/07/kickstart-your-team-on-bdd/'/>
 <updated>2012-07-27T08:13:22+01:00</updated>
 <id>http://chrismdp.com/2012/07/kickstart-your-team-on-bdd</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/07/kickstart-your-team-on-bdd" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>

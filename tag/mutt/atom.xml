@@ -25,7 +25,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2013/10/using-markdown-to-send-html-email-via-mutt'/>
+<link href='http://chrismdp.com/2013/10/using-markdown-to-send-html-email-via-mutt/'/>
 <updated>2013-10-07T20:23:24+01:00</updated>
 <id>http://chrismdp.com/2013/10/using-markdown-to-send-html-email-via-mutt</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2013/10/using-markdown-to-send-html-email-via-mutt" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>

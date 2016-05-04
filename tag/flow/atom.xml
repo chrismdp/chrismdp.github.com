@@ -21,7 +21,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/05/on-flow-and-katas'/>
+<link href='http://chrismdp.com/2011/05/on-flow-and-katas/'/>
 <updated>2011-05-06T09:37:45+01:00</updated>
 <id>http://chrismdp.com/2011/05/on-flow-and-katas</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2011/05/on-flow-and-katas" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>

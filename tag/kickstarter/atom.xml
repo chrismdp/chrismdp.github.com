@@ -22,7 +22,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/09/sol-trader-kickstarter-now-live'/>
+<link href='http://chrismdp.com/2015/09/sol-trader-kickstarter-now-live/'/>
 <updated>2015-09-21T19:48:37+01:00</updated>
 <id>http://chrismdp.com/2015/09/sol-trader-kickstarter-now-live</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/09/sol-trader-kickstarter-now-live" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -37,7 +37,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/09/three-days-to-go'/>
+<link href='http://chrismdp.com/2015/09/three-days-to-go/'/>
 <updated>2015-09-18T16:08:02+01:00</updated>
 <id>http://chrismdp.com/2015/09/three-days-to-go</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/09/three-days-to-go" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -52,7 +52,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/09/gossip-as-a-game-mechanic'/>
+<link href='http://chrismdp.com/2015/09/gossip-as-a-game-mechanic/'/>
 <updated>2015-09-03T06:21:40+01:00</updated>
 <id>http://chrismdp.com/2015/09/gossip-as-a-game-mechanic</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/09/gossip-as-a-game-mechanic" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -68,7 +68,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/01/seven-things-i-ve-learnt-in-3-years-coding-my-first-indie-game'/>
+<link href='http://chrismdp.com/2015/01/seven-things-i-ve-learnt-in-3-years-coding-my-first-indie-game/'/>
 <updated>2015-01-07T14:26:40+00:00</updated>
 <id>http://chrismdp.com/2015/01/seven-things-i-ve-learnt-in-3-years-coding-my-first-indie-game</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/01/seven-things-i-ve-learnt-in-3-years-coding-my-first-indie-game" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -84,7 +84,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2015/01/new-for-2015-sol-trader-on-kickstarter'/>
+<link href='http://chrismdp.com/2015/01/new-for-2015-sol-trader-on-kickstarter/'/>
 <updated>2015-01-07T09:57:58+00:00</updated>
 <id>http://chrismdp.com/2015/01/new-for-2015-sol-trader-on-kickstarter</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2015/01/new-for-2015-sol-trader-on-kickstarter" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>

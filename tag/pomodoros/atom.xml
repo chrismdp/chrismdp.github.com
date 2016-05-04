@@ -23,7 +23,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/04/a-formula-of-motivation'/>
+<link href='http://chrismdp.com/2011/04/a-formula-of-motivation/'/>
 <updated>2011-04-15T10:39:35+01:00</updated>
 <id>http://chrismdp.com/2011/04/a-formula-of-motivation</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2011/04/a-formula-of-motivation" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -37,7 +37,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/04/on-the-nature-of-time'/>
+<link href='http://chrismdp.com/2011/04/on-the-nature-of-time/'/>
 <updated>2011-04-04T14:27:24+01:00</updated>
 <id>http://chrismdp.com/2011/04/on-the-nature-of-time</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2011/04/on-the-nature-of-time" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -53,7 +53,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/04/pomodoros-help-you-refactor'/>
+<link href='http://chrismdp.com/2011/04/pomodoros-help-you-refactor/'/>
 <updated>2011-04-01T20:21:15+01:00</updated>
 <id>http://chrismdp.com/2011/04/pomodoros-help-you-refactor</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2011/04/pomodoros-help-you-refactor" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>

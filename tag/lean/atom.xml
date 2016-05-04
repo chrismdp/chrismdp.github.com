@@ -27,7 +27,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/09/your-framework-is-a-liability'/>
+<link href='http://chrismdp.com/2012/09/your-framework-is-a-liability/'/>
 <updated>2012-09-28T20:46:31+01:00</updated>
 <id>http://chrismdp.com/2012/09/your-framework-is-a-liability</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/your-framework-is-a-liability" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -42,7 +42,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/09/job-titles-team-anti-pattern'/>
+<link href='http://chrismdp.com/2012/09/job-titles-team-anti-pattern/'/>
 <updated>2012-09-25T20:48:24+01:00</updated>
 <id>http://chrismdp.com/2012/09/job-titles-team-anti-pattern</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/job-titles-team-anti-pattern" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -59,7 +59,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/09/code-is-a-liability'/>
+<link href='http://chrismdp.com/2012/09/code-is-a-liability/'/>
 <updated>2012-09-24T20:48:13+01:00</updated>
 <id>http://chrismdp.com/2012/09/code-is-a-liability</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/code-is-a-liability" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -73,7 +73,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/09/showroom-software'/>
+<link href='http://chrismdp.com/2012/09/showroom-software/'/>
 <updated>2012-09-17T20:34:12+01:00</updated>
 <id>http://chrismdp.com/2012/09/showroom-software</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/showroom-software" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -89,7 +89,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/09/the-power-of-feedback'/>
+<link href='http://chrismdp.com/2012/09/the-power-of-feedback/'/>
 <updated>2012-09-13T13:52:16+01:00</updated>
 <id>http://chrismdp.com/2012/09/the-power-of-feedback</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/09/the-power-of-feedback" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -107,7 +107,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/05/attempting-validated-learning-with-sol-trader'/>
+<link href='http://chrismdp.com/2012/05/attempting-validated-learning-with-sol-trader/'/>
 <updated>2012-05-14T10:18:47+01:00</updated>
 <id>http://chrismdp.com/2012/05/attempting-validated-learning-with-sol-trader</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/05/attempting-validated-learning-with-sol-trader" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -123,7 +123,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2012/05/sol-trader-now-in-alpha'/>
+<link href='http://chrismdp.com/2012/05/sol-trader-now-in-alpha/'/>
 <updated>2012-05-02T15:37:44+01:00</updated>
 <id>http://chrismdp.com/2012/05/sol-trader-now-in-alpha</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2012/05/sol-trader-now-in-alpha" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -139,7 +139,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2011/05/lean-code-slides-and-feedback'/>
+<link href='http://chrismdp.com/2011/05/lean-code-slides-and-feedback/'/>
 <updated>2011-05-26T21:35:40+01:00</updated>
 <id>http://chrismdp.com/2011/05/lean-code-slides-and-feedback</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2011/05/lean-code-slides-and-feedback" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
@@ -152,7 +152,7 @@ layout: nil
       <name>Chris</name>
       <email>chrismdp@gmail.com</email>
     </author>
-<link href='http://chrismdp.com/2010/05/leancamp-report'/>
+<link href='http://chrismdp.com/2010/05/leancamp-report/'/>
 <updated>2010-05-16T10:15:00+01:00</updated>
 <id>http://chrismdp.com/2010/05/leancamp-report</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2010/05/leancamp-report" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
