@@ -32,7 +32,7 @@ Going forward, any other game or update that I launch will be out when it's done
 
 ## 3. I was too "close" to the game
 
-A system map... an obvious feature that I should have put in from the start! Turns out I was way too "close" to the game. As I have been playing Sol Trader for years, I knew exactly where everything was, and so did my beta-testers, so there was no need to put a map in. I should have to given Sol Trader to some fresh players to spot these issues - just hiring some gamers from Gumtree to see how they found the game would have been so useful.
+A system map... an obvious feature that I should have put in from the start! Turns out I was way too "close" to the game. As I have been playing Sol Trader for years, I knew exactly where everything was, and so did my beta-testers, so we felt there was no need to put a map in. I should have to given Sol Trader to some fresh players to spot these issues - just hiring some gamers from Gumtree to see how they found the game would have been so useful.
 
 As it was, the first time I heard calls for a map was from Twitch and YouTube streamers who had early press copies of the game. This is not the ideal audience you want spotting bugs and missing features on your behalf.
 
