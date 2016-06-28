@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "5 ways I screwed up Sol Trader's launch: a post-mortem"
-date: 2016-06-23 22:51:02 +0100
+date: 2016-06-28 09:00:00 +0100
 categories:
   - products
   - business
