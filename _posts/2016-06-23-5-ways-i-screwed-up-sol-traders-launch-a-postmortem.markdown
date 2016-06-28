@@ -18,7 +18,7 @@ So the Sol Trader launch ([Website](http://soltrader.net), [Steam](http://store.
 
 <div style='float: right; padding: 0 0 10px 20px; width: 250px'><img src="http://i.imgur.com/FA1agHi.png"/></div>
 
-I tweaked space flight on the weekend before launch in order to make it quicker to travel between planets. This revealed a very nasty and previously hidden bug that I had unknowingly introduced several weeks earlier. The bug seriously affected space flight, causing ships to over-accelerate and become difficult to control. Because the change was made the day before launch, I didn't have time to spot and fix this bug until the 24 hours after launch. At this point, it had already caused a number of players to quit the game in frustration.
+I tweaked space flight on the weekend before launch in order to make it quicker to travel between planets. This revealed a very nasty and previously hidden bug that I had unknowingly introduced several weeks earlier. The bug seriously affected space flight, causing ships to over-accelerate and become difficult to control. Because the change was made the day before launch, I didn't have time to spot and fix this bug until 24 hours after launch. At this point, it had already caused a number of players to quit the game in frustration.
 
 Games are different from business software: there are many more unexpected side effects and combinations of features coming together to affect the gameplay in unexpected ways.  Since I've been much more careful with releases, testing them on several platforms with a number of beta testers before pushing them out to the world, and ensuring that key areas of the gameplay are thoroughly checked.
 
