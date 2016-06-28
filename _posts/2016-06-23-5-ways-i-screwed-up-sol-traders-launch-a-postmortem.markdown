@@ -16,7 +16,7 @@ So the Sol Trader launch ([Website](http://soltrader.net), [Steam](http://store.
 
 ## 1. Last minute tweaks gave rise to bugs at launch
 
-<div style='float: right; padding: 0 0 10px 20px; width: 250px'><img src="http://i.imgur.com/FA1agHi.png"/></a></div>
+<div style='float: right; padding: 0 0 10px 20px; width: 250px'><img src="http://i.imgur.com/FA1agHi.png"/></div>
 
 I tweaked space flight on the weekend before launch in order to make it quicker to travel between planets. This revealed a very nasty and previously hidden bug that I had unknowingly introduced several weeks earlier. The bug seriously affected space flight, causing ships to over-accelerate and become difficult to control. Because the change was made the day before launch, I didn't have time to spot and fix this bug until the 24 hours after launch. At this point, it had already caused a number of players to quit the game in frustration.
 
