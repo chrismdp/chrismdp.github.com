@@ -75,20 +75,20 @@ The `@angie` tag just ensures that Angie is signed in. It's neater than a separa
 
 {% highlight cucumber %}
 @victor
-Scenario: Victor receives a welcome email
+Scenario: Victor receives a welcome email (direct account login)
   Given I have received a welcome email
   When I follow the link
-  Then I am logged straight into my account
+  Then I should be logged straight into my account
 {% endhighlight %}
 
 The fact that we've switched actor here isn't a problem in my view. It's still clear who "I" is in this case, because the scenario title is clear and descriptive.
 
 {% highlight cucumber %}
 @victor
-Scenario: Victor receives a welcome email
+Scenario: Victor receives a welcome email (change password on 1st screen)
   Given I have received a welcome email
   When I follow the link
-  Then I can change my password from the first screen
+  Then I should be able to change my password from the first screen
 {% endhighlight %}
 
 This is a very similar scenario, but it's worth making it a separate one as the password change is an important business need for the customer. It's very tempting to tag the check onto the end of a previous scenario, but this reduces clarity and the perceived importance of that particular part of the feature in everybody's mind.

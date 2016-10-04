@@ -67,7 +67,7 @@ When I'm tempted to be too repetitous and start writing my features like test co
       And I'm signed in as "User"
       And I have permission to add tasks to the project
       When I add a task to the project
-      Then the task was added to the project
+      Then the task should be added to the project
 
 {% endhighlight %}
 
@@ -124,7 +124,7 @@ Here's an example feature of a character joining a fleet:
       Given you are playing Eddie
       And you are in Earth Orbit
       And Terry travelled to Mars Orbit a turn ago
-      Then you can't join Terry's fleet
+      Then you won't be allowed to join Terry's fleet
 
 {% endhighlight %}
 
