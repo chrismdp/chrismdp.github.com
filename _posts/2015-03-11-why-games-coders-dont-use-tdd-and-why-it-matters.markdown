@@ -29,7 +29,7 @@ Why is this? Is it because TDD is flawed in some way, or simply not applicable h
 
 Let's begin to answer this by looking at the specific advantages TDD gives us:
 
-* **It foreces usage-first coding.** TDD represents another client for our code, independent from our production code. It asks specific questions of the codebase to ensure that it's correct. It forces us to think about our code from the point of view of 'what it does' first, rather than 'how it works'. This can often lead to surprising realisations about the code we actually need, and prevents us from writing spurious code we might think we need, but actually represents wasted effort.
+* **It forces usage-first coding.** TDD represents another client for our code, independent from our production code. It asks specific questions of the codebase to ensure that it's correct. It forces us to think about our code from the point of view of 'what it does' first, rather than 'how it works'. This can often lead to surprising realisations about the code we actually need, and prevents us from writing spurious code we might think we need, but actually represents wasted effort.
 
 * **It helps us minimise code size and complexity.** If we adhere strictly to the principle of only writing enough code to satisfy the test, then our tests should capture every possible path through our code. Additionally we only have enough code to satisfy the exact problem we've used tests to define - this is important because [code is a liability, not an asset](/2012/09/code-is-a-liability/). The same is true of code complexity. If we find ourselves writing reams of tests to satisfy a particular piece of code, that code is too complicated or very risky and a prime source of bugs.
 
