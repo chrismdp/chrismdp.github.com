@@ -16,6 +16,13 @@ layout: nil
  
  {% for post in site.posts limit: 10 %}
  <entry>
+   {% if post.image %}
+     {% if post.image contains 'http' %}
+       <media:thumbnail xmlns:media='http://search.yahoo.com/mrss' url="{{ post.image }}"/>
+     {% else %}
+       <media:thumbnail xmlns:media='http://search.yahoo.com/mrss' url="http://chrismdp.com{{ post.image }}"/>
+     {% endif %}
+   {% endif %}
    <title>{{ post.title }}</title>
    {% for category in post.categories %}
    <category term="{{category}}" />
