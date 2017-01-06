@@ -7,7 +7,7 @@ layout: nil
   <title>Chris Parsons: posts tagged sol trader</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2016-06-23T22:51:02+01:00</updated>
+  <updated>2016-06-28T09:00:00+01:00</updated>
   <id>http://chrismdp.com/tag/sol trader</id>
   <author>
     <name>Chris</name>
@@ -26,7 +26,7 @@ layout: nil
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2016/06/5-ways-i-screwed-up-sol-traders-launch-a-postmortem/'/>
-<updated>2016-06-23T22:51:02+01:00</updated>
+<updated>2016-06-28T09:00:00+01:00</updated>
 <id>http://chrismdp.com/2016/06/5-ways-i-screwed-up-sol-traders-launch-a-postmortem</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2016/06/5-ways-i-screwed-up-sol-traders-launch-a-postmortem" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
 </entry>

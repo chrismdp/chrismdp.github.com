@@ -7,12 +7,28 @@ layout: nil
   <title>Chris Parsons: posts tagged flow</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2011-05-06T09:37:45+01:00</updated>
+  <updated>2017-01-06T13:45:53+00:00</updated>
   <id>http://chrismdp.com/tag/flow</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>How to really lead your life</title>
+<category term='productivity'/>
+<category term='life'/>
+<category term='learning'/>
+<category term='flow'/>
+<category term='motivation'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2017/01/leading-your-life/'/>
+<updated>2017-01-06T13:45:53+00:00</updated>
+<id>http://chrismdp.com/2017/01/leading-your-life</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2017/01/leading-your-life" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>On Flow, and Katas</title>
 <category term='productivity'/>
