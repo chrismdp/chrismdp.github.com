@@ -2,7 +2,7 @@
 layout: post
 title: "How to lead your life"
 date: 2017-01-06 13:45:53 +0000
-image: /files/railtrack.hpg
+image: /files/railtrack.jpg
 categories:
   - productivity
   - life
