@@ -7,12 +7,27 @@ layout: nil
   <title>Chris Parsons: posts tagged products</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2016-06-28T09:00:00+01:00</updated>
+  <updated>2017-02-22T11:51:10+00:00</updated>
   <id>http://chrismdp.com/tag/products</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>What's next for Sol Trader and me</title>
+<category term='products'/>
+<category term='sol trader'/>
+<category term='game development'/>
+<category term='indie games'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2017/02/what-s-next-for-sol-trader-and-me/'/>
+<updated>2017-02-22T11:51:10+00:00</updated>
+<id>http://chrismdp.com/2017/02/what-s-next-for-sol-trader-and-me</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2017/02/what-s-next-for-sol-trader-and-me" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>5 ways I screwed up Sol Trader's launch: a post-mortem</title>
 <category term='products'/>
