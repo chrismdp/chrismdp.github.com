@@ -22,7 +22,7 @@ I'm showing Sol Trader again at [Rezzed](https://www.egx.net/rezzed) at the end 
 
 **The next game :)**
 
-Eventually, I'm best served by moving on to a new project, so I've also been prototyping an exciting new game idea this year. It's based on some of the best ideas in Sol Trader, combining a lot of the innovations with a streamlined gameplay experience that will be easier to get into. I've already a name, backstory and setting (it's not a space game) and test gameplay together. I'm not quite ready to talk about it publicly yet - I will be soon!
+Eventually, I'm best served by moving on to a new project, so I've also been prototyping an exciting new game idea this year. It's based on some of the best ideas in Sol Trader, combining a lot of the innovations with a streamlined gameplay experience that will be easier to get into. I've already got together a name, backstory and setting (it's not a space game) and test gameplay. I'm not quite ready to talk about it publicly yet - I will be soon!
 
 I'm in the process of figuring out funding for the new game, and I'm thinking of running another Kickstarter in March as part of this journey. I loved [being on Kickstarter](http://kickstarter.com/projects/chrismdp/sol-trader/) last year - the people I met through that community are amazingly supportive and it would be great to ensure that I'm making the game that people want to play.
 
