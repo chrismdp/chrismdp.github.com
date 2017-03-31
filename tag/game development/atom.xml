@@ -7,12 +7,27 @@ layout: nil
   <title>Chris Parsons: posts tagged game development</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2017-02-22T11:51:10+00:00</updated>
+  <updated>2017-03-31T07:58:50+01:00</updated>
   <id>http://chrismdp.com/tag/game development</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>Introducing: Ealdorlight</title>
+<category term='products'/>
+<category term='ealdorlight'/>
+<category term='game development'/>
+<category term='indie games'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2017/03/introducing-ealdorlight/'/>
+<updated>2017-03-31T07:58:50+01:00</updated>
+<id>http://chrismdp.com/2017/03/introducing-ealdorlight</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2017/03/introducing-ealdorlight" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>What's next for Sol Trader and me</title>
 <category term='products'/>

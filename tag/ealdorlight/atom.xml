@@ -1,0 +1,31 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Chris Parsons: posts tagged ealdorlight</title>
+
+  <link href="http://chrismdp.com/"/>
+  <updated>2017-03-31T07:58:50+01:00</updated>
+  <id>http://chrismdp.com/tag/ealdorlight</id>
+  <author>
+    <name>Chris</name>
+    <email>chrismdp@gmail.com</email>
+  </author>
+<entry>
+<title>Introducing: Ealdorlight</title>
+<category term='products'/>
+<category term='ealdorlight'/>
+<category term='game development'/>
+<category term='indie games'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2017/03/introducing-ealdorlight/'/>
+<updated>2017-03-31T07:58:50+01:00</updated>
+<id>http://chrismdp.com/2017/03/introducing-ealdorlight</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2017/03/introducing-ealdorlight" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+</feed>
