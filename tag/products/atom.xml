@@ -7,12 +7,29 @@ layout: nil
   <title>Chris Parsons: posts tagged products</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2017-03-31T07:58:50+01:00</updated>
+  <updated>2017-04-28T11:03:10+01:00</updated>
   <id>http://chrismdp.com/tag/products</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>Ealdorlight Kickstarter on 6th June, Sol Trader 1.3 released</title>
+<category term='products'/>
+<category term='ealdorlight'/>
+<category term='sol trader'/>
+<category term='game development'/>
+<category term='indie games'/>
+<category term='kickstarter'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2017/04/sol-trader-1.3-kickstarter-launch-date/'/>
+<updated>2017-04-28T11:03:10+01:00</updated>
+<id>http://chrismdp.com/2017/04/sol-trader-1.3-kickstarter-launch-date</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2017/04/sol-trader-1.3-kickstarter-launch-date" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>Introducing: Ealdorlight</title>
 <category term='products'/>
