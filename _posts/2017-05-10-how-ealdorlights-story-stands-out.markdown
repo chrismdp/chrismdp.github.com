@@ -34,4 +34,4 @@ I've long been fascinated with identity: knowledge of who we truly are affects m
 
 Much more on this to come, but in the meantime, here's a glimpse of our story's beginning.
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/Lvk7V"><a href="//imgur.com/Lvk7V">Ealdorlight: backstory teaser</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/GWzHv"><a href="//imgur.com/GWzHv">Ealdorlight: backstory teaser (updated)</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
