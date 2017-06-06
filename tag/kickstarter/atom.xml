@@ -7,12 +7,29 @@ layout: nil
   <title>Chris Parsons: posts tagged kickstarter</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2017-05-10T11:36:52+01:00</updated>
+  <updated>2017-06-06T13:28:33+01:00</updated>
   <id>http://chrismdp.com/tag/kickstarter</id>
   <author>
     <name>Chris</name>
     <email>chrismdp@gmail.com</email>
   </author>
+<entry>
+<title>Ealdorlight's Kickstarter is live at 4pm today</title>
+<category term='products'/>
+<category term='ealdorlight'/>
+<category term='sol trader'/>
+<category term='game development'/>
+<category term='indie games'/>
+<category term='kickstarter'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2017/06/ealdorlight-s-kickstarter-is-live/'/>
+<updated>2017-06-06T13:28:33+01:00</updated>
+<id>http://chrismdp.com/2017/06/ealdorlight-s-kickstarter-is-live</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2017/06/ealdorlight-s-kickstarter-is-live" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
 <entry>
 <title>How Ealdorlight's story stands out</title>
 <category term='products'/>
