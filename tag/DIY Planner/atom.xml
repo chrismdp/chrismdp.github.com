@@ -7,7 +7,7 @@ layout: nil
   <title>Chris Parsons: posts tagged DIY Planner</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2006-10-24T01:00:00+01:00</updated>
+  <updated>2006-10-24T00:00:00+00:00</updated>
   <id>http://chrismdp.com/tag/DIY Planner</id>
   <author>
     <name>Chris</name>
@@ -24,7 +24,7 @@ layout: nil
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2006/10/svg-planner/'/>
-<updated>2006-10-24T01:00:00+01:00</updated>
+<updated>2006-10-24T00:00:00+00:00</updated>
 <id>http://chrismdp.com/2006/10/svg-planner</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2006/10/svg-planner" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
 </entry>
