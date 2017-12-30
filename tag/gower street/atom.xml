@@ -1,0 +1,44 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Chris Parsons: posts tagged gower street</title>
+
+  <link href="http://chrismdp.com/"/>
+  <updated>2017-12-30T07:30:44+00:00</updated>
+  <id>http://chrismdp.com/tag/gower street</id>
+  <author>
+    <name>Chris</name>
+    <email>chrismdp@gmail.com</email>
+  </author>
+<entry>
+<title>A new adventure</title>
+<category term='business'/>
+<category term='gower street'/>
+<category term='team'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2017/12/a-new-adventure/'/>
+<updated>2017-12-30T07:30:44+00:00</updated>
+<id>http://chrismdp.com/2017/12/a-new-adventure</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2017/12/a-new-adventure" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+<entry>
+<title>A new adventure</title>
+<category term='business'/>
+<category term='gower street'/>
+<category term='team'/>
+    <author>
+      <name>Chris</name>
+      <email>chrismdp@gmail.com</email>
+    </author>
+<link href='http://chrismdp.com/2017/12/a-new-adventure/'/>
+<updated>2017-12-30T07:30:44+00:00</updated>
+<id>http://chrismdp.com/2017/12/a-new-adventure</id>
+<content type='html'>{% for post in site.posts %}{% if post.id == "/2017/12/a-new-adventure" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
+</entry>
+</feed>
