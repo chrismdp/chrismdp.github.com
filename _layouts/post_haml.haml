@@ -53,6 +53,9 @@
           {% for tag in page.categories %}<li><a class='tag' href='/tag/{{ tag }}/'>{{tag}}</a></li>{% endfor %}
 
     .widget
+      :plain
+        {% include hello.html %}
+    .widget
       %h4 Related posts
       :plain
         {% for post in site.related_posts limit:5 %}
@@ -64,9 +67,6 @@
     .widget
       :plain
         {% include soltrader.html %}
-    .widget
-      :plain
-        {% include hello.html %}
     .widget
       :plain
         {% include twitch.html %}

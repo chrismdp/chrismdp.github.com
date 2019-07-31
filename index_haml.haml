@@ -55,6 +55,9 @@
         :plain
           {% for tag in post.categories %}<li><a class='tag' href='/tag/{{ tag }}/'>{{tag}}</a></li>{% endfor %}
     .widget
+      :plain
+        {% include hello.html %}
+    .widget
       %h4 Recent posts
       :plain
         {% for post in site.posts %}
@@ -64,9 +67,6 @@
         </p>
         {% endif %}
         {% endfor %}
-    .widget
-      :plain
-        {% include hello.html %}
     .widget
       :plain
         {% include soltrader.html %}
