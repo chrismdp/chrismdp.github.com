@@ -5,3 +5,8 @@ future: false
 lsi: false
 markdown: kramdown
 url: http://chrismdp.com
+repository: chrismdp/chrismdp.github.com
+plugins:
+  - jekyll-redirect-from
+whitelist:
+  - jekyll-redirect-from

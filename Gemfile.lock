@@ -222,8 +222,9 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   haml
+  jekyll-redirect-from
   nokogiri (~> 1.6.8.rc2)
   rake
 
 BUNDLED WITH
-   1.16.0
+   1.17.2
