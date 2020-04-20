@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The team is the atomic unit of success"
+redirect_to: https://deliverydoubled.com/3-ways-to-increase-team-safety-and-reduce-mistakes/
 date: 2011-04-05 16:14:49 +0100
 categories:
   - business
