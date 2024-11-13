@@ -1,5 +1,5 @@
 ---
-layout: nil
+layout: null
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
@@ -7,7 +7,7 @@ layout: nil
   <title>Chris Parsons: posts tagged richclient</title>
 
   <link href="http://chrismdp.com/"/>
-  <updated>2006-04-11T15:25:00+00:00</updated>
+  <updated>2006-04-11T16:25:00+01:00</updated>
   <id>http://chrismdp.com/tag/richclient</id>
   <author>
     <name>Chris</name>
@@ -24,7 +24,7 @@ layout: nil
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2006/04/spring-rc-thats-a-wrap/'/>
-<updated>2006-04-11T15:25:00+00:00</updated>
+<updated>2006-04-11T16:25:00+01:00</updated>
 <id>http://chrismdp.com/2006/04/spring-rc-thats-a-wrap</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2006/04/spring-rc-thats-a-wrap" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
 </entry>
@@ -39,7 +39,7 @@ layout: nil
       <email>chrismdp@gmail.com</email>
     </author>
 <link href='http://chrismdp.com/2006/04/spring-richclient/'/>
-<updated>2006-04-01T12:00:00+00:00</updated>
+<updated>2006-04-01T13:00:00+01:00</updated>
 <id>http://chrismdp.com/2006/04/spring-richclient</id>
 <content type='html'>{% for post in site.posts %}{% if post.id == "/2006/04/spring-richclient" %}{{ post.content | xml_escape }}{% endif %}{% endfor %}</content>
 </entry>
