@@ -1,16 +1,16 @@
 ---
 layout: post
 title: Why BDD works solo, and why that matters for everyone
-date: 2014-08-04 15:55:58 +0100
+date: 2014-08-04 15:55:58.000000000 +01:00
 categories:
- - bdd
- - agile
- - cucumber
- - process
- - team
-
+- bdd
+- agile
+- cucumber
+- process
+- team
+redirect_from:
+- "/2014/08/why-bdd-works-solo"
 ---
-
 *"The monotony and solitude of a quiet life stimulates the creative mind."*
 
 -- Albert Einstein

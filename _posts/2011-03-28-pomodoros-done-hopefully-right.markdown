@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Pomodoros done (hopefully) right"
-date: 2011-03-28 16:18:50 +0100
+title: Pomodoros done (hopefully) right
+date: 2011-03-28 16:18:50.000000000 +01:00
 categories:
-  - productivity
-  - life
+- productivity
+- life
+redirect_from:
+- "/2011/03/pomodoros-done-hopefully-right"
 ---
 It's been a while since I worked on my own, and one of the first things I did was *completely fail* to remember how to prioritise and structure my day effectively. I'd forgotten how to motivate myself when there's no standup meeting to energise you and no team members to be accountable to.
 

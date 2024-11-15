@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "Dependency injection != Inversion of Control"
-date: 2013-01-10 13:25:44 +0000
+title: Dependency injection != Inversion of Control
+date: 2013-01-10 13:25:44.000000000 +00:00
 categories:
-  - ruby
-  - code
-  - java
-  - cucumber
-  - bdd
-
+- ruby
+- code
+- java
+- cucumber
+- bdd
+redirect_from:
+- "/2013/01/dependency-injection-not-ioc"
 ---
-
 [David Heinemeier Hansson](http://david.heinemeierhansson.com), the creator of [Rails](http://rubyonrails.org), recently posted his [thoughts on dependency injection](http://david.heinemeierhansson.com/2012/dependency-injection-is-not-a-virtue.html). The post is written in an unhelpful inflammatory style, and it's inaccurate in its use of the terms involved.
 
 In particular, there is a confusing conflation of the ideas of dependency injection, a simple programming pattern I use every day, and Inversion of Control (IoC) containers, which are sometimes called "Dependency Injection containers". These are a heavyweight implementation of dependency injection wrapped around the whole application. IoC containers aren't normally needed in a language like Ruby (and many argue they [aren't needed in Java either](http://www.natpryce.com/articles/000783.html)) whereas dependency injection is a useful technique in any language to ensure our classes are properly isolated from each other, which leads to better seperation of concerns.

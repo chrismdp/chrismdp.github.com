@@ -1,13 +1,15 @@
 ---
 layout: post
-title: "How to get Spork working NOW on Rails 3, Rspec 2 and Cucumber"
-date: 2010-11-16 21:41:57 +0000
+title: How to get Spork working NOW on Rails 3, Rspec 2 and Cucumber
+date: 2010-11-16 21:41:57.000000000 +00:00
 categories:
-  - rails
-  - ruby
-  - rspec
-  - spork
-  - cucumber
+- rails
+- ruby
+- rspec
+- spork
+- cucumber
+redirect_from:
+- "/2010/11/getting-spork-working-now-on-rails-3-rspec-2-and-cucumber"
 ---
 I've spent the evening trying to get [Spork](https://github.com/timcharper/spork) to work with Rails 3 and RSpec 2. I've never felt the need for it before, but the Rails 3 start up time is fairly hefty and I'm crying out for the extra seconds more than ever.
 

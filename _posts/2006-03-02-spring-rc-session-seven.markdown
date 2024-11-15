@@ -1,12 +1,14 @@
 ---
 layout: post
 title: Spring Richclient ~ Session Seven ~ Beating the Command Framework into Submission
-date: 2006-03-02 17:12:00 +00:00
+date: 2006-03-02 17:12:00.000000000 +00:00
 categories:
-  - richclient 
-  - java 
-  - spring
-  - tutorial
+- richclient
+- java
+- spring
+- tutorial
+redirect_from:
+- "/2006/03/spring-rc-session-seven"
 ---
 <div class='alert'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
           

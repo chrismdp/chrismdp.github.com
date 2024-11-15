@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "A fresh take on DCI with C++ (with example)"
-date: 2012-04-16 12:20:48 +0100
+title: A fresh take on DCI with C++ (with example)
+date: 2012-04-16 12:20:48.000000000 +01:00
 categories:
-  - code
-  - c++
-  - craftsmanship
-  - dci
-  - sol trader
-
+- code
+- c++
+- craftsmanship
+- dci
+- sol trader
+redirect_from:
+- "/2012/04/a-fresh-take-on-dci-with-c-plus-plus"
 ---
-
 <div class='alert alert-info'>
   If you'd like to purchase Sol Trader you can now do so at <a href='http://soltrader.net'>soltrader.net</a>!
 </div>

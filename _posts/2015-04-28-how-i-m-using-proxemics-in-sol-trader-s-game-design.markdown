@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "How I'm using Proxemics in Sol Trader's game design"
-date: 2015-04-28 21:01:22 +0100
+title: How I'm using Proxemics in Sol Trader's game design
+date: 2015-04-28 21:01:22.000000000 +01:00
 categories:
-  - game design
-  - sol trader
-  - game development
-  - code
-  - psychology
-
+- game design
+- sol trader
+- game development
+- code
+- psychology
+redirect_from:
+- "/2015/04/how-i-m-using-proxemics-in-sol-trader-s-game-design"
 ---
-
 <div style='float: right; padding: 0 0 10px 20px; width: 250px'><img src='/files/new-relationships.gif' alt='new relationships'/>
 <div style='color: #999; padding-top: 5px'>Your relationships, shown closest first. Your relationship with your father has cooled lately...</div>
 </div>

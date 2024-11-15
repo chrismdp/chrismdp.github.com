@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Gossip: the best new Sol Trader feature for ages"
-date: 2016-02-09 07:20:37 +0000
+title: 'Gossip: the best new Sol Trader feature for ages'
+date: 2016-02-09 07:20:37.000000000 +00:00
 categories:
-  - indie games
-  - game design
-  - game development
-  - sol trader
-
+- indie games
+- game design
+- game development
+- sol trader
+redirect_from:
+- "/2016/02/gossip-the-best-new-sol-trader-feature-for-ages"
 ---
-
 I'm very excited about the new feature I've just added to [Sol Trader](http://soltrader.net) - when you visit a location you can now listen in to all the conversations that are going on whilst you're there.
 
 <img src='http://i.imgur.com/41wt7qa.png'/>

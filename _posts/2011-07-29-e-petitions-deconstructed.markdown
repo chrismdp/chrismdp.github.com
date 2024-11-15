@@ -1,14 +1,16 @@
 ---
 layout: post
-title: "e-petitions: deconstructed"
-date: 2011-07-29 15:57:09 +0100
+title: 'e-petitions: deconstructed'
+date: 2011-07-29 15:57:09.000000000 +01:00
 categories:
-  - code
-  - chef
-  - agile
-  - adn
-  - government
-  - e-petitions
+- code
+- chef
+- agile
+- adn
+- government
+- e-petitions
+redirect_from:
+- "/2011/07/e-petitions-deconstructed"
 ---
 <div class='alert'>Update: I've posted more about the massive traffic surge and how we responded <a href='/2011/08/e-petitions-handling-traffic'>here</a>.</div>
 

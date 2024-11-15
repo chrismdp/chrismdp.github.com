@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "OStatus: what I've learnt in 24 hours"
-date: 2012-09-27 20:24:54 +0100
+title: 'OStatus: what I''ve learnt in 24 hours'
+date: 2012-09-27 20:24:54.000000000 +01:00
 categories:
-  - social
-  - ostatus
-  - open data
-  - open source
-
+- social
+- ostatus
+- open data
+- open source
+redirect_from:
+- "/2012/09/ostatus-what-ive-learnt-in-24-hours"
 ---
-
 [Yesterday's post](/2012/09/ostatus-like-twitter-but-open/) was rather [popular.](http://news.ycombinator.com/item?id=4574858)
 
 Here are a few things I've learnt since, from various commments, Hacker News posts and further reading:

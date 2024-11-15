@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "The cunning plans of Sol Trader"
-date: 2016-01-12 05:56:28 +0000
+title: The cunning plans of Sol Trader
+date: 2016-01-12 05:56:28.000000000 +00:00
 categories:
-  - indie games
-  - game design
-  - game development
-  - sol trader
-
+- indie games
+- game design
+- game development
+- sol trader
+redirect_from:
+- "/2016/01/the-cunning-plans-of-sol-trader"
 ---
-
 I've just finished reworking the old state-machine based AI system that I threw
 in to the game last year just to get something working. Sol Trader now boasts a
 full

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "The Sol Trader Christmas Eve update: moddable missions"
-date: 2015-12-24 07:43:19 +0000
+title: 'The Sol Trader Christmas Eve update: moddable missions'
+date: 2015-12-24 07:43:19.000000000 +00:00
 categories:
-  - indie games
-  - game design
-  - game development
-  - sol trader
-  - code
-
+- indie games
+- game design
+- game development
+- sol trader
+- code
+redirect_from:
+- "/2015/12/the-christmas-eve-update-with-moddable-missions"
 ---
-
 The relative radio silence from Sol Trader Towers is for a reason: I've been working hard on a flexible and moddable mission structure, that allows players to take a variety of interesting quests in-game.
 
 This build is now available [on the forums](http://forums.soltrader.net) should you have access ([there's still time if you don't](http://soltrader.net/back-us).)

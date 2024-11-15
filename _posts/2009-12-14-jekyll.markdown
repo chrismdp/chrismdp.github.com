@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Jekyll, the blog engine of kings
-date: 2009-12-14 17:10:00 +00:00
+date: 2009-12-14 17:10:00.000000000 +00:00
 categories:
-  - meta
+- meta
 redirect_from:
-  - /2009/12/jekyll
+- "/2009/12/jekyll"
 ---
 May I mention how cool [Jekyll](http://wiki.github.com/mojombo/jekyll) is? I achieved the following:
 

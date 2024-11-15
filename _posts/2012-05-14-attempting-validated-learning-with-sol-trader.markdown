@@ -1,18 +1,18 @@
 ---
 layout: post
-title: "Attempting validated learning with Sol Trader"
-date: 2012-05-14 10:18:47 +0100
+title: Attempting validated learning with Sol Trader
+date: 2012-05-14 10:18:47.000000000 +01:00
 categories:
-  - sol trader
-  - lean startup
-  - learning
-  - products
-  - agile
-  - lean
-  - business
-
+- sol trader
+- lean startup
+- learning
+- products
+- agile
+- lean
+- business
+redirect_from:
+- "/2012/05/attempting-validated-learning-with-sol-trader"
 ---
-
 <div class='alert alert-info'>
   If you'd like to purchase Sol Trader you can do so at <a href='http://soltrader.net'>soltrader.net</a>.
 </div>

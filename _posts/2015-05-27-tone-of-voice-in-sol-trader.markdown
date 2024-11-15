@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "How tone of voice works in Sol Trader's dialogue system"
-date: 2015-05-27 11:45:08 +0100
+title: How tone of voice works in Sol Trader's dialogue system
+date: 2015-05-27 11:45:08.000000000 +01:00
 categories:
-  - game design
-  - sol trader
-  - game development
-  - code
-
+- game design
+- sol trader
+- game development
+- code
+redirect_from:
+- "/2015/05/tone-of-voice-in-sol-trader"
 ---
-
 Hot on the heels of the [main dialogue system](/2015/05/how-dialogue-works-in-sol-trader/) in [Sol Trader](http://soltrader.net), I've been working on adding tone of voice to the system. I think this will add a lot to the way that the dialogue system works. It will allow for some interesting and thematic interactions, like the one below: 
 
 ![tone of voice](/files/sol-trader-tone-of-voice.png)

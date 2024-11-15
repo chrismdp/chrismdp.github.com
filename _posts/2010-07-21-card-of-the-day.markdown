@@ -1,14 +1,15 @@
 ---
 layout: post
-title: "Card Of The Day: Actually Do Retrospective Actions"
-date: 2010-07-22 10:45:00 +01:00
+title: 'Card Of The Day: Actually Do Retrospective Actions'
+date: 2010-07-22 10:45:00.000000000 +01:00
 categories:
-  - agile
-  - retrospectives
-  - process
-  - index cards
+- agile
+- retrospectives
+- process
+- index cards
+redirect_from:
+- "/2010/07/card-of-the-day"
 ---
-
 ![Current cards of the day at eden](/files/card-of-the-day-1.png)
 
 *Our current Card Of The Day board at Eden*

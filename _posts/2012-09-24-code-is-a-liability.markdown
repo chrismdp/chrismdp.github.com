@@ -2,17 +2,17 @@
 layout: post
 title: Your code is a liability
 redirect_to: https://deliverydoubled.com/our-code-is-a-liability
-date: 2012-09-24 20:48:13 +0100
+date: 2012-09-24 20:48:13.000000000 +01:00
 categories:
-  - code
-  - craftsmanship
-  - lean
-  - agile
-  - team
-  - liability
-
+- code
+- craftsmanship
+- lean
+- agile
+- team
+- liability
+redirect_from:
+- "/2012/09/code-is-a-liability"
 ---
-
 Your code is a liability.
 
 Every line you write means more for someone else to read, digest and understand. Each complex 'clever' regular expression represents another few minutes per team member trying to interpret what you wrote and why you wrote it. Every line you add limits your project's responsiveness to change.

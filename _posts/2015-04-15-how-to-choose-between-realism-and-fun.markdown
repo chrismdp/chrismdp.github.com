@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "How to choose between realism and fun in game design"
-date: 2015-04-15 13:39:44 +0100
+title: How to choose between realism and fun in game design
+date: 2015-04-15 13:39:44.000000000 +01:00
 categories:
-  - sol trader
-  - game development
-  - game design
-  - indie games
-
+- sol trader
+- game development
+- game design
+- indie games
+redirect_from:
+- "/2015/04/how-to-choose-between-realism-and-fun"
 ---
-
 ![city-view-screenshot](/files/sol-trader-city-view.jpg)
 
 I've been working on the city interaction screens this week on [Sol Trader](http://soltrader.net/), shown above. I've been considering how to implement the 'business as usual' tasks that players complete on landing at a city, such as filling the fuel tank, repairing their ship, or buying and selling trade commodities.

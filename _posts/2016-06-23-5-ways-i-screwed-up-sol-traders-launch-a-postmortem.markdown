@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "5 ways I screwed up Sol Trader's launch: a post-mortem"
-date: 2016-06-28 09:00:00 +0100
+title: '5 ways I screwed up Sol Trader''s launch: a post-mortem'
+date: 2016-06-28 09:00:00.000000000 +01:00
 categories:
-  - products
-  - business
-  - marketing
-  - sol trader
-  - game design
-  - game development
-
+- products
+- business
+- marketing
+- sol trader
+- game design
+- game development
+redirect_from:
+- "/2016/06/5-ways-i-screwed-up-sol-traders-launch-a-postmortem"
 ---
-
 So the Sol Trader launch ([Website](http://soltrader.net), [Steam](http://store.steampowered.com/app/396680)) didn't quite go according to plan. Here's my take on what happened, and what I'm doing about it for a 1.1 release in July.
 
 ## 1. Last minute tweaks gave rise to bugs at launch

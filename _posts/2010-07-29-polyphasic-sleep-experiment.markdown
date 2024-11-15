@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "My Polyphasic Sleep Experiment"
-date: 2010-07-29 09:45:00 +01:00
+title: My Polyphasic Sleep Experiment
+date: 2010-07-29 09:45:00.000000000 +01:00
 categories:
-  - productivity
-  - life
-  - sleep
+- productivity
+- life
+- sleep
+redirect_from:
+- "/2010/07/polyphasic-sleep-experiment"
 ---
 <p><i>I've always been one to try new things, and screwing with my sleep patterns to attempt to cram more into my day seemed like a fun thing to try :) I had a go at it a few weeks back, and wanted to share my experience.</i></p>
 

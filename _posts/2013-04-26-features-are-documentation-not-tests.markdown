@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "Features are documentation, not tests"
-date: 2013-04-26 08:50:13 +0100
+title: Features are documentation, not tests
+date: 2013-04-26 08:50:13.000000000 +01:00
 categories:
-  - bdd
-  - cucumber
-  - state
-  - ruby
-  - sol trader
-
+- bdd
+- cucumber
+- state
+- ruby
+- sol trader
+redirect_from:
+- "/2013/04/features-are-documentation-not-tests"
 ---
-
 Cucumber features are primarily documentation, and only incidentally tests to execute.
 
 However, it's easy to fall into the trap of writing features which don't actually read like documentation at all, but a long, tortuous, and highly repetitive mess of tests.

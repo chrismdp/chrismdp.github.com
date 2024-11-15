@@ -1,18 +1,18 @@
 ---
 layout: post
-title: "Why video game coders don't use TDD, and why it matters"
-date: 2015-03-11 10:37:37 +0000
+title: Why video game coders don't use TDD, and why it matters
+date: 2015-03-11 10:37:37.000000000 +00:00
 categories:
-  - sol trader
-  - tdd
-  - indie games
-  - game development
-  - testing
-  - code
-  - functional programming
-
+- sol trader
+- tdd
+- indie games
+- game development
+- testing
+- code
+- functional programming
+redirect_from:
+- "/2015/03/why-games-coders-dont-use-tdd-and-why-it-matters"
 ---
-
 ![NES test station](/files/nes-test-station.jpg)
 
 Whilst working on [Sol Trader](http://soltrader.net), I've written many unit tests for my code. Many of these tests have been written before the code itself, using a practice called Test-driven Development (TDD).

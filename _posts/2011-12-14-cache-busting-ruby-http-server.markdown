@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "A cache-busting http server script in ruby"
-date: 2011-12-14 16:57:43 +0000
+title: A cache-busting http server script in ruby
+date: 2011-12-14 16:57:43.000000000 +00:00
 categories:
-  - code
-  - javascript
-  - ruby
+- code
+- javascript
+- ruby
+redirect_from:
+- "/2011/12/cache-busting-ruby-http-server"
 ---
 <p><i>"All of this can be yours/just give me what I want/and no one gets hurt"</i></p>
 

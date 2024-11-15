@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Learning to say Yes"
-date: 2011-03-30 14:02:47 +0100
+title: Learning to say Yes
+date: 2011-03-30 14:02:47.000000000 +01:00
 categories:
-  - productivity
-  - life
+- productivity
+- life
+redirect_from:
+- "/2011/03/learning-to-say-yes"
 ---
 <p><i>"Saying yes begins things. Saying yes is how things grow. Saying yes leads to knowledge. 'Yes' is for young people. So for as long as you have the strength to, say yes."</i></p>
 

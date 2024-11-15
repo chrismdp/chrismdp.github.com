@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "The team is the atomic unit of success"
+title: The team is the atomic unit of success
 redirect_to: https://deliverydoubled.com/3-ways-to-increase-team-safety-and-reduce-mistakes/
-date: 2011-04-05 16:14:49 +0100
+date: 2011-04-05 16:14:49.000000000 +01:00
 categories:
-  - business
-  - team
+- business
+- team
+redirect_from:
+- "/2011/04/the-team-is-the-atomic-unit"
 ---
 When something goes wrong, it's not "his fault", it's "our fault".
 

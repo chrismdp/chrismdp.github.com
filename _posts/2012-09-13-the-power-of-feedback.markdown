@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "The power of feedback"
-date: 2012-09-13 13:52:16 +0100
+title: The power of feedback
+date: 2012-09-13 13:52:16.000000000 +01:00
 categories:
-  - lean startup
-  - tdd
-  - bdd
-  - feedback
-  - lean
-
+- lean startup
+- tdd
+- bdd
+- feedback
+- lean
+redirect_from:
+- "/2012/09/the-power-of-feedback"
 ---
-
 <p><i>"Everyone has a story that makes me stronger." -- Richard Simmons</i></p>
 
 There's something about feedback. Whether it's the validation of your latest idea, a hit on your webpage showing up on Google Analytics, or something as simple as a passing test, it's a valuable and important motivational commodity, which can also shape the direction in which we're going very precisely.

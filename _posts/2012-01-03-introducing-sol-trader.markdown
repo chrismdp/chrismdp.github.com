@@ -1,14 +1,15 @@
 ---
 layout: post
 title: Introducing Sol Trader
-date: 2012-01-03 14:53:53 +0000
+date: 2012-01-03 14:53:53.000000000 +00:00
 categories:
-  - products
-  - code
-  - life
-  - sol trader
-  - game development
-
+- products
+- code
+- life
+- sol trader
+- game development
+redirect_from:
+- "/2012/01/introducing-sol-trader"
 ---
 Happy new year, everybody! It's been a little while in coming, but I've finally got to the point where I want to announce the project I've been working on privately for the last few months. I'm heading after a dream, and I want to share it with you.
 

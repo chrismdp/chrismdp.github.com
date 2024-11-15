@@ -1,18 +1,18 @@
 ---
 layout: post
-title: "How to quickly add bloom to your game engine"
-date: 2015-06-10 18:30:04 +0100
+title: How to quickly add bloom to your game engine
+date: 2015-06-10 18:30:04.000000000 +01:00
 categories:
-  - game design
-  - sol trader
-  - game development
-  - code
-  - opengl
-  - bloom
-  - c++
-
+- game design
+- sol trader
+- game development
+- code
+- opengl
+- bloom
+- c++
+redirect_from:
+- "/2015/06/how-to-quickly-add-bloom-to-your-engine"
 ---
-
 I rewrote [Sol Trader's](http://soltrader.net) bloom code last week. I originally added bloom [over three years ago](/2012/02/effective-bloom-in-open-gl-for-sol-trader/), and now I'm refreshing of the internals of the game, it was time to take a fresh look at it.
 
 ![bloom before and after](/files/sol-trader-bloom-2-before-after.png)

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Introducing: Ealdorlight"
-date: 2017-03-31 07:58:50 +0100
+title: 'Introducing: Ealdorlight'
+date: 2017-03-31 07:58:50.000000000 +01:00
 categories:
-  - products
-  - ealdorlight
-  - game development
-  - indie games
-
+- products
+- ealdorlight
+- game development
+- indie games
+redirect_from:
+- "/2017/03/introducing-ealdorlight"
 ---
-
 I'm very excited to be able to announce my new game...
 
 <div class='embed-responsive embed-responsive-16by9' style='margin-bottom: 10px'>

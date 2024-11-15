@@ -1,16 +1,16 @@
 ---
 layout: post
 title: Why you can scale agile with the right attitudes
-date: 2014-12-02 17:16:38 +0000
+date: 2014-12-02 17:16:38.000000000 +00:00
 categories:
- - bdd
- - agile
- - process
- - team
- - leadership
-
+- bdd
+- agile
+- process
+- team
+- leadership
+redirect_from:
+- "/2014/12/why-you-can-scale-agile-with-the-right-attitudes"
 ---
-
 The more I work with teams, the more I think agile at any scale lives or dies
 based on attitudes of people in the organisation, rather than the scale at
 which you are attempting to do it.

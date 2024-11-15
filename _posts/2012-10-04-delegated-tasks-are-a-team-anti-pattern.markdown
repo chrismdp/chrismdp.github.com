@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Delegated tasks are a team anti-pattern
-date: 2012-10-04 07:49:57 +0100
+date: 2012-10-04 07:49:57.000000000 +01:00
 categories:
-  - team
-  - anti-pattern
-  - process
-  - management
-  - leadership
-  - productivity
-
+- team
+- anti-pattern
+- process
+- management
+- leadership
+- productivity
+redirect_from:
+- "/2012/10/delegated-tasks-are-a-team-anti-pattern"
 ---
-
 "Jane, I'd like you to phone up the recruiter, and tell them we need a new agency person. Don't use Jim from Acme Recruitment again, you didn't get very far with him last time. Make sure you book whoever it is in for a week to work with us as a trial, like last time. That worked well."
 
 "Jane, can you find us a great developer for the new website we mentioned in standup last week? Let me know if you need help."

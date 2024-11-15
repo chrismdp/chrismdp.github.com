@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "Use Markdown to send HTML email via Mutt: now working on iOS mail"
-date: 2013-10-07 20:23:24 +0100
+title: 'Use Markdown to send HTML email via Mutt: now working on iOS mail'
+date: 2013-10-07 20:23:24.000000000 +01:00
 categories:
-  - email
-  - config
-  - howto
-  - mutt
-  - ios
-  - markdown
-
+- email
+- config
+- howto
+- mutt
+- ios
+- markdown
+redirect_from:
+- "/2013/10/using-markdown-to-send-html-email-via-mutt"
 ---
-
 A technical configuration post this time around. If you're a fan of the [Mutt](http://www.mutt.org) command line email program then read on...
 
 For a while I've been writing HTML email using Markdown, on the odd occasion I feel the need to format my emails. I've followed the instructions on [this site](https://dgl.cx/2009/03/html-mail-with-mutt-using-markdown) and it's been working to great effect: except in one specific case.

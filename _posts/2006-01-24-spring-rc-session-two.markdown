@@ -1,12 +1,14 @@
 ---
 layout: post
 title: Spring Richclient ~ Session Two ~ Hello World
-date: 2006-01-24 14:40:00 +00:00
+date: 2006-01-24 14:40:00.000000000 +00:00
 categories:
-  - richclient 
-  - java 
-  - spring
-  - tutorial
+- richclient
+- java
+- spring
+- tutorial
+redirect_from:
+- "/2006/01/spring-rc-session-two"
 ---
 <div class='alert'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
           

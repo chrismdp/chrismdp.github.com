@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Eden Development has closed"
-date: 2011-03-25 15:52:09 +0000
+title: Eden Development has closed
+date: 2011-03-25 15:52:09.000000000 +00:00
 categories:
-  - business
-  - life
+- business
+- life
+redirect_from:
+- "/2011/03/eden-development-closing"
 ---
 I'll dive right in: Eden Development ceased trading and closed its doors yesterday, 24th March 2011.
 

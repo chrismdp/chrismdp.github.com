@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Never leave a failing test
-date: 2012-09-20 15:36:32 +0100
+date: 2012-09-20 15:36:32.000000000 +01:00
 categories:
-  - tdd
-  - craftsmanship
-  - code
-  - testing
-
+- tdd
+- craftsmanship
+- code
+- testing
+redirect_from:
+- "/2012/09/failing-tests-rot"
 ---
-
 <p>Imagine this: you're taking a guided tour of a nuclear power station. Just above the door as you come in there there are five lights marked Key Safety Indicators. One of the lights is flashing red.</p>
 
 "What's that flashing red light?" you nervously ask your host.

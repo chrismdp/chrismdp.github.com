@@ -1,19 +1,19 @@
 ---
 layout: post
-title: "Why Ealdorlight's Kickstarter might have failed"
-date: 2017-11-19 22:17:16 +0000
-image: /files/games-you-should-make.png
+title: Why Ealdorlight's Kickstarter might have failed
+date: 2017-11-19 22:17:16.000000000 +00:00
+image: "/files/games-you-should-make.png"
 categories:
-  - products
-  - ealdorlight
-  - sol trader
-  - game development
-  - indie games
-  - revelation games
-  - kickstarter
-
+- products
+- ealdorlight
+- sol trader
+- game development
+- indie games
+- revelation games
+- kickstarter
+redirect_from:
+- "/2017/11/why-ealdorlight-kickstarter-might-have-failed"
 ---
-
 ![Ealdorlight Banner](/files/el-banner.jpg)
 
 It’s now been over three months since the end of the [Ealdorlight Kickstarter campaign](https://www.kickstarter.com/projects/chrismdp/ealdorlight). I've deliberately been taking some time to think and learn from the fact that it didn't reach the target, and to work out what to do next. Frankly, I was pretty upset that the campaign didn't make it, and it's taken a while to get over it.

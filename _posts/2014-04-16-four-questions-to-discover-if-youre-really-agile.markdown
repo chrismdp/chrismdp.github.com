@@ -1,16 +1,16 @@
 ---
 layout: post
 title: 4 questions to discover if you're *really* agile...
-date: 2014-04-16 18:05:32 +0100
+date: 2014-04-16 18:05:32.000000000 +01:00
 categories:
-  - agile
-  - anti-pattern
-  - process
-  - tools
-  - bdd
-
+- agile
+- anti-pattern
+- process
+- tools
+- bdd
+redirect_from:
+- "/2014/04/four-questions-to-discover-if-youre-really-agile"
 ---
-
 Here's a challenge: how many of these questions are are true for your team? (Be honest.)
 
 * Does our team value processes and tools (i.e. our task tracker, source control program, our agile process, our meeting cadence, etc) over conversations between team members?

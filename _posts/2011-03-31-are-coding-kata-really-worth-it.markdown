@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Are coding katas really worth it?"
-date: 2011-03-31 13:20:29 +0100
+title: Are coding katas really worth it?
+date: 2011-03-31 13:20:29.000000000 +01:00
 categories:
-  - katas
-  - karate
-  - life
-  - apprenticeship
+- katas
+- karate
+- life
+- apprenticeship
+redirect_from:
+- "/2011/03/are-coding-kata-really-worth-it"
 ---
 Last year I took up [Wado-ryu Karate](http://en.wikipedia.org/wiki/Wad%C5%8D-ry%C5%AB). It's something that I've always wanted to do, and yet never quite got around to. I briefly took it up at university about 15 years ago, and put it down rather too quickly. About a year ago I decided it was time for me to stop saying "I wished I'd learnt it", and got down to actually learning it.
 

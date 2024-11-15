@@ -1,9 +1,11 @@
 ---
 layout: post
 title: Old blog articles from yesteryear
-date: 2009-12-29 22:45:00 +00:00
+date: 2009-12-29 22:45:00.000000000 +00:00
 categories:
-  - meta
+- meta
+redirect_from:
+- "/2009/12/old-blog-articles"
 ---
 I've spent the evening importing some old articles from my past blogging days, so they're all in one place. By all means peruse the following pieces of history:
 

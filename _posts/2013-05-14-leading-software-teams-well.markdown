@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Slides for "Leading software teams well"
-date: 2013-05-14 14:01:21 +0100
+date: 2013-05-14 14:01:21.000000000 +01:00
 categories:
-  - leadership
-  - team
-  - conference
-
+- leadership
+- team
+- conference
+redirect_from:
+- "/2013/05/leading-software-teams-well"
 ---
-
 I'm just on the way back from the [Scottish Ruby Conference](http://scottishrubyconference.com), where I delivered a new talk called "Leading software teams well". The slides are below, and I'll update this post with the video when it comes online.
 
 It's refreshing to talk about something both non-technical, which makes it more accessible, and something that's as universally essential as leadership. The talk is titled for software teams, but it's equally applicable to any kind of team. It charts my experiences as a wannabe leader at the tender age of 22, through to a frustrated manager who no longer writes code for a living.

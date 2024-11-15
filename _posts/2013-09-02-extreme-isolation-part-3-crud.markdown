@@ -1,19 +1,19 @@
 ---
 layout: post
-title: "Extreme isolation part 3: coding a CRUD app (with full example)"
-date: 2013-09-02 11:22:27 +0100
+title: 'Extreme isolation part 3: coding a CRUD app (with full example)'
+date: 2013-09-02 11:22:27.000000000 +01:00
 categories:
-  - ruby
-  - state
-  - craftsmanship
-  - crud
-  - code
-  - cucumber
-  - testing
-  - extreme isolation
-
+- ruby
+- state
+- craftsmanship
+- crud
+- code
+- cucumber
+- testing
+- extreme isolation
+redirect_from:
+- "/2013/09/extreme-isolation-part-3-crud"
 ---
-
 <a href="http://www.flickr.com/photos/9790232@N05/1298814620/" title="Street Crud by Jeremy Doucette, on Flickr"><img src="http://farm2.staticflickr.com/1086/1298814620_5c902c6fef_z.jpg" width="640" height="427" alt="Street Crud"></a>
 
 *CRUD apps start simple, yet often get messy and nasty really fast. They are a great test bed for Extreme Isolation.*

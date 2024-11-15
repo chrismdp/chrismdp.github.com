@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "After a long journey, Sol Trader has been greenlit!"
-date: 2015-03-18 09:17:03 +0000
+title: After a long journey, Sol Trader has been greenlit!
+date: 2015-03-18 09:17:03.000000000 +00:00
 categories:
-  - sol trader
-  - indie games
-  - steam
-  - game development
-  - marketing
-
+- sol trader
+- indie games
+- steam
+- game development
+- marketing
+redirect_from:
+- "/2015/03/sol-trader-has-been-greenlit"
 ---
-
 ![Greenlight notice](/files/sol-trader-greenlit.jpg)
 
 I've not yet announced this properly, and it deserves a proper announcement:

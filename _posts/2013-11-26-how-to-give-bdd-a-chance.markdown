@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "How to give BDD a chance"
-date: 2013-11-26 17:59:30 +0000
+title: How to give BDD a chance
+date: 2013-11-26 17:59:30.000000000 +00:00
 categories:
-  - bdd
-  - team
-  - agile
-  - leadership
-  - management
-
+- bdd
+- team
+- agile
+- leadership
+- management
+redirect_from:
+- "/2013/11/how-to-give-bdd-a-chance"
 ---
-
 Adopting BDD is hard.
 
 It's not that the tools are difficult to use: they're already great on many platforms and fast improving in others.

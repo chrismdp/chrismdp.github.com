@@ -1,16 +1,16 @@
 ---
 layout: post
 title: How to decide whether a tool is right for you
-date: 2014-05-07 13:10:47 +0100
+date: 2014-05-07 13:10:47.000000000 +01:00
 categories:
-  - tools
-  - anti-pattern
-  - process
-  - craftsmanship
-  - bdd
-
+- tools
+- anti-pattern
+- process
+- craftsmanship
+- bdd
+redirect_from:
+- "/2014/05/how-to-decide-whether-a-tool-is-right-for-you"
 ---
-
 [![tools](http://chrismdp.com/files/tools.jpg)](https://flic.kr/p/5YWuWk)
 
 We are only at the beginning of our journey in building software. Our discipline is barely a few decades old. We have only a very little experience in how to correctly write code and a limited range of tools and skills to do it with. We should be actively looking for new tools, not wasting our time either promoting our toolset exclusively or disparaging the toolsets of others.

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Extreme YAGNI: How BDD nails your prototyping stage"
-date: 2016-05-04 09:51:54 +0100
+title: 'Extreme YAGNI: How BDD nails your prototyping stage'
+date: 2016-05-04 09:51:54.000000000 +01:00
 categories:
-  - bdd
-  - cucumber
-  - team
-  - lean startup
-
+- bdd
+- cucumber
+- team
+- lean startup
+redirect_from:
+- "/2016/05/how-bdd-nails-your-prototyping-stage"
 ---
-
 ![prototyping](/files/prototyping.jpg)
 
 Sometimes people don't see the value in the [BDD](/tag/bdd) process. They contend that the BDD ceremonies are a waste of time, and get in the way of delivering real features to customers. Others cannot see how to apply BDD to their project, as no-one knowns exactly what the project will look like yet. As they're only in the prototyping stage, by the time a feature file is written and made executable, it's already out of date.

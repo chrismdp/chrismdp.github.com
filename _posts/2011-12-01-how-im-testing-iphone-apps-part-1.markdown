@@ -1,13 +1,15 @@
 ---
 layout: post
-title: "How I'm testing iPhone apps: part 1"
-date: 2011-12-01 22:45:35 +0000
+title: 'How I''m testing iPhone apps: part 1'
+date: 2011-12-01 22:45:35.000000000 +00:00
 categories:
-  - code
-  - ios
-  - tdd
-  - bdd
-  - testing ios
+- code
+- ios
+- tdd
+- bdd
+- testing ios
+redirect_from:
+- "/2011/12/how-im-testing-iphone-apps-part-1"
 ---
 <p><i>This week I've been working with <a href='http://shilling.co.uk'>Shilling</a> helping them get starting with iOS application development. Part of the deal was for me to learn it myself as we went: I've done hardly any iOS work and we've been learning how to do it together.</i></p>
 

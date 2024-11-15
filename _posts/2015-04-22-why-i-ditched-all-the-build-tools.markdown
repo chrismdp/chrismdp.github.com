@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "Why I ditched all the build tools in favour of a simple script"
-date: 2015-04-22 11:42:46 +0100
+title: Why I ditched all the build tools in favour of a simple script
+date: 2015-04-22 11:42:46.000000000 +01:00
 categories:
-  - code
-  - tools
-  - game development
-  - continuous integration
-  - sol trader
-
+- code
+- tools
+- game development
+- continuous integration
+- sol trader
+redirect_from:
+- "/2015/04/why-i-ditched-all-the-build-tools"
 ---
-
 [![white elephant](/files/white-elephant.jpg)](https://www.flickr.com/photos/pattoise/10667319965/)
 
 Build tools are wonderful and impressive constructions. We developers invest colossal amounts of time, effort and code into their creation and maintenance.

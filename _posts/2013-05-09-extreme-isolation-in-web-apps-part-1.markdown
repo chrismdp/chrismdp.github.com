@@ -1,20 +1,20 @@
 ---
 layout: post
-title: "Extreme isolation in web apps: part 1"
-date: 2013-05-09 10:34:52 +0100
+title: 'Extreme isolation in web apps: part 1'
+date: 2013-05-09 10:34:52.000000000 +01:00
 categories:
-  - ruby
-  - state
-  - craftsmanship
-  - refactoring
-  - sol trader
-  - code
-  - cucumber
-  - testing
-  - extreme isolation
-
+- ruby
+- state
+- craftsmanship
+- refactoring
+- sol trader
+- code
+- cucumber
+- testing
+- extreme isolation
+redirect_from:
+- "/2013/05/extreme-isolation-in-web-apps-part-1"
 ---
-
 I've been hard at work on a web based prototype for Sol Trader recently in order to test some game mechanics ideas.[^soltrader] I've been building the web app in a slight different way to the normal process I use to build web software, and it's high time I started talking about it.
 
 The examples are written using Sinatra as the web layer and MongoDB as the persistence layer, but you could use any web framework, persistence mechanism, or language for that matter, to express the same concepts. In fact, that's really the point.

@@ -1,16 +1,16 @@
 ---
 layout: post
 title: Introducing Morning Pages
-date: 2012-09-21 13:25:13 +0100
+date: 2012-09-21 13:25:13.000000000 +01:00
 categories:
-  - life
-  - writing
-  - personal
-  - products
-  - productivity
-
+- life
+- writing
+- personal
+- products
+- productivity
+redirect_from:
+- "/2012/09/introducing-morning-pages"
 ---
-
 I've [written before](/2010/07/seven-hundred-and-fifty-words) about the value of Morning Pages - a way of clearing your head in the mornings by writing down three pages on everything you're thinking and feeling.
 
 In order to write my words, I used [750words.com](http://750words.com) for a number of years, but I've become a little disenfranchised with having private writings stored permanently in the cloud. I also write fastest in vim, which means writing into a website slows me down. What I really wanted was to store my words privately on my laptop, and yet also include a public incentive system: this is what made 750words.com so effective at keeping me motivated.

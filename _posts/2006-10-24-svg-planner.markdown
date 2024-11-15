@@ -1,12 +1,14 @@
 ---
 layout: post
 title: SVG Planner
-date: 2006-10-24 00:00:00 +00:00
+date: 2006-10-24 00:00:00.000000000 +00:00
 categories:
-  - svg
-  - DIY Planner
-  - GTD
-  - productivity
+- svg
+- DIY Planner
+- GTD
+- productivity
+redirect_from:
+- "/2006/10/svg-planner"
 ---
 <div class='alert'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
 

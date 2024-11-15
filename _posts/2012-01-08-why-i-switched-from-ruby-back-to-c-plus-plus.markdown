@@ -1,15 +1,16 @@
 ---
 layout: post
-title: "Why I switched from Ruby back to C++"
-date: 2012-01-08 20:21:41 +0000
+title: Why I switched from Ruby back to C++
+date: 2012-01-08 20:21:41.000000000 +00:00
 categories:
-  - products
-  - ruby
-  - c++
-  - code
-  - sol trader
-  - game development
-
+- products
+- ruby
+- c++
+- code
+- sol trader
+- game development
+redirect_from:
+- "/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus"
 ---
 <div class='alert alert-info'>
   <b>UPDATE:</b> This post was pretty popular. I've posted a followup <a href="/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on/">here</a>.

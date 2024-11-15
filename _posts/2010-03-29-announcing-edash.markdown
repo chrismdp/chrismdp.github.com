@@ -1,9 +1,11 @@
 ---
 layout: post
 title: Announcing edash
-date: 2010-03-29 22:05:00 +01:00
+date: 2010-03-29 22:05:00.000000000 +01:00
 categories:
-  - information radiator
+- information radiator
+redirect_from:
+- "/2010/03/announcing-edash"
 ---
 I've been hinting at the dashboard application I've been hacking on recently and after showing it off to a few people at the [Scottish Ruby Conference](http://scottishrubyconference.com) it's about time I released it open source.
 

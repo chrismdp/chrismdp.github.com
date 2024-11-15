@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "The top 5 space games of 2015"
-date: 2016-01-28 14:15:26 +0000
+title: The top 5 space games of 2015
+date: 2016-01-28 14:15:26.000000000 +00:00
 categories:
-  - indie games
-  - game design
-
+- indie games
+- game design
+redirect_from:
+- "/2016/01/top-5-space-games-of-2015"
 ---
-
 Many people spend the beginning of January reviewing the games that have come out in the previous year and looking forward to those on the horizon. I spent the beginning of January [rewriting the whole of Sol Trader's AI subsystems](http://chrismdp.com/2016/01/the-cunning-plans-of-sol-trader/) and so it's taken until the end of January for to me to look back at what has gone before.
 
 So before it's too late: here are my top 5 space games released in the last 12 months.

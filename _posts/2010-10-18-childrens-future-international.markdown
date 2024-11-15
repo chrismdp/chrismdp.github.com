@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "Call for coders: Children's Future International"
-date: 2010-10-18 19:42:33 +0100
+title: 'Call for coders: Children''s Future International'
+date: 2010-10-18 19:42:33.000000000 +01:00
 categories:
-  - code
-  - charity
+- code
+- charity
+redirect_from:
+- "/2010/10/childrens-future-international"
 ---
-
 For the past few months [my company](http://edendevelopment.co.uk) has been involved with a charity in Cambodia called [Children's Future International](http://www.childrensfutureinternational.org/). They are a fantastic organisation dedicated to helping children in very challenging conditions; they enable them to live and be educated in a safe community. 
 
 We've been helping them to build a system to keep track of where their students live, which school they go to and which programmes they are involved with.

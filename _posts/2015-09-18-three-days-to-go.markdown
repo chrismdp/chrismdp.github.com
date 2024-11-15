@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Three days to go"
-date: 2015-09-18 16:08:02 +0100
+title: Three days to go
+date: 2015-09-18 16:08:02.000000000 +01:00
 categories:
-  - sol trader
-  - kickstarter
-  - game design
-  - game development
-
+- sol trader
+- kickstarter
+- game design
+- game development
+redirect_from:
+- "/2015/09/three-days-to-go"
 ---
-
 The beta test is finished. The demo is ready. The campaign is prepared. The video is uploaded. The press releases are written and sent.
 
 **It's now only three days to go until the new Kickstarter campaign for Sol Trader!**

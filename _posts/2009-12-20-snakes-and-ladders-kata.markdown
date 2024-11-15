@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Snakes and Ladders Kata
-date: 2009-12-20 22:20:00 +00:00
+date: 2009-12-20 22:20:00.000000000 +00:00
 categories:
-  - katas
-  - fun
+- katas
+- fun
+redirect_from:
+- "/2009/12/snakes-and-ladders-kata"
 ---
 I've been mentoring a couple of guys at Eden over the last few weeks. They've been working away on the [Binary Chop kata](http://codekata.pragprog.com/2007/01/kata_two_karate.html) and it's been generating some interesting discussions on what Test Driven Development actually is, and how to do it properly. 
 

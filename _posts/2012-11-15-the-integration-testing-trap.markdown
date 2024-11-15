@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Cucumber: the integration testing trap"
-date: 2012-11-15 17:04:26 +0000
+title: 'Cucumber: the integration testing trap'
+date: 2012-11-15 17:04:26.000000000 +00:00
 categories:
-  - cucumber
-  - bdd
-  - testing
-  - tdd
-
+- cucumber
+- bdd
+- testing
+- tdd
+redirect_from:
+- "/2012/11/the-integration-testing-trap"
 ---
-
 "Why don't people read my Cucumber features?"
 
 It's an often heard refrain, and it can feel frustrating for developers. We carefully craft features that make sense to us, and are reasonably easy for us to understand. We post them over to our product manager hopefully, but a glazed look comes over their face as they read them, and they seem only to read the first half before becomes distracted, and mumble that they "look fine", before moving on to something else. As developers, what can we do about this?

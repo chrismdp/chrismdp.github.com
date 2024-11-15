@@ -1,12 +1,14 @@
 ---
 layout: post
 title: How to test your node.js app
-date: 2010-05-23 11:05:00 +01:00
+date: 2010-05-23 11:05:00.000000000 +01:00
 categories:
-  - javascript
-  - code
-  - tdd
-  - node.js
+- javascript
+- code
+- tdd
+- node.js
+redirect_from:
+- "/2010/05/tdd-with-node-js"
 ---
 I've wanted to hack on a [node.js](http://nodejs.org) project for a while, and a new app idea has given me the perfect excuse. My first question was: how do I test this? It's a fairly new field out there, and there isn't much help from node.js itself: it's much more like [Rack](http://rack.rubyforge.org/) than a proper framework. So I spent some time coming up with one way to do it.
 

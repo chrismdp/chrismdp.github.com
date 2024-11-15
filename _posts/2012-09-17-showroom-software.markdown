@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Showroom software
-date: 2012-09-17 20:34:12 +0100
+date: 2012-09-17 20:34:12.000000000 +01:00
 categories:
-  - products
-  - business
-  - lean
-
+- products
+- business
+- lean
+redirect_from:
+- "/2012/09/showroom-software"
 ---
-
 I went to IKEA recently to buy some more furniture for my office. Whilst wandering around trying to find the desk I wanted, I happened across a one-bedroom showroom apartment. The designers of this apartment had spent a lot of time and effort getting the most out of very limited space: so much so that they had fitted this entire home, including shower room, kitchenette, dining table, lounge with sofa bed and wardrobe storage into only <i>25 square metres.</i>
 
 Think about that for a second. That's five metres by five metres. It's an extroadinarily small space to fit in a whole home, but they had managed it. What's more, it looked great! Everything was set up perfectly: you felt as if you could just move in there and then.

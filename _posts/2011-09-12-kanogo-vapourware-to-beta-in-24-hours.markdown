@@ -1,16 +1,18 @@
 ---
 layout: post
-title: "Kanogo: vapourware to beta in 24 hours"
-date: 2011-09-12 11:30:37 +0100
+title: 'Kanogo: vapourware to beta in 24 hours'
+date: 2011-09-12 11:30:37.000000000 +01:00
 categories:
-  - code
-  - products
-  - business
-  - kano analysis
-  - rails
-  - heroku
-  - ruby
-  - kanogo
+- code
+- products
+- business
+- kano analysis
+- rails
+- heroku
+- ruby
+- kanogo
+redirect_from:
+- "/2011/09/kanogo-vapourware-to-beta-in-24-hours"
 ---
 <div class='alert alert-info alert-block'>
   <h2>TL;DR</h2>

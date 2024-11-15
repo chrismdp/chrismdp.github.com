@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Sol Trader Kickstarter now live!"
-date: 2015-09-21 19:48:37 +0100
+title: Sol Trader Kickstarter now live!
+date: 2015-09-21 19:48:37.000000000 +01:00
 categories:
-  - sol trader
-  - kickstarter
-  - game development
-
+- sol trader
+- kickstarter
+- game development
+redirect_from:
+- "/2015/09/sol-trader-kickstarter-now-live"
 ---
-
 <div class='alert alert-info'><strong>TL;DR:</strong> You can <a href='http://soltrader.net/kickstarter'>visit the campaign here</a></p></div>
 
 <div class='embed-responsive embed-responsive-4by3'>

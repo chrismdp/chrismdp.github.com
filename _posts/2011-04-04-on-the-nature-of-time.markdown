@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "On the nature of time"
-date: 2011-04-04 14:27:24 +0100
+title: On the nature of time
+date: 2011-04-04 14:27:24.000000000 +01:00
 categories:
-  - pomodoros
-  - life
-  - productivity
+- pomodoros
+- life
+- productivity
+redirect_from:
+- "/2011/04/on-the-nature-of-time"
 ---
 <p><i>"Time is not a reality, but a concept or a measure."</i></p>
 

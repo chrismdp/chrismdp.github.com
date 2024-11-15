@@ -1,20 +1,20 @@
 ---
 layout: post
-title: "The toolchain of dreams"
-date: 2013-09-19 15:11:58 +0100
+title: The toolchain of dreams
+date: 2013-09-19 15:11:58.000000000 +01:00
 categories:
-  - ruby
-  - continuous delivery
-  - continuous integration
-  - tools
-  - code
-  - rails
-  - git
-  - craftsmanship
-  - bdd
-
+- ruby
+- continuous delivery
+- continuous integration
+- tools
+- code
+- rails
+- git
+- craftsmanship
+- bdd
+redirect_from:
+- "/2013/09/the-toolchain-of-dreams"
 ---
-
 Seems like yesterday people were saying that it
 was difficult to host Ruby apps. It was around the time people were saying "Rails doesn't scale", which thankfully [has](http://twitter.com) [been](http://github.com) [proved](http://groupon.com) [dramatically](http://ask.fm) [wrong](http://gov.uk).
 

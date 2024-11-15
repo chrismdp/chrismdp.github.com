@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "BDD Kickstart: London and 2013 plans"
-date: 2013-01-03 07:31:11 +0000
+title: 'BDD Kickstart: London and 2013 plans'
+date: 2013-01-03 07:31:11.000000000 +00:00
 categories:
-  - bddkickstart
-  - bdd
-  - ruby
-
+- bddkickstart
+- bdd
+- ruby
+redirect_from:
+- "/2013/01/bddkickstart-london-and-2013"
 ---
-
 Fancy an update on BDD Kickstart? Here's a quick summary of where we got to at the end of last year, and what we have planned for 2013.
 
 ## BDD Kickstart London, December 4-6, 2012

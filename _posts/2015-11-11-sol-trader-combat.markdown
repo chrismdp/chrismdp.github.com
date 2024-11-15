@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "Sol Trader combat preview"
-date: 2015-11-11 17:03:57 +0000
+title: Sol Trader combat preview
+date: 2015-11-11 17:03:57.000000000 +00:00
 categories:
-  - indie games
-  - game design
-  - game development
-  - sol trader
-  - code
-
+- indie games
+- game design
+- game development
+- sol trader
+- code
+redirect_from:
+- "/2015/11/sol-trader-combat"
 ---
-
 Since the [Kickstarter was successfully funded last month](https://www.kickstarter.com/projects/chrismdp/sol-trader), I've been working hard the next major feature: combat!
 
 Here's a short video showing progress so far. If you're on the beta of the game, head over to the [forums](http://forums.soltrader.net) - you can grab a new copy of the game today and start shooting things for yourself! (There's [still time to jump on the beta](http://soltrader.net/back-us) if you aren't already...)

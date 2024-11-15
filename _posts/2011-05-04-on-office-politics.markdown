@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "On Office Politics"
-date: 2011-05-04 14:32:00 +0100
+title: On Office Politics
+date: 2011-05-04 14:32:00.000000000 +01:00
 categories:
-  - team
-  - business
+- team
+- business
+redirect_from:
+- "/2011/05/on-office-politics"
 ---
 <p><i>"In politics, as on the sickbed, people toss from side to side, thinking they will be more comfortable."</i></p>
 

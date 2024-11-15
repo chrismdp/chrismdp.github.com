@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Should we store state in our steps?
-date: 2012-11-07 23:50:39 +0000
+date: 2012-11-07 23:50:39.000000000 +00:00
 categories:
-  - cucumber
-  - bdd
-  - ruby
-  - state
-
+- cucumber
+- bdd
+- ruby
+- state
+redirect_from:
+- "/2012/11/storing-state-in-your-steps"
 ---
-
 It's quite common to store state inside our cucumber steps in member variables, like so:
 
 {% highlight ruby %}

@@ -1,9 +1,11 @@
 ---
 layout: post
 title: Welcome
-date: 2009-12-14 16:50:00 +00:00
+date: 2009-12-14 16:50:00.000000000 +00:00
 categories:
-  - meta
+- meta
+redirect_from:
+- "/2009/12/first-post"
 ---
 Welcome to my new github blog. This blog will contain wonderful insightful witty comment on many things, such as business, code, crafting and life.
 

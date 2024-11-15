@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Layers of abstraction: combining BDD and UX"
-date: 2011-09-05 20:44:03 +0100
+title: 'Layers of abstraction: combining BDD and UX'
+date: 2011-09-05 20:44:03.000000000 +01:00
 categories:
-  - bdd
-  - cucumber
-  - agile
-  - ux
+- bdd
+- cucumber
+- agile
+- ux
+redirect_from:
+- "/2011/09/layers-of-abstraction-bdd-ux"
 ---
 I first came across [Gokjo Adzic's thoughts on the different levels of UI test automation](http://gojko.net/2010/04/13/how-to-implement-ui-testing-without-shooting-yourself-in-the-foot-2/) some time ago: it's a really nice way to think not just about test automation, but about the different levels of behaviour in any software project.
 

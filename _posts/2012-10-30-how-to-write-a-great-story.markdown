@@ -1,14 +1,14 @@
 ---
 layout: post
 title: How to write a great story
-date: 2012-10-30 22:50:00 +0000
+date: 2012-10-30 22:50:00.000000000 +00:00
 categories:
-  - cucumber
-  - bdd
-  - bddkickstart
-
+- cucumber
+- bdd
+- bddkickstart
+redirect_from:
+- "/2012/10/how-to-write-a-great-story"
 ---
-
 <p>Second in my mini-series of Cucumber videos: a quick introduction on writing a great story.</p>
 
 <iframe width="445" height="300" src="http://www.youtube.com/embed/RJ3UiK1IEj4" frameborder="0">

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Introducing Card Pirates"
-date: 2013-08-06 06:59:36 +0100
+title: Introducing Card Pirates
+date: 2013-08-06 06:59:36.000000000 +01:00
 categories:
-  - game development
-  - fun
-
+- game development
+- fun
+redirect_from:
+- "/2013/08/card-pirates"
 ---
-
 I made a little game this week called [Card Pirates](http://cardpirates.com). It's a fun thematic pirate card game for 2 - 4 players. Players take the role of an old fashioned pirate ship on the high seas, searching for treasure, avoiding storms, attacking other ships and attempting to win the favour of the island governors.
 
 ![photo of card pirates](http://cardpirates.com/assets/photo1.jpg)

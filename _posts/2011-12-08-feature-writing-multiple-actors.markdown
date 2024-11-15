@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Feature writing: multiple actors"
-date: 2011-12-08 11:01:23 +0000
+title: 'Feature writing: multiple actors'
+date: 2011-12-08 11:01:23.000000000 +00:00
 categories:
-  - bdd
-  - cucumber
-  - code
+- bdd
+- cucumber
+- code
+redirect_from:
+- "/2011/12/feature-writing-multiple-actors"
 ---
 I've [written a fair amount](/tag/cucumber) in the past about Cucumber and the way I like to structure my features. After reading these through, someone recently asked me about a particular workflow concerning multiple actors.
 

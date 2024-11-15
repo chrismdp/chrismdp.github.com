@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Rack::Usermanual - Cucumber features as in-app user manual"
-date: 2013-06-17 15:28:34 +0100
+title: Rack::Usermanual - Cucumber features as in-app user manual
+date: 2013-06-17 15:28:34.000000000 +01:00
 categories:
-  - cucumber
-  - bdd
-  - code
-  - sol trader
-
+- cucumber
+- bdd
+- code
+- sol trader
+redirect_from:
+- "/2013/06/rack-usermanual"
 ---
-
 <style>
   img { border: 5px solid #eee; }
 </style>

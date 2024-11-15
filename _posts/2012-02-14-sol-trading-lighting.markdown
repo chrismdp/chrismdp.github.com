@@ -1,18 +1,18 @@
 ---
 layout: post
-title: "Sol Trader: on lighting"
-date: 2012-02-14 22:56:43 +0000
+title: 'Sol Trader: on lighting'
+date: 2012-02-14 22:56:43.000000000 +00:00
 categories:
-  - products
-  - c++
-  - code
-  - opengl
-  - sol trader
-  - game development
-  - lighting
-
+- products
+- c++
+- code
+- opengl
+- sol trader
+- game development
+- lighting
+redirect_from:
+- "/2012/02/sol-trading-lighting"
 ---
-
 A quick update on the lighting code I've been working on. Now that I have normal maps and per-pixel bump mapping working, I can turn these:
 
 ![ship-texture-1](/files/sol-trader-lighting-1.png)

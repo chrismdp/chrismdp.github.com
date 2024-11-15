@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Scenarios are not Acceptance Criteria"
-date: 2012-11-23 08:55:47 +0000
+title: Scenarios are not Acceptance Criteria
+date: 2012-11-23 08:55:47.000000000 +00:00
 categories:
-  - cucumber
-  - bdd
-  - testing
-  - tdd
-
+- cucumber
+- bdd
+- testing
+- tdd
+redirect_from:
+- "/2012/11/scenarios-are-not-acceptance-criteria"
 ---
-
 <p><i>"That's all very well, but how do I know that it works?"</i></p>
 
 <p><i>"What will that actually look like on screen?"</i></p>

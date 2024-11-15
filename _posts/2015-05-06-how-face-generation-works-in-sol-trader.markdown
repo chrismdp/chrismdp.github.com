@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "How face generation works in Sol Trader"
-date: 2015-05-06 10:52:27 +0100
+title: How face generation works in Sol Trader
+date: 2015-05-06 10:52:27.000000000 +01:00
 categories:
-  - game design
-  - sol trader
-  - game development
-  - code
-
+- game design
+- sol trader
+- game development
+- code
+redirect_from:
+- "/2015/05/how-face-generation-works-in-sol-trader"
 ---
-
 We're finally getting customised faces for characters in [Sol Trader](http://soltrader.net)! Here's a preview of some of the different faces that can be generated:
 
 ![Face piece selection](/files/sol-trader-face-preview.jpg)

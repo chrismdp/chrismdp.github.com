@@ -1,14 +1,16 @@
 ---
 layout: post
-title: "Work with me"
-date: 2011-08-22 15:36:53 +0100
+title: Work with me
+date: 2011-08-22 15:36:53.000000000 +01:00
 categories:
-  - code
-  - meta
-  - agile
-  - training
-  - life
-  - tdd
+- code
+- meta
+- agile
+- training
+- life
+- tdd
+redirect_from:
+- "/2011/08/work-with-me"
 ---
 I've been taking a break from my work and blogging for the summer: but now I'm looking for work again from next week.
 

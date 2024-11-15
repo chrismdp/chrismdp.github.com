@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "A formula of motivation"
-date: 2011-04-15 10:39:35 +0100
+title: A formula of motivation
+date: 2011-04-15 10:39:35.000000000 +01:00
 categories:
-  - productivity
-  - pomodoros
-  - life
-  - gtd
+- productivity
+- pomodoros
+- life
+- gtd
+redirect_from:
+- "/2011/04/a-formula-of-motivation"
 ---
 When reading last year, I came across the following formula for describing motivation:
 

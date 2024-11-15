@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Why Continuous Delivery and BDD play so nicely"
-date: 2013-08-09 09:40:25 +0100
+title: Why Continuous Delivery and BDD play so nicely
+date: 2013-08-09 09:40:25.000000000 +01:00
 categories:
-  - bdd
-  - continuous delivery
-  - kickstart
-
+- bdd
+- continuous delivery
+- kickstart
+redirect_from:
+- "/2013/08/why-continuous-delivery-and-bdd-play-so-nicely"
 ---
-
 This week we did a mini relaunch of the BDD Kickstart website as [Kickstart Academy](http://kickstartacademy.io):
 
 ![new Kickstart Academy website]({{ site.url }}/files/kickstart-academy-website.png)

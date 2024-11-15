@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "How I learned to stop worrying and love (some) detailed Cucumber features"
-date: 2013-11-11 17:55:51 +0000
+title: How I learned to stop worrying and love (some) detailed Cucumber features
+date: 2013-11-11 17:55:51.000000000 +00:00
 categories:
-  - ruby
-  - cucumber
-  - testing
-  - training
-
+- ruby
+- cucumber
+- testing
+- training
+redirect_from:
+- "/2013/11/how-i-learned-to-stop-worrying-and-love-some-detailed-cucumber-features"
 ---
-
 As the revival of interest in Cucumber continues, I'm finding that a lot more people are using Cucumber for two very different types of testing. When coaching or training, I sometimes come across QAs writing Cucumber tests like this:
 
 {% highlight cucumber %}

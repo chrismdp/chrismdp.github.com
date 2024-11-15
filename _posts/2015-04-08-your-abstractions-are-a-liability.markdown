@@ -1,19 +1,19 @@
 ---
 layout: post
-title: "Your abstractions are a liability"
-date: 2015-04-08 14:04:44 +0100
+title: Your abstractions are a liability
+date: 2015-04-08 14:04:44.000000000 +01:00
 categories:
-  - code
-  - c++
-  - object oriented
-  - game development
-  - refactoring
-  - state
-  - functional programming
-  - liability
-
+- code
+- c++
+- object oriented
+- game development
+- refactoring
+- state
+- functional programming
+- liability
+redirect_from:
+- "/2015/04/your-abstractions-are-a-liability"
 ---
-
 <div class='alert alert-info'>
 
 <i>"If a function is only called from a single place, consider inlining it."</i>

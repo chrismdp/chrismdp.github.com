@@ -1,18 +1,18 @@
 ---
 layout: post
-title: "Effective bloom in OpenGL for Sol Trader"
-date: 2012-02-02 16:28:30 +0000
+title: Effective bloom in OpenGL for Sol Trader
+date: 2012-02-02 16:28:30.000000000 +00:00
 categories:
-  - products
-  - c++
-  - code
-  - opengl
-  - bloom
-  - sol trader
-  - game development
-
+- products
+- c++
+- code
+- opengl
+- bloom
+- sol trader
+- game development
+redirect_from:
+- "/2012/02/effective-bloom-in-open-gl-for-sol-trader"
 ---
-
 <div class='alert alert-block alert-info'>
   <h2>TL;DR</h2>
   <p>Skip to the <a href='#pictures'>pictures</a>.</p>

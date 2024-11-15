@@ -1,15 +1,15 @@
 ---
 layout: post
 title: How to layer context into your features using Real Narrative
-date: 2014-04-14 17:22:12 +0100
+date: 2014-04-14 17:22:12.000000000 +01:00
 categories:
-  - bdd
-  - stories
-  - cucumber
-  - craftsmanship
-
+- bdd
+- stories
+- cucumber
+- craftsmanship
+redirect_from:
+- "/2014/04/how-to-layer-context-into-your-features-using-real-narrative"
 ---
-
 Take a look at this Cucumber feature and see what you think:
 
 {% highlight cucumber %}

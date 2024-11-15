@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "Sol Trader now in Alpha"
-date: 2012-05-02 15:37:44 +0100
+title: Sol Trader now in Alpha
+date: 2012-05-02 15:37:44.000000000 +01:00
 categories:
-  - sol trader
-  - products
-  - agile
-  - lean
-  - lean startup
-
+- sol trader
+- products
+- agile
+- lean
+- lean startup
+redirect_from:
+- "/2012/05/sol-trader-now-in-alpha"
 ---
-
 ## It's released!
 
 After a hectic four months of early development <a href='http://soltrader.net'>Sol Trader has gone into Alpha</a>.

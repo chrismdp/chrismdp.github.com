@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "BDD without tools: testing shell script"
-date: 2013-03-06 08:49:20 +0000
+title: 'BDD without tools: testing shell script'
+date: 2013-03-06 08:49:20.000000000 +00:00
 categories:
-  - bdd
-  - shell script
-  - code
-
+- bdd
+- shell script
+- code
+redirect_from:
+- "/2013/03/bdd-with-shell-script"
 ---
-
 Doing BDD without tools like Cucumber and RSpec [sounds fine in theory](http://chrismdp.com/2013/01/bdd-is-not-cucumber), but is it feasible in practice?
 
 On one [one of the projects](http://github.com/alphagov/redirector) I'm working on currently, we're handling tens of thousands of existing UK government URLs from old websites, ensuring they redirect correctly to the right place on [GOV.UK](http://gov.uk/government). This involves a lot of bash scripting, and using a combination of unix tools and our own small tools to process large amounts of CSV data.

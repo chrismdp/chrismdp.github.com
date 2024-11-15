@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "OStatus: like Twitter, but open"
-date: 2012-09-26 10:00:00 +0100
+title: 'OStatus: like Twitter, but open'
+date: 2012-09-26 10:00:00.000000000 +01:00
 categories:
-  - social
-  - ostatus
-  - open data
-  - open source
-
+- social
+- ostatus
+- open data
+- open source
+redirect_from:
+- "/2012/09/ostatus-like-twitter-but-open"
 ---
-
 *UPDATE:* I've [posted a followup](/2012/09/ostatus-what-ive-learnt-in-24-hours/) with some more learnings and links.
 
 Recently Twitter decided to make its terms of service [rather more restrictive](https://dev.twitter.com/blog/changes-coming-to-twitter-api). This has led to a number of web applications, [IFTTT](http://thenextweb.com/apps/2012/09/20/ifttt-removes-twitter-triggers-comply-new-api-policies/) in particular, change the way they interact with twitter.

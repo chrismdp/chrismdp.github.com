@@ -1,20 +1,20 @@
 ---
 layout: post
-title: "Extreme isolation part 2: separate the domain from the changes"
-date: 2013-07-16 09:37:39 +0100
+title: 'Extreme isolation part 2: separate the domain from the changes'
+date: 2013-07-16 09:37:39.000000000 +01:00
 categories:
-  - ruby
-  - state
-  - craftsmanship
-  - refactoring
-  - sol trader
-  - code
-  - cucumber
-  - testing
-  - extreme isolation
-
+- ruby
+- state
+- craftsmanship
+- refactoring
+- sol trader
+- code
+- cucumber
+- testing
+- extreme isolation
+redirect_from:
+- "/2013/07/extreme-isolation-part-2"
 ---
-
 I started a few months ago looking at a fresh way of architecting web applications. Since writing the first article in this [series](http://chrismdp.com/tag/extreme%20isolation) I've extended the codebase considerably and have a few more thoughts on how to take these ideas further. If you've not read it already, you probably want to go back and read the [previous article](http://chrismdp.com/2013/05/extreme-isolation-in-web-apps-part-1) first.
 
 This time round, I discuss how I reduced the codebase dramatically by separating the full updating of the domain from the generation of change information. This refactor stemmed from two problems I had spotted in my code: an observation that some of my methods were doing too much, and the need for wrapper methods to preserve immutability.

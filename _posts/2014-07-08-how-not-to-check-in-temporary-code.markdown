@@ -1,14 +1,14 @@
 ---
 layout: post
 title: How not to check in temporary code
-date: 2014-07-08 16:53:34 +0100
+date: 2014-07-08 16:53:34.000000000 +01:00
 categories:
- - code
- - refactoring
- - bdd
-
+- code
+- refactoring
+- bdd
+redirect_from:
+- "/2014/07/how-not-to-check-in-temporary-code"
 ---
-
 [![facepalm](http://chrismdp.com/files/facepalm.jpg)](https://www.flickr.com/photos/brandongrasley/8227882239)
 
 We've all done it.

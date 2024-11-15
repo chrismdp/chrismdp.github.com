@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Sol Trader: a continuous deployment story"
-date: 2012-03-23 12:13:27 +0000
+title: 'Sol Trader: a continuous deployment story'
+date: 2012-03-23 12:13:27.000000000 +00:00
 categories:
-  - sol trader
-  - windows
-  - jenkins
-  - products
-
+- sol trader
+- windows
+- jenkins
+- products
+redirect_from:
+- "/2012/03/sol-trader-continuous-deployment"
 ---
-
 <div class='alert alert-info'>
   If you'd like to purchase Sol Trader you can now do so at <a href='http://soltrader.net'>soltrader.net</a>!
 </div>

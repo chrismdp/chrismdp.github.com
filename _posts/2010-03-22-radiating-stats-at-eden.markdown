@@ -1,11 +1,13 @@
 ---
 layout: post
 title: Radiating status at Eden
-date: 2010-03-22 13:55:00 +00:00
+date: 2010-03-22 13:55:00.000000000 +00:00
 categories:
-  - agile
-  - code
-  - information radiator
+- agile
+- code
+- information radiator
+redirect_from:
+- "/2010/03/radiating-stats-at-eden"
 ---
 [Information Radiators](http://www.agileadvice.com/archives/2005/05/information_rad.html) are always a good idea for software teams, and I've been pondering how best to show project state at [Eden Development](http://edendevelopment.co.uk) for a while.
 

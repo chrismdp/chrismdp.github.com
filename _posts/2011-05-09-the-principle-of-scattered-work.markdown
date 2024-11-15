@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "The Principle of Scattered Work"
-date: 2011-05-09 12:56:04 +0100
+title: The Principle of Scattered Work
+date: 2011-05-09 12:56:04.000000000 +01:00
 categories:
-  - life
-  - productivity
-  - business
+- life
+- productivity
+- business
+redirect_from:
+- "/2011/05/the-principle-of-scattered-work"
 ---
 <p><i>"The articifical separation of houses and work creates introlerable rifts in people's inner lives."</i></p>
 

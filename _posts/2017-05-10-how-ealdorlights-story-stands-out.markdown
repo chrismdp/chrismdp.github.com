@@ -1,18 +1,18 @@
 ---
 layout: post
-title: "How Ealdorlight's story stands out"
-date: 2017-05-10 11:36:52 +0100
-image: /files/random-book.jpg
+title: How Ealdorlight's story stands out
+date: 2017-05-10 11:36:52.000000000 +01:00
+image: "/files/random-book.jpg"
 categories:
-  - products
-  - ealdorlight
-  - sol trader
-  - game development
-  - indie games
-  - kickstarter
-
+- products
+- ealdorlight
+- sol trader
+- game development
+- indie games
+- kickstarter
+redirect_from:
+- "/2017/05/how-ealdorlights-story-stands-out"
 ---
-
 ![random book](/files/random-book.jpg)
 
 As we head towards the Kickstarter campaign launch on June 6th, I want to talk a little about the story behind [Ealdorlight](http://ealdorlight.com) works.

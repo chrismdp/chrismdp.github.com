@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "New Sol Trader beta: the science of blame and unforgiveness"
-date: 2015-12-02 10:20:28 +0000
+title: 'New Sol Trader beta: the science of blame and unforgiveness'
+date: 2015-12-02 10:20:28.000000000 +00:00
 categories:
-  - indie games
-  - game design
-  - game development
-  - sol trader
-  - code
-
+- indie games
+- game design
+- game development
+- sol trader
+- code
+redirect_from:
+- "/2015/12/the-science-of-blame-and-unforgiveness"
 ---
-
 [Previously I wrote](/2015/11/modelling-opinions-and-prejudice-in-sol-trader/) about how I'm modelling opinions and prejudice in [Sol Trader](http://soltrader.net). It's time to put some of that information to use.
 
 The opinions a character has of other people, based on the partial events that they know about them, will now directly affect the things that happen in the history generation. This creates new events, which will in turn feed more character opinions.

@@ -1,15 +1,16 @@
 ---
 layout: post
 title: Every Ash Cloud Has A Silver Lining
-date: 2010-05-12 15:05:00 +01:00
+date: 2010-05-12 15:05:00.000000000 +01:00
 categories:
-  - travel
-  - chicago
-  - pairing
-  - code
-  - ashcloud
+- travel
+- chicago
+- pairing
+- code
+- ashcloud
+redirect_from:
+- "/2010/05/every-ash-cloud-has-a-silver-lining"
 ---
-
 <i>Enrique and I recently became victims of the ash cloud, and spent rather longer in the US than we anticipated...</i>
 
 I spent a weekend in Chicago last month chatting to some other exceptional companies about the way we all do business. I learnt a huge amount about Eden and how we want to make it better in the future. We were due to leave on Sunday night, but unfortunately the ash cloud had other ideas, and we were stuck in Chicago for a further five days. It wasn't much fun to be stranded, but when you're stuck somewhere, you might as well make the most of it...

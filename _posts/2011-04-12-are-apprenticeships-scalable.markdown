@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Are apprenticeships scalable?"
-date: 2011-04-12 06:36:53 +0100
+title: Are apprenticeships scalable?
+date: 2011-04-12 06:36:53.000000000 +01:00
 categories:
-  - business
-  - apprenticeship
+- business
+- apprenticeship
+redirect_from:
+- "/2011/04/are-apprenticeships-scalable"
 ---
 Back at the beginning of the year I had lunch with a university professor interested in the notion of software craftsmanship. This is an extract from an email he sent me at the time:
 

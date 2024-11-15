@@ -1,16 +1,17 @@
 ---
 layout: post
-title: "BDD Kickstart is dead. Long live..."
-date: 2013-11-19 16:23:43 +0000
+title: BDD Kickstart is dead. Long live...
+date: 2013-11-19 16:23:43.000000000 +00:00
 categories:
-  - bdd
-  - cucumber
-  - bddkickstart
-  - training
-  - continuous delivery
-  - kickstart
-  - business
-
+- bdd
+- cucumber
+- bddkickstart
+- training
+- continuous delivery
+- kickstart
+- business
+redirect_from:
+- "/2013/11/bdd-kickstart-is-dead-long-live"
 ---
 We are coming up to the one year anniversary of the first public BDD Kickstart, and we've got some news...
 

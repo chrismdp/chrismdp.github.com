@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "How to add live code reload to your game"
-date: 2015-08-19 09:55:34 +0100
+title: How to add live code reload to your game
+date: 2015-08-19 09:55:34.000000000 +01:00
 categories:
-  - sol trader
-  - game development
-  - code
-  - c++
-  - productivity
-
+- sol trader
+- game development
+- code
+- c++
+- productivity
+redirect_from:
+- "/2015/08/how-to-add-live-code-reload-to-your-game"
 ---
-
 Adding live code reloading is one of the best things I did when working on my current game, [Sol Trader](http://soltrader.net).
 
 Live code reload reduces our debug loop down to milliseconds. Now when I recompile the game, it notices I've done so *and loads new code whilst the game is still running.* Here's a demo:

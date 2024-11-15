@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Certification: recommendation mass produced"
-date: 2011-04-05 16:14:49 +0100
+title: 'Certification: recommendation mass produced'
+date: 2011-04-05 16:14:49.000000000 +01:00
 categories:
-  - business
-  - certification
-  - craftsmanship
+- business
+- certification
+- craftsmanship
+redirect_from:
+- "/2011/04/on-certification"
 ---
 <p><i>"Who knows a fool, must know his brother; For one will recommend another."</i></p>
 

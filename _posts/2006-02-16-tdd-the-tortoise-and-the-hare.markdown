@@ -1,9 +1,11 @@
 ---
 layout: post
 title: TDD ~ The Tortoise and the Hare
-date: 2006-02-16 09:43:00 +00:00
+date: 2006-02-16 09:43:00.000000000 +00:00
 categories:
-  - tdd
+- tdd
+redirect_from:
+- "/2006/02/tdd-the-tortoise-and-the-hare"
 ---
 <div class='alert'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
 <p>Test Driven Development. Some people just don't get it.</p>

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "BDD: How to deal stories into features"
-date: 2013-08-29 16:18:44 +0100
+title: 'BDD: How to deal stories into features'
+date: 2013-08-29 16:18:44.000000000 +01:00
 categories:
-  - stories
-  - cucumber
-  - bdd
-
+- stories
+- cucumber
+- bdd
+redirect_from:
+- "/2013/08/dealing-stories-into-features"
 ---
-
 <img style='float: right; padding: 0 0 20px 20px; width: 250px' src='http://ak1.ostkcdn.com/img/mxc/100706_card_shuffle.jpg' alt='Dealing cards'/>
 
 It's comparatively easy to learn a methodology such as BDD when it's static and unmoving - to learn *about* it rather than to *learn it*. At that point it's all information, which we're used to consuming and processing. It's much harder to learn how to do it moving: how to handle the process over time as the project grows and changes. When it moves, it's not about information any longer, but about cadence, rhythm, and technique.

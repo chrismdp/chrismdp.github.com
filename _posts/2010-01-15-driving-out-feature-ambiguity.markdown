@@ -1,13 +1,15 @@
 ---
 layout: post
 title: Driving out feature ambiguity
-date: 2010-01-15 06:19:00 +00:00
+date: 2010-01-15 06:19:00.000000000 +00:00
 categories:
-  - cucumber
-  - apprenticeship
-  - craftsmanship
-  - ambiguity
-  - katas
+- cucumber
+- apprenticeship
+- craftsmanship
+- ambiguity
+- katas
+redirect_from:
+- "/2010/01/driving-out-feature-ambiguity"
 ---
 [Cucumber](http://cukes.info) features are very useful. The ability to spec out what the customer wants in detail in a format they can read and understand really helps to communicatate what needs to be done. This combined with the ability to execute the feature to ensure that it is completed correctly catches many bugs and incorrect assumptions.
 

@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "How to lead your life"
-date: 2017-01-06 13:45:53 +0000
-image: /files/railtrack.jpg
+title: How to lead your life
+date: 2017-01-06 13:45:53.000000000 +00:00
+image: "/files/railtrack.jpg"
 categories:
-  - productivity
-  - life
-  - learning
-  - flow
-  - motivation
-
+- productivity
+- life
+- learning
+- flow
+- motivation
+redirect_from:
+- "/2017/01/leading-your-life"
 ---
-
 ![Rail tracks](/files/railtrack.jpg)
 
 Some of us might say that we aren't leaders. However, we are all leaders of at least one thing: our own lives. We determine the way that we should go, what we spend today doing. If we allow our life to happen to us, then the our lives will be determined by the whim of others and not ourselves.

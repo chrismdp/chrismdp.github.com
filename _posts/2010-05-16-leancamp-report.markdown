@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Leancamp Report
-date: 2010-05-16 10:15:00 +01:00
+date: 2010-05-16 10:15:00.000000000 +01:00
 categories:
-  - lean
-  - conference
+- lean
+- conference
+redirect_from:
+- "/2010/05/leancamp-report"
 ---
 [Leancamp](http://leanca.mp) was on the 10th May, and a few Edenites including myself headed up to London to check it out.
 

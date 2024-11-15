@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Introducing Pushy - github notifications to google wave
-date: 2010-03-07 20:18:00 +00:00
+date: 2010-03-07 20:18:00.000000000 +00:00
 categories:
-  - google wave
-  - code
+- google wave
+- code
+redirect_from:
+- "/2010/03/introducing-pushy"
 ---
 I've been having a bit of a love affair with [Google Wave](http://wave.google.com) recently. Like most people I watched the [long introductory video](http://wave.google.com/about.html#video), then tried out the sandbox last July and didn't really get it. I then read [this interesting post](http://blog.cubeofm.com/on-how-google-wave-surprisingly-changed-my-li) which spurred me on to try using it for actual work.
 

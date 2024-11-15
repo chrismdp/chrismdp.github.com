@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "The huge difference a good Entity System could make to your game"
-date: 2015-06-03 11:17:09 +0100
+title: The huge difference a good Entity System could make to your game
+date: 2015-06-03 11:17:09.000000000 +01:00
 categories:
-  - game design
-  - sol trader
-  - game development
-  - code
-
+- game design
+- sol trader
+- game development
+- code
+redirect_from:
+- "/2015/06/the-huge-difference-a-good-entity-system-could-make-to-your-game"
 ---
-
 Continuing a general theme of discussing the nuts and bolts of [Sol Trader's](http://soltrader.net) design, this post is about the huge difference the recent decision to move to an decent Entity System with components has made to the flexibility of the underlying engine.
 
 In case you're not familiar with Entity Systems, I'll summarize briefly why they're important and how they work.

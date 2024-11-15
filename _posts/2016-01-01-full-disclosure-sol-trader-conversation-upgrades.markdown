@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Full disclosure: Sol Trader conversation upgrades"
-date: 2016-01-01 16:34:55 +0000
+title: 'Full disclosure: Sol Trader conversation upgrades'
+date: 2016-01-01 16:34:55.000000000 +00:00
 categories:
-  - indie games
-  - game design
-  - game development
-  - sol trader
-
+- indie games
+- game design
+- game development
+- sol trader
+redirect_from:
+- "/2016/01/full-disclosure-sol-trader-conversation-upgrades"
 ---
-
 Since getting the [new mission code into Sol Trader](http://chrismdp.com/2015/12/the-christmas-eve-update-with-moddable-missions/) before Christmas, I've been working on upgrading the conversation mode. Now it's possible to have much more detailed conversations with players about your events and theirs:
 
 ![deep conversation](http://i.imgur.com/rjcMlVr.png)

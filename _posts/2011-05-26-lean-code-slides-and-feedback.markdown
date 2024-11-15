@@ -1,13 +1,15 @@
 ---
 layout: post
-title: "Lean code: slides and feedback"
-date: 2011-05-26 21:35:40 +0100
+title: 'Lean code: slides and feedback'
+date: 2011-05-26 21:35:40.000000000 +01:00
 categories:
-  - code
-  - lean
-  - presentation
-  - software craftsmanship
-  - sc2011
+- code
+- lean
+- presentation
+- software craftsmanship
+- sc2011
+redirect_from:
+- "/2011/05/lean-code-slides-and-feedback"
 ---
 I facilitated a workshop at [SC2011](http://lanyrd.com/2011/software-craftsmanship/) today about how code might be thought of as Lean. The idea was to start a coding project and cope with shifting requirements to identify what happens when we deliver as fast as we can, whether testing is worth it, and what waste actually means.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "On coding defensively"
-date: 2012-02-17 18:57:25 +0000
+title: On coding defensively
+date: 2012-02-17 18:57:25.000000000 +00:00
 categories:
-  - code
-  - ruby
-  - craftsmanship
-
+- code
+- ruby
+- craftsmanship
+redirect_from:
+- "/2012/02/on-coding-defensively"
 ---
-
 When writing code that will be used by others (and we do that 100% of the time, even if the other user is ourselves in a few weeks time), there's a tricky balance to strike between being generous to the users of our code, and ensuring that they get the information they want to ensure they're calling our code correctly. There are two coding maxims: "Be generous on input, and strict on output", and "fail fast", which we need to hold in tension. This post explores the trade-offs between the two.
 
 ## "Be generous on input, and strict on output"

@@ -1,14 +1,16 @@
 ---
 layout: post
-title: "e-petitions: handling traffic"
-date: 2011-08-30 13:51:38 +0100
+title: 'e-petitions: handling traffic'
+date: 2011-08-30 13:51:38.000000000 +01:00
 categories:
-  - code
-  - scaling
-  - agile
-  - adn
-  - e-petitions
-  - government
+- code
+- scaling
+- agile
+- adn
+- e-petitions
+- government
+redirect_from:
+- "/2011/08/e-petitions-handling-traffic"
 ---
 Since I [last blogged about e-petitions](/2011/07/e-petitions-deconstructed) we had what conservatively could be described as "something of a traffic spike". The [amount of interest](http://www.bbc.co.uk/news/uk-politics-14474429) surrounding the site massively exceeded all our expectations.
 

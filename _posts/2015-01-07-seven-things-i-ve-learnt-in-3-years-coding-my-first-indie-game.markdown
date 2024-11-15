@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "7 things I've learnt in 3 years coding my first indie game"
-date: 2015-01-07 14:26:40 +0000
+title: 7 things I've learnt in 3 years coding my first indie game
+date: 2015-01-07 14:26:40.000000000 +00:00
 categories:
-  - sol trader
-  - code
-  - business
-  - kickstarter
-  - game development
-
+- sol trader
+- code
+- business
+- kickstarter
+- game development
+redirect_from:
+- "/2015/01/seven-things-i-ve-learnt-in-3-years-coding-my-first-indie-game"
 ---
-
 [![header](/files/sol-press-header.png)](http://kck.st/1Ap3Wf8)
 
 Sol Trader is at the end of Alpha and is [now on Kickstarter](http://kck.st/1Ap3Wf8) to raise funds for completion. Here are the seven biggest lessons I've learnt in the three years of coding my first indie title.

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "New for 2015: Sol Trader now on Kickstarter"
-date: 2015-01-07 09:57:58 +0000
+title: 'New for 2015: Sol Trader now on Kickstarter'
+date: 2015-01-07 09:57:58.000000000 +00:00
 categories:
-  - sol trader
-  - indie games
-  - business
-  - kickstarter
-  - game development
-
+- sol trader
+- indie games
+- business
+- kickstarter
+- game development
+redirect_from:
+- "/2015/01/new-for-2015-sol-trader-on-kickstarter"
 ---
-
 After being strongly urged (some would say begged) by some friends in the pub, I've taken the plunge in 2015: [Sol Trader is now on Kickstarter!](http://kck.st/1Ap3Wf8)
 
 <iframe width="600" height="450" src="https://www.kickstarter.com/projects/852671098/sol-trader-a-compelling-space-action-rpg-for-pc-an/widget/video.html" frameborder="0" scrolling="no"> </iframe>

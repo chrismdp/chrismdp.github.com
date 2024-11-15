@@ -1,16 +1,16 @@
 ---
 layout: post
 title: Cucumber isn't a testing tool
-date: 2012-09-19 17:41:22 +0100
+date: 2012-09-19 17:41:22.000000000 +01:00
 categories:
-  - cucumber
-  - business
-  - bdd
-  - team
-  - testing
-
+- cucumber
+- business
+- bdd
+- team
+- testing
+redirect_from:
+- "/2012/09/cucumber-isnt-a-testing-tool"
 ---
-
 This is your periodic reminder that [Cucumber](/tag/cucumber) isn't a testing tool.
 
 Here's what it actually is:

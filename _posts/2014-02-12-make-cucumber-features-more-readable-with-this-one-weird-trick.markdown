@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Make Cucumber features more readable with this one weird trick"
-date: 2014-02-12 10:15:06 +0000
+title: Make Cucumber features more readable with this one weird trick
+date: 2014-02-12 10:15:06.000000000 +00:00
 categories:
-  - bdd
-  - agile
-  - cucumber
-  - process
-
+- bdd
+- agile
+- cucumber
+- process
+redirect_from:
+- "/2014/02/make-cucumber-features-more-readable-with-this-one-weird-trick"
 ---
-
 *"Sorry I've written such a long letter; I didn't have time to write a short one."*
 
 -- [Blaise Pascal](http://en.wikipedia.org/wiki/Blaise_Pascal)

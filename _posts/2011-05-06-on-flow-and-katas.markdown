@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "On Flow, and Katas"
-date: 2011-05-06 09:37:45 +0100
+title: On Flow, and Katas
+date: 2011-05-06 09:37:45.000000000 +01:00
 categories:
-  - productivity
-  - flow
+- productivity
+- flow
+redirect_from:
+- "/2011/05/on-flow-and-katas"
 ---
 <p><i>"[Flow is] being completely involved in an activity for its own sake. The ego falls away. Time flies. Every action, movement, and thought follows inevitably from the previous one, like playing jazz. Your whole being is involved, and you're using your skills to the utmost."</i></p>
 

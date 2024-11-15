@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Cucumbers with personality"
-date: 2011-04-18 15:17:31 +0100
+title: Cucumbers with personality
+date: 2011-04-18 15:17:31.000000000 +01:00
 categories:
-  - cucumber
-  - personas
-  - agile
-  - ux
+- cucumber
+- personas
+- agile
+- ux
+redirect_from:
+- "/2011/04/cucumbers-with-personality"
 ---
 <p><i>"Personality is everything in art and poetry."</i></p>
 

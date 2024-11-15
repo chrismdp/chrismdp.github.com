@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "4 things every space game must have"
-date: 2015-03-25 10:39:12 +0000
+title: 4 things every space game must have
+date: 2015-03-25 10:39:12.000000000 +00:00
 categories:
-  - sol trader
-  - game development
-  - game design
-  - indie games
-
+- sol trader
+- game development
+- game design
+- indie games
+redirect_from:
+- "/2015/03/four-things-every-space-game-must-have"
 ---
-
 ![4 things: exploration, knowledge gain, story, mastery](/files/4-things-space-game.jpg)
 
 *The process of designing [Sol Trader](http://soltrader.net) has helped me to crystallise some of the essential components of any space game. Here are four I've discovered so far.*

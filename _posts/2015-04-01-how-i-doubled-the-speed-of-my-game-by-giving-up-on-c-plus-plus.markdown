@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "How I doubled the speed of my game by giving up on C++"
-date: 2015-04-01 12:49:53 +0100
+title: How I doubled the speed of my game by giving up on C++
+date: 2015-04-01 12:49:53.000000000 +01:00
 categories:
-  - sol trader
-  - code
-  - game development
-  - c++
-  - object oriented
-
+- sol trader
+- code
+- game development
+- c++
+- object oriented
+redirect_from:
+- "/2015/04/how-i-doubled-the-speed-of-my-game-by-giving-up-on-c-plus-plus"
 ---
-
 C++ is fast. It's a good fit for games. It's certainly [faster than Ruby](/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus/). However, there's a better fit for game development. It's called C.
 
 This isn't an April Fool's joke. Look at what happened to the [Sol Trader](http://soltrader.net) history system when I ditched the slow C++ version and rewrote it in optimised C. The line count is also about 20% reduced.

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Gossip as a game mechanic"
-date: 2015-09-03 06:21:40 +0100
+title: Gossip as a game mechanic
+date: 2015-09-03 06:21:40.000000000 +01:00
 categories:
-  - game design
-  - sol trader
-  - game development
-  - kickstarter
-
+- game design
+- sol trader
+- game development
+- kickstarter
+redirect_from:
+- "/2015/09/gossip-as-a-game-mechanic"
 ---
-
 I'm now in the final stages of getting a playable demo out to beta testers (if you'd like to join the waiting list, you can [sign up on the forums](http://forums.soltrader.net)). I'm busy cramming in the final few things to make the demo as complete and as fun as possible.
 
 I've done all my development on OSX for the last few months, so last week I put together a Windows version: thankfully it only took about four hours, due to both using SDL2 and to [splitting the game code from the platform layer](/2015/08/how-to-add-live-code-reload-to-your-game/). I've also just implemented the code that allows players to talk about another person in the game, and I want to briefly discuss how it works.

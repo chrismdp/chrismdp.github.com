@@ -1,13 +1,15 @@
 ---
 layout: post
-title: "How I'm testing iPhone apps: part 2"
-date: 2011-12-06 16:02:54 +0000
+title: 'How I''m testing iPhone apps: part 2'
+date: 2011-12-06 16:02:54.000000000 +00:00
 categories:
-  - code
-  - ios
-  - tdd
-  - bdd
-  - testing ios
+- code
+- ios
+- tdd
+- bdd
+- testing ios
+redirect_from:
+- "/2011/12/how-im-testing-iphone-apps-part-2"
 ---
 <p><i>I've recently been doing some iOS development, and working out the best way to test-drive the development of iOS apps was high on my priority list. I know that the automated testing of iOS applications is still not widely practiced and isn't well documented, so I decided to write a series of posts to start to rectify that. You may wish to read <a href="/2011/12/how-im-testing-iphone-apps-part-1">part 1</a> first.</i></p>
 

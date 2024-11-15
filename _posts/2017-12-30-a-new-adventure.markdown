@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "A new adventure"
-date: 2017-12-30 07:30:44 +0000
-image: /files/GowerStreet_0164_LA_square.png
+title: A new adventure
+date: 2017-12-30 07:30:44.000000000 +00:00
+image: "/files/GowerStreet_0164_LA_square.png"
 categories:
-  - business
-  - gower street
-  - team
-
+- business
+- gower street
+- team
+redirect_from:
+- "/2017/12/a-new-adventure"
 ---
-
 ![bar](/files/gower-street-bar.png)
 
 Since I wrote last month, I've been doing a lot more thinking about the future and have finally decided what's next for me.

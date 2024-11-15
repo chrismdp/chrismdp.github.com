@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "Task assignment is a team anti-pattern"
-date: 2012-09-14 14:06:40 +0100
+title: Task assignment is a team anti-pattern
+date: 2012-09-14 14:06:40.000000000 +01:00
 categories:
-  - process
-  - productivity
-  - pairing
-  - team
-  - anti-pattern
-
+- process
+- productivity
+- pairing
+- team
+- anti-pattern
+redirect_from:
+- "/2012/09/task-assignment-is-a-team-anti-pattern"
 ---
-
 <p><i>"The way a team plays as a whole determines its success. You may have the greatest bunch of individual stars in the world, but if they don't play together, the club won't be worth a dime."</i></p>
 
 -- [Babe Ruth](http://en.wikipedia.org/wiki/Babe_Ruth)

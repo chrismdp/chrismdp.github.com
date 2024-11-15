@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "Sol Trader will be at EGX in September!"
-date: 2015-07-22 08:00:00 +0100
+title: Sol Trader will be at EGX in September!
+date: 2015-07-22 08:00:00.000000000 +01:00
 categories:
-  - sol trader
-  - game development
-  - conference
-  - EGX
-  - marketing
-
+- sol trader
+- game development
+- conference
+- EGX
+- marketing
+redirect_from:
+- "/2015/07/sol-trader-will-be-at-egx"
 ---
-
 <img style='float: right; padding: 0 0 20px 20px; width: 250px' src='/files/egx.png' alt='EGX logo'/>
 
 Now that it's almost reached the playable demo stage, I've been wanting an opportunity to show [Sol Trader](http://soltrader.net) off in person. So we will be taking the game to EGX 2015 with our own booth!

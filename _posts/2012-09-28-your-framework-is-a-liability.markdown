@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Your framework is a liability
-date: 2012-09-28 20:46:31 +0100
+date: 2012-09-28 20:46:31.000000000 +01:00
 categories:
-  - code
-  - craftsmanship
-  - lean
-  - ruby
-  - agile
-  - liability
-  - sinatra
-  - paypal
-
+- code
+- craftsmanship
+- lean
+- ruby
+- agile
+- liability
+- sinatra
+- paypal
+redirect_from:
+- "/2012/09/your-framework-is-a-liability"
 ---
-
 Your framework is a liability.
 
 Every library you import before you start the project means more for someone else to digest and understand. Each complex 'clever' library equals another few minutes per team member trying to interpret why you imported it, how to use it, and where the configuration goes. Every framework you decide to use is a early decision about how your project will fundamentally work, which might turn out to be the wrong one. Each library is an opportunity for someone else to introduce a bug into your project.

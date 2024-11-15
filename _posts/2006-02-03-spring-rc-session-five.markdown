@@ -1,12 +1,14 @@
 ---
 layout: post
 title: Spring Richclient ~ Session Five ~ Applications, windows, views
-date: 2006-02-03 15:21:00 +00:00
+date: 2006-02-03 15:21:00.000000000 +00:00
 categories:
-  - richclient 
-  - java 
-  - spring
-  - tutorial
+- richclient
+- java
+- spring
+- tutorial
+redirect_from:
+- "/2006/02/spring-rc-session-five"
 ---
 <div class='alert'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
           

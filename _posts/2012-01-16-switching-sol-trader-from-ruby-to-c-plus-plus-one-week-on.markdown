@@ -1,15 +1,16 @@
 ---
 layout: post
-title: "Switching Sol Trader from Ruby to C++: one week on"
-date: 2012-01-16 09:38:25 +0000
+title: 'Switching Sol Trader from Ruby to C++: one week on'
+date: 2012-01-16 09:38:25.000000000 +00:00
 categories:
-  - products
-  - ruby
-  - c++
-  - code
-  - sol trader
-  - game development
-
+- products
+- ruby
+- c++
+- code
+- sol trader
+- game development
+redirect_from:
+- "/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on"
 ---
 Well, I didn't quite expect that. My [previous post](/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus/) about switching [Sol Trader](http://soltrader.net) development from Ruby back to C++ caused [quite a storm](http://news.ycombinator.com/item?id=3440596).
 

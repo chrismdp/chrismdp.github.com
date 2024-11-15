@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "Cucumber: keeping the build passing"
-date: 2012-12-11 08:40:48 +0000
+title: 'Cucumber: keeping the build passing'
+date: 2012-12-11 08:40:48.000000000 +00:00
 categories:
-  - cucumber
-  - bdd
-  - testing
-  - process
-  - code
-
+- cucumber
+- bdd
+- testing
+- process
+- code
+redirect_from:
+- "/2012/12/cucumber-keeping-the-build-passing"
 ---
-
 One benefit we have when using BDD techniques properly is that we always have a failing acceptance test to guide us. The idea is that we write a failing feature, then make it pass by iterating using the standard red-green-refactor procedure. However, this is a challenge as well, as our acceptance test is going to be failing for most of the time that we're working on the feature, and we have to decide how to handle that.
 
 This is a problem because it's good to make small commits into source control, sometimes only representing a few minutes work. This helps future source code readers to see the train of thought I went through when working on the feature, and allows us to use tools such as `git bisect` to discover which commit might have broken something.

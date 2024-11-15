@@ -1,11 +1,13 @@
 ---
 layout: post
 title: Multiple CI Joes with Rack and Passenger
-date: 2010-03-22 20:18:00 +00:00
+date: 2010-03-22 20:18:00.000000000 +00:00
 categories:
-  - continuous integration
-  - cijoe
-  - howto
+- continuous integration
+- cijoe
+- howto
+redirect_from:
+- "/2010/03/multiple-ci-joes-with-rack-and-passenger"
 ---
 I've recently set up several [CI Joe](http://github.com/defunkt/cijoe) instances to handle our various projects at [Eden](http://edendevelopment.co.uk). We've been using [Integrity](http://integrityapp.com) for several months, but it's caused us a few problems and I yearned for something simpler. CI Joe is about as simple as it gets, and the brevity of the code encourages hacking and customisation.
 

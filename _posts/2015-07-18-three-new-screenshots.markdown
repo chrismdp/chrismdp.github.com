@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "3 new screenshots of Sol Trader's new interface"
-date: 2015-07-18 13:55:35 +0100
+title: 3 new screenshots of Sol Trader's new interface
+date: 2015-07-18 13:55:35.000000000 +01:00
 categories:
-  - sol trader
-  - game development
-
+- sol trader
+- game development
+redirect_from:
+- "/2015/07/three-new-screenshots"
 ---
-
 I've just released three new screenshots showing off the new GUI and space mode. Enjoy!
 
 Looks like our in-game wife might have... other interests:

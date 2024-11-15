@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Sol Trader at EGX Rezzed: 7-9 April 2016"
-date: 2016-01-25 09:54:32 +0000
+title: 'Sol Trader at EGX Rezzed: 7-9 April 2016'
+date: 2016-01-25 09:54:32.000000000 +00:00
 categories:
-  - indie games
-  - sol trader
-
+- indie games
+- sol trader
+redirect_from:
+- "/2016/01/sol-trader-at-egx-rezzed-2016"
 ---
-
 [![Rezzed](http://i.imgur.com/yva0mKf.png)](http://www.egx.net/rezzed)
 
 [Sol Trader](http://soltrader.net)'s release date is set for late April 2016 so we're gearing up for two big shows this year to put the game in the hands of gamers.

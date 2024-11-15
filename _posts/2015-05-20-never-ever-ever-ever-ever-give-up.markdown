@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Never, ever, ever, ever, ever give up"
-date: 2015-05-20 09:46:59 +0100
+title: Never, ever, ever, ever, ever give up
+date: 2015-05-20 09:46:59.000000000 +01:00
 categories:
- - motivation
- - productivity
- - game development
- - indie games
-
+- motivation
+- productivity
+- game development
+- indie games
+redirect_from:
+- "/2015/05/never-ever-ever-ever-ever-give-up"
 ---
-
 <div style='float: right; padding: 0 0 10px 20px; width: 200px'><img src='/files/winston-churchill.jpg' alt='Winston Churchill'/></div>
 
 Just don't do it. You've come so far. Don't believe that just because you're stuck you can never make it through.

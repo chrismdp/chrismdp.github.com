@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "Modelling opinions and prejudices in Sol Trader"
-date: 2015-11-27 16:51:31 +0000
+title: Modelling opinions and prejudices in Sol Trader
+date: 2015-11-27 16:51:31.000000000 +00:00
 categories:
-  - indie games
-  - game design
-  - game development
-  - sol trader
-  - code
-
+- indie games
+- game design
+- game development
+- sol trader
+- code
+redirect_from:
+- "/2015/11/modelling-opinions-and-prejudice-in-sol-trader"
 ---
-
 I've been working hard on the [Sol Trader](http://soltrader.net) core gameplay mechanics in the last two weeks. High up on my list was a way of generating more interesting missions for the characters to complete.
 
 In order to have a reason to gather dirt, find locations or desire an early end for an enemy, our characters need to feel strongly about other people they know. This is where their opinions and prejudices come in.

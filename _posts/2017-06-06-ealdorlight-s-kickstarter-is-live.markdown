@@ -1,18 +1,18 @@
 ---
 layout: post
-title: "Ealdorlight's Kickstarter is live at 4pm today"
-date: 2017-06-06 13:28:33 +0100
-image: /files/el-promo.jpg
+title: Ealdorlight's Kickstarter is live at 4pm today
+date: 2017-06-06 13:28:33.000000000 +01:00
+image: "/files/el-promo.jpg"
 categories:
-  - products
-  - ealdorlight
-  - sol trader
-  - game development
-  - indie games
-  - kickstarter
-
+- products
+- ealdorlight
+- sol trader
+- game development
+- indie games
+- kickstarter
+redirect_from:
+- "/2017/06/ealdorlight-s-kickstarter-is-live"
 ---
-
 <div class='alert alert-success'><strong>TL;DR:</strong> Ealdorlight's Kickstarter campaign is live at 4pm today! <a href='https://www.kickstarter.com/projects/chrismdp/460088710?token=b18de00d'>Go and back it!</a></div>
 
 ![header](/files/el-indiedb-header.png)

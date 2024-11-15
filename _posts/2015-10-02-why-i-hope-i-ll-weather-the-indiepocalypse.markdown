@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Why (I hope) I will weather the Indiepocalypse"
-date: 2015-10-02 20:37:29 +0100
+title: Why (I hope) I will weather the Indiepocalypse
+date: 2015-10-02 20:37:29.000000000 +01:00
 categories:
-  - indie games
-  - business
-  - sol trader
-
+- indie games
+- business
+- sol trader
+redirect_from:
+- "/2015/10/why-i-hope-i-ll-weather-the-indiepocalypse"
 ---
-
 <a data-flickr-embed="true"  href="https://www.flickr.com/photos/mikelehen/3165111964" title="Apocalypse?"><img src="https://farm4.staticflickr.com/3131/3165111964_da377df0c5_b.jpg" width="1024" height="768" alt="Apocalypse?"></a>
 
 <div style='color: #999; padding-top: 5px'>Are indie games headed for the Apocalypse?</div>

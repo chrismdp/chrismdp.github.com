@@ -1,15 +1,15 @@
 ---
 layout: post
 title: The power of good naming
-date: 2012-09-18 20:43:02 +0100
+date: 2012-09-18 20:43:02.000000000 +01:00
 redirect_to: https://deliverydoubled.com/name-as-if-your-life-depends-on-it-a-guide-to-cleaner-code/
 categories:
-  - code
-  - craftsmanship
-  - refactoring
-
+- code
+- craftsmanship
+- refactoring
+redirect_from:
+- "/2012/09/the-power-of-good-naming"
 ---
-
 <p><i>"There are two hard problems in computer science: Cache invaliation, naming things, and off by one errors."</i></p>
 
 -- Source: [Martin Fowler](http://martinfowler.com/bliki/TwoHardThings.html)

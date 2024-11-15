@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Truly indispensable people"
-date: 2011-03-29 11:42:03 +0100
+title: Truly indispensable people
+date: 2011-03-29 11:42:03.000000000 +01:00
 categories:
-  - productivity
-  - team
+- productivity
+- team
+redirect_from:
+- "/2011/03/truly-indispensable-people"
 ---
 <p><i>"Being a part of success is more important than being personally indispensable."</i></p>
 

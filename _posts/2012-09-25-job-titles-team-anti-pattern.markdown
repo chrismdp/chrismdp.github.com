@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Job titles are a team anti-pattern
-date: 2012-09-25 20:48:24 +0100
+date: 2012-09-25 20:48:24.000000000 +01:00
 categories:
-  - lean
-  - agile
-  - team
-  - anti-pattern
-
+- lean
+- agile
+- team
+- anti-pattern
+redirect_from:
+- "/2012/09/job-titles-team-anti-pattern"
 ---
-
 "We have two designers, two front-end developers, 2 back-end developers, and a tester."
 
 "Allie and Jim tend to lay out most of the pages, with help from the others. Joe, Alice, Bob and Alan tend to write most of the code, with Bob and Alan working mainly on the server side of things. Darren makes sure our work matches up to what's expected."

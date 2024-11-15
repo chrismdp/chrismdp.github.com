@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "How I'm writing my book using Vim, Git and Ruby"
-date: 2010-11-02 15:35:27 +0000
+title: How I'm writing my book using Vim, Git and Ruby
+date: 2010-11-02 15:35:27.000000000 +00:00
 categories:
-  - git
-  - ruby
-  - writing
-  - pragprowrimo
+- git
+- ruby
+- writing
+- pragprowrimo
+redirect_from:
+- "/2010/11/how-im-writing-my-book-using-git-and-ruby"
 ---
 I'm taking another shot at [PragProWriMo](http://forums.pragprog.com/forums/190) this year. For those who don't know, PragProWriMo is the Pragmatic Programmer's counterpart to [NaNoWriMo](http://www.nanowrimo.org/), which encourages participants to write a novel in a month, or at least make a good start. Last year, I got about 2,000 words into an interesting idea relating to the concept of quality, and I'm going to take that further this month.
 

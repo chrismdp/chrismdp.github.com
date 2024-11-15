@@ -1,18 +1,18 @@
 ---
 layout: post
 title: The perils of curiosity
-date: 2013-02-07 07:27:02 +0000
+date: 2013-02-07 07:27:02.000000000 +00:00
 categories:
-  - bdd
-  - testing
-  - craftsmanship
-  - products
-  - sol trader
-  - functional programming
-  - object oriented
-
+- bdd
+- testing
+- craftsmanship
+- products
+- sol trader
+- functional programming
+- object oriented
+redirect_from:
+- "/2013/02/the-perils-of-curiosity"
 ---
-
 Identifying behaviour in any system can be a tricky endeavour. As a developer, unless we take clear deliberate steps to discover the desired behaviour of the system, it's very easy to just focus on what our system *does*, forget what our system is *supposed to be for.*
 
 When we build things to satisfy intellectual curiosity, we focus on what the thing *does*. It might have fancy features, or bells and whistles, but it won't necessarily satisfy a need.

@@ -1,12 +1,14 @@
 ---
 layout: post
 title: Spring Richclient ~ Session Six ~ The View
-date: 2006-02-10 10:07:00 +00:00
+date: 2006-02-10 10:07:00.000000000 +00:00
 categories:
-  - richclient 
-  - java 
-  - spring
-  - tutorial
+- richclient
+- java
+- spring
+- tutorial
+redirect_from:
+- "/2006/02/spring-rc-session-six"
 ---
 <div class='alert'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
 <p>In this session we will look at the ownerManagerView and its associated descriptor. This is the bit which displays the tree view on the "Owner Manager" screen of the Petclinic sample application. Looks like the author got the bean name right :) (What's the hardest problem in computer science? It's naming a class well, so that the next coder can understand what the class does. Believe it).</p>
