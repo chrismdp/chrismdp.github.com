@@ -14,12 +14,7 @@ Previously I spent three years in charge of film and technology teams at [Gower 
 
 Past clients have included large organisations such as the [BBC](http://bbc.co.uk) and [Cabinet Office](http://www.cabinetoffice.gov.uk/). I worked at [GDS](http://digital.cabinetoffice.gov.uk/about/) on the new [GOV.UK](http://gov.uk) platform and the first version of [e-petitions](/tag/e-petitions)).
 
-You can find me on [BlueSky](https://bsky.app/profile/chrismdp.com) and on [LinkedIn](https://linkedin.com/in/chrisparsons).
-
-## Latest articles
----
-
-Subscribe with <a href="{{ site.baseurl }}/feed.xml">RSS</a> to keep up with the latest.
+You can find me on [BlueSky](https://bsky.app/profile/chrismdp.com) and on [LinkedIn](https://linkedin.com/in/chrisparsons). Here are some of my more recent articles - subscribe with <a href="{{ site.baseurl }}/feed.xml">RSS</a> to keep up with the latest.
 
 {% for post in site.posts limit:3 %}
    <div class="post-preview py-4">
