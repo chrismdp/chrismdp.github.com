@@ -16,7 +16,7 @@ redirect_from:
 
 The project that I've been working on at the Government Digital Service (GDS) for the last few weeks has just been launched. It's the new Government [e-petitions](http://epetitions.direct.gov.uk) service, which replaces the old Number 10 petitions website run by the previous government. Time to talk about the architecture, how we set the team up and the effect the project is having within government.
 
-![e-petitions](/files/e-petitions.png)
+![e-petitions](/assets/img/e-petitions.png)
 
 ## The project
 

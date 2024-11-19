@@ -30,7 +30,7 @@ slow. It's probably the thing that's most holding your CPU back right now.
 Memory has been gradually increasing in speed over the last few decades, but at
 10% of the rate of CPU speed:
 
-![memory vs. CPU speed incrase](/files/memory-cpu-speed-increase.png)
+![memory vs. CPU speed incrase](/assets/img/memory-cpu-speed-increase.png)
 
 Memory cache misses cause the CPU to stall, losing several hundred cycles each
 time it happens. Every year, cache misses become a more and more significant
@@ -113,11 +113,11 @@ be at the class or method boundary, but at the data boundary.
 
 Essentially I'm advocating a switch from this style of coding:
 
-![Traditional OO](/files/c-oo.png)
+![Traditional OO](/assets/img/c-oo.png)
 
 To this style:
 
-![Data transformation](/files/c-data-transformation.png)
+![Data transformation](/assets/img/c-data-transformation.png)
 
 It's important to get our architecture right. We encapsulate concepts in the
 correct sections of our program and ensure data flows well through the various

@@ -12,7 +12,7 @@ redirect_from:
 ---
 Hot on the heels of the [main dialogue system](/2015/05/how-dialogue-works-in-sol-trader/) in [Sol Trader](http://soltrader.net), I've been working on adding tone of voice to the system. I think this will add a lot to the way that the dialogue system works. It will allow for some interesting and thematic interactions, like the one below: 
 
-![tone of voice](/files/sol-trader-tone-of-voice.png)
+![tone of voice](/assets/img/sol-trader-tone-of-voice.png)
 
 Perhaps I should have chosen a better subject :) Read on for more about how it works. 
 

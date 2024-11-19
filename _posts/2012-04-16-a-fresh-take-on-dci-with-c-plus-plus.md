@@ -248,7 +248,7 @@ I tested this using some real `CommodityMarket` objects, which contain `MarketLi
 
 Here's a screenshot of the market at work:
 
-![Sol markets](/files/sol-trader-market-1.png)
+![Sol markets](/assets/img/sol-trader-market-1.png)
 
 In summary, I'm very pleased with how this turned out. There is a bit more code than just hard wiring it, but all my behaviour is in one place, and I've not loaded my market and goods classes with yet more functionality. I'm now looking for other use cases to implement using a similar method, as I move on to building a realistic (as opposed to random) economy.
 

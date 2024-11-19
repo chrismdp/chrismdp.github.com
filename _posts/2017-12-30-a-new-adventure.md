@@ -10,7 +10,7 @@ categories:
 redirect_from:
 - "/2017/12/a-new-adventure"
 ---
-![bar](/files/gower-street-bar.png)
+![bar](/assets/img/gower-street-bar.png)
 
 Since I wrote last month, I've been doing a lot more thinking about the future and have finally decided what's next for me.
 

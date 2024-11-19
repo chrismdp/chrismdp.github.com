@@ -18,7 +18,7 @@ I've done all my development on OSX for the last few months, so last week I put 
 
 I wrote in June about how [Sol Trader](http://soltrader.net) uses [information as a form of currency](/2015/06/how-sol-trader-uses-information-as-currency/) in order to help the player advance. The power of gossip to spread rumour and information is known to us all, and it seemed to me the best way to allow players to gain information about others.
 
-![Screenshot showing gossip about another](/files/sol-trader-gossip.png)
+![Screenshot showing gossip about another](/assets/img/sol-trader-gossip.png)
 
 <p style='color: #999'>When chatting to Amos, he started talking about Orville Averill. We can now press for more information, or try and find out where he is.</p>
 
@@ -30,7 +30,7 @@ Each conversation has a certain amount of patience attached to it - that's what 
 
 In playtesting this has thrown up some suprising effects. For example, often the best people to get information from are those in prison: they have plenty of time on their hands and often know a lot of different types of characters:
 
-![Screenshot showing chatting to prisoner](/files/sol-trader-chat-prisoner.png)
+![Screenshot showing chatting to prisoner](/assets/img/sol-trader-chat-prisoner.png)
 
 <p style='color: #999'>Prisoners are often the best source of information about people, and they have plenty of time on their hands to chat.</p>
 

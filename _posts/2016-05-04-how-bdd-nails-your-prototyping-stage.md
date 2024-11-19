@@ -10,7 +10,7 @@ categories:
 redirect_from:
 - "/2016/05/how-bdd-nails-your-prototyping-stage"
 ---
-![prototyping](/files/prototyping.jpg)
+![prototyping](/assets/img/prototyping.jpg)
 
 Sometimes people don't see the value in the [BDD](/tag/bdd) process. They contend that the BDD ceremonies are a waste of time, and get in the way of delivering real features to customers. Others cannot see how to apply BDD to their project, as no-one knowns exactly what the project will look like yet. As they're only in the prototyping stage, by the time a feature file is written and made executable, it's already out of date.
 

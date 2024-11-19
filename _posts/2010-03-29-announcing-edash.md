@@ -11,7 +11,7 @@ I've been hinting at the dashboard application I've been hacking on recently and
 
 ## Introducing edash
 
-![edash screenshot](/files/edash-1.png)
+![edash screenshot](/assets/img/edash-1.png)
 
 This is the version currently running on a screen at [Eden](http://edendevelopment.co.uk). 
 

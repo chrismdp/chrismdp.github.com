@@ -10,7 +10,7 @@ categories:
 redirect_from:
 - "/2010/07/card-of-the-day"
 ---
-![Current cards of the day at eden](/files/card-of-the-day-1.png)
+![Current cards of the day at eden](/assets/img/card-of-the-day-1.png)
 
 *Our current Card Of The Day board at Eden*
 

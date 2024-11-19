@@ -9,7 +9,7 @@ categories:
 redirect_from:
 - "/2015/06/how-sol-trader-uses-information-as-currency"
 ---
-![Screenshot showing you gaining information](/files/discovering-events.jpg)
+![Screenshot showing you gaining information](/assets/img/discovering-events.jpg)
 
 There are two currencies in Sol Trader: *Credits*, which are used to purchase ships and goods, and *Information*, in the form of knowledge about events. Read on about I'm using information to enhance the gameplay.
 

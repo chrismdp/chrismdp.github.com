@@ -12,11 +12,11 @@ redirect_from:
 ---
 We're finally getting customised faces for characters in [Sol Trader](http://soltrader.net)! Here's a preview of some of the different faces that can be generated:
 
-![Face piece selection](/files/sol-trader-face-preview.jpg)
+![Face piece selection](/assets/img/sol-trader-face-preview.jpg)
 
 There are created from individual face pieces that are overlaid together to produce the final result:
 
-![Face piece selection](/files/sol-trader-face-breakdown.jpg)
+![Face piece selection](/assets/img/sol-trader-face-breakdown.jpg)
 
 Read on to find out how the code works under the hood.
 

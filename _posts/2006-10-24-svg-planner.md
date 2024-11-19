@@ -17,11 +17,11 @@ Welcome to SVG Planner - D\*I\*Y Planner style 3x5 Index Cards implemented in SV
 Download
 --------
 
-* [Day Keeper](/files/daykeeper.png) ([Source](/files/daykeeper.svg))
-* [Week Plan](/files/week.png) ([Source](/files/week.svg))
-* [Next Actions (with notes)](/files/next_actions.png) ([Source](/files/next_actions.svg))
-* [Next Actions (without notes)](/files/next_actions_nonotes.png) ([Source](/files/next_actions_nonotes.svg))
-* [Checklist (with notes)](/files/checklist.png) ([Source](/files/checklist.svg))
+* [Day Keeper](/assets/img/daykeeper.png) ([Source](/files/daykeeper.svg))
+* [Week Plan](/assets/img/week.png) ([Source](/files/week.svg))
+* [Next Actions (with notes)](/assets/img/next_actions.png) ([Source](/files/next_actions.svg))
+* [Next Actions (without notes)](/assets/img/next_actions_nonotes.png) ([Source](/files/next_actions_nonotes.svg))
+* [Checklist (with notes)](/assets/img/checklist.png) ([Source](/files/checklist.svg))
 
 Why do this?
 ------------

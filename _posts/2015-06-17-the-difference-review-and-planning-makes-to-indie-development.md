@@ -10,7 +10,7 @@ categories:
 redirect_from:
 - "/2015/06/the-difference-review-and-planning-makes-to-indie-development"
 ---
-![List your accomplishments. Make a realistic plan. Get enough sleep.](/files/list-your.png)
+![List your accomplishments. Make a realistic plan. Get enough sleep.](/assets/img/list-your.png)
 
 I'm currently in a pretty good groove working on [Sol Trader](http://soltrader.net)'s development. Due to other work commitments I can only manage 2-3 days a week on it at the moment, but my productivity is pretty much at an all time high.
 

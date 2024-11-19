@@ -29,7 +29,7 @@ This worked well enough, but it had some problems. For one thing there was no li
 
 ## The new system: Proxemics for relationships
 
-[![Personal space diagram](/files/Personal_Space.png)](http://en.wikipedia.org/wiki/Proxemics#/media/File:Personal_Space.svg)
+[![Personal space diagram](/assets/img/Personal_Space.png)](http://en.wikipedia.org/wiki/Proxemics#/media/File:Personal_Space.svg)
 
 To counter this, I've moved to a simpler system based on the social psychology concept of [Proxemics](http://en.wikipedia.org/wiki/Proxemics). Proxemics is the study of personal space between people: I've used the idea to limit the levels of relationships that each character can have. The idea is that each person is allowed a number of relationships at each of four levels:
 

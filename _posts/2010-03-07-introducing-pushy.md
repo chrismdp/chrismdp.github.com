@@ -22,7 +22,7 @@ In simple terms, it's a robot which accepts any form of HTTP post and adds the c
 
 Log on to [wave.google.com](http://wave.google.com) and add pushyrobot@appspot.com to a new wave. The robot will add a message giving you the URL to post to:
 
-![Pushy's receive message](/files/pushy-1.png)
+![Pushy's receive message](/assets/img/pushy-1.png)
 
 Then, when you post to this url (here I'm using curl):
 
@@ -30,17 +30,17 @@ Then, when you post to this url (here I'm using curl):
 
 It will add the message to the wave:
 
-![The message appears](/files/pushy-3.png)
+![The message appears](/assets/img/pushy-3.png)
 
 If you're using the github notifications, simply add the URL verbatim to your project's service hooks as a Post-Receive hook:
 
-![Github service hook configuration page](/files/pushy-4.png)
+![Github service hook configuration page](/assets/img/pushy-4.png)
 
 Click "Test Hook" and the wave will update. Any new commits to this project should now appear.
 
 Here's what the commit messages for github commits look like:
 
-![Github commit message view](/files/pushy-5.png)
+![Github commit message view](/assets/img/pushy-5.png)
 
 ## Source code
 

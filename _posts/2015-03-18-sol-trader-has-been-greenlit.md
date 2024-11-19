@@ -11,7 +11,7 @@ categories:
 redirect_from:
 - "/2015/03/sol-trader-has-been-greenlit"
 ---
-![Greenlight notice](/files/sol-trader-greenlit.jpg)
+![Greenlight notice](/assets/img/sol-trader-greenlit.jpg)
 
 I've not yet announced this properly, and it deserves a proper announcement:
 Sol Trader was recently [greenlit by

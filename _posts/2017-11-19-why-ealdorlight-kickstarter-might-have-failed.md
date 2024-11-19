@@ -14,7 +14,7 @@ categories:
 redirect_from:
 - "/2017/11/why-ealdorlight-kickstarter-might-have-failed"
 ---
-![Ealdorlight Banner](/files/el-banner.jpg)
+![Ealdorlight Banner](/assets/img/el-banner.jpg)
 
 It’s now been over three months since the end of the [Ealdorlight Kickstarter campaign](https://www.kickstarter.com/projects/chrismdp/ealdorlight). I've deliberately been taking some time to think and learn from the fact that it didn't reach the target, and to work out what to do next. Frankly, I was pretty upset that the campaign didn't make it, and it's taken a while to get over it.
 
@@ -36,7 +36,7 @@ There are a very established set of expectations for a modern 3D RPG. If youre d
 
 In his [seminal article](https://www.gamasutra.com/blogs/RyanClark/20150917/253842/What_Makes_an_Indie_Hit_How_to_Choose_the_Right_Design.php) Ryan Clark talks about making the game that’s at the intersection of at least three things: The game you want to make, the game you can make, and the game people want to buy.
 
-![Games you should make](/files/games-you-should-make.png)
+![Games you should make](/assets/img/games-you-should-make.png)
 
 I wanted to make Ealdorlight, I think people would have bought it, but I fell down on the “game you can make” category: I just don’t have the in-house team or the cash get enough of a prototype together for Kickstarter to get the idea, and I can’t self fund a game of this size.
 

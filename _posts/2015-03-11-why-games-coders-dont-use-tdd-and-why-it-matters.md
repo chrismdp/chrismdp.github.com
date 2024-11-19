@@ -13,7 +13,7 @@ categories:
 redirect_from:
 - "/2015/03/why-games-coders-dont-use-tdd-and-why-it-matters"
 ---
-![NES test station](/files/nes-test-station.jpg)
+![NES test station](/assets/img/nes-test-station.jpg)
 
 Whilst working on [Sol Trader](http://soltrader.net), I've written many unit tests for my code. Many of these tests have been written before the code itself, using a practice called Test-driven Development (TDD).
 

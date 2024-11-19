@@ -10,13 +10,13 @@ categories:
 redirect_from:
 - "/2015/04/how-to-choose-between-realism-and-fun"
 ---
-![city-view-screenshot](/files/sol-trader-city-view.jpg)
+![city-view-screenshot](/assets/img/sol-trader-city-view.jpg)
 
 I've been working on the city interaction screens this week on [Sol Trader](http://soltrader.net/), shown above. I've been considering how to implement the 'business as usual' tasks that players complete on landing at a city, such as filling the fuel tank, repairing their ship, or buying and selling trade commodities.
 
 Here's the city market screen from the old prototype version of the game:
 
-![old market screen](/files/sol-trader-market-1.png)
+![old market screen](/assets/img/sol-trader-market-1.png)
 
 I could bring this up to date and polish it for the current look of the game, but considering this has brought up an important gameplay question.
 

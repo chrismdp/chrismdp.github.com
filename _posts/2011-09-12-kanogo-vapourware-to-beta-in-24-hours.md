@@ -53,9 +53,9 @@ That's not very long, so I had to hustle.
 
 ## The result
 
-![Embed](/files/kanogo-1.png)
+![Embed](/assets/img/kanogo-1.png)
 
-![Results](/files/kanogo-2.png)
+![Results](/assets/img/kanogo-2.png)
 
 After 24 hours, I had a beta running, which worked. Granted, it wasn't great, but it was something that had some value.
 

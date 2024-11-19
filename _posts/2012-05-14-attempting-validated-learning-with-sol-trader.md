@@ -36,7 +36,7 @@ For Sol Trader, there are two main things that I need to find out.
 
 In order to support this learning, I've created the Sol Trader hypothesis progress chart:
 
-![Sol Trader hypotheses chart](/files/sol-trader-hypotheses-chart.png)
+![Sol Trader hypotheses chart](/assets/img/sol-trader-hypotheses-chart.png)
 
 This is what I'm using to track my theories. A good week would be one where I've managed to prove or disprove a theory or two, rather than simply adding in more and more 'stuff'.
 

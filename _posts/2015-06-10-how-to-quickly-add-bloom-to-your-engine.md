@@ -15,7 +15,7 @@ redirect_from:
 ---
 I rewrote [Sol Trader's](http://soltrader.net) bloom code last week. I originally added bloom [over three years ago](/2012/02/effective-bloom-in-open-gl-for-sol-trader/), and now I'm refreshing of the internals of the game, it was time to take a fresh look at it.
 
-![bloom before and after](/files/sol-trader-bloom-2-before-after.png)
+![bloom before and after](/assets/img/sol-trader-bloom-2-before-after.png)
 
 <p style='color: #999'>Sol Trader's new main menu, before and after bloom was reapplied</p>
 
@@ -27,7 +27,7 @@ This is how I did it, along with some example screenshots and some OpenGL sample
 
 First, we render the original image to a temporary buffer. At the same time, we render any glowing parts of the image to a glow buffer.
 
-![bloom step 1](/files/sol-trader-bloom-2-step1.png)
+![bloom step 1](/assets/img/sol-trader-bloom-2-step1.png)
 
 <p style='color: #999'>Left is the original texture. Right is the glow buffer</p>
 
@@ -53,7 +53,7 @@ gl_FragData[1] = vec4(colour.rgb * 0.09, col.a);
 
 ## Step 2: Copy the glow buffer to several smaller buffers
 
-![bloom step 2](/files/sol-trader-bloom-2-step2.png)
+![bloom step 2](/assets/img/sol-trader-bloom-2-step2.png)
 
 All we're doing here is drawing the glow buffer to several other textures:
 
@@ -88,7 +88,7 @@ glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
 
 ## Step 3: Blur the glow buffer and smaller buffers
 
-![bloom step 3](/files/sol-trader-bloom-2-step3.png)
+![bloom step 3](/assets/img/sol-trader-bloom-2-step3.png)
 
 This is the clever bit. We use an optimised Gaussian filter process on each of the glow textures. To make it fast, we blur in two passes: horizontally to a temporary buffer, and then vertically back to the previous buffer. We also take advantage of linear texture filtering to sample between the pixels to get both colour values.
 
@@ -134,7 +134,7 @@ void main() {
 
 I've overdone the bloom effect on this scene so we can see the effect it has:
 
-![bloom step 4](/files/sol-trader-bloom-2-step4.png)
+![bloom step 4](/assets/img/sol-trader-bloom-2-step4.png)
 
 The OpenGL code simply sets up a new shader and selects all of the textures. The fragment shader then combines them all together:
 

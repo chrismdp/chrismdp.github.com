@@ -11,7 +11,7 @@ categories:
 redirect_from:
 - "/2015/04/why-i-ditched-all-the-build-tools"
 ---
-[![white elephant](/files/white-elephant.jpg)](https://www.flickr.com/photos/pattoise/10667319965/)
+[![white elephant](/assets/img/white-elephant.jpg)](https://www.flickr.com/photos/pattoise/10667319965/)
 
 Build tools are wonderful and impressive constructions. We developers invest colossal amounts of time, effort and code into their creation and maintenance.
 

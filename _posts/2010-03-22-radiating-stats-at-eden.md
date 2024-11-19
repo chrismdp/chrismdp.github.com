@@ -23,7 +23,7 @@ This worked well, except that our builds don't fail that often: our current proj
 
 We have metric_fu running on a [private site](http://metrics.edendevelopment.co.uk) anyway, but the stats weren't very visible. Wouldn't it be cool if we could see our code stats publicly across the whole company? So we split the screen into two halves using a frameset:
 
-![Our status board](/files/metric-fu.jpg)
+![Our status board](/assets/img/metric-fu.jpg)
 
 Each of our projects now cycles through the most important pages from the metric_fu library, for each of our live projects. That way, if there's a big change in the graphs one day, everyone can see that there's a problem and can dive in and fix it.
 
@@ -43,7 +43,7 @@ At about the same time we changed to using [CI Joe](http://github.com/defunkt/ci
 
 CI Joe doesn't come with an integrated dashboard, so I set to work writing my own. Here's where I've got to so far:
 
-![My dashboard app](/files/dashboard-1.png)
+![My dashboard app](/assets/img/dashboard-1.png)
 
 It's not open source yet, but I plan to make it so soon. The pictures are of the person or pair who made the last commit.
 
@@ -51,7 +51,7 @@ It's not open source yet, but I plan to make it so soon. The pictures are of the
 
 And here's how our screen looks this morning:
 
-![The final result](/files/dashboard-2.jpg)
+![The final result](/assets/img/dashboard-2.jpg)
 
 (sorry about the censorship)
 

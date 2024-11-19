@@ -13,7 +13,7 @@ categories:
 redirect_from:
 - "/2017/05/how-ealdorlights-story-stands-out"
 ---
-![random book](/files/random-book.jpg)
+![random book](/assets/img/random-book.jpg)
 
 As we head towards the Kickstarter campaign launch on June 6th, I want to talk a little about the story behind [Ealdorlight](http://ealdorlight.com) works.
 

@@ -12,7 +12,7 @@ categories:
 redirect_from:
 - "/2017/01/leading-your-life"
 ---
-![Rail tracks](/files/railtrack.jpg)
+![Rail tracks](/assets/img/railtrack.jpg)
 
 Some of us might say that we aren't leaders. However, we are all leaders of at least one thing: our own lives. We determine the way that we should go, what we spend today doing. If we allow our life to happen to us, then the our lives will be determined by the whim of others and not ourselves.
 

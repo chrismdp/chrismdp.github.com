@@ -15,7 +15,7 @@ redirect_from:
 ---
 <div class='alert alert-success'><strong>TL;DR:</strong> Ealdorlight's Kickstarter campaign is live at 4pm today! <a href='https://www.kickstarter.com/projects/chrismdp/460088710?token=b18de00d'>Go and back it!</a></div>
 
-![header](/files/el-indiedb-header.png)
+![header](/assets/img/el-indiedb-header.png)
 
 The sixth of June is a significant day for me personally. In 2004, I spent the entire of the day in hospital. I remember the 60th anniversary commemorations of D-day on the TV in the background, as I sat beside my wife, in labour with our first child. I became a father an hour after midnight on the 7th June; my son becomes a teenager tomorrow.
 
@@ -29,7 +29,7 @@ As time came near to launch, the first anniversary of Sol Trader's released seem
 
 <a class='btn btn-success' style='text-align: center; display: block' href='https://www.kickstarter.com/projects/chrismdp/460088710?token=b18de00d'>Visit Ealdorlight's Kickstarter Campaign</a>
 
-[![kickstarter launch](/files/el-promo.jpg)](https://www.kickstarter.com/projects/chrismdp/460088710?token=b18de00d)
+[![kickstarter launch](/assets/img/el-promo.jpg)](https://www.kickstarter.com/projects/chrismdp/460088710?token=b18de00d)
 
 There's plenty more about Ealdorlight on the campaign - head over there and read all about it! A huge amount of work has gone into it, and I'm very grateful for all the support and help I've received from the team I've put together, and for friends and family who have given me endless encouragements and feedback.
 

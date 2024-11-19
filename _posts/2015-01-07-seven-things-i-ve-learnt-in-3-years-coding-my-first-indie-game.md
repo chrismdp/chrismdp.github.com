@@ -11,7 +11,7 @@ categories:
 redirect_from:
 - "/2015/01/seven-things-i-ve-learnt-in-3-years-coding-my-first-indie-game"
 ---
-[![header](/files/sol-press-header.png)](http://kck.st/1Ap3Wf8)
+[![header](/assets/img/sol-press-header.png)](http://kck.st/1Ap3Wf8)
 
 Sol Trader is at the end of Alpha and is [now on Kickstarter](http://kck.st/1Ap3Wf8) to raise funds for completion. Here are the seven biggest lessons I've learnt in the three years of coding my first indie title.
 

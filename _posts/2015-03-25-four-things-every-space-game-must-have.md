@@ -10,7 +10,7 @@ categories:
 redirect_from:
 - "/2015/03/four-things-every-space-game-must-have"
 ---
-![4 things: exploration, knowledge gain, story, mastery](/files/4-things-space-game.jpg)
+![4 things: exploration, knowledge gain, story, mastery](/assets/img/4-things-space-game.jpg)
 
 *The process of designing [Sol Trader](http://soltrader.net) has helped me to crystallise some of the essential components of any space game. Here are four I've discovered so far.*
 
