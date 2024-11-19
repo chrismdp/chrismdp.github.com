@@ -11,9 +11,7 @@ categories:
 redirect_from:
 - "/2013/01/project-velocity-is-a-useless-metric-discuss"
 ---
-<div class='alert alert-info'>
-Here follows a conversation between myself and <a href='http://mattwynne.net'>Matt Wynne</a> on the merits of the <a href='http://en.wikipedia.org/wiki/Velocity_(software_development)'>velocity metric</a> on software projects, after picking up on a <a href='https://twitter.com/BDDKickstart/status/291565539300622336'>discussion on Twitter</a>. I've reproduced it here mostly verbatim, in the hope that it gives people some useful insights into velocity, and to show that we don't always agree on everything...
-</div>
+{% include callout.html color="#d9edf7" text="Here follows a conversation between myself and Matt Wynne on the merits of the velocity metric on software projects, after picking up on a discussion on Twitter. I've reproduced it here mostly verbatim, in the hope that it gives people some useful insights into velocity, and to show that we don't always agree on everything..." %}
 
 ## The conversation
 

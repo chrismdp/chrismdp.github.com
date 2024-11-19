@@ -10,7 +10,7 @@ categories:
 redirect_from:
 - "/2006/02/spring-rc-session-six"
 ---
-<div class='alert'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
+{% include callout.html color="#f5f5f5" text="By the way...This content is now pretty old: check the homepage for the latest." %}
 <p>In this session we will look at the ownerManagerView and its associated descriptor. This is the bit which displays the tree view on the "Owner Manager" screen of the Petclinic sample application. Looks like the author got the bean name right :) (What's the hardest problem in computer science? It's naming a class well, so that the next coder can understand what the class does. Believe it).</p>
 <p>Ok, let's have a look at the view descriptor and see how one of those is defined.</p>
 <p>{% highlight xml %}

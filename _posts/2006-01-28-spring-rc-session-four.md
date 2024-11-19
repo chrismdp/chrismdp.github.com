@@ -10,7 +10,7 @@ categories:
 redirect_from:
 - "/2006/01/spring-rc-session-four"
 ---
-<div class='alert'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
+{% include callout.html color="#f5f5f5" text="By the way...This content is now pretty old: check the homepage for the latest." %}
           
 <p>This session, let's have a brief look at some of the other in the richclient-application-context.xml file, and see if we can at least work out roughly what they're for. First however, a word about ApplicationServices.</p>
 <h3>The ApplicationServices singleton</h3>

@@ -14,14 +14,10 @@ categories:
 redirect_from:
 - "/2015/04/your-abstractions-are-a-liability"
 ---
-<div class='alert alert-info'>
+{% include callout.html color="#d9edf7" text="\"If a function is only called from a single place, consider inlining it.\"
 
-<i>"If a function is only called from a single place, consider inlining it."</i>
 
-<br/><br/>
--- John Carmack, maker of Doom &amp; Quake
-
-</div>
+-- John Carmack, maker of Doom & Quake" %}
 
 Your abstractions are a liability.
 

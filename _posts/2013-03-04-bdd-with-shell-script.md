@@ -130,7 +130,4 @@ However, I don't think I'd necessarily persist with this approach long term. We 
 
 Are you doing anything similar? How are you using BDD principles without the "standard" toolset?
 
-<div class='alert alert-info'>
-  <p>If you like what you read, and you'd like to learn more, a quick reminder that we are running <a href='http://bddkickstart.com'>BDD Kickstart</a> in Edinburgh <a href='http://bddkickstart.com/dates#edinburgh'>this coming week</a>: there are only a few tickets left so be quick!
-  </p>
-</div>
+{% include callout.html color="#d9edf7" text="If you like what you read, and you'd like to learn more, a quick reminder that we are running BDD Kickstart in Edinburgh this coming week: there are only a few tickets left so be quick!" %}

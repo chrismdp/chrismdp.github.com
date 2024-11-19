@@ -10,7 +10,7 @@ categories:
 redirect_from:
 - "/2006/10/svg-planner"
 ---
-<div class='alert'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
+{% include callout.html color="#f5f5f5" text="By the way...This content is now pretty old: check the homepage for the latest." %}
 
 Welcome to SVG Planner - D\*I\*Y Planner style 3x5 Index Cards implemented in SVG.
 

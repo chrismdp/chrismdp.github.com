@@ -7,7 +7,7 @@ permalink: /tags/
 {% capture site_tags %}{% for tag in site.categories %}{% if tag %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}{% endcapture %}
 {% assign tags_list = site_tags | split:',' | uniq %}
 
-{% for tag in tags_list %}{% if tag %}<h3 id="{{ tag | replace: '/', '-' }}" class="linked-section">{{ tag | downcase }}</h3>
+{% for tag in tags_list %}{% if tag %}<h3 id="{{ tag | replace: ' ', '-' }}" class="linked-section">{{ tag | downcase }}</h3>
 <div class="post-list" style="margin-bottom:40px">
     {% for post in site.categories[tag] %}<div class="tag-entry">
     <a href="{{- site.url -}}{{- post.url -}}">{{- post.title -}}</a>

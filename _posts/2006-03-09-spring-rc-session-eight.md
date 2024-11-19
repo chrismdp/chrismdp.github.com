@@ -10,7 +10,7 @@ categories:
 redirect_from:
 - "/2006/03/spring-rc-session-eight"
 ---
-<div class='alert'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
+{% include callout.html color="#f5f5f5" text="By the way...This content is now pretty old: check the homepage for the latest." %}
           
 <p>Let's look at the binding framework today. I've got an options dialog to write, and it looks like the binding framework could be just the ticket...</p>
 <p>For the uninitiated, when we talk about "binding" we mean linking values in a text field on a form to values in our Java class. Essentially we want to turn:</p>

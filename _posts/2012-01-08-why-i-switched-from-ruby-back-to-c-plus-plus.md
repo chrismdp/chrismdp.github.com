@@ -12,15 +12,11 @@ categories:
 redirect_from:
 - "/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus"
 ---
-<div class='alert alert-info'>
-  <b>UPDATE:</b> This post was pretty popular. I've posted a followup <a href="/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on/">here</a>.
-</div>
+{% include callout.html color="#d9edf7" text="UPDATE: This post was pretty popular. I've posted a followup here." %}
 
 After two months of Sol Trader development in Ruby, I took a difficult decision last Wednesday morning: I've decided to rewrite the game code from scratch in C++. Let me explain my reasons.
 
-<div class='alert alert-info'>
-  If you'd like to purchase Sol Trader you can now do so at <a href='http://soltrader.net'>soltrader.net</a>!
-</div>
+{% include callout.html color="#d9edf7" text="If you'd like to purchase Sol Trader you can now do so at soltrader.net!" %}
 
 ## Why I did it
 
@@ -71,6 +67,4 @@ I'll know at the end of the project :) My feeling is though that it was the corr
 
 What do you think? Did I make the right call?
 
-<div class='alert alert-info'>
-  If you'd like to purchase Sol Trader you can now do so at <a href='http://soltrader.net'>soltrader.net</a>!
-</div>
+{% include callout.html color="#d9edf7" text="If you'd like to purchase Sol Trader you can now do so at soltrader.net!" %}

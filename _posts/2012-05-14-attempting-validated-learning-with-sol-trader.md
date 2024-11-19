@@ -13,9 +13,7 @@ categories:
 redirect_from:
 - "/2012/05/attempting-validated-learning-with-sol-trader"
 ---
-<div class='alert alert-info'>
-  If you'd like to purchase Sol Trader you can do so at <a href='http://soltrader.net'>soltrader.net</a>.
-</div>
+{% include callout.html color="#d9edf7" text="If you'd like to purchase Sol Trader you can do so at soltrader.net." %}
 
 Sol Trader has been out just about two weeks now. It's been great fun to actually launch the product and gain real feedback from people.
 
@@ -56,7 +54,5 @@ The important thing is to learn about your customer base, *within the context of
 
 What do you think of learning in public like this, and what do you think of my development approach?
 
-<div class='alert alert-info'>
-  If you'd like to purchase Sol Trader you can do so at <a href='http://soltrader.net'>soltrader.net</a>.
-</div>
+{% include callout.html color="#d9edf7" text="If you'd like to purchase Sol Trader you can do so at soltrader.net." %}
 

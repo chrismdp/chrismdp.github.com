@@ -14,14 +14,12 @@ categories:
 redirect_from:
 - "/2011/09/kanogo-vapourware-to-beta-in-24-hours"
 ---
-<div class='alert alert-info alert-block'>
-  <h2>TL;DR</h2>
-  <p>Last week I built the first beta of a new web product called <a href="http://kanogo.com">Kanogo</a>. It’s designed to gather feedback and perform <a href="http://en.wikipedia.org/wiki/Kano_model">Kano analysis</a> to determine which direction you should take with your website.</p>
-  <p>Here's an example, designed specifically for this blog. Thanks for your feedback!</p>
-  <iframe allowtransparency='true' frameborder='0' scrolling='no' src='http://kanogo.com/surveys/13/embed?' style='width: 100%; height: 120px'>
-  </iframe>
-  <p>Sign up for the beta <a href='http://kanogo.com'>here</a>.</p>
-</div>
+{% include callout.html color="#d9edf7" text="TL;DR
+  Last week I built the first beta of a new web product called Kanogo. It’s designed to gather feedback and perform Kano analysis to determine which direction you should take with your website.
+  Here's an example, designed specifically for this blog. Thanks for your feedback!
+  
+  
+  Sign up for the beta here." %}
 
 ## The backstory
 

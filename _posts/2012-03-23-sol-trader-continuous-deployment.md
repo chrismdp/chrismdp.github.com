@@ -10,9 +10,7 @@ categories:
 redirect_from:
 - "/2012/03/sol-trader-continuous-deployment"
 ---
-<div class='alert alert-info'>
-  If you'd like to purchase Sol Trader you can now do so at <a href='http://soltrader.net'>soltrader.net</a>!
-</div>
+{% include callout.html color="#d9edf7" text="If you'd like to purchase Sol Trader you can now do so at soltrader.net!" %}
 
 Continous Deployment is difficult, time consuming to set up and tends to require a high level of buy in from your stakeholders in order to trust the work that you're doing.
 
@@ -75,6 +73,4 @@ This is all important infrastructure getting ready for a beta release. Putting i
 
 What do you think of the system so far? Any improvements I could make?
 
-<div class='alert alert-info'>
-  If you'd like to purchase Sol Trader you can now do so at <a href='http://soltrader.net'>soltrader.net</a>!
-</div>
+{% include callout.html color="#d9edf7" text="If you'd like to purchase Sol Trader you can now do so at soltrader.net!" %}

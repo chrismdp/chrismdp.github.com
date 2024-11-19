@@ -7,7 +7,7 @@ categories:
 redirect_from:
 - "/2006/02/tdd-the-tortoise-and-the-hare"
 ---
-<div class='alert'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
+{% include callout.html color="#f5f5f5" text="By the way...This content is now pretty old: check the homepage for the latest." %}
 <p>Test Driven Development. Some people just don't get it.</p>
 <p>Some people say: "A test for each feature? But that would mean writing twice as much code!"</p>
 <p>These people usually go on to say: "It's just not worth it. I've finished my code, and it works, and you're still writing the test! I leave you in dust, 

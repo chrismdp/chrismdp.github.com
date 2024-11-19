@@ -57,6 +57,4 @@ I plan to use this effect for all sorts of things: laser fire, explosions, you n
 
 I'm going to tackle the gui. I now have AI characters with names trading on Earth's main commodity market: it's time the player joins them in making trades.
 
-<div class='alert alert-info'>
-  If you'd like to purchase Sol Trader you can now do so at <a href='http://soltrader.net'>soltrader.net</a>!
-</div>
+{% include callout.html color="#d9edf7" text="If you'd like to purchase Sol Trader you can now do so at soltrader.net!" %}

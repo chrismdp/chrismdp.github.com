@@ -83,8 +83,4 @@ There's a common theme here:
 
 **Write the game so others will enjoy playing it, not so you'll enjoy making it. This is harder, but ultimately the satisfaction payoff is much, much bigger.**
 
-<div class='alert alert-info'>
-
-Don't forget: Sol Trader is <a href='http://kck.st/1Ap3Wf8'>now on Kickstarter</a> - back it and join the adventure!
-
-</div>
+{% include callout.html color="#d9edf7" text="Don't forget: Sol Trader is now on Kickstarter - back it and join the adventure!" %}

@@ -9,7 +9,7 @@ categories:
 redirect_from:
 - "/2015/09/sol-trader-kickstarter-now-live"
 ---
-<div class='alert alert-info'><strong>TL;DR:</strong> You can <a href='http://soltrader.net/kickstarter'>visit the campaign here</a></p></div>
+{% include callout.html color="#d9edf7" text="TL;DR: You can visit the campaign here" %}
 
 <div class='embed-responsive embed-responsive-4by3'>
   <iframe width="800" height="600" src="https://www.kickstarter.com/projects/852671098/sol-trader/widget/video.html" frameborder="0" scrolling="no"> </iframe>

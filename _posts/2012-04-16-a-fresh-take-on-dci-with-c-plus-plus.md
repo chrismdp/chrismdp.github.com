@@ -11,9 +11,7 @@ categories:
 redirect_from:
 - "/2012/04/a-fresh-take-on-dci-with-c-plus-plus"
 ---
-<div class='alert alert-info'>
-  If you'd like to purchase Sol Trader you can now do so at <a href='http://soltrader.net'>soltrader.net</a>!
-</div>
+{% include callout.html color="#d9edf7" text="If you'd like to purchase Sol Trader you can now do so at soltrader.net!" %}
 
 I've been reading quite a lot about [DCI](http://en.wikipedia.org/wiki/Data,_Context,_and_Interaction) recently, both from the point of view of the [original paper](http://heim.ifi.uio.no/~trygver/2009/commonsense.pdf) published in 2009 and various other sources on the Internet. There's been a discussion around beginning to use it with Ruby on Rails, but at the moment I'm more interested in how to apply the principles to [Sol Trader](http://soltrader.net) in C++.
 

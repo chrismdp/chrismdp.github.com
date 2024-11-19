@@ -49,7 +49,7 @@ Let's look at expert coders in the games industry and discover what they do to g
 
 * **They use automated testing where the code is risky.** John Carmack recently wrote about the value of testing in his [essay on functional code](http://gamasutra.com/view/news/169296/Indepth_Functional_programming_in_C.php): 
 
-<div class='alert alert-info'><em>"Whenever I come across a finicky looking bit of code now, I split it out into a separate pure function and write tests for it. Frighteningly, I often find something wrong in these cases, which means I'm probably not casting a wide enough net."<br/><br/>-- John Carmack</em></div>
+{% include callout.html color="#d9edf7" text="\"Whenever I come across a finicky looking bit of code now, I split it out into a separate pure function and write tests for it. Frighteningly, I often find something wrong in these cases, which means I'm probably not casting a wide enough net.\"-- John Carmack" %}
 
 ## What are games developers missing?
 

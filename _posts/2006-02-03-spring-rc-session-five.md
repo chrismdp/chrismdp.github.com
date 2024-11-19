@@ -10,7 +10,7 @@ categories:
 redirect_from:
 - "/2006/02/spring-rc-session-five"
 ---
-<div class='alert'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
+{% include callout.html color="#f5f5f5" text="By the way...This content is now pretty old: check the homepage for the latest." %}
           
 <p>Thanks to the recently discovered <a href="http://opensource2.atlassian.com/confluence/spring/display/RCP/Home">Spring Rich Client wiki</a>, I've discoved the basic architecture of a Rich Client application. </p>
 <p>After reading the <a href="http://opensource2.atlassian.com/confluence/spring/display/RCP/Introduction#Introduction-PlatformOverview">platform overview section</a> on the wiki, I was at a bit of a loss with all the terms, so I thought I'd better draw a diagram. I cranked up OpenOffice Draw and the GIMP, and came up with this:</p>

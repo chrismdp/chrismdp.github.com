@@ -13,7 +13,7 @@ categories:
 redirect_from:
 - "/2017/06/ealdorlight-s-kickstarter-is-live"
 ---
-<div class='alert alert-success'><strong>TL;DR:</strong> Ealdorlight's Kickstarter campaign is live at 4pm today! <a href='https://www.kickstarter.com/projects/chrismdp/460088710?token=b18de00d'>Go and back it!</a></div>
+{% include callout.html color="#dff0d8" text="TL;DR: Ealdorlight's Kickstarter campaign is live at 4pm today! Go and back it!" %}
 
 ![header](/assets/img/el-indiedb-header.png)
 

@@ -10,7 +10,7 @@ categories:
 redirect_from:
 - "/2006/01/spring-rc-introduction"
 ---
-<div class='alert'><h1>By the way...</h1><p>This content is now pretty old: check <a href='/'>the homepage</a> for the latest.</p></div>
+{% include callout.html color="#f5f5f5" text="By the way...This content is now pretty old: check the homepage for the latest." %}
           
 <p>Right, time to learn Spring Rich Client.</p>
 <p>I've been meaning to learn this project for a while, but haven't yet quite got round to it. Now is the time. A client wants a piece of work done that see
