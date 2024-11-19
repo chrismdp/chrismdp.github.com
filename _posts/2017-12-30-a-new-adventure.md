@@ -14,6 +14,8 @@ redirect_from:
 
 Since I wrote last month, I've been doing a lot more thinking about the future and have finally decided what's next for me.
 
+<!--more-->
+
 For the last few months, I've been working as a contractor at a company called [Gower Street Analytics](http://gower.st): a really interesting start up in the movie business that predicts the global cinema box office. I've been working remotely from home each day alongside a small team of developers, learning Clojure and ClojureScript, pairing with tmux, vim and [appear.in](http://appear.in), building tools for film analysts and planning cool new research with my co-workers.
 
 At first it was simply a great way to get back on my feet after the [Ealdorlight Kickstarter failed](http://chrismdp.com/2017/11/why-ealdorlight-kickstarter-might-have-failed/), but I've been drawn into both the data analytics work and the fantastic team that's been assembled at the company. The people I'm working with are smart, humble and focused. Much of my coding, training and coaching has been solitary for the last four and a half years, and it's been great programming in a team again, especially one this good.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How To Start Coaching a Tech Team: 10 Questions To Ask"
-date: 2024-11-17 00:00:00 +00:00
+date: 2025-11-17 00:00:00 +00:00
 categories:
 - agile
 - team management

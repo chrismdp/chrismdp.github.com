@@ -28,4 +28,6 @@ You can find me on [BlueSky](https://bsky.app/profile/chrismdp.com) and on [Link
    </div>
 {% endfor %}
 
-Want to see more? See the <a href="{{ site.baseurl }}/all/">Archive</a>.
+<hr>
+
+See the <a href="{{ site.baseurl }}/all/">Archive</a> for more articles.

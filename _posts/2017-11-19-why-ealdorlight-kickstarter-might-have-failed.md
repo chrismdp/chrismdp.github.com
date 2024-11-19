@@ -20,6 +20,8 @@ It’s now been over three months since the end of the [Ealdorlight Kickstarter 
 
 It's also taken a while to think through the campaign properly. Some things are obvious in hindsight, and others less so. A lot of post-Kickstarter analysis feels like a stab in the dark. Nevertheless I've given it a lot of thought, and these are my best guesses for why I think Ealdorlight's Kickstarter failed:
 
+<!--more-->
+
 ## I rushed the design
 
 Sol Trader was barely six months out before I powered into a new title. I didn’t give the design enough thought before going public with it. If I'm honest, there were some big design holes in the pitch. I still believe that I can close those holes, but I was asking people to trust me to create a great RPG without much proof I can do that yet. The days of blind trust on Kickstarter are long behind us, and I should have closed those holes ahead of time and provided more evidence.
