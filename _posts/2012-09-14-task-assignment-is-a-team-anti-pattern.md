@@ -15,7 +15,7 @@ redirect_from:
 
 -- [Babe Ruth](http://en.wikipedia.org/wiki/Babe_Ruth)
 
-Assigning tasks to individuals might feel like the most natural thing in the world, but in reality, when you are trying to create a highly functioning [team](/tag/team), it might be doing more harm than good. This is true even when tasks are self-assigned by team members, and certainly true when tasks are imposed upon individuals by managers. Here's why.
+Assigning tasks to individuals might feel like the most natural thing in the world, but in reality, when you are trying to create a highly functioning [team](/tags#team), it might be doing more harm than good. This is true even when tasks are self-assigned by team members, and certainly true when tasks are imposed upon individuals by managers. Here's why.
 
 Having one individual responsible for a task *takes responsibility away from the team* and instead focuses on the individual. This can be damaging in a number of ways, not least that the individual is under more pressure to deliver. Short termist management might think this encourages productivity, but the internal pressure this generates can be a short cut to burnout.  The focus needs to be on collective responsibility: it's the responsibility of the <i>team</i> to release something, not the responsibility of the individual.
 
@@ -23,7 +23,7 @@ Having one individual responsible for a task *takes responsibility away from the
 
 Assignment *promotes a command and control attitude.* Sometimes, each member of a "team" is actually being managed individually and has their own stream of work. This can produce output in certain cases, but the individuals being managed are not a team: they're a collection of individuals who might happen to sit together.
 
-Individual assignment can *create silos of information.* If one person is responsible for a task, and everyone has their own tasks or types of work, then it's harder to work as a team: the knowledge is held only with a few people, rather than across everyone. [Pairing](/tag/pairing) dramatically helps break these silos down.
+Individual assignment can *create silos of information.* If one person is responsible for a task, and everyone has their own tasks or types of work, then it's harder to work as a team: the knowledge is held only with a few people, rather than across everyone. [Pairing](/tags#pairing) dramatically helps break these silos down.
 
 Assignment can also give rise to the *hero anti-pattern:* where a few people are responsibility for the success of the entire team, and they end up pulling an all-nighter just to get the release out the door. The hero culture might seem appealing to short-sighted managers, but when eventually the hero inevitably fails to deliver, hero culture quickly turns to *blame culture.*
 

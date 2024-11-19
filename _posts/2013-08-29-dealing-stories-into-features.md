@@ -27,7 +27,7 @@ I think the reason people fall into these patterns is down to a lack of clarity 
 
 A feature in the BDD context describe an functional area of your product. In BDD, a feature is written up as a text file which forms part of your project's source code and seeks to document the feature you're describing. It contains a few thoughtful paragraphs of descriptive text about the area of the product your feature covers. After this, Acceptance Criteria for the feature are listed in bullet form. Then there are a series of scenarios which describe concrete examples the functionality in a (hopefully) unambiguous way.
 
-Features can cover a larger area of your project, and can cut across several sections of your application if that makes sense. I've previously [written a lot](http://chrismdp.com/tag/cucumber) about features and how to write them well.
+Features can cover a larger area of your project, and can cut across several sections of your application if that makes sense. I've previously [written a lot](/tags#cucumber) about features and how to write them well.
 
 ## What's a story?
 

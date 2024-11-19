@@ -10,9 +10,9 @@ I have 25 years of experience running tech teams and founding startups. I'm co-f
 
 I also advise startup founders on tech strategy, and coach first-time CTOs &amp; solo startup devs - if you think I might be able to help you [message me to book a free 30 minute call](https://bsky.app/profile/chrismdp.com).
 
-Previously I spent three years in charge of film and technology teams at [Gower Street](https://gower.st), consulted widely in technical architecture and agile management, and trained and coached teams in [agile](/tag/agile), [BDD](/tag/bdd), [automated testing](/tag/testing), [clean code](/tag/craftsmanship), and [great team practices](/tag/team). I ran the team that released the indie game [Sol Trader](http://soltrader.net) in 2016, and I was CEO of Eden Development, a client services software company, from 2005 to 2011.
+Previously I spent three years in charge of film and technology teams at [Gower Street](https://gower.st), consulted widely in technical architecture and agile management, and trained and coached teams in [agile](/tags#agile), [BDD](/tags#bdd), [automated testing](/tags#testing), [clean code](/tags#craftsmanship), and [great team practices](/tags#team). I ran the team that released the indie game [Sol Trader](http://soltrader.net) in 2016, and I was CEO of Eden Development, a client services software company, from 2005 to 2011.
 
-Past clients have included large organisations such as the [BBC](http://bbc.co.uk) and [Cabinet Office](http://www.cabinetoffice.gov.uk/). I worked at [GDS](http://digital.cabinetoffice.gov.uk/about/) on the new [GOV.UK](http://gov.uk) platform and the first version of [e-petitions](/tag/e-petitions)).
+Past clients have included large organisations such as the [BBC](http://bbc.co.uk) and [Cabinet Office](http://www.cabinetoffice.gov.uk/). I worked at [GDS](http://digital.cabinetoffice.gov.uk/about/) on the new [GOV.UK](http://gov.uk) platform and the first version of [e-petitions](/tags#e-petitions)).
 
 You can find me on [BlueSky](https://bsky.app/profile/chrismdp.com) and on [LinkedIn](https://linkedin.com/in/chrisparsons). Here are some of my more recent articles - subscribe with <a href="{{ site.baseurl }}/feed.xml">RSS</a> to keep up with the latest.
 

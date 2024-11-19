@@ -23,7 +23,7 @@ Incredibly, our minds are able to take on the role of both players in a competit
 
 ## BDD can be done solo
 
-Using [Behaviour-driven Development (BDD)](http://chrismdp.com/tag/bdd/) on our own is much the same as playing a game against ourselves.
+Using [Behaviour-driven Development (BDD)](/tags#bdd) on our own is much the same as playing a game against ourselves.
 
 Instead of playing the opposing role, we take on the role of the stakeholder. We put ourselves in the shoes of the person paying for or commissioning the project. Because the BDD practice of writing gherkin-style features forces us to think in plain English, we jettison the role of programmer for a moment, and drift in the non-technical solution thought-space.
 

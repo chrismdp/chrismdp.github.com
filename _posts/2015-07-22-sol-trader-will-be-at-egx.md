@@ -6,7 +6,7 @@ categories:
 - sol trader
 - game development
 - conference
-- EGX
+- egx
 - marketing
 redirect_from:
 - "/2015/07/sol-trader-will-be-at-egx"

@@ -4,8 +4,8 @@ title: SVG Planner
 date: 2006-10-24 00:00:00.000000000 +00:00
 categories:
 - svg
-- DIY Planner
-- GTD
+- diy planner
+- gtd
 - productivity
 redirect_from:
 - "/2006/10/svg-planner"

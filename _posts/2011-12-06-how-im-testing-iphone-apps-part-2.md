@@ -7,7 +7,6 @@ categories:
 - ios
 - tdd
 - bdd
-- testing ios
 redirect_from:
 - "/2011/12/how-im-testing-iphone-apps-part-2"
 ---

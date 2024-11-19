@@ -65,7 +65,7 @@ However, it quickly got very unwieldy to specific all my object wiring in XML an
 
 ## When coding in Ruby
 
-I don't think the concept of Inversion of Control containers translates to Ruby - in fact many people working across different languages consider it to be rather too big a hammer. XML is not easier to write than Ruby: defining the interface to all our objects using XML and then using more XML to wire them together just doesn't appeal. I'd prefer to write a few lines of Ruby code to wire them up. In practice, when doing [BDD](/tag/bdd), I find that this sort of wiring tends to come out naturally as you look to find easy ways to set up a small part of your application for integration testing.
+I don't think the concept of Inversion of Control containers translates to Ruby - in fact many people working across different languages consider it to be rather too big a hammer. XML is not easier to write than Ruby: defining the interface to all our objects using XML and then using more XML to wire them together just doesn't appeal. I'd prefer to write a few lines of Ruby code to wire them up. In practice, when doing [BDD](/tags#bdd), I find that this sort of wiring tends to come out naturally as you look to find easy ways to set up a small part of your application for integration testing.
 
 However, the concept of dependency injection as described above is very useful. A dependency of an object is still a dependency, whether it's explicit or implied. Burying the dependency in the model doesn't make the model any less dependent on the collaborator.
 
@@ -93,6 +93,6 @@ Use dependency injection liberally, based on your judgement as to whether it imp
 
 Use Inversion of Control containers if you find them helpful, but consider the cost. In my experience, it's better to simply wire up your objects in code.
 
-Study other language communities and reason carefully about whether their paradigms and patterns are useful. After all, if Ruby programmers hadn't done that, we wouldn't have [Rack](http://rack.github.com/) (which came from Python) or [Cucumber](/tag/cucumber) (which came originally from JBehave, written in Java.)
+Study other language communities and reason carefully about whether their paradigms and patterns are useful. After all, if Ruby programmers hadn't done that, we wouldn't have [Rack](http://rack.github.com/) (which came from Python) or [Cucumber](/tags#cucumber) (which came originally from JBehave, written in Java.)
 
 Do you use dependency injection, or Inversion of Control containers? What trade-offs do you find apply when using them?

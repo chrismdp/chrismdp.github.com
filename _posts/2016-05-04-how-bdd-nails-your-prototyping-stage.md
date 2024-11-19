@@ -12,13 +12,13 @@ redirect_from:
 ---
 ![prototyping](/assets/img/prototyping.jpg)
 
-Sometimes people don't see the value in the [BDD](/tag/bdd) process. They contend that the BDD ceremonies are a waste of time, and get in the way of delivering real features to customers. Others cannot see how to apply BDD to their project, as no-one knowns exactly what the project will look like yet. As they're only in the prototyping stage, by the time a feature file is written and made executable, it's already out of date.
+Sometimes people don't see the value in the [BDD](/tags#bdd) process. They contend that the BDD ceremonies are a waste of time, and get in the way of delivering real features to customers. Others cannot see how to apply BDD to their project, as no-one knowns exactly what the project will look like yet. As they're only in the prototyping stage, by the time a feature file is written and made executable, it's already out of date.
 
 I don't agree with this. If our process is set up right, we can prototype using just as effectively and retain the collaboration benefits that BDD gives us.
 
 ## You Ain't Gonna Need It
 
-One of the biggest wins that Test-driven Development ([TDD](/tag/tdd)) gives us is the principle of YAGNI - "You Ain't Gonna Need It". It's very tempting when writing code to go off on a tangent and produce a beautiful structured work of art that has zero practical use. TDD stops us doing this by forcing us only to write code that a test requires. Even some experts who don't practice or encourage TDD often espouse the power of [writing the calling code first](/2015/03/why-games-coders-dont-use-tdd-and-why-it-matters/) in order to achieve much the same effect.
+One of the biggest wins that Test-driven Development ([TDD](/tags#tdd)) gives us is the principle of YAGNI - "You Ain't Gonna Need It". It's very tempting when writing code to go off on a tangent and produce a beautiful structured work of art that has zero practical use. TDD stops us doing this by forcing us only to write code that a test requires. Even some experts who don't practice or encourage TDD often espouse the power of [writing the calling code first](/2015/03/why-games-coders-dont-use-tdd-and-why-it-matters/) in order to achieve much the same effect.
 
 BDD gives us the same YAGNI win: but at a level higher than TDD. With the BDD cycle we're adding thin slices of customer observable behaviour to our systems. If we can only write the code thats directly used by the business, then in theory we should be cutting down on wasteful development time.
 

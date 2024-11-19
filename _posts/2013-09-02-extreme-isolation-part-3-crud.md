@@ -18,7 +18,7 @@ redirect_from:
 
 *CRUD apps start simple, yet often get messy and nasty really fast. They are a great test bed for Extreme Isolation.*
 
-I started a few months ago looking at a [fresh new way of architecting web applications](http://chrismdp.com/tag/extreme%20isolation). I suggest you read parts [one](http://chrismdp.com/2013/05/extreme-isolation-in-web-apps-part-1) and [two](http://chrismdp.com/2013/07/extreme-isolation-part-2) first.
+I started a few months ago looking at a [fresh new way of architecting web applications](/tags#extreme-20isolation). I suggest you read parts [one](http://chrismdp.com/2013/05/extreme-isolation-in-web-apps-part-1) and [two](http://chrismdp.com/2013/07/extreme-isolation-part-2) first.
 
 The app I've been mainly working on using this new method is an online version of [Sol Trader](http://soltrader.net), which isn't really a typical web application most people write. I've since applied this paradigm to a directory application called "Discover" I've been working on for the [Trust Thamesmead](http://trust-thamesmead.co.uk) charity, and I thought I'd share the results.
 

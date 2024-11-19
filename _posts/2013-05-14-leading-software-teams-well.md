@@ -19,7 +19,7 @@ The talk is centered on the following ideas:
 * we are totally unable to control anyone;
 * we can show leadership no matter what our organisational position.
 
-I've [blogged many of these ideas before](http://chrismdp.com/tag/team), but it's been great to have a chance to pull my thoughts together and extend them.
+I've [blogged many of these ideas before](/tags#team), but it's been great to have a chance to pull my thoughts together and extend them.
 
 The conversations that the talk generated were fascinating and I hope to spend more time speaking about this subject in the future - particularly the difference between the actual visible hierarchy in an organisation, and the invisible hierarchy of influence, which is usually much more real than the visible one.
 

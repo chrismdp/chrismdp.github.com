@@ -27,7 +27,7 @@ A concept or value is the higher level idea or principle we are attempting to es
 
 A practice is a way of expressing that concept: for example, they may take the form of guidelines about how to write features in a certain way, or the exhortation to use acceptance tests alongside other automated tests.
 
-The tools are the different software programs we use to execute these practices. They are many and varied: popular BDD tools include [Cucumber](http://chrismdp.com/tag/cucumber), [RSpec](http://relishapp.com/rspec), [SpecFlow](http://www.specflow.org) and others.
+The tools are the different software programs we use to execute these practices. They are many and varied: popular BDD tools include [Cucumber](/tags#cucumber), [RSpec](http://relishapp.com/rspec), [SpecFlow](http://www.specflow.org) and others.
 
 These distinctions are essential to prevent useless arguments about the relevant importance of practices, and even more useless arguments about tools.
 
