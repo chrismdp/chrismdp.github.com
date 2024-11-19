@@ -62,21 +62,9 @@ exclude: [_site, CHANGELOG.md, LICENSE, README.md, vendor]
 #     permalink: /:collection/:path
 
 # Defaults
-defaults:
-  # - scope:
-  #     path: "_docs"
-  #     type: "docs"
-  #   values:
-  #     layout: page
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-  -
-    scope:
-      path: "posts"
-      type: "posts"
-    values:
-      layout: "post"
+
+safe: true
+plugins:
+  - jekyll-redirect-from
+whitelist:
+  - jekyll-redirect-from
