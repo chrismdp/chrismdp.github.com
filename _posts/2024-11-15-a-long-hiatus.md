@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Blogging again after a long hiatus"
-date: 2024-11-19 12:30:44.000000000 +00:00
+date: 2024-11-19 22:30:00
 categories:
 - business
 - life
