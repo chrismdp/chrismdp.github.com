@@ -36,10 +36,11 @@ for 25 years now, and scaled a few tech teams - my experience could be useful
 to first time CTOs, tech startup founrders, and lead developers taking their
 first steps into management.
 
-I used some of the time during COVID writing on a new blog: Delivery Doubled -
-some of that content made it to Twitter, and some more will end up here.  I
-could have just started again, but it's quite nice to [look back over old
-posts](/all) and to see the journey. It has been long, varied and meandering, and
-I have learned so much from everything I have done and everyone I have met so far.
+I used some of the time during COVID writing on a now-defunct blog called
+Delivery Doubled, aimed at helping agile teams ship faster. Some of that
+content made it to Twitter, and some more will end up here.  I could have just
+started again, but it's quite nice to [look back over old posts](/all) and to
+see the journey. It has been long, varied and meandering, and I have learned so
+much from everything I have worked on and everyone I have met so far.
 
 Here's to the next chapter.
