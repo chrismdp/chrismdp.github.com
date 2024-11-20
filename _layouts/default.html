@@ -1,19 +1,18 @@
-<!doctype html> 
+<!doctype html>
 <html lang=en-US class=h-full>
    {% include head.html %}
 
    <body class="docs relative w-full h-full antialiased text-gray-600">
-      <header class="fixed left-0 top-0 w-full h-20 bg-white z-50" role=banner>
-         <div class="w-full max-w-screen-2xl mx-auto py-6 px-6 h-full flex sm:flex-row flex-col items-center justify-between text-navy">
+      <header class="fixed left-0 top-0 w-full bg-white z-50" role=banner>
+         <div class="bg-white w-full max-w-screen-2xl mx-auto px-6 py-4 h-full flex sm:flex-row flex-col items-center justify-between text-navy">
             {% include logo-menu.html %}
             {% include social-menu.html %}
          </div>
       </header>
-      <main role="main" data-menu-container class="w-full max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 py-36 md:flex relative">
+      <main role="main" data-menu-container class="w-full max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 py-36 relative">
          <div class="min-w-0 w-full max-w-3xl xl:max-w-[40rem] 2xl:max-w-3xl mx-auto">
-            <article class="text-gray-500 leading-relaxed">                              
+            <article class="text-gray-500 leading-relaxed">
                {% if page.title %}<h1 class="w-full font-heading text-navy leading-tight text-[2rem] mb-6"> {{ page.title}} </h1>{% endif %}
-               {% include page-header.html %}
                {{ content }}
             </article></div>
             <div class="hidden xl:block fixed top-0 pt-36 pb-16 pl-0.5 w-60 h-full md:text-[13px] text-navy leading-5 docs-right-sidebar">
@@ -24,6 +23,7 @@
                   </ul>
                </nav>
             </div>
+         </div>
       </main>
       <script src="{{ site.baseurl }}/assets/js/docs.js"></script>
       <script src="{{ site.baseurl }}/assets/js/main.js"></script>

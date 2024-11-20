@@ -23,7 +23,7 @@ You can find me on [BlueSky](https://bsky.app/profile/chrismdp.com) and on [Link
    {% if post.badges %}{% for badge in post.badges %}<span class="badge badge-{{ badge.type }}">{{ badge.tag }}</span>{% endfor %}{% endif %}
    {{ post.content | split:'<!--more-->' | first }}
    {% if post.content contains '<!--more-->' %}
-      <a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
+      <a class='underline' href="{{ site.baseurl }}{{ post.url }}">Read more</a>
    {% endif %}
    </div>
 {% endfor %}
