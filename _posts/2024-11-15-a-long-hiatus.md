@@ -23,18 +23,20 @@ I'm now four years into co-founding and building
 [TFC](https://www.linkedin.com/in/tomfostercarter/). (It is a fantastic meal-led
 shopping assistant to help people eat better with zero effort - you should try
 it!) Founding a venture capital backed company myself has been a huge learning
-experience. I have learned much about just-enough tecnology, consumer startups,
-company culture, management, raising money and how venture capital actually
-works.
+experience. I have learned much about just-enough technology, consumer
+startups, company culture, management, raising money and how venture capital
+actually works.
 
 Setting up my [user account on BlueSky](https://bsky.app/profile/chrismdp.com)
 reminded me about this blog, and awakened a latent desire to write again. I'd
-love to say more about the new tech I have been building for Cherrypick, and
-write more about the new incredible wave of AI innovation that's crashed
-through tech in the last few years. I have also been running technology organisations
-for 25 years now, and scaled a few tech teams - my experience could be useful
-to first time CTOs, tech startup founrders, and lead developers taking their
-first steps into management.
+love to say more about the new tech we have been building for Cherrypick, and
+write more about the incredible wave of AI innovation that's crashed
+through our industry in the last few years.
+
+I have also been running technology organisations for 25 years now, and scaled
+a few tech teams - my experience could be useful to first time CTOs, tech
+startup founrders, and lead developers taking their first steps into
+management.
 
 I used some of the time during COVID writing on a now-defunct blog called
 Delivery Doubled, aimed at helping agile teams ship faster. Some of that
