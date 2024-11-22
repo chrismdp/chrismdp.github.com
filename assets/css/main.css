@@ -103,3 +103,7 @@ blockquote span{
   font-weight: bold;
   margin-top:1em;
 }
+
+h2, h3 {
+  padding-bottom: 0.5em;
+}
