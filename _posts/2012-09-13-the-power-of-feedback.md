@@ -3,7 +3,7 @@ layout: post
 title: The power of feedback
 date: 2012-09-13 13:52:16.000000000 +01:00
 categories:
-- lean startup
+- startup
 - tdd
 - bdd
 - feedback

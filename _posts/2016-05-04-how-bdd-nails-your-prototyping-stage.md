@@ -6,7 +6,7 @@ categories:
 - bdd
 - cucumber
 - team
-- lean startup
+- startup
 redirect_from:
 - "/2016/05/how-bdd-nails-your-prototyping-stage"
 ---

@@ -4,7 +4,7 @@ title: Attempting validated learning with Sol Trader
 date: 2012-05-14 10:18:47.000000000 +01:00
 categories:
 - sol trader
-- lean startup
+- startup
 - learning
 - products
 - agile
