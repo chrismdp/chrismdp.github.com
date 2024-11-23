@@ -9,6 +9,7 @@ categories:
 - testing
 redirect_from:
 - "/2012/09/failing-tests-rot"
+- "/2012/09/failing-tests-rot/"
 ---
 <p>Imagine this: you're taking a guided tour of a nuclear power station. Just above the door as you come in there there are five lights marked Key Safety Indicators. One of the lights is flashing red.</p>
 

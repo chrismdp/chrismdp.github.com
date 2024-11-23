@@ -6,6 +6,7 @@ categories:
 - tdd
 redirect_from:
 - "/2006/02/tdd-the-tortoise-and-the-hare"
+- "/2006/02/tdd-the-tortoise-and-the-hare/"
 ---
 {% include callout.html color="#f5f5f5" text="By the way...This content is now pretty old: check the homepage for the latest." %}
 <p>Test Driven Development. Some people just don't get it.</p>

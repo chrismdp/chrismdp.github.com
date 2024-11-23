@@ -14,6 +14,7 @@ categories:
 - bdd
 redirect_from:
 - "/2013/09/the-toolchain-of-dreams"
+- "/2013/09/the-toolchain-of-dreams/"
 ---
 Seems like yesterday people were saying that it
 was difficult to host Ruby apps. It was around the time people were saying "Rails doesn't scale", which thankfully [has](http://twitter.com) [been](http://github.com) [proved](http://groupon.com) [dramatically](http://ask.fm) [wrong](http://gov.uk).

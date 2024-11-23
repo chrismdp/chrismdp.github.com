@@ -9,6 +9,7 @@ categories:
 - node.js
 redirect_from:
 - "/2010/05/tdd-with-node-js"
+- "/2010/05/tdd-with-node-js/"
 ---
 I've wanted to hack on a [node.js](http://nodejs.org) project for a while, and a new app idea has given me the perfect excuse. My first question was: how do I test this? It's a fairly new field out there, and there isn't much help from node.js itself: it's much more like [Rack](http://rack.rubyforge.org/) than a proper framework. So I spent some time coming up with one way to do it.
 

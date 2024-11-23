@@ -6,6 +6,7 @@ categories:
 - meta
 redirect_from:
 - "/2009/12/first-post"
+- "/2009/12/first-post/"
 ---
 Welcome to my new github blog. This blog will contain wonderful insightful witty comment on many things, such as business, code, crafting and life.
 

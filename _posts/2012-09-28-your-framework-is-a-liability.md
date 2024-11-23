@@ -13,6 +13,7 @@ categories:
 - paypal
 redirect_from:
 - "/2012/09/your-framework-is-a-liability"
+- "/2012/09/your-framework-is-a-liability/"
 ---
 Your framework is a liability.
 

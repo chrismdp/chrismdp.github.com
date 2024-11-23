@@ -9,6 +9,7 @@ categories:
 - c++
 redirect_from:
 - "/2015/08/why-i-rewrote-sol-trader-s-gui-from-scratch"
+- "/2015/08/why-i-rewrote-sol-trader-s-gui-from-scratch/"
 ---
 <div style='float: right; padding: 0 0 10px 20px; width: 250px'><a href="http://imgur.com/2gwzvYN"><img src="http://i.imgur.com/2gwzvYN.png" title="source: imgur.com"/></a>
 <div style='color: #999; padding: 0px 0 0 15px'>The new rewritten GUI in action.</div></div>

@@ -7,6 +7,7 @@ categories:
 - life
 redirect_from:
 - "/2011/03/learning-to-say-yes"
+- "/2011/03/learning-to-say-yes/"
 ---
 <p><i>"Saying yes begins things. Saying yes is how things grow. Saying yes leads to knowledge. 'Yes' is for young people. So for as long as you have the strength to, say yes."</i></p>
 

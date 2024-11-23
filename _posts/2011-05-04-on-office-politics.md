@@ -7,6 +7,7 @@ categories:
 - business
 redirect_from:
 - "/2011/05/on-office-politics"
+- "/2011/05/on-office-politics/"
 ---
 <p><i>"In politics, as on the sickbed, people toss from side to side, thinking they will be more comfortable."</i></p>
 

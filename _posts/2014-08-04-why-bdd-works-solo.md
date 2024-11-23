@@ -10,6 +10,7 @@ categories:
 - team
 redirect_from:
 - "/2014/08/why-bdd-works-solo"
+- "/2014/08/why-bdd-works-solo/"
 ---
 *"The monotony and solitude of a quiet life stimulates the creative mind."*
 

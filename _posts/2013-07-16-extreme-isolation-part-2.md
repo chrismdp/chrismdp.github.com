@@ -14,6 +14,7 @@ categories:
 - extreme isolation
 redirect_from:
 - "/2013/07/extreme-isolation-part-2"
+- "/2013/07/extreme-isolation-part-2/"
 ---
 I started a few months ago looking at a fresh way of architecting web applications. Since writing the first article in this [series](/tags#extreme-20isolation) I've extended the codebase considerably and have a few more thoughts on how to take these ideas further. If you've not read it already, you probably want to go back and read the [previous article](http://chrismdp.com/2013/05/extreme-isolation-in-web-apps-part-1) first.
 

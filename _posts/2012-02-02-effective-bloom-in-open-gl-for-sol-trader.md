@@ -12,6 +12,7 @@ categories:
 - game development
 redirect_from:
 - "/2012/02/effective-bloom-in-open-gl-for-sol-trader"
+- "/2012/02/effective-bloom-in-open-gl-for-sol-trader/"
 ---
 <div class='alert alert-block alert-info'>
   <h2>TL;DR</h2>

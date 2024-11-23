@@ -13,6 +13,7 @@ categories:
 - kickstarter
 redirect_from:
 - "/2017/11/why-ealdorlight-kickstarter-might-have-failed"
+- "/2017/11/why-ealdorlight-kickstarter-might-have-failed/"
 ---
 ![Ealdorlight Banner](/assets/img/el-banner.jpg)
 

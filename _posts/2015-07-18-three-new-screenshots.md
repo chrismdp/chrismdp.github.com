@@ -7,6 +7,7 @@ categories:
 - game development
 redirect_from:
 - "/2015/07/three-new-screenshots"
+- "/2015/07/three-new-screenshots/"
 ---
 I've just released three new screenshots showing off the new GUI and space mode. Enjoy!
 

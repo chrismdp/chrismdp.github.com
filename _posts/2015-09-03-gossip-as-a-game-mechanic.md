@@ -9,6 +9,7 @@ categories:
 - kickstarter
 redirect_from:
 - "/2015/09/gossip-as-a-game-mechanic"
+- "/2015/09/gossip-as-a-game-mechanic/"
 ---
 I'm now in the final stages of getting a playable demo out to beta testers (if you'd like to join the waiting list, you can [sign up on the forums](http://forums.soltrader.net)). I'm busy cramming in the final few things to make the demo as complete and as fun as possible.
 

@@ -10,6 +10,7 @@ categories:
 - bdd
 redirect_from:
 - "/2014/05/how-to-decide-whether-a-tool-is-right-for-you"
+- "/2014/05/how-to-decide-whether-a-tool-is-right-for-you/"
 ---
 [![tools](http://chrismdp.com/files/tools.jpg)](https://flic.kr/p/5YWuWk)
 

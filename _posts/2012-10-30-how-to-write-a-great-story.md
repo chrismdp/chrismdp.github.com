@@ -8,6 +8,7 @@ categories:
 - bddkickstart
 redirect_from:
 - "/2012/10/how-to-write-a-great-story"
+- "/2012/10/how-to-write-a-great-story/"
 ---
 <p>Second in my mini-series of Cucumber videos: a quick introduction on writing a great story.</p>
 

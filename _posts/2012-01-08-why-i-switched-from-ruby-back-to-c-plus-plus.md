@@ -11,6 +11,7 @@ categories:
 - game development
 redirect_from:
 - "/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus"
+- "/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus/"
 ---
 {% include callout.html color="#d9edf7" text="UPDATE: This post was pretty popular. I've posted a followup here." %}
 

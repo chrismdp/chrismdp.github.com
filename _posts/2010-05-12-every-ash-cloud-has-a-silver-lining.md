@@ -10,6 +10,7 @@ categories:
 - ashcloud
 redirect_from:
 - "/2010/05/every-ash-cloud-has-a-silver-lining"
+- "/2010/05/every-ash-cloud-has-a-silver-lining/"
 ---
 <i>Enrique and I recently became victims of the ash cloud, and spent rather longer in the US than we anticipated...</i>
 

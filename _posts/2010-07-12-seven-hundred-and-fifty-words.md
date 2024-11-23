@@ -9,6 +9,7 @@ categories:
 - productivity
 redirect_from:
 - "/2010/07/seven-hundred-and-fifty-words"
+- "/2010/07/seven-hundred-and-fifty-words/"
 ---
 One of the best ways of managing your time and your tasks is David Allen's [Getting Things Done](http://en.wikipedia.org/wiki/Getting_Things_Done) (GTD) system. I've been a GTD adherent for the last four years. I've deviated a little from some of the practices in that time but never the principles (regular review, only care about stuff you can work on now, get it all out of your head). 
 

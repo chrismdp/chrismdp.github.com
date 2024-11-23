@@ -10,6 +10,7 @@ categories:
 - sc2012
 redirect_from:
 - "/2012/05/waxing-lyrical-on-pathfinding"
+- "/2012/05/waxing-lyrical-on-pathfinding/"
 ---
 I've been attending and giving talks at the [Software Craftmanship](http://www.codemanship.co.uk/softwarecraftsmanship/) conference at Bletchley Park for a couple of years now. I've always found the crowd there engaging and great to hang out with, and I'd encourage you to come along if you're not doing much on June 14th. There are [still a few tickets left](http://www.codemanship.co.uk/softwarecraftsmanship/register.html) if you're quick.
 

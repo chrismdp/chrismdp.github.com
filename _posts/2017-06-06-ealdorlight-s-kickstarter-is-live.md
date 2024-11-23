@@ -12,6 +12,7 @@ categories:
 - kickstarter
 redirect_from:
 - "/2017/06/ealdorlight-s-kickstarter-is-live"
+- "/2017/06/ealdorlight-s-kickstarter-is-live/"
 ---
 {% include callout.html color="#dff0d8" text="TL;DR: Ealdorlight's Kickstarter campaign is live at 4pm today! Go and back it!" %}
 

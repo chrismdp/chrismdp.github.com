@@ -9,6 +9,7 @@ categories:
 - open source
 redirect_from:
 - "/2012/09/ostatus-what-ive-learnt-in-24-hours"
+- "/2012/09/ostatus-what-ive-learnt-in-24-hours/"
 ---
 [Yesterday's post](/2012/09/ostatus-like-twitter-but-open/) was rather [popular.](http://news.ycombinator.com/item?id=4574858)
 

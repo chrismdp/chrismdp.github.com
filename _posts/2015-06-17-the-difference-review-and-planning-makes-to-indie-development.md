@@ -9,6 +9,7 @@ categories:
 - productivity
 redirect_from:
 - "/2015/06/the-difference-review-and-planning-makes-to-indie-development"
+- "/2015/06/the-difference-review-and-planning-makes-to-indie-development/"
 ---
 ![List your accomplishments. Make a realistic plan. Get enough sleep.](/assets/img/list-your.png)
 

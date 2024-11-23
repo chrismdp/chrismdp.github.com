@@ -9,6 +9,7 @@ categories:
 - tdd
 redirect_from:
 - "/2012/11/scenarios-are-not-acceptance-criteria"
+- "/2012/11/scenarios-are-not-acceptance-criteria/"
 ---
 <p><i>"That's all very well, but how do I know that it works?"</i></p>
 

@@ -7,6 +7,7 @@ categories:
 - flow
 redirect_from:
 - "/2011/05/on-flow-and-katas"
+- "/2011/05/on-flow-and-katas/"
 ---
 <p><i>"[Flow is] being completely involved in an activity for its own sake. The ego falls away. Time flies. Every action, movement, and thought follows inevitably from the previous one, like playing jazz. Your whole being is involved, and you're using your skills to the utmost."</i></p>
 

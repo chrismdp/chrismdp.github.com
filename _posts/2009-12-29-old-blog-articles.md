@@ -6,6 +6,7 @@ categories:
 - meta
 redirect_from:
 - "/2009/12/old-blog-articles"
+- "/2009/12/old-blog-articles/"
 ---
 I've spent the evening importing some old articles from my past blogging days, so they're all in one place. By all means peruse the following pieces of history:
 

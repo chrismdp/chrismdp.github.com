@@ -14,6 +14,7 @@ categories:
 - extreme isolation
 redirect_from:
 - "/2013/05/extreme-isolation-in-web-apps-part-1"
+- "/2013/05/extreme-isolation-in-web-apps-part-1/"
 ---
 I've been hard at work on a web based prototype for Sol Trader recently in order to test some game mechanics ideas.[^soltrader] I've been building the web app in a slight different way to the normal process I use to build web software, and it's high time I started talking about it.
 

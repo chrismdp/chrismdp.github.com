@@ -13,6 +13,7 @@ categories:
 - kanogo
 redirect_from:
 - "/2011/09/kanogo-vapourware-to-beta-in-24-hours"
+- "/2011/09/kanogo-vapourware-to-beta-in-24-hours/"
 ---
 {% include callout.html color="#d9edf7" text="TL;DR
   Last week I built the first beta of a new web product called Kanogo. It’s designed to gather feedback and perform Kano analysis to determine which direction you should take with your website.

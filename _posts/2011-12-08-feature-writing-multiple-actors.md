@@ -8,6 +8,7 @@ categories:
 - code
 redirect_from:
 - "/2011/12/feature-writing-multiple-actors"
+- "/2011/12/feature-writing-multiple-actors/"
 ---
 I've [written a fair amount](/tags#cucumber) in the past about Cucumber and the way I like to structure my features. After reading these through, someone recently asked me about a particular workflow concerning multiple actors.
 

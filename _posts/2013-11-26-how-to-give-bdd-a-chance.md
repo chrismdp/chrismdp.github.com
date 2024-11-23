@@ -10,6 +10,7 @@ categories:
 - management
 redirect_from:
 - "/2013/11/how-to-give-bdd-a-chance"
+- "/2013/11/how-to-give-bdd-a-chance/"
 ---
 Adopting BDD is hard.
 

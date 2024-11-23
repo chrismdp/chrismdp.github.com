@@ -10,6 +10,7 @@ categories:
 - game development
 redirect_from:
 - "/2015/01/new-for-2015-sol-trader-on-kickstarter"
+- "/2015/01/new-for-2015-sol-trader-on-kickstarter/"
 ---
 After being strongly urged (some would say begged) by some friends in the pub, I've taken the plunge in 2015: [Sol Trader is now on Kickstarter!](http://kck.st/1Ap3Wf8)
 

@@ -7,6 +7,7 @@ categories:
 - business
 redirect_from:
 - "/2010/05/ux-is-everything"
+- "/2010/05/ux-is-everything/"
 ---
 User Experience Design is a field which has been around as long at computer science itself, but has only recently come to the fore in the world of software development. While it's been an important component of the work we do for some time, I've recently realised that it's actually much more than that. It isn't a component of what we do, it is the entirety of what we do.
 

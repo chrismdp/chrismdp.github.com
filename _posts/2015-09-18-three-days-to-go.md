@@ -9,6 +9,7 @@ categories:
 - game development
 redirect_from:
 - "/2015/09/three-days-to-go"
+- "/2015/09/three-days-to-go/"
 ---
 The beta test is finished. The demo is ready. The campaign is prepared. The video is uploaded. The press releases are written and sent.
 

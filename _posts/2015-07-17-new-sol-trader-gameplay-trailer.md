@@ -7,6 +7,7 @@ categories:
 - game development
 redirect_from:
 - "/2015/07/new-sol-trader-gameplay-trailer"
+- "/2015/07/new-sol-trader-gameplay-trailer/"
 ---
 Over the last three weeks, I completely removed all traces of our old GUI code and wrote a fresh GUI from scratch. I also entirely reskinned the GUI to the final look and feel of the game.
 

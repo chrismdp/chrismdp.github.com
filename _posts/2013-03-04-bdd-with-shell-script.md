@@ -8,6 +8,7 @@ categories:
 - code
 redirect_from:
 - "/2013/03/bdd-with-shell-script"
+- "/2013/03/bdd-with-shell-script/"
 ---
 Doing BDD without tools like Cucumber and RSpec [sounds fine in theory](http://chrismdp.com/2013/01/bdd-is-not-cucumber), but is it feasible in practice?
 

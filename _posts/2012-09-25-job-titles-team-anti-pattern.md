@@ -9,6 +9,7 @@ categories:
 - anti-pattern
 redirect_from:
 - "/2012/09/job-titles-team-anti-pattern"
+- "/2012/09/job-titles-team-anti-pattern/"
 ---
 "We have two designers, two front-end developers, 2 back-end developers, and a tester."
 

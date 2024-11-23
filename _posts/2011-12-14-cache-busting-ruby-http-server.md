@@ -8,6 +8,7 @@ categories:
 - ruby
 redirect_from:
 - "/2011/12/cache-busting-ruby-http-server"
+- "/2011/12/cache-busting-ruby-http-server/"
 ---
 <p><i>"All of this can be yours/just give me what I want/and no one gets hurt"</i></p>
 

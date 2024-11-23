@@ -7,6 +7,7 @@ categories:
 - life
 redirect_from:
 - "/2011/03/eden-development-closing"
+- "/2011/03/eden-development-closing/"
 ---
 I'll dive right in: Eden Development ceased trading and closed its doors yesterday, 24th March 2011.
 

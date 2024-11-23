@@ -11,6 +11,7 @@ categories:
 - government
 redirect_from:
 - "/2011/08/e-petitions-handling-traffic"
+- "/2011/08/e-petitions-handling-traffic/"
 ---
 Since I [last blogged about e-petitions](/2011/07/e-petitions-deconstructed) we had what conservatively could be described as "something of a traffic spike". The [amount of interest](http://www.bbc.co.uk/news/uk-politics-14474429) surrounding the site massively exceeded all our expectations.
 

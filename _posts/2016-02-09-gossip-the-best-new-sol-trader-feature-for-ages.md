@@ -9,6 +9,7 @@ categories:
 - sol trader
 redirect_from:
 - "/2016/02/gossip-the-best-new-sol-trader-feature-for-ages"
+- "/2016/02/gossip-the-best-new-sol-trader-feature-for-ages/"
 ---
 I'm very excited about the new feature I've just added to [Sol Trader](http://soltrader.net) - when you visit a location you can now listen in to all the conversations that are going on whilst you're there.
 

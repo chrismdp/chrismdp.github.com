@@ -11,6 +11,7 @@ categories:
 - game development
 redirect_from:
 - "/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on"
+- "/2012/01/switching-sol-trader-from-ruby-to-c-plus-plus-one-week-on/"
 ---
 Well, I didn't quite expect that. My [previous post](/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus/) about switching [Sol Trader](http://soltrader.net) development from Ruby back to C++ caused [quite a storm](http://news.ycombinator.com/item?id=3440596).
 

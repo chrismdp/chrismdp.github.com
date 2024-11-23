@@ -7,6 +7,7 @@ categories:
 - game design
 redirect_from:
 - "/2016/01/top-5-space-games-of-2015"
+- "/2016/01/top-5-space-games-of-2015/"
 ---
 Many people spend the beginning of January reviewing the games that have come out in the previous year and looking forward to those on the horizon. I spent the beginning of January [rewriting the whole of Sol Trader's AI subsystems](http://chrismdp.com/2016/01/the-cunning-plans-of-sol-trader/) and so it's taken until the end of January for to me to look back at what has gone before.
 

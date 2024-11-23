@@ -8,6 +8,7 @@ categories:
 - sol trader
 redirect_from:
 - "/2015/10/why-i-hope-i-ll-weather-the-indiepocalypse"
+- "/2015/10/why-i-hope-i-ll-weather-the-indiepocalypse/"
 ---
 <a data-flickr-embed="true"  href="https://www.flickr.com/photos/mikelehen/3165111964" title="Apocalypse?"><img src="https://farm4.staticflickr.com/3131/3165111964_da377df0c5_b.jpg" width="1024" height="768" alt="Apocalypse?"></a>
 

@@ -10,6 +10,7 @@ categories:
 - game development
 redirect_from:
 - "/2012/01/introducing-sol-trader"
+- "/2012/01/introducing-sol-trader/"
 ---
 Happy new year, everybody! It's been a little while in coming, but I've finally got to the point where I want to announce the project I've been working on privately for the last few months. I'm heading after a dream, and I want to share it with you.
 

@@ -10,6 +10,7 @@ categories:
 - bdd
 redirect_from:
 - "/2014/04/four-questions-to-discover-if-youre-really-agile"
+- "/2014/04/four-questions-to-discover-if-youre-really-agile/"
 ---
 Here's a challenge: how many of these questions are are true for your team? (Be honest.)
 

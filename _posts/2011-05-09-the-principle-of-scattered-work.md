@@ -8,6 +8,7 @@ categories:
 - business
 redirect_from:
 - "/2011/05/the-principle-of-scattered-work"
+- "/2011/05/the-principle-of-scattered-work/"
 ---
 <p><i>"The articifical separation of houses and work creates introlerable rifts in people's inner lives."</i></p>
 

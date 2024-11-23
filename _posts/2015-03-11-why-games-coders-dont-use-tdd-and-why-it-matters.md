@@ -12,6 +12,7 @@ categories:
 - functional programming
 redirect_from:
 - "/2015/03/why-games-coders-dont-use-tdd-and-why-it-matters"
+- "/2015/03/why-games-coders-dont-use-tdd-and-why-it-matters/"
 ---
 ![NES test station](/assets/img/nes-test-station.jpg)
 

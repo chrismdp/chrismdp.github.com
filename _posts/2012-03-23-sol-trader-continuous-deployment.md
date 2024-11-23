@@ -9,6 +9,7 @@ categories:
 - products
 redirect_from:
 - "/2012/03/sol-trader-continuous-deployment"
+- "/2012/03/sol-trader-continuous-deployment/"
 ---
 {% include callout.html color="#d9edf7" text="If you'd like to purchase Sol Trader you can now do so at soltrader.net!" %}
 

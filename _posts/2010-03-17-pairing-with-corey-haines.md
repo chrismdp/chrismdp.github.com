@@ -8,6 +8,7 @@ categories:
 - code
 redirect_from:
 - "/2010/03/pairing-with-corey-haines"
+- "/2010/03/pairing-with-corey-haines/"
 ---
 Recently I attended [QCon](http://qconlondon.com) and got a chance on the last day to pair with [Corey Haines](http://coreyhaines.com). We worked on a new rails project we're building with a few friends (that's the subject of another post). We'd spent a fair amount of time hanging out, but I hadn't had a chance to sit down and actually code with him. We paired for a couple of hours in the QCon expo area just as everyone was packing up.
 

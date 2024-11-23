@@ -7,6 +7,7 @@ categories:
 - team
 redirect_from:
 - "/2011/03/truly-indispensable-people"
+- "/2011/03/truly-indispensable-people/"
 ---
 <p><i>"Being a part of success is more important than being personally indispensable."</i></p>
 

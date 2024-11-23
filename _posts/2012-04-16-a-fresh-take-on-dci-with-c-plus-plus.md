@@ -10,6 +10,7 @@ categories:
 - sol trader
 redirect_from:
 - "/2012/04/a-fresh-take-on-dci-with-c-plus-plus"
+- "/2012/04/a-fresh-take-on-dci-with-c-plus-plus/"
 ---
 {% include callout.html color="#d9edf7" text="If you'd like to purchase Sol Trader you can now do so at soltrader.net!" %}
 

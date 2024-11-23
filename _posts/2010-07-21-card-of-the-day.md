@@ -9,6 +9,7 @@ categories:
 - index cards
 redirect_from:
 - "/2010/07/card-of-the-day"
+- "/2010/07/card-of-the-day/"
 ---
 ![Current cards of the day at eden](/assets/img/card-of-the-day-1.png)
 

@@ -10,6 +10,7 @@ categories:
 - code
 redirect_from:
 - "/2012/12/cucumber-keeping-the-build-passing"
+- "/2012/12/cucumber-keeping-the-build-passing/"
 ---
 One benefit we have when using BDD techniques properly is that we always have a failing acceptance test to guide us. The idea is that we write a failing feature, then make it pass by iterating using the standard red-green-refactor procedure. However, this is a challenge as well, as our acceptance test is going to be failing for most of the time that we're working on the feature, and we have to decide how to handle that.
 

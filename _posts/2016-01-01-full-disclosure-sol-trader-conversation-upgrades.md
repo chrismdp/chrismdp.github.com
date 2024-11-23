@@ -9,6 +9,7 @@ categories:
 - sol trader
 redirect_from:
 - "/2016/01/full-disclosure-sol-trader-conversation-upgrades"
+- "/2016/01/full-disclosure-sol-trader-conversation-upgrades/"
 ---
 Since getting the [new mission code into Sol Trader](http://chrismdp.com/2015/12/the-christmas-eve-update-with-moddable-missions/) before Christmas, I've been working on upgrading the conversation mode. Now it's possible to have much more detailed conversations with players about your events and theirs:
 

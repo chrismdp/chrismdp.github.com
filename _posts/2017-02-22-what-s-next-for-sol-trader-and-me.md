@@ -9,6 +9,7 @@ categories:
 - indie games
 redirect_from:
 - "/2017/02/what-s-next-for-sol-trader-and-me"
+- "/2017/02/what-s-next-for-sol-trader-and-me/"
 ---
 I've been rather too silent in the last couple of months about what I've been working on. Here's the low-down:
 

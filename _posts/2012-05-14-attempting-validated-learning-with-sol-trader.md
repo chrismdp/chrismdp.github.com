@@ -12,6 +12,7 @@ categories:
 - business
 redirect_from:
 - "/2012/05/attempting-validated-learning-with-sol-trader"
+- "/2012/05/attempting-validated-learning-with-sol-trader/"
 ---
 {% include callout.html color="#d9edf7" text="If you'd like to purchase Sol Trader you can do so at soltrader.net." %}
 

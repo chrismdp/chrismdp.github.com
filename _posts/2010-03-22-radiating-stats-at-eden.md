@@ -8,6 +8,7 @@ categories:
 - information radiator
 redirect_from:
 - "/2010/03/radiating-stats-at-eden"
+- "/2010/03/radiating-stats-at-eden/"
 ---
 [Information Radiators](http://www.agileadvice.com/archives/2005/05/information_rad.html) are always a good idea for software teams, and I've been pondering how best to show project state at [Eden Development](http://edendevelopment.co.uk) for a while.
 

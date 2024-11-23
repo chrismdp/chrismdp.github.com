@@ -10,6 +10,7 @@ categories:
 - startup
 redirect_from:
 - "/2012/05/sol-trader-now-in-alpha"
+- "/2012/05/sol-trader-now-in-alpha/"
 ---
 ## It's released!
 

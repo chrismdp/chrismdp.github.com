@@ -9,6 +9,7 @@ categories:
 - code
 redirect_from:
 - "/2015/05/tone-of-voice-in-sol-trader"
+- "/2015/05/tone-of-voice-in-sol-trader/"
 ---
 Hot on the heels of the [main dialogue system](/2015/05/how-dialogue-works-in-sol-trader/) in [Sol Trader](http://soltrader.net), I've been working on adding tone of voice to the system. I think this will add a lot to the way that the dialogue system works. It will allow for some interesting and thematic interactions, like the one below: 
 

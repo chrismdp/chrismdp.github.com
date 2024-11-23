@@ -12,6 +12,7 @@ categories:
 - object oriented
 redirect_from:
 - "/2013/02/the-perils-of-curiosity"
+- "/2013/02/the-perils-of-curiosity/"
 ---
 Identifying behaviour in any system can be a tricky endeavour. As a developer, unless we take clear deliberate steps to discover the desired behaviour of the system, it's very easy to just focus on what our system *does*, forget what our system is *supposed to be for.*
 

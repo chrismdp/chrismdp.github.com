@@ -11,6 +11,7 @@ categories:
 - e-petitions
 redirect_from:
 - "/2011/07/e-petitions-deconstructed"
+- "/2011/07/e-petitions-deconstructed/"
 ---
 {% include callout.html color="#f5f5f5" text="Update: I've posted more about the massive traffic surge and how we responded here." %}
 

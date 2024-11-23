@@ -7,6 +7,7 @@ categories:
 - apprenticeship
 redirect_from:
 - "/2010/02/bbc-talk-a-philosophy-of-software"
+- "/2010/02/bbc-talk-a-philosophy-of-software/"
 ---
 Video of a talk I gave recently at the BBC about the nature of software development. We discuss craftsmanship, apprenticeship and the limitations of university education, amongst other topics. 
 

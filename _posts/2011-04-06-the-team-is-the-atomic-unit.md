@@ -8,6 +8,7 @@ categories:
 - team
 redirect_from:
 - "/2011/04/the-team-is-the-atomic-unit"
+- "/2011/04/the-team-is-the-atomic-unit/"
 ---
 When something goes wrong, it's not "his fault", it's "our fault".
 

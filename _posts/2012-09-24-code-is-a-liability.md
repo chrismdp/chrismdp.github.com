@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Your code is a liability
-redirect_to: https://deliverydoubled.com/our-code-is-a-liability
 date: 2012-09-24 20:48:13.000000000 +01:00
 categories:
 - code
@@ -12,6 +11,7 @@ categories:
 - liability
 redirect_from:
 - "/2012/09/code-is-a-liability"
+- "/2012/09/code-is-a-liability/"
 ---
 Your code is a liability.
 

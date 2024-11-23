@@ -11,6 +11,7 @@ categories:
 - pininthemap
 redirect_from:
 - "/2011/09/pininthemap-customisable-pin-icons"
+- "/2011/09/pininthemap-customisable-pin-icons/"
 ---
 I've just spent some time updating my first ever Rails project, [Pin in the map](http://pininthemap.com). Now you can change the icons associated with premium (paid for) pins. There are over 100 new icons to choose from: [have fun!](http://pininthemap.com)
 

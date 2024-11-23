@@ -11,6 +11,7 @@ categories:
 - rails
 redirect_from:
 - "/2011/10/your-tests-are-lying-to-you"
+- "/2011/10/your-tests-are-lying-to-you/"
 ---
 Using mocks within your test suite has gone rather out of fashion. Programmers everywhere have been lamenting the fact that mock-based tests are becoming more and more brittle: they're having to change the test code in multiple places each time there's the slightest code change. In fact, they seem to be changing the test code much much more often than the production code.
 

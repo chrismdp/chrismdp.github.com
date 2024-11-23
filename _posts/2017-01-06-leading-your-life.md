@@ -11,6 +11,7 @@ categories:
 - motivation
 redirect_from:
 - "/2017/01/leading-your-life"
+- "/2017/01/leading-your-life/"
 ---
 ![Rail tracks](/assets/img/railtrack.jpg)
 

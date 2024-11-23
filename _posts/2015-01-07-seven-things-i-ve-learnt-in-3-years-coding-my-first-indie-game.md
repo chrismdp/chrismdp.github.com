@@ -10,6 +10,7 @@ categories:
 - game development
 redirect_from:
 - "/2015/01/seven-things-i-ve-learnt-in-3-years-coding-my-first-indie-game"
+- "/2015/01/seven-things-i-ve-learnt-in-3-years-coding-my-first-indie-game/"
 ---
 [![header](/assets/img/sol-press-header.png)](http://kck.st/1Ap3Wf8)
 

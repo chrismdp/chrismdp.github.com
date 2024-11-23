@@ -9,6 +9,7 @@ categories:
 - productivity
 redirect_from:
 - "/2006/10/svg-planner"
+- "/2006/10/svg-planner/"
 ---
 {% include callout.html color="#f5f5f5" text="By the way...This content is now pretty old: check the homepage for the latest." %}
 

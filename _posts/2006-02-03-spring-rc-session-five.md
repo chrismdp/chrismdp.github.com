@@ -9,6 +9,7 @@ categories:
 - tutorial
 redirect_from:
 - "/2006/02/spring-rc-session-five"
+- "/2006/02/spring-rc-session-five/"
 ---
 {% include callout.html color="#f5f5f5" text="By the way...This content is now pretty old: check the homepage for the latest." %}
           

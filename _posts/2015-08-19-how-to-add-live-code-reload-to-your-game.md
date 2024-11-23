@@ -10,6 +10,7 @@ categories:
 - productivity
 redirect_from:
 - "/2015/08/how-to-add-live-code-reload-to-your-game"
+- "/2015/08/how-to-add-live-code-reload-to-your-game/"
 ---
 Adding live code reloading is one of the best things I did when working on my current game, [Sol Trader](http://soltrader.net).
 

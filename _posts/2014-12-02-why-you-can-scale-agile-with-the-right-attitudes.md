@@ -10,6 +10,7 @@ categories:
 - leadership
 redirect_from:
 - "/2014/12/why-you-can-scale-agile-with-the-right-attitudes"
+- "/2014/12/why-you-can-scale-agile-with-the-right-attitudes/"
 ---
 The more I work with teams, the more I think agile at any scale lives or dies
 based on attitudes of people in the organisation, rather than the scale at

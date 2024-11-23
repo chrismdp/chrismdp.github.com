@@ -8,6 +8,7 @@ categories:
 - craftsmanship
 redirect_from:
 - "/2011/04/on-certification"
+- "/2011/04/on-certification/"
 ---
 <p><i>"Who knows a fool, must know his brother; For one will recommend another."</i></p>
 

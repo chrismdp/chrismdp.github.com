@@ -10,6 +10,7 @@ categories:
 - code
 redirect_from:
 - "/2015/12/the-science-of-blame-and-unforgiveness"
+- "/2015/12/the-science-of-blame-and-unforgiveness/"
 ---
 [Previously I wrote](/2015/11/modelling-opinions-and-prejudice-in-sol-trader/) about how I'm modelling opinions and prejudice in [Sol Trader](http://soltrader.net). It's time to put some of that information to use.
 

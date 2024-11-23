@@ -9,6 +9,7 @@ categories:
 - team
 redirect_from:
 - "/2017/12/a-new-adventure"
+- "/2017/12/a-new-adventure/"
 ---
 ![bar](/assets/img/gower-street-bar.png)
 

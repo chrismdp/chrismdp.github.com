@@ -10,6 +10,7 @@ categories:
 - code
 redirect_from:
 - "/2015/11/sol-trader-combat"
+- "/2015/11/sol-trader-combat/"
 ---
 Since the [Kickstarter was successfully funded last month](https://www.kickstarter.com/projects/chrismdp/sol-trader), I've been working hard the next major feature: combat!
 

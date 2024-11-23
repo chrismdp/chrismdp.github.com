@@ -7,6 +7,7 @@ categories:
 - charity
 redirect_from:
 - "/2010/10/childrens-future-international"
+- "/2010/10/childrens-future-international/"
 ---
 For the past few months [my company](http://edendevelopment.co.uk) has been involved with a charity in Cambodia called [Children's Future International](http://www.childrensfutureinternational.org/). They are a fantastic organisation dedicated to helping children in very challenging conditions; they enable them to live and be educated in a safe community. 
 

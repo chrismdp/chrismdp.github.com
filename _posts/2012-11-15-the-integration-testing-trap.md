@@ -9,6 +9,7 @@ categories:
 - tdd
 redirect_from:
 - "/2012/11/the-integration-testing-trap"
+- "/2012/11/the-integration-testing-trap/"
 ---
 "Why don't people read my Cucumber features?"
 

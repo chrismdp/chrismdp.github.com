@@ -10,6 +10,7 @@ categories:
 - marketing
 redirect_from:
 - "/2015/07/sol-trader-will-be-at-egx"
+- "/2015/07/sol-trader-will-be-at-egx/"
 ---
 <img style='float: right; padding: 0 0 20px 20px; width: 250px' src='/files/egx.png' alt='EGX logo'/>
 

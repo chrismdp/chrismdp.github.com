@@ -9,6 +9,7 @@ categories:
 - code
 redirect_from:
 - "/2015/05/how-face-generation-works-in-sol-trader"
+- "/2015/05/how-face-generation-works-in-sol-trader/"
 ---
 We're finally getting customised faces for characters in [Sol Trader](http://soltrader.net)! Here's a preview of some of the different faces that can be generated:
 

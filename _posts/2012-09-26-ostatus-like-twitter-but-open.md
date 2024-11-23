@@ -9,6 +9,7 @@ categories:
 - open source
 redirect_from:
 - "/2012/09/ostatus-like-twitter-but-open"
+- "/2012/09/ostatus-like-twitter-but-open/"
 ---
 *UPDATE:* I've [posted a followup](/2012/09/ostatus-what-ive-learnt-in-24-hours/) with some more learnings and links.
 

@@ -10,6 +10,7 @@ categories:
 - testing
 redirect_from:
 - "/2012/09/cucumber-isnt-a-testing-tool"
+- "/2012/09/cucumber-isnt-a-testing-tool/"
 ---
 This is your periodic reminder that [Cucumber](/tags#cucumber) isn't a testing tool.
 

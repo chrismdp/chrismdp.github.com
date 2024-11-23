@@ -10,6 +10,7 @@ categories:
 - sol trader
 redirect_from:
 - "/2015/04/why-i-ditched-all-the-build-tools"
+- "/2015/04/why-i-ditched-all-the-build-tools/"
 ---
 [![white elephant](/assets/img/white-elephant.jpg)](https://www.flickr.com/photos/pattoise/10667319965/)
 

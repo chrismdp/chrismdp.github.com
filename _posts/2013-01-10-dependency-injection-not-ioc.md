@@ -10,6 +10,7 @@ categories:
 - bdd
 redirect_from:
 - "/2013/01/dependency-injection-not-ioc"
+- "/2013/01/dependency-injection-not-ioc/"
 ---
 [David Heinemeier Hansson](http://david.heinemeierhansson.com), the creator of [Rails](http://rubyonrails.org), recently posted his [thoughts on dependency injection](http://david.heinemeierhansson.com/2012/dependency-injection-is-not-a-virtue.html). The post is written in an unhelpful inflammatory style, and it's inaccurate in its use of the terms involved.
 

@@ -9,6 +9,7 @@ categories:
 - ux
 redirect_from:
 - "/2011/04/cucumbers-with-personality"
+- "/2011/04/cucumbers-with-personality/"
 ---
 <p><i>"Personality is everything in art and poetry."</i></p>
 

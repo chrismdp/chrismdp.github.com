@@ -10,6 +10,7 @@ categories:
 - productivity
 redirect_from:
 - "/2012/09/introducing-morning-pages"
+- "/2012/09/introducing-morning-pages/"
 ---
 I've [written before](/2010/07/seven-hundred-and-fifty-words) about the value of Morning Pages - a way of clearing your head in the mornings by writing down three pages on everything you're thinking and feeling.
 

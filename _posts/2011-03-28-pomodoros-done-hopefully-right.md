@@ -7,6 +7,7 @@ categories:
 - life
 redirect_from:
 - "/2011/03/pomodoros-done-hopefully-right"
+- "/2011/03/pomodoros-done-hopefully-right/"
 ---
 It's been a while since I worked on my own, and one of the first things I did was *completely fail* to remember how to prioritise and structure my day effectively. I'd forgotten how to motivate myself when there's no standup meeting to energise you and no team members to be accountable to.
 

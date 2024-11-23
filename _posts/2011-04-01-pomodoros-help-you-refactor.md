@@ -10,6 +10,7 @@ categories:
 - pairing
 redirect_from:
 - "/2011/04/pomodoros-help-you-refactor"
+- "/2011/04/pomodoros-help-you-refactor/"
 ---
 <p><i>"If you finish a task while the Pomodoro is still ticking, the following rule applies: If a Pomodoro Begins, It Has to Ring. It’s a good idea to take advantage of the opportunity for overlearning, using the remaining portion of the Pomodoro to review or repeat what you’ve done, make small improvements, and note down what you’ve learned until the Pomodoro rings."</i></p>
 

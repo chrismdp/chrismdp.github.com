@@ -10,6 +10,7 @@ categories:
 - object oriented
 redirect_from:
 - "/2015/04/how-i-doubled-the-speed-of-my-game-by-giving-up-on-c-plus-plus"
+- "/2015/04/how-i-doubled-the-speed-of-my-game-by-giving-up-on-c-plus-plus/"
 ---
 C++ is fast. It's a good fit for games. It's certainly [faster than Ruby](/2012/01/why-i-switched-from-ruby-back-to-c-plus-plus/). However, there's a better fit for game development. It's called C.
 

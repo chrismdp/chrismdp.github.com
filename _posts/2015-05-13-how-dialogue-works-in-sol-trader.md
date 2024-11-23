@@ -9,6 +9,7 @@ categories:
 - code
 redirect_from:
 - "/2015/05/how-dialogue-works-in-sol-trader"
+- "/2015/05/how-dialogue-works-in-sol-trader/"
 ---
 I've recently designed a dialogue system for [Sol Trader](http://soltrader.net). When deciding how to support dialogue, I researched all the different ways that these systems are normally done in video games: I wanted to ensure that our system is as flexible and as immersive as possible. I've gone for a hybrid of all the methods I discovered and I explain how it works at the bottom of the post.
 

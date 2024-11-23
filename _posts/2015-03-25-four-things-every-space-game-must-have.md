@@ -9,6 +9,7 @@ categories:
 - indie games
 redirect_from:
 - "/2015/03/four-things-every-space-game-must-have"
+- "/2015/03/four-things-every-space-game-must-have/"
 ---
 ![4 things: exploration, knowledge gain, story, mastery](/assets/img/4-things-space-game.jpg)
 

@@ -10,6 +10,7 @@ categories:
 - sol trader
 redirect_from:
 - "/2013/04/features-are-documentation-not-tests"
+- "/2013/04/features-are-documentation-not-tests/"
 ---
 Cucumber features are primarily documentation, and only incidentally tests to execute.
 

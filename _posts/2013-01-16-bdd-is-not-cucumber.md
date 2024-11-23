@@ -10,6 +10,7 @@ categories:
 - functional programming
 redirect_from:
 - "/2013/01/bdd-is-not-cucumber"
+- "/2013/01/bdd-is-not-cucumber/"
 ---
 Continuing in the vein of "concept and values vs concrete tools" ([see my previous post about dependency injection](http://chrismdp.com/2013/01/dependency-injection-not-ioc)), I'd like to highlight a common fallacy about Behaviour-driven Development (BDD) and Cucumber, and BDD and story-writing; namely, that they're all the same thing.
 

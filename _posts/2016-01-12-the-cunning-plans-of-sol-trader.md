@@ -9,6 +9,7 @@ categories:
 - sol trader
 redirect_from:
 - "/2016/01/the-cunning-plans-of-sol-trader"
+- "/2016/01/the-cunning-plans-of-sol-trader/"
 ---
 I've just finished reworking the old state-machine based AI system that I threw
 in to the game last year just to get something working. Sol Trader now boasts a

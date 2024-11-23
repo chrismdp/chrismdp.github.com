@@ -8,6 +8,7 @@ categories:
 - game development
 redirect_from:
 - "/2015/06/how-sol-trader-uses-information-as-currency"
+- "/2015/06/how-sol-trader-uses-information-as-currency/"
 ---
 ![Screenshot showing you gaining information](/assets/img/discovering-events.jpg)
 

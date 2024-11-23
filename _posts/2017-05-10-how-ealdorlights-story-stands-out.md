@@ -12,6 +12,7 @@ categories:
 - kickstarter
 redirect_from:
 - "/2017/05/how-ealdorlights-story-stands-out"
+- "/2017/05/how-ealdorlights-story-stands-out/"
 ---
 ![random book](/assets/img/random-book.jpg)
 

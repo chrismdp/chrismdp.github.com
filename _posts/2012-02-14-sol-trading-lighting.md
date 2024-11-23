@@ -12,6 +12,7 @@ categories:
 - lighting
 redirect_from:
 - "/2012/02/sol-trading-lighting"
+- "/2012/02/sol-trading-lighting/"
 ---
 A quick update on the lighting code I've been working on. Now that I have normal maps and per-pixel bump mapping working, I can turn these:
 

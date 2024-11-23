@@ -10,6 +10,7 @@ categories:
 - code
 redirect_from:
 - "/2015/12/the-christmas-eve-update-with-moddable-missions"
+- "/2015/12/the-christmas-eve-update-with-moddable-missions/"
 ---
 The relative radio silence from Sol Trader Towers is for a reason: I've been working hard on a flexible and moddable mission structure, that allows players to take a variety of interesting quests in-game.
 

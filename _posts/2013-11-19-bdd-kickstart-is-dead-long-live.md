@@ -12,6 +12,7 @@ categories:
 - business
 redirect_from:
 - "/2013/11/bdd-kickstart-is-dead-long-live"
+- "/2013/11/bdd-kickstart-is-dead-long-live/"
 ---
 We are coming up to the one year anniversary of the first public BDD Kickstart, and we've got some news...
 

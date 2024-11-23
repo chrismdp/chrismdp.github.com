@@ -8,6 +8,7 @@ categories:
 - craftsmanship
 redirect_from:
 - "/2012/02/on-coding-defensively"
+- "/2012/02/on-coding-defensively/"
 ---
 When writing code that will be used by others (and we do that 100% of the time, even if the other user is ourselves in a few weeks time), there's a tricky balance to strike between being generous to the users of our code, and ensuring that they get the information they want to ensure they're calling our code correctly. There are two coding maxims: "Be generous on input, and strict on output", and "fail fast", which we need to hold in tension. This post explores the trade-offs between the two.
 

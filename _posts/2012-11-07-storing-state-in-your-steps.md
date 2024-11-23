@@ -9,6 +9,7 @@ categories:
 - state
 redirect_from:
 - "/2012/11/storing-state-in-your-steps"
+- "/2012/11/storing-state-in-your-steps/"
 ---
 It's quite common to store state inside our cucumber steps in member variables, like so:
 

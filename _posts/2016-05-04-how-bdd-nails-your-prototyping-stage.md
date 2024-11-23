@@ -9,6 +9,7 @@ categories:
 - startup
 redirect_from:
 - "/2016/05/how-bdd-nails-your-prototyping-stage"
+- "/2016/05/how-bdd-nails-your-prototyping-stage/"
 ---
 ![prototyping](/assets/img/prototyping.jpg)
 

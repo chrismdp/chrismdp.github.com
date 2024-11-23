@@ -13,6 +13,7 @@ categories:
 - liability
 redirect_from:
 - "/2015/04/your-abstractions-are-a-liability"
+- "/2015/04/your-abstractions-are-a-liability/"
 ---
 {% include callout.html color="#d9edf7" text="\"If a function is only called from a single place, consider inlining it.\"
 

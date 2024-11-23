@@ -9,6 +9,7 @@ categories:
 - tutorial
 redirect_from:
 - "/2006/04/spring-rc-thats-a-wrap"
+- "/2006/04/spring-rc-thats-a-wrap/"
 ---
 {% include callout.html color="#f5f5f5" text="By the way...This content is now pretty old: check the homepage for the latest." %}
           

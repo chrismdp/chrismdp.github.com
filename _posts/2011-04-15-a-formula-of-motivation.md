@@ -9,6 +9,7 @@ categories:
 - gtd
 redirect_from:
 - "/2011/04/a-formula-of-motivation"
+- "/2011/04/a-formula-of-motivation/"
 ---
 When reading last year, I came across the following formula for describing motivation:
 

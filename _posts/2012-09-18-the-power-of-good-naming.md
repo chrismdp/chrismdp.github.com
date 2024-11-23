@@ -9,6 +9,7 @@ categories:
 - refactoring
 redirect_from:
 - "/2012/09/the-power-of-good-naming"
+- "/2012/09/the-power-of-good-naming/"
 ---
 <p><i>"There are two hard problems in computer science: Cache invaliation, naming things, and off by one errors."</i></p>
 

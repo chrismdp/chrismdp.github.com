@@ -9,6 +9,7 @@ categories:
 - process
 redirect_from:
 - "/2014/02/make-cucumber-features-more-readable-with-this-one-weird-trick"
+- "/2014/02/make-cucumber-features-more-readable-with-this-one-weird-trick/"
 ---
 *"Sorry I've written such a long letter; I didn't have time to write a short one."*
 

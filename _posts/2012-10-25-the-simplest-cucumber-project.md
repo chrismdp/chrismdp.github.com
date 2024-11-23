@@ -8,6 +8,7 @@ categories:
 - bddkickstart
 redirect_from:
 - "/2012/10/the-simplest-cucumber-project"
+- "/2012/10/the-simplest-cucumber-project/"
 ---
 Cucumber can be really very simple. Here's a short video to show how you can get started in two minutes flat, using only two files: a simple feature file, and a few lines of ruby to execute it.
 

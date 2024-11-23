@@ -10,6 +10,7 @@ categories:
 - marketing
 redirect_from:
 - "/2015/03/sol-trader-has-been-greenlit"
+- "/2015/03/sol-trader-has-been-greenlit/"
 ---
 ![Greenlight notice](/assets/img/sol-trader-greenlit.jpg)
 

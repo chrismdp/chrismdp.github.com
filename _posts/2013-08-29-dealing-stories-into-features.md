@@ -8,6 +8,7 @@ categories:
 - bdd
 redirect_from:
 - "/2013/08/dealing-stories-into-features"
+- "/2013/08/dealing-stories-into-features/"
 ---
 <img style='float: right; padding: 0 0 20px 20px; width: 250px' src='http://ak1.ostkcdn.com/img/mxc/100706_card_shuffle.jpg' alt='Dealing cards'/>
 

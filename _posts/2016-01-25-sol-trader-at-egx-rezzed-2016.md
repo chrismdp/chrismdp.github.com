@@ -7,6 +7,7 @@ categories:
 - sol trader
 redirect_from:
 - "/2016/01/sol-trader-at-egx-rezzed-2016"
+- "/2016/01/sol-trader-at-egx-rezzed-2016/"
 ---
 [![Rezzed](http://i.imgur.com/yva0mKf.png)](http://www.egx.net/rezzed)
 

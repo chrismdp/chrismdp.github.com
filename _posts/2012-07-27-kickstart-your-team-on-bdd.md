@@ -10,6 +10,7 @@ categories:
 - ruby
 redirect_from:
 - "/2012/07/kickstart-your-team-on-bdd"
+- "/2012/07/kickstart-your-team-on-bdd/"
 ---
 [Matt Wynne](http://mattwynne.net) and I have been running courses on BDD for the BBC Future Media division for the past year or two. They've been extremely well received, so we've decided to open them up to the wider public so everyone can benefit.
 

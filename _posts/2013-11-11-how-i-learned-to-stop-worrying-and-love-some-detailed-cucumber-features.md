@@ -9,6 +9,7 @@ categories:
 - training
 redirect_from:
 - "/2013/11/how-i-learned-to-stop-worrying-and-love-some-detailed-cucumber-features"
+- "/2013/11/how-i-learned-to-stop-worrying-and-love-some-detailed-cucumber-features/"
 ---
 As the revival of interest in Cucumber continues, I'm finding that a lot more people are using Cucumber for two very different types of testing. When coaching or training, I sometimes come across QAs writing Cucumber tests like this:
 

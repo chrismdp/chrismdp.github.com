@@ -8,6 +8,7 @@ categories:
 - game development
 redirect_from:
 - "/2015/09/sol-trader-kickstarter-now-live"
+- "/2015/09/sol-trader-kickstarter-now-live/"
 ---
 {% include callout.html color="#d9edf7" text="TL;DR: You can visit the campaign here" %}
 

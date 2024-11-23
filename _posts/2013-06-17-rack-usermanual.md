@@ -9,6 +9,7 @@ categories:
 - sol trader
 redirect_from:
 - "/2013/06/rack-usermanual"
+- "/2013/06/rack-usermanual/"
 ---
 <style>
   img { border: 5px solid #eee; }

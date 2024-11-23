@@ -9,6 +9,7 @@ categories:
 - indie games
 redirect_from:
 - "/2017/03/introducing-ealdorlight"
+- "/2017/03/introducing-ealdorlight/"
 ---
 I'm very excited to be able to announce my new game...
 

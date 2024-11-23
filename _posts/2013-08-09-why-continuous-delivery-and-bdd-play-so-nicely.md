@@ -8,6 +8,7 @@ categories:
 - kickstart
 redirect_from:
 - "/2013/08/why-continuous-delivery-and-bdd-play-so-nicely"
+- "/2013/08/why-continuous-delivery-and-bdd-play-so-nicely/"
 ---
 This week we did a mini relaunch of the BDD Kickstart website as [Kickstart Academy](http://kickstartacademy.io):
 

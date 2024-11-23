@@ -11,6 +11,7 @@ categories:
 - productivity
 redirect_from:
 - "/2012/10/delegated-tasks-are-a-team-anti-pattern"
+- "/2012/10/delegated-tasks-are-a-team-anti-pattern/"
 ---
 "Jane, I'd like you to phone up the recruiter, and tell them we need a new agency person. Don't use Jim from Acme Recruitment again, you didn't get very far with him last time. Make sure you book whoever it is in for a week to work with us as a trial, like last time. That worked well."
 

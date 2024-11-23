@@ -10,6 +10,7 @@ categories:
 - lean
 redirect_from:
 - "/2012/09/the-power-of-feedback"
+- "/2012/09/the-power-of-feedback/"
 ---
 <p><i>"Everyone has a story that makes me stronger." -- Richard Simmons</i></p>
 

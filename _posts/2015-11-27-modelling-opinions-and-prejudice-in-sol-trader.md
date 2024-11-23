@@ -10,6 +10,7 @@ categories:
 - code
 redirect_from:
 - "/2015/11/modelling-opinions-and-prejudice-in-sol-trader"
+- "/2015/11/modelling-opinions-and-prejudice-in-sol-trader/"
 ---
 I've been working hard on the [Sol Trader](http://soltrader.net) core gameplay mechanics in the last two weeks. High up on my list was a way of generating more interesting missions for the characters to complete.
 

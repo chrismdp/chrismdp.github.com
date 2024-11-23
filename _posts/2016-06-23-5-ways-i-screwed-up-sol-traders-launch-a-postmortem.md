@@ -11,6 +11,7 @@ categories:
 - game development
 redirect_from:
 - "/2016/06/5-ways-i-screwed-up-sol-traders-launch-a-postmortem"
+- "/2016/06/5-ways-i-screwed-up-sol-traders-launch-a-postmortem/"
 ---
 So the Sol Trader launch ([Website](http://soltrader.net), [Steam](http://store.steampowered.com/app/396680)) didn't quite go according to plan. Here's my take on what happened, and what I'm doing about it for a 1.1 release in July.
 

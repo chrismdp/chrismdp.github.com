@@ -8,6 +8,7 @@ categories:
 - lean
 redirect_from:
 - "/2012/09/showroom-software"
+- "/2012/09/showroom-software/"
 ---
 I went to IKEA recently to buy some more furniture for my office. Whilst wandering around trying to find the desk I wanted, I happened across a one-bedroom showroom apartment. The designers of this apartment had spent a lot of time and effort getting the most out of very limited space: so much so that they had fitted this entire home, including shower room, kitchenette, dining table, lounge with sofa bed and wardrobe storage into only <i>25 square metres.</i>
 

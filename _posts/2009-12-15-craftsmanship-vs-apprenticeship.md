@@ -7,6 +7,7 @@ categories:
 - apprenticeship
 redirect_from:
 - "/2009/12/craftsmanship-vs-apprenticeship"
+- "/2009/12/craftsmanship-vs-apprenticeship/"
 ---
 There's been a [lengthy discussion](http://groups.google.com/group/software_craftsmanship/browse_thread/thread/417bec17184ccfc2) on the [software craftsmanship mailing list](http://groups.google.com/group/software_craftsmanship) over the last couple of days regarding the dangers of the Apprentice - Journeyman - Master metaphor, and how this potentially threatens to put people off the idea of software craftmanship. The responses were thoughtful and well reasoned, which showed off the general level of maturity and professionalism on the list excellently.
 

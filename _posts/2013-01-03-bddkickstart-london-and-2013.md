@@ -8,6 +8,7 @@ categories:
 - ruby
 redirect_from:
 - "/2013/01/bddkickstart-london-and-2013"
+- "/2013/01/bddkickstart-london-and-2013/"
 ---
 Fancy an update on BDD Kickstart? Here's a quick summary of where we got to at the end of last year, and what we have planned for 2013.
 

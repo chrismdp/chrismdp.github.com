@@ -8,6 +8,7 @@ categories:
 - productivity
 redirect_from:
 - "/2011/04/on-the-nature-of-time"
+- "/2011/04/on-the-nature-of-time/"
 ---
 <p><i>"Time is not a reality, but a concept or a measure."</i></p>
 

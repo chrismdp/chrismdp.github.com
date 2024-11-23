@@ -8,6 +8,7 @@ categories:
 - conference
 redirect_from:
 - "/2013/05/leading-software-teams-well"
+- "/2013/05/leading-software-teams-well/"
 ---
 I'm just on the way back from the [Scottish Ruby Conference](http://scottishrubyconference.com), where I delivered a new talk called "Leading software teams well". The slides are below, and I'll update this post with the video when it comes online.
 

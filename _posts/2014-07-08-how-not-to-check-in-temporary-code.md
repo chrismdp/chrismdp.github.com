@@ -8,6 +8,7 @@ categories:
 - bdd
 redirect_from:
 - "/2014/07/how-not-to-check-in-temporary-code"
+- "/2014/07/how-not-to-check-in-temporary-code/"
 ---
 [![facepalm](http://chrismdp.com/files/facepalm.jpg)](https://www.flickr.com/photos/brandongrasley/8227882239)
 

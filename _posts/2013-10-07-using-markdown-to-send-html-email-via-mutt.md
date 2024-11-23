@@ -11,6 +11,7 @@ categories:
 - markdown
 redirect_from:
 - "/2013/10/using-markdown-to-send-html-email-via-mutt"
+- "/2013/10/using-markdown-to-send-html-email-via-mutt/"
 ---
 A technical configuration post this time around. If you're a fan of the [Mutt](http://www.mutt.org) command line email program then read on...
 

@@ -9,6 +9,7 @@ categories:
 - productivity
 redirect_from:
 - "/2010/01/pairing-works-for-everything"
+- "/2010/01/pairing-works-for-everything/"
 ---
 We've all heard much discussion and general chatter about the value of pair programming. Amongst other benefits, it focuses the mind, speeds knowledge transfer, and builds in code review.
 

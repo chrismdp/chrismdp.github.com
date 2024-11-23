@@ -10,6 +10,7 @@ categories:
 - psychology
 redirect_from:
 - "/2015/04/how-i-m-using-proxemics-in-sol-trader-s-game-design"
+- "/2015/04/how-i-m-using-proxemics-in-sol-trader-s-game-design/"
 ---
 <div style='float: right; padding: 0 0 10px 20px; width: 250px'><img src='/files/new-relationships.gif' alt='new relationships'/>
 <div style='color: #999; padding-top: 5px'>Your relationships, shown closest first. Your relationship with your father has cooled lately...</div>

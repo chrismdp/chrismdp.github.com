@@ -9,6 +9,7 @@ categories:
 - craftsmanship
 redirect_from:
 - "/2014/04/how-to-layer-context-into-your-features-using-real-narrative"
+- "/2014/04/how-to-layer-context-into-your-features-using-real-narrative/"
 ---
 Take a look at this Cucumber feature and see what you think:
 

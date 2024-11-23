@@ -12,6 +12,7 @@ categories:
 - kanban
 redirect_from:
 - "/2010/02/the-story-card-is-not-the-story"
+- "/2010/02/the-story-card-is-not-the-story/"
 ---
 At Eden we've used a number of different options for tracking work to be done on projects. In the early days we used Basecamp tasks. We then rolled our own system, which we've since abandoned due to a gradual shift in our business practices. We've used Pivotal Tracker extensively. Whilst we still use Tracker a fair amount, on one of our new projects we're currently using index cards stuck to a kanban board, with Google Wave for extended documentation and discussion.
 

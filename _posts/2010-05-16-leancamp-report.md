@@ -7,6 +7,7 @@ categories:
 - conference
 redirect_from:
 - "/2010/05/leancamp-report"
+- "/2010/05/leancamp-report/"
 ---
 [Leancamp](http://leanca.mp) was on the 10th May, and a few Edenites including myself headed up to London to check it out.
 

@@ -9,6 +9,7 @@ categories:
 - indie games
 redirect_from:
 - "/2015/04/how-to-choose-between-realism-and-fun"
+- "/2015/04/how-to-choose-between-realism-and-fun/"
 ---
 ![city-view-screenshot](/assets/img/sol-trader-city-view.jpg)
 

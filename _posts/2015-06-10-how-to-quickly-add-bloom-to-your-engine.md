@@ -12,6 +12,7 @@ categories:
 - c++
 redirect_from:
 - "/2015/06/how-to-quickly-add-bloom-to-your-engine"
+- "/2015/06/how-to-quickly-add-bloom-to-your-engine/"
 ---
 I rewrote [Sol Trader's](http://soltrader.net) bloom code last week. I originally added bloom [over three years ago](/2012/02/effective-bloom-in-open-gl-for-sol-trader/), and now I'm refreshing of the internals of the game, it was time to take a fresh look at it.
 

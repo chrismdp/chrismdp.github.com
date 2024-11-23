@@ -11,6 +11,7 @@ categories:
 - tdd
 redirect_from:
 - "/2011/08/work-with-me"
+- "/2011/08/work-with-me/"
 ---
 I've been taking a break from my work and blogging for the summer: but now I'm looking for work again from next week.
 
