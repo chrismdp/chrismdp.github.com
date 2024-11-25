@@ -19,7 +19,13 @@ You can find me on [BlueSky](https://bsky.app/profile/chrismdp.com) and on [Link
 {% for post in site.posts limit:3 %}
    <div class="post-preview py-4">
    <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-   <div style='font-style: italic' class="py-1 post-date">{{ post.date | date: "%B %d, %Y" }}</div>
+
+   <div style='font-style: italic' class="py-1 post-date">
+   {% assign original_date = post.path | split: "/" | last | split: "-" | slice: 0, 2 | join: '' %}
+   {% assign current_date = post.date | date: "%Y%m" %}
+   {% if original_date != current_date %}Updated: {% endif %}
+   {{ post.date | date: "%B %Y" }}
+   </div>
    {% if post.badges %}{% for badge in post.badges %}<span class="badge badge-{{ badge.type }}">{{ badge.tag }}</span>{% endfor %}{% endif %}
    {{ post.content | split:'<!--more-->' | first }}
    {% if post.content contains '<!--more-->' %}

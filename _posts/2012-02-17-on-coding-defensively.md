@@ -19,7 +19,6 @@ This is another way of saying *code defensively:* we should allow the user to us
 For example, consider this method:
 
 {% highlight ruby %}
-
     def calculate_total(products)
       total = 0
       products.each do |product|
@@ -29,13 +28,11 @@ For example, consider this method:
     end
 
     calculate_total([product1, product2])
-
 {% endhighlight %}
 
 If we accept an array as an argument, we could code defensively and allow a single product to be passed as well:
 
 {% highlight ruby %}
-
     def calculate_total(products)
       products = [products] unless.products.respond_to?(:each)
       total = 0
@@ -46,7 +43,6 @@ If we accept an array as an argument, we could code defensively and allow a sing
     end
 
     calculate_total(product) # also works now
-
 {% endhighlight %}
 
 This is a nice feature and potentially allows our code to be used more flexibly.

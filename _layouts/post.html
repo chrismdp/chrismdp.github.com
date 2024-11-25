@@ -4,8 +4,15 @@ layout: page
 <div class="flex flex-col justify-between" style='padding-bottom: 12px'>
   <div style='opacity: 0.7; padding-bottom: 12px; max-width: 75%'>{% if page.categories %}{% for badge in page.categories %}<span style="opacity: 0.6; font-size:12px;{% if badge.color %}background-color:{{ badge.color }}{% endif %}" class="inline-flex items-center justify-center px-4 py-1 mr-2 text-xs font-bold leading-none text-violet-100 bg-violet-600 rounded{% if site.badge_rounded %}-full{% endif %}"><a style="cursor:pointer; color:white" href="{{ site.url }}{{ site.baseurl }}/tags#{{ badge | replace: ' ', '-' }}">{{ badge }}</a></span>{% endfor %}{% endif %}</div>
 
-  <div style="font-style: italic;">{{ page.date | date: "%B %d, %Y" }}</div>
+{% assign original_date = page.path | split: "/" | last | split: "-" | slice: 0, 2 | join: '' %}
+{% assign current_date = page.date | date: "%Y%m" %}
+{% if original_date != current_date %}
+  <div style="font-style: italic;">Updated: {{ page.date | date: "%B %Y" }}</div>
+{% else %}
+  <div style="font-style: italic;">{{ page.date | date: "%B %Y" }}</div>
+{% endif %}
 </div>
+
 
 {{ content }}
 
@@ -17,4 +24,23 @@ layout: page
 
   <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
   <script type="IN/Share" data-url="{{ site.url }}{{ page.url }}"></script>
+</div>
+<br>
+
+<hr>
+
+<div>
+  {% for tag in page.categories %}
+    <h3>More on: {{ tag }}</h3>
+    <div class="post-list" style="margin-bottom:40px">
+      {% for post in site.categories[tag] | limit: 5 %}
+        {% if post.id != page.id %}
+          <div class="tag-entry">
+            <a href="{{- site.url -}}{{- post.url -}}">{{- post.title -}}</a>
+            <time class='text-xs opacity-50' datetime="{{- post.date | date_to_xmlschema -}}"> {{- post.date | date: "%b %Y" -}}</time>
+          </div>
+        {% endif %}
+      {%- endfor -%}
+    </div>
+  {% endfor %}
 </div>
