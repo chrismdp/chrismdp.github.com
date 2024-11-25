@@ -2,7 +2,7 @@
 layout: page
 ---
 <div class="flex flex-col justify-between" style='padding-bottom: 12px'>
-  <div style='padding-bottom: 12px; max-width: 75%'>{% if page.categories %}{% for badge in page.categories %}<span style="opacity: 0.6; font-size:12px;{% if badge.color %}background-color:{{ badge.color }}{% endif %}" class="inline-flex items-center justify-center px-4 py-1 mr-2 text-xs font-bold leading-none text-violet-100 bg-violet-600 rounded{% if site.badge_rounded %}-full{% endif %}"><a style="cursor:pointer; color:white" href="{{ site.url }}{{ site.baseurl }}/tags#{{ badge | replace: ' ', '-' }}">{{ badge }}</a></span>{% endfor %}{% endif %}</div>
+  <div style='opacity: 0.7; padding-bottom: 12px; max-width: 75%'>{% if page.categories %}{% for badge in page.categories %}<span style="opacity: 0.6; font-size:12px;{% if badge.color %}background-color:{{ badge.color }}{% endif %}" class="inline-flex items-center justify-center px-4 py-1 mr-2 text-xs font-bold leading-none text-violet-100 bg-violet-600 rounded{% if site.badge_rounded %}-full{% endif %}"><a style="cursor:pointer; color:white" href="{{ site.url }}{{ site.baseurl }}/tags#{{ badge | replace: ' ', '-' }}">{{ badge }}</a></span>{% endfor %}{% endif %}</div>
 
   <div style="font-style: italic;">{{ page.date | date: "%B %d, %Y" }}</div>
 </div>
@@ -11,4 +11,10 @@ layout: page
 
 <hr>
 
-<a class='underline' href="https://bsky.app/intent/compose?text={{ page.title}}%20%20{{ site.url }}{{ page.url }}">Share on BlueSky</a> to comment.
+<div class="flex justify-between items-center">
+
+  <div>Share on <a target="share" class='underline' href="https://bsky.app/intent/compose?text={{ page.title}}%20%20{{ site.url }}{{ page.url }}">BlueSky</a></div>
+
+  <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+  <script type="IN/Share" data-url="{{ site.url }}{{ page.url }}"></script>
+</div>
