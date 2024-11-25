@@ -31,16 +31,33 @@ layout: page
 
 <div>
   {% for tag in page.categories %}
-    <h3>More on: {{ tag }}</h3>
-    <div class="post-list" style="margin-bottom:40px">
-      {% for post in site.categories[tag] | limit: 5 %}
-        {% if post.id != page.id %}
-          <div class="tag-entry">
-            <a href="{{- site.url -}}{{- post.url -}}">{{- post.title -}}</a>
-            <time class='text-xs opacity-50' datetime="{{- post.date | date_to_xmlschema -}}"> {{- post.date | date: "%b %Y" -}}</time>
-          </div>
-        {% endif %}
-      {%- endfor -%}
-    </div>
+    {% assign tag_posts = site.categories[tag] %}
+    {% assign related_posts = "" %}
+
+    {% for post in tag_posts %}
+      {% if post.id != page.id %}
+        {% assign related_posts = related_posts | append: post.id | append: "," %}
+      {% endif %}
+    {% endfor %}
+
+    {% assign related_posts_count = related_posts | split: "," | size | minus: 1 %}
+
+    {% if related_posts_count > 0 %}
+      <h3>More on: {{ tag }}</h3>
+      <div class="post-list" style="margin-bottom:40px">
+        {% assign related_posts_array = related_posts | split: "," | uniq %}
+        {% for post_id in related_posts_array limit: 5 %}
+          {% assign post = site.posts | where: "id", post_id | first %}
+          {% if post %}
+            <div class="tag-entry">
+              <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+              <time class='text-xs opacity-50' datetime="{{ post.date | date_to_xmlschema }}">
+                {{ post.date | date: "%b %Y" }}
+              </time>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
   {% endfor %}
 </div>
