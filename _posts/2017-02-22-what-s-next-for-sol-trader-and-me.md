@@ -13,7 +13,7 @@ redirect_from:
 ---
 I've been rather too silent in the last couple of months about what I've been working on. Here's the low-down:
 
-**Sol Trader 1.3: enhanced gameplay, balance &amp; UI improvements**
+## Sol Trader 1.3: enhanced gameplay, balance &amp; UI improvements
 
 I've been thinking about how to further improve [Sol Trader](http://soltrader.net), my first indie game released last year. The game hasn't sold that well - you can check the numbers on Steam Spy for yourself. I've [written about this before](/2016/06/5-ways-i-screwed-up-sol-traders-launch-a-postmortem/): in summary I've put the lack of sales down to a crowded space-sim genre and a lack of focused playtesting which gave rise to gameplay and UI that was hard to learn.
 
@@ -21,7 +21,7 @@ Encouragingly, people who do get past the UI tend to love the gameplay, and I'd 
 
 I'm showing Sol Trader again at [Rezzed](https://www.egx.net/rezzed) at the end of March, so if you want to see a preview of the improvements, stop by and come and play the game! The new major update should be ready in April. You can also [buy Sol Trader on Steam right now](http://store.steampowered.com/app/396680).
 
-**The next game :)**
+## The next game :)
 
 Eventually, I'm best served by moving on to a new project, so I've also been prototyping an exciting new game idea this year. It's based on some of the best ideas in Sol Trader, combining a lot of the innovations with a streamlined gameplay experience that will be easier to get into. I've already got together a name, backstory and setting (it's not a space game) and test gameplay. I'm not quite ready to talk about it publicly yet - I will be soon!
 
@@ -29,7 +29,7 @@ I'm in the process of figuring out funding for the new game, and I'm thinking of
 
 I'd [love to hear from you](mailto:chris@revelationgames.co) if you have thoughts about funding. I'll also be at GDC next week if you want to chat there.
 
-**Introducing: Revelation Games**
+## Introducing: Revelation Games
 
 I've finally pulled my games development work into my own label: [Revelation Games](http://revelationgames.co). You can follow on [Twitter](http://twitter.com/revelationga) to get the latest updates, or [sign up to the mailing list](https://confirmsubscription.com/h/r/1458D7D6C263FB37).
 
