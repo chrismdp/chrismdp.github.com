@@ -14,7 +14,7 @@ I advise startup founders on tech strategy, and coach first-time CTOs &amp; foun
 
 <!--more-->
 
-Previously I helped scaled a startup from a handful of people to 50+ at [Gower Street](https://gower.st). I've trained hundreds of developers at the [BBC](http://bbc.co.uk) and I helped [GDS](http://digital.cabinetoffice.gov.uk/about/) get started in the early days, working on [GOV.UK](http://gov.uk) and [e-petitions](/tags#e-petitions).
+Previously I helped scale [Gower Street](https://gower.st) from 7 to 50 employees, including building a data science function from scratch. I've trained hundreds of developers at the [BBC](http://bbc.co.uk) and I helped [GDS](http://digital.cabinetoffice.gov.uk/about/) get started in the early days, working on [GOV.UK](http://gov.uk) and [e-petitions](/tags#e-petitions).
 
 I have consulted widely in technical architecture and agile management, and trained and coached teams in [agile](/tags#agile), [BDD](/tags#bdd), [automated testing](/tags#testing), [clean code](/tags#craftsmanship), and [great team practices](/tags#team). I ran the team that released the indie game [Sol Trader](/tags#soltrader) in 2016, and I was Founder/CEO of [Eden Development](/tags#eden), a 12 person client services software firm, from 2005 to 2011.
 
