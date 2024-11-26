@@ -5,10 +5,7 @@ date: 2010-02-11 15:55:00.000000000 +00:00
 categories:
 - xp
 - agile
-- pivotal tracker
-- balsamiq
-- basecamp
-- stories
+- eden
 - kanban
 redirect_from:
 - "/2010/02/the-story-card-is-not-the-story"

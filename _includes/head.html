@@ -17,17 +17,17 @@
 
 <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-<meta property="og:description" content="{% if page.content contains '<!--more-->' %}{{ page.content | split: '<!--more-->' | first | strip_html | strip_newlines }}{% elsif page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+<meta property="og:description" content="{{ page.excerpt | strip_html }}" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{ site.url }}" />
 <meta property="og:site_name" content="{{ site.url }}" />
 
 <meta itemprop="name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-<meta name="description" itemprop="description" content="{% if page.content contains '<!--more-->' %}{{ page.content | split: '<!--more-->' | first | strip_html | strip_newlines }}{% elsif page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:description" content="{{ page.excerpt | strip_html }}" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
-<meta name="twitter:description" content="{% if page.content contains '<!--more-->' %}{{ page.content | split: '<!--more-->' | first | strip_html | strip_newlines }}{% elsif page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"/>
+<meta name="twitter:description" content="{{ page.excerpt | strip_html }}" />
 {% if site.logo %}<meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}{{ site.logo }}">{% endif %}
 
 <meta name=referrer content=origin>

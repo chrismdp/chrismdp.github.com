@@ -2,17 +2,21 @@
 layout: page
 title: Hi, I'm Chris.
 permalink: /
+excerpt: "I have 25 years of experience running tech teams and founding startups. I'm co-founder/CTO of Cherrypick, the best meal-led grocery shopping assistant on the market. I advise startup founders on tech strategy, and coach first-time CTOs &amp; founding developers at funded startups - if you think I might be able to help you, get in touch."
+
 ---
 
 <img alt='Chris Parsons' src='/assets/img/chris-headshot-2022-cropped.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width:200px'/>
 
 I have 25 years of experience running tech teams and founding startups. I'm co-founder/CTO of [Cherrypick](//cherrypick.co), the best meal-led grocery shopping assistant on the market.
 
-I also advise startup founders on tech strategy, and coach first-time CTOs &amp; solo startup devs - if you think I might be able to help you [message me to book a free 30 minute call](https://bsky.app/profile/chrismdp.com).
+I advise startup founders on tech strategy, and coach first-time CTOs &amp; founding developers at funded startups - if you think I might be able to help you [message me to book a free 30 minute call](https://bsky.app/profile/chrismdp.com).
 
-Previously I spent three years in charge of film and technology teams at [Gower Street](https://gower.st), consulted widely in technical architecture and agile management, and trained and coached teams in [agile](/tags#agile), [BDD](/tags#bdd), [automated testing](/tags#testing), [clean code](/tags#craftsmanship), and [great team practices](/tags#team). I ran the team that released the indie game [Sol Trader](http://soltrader.net) in 2016, and I was CEO of Eden Development, a client services software company, from 2005 to 2011.
+<!--more-->
 
-Past clients have included large organisations such as the [BBC](http://bbc.co.uk) and [Cabinet Office](http://www.cabinetoffice.gov.uk/). I worked at [GDS](http://digital.cabinetoffice.gov.uk/about/) on the new [GOV.UK](http://gov.uk) platform and the first version of [e-petitions](/tags#e-petitions)).
+Previously I spent three years in charge of film and technology teams at [Gower Street](https://gower.st). I've trained hundreds of developers at the [BBC](http://bbc.co.uk) and I helped [GDS](http://digital.cabinetoffice.gov.uk/about/) get started in the early days, working on [GOV.UK](http://gov.uk) and [e-petitions](/tags#e-petitions).
+
+I have consulted widely in technical architecture and agile management, and trained and coached teams in [agile](/tags#agile), [BDD](/tags#bdd), [automated testing](/tags#testing), [clean code](/tags#craftsmanship), and [great team practices](/tags#team). I ran the team that released the indie game [Sol Trader](/tags#soltrader) in 2016, and I was Founder/CEO of [Eden Development](/tags#eden), a 12 person client services software firm, from 2005 to 2011.
 
 You can find me on [BlueSky](https://bsky.app/profile/chrismdp.com) and on [LinkedIn](https://linkedin.com/in/chrisparsons). Here are some of my more recent articles - subscribe with <a href="{{ site.baseurl }}/feed.xml">RSS</a> to keep up with the latest.
 
@@ -27,10 +31,8 @@ You can find me on [BlueSky](https://bsky.app/profile/chrismdp.com) and on [Link
    {{ post.date | date: "%B %Y" }}
    </div>
    {% if post.badges %}{% for badge in post.badges %}<span class="badge badge-{{ badge.type }}">{{ badge.tag }}</span>{% endfor %}{% endif %}
-   {{ post.content | split:'<!--more-->' | first }}
-   {% if post.content contains '<!--more-->' %}
-      <a class='underline' href="{{ site.baseurl }}{{ post.url }}">Read more</a>
-   {% endif %}
+   {{ post.excerpt }}
+   <a class='underline' href="{{ site.baseurl }}{{ post.url }}">Read more</a>
    </div>
 {% endfor %}
 

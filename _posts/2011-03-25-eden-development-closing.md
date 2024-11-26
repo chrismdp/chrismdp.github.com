@@ -4,6 +4,7 @@ title: Eden Development has closed
 date: 2011-03-25 15:52:09.000000000 +00:00
 categories:
 - business
+- eden
 - life
 redirect_from:
 - "/2011/03/eden-development-closing"

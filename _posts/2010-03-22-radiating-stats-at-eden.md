@@ -4,7 +4,7 @@ title: Radiating status at Eden
 date: 2010-03-22 13:55:00.000000000 +00:00
 categories:
 - agile
-- code
+- eden
 - information radiator
 redirect_from:
 - "/2010/03/radiating-stats-at-eden"
