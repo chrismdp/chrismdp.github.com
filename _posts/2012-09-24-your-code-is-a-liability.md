@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Your code is a liability
+title: Your Code Is A Liability
 date: 2024-11-25 20:00:31 +0000
 categories:
 - code
