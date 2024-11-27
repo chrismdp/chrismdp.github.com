@@ -16,9 +16,9 @@ redirect_from:
 - "/code-is-a-liability"
 ---
 
-Every line of code you commit is more for someone else to read, digest and understand.
+Every chunk of code you commit is more for someone else to read, digest and understand.
 
-Every complex “clever” regular expression requires another few minutes of effort for each of your team. They must now interpreting what you wrote and why you wrote it.
+Every complex “clever” expression requires another few minutes of effort for each of your team. They must now interpret what you wrote and why you wrote it.
 
 Every line you add limits your project’s responsiveness to change.
 
@@ -26,11 +26,25 @@ Your code is a liability. Never forget this.
 
 <!--more-->
 
-## Only the features are an asset
+## The features are the asset
 
-We need code: it’s a major way we deliver features. But how much code do our features really need?
+We need code: it’s a major way we deliver features. The feature is the reason we write the code in the first place.
+
+Except when it isn't. The allure of a "proper" architecture is real. Fight it. Force every part of your code to directly contribute value now.
+
+How much code does your feature really need? What's the simplest smallest version of the feature in front of you that you can learn from?
+
+If you're a startup, much of your company will not survive contact with customers. The quicker you find out what to remove the better. If you build a whole framework to serve a feature, and it's not needed, you're less likely to delete the feature when it proves superfluous.
 
 The more that we can reduce the amount of code we write, without reducing the value by the same amount, the more lightweight and agile the result. The smaller our codebase, the easier it is to understand.
+
+## Don't compromise on quality
+
+Don't skip the tests for critical code that's beyond your ability to understand at a glance. That limit is lower that you think. It's even lower for your future self.
+
+As Dave Astels said: "Test where the risk is."
+
+Don't write tests for everything when you're just figuring out the feature. Don't test UI directly - UI tests takes tooo long to run and the maintenance is almost never worth it.
 
 ## Write code in conversation
 
