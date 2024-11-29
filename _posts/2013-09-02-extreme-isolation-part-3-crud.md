@@ -5,7 +5,6 @@ date: 2013-09-02 11:22:27.000000000 +01:00
 categories:
 - ruby
 - state
-- craftsmanship
 - crud
 - code
 - cucumber

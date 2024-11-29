@@ -5,7 +5,6 @@ date: 2013-02-07 07:27:02.000000000 +00:00
 categories:
 - bdd
 - testing
-- craftsmanship
 - products
 - sol trader
 - functional programming

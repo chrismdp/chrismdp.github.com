@@ -5,7 +5,6 @@ date: 2012-04-16 12:20:48.000000000 +01:00
 categories:
 - code
 - c++
-- craftsmanship
 - dci
 - sol trader
 redirect_from:

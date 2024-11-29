@@ -6,7 +6,6 @@ categories:
 - process
 - productivity
 - bdd
-- craftsmanship
 - feedback
 redirect_from:
 - "/2013/01/project-velocity-is-a-useless-metric-discuss"

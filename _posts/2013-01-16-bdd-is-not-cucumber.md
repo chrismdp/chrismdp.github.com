@@ -6,7 +6,6 @@ categories:
 - bdd
 - cucumber
 - tdd
-- craftsmanship
 - functional programming
 redirect_from:
 - "/2013/01/bdd-is-not-cucumber"

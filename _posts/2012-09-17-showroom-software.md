@@ -5,7 +5,6 @@ date: 2012-09-17 20:34:12.000000000 +01:00
 categories:
 - products
 - business
-- lean
 redirect_from:
 - "/2012/09/showroom-software"
 - "/2012/09/showroom-software/"

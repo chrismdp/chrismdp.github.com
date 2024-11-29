@@ -8,7 +8,6 @@ categories:
 - learning
 - products
 - agile
-- lean
 - business
 redirect_from:
 - "/2012/05/attempting-validated-learning-with-sol-trader"

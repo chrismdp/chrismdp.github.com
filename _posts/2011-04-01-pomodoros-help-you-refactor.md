@@ -6,7 +6,6 @@ categories:
 - code
 - pomodoros
 - tdd
-- craftsmanship
 - pairing
 redirect_from:
 - "/2011/04/pomodoros-help-you-refactor"

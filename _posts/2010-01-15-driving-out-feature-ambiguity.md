@@ -5,7 +5,6 @@ date: 2010-01-15 06:19:00.000000000 +00:00
 categories:
 - cucumber
 - apprenticeship
-- craftsmanship
 - ambiguity
 - katas
 redirect_from:

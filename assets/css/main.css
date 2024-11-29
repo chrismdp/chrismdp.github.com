@@ -114,3 +114,12 @@ figure {
   border-radius: 8px;
   margin: 16px 0;
 }
+
+.footnotes {
+  margin: 16px 0;
+}
+
+.footnotes li {
+  font-size: 0.8em;
+  margin: 16px 0;
+}

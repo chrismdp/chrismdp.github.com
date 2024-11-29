@@ -42,7 +42,7 @@ This is not like a regular office job where you might be able to tolerate a co-w
 
 ## Solo founders
 
-If you are a technical person founding a company on your own, the first person you hire is the most important relationship in your business. Your relationships will define the interactions between all the team members coming after you.
+If you are a technical person founding a company on your own, the first person you hire is the most important relationship in your business. Your relationship will define the interactions between all the team members coming after you.
 
 Before your first hire, think deeply about the kinds of interactions and values you want in your company. During the hiring process make sure that this person will accept and build on those values.
 

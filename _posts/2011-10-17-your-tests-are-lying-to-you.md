@@ -5,7 +5,6 @@ date: 2011-10-17 19:10:29.000000000 +01:00
 categories:
 - code
 - cucumber
-- craftsmanship
 - bdd
 - rspec
 - rails

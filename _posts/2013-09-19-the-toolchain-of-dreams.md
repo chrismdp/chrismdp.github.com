@@ -10,7 +10,6 @@ categories:
 - code
 - rails
 - git
-- craftsmanship
 - bdd
 redirect_from:
 - "/2013/09/the-toolchain-of-dreams"

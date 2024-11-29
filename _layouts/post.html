@@ -16,18 +16,14 @@ layout: page
 
 {{ content }}
 
-<hr>
+<div class='py-8'>
+  <h3>Share this article</h3>
 
-<div class="flex justify-between items-center">
-
-  <div>Share on <a target="share" class='underline' href="https://bsky.app/intent/compose?text={{ page.title}}%20%20{{ site.url }}{{ page.url }}">BlueSky</a></div>
+  <div class='pb-2'><a target="share" class='underline' href="https://bsky.app/intent/compose?text={{ page.title}}%20%20{{ site.url }}{{ page.url }}">BlueSky</a></div>
 
   <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
   <script type="IN/Share" data-url="{{ site.url }}{{ page.url }}"></script>
 </div>
-<br>
-
-<hr>
 
 <div>
   {% for tag in page.categories %}
@@ -40,7 +36,7 @@ layout: page
       {% endif %}
     {% endfor %}
 
-    {% assign related_posts_count = related_posts | split: "," | size | minus: 1 %}
+    {% assign related_posts_count = related_posts | split: "," | size %}
 
     {% if related_posts_count > 0 %}
       <h3>More on: {{ tag }}</h3>

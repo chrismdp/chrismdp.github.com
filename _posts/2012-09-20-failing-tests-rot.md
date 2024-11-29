@@ -4,7 +4,6 @@ title: Never leave a failing test
 date: 2012-09-20 15:36:32.000000000 +01:00
 categories:
 - tdd
-- craftsmanship
 - code
 - testing
 redirect_from:

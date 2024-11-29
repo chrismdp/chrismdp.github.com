@@ -7,7 +7,6 @@ categories:
 - tdd
 - bdd
 - feedback
-- lean
 redirect_from:
 - "/2012/09/the-power-of-feedback"
 - "/2012/09/the-power-of-feedback/"

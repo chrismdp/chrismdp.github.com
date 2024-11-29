@@ -4,10 +4,7 @@ title: 'Lean code: slides and feedback'
 date: 2011-05-26 21:35:40.000000000 +01:00
 categories:
 - code
-- lean
-- presentation
-- software craftsmanship
-- sc2011
+- talks
 redirect_from:
 - "/2011/05/lean-code-slides-and-feedback"
 - "/2011/05/lean-code-slides-and-feedback/"

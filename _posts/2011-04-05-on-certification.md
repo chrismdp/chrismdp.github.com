@@ -5,7 +5,6 @@ date: 2011-04-05 16:14:49.000000000 +01:00
 categories:
 - business
 - certification
-- craftsmanship
 redirect_from:
 - "/2011/04/on-certification"
 - "/2011/04/on-certification/"

@@ -5,7 +5,6 @@ date: 2012-09-18 20:43:02.000000000 +01:00
 redirect_to: https://deliverydoubled.com/name-as-if-your-life-depends-on-it-a-guide-to-cleaner-code/
 categories:
 - code
-- craftsmanship
 - refactoring
 redirect_from:
 - "/2012/09/the-power-of-good-naming"

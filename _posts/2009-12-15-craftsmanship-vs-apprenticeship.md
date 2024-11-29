@@ -3,7 +3,6 @@ layout: post
 title: Craftsmanship vs. Apprenticeship
 date: 2009-12-15 20:48:00.000000000 +00:00
 categories:
-- craftsmanship
 - apprenticeship
 redirect_from:
 - "/2009/12/craftsmanship-vs-apprenticeship"

@@ -3,7 +3,6 @@ layout: post
 title: Five things I learnt from Corey Haines
 date: 2010-03-17 10:18:00.000000000 +00:00
 categories:
-- craftsmanship
 - pairing
 - code
 redirect_from:

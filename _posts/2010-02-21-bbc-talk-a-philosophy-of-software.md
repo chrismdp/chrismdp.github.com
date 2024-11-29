@@ -3,7 +3,7 @@ layout: post
 title: BBC Talk on A Philosophy of Software
 date: 2010-02-21 08:35:00.000000000 +00:00
 categories:
-- craftsmanship
+- talks
 - apprenticeship
 redirect_from:
 - "/2010/02/bbc-talk-a-philosophy-of-software"

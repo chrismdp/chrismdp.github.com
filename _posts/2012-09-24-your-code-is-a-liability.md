@@ -4,10 +4,9 @@ title: Your Code Is A Liability
 date: 2024-11-25 20:00:31 +0000
 categories:
 - code
-- craftsmanship
-- lean
 - agile
 - team
+- startup
 - liability
 redirect_from:
 - "/2012/09/code-is-a-liability"
@@ -28,19 +27,19 @@ Your code is a liability. Never forget this.
 
 ## The features are the asset
 
-We need code: it’s a major way we deliver features. The feature is the reason we write the code in the first place.
+We need code: it’s a major way we deliver features. The feature is the reason we write the code in the first place.[^1]
 
-Except when it isn't. The allure of a "proper" architecture is real. Fight it. Force every part of your code to directly contribute value now.
+The only way to value features is through the code we write to create them. CFOs treat code an as asset, because it is the material connection they have to the feature provided and the business value behind it. It's not the code itself that has value. Counter-intuitively, the more code needed to deliver the value, the less valuable the asset.
 
-How much code does your feature really need? What's the simplest smallest version of the feature in front of you that you can learn from?
+If you're a startup, much of your company will not survive contact with customers. The quicker you find out what to remove the better. If you build a whole framework to serve a feature, and it's not needed, you're less likely to delete the feature when it proves superfluous. How much code does your feature really need? What's the simplest smallest version of the feature in front of you that you can learn from?
 
-If you're a startup, much of your company will not survive contact with customers. The quicker you find out what to remove the better. If you build a whole framework to serve a feature, and it's not needed, you're less likely to delete the feature when it proves superfluous.
+Thinking of code as a liability puts AI into perspective. It is possible to churn out code using language models and it may have some value. Who decides whether it is providing the feature? We need strong developers to determine this.
 
-The more that we can reduce the amount of code we write, without reducing the value by the same amount, the more lightweight and agile the result. The smaller our codebase, the easier it is to understand.
+Code is a liability, but coders are a clear asset.
 
 ## Don't compromise on quality
 
-Don't skip the tests for critical code that's beyond your ability to understand at a glance. That limit is lower that you think. It's even lower for your future self.
+Developers: don't skip the tests for critical code that's beyond your ability to understand at a glance. That limit is lower that you think. It's even lower for your future self.
 
 As Dave Astels said: "Test where the risk is."
 
@@ -70,4 +69,9 @@ Can we solve this problem with a high quality library, or API? Are we able to re
 
 Avoiding writing code at all is especially important when we’re navigating a new complex idea. Plenty of times we’re not exactly sure how the feature we’re working on will evolve yet. The fewer lines of code we write, the better chance we have of changing the feature later into what we discover it actually needs to do.
 
-When we embrace that our code is a liability, everything becomes lighter. Our functionality is set free from heavyweight code drag. It allows our features to soar, responsive to change requests, and easily debugged - there's just not that much code to go through.
+When we embrace that our code is a liability, everything becomes lighter. Our functionality is set free from heavyweight code drag. It allows our features to soar, responsive to change requests, and easily debugged. There's just not that much code to go through.
+
+---
+
+[^1]: Except when the feature isn't the reason we wrote the code. The allure of a "proper" architecture is real. Fight it. Force every part of your code to directly contribute value now.
+

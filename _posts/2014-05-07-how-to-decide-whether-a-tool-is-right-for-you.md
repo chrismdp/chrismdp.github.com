@@ -6,7 +6,6 @@ categories:
 - tools
 - anti-pattern
 - process
-- craftsmanship
 - bdd
 redirect_from:
 - "/2014/05/how-to-decide-whether-a-tool-is-right-for-you"

@@ -3,7 +3,6 @@ layout: post
 title: Leancamp Report
 date: 2010-05-16 10:15:00.000000000 +01:00
 categories:
-- lean
 - conference
 redirect_from:
 - "/2010/05/leancamp-report"

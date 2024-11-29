@@ -3,7 +3,6 @@ layout: post
 title: Job titles are a team anti-pattern
 date: 2012-09-25 20:48:24.000000000 +01:00
 categories:
-- lean
 - agile
 - team
 - anti-pattern

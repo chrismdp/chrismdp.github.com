@@ -5,7 +5,6 @@ date: 2013-05-09 10:34:52.000000000 +01:00
 categories:
 - ruby
 - state
-- craftsmanship
 - refactoring
 - sol trader
 - code

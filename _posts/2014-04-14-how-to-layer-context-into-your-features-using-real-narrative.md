@@ -6,7 +6,6 @@ categories:
 - bdd
 - stories
 - cucumber
-- craftsmanship
 redirect_from:
 - "/2014/04/how-to-layer-context-into-your-features-using-real-narrative"
 - "/2014/04/how-to-layer-context-into-your-features-using-real-narrative/"

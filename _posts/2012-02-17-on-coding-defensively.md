@@ -5,7 +5,6 @@ date: 2012-02-17 18:57:25.000000000 +00:00
 categories:
 - code
 - ruby
-- craftsmanship
 redirect_from:
 - "/2012/02/on-coding-defensively"
 - "/2012/02/on-coding-defensively/"

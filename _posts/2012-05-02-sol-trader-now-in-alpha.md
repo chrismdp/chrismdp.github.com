@@ -6,7 +6,6 @@ categories:
 - sol trader
 - products
 - agile
-- lean
 - startup
 redirect_from:
 - "/2012/05/sol-trader-now-in-alpha"
