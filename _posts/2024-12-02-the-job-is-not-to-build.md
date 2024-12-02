@@ -30,7 +30,7 @@ I spent thousands of hours building a carefully designed, well architected game 
 
 On release, I got negative feedback. There were a tirade of Steam reviews stating similar issues to early feedback I had received. I discovered that outside a small niche not enough people wanted to play it.
 
-At that point I started to listen. My response was to build more. I released many patches. These made a small difference, but did not move the needle.
+At that point I was worried. My response was to build more. I released many patches. These made a small difference, but did not move the needle.
 
 The problem was not that I did not talk to customers, or look at engagement metrics. The problem was that I did not listen.
 
