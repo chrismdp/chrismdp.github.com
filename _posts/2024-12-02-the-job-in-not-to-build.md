@@ -15,6 +15,8 @@ Your job is not to build software. Your role is to use your technical expertise 
 
 You might do this through building software, but you might not need to.
 
+<!--more-->
+
 ## Why startups exist
 
 Startups exists to find a solution to a problem someone has, and then to build a product around it. Ideally that problem is not being addressed well for a certain group of people, and there is a chance to improve the lives of those people in a way that makes money.
