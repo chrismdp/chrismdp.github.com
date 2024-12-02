@@ -6,16 +6,37 @@ categories:
 - business
 - product
 - startup
+- sol trader
 - cto
 ---
 
 Startup CTOs or founding developers are the first technical people in the business. It is natural to think your job is to write code and build software. This is backwards.
 
-Your job is not to build software. Your role is to use your technical expertise to help the startup figure out fast if you have a valid solution to a compelling problem, and then a valid product for a big enough market.
+Your first job is not to build software. Your role is to use your technical expertise to help the startup figure out fast if you have a valid solution to a compelling problem, and then a valid product for a big enough market.
 
 You might do this through building software, but you might not need to.
 
+Here is a story of how I did this wrong, and how you can do it right.
+
 <!--more-->
+
+## Building the wrong thing
+
+When I created [Sol Trader](https://store.steampowered.com/app/396680) between 2012 and 2016, I made the game I always wanted to play. I [released early](/sol-trader-now-in-alpha/), determined to get feedback. I waved away much of the early feedback because they had not understood what I was making. The product was not finished yet. I knew what I wanted to build.  
+
+I used [KISSmetrics](https://kissmetrics.io) to built in lots of analytics and events so I could track what players were doing. These metrics told me that players would play for a while, and get bored. This did not matter. I was missing key features. Once those were in place, the players would come back. I knew what I wanted to build.
+
+I spent thousands of hours building a carefully designed, well architected game complete with a custom C++ engine that compiled in a few seconds. It was glorious.
+
+On release, I got negative feedback. There were a tirade of Steam reviews stating similar issues to early feedback I had received. I discovered that outside a small niche not enough people wanted to play it.
+
+At that point I started to listen. My response was to build more. I released many patches. These made a small difference, but did not move the needle.
+
+The problem was not that I did not talk to customers, or look at engagement metrics. The problem was that I did not listen.
+
+Eventually I realised I had made the wrong game. I had jumped to building the game of my dreams, without truly understanding the gap that my game might fill in people's lives. That is fine if game development is a hobby, but I wanted to make it a business. I did not think through whether I had the right product for a big enough market.
+
+I had no idea the that first job is not to build.
 
 ## Why startups exist
 
@@ -59,7 +80,7 @@ Demo to potential customers. Listen to what they say to you and iterate. Ask the
 
 ## Help the team reach people
 
-Set up simple systems to manage your customer funnel. Use simple cheap tools to start, and stay low tech until you've figured out what you want.
+Set up simple systems to manage your customer funnel. Use simple cheap tools to start, and stay low tech until you have figured out what you want.
 
 If you are selling to businesses, a simple sales funnel can be a Google Sheet, or even a Slides doc, or perhaps a Notion page. If you are doing direct sales or customer outreach, help set up a simple CRM. As a technical person, you are good at information flow. Use your knowledge to keep the team efficient.
 
@@ -77,7 +98,7 @@ If you feel you are not using your coding skills, it is time for a moment of sel
 
 Startup technical work is not just coding. It is learning. It is communicating the art of the possible.
 
-Your skills come in when you have to understand whether or not to build, and how much to build. Nobody else can tell whether a system needs creating to solve the problem or not, or how much of it needs to be built now.
+Your skills come in when you have to understand whether or not to build, or when to build. Nobody else can tell whether a system needs creating to solve the problem, or how much needs to be built now.
 
 Put the editor down for now. Learn, demostrate and enable. When you do this, you are not just adding to your team's effectiveness. You are multiplying it.
 
