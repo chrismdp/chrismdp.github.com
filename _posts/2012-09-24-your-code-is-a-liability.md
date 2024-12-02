@@ -39,11 +39,13 @@ Code is a liability, but coders are a clear asset.
 
 ## Don't compromise on quality
 
-Developers: don't skip the tests for critical code that's beyond your ability to understand at a glance. That limit is lower that you think. It's even lower for your future self.
+Developers: don't skip the tests for critical code.
 
-As Dave Astels said: "Test where the risk is."
+I write tests for self contained code that is beyond my ability to understand at a glance. That limit is always lower that I think. As Dave Astels said: "Test where the risk is."
 
-I don't write tests for everything when I'm just figuring out the feature. I rarely test UI directly. UI tests take too long to run and the maintenance is almost never worth it.
+I do not write tests for how the code is arranged when I'm figuring out the feature.
+
+I rarely test UI directly. UI tests take too long to run and the maintenance is almost never worth it.
 
 ## Write code in conversation
 
