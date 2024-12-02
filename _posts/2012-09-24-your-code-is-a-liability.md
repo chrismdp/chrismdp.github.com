@@ -43,7 +43,7 @@ Developers: don't skip the tests for critical code that's beyond your ability to
 
 As Dave Astels said: "Test where the risk is."
 
-Don't write tests for everything when you're just figuring out the feature. Don't test UI directly - UI tests takes tooo long to run and the maintenance is almost never worth it.
+I don't write tests for everything when I'm just figuring out the feature. I rarely test UI directly. UI tests take too long to run and the maintenance is almost never worth it.
 
 ## Write code in conversation
 
