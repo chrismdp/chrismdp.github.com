@@ -37,8 +37,11 @@ layout: page
     {% assign tag_posts = site.categories[tag] %}
     {% assign related_posts = "" %}
 
+    {% assign oldest_date = page.date | date: "%s" | minus: 157680000 | date: "%Y-%m-%d" %}
+
     {% for post in tag_posts %}
-      {% if post.id != page.id %}
+    {% assign post_date = post.date | date: "%Y-%m-%d" %}
+    {% if post.id != page.id and post_date >= oldest_date %}
         {% assign related_posts = related_posts | append: post.id | append: "," %}
       {% endif %}
     {% endfor %}
@@ -49,7 +52,7 @@ layout: page
       <h3>More on: {{ tag }}</h3>
       <div class="post-list" style="margin-bottom:40px">
         {% assign related_posts_array = related_posts | split: "," | uniq %}
-        {% for post_id in related_posts_array limit: 5 %}
+        {% for post_id in related_posts_array %}
           {% assign post = site.posts | where: "id", post_id | first %}
           {% if post %}
             <div class="tag-entry">
