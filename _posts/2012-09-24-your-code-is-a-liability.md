@@ -73,7 +73,7 @@ Avoiding writing code at all is especially important when we’re navigating a n
 
 When we embrace that our code is a liability, everything becomes lighter. Our functionality is set free from heavyweight code drag. It allows our features to soar, responsive to change requests, and easily debugged. There's just not that much code to go through.
 
-Thanks to Matt Barcomb for feedback on earlier drafts of this article.
+_Thanks to Matt Barcomb for feedback on earlier drafts of this article._
 
 ---
 

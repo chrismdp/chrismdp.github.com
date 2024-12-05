@@ -78,7 +78,7 @@ You will never be as small or be able to move as fast as you can right now. This
 
 Sometimes founders do not take on the problem they really want to solve—because they cannot envisage a solution. You can help with that. The art of the possible lies with you.
 
-Demo to potential customers. Listen to what they say to you and iterate. Ask them to commit to paying for you to solve this for them, and then build the proper solution in response.
+Demo to potential customers. Listen to what they say to you and iterate. Ask them to commit to paying for you to solve this for them, and then build the proper solution in response. Regularly review what they are telling you in case you need to change direction. State hypotheses in advance and hold them lightly.
 
 ## Help the team reach people
 
@@ -103,6 +103,8 @@ Startup technical work is not just coding. It is learning; it is communicating t
 Your skills come in when you have to understand whether or not to build, or when to build. Nobody else can tell whether a system needs creating to solve the problem, or how much needs to be built now.
 
 Put the editor down for now. Learn, demostrate and enable. When you do this, you are not just adding to your team's effectiveness. You are multiplying it.
+
+_Thanks to Lisa Price for feedback on earlier drafts of this article._
 
 ---
 
