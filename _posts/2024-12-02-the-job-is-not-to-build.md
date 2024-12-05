@@ -24,11 +24,11 @@ Here is a story of how I did this wrong, and how you can do it right.
 
 When I created [Sol Trader](https://store.steampowered.com/app/396680) between 2012 and 2016, I made the game I always wanted to play. I [released early](/sol-trader-now-in-alpha/), determined to get feedback. I waved away much of the early feedback because they had not understood what I was making. The product was not finished yet. I knew what I wanted to build.  
 
-I used [KISSmetrics](https://kissmetrics.io) to built in lots of analytics and events so I could track what players were doing. These metrics told me that players would play for a while, and get bored. This did not matter. I was missing key features. Once those were in place, the players would come back. I knew what I wanted to build.
+I used [KISSmetrics](https://kissmetrics.io) to add lots of analytics and events, so I could track what players were doing. These metrics told me that players would play for a while, and get bored. This did not matter. I was missing key features. Once those were in place, the players would come back. I knew what I wanted to build.
 
 I spent thousands of hours building a carefully designed, well architected game complete with a custom C++ engine that compiled in a few seconds. It was glorious.
 
-On release, I got negative feedback. There were a tirade of Steam reviews stating similar issues to early feedback I had received. I discovered that outside a small niche not enough people wanted to play it.
+On release, I got negative feedback. The game received a torrent of blunt Steam reviews, stating similar issues to early feedback I had received. I discovered that, outside a small niche, not enough people wanted to play it.
 
 At that point I was worried. My response was to build more. I released many patches. These made a small difference, but did not move the needle.
 
@@ -37,6 +37,8 @@ The problem was not that I did not talk to customers, or look at engagement metr
 Eventually I realised I had made the wrong game. I had jumped to building the game of my dreams, without truly understanding the gap that my game might fill in people's lives. That is fine if game development is a hobby, but I wanted to make it a business. I did not think through whether I had the right product for a big enough market.
 
 I had no idea the that first job is not to build.
+
+To explore this further, time to look at why we are here in the first place.
 
 ## Why startups exist
 
@@ -52,13 +54,13 @@ Essentially, there need to be:
 
 Answering these questions is the only thing that matters at first. Once the team has figured out the answers you have a business. Simple, but difficult. This process will take months or years.
 
-Your job is to use your skills to help the team figure out these five things. Here is what you can can do to help.
+Your job is to use your skills to help the team figure out these five things. Here is what you can do to help.
 
 ## Identify the bigger problem
 
 Join customer research calls. Deeply understand the challenges your customers face. Fall in love with the problems they have. Solutions are fleeting, problems are eternal.
 
-Do not delegate this to a product manager or the CEO, however competent. This is especially true if you are a co-founder. Seeing a problem first hand will elicit sparks of technical insight. Bring that insight to team discussions. Enlighten your team on what is possible.
+Do not delegate this to a product manager or the CEO, however competent they are. This is especially true if you are a co-founder. Seeing a problem first hand will elicit sparks of technical insight. Bring that insight to team discussions. Enlighten your team on what is possible.
 
 Only you really know what software is capable of. Everyone else in the team is likely to have assumptions about what can or cannot be done.
 
@@ -74,7 +76,7 @@ We did this at [Cherrypick](https://cherrypick.co) with our AI enabled meal plan
 
 You will never be as small or be able to move as fast as you can right now. This is a strength. Use it to try a lot of things very quickly. Remember, [code is a liability](/your-code-is-a-liability). Do not build more than you must.
 
-Sometimes founders do not take on the problem they really want to solve because they cannot envisage a solution. You can help with that. The art of the possible lies with you.
+Sometimes founders do not take on the problem they really want to solve—because they cannot envisage a solution. You can help with that. The art of the possible lies with you.
 
 Demo to potential customers. Listen to what they say to you and iterate. Ask them to commit to paying for you to solve this for them, and then build the proper solution in response.
 
@@ -96,7 +98,7 @@ Technical people are good at managing complexity. Use these skills to figure out
 
 If you feel you are not using your coding skills, it is time for a moment of self-reflection. If you prefer to code all day, you might be in the wrong job.
 
-Startup technical work is not just coding. It is learning. It is communicating the art of the possible.
+Startup technical work is not just coding. It is learning; it is communicating the art of the possible.
 
 Your skills come in when you have to understand whether or not to build, or when to build. Nobody else can tell whether a system needs creating to solve the problem, or how much needs to be built now.
 
