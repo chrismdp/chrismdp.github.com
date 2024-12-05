@@ -36,7 +36,7 @@ The problem was not that I did not talk to customers, or look at engagement metr
 
 Eventually I realised I had made the wrong game. I had jumped to building the game of my dreams, without truly understanding the gap that my game might fill in people's lives. That is fine if game development is a hobby, but I wanted to make it a business. I did not think through whether I had the right product for a big enough market.
 
-I had no idea the that first job is not to build.
+I had no idea that the first job is not to build.
 
 To explore this further, time to look at why we are here in the first place.
 
