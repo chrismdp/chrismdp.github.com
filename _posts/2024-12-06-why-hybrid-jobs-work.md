@@ -39,9 +39,7 @@ The cause is a lack of shared understanding of values between the senior team ma
 
 There needs to be an honest conversation on the values behind the decisions being made, so there is clarity about what needs to be done. Talk to the team about the benefits of being together. Ask them how they feel about it, and what their assumptions are. Listen hard and make allowances for different temperaments.[^safety]
 
-There is not one set formula for hybrid success. I work from London one or two days a week, pre-agreed with my team. I make sure I am only there when there is a good reason. It will be different for every team and company.
-
-Few would disagree that coming together to work from time to time is valuable and useful. It is great for morale and for collaboration. People do not want to be forced by a blanket rule they do not understand, where the rationale is not clear.
+There is not one set formula for hybrid success. I work from London one or two days a week, pre-agreed with my team.  I make sure I am only there when there is a good reason.  It will be different for every team and company.  I am a mild extravert, so I gain energy both from being with people and from recharging on my own at different times. Everyone is different, so the work/home balance should depend on the work, life stage and temperament. Figure it out with your team rather than following a playbook.
 
 ## Make office days worth the effort
 
@@ -57,6 +55,5 @@ If this resonates, [we are hiring a full stack engineer](https://apply.workable.
 
 ---
 
-[^both]: I am a mild extravert, so I gain energy both from being with people and from recharging on my own at different times. Everyone is different. Some will prefer more home working and others will prefer to always be in the office. Having a flexible combination of both office and home work will work for most people and situations, but the exact balance will depend on the work, the life stage and the temperament of the people in the team.
 
 [^safety]: These conversations cannot work unless there is safety in the team first. It is unlikely that hybrid working will be successful in a team where people are not able to speak their minds. If this is the case then you have bigger problems to solve first.
