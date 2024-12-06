@@ -17,6 +17,8 @@ One is not better than the other; they are just different. I think we need both[
 
 Here are some pointers for how to have a productive conversation about hybrid in your team.
 
+<!--more-->
+
 ## Be honest
 
 Companies struggle to communicate well about hybrid, which causes bad feeling amongst their team.
