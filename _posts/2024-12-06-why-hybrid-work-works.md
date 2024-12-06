@@ -1,10 +1,13 @@
 ---
 layout: post
-title: Why Hybrid Jobs Work
+title: Why Hybrid Work Works
 date: 2024-12-06 10:06:43 +0000
 categories:
 - business
 - jobs
+redirect_from:
+- "/why-hybrid-jobs-work"
+- "/why-hybrid-jobs-work/"
 ---
 
 As someone who lives an hour and a half from my London office, I love working from home.  I can help my teenagers out of the door in the morning, and I am present when the family comes home.  I can have coffee with my wife Ellie before we start work.  I prepare dinner during my lunch break, and receive deliveries.  I can contribute more effort during my day to Cherrypick, free from distractions, interruptions and the long commute. I would struggle to work effectively five days a week in London.

@@ -31,32 +31,14 @@ layout: page
 
   <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
   <script type="IN/Share" data-url="{{ site.url }}{{ page.url }}"></script>
-
-  <style>
-    .libutton {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 7px;
-      text-align: center;
-      outline: none;
-      text-decoration: none !important;
-      color: #ffffff !important;
-      width: 200px;
-      height: 32px;
-      margin-top:20px;
-      border-radius: 16px;
-      background-color: #0A66C2;
-      font-family: "SF Pro Text", Helvetica, sans-serif;
-    }
-  </style>
-  <a class="py-8 libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=chrisparsons" target="_blank">Follow on LinkedIn</a>
 </div>
 
+<hr/>
+
 <div>
+  {% assign related_posts = "" %}
   {% for tag in page.categories %}
     {% assign tag_posts = site.categories[tag] %}
-    {% assign related_posts = "" %}
 
     {% assign oldest_date = page.date | date: "%s" | minus: 157680000 | date: "%Y-%m-%d" %}
 
@@ -66,25 +48,28 @@ layout: page
         {% assign related_posts = related_posts | append: post.id | append: "," %}
       {% endif %}
     {% endfor %}
-
-    {% assign related_posts_count = related_posts | split: "," | size %}
-
-    {% if related_posts_count > 0 %}
-      <h3>More on: {{ tag }}</h3>
-      <div class="post-list" style="margin-bottom:40px">
-        {% assign related_posts_array = related_posts | split: "," | uniq %}
-        {% for post_id in related_posts_array %}
-          {% assign post = site.posts | where: "id", post_id | first %}
-          {% if post %}
-            <div class="tag-entry">
-              <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-              <time class='text-xs opacity-50' datetime="{{ post.date | date_to_xmlschema }}">
-                {{ post.date | date: "%b %Y" }}
-              </time>
-            </div>
-          {% endif %}
-        {% endfor %}
-      </div>
-    {% endif %}
   {% endfor %}
+
+  {% assign related_posts_count = related_posts | split: "," | size %}
+  {% if related_posts_count > 0 %}
+    <h2>Read more</h2>
+
+    {% assign related_posts_array = related_posts | split: "," | uniq %}
+    {% for post_id in related_posts_array limit: 5 %}
+      {% assign post = site.posts | where: "id", post_id | first %}
+
+      <div class="post-preview py-4">
+        <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+
+        <div style='font-style: italic' class="pb-1 post-date">
+          {% assign original_date = post.path | split: "/" | last | split: "-" | slice: 0, 2 | join: '' %}
+          {% assign current_date = post.date | date: "%Y%m" %}
+          {% if original_date != current_date %}Updated: {% endif %}
+          {{ post.date | date: "%B %Y" }}
+        </div>
+        {{ post.excerpt }}
+        <a class='underline' href="{{ site.baseurl }}{{ post.url }}">Read more</a>
+      </div>
+    {% endfor %}
+  {% endif %}
 </div>

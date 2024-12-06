@@ -24,7 +24,7 @@ You can find me on [BlueSky](https://bsky.app/profile/chrismdp.com) and on [Link
    <div class="post-preview py-4">
    <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
-   <div style='font-style: italic' class="py-1 post-date">
+   <div style='font-style: italic' class="pb-1 post-date">
    {% assign original_date = post.path | split: "/" | last | split: "-" | slice: 0, 2 | join: '' %}
    {% assign current_date = post.date | date: "%Y%m" %}
    {% if original_date != current_date %}Updated: {% endif %}
