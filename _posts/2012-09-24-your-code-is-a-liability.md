@@ -29,21 +29,21 @@ Your code is a liability. Never forget this.
 
 We need code: it’s a major way we deliver features. The feature is the reason we write the code in the first place.[^1]
 
-The only way to value features is through the code we write to create them. CFOs treat code an as asset, because it is the material connection they have to the feature provided and the business value behind it. It's not the code itself that has value. Counter-intuitively, the more code needed to deliver the value, the less valuable the asset.
+The only way to value features is through the code we write to create them. CFOs treat code an as asset, because it is the material connection they have to the feature provided and the business value behind it. It is not the code itself that has value. Counter-intuitively, the more code needed to deliver the value, the less valuable the asset.
 
-If you're a startup, much of your company will not survive contact with customers. The quicker you find out what to remove the better. If you build a whole framework to serve a feature, and it's not needed, you're less likely to delete the feature when it proves superfluous. How much code does your feature really need? What's the simplest smallest version of the feature in front of you that you can learn from?
+If you are working at a a startup, much of your company will not survive contact with customers. The quicker you find out what to remove the better. If you build a whole framework to serve a feature, and it is not needed, you are less likely to delete the feature when it proves superfluous. How much code does your feature really need? What iss the simplest smallest version of the feature in front of you that you can learn from?
 
 Thinking of code as a liability puts AI into perspective. It is possible to churn out code using language models and it may have some value. Who decides whether it is providing the feature? We need strong developers to determine this.
 
 Code is a liability, but coders are a clear asset.
 
-## Don't compromise on quality
+## Do not compromise on quality
 
-Developers: don't skip the tests for critical code.
+Developers: do not skip the tests for critical code.
 
 I write tests for self contained code that is beyond my ability to understand at a glance. That limit is always lower that I think. As Dave Astels said: "Test where the risk is."
 
-I do not write tests for how the code is arranged when I'm figuring out the feature.
+I do not write tests for how the code is arranged when I am figuring out the feature.
 
 I rarely test UI directly. UI tests take too long to run and the maintenance is almost never worth it.
 
@@ -51,7 +51,7 @@ I rarely test UI directly. UI tests take too long to run and the maintenance is 
 
 If you have a team to talk to, try this: rather than diving in to coding your next feature, have a discussion.
 
-Talk about different ways to achieve the same thing. Argue about the architecture and the arrangement of the different concepts you’re planning. Write down a spec of the work you're attemping and have the team critique it.
+Talk about different ways to achieve the same thing. Argue about the architecture and the arrangement of the different concepts you’re planning. Write down a spec of the work you are attemping and have the team critique it.
 
 Zone in on the simplest and lightest code structure you can find. Solutions developed with others will always be better than us implementing our own ideas in isolation at a ridiculous rate.
 
@@ -71,11 +71,11 @@ Can we solve this problem with a high quality library, or API? Are we able to re
 
 Avoiding writing code at all is especially important when we’re navigating a new complex idea. Plenty of times we’re not exactly sure how the feature we’re working on will evolve yet. The fewer lines of code we write, the better chance we have of changing the feature later into what we discover it actually needs to do.
 
-When we embrace that our code is a liability, everything becomes lighter. Our functionality is set free from heavyweight code drag. It allows our features to soar, responsive to change requests, and easily debugged. There's just not that much code to go through.
+When we embrace that our code is a liability, everything becomes lighter. Our functionality is set free from heavyweight code drag. It allows our features to soar, responsive to change requests, and easily debugged. There is just not that much code to go through.
 
 _Thanks to Matt Barcomb for feedback on earlier drafts of this article._
 
 ---
 
-[^1]: Except when the feature isn't the reason we wrote the code. The allure of a "proper" architecture is real. Fight it. Force every part of your code to directly contribute value now.
+[^1]: Except when the feature is not the reason we wrote the code. The allure of a "proper" architecture is real. Fight it. Force every part of your code to directly contribute value now.
 
