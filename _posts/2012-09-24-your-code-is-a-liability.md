@@ -47,15 +47,15 @@ I do not write tests for how the code is arranged when I am figuring out the fea
 
 I rarely test UI directly. UI tests take too long to run and the maintenance is almost never worth it.
 
-## Write code in conversation
+## Code in conversation
 
-If you have a team to talk to, try this: rather than diving in to coding your next feature, have a discussion.
+Have short early conversations with your team to prevent yourself from building too much too early.
 
-Talk about different ways to achieve the same thing. Argue about the architecture and the arrangement of the different concepts you’re planning. Write down a spec of the work you are attemping and have the team critique it.
+Ask if there are other quicker ways to achieve the same thing. Argue about the architecture and the arrangement of the different concepts you’re planning. Write down a spec of the work you are attemping and have the team critique it.
 
 Zone in on the simplest and lightest code structure you can find. Solutions developed with others will always be better than us implementing our own ideas in isolation at a ridiculous rate.
 
-The simplest form of code in conversation is is pairing. Every line of code we write when pairing is scrutinised by our partner. If it doesn’t make sense, or shouldn’t be there, they can let us know straight away.
+If you do not have a team, there are other ways to code in conversation. Ask your advisors, or post a peer discussion forum. You can even post your plan on social media and ask for feedback. Even the act of posting can cause us to think through whether there is a better way to proceed.
 
 ## Remove code wherever possible
 
@@ -73,7 +73,7 @@ Avoiding writing code at all is especially important when we’re navigating a n
 
 When we embrace that our code is a liability, everything becomes lighter. Our functionality is set free from heavyweight code drag. It allows our features to soar, responsive to change requests, and easily debugged. There is just not that much code to go through.
 
-_Thanks to Matt Barcomb for feedback on earlier drafts of this article._
+_Thanks to [Matt Barcomb](https://bsky.app/profile/mattbarcomb.bsky.social) and [Hayatudeen Abdulrahman](https://www.linkedin.com/in/hayats-codes) for feedback on earlier drafts of this article._
 
 ---
 
