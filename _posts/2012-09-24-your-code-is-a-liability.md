@@ -51,7 +51,7 @@ I rarely test UI directly. UI tests take too long to run and the maintenance is 
 
 Have short early conversations with your team to prevent yourself from building too much too early.
 
-Ask if there are other quicker ways to achieve the same thing. Argue about the architecture and the arrangement of the different concepts you’re planning. Write down a spec of the work you are attemping and have the team critique it.
+Ask if there are other quicker ways to achieve the same thing. Argue about the architecture and the arrangement of the different concepts you’re planning. Write down a spec of the work you are attempting and have the team critique it.
 
 Zone in on the simplest and lightest code structure you can find. Solutions developed with others will always be better than us implementing our own ideas in isolation at a ridiculous rate.
 

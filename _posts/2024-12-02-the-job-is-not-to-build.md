@@ -104,8 +104,6 @@ Your skills come in when you have to understand whether or not to build, or when
 
 Put the editor down for now. Learn, demostrate and enable. When you do this, you are not just adding to your team's effectiveness. You are multiplying it.
 
-_Thanks to Lisa Price for feedback on earlier drafts of this article._
-
 ---
 
 [^1]: Reminder: if you are not charging your users, they are not your customers. Customers are people that pay you money directly.
