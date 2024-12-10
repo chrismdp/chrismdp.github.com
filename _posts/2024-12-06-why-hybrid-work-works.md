@@ -16,7 +16,7 @@ I also love working from the office. It is an opportunity to spend real time wit
 
 Much of the debate around hybrid working appears to be a zero sum argument about why working from home is "better" or "worse", and why working in the office is "more" or "less" productive.
 
-One is not better than the other; they are just different. I think we need both[^both] for a balanced life.
+One is not better than the other; they are just different. I think we need both for a balanced life.
 
 Here are some pointers for how to have a productive conversation about hybrid in your team.
 
@@ -42,7 +42,16 @@ The cause is a lack of shared understanding of values between the senior team ma
 
 There needs to be an honest conversation on the values behind the decisions being made, so there is clarity about what needs to be done. Talk to the team about the benefits of being together. Ask them how they feel about it, and what their assumptions are. Listen hard and make allowances for different temperaments.[^safety]
 
-There is not one set formula for hybrid success. I work from London one or two days a week, pre-agreed with my team.  I make sure I am only there when there is a good reason.  It will be different for every team and company.  I am a mild extravert, so I gain energy both from being with people and from recharging on my own at different times. Everyone is different, so the work/home balance should depend on the work, life stage and temperament. Figure it out with your team rather than following a playbook.
+## Flex to suit the circumstances
+
+There is not one set formula for hybrid success. I work from London one or two days a week, pre-agreed with my team.  I make sure I am only there when there is a good reason. It will be different for every team and company.  I am a mild extravert, so I gain energy both from being with people and from recharging on my own at different times.
+
+For example, there are very high performing companies such as [37signals](https://37signals.com) that work almost entirely remotely, only meeting a few times a year. For this to work, two things need to be true:
+
+- the people must be comfortable with the level of remote working. This is best done through self-selection at the hiring stage, not imposed later. Note this is also true for mostly in-person work.
+- the practices are intentional and supportive. A great example is continuous documentation as [described well here by Gregory Brown](https://www.oreilly.com/radar/an-efficient-approach-to-continuous-documentation/).
+
+If you are intentional, you can make anything work. Everyone is different, so the work/home balance should depend on the work, life stage and temperament. Figure it out with your team rather than following a playbook.
 
 ## Make office days worth the effort
 
@@ -56,7 +65,8 @@ We make allowances for journey times and are flexible with when people arrive an
 
 If this resonates, [we are hiring a full stack engineer](https://apply.workable.com/cherrypick/j/02F9AE6F1D/). You'll be in London ~2 days a week to get all the benefits of being together, and completely trusted to work from home the rest of the time. Get in touch today.
 
----
+_Thanks to [Olly Headey](https://bsky.app/profile/olly.world), [Gregory Brown](https://bsky.app/profile/skillstopractice.com) and [Heather Hosler](https://www.linkedin.com/in/heather-hosler/) for feedback on earlier drafts of this post._
 
+---
 
 [^safety]: These conversations cannot work unless there is safety in the team first. It is unlikely that hybrid working will be successful in a team where people are not able to speak their minds. If this is the case then you have bigger problems to solve first.
