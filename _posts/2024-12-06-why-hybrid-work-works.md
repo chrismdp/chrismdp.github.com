@@ -4,6 +4,7 @@ title: Why Hybrid Work Works
 date: 2024-12-06 10:06:43 +0000
 categories:
 - business
+- cherrypick
 - jobs
 redirect_from:
 - "/why-hybrid-jobs-work"
