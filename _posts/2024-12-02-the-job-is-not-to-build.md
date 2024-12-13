@@ -102,7 +102,7 @@ Startup technical work is not just coding. It is learning; it is communicating t
 
 Your skills come in when you have to understand whether or not to build, or when to build. Nobody else can tell whether a system needs creating to solve the problem, or how much needs to be built now.
 
-Put the editor down for now. Learn, demostrate and enable. When you do this, you are not just adding to your team's effectiveness. You are multiplying it.
+Put the editor down for now. Learn, demonstrate and enable. When you do this, you are not just adding to your team's effectiveness. You are multiplying it.
 
 ---
 
