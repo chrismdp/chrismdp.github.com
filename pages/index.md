@@ -16,7 +16,7 @@ I know a lot about being a founder/early stage CTO of a fast growing startup, in
 
 <!--more-->
 
-Previously I helped scale [Gower Street](https://gower.st) from 7 to 50 employees and built a data science team from scratch. I trained hundreds of developers at the [BBC](http://bbc.co.uk) and other organisations, and I helped [GDS](http://digital.cabinetoffice.gov.uk/about/) get started in the early days, working on [GOV.UK](http://gov.uk) and [e-petitions](/tags#e-petitions). I ran the team that released the indie game [Sol Trader](/tags#soltrader) in 2016, and I was Founder/CEO of [Eden Development](/tags#eden), a 12 person client services software firm, from 2005 to 2011.
+Previously I helped scale [Gower Street](https://gower.st) from 7 to 50 employees and built a data science team from scratch. I trained hundreds of developers at the [BBC](http://bbc.co.uk) and other organisations, and I helped [GDS](http://digital.cabinetoffice.gov.uk/about/) get started in the early days, working on [GOV.UK](http://gov.uk) and [e-petitions](/tags#e-petitions). I ran the team that released the indie game [Sol Trader](/tags#sol-trader) in 2016, and I was Founder/CEO of [Eden Development](/tags#eden), a 12 person client services software firm, from 2005 to 2011.
 
 You can find me on [BlueSky](https://bsky.app/profile/chrismdp.com), [X](https://x.com/chrismdp) and [LinkedIn](https://linkedin.com/in/chrisparsons). Here are some of my more recent articles - subscribe with <a href="{{ site.baseurl }}/feed.xml">RSS</a> to keep up with the latest.
 
