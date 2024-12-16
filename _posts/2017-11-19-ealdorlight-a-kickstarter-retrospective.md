@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why Ealdorlight's Kickstarter might have failed
+title: "Ealdorlight: A Kickstarter retrospective"
 date: 2017-11-19 22:17:16.000000000 +00:00
 image: "/files/games-you-should-make.png"
 categories:
@@ -14,6 +14,8 @@ categories:
 redirect_from:
 - "/2017/11/why-ealdorlight-kickstarter-might-have-failed"
 - "/2017/11/why-ealdorlight-kickstarter-might-have-failed/"
+- "/why-ealdorlight-kickstarter-might-have-failed/"
+- "/why-ealdorlight-kickstarter-might-have-failed"
 ---
 ![Ealdorlight Banner](/assets/img/el-banner.jpg)
 
