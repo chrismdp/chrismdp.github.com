@@ -1,6 +1,6 @@
 ---
 layout: page
-title: I help founders & CTOs build their dream startup.
+title: I help tech founders & CTOs get moving.
 permalink: /coaching
 excerpt: "Book in a call if you need some help with your startup journey."
 
@@ -28,13 +28,17 @@ if (window.location.search.includes('?thanks')) {
 - Do you want to know exactly how to find problem/solution and product/market fit?
 - Do you feel like you never have enough time to do all of this?
 
-<div class="flex justify-center pb-8">
-  <a href="https://app.reclaim.ai/m/cp/coaching-discovery-call" class="inline-block px-8 py-4 text-lg font-bold text-white bg-violet-600 hover:bg-violet-700 transition-colors rounded-lg">
-    Book a free discovery call
-  </a>
-</div>
+**Learn to cut through the noise, focus on what really matters, and test your startup ideas within hours, not months.**
+
+{% include book-call-button.html %}
 
 <!--more-->
+
+_"Chris is fantastic at building self-sufficient teams and giving them what they need to deliver impactful product changes and experiments. He provides a lot of freedom while setting clear goals, which creates highly productive teams in early-stage startups. At the same time, he’s an empathetic leader who always keeps a pulse on team morale. This is an extremely punchy combo when it comes to pre-product-market-fit companies, where hyper focus, productivity and seeding the right company culture are key."_
+
+-- [Tadas Tamosauskas](https://www.linkedin.com/in/tamosauskas/)
+
+## About Me
 
 I'm looking to coach and mentor a small number of technical founders and CTOs in 2025. I know a lot about being a founder/early stage CTO of fast growing startups, both consumer D2C and B2B SaaS. I can help you hire great technical teams, set culture, find product market fit and build [just enough tech](/the-job-is-not-to-build).
 
@@ -42,7 +46,31 @@ I've also got several years of experience working on AI products so can help you
 
 [More about me](/)
 
-## Recent articles
+## Why Founders and CTOs Need a Coach
+
+Coaching helps founders and CTOs grow and achieve their goals. A startup has high stakes and huge potential value so getting support makes a real difference to your success. I have benefited from input from a number of excellent coaches and mentors over the years, and my startup experience has been vastly better and less stressful thanks to them.
+
+Every technical leader faces common challenges:
+- Making tricky architectural decisions under uncertainty
+- Hiring and managing high-performing engineering teams
+- Scaling up to manage high level strategy, and scaling down to manage the team and troubleshoot coding issues
+- Constantly learning new technology and figuring out how to apply it to your business
+
+Having someone in your corner who's been through these challenges before - as I have at multiple startups - can be the difference between struggling alone and confidently moving forward.
+
+## Coaching vs Mentoring
+
+I am part coach, part mentor.
+
+Coaching is a conversation to move you from where you are now, to where you would like to be. You get independent assistance to help you move forward without any judgement or anyone telling you what to do. You find your own answers and are then supported while you make changes.
+
+Mentoring is benefiting from past experience, knowledge and mistakes to help you make better decisions. You can be coached by a non-expert, but a mentor can provide lots of extra value as they have been in your position before.
+
+A founder or CTO benefits from a coach but working with someone who has been through the same challenges before is much more valuable. I have walked this journey through several startups over 20 years and can help you avoid plenty of mistakes and find a way through the maze of uncertainty.
+
+{% include book-call-button.html %}
+
+## My Recent Articles
 
 {% for post in site.posts limit:3 %}
    <div class="post-preview py-4">
