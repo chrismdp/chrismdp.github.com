@@ -10,9 +10,7 @@ excerpt: "I have 25 years of experience running tech teams and founding startups
 
 I have 25 years of experience running tech teams and founding startups. I'm co-founder/CTO of [Cherrypick](//cherrypick.co), the best meal-led grocery shopping assistant on the market.
 
-**I coach a limited number of technical founders and CTOs at funded startups. [Book in a call](https://forms.gle/ee5gWQznBG5yNwwt9) if you need some help with your startup journey.**
-
-I know a lot about being a founder/early stage CTO of a fast growing startup, including hiring great technical teams, board and [founder relationships](/the-first-thing-a-startup-cto-must-do), setting culture, finding product market fit, building [just enough tech](/the-job-is-not-to-build) and how to build [great AI products](/how-to-build-a-robust-llm-application).
+**I coach a limited number of technical founders and startup CTOs. [Book in a free discovery call](/coaching) if you need some help with your startup journey.**
 
 <!--more-->
 
