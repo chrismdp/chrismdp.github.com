@@ -17,18 +17,17 @@ if (window.location.search.includes('?thanks')) {
 }
 </script>
 
-
 <img alt='Chris Parsons' src='/assets/img/chris-headshot-2022-cropped.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width:200px'/>
 
-- Do you need help working with product, your board and your CEO?
-- Do you need help building the right technical architecture for your stage?
-- Do you need technical help with AI/LLM apps?
-- Do you want to know how to set culture and build a world class team?
-- Do you want to raise your next round?
-- Do you want to know exactly how to find problem/solution and product/market fit?
-- Do you feel like you never have enough time to do all of this?
+**Coaching first time/early stage CTOs and tech founders to cut through the noise, focus on what matters and test ideas within hours not months.**
 
-**Learn to cut through the noise, focus on what really matters, and test your startup ideas within hours, not months.**
+- Need help working with product, your board and your CEO?
+- Worried about right technical architecture for your stage?
+- Need technical guidance on your AI/LLM app?
+- Want to set culture and build a world class team?
+- Unsure if you will progress enough to raise your next funding round?
+- Want to know exactly how to find problem/solution and product/market fit?
+- Feel like you never have enough time to do all of this?
 
 {% include book-call-button.html %}
 
@@ -38,25 +37,22 @@ _"Chris is fantastic at building self-sufficient teams and giving them what they
 
 -- [Tadas Tamosauskas](https://www.linkedin.com/in/tamosauskas/)
 
-## About Me
+I know a lot about being a founder/early stage CTO of fast growing startups, both consumer D2C and B2B SaaS. I can help you hire great technical teams, set culture, find product market fit and build [just enough tech](/the-job-is-not-to-build).
 
-I'm looking to coach and mentor a small number of technical founders and CTOs in 2025. I know a lot about being a founder/early stage CTO of fast growing startups, both consumer D2C and B2B SaaS. I can help you hire great technical teams, set culture, find product market fit and build [just enough tech](/the-job-is-not-to-build).
-
-I've also got several years of experience working on AI products so can help you [build robust LLM application](/how-to-build-a-robust-llm-application) that scales well and that your customers love.
-
-[More about me](/)
+I've also got several years of experience working on AI products so can help you [build robust LLM application](/how-to-build-a-robust-llm-application) that scales well and that your customers love.  [Read more about me here](/).
 
 ## Why Founders and CTOs Need a Coach
 
-Coaching helps founders and CTOs grow and achieve their goals. A startup has high stakes and huge potential value so getting support makes a real difference to your success. I have benefited from input from a number of excellent coaches and mentors over the years, and my startup experience has been vastly better and less stressful thanks to them.
+Coaching helps founders and CTOs grow and achieve their goals. A startup has high stakes and huge potential value so getting support makes a real difference to your success. I have benefited from a number of excellent coaches and mentors over the years, and my startup experience has been vastly better and less stressful thanks to them.
 
 Every technical leader faces common challenges:
 - Making tricky architectural decisions under uncertainty
 - Hiring and managing high-performing engineering teams
-- Scaling up to manage high level strategy, and scaling down to manage the team and troubleshoot coding issues
+- Scaling up to manage high level tech strategy
+- Scaling down to manage team performance and troubleshoot code
 - Constantly learning new technology and figuring out how to apply it to your business
 
-Having someone in your corner who's been through these challenges before - as I have at multiple startups - can be the difference between struggling alone and confidently moving forward.
+Having someone in your corner who's been through these challenges before, as I have at multiple startups, is the difference between struggling alone and confidently moving forward.
 
 ## Coaching vs Mentoring
 
