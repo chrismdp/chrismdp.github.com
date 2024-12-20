@@ -1,6 +1,6 @@
 ---
 layout: page
-title: I coach technical founders and startup CTOs to build the tech organisation of their dreams.
+title: I help founders & CTOs build their dream startup.
 permalink: /coaching
 excerpt: "Book in a call if you need some help with your startup journey."
 
@@ -20,13 +20,13 @@ if (window.location.search.includes('?thanks')) {
 
 <img alt='Chris Parsons' src='/assets/img/chris-headshot-2022-cropped.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width:200px'/>
 
-- Do you feel like you never have enough time?
-- Do you want to know exactly how to find problem/solution and product/market fit?
 - Do you need help working with product, your board and your CEO?
-- Do you need technical help with AI/LLM apps?
 - Do you need help building the right technical architecture for your stage?
+- Do you need technical help with AI/LLM apps?
 - Do you want to know how to set culture and build a world class team?
 - Do you want to raise your next round?
+- Do you want to know exactly how to find problem/solution and product/market fit?
+- Do you feel like you never have enough time to do all of this?
 
 <div class="flex justify-center pb-8">
   <a href="https://app.reclaim.ai/m/cp/coaching-discovery-call" class="inline-block px-8 py-4 text-lg font-bold text-white bg-violet-600 hover:bg-violet-700 transition-colors rounded-lg">
