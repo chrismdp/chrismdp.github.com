@@ -36,15 +36,11 @@ if (window.location.search.includes('?thanks')) {
 
 <!--more-->
 
-I have been working for 20 years as a founder, CEO and CTO, and it's time to give back.
-
-I'm looking to coach and mentor a small number of technical founders and CTOs in 2025 to build the tech organisation of their dreams.
-
-I know a lot about being a founder/early stage CTO of fast growing startups, both consumer D2C and B2B SaaS. I can help you hire great technical teams, set culture, find product market fit and build [just enough tech](/the-job-is-not-to-build).
+I'm looking to coach and mentor a small number of technical founders and CTOs in 2025. I know a lot about being a founder/early stage CTO of fast growing startups, both consumer D2C and B2B SaaS. I can help you hire great technical teams, set culture, find product market fit and build [just enough tech](/the-job-is-not-to-build).
 
 I've also got several years of experience working on AI products so can help you [build robust LLM application](/how-to-build-a-robust-llm-application) that scales well and that your customers love.
 
-[Read more about me](/)
+[More about me](/)
 
 ## Recent articles
 
