@@ -25,7 +25,7 @@ layout: page
 {% endif %}
 
 <div class='py-8'>
-  <h3>Share this article</h3>
+  <h3>Share</h3>
 
   <div class='pb-2'><a target="share" class='underline' href="https://bsky.app/intent/compose?text={{ page.title}}%20%20{{ site.url }}{{ page.url }}">BlueSky</a></div>
 
@@ -52,7 +52,7 @@ layout: page
 
   {% assign related_posts_count = related_posts | split: "," | size %}
   {% if related_posts_count > 0 %}
-    <h2>Read more</h2>
+    <h2>More articles</h2>
 
     {% assign related_posts_array = related_posts | split: "," | uniq %}
     {% for post_id in related_posts_array limit: 5 %}

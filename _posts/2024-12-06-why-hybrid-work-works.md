@@ -56,15 +56,19 @@ If you are intentional, you can make anything work. Everyone is different, so th
 
 ## Make office days worth the effort
 
-At Cherrypick, office days are special. We ensure that everyone is in the office on the same days, but are flexible if people cannot manage it for whatever reason. We sit and have lunch together. We spend more time discussing nuanced topics.
+At Cherrypick, office days are special.
 
-We go for walks along the river to [St Paul's Cathedral](https://en.wikipedia.org/wiki/St_Paul%27s_Cathedral) and back, discussing tricky topics or issues. I have spent several 1:1s wandering through the [Tate Modern](https://www.tate.org.uk/visit/tate-modern), chatting to people about their lives, their work and their hopes for the future.
+We make sure everyone plans to be in the office on the same days, so we maximise in-person time together. We then all spend the rest of the week at home: less meetings, more focused work.
 
-We make allowances for journey times and are flexible with when people arrive and leave.  We pay for travel to get to the London area, so cost does not prevent people coming in. (To be fair to London-based team members, everyone pays for travel within London.)
+When we're in, we sit and have lunch together - we don't work through lunch at our desks. We spend more time discussing nuanced topics and plan out our future strategy.
 
-## Come work with me
+We go for walks along the river to [St Paul's Cathedral](https://en.wikipedia.org/wiki/St_Paul%27s_Cathedral) and back, discussing tricky topics or issues. I have spent several 1:1s wandering through the [Tate Modern](https://www.tate.org.uk/visit/tate-modern), chatting to people about their lives, thorny problems with their work, and their hopes for the future.
 
-If this resonates, [we are hiring a full stack engineer](https://apply.workable.com/cherrypick/j/02F9AE6F1D/). You'll be in London ~2 days a week to get all the benefits of being together, and completely trusted to work from home the rest of the time. Get in touch today.
+We make allowances for journey times and are flexible with when people arrive and leave. We pay for travel to get to the London area, so cost does not prevent people coming in. (To be fair to London-based team members, everyone pays for travel within London.) We have the same rules for Tom and I as everyone else.
+
+If office days are special, and managed fairly, your team won't mind them nearly as much.
+
+Hybrid work works. It is not a zero sum game: with intentional setup, it can unlock your team hiring funnel and still allow for plenty of interaction.
 
 _Thanks to [Olly Headey](https://bsky.app/profile/olly.world), [Gregory Brown](https://bsky.app/profile/skillstopractice.com) and [Heather Hosler](https://www.linkedin.com/in/heather-hosler/) for feedback on earlier drafts of this post._
 
