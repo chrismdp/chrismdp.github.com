@@ -2,7 +2,7 @@
 layout: page
 title: I coach technical founders and startup CTOs to build the tech organisation of their dreams.
 permalink: /coaching
-excerpt: "I coach a limited number of technical founders and CTOs at funded startups. Book in a call if you need some help with your startup journey."
+excerpt: "Book in a call if you need some help with your startup journey."
 
 ---
 
