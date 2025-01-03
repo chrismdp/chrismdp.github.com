@@ -83,7 +83,7 @@ A big hurdle for any new LLM based system is their unpredictable nature. Many de
 
 Instead of fighting against the model's variability, we learned to work with it. The key was providing the right context. For us, this meant carefully curating what we sent to the LLM.
 
-We could have given the model a full list of recipes and asked it to select the best ones based on the customer's diet and goal preferences. This could have caused many problems if the model made mistakes, selecting recipes that were obviously wrong, or (worse) choose recipes that were harmful for the customer to eat.
+We could have given the model a full list of recipes and asked it to select the best ones based on the customer's diet and goal preferences. This could have caused many problems if the model made mistakes, selecting recipes that were obviously wrong, or (worse) choosing recipes that were harmful for the customer to eat.
 
 <img src="/assets/img/meal-generator-2.jpg" alt="Meal Generator" style='width:50%; float:left; margin:0 24px 24px 0; border-radius: 12px;'/>
 
