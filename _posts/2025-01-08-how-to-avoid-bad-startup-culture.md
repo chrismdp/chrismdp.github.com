@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How To Avoid Bad Startup Culture"
-date: 2025-01-03 08:00:00 +0000
+date: 2025-01-08 08:00:00 +0000
 categories:
 - leadership
 - culture
