@@ -15,7 +15,7 @@ Every company has a culture. It is a summation of all the habits and practices t
 
 This is how we are wired. We are naturally social beings and are strongly predisposed to fit in to the group we find ourselves in, and to emulate their behaviour. This reinforces culture further, and compounds when more people are involved.
 
-A culture grows like plants in a garden. You cannot stop the life from growing, but you can decide how and where it grows. Left unattended, weeds will grow alongside the flowers. The key is recognizing this and putting in the work to shape it.
+A culture grows like plants in a garden. You cannot stop the life from growing, but you can decide how and where it grows. Left unattended, weeds will grow alongside the flowers. The key is recognising this and putting in the work to shape it.
 
 Here is a quick primer on how to do the minimum to avoid bad culture, and how to get good culture going with a little attention every so often.
 

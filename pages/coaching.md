@@ -22,11 +22,14 @@ if (window.location.search.includes('?thanks')) {
 **Coaching first time/early stage CTOs and tech founders to cut through the noise, focus on what matters and test ideas within hours not months.**
 
 - Need help working with product, your board and your CEO?
-- Worried about right technical architecture for your stage?
+- Unsure about right technical architecture for your stage?
 - Need technical guidance on your AI/LLM app?
-- Want to set culture and build a world class team?
+- Want to set the right culture and avoid the wrong one?
+- Want to hire and vet the right people and build a world class team?
+- Worried you are not going fast enough?
 - Unsure if you will progress enough to raise your next funding round?
 - Want to know exactly how to find problem/solution and product/market fit?
+- What to add just enough process to avoid chaos, but not enough to slow you down?
 - Feel like you never have enough time to do all of this?
 
 {% include book-call-button.html %}

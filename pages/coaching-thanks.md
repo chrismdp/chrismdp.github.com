@@ -10,4 +10,4 @@ window.location.href = "/coaching?thanks";
   <meta http-equiv="refresh" content="0; url=/coaching?thanks">
 </noscript>
 
-<p>Redirecting to <a href="/coaching?q=thanks">coaching page</a>...</p>
+<p>Redirecting to <a href="/coaching?thanks">coaching page</a>...</p>
