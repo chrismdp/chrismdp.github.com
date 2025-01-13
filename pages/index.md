@@ -2,19 +2,27 @@
 layout: page
 title: Hi, I'm Chris.
 permalink: /
-excerpt: "I have 25 years of experience running tech teams and founding startups. I'm co-founder/CTO of Cherrypick, the best meal-led grocery shopping assistant on the market. I advise startup founders on tech strategy, and coach first-time CTOs &amp; founding developers at funded startups - if you think I might be able to help you, get in touch."
+excerpt: "I have 25 years of experience running tech teams and founding startups. I'm co-founder/CTO of Cherrypick, the best meal-led grocery shopping assistant on the market. I advise startup founders on tech strategy, and coach first-time CTOs & founding developers at funded startups - if you think I might be able to help you, get in touch."
 
 ---
 
 <img alt='Chris Parsons' src='/assets/img/chris-headshot-2022-cropped.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width:200px'/>
 
-I have 25 years of experience running tech teams and founding startups. I'm co-founder/CTO of [Cherrypick](//cherrypick.co), the best meal-led grocery shopping assistant on the market.
+ My personal mission is to make startups that make the world better for my kids generation.
 
-**I coach a limited number of technical founders and startup CTOs. [Book in a free discovery call](/coaching) if you need some help with your startup journey.**
+ I have spent the last 25 years starting things - building tech teams, founding startups, and coaching and advising other founders and CTOs.
+
+**I currently coach a limited number of technical founders and startup CTOs. [Book in a free discovery call](/coaching) if you need some help with your startup journey.**
 
 <!--more-->
 
-Previously I helped scale [Gower Street](https://gower.st) from 7 to 50 employees and built a data science team from scratch. I trained hundreds of developers at the [BBC](http://bbc.co.uk) and other organisations, and I helped [GDS](http://digital.cabinetoffice.gov.uk/about/) get started in the early days, working on [GOV.UK](http://gov.uk) and [e-petitions](/tags#e-petitions). I ran the team that released the indie game [Sol Trader](/tags#sol-trader) in 2016, and I was Founder/CEO of [Eden Development](/tags#eden), a 12 person client services software firm, from 2005 to 2011.
+I started in tech in 2000 as a programmer at [Elixir Studios](https://en.wikipedia.org/wiki/Elixir_Studios), making games and learning how to code and lead teams. After that I founded a software agency called [Eden Development](/tags#eden), where I learned how to build and run an agency.
+
+Since then I helped build [GOV.UK](http://gov.uk) in the early days, trained hundreds of developers in software skills at the BBC, and made my own game called [Sol Trader](/tags#sol-trader) which I released on Steam in 2016.
+
+In 2017 I joined Gower Street as CTO and helped scale the team from 5 to 50 people, leading a large film analysis + engineering team building prediction tools for major film studios. In 2021 I co-founded [Cherrypick](//cherrypick.co) as CTO, building an AI-powered grocery shopping assistant to help people eat better effortlessly.
+
+I split my time between Cherrypick and [coaching technical founders and startup CTOs](/coaching) who want help navigating their early startup journey.
 
 You can find me on [BlueSky](https://bsky.app/profile/chrismdp.com), [X](https://x.com/chrismdp) and [LinkedIn](https://linkedin.com/in/chrisparsons). Here are some of my more recent articles - subscribe with <a href="{{ site.baseurl }}/feed.xml">RSS</a> to keep up with the latest.
 
