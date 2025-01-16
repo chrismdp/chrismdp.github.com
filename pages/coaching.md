@@ -36,13 +36,26 @@ if (window.location.search.includes('?thanks')) {
 
 <!--more-->
 
+_"A great mentor for me... Chris is very experienced both in the technical side of setting up a well functioning tech team, but also in the business side, possessing a keen eye for strategy and a good sense for what will and will not work in any given environment. If you're a startup looking for someone to help build a great team, or you need someone experienced to help develop a sound tech strategy, I would thoroughly recommend Chris."_
+
+-- [Roisi Proven](https://www.linkedin.com/in/roisiproven/)
+
+_"Chris has clearly learned a *lot* about the world of being a delivery-focused CTO, he has a very clear understanding of the need for pragmatic planning, knowledge sharing, team up-skilling and the paying down of technical debt... I hope to continue to learn from Chris' experience."_
+
+-- [Ian Ozsvald](https://www.linkedin.com/in/ianozsvald/)
+
 _"Chris is fantastic at building self-sufficient teams and giving them what they need to deliver impactful product changes and experiments. He provides a lot of freedom while setting clear goals, which creates highly productive teams in early-stage startups. At the same time, he’s an empathetic leader who always keeps a pulse on team morale. This is an extremely punchy combo when it comes to pre-product-market-fit companies, where hyper focus, productivity and seeding the right company culture are key."_
 
 -- [Tadas Tamosauskas](https://www.linkedin.com/in/tamosauskas/)
 
-I know a lot about being a founder/early stage CTO of fast growing startups, both consumer D2C and B2B SaaS. I can help you hire great technical teams, set culture, find product market fit and build [just enough tech](/the-job-is-not-to-build).
+I have led 5 startups over 20 years:
+- I cofounded 4, and was an early CTO at one
+- 3 were bootstrapped, 1 backed by super angel + 1 by VC
+- 3 were B2C, 2 were B2B
+- 1 was an agency, 4 were product companies
+- I scaled teams to 5, 12, 25 & 50
 
-I've also got several years of experience working on AI products so can help you [build robust LLM application](/how-to-build-a-robust-llm-application) that scales well and that your customers love.  [Read more about me here](/).
+I have been through a wide variety of startup experiences multiple times. I can help you hire great technical teams, [set culture](/how-to-avoid-bad-startup-culture), find product market fit and build [just enough tech](/the-job-is-not-to-build). I've also got several years of experience working on AI products so can help you [build robust LLM application](/how-to-build-a-robust-llm-application) that scales well and that your customers love.  [Read more about me here](/).
 
 ## Why Founders and CTOs Need a Coach
 

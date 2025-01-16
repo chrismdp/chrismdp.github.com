@@ -8,11 +8,9 @@ excerpt: "I have 25 years of experience running tech teams and founding startups
 
 <img alt='Chris Parsons' src='/assets/img/chris-headshot-2022-cropped.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width:200px'/>
 
- My personal mission is to make startups that make the world better for my kids generation.
+I have spent the last 25 years starting things - building tech teams, founding startups, and coaching and advising other founders and CTOs. My aim is to make startups that make this world better for my kids generation to grow up in.
 
- I have spent the last 25 years starting things - building tech teams, founding startups, and coaching and advising other founders and CTOs.
-
-**I currently coach a limited number of technical founders and startup CTOs. [Book in a free discovery call](/coaching) if you need some help with your startup journey.**
+**I'm coaching a limited number of technical founders and startup CTOs in {{ 'now' | date: "%Y" }}. [Book in a free discovery call](/coaching) if you need some help with your startup journey.**
 
 <!--more-->
 
