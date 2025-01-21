@@ -1,8 +1,8 @@
 ---
 layout: page
-title: I help tech founders & CTOs get moving.
+title: I take senior technical leaders to the next level.
 permalink: /coaching
-excerpt: "Book in a call if you need some help with your startup journey."
+excerpt: "Book in a call if you need help leveling up your technical leadership."
 
 ---
 
@@ -19,18 +19,18 @@ if (window.location.search.includes('?thanks')) {
 
 <img alt='Chris Parsons' src='/assets/img/chris-headshot-2022-cropped.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width:200px'/>
 
-**Coaching first time/early stage CTOs and tech founders to cut through the noise, focus on what matters and test ideas within hours not months.**
+**Helping startups to transform their tech capability by coaching CTOs and technical leaders to cut through the noise, focus on what matters and test ideas within hours not months.**
 
-- Need help working with product, your board and your CEO?
-- Unsure about right technical architecture for your stage?
-- Need technical guidance on your AI/LLM app?
-- Want to set the right culture and avoid the wrong one?
-- Want to hire and vet the right people and build a world class team?
-- Worried you are not going fast enough?
-- Unsure if you will progress enough to raise your next funding round?
-- Want to know exactly how to find problem/solution and product/market fit?
-- What to add just enough process to avoid chaos, but not enough to slow you down?
-- Feel like you never have enough time to do all of this?
+- Need to improve collaboration between CEO and technical leaders?
+- Looking to build and scale a world-class technical team?
+- Need to align technical strategy with business goals?
+- Looking to validate technical architecture choices?
+- Need expert guidance on your AI/LLM strategy?
+- Want to avoid the wrong engineering culture?
+- Need to accelerate your development velocity?
+- Want to ensure technical readiness for your next funding round?
+- Need help finding product/market fit efficiently?
+- What to know how much process is needed, and how much is just slowing you down?
 
 {% include book-call-button.html %}
 
@@ -59,16 +59,16 @@ I have been through a wide variety of startup experiences multiple times. I can 
 
 ## Why Founders and CTOs Need a Coach
 
-Coaching helps founders and CTOs grow and achieve their goals. A startup has high stakes and huge potential value so getting support makes a real difference to your success. I have benefited from a number of excellent coaches and mentors over the years, and my startup experience has been vastly better and less stressful thanks to them.
+Coaching helps founders and CTOs grow and achieve their goals. A startup has high stakes and huge potential value so getting support makes a real difference to the chances of success. I have benefited from a number of excellent coaches and mentors over the years, and my startup experience has been vastly better and less stressful thanks to them.
 
-Every technical leader faces common challenges:
-- Making tricky architectural decisions under uncertainty
-- Hiring and managing high-performing engineering teams
-- Scaling up to manage high level tech strategy
-- Scaling down to manage team performance and troubleshoot code
-- Constantly learning new technology and figuring out how to apply it to your business
+Technical leadership faces evolving challenges at every stage:
+- Making strategic architectural decisions that align with business goals
+- Building and scaling high-performing engineering teams
+- Balancing high-level strategy with hands-on leadership
+- Staying current with emerging technologies like AI/LLM
+- Maintaining velocity while ensuring technical quality
 
-Having someone in your corner who's been through these challenges before, as I have at multiple startups, is the difference between struggling alone and confidently moving forward.
+Having someone in the CTO's corner who has been through these challenges before, as I have at multiple startups, helps transform uncertainty into confident progress.
 
 ## Coaching vs Mentoring
 
