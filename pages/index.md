@@ -14,13 +14,13 @@ I have spent the last 25 years starting things - building tech teams, founding s
 
 <!--more-->
 
-I started in tech in 2000 as a programmer at [Elixir Studios](https://en.wikipedia.org/wiki/Elixir_Studios), making games and learning how to code and lead teams. After that I founded a software agency called [Eden Development](/tags#eden), where I learned how to build and run an agency.
+I started in tech in 2000 as a programmer at [Elixir Studios](https://en.wikipedia.org/wiki/Elixir_Studios), making games and learning how to code and lead teams. After that I founded a software agency called [Eden Development](/tags#eden), where I first began learning how to build and run a company.
 
-Since then I helped build [GOV.UK](http://gov.uk) in the early days, trained hundreds of developers in software skills at the BBC, and made my own game called [Sol Trader](/tags#sol-trader) which I released on Steam in 2016.
+I helped build [GOV.UK](http://gov.uk) in the early days, trained hundreds of developers in software skills at the BBC, and led a small team that made [Sol Trader](/tags#sol-trader) which was released on Steam in 2016.
 
 In 2017 I joined Gower Street as CTO and helped scale the team from 5 to 50 people, leading a large film analysis + engineering team building prediction tools for major film studios. In 2021 I co-founded [Cherrypick](//cherrypick.co) as CTO, building an AI-powered grocery shopping assistant to help people eat better effortlessly.
 
-I split my time between Cherrypick and [coaching technical founders and startup CTOs](/coaching) who want help navigating their early startup journey.
+I split my time between Cherrypick and [coaching technical founders and startup CTOs](/coaching) for startups who want help taking their technical leadership to the next level.
 
 You can find me on [BlueSky](https://bsky.app/profile/chrismdp.com), [X](https://x.com/chrismdp) and [LinkedIn](https://linkedin.com/in/chrisparsons). Here are some of my more recent articles - subscribe with <a href="{{ site.baseurl }}/feed.xml">RSS</a> to keep up with the latest.
 
