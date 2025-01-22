@@ -21,14 +21,14 @@ if (window.location.search.includes('?thanks')) {
 
 **Helping startups to transform their tech capability by coaching CTOs and technical leaders to cut through the noise, focus on what matters and test ideas within hours not months.**
 
-- Need to improve collaboration between CEO and technical leaders?
+- Want to know how to build just enough high quality tech, and spend less doing it?
+- Need to improve collaboration between the CEO and technical leaders?
 - Looking to build and scale a world-class technical team?
 - Need to align technical strategy with business goals?
-- Looking to validate technical architecture choices?
+- Want to validate technical architecture choices?
 - Need expert guidance on your AI/LLM strategy?
 - Want to avoid the wrong engineering culture?
 - Need to accelerate your development velocity?
-- Want to ensure technical readiness for your next funding round?
 - Need help finding product/market fit efficiently?
 - What to know how much process is needed, and how much is just slowing you down?
 
@@ -55,7 +55,7 @@ I have led 5 startups over 20 years:
 - 1 was an agency, 4 were product companies
 - I scaled teams to 5, 12, 25 & 50
 
-I have been through a wide variety of startup experiences multiple times. I can help you hire great technical teams, [set culture](/how-to-avoid-bad-startup-culture), find product market fit and build [just enough tech](/the-job-is-not-to-build). I've also got several years of experience working on AI products so can help you [build robust LLM application](/how-to-build-a-robust-llm-application) that scales well and that your customers love.  [Read more about me here](/).
+I have been through a wide variety of startup experiences multiple times. I can help you hire great technical teams, [set culture](/how-to-avoid-bad-startup-culture), find product market fit and build [just enough tech](/the-job-is-not-to-build) at the right quality level. I've also got several years of experience working on AI products so can help you [build robust LLM application](/how-to-build-a-robust-llm-application) that scales well and that your customers love.  [Read more about me here](/).
 
 ## Why Founders and CTOs Need a Coach
 
