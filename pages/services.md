@@ -18,11 +18,20 @@ redirect_from:
 
 You must move fast to survive. But the tech is messy, the product is fuzzy, and everything is feels like it is on fire.
 
-That’s where I come in. As a [fellow founder](/), I know how it feels to have so much to fix you don't know where to begin, and how you can feel fantastic one day and terrified the next.
+That’s where I come in. As a [founder myself](/) I know how it feels to have so much to fix you don't know where to begin, and how you can feel fantastic one day and terrified the next.
 
-I can help you scale *without* burning cash, build tech teams that ship daily, and make product decisions that don’t backfire.
+I can help you scale *without* burning cash, build tech teams that ship daily, help teams use the latest AI tools effectively, and help you make product decisions that don’t backfire.
 
-Fill in this form and I'll email you straight back:
+## How I work
+
+I start with a 30 minute call to offer free advice and help however I can. From there, I normally suggest a one off audit of your tech strategy and organisation to see where intervention is needed and suggest a concrete plan for improvement. You can then take that further yourself or I can help you implement the plan, through follow up coaching, workshops, process improvements, and more.
+
+If you're already sure what you want, I offer fixed term coaching or retainers to give you peace of mind that you have expert support available when you need it.
+
+## Book a free call
+
+Fill in this form and I'll email you straight back to book in a call.
+
 <script async data-uid="2c57927fef" src="https://chrismdp.kit.com/2c57927fef/index.js"></script>
 
 ## Some of the reasons we should talk
