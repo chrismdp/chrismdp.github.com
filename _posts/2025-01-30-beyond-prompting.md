@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Prompting Sucks (And What We Can Do About It)"
-date: 2025-01-30 08:00:00 +0000
+date: 2025-02-09 08:00:00 +0000
 categories:
 - ai
 - productivity
