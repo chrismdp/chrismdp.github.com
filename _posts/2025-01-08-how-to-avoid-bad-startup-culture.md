@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How To Avoid Bad Startup Culture"
-date: 2025-01-08 08:00:00 +0000
+date: 2025-02-10 08:00:00 +0000
 categories:
 - leadership
 - culture
@@ -23,11 +23,13 @@ Here is a quick primer on how to do the minimum to avoid bad culture, and how to
 
 ## How to get good culture started
 
-You need to be intentional with your culture, but you also need a successful business. Paying too much attention too early is wasteful.
+You need to be intentional with your culture, but you also need a successful business and to achieve your goals. Paying too much attention too early is wasteful.
+
+Consider a football team that wastes all its time discussing the best training regime that suits everyone, rather than focusing on winning matches. They might have endless meetings about team dynamics and communication styles, while their competitors are out practicing and improving. The purpose is not about being a team - that is simply what you are. The purpose is about winning matches and achieving results.
 
 Many years ago in my first startup I learned this the hard way. I sat with my team for several days trying to think through what kind of company we wanted to become. Unfortunately, I paid too much attention to the culture and not enough to our sales funnel. We ran out of money before we could become that company.
 
-Culture, like a garden, is best attended to little and often. If you are still a small team, do the minimum now to set things up and return to it regularly.  At [Cherrypick](https://cherrypick.co) we met for an hour every week with our early team, purely to discuss our company culture. It was a great way to keep the culture alive and evolving intentionally.
+Your purpose is to have a great culture. Culture should flow from your mission and goals rather than becoming a distraction from them.  Like a garden, culture is best attended to little and often. If you are still a small team, do the minimum now to set things up and return to it regularly.  At [Cherrypick](https://cherrypick.co) we met for an hour every week with our early team, purely to discuss our company culture. It was a great way to keep the culture alive and evolving intentionally.
 
 ### Figure out your values
 
