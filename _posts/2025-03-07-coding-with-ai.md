@@ -82,6 +82,14 @@ READMEs serve as the cornerstone of this documentation strategy. Each contains t
 
 I extend this philosophy to commit messages, where Cursor graph based understanding of the codebase shines. As it analyzes the git history, it builds an internal knowledge graph connecting files, functions, and changes over time. When I make edits across multiple files, it can trace the connections through its graph to understand how the changes relate and express that clearly in the commit message. This creates not just a linear history but a rich network of interconnected changes that both humans and AI can navigate naturally. The small, well documented commits become nodes in an evolving graph of our codebase story.
 
+### State Management and Data Modelling
+
+One area where AI requires particular guidance is state management. AI tools can generate individual components or functions effectively, but they often struggle with the holistic view of application state. I have found that explicitly documenting state management patterns and data flow expectations improves the quality of AI-generated code.
+
+For data modelling, I maintain clear schemas in the repository. When asking AI to generate code that interacts with data models, I reference these documents explicitly. This prevents the common pitfall where AI creates technically correct but architecturally inconsistent code.
+
+The most effective approach I have found is to establish clear boundaries around state mutations. Document which components or services are allowed to mutate which parts of the state, and enforce these boundaries rigorously. AI tools will follow these patterns once they understand them, but they rarely invent good state management patterns on their own. Database constraints and type hints, like those provided by Supabase, are particularly valuable here - they provide guardrails that both the AI and developers can rely on to ensure data integrity and type safety. The AI can leverage these constraints to generate more reliable code that respects your data model.
+
 ### Talk to the AI
 
 Another tool that has transformed my workflow is Wispr Flow. This app has become my go to for capturing thoughts and communicating opinions. When I am talking to AI, I am normally just dictating into Wispr Flow, which transforms my spoken words into well structured text.
@@ -152,7 +160,7 @@ This is the junior developer paradox: if AI handles the routine coding tasks tha
 
 Perhaps the answer lies in pairing with juniors and showing them how we use AI, having more conversations about higher order concepts, and guiding them as they use the tools. Pairing has always been the best way to learn code anyway.
 
-Perhaps the aspects around production are more important than code itself, and we should start there: principles around testing, linting, deployment, data modelling, and layered architecture.
+Perhaps the aspects around production are more important than code itself, and we should start there: principles around testing, linting, deployment, security, data modelling, and layered architecture.
 
 Maybe well structured templated repositories with generated code will become even more important. Perhaps there will be higher level blocks more at the library or repository level that we will give to AIs to stick together. Perhaps juniors will not need to learn the implementation details of these blocks.
 
@@ -174,7 +182,7 @@ This cognitive engagement is crucial. When AI suggests code that seems plausible
 
 If AI were near perfect, we would slip into System 1 thinking too quickly which allows more AI slop to slip through. We need to prepare for this as AI gets better.
 
-The future belongs to developers who can effectively collaborate with AI, maintaining that careful balance between leveraging its capabilities and engaging their own critical faculties. This is not vibe coding or passive acceptance. This is thoughtful, deliberate software development enhanced by AI.
+The future belongs to developers who can effectively collaborate with AI, maintaining that careful balance between leveraging its capabilities and engaging their own critical faculties. This is not vibe coding or passive acceptance. This is thoughtful, deliberate software development enhanced by AI. It requires us to maintain our expertise in fundamentals like data modelling, state management, and security awareness even as the mechanics of code generation become increasingly automated. It requires us to find new way to teach juniors. Perhaps juniors will need more pair programming time than ever as we teach them to use AI safely.
 
 I would like to thank Jim Downing for a great conversation that led to this version of the Wardley Map. I am also grateful to Todd Anderson, Martin Bechard, Rob Bowley, Frankie Cleary, Jonathan Conway, Joshua Cornejo, Jeff Foster, Sasha Gerrand, Ian Harper, Chris Hasiński, Britannio Jarrett, John Crickett, Slobodan Tanasić, Benhamin Tindall, Denis Turkov, Meri Williams, and many other LinkedIn commenters for their contributions to the conversation.
 
