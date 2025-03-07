@@ -108,7 +108,9 @@ This very post was written using this method. It does not read like AI (at least
 
 ### Knowledge Management with AI
 
-In 1992, Kim Stanley Robinson wrote about an AI research assistant that reads everything and connects ideas across an entire knowledge base. In his Mars Trilogy, the character Jon Boone uses an AI system that surfaces insights he might have missed. It felt like distant science fiction at the time. Yet here I am in 2025, living that reality every day.
+In 1992, Kim Stanley Robinson wrote about an AI research assistant that reads everything and connects ideas across an entire knowledge base. In his [Mars Trilogy](https://www.kimstanleyrobinson.info/content/mars-trilogy)[^mars], the character Jon Boone uses an AI system that surfaces insights he might have missed. It felt like distant science fiction at the time. Yet here I am in 2025, living that reality every day.
+
+[^mars]: I'd _highly_ recommend reading the Mars Trilogy if you are interested in hard science fiction and an optimistic view of the future. The trilogy (Red Mars, Green Mars, Blue Mars) follows the colonisation and terraforming of Mars over nearly two centuries. It's remarkable not just for its scientific plausibility, but for how it explores the social, political and psychological implications of space colonisation. The invention of the AI assistant that appears in the books, along with other uses of AI, was remarkably prescient about how we might use AI to augment our thinking and research capabilities.
 
 My notes have evolved from a scattered collection into a living system. The AI does not just search. It understands. It finds connections I have missed, surfaces forgotten commitments, and builds a semantic map of my thinking. This is not speculative fiction anymore; it is my daily workflow with Cursor AI and Obsidian.
 
@@ -128,7 +130,9 @@ This might be a short term concern, though. As AI models improve, they will catc
 
 Software development was never primarily about writing code anyway. It was about solving problems within constraints. Our distinctly human abilities such as empathy for users, intuition about hidden complexity, and creative problem solving remain our competitive advantage. The skills that matter most are precisely those where humans excel and AI struggles.
 
-To better understand this shift, I created a Wardley map that tries to visualise the evolution of coding practices:
+To better understand this shift, I created a Wardley map[^wardley] that tries to visualise the evolution of coding practices:
+
+[^wardley]: Wardley Maps are a strategic tool that plots components along axes of visibility (y-axis) and evolution (x-axis) to show how practices and technologies mature over time. Learn more at [Simon Wardley's blog](https://blog.gardeviance.org/2015/02/an-introduction-to-wardley-value-chain.html) or read his book ["Wardley Maps"](https://medium.com/wardleymaps).
 
 ![AI-first coding Wardley map](/assets/img/ai-first-coding-map.jpeg)
 
@@ -164,7 +168,7 @@ The actual coding was never the job, and now it is less of the job than ever. Th
 
 AI is changing everything: how I code, how I write, even how I read and organise information. I would recommend that every developer and technical knowledge worker learns these tools and watches for new ones as they emerge. They are solidly technical tools for now, but that will change in future.
 
-Using AI to write production code is not about replacing human judgment. It is about amplifying it. The imperfection of AI tools forces us to engage our System 2[^1] thinking. That slower, more deliberate mode of thought where we carefully reason through problems.
+Using AI to write production code is not about replacing human judgment. It is about amplifying it. The imperfection of AI tools forces us to engage our System 2 thinking[^1]. That slower, more deliberate mode of thought where we carefully reason through problems.
 
 This cognitive engagement is crucial. When AI suggests code that seems plausible but feels wrong, it pushes us to articulate why. We have to engage our analytical brain rather than just accepting the path of least resistance. The process of questioning, refining and sometimes overriding AI suggestions exercises exactly the kind of critical thinking that software development demands.
 
