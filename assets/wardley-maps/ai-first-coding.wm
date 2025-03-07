@@ -1,0 +1,53 @@
+title AI-first coding
+
+market Devs [0.95, 0.4]
+
+component New features [0.8, 0.45]
+component Fix bugs [0.8, 0.7]
+
+Devs -> New features
+Devs -> Fix bugs
+
+component Coding agents [0.7, 0.3]
+component Completion [0.7, 0.5]
+component Manual coding [0.7, 0.7]
+
+New features -> Coding agents
+New features -> Manual coding
+Fix bugs -> Coding agents
+Fix bugs -> Completion
+Fix bugs -> Manual coding
+
+component MCP services [0.6, 0.1]
+Coding agents -> MCP services
+
+component Reviewing [0.5, 0.45] inertia
+evolve Reviewing 0.8
+Completion -> Reviewing 
+Coding agents -> Reviewing 
+
+component System design [0.25, 0.32] inertia
+evolve System design 0.6 label [1.64, -1.07]
+Reviewing -> System design 
+Manual coding -> System design 
+
+component "Safe code" knowledge [0.39, 0.25] inertia
+evolve "Safe code" knowledge 0.79
+Reviewing -> "Safe code" knowledge
+
+component LLM [0.2, 0.49]
+evolve LLM 0.9
+
+Coding agents -> LLM
+Completion -> LLM
+
+component Editor [0.59, 0.74] label [5.00, -10.00]
+Manual coding -> Editor
+
+component Product knowledge [0.15, 0.2] inertia
+evolve Product knowledge 0.6
+System design -> Product knowledge
+
+component Spotting complexity [0.05, 0.21] inertia
+evolve Spotting complexity 0.45
+Product knowledge -> Spotting complexity 
