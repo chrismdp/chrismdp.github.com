@@ -8,7 +8,7 @@ categories:
 - code
 ---
 
-I am shipping AI-First production code every day. Not experimental features. Not throwaway prototypes. Real, deployed, mission-critical code powering [Cherrypick](https://cherrypick.co)'s tens of thousands of users.
+I am shipping AI-first production code every day. Not experimental features. Not throwaway prototypes. Real, deployed, mission-critical code powering [Cherrypick](https://cherrypick.co)'s tens of thousands of users.
 
 Social media overflows with "vibe coding" demonstrations. These flashy but superficial examples show AI apparently conjuring perfect code in seconds. The reality of professional AI-assisted development runs much deeper. Real production work with AI is messier, more nuanced, and demands rigorous thinking, but very effective.
 
@@ -33,6 +33,8 @@ But here is the critical insight: even when it is wrong, it is still valuable. T
 The key to using AI coding tools safely is to pay attention and assume the output is wrong until proven otherwise. Read the code as it is being generated. Do not just leave it running and accept whatever it produces. If the first attempt is not quite right, you might as well delete it and have another go with a slightly better prompt. AI does not get tired or frustrated. It is perfectly happy to try again with clearer instructions.
 
 Most importantly, you need to understand what the code actually does by reading it. Technical debt cannot simply be "fixed by AI". You need the skills to evaluate code quality and make intentional architectural decisions. The AI is a tool to help implement those decisions, not a replacement for understanding the codebase.
+
+To go fast, get really good at reading and understanding code fast.
 
 ### Be careful with YOLO mode
 
