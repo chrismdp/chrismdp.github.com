@@ -170,7 +170,7 @@ Secondly, we may need new forms of deliberate practice. If AI handles the routin
 
 Thirdly, the relationship between junior and senior developers will evolve. Rather than seniors primarily reviewing code, they might focus more on teaching complexity recognition, architectural thinking, and the subtle art of knowing when to trust or question AI suggestions.
 
-The actual coding was never the job, and now it is less of the job than ever. The true value has always been in understanding what to build and why, not just how to implement it. AI simply makes this distinction more apparent.
+The actual coding was never the job, and now it is less of the job than ever. The true value has always been in understanding [what to build and why](/the-job-is-not-to-build), not just how to implement it. AI simply makes this distinction more apparent.
 
 ## Conclusion
 
@@ -185,5 +185,7 @@ If AI were near perfect, we would slip into System 1 thinking too quickly which 
 The future belongs to developers who can effectively collaborate with AI, maintaining that careful balance between leveraging its capabilities and engaging their own critical faculties. This is not vibe coding or passive acceptance. This is thoughtful, deliberate software development enhanced by AI. It requires us to maintain our expertise in fundamentals like data modelling, state management, and security awareness even as the mechanics of code generation become increasingly automated. It requires us to find new way to teach juniors. Perhaps juniors will need more pair programming time than ever as we teach them to use AI safely.
 
 I would like to thank Jim Downing for a great conversation that led to this version of the Wardley Map. I am also grateful to Todd Anderson, Martin Bechard, Rob Bowley, Frankie Cleary, Jonathan Conway, Joshua Cornejo, Jeff Foster, Sasha Gerrand, Ian Harper, Chris Hasiński, Britannio Jarrett, John Crickett, Slobodan Tanasić, Benhamin Tindall, Denis Turkov, Meri Williams, and many other LinkedIn commenters for their contributions to the conversation.
+
+For more on building robust AI applications, see my post on [how to build a robust LLM application](/how-to-build-a-robust-llm-application). If you are interested in the future of incorporating AI into your systems, you might also enjoy my thoughts on [why prompting sucks and what we can do about it](/beyond-prompting).
 
 [^1]: System 1 and System 2 thinking are concepts developed by Daniel Kahneman in his book "Thinking, Fast and Slow". System 1 is our intuitive, fast thinking mode. System 2 is our deliberate, slow thinking mode.
