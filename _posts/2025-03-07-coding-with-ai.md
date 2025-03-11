@@ -90,6 +90,16 @@ For data modelling, I maintain clear schemas in the repository. When asking AI t
 
 The most effective approach I have found is to establish clear boundaries around state mutations. Document which components or services are allowed to mutate which parts of the state, and enforce these boundaries rigorously. AI tools will follow these patterns once they understand them, but they rarely invent good state management patterns on their own. Database constraints and type hints, like those provided by Supabase, are particularly valuable here - they provide guardrails that both the AI and developers can rely on to ensure data integrity and type safety. The AI can leverage these constraints to generate more reliable code that respects your data model.
 
+### Managing Cognitive Load
+
+Working with AI is mentally exhausting. The constant need to verify and validate AI output creates a unique form of cognitive strain. It feels similar to pair programming with an especially demanding or high intensity person.
+
+Traditional development workflows, particularly Test Driven Development, provided natural cognitive rhythms. Writing a test, watching it fail, implementing the code, and seeing it pass created moments where our analytical brain could rest. These micro breaks were valuable recovery periods we did not even realise we needed.
+
+With AI, I feel in a constant state of high alertness. Every suggestion must be scrutinised. Every piece of generated code demands careful review. The AI does not get tired, but we do. Our brains need those moments of lower cognitive load to process and recover.
+
+As AI tools improve and we develop better practices for working with them, perhaps we will find new rhythms that are less demanding. For now I have found it essential to create more deliberate breaks in my AI coding sessions, to stare out of the window, stretch my legs, or switch to more mechanical tasks that do not require intense focus.
+
 ### Talk to the AI
 
 Another tool that has transformed my workflow is Wispr Flow. This app has become my go to for capturing thoughts and communicating opinions. When I am talking to AI, I am normally just dictating into Wispr Flow, which transforms my spoken words into well structured text.
