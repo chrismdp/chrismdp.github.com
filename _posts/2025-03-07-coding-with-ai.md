@@ -100,11 +100,25 @@ With AI, I feel in a constant state of high alertness. Every suggestion must be 
 
 As AI tools improve and we develop better practices for working with them, perhaps we will find new rhythms that are less demanding. For now I have found it essential to create more deliberate breaks in my AI coding sessions, to stare out of the window, stretch my legs, or switch to more mechanical tasks that do not require intense focus.
 
+### The Power of Reset and Refine
+
+One of the most counterintuitive lessons I have learned about AI-assisted development is that sometimes less context is more. There are two common approaches to working with AI: continuous iteration and what I call "reset and refine".
+
+With continuous iteration, you start with a vague prompt, review the generated code, make corrections, and keep iterating. This creates a meandering conversation where both you and the AI must track multiple changes across files. The context grows increasingly complex with each iteration, often leading to diminishing returns. The AI gets more and more confused as it tries to keep track of everything.
+
+The more effective approach is "reset and refine". When you notice the AI's output is not quite right, instead of making incremental corrections, you start fresh with a more specific prompt, undoing all the work it has just done. This might seem inefficient, but it actually reduces cognitive load for both you and the AI. You are not trying to keep track of multiple changes across files, and the AI has a clearer, more focused context to work with.
+
+This mirrors a fundamental truth about instruction: vague requirements lead to vague output, whether you are working with humans or AI. More context is beneficial only if it is the right context. There is a tipping point where additional context becomes noise rather than signal, causing the quality of the AI's output to rapidly decline.
+
+The skill lies in recognising when to persist with iterations and when to reset with a refined prompt. This is not about writing perfect prompts on the first try, but about managing context effectively to get the best results from AI collaboration.
+
 ### Talk to the AI
 
-Another tool that has transformed my workflow is Wispr Flow. This app has become my go to for capturing thoughts and communicating opinions. When I am talking to AI, I am normally just dictating into Wispr Flow, which transforms my spoken words into well structured text.
+Another tool that has transformed my workflow is Wispr Flow. This app has become my go to for capturing thoughts and communicating opinions. When I am instructing the AI when writing or coding, I am normally just dictating into Wispr Flow, which transforms my spoken words into well structured text.
 
-What makes Wispr Flow particularly powerful with Cursor is how it bridges the gap between brain dumping and structured thinking. It captures the natural flow of ideas while organising them coherently. For someone like me who thinks best while talking and tends towards being an external processor, this tool has been invaluable for preserving insights that might otherwise be lost in the ephemeral nature of conversation, or that I need to speak out loud to understand.
+What makes Wispr Flow so powerful with Cursor is how it bridges the gap between brain dumping and structured thinking. I can capture the natural flow of ideas and then Cursor organises them coherently in the document I'm writing into.
+
+For someone like me who thinks best while talking and tends towards being an external processor, this has been invaluable. It preserves insights that might otherwise be lost as they take too much typing, or that I need to speak out loud to understand.
 
 ## Beyond Code
 
@@ -181,6 +195,16 @@ Secondly, we may need new forms of deliberate practice. If AI handles the routin
 Thirdly, the relationship between junior and senior developers will evolve. Rather than seniors primarily reviewing code, they might focus more on teaching complexity recognition, architectural thinking, and the subtle art of knowing when to trust or question AI suggestions.
 
 The actual coding was never the job, and now it is less of the job than ever. The true value has always been in understanding [what to build and why](/the-job-is-not-to-build), not just how to implement it. AI simply makes this distinction more apparent.
+
+## Can Agents Really Focus on What's Essential?
+
+Our experiences with AI coding assistants might reveal a fundamental limitation in how autonomous AI agents handle context. While humans, particularly experienced developers, excel at filtering vast amounts of information to identify what is truly essential, AI agents often struggle with accumulating context. They can gradually meander and lose focus as information builds up, much like a junior professional becomes overwhelmed by too much data and can feel helpless.
+
+This is why the "reset and refine" approach often works better than letting agents iterate independently. When we provide precise, curated context upfront, we are essentially applying our human expertise in filtering and focusing on what matters. We are doing for the AI what senior knowledge workers naturally do: managing complexity by identifying and prioritising essential information.
+
+This insight might have profound implications for the future of AI agents. Current implementations can hit a failure mode where they become overwhelmed by accumulated context, struggling to effectively filter and prioritise information. While agents are still learning to carefully manage their own context, and this area is rapidly evolving, for now they tend to work best within well-defined boundaries where the scope of relevant information is clear and constrained.
+
+Whether this will remain a fundamental limitation or become a temporary bridge to more sophisticated AI systems remains an open question. What is clear is that understanding how to manage AI context effectively is becoming as important as understanding how to write good code.
 
 ## Conclusion
 
