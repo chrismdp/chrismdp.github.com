@@ -202,9 +202,17 @@ Our experiences with AI coding assistants might reveal a fundamental limitation 
 
 This is why the "reset and refine" approach often works better than letting agents iterate independently. When we provide precise, curated context upfront, we are essentially applying our human expertise in filtering and focusing on what matters. We are doing for the AI what senior knowledge workers naturally do: managing complexity by identifying and prioritising essential information.
 
-This insight might have profound implications for the future of AI agents. Current implementations can hit a failure mode where they become overwhelmed by accumulated context, struggling to effectively filter and prioritise information. While agents are still learning to carefully manage their own context, and this area is rapidly evolving, for now they tend to work best within well-defined boundaries where the scope of relevant information is clear and constrained.
+This insight might have profound implications for the near term future of AI agents. Current implementations can hit a failure mode where they become overwhelmed by accumulated context, struggling to effectively filter and prioritise information. While agents are still learning to carefully manage their own context, and this area is rapidly evolving, for now they tend to work best within well-defined boundaries where the scope of relevant information is clear and constrained. What is clear is that understanding how to manage AI context effectively is becoming as important as understanding how to write good code. 
 
-Whether this will remain a fundamental limitation or become a temporary bridge to more sophisticated AI systems remains an open question. What is clear is that understanding how to manage AI context effectively is becoming as important as understanding how to write good code.
+This is true for now. However agent autonomy has rapidly advanced and continues to improve. Recent research from METR[^metr] provides fascinating insights into this. Their study introduces a new metric: the 50% task completion time horizon, measuring how long it takes humans to complete tasks that AI models can only get right 50% of the time[^fifty]. As of early 2024, best-in-class models at the time demonstrated a 50% time horizon of approximately 50 minutes - meaning humans could complete in 50 minutes what AI could only do correctly half the time. What's interesting is the amount of independent human effort an agent can complete at a 50% success rate has consistently doubled every seven months since 2019.
+
+[^fifty]: While 50% success rate is unacceptably low for most use cases, it serves as a useful benchmark for comparing model capabilities. As models improve their 50% time horizon, they also show corresponding improvements in their 80-90% success rate times, making this a reliable indicator of overall model progress.
+
+The research also reveals that older AI models did poorly historically at about one minute of human work - where are lot of the most common coding tasks live. This historical limitation helps explain why coding agents have only recently become viable - newer models can now work independently for minutes at a time, enabling these tools to assist with more complex tasks.
+
+This exponential growth suggests we might see AI capable of maintaining focus for an entire workday by 2028, and potentially for a full month by late 2029, fundamentally changing how we collaborate with these tools. We must prepare for this future where AI systems can maintain focus and context for increasingly extended periods.
+
+[^metr]: The METR research paper on agent autonomy and task completion horizons can be found at [https://arxiv.org/pdf/2503.14499](https://arxiv.org/pdf/2503.14499)
 
 ## Conclusion
 
