@@ -2,7 +2,7 @@
 layout: page
 title: I take senior technical leaders to the next level.
 permalink: /coaching
-excerpt: "Book in a call if you need help leveling up your technical leadership."
+excerpt: "Book in a call if you need help levelling up your technical leadership."
 
 ---
 
@@ -21,6 +21,8 @@ if (window.location.search.includes('?thanks')) {
 
 **Helping startups to transform their tech capability by coaching CTOs and technical leaders to cut through the noise, focus on what matters and test ideas within hours not months.**
 
+*Looking for fractional CTO or tech advisory services instead? [Click here](/cto).*
+
 - Want to know how to build just enough high quality tech, and spend less doing it?
 - Need to improve collaboration between the CEO and technical leaders?
 - Looking to build and scale a world-class technical team?
@@ -30,7 +32,7 @@ if (window.location.search.includes('?thanks')) {
 - Want to avoid the wrong engineering culture?
 - Need to accelerate your development velocity?
 - Need help finding product/market fit efficiently?
-- What to know how much process is needed, and how much is just slowing you down?
+- Want to know how much process is needed, and how much is just slowing you down?
 
 {% include book-call-button.html %}
 
@@ -44,7 +46,7 @@ _"Chris has clearly learned a *lot* about the world of being a delivery-focused 
 
 -- [Ian Ozsvald](https://www.linkedin.com/in/ianozsvald/)
 
-_"Chris is fantastic at building self-sufficient teams and giving them what they need to deliver impactful product changes and experiments. He provides a lot of freedom while setting clear goals, which creates highly productive teams in early-stage startups. At the same time, he’s an empathetic leader who always keeps a pulse on team morale. This is an extremely punchy combo when it comes to pre-product-market-fit companies, where hyper focus, productivity and seeding the right company culture are key."_
+_"Chris is fantastic at building self-sufficient teams and giving them what they need to deliver impactful product changes and experiments. He provides a lot of freedom while setting clear goals, which creates highly productive teams in early-stage startups. At the same time, he's an empathetic leader who always keeps a pulse on team morale. This is an extremely punchy combo when it comes to pre-product-market-fit companies, where hyper focus, productivity and seeding the right company culture are key."_
 
 -- [Tadas Tamosauskas](https://www.linkedin.com/in/tamosauskas/)
 
@@ -82,7 +84,7 @@ A founder or CTO benefits from a coach but working with someone who has been thr
 
 {% include book-call-button.html %}
 
-## My Recent Articles
+## Recent Articles
 
 {% for post in site.posts limit:3 %}
    <div class="post-preview py-4">

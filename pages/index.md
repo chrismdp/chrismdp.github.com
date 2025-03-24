@@ -2,15 +2,15 @@
 layout: page
 title: Hi, I'm Chris.
 permalink: /
-excerpt: "I have 25 years of experience running tech teams and founding startups. I'm co-founder/CTO of Cherrypick, the best meal-led grocery shopping assistant on the market. I advise startup founders on tech strategy, and coach first-time CTOs & founding developers at funded startups - if you think I might be able to help you, get in touch."
+excerpt: "I have 25 years of experience running tech teams and founding startups. I offer fractional CTO services and technical leadership coaching to help startups build great teams and scale effectively."
 
 ---
 
 <img alt='Chris Parsons' src='/assets/img/chris-headshot-2022-cropped.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width:200px'/>
 
-I have spent the last 25 years starting things - building tech teams, founding startups, and coaching and advising other founders and CTOs. My aim is to make startups that make this world better for my kids generation to grow up in.
+I have spent the last 25 years starting things. Building tech teams, founding startups, and helping other founders and CTOs succeed. My aim is to make startups that make this world better for my kids generation to grow up in.
 
-**I'm coaching a limited number of technical founders and startup CTOs in {{ 'now' | date: "%Y" }}. [Book in a free discovery call](/coaching) if you need some help with your startup journey.**
+**I offer [fractional CTO services](/cto) and [technical leadership coaching](/coaching) to help startups build great teams and scale effectively.**
 
 <!--more-->
 
@@ -20,7 +20,9 @@ I helped build [GOV.UK](http://gov.uk) in the early days, trained hundreds of de
 
 In 2017 I joined Gower Street as CTO and helped scale the team from 5 to 50 people, leading a large film analysis + engineering team building prediction tools for major film studios. In 2021 I co-founded [Cherrypick](//cherrypick.co) as CTO, building an AI-powered grocery shopping assistant to help people eat better effortlessly.
 
-I split my time between Cherrypick and [coaching technical founders and startup CTOs](/coaching) for startups who want help taking their technical leadership to the next level.
+I split my time between Cherrypick and helping other startups through:
+- [Fractional CTO services](/cto) for startups needing experienced technical leadership
+- [Technical leadership coaching](/coaching) for CTOs wanting to level up their skills
 
 You can find me on [BlueSky](https://bsky.app/profile/chrismdp.com), [X](https://x.com/chrismdp) and [LinkedIn](https://linkedin.com/in/chrisparsons). Here are some of my more recent articles - subscribe with <a href="{{ site.baseurl }}/feed.xml">RSS</a> to keep up with the latest.
 
