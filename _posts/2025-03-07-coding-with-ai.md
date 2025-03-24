@@ -112,6 +112,8 @@ This mirrors a fundamental truth about instruction: vague requirements lead to v
 
 The skill lies in recognising when to persist with iterations and when to reset with a refined prompt. This is not about writing perfect prompts on the first try, but about managing context effectively to get the best results from AI collaboration.
 
+Josh Nelands shared a particularly effective technique for implementing this reset and refine approach: Let the AI work on the problem for 10 to 20 minutes, nudging it along as needed. Then, ask it to reflect on the entire conversation, analysing what went wrong, why it struggled, and what information it wished it had known at the start to avoid these problems. With this reflection in hand, revert the conversation and start fresh armed with those insights. He reports that this meta-learning approach often leads to dramatically better results than continuing to iterate on a struggling conversation.
+
 ### Talk to the AI
 
 Another tool that has transformed my workflow is Wispr Flow. This app has become my go to for capturing thoughts and communicating opinions. When I am instructing the AI when writing or coding, I am normally just dictating into Wispr Flow, which transforms my spoken words into well structured text.
@@ -226,7 +228,7 @@ If AI were near perfect, we would slip into System 1 thinking too quickly which 
 
 The future belongs to developers who can effectively collaborate with AI, maintaining that careful balance between leveraging its capabilities and engaging their own critical faculties. This is not vibe coding or passive acceptance. This is thoughtful, deliberate software development enhanced by AI. It requires us to maintain our expertise in fundamentals like data modelling, state management, and security awareness even as the mechanics of code generation become increasingly automated. It requires us to find new way to teach juniors. Perhaps juniors will need more pair programming time than ever as we teach them to use AI safely.
 
-I would like to thank Jim Downing for a great conversation that led to this version of the Wardley Map. I am also grateful to Todd Anderson, Martin Bechard, Rob Bowley, Frankie Cleary, Jonathan Conway, Joshua Cornejo, Jeff Foster, Sasha Gerrand, Ian Harper, Chris Hasiński, Britannio Jarrett, John Crickett, Slobodan Tanasić, Benhamin Tindall, Denis Turkov, Meri Williams, and many other LinkedIn commenters for their contributions to the conversation.
+I would like to thank Jim Downing for a great conversation that led to this version of the Wardley Map. I am also grateful to Todd Anderson, Martin Bechard, Rob Bowley,Jonathan Conway, Joshua Cornejo, Frankie Cleary, John Crickett, Jeff Foster, Sasha Gerrand, Ian Harper, Chris Hasiński, Britannio Jarrett, Josh Nelands, Slobodan Tanasić, Benjamin Tindall, Denis Turkov, Meri Williams, and many other LinkedIn commenters for their contributions to the conversation.
 
 For more on building robust AI applications, see my post on [how to build a robust LLM application](/how-to-build-a-robust-llm-application). If you are interested in the future of incorporating AI into your systems, you might also enjoy my thoughts on [why prompting sucks and what we can do about it](/beyond-prompting).
 
