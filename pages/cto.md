@@ -2,19 +2,8 @@
 layout: page
 title: Early-stage clarity, speed, and technical judgement.
 permalink: /cto
-excerpt: "Hands-on technical leadership for ambitious post-funding startups. Build the right things faster, with the right people, without hiring the wrong full-time exec too early."
+excerpt: "Technical leadership for ambitious post-funding startups. Build the right things faster, with the right people, without hiring the wrong full-time CTO too early."
 ---
-
-<script>
-if (window.location.search.includes('?thanks')) {
-  document.write(`
-    <div class="bg-green-50 border-l-4 rounded-lg border-green-500 text-green-700 p-4 mb-8" role="alert">
-      <p class="font-bold">Thanks for booking!</p>
-      <div>Looking forward to our call.</div>
-    </div>
-  `);
-}
-</script>
 
 <img alt='Chris Parsons' src='/assets/img/chris-headshot-2022-cropped.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width:200px'/>
 
@@ -22,8 +11,7 @@ if (window.location.search.includes('?thanks')) {
 
 That’s where I come in.
 
-I help founders scale *without* burning cash, build tech teams that actually ship, and make product decisions that don’t backfire.  
-You do not need a full-time CTO yet, but you *do* need someone who has done this before) and knows where the landmines are.
+I help founders scale *without* burning cash, build tech teams that actually ship, and make product decisions that don’t backfire. You do not need a full-time CTO yet, but you *do* need someone who has done this before and knows where the landmines are.
 
 {% include book-call-button.html %}
 
@@ -38,7 +26,7 @@ You do not need a full-time CTO yet, but you *do* need someone who has done this
 - Land key customers with credible pre-sales support  
 - Raise with confidence: I have sat on both sides of the table 
 
-This is not hands-off consulting. I have [25 years of experience](/) running tech teams and founding startups. I roll up my sleeves, build team, own outcomes, and help you make the right calls, and fast.
+I have [25 years of experience](/) running tech teams and founding startups. I know what it takes to focus your existing team and deliver twice as fast with half the rework.
 
 ---
 
