@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Transform your tech for a fraction of the cost.
+title: Early-stage clarity, speed, and technical judgement.
 permalink: /cto
-excerpt: "Helping startups build great tech teams, reduce costs, and find product-market fit through fractional CTO and tech advisory services."
-
+excerpt: "Hands-on technical leadership for ambitious post-funding startups. Build the right things faster, with the right people, without hiring the wrong full-time exec too early."
 ---
 
 <script>
@@ -19,23 +18,29 @@ if (window.location.search.includes('?thanks')) {
 
 <img alt='Chris Parsons' src='/assets/img/chris-headshot-2022-cropped.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width:200px'/>
 
-**I help startups build exceptional tech teams, reduce costs, and accelerate product-market fit through strategic tech advisory services, so teams can avoid the cost of a full-time CTO.**
+**You have raised funding. You have hired a couple of devs. You are moving fast: but the tech is messy, the product is fuzzy, and everything is feels like it is on fire.**
 
-- Build effective product teams and processes
-- Assist with pre-sales for key clients
-- Move your AI prototypes to production
-- Tech strategy to scale for growth or reduce cost
-- Build and scale high-performing tech teams with great culture
-- Technical transformation and re-platforming strategy and project management
-- Avoid common technical pitfalls and make strategic tech decisions
-- Support fundraising with technical due diligence
-- Find product-market fit efficiently
-- Hire your first full time CTO
-- Level up teams with AI tools
+That’s where I come in.
+
+I help founders scale *without* burning cash, build tech teams that actually ship, and make product decisions that don’t backfire.  
+You do not need a full-time CTO yet, but you *do* need someone who has done this before) and knows where the landmines are.
 
 {% include book-call-button.html %}
 
-<!--more-->
+---
+
+### I’ll help you:
+
+- Build and lead high-performing product & engineering teams  
+- Avoid expensive architectural dead ends  
+- Ship AI features that actually reach production  
+- Cut costs without slowing down  
+- Land key customers with credible pre-sales support  
+- Raise with confidence: I have sat on both sides of the table 
+
+This is not hands-off consulting. I have [25 years of experience](/) running tech teams and founding startups. I roll up my sleeves, build team, own outcomes, and help you make the right calls, and fast.
+
+---
 
 _"Chris is very experienced both in the technical side of setting up a well functioning tech team, but also in the business side, possessing a keen eye for strategy and a good sense for what will and will not work in any given environment. If you're a startup looking for someone to help build a great team, or you need someone experienced to help develop a sound tech strategy, I would thoroughly recommend Chris."_
 
@@ -49,42 +54,7 @@ _"Chris is fantastic at building self-sufficient teams and giving them what they
 
 -- [Tadas Tamosauskas](https://www.linkedin.com/in/tamosauskas/)
 
-## Strategic Advisory Services
-
-I provide comprehensive strategic guidance to help companies understand and optimise their technical capabilities:
-
-- Multi-year technology strategy development
-- Technical organisation assessment and optimisation
-- Cost reduction through strategic technical planning
-- Technology stack evaluation and modernisation
-- Team structure and process improvement
-- Technical due diligence and risk assessment
-- AI and emerging technology adoption strategies
-
-## Why Work With a Fractional CTO?
-
-Early-stage startups often need experienced technical leadership, but may not be ready for a full-time CTO. A fractional CTO provides:
-
-- Strategic technical guidance without the full-time cost
-- Expertise in building and scaling teams
-- Support during critical growth phases
-- Help avoiding common startup pitfalls
-- Flexibility to scale up or down as needed
-
-## My Experience
-I have [extensive experience](https://www.linkedin.com/in/chrisparsons/) working with pre-seed, seed and Series A stage startups in both B2B SaaS and consumer products. I've helped multiple companies:
-
-- Build high-performing engineering teams from scratch
-- Implement efficient development processes
-- Make strategic technical decisions
-- Support successful fundraising rounds
-- Move AI prototypes to production
-- Find product-market fit
-
-I also offer [technical leadership coaching](/coaching) for startup CTOs and technical leaders who want to level up their skills.
-
-## How I Work
-I typically work with companies 1-2 days per week, either fully remote or in the London area. I offer regular weekly engagements, project-based consulting for specific initiatives, and short term strategic advisory engagements.
+---
 
 {% include book-call-button.html %}
 

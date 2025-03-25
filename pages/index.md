@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hi, I'm Chris.
+title: "Hi, I'm Chris: founder, CTO, and coach."
 permalink: /
 excerpt: "I have 25 years of experience running tech teams and founding startups. I offer fractional CTO services and technical leadership coaching to help startups build great teams and scale effectively."
 
