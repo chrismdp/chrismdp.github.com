@@ -18,7 +18,7 @@ if (window.location.search.includes('?thanks')) {
 
 <img alt='Chris Parsons' src='/assets/img/chris-headshot-2022-cropped.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width:200px'/>
 
-**You have raised funding. You have hired a couple of devs. You are moving fast: but the tech is messy, the product is fuzzy, and everything is feels like it is on fire.**
+**You have raised funding. You have got some developers. You want to move fast: but the tech is messy, the product is fuzzy, and everything is feels like it is on fire.**
 
 That’s where I come in.
 
