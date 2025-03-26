@@ -5,7 +5,7 @@ date: 2025-01-22 07:00:00 +0000
 categories:
 - founders
 - business
-- startups
+- startup
 ---
 
 "Founder mode" is emergency surgery. It is not the right way to run a healthy business.
