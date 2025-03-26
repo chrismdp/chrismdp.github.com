@@ -14,6 +14,8 @@ You have just taken over a new tech team. There is pressure to deliver, not much
 
 This is your field manual. If you are overwhelmed and trying to get clarity, start here.
 
+<!--more-->
+
 ---
 
 ## Step 1: Find the Signal
