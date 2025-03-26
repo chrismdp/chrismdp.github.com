@@ -22,12 +22,13 @@ This is your field manual. If you are overwhelmed and trying to get clarity, sta
 
 There are only two things you *really* need to understand:
 
-### 1. How quickly can the team deliver a change to production?
-This is **cycle time**. It is your single clearest indicator of team health. If you ask for a trivial, non-urgent change today, how long does it take to reach production?
+### 1. How quickly can the team deliver a change to get customer feedback?
 
-> Elite teams: minutes to hours. Troubled teams: weeks to months.
+This is **cycle time**. It is your single clearest indicator of team health. If you ask for a trivial, non-urgent change today, how long does it take to reach customers?
 
-If the answer is more than a few days, that is your first clue. Do not guess. Measure it. Nothing else matters if you cannot deliver.
+> Strong teams: minutes to hours. Troubled teams: weeks to months.
+
+If the answer is more than a few days, that is your first clue. Nothing else matters if the team cannot deliver.
 
 ### 2. Is the team improving how they work?
 This is **continuous improvement**. Is the team regularly reflecting, adjusting, and trying new things?
