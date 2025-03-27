@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How To Get Clarity With a New Tech Team"
-date: 2025-03-26 00:00:00 +00:00
+date: 2025-03-25 00:00:00 +00:00
 categories:
 - team
 - leadership

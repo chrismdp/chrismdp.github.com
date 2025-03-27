@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Startup Success Stories Are Flawed"
-date: 2025-03-27 09:00:00 +0000
+date: 2025-03-26 09:00:00 +0000
 categories:
 - startups
 - strategy
