@@ -6,6 +6,7 @@ categories:
 - development
 - ai
 - code
+- wardley maps
 ---
 
 I am shipping AI-first production code every day. Not experimental features. Not throwaway prototypes. Real, deployed, mission-critical code powering [Cherrypick](https://cherrypick.co)'s tens of thousands of users.
