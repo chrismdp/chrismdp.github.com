@@ -82,8 +82,6 @@ Mentoring is benefiting from past experience, knowledge and mistakes to help you
 
 A founder or CTO benefits from a coach but working with someone who has been through the same challenges before is much more valuable. I have walked this journey through several startups over 20 years and can help you avoid plenty of mistakes and find a way through the maze of uncertainty.
 
-{% include book-call-button.html %}
-
 ## Recent Articles
 
 {% for post in site.posts limit:3 %}
