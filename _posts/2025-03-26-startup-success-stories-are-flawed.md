@@ -36,6 +36,11 @@ Here is a typical chess game move list:
 
 Without understanding the position, these moves tell us very little. If we try to learn chess just by reading lists of moves, we will never truly understand the game. We will always lose against someone who can read the board and see the deeper strategy at play. Was the bishop retreat on move 7 brilliant or desperate? Did castling on move 8 create safety or vulnerability? Without seeing and understanding the actual position, we cannot know.
 
+
+What we learn from is not the notation you have but ...
+1. Pawn Pawn
+2. Knight Knight
+
 ![Not just this, but this](/assets/img/chess-move-list.png)
 
 ## Startup Success Stories are a Move List
@@ -62,6 +67,8 @@ Each piece of advice represents a "move" that worked for someone else. We dutifu
 
 Just as a chess move list cannot convey the full strategic situation, startup advice often fails to capture the invisible forces that shape success or failure. Network effects create resistance or momentum. Technological constraints form boundaries of what is possible. Timing determines whether an identical strategy leads to breakthrough or bankruptcy.
 
+We can take this further: startup business advice is even worse that the chess move list above, because at least the chess list has positional information that helps you infer the board. Our business advice is directly parallel "Pawn Pawn", "Pawn Pawn Knight Knight", which is even more difficult to interpret.
+
 An example: in the early 2000s, I worked at a gaming company called [Elixir Studios](https://en.wikipedia.org/wiki/Elixir_Studios) that attempted to simulate an entire country. The idea was brilliant. The team was capable. But the hardware of the time created an invisible wall. The moves were right. The wider environment made them impossible. (The company did not survive, although the games were great, and [our founder](https://en.wikipedia.org/wiki/Demis_Hassabis) went on to do great things, so perhaps it was for the best.)
 
 ## Beyond the Move List
@@ -79,3 +86,7 @@ How do we learn to see these invisible forces? How do we develop an intuition fo
 The next time we read a startup success story or piece of advice, we should remember that we are seeing only the moves, not the board. The real question is not "what moves led to success?" but "what forces made those moves possible?"
 
 And perhaps most importantly: what forces are shaping the board for us right now? 
+
+---
+
+Thanks to [Simon Wardley](https://www.linkedin.com/in/simonwardley/) for feedback on an earlier version of this article, and for the original observation that sparked this one.
