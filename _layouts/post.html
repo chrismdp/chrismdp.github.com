@@ -14,8 +14,11 @@ layout: page
 {% endif %}
 </div>
 
+{{ content | split:'<!--more-->' | first }}
 
-{{ content }}
+<script async data-uid="dadc23073e" src="https://chrismdp.kit.com/dadc23073e/index.js"></script>
+
+{{ content | split:'<!--more-->' | last }}
 
 {% if page.categories contains "sol trader" %}
 <br/>
