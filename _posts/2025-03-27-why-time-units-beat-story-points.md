@@ -14,6 +14,8 @@ Story points, t-shirt sizes, and fibonacci numbers. We have created an entire vo
 
 This realisation emerged from years of watching teams struggle with abstract estimation systems. The solution was right in front of us all along.
 
+![Why time units beat story points](/assets/img/time-units.png)
+
 <!--more-->
 
 ## The Problem with Points

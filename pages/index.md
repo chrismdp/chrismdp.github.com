@@ -1,16 +1,27 @@
 ---
 layout: page
-title: "Helping tech teams become fast, focused and unstoppable."
+title: "I help CEOs and founders transform their tech teams."
 permalink: /
 excerpt: "I help rebuild momentum, gain clarity, and restore confidence across tech organisations large and small."
 redirect_from:
   - /about
+  - /services
 
 ---
 
 <img alt='Chris Parsons' src='/assets/img/chris-headshot-2022-cropped.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width:200px'/>
 
-I rebuild momentum, clarity, and confidence across tech organisations that have lost their mojo. I do this through coaching, workshops, and helping the team reshape how they work and think.
+If your tech is worrying you, I can help.
+
+I work with CEOs, founders and tech leaders to transform tech teams. I rebuild momentum, create clarity, and restore confidence. I cut through the noise, reframe how the team works and think, and radically reduce time to value.
+
+__Transform your tech team from a concerning cost centre into a powerful growth engine.__
+
+I am an experienced founder, former CEO and CTO. I know what it takes to turn a tech team from a concerning cost centre into a powerful growth engine.
+
+Spend thirty minutes with me and learn exactly how I can help:
+
+{% include book-call-button.html %}
 
 **_"Fantastic at building self-sufficient teams and giving them what they need."_** -- [Tadas T](https://www.linkedin.com/in/tamosauskas/)
 
@@ -22,9 +33,17 @@ I rebuild momentum, clarity, and confidence across tech organisations that have 
 
 <!--more-->
 
-## Recent articles
+## Some of the reasons we should talk
 
-You can also find me on [BlueSky](https://bsky.app/profile/chrismdp.com), [X](https://x.com/chrismdp) and [LinkedIn](https://linkedin.com/in/chrisparsons). Subscribe with <a href="{{ site.baseurl }}/feed.xml">RSS</a> to keep up with the latest.
+Give me a call if any of these are true for you, or if something else is troubling you with your tech team:
+
+- Delivery has slowed to a crawl
+- Your tech costs are out of control
+- The CEO and technical leaders aren not aligned
+- Your AI/LLM projects never quite seem good enough
+- The tech team culture is heading in the wrong direction
+
+## Recent articles
 
 {% for post in site.posts limit:3 %}
    <div class="post-preview py-4">
@@ -44,4 +63,4 @@ You can also find me on [BlueSky](https://bsky.app/profile/chrismdp.com), [X](ht
 
 <hr>
 
-See the <a href="{{ site.baseurl }}/all/">Archive</a> for more articles.
+See the <a href="{{ site.baseurl }}/all/">Archive</a> for more articles. You can also find me on [BlueSky](https://bsky.app/profile/chrismdp.com), [X](https://x.com/chrismdp) and [LinkedIn](https://linkedin.com/in/chrisparsons). Subscribe with <a href="{{ site.baseurl }}/feed.xml">RSS</a> to keep up with the latest.

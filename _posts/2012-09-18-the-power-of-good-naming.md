@@ -2,7 +2,6 @@
 layout: post
 title: The power of good naming
 date: 2012-09-18 20:43:02.000000000 +01:00
-redirect_to: https://deliverydoubled.com/name-as-if-your-life-depends-on-it-a-guide-to-cleaner-code/
 categories:
 - code
 - refactoring

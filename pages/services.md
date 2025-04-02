@@ -12,10 +12,6 @@ redirect_from:
 
 I rebuild momentum, clarity, and confidence across tech organisations that have lost their mojo. I do this through coaching, workshops, and helping the team reshape how they work and think.
 
-Spend thirty minutes with me discussing your unique challenges, and learn exactly how I can help:
-
-{% include book-call-button.html %}
-
 ## Some of the reasons we should talk
 
 Give me a call if any of these are true for you, or if something else is troubling you with your tech team:
