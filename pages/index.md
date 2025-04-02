@@ -13,13 +13,13 @@ redirect_from:
 
 If your tech is worrying you, I can help.
 
-I work with CEOs, founders and tech leaders to transform tech teams. I rebuild momentum, create clarity, and restore confidence. I cut through the noise, reframe how the team works and think, and radically reduce time to value.
+I work with CEOs and founders to transform tech teams. I support existing tech leaders to rebuild momentum, create clarity, and restore confidence. If you need new leadership, I can help find it or stand in the gap.
 
-__Transform your tech team from a concerning cost centre into a powerful growth engine.__
+I cut through the noise, reframe how teams work and think, and radically reduce time to value.
 
-I am an experienced founder, former CEO and CTO. I know what it takes to turn a tech team from a concerning cost centre into a powerful growth engine.
+I have worked for years as a founder, CEO and CTO. I know what it takes to turn a tech team from a concerning cost centre into a powerful growth engine.
 
-Spend thirty minutes with me and learn exactly how I can help:
+Spend thirty minutes with me, get some instant advice, and learn more about how I can help you:
 
 {% include book-call-button.html %}
 
