@@ -1,23 +1,37 @@
 ---
 layout: page
-title: "I help CEOs and founders transform their tech teams."
+title: "Learn to work wonders with AI."
 permalink: /
-excerpt: "I help rebuild momentum, gain clarity, and restore confidence across tech organisations large and small."
+excerpt: "Helping teams deliver fast, reliable and profitable AI products and processes."
 redirect_from:
   - /about
   - /services
+  - /coaching
+  - /cto
 
 ---
 
 <img alt='Chris Parsons' src='/assets/img/chris-headshot-2022-cropped.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width:200px'/>
 
-If your tech is worrying you, I can help.
+Two years ago, I was hit by a (metaphorical) bus.
 
-I work with CEOs and founders to transform tech teams. I support existing tech leaders to rebuild momentum, create clarity, and restore confidence. If you need new leadership, I can help find it or stand in the gap.
+That bus was the ChatGPT launch in November 2022.
 
-I cut through the noise, reframe how teams work and think, and radically reduce time to value.
+I've never quite recovered.
 
-I have worked for years as a founder, CEO and CTO. I know what it takes to turn a tech team from a concerning cost centre into a powerful growth engine.
+I've been a tech leader for a long time. I've seen what works, and what doesn't. Our teams had been using generative AI already.
+
+I've also seen what happens when a new technology is packaged in a way that transforms the world. November 2022 was one of those moments.
+
+I'm a builder and founder. I've run data teams, product teams, and engineering teams. I am determined to learn how to use AI to create better products, think differently and work more efficiently, and how to build AI _into_ products so others can benefit.
+
+Join me on my learning journey.
+
+<script async data-uid="dadc23073e" src="https://chrismdp.kit.com/dadc23073e/index.js"></script>
+
+## I help businesses build reliable AI processes and products.
+
+I have worked for years as a founder, CEO and CTO, and I use that experience to guide teams to amazing AI products.
 
 Spend thirty minutes with me, get some instant advice, and learn more about how I can help you:
 
@@ -29,19 +43,18 @@ Spend thirty minutes with me, get some instant advice, and learn more about how 
 
 **_"Chris has clearly learned a lot about the world of being a delivery-focused CTO"_** -- [Ian O](https://www.linkedin.com/in/ianozsvald/)
 
-<script async data-uid="dadc23073e" src="https://chrismdp.kit.com/dadc23073e/index.js"></script>
-
 <!--more-->
 
 ## Some of the reasons we should talk
 
 Give me a call if any of these are true for you, or if something else is troubling you with your tech team:
 
-- Delivery has slowed to a crawl
-- Your tech costs are out of control
-- The CEO and technical leaders aren not aligned
-- Your AI/LLM projects never quite seem good enough
-- The tech team culture is heading in the wrong direction
+- Your AI team has stopped shipping
+- Your LLM costs are out of control
+- The CEO and technical leaders aren't aligned
+- You are endlessly fiddling with LLM prompts
+- Your AI/LLM output never quite seem good enough
+- You're not sure how to get started an AI project
 
 ## Recent articles
 
