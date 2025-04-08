@@ -33,6 +33,8 @@ Join me on my learning journey.
 
 I have worked for years as a founder, CEO and CTO, and I use that experience to guide teams to amazing AI products.
 
+I've built multiple production-level AI systems, and I've seen what works and what doesn't.
+
 Spend thirty minutes with me, get some instant advice, and learn more about how I can help you:
 
 {% include book-call-button.html %}
