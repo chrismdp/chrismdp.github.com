@@ -17,7 +17,7 @@ I've been a tech leader for 25 years. I've seen what works, and what doesn't.
 
 I've also seen what happens when a new technology comes along and transforms the world. The ChatGPT launch in November 2022 was one of those moments.
 
-I'm a builder and five time founder. I've run data teams, product teams, and engineering teams. I was struck by the raw potential I saw, and knew then the rest of my career would likely be defined by this technology.
+I'm a builder and four time founder. I've run data teams, product teams, and engineering teams. I was struck by the raw potential I saw, and knew then the rest of my career would likely be defined by this technology.
 
 I am determined to learn how to use AI to create better products, think differently and work more efficiently, and how to build AI _into_ products so others can benefit.
 
