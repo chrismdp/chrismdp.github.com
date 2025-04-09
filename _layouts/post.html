@@ -13,12 +13,17 @@ layout: page
   <div style="font-style: italic;">{{ page.date | date: "%B %Y" }}</div>
 {% endif %}
 </div>
+{% assign content_parts = content | split:'<!--more-->' %}
 
-{{ content | split:'<!--more-->' | first }}
+{{ content_parts[0] }}
 
 <script async data-uid="dadc23073e" src="https://chrismdp.kit.com/dadc23073e/index.js"></script>
 
-{{ content | split:'<!--more-->' | last }}
+<br/>
+
+{% if content_parts.size > 1 %}
+  {{ content_parts[1] }}
+{% endif %}
 
 {% if page.categories contains "sol trader" %}
 <br/>
