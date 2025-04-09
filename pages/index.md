@@ -11,7 +11,7 @@ redirect_from:
 
 ---
 
-<img alt='Chris Parsons' src='/assets/img/chris-headshot-full.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width:300px'/>
+<img alt='Chris Parsons' src='/assets/img/chris-headshot-full.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width: 50%; max-width: 250px;'/>
 
 I've been a tech leader for 25 years. I've seen what works, and what doesn't.
 
