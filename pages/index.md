@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "Learn to work wonders with AI."
+title: "Hi, I'm Chris."
 permalink: /
-excerpt: "Helping teams deliver fast, reliable and profitable AI products and processes."
+excerpt: "I help teams deliver fast, reliable and profitable AI products and processes."
 redirect_from:
   - /about
   - /services
@@ -11,25 +11,23 @@ redirect_from:
 
 ---
 
-<img alt='Chris Parsons' src='/assets/img/chris-headshot-2022-cropped.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width:200px'/>
+<img alt='Chris Parsons' src='/assets/img/chris-headshot-full.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width:300px'/>
 
-Two years ago, I was hit by a (metaphorical) bus.
+I've been a tech leader for 25 years. I've seen what works, and what doesn't.
 
-That bus was the ChatGPT launch in November 2022.
+I've also seen what happens when a new technology comes along and transforms the world. The ChatGPT launch in November 2022 was one of those moments.
 
-I've never quite recovered.
+I'm a builder and five time founder. I've run data teams, product teams, and engineering teams. I was struck by the raw potential I saw, and knew then the rest of my career would likely be defined by this technology.
 
-I've been a tech leader for a long time. I've seen what works, and what doesn't. Our teams had been using generative AI already.
+I am determined to learn how to use AI to create better products, think differently and work more efficiently, and how to build AI _into_ products so others can benefit.
 
-I've also seen what happens when a new technology is packaged in a way that transforms the world. November 2022 was one of those moments.
+## How to get ahead with AI
 
-I'm a builder and founder. I've run data teams, product teams, and engineering teams. I am determined to learn how to use AI to create better products, think differently and work more efficiently, and how to build AI _into_ products so others can benefit.
+Sign up to my newsletter and join me on the journey of learning to use AI well in your working life, in your processes and in your products. Get one quick story, one idea, and one question every week.
 
-Join me on my learning journey.
+<script async data-uid="d90200305f" src="https://chrismdp.kit.com/d90200305f/index.js"></script>
 
-<script async data-uid="dadc23073e" src="https://chrismdp.kit.com/dadc23073e/index.js"></script>
-
-## I help businesses build reliable AI processes and products.
+## I help businesses build reliable AI systems.
 
 I have worked for years as a founder, CEO and CTO, and I use that experience to guide teams to amazing AI products.
 
