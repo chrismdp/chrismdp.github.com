@@ -69,5 +69,7 @@ excerpt_separator: <!--more-->
 safe: true
 plugins:
   - jekyll-redirect-from
+  - jekyll-sitemap
 whitelist:
   - jekyll-redirect-from
+  - jekyll-sitemap

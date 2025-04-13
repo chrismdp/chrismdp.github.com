@@ -1,5 +1,6 @@
 ---
 permalink: /redirects/coaching-thanks/
+sitemap: false
 ---
 
 <script>
