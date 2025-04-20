@@ -13,25 +13,9 @@ redirect_from:
 
 <img alt='Chris Parsons' src='/assets/img/chris-headshot-full.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width: 50%; max-width: 250px;'/>
 
-I've been a tech leader for 25 years. I've seen what works, and what doesn't.
+I have been a tech leader for 25 years. I am a builder and four time founder, helping to run two funded companies. I have run data teams, product teams, and engineering teams. I know how to unblock teams and deliver fast, reliable and profitable AI products.
 
-I've also seen what happens when a new technology comes along and transforms the world. The ChatGPT launch in November 2022 was one of those moments.
-
-I'm a builder and four time founder. I've run data teams, product teams, and engineering teams. I was struck by the raw potential I saw, and knew then the rest of my career would likely be defined by this technology.
-
-I am determined to learn how to use AI to create better products, think differently and work more efficiently, and how to build AI _into_ products so others can benefit.
-
-## How to get ahead with AI
-
-Sign up to my newsletter and join me on the journey of learning to use AI well in your working life, in your processes and in your products. Get one quick story, one idea, and one question every week.
-
-<script async data-uid="d90200305f" src="https://chrismdp.kit.com/d90200305f/index.js"></script>
-
-## I help businesses build reliable AI systems.
-
-I have worked for years as a founder, CEO and CTO, and I use that experience to guide teams to amazing AI products.
-
-I've built multiple production-level AI systems, and I've seen what works and what doesn't.
+I have worked for years as a founder, CEO and CTO, and I have both personally built and run teams shipping production level generative AI systems. I use that experience to guide teams to amazing AI products.
 
 Spend thirty minutes with me, get some instant advice, and learn more about how I can help you:
 
@@ -43,18 +27,14 @@ Spend thirty minutes with me, get some instant advice, and learn more about how 
 
 **_"Chris has clearly learned a lot about the world of being a delivery-focused CTO"_** -- [Ian O](https://www.linkedin.com/in/ianozsvald/)
 
+
+## Newsletter: get ahead with AI
+
+Sign up to my newsletter and join me on the journey of learning to use AI well in your working life, in your processes and in your products. Get one quick story, one idea, and one question every week.
+
+<script async data-uid="d90200305f" src="https://chrismdp.kit.com/d90200305f/index.js"></script>
+
 <!--more-->
-
-## Some of the reasons we should talk
-
-Give me a call if any of these are true for you, or if something else is troubling you with your tech team:
-
-- Your AI team has stopped shipping
-- Your LLM costs are out of control
-- The CEO and technical leaders aren't aligned
-- You are endlessly fiddling with LLM prompts
-- Your AI/LLM output never quite seem good enough
-- You're not sure how to get started an AI project
 
 ## Recent articles
 

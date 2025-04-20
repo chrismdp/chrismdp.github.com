@@ -7,6 +7,9 @@ redirect_from:
 
 You can also find me on [BlueSky](https://bsky.app/profile/chrismdp.com), [X](https://x.com/chrismdp) and [LinkedIn](https://linkedin.com/in/chrisparsons). Subscribe with <a href="{{ site.baseurl }}/feed.xml">RSS</a> to keep up with the latest.
 
+See the <a href="{{ site.baseurl }}/all/">full archive</a> for more articles.
+
+
 {% for post in site.posts limit:10 %}
 
    <div class="post-preview py-4">
