@@ -22,7 +22,9 @@ Here is a rundown of the more pressing issues with AI power usage.
 
 Data centres power everything from email to streaming services to artificial intelligence. The total energy footprint of all data centres in the world remains remarkably modest at 1.5% of global electricity use. This figure includes all AI operations, from training to inference.
 
-This 1.5% roughly matches aviation industry emissions. However, aviation remains heavily dependent on fossil fuels, whereas data centres can transition to renewable energy sources. The tech industry has unprecedented opportunities to lead in sustainable operations.
+To put this in perspective, AI operations consume approximately 54 TWh annually, representing just 0.2% of global energy output. By comparison, Bitcoin mining alone uses 175 TWh, nearly triple AI usage, accounting for 0.6% of global energy. Unlike AI which drives technological progress and can help solve climate challenges, cryptocurrency mining provides questionable utility while consuming significant resources.
+
+Another comparison: 1.5% roughly matches aviation industry emissions. However, aviation remains heavily dependent on fossil fuels, whereas data centres can transition to renewable energy sources. The tech industry has unprecedented opportunities to lead in sustainable operations.
 
 Solving climate challenges requires abundant clean energy rather than solely focusing on reduced consumption. Human behaviour and technological progress make consumption reduction an unrealistic primary strategy. Instead, we must focus on transitioning to sustainable power sources and optimising resource usage.
 

@@ -13,11 +13,19 @@ redirect_from:
 
 <img alt='Chris Parsons' src='/assets/img/chris-headshot-full.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width: 50%; max-width: 250px;'/>
 
-I have been a tech leader for 25 years. I am a builder and four time founder, helping to run two funded companies. I have run data teams, product teams, and engineering teams. I know how to unblock teams and deliver fast, reliable and profitable AI products.
+I am a builder and four time founder. I have bootstrapped a software company to $1M ARR as CEO with a team of 12, scaled a film data analytics company as CTO from a handful of people to over 50, and co-founded Cherrypick a VC-backed food retail startup. I have run data teams, product teams, and engineering teams, and I have both personally built and run teams shipping production level generative AI systems.
 
-I have worked for years as a founder, CEO and CTO, and I have both personally built and run teams shipping production level generative AI systems. I use that experience to guide teams to amazing AI products.
+## Join me on the journey
 
-Spend thirty minutes with me, get some instant advice, and learn more about how I can help you:
+__In 2025 I am building a new suite of AI agents and products learning how to leverage AI to build new businesses in record time.__
+
+Follow along with weekly notes of the journey, where I share stories and learnings as I go:
+
+<script async data-uid="d90200305f" src="https://chrismdp.kit.com/d90200305f/index.js"></script>
+
+## I help companies get ahead with their AI and tech
+
+I spend a limited amount of my time helping companies with what I've learned about tech, AI and building businesses. Spend thirty minutes with me, get some instant advice, and learn more about how I can help you:
 
 {% include book-call-button.html %}
 
@@ -27,12 +35,6 @@ Spend thirty minutes with me, get some instant advice, and learn more about how 
 
 **_"Chris has clearly learned a lot about the world of being a delivery-focused CTO"_** -- [Ian O](https://www.linkedin.com/in/ianozsvald/)
 
-
-## Newsletter: get ahead with AI
-
-Sign up to my newsletter and join me on the journey of learning to use AI well in your working life, in your processes and in your products. Get one quick story, one idea, and one question every week.
-
-<script async data-uid="d90200305f" src="https://chrismdp.kit.com/d90200305f/index.js"></script>
 
 <!--more-->
 
