@@ -13,19 +13,31 @@ redirect_from:
 
 <img alt='Chris Parsons' src='/assets/img/chris-headshot-full.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width: 50%; max-width: 250px;'/>
 
-I am a builder and four time founder. I have bootstrapped a software company to $1M ARR as CEO with a team of 12, scaled a film data analytics company as CTO from a handful of people to over 50, and co-founded Cherrypick a VC-backed food retail startup. I have run data teams, product teams, and engineering teams, and I have both personally built and run teams shipping production level generative AI systems.
+I am a builder and four time founder with 25 years in tech leadership:
 
-## Join me on the journey
+- I co-founded [Cherrypick](https://cherrypick.co) a VC-backed food retail startup
+- I bootstrapped a software company to $1M ARR as CEO, hiring a team of 12. The company became internationally known for great software practices
+- As CTO, I scaled [Gower Street](https://gower.st), a film data analytics company, from a handful of people to over 50 staff
+- I advise multiple startups at board level
+- I have trained hundreds of developers in great product and development practices
+- I have run tech organisations consisting of data teams, cross-functional product teams, and engineering teams.
+- I have personally built and shipped two production level generative AI systems.
 
-__In 2025 I am building a new suite of AI agents and products learning how to leverage AI to build new businesses in record time.__
+## Subscribe to my newsletter
 
-Follow along with weekly notes of the journey, where I share stories and learnings as I go:
+__In 2025, I am learning how to use AI to build agents and products in weeks, not years.__
+
+The future of work is being reshaped before our eyes. Semi-autonomous agents are already changing the world. I want to be part of that transformation.
+
+Will you join me? Follow along with weekly field notes as I share stories and learnings as I go:
 
 <script async data-uid="d90200305f" src="https://chrismdp.kit.com/d90200305f/index.js"></script>
 
 ## I help companies get ahead with their AI and tech
 
-I spend a limited amount of my time helping companies with what I've learned about tech, AI and building businesses. Spend thirty minutes with me, get some instant advice, and learn more about how I can help you:
+I spend a limited amount of my time helping companies with what I've learned about tech, AI and building businesses.
+
+__I have a couple of open slots right now.__ To find out more about how I can help, spend thirty minutes with me and get some instant advice:
 
 {% include book-call-button.html %}
 
