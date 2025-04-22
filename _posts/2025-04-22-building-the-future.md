@@ -56,3 +56,5 @@ My hypothesis is simple: by sharing this journey openly, documenting both succes
 If you are interested in following this journey more closely, subscribe to my newsletter. You will get weekly field notes of what I am learning and building with AI, complete with raw insights and lessons learned.
 
 The future of work is being reshaped before our eyes. I want to be part of that transformation. Will you join me? 
+
+<img src="/assets/img/ai-portal.jpeg" alt="Join me on my AI journey" style='border-radius: 12px; margin:0 0 24px 0; width:50%'/>
