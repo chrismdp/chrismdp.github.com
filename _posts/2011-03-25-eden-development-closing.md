@@ -3,6 +3,7 @@ layout: post
 title: Eden Development has closed
 date: 2011-03-25 15:52:09.000000000 +00:00
 categories:
+- career
 - business
 - eden
 - life

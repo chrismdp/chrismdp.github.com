@@ -8,7 +8,7 @@ categories:
 - technology
 ---
 
-<img src="/assets/img/ai-power-usage.jpeg" alt="AI Power Usage" style='border-radius: 12px; margin:0 0 24px 0; width:50%'/>
+<a href="/ai-power-usage-reality"><img src="/assets/img/ai-power-usage.jpeg" alt="AI Power Usage" style='border-radius: 12px; margin:0 0 24px 0; width:50%'/></a>
 
 AI power usage generates significant controversy. Headlines paint it as an environmental catastrophe waiting to happen. The reality proves more nuanced and potentially more optimistic than these dire warnings suggest.
 
@@ -37,6 +37,8 @@ Other environmental applications already show promising results. Teams use AI sy
 ## The real challenge is not power, but water
 
 The environmental impact of AI extends beyond electricity consumption. Modern data centres require substantial water resources for cooling, and many new facilities are being constructed in regions already experiencing severe drought conditions. This presents a more immediate environmental challenge than power consumption.
+
+<img src="/assets/img/real-cost-of-ai.jpeg" alt="The real cost of AI" style='border-radius: 12px; margin:0 0 24px 0; width:50%'/>
 
 Unlike electricity, which increasingly comes from renewable sources and benefits from rapidly advancing solar technology, fresh water remains a finite and unevenly distributed resource. The suggestion to reopen closed coal power plants for AI operations fundamentally misunderstands the challenge: power generation will become increasingly sustainable, but water scarcity cannot be solved through technological advancement alone.
 

@@ -4,6 +4,7 @@ title: A new adventure
 date: 2017-12-30 07:30:44.000000000 +00:00
 image: "/files/GowerStreet_0164_LA_square.png"
 categories:
+- career
 - business
 - gower street
 - team

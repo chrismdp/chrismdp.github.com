@@ -1,18 +1,20 @@
 ---
 layout: post
-title: "Self Reflection With AI"
+title: "AI Therapists: Self Reflection With AI"
 date: 2025-04-07 09:00:00 +0100
 categories:
 - ai
 - productivity
 - psychology
+redirect_from:
+- /self-reflection-with-ai
 ---
 
 "I am not ready for this conversation." We all know that feeling. The endless mental rehearsal. The anxiety building with each imagined scenario.
 
 But what if I told you that AI could be your practice partner for both difficult conversations and deeper self-reflection?
 
-![AI as a therapeutic practice partner](/assets/img/ai-therapist.jpeg)
+<a href="/self-reflection-with-ai"><img src="/assets/img/ai-therapist.jpeg" alt="AI as a therapeutic practice partner" style='border-radius: 12px; margin:0 0 24px 0'/></a>
 
 <!--more-->
 
