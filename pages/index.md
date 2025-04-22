@@ -15,13 +15,13 @@ redirect_from:
 
 I am a builder and four time founder with 25 years in tech leadership:
 
-- I co-founded [Cherrypick](https://cherrypick.co) a VC-backed food retail startup
-- I bootstrapped a software company to $1M ARR as CEO, hiring a team of 12. The company became internationally known for great software practices
-- As CTO, I scaled [Gower Street](https://gower.st), a film data analytics company, from a handful of people to over 50 staff
-- I advise multiple startups at board level
-- I have trained hundreds of developers in great product and development practices
+- I co-founded [Cherrypick](https://cherrypick.co) a VC-backed AI startup in food retail.
+- I bootstrapped a software company to $1M ARR as CEO, hiring a team of 12. The company became internationally known for great software practices.
+- As CTO, I scaled [Gower Street](https://gower.st), a film data analytics company, from a handful of people to over 50 staff.
+- I advise multiple startups at board level.
+- I have trained hundreds of developers in great product and development practices.
 - I have run tech organisations consisting of data teams, cross-functional product teams, and engineering teams.
-- I have personally built and shipped two production level generative AI systems.
+- I have personally built and shipped two gen AI systems to production, complete with evals.
 
 ## Join me on my AI journey
 

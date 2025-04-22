@@ -8,6 +8,7 @@ categories:
 - psychology
 redirect_from:
 - /self-reflection-with-ai
+- /self-reflection-with-ai/
 ---
 
 "I am not ready for this conversation." We all know that feeling. The endless mental rehearsal. The anxiety building with each imagined scenario.
