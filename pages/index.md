@@ -23,7 +23,7 @@ I am a builder and four time founder with 25 years in tech leadership:
 - I have run tech organisations consisting of data teams, cross-functional product teams, and engineering teams.
 - I have personally built and shipped two production level generative AI systems.
 
-## Subscribe to my newsletter
+## Join me on my AI journey
 
 __In 2025, I am learning how to use AI to build agents and products in weeks, not years.__
 
