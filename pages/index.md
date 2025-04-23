@@ -23,16 +23,6 @@ I am a builder and four time founder with 25 years in tech leadership:
 - I have run tech organisations consisting of data teams, cross-functional product teams, and engineering teams.
 - I have personally built and shipped two gen AI systems to production, complete with evals.
 
-## Join me on my AI journey
-
-__In 2025, I am learning how to use AI to build agents and products in weeks, not years.__
-
-The future of work is being reshaped before our eyes. Semi-autonomous agents are already changing the world. I want to be part of that transformation.
-
-Will you join me? Follow along with weekly field notes as I share stories and learnings as I go:
-
-<script async data-uid="d90200305f" src="https://chrismdp.kit.com/d90200305f/index.js"></script>
-
 ## I help companies get ahead with their AI and tech
 
 I spend a limited amount of my time helping companies with what I've learned about tech, AI and building businesses.
@@ -47,6 +37,7 @@ __I have a couple of open slots right now.__ To find out more about how I can he
 
 **_"Chris has clearly learned a lot about the world of being a delivery-focused CTO"_** -- [Ian O](https://www.linkedin.com/in/ianozsvald/)
 
+<script async data-uid="dfec29bd93" src="https://chrismdp.kit.com/dfec29bd93/index.js"></script>
 
 <!--more-->
 

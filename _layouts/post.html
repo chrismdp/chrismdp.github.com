@@ -4,7 +4,6 @@ layout: page
 <div class="flex flex-col justify-between" style='padding-bottom: 12px'>
 
   <!-- <div style='opacity: 0.7; padding-bottom: 12px; max-width: 75%'>{% if page.categories %}{% for badge in page.categories %}<span style="opacity: 0.6; font-size:12px;{% if badge.color %}background-color:{{ badge.color }}{% endif %}" class="inline-flex items-center justify-center px-4 py-1 mr-2 text-xs font-bold leading-none text-violet-100 bg-violet-600 rounded{% if site.badge_rounded %}-full{% endif %}"><a style="cursor:pointer; color:white" href="{{ site.url }}{{ site.baseurl }}/tags#{{ badge | replace: ' ', '-' }}">{{ badge }}</a></span>{% endfor %}{% endif %}</div> -->
-
 {% assign original_date = page.path | split: "/" | last | split: "-" | slice: 0, 2 | join: '' %}
 {% assign current_date = page.date | date: "%Y%m" %}
 {% if original_date != current_date %}
@@ -17,9 +16,11 @@ layout: page
 
 {{ content_parts[0] }}
 
+{% unless page.hide_newsletter %}
 <script async data-uid="dadc23073e" src="https://chrismdp.kit.com/dadc23073e/index.js"></script>
-
 <br/>
+{% endunless %}
+
 
 {% if content_parts.size > 1 %}
   {{ content_parts[1] }}
