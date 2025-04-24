@@ -5,7 +5,6 @@ permalink: /
 excerpt: "I help teams deliver fast, reliable and profitable AI products and processes."
 redirect_from:
   - /about
-  - /services
   - /coaching
   - /cto
 
@@ -13,23 +12,14 @@ redirect_from:
 
 <img alt='Chris Parsons' src='/assets/img/chris-headshot-full.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width: 50%; max-width: 250px;'/>
 
-I am a builder and four time founder with 25 years in tech leadership:
+I'm a four time founder with 25 years in tech leadership:
 
-- I co-founded [Cherrypick](https://cherrypick.co) a VC-backed AI startup in food retail.
-- I bootstrapped a software company to $1M ARR as CEO, hiring a team of 12. The company became internationally known for great software practices.
-- As CTO, I scaled [Gower Street](https://gower.st), a film data analytics company, from a handful of people to over 50 staff.
-- I advise multiple startups at board level.
-- I have trained hundreds of developers in great product and development practices.
-- I have run tech organisations consisting of data teams, cross-functional product teams, and engineering teams.
-- I have personally built and shipped two gen AI systems to production, complete with evals.
+- I co-founded [Cherrypick](https://cherrypick.co), a VC-backed AI startup in food retail.
+- I bootstrapped a software agency to $1M ARR as CEO, hiring a team of 12. The company became internationally known for great software practices.
+- I scaled [Gower Street](https://gower.st), a film data analytics company, as CTO from a handful of people to over 50 staff.
+- I have [shipped two LLM-based AI systems](/how-to-build-a-robust-llm-application) to production, complete with evals.
 
-## I help companies get ahead with their AI and tech
-
-I spend a limited amount of my time helping companies with what I've learned about tech, AI and building businesses.
-
-__I have a couple of open slots right now.__ To find out more about how I can help, spend thirty minutes with me and get some instant advice:
-
-{% include book-call-button.html %}
+I write a weekly newsletter on building insanely fast with AI, and I [__help 1-2 founders a month__](/services) to get their tech and AI on track.
 
 **_"Fantastic at building self-sufficient teams and giving them what they need."_** -- [Tadas T](https://www.linkedin.com/in/tamosauskas/)
 
