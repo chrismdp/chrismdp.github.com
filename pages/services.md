@@ -16,13 +16,13 @@ redirect_from:
 
 **_"Chris has clearly learned a lot about the world of being a delivery-focused CTO"_** -- [Ian O](https://www.linkedin.com/in/ianozsvald/)
 
-You have raised funding. You have got some developers. You want to move fast: but the tech is messy, the product is fuzzy, and everything is feels like it is on fire.
+You must move fast to survive. But the tech is messy, the product is fuzzy, and everything is feels like it is on fire.
 
 That’s where I come in. As a [fellow founder](/), I know how it feels to have so much to fix you don't know where to begin, and how you can feel fantastic one day and terrified the next.
 
 I can help you scale *without* burning cash, build tech teams that ship daily, and make product decisions that don’t backfire.
 
-Fill in this form and I'll email you back:
+Fill in this form and I'll email you straight back:
 <script async data-uid="2c57927fef" src="https://chrismdp.kit.com/2c57927fef/index.js"></script>
 
 ## Some of the reasons we should talk
@@ -30,6 +30,7 @@ Fill in this form and I'll email you back:
 - Your tech costs are out of control
 - Process overhead is killing productivity
 - You are not confident in your architecture
+- Your vibe-coded prototype is falling apart
 - Development speed has slowed to a crawl
 - You are not sure if you have product/market fit
 - Your AI/LLM projects are not getting to production
@@ -55,13 +56,11 @@ _"Chris is fantastic at building self-sufficient teams and giving them what they
 
 -- [Tadas Tamosauskas](https://www.linkedin.com/in/tamosauskas/)
 
-<script async data-uid="dadc23073e" src="https://chrismdp.kit.com/dadc23073e/index.js"></script>
+<hr/>
 
-## Recent Articles
-
-{% for post in site.posts limit:3 %}
+{% for post in site.categories.cto limit:5 %}
    <div class="post-preview py-4">
-   <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+   <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
    <div style='font-style: italic' class="pb-1 post-date">
    {% assign original_date = post.path | split: "/" | last | split: "-" | slice: 0, 2 | join: '' %}
@@ -78,3 +77,6 @@ _"Chris is fantastic at building self-sufficient teams and giving them what they
 <hr>
 
 See the <a href="{{ site.baseurl }}/all/">Archive</a> for more articles. 
+<script async data-uid="dadc23073e" src="https://chrismdp.kit.com/dadc23073e/index.js"></script>
+
+<br/>
