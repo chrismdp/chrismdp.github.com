@@ -10,9 +10,9 @@ redirect_from:
 
 <img alt='Chris Parsons' src='/assets/img/chris-headshot-full.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width: 50%; max-width: 250px;'/>
 
-You've built an AI agent. The demos are great. But it's costing you too much, and you never quite know when it's going to let you down, or do something you could be sued for.
+You have built an AI agent. The demos are great. But it is costing you too much, and you never quite know when it is going to let you down, or do something you could be sued for.
 
-I've [built and scaled](/how-to-build-a-robust-llm-application/){:target="_blank"} multiple AI agents in production and have used all that learning to [create a platform](https://kaijo.ai/?utm_source=chrisdp&utm_medium=website&utm_campaign=ai){:target="_blank"} to make AI agents more reliable.
+I have [built and shipped AI agents to production](/how-to-build-a-robust-llm-application/) and have now created three separate home-grown agent evaluation systems, each one better than the last. I have used all that learning to [create a platform](https://kaijo.ai/?utm_source=chrisdp&utm_medium=website&utm_campaign=ai){:target="_blank"} to make AI agents more reliable.
 
 __I can help you improve your AI agent's reliability, scalability and cost-efficiency.__
 
