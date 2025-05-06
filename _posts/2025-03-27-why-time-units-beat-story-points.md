@@ -4,6 +4,7 @@ title: "Why Time Units Beat Story Points Every Time"
 date: 2025-03-27 10:00:00 +00:00
 categories:
 - estimation
+- cto
 - team
 - agile
 - scrum

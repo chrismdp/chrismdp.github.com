@@ -4,6 +4,7 @@ title: "Founder mode is emergency surgery"
 date: 2025-01-22 07:00:00 +0000
 categories:
 - founders
+- cto
 - business
 - startup
 ---

@@ -7,6 +7,7 @@ categories:
 - engineering
 - business
 - code
+- cto
 - startup
 - cherrypick
 - craftsmanship

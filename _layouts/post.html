@@ -17,8 +17,22 @@ layout: page
 {{ content_parts[0] }}
 
 {% unless page.hide_newsletter %}
-<script async data-uid="dadc23073e" src="https://chrismdp.kit.com/dadc23073e/index.js"></script>
-<br/>
+
+  {% if page.categories contains "cto" %}
+  <div style="background-color: #efefef; border-radius: 8px; padding: 20px; margin: 20px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+    <div style="display: flex; align-items: center; gap: 20px;">
+      <div>
+        <h3 style="margin: 0 0 0 0;">I help founders get their tech on track.</h3>
+        <p style="margin: 0;">I help companies use the latest AI tools well, build just enough tech for their stage, scale without burning cash, hire amazing people, ship code daily and make product decisions that don't backfire.</p>
+        <a href="/services" style="display: inline-block; margin-top: 10px; color: #1185fe; text-decoration: none;">Find out more →</a>
+      </div>
+      <img alt='Chris Parsons' src='/assets/img/chris-headshot-full.jpg' style='width: 150px; border-radius: 8px; object-fit: cover;'/>
+    </div>
+  </div>
+  {% else %}
+    <script async data-uid="dadc23073e" src="https://chrismdp.kit.com/dadc23073e/index.js"></script>
+    <br/>
+  {% endif %}
 {% endunless %}
 
 
@@ -132,4 +146,9 @@ layout: page
       </div>
     {% endfor %}
   {% endif %}
+</div>
+
+<br/>
+<div class='flex justify-center'>
+  <script async data-uid="dadc23073e" src="https://chrismdp.kit.com/dadc23073e/index.js"></script>
 </div>
