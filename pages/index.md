@@ -12,14 +12,15 @@ redirect_from:
 
 <img alt='Chris Parsons' src='/assets/img/chris-headshot-full.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width: 50%; max-width: 250px;'/>
 
-I'm a four time founder with 25 years in tech leadership:
+I'm a four time founder with 25 years in tech leadership.
+
+__I write a weekly newsletter on building insanely fast with AI, and I [help 1-2 founders a month](/services) to get their tech and AI on track.__
 
 - I co-founded [Cherrypick](https://cherrypick.co), a VC-backed AI startup in food retail.
 - I bootstrapped a software agency to $1M ARR as CEO, hiring a team of 12. The company became internationally known for great software practices.
 - I scaled [Gower Street](https://gower.st), a film data analytics company, as CTO from a handful of people to over 50 staff.
 - I have [shipped two LLM-based AI systems](/how-to-build-a-robust-llm-application) to production, complete with evals.
 
-I write a weekly newsletter on building insanely fast with AI, and I [__help 1-2 founders a month__](/services) to get their tech and AI on track.
 
 **_"Fantastic at building self-sufficient teams and giving them what they need."_** -- [Tadas T](https://www.linkedin.com/in/tamosauskas/)
 
