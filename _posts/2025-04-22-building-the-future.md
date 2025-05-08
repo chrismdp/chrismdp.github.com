@@ -27,7 +27,9 @@ The solution lies not in getting better at prompting, but in moving beyond it en
 
 The emergence of frameworks like DSPy and Langchain are early attempts at this, though none have yet provided a complete solution. The right abstractions will make prompting as obsolete as punch cards, allowing us to focus on what truly matters: the inputs, outputs, and evaluation metrics that define our applications.
 
-I have lots more ideas on this topic. I will be writing more about it very soon.
+This is why I have been building [Kaijo](/kaijo){:target="_blank"}, a new approach to AI development that makes it feel like normal software development. Instead of wrestling with prompts, you write simple functions and let the AI handle the complexity. Kaijo continuously evaluates and optimises your AI functions, figuring out from your examples what good looks like, and what the best prompt is to get that result. The result? AI functions that just work.
+
+I demonstrated how Kaijo works live on Friday 2nd May, where I built an entire AI application in just four hours. You can watch the recording on [LinkedIn](https://www.linkedin.com/events/ctovibe-codesappinfourhourswith7321106990808588289/theater/){:target="_blank"} or [YouTube](https://www.youtube.com/watch?v=CBn2u-wXWR0){:target="_blank"}.
 
 ## Agent Communication and Rollback
 
@@ -41,11 +43,13 @@ Universal interfaces will become crucial for tracking and managing collective ag
 
 ## Beyond RAG: The Next Generation of Knowledge for Personalised Agents
 
-Building agents that truly understand their users requires sophisticated knowledge management. We must determine whether agents should share knowledge or maintain separate knowledge bases. Enabling meaningful cross-domain conversations presents its own set of challenges.
+Building effective AI agents requires solving three concrete knowledge management challenges. First, we need a clear architecture for knowledge sharing between agents. Should each agent maintain its own vector database, or should we implement a centralised knowledge store with access controls? Second, we must develop protocols for agents to reference and combine knowledge across different domains.
 
-Selective memory management could optimise agent capabilities, but implementation details remain unclear. Current RAG implementations need advancement, but the path forward is uncertain. Graph based RAG may offer solutions, but alternative approaches could prove more effective.
+For example, how should a coding agent access and apply knowledge from a design agent's expertise? Third, we need to implement selective memory systems that can prioritise and prune knowledge based on relevance and recency.
 
-The development of custom communication protocols by agents themselves raises important questions about risk management and control. We must carefully consider the implications of allowing agents to evolve their own communication methods[^2027].
+Current RAG systems fall short because they treat all knowledge as equally important. [Graph based RAG](/graph-rag/) offers a promising solution by maintaining relationships between knowledge chunks, but we still need to solve the practical challenges of implementing this at scale. [Mem0](https://mem0.ai/) looks promising but the tech is still unproven.
+
+We must develop clear metrics for measuring knowledge relevance and establish protocols for knowledge updates across agent networks. The development of custom communication protocols by agents themselves also raises important questions about risk management and control. We must carefully consider the implications of allowing agents to evolve their own communication methods[^2027].
 
 [^2027]: The [AI 2027 report](https://ai-2027.com) highlights a critical concern about the opacity of advanced AI systems. As we build increasingly sophisticated agents, we risk creating systems whose inner workings we cannot fully understand or control. Without proper transparency and interpretability, we may find ourselves relying on systems that make decisions we cannot explain or verify and which could develop sophisticated methods to evade alignment beyond our understanding. We must build systems that maintain human oversight and understanding even as they grow more capable.
 
