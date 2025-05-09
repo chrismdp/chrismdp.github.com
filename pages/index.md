@@ -12,14 +12,13 @@ redirect_from:
 
 <img alt='Chris Parsons' src='/assets/img/chris-headshot-full.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width: 50%; max-width: 250px;'/>
 
-The world is changing unbelievably fast. New AI products, tools and techniques come out almost every day.
+AI has changed the world forever. New AI products come out every day. Everyone else seems to be moving fast and it's easy to feel left behind.
 
-I'm a founder, CTO, and business leader who has dedicated myself to studying, learning and adapting to the latest AI tools and techniques.
+I've dedicated myself to learning the very latest AI tools and techniques and have used my experience as a founder and CTO of multiple businesses to separate out hype from what works now.
 
-I've combined this new knowledge with my experience as a CTO at venture backed startups to  give you the edge with AI driven tools and systems.
-I'm learning constantly and share tips, lessons and stories every week.
+__I've applied what I've learned so far to my own businesses, and it's transforming everything. It can for you too.__
 
-__I've already applied some of these new techniques to my own businesses, and it's changing everything. Sign up, and I'll send you more.__
+Sign up, and I'll send you more.
 
 <div style="background-color: #f8f8f8; padding: 2em 2em 1em 2em; border-radius: 8px;">
 
