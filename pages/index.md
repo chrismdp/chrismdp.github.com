@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "Hi, I'm Chris."
+title: "I help people get ahead with AI."
 permalink: /
-excerpt: "I help teams deliver fast, reliable and profitable AI products and processes."
+excerpt: "I help transform your business and team with AI in just a few minutes a week."
 redirect_from:
   - /about
   - /coaching
@@ -12,9 +12,25 @@ redirect_from:
 
 <img alt='Chris Parsons' src='/assets/img/chris-headshot-full.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width: 50%; max-width: 250px;'/>
 
-I'm a four time founder with 25 years in tech leadership.
+The world is changing unbelievably fast. New AI products, tools and techniques come out almost every day.
 
-__I write a weekly newsletter on building insanely fast with AI, and I [help 1-2 founders a month](/services) to get their tech and AI on track.__
+I'm a founder, CTO, and business leader who has dedicated myself to studying, learning and adapting to the latest AI tools and techniques.
+
+I've combined this new knowledge with my experience as a CTO at venture backed startups to  give you the edge with AI driven tools and systems.
+I'm learning constantly and share tips, lessons and stories every week.
+
+__I've already applied some of these new techniques to my own businesses, and it's changing everything. Sign up, and I'll send you more.__
+
+<div style="background-color: #f8f8f8; padding: 2em 2em 1em 2em; border-radius: 8px;">
+
+<script async data-uid="d90200305f" src="https://chrismdp.kit.com/d90200305f/index.js"></script>
+
+<small style="display: block; text-align: center;">I'll never spam you (promise) and you can unsubscribe at any time.</small>
+
+</div>
+
+
+## Hi, I'm Chris.
 
 - I co-founded [Cherrypick](https://cherrypick.co), a VC-backed AI startup in food retail.
 - I bootstrapped a software agency to $1M ARR as CEO, hiring a team of 12. The company became internationally known for great software practices.
@@ -27,8 +43,6 @@ __I write a weekly newsletter on building insanely fast with AI, and I [help 1-2
 **_"If you're looking for someone to help build a great team, or you need someone experienced to help develop a sound tech strategy, I would thoroughly recommend Chris."_** -- [Roisi P](https://www.linkedin.com/in/roisiproven/)
 
 **_"Chris has clearly learned a lot about the world of being a delivery-focused CTO"_** -- [Ian O](https://www.linkedin.com/in/ianozsvald/)
-
-<script async data-uid="dfec29bd93" src="https://chrismdp.kit.com/dfec29bd93/index.js"></script>
 
 <!--more-->
 
@@ -47,6 +61,7 @@ __I write a weekly newsletter on building insanely fast with AI, and I [help 1-2
    {% if post.badges %}{% for badge in post.badges %}<span class="badge badge-{{ badge.type }}">{{ badge.tag }}</span>{% endfor %}{% endif %}
    {{ post.excerpt }}
    <a class='underline' href="{{ site.baseurl }}{{ post.url }}">Read more</a>
+   <div style="clear: both;"></div>
    </div>
 {% endfor %}
 

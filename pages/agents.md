@@ -1,8 +1,11 @@
 ---
 layout: page
 title: "Level up your AI agents."
-permalink: /agents
+permalink: /ai
 excerpt: "I help teams build reliable, scalable and cost-efficient AI agents."
+redirect_from:
+  - /coaching
+  - /cto
 ---
 
 <img alt='Chris Parsons' src='/assets/img/chris-headshot-full.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width: 50%; max-width: 250px;'/>

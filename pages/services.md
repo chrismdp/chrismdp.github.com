@@ -1,75 +1,68 @@
 ---
 layout: page
-title: "I help founders get their tech on track."
+title: "Transform your business with AI."
 permalink: /services
-excerpt: "I help founders scale tech without burning cash, build tech teams that ship daily, and make product decisions that don't backfire."
+excerpt: "I help founders and business leaders harness AI to do more with less, build teams that thrive, and deliver products that stand out."
 redirect_from:
   - /coaching
   - /cto
+  - /ai
 ---
 
 <img alt='Chris Parsons' src='/assets/img/chris-headshot-full.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width: 50%; max-width: 250px;'/>
 
-**_"Fantastic at building self-sufficient teams and giving them what they need."_** -- [Tadas T](https://www.linkedin.com/in/tamosauskas/)
+AI is changing everything. If you are worried about being left behind, you are not alone. Most businesses know they need to move fast, but often don't know where to begin.
 
-**_"If you're looking for someone to help build a great team, or you need someone experienced to help develop a sound tech strategy, I would thoroughly recommend Chris."_** -- [Roisi P](https://www.linkedin.com/in/roisiproven/)
+I work with founders and business leaders who want to harness AI to transform their business, not just bolt on another tool.
 
-**_"Chris has clearly learned a lot about the world of being a delivery-focused CTO"_** -- [Ian O](https://www.linkedin.com/in/ianozsvald/)
+__I am a founder and CTO who has transformed my own businesses with AI, and can help you do the same.__
 
-You must move fast to survive. But the tech is messy, the product is fuzzy, and everything is feels like it is on fire.
+As a founder myself, I have implemented these ideas at my own companies, with a transformative effect. I have kept companies operating with smaller teams, delivered product features powered by large language models (LLMs), coded internal tools to increase productivity, and built a steady stream of social media content in under an hour a week, all by using AI in ways that make a real difference.
 
-That’s where I come in. As a [founder myself](/) I know how it feels to have so much to fix you don't know where to begin, and how you can feel fantastic one day and terrified the next.
+AI is not just about automation and it's not always about fewer staff. It is about freeing your team to focus on what matters, delivering more value to your customers, and staying ahead of the competition.
 
-I can help you scale *without* burning cash, build tech teams that ship daily, help teams use the latest AI tools effectively, and help you make product decisions that don’t backfire.
+The right approach can help you:
 
-## How I work
-
-I start with a 30 minute call to offer free advice and help however I can. From there, I normally suggest a one off audit of your tech strategy and organisation to see where intervention is needed and suggest a concrete plan for improvement. You can then take that further yourself or I can help you implement the plan, through follow up coaching, workshops, process improvements, and more.
-
-If you're already sure what you want, I offer fixed term coaching or retainers to give you peace of mind that you have expert support available when you need it.
-
-## Book a free call
-
-Fill in this form and I'll email you straight back to book in a call.
-
-<script async data-uid="2c57927fef" src="https://chrismdp.kit.com/2c57927fef/index.js"></script>
-
-## Some of the reasons we should talk
-
-- Your tech costs are out of control
-- Process overhead is killing productivity
-- You are not confident in your architecture
-- Your vibe-coded prototype is falling apart
-- Development speed has slowed to a crawl
-- You are not sure if you have product/market fit
-- Your AI/LLM projects are not getting to production
-- You are struggling to hire and retain great engineers
-- Your tech team culture is heading in the wrong direction
-- The CEO and technical leaders aren't aligned on priorities
-- Technical strategy feels disconnected from business goals
-- Your tech team is building too much or spending too much doing it
+- Speed up coding and product development
+- Analyse products and deliver LLM-powered features that benefit end customers
+- Reduce costs and do more with less
+- Build a culture that embraces change and innovation
 
 <!--more-->
 
-## What people say about me
+Every business is different. Some need new tools, some need upskilling, some need a complete rethink of how they work. My approach is always tailored to what you need. Whether that means introducing AI-powered assistants, redesigning workflows, or building custom tools from scratch using my technical background.
 
-_"Chris is very experienced both in the technical side of setting up a well functioning tech team, but also in the business side, possessing a keen eye for strategy and a good sense for what will and will not work in any given environment. If you're a startup looking for someone to help build a great team, or you need someone experienced to help develop a sound tech strategy, I would thoroughly recommend Chris."_
+<div style="background-color: #efefef; border-radius: 8px; padding: 2em; margin: 20px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2>Start transforming your business with AI.</h2>
+    <p>
+      Fill in this form and I'll email you straight back:
+    </p>  
 
--- [Roisi Proven](https://www.linkedin.com/in/roisiproven/)
+<script async data-uid="2c57927fef" src="https://chrismdp.kit.com/2c57927fef/index.js"></script>
 
-_"Chris has clearly learned a *lot* about the world of being a delivery-focused CTO, he has a very clear understanding of the need for pragmatic planning, knowledge sharing, team up-skilling and the paying down of technical debt... I hope to continue to learn from Chris' experience."_
+</div>
 
--- [Ian Ozsvald](https://www.linkedin.com/in/ianozsvald/)
+## What happens next?
 
-_"Chris is fantastic at building self-sufficient teams and giving them what they need to deliver impactful product changes and experiments. He provides a lot of freedom while setting clear goals, which creates highly productive teams in early-stage startups. At the same time, he's an empathetic leader who always keeps a pulse on team morale. This is an extremely punchy combo."_
+The first step is a free strategy call. I will listen to your challenges, help you clarify what you want to achieve, and discuss how valuable AI transformation could be for your business. No jargon, no hard sell. Just practical advice and a clear next step.
 
--- [Tadas Tamosauskas](https://www.linkedin.com/in/tamosauskas/)
+If it makes sense, I will suggest an AI audit. This is a focused engagement where I pinpoint the areas where AI can deliver the most value for you, highlight quick wins, and map out what a transformation could look like. You will get a clear, actionable plan in a matter of days to take the first steps to transforming your business.
+
+You can then take this plan forward yourself or have me help you implement it.
+
+If you're already sure what you want, I offer fixed term coaching or retainers to give you peace of mind that you have expert support available when you need it.
+
+## Real results
+
+I have helped a business continue operations with a much smaller team by using AI wisely. I have delivered product-focused LLM features that made a real difference for end customers. I have built my own personal brand with AI, without spending more time. I  get practical, lasting results, not just hype.
 
 <hr/>
 
-{% for post in site.categories.cto limit:5 %}
+## Latest AI articles
+
+{% for post in site.categories.ai limit:5 %}
    <div class="post-preview py-4">
-   <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+   <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 
    <div style='font-style: italic' class="pb-1 post-date">
    {% assign original_date = post.path | split: "/" | last | split: "-" | slice: 0, 2 | join: '' %}
@@ -80,12 +73,12 @@ _"Chris is fantastic at building self-sufficient teams and giving them what they
    {% if post.badges %}{% for badge in post.badges %}<span class="badge badge-{{ badge.type }}">{{ badge.tag }}</span>{% endfor %}{% endif %}
    {{ post.excerpt }}
    <a class='underline' href="{{ site.baseurl }}{{ post.url }}">Read more</a>
+   <div style='clear: both;'></div>
    </div>
+
 {% endfor %}
 
-<hr>
 
 See the <a href="{{ site.baseurl }}/all/">Archive</a> for more articles. 
-<script async data-uid="dadc23073e" src="https://chrismdp.kit.com/dadc23073e/index.js"></script>
 
-<br/>
+{% include ai-newsletter.html %}

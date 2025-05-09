@@ -28,7 +28,7 @@ See the <a href="{{ site.baseurl }}/all/">full archive</a> for more articles.
    </div>
 {% endfor %}
 
-<script async data-uid="dadc23073e" src="https://chrismdp.kit.com/dadc23073e/index.js"></script>
+{% include ai-newsletter.html %}
 
 <hr>
 
