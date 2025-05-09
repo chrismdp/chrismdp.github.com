@@ -132,3 +132,18 @@ figure {
   margin: 0 !important;
   overflow-x: auto;
 }
+
+@media (max-width: 600px) {
+  .ai-newsletter-photo {
+    display: none !important;
+  }
+  .ai-newsletter-photo-mobile {
+    display: block !important;
+  }
+}
+
+@media (min-width: 601px) {
+  .ai-newsletter-photo-mobile {
+    display: none !important;
+  }
+}
