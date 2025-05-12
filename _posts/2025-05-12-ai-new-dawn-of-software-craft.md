@@ -15,9 +15,9 @@ The idea that AI could enable a new era of software quality and pride in craft i
 
 This is the moment to ask whether AI will force us to rediscover what software crafting[^terms] truly means in the AI age.
 
-[^terms]: I use the term "software craft" to refer to the [software craftsmanship movement](https://manifesto.softwarecraftsmanship.org/) that emerged from the Agile Manifesto and was formalised in the Software Craftsmanship Manifesto of 2009. The movement emphasises well-crafted software, steady value delivery, professional community, and productive partnerships. I prefer the terms "crafting" and "craft" to avoid gender assumptions.
-
 <!--more-->
+
+[^terms]: I use the term "software craft" to refer to the [software craftsmanship movement](https://manifesto.softwarecraftsmanship.org/) that emerged from the Agile Manifesto and was formalised in the Software Craftsmanship Manifesto of 2009. The movement emphasises well-crafted software, steady value delivery, professional community, and productive partnerships. I prefer the terms "crafting" and "craft" to avoid gender assumptions.
 
 ## The Software Craft Agent: A New Premise
 
