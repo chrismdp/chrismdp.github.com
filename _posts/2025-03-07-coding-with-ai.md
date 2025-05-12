@@ -6,6 +6,7 @@ categories:
 - development
 - ai
 - code
+- craftsmanship
 - wardley maps
 ---
 
@@ -16,6 +17,8 @@ Social media overflows with "vibe coding" demonstrations. These flashy but super
 This is not about magical code generation. It is about a new way of thinking about development. It requires substantial real-world development experience to do well: the onus is upon those of us with this experience to teach the next generation how to harness these tools effectively.
 
 This is how I am doing it, what it all might mean, and how we can help others find the way.
+
+If you are interested in how AI is shaping the future of software craftsmanship and architectural quality, see my follow-up article: [AI: The New Dawn of Software Craft](/2025/05/12/ai-new-dawn-of-software-craft/), which explores how rigorous architecture and human-AI partnership can lead to a renaissance in software quality and intent.
 
 <!--more-->
 
