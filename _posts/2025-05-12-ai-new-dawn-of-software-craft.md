@@ -39,6 +39,8 @@ The answer is not to shun AI, but to pair it with rigorous architectural pattern
 
 Testing remains the backbone of quality in software development. Despite less than one percent of developers using Test Driven Development (TDD) in practice, the rise of AI makes rigorous, test-first approaches more crucial than ever. AI can generate code rapidly, but without tests, there is no guarantee of correctness, reliability, or maintainability.[^8]
 
+It is worth noting that unless you explicitly ask for it, coding agents rarely provide tests by default. They tend to write code in the way most developers do: without tests, because that is what the vast majority of code in the wild looks like, and that is what they are trained on. This is a significant gap. Perhaps the solution is to build this discipline in at the agent level. Imagine a software craft agent that produces well-tested code as the default, not the exception. If this becomes the norm, teams could move much faster over time, with quality and confidence built in from the start. In theory, this approach could become a clear competitive advantage.
+
 The renaissance in software craftsmanship will not come from AI alone. It will emerge from a renewed commitment to practices like TDD, continuous integration, and architectural fitness functions. The best results occur when AI is guided by clear, testable requirements and a strong architectural vision. I have observed teams that treat testing as an afterthought struggle with quality and maintainability, while the best teams treat tests as first-class citizens.
 
 Patterns serve as the shared language between human and machine. They provide a predictable framework that AI can leverage to understand the roles of different system parts and their interactions.[^4] For example, in an MVC architecture, AI can focus on generating or modifying code for the View component, knowing exactly how it should interact with the Model and Controller.
@@ -77,7 +79,11 @@ AI is not the end of software craftsmanship. It is the beginning of a new era, w
 
 [^coding-with-ai]: See [Coding With AI](/coding-with-ai) for more thoughts on junior developers and AI.
 
-Invest in architectural excellence. Embrace the centaur model. Use AI as a tool for governance, compliance, and continuous improvement. And above all, remember that the true value of software craftsmanship lies not in the code itself, but in the clarity of thought, intent, and design that underpins it.
+Invest in architectural excellence. Embrace the centaur model. Use AI as a tool for governance, compliance, and continuous improvement. Ask your agent for tests, or use an agent that produced well crafted code by default.
+
+And above all, remember that the true value of software craftsmanship lies not in the code itself, but in the clarity of thought, intent, and design that underpins it.
+
+Thanks to Rob Bowley for comments on a previous version of this post.
 
 ---
 [^1]: See the original discussion on LinkedIn: [LinkedIn comment](https://www.linkedin.com/feed/update/urn:li:activity:7314173057340702721?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7314173057340702721%2C7314210179871367169%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287314210179871367169%2Curn%3Ali%3Aactivity%3A7314173057340702721%29). This is the original social media thread that inspired the premise of this post, discussing whether AI can be constrained by architecture to produce high-quality systems autonomously.
