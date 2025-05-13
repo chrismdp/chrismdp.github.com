@@ -20,7 +20,7 @@ __I've applied what I've learned so far to my own businesses, and it's transform
 
 Sign up, and I'll send you more.
 
-<div style="background-color: #f8f8f8; padding: 2em 2em 1em 2em; border-radius: 8px;">
+<div style="clear: both; background-color: #f8f8f8; padding: 1em 2em 1em 2em; border-radius: 8px;">
 
 <script async data-uid="d90200305f" src="https://chrismdp.kit.com/d90200305f/index.js"></script>
 
