@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "Transform your business with AI."
+title: "Transform your organisation: hype-free AI that works now."
 permalink: /services
-excerpt: "I help founders and business leaders harness AI to do more with less, build teams that thrive, and deliver products that stand out."
+excerpt: "I help founders and business leaders cut through AI hype, do more with less, build teams that thrive, and deliver products that stand out."
 redirect_from:
   - /coaching
   - /cto
@@ -11,15 +11,15 @@ redirect_from:
 
 <img alt='Chris Parsons' src='/assets/img/chris-headshot-full.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width: 50%; max-width: 250px;'/>
 
-AI is changing everything. If you are worried about being left behind, you are not alone. Most businesses know they need to move fast, but often don't know where to begin.
+AI is changing everything, but there's a lot of misinformation out there. If you are worried about being left behind, you are not alone. Most businesses know they need to move fast, but often don't know where to begin or what's hype versus what actually works now.
 
-I work with founders and business leaders who want to harness AI to transform their business, not just bolt on another tool.
+I work with founders and business leaders who want to cut through the noise and harness the real power of AI to transform their business, not just bolt on another tool.
 
-__I am a founder and CTO who has transformed my own businesses with AI, and can help you do the same.__
+__I am a founder and CTO who has figured out what's hype and what works now. I've transformed my own businesses with AI, and can help you do the same.__
 
-As a founder myself, I have implemented these ideas at my own companies, with a transformative effect. I have kept companies operating with smaller teams, delivered product features powered by large language models (LLMs), coded internal tools to increase productivity, and built a steady stream of social media content in under an hour a week, all by using AI in ways that make a real difference.
+As a founder myself, I have implemented these ideas at my own companies, with a transformative effect. I have kept companies operating with smaller teams, delivered product features powered by the latest AI models, coded internal tools to increase productivity, and built a steady stream of social media content in under an hour a week, all by using AI in ways that make a real difference.
 
-AI is not just about automation and it's not always about fewer staff. It is about freeing your team to focus on what matters, delivering more value to your customers, and staying ahead of the competition.
+AI is not just about automation. It's not just about fewer staff. It is about freeing your team to focus on what matters, delivering more value to your customers, delivering more projects with the same team, and staying ahead of the competition.
 
 The right approach can help you:
 
@@ -30,7 +30,7 @@ The right approach can help you:
 
 <!--more-->
 
-Every business is different. Some need new tools, some need upskilling, some need a complete rethink of how they work. My approach is always tailored to what you need. Whether that means introducing AI-powered assistants, redesigning workflows, or building custom tools from scratch using my technical background.
+Every business is different. Some need new tools, some need upskilling, some need a complete rethink of how they work. My approach is always tailored to what you need. Whether that means introducing AI-powered assistants, redesigning workflows, or building custom tools from scratch using hard-won technical expertise.
 
 <div style="background-color: #efefef; border-radius: 8px; padding: 2em; margin: 20px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
 <h2>Start transforming your business with AI.</h2>
@@ -44,17 +44,17 @@ Every business is different. Some need new tools, some need upskilling, some nee
 
 ## What happens next?
 
-The first step is a free strategy call. I will listen to your challenges, help you clarify what you want to achieve, and discuss how valuable AI transformation could be for your business. No jargon, no hard sell. Just practical advice and a clear next step.
+The first step is a free strategy call. I will listen to your challenges, help you clarify what you want to achieve, and show you where AI can make a real difference. No jargon. No hard sell. Just practical advice and a clear next step.
 
 If it makes sense, I will suggest an AI audit. This is a focused engagement where I pinpoint the areas where AI can deliver the most value for you, highlight quick wins, and map out what a transformation could look like. You will get a clear, actionable plan in a matter of days to take the first steps to transforming your business.
 
 You can then take this plan forward yourself or have me help you implement it.
 
-If you're already sure what you want, I offer fixed term coaching or retainers to give you peace of mind that you have expert support available when you need it.
+If you already know what you want, I offer fixed term coaching or retainers so you have expert support when you need it.
 
 ## Real results
 
-I have helped a business continue operations with a much smaller team by using AI wisely. I have delivered product-focused LLM features that made a real difference for end customers. I have built my own personal brand with AI, without spending more time. I  get practical, lasting results, not just hype.
+I have helped a business continue operations with a much smaller team by using AI wisely. I have delivered product-focused LLM features that made a real difference for end customers. I have built my own personal brand with AI, without spending more time. I get practical, lasting results, not just hype.
 
 <hr/>
 
@@ -81,4 +81,4 @@ I have helped a business continue operations with a much smaller team by using A
 
 See the <a href="{{ site.baseurl }}/all/">Archive</a> for more articles. 
 
-{% include ai-newsletter.html %}
+{% include ai-newsletter-short.html %}

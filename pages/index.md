@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "I help people get ahead with AI."
+title: "Get ahead with AI that actually works."
 permalink: /
-excerpt: "I help transform your business and team with AI in just a few minutes a week."
+excerpt: "I help founders and leaders cut through AI hype and deliver real results in minutes a week."
 redirect_from:
   - /about
   - /coaching
@@ -12,19 +12,19 @@ redirect_from:
 
 <img alt='Chris Parsons' src='/assets/img/chris-headshot-full.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width: 50%; max-width: 250px;'/>
 
-AI has changed the world forever. New AI products come out every day. Everyone else seems to be moving fast and it's easy to feel left behind.
+AI is changing everything, but most of what you hear is noise. If you feel like you are falling behind, you are not alone. New AI products appear every day, and it is hard to know what is real and what is hype.
 
-I've dedicated myself to learning the very latest AI tools and techniques and have used my experience as a founder and CTO of multiple businesses to separate out hype from what works now.
+I have spent years as a founder and CTO, testing the latest AI tools and techniques, and learning what actually works. I use AI every day to solve real business problems, and I can help you do the same.
 
-__I've applied what I've learned so far to my own businesses, and it's transforming everything. It can for you too.__
+I have applied these lessons to my own businesses, with transformative results. I can help you do the same.
 
-Sign up, and I'll send you more.
+__Subscribe to transform yourself, your work and your outcomes with AI that actually works, in just a few minutes a week:__
 
 <div style="clear: both; background-color: #f8f8f8; padding: 1em 2em 1em 2em; border-radius: 8px;">
 
 <script async data-uid="d90200305f" src="https://chrismdp.kit.com/d90200305f/index.js"></script>
 
-<small style="display: block; text-align: center;">I'll never spam you (promise) and you can unsubscribe at any time.</small>
+<small style="display: block; text-align: centre;">No spam. Unsubscribe whenever.</small>
 
 </div>
 
@@ -67,3 +67,5 @@ Sign up, and I'll send you more.
 <hr>
 
 See the <a href="{{ site.baseurl }}/all/">Archive</a> for more articles. You can also find me on [BlueSky](https://bsky.app/profile/chrismdp.com), [X](https://x.com/chrismdp) and [LinkedIn](https://linkedin.com/in/chrisparsons). Subscribe with <a href="{{ site.baseurl }}/feed.xml">RSS</a> to keep up with the latest.
+
+{% include ai-newsletter-short.html %}

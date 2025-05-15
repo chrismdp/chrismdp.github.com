@@ -28,7 +28,7 @@ See the <a href="{{ site.baseurl }}/all/">full archive</a> for more articles.
    </div>
 {% endfor %}
 
-{% include ai-newsletter.html %}
+{% include ai-newsletter-short.html %}
 
 <hr>
 
