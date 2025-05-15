@@ -13,6 +13,8 @@ AI is not the death knell for the software crafting movement. With the right arc
 
 The idea that AI could enable a new era of software quality and pride in craft is not as far-fetched as it sounds. I have seen the debate shift from fear of replacement to excitement about new possibilities. The industry is at a crossroads, and the choices we make now will define the next generation of software.
 
+But there is a real danger: most AI coding assistants today do not embody the best practices of our craft. They generate code at speed, but almost never write tests unless explicitly told to. This is not a minor oversight. It is a fundamental flaw that risks undermining the very quality and maintainability we seek. If we do not demand better, we risk letting AI amplify our worst habits rather than our best.
+
 This is the moment to ask whether AI will force us to rediscover what software crafting[^terms] truly means in the AI age.
 
 <!--more-->
@@ -39,9 +41,11 @@ The answer is not to shun AI, but to pair it with rigorous architectural pattern
 
 Testing remains the backbone of quality in software development. Despite less than one percent of developers using Test Driven Development (TDD) in practice, the rise of AI makes rigorous, test-first approaches more crucial than ever. AI can generate code rapidly, but without tests, there is no guarantee of correctness, reliability, or maintainability.[^8]
 
-It is worth noting that unless you explicitly ask for it, coding agents rarely provide tests by default. They tend to write code in the way most developers do: without tests, because that is what the vast majority of code in the wild looks like, and that is what they are trained on. This is a significant gap. Perhaps the solution is to build this discipline in at the agent level. Imagine a software craft agent that produces well-tested code as the default, not the exception. If this becomes the norm, teams could move much faster over time, with quality and confidence built in from the start. In theory, this approach could become a clear competitive advantage.
+The uncomfortable truth is that unless you explicitly ask for it, coding agents rarely provide tests by default. They tend to write code in the way most developers do: without tests, because that is what the vast majority of code in the wild looks like, and that is what they are trained on. This is a significant gap, and it is holding us back. We should be demanding more from our tools. Why are we accepting agents that cut corners, when we know that test-first and great practices are what make teams truly fast and resilient?
 
-The renaissance in software craftsmanship will not come from AI alone. It will emerge from a renewed commitment to practices like TDD, continuous integration, and architectural fitness functions. The best results occur when AI is guided by clear, testable requirements and a strong architectural vision. I have observed teams that treat testing as an afterthought struggle with quality and maintainability, while the best teams treat tests as first-class citizens.
+Perhaps the solution is to build this discipline in at the agent level. Imagine a software craft agent that produces well-tested code as the default, not the exception. If this becomes the norm, teams could move much faster over time, with quality and confidence built in from the start. In theory, this approach could become a clear competitive advantage. But it will not happen unless we insist on it.
+
+The renaissance in software craftsmanship will not come from AI alone. It will emerge from a renewed commitment to practices like TDD, continuous integration, and architectural fitness functions. The best results occur when AI is guided by clear, testable requirements and a strong architectural vision. I have observed teams that treat testing as an afterthought struggle with quality and maintainability, while the best teams treat tests as first-class citizens. We must make this the default expectation for our AI tools, not a rare exception.
 
 Patterns serve as the shared language between human and machine. They provide a predictable framework that AI can leverage to understand the roles of different system parts and their interactions.[^4] For example, in an MVC architecture, AI can focus on generating or modifying code for the View component, knowing exactly how it should interact with the Model and Controller.
 
@@ -77,9 +81,7 @@ I have mentored junior developers who learned more from pairing and architectura
 
 AI is not the end of software craftsmanship. It is the beginning of a new era, where the craftsperson agent, guided by rigorous architecture, can produce systems of unprecedented quality and reliability. The renaissance will not come from AI alone, but from the partnership between human expertise and machine precision.
 
-[^coding-with-ai]: See [Coding With AI](/coding-with-ai) for more thoughts on junior developers and AI.
-
-Invest in architectural excellence. Embrace the centaur model. Use AI as a tool for governance, compliance, and continuous improvement. Ask your agent for tests, or use an agent that produced well crafted code by default.
+But this partnership will only succeed if we demand more from our tools. We must not settle for AI that cuts corners or skips the disciplines that underpin real speed and quality. Ask your agent for tests, or use an agent that produces well crafted code by default. Insist on test-first, insist on great practices, and let us raise the bar for what AI can and should deliver.
 
 And above all, remember that the true value of software craftsmanship lies not in the code itself, but in the clarity of thought, intent, and design that underpins it.
 
