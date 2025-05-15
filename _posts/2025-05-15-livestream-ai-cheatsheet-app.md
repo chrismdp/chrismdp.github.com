@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Building AI Cheatsheet Generator Live: Lessons from a Four-Hour Stream"
-date: 2025-05-15 08:37:31 +0000
+date: 2025-05-15 07:00:00 +0000
 categories:
 - ai
 - engineering
