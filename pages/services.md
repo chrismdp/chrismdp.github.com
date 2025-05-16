@@ -32,15 +32,9 @@ The right approach can help you:
 
 Every business is different. Some need new tools, some need upskilling, some need a complete rethink of how they work. My approach is always tailored to what you need. Whether that means introducing AI-powered assistants, redesigning workflows, or building custom tools from scratch using hard-won technical expertise.
 
-<div style="background-color: #efefef; border-radius: 8px; padding: 2em; margin: 20px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-<h2>Start transforming your business with AI.</h2>
-    <p>
-      Fill in this form and I'll email you straight back:
-    </p>  
+Take a couple of minutes to answer a few questions to get started:
 
-<script async data-uid="2c57927fef" src="https://chrismdp.kit.com/2c57927fef/index.js"></script>
-
-</div>
+<div class="rm-area-embed-services"></div>
 
 ## What happens next?
 

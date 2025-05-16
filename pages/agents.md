@@ -16,10 +16,9 @@ I have [built and shipped AI agents to production](/how-to-build-a-robust-llm-ap
 
 __I can help you improve your AI agent's reliability, scalability and cost-efficiency.__
 
-Fill in this form and I'll email you straight back:
+Take a couple of minutes to answer a few questions to get started:
 
-<script async data-uid="2c57927fef" src="https://chrismdp.kit.com/2c57927fef/index.js"></script>
-
+<div class="rm-area-embed-services"></div>
 <!--more-->
 
 <hr/>

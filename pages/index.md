@@ -14,20 +14,9 @@ redirect_from:
 
 AI is changing everything, but most of what you hear is noise. If you feel like you are falling behind, you are not alone. New AI products appear every day, and it is hard to know what is real and what is hype.
 
-I have spent years as a founder and CTO, testing the latest AI tools and techniques, and learning what actually works. I use AI every day to solve real business problems, and I can help you do the same.
+I have spent years as a founder and CTO, testing the latest AI tools and techniques, and learning what actually works. I use AI every day to speed up my work, and I can help you do the same.
 
-I have applied these lessons to my own businesses, with transformative results. I can help you do the same.
-
-__Subscribe to transform yourself, your work and your outcomes with AI that actually works, in just a few minutes a week:__
-
-<div style="clear: both; background-color: #f8f8f8; padding: 1em 2em 1em 2em; border-radius: 8px;">
-
-<script async data-uid="d90200305f" src="https://chrismdp.kit.com/d90200305f/index.js"></script>
-
-<small style="display: block; text-align: centre;">No spam. Unsubscribe whenever.</small>
-
-</div>
-
+<div class="rm-area-embed-subscribe"></div>
 
 ## Hi, I'm Chris.
 
@@ -35,7 +24,6 @@ __Subscribe to transform yourself, your work and your outcomes with AI that actu
 - I bootstrapped a software agency to $1M ARR as CEO, hiring a team of 12. The company became internationally known for great software practices.
 - I scaled [Gower Street](https://gower.st), a film data analytics company, as CTO from a handful of people to over 50 staff.
 - I have [shipped two LLM-based AI systems](/how-to-build-a-robust-llm-application) to production, complete with evals.
-
 
 **_"Fantastic at building self-sufficient teams and giving them what they need."_** -- [Tadas T](https://www.linkedin.com/in/tamosauskas/)
 
