@@ -114,6 +114,8 @@ The more effective approach is "reset and refine". When you notice the AI's outp
 
 This mirrors a fundamental truth about instruction: vague requirements lead to vague output, whether you are working with humans or AI. More context is beneficial only if it is the right context. There is a tipping point where additional context becomes noise rather than signal, causing the quality of the AI's output to rapidly decline.
 
+Recent research[^llm-lost] has confirmed this observation, showing that LLMs perform significantly worse in multi-turn conversations compared to single-turn interactions. The study found that when LLMs take a wrong turn in a conversation, they tend to get lost and struggle to recover. This explains why the reset and refine approach often works better than trying to correct the AI's course mid-conversation.
+
 The skill lies in recognising when to persist with iterations and when to reset with a refined prompt. This is not about writing perfect prompts on the first try, but about managing context effectively to get the best results from AI collaboration.
 
 Josh Nelands shared a particularly effective technique for implementing this reset and refine approach: Let the AI work on the problem for 10 to 20 minutes, nudging it along as needed. Then, ask it to reflect on the entire conversation, analysing what went wrong, why it struggled, and what information it wished it had known at the start to avoid these problems. With this reflection in hand, revert the conversation and start fresh armed with those insights. He reports that this meta-learning approach often leads to dramatically better results than continuing to iterate on a struggling conversation.
@@ -237,3 +239,5 @@ I would like to thank Jim Downing for a great conversation that led to this vers
 For more on building robust AI applications, see my post on [how to build a robust LLM application](/how-to-build-a-robust-llm-application). If you are interested in the future of incorporating AI into your systems, you might also enjoy my thoughts on [why prompting sucks and what we can do about it](/beyond-prompting).
 
 [^1]: System 1 and System 2 thinking are concepts developed by Daniel Kahneman in his book "Thinking, Fast and Slow". System 1 is our intuitive, fast thinking mode. System 2 is our deliberate, slow thinking mode.
+
+[^llm-lost]: Laban, P., Hayashi, H., Zhou, Y., & Neville, J. (2025). [LLMs Get Lost In Multi-Turn Conversation](https://arxiv.org/abs/2505.06120). arXiv preprint arXiv:2505.06120.
