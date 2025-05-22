@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Thanks for confirming!
+title: Thanks!
 permalink: /thanks
 ---
 
