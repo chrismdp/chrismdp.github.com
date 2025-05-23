@@ -46,6 +46,7 @@ Register below for a Google Meet link and calendar invite:
 ---
 ## More AI articles
 {% for post in site.categories.ai limit:5 %}
+   {% unless post.categories contains 'webinar' %}
    <div class="post-preview py-4">
    <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 
@@ -59,6 +60,7 @@ Register below for a Google Meet link and calendar invite:
    {{ post.excerpt }}
    <a class='underline' href="{{ site.baseurl }}{{ post.url }}">Read more</a>
    </div>
+   {% endunless %}
 {% endfor %}
 
 ---
