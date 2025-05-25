@@ -5,6 +5,8 @@ date: 2025-05-25 00:00:00 +0000
 hide_newsletter: true
 categories:
 - ai
+- tech
+- tools
 - engineering
 - rag
 ---

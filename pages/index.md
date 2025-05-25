@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "Get ahead with AI that actually works."
+title: "Actionable AI help, without the hype."
 permalink: /
-excerpt: "I help founders and leaders cut through AI hype and deliver real results in minutes a week."
+excerpt: "I help CTOs, engineering managers, and technical founders cut through AI hype and deliver results for their teams in minutes a week."
 redirect_from:
   - /about
   - /coaching
@@ -12,9 +12,11 @@ redirect_from:
 
 <img alt='Chris Parsons' src='/assets/img/chris-headshot-full.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width: 50%; max-width: 250px;'/>
 
-AI is changing everything, but most of what you hear is noise. If you feel like you are falling behind, you are not alone. New AI products appear every day, and it is hard to know what is real and what is hype.
+AI is changing everything, but most of what you hear is noise. If you are a CTO, engineering manager, or technical founder and feel pressure to deliver AI results, you are not alone. New AI products appear every day, and it is hard to know what is real and what is hype.
 
-I have spent years as a founder and CTO, testing the latest AI tools and techniques, and learning what actually works. I use AI every day to speed up my work, and I can help you do the same.
+I have spent years as a founder and CTO. I've tested many AI tools and techniques, and learned what actually works now. I use AI every day to speed up my work, and I can help your team do the same.
+
+For more [view my services](/services) or join my newsletter below:
 
 <div class="rm-area-embed-subscribe"></div>
 
