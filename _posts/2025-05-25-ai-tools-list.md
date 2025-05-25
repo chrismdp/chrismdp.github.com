@@ -19,7 +19,7 @@ I'll keep this up to date as new tools emerge and existing ones evolve. If you s
 
 ### Key
 
-- 💰 - Paid plan required (normally $10-30/month)
+- 💰 - Paid plan needed ($10-30/month)
 - 💰💰💰 - Premium plan needed ($100+/month)
 
 <style>
@@ -47,7 +47,7 @@ table a {
 
 ## Search, Chat & Discovery
 
-While all major AI models now offer similar core capabilities, each has its own strengths. I personally use Google's tools for deep research and analysis, OpenAI for search and conversational AI. I have found Claude to be too limiting for daily use without a premium plan.
+While all major AI models now offer similar core capabilities, each has its own strengths. I personally use Google's tools for deep research and analysis, and OpenAI for search and conversational AI. I have found Claude to be too limiting for daily use without a premium plan.
 
 | **Capability** | **[Google](https://ai.google)** | **[OpenAI](https://openai.com)** | **[Anthropic](https://anthropic.com)** | **Other Alternatives** |
 | **Text Chat**<br>Basic text conversations | [Gemini](https://gemini.google.com)<br>Latest: 2.5 Pro/Flash | [ChatGPT](https://chat.openai.com)<br>Latest: GPT-4o | [Claude](https://claude.ai)<br>Latest: Claude 4 Sonnet/Opus | [Meta AI](https://ai.meta.com), [Amazon Nova](https://aws.amazon.com/ai/generative-ai/nova/) |
@@ -58,7 +58,7 @@ While all major AI models now offer similar core capabilities, each has its own 
 
 ## Coding
 
-For coding, I still find Cursor to be the best overall solution. While Jules shows promise, AI coding agents still have a way to go before they're truly reliable. The choice between CLI and IDE-based tools really comes down to personal preference. Cloud builders are amazing for rapid prototyping, but for real production code I stick with Cursor's more robust development environment.
+For coding, I still find Cursor to be the best overall solution. While Jules shows promise, AI coding agents still have a way to go before they are truly reliable. The choice between CLI and IDE-based tools comes down to personal preference. Cloud builders are amazing for rapid prototyping, but for real production code I stick with Cursor's more robust development environment.
 
 | **Capability** | **[Google](https://ai.google)** | **[OpenAI](https://openai.com)** | **[Anthropic](https://anthropic.com)** | **Other Alternatives** |
 | **IDE Code Assistance**<br>Collaborative coding workspace | [Canvas in Gemini](https://gemini.google.com/advanced)<br>Code editing, debugging<br>💰| [Windsurf](https://www.cnbc.com/2025/04/16/openai-in-talks-to-pay-about-3-billion-to-acquire-startup-windsurf.html)<br>Acquired in May 2025<br>💰| - | [GitHub Copilot](https://github.com/features/copilot), [Cursor](https://cursor.sh), [Augment](https://augmentcode.com) |
@@ -87,4 +87,4 @@ Tools for building AI agents remain in their early stages, with significant room
 | **Orchestration**<br>*Workflow automation & integration* | [Gemini in Apps Script](https://github.com/mhawksey/GeminiApp)<br>Google Workspace automation | - | - | [n8n](https://n8n.io), [Make](https://www.make.com), [Zapier](https://zapier.com), [Flowise](https://flowiseai.com) |
 | **Evaluations**<br>*AI evaluation & testing* | [VertexAI Evaluation Service](https://cloud.google.com/vertex-ai/generative-ai/docs/models/evaluation-overview)<br>Model evaluation tools | [Evals API](https://platform.openai.com/docs/guides/evals)<br>Open source framework | [Anthropic Console](https://console.anthropic.com/dashboard)<br>Evaluation toolkit | [Kaijo](https://kaijo.ai), [LangSmith](https://smith.langchain.com), [Promptfoo](https://promptfoo.dev) |
 
-
+{% include ai-newsletter-short.html %}
