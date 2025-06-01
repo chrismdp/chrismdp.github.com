@@ -5,19 +5,11 @@ permalink: /webinar
 excerpt: "Learn how to add major features to your application 3x faster with AI-first coding."
 ---
 
-![ai coding webinar](/assets/img/ai-coding-webinar.png)
+<img alt='Chris Parsons' src='/assets/img/chris-headshot-full.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width: 50%; max-width: 250px;'/>
 
-Time for another live coding session!
+Join me for this exciting webinar where we'll explore how to build more powerful AI agents with complex function calls.
 
-I'll be showing how to add a major feature to an existing application with AI-first coding, 3x faster that previously possible. I'd love to see you there!
-
-**Date: Friday 23rd May, 3pm - 4:30pm UK time**
-
-Join me for this exciting webinar where we'll explore:
-- How to build and ship AI-powered features in record time
-- Real-world examples of AI-first coding that actually work
-- Best practices for implementing major features with confidence
-- Live Q&A to get your specific questions answered
+I'll be showing the latest updates to Kaijo, my AI reliability tool, and demonstrating how to create sophisticated outputs that remain valid and functional. This is your chance to see how to push AI agents to the next level.
 
 Register below for a Google Meet link and calendar invite:
 
