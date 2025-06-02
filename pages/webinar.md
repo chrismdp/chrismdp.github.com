@@ -7,9 +7,18 @@ excerpt: "Learn how to add major features to your application 3x faster with AI-
 
 <img alt='Chris Parsons' src='/assets/img/chris-headshot-full.jpg' class='rounded-lg' style='margin: 0 0 1em 1em; float: right; width: 50%; max-width: 250px;'/>
 
-Join me for this exciting webinar where we'll explore how to build more powerful AI agents with complex function calls.
+How do you make AI agents thrive in ever more complex codebases? Most developers believe that more code means more power for AI agents. That is a mistake. The real breakthrough comes from setting clear boundaries and limiting the context your AI can access.
 
-I'll be showing the latest updates to Kaijo, my AI reliability tool, and demonstrating how to create sophisticated outputs that remain valid and functional. This is your chance to see how to push AI agents to the next level.
+I learned this the hard way. My early projects grew out of control. Agents became unpredictable, and debugging was a nightmare. Everything changed when I started treating boundaries as a feature, not a restriction.
+
+In this live webinar, I will show you how to:
+- Define project boundaries that make AI agents more reliable
+- Limit context to boost performance and reduce errors
+- Build complex features without losing control
+
+You will see real examples from my own work, including the latest updates to Kaijo, my AI reliability tool. I will demonstrate how to keep your agents focused, functional, and ready for anything.
+
+If you are building with AI and your codebase is only getting more complex, this session is for you.
 
 Register below for a Google Meet link and calendar invite:
 
