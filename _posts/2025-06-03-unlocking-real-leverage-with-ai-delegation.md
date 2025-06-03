@@ -56,7 +56,13 @@ Once you are comfortable with the tools, look for decision points in your workfl
 
 If you are not sure what an AI might be able to do, ask an AI agent to brainstorm where an agent could help within your workflow. This kind of meta-thinking about strategy is a really important skill to develop in the age of AI.
 
-Pick a small decision to automate. Set up the automation in your chosen tool. Add an AI agent to handle the decision point. Test, iterate, and refine. Each experiment will teach you something new and move you closer to breakthrough leverage.
+### Automate One Thing
+
+Pick a small decision to automate. Set up the automation in your chosen tool. Add an AI agent to handle the decision point. Test, iterate, and refine.
+
+Each experiment will teach you something new about the tool and what AI can do, slowly increasing your leverage over time.
+
+If something doesn't work, revisit when a new model comes out. Those who will be at the forefront of this will be the ones who are willing to go back and push the boundaries again, and experiment and learn. The tech is moving so fast that what didn't work three months ago might just work now, unlocking big productivity gains.
 
 ### An Example
 
