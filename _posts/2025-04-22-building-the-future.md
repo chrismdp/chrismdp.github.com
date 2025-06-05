@@ -1,13 +1,12 @@
 ---
 title: "Building the Future"
 date: 2025-04-22 09:00:00 +0100
+image: /assets/img/building-the-future.jpeg
 categories:
 - ai
 - product
 - business
 ---
-
-![A diagram of the future of AI agents](/assets/img/building-the-future.jpeg)
 
 Something has been on my mind for months. The rapid evolution of AI agents has opened up possibilities I cannot ignore.
 

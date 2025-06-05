@@ -34,12 +34,11 @@ For more [view my services](/services) or join my newsletter below:
 **_"Chris has clearly learned a lot about the world of being a delivery-focused CTO"_** -- [Ian O](https://www.linkedin.com/in/ianozsvald/)
 
 <!--more-->
-
-## Recent articles
+---
 
 {% for post in site.posts limit:3 %}
    <div class="post-preview py-4">
-   <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+   <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
    <div style='font-style: italic' class="pb-1 post-date">
    {% assign original_date = post.path | split: "/" | last | split: "-" | slice: 0, 2 | join: '' %}

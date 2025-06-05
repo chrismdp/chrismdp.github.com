@@ -2,13 +2,13 @@
 layout: post
 title: "The Reality of AI Power Usage"
 date: 2025-04-14 00:00:00 +00:00
+image: /assets/img/ai-power-usage.jpeg
+image_portrait: true
 categories:
 - ai
 - climate
 - technology
 ---
-
-<a href="/ai-power-usage-reality"><img src="/assets/img/ai-power-usage.jpeg" alt="AI Power Usage" style='border-radius: 12px; margin:0 0 24px 0; width:50%'/></a>
 
 AI power usage generates significant controversy. Headlines paint it as an environmental catastrophe waiting to happen. The reality proves more nuanced and potentially more optimistic than these dire warnings suggest.
 

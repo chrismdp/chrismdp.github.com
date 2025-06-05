@@ -14,18 +14,23 @@ layout: page
 </div>
 {% assign content_parts = content | split:'<!--more-->' %}
 
+{% if page.image %}
+  {% if page.image_portrait %}
+    <img alt='image for {{ page.title }}' src='{{ page.image }}' class='rounded-lg' style='float: right; border-radius: 12px; margin:0 0 24px 24px; width:50%'/>
+  {% else %}
+    <img alt='image for {{ page.title }}' src='{{ page.image }}' class='rounded-lg'/>
+  {% endif %}
+{% endif %}
+
 {{ content_parts[0] }}
 
 <div style="clear: both;"></div>
 
-{% unless page.hide_newsletter %}
-  {% include ai-newsletter-short.html %}
-{% endunless %}
-
-
 {% if content_parts.size > 1 %}
   {{ content_parts[1] }}
 {% endif %}
+
+{% include ai-newsletter-short.html %}
 
 {% if page.categories contains "sol trader" %}
 <br/>

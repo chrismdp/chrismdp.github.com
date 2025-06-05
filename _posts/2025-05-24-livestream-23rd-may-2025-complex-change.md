@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "How I make complex AI changes"
+title: "How I Make Complex AI Changes"
 date: 2025-05-24 07:00:00 +0000
+image: /assets/img/ai-coding-webinar-23rdmay.png
 categories:
 - ai
 - engineering
@@ -14,8 +15,6 @@ Most technical leaders know the pain. You get partway into an ambitious AI proje
 Recently I tackled this head on. I did this live, in front of an audience. I used a framework that finally made the difference.
 
 The challenge: could I take a complex change, break it down, and actually finish it, live on stream? My answer: yes, with the right approach. Here is exactly how I did it.
-
-![AI Coding Webinar 23rd May 2025](/assets/img/ai-coding-webinar-23rdmay.png)
 
 <!--more-->
 

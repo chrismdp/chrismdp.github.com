@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Huge List of AI Tools: What's Actually Worth Using in May 2025?"
-date: 2025-05-25 00:00:00 +0000
+date: 2025-06-05 00:00:00 +0000
 hide_newsletter: true
 categories:
 - ai
@@ -36,12 +36,13 @@ thead th {
   padding: 8px 4px;
 }
 tbody tr:nth-child(even) {
-  background: #f7f3fe;
+  background: #eeeeff;
 }
 tbody td {
   vertical-align: top;
   padding: 8px 4px;
 }
+
 table a {
   text-decoration: underline;
 }
@@ -49,7 +50,7 @@ table a {
 
 ## Search, Chat & Discovery
 
-Navigating the landscape of major AI models reveals that while many share core functionalities, distinct advantages define each. My typical workflow involves leveraging Google's suite for in-depth research and analytical tasks, while OpenAI's offerings are my go-to for search and interactive conversational AI. I've found Anthropic's Claude limits without a premium subscription to be too restrictive for extensive daily usage.
+While each major AI model offers unique strengths, I've found Claude Sonnet 4 to be exceptional for writing and creative tasks, particularly with its superior artifact creation and canvas capabilities. For research and analytical work, Google's suite remains my preferred choice, while OpenAI's tools excel at search and quick interactive conversations. The Pro tier of Claude has become more generous, making it a viable option.
 
 | **Capability** | **[Google](https://ai.google){:target="_blank"}** | **[OpenAI](https://openai.com){:target="_blank"}** | **[Anthropic](https://anthropic.com){:target="_blank"}** | **Other Alternatives** |
 | **Text Chat**<br>Basic text conversations | [Gemini](https://gemini.google.com){:target="_blank"}<br>Latest: 2.5 Pro/Flash | [ChatGPT](https://chat.openai.com){:target="_blank"}<br>Latest: GPT-4o | [Claude](https://claude.ai){:target="_blank"}<br>Latest: Claude 4 Sonnet/Opus | [Meta AI](https://ai.meta.com){:target="_blank"}, [Amazon Nova](https://aws.amazon.com/ai/generative-ai/nova/){:target="_blank"} |
@@ -60,12 +61,12 @@ Navigating the landscape of major AI models reveals that while many share core f
 
 ## Coding
 
-When it comes to coding assistance, [Cursor](https://cursor.sh){:target="_blank"} remains my top recommendation for a comprehensive solution. Emerging tools like Google's [Jules](https://jules.google.com){:target="_blank"} are promising, yet AI coding agents are still maturing towards full reliability. The decision between CLI and IDE-integrated tools often boils down to individual workflow preferences. While cloud-based builders offer fantastic speed for prototyping, I prefer Cursor's robust environment for production-level development. For more on my experiences and best practices for coding with AI, see my post on [Coding with AI](/coding-with-ai/). To explore how AI is reshaping software quality and craftsmanship, read [AI: The New Dawn of Software Craft](/ai-new-dawn-of-software-craft/).
+When it comes to coding assistance, [Cursor](https://cursor.sh){:target="_blank"} remains my top recommendation for a comprehensive solution. Emerging tools like Google's [Jules](https://jules.google.com){:target="_blank"} are promising, yet AI coding agents are still maturing towards full reliability. The decision between CLI and IDE-integrated tools often boils down to individual workflow preferences. While cloud-based builders offer fantastic speed for prototyping, I prefer Cursor's robust environment for production-level development. Claude's coding capabilities are now part of their Pro subscription - while still feeling somewhat limited compared to dedicated coding tools, it's a significant improvement over the previous pay-as-you-go model. For more on my experiences and best practices for coding with AI, see my post on [Coding with AI](/coding-with-ai/). To explore how AI is reshaping software quality and craftsmanship, read [AI: The New Dawn of Software Craft](/ai-new-dawn-of-software-craft/).
 
 | **Capability** | **[Google](https://ai.google){:target="_blank"}** | **[OpenAI](https://openai.com){:target="_blank"}** | **[Anthropic](https://anthropic.com){:target="_blank"}** | **Other Alternatives** |
 | **IDE Code Assistance**<br>Collaborative coding workspace | [Canvas in Gemini](https://gemini.google.com/advanced){:target="_blank"}<br>Code editing, debugging<br>💰| [Windsurf](https://www.cnbc.com/2025/04/16/openai-in-talks-to-pay-about-3-billion-to-acquire-startup-windsurf.html){:target="_blank"}<br>Acquired in May 2025<br>💰| - | [GitHub Copilot](https://github.com/features/copilot){:target="_blank"}, [Cursor](https://cursor.sh){:target="_blank"}, [Augment](https://augmentcode.com){:target="_blank"} |
 | **CLI Code Assistant**<br>Terminal-based coding help | - | [Codex CLI](https://openai.com/codex/){:target="_blank"}<br>Cloud and CLI tools<br>💰 API only| [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview){:target="_blank"}<br>Terminal-based code assistant<br>💰|[Cursor](https://cursor.sh){:target="_blank"}, [aider](https://github.com/paul-gauthier/aider){:target="_blank"} |
-| **Coding Agents**<br>*Autonomous coding assistance* | [Jules](https://jules.google.com){:target="_blank"}<br>Code generation, debugging<br>Free Prototype (5 tasks a day) | [Codex](https://openai.com/codex/){:target="_blank"}<br>Cloud and CLI tools<br>💰💰💰 Pro only, Plus soon| - | [Github Copilot Agent](https://docs.github.com/en/enterprise-cloud@latest/copilot/using-github-copilot/coding-agent/about-assigning-tasks-to-copilot){:target="_blank"}<br>💰 Pro+ only  |
+| **Coding Agents**<br>*Autonomous coding assistance* | [Jules](https://jules.google.com){:target="_blank"}<br>Code generation, debugging<br>Free Prototype (5 tasks a day) | [Codex](https://openai.com/codex/){:target="_blank"}<br>Cloud and CLI tools<br>💰💰💰 Pro only, Plus soon| - | [Github Copilot Agent](https://docs.github.com/en/enterprise-cloud@latest/copilot/using-github-copilot/coding-agent/about-assigning-tasks-to-copilot){:target="_blank"}<br>💰 Pro+ only<br>[All Hands](https://all-hands.dev){:target="_blank"} |
 | **Cloud Builders**<br>*AI-powered app development* | - | - | - | [Replit](https://replit.com){:target="_blank"}, [Lovable](https://lovable.ai){:target="_blank"}, [Bolt](https://bolt.so){:target="_blank"}, [V0](https://v0.dev){:target="_blank"}, [Databutton](https://databutton.com){:target="_blank"} |
 
 ## Creation and Productivity
