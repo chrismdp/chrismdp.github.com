@@ -36,7 +36,7 @@ For more [view my services](/services) or join my newsletter below:
 <!--more-->
 ---
 
-{% for post in site.posts limit:3 %}
+{% for post in site.posts limit:10 %}
    <div class="post-preview py-4">
    <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
