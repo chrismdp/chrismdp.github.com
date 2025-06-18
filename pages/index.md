@@ -109,9 +109,7 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
             </div>
           </a>
         </div>
-        <div class="flex text-yellow-500 mb-4 space-x-1">
-          <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-        </div>
+        {% include five-star.html %}
         <p class="text-brand-black italic">"Fantastic at building self-sufficient teams and giving them what they need."</p>
       </div>
       
@@ -125,9 +123,7 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
             </div>
           </a>
         </div>
-        <div class="flex text-yellow-500 mb-4 space-x-1">
-          <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-        </div>
+        {% include five-star.html %}
         <p class="text-brand-black italic">"If you're looking for someone to help build a great team, or you need someone experienced to help develop a sound tech strategy, I would thoroughly recommend Chris."</p>
       </div>
       
@@ -141,9 +137,7 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
             </div>
           </a>
         </div>
-        <div class="flex text-yellow-500 mb-4 space-x-1">
-          <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-        </div>
+        {% include five-star.html %}
         <p class="text-brand-black italic">"Chris has clearly learned a lot about the world of being a delivery-focused CTO"</p>
       </div>
     </div>
@@ -234,7 +228,7 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
   <div class="max-w-4xl mx-auto px-6">
     <div class="bg-white rounded-lg p-8">
       <div class="flex items-center mb-4">
-        <a href="https://www.linkedin.com/in/tomfostercarter/" target="_blank" class="flex items-center">
+        <a href="https://www.linkedin.com/in/tomfostercarter/" target="_blank" style="text-decoration: none;" class="flex items-center">
           <img src="/assets/img/testimonials/tfc.jpeg" alt="Tom Foster Carter" class="w-16 h-16 rounded-full mr-4 object-cover">
           <div>
             <div class="text-lg font-semibold text-brand-black">Tom Foster Carter</div>
@@ -242,9 +236,7 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
           </div>
         </a>
       </div>
-      <div class="flex text-yellow-500 mb-4 space-x-1">
-        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-      </div>
+      {% include five-star.html %}
       <p class="text-brand-black italic mb-4">
         "Chris helped us build a production LLM meal generator that achieved a 30% reduction in plan changes and 14% increase in basket usage. His expertise in AI systems allowed us to ship major new features including health scores while maintaining high quality delivery."
       </p>

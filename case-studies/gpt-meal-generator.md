@@ -62,9 +62,7 @@ Beyond the meal generator itself, we shipped major additional features including
           </div>
         </a>
       </div>
-      <div class="flex text-yellow-500 mb-4 space-x-1">
-        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-      </div>
+      {% include five-star.html %}
       <p class="text-brand-black italic mb-4">
         "Chris helped us build a production LLM meal generator that achieved a 30% reduction in plan changes and 14% increase in basket usage. His expertise in AI systems allowed us to ship major new features including health scores while maintaining high quality delivery."
       </p>

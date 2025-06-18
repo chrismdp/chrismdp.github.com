@@ -116,6 +116,14 @@ EVERYTHING ELSE HERE
 ### Newsletter System
 Newsletter content follows specific format with intimate, enthusiastic tone focused on AI journey and practical tips for building with AI.
 
+### Reusable Components
+The project uses Jekyll includes for commonly repeated elements:
+
+- `_includes/five-star.html` - Consistent 5-star rating display using brand orange SVG stars
+  - Usage: `{% include five-star.html %}` 
+  - Always use this instead of emoji stars or inline SVG for testimonials and reviews
+  - Maintains consistent styling and color (`brand-orange: #fc8745`) across the site
+
 ## Configuration
 - Site config in `_config.yml` - includes social media links, author info, and Jekyll settings
 - Uses `jekyll-sitemap` and `jekyll-redirect-from` plugins
