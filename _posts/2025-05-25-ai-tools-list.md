@@ -32,19 +32,27 @@ table {
 }
 thead th {
   text-align: left;
-  background: #fff;
+  background: #f9fafd;
   padding: 8px 4px;
+  color: #333333;
+  font-weight: bold;
 }
 tbody tr:nth-child(even) {
-  background: #eeeeff;
+  background: #f9fafd;
 }
 tbody td {
   vertical-align: top;
   padding: 8px 4px;
+  color: #333333;
 }
 
 table a {
+  color: #0292b7;
   text-decoration: underline;
+}
+
+table a:hover {
+  color: #1ac8db;
 }
 </style>
 
@@ -90,4 +98,3 @@ The toolkit for constructing AI agents is still nascent, with substantial opport
 | **Orchestration**<br>*Workflow automation & integration* | [Gemini in Apps Script](https://github.com/mhawksey/GeminiApp){:target="_blank"}<br>Google Workspace automation | - | - | [n8n](https://n8n.io){:target="_blank"}, [Make](https://www.make.com){:target="_blank"}, [Zapier](https://zapier.com){:target="_blank"}, [Flowise](https://flowiseai.com){:target="_blank"} |
 | **Evaluations**<br>*AI evaluation & testing* | [VertexAI Evaluation Service](https://cloud.google.com/vertex-ai/generative-ai/docs/models/evaluation-overview){:target="_blank"}<br>Model evaluation tools | [Evals API](https://platform.openai.com/docs/guides/evals){:target="_blank"}<br>Open source framework | [Anthropic Console](https://console.anthropic.com/dashboard){:target="_blank"}<br>Evaluation toolkit | [Kaijo](https://kaijo.ai){:target="_blank"}, [LangSmith](https://smith.langchain.com){:target="_blank"}, [Promptfoo](https://promptfoo.dev){:target="_blank"}, [Galileo](https://galileo.ai){:target="_blank"} |
 
-{% include ai-newsletter-short.html %}

@@ -1,35 +1,45 @@
 ---
-title: Articles
+layout: page
+title: All Articles
 permalink: /articles/
 redirect_from:
   - /blog
+  - /all/
 ---
 
-You can also find me on [BlueSky](https://bsky.app/profile/chrismdp.com), [X](https://x.com/chrismdp) and [LinkedIn](https://linkedin.com/in/chrisparsons). Subscribe with <a href="{{ site.baseurl }}/feed.xml">RSS</a> to keep up with the latest.
+<div class="max-w-4xl mx-auto px-6 py-12">
+  {% for post in site.posts %}
+    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
 
-See the <a href="{{ site.baseurl }}/all/">full archive</a> for more articles.
+    {% if forloop.first %}
+      <h2 class="text-2xl font-heading font-bold mb-6 text-brand-black" id="{{ this_year }}-ref">{{ this_year }}</h2>
+      <div class="space-y-1 mb-8">
+    {% endif %}
 
+    <div class="flex flex-col md:flex-row md:items-center gap-2 border-b border-brand-light-blue/10">
+      <div class="text-sm text-brand-black/60 md:w-24 flex-shrink-0">
+        {{ post.date | date: "%b %-d" }}
+      </div>
+      <div class="flex-1">
+        <a href="{{ post.url | prepend: site.baseurl }}" class="text-brand-black hover:text-brand-deep-turquoise transition-colors">
+          {{ post.title }}
+        </a>
+      </div>
+    </div>
 
-{% for post in site.posts limit:10 %}
+    {% if forloop.last %}
+      </div>
+    {% else %}
+      {% if this_year != next_year %}
+        </div>
+        <h2 class="text-2xl font-heading font-bold mb-6 mt-12 text-brand-black" id="{{ next_year }}-ref">{{ next_year }}</h2>
+        <div class="space-y-1 mb-8">
+      {% endif %}
+    {% endif %}
+  {% endfor %}
 
-   <div class="post-preview py-4">
-   <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-
-   <div style='font-style: italic' class="pb-1 post-date">
-   {% assign original_date = post.path | split: "/" | last | split: "-" | slice: 0, 2 | join: '' %}
-   {% assign current_date = post.date | date: "%Y%m" %}
-   {% if original_date != current_date %}Updated: {% endif %}
-   {{ post.date | date: "%B %Y" }}
-   </div>
-   {% if post.badges %}{% for badge in post.badges %}<span class="badge badge-{{ badge.type }}">{{ badge.tag }}</span>{% endfor %}{% endif %}
-   {{ post.excerpt }}
-   <a class='underline' href="{{ site.baseurl }}{{ post.url }}">Read more</a>
-
-   </div>
-{% endfor %}
-
-{% include ai-newsletter-short.html %}
-
-<hr>
-
-See the <a href="{{ site.baseurl }}/all/">Archive</a> for more articles.
+  <div class="mt-12">
+    {% include ai-newsletter-short.html %}
+  </div>
+</div>

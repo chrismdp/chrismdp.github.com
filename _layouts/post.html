@@ -1,12 +1,15 @@
 ---
-layout: page
+layout: default
 ---
-<article class="max-w-4xl mx-auto px-6">
-  <!-- Post metadata -->
-  <div class="mb-8">
+<!-- Hero Section with Post Title -->
+<section class="pt-20 pb-12 bg-white">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight text-brand-black">{{ page.title }}</h1>
+    
+    <!-- Post metadata -->
     {% assign original_date = page.path | split: "/" | last | split: "-" | slice: 0, 2 | join: '' %}
     {% assign current_date = page.date | date: "%Y%m" %}
-    <div class="text-sm text-brand-black/60 italic">
+    <div class="text-lg text-brand-black/60 italic mb-8">
       {% if original_date != current_date %}
         Updated: {{ page.date | date: "%B %Y" }}
       {% else %}
@@ -14,6 +17,9 @@ layout: page
       {% endif %}
     </div>
   </div>
+</section>
+
+<article class="max-w-4xl mx-auto px-6 pb-12">
 
   <!-- Featured image -->
   {% if page.image %}
@@ -25,7 +31,7 @@ layout: page
   {% endif %}
 
   <!-- Post content -->
-  <div class="prose prose-lg max-w-none">
+  <div class="prose prose-lg max-w-none post-content">
     {% assign content_parts = content | split:'<!--more-->' %}
     {{ content_parts[0] }}
     

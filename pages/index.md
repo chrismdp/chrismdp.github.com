@@ -12,12 +12,14 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
     <img src="/assets/img/chris-hero-bg.png" alt="Chris Parsons" class="absolute bottom-0 right-0 h-full w-auto object-cover object-bottom">
   </div>
   
-  <div class="max-w-6xl mx-auto px-6 relative z-10">
+  <div class="w-full px-6 relative z-10">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight">AI That Actually Works, Right Now</h1>
+      <p class="text-xl md:text-2xl mb-8 text-white/90">Stop stressing about AI possibilities. Start implementing what works today.</p>
+    </div>
+    
     <div class="grid md:grid-cols-2 gap-12 items-center">
-      <div>
-        <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight">AI That Actually Works, Right Now</h1>
-        <p class="text-xl md:text-2xl mb-8 text-white/90">Stop reading about AI possibilities. Start implementing what works today.</p>
-        
+      <div class="md:ml-8">
         <div class="bg-brand-deep-turquoise rounded-lg p-6">
           <div class="rm-area-embed-subscribe"></div>
         </div>
@@ -51,24 +53,24 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
     
     <div class="grid md:grid-cols-3 gap-8 mt-12">
       <div class="bg-brand-white rounded-lg p-6 hover:shadow-lg transition-shadow border border-brand-light-blue/20">
-        <div class="text-4xl mb-4">📱</div>
-        <h3 class="text-xl font-heading font-bold mb-2">Cherrypick AI</h3>
-        <p class="text-2xl font-bold text-brand-deep-turquoise mb-2">500,000+ downloads</p>
-        <p class="text-brand-black/80">AI-powered recipe recommendations in production</p>
-      </div>
-      
-      <div class="bg-brand-white rounded-lg p-6 hover:shadow-lg transition-shadow border border-brand-light-blue/20">
-        <div class="text-4xl mb-4">🧠</div>
-        <h3 class="text-xl font-heading font-bold mb-2">Production LLM Systems</h3>
-        <p class="text-2xl font-bold text-brand-deep-turquoise mb-2">Two systems with full evals</p>
-        <p class="text-brand-black/80">From prototype to production</p>
+        <div class="text-4xl mb-4">💻</div>
+        <h3 class="text-xl font-heading font-bold mb-2">Live AI Coding Sessions</h3>
+        <p class="text-2xl font-bold text-brand-deep-turquoise mb-2">Weekly hands-on builds</p>
+        <p class="text-brand-black/80">See exactly how to implement AI features</p>
       </div>
       
       <div class="bg-brand-white rounded-lg p-6 hover:shadow-lg transition-shadow border border-brand-light-blue/20">
         <div class="text-4xl mb-4">🛠️</div>
-        <h3 class="text-xl font-heading font-bold mb-2">Live AI Builds</h3>
-        <p class="text-2xl font-bold text-brand-deep-turquoise mb-2">Weekly coding sessions</p>
-        <p class="text-brand-black/80">See exactly how it's done</p>
+        <h3 class="text-xl font-heading font-bold mb-2">Complex AI Systems</h3>
+        <p class="text-2xl font-bold text-brand-deep-turquoise mb-2">From prototypes to production tools</p>
+        <p class="text-brand-black/80">Internal tools that transform operations</p>
+      </div>
+      
+      <div class="bg-brand-white rounded-lg p-6 hover:shadow-lg transition-shadow border border-brand-light-blue/20">
+        <div class="text-4xl mb-4">🧠</div>
+        <h3 class="text-xl font-heading font-bold mb-2">Hype-Free AI Implementation</h3>
+        <p class="text-2xl font-bold text-brand-deep-turquoise mb-2">Real results, not demos</p>
+        <p class="text-brand-black/80">AI that actually works in practice</p>
       </div>
     </div>
   </div>
@@ -137,27 +139,27 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
         <div class="text-3xl mb-4">💻</div>
         <h3 class="text-2xl font-heading font-bold mb-4">PRACTICAL AI CODING</h3>
-        <p class="text-lg font-semibold mb-4 text-brand-black">Ship your first AI feature this week</p>
+        <p class="text-lg font-semibold mb-4 text-brand-black">Get your team a head start with AI coding</p>
         <p class="text-brand-black/80 leading-relaxed">
-          Get live, hands-on training with real production code examples. I'll provide implementation support and run weekly group sessions to help your team move from theory to shipping actual AI features. Perfect for teams who want to start building immediately.
+          Live, hands-on training sessions with real production code examples. Implementation support and mentoring with weekly group sessions to see immediate benefits. Perfect for teams who want to start building immediately.
         </p>
       </div>
       
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
         <div class="text-3xl mb-4">🔍</div>
         <h3 class="text-2xl font-heading font-bold mb-4">AI SYSTEMS AUDIT</h3>
-        <p class="text-lg font-semibold mb-4 text-brand-black">Your clear path to AI adoption</p>
+        <p class="text-lg font-semibold mb-4 text-brand-black">How can you improve your operations to take maximum advantage of AI?</p>
         <p class="text-brand-black/80 leading-relaxed">
-          I'll assess your current state, identify quick wins, evaluate risks, and create a 90-day implementation plan. This audit gives you a clear roadmap for AI adoption tailored to your specific technical infrastructure and business needs.
+          Current systems and process assessment, AI opportunity identification across your workflows, operations optimisation recommendations, and a 90-day implementation plan for maximum AI leverage.
         </p>
       </div>
       
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
         <div class="text-3xl mb-4">🧩</div>
         <h3 class="text-2xl font-heading font-bold mb-4">CUSTOM AI SYSTEMS</h3>
-        <p class="text-lg font-semibold mb-4 text-brand-black">Get it right, first time</p>
+        <p class="text-lg font-semibold mb-4 text-brand-black">Build complex internal tools for massive productivity improvements</p>
         <p class="text-brand-black/80 leading-relaxed">
-          Full system architecture, production implementation, team enablement, and ongoing support. I work with you to build robust AI systems that actually work in production, with proper evaluation frameworks and reliability measures.
+          Custom AI-powered internal tooling and complex workflow automation that only AI can deliver. Full system architecture and implementation with team enablement and ongoing support.
         </p>
       </div>
     </div>
@@ -227,7 +229,7 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
 <!-- Final CTA Section -->
 <section class="py-20 bg-gradient-to-br from-brand-deep-turquoise to-brand-turquoise text-white">
   <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl md:text-5xl font-heading font-bold mb-6">Stop Reading About AI. Start Implementing It.</h2>
+    <h2 class="text-3xl md:text-5xl font-heading font-bold mb-6">Stop Stressing About AI. Start Implementing It.</h2>
     <p class="text-xl mb-8 text-white/90">Get practical insights delivered weekly</p>
     
     <div class="max-w-md mx-auto bg-brand-deep-turquoise rounded-lg p-6 border border-brand-turquoise">
@@ -255,7 +257,7 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
     {% endfor %}
     
     <div class="text-center">
-      <a href="{{ site.baseurl }}/all/" class="inline-block bg-brand-black text-white px-6 py-3 rounded-lg hover:bg-brand-black/80 transition-colors">View All Articles</a>
+      <a href="{{ site.baseurl }}/articles/" class="inline-block bg-brand-black text-white px-6 py-3 rounded-lg hover:bg-brand-black/80 transition-colors">View All Articles</a>
     </div>
   </div>
 </section>
