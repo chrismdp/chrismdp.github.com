@@ -1,116 +1,101 @@
 ---
 layout: page
 ---
-<div class="flex flex-col justify-between" style='padding-bottom: 12px'>
+<article class="max-w-4xl mx-auto px-6">
+  <!-- Post metadata -->
+  <div class="mb-8">
+    {% assign original_date = page.path | split: "/" | last | split: "-" | slice: 0, 2 | join: '' %}
+    {% assign current_date = page.date | date: "%Y%m" %}
+    <div class="text-sm text-brand-black/60 italic">
+      {% if original_date != current_date %}
+        Updated: {{ page.date | date: "%B %Y" }}
+      {% else %}
+        {{ page.date | date: "%B %Y" }}
+      {% endif %}
+    </div>
+  </div>
 
-  <!-- <div style='opacity: 0.7; padding-bottom: 12px; max-width: 75%'>{% if page.categories %}{% for badge in page.categories %}<span style="opacity: 0.6; font-size:12px;{% if badge.color %}background-color:{{ badge.color }}{% endif %}" class="inline-flex items-center justify-center px-4 py-1 mr-2 text-xs font-bold leading-none text-violet-100 bg-violet-600 rounded{% if site.badge_rounded %}-full{% endif %}"><a style="cursor:pointer; color:white" href="{{ site.url }}{{ site.baseurl }}/tags#{{ badge | replace: ' ', '-' }}">{{ badge }}</a></span>{% endfor %}{% endif %}</div> -->
-{% assign original_date = page.path | split: "/" | last | split: "-" | slice: 0, 2 | join: '' %}
-{% assign current_date = page.date | date: "%Y%m" %}
-{% if original_date != current_date %}
-  <div style="font-style: italic;">Updated: {{ page.date | date: "%B %Y" }}</div>
-{% else %}
-  <div style="font-style: italic;">{{ page.date | date: "%B %Y" }}</div>
-{% endif %}
-</div>
-{% assign content_parts = content | split:'<!--more-->' %}
-
-{% if page.image %}
-  {% if page.image_portrait %}
-    <img alt='image for {{ page.title }}' src='{{ page.image }}' class='rounded-lg' style='float: right; border-radius: 12px; margin:0 0 24px 24px; width:50%'/>
-  {% else %}
-    <img alt='image for {{ page.title }}' src='{{ page.image }}' class='rounded-lg'/>
+  <!-- Featured image -->
+  {% if page.image %}
+    {% if page.image_portrait %}
+      <img alt='{{ page.title }}' src='{{ page.image }}' class='rounded-lg float-right ml-6 mb-6 w-1/2 max-w-md'>
+    {% else %}
+      <img alt='{{ page.title }}' src='{{ page.image }}' class='rounded-lg mb-8 w-full'>
+    {% endif %}
   {% endif %}
-{% endif %}
 
-{{ content_parts[0] }}
+  <!-- Post content -->
+  <div class="prose prose-lg max-w-none">
+    {% assign content_parts = content | split:'<!--more-->' %}
+    {{ content_parts[0] }}
+    
+    <div class="clear-both"></div>
+    
+    {% if content_parts.size > 1 %}
+      {{ content_parts[1] }}
+    {% endif %}
+  </div>
 
-<div style="clear: both;"></div>
+  <!-- Newsletter signup -->
+  <div class="my-12">
+    {% include ai-newsletter-short.html %}
+  </div>
 
-{% if content_parts.size > 1 %}
-  {{ content_parts[1] }}
-{% endif %}
+  <!-- Sol Trader widget for relevant posts -->
+  {% if page.categories contains "sol trader" %}
+    <div class="flex justify-center my-8">
+      <iframe src="https://store.steampowered.com/widget/396680/" frameborder="0" width="100%" height="190" class="max-w-2xl"></iframe>
+    </div>
+  {% endif %}
 
-{% include ai-newsletter-short.html %}
-
-{% if page.categories contains "sol trader" %}
-<br/>
-<div class='flex justify-center'>
-  <iframe src="https://store.steampowered.com/widget/396680/" frameborder="0" width="100%" height="190"></iframe>
-</div>
-{% endif %}
-
-<div class='py-8'>
-
-  <div class=''>
-    <span class="share-bluesky">
-      <a class='flex flex-row' target="_blank" title="Share on Bluesky"
-        href="https://bsky.app/intent/compose?text={{ page.title }}%20{{ site.url }}{{ page.url }}">
-        <svg width="1em" height="1em" fill="#fff" viewBox="0 0 600 530" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="m135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z" />
+  <!-- Share buttons -->
+  <div class="py-8 border-t border-brand-light-blue/20">
+    <h3 class="text-lg font-heading font-semibold mb-4">Share this article</h3>
+    <div class="flex flex-wrap gap-4">
+      <!-- BlueSky -->
+      <a href="https://bsky.app/intent/compose?text={{ page.title }}%20{{ site.url }}{{ page.url }}"
+         target="_blank"
+         title="Share on BlueSky"
+         class="inline-flex items-center px-4 py-2 bg-[#1185fe] text-white rounded-lg hover:bg-[#0f73d6] transition-colors">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 600 530" xmlns="http://www.w3.org/2000/svg">
+          <path d="m135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z"/>
         </svg>
-        <span class='ml-2 text-xs'>BlueSky</span>
+        <span class="ml-2 text-sm font-semibold">BlueSky</span>
       </a>
-    </span>
-    <style>
-      span.share-bluesky {
-        display: inline-block;
-        text-align: center;
-        border-radius: 1em;
-        background: #1185fe;
-        color: white;
-        font-weight: bold;
-        padding: 0.3em 0.7em;
-      }
-
-      span.share-bluesky>svg {
-        margin: 2em;
-        fill: #fff;
-        width: 1em;
-        height: 1em;
-        padding: 0.2em;
-      }
-    </style>
+      
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url }}"
+         target="_blank"
+         title="Share on LinkedIn"
+         class="inline-flex items-center px-4 py-2 bg-[#0077b5] text-white rounded-lg hover:bg-[#005885] transition-colors">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+        </svg>
+        <span class="ml-2 text-sm font-semibold">LinkedIn</span>
+      </a>
+      
+      <!-- X (Twitter) -->
+      <a href="https://twitter.com/intent/tweet?text={{ page.title }}%20{{ site.url }}{{ page.url }}"
+         target="_blank"
+         title="Post on X"
+         class="inline-flex items-center px-4 py-2 bg-brand-black text-white rounded-lg hover:bg-brand-black/80 transition-colors">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+        <span class="ml-2 text-sm font-semibold">X</span>
+      </a>
+    </div>
   </div>
 
-  <div class="pb-2">
-    <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
-    <script type="IN/Share" data-url="{{ site.url }}{{ page.url }}"></script>
-  </div>
-  <div class="pb-2">
-    <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text={{ page.title }}%20{{ site.url }}{{ page.url }}">Post on X</a>
-  </div>
-
-  <script>window.twttr = (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0],
-      t = window.twttr || {};
-    if (d.getElementById(id)) return t;
-    js = d.createElement(s);
-    js.id = id;
-    js.src = "https://platform.twitter.com/widgets.js";
-    fjs.parentNode.insertBefore(js, fjs);
-
-    t._e = [];
-    t.ready = function(f) {
-      t._e.push(f);
-    };
-
-    return t;
-  }(document, "script", "twitter-wjs"));</script>
-</div>
-
-<hr/>
-
-<div>
+  <!-- Related articles -->
   {% assign related_posts = "" %}
   {% for tag in page.categories %}
     {% assign tag_posts = site.categories[tag] %}
-
     {% assign oldest_date = page.date | date: "%s" | minus: 157680000 | date: "%Y-%m-%d" %}
-
+    
     {% for post in tag_posts %}
-    {% assign post_date = post.date | date: "%Y-%m-%d" %}
-    {% if post.id != page.id and post_date >= oldest_date %}
+      {% assign post_date = post.date | date: "%Y-%m-%d" %}
+      {% if post.id != page.id and post_date >= oldest_date %}
         {% assign related_posts = related_posts | append: post.id | append: "," %}
       {% endif %}
     {% endfor %}
@@ -118,29 +103,36 @@ layout: page
 
   {% assign related_posts_count = related_posts | split: "," | size %}
   {% if related_posts_count > 0 %}
-    <h2>More articles</h2>
-
-    {% assign related_posts_array = related_posts | split: "," | uniq %}
-    {% for post_id in related_posts_array limit: 5 %}
-      {% assign post = site.posts | where: "id", post_id | first %}
-
-      <div class="post-preview py-4">
-        <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-
-        <div style='font-style: italic' class="pb-1 post-date">
-          {% assign original_date = post.path | split: "/" | last | split: "-" | slice: 0, 2 | join: '' %}
-          {% assign current_date = post.date | date: "%Y%m" %}
-          {% if original_date != current_date %}Updated: {% endif %}
-          {{ post.date | date: "%B %Y" }}
-        </div>
-        {{ post.excerpt }}
-        <a class='underline' href="{{ site.baseurl }}{{ post.url }}">Read more</a>
-        <div style="clear: both;"></div>
-      </div>
-    {% endfor %}
+    <div class="border-t border-brand-light-blue/20 pt-8 mt-12">
+      <h2 class="text-2xl font-heading font-bold mb-6 text-brand-black">More articles</h2>
+      
+      {% assign related_posts_array = related_posts | split: "," | uniq %}
+      {% for post_id in related_posts_array limit: 5 %}
+        {% assign post = site.posts | where: "id", post_id | first %}
+        
+        <article class="py-6 border-b border-brand-light-blue/10 last:border-0">
+          <h3 class="text-xl font-heading font-semibold mb-2">
+            <a href="{{ site.baseurl }}{{ post.url }}" class="text-brand-black hover:text-brand-deep-turquoise transition-colors">
+              {{ post.title }}
+            </a>
+          </h3>
+          <div class="text-sm text-brand-black/60 italic mb-3">
+            {% assign original_date = post.path | split: "/" | last | split: "-" | slice: 0, 2 | join: '' %}
+            {% assign current_date = post.date | date: "%Y%m" %}
+            {% if original_date != current_date %}Updated: {% endif %}
+            {{ post.date | date: "%B %Y" }}
+          </div>
+          {{ post.excerpt }}
+          <a href="{{ site.baseurl }}{{ post.url }}" class="text-brand-deep-turquoise hover:text-brand-turquoise font-semibold">
+            Read more →
+          </a>
+        </article>
+      {% endfor %}
+    </div>
   {% endif %}
-</div>
 
-<br/>
-
-{% include ai-newsletter-short.html %}
+  <!-- Second newsletter signup -->
+  <div class="mt-12">
+    {% include ai-newsletter-short.html %}
+  </div>
+</article>
