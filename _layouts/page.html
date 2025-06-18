@@ -1,6 +1,19 @@
 ---
 layout: default
 ---
-<div class="w-full">
+<!-- Hero Section with Page Title -->
+<section class="pt-20 pb-12 bg-white">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight text-brand-black">{{ page.title }}</h1>
+    
+    {% if page.excerpt %}
+    <div class="text-lg text-brand-black/60 mb-8">
+      {{ page.excerpt }}
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<div class="max-w-4xl mx-auto px-6 pb-12">
   {{ content }}
 </div>

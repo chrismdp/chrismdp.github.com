@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "AI That Actually Works, Right Now"
 permalink: /
 excerpt: "Stop stressing about AI possibilities. Start implementing what works today."
@@ -35,7 +35,7 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
 <section class="py-20 bg-brand-white">
   <div class="w-full">
     <div class="text-center mb-12 px-6">
-      <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6 text-brand-black">As well as my weekly email...</h2>
+      <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6 text-brand-black">Subscribe to gain access to all my AI guides</h2>
       <p class="text-xl text-brand-black/80 mb-8">If you subscribe, you get access to all of the cheat sheets, guides, and carousels that I've posted so far and in the future.</p>
     </div>
     
@@ -46,89 +46,143 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
   </div>
 </section>
 
-<!-- Proof Section -->
+<!-- More About Chris Section -->
 <section class="py-20 bg-white">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-4 text-brand-black">I build AI systems in public and share everything I learn:</h2>
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">More About Chris</h2>
     
-    <div class="grid md:grid-cols-3 gap-8 mt-12">
-      <div class="bg-brand-white rounded-lg p-6 hover:shadow-lg transition-shadow border border-brand-light-blue/20">
-        <div class="text-4xl mb-4">💻</div>
-        <h3 class="text-xl font-heading font-bold mb-2">Live AI Coding Sessions</h3>
-        <p class="text-2xl font-bold text-brand-deep-turquoise mb-2">Weekly hands-on builds</p>
-        <p class="text-brand-black/80">See exactly how to implement AI features</p>
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="text-lg text-brand-black/80 mb-6">
+          I'm a technical founder and AI expert who sees possibilities, actions them, and builds systems that create real value. With deep technical chops and a founder's mindset, I go into organisations and have high-impact results fast.
+        </p>
+        
+        <p class="text-lg text-brand-black/80 mb-6">
+          As a technical leader myself, I understand the unique challenges you face implementing AI in complex technical environments. I've built production AI systems from scratch, scaled technical teams, and delivered results that matter to the bottom line.
+        </p>
+        
+        <div class="grid grid-cols-2 gap-4 mb-6">
+          <div class="text-center p-4 bg-brand-white rounded-lg border border-brand-light-blue/20">
+            <div class="text-2xl font-bold text-brand-deep-turquoise">20+</div>
+            <div class="text-sm text-brand-black/70">Years Technical Leadership</div>
+          </div>
+          <div class="text-center p-4 bg-brand-white rounded-lg border border-brand-light-blue/20">
+            <div class="text-2xl font-bold text-brand-deep-turquoise">500K+</div>
+            <div class="text-sm text-brand-black/70">Users on AI Systems Built</div>
+          </div>
+        </div>
       </div>
       
-      <div class="bg-brand-white rounded-lg p-6 hover:shadow-lg transition-shadow border border-brand-light-blue/20">
-        <div class="text-4xl mb-4">🛠️</div>
-        <h3 class="text-xl font-heading font-bold mb-2">Complex AI Systems</h3>
-        <p class="text-2xl font-bold text-brand-deep-turquoise mb-2">From prototypes to production tools</p>
-        <p class="text-brand-black/80">Internal tools that transform operations</p>
-      </div>
-      
-      <div class="bg-brand-white rounded-lg p-6 hover:shadow-lg transition-shadow border border-brand-light-blue/20">
-        <div class="text-4xl mb-4">🧠</div>
-        <h3 class="text-xl font-heading font-bold mb-2">Hype-Free AI Implementation</h3>
-        <p class="text-2xl font-bold text-brand-deep-turquoise mb-2">Real results, not demos</p>
-        <p class="text-brand-black/80">AI that actually works in practice</p>
+      <div class="space-y-6">
+        <div class="bg-brand-black/5 rounded-lg p-6">
+          <h3 class="text-xl font-heading font-bold mb-3 text-brand-black">Technical Founder</h3>
+          <p class="text-brand-black/80">Built and scaled technical teams, shipped production systems, understand the full stack from code to business impact.</p>
+        </div>
+        
+        <div class="bg-brand-black/5 rounded-lg p-6">
+          <h3 class="text-xl font-heading font-bold mb-3 text-brand-black">AI Systems Expert</h3>
+          <p class="text-brand-black/80">Production AI systems with full evaluation frameworks, not demos. Real systems serving real users at scale.</p>
+        </div>
+        
+        <div class="bg-brand-black/5 rounded-lg p-6">
+          <h3 class="text-xl font-heading font-bold mb-3 text-brand-black">High-Impact Results</h3>
+          <p class="text-brand-black/80">Go into organisations, assess quickly, identify opportunities, and deliver value fast. Built for technical leaders who need results.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Building in Public Section -->
-<section class="py-20 bg-brand-black text-white">
+<!-- Testimonials Section -->
+<section class="py-20 bg-brand-deep-turquoise">
   <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">See Real AI Systems Being Built:</h2>
+    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-white">What Leaders Say</h2>
     
-    <div class="space-y-8">
-      <div class="bg-brand-black/50 rounded-lg p-6 border border-brand-light-blue/20">
-        <div class="grid md:grid-cols-2 gap-6 items-center">
-          <div>
-            <h3 class="text-2xl font-heading font-bold mb-3 text-brand-light-blue">AI Cheatsheet Generator</h3>
-            <p class="text-lg mb-4 text-white/80">From idea to production in 4 hours</p>
-            <div class="flex gap-4">
-              <a href="/livestream-ai-cheatsheet-app" class="text-brand-light-blue hover:text-brand-turquoise underline">Watch build video →</a>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-lg p-6 shadow-md">
+        <div class="flex items-center mb-4">
+          <a href="https://www.linkedin.com/in/tadastelksnys/" target="_blank" class="flex items-center">
+            <img src="/assets/img/testimonials/tadas-t.jpeg" alt="Tadas T" class="w-12 h-12 rounded-full mr-4 object-cover">
+            <div>
+              <div class="font-semibold">Tadas T</div>
+              <div class="text-sm text-brand-black/70">CTO</div>
             </div>
-          </div>
-          <div class="bg-brand-black/30 rounded p-4">
-            <code class="text-sm text-brand-light-blue">Live coding session demonstrating rapid AI prototyping</code>
-          </div>
+          </a>
         </div>
+        <div class="flex text-yellow-500 mb-4 space-x-1">
+          <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+        </div>
+        <p class="text-brand-black italic">"Fantastic at building self-sufficient teams and giving them what they need."</p>
       </div>
       
-      <div class="bg-brand-black/50 rounded-lg p-6 border border-brand-light-blue/20">
-        <div class="grid md:grid-cols-2 gap-6 items-center">
-          <div>
-            <h3 class="text-2xl font-heading font-bold mb-3 text-brand-light-blue">LLM Meal Generator</h3>
-            <p class="text-lg mb-4 text-white/80">Production AI system with full evaluation suite</p>
-            <div class="flex gap-4">
-              <a href="/how-to-build-a-robust-llm-application" class="text-brand-light-blue hover:text-brand-turquoise underline">Technical breakdown →</a>
+      <div class="bg-white rounded-lg p-6 shadow-md">
+        <div class="flex items-center mb-4">
+          <a href="https://www.linkedin.com/in/roisinprendergast/" target="_blank" class="flex items-center">
+            <img src="/assets/img/testimonials/roisi-p.jpeg" alt="Roisi P" class="w-12 h-12 rounded-full mr-4 object-cover">
+            <div>
+              <div class="font-semibold">Roisi P</div>
+              <div class="text-sm text-brand-black/70">Product Leader</div>
             </div>
-          </div>
-          <div class="bg-brand-black/30 rounded p-4">
-            <code class="text-sm text-brand-light-blue">Complete system architecture + evaluation framework</code>
-          </div>
+          </a>
         </div>
+        <div class="flex text-yellow-500 mb-4 space-x-1">
+          <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+        </div>
+        <p class="text-brand-black italic">"If you're looking for someone to help build a great team, or you need someone experienced to help develop a sound tech strategy, I would thoroughly recommend Chris."</p>
       </div>
       
-      <div class="bg-brand-black/50 rounded-lg p-6 border border-brand-light-blue/20">
-        <div class="grid md:grid-cols-2 gap-6 items-center">
-          <div>
-            <h3 class="text-2xl font-heading font-bold mb-3 text-brand-light-blue">Kaijo Agent Framework</h3>
-            <p class="text-lg mb-4 text-white/80">Making AI functions reliable</p>
-            <div class="flex gap-4">
-              <a href="/kaijo" class="text-brand-light-blue hover:text-brand-turquoise underline">Announcement + weekly updates →</a>
+      <div class="bg-white rounded-lg p-6 shadow-md">
+        <div class="flex items-center mb-4">
+          <a href="https://www.linkedin.com/in/ian-osband/" target="_blank" class="flex items-center">
+            <img src="/assets/img/testimonials/ian-o.jpeg" alt="Ian O" class="w-12 h-12 rounded-full mr-4 object-cover">
+            <div>
+              <div class="font-semibold">Ian O</div>
+              <div class="text-sm text-brand-black/70">Data Science Leader</div>
             </div>
-          </div>
-          <div class="bg-brand-black/30 rounded p-4">
-            <code class="text-sm text-brand-light-blue">Open source framework for reliable AI agents</code>
-          </div>
+          </a>
         </div>
+        <div class="flex text-yellow-500 mb-4 space-x-1">
+          <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+        </div>
+        <p class="text-brand-black italic">"Chris has clearly learned a lot about the world of being a delivery-focused CTO"</p>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Proof Section -->
+<section class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-4 text-brand-black">I learn in public and share everything I discover:</h2>
+    
+    <div class="grid md:grid-cols-3 gap-8 mt-12">
+      <div class="bg-brand-white rounded-lg p-6 hover:shadow-lg transition-shadow border border-brand-light-blue/20">
+        <div class="text-4xl mb-4">📺</div>
+        <h3 class="text-xl font-heading font-bold mb-2">Webinars</h3>
+        <p class="text-2xl font-bold text-brand-deep-turquoise mb-2">Monthly on Thursdays 2pm</p>
+        <p class="text-brand-black/80 mb-4">Join me for deep-dives into exactly how to code and build with AI that works now</p>
+        <a href="/webinar" target="_blank" class="inline-block bg-brand-deep-turquoise text-white px-4 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">Join next session →</a>
+      </div>
+      
+      <div class="bg-brand-white rounded-lg p-6 hover:shadow-lg transition-shadow border border-brand-light-blue/20">
+        <div class="text-4xl mb-4">🎤</div>
+        <h3 class="text-xl font-heading font-bold mb-2">Next Speaking Event</h3>
+        <p class="text-2xl font-bold text-brand-deep-turquoise mb-2">Google Cloud Summit 2025: 9th July</p>
+        <p class="text-brand-black/80 mb-4">I'll be discussing how to build a robust LLM application and sharing a demo of quick workflow tools you can build</p>
+        <a href="https://cloudonair.withgoogle.com/events/london-summit-25/speakers" target="_blank" class="inline-block bg-brand-deep-turquoise text-white px-4 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">View session →</a>
+      </div>
+      
+      <div class="bg-brand-white rounded-lg p-6 hover:shadow-lg transition-shadow border border-brand-light-blue/20">
+        <div class="text-4xl mb-4">🏗️</div>
+        <h3 class="text-xl font-heading font-bold mb-2">Production AI Systems</h3>
+        <p class="text-2xl font-bold text-brand-deep-turquoise mb-2">Three evaluation frameworks built</p>
+        <p class="text-brand-black/80 mb-4">From Cherrypick's meal generator to complex internal tools, I build systems with robust evaluation from day one</p>
+        <a href="/case-studies/gpt-meal-generator" target="_blank" class="inline-block bg-brand-deep-turquoise text-white px-4 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">Read case study →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- Services Section -->
 <section id="services" class="py-20 bg-white">
@@ -138,7 +192,7 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
     <div class="grid md:grid-cols-3 gap-8 mb-12">
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
         <div class="text-3xl mb-4">💻</div>
-        <h3 class="text-2xl font-heading font-bold mb-4">PRACTICAL AI CODING</h3>
+        <h3 class="text-2xl font-heading font-bold mb-4">AI CODING TRAINING</h3>
         <p class="text-lg font-semibold mb-4 text-brand-black">Get your team a head start with AI coding</p>
         <p class="text-brand-black/80 leading-relaxed">
           Live, hands-on training sessions with real production code examples. Implementation support and mentoring with weekly group sessions to see immediate benefits. Perfect for teams who want to start building immediately.
@@ -164,7 +218,7 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
       </div>
     </div>
     
-    <!-- Single Contact Form -->
+    <!-- Contact Form -->
     <div class="max-w-2xl mx-auto">
       <div class="bg-brand-deep-turquoise rounded-lg p-8 text-center">
         <h3 class="text-2xl font-heading font-bold text-white mb-4">Ready to get started?</h3>
@@ -175,68 +229,30 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
   </div>
 </section>
 
-<!-- Testimonials Section -->
-<section class="py-20 bg-brand-white">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">What Leaders Say</h2>
-    
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-white rounded-lg p-6 shadow-md">
-        <div class="flex items-center mb-4">
-          <img src="/assets/img/testimonials/tadas-t.jpeg" alt="Tadas T" class="w-12 h-12 rounded-full mr-4 object-cover">
+<!-- TFC Case Study Section -->
+<section class="py-20 bg-brand-deep-turquoise">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="bg-white rounded-lg p-8">
+      <div class="flex items-center mb-4">
+        <a href="https://www.linkedin.com/in/tomfostercarter/" target="_blank" class="flex items-center">
+          <img src="/assets/img/testimonials/tfc.jpeg" alt="Tom Foster Carter" class="w-16 h-16 rounded-full mr-4 object-cover">
           <div>
-            <div class="font-semibold">Tadas T</div>
-            <div class="text-sm text-brand-black/70">CTO</div>
+            <div class="text-lg font-semibold text-brand-black">Tom Foster Carter</div>
+            <div class="text-sm text-brand-black/70">CEO, Cherrypick</div>
           </div>
-        </div>
-        <div class="flex text-yellow-500 mb-4">
-          <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-        </div>
-        <p class="text-brand-black italic">"Fantastic at building self-sufficient teams and giving them what they need."</p>
+        </a>
       </div>
-      
-      <div class="bg-white rounded-lg p-6 shadow-md">
-        <div class="flex items-center mb-4">
-          <img src="/assets/img/testimonials/roisi-p.jpeg" alt="Roisi P" class="w-12 h-12 rounded-full mr-4 object-cover">
-          <div>
-            <div class="font-semibold">Roisi P</div>
-            <div class="text-sm text-brand-black/70">Product Leader</div>
-          </div>
-        </div>
-        <div class="flex text-yellow-500 mb-4">
-          <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-        </div>
-        <p class="text-brand-black italic">"If you're looking for someone to help build a great team, or you need someone experienced to help develop a sound tech strategy, I would thoroughly recommend Chris."</p>
+      <div class="flex text-yellow-500 mb-4 space-x-1">
+        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
       </div>
-      
-      <div class="bg-white rounded-lg p-6 shadow-md">
-        <div class="flex items-center mb-4">
-          <img src="/assets/img/testimonials/ian-o.jpeg" alt="Ian O" class="w-12 h-12 rounded-full mr-4 object-cover">
-          <div>
-            <div class="font-semibold">Ian O</div>
-            <div class="text-sm text-brand-black/70">Data Science Leader</div>
-          </div>
-        </div>
-        <div class="flex text-yellow-500 mb-4">
-          <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-        </div>
-        <p class="text-brand-black italic">"Chris has clearly learned a lot about the world of being a delivery-focused CTO"</p>
-      </div>
+      <p class="text-brand-black italic mb-4">
+        "Chris helped us build a production LLM meal generator that achieved a 30% reduction in plan changes and 14% increase in basket usage. His expertise in AI systems allowed us to ship major new features including health scores while maintaining high quality delivery."
+      </p>
+      <a href="/case-studies/gpt-meal-generator" class="text-brand-deep-turquoise hover:text-brand-turquoise font-semibold">Read full case study →</a>
     </div>
   </div>
 </section>
 
-<!-- Final CTA Section -->
-<section class="py-20 bg-gradient-to-br from-brand-deep-turquoise to-brand-turquoise text-white">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl md:text-5xl font-heading font-bold mb-6">Stop Stressing About AI. Start Implementing It.</h2>
-    <p class="text-xl mb-8 text-white/90">Get practical insights delivered weekly</p>
-    
-    <div class="max-w-md mx-auto bg-brand-deep-turquoise rounded-lg p-6 border border-brand-turquoise">
-      <div class="rm-area-embed-subscribe"></div>
-    </div>
-  </div>
-</section>
 
 <!-- Latest Articles Section -->
 <section class="py-20 bg-white">
@@ -258,6 +274,18 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
     
     <div class="text-center">
       <a href="{{ site.baseurl }}/articles/" class="inline-block bg-brand-black text-white px-6 py-3 rounded-lg hover:bg-brand-black/80 transition-colors">View All Articles</a>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA Section -->
+<section class="py-20 bg-gradient-to-br from-brand-deep-turquoise to-brand-turquoise text-white">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl md:text-5xl font-heading font-bold mb-6">Stop Stressing About AI. Start Implementing It.</h2>
+    <p class="text-xl mb-8 text-white/90">Get practical insights delivered weekly</p>
+    
+    <div class="max-w-md mx-auto bg-brand-deep-turquoise rounded-lg p-6 border border-brand-turquoise">
+      <div class="rm-area-embed-subscribe"></div>
     </div>
   </div>
 </section>

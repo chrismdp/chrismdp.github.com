@@ -47,6 +47,38 @@ This is a GitHub Pages-compatible Jekyll blog using a Tailwind CSS theme. The si
 ### Writing Style System
 The project uses Cursor rules (`.cursor/rules/`) that define strict content guidelines:
 
+#### Writing Style Rules (from `style.mdc`)
+**Voice and Tone:**
+- Write in a direct, conversational style
+- Use first person when sharing personal experiences
+- Be confident but not arrogant
+- Challenge conventional wisdom
+- Keep a casual, approachable tone while maintaining expertise
+
+**Structure:**
+- Start with a clear, bold statement of the main argument
+- Follow with a brief explanation of why this matters
+
+**Content:**
+- Draw from personal experience and lessons learned
+- Acknowledge counterarguments but be bold with opinions
+- Focus on practical, actionable insights
+- Call out mistakes and what was learned from them
+
+**Format:**
+- Use bold text sparingly for emphasis
+- Break up long paragraphs
+- Use code blocks or quotes when relevant
+- Remove all dashes, endashes, emdashes and hyphens
+- Keep sections focused and concise
+
+**Language:**
+- Prefer active voice
+- NEVER use contractions
+- Avoid jargon unless necessary
+- Define technical terms when used
+- Keep sentences crisp and direct
+
 #### Blog Post Template (from `blog-posts.mdc`)
 ```markdown
 ---

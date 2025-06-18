@@ -54,7 +54,7 @@ Beyond the meal generator itself, we shipped major additional features including
   <div class="max-w-4xl mx-auto px-6">
     <div class="bg-white rounded-lg p-8">
       <div class="flex items-center mb-4">
-        <a href="https://www.linkedin.com/in/tomfostercarter/" target="_blank" class="flex items-center">
+        <a href="https://www.linkedin.com/in/tomfostercarter/" target="_blank" style='text-decoration: none' class="flex items-center">
           <img src="/assets/img/testimonials/tfc.jpeg" alt="Tom Foster Carter" class="w-16 h-16 rounded-full mr-4 object-cover">
           <div>
             <div class="text-lg font-semibold text-brand-black">Tom Foster Carter</div>
