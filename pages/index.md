@@ -29,6 +29,21 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
   </div>
 </section>
 
+<!-- Why Subscribe Section -->
+<section class="py-20 bg-brand-white">
+  <div class="w-full">
+    <div class="text-center mb-12 px-6">
+      <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6 text-brand-black">As well as my weekly email...</h2>
+      <p class="text-xl text-brand-black/80 mb-8">If you subscribe, you get access to all of the cheat sheets, guides, and carousels that I've posted so far and in the future.</p>
+    </div>
+    
+    <!-- Carousel image at the bottom -->
+    <div class="w-full">
+      <img src="/assets/img/ai-resources-carousel.png" alt="AI cheat sheets, guides, and carousels" class="w-full">
+    </div>
+  </div>
+</section>
+
 <!-- Proof Section -->
 <section class="py-20 bg-white">
   <div class="max-w-6xl mx-auto px-6">
