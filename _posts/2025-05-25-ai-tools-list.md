@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Huge List of AI Tools: What's Actually Worth Using in May 2025?"
+title: "The Huge List of AI Tools: What's Actually Worth Using in June 2025?"
 date: 2025-06-05 00:00:00 +0000
 hide_newsletter: true
 categories:
@@ -13,7 +13,7 @@ categories:
 
 There are way too many AI tools out there now. Every week brings another dozen "revolutionary" AI products promising to transform how you work. It's overwhelming trying to figure out what's actually useful versus what's just hype.
 
-**So I've put together this major comparison of all the major AI tools as of May 2025.** No fluff, no marketing speak - just a straightforward look at what each tool actually does and who it's best for. Whether you're looking for coding help, content creation, or just want to chat with an AI, this should help you cut through the noise and find what you need.
+**So I've put together this major comparison of all the major AI tools as of June 2025.** No fluff, no marketing speak - just a straightforward look at what each tool actually does and who it's best for. Whether you're looking for coding help, content creation, or just want to chat with an AI, this should help you cut through the noise and find what you need.
 
 <!--more-->
 
@@ -69,11 +69,11 @@ While each major AI model offers unique strengths, I've found Claude Sonnet 4 to
 
 ## Coding
 
-When it comes to coding assistance, [Cursor](https://cursor.sh){:target="_blank"} remains my top recommendation for a comprehensive solution. Emerging tools like Google's [Jules](https://jules.google.com){:target="_blank"} are promising, yet AI coding agents are still maturing towards full reliability. The decision between CLI and IDE-integrated tools often boils down to individual workflow preferences. While cloud-based builders offer fantastic speed for prototyping, I prefer Cursor's robust environment for production-level development. Claude's coding capabilities are now part of their Pro subscription - while still feeling somewhat limited compared to dedicated coding tools, it's a significant improvement over the previous pay-as-you-go model. For more on my experiences and best practices for coding with AI, see my post on [Coding with AI](/coding-with-ai/). To explore how AI is reshaping software quality and craftsmanship, read [AI: The New Dawn of Software Craft](/ai-new-dawn-of-software-craft/).
+When it comes to coding assistance, [Cursor](https://cursor.sh){:target="_blank"} remains excellent for close attention to edits and manual tweaks of sections, while [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview){:target="_blank"} with Opus provides a more hands-off approach that is slightly better (though more expensive at £75/month). Emerging tools like Google's [Jules](https://jules.google.com){:target="_blank"} are promising, yet AI coding agents are still maturing towards full reliability. The decision between CLI and IDE-integrated tools often boils down to individual workflow preferences. While cloud-based builders offer fantastic speed for prototyping, I prefer more control for production-level development. For more on my experiences and best practices for coding with AI, see my post on [Coding with AI](/coding-with-ai/). To explore how AI is reshaping software quality and craftsmanship, read [AI: The New Dawn of Software Craft](/ai-new-dawn-of-software-craft/).
 
 | **Capability** | **[Google](https://ai.google){:target="_blank"}** | **[OpenAI](https://openai.com){:target="_blank"}** | **[Anthropic](https://anthropic.com){:target="_blank"}** | **Other Alternatives** |
 | **IDE Code Assistance**<br>Collaborative coding workspace | [Canvas in Gemini](https://gemini.google.com/advanced){:target="_blank"}<br>Code editing, debugging<br>💰| [Windsurf](https://www.cnbc.com/2025/04/16/openai-in-talks-to-pay-about-3-billion-to-acquire-startup-windsurf.html){:target="_blank"}<br>Acquired in May 2025<br>💰| - | [GitHub Copilot](https://github.com/features/copilot){:target="_blank"}, [Cursor](https://cursor.sh){:target="_blank"}, [Augment](https://augmentcode.com){:target="_blank"} |
-| **CLI Code Assistant**<br>Terminal-based coding help | - | [Codex CLI](https://openai.com/codex/){:target="_blank"}<br>Cloud and CLI tools<br>💰 API only| [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview){:target="_blank"}<br>Terminal-based code assistant<br>💰|[Cursor](https://cursor.sh){:target="_blank"}, [aider](https://github.com/paul-gauthier/aider){:target="_blank"} |
+| **CLI Code Assistant**<br>Terminal-based coding help | - | [Codex CLI](https://openai.com/codex/){:target="_blank"}<br>Cloud and CLI tools<br>💰 API only| [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview){:target="_blank"}<br>Terminal-based code assistant. Pro plan recommended at £75/month for Opus access - expensive but provides more nuanced understanding of ambiguity. Complex changes still need evaluation.<br>💰|[Cursor](https://cursor.sh){:target="_blank"}, [aider](https://github.com/paul-gauthier/aider){:target="_blank"} |
 | **Coding Agents**<br>*Autonomous coding assistance* | [Jules](https://jules.google.com){:target="_blank"}<br>Code generation, debugging<br>Free Prototype (5 tasks a day) | [Codex](https://openai.com/codex/){:target="_blank"}<br>Cloud and CLI tools<br>💰💰💰 Pro only, Plus soon| - | [Github Copilot Agent](https://docs.github.com/en/enterprise-cloud@latest/copilot/using-github-copilot/coding-agent/about-assigning-tasks-to-copilot){:target="_blank"}<br>💰 Pro+ only<br>[All Hands](https://all-hands.dev){:target="_blank"} |
 | **Cloud Builders**<br>*AI-powered app development* | - | - | - | [Replit](https://replit.com){:target="_blank"}, [Lovable](https://lovable.ai){:target="_blank"}, [Bolt](https://bolt.so){:target="_blank"}, [V0](https://v0.dev){:target="_blank"}, [Databutton](https://databutton.com){:target="_blank"} |
 
