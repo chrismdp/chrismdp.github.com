@@ -1,11 +1,15 @@
 ---
-layout: page
+layout: post
 title: "Case Study: GPT Meal Generator"
+date: 2024-06-01 00:00:00 +0000
 permalink: /case-studies/gpt-meal-generator
 excerpt: "How we built a production LLM system that reduced plan changes by 30% and increased basket usage by 14%"
+image: /assets/img/meal-generator.jpg
+image_portrait: true
+categories:
+- ai
+- case-studies
 ---
-
-<img src="/assets/img/meal-generator.jpg" alt="Meal Generator" class="float-right rounded-lg ml-6 mb-6 w-1/2 max-w-md"/>
 
 ## The Challenge
 
@@ -14,6 +18,8 @@ Cherrypick had operated a basic meal generator since early 2023. Customers could
 Customer feedback was clear: they wanted more personalisation and explanations for why certain recipes were chosen. The existing system felt rigid and opaque, leading to frequent plan changes and lower engagement with the generated meal plans.
 
 This presented a perfect opportunity to explore how LLMs could add genuine value beyond the typical chatbot implementations flooding the market.
+
+<!--more-->
 
 ## The Solution
 
@@ -50,25 +56,13 @@ Beyond the meal generator itself, we shipped major additional features including
 <div style="clear: both;"></div>
 
 <!-- TFC Testimonial Section -->
+{% comment %}
 <section class="py-20 bg-brand-deep-turquoise">
   <div class="max-w-4xl mx-auto px-6">
-    <div class="bg-white rounded-lg p-8">
-      <div class="flex items-center mb-4">
-        <a href="https://www.linkedin.com/in/tomfostercarter/" target="_blank" style='text-decoration: none' class="flex items-center">
-          <img src="/assets/img/testimonials/tfc.jpeg" alt="Tom Foster Carter" class="w-16 h-16 rounded-full mr-4 object-cover">
-          <div>
-            <div class="text-lg font-semibold text-brand-black">Tom Foster Carter</div>
-            <div class="text-sm text-brand-black/70">CEO, Cherrypick</div>
-          </div>
-        </a>
-      </div>
-      {% include five-star.html %}
-      <p class="text-brand-black italic mb-4">
-        "Chris helped us build a production LLM meal generator that achieved a 30% reduction in plan changes and 14% increase in basket usage. His expertise in AI systems allowed us to ship major new features including health scores while maintaining high quality delivery."
-      </p>
-    </div>
+    {% include testimonial-tfc.html %}
   </div>
 </section>
+{% endcomment %}
 
 ## Key Learnings
 

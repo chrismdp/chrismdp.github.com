@@ -63,30 +63,47 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
         
         <div class="grid grid-cols-2 gap-4 mb-6">
           <div class="text-center p-4 bg-brand-white rounded-lg border border-brand-light-blue/20">
-            <div class="text-2xl font-bold text-brand-deep-turquoise">20+</div>
-            <div class="text-sm text-brand-black/70">Years Technical Leadership</div>
+            <div class="text-2xl font-bold text-brand-deep-turquoise">5</div>
+            <div class="text-sm text-brand-black/70">Startups Founded</div>
           </div>
           <div class="text-center p-4 bg-brand-white rounded-lg border border-brand-light-blue/20">
-            <div class="text-2xl font-bold text-brand-deep-turquoise">500K+</div>
-            <div class="text-sm text-brand-black/70">Users on AI Systems Built</div>
+            <div class="text-2xl font-bold text-brand-deep-turquoise">2</div>
+            <div class="text-sm text-brand-black/70">Startups VC-backed</div>
+          </div>
+          <div class="text-center p-4 bg-brand-white rounded-lg border border-brand-light-blue/20">
+            <div class="text-2xl font-bold text-brand-deep-turquoise">$1M+</div>
+            <div class="text-sm text-brand-black/70">ARR Bootstrapped</div>
+          </div>
+          <div class="text-center p-4 bg-brand-white rounded-lg border border-brand-light-blue/20">
+            <div class="text-2xl font-bold text-brand-deep-turquoise">4</div>
+            <div class="text-sm text-brand-black/70">AI Systems Shipped to Production</div>
           </div>
         </div>
       </div>
       
       <div class="space-y-6">
         <div class="bg-brand-black/5 rounded-lg p-6">
-          <h3 class="text-xl font-heading font-bold mb-3 text-brand-black">Technical Founder</h3>
-          <p class="text-brand-black/80">Built and scaled technical teams, shipped production systems, understand the full stack from code to business impact.</p>
+          <h3 class="text-xl font-heading font-bold mb-3 text-brand-black flex items-center">
+            <i data-lucide="rocket" class="w-6 h-6 mr-3 text-brand-deep-turquoise"></i>
+            Technical Founder
+          </h3>
+          <p class="text-brand-black/80">Scaled teams from 5 to 50. Built and exited startups. VC-backed and bootstrapped experience.</p>
         </div>
         
         <div class="bg-brand-black/5 rounded-lg p-6">
-          <h3 class="text-xl font-heading font-bold mb-3 text-brand-black">AI Systems Expert</h3>
-          <p class="text-brand-black/80">Production AI systems with full evaluation frameworks, not demos. Real systems serving real users at scale.</p>
+          <h3 class="text-xl font-heading font-bold mb-3 text-brand-black flex items-center">
+            <i data-lucide="bot" class="w-6 h-6 mr-3 text-brand-deep-turquoise"></i>
+            AI Systems Expert
+          </h3>
+          <p class="text-brand-black/80">Production AI systems with full evaluation frameworks, not demos. Real systems serving 500K+ users.</p>
         </div>
         
         <div class="bg-brand-black/5 rounded-lg p-6">
-          <h3 class="text-xl font-heading font-bold mb-3 text-brand-black">High-Impact Results</h3>
-          <p class="text-brand-black/80">Go into organisations, assess quickly, identify opportunities, and deliver value fast. Built for technical leaders who need results.</p>
+          <h3 class="text-xl font-heading font-bold mb-3 text-brand-black flex items-center">
+            <i data-lucide="zap" class="w-6 h-6 mr-3 text-brand-deep-turquoise"></i>
+            High-Impact Results
+          </h3>
+          <p class="text-brand-black/80">20+ years technical leadership. Go into organisations and deliver value fast. Built for leaders who need results.</p>
         </div>
       </div>
     </div>
@@ -151,15 +168,15 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
     
     <div class="grid md:grid-cols-3 gap-8 mt-12">
       <div class="bg-brand-white rounded-lg p-6 hover:shadow-lg transition-shadow border border-brand-light-blue/20">
-        <div class="text-4xl mb-4">📺</div>
+        <i data-lucide="video" class="w-10 h-10 mb-4 text-brand-deep-turquoise"></i>
         <h3 class="text-xl font-heading font-bold mb-2">Webinars</h3>
         <p class="text-2xl font-bold text-brand-deep-turquoise mb-2">Monthly on Thursdays 2pm</p>
         <p class="text-brand-black/80 mb-4">Join me for deep-dives into exactly how to code and build with AI that works now</p>
-        <a href="/webinar" target="_blank" class="inline-block bg-brand-deep-turquoise text-white px-4 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">Join next session →</a>
+        <a href="/webinar" target="_blank" class="inline-block bg-brand-deep-turquoise text-white px-4 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">Reserve your place →</a>
       </div>
       
       <div class="bg-brand-white rounded-lg p-6 hover:shadow-lg transition-shadow border border-brand-light-blue/20">
-        <div class="text-4xl mb-4">🎤</div>
+        <i data-lucide="mic" class="w-10 h-10 mb-4 text-brand-deep-turquoise"></i>
         <h3 class="text-xl font-heading font-bold mb-2">Next Speaking Event</h3>
         <p class="text-2xl font-bold text-brand-deep-turquoise mb-2">Google Cloud Summit 2025: 9th July</p>
         <p class="text-brand-black/80 mb-4">I'll be discussing how to build a robust LLM application and sharing a demo of quick workflow tools you can build</p>
@@ -167,7 +184,7 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
       </div>
       
       <div class="bg-brand-white rounded-lg p-6 hover:shadow-lg transition-shadow border border-brand-light-blue/20">
-        <div class="text-4xl mb-4">🏗️</div>
+        <i data-lucide="monitor-play" class="w-10 h-10 mb-4 text-brand-deep-turquoise"></i>
         <h3 class="text-xl font-heading font-bold mb-2">Production AI Systems</h3>
         <p class="text-2xl font-bold text-brand-deep-turquoise mb-2">Three evaluation frameworks built</p>
         <p class="text-brand-black/80 mb-4">From Cherrypick's meal generator to complex internal tools, I build systems with robust evaluation from day one</p>
@@ -185,7 +202,7 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
     
     <div class="grid md:grid-cols-3 gap-8 mb-12">
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
-        <div class="text-3xl mb-4">💻</div>
+        <i data-lucide="code-2" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
         <h3 class="text-2xl font-heading font-bold mb-4">AI CODING TRAINING</h3>
         <p class="text-lg font-semibold mb-4 text-brand-black">Get your team a head start with AI coding</p>
         <p class="text-brand-black/80 leading-relaxed">
@@ -194,7 +211,7 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
       </div>
       
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
-        <div class="text-3xl mb-4">🔍</div>
+        <i data-lucide="search" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
         <h3 class="text-2xl font-heading font-bold mb-4">AI SYSTEMS AUDIT</h3>
         <p class="text-lg font-semibold mb-4 text-brand-black">How can you improve your operations to take maximum advantage of AI?</p>
         <p class="text-brand-black/80 leading-relaxed">
@@ -203,7 +220,7 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
       </div>
       
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
-        <div class="text-3xl mb-4">🧩</div>
+        <i data-lucide="network" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
         <h3 class="text-2xl font-heading font-bold mb-4">CUSTOM AI SYSTEMS</h3>
         <p class="text-lg font-semibold mb-4 text-brand-black">Build complex internal tools for massive productivity improvements</p>
         <p class="text-brand-black/80 leading-relaxed">
@@ -224,26 +241,13 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
 </section>
 
 <!-- TFC Case Study Section -->
+{% comment %}
 <section class="py-20 bg-brand-deep-turquoise">
   <div class="max-w-4xl mx-auto px-6">
-    <div class="bg-white rounded-lg p-8">
-      <div class="flex items-center mb-4">
-        <a href="https://www.linkedin.com/in/tomfostercarter/" target="_blank" style="text-decoration: none;" class="flex items-center">
-          <img src="/assets/img/testimonials/tfc.jpeg" alt="Tom Foster Carter" class="w-16 h-16 rounded-full mr-4 object-cover">
-          <div>
-            <div class="text-lg font-semibold text-brand-black">Tom Foster Carter</div>
-            <div class="text-sm text-brand-black/70">CEO, Cherrypick</div>
-          </div>
-        </a>
-      </div>
-      {% include five-star.html %}
-      <p class="text-brand-black italic mb-4">
-        "Chris helped us build a production LLM meal generator that achieved a 30% reduction in plan changes and 14% increase in basket usage. His expertise in AI systems allowed us to ship major new features including health scores while maintaining high quality delivery."
-      </p>
-      <a href="/case-studies/gpt-meal-generator" class="text-brand-deep-turquoise hover:text-brand-turquoise font-semibold">Read full case study →</a>
-    </div>
+    {% include testimonial-tfc.html %}
   </div>
 </section>
+{% endcomment %}
 
 
 <!-- Latest Articles Section -->
@@ -272,9 +276,9 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
 
 <!-- Final CTA Section -->
 <section class="py-20 bg-gradient-to-br from-brand-deep-turquoise to-brand-turquoise text-white">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl md:text-5xl font-heading font-bold mb-6">Stop Stressing About AI. Start Implementing It.</h2>
-    <p class="text-xl mb-8 text-white/90">Get practical insights delivered weekly</p>
+  <div class="max-w-4xl mx-auto text-center px-6">
+    <h2 class="text-4xl md:text-6xl font-heading font-bold mb-6 text-white">Stop Stressing About AI. Start Implementing It.</h2>
+    <p class="text-2xl mb-8 text-white">Get practical insights delivered weekly</p>
     
     <div class="max-w-md mx-auto bg-brand-deep-turquoise rounded-lg p-6 border border-brand-turquoise">
       <div class="rm-area-embed-subscribe"></div>

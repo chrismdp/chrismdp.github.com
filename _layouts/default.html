@@ -9,6 +9,9 @@
    
    <!-- Tailwind CDN -->
    <script src="https://cdn.tailwindcss.com"></script>
+   
+   <!-- Lucide Icons -->
+   <script src="https://unpkg.com/lucide@latest"></script>
    <script>
       tailwind.config = {
          theme: {
@@ -181,7 +184,8 @@
           margin-bottom: 1.5rem;
       }
       
-      .max-w-4xl h2 {
+      .post-content h2,
+      article h2 {
           font-family: 'DM Sans', sans-serif;
           color: #333333;
           font-weight: bold;
@@ -191,7 +195,8 @@
           margin-bottom: 1.5rem;
       }
       
-      .max-w-4xl h3 {
+      .post-content h3,
+      article h3 {
           font-family: 'DM Sans', sans-serif;
           color: #333333;
           font-weight: bold;
@@ -201,9 +206,12 @@
           margin-bottom: 1rem;
       }
       
-      .max-w-4xl h4,
-      .max-w-4xl h5,
-      .max-w-4xl h6 {
+      .post-content h4,
+      .post-content h5,
+      .post-content h6,
+      article h4,
+      article h5,
+      article h6 {
           font-family: 'DM Sans', sans-serif;
           color: #333333;
           font-weight: bold;
@@ -211,64 +219,77 @@
           margin-bottom: 1rem;
       }
       
-      .max-w-4xl p {
+      .post-content p,
+      article p {
           color: #333333;
           margin-bottom: 1.5rem;
           line-height: 1.7;
       }
       
-      .max-w-4xl li {
+      .post-content li,
+      article li {
           color: #333333;
           margin-bottom: 0.5rem;
       }
       
-      .max-w-4xl ul,
-      .max-w-4xl ol {
+      .post-content ul,
+      .post-content ol,
+      article ul,
+      article ol {
           margin-bottom: 1.5rem;
           padding-left: 1.5rem;
       }
       
-      .max-w-4xl ul {
+      .post-content ul,
+      article ul {
           list-style-type: disc;
       }
       
-      .max-w-4xl ol {
+      .post-content ol,
+      article ol {
           list-style-type: decimal;
       }
       
-      .max-w-4xl ul ul {
+      .post-content ul ul,
+      article ul ul {
           list-style-type: circle;
           margin-top: 0.5rem;
       }
       
-      .max-w-4xl ul ul ul {
+      .post-content ul ul ul,
+      article ul ul ul {
           list-style-type: square;
       }
       
-      .max-w-4xl p a {
+      .post-content p a,
+      article p a {
           color: #0292b7;
           text-decoration: underline;
       }
       
-      .max-w-4xl p a:hover {
+      .post-content p a:hover,
+      article p a:hover {
           color: #1ac8db;
       }
       
-      .max-w-4xl blockquote {
+      .post-content blockquote,
+      article blockquote {
           border-left: 4px solid #1ac8db;
           background-color: #f9fafd;
           padding: 1rem;
           margin: 1.5rem 0;
       }
       
-      .max-w-4xl code {
+      .post-content code,
+      article code {
           background-color: #f9fafd;
           padding: 0.25rem 0.5rem;
           border-radius: 0.25rem;
           font-size: 0.875em;
       }
       
-      .max-w-4xl pre {
+      .post-content pre,
+      article pre {
           background-color: #333333;
           color: white;
           padding: 1rem;
@@ -276,12 +297,14 @@
           overflow-x: auto;
       }
       
-      .max-w-4xl pre code {
+      .post-content pre code,
+      article pre code {
           background-color: transparent;
           padding: 0;
       }
       
-      .max-w-4xl strong {
+      .post-content strong,
+      article strong {
           font-weight: bold;
       }
       
@@ -377,6 +400,13 @@
             </div>
          </div>
       </footer>
+      
+      <!-- Initialize Lucide Icons -->
+      <script>
+         document.addEventListener('DOMContentLoaded', function() {
+            lucide.createIcons();
+         });
+      </script>
       
       <!-- RightMessage -->
       <script type="text/javascript"> 

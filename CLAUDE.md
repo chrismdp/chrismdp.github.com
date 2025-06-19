@@ -35,14 +35,17 @@ This is a GitHub Pages-compatible Jekyll blog using a Tailwind CSS theme. The si
 ### Key Layout Components
 - `_layouts/default.html` - Base template with Tailwind config and custom brand colors
 - `_layouts/post.html` - Post template with newsletter integration and social sharing
+- `_layouts/page.html` - Simple page template with title and content
 - `_includes/ai-newsletter-short.html` - Newsletter signup component
-- Custom Tailwind config with brand colors: `brand-white`, `brand-turquoise`, `brand-deep-turquoise`, `brand-light-blue`, `brand-black`
+- Custom Tailwind config with brand colors: `brand-white`, `brand-turquoise`, `brand-deep-turquoise`, `brand-light-blue`, `brand-black`, `brand-orange`
 
 ### Content Architecture
 - **Posts** (`_posts/`) - Blog articles with date-based naming: `YYYY-MM-DD-title.md`
 - **Newsletters** (`_newsletters/`) - Newsletter content collection
 - **Pages** (`pages/`) - Static pages like services, archive, search
+  - Articles page uses markdown formatting - avoid HTML, let page layout handle styling
 - **Research** (`_research/`) - Internal research documents
+- **Case Studies** (`case-studies/`) - Use `post` layout for proper formatting like blog articles
 
 ### Writing Style System
 The project uses Cursor rules (`.cursor/rules/`) that define strict content guidelines:
@@ -123,6 +126,14 @@ The project uses Jekyll includes for commonly repeated elements:
   - Usage: `{% include five-star.html %}` 
   - Always use this instead of emoji stars or inline SVG for testimonials and reviews
   - Maintains consistent styling and color (`brand-orange: #fc8745`) across the site
+- `_includes/testimonial-tfc.html` - Tom Foster Carter testimonial component (currently commented out)
+
+### Icons
+- **Use Lucide icons** (lucide.dev) for all icons throughout the site
+- Never use emojis for UI elements, navigation, or decoration
+- Lucide icons should be inline SVG with appropriate sizing and brand colors
+- Standard icon size: 24x24 for inline, 32x32 for section headers, 40x40 for feature cards
+- Apply `text-brand-deep-turquoise` class for colored icons
 
 ## Configuration
 - Site config in `_config.yml` - includes social media links, author info, and Jekyll settings
