@@ -204,7 +204,7 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
         <i data-lucide="code-2" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
         <h3 class="text-2xl font-heading font-bold mb-4">AI CODING TRAINING</h3>
-        <p class="text-lg font-semibold mb-4 text-brand-black">Get your team a head start with AI coding</p>
+        <p class="text-lg font-semibold mb-4 text-brand-black">Get your dev team AI ready in 90 days</p>
         <p class="text-brand-black/80 leading-relaxed">
           Live, hands-on training sessions with real production code examples. Implementation support and mentoring with weekly group sessions to see immediate benefits. Perfect for teams who want to start building immediately.
         </p>
