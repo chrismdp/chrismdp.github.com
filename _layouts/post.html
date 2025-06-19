@@ -139,7 +139,9 @@ layout: default
   {% endif %}
 
   <!-- Second newsletter signup -->
+  {% unless page.categories contains 'case-studies' %}
   <div class="mt-12">
     {% include ai-newsletter-short.html %}
   </div>
+  {% endunless %}
 </article>

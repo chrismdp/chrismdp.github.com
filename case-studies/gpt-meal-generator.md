@@ -56,13 +56,11 @@ Beyond the meal generator itself, we shipped major additional features including
 <div style="clear: both;"></div>
 
 <!-- TFC Testimonial Section -->
-{% comment %}
 <section class="py-20 bg-brand-deep-turquoise">
   <div class="max-w-4xl mx-auto px-6">
     {% include testimonial-tfc.html %}
   </div>
 </section>
-{% endcomment %}
 
 ## Key Learnings
 

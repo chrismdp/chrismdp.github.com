@@ -118,7 +118,7 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
     <div class="grid md:grid-cols-3 gap-8">
       <div class="bg-white rounded-lg p-6 shadow-md">
         <div class="flex items-center mb-4">
-          <a href="https://www.linkedin.com/in/tadastelksnys/" target="_blank" class="flex items-center">
+          <a href="https://www.linkedin.com/in/tamosauskas/" target="_blank" class="flex items-center">
             <img src="/assets/img/testimonials/tadas-t.jpeg" alt="Tadas T" class="w-12 h-12 rounded-full mr-4 object-cover">
             <div>
               <div class="font-semibold">Tadas T</div>
@@ -132,7 +132,7 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
       
       <div class="bg-white rounded-lg p-6 shadow-md">
         <div class="flex items-center mb-4">
-          <a href="https://www.linkedin.com/in/roisinprendergast/" target="_blank" class="flex items-center">
+          <a href="https://www.linkedin.com/in/roisiproven/" target="_blank" class="flex items-center">
             <img src="/assets/img/testimonials/roisi-p.jpeg" alt="Roisi P" class="w-12 h-12 rounded-full mr-4 object-cover">
             <div>
               <div class="font-semibold">Roisi P</div>
@@ -146,7 +146,7 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
       
       <div class="bg-white rounded-lg p-6 shadow-md">
         <div class="flex items-center mb-4">
-          <a href="https://www.linkedin.com/in/ian-osband/" target="_blank" class="flex items-center">
+          <a href="https://www.linkedin.com/in/ianozsvald/" target="_blank" class="flex items-center">
             <img src="/assets/img/testimonials/ian-o.jpeg" alt="Ian O" class="w-12 h-12 rounded-full mr-4 object-cover">
             <div>
               <div class="font-semibold">Ian O</div>
@@ -241,13 +241,11 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
 </section>
 
 <!-- TFC Case Study Section -->
-{% comment %}
 <section class="py-20 bg-brand-deep-turquoise">
   <div class="max-w-4xl mx-auto px-6">
     {% include testimonial-tfc.html %}
   </div>
 </section>
-{% endcomment %}
 
 
 <!-- Latest Articles Section -->

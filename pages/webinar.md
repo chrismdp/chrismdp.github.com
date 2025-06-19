@@ -32,8 +32,6 @@ excerpt: "Learn how to add major features to your application 3x faster with AI-
   </p>
 
   <div class="bg-brand-deep-turquoise rounded-lg p-8 text-center mb-12">
-    <h3 class="text-2xl font-heading font-bold text-white mb-4">Register for the next session</h3>
-    <p class="text-white/90 mb-6">Get a Google Meet link and calendar invite</p>
     <div class="rm-area-embed-webinar"></div>
   </div>
 </div>
