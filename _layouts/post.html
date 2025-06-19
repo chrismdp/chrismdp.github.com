@@ -44,9 +44,11 @@ layout: default
   </div>
 
   <!-- Newsletter signup -->
+  {% unless page.categories contains 'case-studies' %}
   <div class="my-12">
     {% include ai-newsletter-short.html %}
   </div>
+  {% endunless %}
 
   <!-- Sol Trader widget for relevant posts -->
   {% if page.categories contains "sol trader" %}
@@ -139,9 +141,7 @@ layout: default
   {% endif %}
 
   <!-- Second newsletter signup -->
-  {% unless page.categories contains 'case-studies' %}
   <div class="mt-12">
     {% include ai-newsletter-short.html %}
   </div>
-  {% endunless %}
 </article>
