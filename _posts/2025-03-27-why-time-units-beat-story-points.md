@@ -2,6 +2,7 @@
 layout: post
 title: "Why Time Units Beat Story Points Every Time"
 date: 2025-03-27 10:00:00 +00:00
+image: /assets/img/time-units.png
 categories:
 - estimation
 - cto
@@ -14,8 +15,6 @@ categories:
 Story points, t-shirt sizes, and fibonacci numbers. We have created an entire vocabulary to avoid saying what we actually mean. The truth is simpler: we should just use time units.
 
 This realisation emerged from years of watching teams struggle with abstract estimation systems. The solution was right in front of us all along.
-
-![Why time units beat story points](/assets/img/time-units.png)
 
 <!--more-->
 

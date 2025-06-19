@@ -2,6 +2,8 @@
 layout: post
 title: "How to Build a Robust LLM Application"
 date: 2024-12-13 08:00:00 +0000
+image: /assets/img/meal-generator.jpg
+image_portrait: true
 categories:
 - ai
 - engineering
@@ -12,8 +14,6 @@ categories:
 - cherrypick
 - craftsmanship
 ---
-
-<img src="/assets/img/meal-generator.jpg" alt="Meal Generator" style='float:right; border-radius: 12px; margin:24px 0 24px 24px; width:50%'/>
 
 Last month at [Cherrypick](https://cherrypick.co) we launched a brand new meal generator that uses LLMs to create personalized meal plans.
 

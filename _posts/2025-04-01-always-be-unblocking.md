@@ -2,6 +2,7 @@
 layout: post
 title: "Always Be Unblocking"
 date: 2025-04-01 09:00:00 +0000
+image: /assets/img/always-be-unblocking.jpeg
 categories:
 - cto
 - leadership
@@ -13,8 +14,6 @@ categories:
 The most impactful engineers I know do not just write code. They remove obstacles for others.
 
 Your impact is not measured by the code you write. It is measured by how much faster your entire team moves because of you. At Cherrypick, we call this "always be unblocking" and it has become one of our core values.
-
-![Always be unblocking](/assets/img/always-be-unblocking.jpeg)
 
 <!--more-->
 
