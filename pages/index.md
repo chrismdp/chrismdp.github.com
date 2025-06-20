@@ -1,21 +1,21 @@
 ---
 layout: default
-title: "AI That Actually Works, Right Now"
+title: "Deploy AI That Drives Real Growth"
 permalink: /
-excerpt: "Stop stressing about AI possibilities. Start implementing what works today."
+excerpt: "I help tech leaders cut through AI hype to deliver features users love and development velocity that transforms your business."
 ---
 
 <!-- Hero Section -->
-<section class="relative bg-gradient-to-br from-brand-deep-turquoise to-brand-turquoise text-white py-20 overflow-hidden">
-  <!-- Background Image -->
+<section class="relative bg-gradient-to-br from-brand-deep-turquoise to-brand-turquoise text-white py-20 pb-0 md:pb-20 overflow-hidden">
+  <!-- Background Image - Desktop only -->
   <div class="hidden md:block absolute bottom-0 right-0 w-full h-2/3 overflow-hidden">
     <img src="/assets/img/chris-hero-bg.png" alt="Chris Parsons" class="absolute bottom-0 right-0 h-full w-auto object-cover object-bottom">
   </div>
   
   <div class="w-full px-6 relative z-10">
     <div class="text-center mb-12">
-      <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight">AI That Actually Works, Right Now</h1>
-      <p class="text-xl md:text-2xl mb-8 text-white/90">Stop stressing about AI possibilities. Start implementing what works today.</p>
+      <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight">Deploy AI That Drives Real Growth</h1>
+      <p class="text-xl md:text-2xl mb-8 text-white/90">I help tech leaders cut through hype to deliver AI features users love and development speed to transform business outcomes.</p>
     </div>
     
     <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -28,6 +28,11 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
         <!-- This div maintains the grid layout but the image is now in the background -->
       </div>
     </div>
+    
+    <!-- Mobile Image - Show below form on mobile -->
+    <div class="md:hidden -mx-6 flex justify-end">
+      <img src="/assets/img/chris-hero-bg.png" alt="Chris Parsons" class="w-1/2 h-auto object-contain">
+    </div>
   </div>
 </section>
 
@@ -36,7 +41,7 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
   <div class="w-full">
     <div class="text-center mb-12 px-6">
       <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6 text-brand-black">Subscribe to gain access to all my AI guides</h2>
-      <p class="text-xl text-brand-black/80 mb-8">If you subscribe, you get access to all of the cheat sheets, guides, and carousels that I've posted so far and in the future.</p>
+      <p class="text-xl text-brand-black/80 mb-8">Join tech leaders who are using AI to code faster and ship features that matter. Get my battle-tested guides for AI-powered development and building AI products users actually use.</p>
     </div>
     
     <!-- Carousel image at the bottom -->
@@ -198,7 +203,7 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
 <!-- Services Section -->
 <section id="services" class="py-20 bg-white">
   <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">How I Can Help Your Team</h2>
+    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">Deploy AI for Real Business Impact</h2>
     
     <div class="grid md:grid-cols-3 gap-8 mb-12">
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
@@ -233,7 +238,7 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
     <div class="max-w-2xl mx-auto">
       <div class="bg-brand-deep-turquoise rounded-lg p-8 text-center">
         <h3 class="text-2xl font-heading font-bold text-white mb-4">Ready to get started?</h3>
-        <p class="text-white/90 mb-6">Let's discuss how I can help your team implement AI that actually works.</p>
+        <p class="text-white/90 mb-6">Let's discuss how you can deploy AI that accelerates development and delights users.</p>
         <div class="rm-area-embed-services"></div>
       </div>
     </div>
@@ -275,8 +280,8 @@ excerpt: "Stop stressing about AI possibilities. Start implementing what works t
 <!-- Final CTA Section -->
 <section class="py-20 bg-gradient-to-br from-brand-deep-turquoise to-brand-turquoise text-white">
   <div class="max-w-4xl mx-auto text-center px-6">
-    <h2 class="text-4xl md:text-6xl font-heading font-bold mb-6 text-white">Stop Stressing About AI. Start Implementing It.</h2>
-    <p class="text-2xl mb-8 text-white">Get practical insights delivered weekly</p>
+    <h2 class="text-4xl md:text-6xl font-heading font-bold mb-6 text-white">Stop Experimenting. Start Deploying AI That Works.</h2>
+    <p class="text-2xl mb-8 text-white">Weekly insights for tech leaders ready to move from AI pilots to production value</p>
     
     <div class="max-w-md mx-auto bg-brand-deep-turquoise rounded-lg p-6 border border-brand-turquoise">
       <div class="rm-area-embed-subscribe"></div>
