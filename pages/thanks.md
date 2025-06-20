@@ -4,16 +4,9 @@ title: Thanks!
 permalink: /thanks
 ---
 
-<div class="text-center mb-12">
-  <p class="text-xl text-brand-black/80 mb-8">
-    Do check your email if you haven't already to see if you need to confirm anything there.
-  </p>
-</div>
-
 <div class="bg-brand-white rounded-lg p-8 border border-brand-light-blue/20 mb-12">
-  <h2 class="text-2xl font-heading font-bold mb-6 text-brand-black text-center">Help me send you the right content</h2>
   <p class="text-lg text-brand-black/80 mb-6 text-center">
-    <strong>Take 20 seconds to answer a few quick questions</strong>, so I can avoid clogging your inbox with irrelevant stuff, and send you the specific things you're interested in!
+    Would you mind <strong>taking 20 seconds</strong> to answer a few quick questions?
   </p>
   
   <div class="rm-area-embed-thanks"></div>
