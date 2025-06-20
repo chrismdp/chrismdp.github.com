@@ -217,7 +217,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
 
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
         <i data-lucide="search" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
-        <h3 class="text-2xl font-heading font-bold mb-4">AI SYSTEMS AUDIT</h3>
+        <h3 class="text-2xl font-heading font-bold mb-4">AI READINESS ASSESSMENT</h3>
         <p class="text-lg font-semibold mb-4 text-brand-black">Maximise your operational efficiency with AI in 90 days</p>
         <p class="text-brand-black/80 leading-relaxed">
           Comprehensive assessment of your systems and processes, AI opportunity identification, and a clear 90-day roadmap to deploy AI safely with proper guardrails and monitoring.
