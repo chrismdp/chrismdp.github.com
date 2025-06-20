@@ -11,13 +11,13 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
   <div class="hidden md:block absolute bottom-0 right-0 w-full h-2/3 overflow-hidden">
     <img src="/assets/img/chris-hero-bg.png" alt="Chris Parsons" class="absolute bottom-0 right-0 h-full w-auto object-cover object-bottom">
   </div>
-  
+
   <div class="w-full px-6 relative z-10">
     <div class="text-center mb-12">
       <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight">Deploy AI That Drives Real Growth</h1>
       <p class="text-xl md:text-2xl mb-8 text-white/90">I help tech leaders cut through hype to deliver AI features users love and development speed to transform business outcomes.</p>
     </div>
-    
+
     <div class="grid md:grid-cols-2 gap-12 items-center">
       <div class="md:ml-8">
         <div class="bg-brand-deep-turquoise rounded-lg p-6">
@@ -28,7 +28,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
         <!-- This div maintains the grid layout but the image is now in the background -->
       </div>
     </div>
-    
+
     <!-- Mobile Image - Show below form on mobile -->
     <div class="md:hidden -mx-6 flex justify-end">
       <img src="/assets/img/chris-hero-bg.png" alt="Chris Parsons" class="w-1/2 h-auto object-contain">
@@ -43,7 +43,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
       <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6 text-brand-black">Subscribe to gain access to all my AI guides</h2>
       <p class="text-xl text-brand-black/80 mb-8">Join tech leaders who are using AI to code faster and ship features that matter. Get my battle-tested guides for AI-powered development and building AI products users actually use.</p>
     </div>
-    
+
     <!-- Carousel image at the bottom -->
     <div class="w-full">
       <img src="/assets/img/ai-resources-carousel.png" alt="AI cheat sheets, guides, and carousels" class="w-full">
@@ -55,17 +55,17 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
 <section class="py-20 bg-white">
   <div class="max-w-4xl mx-auto px-6">
     <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">More About Chris</h2>
-    
+
     <div class="grid md:grid-cols-2 gap-12 items-center">
       <div>
         <p class="text-lg text-brand-black/80 mb-6">
           I'm a technical founder and AI expert who sees possibilities, actions them, and builds systems that create real value. With deep technical chops and a founder's mindset, I go into organisations and have high-impact results fast.
         </p>
-        
+
         <p class="text-lg text-brand-black/80 mb-6">
           As a technical leader myself, I understand the unique challenges you face implementing AI in complex technical environments. I've built production AI systems from scratch, scaled technical teams, and delivered results that matter to the bottom line.
         </p>
-        
+
         <div class="grid grid-cols-2 gap-4 mb-6">
           <div class="text-center p-4 bg-brand-white rounded-lg border border-brand-light-blue/20">
             <div class="text-2xl font-bold text-brand-deep-turquoise">5</div>
@@ -85,7 +85,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
           </div>
         </div>
       </div>
-      
+
       <div class="space-y-6">
         <div class="bg-brand-black/5 rounded-lg p-6">
           <h3 class="text-xl font-heading font-bold mb-3 text-brand-black flex items-center">
@@ -94,7 +94,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
           </h3>
           <p class="text-brand-black/80">Scaled teams from 5 to 50. Built and exited startups. VC-backed and bootstrapped experience.</p>
         </div>
-        
+
         <div class="bg-brand-black/5 rounded-lg p-6">
           <h3 class="text-xl font-heading font-bold mb-3 text-brand-black flex items-center">
             <i data-lucide="bot" class="w-6 h-6 mr-3 text-brand-deep-turquoise"></i>
@@ -102,7 +102,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
           </h3>
           <p class="text-brand-black/80">Production AI systems with full evaluation frameworks, not demos. Real systems serving 500K+ users.</p>
         </div>
-        
+
         <div class="bg-brand-black/5 rounded-lg p-6">
           <h3 class="text-xl font-heading font-bold mb-3 text-brand-black flex items-center">
             <i data-lucide="zap" class="w-6 h-6 mr-3 text-brand-deep-turquoise"></i>
@@ -119,7 +119,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
 <section class="py-20 bg-brand-deep-turquoise">
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-white">What Leaders Say</h2>
-    
+
     <div class="grid md:grid-cols-3 gap-8">
       <div class="bg-white rounded-lg p-6 shadow-md">
         <div class="flex items-center mb-4">
@@ -134,7 +134,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
         {% include five-star.html %}
         <p class="text-brand-black italic">"Fantastic at building self-sufficient teams and giving them what they need."</p>
       </div>
-      
+
       <div class="bg-white rounded-lg p-6 shadow-md">
         <div class="flex items-center mb-4">
           <a href="https://www.linkedin.com/in/roisiproven/" target="_blank" class="flex items-center">
@@ -148,7 +148,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
         {% include five-star.html %}
         <p class="text-brand-black italic">"If you're looking for someone to help build a great team, or you need someone experienced to help develop a sound tech strategy, I would thoroughly recommend Chris."</p>
       </div>
-      
+
       <div class="bg-white rounded-lg p-6 shadow-md">
         <div class="flex items-center mb-4">
           <a href="https://www.linkedin.com/in/ianozsvald/" target="_blank" class="flex items-center">
@@ -170,7 +170,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
 <section class="py-20 bg-white">
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-4 text-brand-black">I learn in public and share everything I discover:</h2>
-    
+
     <div class="grid md:grid-cols-3 gap-8 mt-12">
       <div class="bg-brand-white rounded-lg p-6 hover:shadow-lg transition-shadow border border-brand-light-blue/20">
         <i data-lucide="video" class="w-10 h-10 mb-4 text-brand-deep-turquoise"></i>
@@ -179,7 +179,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
         <p class="text-brand-black/80 mb-4">Join me for deep-dives into exactly how to code and build with AI that works now</p>
         <a href="/webinar" target="_blank" class="inline-block bg-brand-deep-turquoise text-white px-4 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">Reserve your place →</a>
       </div>
-      
+
       <div class="bg-brand-white rounded-lg p-6 hover:shadow-lg transition-shadow border border-brand-light-blue/20">
         <i data-lucide="mic" class="w-10 h-10 mb-4 text-brand-deep-turquoise"></i>
         <h3 class="text-xl font-heading font-bold mb-2">Next Speaking Event</h3>
@@ -187,7 +187,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
         <p class="text-brand-black/80 mb-4">I'll be discussing how to build a robust LLM application and sharing a demo of quick workflow tools you can build</p>
         <a href="https://cloudonair.withgoogle.com/events/london-summit-25/speakers" target="_blank" class="inline-block bg-brand-deep-turquoise text-white px-4 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">View session →</a>
       </div>
-      
+
       <div class="bg-brand-white rounded-lg p-6 hover:shadow-lg transition-shadow border border-brand-light-blue/20">
         <i data-lucide="monitor-play" class="w-10 h-10 mb-4 text-brand-deep-turquoise"></i>
         <h3 class="text-xl font-heading font-bold mb-2">Production AI Systems</h3>
@@ -203,37 +203,47 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
 <!-- Services Section -->
 <section id="services" class="py-20 bg-white">
   <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">Deploy AI for Real Business Impact</h2>
-    
+    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">Services: Deploy AI for Real Business Impact</h2>
+
     <div class="grid md:grid-cols-3 gap-8 mb-12">
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
         <i data-lucide="code-2" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
         <h3 class="text-2xl font-heading font-bold mb-4">AI CODING TRAINING</h3>
         <p class="text-lg font-semibold mb-4 text-brand-black">Get your dev team AI ready in 90 days</p>
         <p class="text-brand-black/80 leading-relaxed">
-          Live, hands-on training sessions with real production code examples. Implementation support and mentoring with weekly group sessions to see immediate benefits. Perfect for teams who want to start building immediately.
+          Live, hands-on training with production code examples and quality-first practices. Perfect for teams ready to build with AI responsibly and ship to production with confidence.
         </p>
       </div>
-      
+
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
         <i data-lucide="search" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
         <h3 class="text-2xl font-heading font-bold mb-4">AI SYSTEMS AUDIT</h3>
-        <p class="text-lg font-semibold mb-4 text-brand-black">How can you improve your operations to take maximum advantage of AI?</p>
+        <p class="text-lg font-semibold mb-4 text-brand-black">Maximise your operational efficiency with AI in 90 days</p>
         <p class="text-brand-black/80 leading-relaxed">
-          Current systems and process assessment, AI opportunity identification across your workflows, operations optimisation recommendations, and a 90-day implementation plan for maximum AI leverage.
+          Comprehensive assessment of your systems and processes, AI opportunity identification, and a clear 90-day roadmap to deploy AI safely with proper guardrails and monitoring.
         </p>
       </div>
-      
+
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
         <i data-lucide="network" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
         <h3 class="text-2xl font-heading font-bold mb-4">CUSTOM AI SYSTEMS</h3>
-        <p class="text-lg font-semibold mb-4 text-brand-black">Build complex internal tools for massive productivity improvements</p>
+        <p class="text-lg font-semibold mb-4 text-brand-black">Supercharge your product and tools with AI</p>
         <p class="text-brand-black/80 leading-relaxed">
-          Custom AI-powered internal tooling and complex workflow automation that only AI can deliver. Full system architecture and implementation with team enablement and ongoing support.
+          Custom AI-powered internal tooling with built-in security, monitoring, and governance controls. Full architecture, implementation, and ongoing support for sustainable AI operations.
         </p>
       </div>
     </div>
-    
+
+    <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors mb-12">
+        <i data-lucide="users" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
+        <h3 class="text-2xl font-heading font-bold mb-4">AI ADVISORY</h3>
+        <p class="text-lg font-semibold mb-4 text-brand-black">Trusted guidance when decisions matter most</p>
+        <p class="text-brand-black/80 leading-relaxed">
+            Direct access to an experienced founder, CTO and AI expert who has shipped multiple production AI systems and built and trained teams in AI. Get strategic guidance on technology choices, team decisions, and AI implementation roadmaps. Real-time answers to critical questions, priority review of your initiatives, and trusted perspective when stakes are high.
+        </p>
+    </div>
+
+
     <!-- Contact Form -->
     <div class="max-w-2xl mx-auto">
       <div class="bg-brand-deep-turquoise rounded-lg p-8 text-center">
@@ -257,7 +267,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
 <section class="py-20 bg-white">
   <div class="max-w-4xl mx-auto px-6">
     <h2 class="text-3xl font-heading font-bold mb-8 text-brand-black">Latest Articles</h2>
-    
+
     {% for post in site.posts limit:3 %}
     <article class="pb-8 mb-8 border-b border-brand-light-blue/20 last:border-0">
       <h3 class="text-2xl font-heading font-bold mb-2">
@@ -270,7 +280,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
       <a href="{{ site.baseurl }}{{ post.url }}" class="text-brand-deep-turquoise hover:text-brand-turquoise font-semibold">Read more →</a>
     </article>
     {% endfor %}
-    
+
     <div class="text-center">
       <a href="{{ site.baseurl }}/articles/" class="inline-block bg-brand-black text-white px-6 py-3 rounded-lg hover:bg-brand-black/80 transition-colors">View All Articles</a>
     </div>
@@ -282,7 +292,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
   <div class="max-w-4xl mx-auto text-center px-6">
     <h2 class="text-4xl md:text-6xl font-heading font-bold mb-6 text-white">Stop Experimenting. Start Deploying AI That Works.</h2>
     <p class="text-2xl mb-8 text-white">Weekly insights for tech leaders ready to move from AI pilots to production value</p>
-    
+
     <div class="max-w-md mx-auto bg-brand-deep-turquoise rounded-lg p-6 border border-brand-turquoise">
       <div class="rm-area-embed-subscribe"></div>
     </div>
