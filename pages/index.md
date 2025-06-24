@@ -15,7 +15,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
   <div class="w-full px-6 relative z-10">
     <div class="text-center mb-12">
       <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight">Deploy AI That Drives Real Growth</h1>
-      <p class="text-xl md:text-2xl mb-8 text-white/90">I help tech leaders cut through hype to deliver AI features users love and development speed to transform business outcomes.</p>
+      <p class="text-xl md:text-2xl mb-8 text-white mx-24">I help tech leaders cut through AI hype to level up their coding teams, deliver AI features their users love, and transform their operational efficiency. <a href="#services" class="underline text-white hover:text-brand-light-blue transition-colors">View my services →</a></p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -41,11 +41,11 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
   <div class="w-full">
     <div class="text-center mb-12 px-6">
       <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6 text-brand-black">Subscribe to gain access to all my AI guides</h2>
-      <p class="text-xl text-brand-black/80 mb-8">Join tech leaders who are using AI to code faster and ship features that matter. Get my battle-tested guides for AI-powered development and building AI products users actually use.</p>
+      <p class="text-xl text-brand-black/80 mb-8 mx-24">Join tech leaders who are using AI to code faster and ship features that matter. Get my battle-tested guides for AI-powered development and building AI products users actually use.</p>
     </div>
 
     <!-- Carousel image at the bottom -->
-    <div class="w-full">
+    <div class="mx-12">
       <img src="/assets/img/ai-resources-carousel.png" alt="AI cheat sheets, guides, and carousels" class="w-full">
     </div>
   </div>
@@ -56,7 +56,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
   <div class="max-w-4xl mx-auto px-6">
     <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">More About Chris</h2>
 
-    <div class="grid md:grid-cols-2 gap-12 items-center">
+    <div class="grid md:grid-cols-2 gap-12 items-top">
       <div>
         <p class="text-lg text-brand-black/80 mb-6">
           I'm a technical founder and AI expert who sees possibilities, actions them, and builds systems that create real value. With deep technical chops and a founder's mindset, I go into organisations and have high-impact results fast.
@@ -87,7 +87,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
       </div>
 
       <div class="space-y-6">
-        <div class="bg-brand-black/5 rounded-lg p-6">
+        <div class="bg-brand-white rounded-lg p-6">
           <h3 class="text-xl font-heading font-bold mb-3 text-brand-black flex items-center">
             <i data-lucide="rocket" class="w-6 h-6 mr-3 text-brand-deep-turquoise"></i>
             Technical Founder
@@ -95,7 +95,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
           <p class="text-brand-black/80">Scaled teams from 5 to 50. Built and exited startups. VC-backed and bootstrapped experience.</p>
         </div>
 
-        <div class="bg-brand-black/5 rounded-lg p-6">
+        <div class="bg-brand-white rounded-lg p-6">
           <h3 class="text-xl font-heading font-bold mb-3 text-brand-black flex items-center">
             <i data-lucide="bot" class="w-6 h-6 mr-3 text-brand-deep-turquoise"></i>
             AI Systems Expert
@@ -103,7 +103,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
           <p class="text-brand-black/80">Production AI systems with full evaluation frameworks, not demos. Real systems serving 500K+ users.</p>
         </div>
 
-        <div class="bg-brand-black/5 rounded-lg p-6">
+        <div class="bg-brand-white rounded-lg p-6">
           <h3 class="text-xl font-heading font-bold mb-3 text-brand-black flex items-center">
             <i data-lucide="zap" class="w-6 h-6 mr-3 text-brand-deep-turquoise"></i>
             High-Impact Results
@@ -204,6 +204,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
 <section id="services" class="py-20 bg-white">
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">Services: Deploy AI for Real Business Impact</h2>
+    <p class="text-xl text-center mb-12 text-brand-black/80 max-w-3xl mx-auto">I provide advisory services, hands-on AI training workshops, and comprehensive AI readiness assessments. From strategy to implementation, I help tech leaders navigate AI adoption with confidence and deliver measurable results.</p>
 
     <div class="grid md:grid-cols-3 gap-8 mb-12">
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
