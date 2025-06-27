@@ -3,7 +3,8 @@ layout: page
 title: "Kill Your Prompts"
 permalink: /webinar
 excerpt: "Build agents that actually work. No more prompt engineering."
-image_portrait: /assets/img/chris-headshot-full.jpg
+image: /assets/img/chris-headshot-full.jpg
+image_portrait: true
 ---
 
 <div class="mb-12">
