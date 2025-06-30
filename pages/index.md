@@ -15,7 +15,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
   <div class="w-full px-6 relative z-10">
     <div class="text-center mb-12">
       <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight">Deploy AI That Drives Real Growth</h1>
-      <p class="text-xl md:text-2xl mb-8 text-white mx-24">I help tech leaders cut through AI hype to level up their coding teams, deliver AI features their users love, and transform their operational efficiency. <a href="#services" class="underline text-white hover:text-brand-light-blue transition-colors">View my services →</a></p>
+      <p class="text-xl md:text-2xl mb-8 text-white mx-4 sm:mx-24">I help tech leaders cut through AI hype to level up their coding teams, deliver AI features their users love, and transform their operational efficiency. <a href="#services" class="underline text-white hover:text-brand-light-blue transition-colors">View my services →</a></p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -41,7 +41,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
   <div class="w-full">
     <div class="text-center mb-12 px-6">
       <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6 text-brand-black">Subscribe to gain access to all my AI guides</h2>
-      <p class="text-xl text-brand-black/80 mb-8 mx-24">Join tech leaders who are using AI to code faster and ship features that matter. Get my battle-tested guides for AI-powered development and building AI products users actually use.</p>
+      <p class="text-xl text-brand-black/80 mb-8 mx-4 sm:mx-24">Join tech leaders who are using AI to code faster and ship features that matter. Get my battle-tested guides for AI-powered development and building AI products users actually use.</p>
     </div>
 
     <!-- Carousel image at the bottom -->
