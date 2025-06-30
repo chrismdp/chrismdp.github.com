@@ -22,6 +22,8 @@ If you are interested in how AI is shaping the future of software craftsmanship 
 
 <!--more-->
 
+{% include ai-newsletter-short.html %}
+
 ## How I Use AI Tools
 
 Here are the key practices I use daily and have found effective.
