@@ -175,7 +175,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
       <div class="bg-brand-white rounded-lg p-6 hover:shadow-lg transition-shadow border border-brand-light-blue/20">
         <i data-lucide="video" class="w-10 h-10 mb-4 text-brand-deep-turquoise"></i>
         <h3 class="text-xl font-heading font-bold mb-2">Webinars</h3>
-        <p class="text-2xl font-bold text-brand-deep-turquoise mb-2">Monthly on Thursdays 2pm</p>
+        <p class="text-2xl font-bold text-brand-deep-turquoise mb-2">Next: August 7th, 2pm UK</p>
         <p class="text-brand-black/80 mb-4">Join me for deep-dives into exactly how to code and build with AI that works now</p>
         <a href="/webinar" target="_blank" class="inline-block bg-brand-deep-turquoise text-white px-4 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">Reserve your place →</a>
       </div>

@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "Kill Your Prompts"
+title: "AI Building Workshop"
 permalink: /webinar
-excerpt: "Build agents that actually work. No more prompt engineering."
+excerpt: "Learn practical AI development techniques in a live workshop."
 image: /assets/img/chris-headshot-full.jpg
 image_portrait: true
 ---
@@ -10,27 +10,16 @@ image_portrait: true
 <div class="mb-12">
 
   <p class="text-2xl text-brand-black mb-8">
-    Your agents break because you're still writing huge prompts like it's 2023.
+    Join me for a live workshop on practical AI development.
   </p>
 
   <p class="text-xl text-brand-black font-bold mb-4">
-    The best AI teams use:
+    Next session: August 7th, 2pm
   </p>
 
-  <div class="space-y-3 mb-8">
-    <li class="text-lg">Small focused functions, not giant prompts</li>
-    <li class="text-lg">Multiple judges, not one big eval</li>
-    <li class="text-lg">Auto-generated prompts from real verdicts</li>
-  </div>
-
   <p class="text-lg text-brand-black mb-8">
-    Watch me build a production agent using a much better method in minutes.
+    Topic to be announced. Reserve your place to guarantee you'll get sent the recording.
   </p>
-
-
-  <p class="text-lg text-brand-black mb-8">
-    No prompts. Just kaijo.ai doing the work.
-</p>
 
   <div class="bg-brand-deep-turquoise rounded-lg p-8 text-center mb-12">
     <div class="rm-area-embed-webinar"></div>

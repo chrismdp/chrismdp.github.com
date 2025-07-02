@@ -43,6 +43,22 @@ layout: default
     {% endif %}
   </div>
 
+  <!-- Webinar link for webinar posts -->
+  {% if page.categories contains 'webinar' %}
+  <div class="my-12">
+    <div class="text-center bg-brand-light-blue/10 rounded-lg p-6">
+      <h3 class="text-xl font-heading font-semibold mb-4 text-brand-black">Join Future Webinars</h3>
+      <p class="text-brand-black/70 mb-6">Get notified about upcoming live coding sessions and AI development workshops.</p>
+      <a href="/webinar" class="inline-flex items-center px-6 py-3 bg-brand-deep-turquoise text-white rounded-lg hover:bg-brand-turquoise transition-colors font-semibold">
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" class="mr-2">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+        </svg>
+        View Webinar Details
+      </a>
+    </div>
+  </div>
+  {% endif %}
+
   <!-- Newsletter signup -->
   {% unless page.categories contains 'case-studies' %}
   <div class="my-12">
@@ -95,6 +111,7 @@ layout: default
       </a>
     </div>
   </div>
+
 
   <!-- Related articles -->
   {% assign related_posts = "" %}

@@ -2,6 +2,24 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Memories and Insights
+
+### Key Learnings
+- Always read the entire context of a project before starting work
+- Carefully follow existing file structure and guidelines when making modifications
+- Prioritize preserving existing content when updating files
+- Be precise and methodical in interpreting instructions
+- Ask clarifying questions if any part of the instruction is ambiguous
+- Use tool invocations as the primary method of interaction
+- Maintain a consistent and professional tone in all interactions
+
+### Content Creation Insights
+- When writing blog posts from transcripts, focus on extracting key insights rather than following the transcript structure
+- Transform "I showed people X" language into "What I learned/discovered" for a more humble, authoritative tone
+- Avoid appearing arrogant or preachy - aim for confident but approachable expertise
+- For webinar posts, emphasise personal discovery and honest admissions of limitations
+- Always include image references when provided - check if image files need to be copied to `/assets/img/`
+
 ## Development Commands
 
 ### Local Development
@@ -34,7 +52,8 @@ This is a GitHub Pages-compatible Jekyll blog using a Tailwind CSS theme. The si
 
 ### Key Layout Components
 - `_layouts/default.html` - Base template with Tailwind config and custom brand colors
-- `_layouts/post.html` - Post template with newsletter integration and social sharing
+- `_layouts/post.html` - Post template with newsletter integration, social sharing, and webinar links
+  - **Webinar posts**: Posts tagged 'webinar' automatically show "Join Future Webinars" section after article content
 - `_layouts/page.html` - Simple page template with title and content
 - `_includes/ai-newsletter-short.html` - Newsletter signup component
 - Custom Tailwind config with brand colors: `brand-white`, `brand-turquoise`, `brand-deep-turquoise`, `brand-light-blue`, `brand-black`, `brand-orange`
@@ -82,7 +101,7 @@ The project uses Cursor rules (`.cursor/rules/`) that define strict content guid
 - Define technical terms when used
 - Keep sentences crisp and direct
 
-#### Blog Post Template (from `blog-posts.mdc`)
+#### Blog Post Guidelines (from `blog-posts.mdc`)
 ```markdown
 ---
 layout: post
@@ -101,23 +120,57 @@ ADD TOP PARAGRAPH OR TWO HERE TO HOOK IN READER
 EVERYTHING ELSE HERE
 ```
 
-#### Writing Style Rules (from `style.mdc`)
-- Direct, conversational style with first person for personal experiences
-- No contractions, active voice preferred
-- Bold text sparingly, no dashes/hyphens
-- Clear section headings (H2 and below only)
-- Start with bold statement, follow with brief explanation
-
-#### Content Guidelines
-- Use 1-3-1 sentence pattern (1-2 summary, 3 explanatory, 1-2 transition)
+**Blog Post Writing Process:**
+- Start with strong hook and clear statement of main argument
+- Use 1-3-1 sentence pattern (1-2 summary sentences in own paragraph, 3 explanatory sentences in new paragraph, 1-2 summary/transition in new paragraph)
 - Include `<!--more-->` break after introduction
+- End with concrete takeaways or next steps
+- Aim for 1500+ words for long-form pieces
 - Link to related posts in `_posts/` folder
-- Use British English spelling
-- Markdown footnotes for citations and references
+- Use British English spelling throughout
+- Use markdown footnotes for asides, extra detail, and references
+- No vertical bar (|) in link titles
 - No numbered/unnumbered lists - prefer short paragraphs with headings
+- Only use H2 (##) and below, never H1 (#)
+- No blank lines before footnote references
 
-### Newsletter System
-Newsletter content follows specific format with intimate, enthusiastic tone focused on AI journey and practical tips for building with AI.
+### Newsletter System (from `newsletter.mdc`)
+Newsletter content uses Kit platform following rough template of one story, one idea, one question weekly. 
+
+**Newsletter Style:**
+- Less formal and more intimate than blog posts
+- More enthusiastic tone
+- Do not make things up - only use what is known to be true
+- Ask for stories as needed
+
+**Newsletter Context:**
+People expect content about using AI to build agents and products at high speed, generating revenue quickly, with weekly notes sharing stories, learnings, and tips on getting ahead with AI.
+
+### LinkedIn Posts (from `linkedin-posts.mdc`)
+**Target Audience:**
+- Primary: Technical leaders (CTOs, engineering managers, teams) interested in practical AI solutions
+- Secondary: Startup tech teams with similar needs
+
+**LinkedIn Hook Types:**
+1. How I - Personal guide on achieving dream outcome
+2. How to - Comprehensive guide on skill/outcome
+3. Start a story - Inspirational story building authority
+4. Captivating quote - Topic-related quote that resonates
+5. Surprising statistic - Powerful statistic related to topic
+
+**LinkedIn Formatting:**
+- 3 lines of space before 'see more'
+- Line 1 & 2: Max 62 characters
+- Line 3: Max 50 characters
+- No bold, italics, or unnecessary emojis
+- Keep hooks short and create curiosity
+
+**LinkedIn Process:**
+1. Ask questions about topic one at a time
+2. Create five hooks based on guidelines
+3. Write post based on style.mdc
+4. Create whimsical cartoon pencil style image prompt for OpenAI (portrait style)
+5. No hashtags
 
 ### Reusable Components
 The project uses Jekyll includes for commonly repeated elements:
