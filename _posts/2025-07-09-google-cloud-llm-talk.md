@@ -9,11 +9,16 @@ categories:
 - talk
 - engineering
 - llm
+event_name: "Google Cloud Summit 2025"
+venue: "London"
+talk_date: 2025-07-09
+talk_url: "https://cloudonair.withgoogle.com/events/london-summit-25/speakers"
+talk_title: "Imagine What's Next: Imagine What's Possible"
 ---
 
 Every team building with LLMs faces the same crushing moment. The demo works perfectly. Stakeholders are impressed. Then you deploy to production and watch it fall apart. What worked flawlessly with test data breaks in ways you never imagined. The carefully crafted system that seemed so promising becomes a source of constant firefighting.
 
-I recently spoke at Google Cloud about how to build LLM applications that actually make it to production. Not proof of concepts. Not investor demos. Real systems serving real customers every day.
+I recently spoke at Google Cloud Summit with [Gunisha Vig](https://www.linkedin.com/in/gunisha-vig-18b950a8/?originalSubdomain=uk) about how to build LLM applications that actually make it to production. Not proof of concepts. Not investor demos. Real systems serving real customers every day.
 
 <!--more-->
 

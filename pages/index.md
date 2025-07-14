@@ -182,10 +182,39 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
 
       <div class="bg-brand-white rounded-lg p-6 hover:shadow-lg transition-shadow border border-brand-light-blue/20">
         <i data-lucide="mic" class="w-10 h-10 mb-4 text-brand-deep-turquoise"></i>
-        <h3 class="text-xl font-heading font-bold mb-2">Next Speaking Event</h3>
-        <p class="text-2xl font-bold text-brand-deep-turquoise mb-2">Google Cloud Summit 2025: 9th July</p>
-        <p class="text-brand-black/80 mb-4">I'll be discussing how to build a robust LLM application and sharing a demo of quick workflow tools you can build</p>
-        <a href="https://cloudonair.withgoogle.com/events/london-summit-25/speakers" target="_blank" class="inline-block bg-brand-deep-turquoise text-white px-4 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">View session →</a>
+        {% assign today = site.time | date: "%s" %}
+        {% assign talk_posts = site.posts | where: "categories", "talk" %}
+        {% assign upcoming_talks = "" | split: "" %}
+        {% assign past_talks = "" | split: "" %}
+        {% for talk in talk_posts %}
+          {% assign talk_date_seconds = talk.talk_date | date: "%s" %}
+          {% if talk_date_seconds >= today %}
+            {% assign upcoming_talks = upcoming_talks | push: talk %}
+          {% else %}
+            {% assign past_talks = past_talks | push: talk %}
+          {% endif %}
+        {% endfor %}
+        {% assign upcoming_talks = upcoming_talks | sort: "talk_date" %}
+        {% assign past_talks = past_talks | sort: "talk_date" | reverse %}
+        
+        {% if upcoming_talks.size > 0 %}
+          <h3 class="text-xl font-heading font-bold mb-2">Next Speaking Event</h3>
+          {% assign next_talk = upcoming_talks.first %}
+          <p class="text-2xl font-bold text-brand-deep-turquoise mb-2">{{ next_talk.event_name }}: {{ next_talk.talk_date | date: "%B %Y" }}</p>
+          <p class="text-brand-black/80 mb-4">{{ next_talk.talk_title }}</p>
+          <a href="{{ next_talk.url }}" target="_blank" class="inline-block bg-brand-deep-turquoise text-white px-4 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">View session →</a>
+        {% elsif past_talks.size > 0 %}
+          <h3 class="text-xl font-heading font-bold mb-2">Latest Speaking Event</h3>
+          {% assign latest_talk = past_talks.first %}
+          <p class="text-2xl font-bold text-brand-deep-turquoise mb-2">{{ latest_talk.event_name }}: {{ latest_talk.talk_date | date: "%B %Y" }}</p>
+          <p class="text-brand-black/80 mb-4">{{ latest_talk.talk_title }}</p>
+          <a href="{{ latest_talk.url }}" class="inline-block bg-brand-deep-turquoise text-white px-4 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">Read about talk →</a>
+        {% else %}
+          <h3 class="text-xl font-heading font-bold mb-2">Speaking Events</h3>
+          <p class="text-2xl font-bold text-brand-deep-turquoise mb-2">No talks scheduled</p>
+          <p class="text-brand-black/80 mb-4">Check back soon for my next speaking engagement</p>
+          <a href="/articles/" class="inline-block bg-brand-deep-turquoise text-white px-4 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">Read latest articles →</a>
+        {% endif %}
       </div>
 
       <div class="bg-brand-white rounded-lg p-6 hover:shadow-lg transition-shadow border border-brand-light-blue/20">

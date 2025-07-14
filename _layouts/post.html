@@ -31,12 +31,58 @@ layout: default
     {% endif %}
   {% endif %}
 
+  <!-- Talk details callout for talk posts -->
+  {% if page.categories contains 'talk' %}
+    {% assign today = site.time | date: "%s" %}
+    {% assign talk_date_seconds = page.talk_date | date: "%s" %}
+    {% if talk_date_seconds >= today %}
+      {% assign is_upcoming = true %}
+    {% else %}
+      {% assign is_upcoming = false %}
+    {% endif %}
+    
+    <div class="float-right ml-6 mb-6 w-full md:w-1/2 max-w-md bg-brand-light-blue/10 rounded-lg p-6 border border-brand-light-blue/20 not-prose">
+      <h3 class="text-lg font-heading font-bold mb-4 text-brand-black">
+        {% if is_upcoming %}Upcoming Talk{% else %}Past Talk{% endif %}
+      </h3>
+      <div class="space-y-3 text-sm">
+        <div>
+          <span class="font-semibold text-brand-black">Event:</span>
+          <span class="text-brand-black/80">
+            {% if page.talk_url %}
+              <a href="{{ page.talk_url }}" target="_blank" class="text-brand-deep-turquoise hover:text-brand-turquoise transition-colors !text-brand-deep-turquoise">{{ page.event_name }}</a>
+            {% else %}
+              {{ page.event_name }}
+            {% endif %}
+          </span>
+        </div>
+        <div>
+          <span class="font-semibold text-brand-black">Date:</span>
+          <span class="text-brand-black/80">{{ page.talk_date | date: "%B %-d, %Y" }}</span>
+        </div>
+        <div>
+          <span class="font-semibold text-brand-black">Venue:</span>
+          <span class="text-brand-black/80">{{ page.venue }}</span>
+        </div>
+        <div>
+          <span class="font-semibold text-brand-black">Title:</span>
+          <span class="text-brand-black/80">{{ page.talk_title }}</span>
+        </div>
+        {% if page.talk_url %}
+        <div class="pt-2">
+          <a href="{{ page.talk_url }}" target="_blank" class="inline-block bg-brand-deep-turquoise px-4 py-2 rounded-lg hover:bg-brand-turquoise transition-colors text-sm font-semibold !text-white">
+            View Event →
+          </a>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+
   <!-- Post content -->
   <div class="prose prose-lg max-w-none content-styled">
     {% assign content_parts = content | split:'<!--more-->' %}
     {{ content_parts[0] }}
-    
-    <div class="clear-both"></div>
     
     {% if content_parts.size > 1 %}
       {{ content_parts[1] }}
@@ -112,6 +158,40 @@ layout: default
     </div>
   </div>
 
+
+  <!-- More talks section for talk posts -->
+  {% if page.categories contains 'talk' %}
+    <div class="border-t border-brand-light-blue/20 pt-8 mt-12">
+      <h2 class="text-2xl font-heading font-bold mb-6 text-brand-black">More Talks</h2>
+      <div class="space-y-1 mb-12">
+        {% assign today = site.time | date: "%s" %}
+        {% for post in site.categories.talk limit:5 %}
+          {% unless post.url == page.url %}
+          {% assign talk_date_seconds = post.talk_date | date: "%s" %}
+          {% if talk_date_seconds >= today %}
+            {% assign is_upcoming = true %}
+          {% else %}
+            {% assign is_upcoming = false %}
+          {% endif %}
+          <div class="flex flex-col md:flex-row md:items-center gap-2 border-b border-brand-light-blue/10 py-2">
+            <div class="text-sm text-brand-black/60 md:w-32 flex-shrink-0">
+              {% if is_upcoming %}
+                Upcoming: {{ post.talk_date | date: "%b %-d" }}
+              {% else %}
+                Given on {{ post.talk_date | date: "%b %-d" }}
+              {% endif %}
+            </div>
+            <div class="flex-1">
+              <a href="{{ post.url | prepend: site.baseurl }}" class="text-brand-black hover:text-brand-deep-turquoise transition-colors">
+                {{ post.title }}
+              </a>
+            </div>
+          </div>
+          {% endunless %}
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
 
   <!-- Related articles -->
   {% assign related_posts = "" %}
