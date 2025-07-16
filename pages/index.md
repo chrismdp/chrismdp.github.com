@@ -14,8 +14,8 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
 
   <div class="w-full px-6 relative z-10">
     <div class="text-center mb-12">
-      <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight">Deploy AI That Drives Real Growth</h1>
-      <p class="text-xl md:text-2xl mb-8 text-white mx-4 sm:mx-24">I help tech leaders cut through AI hype to level up their coding teams, deliver AI features their users love, and transform their operational efficiency. <a href="#services" class="underline text-white hover:text-brand-light-blue transition-colors">View my services →</a></p>
+      <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight">Learn AI. Drive Real Business Growth.</h1>
+      <p class="text-xl md:text-2xl mb-8 text-white mx-4 sm:mx-24">I help tech leaders use AI well to level up their teams' productivity, deliver AI features their users love, and transform their operational efficiency. <a href="#services" class="underline text-white hover:text-brand-light-blue transition-colors">View my services →</a></p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -41,7 +41,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
   <div class="w-full">
     <div class="text-center mb-12 px-6">
       <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6 text-brand-black">Subscribe to gain access to all my AI guides</h2>
-      <p class="text-xl text-brand-black/80 mb-8 mx-4 sm:mx-24">Join tech leaders who are using AI to code faster and ship features that matter. Get my battle-tested guides for AI-powered development and building AI products users actually use.</p>
+      <p class="text-xl text-brand-black/80 mb-8 mx-4 sm:mx-24">Join other tech leaders using AI to help their organisations work smarter, deliver quicker and think more clearly. Get my battle-tested guides for AI-powered development and building AI products users actually use.</p>
     </div>
 
     <!-- Carousel image at the bottom -->
@@ -92,7 +92,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
             <i data-lucide="rocket" class="w-6 h-6 mr-3 text-brand-deep-turquoise"></i>
             Technical Founder
           </h3>
-          <p class="text-brand-black/80">Scaled teams from 5 to 50. Built and exited startups. VC-backed and bootstrapped experience.</p>
+          <p class="text-brand-black/80">Scaled teams from 5-50. Built agencies, B2B, and B2C startups. VC-backed and bootstrapped experience.</p>
         </div>
 
         <div class="bg-brand-white rounded-lg p-6">
@@ -108,7 +108,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
             <i data-lucide="zap" class="w-6 h-6 mr-3 text-brand-deep-turquoise"></i>
             High-Impact Results
           </h3>
-          <p class="text-brand-black/80">20+ years technical leadership. Go into organisations and deliver value fast. Built for leaders who need results.</p>
+          <p class="text-brand-black/80">{{ 'now' | date: "%Y" | minus: 2001 }} years technical leadership. Go into organisations and deliver value fast. Built for leaders who need results.</p>
         </div>
       </div>
     </div>
@@ -169,7 +169,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
 <!-- Proof Section -->
 <section class="py-20 bg-white">
   <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-4 text-brand-black">I learn in public and share everything I discover:</h2>
+    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-4 text-brand-black">I learn in public and share everything I discover</h2>
 
     <div class="grid md:grid-cols-3 gap-8 mt-12">
       <div class="bg-brand-white rounded-lg p-6 hover:shadow-lg transition-shadow border border-brand-light-blue/20">
@@ -238,16 +238,16 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
     <div class="grid md:grid-cols-3 gap-8 mb-12">
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
         <i data-lucide="code-2" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
-        <h3 class="text-2xl font-heading font-bold mb-4">AI CODING TRAINING</h3>
-        <p class="text-lg font-semibold mb-4 text-brand-black">Get your dev team AI ready in 90 days</p>
+        <h3 class="text-2xl font-heading font-bold mb-4">AI TRAINING</h3>
+        <p class="text-lg font-semibold mb-4 text-brand-black">Intensive courses for technical teams in AI that works</p>
         <p class="text-brand-black/80 leading-relaxed">
-          Live, hands-on training with production code examples and quality-first practices. Perfect for teams ready to build with AI responsibly and ship to production with confidence.
+          Learn LLM fundamentials, advanced usage, building agents and producing great code and top-notch content. Perfect for developers, data scientists, product managers and operators wanting to level up their AI usage.
         </p>
       </div>
 
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
         <i data-lucide="search" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
-        <h3 class="text-2xl font-heading font-bold mb-4">AI READINESS ASSESSMENT</h3>
+        <h3 class="text-2xl font-heading font-bold mb-4">AI READINESS CHECKS</h3>
         <p class="text-lg font-semibold mb-4 text-brand-black">Maximise your operational efficiency with AI in 90 days</p>
         <p class="text-brand-black/80 leading-relaxed">
           Comprehensive assessment of your systems and processes, AI opportunity identification, and a clear 90-day roadmap to deploy AI safely with proper guardrails and monitoring.
