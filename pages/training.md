@@ -15,7 +15,7 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
   <div class="w-full px-6 relative z-10">
     <div class="text-center mb-12">
       <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight">AI Intensives for Technical Teams</h1>
-      <p class="text-xl md:text-2xl mb-8 text-white mx-4 sm:mx-24">Transform your team's mindset from asking AI questions to fundamentally changing how they work. One intensive day that shifts thinking and creates lasting transformation.</p>
+      <p class="text-xl md:text-2xl mb-8 text-white mx-4 sm:mx-24">Transform your team's mindset from asking AI questions to fundamentally changing how they work.</p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -242,7 +242,7 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
         <div class="space-y-4">
           <div>
             <h4 class="font-semibold text-brand-deep-turquoise mb-2">One Intensive Day</h4>
-            <p class="text-brand-black/80 text-sm">Complete curriculum delivered in person with small cohorts (8-12 people per session) for optimal interaction and hands-on practice.</p>
+            <p class="text-brand-black/80 text-sm">Complete curriculum delivered in person with small cohorts (8-12 people per session) for optimal interaction and hands-on practice, with optional follow-up sessions.</p>
           </div>
           <div>
             <h4 class="font-semibold text-brand-deep-turquoise mb-2">Structured Follow-Up Available</h4>
