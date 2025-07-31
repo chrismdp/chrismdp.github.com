@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why AI Swarms Failed Me: The Toyota vs Ford of Software Development"
-date: 2025-07-31 14:30:00 +0000
+date: 2025-07-31 12:30:00 +0000
 image: /assets/img/ai-swarms-failed-toyota-vs-ford.png
 categories:
 - ai
