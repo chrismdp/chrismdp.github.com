@@ -7,6 +7,7 @@ categories:
 - ai
 - engineering
 - productivity
+- sol trader
 ---
 
 **AI swarms are not faster.** They create massive cognitive load, produce duplicate code, and optimise for the wrong thing entirely.
@@ -77,6 +78,10 @@ I am restarting the project with a completely different methodology:
 No more PRDs. No more parallelisation. No more push-based planning.
 
 Instead: real user scenarios, behaviour-driven development, and just-in-time implementation decisions.
+
+It will be interesting to see if this pull-based approach works better. I remember from my games and high-performance coding days learning from very experienced game developers how they manage complexity, which is quite different to our traditional SDLC. No tests, but they tend to write usage code first, creating only enough to test their use case manually, then move on. Eerily similar to BDD and good TDD workflows, arrived at from a totally different perspective.
+
+I learned this approach from <a href="https://www.youtube.com/@MollyRocket" target="_blank">Casey Muratori</a>'s Handmade Hero (<a href="https://guide.handmadehero.org/" target="_blank">episode guide</a>, <a href="https://www.youtube.com/watch?v=F3ntGDm6hOs" target="_blank">first video</a>), an excellent YouTube series that I watched hundreds of hours of when I was writing <a href="https://store.steampowered.com/app/396680/Sol_Trader/" target="_blank">Sol Trader</a>. Casey demonstrates a pull-based development approach in real time: start with what you need to see on screen, work backwards to implement only what is required, and let the usage drive the architecture. No upfront design documents, no parallel development streams, just methodical problem-solving driven by actual requirements.
 
 I have identified my first use case, but that is a story for another post.
 
