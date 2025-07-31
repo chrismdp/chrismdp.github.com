@@ -235,16 +235,19 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
     <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">Services: Deploy AI for Real Business Impact</h2>
     <p class="text-xl text-center mb-12 text-brand-black/80 max-w-3xl mx-auto">I provide advisory services, hands-on AI training workshops, and comprehensive AI readiness assessments. From strategy to implementation, I help tech leaders navigate AI adoption with confidence and deliver measurable results.</p>
 
-    <div class="grid md:grid-cols-3 gap-8 mb-12">
-      <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
-        <i data-lucide="code-2" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
-        <h3 class="text-2xl font-heading font-bold mb-4">AI TRAINING</h3>
-        <p class="text-lg font-semibold mb-4 text-brand-black">Intensive courses for technical teams in AI that works</p>
-        <p class="text-brand-black/80 leading-relaxed">
-          Learn LLM fundamentials, advanced usage, building agents and producing great code and top-notch content. Perfect for developers, data scientists, product managers and operators wanting to level up their AI usage.
-        </p>
-      </div>
+    <!-- AI Intensives - Full Width -->
+    <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors mb-12">
+      <i data-lucide="code-2" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
+      <h3 class="text-2xl font-heading font-bold mb-4">AI INTENSIVES - AI TRAINING COURSES FOR TECH TEAMS</h3>
+      <p class="text-lg font-semibold mb-4 text-brand-black">Transform teams from ChatGPT questions to shipping AI features</p>
+      <p class="text-brand-black/80 leading-relaxed mb-6">
+        One intensive day covering LLM fundamentals, advanced prompting, building agents, and coding with AI. Perfect for technical teams wanting systematic AI capabilities.
+      </p>
+      <a href="/training" class="inline-block bg-brand-deep-turquoise text-white px-6 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">Learn More →</a>
+    </div>
 
+    <!-- Other Services - Three Columns -->
+    <div class="grid md:grid-cols-3 gap-8 mb-12">
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
         <i data-lucide="search" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
         <h3 class="text-2xl font-heading font-bold mb-4">AI READINESS CHECKS</h3>
@@ -262,15 +265,15 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
           Custom AI-powered internal tooling with built-in security, monitoring, and governance controls. Full architecture, implementation, and ongoing support for sustainable AI operations.
         </p>
       </div>
-    </div>
 
-    <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors mb-12">
+      <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
         <i data-lucide="users" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
         <h3 class="text-2xl font-heading font-bold mb-4">AI ADVISORY</h3>
         <p class="text-lg font-semibold mb-4 text-brand-black">Trusted guidance when decisions matter most</p>
         <p class="text-brand-black/80 leading-relaxed">
             Direct access to an experienced founder, CTO and AI expert who has shipped multiple production AI systems and built and trained teams in AI. Get strategic guidance on technology choices, team decisions, and AI implementation roadmaps. Real-time answers to critical questions, priority review of your initiatives, and trusted perspective when stakes are high.
         </p>
+      </div>
     </div>
 
 
