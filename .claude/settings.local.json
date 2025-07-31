@@ -6,7 +6,8 @@
       "Bash(grep:*)",
       "Bash(convert:*)",
       "Bash(git add:*)",
-      "mcp__notion__search"
+      "mcp__notion__search",
+      "Bash(ls:*)"
     ],
     "deny": []
   }
