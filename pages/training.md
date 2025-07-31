@@ -15,7 +15,7 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
   <div class="w-full px-6 relative z-10">
     <div class="text-center mb-12">
       <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight">AI Intensives for Technical Teams</h1>
-      <p class="text-xl md:text-2xl mb-8 text-white mx-4 sm:mx-24">Transform your team from random ChatGPT questions to shipping AI features users actually want. One intensive day that creates confident AI practitioners.</p>
+      <p class="text-xl md:text-2xl mb-8 text-white mx-4 sm:mx-24">Transform your team's mindset from asking AI questions to fundamentally changing how they work. One intensive day that shifts thinking and creates lasting transformation.</p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -40,52 +40,52 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
 <!-- What Makes This Different Section -->
 <section class="py-20 bg-brand-white">
   <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">What Makes AI Intensives Different</h2>
+    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">The Big Mindset Shift</h2>
     
     <div class="text-center mb-12">
       <p class="text-xl text-brand-black/80 mb-8 max-w-3xl mx-auto">
-        Based on feedback from previous participants, these intensives stand out because they create teams who can ship AI features that users actually want.
+        Most teams get stuck asking AI random questions. But there's a fundamental mindset shift that changes everything: moving from "What can I ask AI?" to "How can AI transform the way I work?"
       </p>
       <p class="text-2xl font-bold text-brand-deep-turquoise">
-        The goal is not to create AI enthusiasts. It's to create confident AI practitioners.
+        This isn't about AI tools. It's about rewiring how your team thinks about problem-solving.
       </p>
     </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
       <div class="bg-white rounded-lg p-6 shadow-md border border-brand-light-blue/20">
-        <i data-lucide="wrench" class="w-10 h-10 mb-4 text-brand-deep-turquoise"></i>
-        <h3 class="text-xl font-heading font-bold mb-3">Hands-On Workflow Practice</h3>
-        <p class="text-brand-black/80">Build real solutions, not just learn theory. Every concept comes with immediate practical application.</p>
+        <i data-lucide="brain" class="w-10 h-10 mb-4 text-brand-deep-turquoise"></i>
+        <h3 class="text-xl font-heading font-bold mb-3">Rewire Your Thinking</h3>
+        <p class="text-brand-black/80">Stop asking "What should I prompt?" Start asking "How can this transform my entire workflow?"</p>
       </div>
 
       <div class="bg-white rounded-lg p-6 shadow-md border border-brand-light-blue/20">
-        <i data-lucide="zap" class="w-10 h-10 mb-4 text-brand-deep-turquoise"></i>
-        <h3 class="text-xl font-heading font-bold mb-3">Immediate Application</h3>
-        <p class="text-brand-black/80">Try things out as you learn them. No waiting until later to see if it works in practice.</p>
-      </div>
-
-      <div class="bg-white rounded-lg p-6 shadow-md border border-brand-light-blue/20">
-        <i data-lucide="layers" class="w-10 h-10 mb-4 text-brand-deep-turquoise"></i>
-        <h3 class="text-xl font-heading font-bold mb-3">Full Spectrum Depth</h3>
-        <p class="text-brand-black/80">From prompting fundamentals to production agents. Complete coverage with practical depth.</p>
+        <i data-lucide="refresh-cw" class="w-10 h-10 mb-4 text-brand-deep-turquoise"></i>
+        <h3 class="text-xl font-heading font-bold mb-3">Break Old Patterns</h3>
+        <p class="text-brand-black/80">Move from reactive AI usage to proactive work transformation. See problems differently.</p>
       </div>
 
       <div class="bg-white rounded-lg p-6 shadow-md border border-brand-light-blue/20">
         <i data-lucide="lightbulb" class="w-10 h-10 mb-4 text-brand-deep-turquoise"></i>
-        <h3 class="text-xl font-heading font-bold mb-3">Changes How You Think</h3>
-        <p class="text-brand-black/80">Moves beyond surface-level usage to systematic approaches that compound over time.</p>
+        <h3 class="text-xl font-heading font-bold mb-3">Think Like an AI-First Team</h3>
+        <p class="text-brand-black/80">Develop intuition for when and how to leverage AI in every aspect of your work.</p>
       </div>
 
       <div class="bg-white rounded-lg p-6 shadow-md border border-brand-light-blue/20">
-        <i data-lucide="users" class="w-10 h-10 mb-4 text-brand-deep-turquoise"></i>
-        <h3 class="text-xl font-heading font-bold mb-3">Accessible Yet Comprehensive</h3>
-        <p class="text-brand-black/80">Interesting for experienced users while welcoming to newcomers. Perfect balance.</p>
+        <i data-lucide="layers" class="w-10 h-10 mb-4 text-brand-deep-turquoise"></i>
+        <h3 class="text-xl font-heading font-bold mb-3">Systems Over Scripts</h3>
+        <p class="text-brand-black/80">Build systematic approaches, not one-off prompts. Create repeatable transformation patterns.</p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 shadow-md border border-brand-light-blue/20">
+        <i data-lucide="zap" class="w-10 h-10 mb-4 text-brand-deep-turquoise"></i>
+        <h3 class="text-xl font-heading font-bold mb-3">Immediate Mindset Application</h3>
+        <p class="text-brand-black/80">Practice the new thinking patterns on real work problems. Leave with transformed perspective.</p>
       </div>
 
       <div class="bg-white rounded-lg p-6 shadow-md border border-brand-light-blue/20">
         <i data-lucide="target" class="w-10 h-10 mb-4 text-brand-deep-turquoise"></i>
-        <h3 class="text-xl font-heading font-bold mb-3">Real Business Impact</h3>
-        <p class="text-brand-black/80">Focus on shipping features users love, not just impressive demos or experiments.</p>
+        <h3 class="text-xl font-heading font-bold mb-3">Work Revolution, Not Evolution</h3>
+        <p class="text-brand-black/80">Don't just use AI tools better. Fundamentally change how your team approaches every challenge.</p>
       </div>
     </div>
   </div>
@@ -200,38 +200,38 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
 <!-- Training Outcomes Section -->
 <section class="py-20 bg-white">
   <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">Transform Your Team's AI Capabilities</h2>
+    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">The Transformation Your Team Will Experience</h2>
     
     <div class="grid md:grid-cols-2 gap-12 items-center mb-12">
       <div>
-        <h3 class="text-2xl font-heading font-bold mb-6 text-brand-black">By the end of this intensive, your team will:</h3>
+        <h3 class="text-2xl font-heading font-bold mb-6 text-brand-black">By the end of this intensive, your team will think differently:</h3>
         <div class="space-y-4">
           <div class="flex items-start">
-            <i data-lucide="trending-up" class="w-6 h-6 mr-4 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
+            <i data-lucide="brain" class="w-6 h-6 mr-4 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
             <div>
-              <h4 class="font-semibold text-brand-black">Increase Confident Practitioners</h4>
-              <p class="text-brand-black/80">Boost the number of confident daily AI practitioners in the team</p>
+              <h4 class="font-semibold text-brand-black">Mental Model Shift</h4>
+              <p class="text-brand-black/80">Stop thinking "What can I ask AI?" Start thinking "How does AI change everything I do?"</p>
             </div>
           </div>
           <div class="flex items-start">
-            <i data-lucide="maximize" class="w-6 h-6 mr-4 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
+            <i data-lucide="eye" class="w-6 h-6 mr-4 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
             <div>
-              <h4 class="font-semibold text-brand-black">Maximise Tool Usage</h4>
-              <p class="text-brand-black/80">Maximise the number of daily and weekly users of AI tools</p>
+              <h4 class="font-semibold text-brand-black">Problem Recognition</h4>
+              <p class="text-brand-black/80">Instantly spot opportunities to transform workflows, not just individual tasks</p>
             </div>
           </div>
           <div class="flex items-start">
-            <i data-lucide="minimize" class="w-6 h-6 mr-4 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
+            <i data-lucide="refresh-cw" class="w-6 h-6 mr-4 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
             <div>
-              <h4 class="font-semibold text-brand-black">Minimise Bottlenecks</h4>
-              <p class="text-brand-black/80">Make sure coding, documentation, debugging is not holding the team back</p>
+              <h4 class="font-semibold text-brand-black">Default AI-First Thinking</h4>
+              <p class="text-brand-black/80">AI becomes the natural first consideration for any new challenge or project</p>
             </div>
           </div>
           <div class="flex items-start">
-            <i data-lucide="settings" class="w-6 h-6 mr-4 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
+            <i data-lucide="layers" class="w-6 h-6 mr-4 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
             <div>
-              <h4 class="font-semibold text-brand-black">Increase Automation</h4>
-              <p class="text-brand-black/80">Create bespoke agent workflows to deal with rote tasks</p>
+              <h4 class="font-semibold text-brand-black">Systems Thinking</h4>
+              <p class="text-brand-black/80">Build transformation patterns that scale across the entire team and organization</p>
             </div>
           </div>
         </div>
