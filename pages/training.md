@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "AI Intensives: Transform Your Technical Team"
+title: "Intensive AI Training for Tech Teams"
 permalink: /training
 excerpt: "Transform your team from random ChatGPT questions to shipping AI features users actually want. One intensive day that creates confident AI practitioners."
 ---
@@ -110,7 +110,7 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
       <div class="bg-brand-white rounded-lg p-8 border border-brand-light-blue/20">
         <div class="flex items-center mb-4">
           <i data-lucide="book-open" class="w-8 h-8 mr-4 text-brand-deep-turquoise"></i>
-          <h3 class="text-2xl font-heading font-bold text-brand-black">Foundation Building</h3>
+          <h3 class="text-2xl font-heading font-bold text-brand-black">Session 1: Foundation Building</h3>
         </div>
         <p class="text-lg font-semibold mb-4 text-brand-deep-turquoise">Understanding what AI can and cannot do</p>
         <ul class="space-y-2 text-brand-black/80">
@@ -124,7 +124,7 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
       <div class="bg-brand-white rounded-lg p-8 border border-brand-light-blue/20">
         <div class="flex items-center mb-4">
           <i data-lucide="message-square" class="w-8 h-8 mr-4 text-brand-deep-turquoise"></i>
-          <h3 class="text-2xl font-heading font-bold text-brand-black">Advanced Prompting</h3>
+          <h3 class="text-2xl font-heading font-bold text-brand-black">Session 2: Advanced Prompting</h3>
         </div>
         <p class="text-lg font-semibold mb-4 text-brand-deep-turquoise">Moving beyond simple questions to sophisticated AI workflows</p>
         <ul class="space-y-2 text-brand-black/80">
@@ -139,7 +139,7 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
       <div class="bg-brand-white rounded-lg p-8 border border-brand-light-blue/20">
         <div class="flex items-center mb-4">
           <i data-lucide="bot" class="w-8 h-8 mr-4 text-brand-deep-turquoise"></i>
-          <h3 class="text-2xl font-heading font-bold text-brand-black">Building Agents</h3>
+          <h3 class="text-2xl font-heading font-bold text-brand-black">Session 3: Building Agents</h3>
         </div>
         <p class="text-lg font-semibold mb-4 text-brand-deep-turquoise">Creating reliable, scalable AI automation</p>
         <ul class="space-y-2 text-brand-black/80">
@@ -157,7 +157,7 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
       <div class="bg-brand-white rounded-lg p-8 border border-brand-light-blue/20">
         <div class="flex items-center mb-4">
           <i data-lucide="code-2" class="w-8 h-8 mr-4 text-brand-deep-turquoise"></i>
-          <h3 class="text-2xl font-heading font-bold text-brand-black">Coding with Agents</h3>
+          <h3 class="text-2xl font-heading font-bold text-brand-black">Session 4: Coding with Agents</h3>
         </div>
         <p class="text-lg font-semibold mb-4 text-brand-deep-turquoise">Transforming how your team writes and maintains code</p>
         <ul class="space-y-2 text-brand-black/80">
@@ -171,7 +171,7 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
       <div class="bg-brand-white rounded-lg p-8 border border-brand-light-blue/20">
         <div class="flex items-center mb-4">
           <i data-lucide="target" class="w-8 h-8 mr-4 text-brand-deep-turquoise"></i>
-          <h3 class="text-2xl font-heading font-bold text-brand-black">Role-Specific Deliberate Practice</h3>
+          <h3 class="text-2xl font-heading font-bold text-brand-black">Session 5: Role-Specific Deliberate Practice</h3>
         </div>
         <p class="text-lg font-semibold mb-4 text-brand-deep-turquoise">Applying everything to your actual work</p>
         <ul class="space-y-2 text-brand-black/80">
@@ -186,10 +186,14 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
   </div>
 </section>
 
-<!-- Testimonial 3 -->
+<!-- Testimonials 3, 4 & 5 -->
 <section class="py-12 bg-brand-deep-turquoise">
-  <div class="max-w-4xl mx-auto px-6">
-    {% include testimonial-training-3.html %}
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid md:grid-cols-3 gap-8">
+      {% include testimonial-training-3.html %}
+      {% include testimonial-training-4.html %}
+      {% include testimonial-training-5.html %}
+    </div>
   </div>
 </section>
 
@@ -259,16 +263,6 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- Testimonials 4 & 5 -->
-<section class="py-12 bg-brand-deep-turquoise">
-  <div class="max-w-6xl mx-auto px-6">
-    <div class="grid md:grid-cols-2 gap-8">
-      {% include testimonial-training-4.html %}
-      {% include testimonial-training-5.html %}
     </div>
   </div>
 </section>
