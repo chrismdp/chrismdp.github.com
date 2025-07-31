@@ -101,6 +101,87 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
   </div>
 </section>
 
+<!-- Training Outcomes Section -->
+<section class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">The Transformation Your Team Will Experience</h2>
+    
+    <div class="grid md:grid-cols-2 gap-12 items-center mb-12">
+      <div>
+        <h3 class="text-2xl font-heading font-bold mb-6 text-brand-black">By the end of this intensive, your team will think differently:</h3>
+        <div class="space-y-4">
+          <div class="flex items-start">
+            <i data-lucide="brain" class="w-6 h-6 mr-4 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
+            <div>
+              <h4 class="font-semibold text-brand-black">Mental Model Shift</h4>
+              <p class="text-brand-black/80">Stop thinking "What can I ask AI?" Start thinking "How does AI change everything I do?"</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <i data-lucide="eye" class="w-6 h-6 mr-4 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
+            <div>
+              <h4 class="font-semibold text-brand-black">Problem Recognition</h4>
+              <p class="text-brand-black/80">Instantly spot opportunities to transform workflows, not just individual tasks</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <i data-lucide="refresh-cw" class="w-6 h-6 mr-4 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
+            <div>
+              <h4 class="font-semibold text-brand-black">Default AI-First Thinking</h4>
+              <p class="text-brand-black/80">AI becomes the natural first consideration for any new challenge or project</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <i data-lucide="layers" class="w-6 h-6 mr-4 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
+            <div>
+              <h4 class="font-semibold text-brand-black">Systems Thinking</h4>
+              <p class="text-brand-black/80">Build transformation patterns that scale across the entire team and organization</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="bg-brand-white rounded-lg p-8 border border-brand-light-blue/20">
+        <h3 class="text-2xl font-heading font-bold mb-6 text-brand-black">Format & Follow-Up</h3>
+        <div class="space-y-4">
+          <div>
+            <h4 class="font-semibold text-brand-deep-turquoise mb-2">One Intensive Day</h4>
+            <p class="text-brand-black/80 text-sm">Complete curriculum delivered in-person or remote with cohorts of 25-40 people for optimal interaction and hands-on practice, with optional follow-up sessions.</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-brand-deep-turquoise mb-2">Structured Follow-Up Available</h4>
+            <ul class="text-brand-black/80 text-sm space-y-1">
+              <li>• Week 2: "Early Wins" session</li>
+              <li>• Week 4: "Momentum Building" session</li>
+              <li>• Week 8: "Advanced Applications" session</li>
+              <li>• Ongoing support via Slack/Teams integration</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold text-brand-deep-turquoise mb-2">Custom Examples</h4>
+            <p class="text-brand-black/80 text-sm">Training examples tailored to your tech stack and specific use cases.</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-brand-deep-turquoise mb-2">Multiple Delivery Options</h4>
+            <p class="text-brand-black/80 text-sm">From standalone training to comprehensive 3-month transformation programmes with advisory support.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials 3, 4 & 5 -->
+<section class="py-12 bg-brand-deep-turquoise">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid md:grid-cols-3 gap-8">
+      {% include testimonial-training-3.html %}
+      {% include testimonial-training-4.html %}
+      {% include testimonial-training-5.html %}
+    </div>
+  </div>
+</section>
+
 <!-- Complete Syllabus Section -->
 <section class="py-20 bg-white">
   <div class="max-w-6xl mx-auto px-6">
@@ -186,86 +267,6 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
   </div>
 </section>
 
-<!-- Testimonials 3, 4 & 5 -->
-<section class="py-12 bg-brand-deep-turquoise">
-  <div class="max-w-6xl mx-auto px-6">
-    <div class="grid md:grid-cols-3 gap-8">
-      {% include testimonial-training-3.html %}
-      {% include testimonial-training-4.html %}
-      {% include testimonial-training-5.html %}
-    </div>
-  </div>
-</section>
-
-<!-- Training Outcomes Section -->
-<section class="py-20 bg-white">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">The Transformation Your Team Will Experience</h2>
-    
-    <div class="grid md:grid-cols-2 gap-12 items-center mb-12">
-      <div>
-        <h3 class="text-2xl font-heading font-bold mb-6 text-brand-black">By the end of this intensive, your team will think differently:</h3>
-        <div class="space-y-4">
-          <div class="flex items-start">
-            <i data-lucide="brain" class="w-6 h-6 mr-4 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
-            <div>
-              <h4 class="font-semibold text-brand-black">Mental Model Shift</h4>
-              <p class="text-brand-black/80">Stop thinking "What can I ask AI?" Start thinking "How does AI change everything I do?"</p>
-            </div>
-          </div>
-          <div class="flex items-start">
-            <i data-lucide="eye" class="w-6 h-6 mr-4 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
-            <div>
-              <h4 class="font-semibold text-brand-black">Problem Recognition</h4>
-              <p class="text-brand-black/80">Instantly spot opportunities to transform workflows, not just individual tasks</p>
-            </div>
-          </div>
-          <div class="flex items-start">
-            <i data-lucide="refresh-cw" class="w-6 h-6 mr-4 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
-            <div>
-              <h4 class="font-semibold text-brand-black">Default AI-First Thinking</h4>
-              <p class="text-brand-black/80">AI becomes the natural first consideration for any new challenge or project</p>
-            </div>
-          </div>
-          <div class="flex items-start">
-            <i data-lucide="layers" class="w-6 h-6 mr-4 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
-            <div>
-              <h4 class="font-semibold text-brand-black">Systems Thinking</h4>
-              <p class="text-brand-black/80">Build transformation patterns that scale across the entire team and organization</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="bg-brand-white rounded-lg p-8 border border-brand-light-blue/20">
-        <h3 class="text-2xl font-heading font-bold mb-6 text-brand-black">Format & Follow-Up</h3>
-        <div class="space-y-4">
-          <div>
-            <h4 class="font-semibold text-brand-deep-turquoise mb-2">One Intensive Day</h4>
-            <p class="text-brand-black/80 text-sm">Complete curriculum delivered in person with small cohorts (8-12 people per session) for optimal interaction and hands-on practice, with optional follow-up sessions.</p>
-          </div>
-          <div>
-            <h4 class="font-semibold text-brand-deep-turquoise mb-2">Structured Follow-Up Available</h4>
-            <ul class="text-brand-black/80 text-sm space-y-1">
-              <li>• Week 2: "Early Wins" session</li>
-              <li>• Week 4: "Momentum Building" session</li>
-              <li>• Week 8: "Advanced Applications" session</li>
-              <li>• Ongoing support via Slack/Teams integration</li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="font-semibold text-brand-deep-turquoise mb-2">Custom Examples</h4>
-            <p class="text-brand-black/80 text-sm">Training examples tailored to your tech stack and specific use cases.</p>
-          </div>
-          <div>
-            <h4 class="font-semibold text-brand-deep-turquoise mb-2">Multiple Delivery Options</h4>
-            <p class="text-brand-black/80 text-sm">From standalone training to comprehensive 3-month transformation programmes with advisory support.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- Final CTA Section -->
 <section class="py-20 bg-gradient-to-br from-brand-deep-turquoise to-brand-turquoise text-white">
