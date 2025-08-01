@@ -8,7 +8,9 @@
       "Bash(git add:*)",
       "mcp__notion__search",
       "Bash(ls:*)",
-      "Bash(gh run list:*)"
+      "Bash(gh run list:*)",
+      "Bash(magick:*)",
+      "Bash(cp:*)"
     ],
     "deny": []
   }
