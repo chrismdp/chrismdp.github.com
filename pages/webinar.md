@@ -1,16 +1,16 @@
 ---
 layout: page
-title: "AI Building Workshop"
+title: "From Demo to Production: Making AI Agents Work at Scale"
 permalink: /webinar
-excerpt: "Learn practical AI development techniques in a live workshop."
-image: /assets/img/chris-headshot-full.jpg
-image_portrait: true
+excerpt: "Learn how to take AI agents from impressive demos to reliable production systems."
+image: /assets/img/ai-agents-production-webinar.png
+image_portrait: false
 ---
 
 <div class="mb-12">
 
   <p class="text-2xl text-brand-black mb-8">
-    Join me for a live workshop on practical AI development.
+    Join me for a live workshop on taking AI agents from demo to production.
   </p>
 
   <p class="text-xl text-brand-black font-bold mb-4">
@@ -18,8 +18,20 @@ image_portrait: true
   </p>
 
   <p class="text-lg text-brand-black mb-8">
-    Topic to be announced. Reserve your place to guarantee you'll get sent the recording.
+    <strong>From Demo to Production: Making AI Agents Work at Scale</strong><br>
+    It's not about whether AI agents work (they work). It's about making them work reliably at scale.
   </p>
+
+  <div class="bg-brand-light-blue/10 rounded-lg p-6 mb-8">
+    <h3 class="text-lg font-bold text-brand-black mb-4">What You'll Learn:</h3>
+    <ul class="space-y-2 text-brand-black">
+      <li><strong>The Five Pillars:</strong> Do you even need an LLM? Taming randomness, choosing the right architecture, mitigating security issues, and building evaluations</li>
+      <li><strong>Why Agents Fail:</strong> Works great in demo, breaks with real users - unpredictable edge cases and security collapse through too many tools</li>
+      <li><strong>Architecture Patterns:</strong> Big Prompt Agents vs Workflow Agents - when to use each and why workflow agents are often better</li>
+      <li><strong>Security Reality:</strong> Prompt injection, data leakage, and real mitigation strategies that actually work</li>
+      <li><strong>Production Checklist:</strong> The essential steps before deploying any AI agent system</li>
+    </ul>
+  </div>
 
   <div class="bg-brand-deep-turquoise rounded-lg p-8 text-center mb-12">
     <div class="rm-area-embed-webinar"></div>

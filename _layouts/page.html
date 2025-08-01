@@ -16,6 +16,16 @@ layout: default
 </section>
 
 <div class="max-w-4xl mx-auto px-6 pb-12">
+  
+  <!-- Featured image -->
+  {% if page.image %}
+    {% if page.image_portrait %}
+      <img alt='{{ page.title }}' src='{{ page.image }}' class='rounded-lg float-right ml-6 mb-6 w-1/2 max-w-md'>
+    {% else %}
+      <img alt='{{ page.title }}' src='{{ page.image }}' class='rounded-lg mb-8 w-full'>
+    {% endif %}
+  {% endif %}
+
   <div class="prose prose-lg max-w-none content-styled">
     {{ content }}
   </div>
