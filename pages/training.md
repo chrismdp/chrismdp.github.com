@@ -92,6 +92,7 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
 </section>
 
 <!-- Testimonials 1 & 2 -->
+<!--
 <section class="py-12 bg-brand-deep-turquoise">
   <div class="max-w-6xl mx-auto px-6">
     <div class="grid md:grid-cols-2 gap-8">
@@ -100,6 +101,7 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
     </div>
   </div>
 </section>
+-->
 
 <!-- Training Outcomes Section -->
 <section class="py-20 bg-white">
@@ -172,6 +174,7 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
 </section>
 
 <!-- Testimonials 3, 4 & 5 -->
+<!--
 <section class="py-12 bg-brand-deep-turquoise">
   <div class="max-w-6xl mx-auto px-6">
     <div class="grid md:grid-cols-3 gap-8">
@@ -181,6 +184,7 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
     </div>
   </div>
 </section>
+-->
 
 <!-- Complete Syllabus Section -->
 <section class="py-20 bg-white">
