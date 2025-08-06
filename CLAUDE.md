@@ -19,6 +19,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - Avoid appearing arrogant or preachy - aim for confident but approachable expertise
 - For webinar posts, emphasise personal discovery and honest admissions of limitations
 - Always include image references when provided - check if image files need to be copied to `/assets/img/`
+- **Research-heavy posts**: Lead with compelling data/statistics that challenge assumptions, use footnotes for detailed sourcing and additional context
+- **Linking strategy**: Use implicit links naturally within sentences, avoid "check out this post" style linking - prefer contextual integration. Use `{:target="_blank"}` for external links to open in new windows
+- **Footnotes for additional value**: Use footnotes not just for citations but to provide actionable advice and deeper insights that enhance the main narrative
+- **Always search for recent articles**: Before writing any blog post, search through recent posts in `_posts/` folder to identify relevant articles to link to implicitly within the content - this improves SEO and provides value to readers
 
 ## Development Commands
 
