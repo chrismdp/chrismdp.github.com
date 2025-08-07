@@ -2,6 +2,8 @@
 layout: default
 title: "Intensive AI Training for Tech Teams"
 permalink: /training
+redirect_from:
+  - /training/
 excerpt: "Transform your team from random ChatGPT questions to shipping AI features users actually want. One intensive day that creates confident AI practitioners."
 ---
 
