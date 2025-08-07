@@ -207,3 +207,15 @@ The project uses Jekyll includes for commonly repeated elements:
   - "ence" not "ense" (defence, licence as noun)
   - Single "l" in words like "modelling", "travelling"
 - Apply British spelling to all content: pages, posts, UI text, and code comments
+
+## LinkedIn Content Formatting
+When creating LinkedIn content that needs clipboard copying:
+
+### Bold and Italic Formatting
+- LinkedIn doesn't support markdown natively
+- Convey emphasis without markdown through clever phrasing
+
+### Clipboard Copy Process
+- Always use `pbcopy` to copy formatted content to clipboard
+- Preserve line breaks and paragraph structure
+- Remove escape characters (ensure ! not \!)
