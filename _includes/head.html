@@ -40,6 +40,14 @@
 <meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 <meta itemprop="image" content="{{ site.url }}{{ site.baseurl }}/assets/img/chris-twitter-headshot.png" />
 
+<!-- Webinar-specific meta tags -->
+{% if page.kit_tag %}
+<meta name="webinar-kit-tag" content="{{ page.kit_tag }}" />
+{% endif %}
+{% if page.webinar_date %}
+<meta name="webinar-date" content="{{ page.webinar_date }}" />
+{% endif %}
+
 <meta name=referrer content=origin>
 <meta name=HandheldFriendly content=True>
 <meta name=viewport content="width=device-width, initial-scale=1.0">
