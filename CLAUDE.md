@@ -24,6 +24,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Footnotes for additional value**: Use footnotes not just for citations but to provide actionable advice and deeper insights that enhance the main narrative
 - **Always search for recent articles**: Before writing any blog post, search through recent posts in `_posts/` folder to identify relevant articles to link to implicitly within the content - this improves SEO and provides value to readers
 
+### Webinar Blog Post Guidelines
+- **Opening hook**: Use compelling statistics or reframe broad claims (e.g., "95% of technical teams cannot ship their AI agents" rather than specific anecdotes)
+- **Webinar context**: Always establish that content comes from a specific webinar with date - "On [date], I gave a webinar about..."
+- **Virtual vs physical**: Use "virtual room" for webinars, not just "room"
+- **Brand consistency**: Cherrypick is always spelled "Cherrypick" (not "CherryPick") and should link to cherrypick.co
+- **Case study linking**: Link to relevant case studies when mentioning specific examples (e.g., meal generator case study)
+- **Avoid clunky phrasing**: Don't spell out percentages in prose - use "80% success rate" not "eighty percent good responses"
+- **Tools and resources**: Extract tools mentioned in webinars as markdown link lists for easy reference
+- **Key takeaways**: Always include a clear takeaway and actionable "try this week" suggestion
+
 ## Development Commands
 
 ### Local Development
@@ -150,31 +160,8 @@ Newsletter content uses Kit platform following rough template of one story, one 
 **Newsletter Context:**
 People expect content about using AI to build agents and products at high speed, generating revenue quickly, with weekly notes sharing stories, learnings, and tips on getting ahead with AI.
 
-### LinkedIn Posts (from `linkedin-posts.mdc`)
-**Target Audience:**
-- Primary: Technical leaders (CTOs, engineering managers, teams) interested in practical AI solutions
-- Secondary: Startup tech teams with similar needs
-
-**LinkedIn Hook Types:**
-1. How I - Personal guide on achieving dream outcome
-2. How to - Comprehensive guide on skill/outcome
-3. Start a story - Inspirational story building authority
-4. Captivating quote - Topic-related quote that resonates
-5. Surprising statistic - Powerful statistic related to topic
-
-**LinkedIn Formatting:**
-- 3 lines of space before 'see more'
-- Line 1 & 2: Max 62 characters
-- Line 3: Max 50 characters
-- No bold, italics, or unnecessary emojis
-- Keep hooks short and create curiosity
-
-**LinkedIn Process:**
-1. Ask questions about topic one at a time
-2. Create five hooks based on guidelines
-3. Write post based on style.mdc
-4. Create whimsical cartoon pencil style image prompt for OpenAI (portrait style)
-5. No hashtags
+### Social Media Posts
+For creating LinkedIn posts, carousels, newsletters, and other social content, read all instruction files in the `_roles/sally-social-media-manager/` folder.
 
 ### Reusable Components
 The project uses Jekyll includes for commonly repeated elements:
@@ -208,14 +195,3 @@ The project uses Jekyll includes for commonly repeated elements:
   - Single "l" in words like "modelling", "travelling"
 - Apply British spelling to all content: pages, posts, UI text, and code comments
 
-## LinkedIn Content Formatting
-When creating LinkedIn content that needs clipboard copying:
-
-### Bold and Italic Formatting
-- LinkedIn doesn't support markdown natively
-- Convey emphasis without markdown through clever phrasing
-
-### Clipboard Copy Process
-- Always use `pbcopy` to copy formatted content to clipboard
-- Preserve line breaks and paragraph structure
-- Remove escape characters (ensure ! not \!)
