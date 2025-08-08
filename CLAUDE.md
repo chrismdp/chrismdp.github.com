@@ -161,7 +161,15 @@ Newsletter content uses Kit platform following rough template of one story, one 
 People expect content about using AI to build agents and products at high speed, generating revenue quickly, with weekly notes sharing stories, learnings, and tips on getting ahead with AI.
 
 ### Social Media Posts
-For creating LinkedIn posts, carousels, newsletters, and other social content, read all instruction files in the `_roles/sally-social-media-manager/` folder.
+**IMPORTANT**: When writing for social media or LinkedIn, you MUST read and follow ALL instruction files in the `_roles/sally-social-media-manager/` folder. This includes:
+
+- Voice & tone standards (no contractions, direct conversational style, Grade 5-7 reading level)
+- Hook writing requirements (62/0/50 character format, authority-based openings)
+- Content structure guidelines (1,250-3,000 characters optimal)
+- LinkedIn formatting standards (bold text, emoji usage, hashtag strategy)
+- Performance optimization techniques (engagement hierarchy, timing strategy)
+
+These guidelines override general writing rules when creating social content.
 
 ### Reusable Components
 The project uses Jekyll includes for commonly repeated elements:

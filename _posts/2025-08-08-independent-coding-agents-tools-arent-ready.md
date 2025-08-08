@@ -20,8 +20,10 @@ This is absolutely the future of AI development. The reality was a masterclass i
 The Coder Tasks announcement painted exactly the picture I wanted: AI coding agents running as "true sidekicks" in secure, controlled environments. No more exposing sensitive information on local machines, no more slowing down development with environment setup friction.
 
 <div style="padding: 24px 0;">
-<iframe width="100%" height="450" src="https://www.youtube.com/embed/rykDyqfHM9g" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="450" src="https://www.youtube.com/embed/je-LId7k1Gs" title="Coder Tasks Working Demo" frameborder="0" allowfullscreen></iframe>
 </div>
+
+*The video above shows my working Coder Tasks setup after three days of configuration. Despite the complexity, it works beautifully: remote workspaces provision in 30-45 seconds with complete development environments and proper security boundaries.*
 
 The promise was that administrators could define strict templates and boundaries, controlling which agents teams could use, with proper process isolation and tool integration. Perfect for [Kaijo](https://kaijo.ai) development where I wanted AI agents to prototype features, review documentation, and experiment freely without security concerns.
 
@@ -66,6 +68,10 @@ The final hurdle was Supabase integration. The plan was to pre-cache Supabase Do
 I hit Docker layer caching limits during testing through about 60 debug-build-workspace loops. Turns out my hosting provider has restrictive Docker Hub pull limits, and repeatedly rebuilding workspace templates with large image downloads quickly exhausted the quota.
 
 By day three, I had a working setup that could spin up remote workspaces with pre-cached Supabase containers, but the complexity was staggering. The solution involved building custom Docker images with all Supabase dependencies pre-loaded to avoid Docker Hub rate limiting and workspace startup delays. More importantly, I realised this was not the most important thing for me to be working on.
+
+This complexity was amplified by my ambitious goal: I wanted to see if I could run multiple isolated development environments simultaneously on the same machine rather than just using devcontainers locally. The challenge was setting up proper Docker-in-Docker isolation for five concurrent workspaces, each completely separated from the others. I could have fired up separate ephemeral EC2 instances for each workspace, which would probably have been simpler, but I was testing the theoretical limits of the containerised approach.
+
+The pain points were primarily around wildcard subdomain SSL setup (requiring DNS-01 challenges and Cloudflare API integration) and the Docker-in-Docker configuration complexity. I also made things harder for myself by insisting on pre-caching Docker pulls in the parent container to avoid repeated downloads, which required significantly more complex infrastructure orchestration.
 
 ## The Infrastructure Reality Check
 
