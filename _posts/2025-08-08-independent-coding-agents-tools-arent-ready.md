@@ -9,7 +9,7 @@ categories:
 - ai
 ---
 
-**I spent three days trying to get [Coder](https://coder.com){:target="_blank"} working properly for AI agent development.** Three days that should have taken three hours. The promise was compelling: [Coder's new Tasks feature](https://coder.com/blog/launch-week-2025-introducing-coder-tasks){:target="_blank"} lets you run AI coding agents securely in your own infrastructure, with proper boundaries and permissions. No more local environment complexity, no more `--dangerously-skip-permissions` workarounds.
+**I spent three days trying to get [Coder](https://coder.com){:target="_blank"} working properly for Claude Code and AI agent development.** Three days that should have taken three hours. The promise was compelling: [Coder's new Tasks feature](https://coder.com/blog/launch-week-2025-introducing-coder-tasks){:target="_blank"} lets you run AI coding agents like Claude Code securely in your own infrastructure, with proper boundaries and permissions. No more local environment complexity, no more `--dangerously-skip-permissions` workarounds.
 
 This is absolutely the future of AI development. The reality was a masterclass in infrastructure complexity that reveals we are still in the early days of tooling maturity.
 
