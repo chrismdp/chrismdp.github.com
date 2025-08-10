@@ -3,6 +3,9 @@ FROM codercom/enterprise-base:ubuntu
 # Set non-interactive frontend to avoid prompts during build
 ENV DEBIAN_FRONTEND=noninteractive
 
+# Cache bust to force rebuild after Dockerfile changes  
+ARG CACHE_BUST=1
+
 # Switch to root to install packages (enterprise-base runs as coder by default)
 USER root
 

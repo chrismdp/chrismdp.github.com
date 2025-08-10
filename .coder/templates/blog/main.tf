@@ -447,8 +447,8 @@ resource "null_resource" "build_blog_image" {
       echo "Cleaning up dangling Docker images..."
       docker image prune -f || echo "No dangling images to prune"
       
-      # Build image with Ruby and Jekyll pre-installed
-      DOCKER_BUILDKIT=0 docker build -t chrismdpcom/blog-coder:latest .
+      # Build image with Ruby and Jekyll pre-installed (cache bust with timestamp)
+      DOCKER_BUILDKIT=0 docker build --build-arg CACHE_BUST=$(date +%s) -t chrismdpcom/blog-coder:latest .
       
       # Clean up any intermediate/dangling images after build
       docker image prune -f || echo "No dangling images to prune after build"
