@@ -4,25 +4,26 @@ FROM codercom/enterprise-base:ubuntu
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Fix apt permissions and install Ruby and Jekyll dependencies
-RUN mkdir -p /var/lib/apt/lists/partial && \
-    chmod 755 /var/lib/apt/lists/partial && \
-    apt-get update && apt-get install -y \
+# Note: enterprise-base may need sudo even in Dockerfile
+RUN sudo mkdir -p /var/lib/apt/lists/partial && \
+    sudo chmod 755 /var/lib/apt/lists/partial && \
+    sudo apt-get update && sudo apt-get install -y \
     ruby-full \
     build-essential \
     zlib1g-dev \
     git \
     curl \
-    && rm -rf /var/lib/apt/lists/*
+    && sudo rm -rf /var/lib/apt/lists/*
 
 # Install bundler
-RUN gem install bundler jekyll
+RUN sudo gem install bundler jekyll
 
 # Create coder user (should already exist in enterprise-base but ensure it's set up)
-RUN usermod -s /bin/bash coder 2>/dev/null || useradd -u 1000 -m -s /bin/bash coder
-RUN echo "coder ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/coder
+RUN sudo usermod -s /bin/bash coder 2>/dev/null || sudo useradd -u 1000 -m -s /bin/bash coder
+RUN echo "coder ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/coder
 
 # Set up directories
-RUN mkdir -p /projects && chown -R coder:coder /projects
+RUN sudo mkdir -p /projects && sudo chown -R coder:coder /projects
 
 # Switch to coder user
 USER coder
