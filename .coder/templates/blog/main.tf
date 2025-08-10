@@ -432,9 +432,10 @@ resource "coder_app" "claude_code" {
 resource "null_resource" "build_blog_image" {
   count = data.coder_workspace.me.start_count
 
-  # Rebuild if Dockerfile changes
+  # Rebuild if Dockerfile changes or force rebuild
   triggers = {
     dockerfile_hash = filemd5("${path.module}/Dockerfile")
+    force_rebuild = timestamp()
   }
 
   provisioner "local-exec" {
