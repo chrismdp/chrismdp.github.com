@@ -34,6 +34,40 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Tools and resources**: Extract tools mentioned in webinars as markdown link lists for easy reference
 - **Key takeaways**: Always include a clear takeaway and actionable "try this week" suggestion
 
+## Coder Template Management
+
+### Pushing Templates
+
+When working with Coder templates, the correct syntax for pushing templates is:
+
+```bash
+# Push template from current directory (must contain main.tf)
+coder templates push -y template-name
+
+# Push template from specific directory
+cd /path/to/templates/parent && coder templates push -d template-folder -y template-name
+
+# Push with update message
+coder templates push -d template-folder -y -m "Update description" template-name
+
+# Example for blog template
+cd .coder/templates && coder templates push -d blog -y blog
+```
+
+**Key Points:**
+
+- Template name goes at the END of the command
+- Use `-d` flag to specify directory containing main.tf
+- Use `-y` to bypass confirmation prompts
+- Must be run from parent directory of template folder when using `-d`
+- Template directory must contain main.tf file
+
+### Common Errors:
+
+- ❌ `coder templates push blog .coder/templates/blog/` (wrong argument order)
+- ❌ `coder templates push --directory .coder/templates/blog/ blog` (wrong flag syntax)
+- ✅ `coder templates push -d blog -y blog` (correct from templates parent dir)
+
 ## Development Commands
 
 ### Local Development
