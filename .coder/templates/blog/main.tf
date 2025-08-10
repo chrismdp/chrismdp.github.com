@@ -25,7 +25,7 @@ module "claude-code" {
   version             = "2.0.0"
   agent_id            = coder_agent.main.id
   folder              = "/projects/blog"
-  install_claude_code = false  # Install manually in setup script instead
+  install_claude_code = true   # Let module handle Claude Code installation with proper npm environment
   claude_code_version = "latest"
   order               = 999
 
@@ -81,19 +81,10 @@ data "coder_workspace_preset" "default" {
     # Ensure PATH includes pre-installed tools
     export PATH="$HOME/.local/bin:$PATH"
     
-    # Install Claude Code manually for coder user (avoids permission issues with module)
-    if ! command -v claude >/dev/null 2>&1; then
-      echo "Installing Claude Code for coder user..."
-      echo "Debug: Current user: $(whoami)"
-      echo "Debug: HOME: $HOME"
-      
-      # Install Claude Code using curl method (more reliable than npm in containers)
-      curl -fsSL https://claude.ai/install.sh | sh
-      export PATH="$HOME/.local/bin:$PATH"
-      echo "Claude Code installed successfully! Run 'claude login' to authenticate."
-    else
-      echo "Claude Code already installed: $(claude --version)"
-    fi
+    # Claude Code will be installed by the Coder module with proper npm environment
+    # Ensure npm is properly configured for the module installation
+    echo "npm prefix configured: $(npm config get prefix)"
+    echo "PATH includes npm global bin: $(echo $PATH | grep -o npm-global || echo 'not found')"
 
     # Clone blog project if it doesn't exist as a proper git repository
     if [ ! -d "blog/.git" ]; then
@@ -135,9 +126,16 @@ data "coder_workspace_preset" "default" {
     # Install Ruby dependencies if Gemfile exists
     if [ -f "Gemfile" ]; then
       echo "Installing Ruby dependencies..."
+      
+      # Configure bundler for local installation to avoid permission issues
+      echo "Configuring bundler for local gem installation..."
+      bundle config set --local path vendor/bundle
+      bundle config set --local bin vendor/bundle/bin
+      
+      # Install gems locally
       bundle install
       
-      echo "Dependencies installed. Run 'bundle exec jekyll serve' to start the development server."
+      echo "Dependencies installed. Run 'bundle exec jekyll serve --host 0.0.0.0 --port 4000' to start the development server."
     else
       echo "No Gemfile found - repository may need to be cloned manually."
     fi

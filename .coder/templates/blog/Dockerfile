@@ -17,6 +17,7 @@ RUN mkdir -p /var/lib/apt/lists/partial && \
     build-essential \
     zlib1g-dev \
     git \
+    tmux \
     curl \
     ca-certificates \
     && rm -rf /var/lib/apt/lists/*
@@ -45,6 +46,15 @@ RUN mkdir -p /home/coder/.npm-global \
 USER coder
 WORKDIR /home/coder
 
-# Set up Ruby environment for coder user
-RUN echo 'export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"' >> ~/.bashrc
-RUN echo 'export GEM_HOME="$HOME/.gem/ruby/3.0.0"' >> ~/.bashrc
+# Set up Ruby environment for coder user (updated to Ruby 3.2.0)
+RUN echo 'export PATH="$HOME/.gem/ruby/3.2.0/bin:$PATH"' >> ~/.bashrc
+RUN echo 'export GEM_HOME="$HOME/.gem/ruby/3.2.0"' >> ~/.bashrc
+RUN echo 'export GEM_PATH="$HOME/.gem/ruby/3.2.0"' >> ~/.bashrc
+
+# Create gem directories for coder user
+RUN mkdir -p /home/coder/.gem/ruby/3.2.0 && \
+    chown -R coder:coder /home/coder/.gem
+
+# Configure bundler for local installation
+RUN echo 'bundle config set --local path vendor/bundle' >> ~/.bashrc
+RUN echo 'bundle config set --local bin vendor/bundle/bin' >> ~/.bashrc
