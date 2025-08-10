@@ -3,27 +3,29 @@ FROM codercom/enterprise-base:ubuntu
 # Set non-interactive frontend to avoid prompts during build
 ENV DEBIAN_FRONTEND=noninteractive
 
+# Switch to root to install packages (enterprise-base runs as coder by default)
+USER root
+
 # Fix apt permissions and install Ruby and Jekyll dependencies
-# Note: enterprise-base may need sudo even in Dockerfile
-RUN sudo mkdir -p /var/lib/apt/lists/partial && \
-    sudo chmod 755 /var/lib/apt/lists/partial && \
-    sudo apt-get update && sudo apt-get install -y \
+RUN mkdir -p /var/lib/apt/lists/partial && \
+    chmod 755 /var/lib/apt/lists/partial && \
+    apt-get update && apt-get install -y \
     ruby-full \
     build-essential \
     zlib1g-dev \
     git \
     curl \
-    && sudo rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/*
 
 # Install bundler
-RUN sudo gem install bundler jekyll
+RUN gem install bundler jekyll
 
 # Create coder user (should already exist in enterprise-base but ensure it's set up)
-RUN sudo usermod -s /bin/bash coder 2>/dev/null || sudo useradd -u 1000 -m -s /bin/bash coder
-RUN echo "coder ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/coder
+RUN usermod -s /bin/bash coder 2>/dev/null || useradd -u 1000 -m -s /bin/bash coder
+RUN echo "coder ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/coder
 
 # Set up directories
-RUN sudo mkdir -p /projects && sudo chown -R coder:coder /projects
+RUN mkdir -p /projects && chown -R coder:coder /projects
 
 # Switch to coder user
 USER coder
