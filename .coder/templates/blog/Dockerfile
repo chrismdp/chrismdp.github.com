@@ -18,7 +18,14 @@ RUN mkdir -p /var/lib/apt/lists/partial && \
     zlib1g-dev \
     git \
     curl \
+    ca-certificates \
     && rm -rf /var/lib/apt/lists/*
+
+# Install Node.js latest LTS (needed for Claude Code)
+RUN curl -sL https://deb.nodesource.com/setup_lts.x | bash -
+RUN DEBIAN_FRONTEND="noninteractive" apt-get update -y && \
+    apt-get install -y nodejs && \
+    rm -rf /var/lib/apt/lists/*
 
 # Install bundler
 RUN gem install bundler jekyll
@@ -29,6 +36,10 @@ RUN echo "coder ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/coder
 
 # Set up directories
 RUN mkdir -p /projects && chown -R coder:coder /projects
+
+# Create npm global directory for coder user
+RUN mkdir -p /home/coder/.npm-global \
+    && chown -R coder:coder /home/coder/.npm-global
 
 # Switch to coder user
 USER coder
