@@ -92,9 +92,9 @@ The "simple" setup guides assume knowledge of reverse proxies, SSL certificate m
 
 I only realised this one a bit late: the infrastructure complexity was actually masking a more fundamental issue. AI coding agents with broad permissions are not safe, regardless of where they run.
 
-Even `--dangerously-skip-permissions` in a perfectly isolated environment misses the point. Coding agents can be duped by untrusted data. If they have internet access and can execute commands, they could easily exfiltrate code or credentials. The attack vectors are not about local vs. remote infrastructure - they are about the inherent unpredictability of AI behaviour when exposed to adversarial inputs.
+Even `--dangerously-skip-permissions` in a perfectly isolated environment misses the point. Coding agents can be duped by untrusted data. If they have internet access and can execute commands, they could easily exfiltrate code or credentials. Plus, if you leave private project context in your documentation, that could make its way to a third party. The attack vectors are not about local vs. remote infrastructure - they are about the inherent unpredictability of AI behaviour when exposed to adversarial inputs.
 
-The real question is not "how do we give AI agents safe environments to run wild?" but "how do we supervise AI agents appropriately?" No amount of infrastructure isolation fixes the core trust problem.
+The real question is not "how do we give AI agents safe environments to run wild?" but "how do we supervise AI agents appropriately?" We need truly secure agents, not just better sandboxes, especially if we want to skip human supervision. No amount of infrastructure isolation fixes the core trust problem.
 
 ## The Future Is Remote (With Better Tooling)
 
