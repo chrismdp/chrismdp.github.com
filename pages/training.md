@@ -16,8 +16,8 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
 
   <div class="w-full px-6 relative z-10">
     <div class="text-center mb-12">
-      <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight mx-4">Kickstart Your Team's AI Journey.</h1>
-      <p class="text-xl md:text-2xl mb-8 text-white mx-4 sm:mx-24">One intensive day of training to transform your engineers from AI skeptics and time-wasters into systematic AI practitioners who deliver measurable productivity gains.</p>
+      <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight mx-4">Kickstart Your Team's AI Journey</h1>
+      <p class="text-xl md:text-2xl mb-8 text-white mx-4 sm:mx-24">One intensive day of training to transform your team<br/>into systematic AI practitioners who deliver measurable productivity gains.</p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-12 items-center">

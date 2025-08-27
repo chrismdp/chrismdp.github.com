@@ -16,8 +16,8 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
 
   <div class="w-full px-6 relative z-10">
     <div class="text-center mb-16">
-      <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight mx-4">Get Your Team from AI Confusion to Competitive Advantage</h1>
-      <p class="text-xl md:text-2xl mb-8 text-white mx-4 sm:mx-24">I help CTOs and engineering leaders successfully roll out AI to their teams — avoiding the chaos that wastes time and money. <a href="#services" class="underline text-white hover:text-brand-light-blue transition-colors">See how →</a></p>
+      <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight mx-6">Get Your Team from AI Confusion to Competitive Advantage</h1>
+      <p class="text-xl md:text-2xl mb-8 text-white mx-6 sm:mx-24">I help CTOs and engineering leaders successfully leverage AI in their teams — avoiding the chaos that wastes time and money. <a href="#services" class="underline text-white hover:text-brand-light-blue transition-colors">See how →</a></p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -42,8 +42,8 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
 <section class="py-20 bg-brand-white">
   <div class="w-full">
     <div class="text-center mb-12 px-6">
-      <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6 text-brand-black">Subscribe to gain access to all my AI guides</h2>
-      <p class="text-xl text-brand-black/80 mb-8 mx-4 sm:mx-24">Weekly insights for technical leaders rolling out AI to engineering teams. No hype, no vendor pitches — just practical frameworks that work in production environments with real security and compliance requirements.</p>
+      <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6 text-brand-black">Try my newsletter to gain access to all my AI guides</h2>
+      <p class="text-xl text-brand-black/80 mb-8 mx-4 sm:mx-24">Weekly insights for technical leaders leveraging AI in their teams. No hype, no vendor pitches — just practical frameworks that work in production environments with real security and compliance requirements.</p>
     </div>
 
     <!-- Carousel image at the bottom -->
@@ -264,7 +264,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
         <i data-lucide="network" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
         <h3 class="text-2xl font-heading font-bold mb-4">IMPLEMENTATION SUPPORT</h3>
-        <p class="text-lg font-semibold mb-4 text-brand-black">Hands-on help rolling out AI tools without breaking things</p>
+        <p class="text-lg font-semibold mb-4 text-brand-black">Hands-on help leveraging AI tools without breaking things</p>
         <p class="text-brand-black/80 leading-relaxed">
           Custom AI system design and implementation with proper security, monitoring, and governance. I work alongside your team to deploy production-ready AI solutions that scale with your business requirements.
         </p>
