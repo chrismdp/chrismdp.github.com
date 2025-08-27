@@ -8,16 +8,16 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
 {% include header.html style="overlay" %}
 
 <!-- Hero Section -->
-<section class="relative bg-gradient-to-br from-brand-deep-turquoise to-brand-turquoise text-white pt-32 pb-0 md:pb-20 overflow-hidden">
+<section class="relative bg-gradient-to-br from-brand-deep-turquoise to-brand-turquoise text-white pt-40 pb-8 md:pb-20 overflow-hidden">
   <!-- Background Image - Desktop only -->
   <div class="hidden md:block absolute bottom-0 right-0 w-full h-2/3 overflow-hidden">
     <img src="/assets/img/chris-hero-bg.png" alt="Chris Parsons" class="absolute bottom-0 right-0 h-full w-auto object-cover object-bottom">
   </div>
 
   <div class="w-full px-6 relative z-10">
-    <div class="text-center mb-12">
-      <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight">Learn AI. Drive Real Business Growth.</h1>
-      <p class="text-xl md:text-2xl mb-8 text-white mx-4 sm:mx-24">I help tech leaders use AI well to level up their teams' productivity, deliver AI features their users love, and transform their operational efficiency. <a href="#services" class="underline text-white hover:text-brand-light-blue transition-colors">View my services →</a></p>
+    <div class="text-center mb-16">
+      <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight mx-4">Get Your Team from AI Confusion to Competitive Advantage</h1>
+      <p class="text-xl md:text-2xl mb-8 text-white mx-4 sm:mx-24">I help CTOs and engineering leaders successfully roll out AI to their teams — avoiding the chaos that wastes time and money. <a href="#services" class="underline text-white hover:text-brand-light-blue transition-colors">See how →</a></p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -43,7 +43,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
   <div class="w-full">
     <div class="text-center mb-12 px-6">
       <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6 text-brand-black">Subscribe to gain access to all my AI guides</h2>
-      <p class="text-xl text-brand-black/80 mb-8 mx-4 sm:mx-24">Join other tech leaders using AI to help their organisations work smarter, deliver quicker and think more clearly. Get my battle-tested guides for AI-powered development and building AI products users actually use.</p>
+      <p class="text-xl text-brand-black/80 mb-8 mx-4 sm:mx-24">Weekly insights for technical leaders rolling out AI to engineering teams. No hype, no vendor pitches — just practical frameworks that work in production environments with real security and compliance requirements.</p>
     </div>
 
     <!-- Carousel image at the bottom -->
@@ -56,16 +56,16 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
 <!-- More About Chris Section -->
 <section class="py-20 bg-white">
   <div class="max-w-4xl mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">More About Chris</h2>
+    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">Why CTOs Trust My AI Implementation Advice</h2>
 
     <div class="grid md:grid-cols-2 gap-12 items-top">
       <div>
         <p class="text-lg text-brand-black/80 mb-6">
-          I'm a technical founder and AI expert who sees possibilities, actions them, and builds systems that create real value. With deep technical chops and a founder's mindset, I go into organisations and have high-impact results fast.
+          I've been in your position. As CTO at Gower Street, I scaled the engineering team from 7 to 50 while building production AI systems. As co-founder and CTO at Cherrypick, I raised £5M and built AI-powered systems from day one.
         </p>
 
         <p class="text-lg text-brand-black/80 mb-6">
-          As a technical leader myself, I understand the unique challenges you face implementing AI in complex technical environments. I've built production AI systems from scratch, scaled technical teams, and delivered results that matter to the bottom line.
+          I know what it's like when your board asks for an "AI strategy" but you're not sure where to start. I've seen teams waste months on the wrong tools, and I've helped others achieve 30%+ productivity gains without the usual implementation chaos.
         </p>
 
         <div class="grid grid-cols-2 gap-4 mb-6">
@@ -234,46 +234,47 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
 <!-- Services Section -->
 <section id="services" class="py-20 bg-white">
   <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">Services: Deploy AI for Real Business Impact</h2>
-    <p class="text-xl text-center mb-12 text-brand-black/80 max-w-3xl mx-auto">I provide advisory services, hands-on AI training workshops, and comprehensive AI readiness assessments. From strategy to implementation, I help tech leaders navigate AI adoption with confidence and deliver measurable results.</p>
+    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">Stop the AI Chaos. Start Getting Results.</h2>
+    <p class="text-xl text-center mb-12 text-brand-black/80 max-w-3xl mx-auto">Your board wants AI strategy. Your team needs practical guidance. Your company needs results without the usual implementation disasters. Here's how I help CTOs and technical leaders succeed where others fail.</p>
 
-    <!-- AI Intensives - Full Width -->
+    <!-- AI Strategy & Implementation Plan - Full Width -->
     <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors mb-12">
-      <i data-lucide="code-2" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
-      <h3 class="text-2xl font-heading font-bold mb-4">AI INTENSIVES - AI TRAINING COURSES FOR TECH TEAMS</h3>
-      <p class="text-lg font-semibold mb-4 text-brand-black">Transform teams from ChatGPT questions to shipping AI features</p>
+      <i data-lucide="map" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
+      <h3 class="text-2xl font-heading font-bold mb-4">AI STRATEGY & IMPLEMENTATION BLUEPRINT</h3>
+      <p class="text-lg font-semibold mb-4 text-brand-black">Get a custom 90-day roadmap that shows your board ROI and gets your team productive</p>
       <p class="text-brand-black/80 leading-relaxed mb-6">
-        One intensive day covering LLM fundamentals, advanced prompting, building agents, and coding with AI. Perfect for technical teams wanting systematic AI capabilities.
+        Skip months of trial and error. I'll analyse your current setup, identify the highest-impact opportunities, and create a step-by-step implementation plan that addresses security, team adoption, and measurable productivity gains. Includes team readiness assessment, tool recommendations, and governance framework.
       </p>
-      <a href="/training" class="inline-block bg-brand-deep-turquoise text-white px-6 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">Learn More →</a>
+      <div class="text-sm text-brand-black/60 mb-6">Perfect for: CTOs needing to present AI strategy to boards, teams of 15-100 engineers, companies with compliance requirements</div>
     </div>
 
     <!-- Other Services - Three Columns -->
     <div class="grid md:grid-cols-3 gap-8 mb-12">
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
-        <i data-lucide="search" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
-        <h3 class="text-2xl font-heading font-bold mb-4">AI READINESS CHECKS</h3>
-        <p class="text-lg font-semibold mb-4 text-brand-black">Maximise your operational efficiency with AI in 90 days</p>
-        <p class="text-brand-black/80 leading-relaxed">
-          Comprehensive assessment of your systems and processes, AI opportunity identification, and a clear 90-day roadmap to deploy AI safely with proper guardrails and monitoring.
+        <i data-lucide="users" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
+        <h3 class="text-2xl font-heading font-bold mb-4">TEAM AI INTENSIVES</h3>
+        <p class="text-lg font-semibold mb-4 text-brand-black">Transform your engineers from AI skeptics to AI-first practitioners</p>
+        <p class="text-brand-black/80 leading-relaxed mb-4">
+          One-day intensive workshop that gets your team from random ChatGPT questions to systematic AI workflows. Covers security, quality standards, and productivity measurement your leadership team cares about.
         </p>
+        <a href="/training/" class="inline-block bg-brand-deep-turquoise text-white px-6 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">View Details →</a>
       </div>
 
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
         <i data-lucide="network" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
-        <h3 class="text-2xl font-heading font-bold mb-4">CUSTOM AI SYSTEMS</h3>
-        <p class="text-lg font-semibold mb-4 text-brand-black">Supercharge your product and tools with AI</p>
+        <h3 class="text-2xl font-heading font-bold mb-4">IMPLEMENTATION SUPPORT</h3>
+        <p class="text-lg font-semibold mb-4 text-brand-black">Hands-on help rolling out AI tools without breaking things</p>
         <p class="text-brand-black/80 leading-relaxed">
-          Custom AI-powered internal tooling with built-in security, monitoring, and governance controls. Full architecture, implementation, and ongoing support for sustainable AI operations.
+          Custom AI system design and implementation with proper security, monitoring, and governance. I work alongside your team to deploy production-ready AI solutions that scale with your business requirements.
         </p>
       </div>
 
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
-        <i data-lucide="users" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
-        <h3 class="text-2xl font-heading font-bold mb-4">AI ADVISORY</h3>
-        <p class="text-lg font-semibold mb-4 text-brand-black">Trusted guidance when decisions matter most</p>
+        <i data-lucide="compass" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
+        <h3 class="text-2xl font-heading font-bold mb-4">CTO-LEVEL AI ADVISORY</h3>
+        <p class="text-lg font-semibold mb-4 text-brand-black">Direct access when you need experienced perspective</p>
         <p class="text-brand-black/80 leading-relaxed">
-            Direct access to an experienced founder, CTO and AI expert who has shipped multiple production AI systems and built and trained teams in AI. Get strategic guidance on technology choices, team decisions, and AI implementation roadmaps. Real-time answers to critical questions, priority review of your initiatives, and trusted perspective when stakes are high.
+          Monthly strategic sessions with someone who's been in your position. Get advice on tool selection, team challenges, vendor negotiations, and board communication. Plus urgent access for critical decisions.
         </p>
       </div>
     </div>
@@ -282,8 +283,8 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
     <!-- Contact Form -->
     <div class="max-w-2xl mx-auto">
       <div class="bg-brand-deep-turquoise rounded-lg p-8 text-center">
-        <h3 class="text-2xl font-heading font-bold text-white mb-4">Ready to get started?</h3>
-        <p class="text-white/90 mb-6">Let's discuss how you can deploy AI that accelerates development and delights users.</p>
+        <h3 class="text-2xl font-heading font-bold text-white mb-4">Ready to Move Beyond AI Experiments?</h3>
+        <p class="text-white/90 mb-6">Let's discuss your specific situation and create a plan that gets your board the results they want and your team the productivity they need.</p>
         <div class="rm-area-embed-services"></div>
       </div>
     </div>
@@ -325,8 +326,8 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
 <!-- Final CTA Section -->
 <section class="py-20 bg-gradient-to-br from-brand-deep-turquoise to-brand-turquoise text-white">
   <div class="max-w-4xl mx-auto text-center px-6">
-    <h2 class="text-4xl md:text-6xl font-heading font-bold mb-6 text-white">Stop Experimenting. Start Deploying AI That Works.</h2>
-    <p class="text-2xl mb-8 text-white">Weekly insights for tech leaders ready to move from AI pilots to production value</p>
+    <h2 class="text-4xl md:text-6xl font-heading font-bold mb-6 text-white">Your Board's Asking About AI. Your Team's Waiting for Direction.</h2>
+    <p class="text-2xl mb-8 text-white">Join 500+ CTOs getting weekly implementation insights that actually work in production</p>
 
     <div class="max-w-md mx-auto bg-brand-deep-turquoise rounded-lg p-6 border border-brand-turquoise">
       <div class="rm-area-embed-subscribe"></div>

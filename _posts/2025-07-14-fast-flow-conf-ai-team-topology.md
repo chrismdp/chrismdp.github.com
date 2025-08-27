@@ -11,7 +11,7 @@ event_name: "Fast Flow Conf UK 2025"
 venue: "London"
 talk_date: 2025-10-14
 talk_url: "https://www.fastflowconf.com"
-talk_title: "Vision for an AI-First Team Topology"
+talk_title: "Vision for an AI-First Team Topology: How AI Fundamentally Transforms How We Organise Technical Teams"
 ---
 
 Most discussions about AI focus on tools and techniques. But the real revolution is organisational. AI does not just change how we build software - it fundamentally transforms how we organise teams.

@@ -16,14 +16,14 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
 
   <div class="w-full px-6 relative z-10">
     <div class="text-center mb-12">
-      <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight">AI Intensives for Technical Teams</h1>
-      <p class="text-xl md:text-2xl mb-8 text-white mx-4 sm:mx-24">Transform your team's mindset from asking AI questions to fundamentally changing how they work.</p>
+      <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight mx-4">Kickstart Your Team's AI Journey.</h1>
+      <p class="text-xl md:text-2xl mb-8 text-white mx-4 sm:mx-24">One intensive day of training to transform your engineers from AI skeptics and time-wasters into systematic AI practitioners who deliver measurable productivity gains.</p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-12 items-center">
       <div class="md:ml-8">
         <div class="bg-brand-deep-turquoise rounded-lg p-6">
-          <p class="text-white/90 mb-4 text-center">Get started by answering a few brief questions below:</p>
+          <p class="text-white/90 mb-4 text-center">Ready to transform your team's AI productivity? Let's discuss your specific situation:</p>
           <div class="rm-area-embed-services"></div>
         </div>
       </div>
@@ -42,52 +42,52 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
 <!-- What Makes This Different Section -->
 <section class="py-20 bg-brand-white">
   <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">The Big Mindset Shift</h2>
+    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">The Leadership Challenge You're Actually Facing</h2>
     
     <div class="text-center mb-12">
       <p class="text-xl text-brand-black/80 mb-8 max-w-3xl mx-auto">
-        Most teams get stuck asking AI random questions. But there's a fundamental mindset shift that changes everything: moving from "What can I ask AI?" to "How can AI transform the way I work?"
+        Your engineers are either terrified AI will replace them, or they're wasting hours on ChatGPT without any systematic approach. You need them productive with AI, not fighting it or abusing it.
       </p>
-      <p class="text-2xl font-bold text-brand-deep-turquoise">
-        This isn't about AI tools. It's about rewiring how your team thinks about problem-solving.
+      <p class="text-xl text-brand-black/80 mb-8 max-w-3xl mx-auto">
+        This training solves the real problem: transforming random AI experimentation into consistent productivity gains you can measure.
       </p>
     </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
       <div class="bg-white rounded-lg p-6 shadow-md border border-brand-light-blue/20">
-        <i data-lucide="brain" class="w-10 h-10 mb-4 text-brand-deep-turquoise"></i>
-        <h3 class="text-xl font-heading font-bold mb-3">Rewire Your Thinking</h3>
-        <p class="text-brand-black/80">Stop asking "What should I prompt?" Start asking "How can this transform my entire workflow?"</p>
+        <i data-lucide="shield-check" class="w-10 h-10 mb-4 text-brand-deep-turquoise"></i>
+        <h3 class="text-xl font-heading font-bold mb-3">Security & Quality Standards</h3>
+        <p class="text-brand-black/80">Your team learns proper AI usage with security, code review standards, and quality gates that satisfy compliance requirements.</p>
       </div>
 
       <div class="bg-white rounded-lg p-6 shadow-md border border-brand-light-blue/20">
-        <i data-lucide="refresh-cw" class="w-10 h-10 mb-4 text-brand-deep-turquoise"></i>
-        <h3 class="text-xl font-heading font-bold mb-3">Break Old Patterns</h3>
-        <p class="text-brand-black/80">Move from reactive AI usage to proactive work transformation. See problems differently.</p>
+        <i data-lucide="trending-up" class="w-10 h-10 mb-4 text-brand-deep-turquoise"></i>
+        <h3 class="text-xl font-heading font-bold mb-3">Measurable Productivity Gains</h3>
+        <p class="text-brand-black/80">Move beyond "it feels faster" to actual metrics you can report to leadership. Track velocity, quality, and team satisfaction.</p>
       </div>
 
       <div class="bg-white rounded-lg p-6 shadow-md border border-brand-light-blue/20">
-        <i data-lucide="lightbulb" class="w-10 h-10 mb-4 text-brand-deep-turquoise"></i>
-        <h3 class="text-xl font-heading font-bold mb-3">Think Like an AI-First Team</h3>
-        <p class="text-brand-black/80">Develop intuition for when and how to leverage AI in every aspect of your work.</p>
+        <i data-lucide="check" class="w-10 h-10 mb-4 text-brand-deep-turquoise"></i>
+        <h3 class="text-xl font-heading font-bold mb-3">Team Buy-In & Confidence</h3>
+        <p class="text-brand-black/80">Address fears directly. Engineers leave understanding AI's limitations and capabilities, not worried about job security.</p>
       </div>
 
       <div class="bg-white rounded-lg p-6 shadow-md border border-brand-light-blue/20">
         <i data-lucide="layers" class="w-10 h-10 mb-4 text-brand-deep-turquoise"></i>
-        <h3 class="text-xl font-heading font-bold mb-3">Systems Over Scripts</h3>
-        <p class="text-brand-black/80">Build systematic approaches, not one-off prompts. Create repeatable transformation patterns.</p>
+        <h3 class="text-xl font-heading font-bold mb-3">Systematic Implementation</h3>
+        <p class="text-brand-black/80">Replace random ChatGPT questions with repeatable workflows that scale across your entire development process.</p>
       </div>
 
       <div class="bg-white rounded-lg p-6 shadow-md border border-brand-light-blue/20">
         <i data-lucide="zap" class="w-10 h-10 mb-4 text-brand-deep-turquoise"></i>
-        <h3 class="text-xl font-heading font-bold mb-3">Immediate Mindset Application</h3>
-        <p class="text-brand-black/80">Practice the new thinking patterns on real work problems. Leave with transformed perspective.</p>
+        <h3 class="text-xl font-heading font-bold mb-3">Immediate ROI</h3>
+        <p class="text-brand-black/80">Teams start applying new techniques immediately. You'll see productivity improvements within weeks, not months.</p>
       </div>
 
       <div class="bg-white rounded-lg p-6 shadow-md border border-brand-light-blue/20">
         <i data-lucide="target" class="w-10 h-10 mb-4 text-brand-deep-turquoise"></i>
-        <h3 class="text-xl font-heading font-bold mb-3">Work Revolution, Not Evolution</h3>
-        <p class="text-brand-black/80">Don't just use AI tools better. Fundamentally change how your team approaches every challenge.</p>
+        <h3 class="text-xl font-heading font-bold mb-3">Competitive Advantage</h3>
+        <p class="text-brand-black/80">While competitors struggle with AI adoption chaos, your team becomes systematically more productive and innovative.</p>
       </div>
     </div>
   </div>
@@ -108,66 +108,66 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
 <!-- Training Outcomes Section -->
 <section class="py-20 bg-white">
   <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">The Transformation Your Team Will Experience</h2>
+    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">What You Can Expect From Your Team After This Training</h2>
     
     <div class="grid md:grid-cols-2 gap-12 items-center mb-12">
       <div>
-        <h3 class="text-2xl font-heading font-bold mb-6 text-brand-black">By the end of this intensive, your team will think differently:</h3>
+        <h3 class="text-2xl font-heading font-bold mb-6 text-brand-black">Your engineers will return to work with:</h3>
         <div class="space-y-4">
           <div class="flex items-start">
-            <i data-lucide="brain" class="w-6 h-6 mr-4 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
+            <i data-lucide="check-circle" class="w-6 h-6 mr-4 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
             <div>
-              <h4 class="font-semibold text-brand-black">Mental Model Shift</h4>
-              <p class="text-brand-black/80">Stop thinking "What can I ask AI?" Start thinking "How does AI change everything I do?"</p>
+              <h4 class="font-semibold text-brand-black">Clear AI Usage Guidelines</h4>
+              <p class="text-brand-black/80">No more ad-hoc ChatGPT usage. They'll follow systematic approaches that maintain code quality and security standards.</p>
             </div>
           </div>
           <div class="flex items-start">
-            <i data-lucide="eye" class="w-6 h-6 mr-4 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
+            <i data-lucide="trending-up" class="w-6 h-6 mr-4 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
             <div>
-              <h4 class="font-semibold text-brand-black">Problem Recognition</h4>
-              <p class="text-brand-black/80">Instantly spot opportunities to transform workflows, not just individual tasks</p>
+              <h4 class="font-semibold text-brand-black">Immediate Productivity Improvements</h4>
+              <p class="text-brand-black/80">Measurable gains in development velocity within weeks. You'll see the difference in sprint planning and delivery.</p>
             </div>
           </div>
           <div class="flex items-start">
-            <i data-lucide="refresh-cw" class="w-6 h-6 mr-4 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
+            <i data-lucide="shield-check" class="w-6 h-6 mr-4 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
             <div>
-              <h4 class="font-semibold text-brand-black">Default AI-First Thinking</h4>
-              <p class="text-brand-black/80">AI becomes the natural first consideration for any new challenge or project</p>
+              <h4 class="font-semibold text-brand-black">Security-First Mindset</h4>
+              <p class="text-brand-black/80">They'll understand data privacy, prompt injection risks, and how to use AI tools safely in your environment.</p>
             </div>
           </div>
           <div class="flex items-start">
-            <i data-lucide="layers" class="w-6 h-6 mr-4 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
+            <i data-lucide="users" class="w-6 h-6 mr-4 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
             <div>
-              <h4 class="font-semibold text-brand-black">Systems Thinking</h4>
-              <p class="text-brand-black/80">Build transformation patterns that scale across the entire team and organization</p>
+              <h4 class="font-semibold text-brand-black">Reduced AI Anxiety</h4>
+              <p class="text-brand-black/80">Fear about job displacement replaced with confidence about enhanced capabilities and career development.</p>
             </div>
           </div>
         </div>
       </div>
       
       <div class="bg-brand-white rounded-lg p-8 border border-brand-light-blue/20">
-        <h3 class="text-2xl font-heading font-bold mb-6 text-brand-black">Format & Follow-Up</h3>
+        <h3 class="text-2xl font-heading font-bold mb-6 text-brand-black">What This Looks Like For You</h3>
         <div class="space-y-4">
           <div>
-            <h4 class="font-semibold text-brand-deep-turquoise mb-2">One Intensive Day</h4>
-            <p class="text-brand-black/80 text-sm">Complete curriculum delivered in-person or remote with cohorts of 25-40 people for optimal interaction and hands-on practice, with optional follow-up sessions.</p>
+            <h4 class="font-semibold text-brand-deep-turquoise mb-2">Minimal Disruption</h4>
+            <p class="text-brand-black/80 text-sm">One intensive day, delivered on-site or remote. Your team stays productive while getting the training they need. Cohorts of 25-40 for optimal engagement.</p>
           </div>
           <div>
-            <h4 class="font-semibold text-brand-deep-turquoise mb-2">Structured Follow-Up Available</h4>
+            <h4 class="font-semibold text-brand-deep-turquoise mb-2">Reinforcement Programme</h4>
             <ul class="text-brand-black/80 text-sm space-y-1">
-              <li>• Week 2: "Early Wins" session</li>
-              <li>• Week 4: "Momentum Building" session</li>
-              <li>• Week 8: "Advanced Applications" session</li>
-              <li>• Ongoing support via Slack/Teams integration</li>
+              <li>• Week 2: "Early Wins" check-in to measure initial impact</li>
+              <li>• Week 4: "Momentum Building" to address adoption challenges</li>
+              <li>• Week 8: "Advanced Applications" for team leaders</li>
+              <li>• Ongoing support integration with your existing communication tools</li>
             </ul>
           </div>
           <div>
-            <h4 class="font-semibold text-brand-deep-turquoise mb-2">Custom Examples</h4>
-            <p class="text-brand-black/80 text-sm">Training examples tailored to your tech stack and specific use cases.</p>
+            <h4 class="font-semibold text-brand-deep-turquoise mb-2">Tailored to Your Environment</h4>
+            <p class="text-brand-black/80 text-sm">Training examples use your actual tech stack and workflows. We address your specific security and compliance requirements.</p>
           </div>
           <div>
-            <h4 class="font-semibold text-brand-deep-turquoise mb-2">Multiple Delivery Options</h4>
-            <p class="text-brand-black/80 text-sm">From standalone training to comprehensive 3-month transformation programmes with advisory support.</p>
+            <h4 class="font-semibold text-brand-deep-turquoise mb-2">Scalable Implementation</h4>
+            <p class="text-brand-black/80 text-sm">From standalone team training to comprehensive 3-month transformation programmes with executive reporting and strategic advisory support.</p>
           </div>
         </div>
       </div>
@@ -277,18 +277,11 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
 <!-- Final CTA Section -->
 <section class="py-20 bg-gradient-to-br from-brand-deep-turquoise to-brand-turquoise text-white">
   <div class="max-w-4xl mx-auto text-center px-6">
-    <h2 class="text-4xl md:text-6xl font-heading font-bold mb-6 text-white">Ready to Transform Your Team?</h2>
-    <p class="text-2xl mb-8 text-white">Stop experimenting. Start building AI features users actually want.</p>
+    <h2 class="text-4xl md:text-6xl font-heading font-bold mb-6 text-white">Get Started Today.</h2>
+    <p class="text-2xl mb-8 text-white">Answer the questions below to get your team's intensive booked:</p>
 
     <div class="max-w-2xl mx-auto bg-brand-deep-turquoise rounded-lg p-8 border border-brand-turquoise mb-8">
-      <h3 class="text-2xl font-heading font-bold text-white mb-4">Intensive AI training for tech teams</h3>
-      <p class="text-white/90 mb-6">Get started by answering a few brief questions below about your team's specific needs and available dates.</p>
       <div class="rm-area-embed-services"></div>
-    </div>
-
-
-    <div class="mt-12 text-sm text-white/60">
-      <p>Course outline is open to discussing any tweaks or additions as needed.</p>
     </div>
   </div>
 </section>
