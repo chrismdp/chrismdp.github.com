@@ -234,8 +234,9 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
 <!-- Services Section -->
 <section id="services" class="py-20 bg-white">
   <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">Stop the AI Chaos. Start Getting Results.</h2>
-    <p class="text-xl text-center mb-12 text-brand-black/80 max-w-3xl mx-auto">Your board wants AI strategy. Your team needs practical guidance. Your company needs results without the usual implementation disasters. Here's how I help CTOs and technical leaders succeed where others fail.</p>
+    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">My Services</h2>
+    <p class="text-xl text-center mb-12 text-brand-black/80 max-w-3xl mx-auto">Your board wants AI strategy. Your team needs practical guidance. Your company needs results without implementation disasters.</p>
+    <p class="text-xl text-center mb-12 text-brand-black/80 max-w-3xl mx-auto">Here's how I help CTOs and technical leaders succeed where others fail.</p>
 
     <!-- AI Strategy & Implementation Plan - Full Width -->
     <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors mb-12">
@@ -252,7 +253,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
     <div class="grid md:grid-cols-3 gap-8 mb-12">
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
         <i data-lucide="users" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
-        <h3 class="text-2xl font-heading font-bold mb-4">TEAM AI INTENSIVES</h3>
+        <h3 class="text-2xl font-heading font-bold mb-4">AI TRAINING INTENSIVES</h3>
         <p class="text-lg font-semibold mb-4 text-brand-black">Transform your engineers from AI skeptics to AI-first practitioners</p>
         <p class="text-brand-black/80 leading-relaxed mb-4">
           One-day intensive workshop that gets your team from random ChatGPT questions to systematic AI workflows. Covers security, quality standards, and productivity measurement your leadership team cares about.
