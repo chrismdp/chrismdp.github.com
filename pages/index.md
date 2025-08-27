@@ -5,8 +5,10 @@ permalink: /
 excerpt: "I help tech leaders cut through AI hype to deliver features users love and development velocity that transforms your business."
 ---
 
+{% include header.html style="overlay" %}
+
 <!-- Hero Section -->
-<section class="relative bg-gradient-to-br from-brand-deep-turquoise to-brand-turquoise text-white py-20 pb-0 md:pb-20 overflow-hidden">
+<section class="relative bg-gradient-to-br from-brand-deep-turquoise to-brand-turquoise text-white pt-32 pb-0 md:pb-20 overflow-hidden">
   <!-- Background Image - Desktop only -->
   <div class="hidden md:block absolute bottom-0 right-0 w-full h-2/3 overflow-hidden">
     <img src="/assets/img/chris-hero-bg.png" alt="Chris Parsons" class="absolute bottom-0 right-0 h-full w-auto object-cover object-bottom">

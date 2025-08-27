@@ -42,13 +42,8 @@
    </style>
 
    <body class="font-body text-brand-black">
-      {% if page.url != '/' %}
-      <header class="bg-white border-b border-brand-light-blue/20" role="banner">
-         <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-            {% include logo-menu.html %}
-            {% include social-menu.html %}
-         </div>
-      </header>
+      {% if page.url != '/' and page.url != '/training/' %}
+      {% include header.html style="default" %}
       {% endif %}
       
       <main role="main">

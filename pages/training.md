@@ -1,14 +1,14 @@
 ---
 layout: default
 title: "Intensive AI Training for Tech Teams"
-permalink: /training
-redirect_from:
-  - /training/
+permalink: /training/
 excerpt: "Transform your team from random ChatGPT questions to shipping AI features users actually want. One intensive day that creates confident AI practitioners."
 ---
 
+{% include header.html style="overlay" %}
+
 <!-- Hero Section -->
-<section class="relative bg-gradient-to-br from-brand-deep-turquoise to-brand-turquoise text-white py-20 pb-0 md:pb-20 overflow-hidden">
+<section class="relative bg-gradient-to-br from-brand-deep-turquoise to-brand-turquoise text-white pt-32 pb-0 md:pb-20 overflow-hidden">
   <!-- Background Image - Desktop only -->
   <div class="hidden md:block absolute bottom-0 right-0 w-full h-2/3 overflow-hidden">
     <img src="/assets/img/chris-hero-bg.png" alt="Chris Parsons" class="absolute bottom-0 right-0 h-full w-auto object-cover object-bottom">

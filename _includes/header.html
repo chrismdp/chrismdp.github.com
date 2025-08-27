@@ -1,0 +1,29 @@
+{% assign header_style = include.style | default: "default" %}
+
+{% if header_style == "overlay" %}
+  {% assign header_class = "absolute top-0 left-0 right-0 z-50 bg-transparent" %}
+  {% assign logo_color = "text-white hover:text-brand-light-blue" %}
+  {% assign nav_text_color = "white" %}
+  {% assign nav_hover_color = "brand-light-blue" %}
+{% else %}
+  {% assign header_class = "bg-white border-b border-brand-light-blue/20" %}
+  {% assign logo_color = "text-brand-black hover:text-brand-deep-turquoise" %}
+  {% assign nav_text_color = "brand-black" %}
+  {% assign nav_hover_color = "brand-deep-turquoise" %}
+{% endif %}
+
+<header class="{{ header_class }}" role="banner">
+   <div class="w-full px-6 lg:px-12 py-6 flex items-center justify-between">
+      <!-- Logo -->
+      <nav aria-label="Logo menu" class="flex relative z-50">
+         <a href="{{ site.baseurl }}/" class="text-2xl font-heading font-bold {{ logo_color }} transition-colors">
+            {{ site.title }}
+         </a>
+      </nav>
+      
+      <!-- Navigation -->
+      <nav aria-label="Menu" class="flex">
+         {% include navigation.html text_color=nav_text_color hover_color=nav_hover_color %}
+      </nav>
+   </div>
+</header>
