@@ -93,6 +93,8 @@ The project includes `docker-compose.yaml` for containerized development using J
 ### Jekyll Site Structure
 This is a GitHub Pages-compatible Jekyll blog using a Tailwind CSS theme. The site architecture follows Jekyll conventions with some key customizations:
 
+**Important**: When updating existing blog posts, update the date in the front matter to reflect the update date, but NEVER rename the file itself - the filename should always retain the original publication date. This preserves URL structure and history.
+
 - **GitHub Pages deployment** - Uses `github-pages` gem for compatibility
 - **Tailwind CSS via CDN** - Configured in `_layouts/default.html` with custom brand colors
 - **Custom post layout** - Enhanced with newsletter signup, share buttons, and related articles
@@ -195,15 +197,19 @@ Newsletter content uses Kit platform following rough template of one story, one 
 People expect content about using AI to build agents and products at high speed, generating revenue quickly, with weekly notes sharing stories, learnings, and tips on getting ahead with AI.
 
 ### Social Media Posts
-**IMPORTANT**: When writing for social media or LinkedIn, you MUST read and follow ALL instruction files in the `_roles/sally-social-media-manager/` folder. This includes:
+**IMPORTANT**: When writing for social media or LinkedIn, you MUST ALWAYS read and follow ALL instruction files in the `_roles/sally-social-media-manager/` folder FIRST before creating any social content. This includes:
 
 - Voice & tone standards (no contractions, direct conversational style, Grade 5-7 reading level)
 - Hook writing requirements (62/0/50 character format, authority-based openings)
-- Content structure guidelines (1,250-3,000 characters optimal)
-- LinkedIn formatting standards (bold text, emoji usage, hashtag strategy)
+- Content structure guidelines (1,250-3,000 characters optimal, 14+ short paragraphs)
+- LinkedIn formatting standards (emoji usage only - no hashtags)
+  - Use emojis (🚨, 💡, ⚡, 🎯, etc.) to structure sections instead of markdown headers
+  - NEVER use bold markdown (**text**) for section headers - it doesn't work on LinkedIn
+  - NEVER use numbered lists - convert to separate paragraphs
+  - No hashtags needed
 - Performance optimization techniques (engagement hierarchy, timing strategy)
 
-These guidelines override general writing rules when creating social content.
+**CRITICAL**: Always refer to Sally's instructions (`_roles/sally-social-media-manager/instructions.md`) for the latest content structure requirements, paragraph formatting, and performance data. These guidelines override ALL other writing rules when creating social content.
 
 ### Reusable Components
 The project uses Jekyll includes for commonly repeated elements:

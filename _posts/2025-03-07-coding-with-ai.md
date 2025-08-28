@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Coding with AI: How To Do It Well And What This Means"
-date: 2025-03-07 00:00:00 +00:00
+date: 2025-08-28 00:00:00 +00:00
 categories:
 - development
 - ai
@@ -10,7 +10,13 @@ categories:
 - wardley maps
 ---
 
+*Updated August 2025: Revised to reflect my switch from Cursor to Claude Code, added insights on CLAUDE.md best practices and team collaboration, updated autonomous agent experiments. For deeper dives, see [AI: The New Dawn of Software Craft](/2025/05/12/ai-new-dawn-of-software-craft/) on architectural quality and [Independent Coding Agents: The Tools Aren't Ready](/2025/08/08/independent-coding-agents-tools-arent-ready/) on infrastructure challenges.*
+
 I am shipping AI-first production code every day. Not experimental features. Not throwaway prototypes. Real, deployed, mission-critical code powering [Cherrypick](https://cherrypick.co)'s tens of thousands of users.
+
+My journey through AI coding tools has been evolutionary. I started with GitHub Copilot's inline suggestions, moved to Cursor for its broader context understanding, and have now settled on Claude Code as my primary development partner. When I first wrote this article in March 2025, I was recommending Cursor to everyone. By May 2025, I had switched exclusively to Claude Code. Each transition revealed new possibilities and limitations. Copilot showed me what autocomplete could become. Cursor demonstrated the power of full-file context. Claude Code has shown me what happens when the tools, models, and interfaces are designed together from the ground up.
+
+This progression mirrors the industry's evolution from IDE augmentation to independent CLI-based tools, and now toward fully autonomous development environments. What started as fancy autocomplete has become a fundamental shift in how we write, review, and think about code.
 
 Social media overflows with "vibe coding" demonstrations. These flashy but superficial examples show AI apparently conjuring perfect code in seconds. The reality of professional AI-assisted development runs much deeper. Real production work with AI is messier, more nuanced, and demands rigorous thinking, but very effective.
 
@@ -18,7 +24,7 @@ This is not about magical code generation. It is about a new way of thinking abo
 
 This is how I am doing it, what it all might mean, and how we can help others find the way.
 
-If you are interested in how AI is shaping the future of software craftsmanship and architectural quality, see my follow-up article: [AI: The New Dawn of Software Craft](/2025/05/12/ai-new-dawn-of-software-craft/), which explores how rigorous architecture and human-AI partnership can lead to a renaissance in software quality and intent.
+If you are interested in how AI is shaping the future of software craftsmanship and architectural quality, see my follow-up article: [AI: The New Dawn of Software Craft](/2025/05/12/ai-new-dawn-of-software-craft/), which explores how rigorous architecture and human-AI partnership can lead to a renaissance in software quality and intent. For a reality check on the infrastructure challenges of running independent AI agents, see [Independent Coding Agents: The Tools Aren't Ready](/2025/08/08/independent-coding-agents-tools-arent-ready/).
 
 <!--more-->
 
@@ -30,9 +36,9 @@ Here are the key practices I use daily and have found effective.
 
 ### Assume your AI is wrong
 
-My AI coding assistant is wrong about 70% of the time. That is fine by me.
+When I first wrote this in March 2025, I estimated my AI coding assistant was wrong about 70% of the time. Now with Claude Code, it gets things wrong less frequently, though complex tasks still require careful review. That is fine by me.
 
-When Cursor generates code for me, it is rarely perfect on the first try. It misunderstands requirements, makes incorrect assumptions about my codebase, or simply produces code that will not work.
+When Claude Code generates code for me, it is not always perfect on the first try. It can misunderstand requirements, make incorrect assumptions about my codebase, or produce code that needs refinement.
 
 But here is the critical insight: even when it is wrong, it is still valuable. The real power is not in perfect code generation. It is in the conversation. It is having another entity to bounce ideas off, even when that entity is confidently incorrect.
 
@@ -42,23 +48,23 @@ Most importantly, you need to understand what the code actually does by reading 
 
 To go fast, get really good at reading and understanding code fast.
 
-### Be careful with YOLO mode
+### Maintain Control Over Execution
 
-"YOLO mode" in Cursor allows you to automatically run terminal commands without asking. This might work for vibe coding demonstrations, but at least for me, Cursor unexpectedly tried to run servers, commit to git repositories, or execute commands without explicit permission. These tools overreach in their helpfulness.
-
-I would suggest you always maintain control over what actions are actually executed in your environment, or watch it like a hawk. If you are less experienced, make sure you understand what every aspect of a command does before you run it. 
+While AI tools have become increasingly autonomous, I always maintain control over what actions are actually executed in my environment. If you are less experienced, make sure you understand what every aspect of a command does before you run it. The temptation to let AI run everything automatically is strong, but the cost of a misunderstood command can be high. 
 
 ### Set up repository specific rules
 
-Cursor Rules are particularly important. I have found that Cursor follows style and architecture guidelines well when properly instructed. I tend to keep these specific to the repository and only add them when I have found the AI repeating the same mistakes. Otherwise there is a danger of fighting against whatever prompt is already built in to Cursor.
+CLAUDE.md files are particularly important. I have found that Claude Code follows style and architecture guidelines exceptionally well when properly instructed. I keep these specific to the repository and continuously refine them. After every meaningful change, I ask Claude to update its own CLAUDE.md files based on what it wished it knew about my practice or code at the beginning to make the next change more efficient.
 
-For example, I use [Scenic](https://github.com/scenic-views/scenic) for view generation in Ruby on Rails. It would consistently edit migrations or try to create migrations directly until I created a specific Cursor rule that told it not to run Scenic, and then it followed this pattern reliably.
+This continual improvement approach, which I discovered after initially writing this article, means you get faster with every change. Whenever I notice Claude making the wrong decision, I always ask it to update CLAUDE.md to prevent it happening again. For example, I use [Scenic](https://github.com/scenic-views/scenic) for view generation in Ruby on Rails. It would consistently edit migrations directly until I created a specific rule about using Scenic, and then it followed this pattern reliably.
 
-Take the time to set up these rules: it pays dividends in code quality and consistency without having to edit the code itself after generation.
+For teams, shared CLAUDE.md files become essential. Teams need to collaborate on good AI direction and let go of individual idiosyncratic development practices, much like we let go of code formatting preferences in favour of automated linting. The goal is to let AI create code consistently, even if it is not exactly how each developer would approach it, while agreeing on fundamentals like good testing and code organisation.
 
 ### Guardrails Matter More Than Ever
 
 With AI-generated code, your existing quality guardrails become even more critical. While AI can help write tests, you should not trust it blindly. I have seen countless examples where AI-written tests barely test anything meaningful and give a false sense of confidence. It works better to write the test names yourself and use AI to help with assertions and implementation details.
+
+Decent automatic end-to-end testing has become extremely useful for greenlighting changes more quickly. If all the end-to-end tests pass, I can focus more on reviewing code for security issues rather than functional correctness. This shift in review focus has accelerated my deployment cycle significantly while maintaining confidence in the system's behaviour.
 
 Type hints and strict linting are crucial. They help catch errors early and guide the AI to generate better code. The AI thrives on type information to understand context. However, you do not necessarily need to switch to statically typed languages. Even dynamic languages with good type hinting can work well.
 
@@ -130,19 +136,27 @@ What makes Wispr Flow so powerful with Cursor is how it bridges the gap between 
 
 For someone like me who thinks best while talking and tends towards being an external processor, this has been invaluable. It preserves insights that might otherwise be lost as they take too much typing, or that I need to speak out loud to understand.
 
+## Beyond Isolated Development
+
+The evolution from IDE augmentation to independent CLI based tools like Claude Code has opened new possibilities. Since writing this article originally, I have been experimenting with the next step: agents that are independent of the developer machine.
+
+As of August 2025, I have been working with Coder to spin up fully isolated sets of containers while still using a shared Claude Code Max plan. This was fiddly and I am not entirely sure it was worth the effort yet. The next step will be trying Claude's GitHub Action integrations, though the per-token pricing could get expensive for teams without clear ROI while we are still in the experimental stage.
+
+Hopefully newer entries to the autonomous agent market will reach Claude Code's level within a few months, increasing competition and driving down prices. The trajectory is clear: we are moving from local development enhancement to fully autonomous development environments. However, as I discovered in [Independent Coding Agents: The Tools Aren't Ready](/2025/08/08/independent-coding-agents-tools-arent-ready/), the infrastructure complexity and security challenges mean we're not quite there yet.
+
 ## Beyond Code
 
-AI tools like Cursor are not limited to code generation. I am finding them increasingly valuable for other aspects of my work.
+AI tools like Claude Code are not limited to code generation. I am finding them increasingly valuable for other aspects of my work, from writing blog posts to organising my Obsidian knowledge base.
 
 ### Writing with AI
 
-Here is how I write blog posts with AI: First, I open a chat with Cursor and brain dump everything. Random thoughts, opinions, struggles, and half formed ideas about what I want to say. I dictate this stream of consciousness using Wispr Flow, letting my thoughts flow naturally.
+Here is how I write blog posts with AI: First, I open a chat with Claude Code and brain dump everything. Random thoughts, opinions, struggles, and half formed ideas about what I want to say. I dictate this stream of consciousness using Wispr Flow, letting my thoughts flow naturally.
 
 Once I have this raw material, I ask the AI to suggest a coherent structure. I review and edit this outline, moving sections around until the flow makes sense. Only then do I ask it to write the actual post following this structure.
 
 The editing process is methodical. I go through paragraph by paragraph, asking the AI to refine or completely rewrite sections that do not quite hit the mark, chopping out sections where it has overdone things and tweaking the odd sentence here and there.
 
-At the end, I run a final style check against my Cursor rules, which contain my writing guidelines and preferences. These were in turn generated initially by the AI after reading older posts, but I have refined them over time.
+At the end, I run a final style check against my CLAUDE.md rules, which contain my writing guidelines and preferences. These were in turn generated initially by the AI after reading older posts, but I have refined them over time.
 
 This process combines the best of human insight with AI ability to structure and refine. The key is starting with strong opinions and clear direction. Without this human input, the AI tends to produce generic, lifeless content that reads like every other AI generated post on the internet.
 
@@ -154,9 +168,9 @@ In 1992, Kim Stanley Robinson wrote about an AI research assistant that reads ev
 
 [^mars]: I'd _highly_ recommend reading the Mars Trilogy if you are interested in hard science fiction and an optimistic view of the future. The trilogy (Red Mars, Green Mars, Blue Mars) follows the colonisation and terraforming of Mars over nearly two centuries. It's remarkable not just for its scientific plausibility, but for how it explores the social, political and psychological implications of space colonisation. The invention of the AI assistant that appears in the books, along with other uses of AI, was remarkably prescient about how we might use AI to augment our thinking and research capabilities.
 
-My notes have evolved from a scattered collection into a living system. The AI does not just search. It understands. It finds connections I have missed, surfaces forgotten commitments, and builds a semantic map of my thinking. This is not speculative fiction anymore; it is my daily workflow with Cursor AI and Obsidian.
+My notes have evolved from a scattered collection into a living system. The AI does not just search. It understands. It finds connections I have missed, surfaces forgotten commitments, and builds a semantic map of my thinking. This is not speculative fiction anymore; it is my daily workflow with Claude Code and Obsidian.
 
-Here is exactly how it works: I maintain a markdown repository with all my notes in Obsidian. When I open this vault in Cursor and ask for a review, it reads through everything. Understanding every note and connection. It spots tasks in meeting notes and suggests adding them to my todo lists. It reviews my periodic notes and helps me reflect on themes and progress. It even processes links I share, creating smart summaries that it can reference later when answering broader questions about the repository.
+Here is exactly how it works: I maintain a markdown repository with all my notes in Obsidian. When I open this vault in Claude Code and ask for a review, it reads through everything. Understanding every note and connection. It spots tasks in meeting notes and suggests adding them to my todo lists. It reviews my periodic notes and helps me reflect on themes and progress. It even processes links I share, creating smart summaries that it can reference later when answering broader questions about the repository.
 
 The power is not just in searching (that would be merely a fancy keyword search). It is in how Cursor builds a deep understanding of my knowledge graph. It sees relationships between ideas, builds context over time, and actively helps organise information in ways that align with how I think.
 
@@ -194,7 +208,7 @@ This is the junior developer paradox: if AI handles the routine coding tasks tha
 
 Perhaps the answer lies in pairing with juniors and showing them how we use AI, having more conversations about higher order concepts, and guiding them as they use the tools. Pairing has always been the best way to learn code anyway.
 
-Perhaps the aspects around production are more important than code itself, and we should start there: principles around testing, linting, deployment, security, data modelling, and layered architecture.
+Perhaps the aspects around production are more important than code itself, and we should start there: principles around testing, linting, deployment, security, data modelling, and layered architecture. I explore this further in [AI: The New Dawn of Software Craft](/2025/05/12/ai-new-dawn-of-software-craft/), where I argue that rigorous architectural patterns are the key to high-quality AI-generated systems.
 
 Maybe well structured templated repositories with generated code will become even more important. Perhaps there will be higher level blocks more at the library or repository level that we will give to AIs to stick together. Perhaps juniors will not need to learn the implementation details of these blocks.
 
