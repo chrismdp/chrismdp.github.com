@@ -82,7 +82,7 @@ This creates a living knowledge base that grows more valuable over time, rather 
 
 My blog writing process has evolved to leverage this repository-based approach completely. The AI has immediate access to my previous posts, writing guidelines in CLAUDE.md, and established voice patterns.
 
-First, I brain dump everything into Claude Code while the blog repository is open. Random thoughts, half-formed opinions, struggles, and insights, all captured through voice dictation using [Wispr Flow](https://wisprflow.ai/r?CHRIS104){:target="_blank"}. Unlike working with a fresh chat interface, the AI can immediately draw connections to my other work, suggest relevant links to previous articles, and propose structures that fit my established patterns.
+First, I brain dump everything into Claude Code while the blog repository is open. Random thoughts, half-formed opinions, struggles, and insights, all captured through voice dictation using Wispr Flow[^wispr-flow]. Unlike working with a fresh chat interface, the AI can immediately draw connections to my other work, suggest relevant links to previous articles, and propose structures that fit my established patterns.
 
 The editing process becomes collaborative in ways that feel impossible with traditional chat interfaces. I go through paragraph by paragraph, but the AI can reference my CLAUDE.md style guide, understand my typical argument patterns, and maintain consistency with my voice across the entire body of work. These style guides become living documents that evolve with my practice, similar to how I maintain architectural patterns when [coding with AI](/coding-with-ai/).
 
@@ -168,6 +168,7 @@ We are still early in this transition. The tools are evolving rapidly, the best 
 
 The future of knowledge work is not human versus AI, or even human plus AI. It is human and AI working together in shared spaces designed for understanding to compound. Repositories are just the beginning.
 
+
 [^mars]: I'd _highly_ recommend reading the Mars Trilogy if you are interested in hard science fiction and an optimistic view of the future. The trilogy (Red Mars, Green Mars, Blue Mars) follows the colonisation and terraforming of Mars over nearly two centuries. It's remarkable not just for its scientific plausibility, but for how it explores the social, political and psychological implications of space colonisation. The invention of the AI assistant that appears in the books, along with other uses of AI, was remarkably prescient about how we might use AI to augment our thinking and research capabilities.
 
 [^leann]: I keep my LEANN index updated with the command: `leann build blog-vault --force --embedding-mode openai --embedding-model text-embedding-3-small --docs *`. The `--force` flag rebuilds the entire index, while the embedding model choice balances cost and quality. You can experiment with different OpenAI embedding models depending on your needs and budget.
@@ -180,4 +181,5 @@ The future of knowledge work is not human versus AI, or even human plus AI. It i
 
 [^graphrag]: This approach to understanding connections between pieces of knowledge is similar to what I explored in [Graph RAG: The Future is Relationships](/graph-rag/), where the focus shifts from isolated information retrieval to understanding how knowledge interconnects. Traditional RAG systems retrieve relevant documents, but Graph RAG understands the relationships between concepts, creating a more nuanced and contextual understanding of information.
 
+[^wispr-flow]: [Wispr Flow](https://wisprflow.ai/r?CHRIS104) is an excellent voice-to-text app that transforms spoken thoughts into well-structured text. This is a referral link, but I would recommend Wispr Flow regardless because it genuinely enhances AI-assisted workflows by bridging the gap between brain dumping and structured thinking.
 [^prompting]: As I explored in [Prompting Sucks (And What We Can Do About It)](/beyond-prompting/), the fundamental problem with prompting is that it is brittle, repetitive, and endlessly frustrating. You end up spending more time crafting the perfect prompt than actually getting work done, and the AI never remembers your preferences from one conversation to the next.

@@ -10,8 +10,6 @@ categories:
 - wardley maps
 ---
 
-*Updated August 2025: Revised to reflect my switch from Cursor to Claude Code, added insights on CLAUDE.md best practices and team collaboration, updated autonomous agent experiments. For deeper dives, see [AI: The New Dawn of Software Craft](/ai-new-dawn-of-software-craft/) on architectural quality and [Independent Coding Agents: The Tools Aren't Ready](/independent-coding-agents-tools-arent-ready/) on infrastructure challenges.*
-
 I am shipping AI-first production code every day. Not experimental features. Not throwaway prototypes. Real, deployed, mission-critical code powering [Cherrypick](https://cherrypick.co)'s tens of thousands of users.
 
 My journey through AI coding tools has been evolutionary. I started with GitHub Copilot's inline suggestions, moved to Cursor for its broader context understanding, and have now settled on Claude Code as my primary development partner. When I first wrote this article in March 2025, I was recommending Cursor to everyone. By May 2025, I had switched exclusively to Claude Code. Each transition revealed new possibilities and limitations. Copilot showed me what autocomplete could become. Cursor demonstrated the power of full-file context. Claude Code has shown me what happens when the tools, models, and interfaces are designed together from the ground up.
@@ -24,7 +22,7 @@ This is not about magical code generation. It is about a new way of thinking abo
 
 This is how I am doing it, what it all might mean, and how we can help others find the way.
 
-If you are interested in how AI is shaping the future of software craftsmanship and architectural quality, see my follow-up article: [AI: The New Dawn of Software Craft](/ai-new-dawn-of-software-craft/), which explores how rigorous architecture and human-AI partnership can lead to a renaissance in software quality and intent. For a reality check on the infrastructure challenges of running independent AI agents, see [Independent Coding Agents: The Tools Aren't Ready](/independent-coding-agents-tools-arent-ready/).
+AI is creating opportunities for a renaissance in software craftsmanship through rigorous architecture and human-AI partnership[^ai-dawn], though the infrastructure challenges of autonomous agents remain significant[^agents-not-ready].
 
 <!--more-->
 
@@ -130,7 +128,7 @@ Josh Nelands shared a particularly effective technique for implementing this res
 
 ### Talk to the AI
 
-Another tool that has transformed my workflow is Wispr Flow. This app has become my go to for capturing thoughts and communicating opinions. When I am instructing the AI when writing or coding, I am normally just dictating into Wispr Flow, which transforms my spoken words into well structured text.
+Another tool that has transformed my workflow is Wispr Flow[^wispr-flow]. This app has become my go to for capturing thoughts and communicating opinions. When I am instructing the AI when writing or coding, I am normally just dictating into Wispr Flow, which transforms my spoken words into well structured text.
 
 What makes Wispr Flow so powerful with Cursor is how it bridges the gap between brain dumping and structured thinking. I can capture the natural flow of ideas and then Cursor organises them coherently in the document I'm writing into.
 
@@ -142,13 +140,13 @@ The evolution from IDE augmentation to independent CLI based tools like Claude C
 
 As of August 2025, I have been working with Coder to spin up fully isolated sets of containers while still using a shared Claude Code Max plan. This was fiddly and I am not entirely sure it was worth the effort yet. The next step will be trying Claude's GitHub Action integrations, though the per-token pricing could get expensive for teams without clear ROI while we are still in the experimental stage.
 
-Hopefully newer entries to the autonomous agent market will reach Claude Code's level within a few months, increasing competition and driving down prices. The trajectory is clear: we are moving from local development enhancement to fully autonomous development environments. However, as I discovered in [Independent Coding Agents: The Tools Aren't Ready](/independent-coding-agents-tools-arent-ready/), the infrastructure complexity and security challenges mean we're not quite there yet.
+Hopefully newer entries to the autonomous agent market will reach Claude Code's level within a few months, increasing competition and driving down prices. The trajectory is clear: we are moving from local development enhancement to fully autonomous development environments. However, as I discovered, the infrastructure complexity and security challenges mean we're not quite there yet[^agents-not-ready].
 
 ## Beyond Coding
 
 The real transformation is not in how we code, but in how we think. AI tools are reshaping our cognitive processes, turning scattered thoughts into structured knowledge and isolated ideas into connected systems.
 
-The same principles that make AI effective for coding—persistent context, iterative refinement, critical engagement—apply to all forms of knowledge work. We are moving from using AI as a coding assistant to using it as a thinking partner.
+The same principles that make AI effective for coding (persistent context, iterative refinement, critical engagement) apply to all forms of knowledge work. We are moving from using AI as a coding assistant to using it as a thinking partner.
 
 For a detailed exploration of how I use these tools for writing and knowledge management, see [Writing and Thinking with AI: Why Repositories Beat Chatbots](/writing-and-thinking-with-ai-why-repositories-beat-chatbots/).
 
@@ -186,7 +184,7 @@ This is the junior developer paradox: if AI handles the routine coding tasks tha
 
 Perhaps the answer lies in pairing with juniors and showing them how we use AI, having more conversations about higher order concepts, and guiding them as they use the tools. Pairing has always been the best way to learn code anyway.
 
-Perhaps the aspects around production are more important than code itself, and we should start there: principles around testing, linting, deployment, security, data modelling, and layered architecture. I explore this further in [AI: The New Dawn of Software Craft](/ai-new-dawn-of-software-craft/), where I argue that rigorous architectural patterns are the key to high-quality AI-generated systems.
+Perhaps the aspects around production are more important than code itself, and we should start there: principles around testing, linting, deployment, security, data modelling, and layered architecture. I explore this further in my thoughts on how rigorous architectural patterns are the key to high-quality AI-generated systems[^ai-dawn].
 
 Maybe well structured templated repositories with generated code will become even more important. Perhaps there will be higher level blocks more at the library or repository level that we will give to AIs to stick together. Perhaps juniors will not need to learn the implementation details of these blocks.
 
@@ -196,7 +194,7 @@ Secondly, we may need new forms of deliberate practice. If AI handles the routin
 
 Thirdly, the relationship between junior and senior developers will evolve. Rather than seniors primarily reviewing code, they might focus more on teaching complexity recognition, architectural thinking, and the subtle art of knowing when to trust or question AI suggestions.
 
-The actual coding was never the job, and now it is less of the job than ever. The true value has always been in understanding [what to build and why](/the-job-is-not-to-build), not just how to implement it. AI simply makes this distinction more apparent.
+The actual coding was never the job, and now it is less of the job than ever. The true value has always been in understanding what to build and why[^job-not-build], not just how to implement it. AI simply makes this distinction more apparent.
 
 ## Can Agents Really Focus on What's Essential?
 
@@ -230,8 +228,11 @@ The future belongs to developers who can effectively collaborate with AI, mainta
 
 I would like to thank Jim Downing for a great conversation that led to this version of the Wardley Map. I am also grateful to Todd Anderson, Martin Bechard, Rob Bowley,Jonathan Conway, Joshua Cornejo, Frankie Cleary, John Crickett, Jeff Foster, Sasha Gerrand, Ian Harper, Chris Hasiński, Britannio Jarrett, Josh Nelands, Slobodan Tanasić, Benjamin Tindall, Denis Turkov, Meri Williams, and many other LinkedIn commenters for their contributions to the conversation.
 
-For more on building robust AI applications, see my post on [how to build a robust LLM application](/how-to-build-a-robust-llm-application). If you are interested in the future of incorporating AI into your systems, you might also enjoy my thoughts on [why prompting sucks and what we can do about it](/beyond-prompting).
-
+[^ai-dawn]: The evolution toward AI-assisted development is creating opportunities for a renaissance in software quality, but only if we maintain rigorous architectural standards. [AI: The New Dawn of Software Craft](/ai-new-dawn-of-software-craft/) explores how human-AI partnership can elevate rather than compromise software craftsmanship, emphasising the critical role of architectural patterns and disciplined development practices in an AI-first world.
+[^agents-not-ready]: While the promise of autonomous coding agents is compelling, the current reality involves significant infrastructure complexity and security challenges. [Independent Coding Agents: The Tools Aren't Ready](/independent-coding-agents-tools-arent-ready/) examines the practical limitations I encountered when experimenting with fully autonomous development environments, from container orchestration difficulties to cost management challenges.
+[^job-not-build]: As AI handles more implementation details, the real value shifts toward understanding problems deeply rather than coding solutions quickly. [The Job Is Not To Build](/the-job-is-not-to-build/) explores how the most successful engineers focus on discovering what should be built and why, skills that become more valuable as AI automates the mechanics of code generation.
+[^robust-llm]: Building production AI systems requires moving beyond demos and prototypes to handle real-world complexity, edge cases, and reliability requirements. [How To Build A Robust LLM Application](/how-to-build-a-robust-llm-application/) provides practical guidance for creating AI systems that work reliably in production environments, covering error handling, monitoring, and graceful degradation patterns.
+[^beyond-prompting]: Traditional prompting approaches are fundamentally limited by their brittle, repetitive nature that forces developers to repeatedly provide context and manage complex instructions. [Beyond Prompting: Why Prompting Sucks And What We Can Do About It](/beyond-prompting/) explores more sophisticated approaches to AI interaction, including the repository-based methods that eliminate much of the friction in AI collaboration.
+[^wispr-flow]: [Wispr Flow](https://wisprflow.ai/r?CHRIS104) is an excellent voice-to-text app that transforms spoken thoughts into well-structured text. This is a referral link, but I would recommend Wispr Flow regardless because it genuinely enhances AI-assisted workflows by bridging the gap between brain dumping and structured thinking.
 [^1]: System 1 and System 2 thinking are concepts developed by Daniel Kahneman in his book "Thinking, Fast and Slow". System 1 is our intuitive, fast thinking mode. System 2 is our deliberate, slow thinking mode.
-
 [^llm-lost]: Laban, P., Hayashi, H., Zhou, Y., & Neville, J. (2025). [LLMs Get Lost In Multi-Turn Conversation](https://arxiv.org/abs/2505.06120). arXiv preprint arXiv:2505.06120.
