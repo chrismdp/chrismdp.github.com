@@ -4,6 +4,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Memories and Insights
 
+### LEANN Integration
+- **Search for relevant posts**: Use LEANN (`mcp__leann-server__leann_search`) to find related articles to link to when writing blog posts
+- **Update LEANN index**: `leann build blog-vault --force --embedding-mode openai --embedding-model text-embedding-3-small --docs *`
+- This helps with SEO and provides value to readers by creating implicit links between related content
+
+### Internal Linking
+- **Always use slug-only links**: Internal blog post links should always be in the format `/slug/` without any date information (e.g., `/coding-with-ai/` not `/2025/03/07/coding-with-ai/`)
+- This matches the Jekyll permalink structure configured in `_config.yml`
+
 ### Key Learnings
 - Always read the entire context of a project before starting work
 - Carefully follow existing file structure and guidelines when making modifications

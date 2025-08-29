@@ -10,7 +10,7 @@ categories:
 - wardley maps
 ---
 
-*Updated August 2025: Revised to reflect my switch from Cursor to Claude Code, added insights on CLAUDE.md best practices and team collaboration, updated autonomous agent experiments. For deeper dives, see [AI: The New Dawn of Software Craft](/2025/05/12/ai-new-dawn-of-software-craft/) on architectural quality and [Independent Coding Agents: The Tools Aren't Ready](/2025/08/08/independent-coding-agents-tools-arent-ready/) on infrastructure challenges.*
+*Updated August 2025: Revised to reflect my switch from Cursor to Claude Code, added insights on CLAUDE.md best practices and team collaboration, updated autonomous agent experiments. For deeper dives, see [AI: The New Dawn of Software Craft](/ai-new-dawn-of-software-craft/) on architectural quality and [Independent Coding Agents: The Tools Aren't Ready](/independent-coding-agents-tools-arent-ready/) on infrastructure challenges.*
 
 I am shipping AI-first production code every day. Not experimental features. Not throwaway prototypes. Real, deployed, mission-critical code powering [Cherrypick](https://cherrypick.co)'s tens of thousands of users.
 
@@ -24,7 +24,7 @@ This is not about magical code generation. It is about a new way of thinking abo
 
 This is how I am doing it, what it all might mean, and how we can help others find the way.
 
-If you are interested in how AI is shaping the future of software craftsmanship and architectural quality, see my follow-up article: [AI: The New Dawn of Software Craft](/2025/05/12/ai-new-dawn-of-software-craft/), which explores how rigorous architecture and human-AI partnership can lead to a renaissance in software quality and intent. For a reality check on the infrastructure challenges of running independent AI agents, see [Independent Coding Agents: The Tools Aren't Ready](/2025/08/08/independent-coding-agents-tools-arent-ready/).
+If you are interested in how AI is shaping the future of software craftsmanship and architectural quality, see my follow-up article: [AI: The New Dawn of Software Craft](/ai-new-dawn-of-software-craft/), which explores how rigorous architecture and human-AI partnership can lead to a renaissance in software quality and intent. For a reality check on the infrastructure challenges of running independent AI agents, see [Independent Coding Agents: The Tools Aren't Ready](/independent-coding-agents-tools-arent-ready/).
 
 <!--more-->
 
@@ -136,43 +136,21 @@ What makes Wispr Flow so powerful with Cursor is how it bridges the gap between 
 
 For someone like me who thinks best while talking and tends towards being an external processor, this has been invaluable. It preserves insights that might otherwise be lost as they take too much typing, or that I need to speak out loud to understand.
 
-## Beyond Isolated Development
+## The Future is Independent Agents
 
 The evolution from IDE augmentation to independent CLI based tools like Claude Code has opened new possibilities. Since writing this article originally, I have been experimenting with the next step: agents that are independent of the developer machine.
 
 As of August 2025, I have been working with Coder to spin up fully isolated sets of containers while still using a shared Claude Code Max plan. This was fiddly and I am not entirely sure it was worth the effort yet. The next step will be trying Claude's GitHub Action integrations, though the per-token pricing could get expensive for teams without clear ROI while we are still in the experimental stage.
 
-Hopefully newer entries to the autonomous agent market will reach Claude Code's level within a few months, increasing competition and driving down prices. The trajectory is clear: we are moving from local development enhancement to fully autonomous development environments. However, as I discovered in [Independent Coding Agents: The Tools Aren't Ready](/2025/08/08/independent-coding-agents-tools-arent-ready/), the infrastructure complexity and security challenges mean we're not quite there yet.
+Hopefully newer entries to the autonomous agent market will reach Claude Code's level within a few months, increasing competition and driving down prices. The trajectory is clear: we are moving from local development enhancement to fully autonomous development environments. However, as I discovered in [Independent Coding Agents: The Tools Aren't Ready](/independent-coding-agents-tools-arent-ready/), the infrastructure complexity and security challenges mean we're not quite there yet.
 
-## Beyond Code
+## Beyond Coding
 
-AI tools like Claude Code are not limited to code generation. I am finding them increasingly valuable for other aspects of my work, from writing blog posts to organising my Obsidian knowledge base.
+The real transformation is not in how we code, but in how we think. AI tools are reshaping our cognitive processes, turning scattered thoughts into structured knowledge and isolated ideas into connected systems.
 
-### Writing with AI
+The same principles that make AI effective for coding—persistent context, iterative refinement, critical engagement—apply to all forms of knowledge work. We are moving from using AI as a coding assistant to using it as a thinking partner.
 
-Here is how I write blog posts with AI: First, I open a chat with Claude Code and brain dump everything. Random thoughts, opinions, struggles, and half formed ideas about what I want to say. I dictate this stream of consciousness using Wispr Flow, letting my thoughts flow naturally.
-
-Once I have this raw material, I ask the AI to suggest a coherent structure. I review and edit this outline, moving sections around until the flow makes sense. Only then do I ask it to write the actual post following this structure.
-
-The editing process is methodical. I go through paragraph by paragraph, asking the AI to refine or completely rewrite sections that do not quite hit the mark, chopping out sections where it has overdone things and tweaking the odd sentence here and there.
-
-At the end, I run a final style check against my CLAUDE.md rules, which contain my writing guidelines and preferences. These were in turn generated initially by the AI after reading older posts, but I have refined them over time.
-
-This process combines the best of human insight with AI ability to structure and refine. The key is starting with strong opinions and clear direction. Without this human input, the AI tends to produce generic, lifeless content that reads like every other AI generated post on the internet.
-
-This very post was written using this method. It does not read like AI (at least I hope not), but it was produced much quicker than I would have been able to write it manually myself. I also pulled in the LinkedIn posts I have written recently on this topic into the context to help it pull together insights I had  and fill out the first draft of the paragraphs.
-
-### Knowledge Management with AI
-
-In 1992, Kim Stanley Robinson wrote about an AI research assistant that reads everything and connects ideas across an entire knowledge base. In his [Mars Trilogy](https://www.kimstanleyrobinson.info/content/mars-trilogy)[^mars], the character Jon Boone uses an AI system that surfaces insights he might have missed. It felt like distant science fiction at the time. Yet here I am in 2025, living that reality every day.
-
-[^mars]: I'd _highly_ recommend reading the Mars Trilogy if you are interested in hard science fiction and an optimistic view of the future. The trilogy (Red Mars, Green Mars, Blue Mars) follows the colonisation and terraforming of Mars over nearly two centuries. It's remarkable not just for its scientific plausibility, but for how it explores the social, political and psychological implications of space colonisation. The invention of the AI assistant that appears in the books, along with other uses of AI, was remarkably prescient about how we might use AI to augment our thinking and research capabilities.
-
-My notes have evolved from a scattered collection into a living system. The AI does not just search. It understands. It finds connections I have missed, surfaces forgotten commitments, and builds a semantic map of my thinking. This is not speculative fiction anymore; it is my daily workflow with Claude Code and Obsidian.
-
-Here is exactly how it works: I maintain a markdown repository with all my notes in Obsidian. When I open this vault in Claude Code and ask for a review, it reads through everything. Understanding every note and connection. It spots tasks in meeting notes and suggests adding them to my todo lists. It reviews my periodic notes and helps me reflect on themes and progress. It even processes links I share, creating smart summaries that it can reference later when answering broader questions about the repository.
-
-The power is not just in searching (that would be merely a fancy keyword search). It is in how Cursor builds a deep understanding of my knowledge graph. It sees relationships between ideas, builds context over time, and actively helps organise information in ways that align with how I think.
+For a detailed exploration of how I use these tools for writing and knowledge management, see [Writing and Thinking with AI: Why Repositories Beat Chatbots](/writing-and-thinking-with-ai-why-repositories-beat-chatbots/).
 
 ## What this means: AI is changing everything
 
@@ -208,7 +186,7 @@ This is the junior developer paradox: if AI handles the routine coding tasks tha
 
 Perhaps the answer lies in pairing with juniors and showing them how we use AI, having more conversations about higher order concepts, and guiding them as they use the tools. Pairing has always been the best way to learn code anyway.
 
-Perhaps the aspects around production are more important than code itself, and we should start there: principles around testing, linting, deployment, security, data modelling, and layered architecture. I explore this further in [AI: The New Dawn of Software Craft](/2025/05/12/ai-new-dawn-of-software-craft/), where I argue that rigorous architectural patterns are the key to high-quality AI-generated systems.
+Perhaps the aspects around production are more important than code itself, and we should start there: principles around testing, linting, deployment, security, data modelling, and layered architecture. I explore this further in [AI: The New Dawn of Software Craft](/ai-new-dawn-of-software-craft/), where I argue that rigorous architectural patterns are the key to high-quality AI-generated systems.
 
 Maybe well structured templated repositories with generated code will become even more important. Perhaps there will be higher level blocks more at the library or repository level that we will give to AIs to stick together. Perhaps juniors will not need to learn the implementation details of these blocks.
 

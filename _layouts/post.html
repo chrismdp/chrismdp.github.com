@@ -222,13 +222,15 @@ layout: default
               {{ post.title }}
             </a>
           </h3>
-          <div class="text-sm text-brand-black/60 italic mb-3">
+          <div class="text-sm text-brand-black/60 italic mb-4">
             {% assign original_date = post.path | split: "/" | last | split: "-" | slice: 0, 2 | join: '' %}
             {% assign current_date = post.date | date: "%Y%m" %}
             {% if original_date != current_date %}Updated: {% endif %}
             {{ post.date | date: "%B %Y" }}
           </div>
-          {{ post.excerpt }}
+          <div class="prose prose-lg mb-4 text-brand-black/80 leading-relaxed content-styled">
+            {{ post.excerpt }}
+          </div>
           <a href="{{ site.baseurl }}{{ post.url }}" class="text-brand-deep-turquoise hover:text-brand-turquoise font-semibold">
             Read more →
           </a>
