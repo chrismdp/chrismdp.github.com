@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Coding with AI: How To Do It Well And What This Means"
+title: "Coding with AI: How To Do It Well And What It Means For The Industry"
 date: 2025-08-28 00:00:00 +00:00
 categories:
 - development
@@ -12,19 +12,21 @@ categories:
 
 I am shipping AI-first production code every day. Not experimental features. Not throwaway prototypes. Real, deployed, mission-critical code powering [Cherrypick](https://cherrypick.co)'s tens of thousands of users.
 
+This is not magical code generation or "vibe coding". It is about a new way of thinking about development. It requires substantial real-world development experience to do well: the onus is upon those of us with this experience to teach the next generation how to harness these tools effectively.
+
+This is how I am doing it, what it all might mean, and how we can help others find the way.
+
+<!--more-->
+
+## The Journey So Far
+
 My journey through AI coding tools has been evolutionary. I started with GitHub Copilot's inline suggestions, moved to Cursor for its broader context understanding, and have now settled on Claude Code as my primary development partner. When I first wrote this article in March 2025, I was recommending Cursor to everyone. By May 2025, I had switched exclusively to Claude Code. Each transition revealed new possibilities and limitations. Copilot showed me what autocomplete could become. Cursor demonstrated the power of full-file context. Claude Code has shown me what happens when the tools, models, and interfaces are designed together from the ground up.
 
 This progression mirrors the industry's evolution from IDE augmentation to independent CLI-based tools, and now toward fully autonomous development environments. What started as fancy autocomplete has become a fundamental shift in how we write, review, and think about code.
 
 Social media overflows with "vibe coding" demonstrations. These flashy but superficial examples show AI apparently conjuring perfect code in seconds. The reality of professional AI-assisted development runs much deeper. Real production work with AI is messier, more nuanced, and demands rigorous thinking, but very effective.
 
-This is not about magical code generation. It is about a new way of thinking about development. It requires substantial real-world development experience to do well: the onus is upon those of us with this experience to teach the next generation how to harness these tools effectively.
-
-This is how I am doing it, what it all might mean, and how we can help others find the way.
-
 AI is creating opportunities for a renaissance in software craftsmanship through rigorous architecture and human-AI partnership[^ai-dawn], though the infrastructure challenges of autonomous agents remain significant[^agents-not-ready].
-
-<!--more-->
 
 {% include ai-newsletter-short.html %}
 
