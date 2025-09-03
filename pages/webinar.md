@@ -4,7 +4,7 @@ title: "Webinar: How Not to Screw Up Your AI Rollout"
 permalink: /webinar
 excerpt: "Plenty of teams have made massive gains with AI. Others show teams getting slower. Learn what makes the difference."
 image: /assets/img/ai-rollout-failure-webinar.png
-image_portrait: false
+image_portrait: true
 kit_tag: webinar6
 webinar_date: "2025-09-04T14:00:00+01:00"
 ---
@@ -12,8 +12,8 @@ webinar_date: "2025-09-04T14:00:00+01:00"
 <div class="mb-12">
 
 
-  <p class="text-xl text-brand-black font-bold mb-4">
-    Next session: {{ page.webinar_date | date: "%B %-d, %-I%P %Z" }}
+  <p class="text-2xl text-brand-black font-bold mb-4">
+    {{ page.webinar_date | date: "%b %-d, %-I%P %Z" }}
   </p>
 
   <p class="text-lg text-brand-black mb-8">
