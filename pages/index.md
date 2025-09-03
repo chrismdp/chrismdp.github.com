@@ -204,13 +204,15 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
           {% assign next_talk = upcoming_talks.first %}
           <p class="text-2xl font-bold text-brand-deep-turquoise mb-2">{{ next_talk.event_name }}: {{ next_talk.talk_date | date: "%B %Y" }}</p>
           <p class="text-brand-black/80 mb-4">{{ next_talk.talk_title }}</p>
-          <a href="{{ next_talk.url }}" target="_blank" class="inline-block bg-brand-deep-turquoise text-white px-4 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">View session →</a>
+          <a href="{{ next_talk.url }}" target="_blank" class="inline-block bg-brand-deep-turquoise text-white px-4 py-2 rounded-lg hover:bg-brand-turquoise transition-colors mr-2">View session →</a>
+          <a href="{{ site.baseurl }}/talks/" class="mt-2 inline-block bg-trans text-brand-black px-4 py-2 rounded-lg hover:bg-deep-turquoise/80 transition-colors">See all talks →</a>
         {% elsif past_talks.size > 0 %}
           <h3 class="text-xl font-heading font-bold mb-2">Latest Speaking Event</h3>
           {% assign latest_talk = past_talks.first %}
           <p class="text-2xl font-bold text-brand-deep-turquoise mb-2">{{ latest_talk.event_name }}: {{ latest_talk.talk_date | date: "%B %Y" }}</p>
           <p class="text-brand-black/80 mb-4">{{ latest_talk.talk_title }}</p>
-          <a href="{{ latest_talk.url }}" class="inline-block bg-brand-deep-turquoise text-white px-4 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">Read about talk →</a>
+          <a href="{{ latest_talk.url }}" class="inline-block bg-brand-deep-turquoise text-white px-4 py-2 rounded-lg hover:bg-brand-turquoise transition-colors mr-2">Read about talk →</a>
+          <a href="{{ site.baseurl }}/talks/" class="inline-block bg-brand-black text-white px-4 py-2 rounded-lg hover:bg-brand-black/80 transition-colors">See all talks →</a>
         {% else %}
           <h3 class="text-xl font-heading font-bold mb-2">Speaking Events</h3>
           <p class="text-2xl font-bold text-brand-deep-turquoise mb-2">No talks scheduled</p>
@@ -318,8 +320,9 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
     </article>
     {% endfor %}
 
-    <div class="text-center">
+    <div class="text-center space-x-4">
       <a href="{{ site.baseurl }}/articles/" class="inline-block bg-brand-black text-white px-6 py-3 rounded-lg hover:bg-brand-black/80 transition-colors">View All Articles</a>
+      <a href="{{ site.baseurl }}/talks/" class="inline-block bg-brand-deep-turquoise text-white px-6 py-3 rounded-lg hover:bg-brand-turquoise transition-colors">See All Talks</a>
     </div>
   </div>
 </section>

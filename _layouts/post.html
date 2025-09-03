@@ -42,7 +42,7 @@ layout: default
     {% endif %}
     
     <div class="float-right ml-6 mb-6 w-full md:w-1/2 max-w-md bg-brand-light-blue/10 rounded-lg p-6 border border-brand-light-blue/20 not-prose">
-      <h3 class="text-lg font-heading font-bold mb-4 text-brand-black">
+      <h3 class="text-lg font-heading font-bold text-brand-black">
         {% if is_upcoming %}Upcoming Talk{% else %}Past Talk{% endif %}
       </h3>
       <div class="space-y-3 text-sm">
@@ -64,12 +64,8 @@ layout: default
           <span class="font-semibold text-brand-black">Venue:</span>
           <span class="text-brand-black/80">{{ page.venue }}</span>
         </div>
-        <div>
-          <span class="font-semibold text-brand-black">Title:</span>
-          <span class="text-brand-black/80">{{ page.talk_title }}</span>
-        </div>
         {% if page.talk_url %}
-        <div class="pt-2">
+        <div class="flex flex-col space-y-4 justify-self-start items-center">
           <a href="{{ page.talk_url }}" target="_blank" class="inline-block bg-brand-deep-turquoise px-4 py-2 rounded-lg hover:bg-brand-turquoise transition-colors text-sm font-semibold !text-white">
             View Event →
           </a>
@@ -190,6 +186,9 @@ layout: default
           {% endunless %}
         {% endfor %}
       </div>
+      <a href="{{ site.baseurl }}/talks/" class="inline-flex items-center text-brand-deep-turquoise hover:text-brand-turquoise font-semibold">
+        See all talks →
+      </a>
     </div>
   {% endif %}
 
