@@ -64,6 +64,11 @@ The power is not just in searching. That would be merely a fancy keyword search.
 
 Every Monday begins with a structured "Strategy Session" - a focused session that sets the week's direction by combining calendar awareness, goal alignment, and realistic capacity planning within my knowledge vault repository.
 
+<div class='float-right ml-8 mb-6 w-1/2 max-w-md pl-4'>
+<img alt='CLAUDE.md Daily and Weekly Routine' src='/assets/img/claude-md-daily-weekly-routine.png' class='rounded-lg'>
+<span class='text-sm italic'>To get the high-res version of this guide <a href="https://chrismdp.com" target="_blank">sign up to my newsletter</a>.</span>
+</div>
+
 The four-step process starts with context review, checking calendar for upcoming meetings and deadlines whilst reviewing current month and quarter goals stored in the vault. I ask AI to ask me questions about what I want to achieve and how I have reflected on the previous week's review. Reality assessment follows, honestly evaluating energy levels, health, and unexpected demands documented in daily notes. Strategic alignment connects immediate tasks to bigger picture business objectives using the interconnected note system. Finally, energy-aware prioritisation schedules demanding creative work for high-energy periods and routine admin for low-energy slots.
 
 Rather than creating impossible schedules, the method acknowledges real constraints like illness, urgent client issues, and competing priorities. This builds sustainable momentum instead of setting up for failure. When facing choices between building features or talking to customers, the strategy consistently prioritises customer conversations. A single webinar becomes both content delivery and market research.
