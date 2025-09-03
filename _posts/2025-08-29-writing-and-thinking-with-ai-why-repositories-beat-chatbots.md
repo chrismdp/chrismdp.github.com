@@ -60,6 +60,18 @@ Here is exactly how it works: I maintain my knowledge vault as a markdown reposi
 
 The power is not just in searching. That would be merely a fancy keyword search. It is in how the AI builds a deep understanding of my knowledge graph. It sees relationships between ideas, builds context over time, and actively helps organise information in ways that align with how I think[^graphrag].
 
+### The Monday Morning Strategy Session
+
+Every Monday begins with a structured "Strategy Session" - a focused session that sets the week's direction by combining calendar awareness, goal alignment, and realistic capacity planning within my knowledge vault repository.
+
+The four-step process starts with context review, checking calendar for upcoming meetings and deadlines whilst reviewing current month and quarter goals stored in the vault. I ask AI to ask me questions about what I want to achieve and how I have reflected on the previous week's review. Reality assessment follows, honestly evaluating energy levels, health, and unexpected demands documented in daily notes. Strategic alignment connects immediate tasks to bigger picture business objectives using the interconnected note system. Finally, energy-aware prioritisation schedules demanding creative work for high-energy periods and routine admin for low-energy slots.
+
+Rather than creating impossible schedules, the method acknowledges real constraints like illness, urgent client issues, and competing priorities. This builds sustainable momentum instead of setting up for failure. When facing choices between building features or talking to customers, the strategy consistently prioritises customer conversations. A single webinar becomes both content delivery and market research.
+
+Unpleasant but necessary tasks get strict time limits. This prevents them consuming the entire week whilst ensuring professional handling. The plan explicitly schedules demanding work for peak energy periods and routine tasks for low-energy times, treating attention as a finite strategic resource.
+
+The method works because it treats energy and attention as finite strategic resources rather than unlimited inputs, whilst maintaining laser focus on revenue-generating activities that serve genuine market needs.
+
 ### The Review System
 
 The knowledge vault includes an automated review system that transforms daily observations into structured, interconnected knowledge. This review system lives in a few paragraphs in CLAUDE.md and operates on multiple levels:
