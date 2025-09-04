@@ -43,6 +43,34 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Tools and resources**: Extract tools mentioned in webinars as markdown link lists for easy reference
 - **Key takeaways**: Always include a clear takeaway and actionable "try this week" suggestion
 
+### Standard Post-Webinar Process
+After each webinar, follow these steps to archive the content and prepare for the next month:
+
+1. **Create webinar write-up blog post**:
+   - Wait for the webinar transcript to be provided
+   - Create a new post in `_posts/` with format: `YYYY-MM-DD-webinar-title.md`
+   - Use the current date for the post date
+   - Convert the webinar transcript into a blog post following the webinar blog post guidelines above
+   - Add categories: `ai`, `webinar`, and any other relevant categories
+   - Include the webinar image if one exists
+
+2. **Revert webinar page to generic template**:
+   - Use the generic template from commit `0c4f82f9afe` as the base
+   - Keep the generic title "AI for Technical Leaders" and generic description
+   - Preserve and increment the `kit_tag` from the current webinar page
+   - Update the `webinar_date` field
+
+3. **Update for next month**:
+   - Increment the `kit_tag` number from current value (e.g., if current is `webinar6` → `webinar7`)
+   - Set `webinar_date` to the first Thursday of the next month at 14:00 UK local time
+   - Use correct timezone offset: `+01:00` for BST (British Summer Time, late March to late October) or `+00:00` for GMT
+   - Example: `"2025-10-02T14:00:00+01:00"` for October 2025 (BST)
+   - Example: `"2025-11-06T14:00:00+00:00"` for November 2025 (GMT)
+
+4. **Commit changes**:
+   - Commit the new blog post with message like: "Add webinar write-up: [Title]"
+   - Commit the updated webinar page with message like: "Reset webinar page for next month (webinar7)"
+
 ## Coder Template Management
 
 ### Pushing Templates
