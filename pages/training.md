@@ -39,6 +39,13 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
   </div>
 </section>
 
+<!-- Rob Bettles Testimonial -->
+<section class="py-12 bg-brand-white">
+  <div class="max-w-4xl mx-auto px-6">
+    {% include testimonial-rob-bettles.html %}
+  </div>
+</section>
+
 <!-- What Makes This Different Section -->
 <section class="py-20 bg-brand-white">
   <div class="max-w-6xl mx-auto px-6">
@@ -93,17 +100,6 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
   </div>
 </section>
 
-<!-- Testimonials 1 & 2 -->
-<!--
-<section class="py-12 bg-brand-deep-turquoise">
-  <div class="max-w-6xl mx-auto px-6">
-    <div class="grid md:grid-cols-2 gap-8">
-      {% include testimonial-training-1.html %}
-      {% include testimonial-training-2.html %}
-    </div>
-  </div>
-</section>
--->
 
 <!-- Training Outcomes Section -->
 <section class="py-20 bg-white">
