@@ -184,6 +184,13 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
 </section>
 -->
 
+<!-- Xavier Watkins Testimonial -->
+<section class="py-12 bg-brand-deep-turquoise">
+  <div class="max-w-4xl mx-auto px-6">
+    {% include testimonial-xavier-watkins.html %}
+  </div>
+</section>
+
 <!-- Complete Syllabus Section -->
 <section class="py-20 bg-white">
   <div class="max-w-6xl mx-auto px-6">
@@ -268,7 +275,6 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
     </div>
   </div>
 </section>
-
 
 <!-- Final CTA Section -->
 <section class="py-20 bg-gradient-to-br from-brand-deep-turquoise to-brand-turquoise text-white">
