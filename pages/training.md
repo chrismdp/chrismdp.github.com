@@ -100,6 +100,12 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
   </div>
 </section>
 
+<!-- Ria Vaidya Testimonial -->
+<section class="py-12 bg-brand-deep-turquoise">
+  <div class="max-w-4xl mx-auto px-6">
+    {% include testimonial-ria-vaidya.html %}
+  </div>
+</section>
 
 <!-- Training Outcomes Section -->
 <section class="py-20 bg-white">
