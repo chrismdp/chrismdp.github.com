@@ -13,8 +13,6 @@ I stared at my screen, frustrated. The sandboxing system I had just implemented 
 
 Rather than manually refactor this myself, I decided to run an experiment: pit three major coding agents against each other on this genuinely challenging task. Not a simple "write me a function" request, but something that would test their limits - modifying an existing commit in a well-factored, well-tested codebase with proper linting, integration tests, and end-to-end tests.
 
-{% include ai-newsletter-short.html %}
-
 <!--more-->
 
 ## The Setup: Three Contenders Enter
@@ -49,6 +47,8 @@ As the agents worked, the differences became stark. Codex and Claude Code were b
 Codex finished first with what looked like a solid implementation. But when I went to run the tests... nothing. It had not even attempted to run them. When I prompted it to do so, it dutifully complied, but this felt like a basic oversight.
 
 Claude Code was still churning away, but I could see it was doing more - modifying tests, updating documentation, handling edge cases that I had not even thought to mention.
+
+{% include ai-newsletter-short.html %}
 
 ## The User Experience Reality
 
