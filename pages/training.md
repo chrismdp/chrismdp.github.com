@@ -87,8 +87,8 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
 
       <div class="bg-white rounded-lg p-6 shadow-md border border-brand-light-blue/20">
         <i data-lucide="zap" class="w-10 h-10 mb-4 text-brand-deep-turquoise"></i>
-        <h3 class="text-xl font-heading font-bold mb-3">Immediate ROI</h3>
-        <p class="text-brand-black/80">Teams start applying new techniques immediately. You'll see productivity improvements within weeks, not months.</p>
+        <h3 class="text-xl font-heading font-bold mb-3">Immediate Application</h3>
+        <p class="text-brand-black/80">Teams can apply techniques immediately. You'll see productivity improvements within weeks, not months.</p>
       </div>
 
       <div class="bg-white rounded-lg p-6 shadow-md border border-brand-light-blue/20">
@@ -190,10 +190,10 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
 </section>
 -->
 
-<!-- Xavier Watkins Testimonial -->
+<!-- Kate Welka Testimonial -->
 <section class="py-12 bg-brand-deep-turquoise">
   <div class="max-w-4xl mx-auto px-6">
-    {% include testimonial-xavier-watkins.html %}
+    {% include testimonial-kate-welka.html %}
   </div>
 </section>
 
@@ -279,6 +279,13 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
         </ul>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- Xavier Watkins Testimonial -->
+<section class="py-12 bg-white">
+  <div class="max-w-4xl mx-auto px-6">
+    {% include testimonial-xavier-watkins.html %}
   </div>
 </section>
 
