@@ -282,10 +282,11 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
   </div>
 </section>
 
-<!-- Xavier Watkins Testimonial -->
+<!-- Sara Haers Méndez Testimonial -->
+
 <section class="py-12 bg-white">
   <div class="max-w-4xl mx-auto px-6">
-    {% include testimonial-xavier-watkins.html %}
+    {% include testimonial-sara-haers-mendez.html %}
   </div>
 </section>
 
