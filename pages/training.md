@@ -23,7 +23,6 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
     <div class="grid md:grid-cols-2 gap-12 items-center">
       <div class="md:ml-8">
         <div class="bg-brand-deep-turquoise rounded-lg p-6">
-          <p class="text-white/90 mb-4 text-center">Ready to transform your team's AI productivity? Let's discuss your specific situation:</p>
           <div class="rm-area-embed-services"></div>
         </div>
       </div>

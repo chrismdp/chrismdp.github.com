@@ -21,6 +21,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - Ask clarifying questions if any part of the instruction is ambiguous
 - Use tool invocations as the primary method of interaction
 - Maintain a consistent and professional tone in all interactions
+- **Never make up claims about experience**: Don't invent numbers like "implementing AI at 20+ companies" or similar claims unless explicitly confirmed in existing content
+- **Always verify sources**: When citing statistics or research (like Writer's 41% statistic), search for the actual source to ensure accuracy
 
 ### Content Creation Insights
 - When writing blog posts from transcripts, focus on extracting key insights rather than following the transcript structure
@@ -32,6 +34,30 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Linking strategy**: Use implicit links naturally within sentences, avoid "check out this post" style linking - prefer contextual integration. Use `{:target="_blank"}` for external links to open in new windows
 - **Footnotes for additional value**: Use footnotes not just for citations but to provide actionable advice and deeper insights that enhance the main narrative
 - **Always search for recent articles**: Before writing any blog post, search through recent posts in `_posts/` folder to identify relevant articles to link to implicitly within the content - this improves SEO and provides value to readers
+
+### Chris's Writing Patterns
+- **Provocative titles that deliver**: Prefers counterintuitive headlines that challenge assumptions (e.g., "AI Is Consistently Mediocre. That's Why It's Valuable")
+- **Framework-driven thinking**: Creates 2x2 matrices and visual frameworks to explain complex concepts - these should be referenced and explained in detail
+- **Personal discovery narrative**: Often structures posts around "I discovered/realised X while building Y" - maintains authority while staying humble
+- **Concrete over abstract**: Always grounds theoretical insights in specific examples (expense processing, code reviews, interview scoring)
+- **Nuanced acknowledgment**: Recognises both sides - "This is humbling but powerful" or "optimistic view... pessimistic view..." without false balance
+- **Historical parallels**: Connects current disruptions to past ones (Charlie Chaplin/industrial revolution to AI revolution)
+- **Sectional progression**: Likes consolidated sections with subsections (e.g., "Hidden Advantages of Consistency" with multiple H3 subheadings)
+- **Mid-article refinement**: Often revises structure during writing - consolidating related concepts under unified headings
+- **Academic grounding**: References Kahneman, includes research studies, but always with practical application
+- **Democratisation theme**: Frequently explores how technology enables underdogs (juniors with AI competing with seniors)
+- **Future implications focus**: Always ends looking forward to disruption/change rather than just current state
+- **Short, punchy paragraphs**: Rarely more than 3-4 sentences per paragraph, often just 1-2 for emphasis
+- **"But" as a paragraph starter**: Frequently starts paragraphs with "But" to create contrast and maintain conversational flow
+
+### Anti-Patterns to Avoid (AI Slop)
+- **NEVER use "Here's the X" constructions** - Chris finds these generic and overused
+- **Avoid "The real insight is..." or "Here is what I discovered:"** - These are AI writing clichés that feel inauthentic
+- **No rhetorical question hooks** - Don't start with "What if I told you..." or similar
+- **Avoid generic transitions** - "Let me tell you", "The brutal truth", "You won't believe this"
+- **Don't use numbered lists** - Chris prefers short paragraphs with headings over bullet points
+- **No false build-up** - Lead with the most interesting insight, don't save it for the end
+- **Avoid abstract conclusions** - Always end with concrete implications and future-looking statements
 
 ### Webinar Blog Post Guidelines
 - **Opening hook**: Use compelling statistics or reframe broad claims (e.g., "95% of technical teams cannot ship their AI agents" rather than specific anecdotes)
