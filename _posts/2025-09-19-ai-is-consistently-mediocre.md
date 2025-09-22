@@ -39,7 +39,7 @@ Consider expense processing. I do not need a brilliant expense processor. I need
 
 This consistent mediocrity becomes powerful at scale. When converting large datasets or scoring hundreds of candidates, uniform error rates are actually preferable to variable human performance. You can plan for consistent 15% errors. You cannot plan for human variability that ranges from 5% to 40% depending on coffee levels, time of day, or proximity to the weekend.
 
-This connects directly to Daniel Kahneman's research in ["Thinking, Fast and Slow"](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow){:target="_blank"} about noise in human judgment. He found that expert evaluators show alarming variability - the same person evaluating the same case at different times gives different answers.[^judges] AI eliminates this temporal noise, even if it cannot eliminate all bias.
+This connects directly to Daniel Kahneman's research in ["Thinking, Fast and Slow"](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow){:target="_blank"} about noise in human judgment. He found that expert evaluators show alarming variability - the same person evaluating the same case at different times gives different answers. AI eliminates this temporal noise, even if it cannot eliminate all bias.
 
 ### The Fresh Context Advantage
 
@@ -77,17 +77,20 @@ There is another crucial realisation here. Some tasks I will never be brilliant 
 
 ## Practical Applications
 
-Understanding the progression framework transforms how we deploy AI. Here are specific applications where I have seen this framework deliver value:
+Understanding the progression framework transforms how we deploy AI. The delegation matrix below shows exactly where to invest AI effort based on consistency and competence requirements:
 
-**Evaluation and Scoring**: Any task requiring consistent criteria application across many items. Grant applications, resume screening, code reviews, content moderation. Humans excel at defining good criteria but struggle to apply them consistently. AI excels at consistent application once criteria are defined.
+![How to Delegate Tasks to AI](/assets/img/How To Delegate Tasks To AI.png)
+*Match AI capabilities to task requirements: invest where AI performs well independently, reserve complex tasks for human-AI collaboration.*
 
-**Fresh Perspective Tasks**: Situations where recent context creates blind spots. Final document reviews, code security audits, assumption checking. The AI's lack of recent context becomes a feature, not a bug.
+This framework reveals four distinct deployment strategies:
 
-**Overnight Batch Processing**: Tasks where human exhaustion traditionally created bottlenecks. Data migration, report generation, systematic updates. AI's tirelessness enables continuous processing.
+**Invest Here - AI Can Perform Well Independently**: Tasks requiring most consistency but least competence. Data processing, routine content moderation, systematic quality checks, compliance verification. AI delivers reliable value with minimal human oversight. These become your first AI implementations.
 
-**Discipline Enforcement**: Anywhere documented standards must be consistently applied. Style guides, security policies, compliance checks. AI becomes the tireless enforcer of your own rules.
+**Marginal Value - Delete or Quickly Outsource**: Tasks requiring least consistency and least competence. Administrative busywork, simple data entry, basic categorisation. Neither humans nor AI should spend significant time here. Eliminate these tasks entirely or outsource cheaply.
 
-**Training Data Generation**: Creating consistent examples for machine learning. Synthetic data generation, test case creation, scenario planning. Consistency matters more than creativity.
+**Creativity - Talented Humans Assisted by AI Tools**: Tasks requiring least consistency but most competence. Strategic planning, creative problem-solving, novel architecture decisions. Humans lead with AI providing research, analysis, and implementation support. The human provides insight; AI provides execution.
+
+**The Future - Reserve for Humans, Monitor AI Progress**: Tasks requiring both high consistency and high competence. Complex customer service, medical diagnosis, financial planning. Currently human-only domains where AI serves as research assistant. Monitor AI advancement in these areas for future opportunities.
 
 ## The Charlie Chaplin Problem
 
@@ -124,7 +127,7 @@ But here's the deeper mistake: if you restrict people to narrow job descriptions
 
 ### The Coming Disruption
 
-Here is the profound implication: if companies will not give inexperienced workers a chance, those workers will create new companies that will.
+If companies will not give inexperienced workers a chance, those workers will create new companies that will.
 
 Armed with AI tools that provide consistency, motivated beginners can bootstrap businesses that previously required teams of experienced professionals. A solo founder with AI can maintain consistent quality across marketing, development, customer service, and operations. Not excellent quality, but consistent quality. And for many customers, consistency beats occasional excellence.
 
@@ -146,4 +149,3 @@ Most importantly, they will recognise that the question is not whether AI can re
 
 The future belongs not to those who achieve perfect human-AI collaboration, but to those who understand which tasks benefit from AI's consistent mediocrity versus human inconsistent brilliance. The framework is simple. The implications are profound. The organisations that grasp this distinction will thrive. Those that do not will wonder why their expensive AI initiatives keep failing to deliver value.
 
-[^judges]: The most striking example comes from a study of Israeli judges' parole decisions. Judges granted parole about 65% of the time right after meal breaks but nearly 0% just before lunch. Hungry judges defaulted to the safer option of denying parole. The study, ["Extraneous factors in judicial decisions"](https://www.pnas.org/doi/10.1073/pnas.1018033108){:target="_blank"}, found that the timing of the decision within the session was a better predictor of the outcome than the merits of the case itself. An AI judge would maintain the same 65% or 0% rate regardless of meal timing - less influenced by when you ask, even if potentially biased in other ways.
