@@ -86,6 +86,10 @@ This framework reveals four distinct deployment strategies:
 
 **Invest Here - AI Can Perform Well Independently**: Tasks requiring most consistency but least competence. Data processing, routine content moderation, systematic quality checks, compliance verification. AI delivers reliable value with minimal human oversight. These become your first AI implementations.
 
+A recent large-scale study demonstrates this perfectly: AI voice recruiters evaluating 70,000 customer service applicants in the Philippines achieved 12% more job offers, 18% more candidate starts, and 17% higher retention than human recruiters, while also reducing gender discrimination.[^1] The AI maintained consistent evaluation criteria that human recruiters struggled to apply uniformly across thousands of interviews.
+
+[^1]: Cowgill, B. & Xie, T. (2024). "Can Large Language Models Transform HR? Evidence from a Field Experiment." Available at SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5395709. Via [Ethan Mollick's analysis](https://www.linkedin.com/posts/emollick_pretty-big-finding-for-ai-in-hr-in-an-experiment-activity-7363232783395098624-8_vz/){:target="_blank"}.
+
 **Marginal Value - Delete or Quickly Outsource**: Tasks requiring least consistency and least competence. Administrative busywork, simple data entry, basic categorisation. Neither humans nor AI should spend significant time here. Eliminate these tasks entirely or outsource cheaply.
 
 **Creativity - Talented Humans Assisted by AI Tools**: Tasks requiring least consistency but most competence. Strategic planning, creative problem-solving, novel architecture decisions. Humans lead with AI providing research, analysis, and implementation support. The human provides insight; AI provides execution.
