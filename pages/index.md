@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "Deploy AI That Drives Real Growth"
+title: "Cut Through the AI Chaos"
 permalink: /
-excerpt: "I help tech leaders cut through AI hype to deliver features users love and development velocity that transforms your business."
+excerpt: "I help leaders cut through the hype and help them leverage AI to transform their business."
 ---
 
 {% include header.html style="overlay" %}
@@ -16,8 +16,8 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
 
   <div class="w-full px-6 relative z-10">
     <div class="text-center mb-16">
-      <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight mx-6">Get Your Team from AI Confusion to Competitive Advantage</h1>
-      <p class="text-xl md:text-2xl mb-8 text-white mx-6 sm:mx-24">I help CTOs and engineering leaders successfully leverage AI in their teams — avoiding the chaos that wastes time and money. <a href="#services" class="underline text-white hover:text-brand-light-blue transition-colors">See how →</a></p>
+      <h1 class="text-4xl md:text-7xl font-heading font-bold mb-6 leading-tight mx-6">Cut Through The AI Chaos</h1>
+      <p class="text-xl md:text-3xl mb-8 text-white mx-6 sm:mx-32">I help leaders leverage AI to transform their teams<br/>and dodge the chaotic hype that wastes time and money</p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -43,7 +43,7 @@ excerpt: "I help tech leaders cut through AI hype to deliver features users love
   <div class="w-full">
     <div class="text-center mb-12 px-6">
       <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6 text-brand-black">Try my newsletter to gain access to all my AI guides</h2>
-      <p class="text-xl text-brand-black/80 mb-8 mx-4 sm:mx-24">Weekly insights for technical leaders leveraging AI in their teams. No hype, no vendor pitches — just practical frameworks that work in production environments with real security and compliance requirements.</p>
+      <p class="text-xl text-brand-black/80 mb-8 mx-4 sm:mx-24">Turn AI hype into daily habits that drive real results in your work and outcomes, all in a few minutes a week.</p>
     </div>
 
     <!-- Carousel image at the bottom -->

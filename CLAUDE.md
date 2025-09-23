@@ -265,12 +265,15 @@ People expect content about using AI to build agents and products at high speed,
 - Voice & tone standards (no contractions, direct conversational style, Grade 5-7 reading level)
 - Hook writing requirements (62/0/50 character format, authority-based openings)
 - Content structure guidelines (1,250-3,000 characters optimal, 14+ short paragraphs)
-- LinkedIn formatting standards (emoji usage only - no hashtags)
-  - Use emojis (🚨, 💡, ⚡, 🎯, etc.) to structure sections instead of markdown headers
-  - NEVER use bold markdown (**text**) for section headers - it doesn't work on LinkedIn
-  - NEVER use numbered lists - convert to separate paragraphs
+- LinkedIn formatting standards:
+  - NO bold text formatting - LinkedIn doesn't render markdown bold
+  - Use emojis (🚨, 💡, ⚡, 🎯, etc.) to structure sections instead of headers
+  - Use numbered emojis (1️⃣ 2️⃣ 3️⃣ 4️⃣) for ordered lists instead of plain numbers or bullets
+  - Convert numbered lists to separate paragraphs with emoji numbers
   - No hashtags needed
 - Performance optimization techniques (engagement hierarchy, timing strategy)
+- **LinkedIn mentions**: Use @ mentions for profile links (e.g., "@Chris Parsons" and "@AI In Action By Chris Parsons")
+- **Draft storage**: Store LinkedIn post drafts in `_drafts/` folder for easy editing and iteration
 
 **CRITICAL**: Always refer to Sally's instructions (`_roles/sally-social-media-manager/instructions.md`) for the latest content structure requirements, paragraph formatting, and performance data. These guidelines override ALL other writing rules when creating social content.
 
