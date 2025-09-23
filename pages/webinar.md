@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "AI for Technical Leaders"
+title: "Webinars To Get You Ahead With AI"
 permalink: /webinar
-excerpt: "Join our monthly webinar series for technical leaders implementing AI in their organisations."
+excerpt: "Join our monthly webinar series for leaders leveraging AI in their organisations."
 image: /assets/img/ai-agents-production-webinar.png
 image_portrait: false
 kit_tag: webinar7
@@ -11,17 +11,12 @@ webinar_date: "2025-10-02T14:00:00+01:00"
 
 <div class="mb-12">
 
-  <p class="text-2xl text-brand-black mb-8">
-    Join me for monthly live workshops on implementing AI effectively in technical organisations.
-  </p>
-
-  <p class="text-xl text-brand-black font-bold mb-4">
+  <p class="text-2xl text-brand-black font-bold mb-4">
     Next session: {{ page.webinar_date | date: "%B %-d, %-I%P %Z" }}
   </p>
 
-  <p class="text-lg text-brand-black mb-8">
-    <strong>AI for Technical Leaders</strong><br>
-    Practical insights for CTOs, engineering managers, and technical founders implementing AI in their organisations.
+  <p class="text-2xl text-brand-black mb-8">
+    Join me for monthly live workshops on leveraging AI effectively in your organisation.
   </p>
 
   <div class="bg-brand-light-blue/10 rounded-lg p-6 mb-8">
@@ -96,7 +91,7 @@ webinar_date: "2025-10-02T14:00:00+01:00"
   </script>
 </div>
 
-<div class="border-t border-brand-light-blue/20 pt-12">
+<div id="previous-webinars" class="border-t border-brand-light-blue/20 pt-12">
   <h2 class="text-2xl font-heading font-bold mb-6 text-brand-black">Previous Webinars</h2>
   <div class="space-y-1 mb-12">
     {% for post in site.categories.webinar limit:5 %}

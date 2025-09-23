@@ -56,12 +56,12 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
 <!-- More About Chris Section -->
 <section class="py-20 bg-white">
   <div class="max-w-4xl mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">Why CTOs Trust My AI Implementation Advice</h2>
+    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">Why Leaders Trust My AI Advice</h2>
 
     <div class="grid md:grid-cols-2 gap-12 items-top">
       <div>
         <p class="text-lg text-brand-black/80 mb-6">
-          I've been in your position. As CTO at Gower Street, I scaled the engineering team from 7 to 50 while building production AI systems. As co-founder and CTO at Cherrypick, I raised £5M and built AI-powered systems from day one.
+          I've been in your position. As CTO at Gower Street, we scaled the company from 7 to 50 while building production AI systems. As co-founder at Cherrypick I scaled to 500K users, and built AI-powered systems, and transformed delivery using AI tools.
         </p>
 
         <p class="text-lg text-brand-black/80 mb-6">
@@ -92,7 +92,7 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
         <div class="bg-brand-white rounded-lg p-6">
           <h3 class="text-xl font-heading font-bold mb-3 text-brand-black flex items-center">
             <i data-lucide="rocket" class="w-6 h-6 mr-3 text-brand-deep-turquoise"></i>
-            Technical Founder
+            Experienced Tech Founder
           </h3>
           <p class="text-brand-black/80">Scaled teams from 5-50. Built agencies, B2B, and B2C startups. VC-backed and bootstrapped experience.</p>
         </div>
@@ -108,9 +108,9 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
         <div class="bg-brand-white rounded-lg p-6">
           <h3 class="text-xl font-heading font-bold mb-3 text-brand-black flex items-center">
             <i data-lucide="zap" class="w-6 h-6 mr-3 text-brand-deep-turquoise"></i>
-            High-Impact Results
+            High-Impact Enabler
           </h3>
-          <p class="text-brand-black/80">{{ 'now' | date: "%Y" | minus: 2001 }} years technical leadership. Go into organisations and deliver value fast. Built for leaders who need results.</p>
+          <p class="text-brand-black/80">{{ 'now' | date: "%Y" | minus: 2001 }} years in tech leadership. I go into organisations and deliver value fast, for leaders who need quick high impact results.</p>
         </div>
       </div>
     </div>
@@ -177,9 +177,15 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
       <div class="bg-brand-white rounded-lg p-6 hover:shadow-lg transition-shadow border border-brand-light-blue/20">
         <i data-lucide="video" class="w-10 h-10 mb-4 text-brand-deep-turquoise"></i>
         <h3 class="text-xl font-heading font-bold mb-2">Webinars</h3>
-        <p class="text-2xl font-bold text-brand-deep-turquoise mb-2">Next: August 7th, 2pm UK</p>
-        <p class="text-brand-black/80 mb-4">Join me for deep-dives into exactly how to code and build with AI that works now</p>
-        <a href="/webinar" target="_blank" class="inline-block bg-brand-deep-turquoise text-white px-4 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">Reserve your place →</a>
+        {% assign webinar_page = site.pages | where: "url", "/webinar" | first %}
+        {% if webinar_page.webinar_date %}
+          <p class="text-2xl min-h-16 font-bold text-brand-deep-turquoise mb-2">Next sessions: {{ webinar_page.webinar_date | date: "%B %-d, %-I%P UK" }}</p>
+        {% else %}
+          <p class="text-2xl min-h-16 font-bold text-brand-deep-turquoise mb-2">Next webinar coming soon</p>
+        {% endif %}
+        <p class="text-brand-black/80 mb-4 min-h-24">Join me for a hype-free AI deep-dive, and learn exactly how to leverage AI that works now</p>
+        <a href="/webinar" target="_blank" class="inline-block bg-brand-deep-turquoise text-white px-4 py-2 rounded-lg hover:bg-brand-turquoise transition-colors mr-2 align-center">Reserve your place →</a>
+        <a href="/webinar#previous-webinars" class="mt-2 inline-block text-brand-black px-4 py-2 rounded-lg hover:bg-brand-black/80 transition-colors">See previous webinars →</a>
       </div>
 
       <div class="bg-brand-white rounded-lg p-6 hover:shadow-lg transition-shadow border border-brand-light-blue/20">
@@ -202,8 +208,8 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
         {% if upcoming_talks.size > 0 %}
           <h3 class="text-xl font-heading font-bold mb-2">Next Speaking Event</h3>
           {% assign next_talk = upcoming_talks.first %}
-          <p class="text-2xl font-bold text-brand-deep-turquoise mb-2">{{ next_talk.event_name }}: {{ next_talk.talk_date | date: "%B %Y" }}</p>
-          <p class="text-brand-black/80 mb-4">{{ next_talk.talk_title }}</p>
+          <p class="text-2xl min-h-16 font-bold text-brand-deep-turquoise mb-2">{{ next_talk.event_name }}: {{ next_talk.talk_date | date: "%B %Y" }}</p>
+          <p class="text-brand-black/80 mb-4 min-h-24">{{ next_talk.talk_title }}</p>
           <a href="{{ next_talk.url }}" target="_blank" class="inline-block bg-brand-deep-turquoise text-white px-4 py-2 rounded-lg hover:bg-brand-turquoise transition-colors mr-2">View session →</a>
           <a href="{{ site.baseurl }}/talks/" class="mt-2 inline-block bg-trans text-brand-black px-4 py-2 rounded-lg hover:bg-deep-turquoise/80 transition-colors">See all talks →</a>
         {% elsif past_talks.size > 0 %}
@@ -224,8 +230,8 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
       <div class="bg-brand-white rounded-lg p-6 hover:shadow-lg transition-shadow border border-brand-light-blue/20">
         <i data-lucide="monitor-play" class="w-10 h-10 mb-4 text-brand-deep-turquoise"></i>
         <h3 class="text-xl font-heading font-bold mb-2">Production AI Systems</h3>
-        <p class="text-2xl font-bold text-brand-deep-turquoise mb-2">Three evaluation frameworks built</p>
-        <p class="text-brand-black/80 mb-4">From Cherrypick's meal generator to complex internal tools, I build systems with robust evaluation from day one</p>
+        <p class="text-2xl font-bold min-h-16 text-brand-deep-turquoise mb-2">Three evaluation frameworks built</p>
+        <p class="text-brand-black/80 min-h-24 mb-4">From Cherrypick's meal generator to complex internal tools, I build systems with robust evaluation from day one</p>
         <a href="/case-studies/gpt-meal-generator" target="_blank" class="inline-block bg-brand-deep-turquoise text-white px-4 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">Read case study →</a>
       </div>
     </div>
@@ -238,7 +244,7 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">My Services</h2>
     <p class="text-xl text-center mb-12 text-brand-black/80 max-w-3xl mx-auto">Your board wants AI strategy. Your team needs practical guidance. Your company needs results without implementation disasters.</p>
-    <p class="text-xl text-center mb-12 text-brand-black/80 max-w-3xl mx-auto">Here's how I help CTOs and technical leaders succeed where others fail.</p>
+    <p class="text-xl text-center mb-12 text-brand-black/80 max-w-3xl mx-auto">Here's how I help CEOs and leaders succeed where others fail.</p>
 
     <!-- AI Strategy & Implementation Plan - Full Width -->
     <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors mb-12">
@@ -248,7 +254,7 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
       <p class="text-brand-black/80 leading-relaxed mb-6">
         Skip months of trial and error. I'll analyse your current setup, identify the highest-impact opportunities, and create a step-by-step implementation plan that addresses security, team adoption, and measurable productivity gains. Includes team readiness assessment, tool recommendations, and governance framework.
       </p>
-      <div class="text-sm text-brand-black/60 mb-6">Perfect for: CTOs needing to present AI strategy to boards, teams of 15-100 engineers, companies with compliance requirements</div>
+      <div class="text-sm text-brand-black/60 mb-6">Perfect for: CEOs needing to present AI strategy to boards, teams of 15-100, companies with compliance requirements</div>
     </div>
 
     <!-- Other Services - Three Columns -->
@@ -256,7 +262,7 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
         <i data-lucide="users" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
         <h3 class="text-2xl font-heading font-bold mb-4">AI TRAINING INTENSIVES</h3>
-        <p class="text-lg font-semibold mb-4 text-brand-black">Transform your engineers from AI skeptics to AI-first practitioners</p>
+        <p class="text-lg font-semibold mb-4 text-brand-black">Transform your technical team from AI skeptics to AI-first practitioners</p>
         <p class="text-brand-black/80 leading-relaxed mb-4">
           One-day intensive workshop that gets your team from random ChatGPT questions to systematic AI workflows. Covers security, quality standards, and productivity measurement your leadership team cares about.
         </p>
@@ -331,7 +337,7 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
 <section class="py-20 bg-gradient-to-br from-brand-deep-turquoise to-brand-turquoise text-white">
   <div class="max-w-4xl mx-auto text-center px-6">
     <h2 class="text-4xl md:text-6xl font-heading font-bold mb-6 text-white">Your Board's Asking About AI. Your Team's Waiting for Direction.</h2>
-    <p class="text-2xl mb-8 text-white">Join 500+ CTOs getting weekly implementation insights that actually work in production</p>
+    <p class="text-2xl mb-8 text-white">Join hundreds of leaders getting weekly AI insights that actually work now</p>
 
     <div class="max-w-md mx-auto bg-brand-deep-turquoise rounded-lg p-6 border border-brand-turquoise">
       <div class="rm-area-embed-subscribe"></div>
