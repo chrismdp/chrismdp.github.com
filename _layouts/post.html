@@ -6,7 +6,7 @@ layout: default
 <section class="pt-20 pb-12 bg-white">
   <div class="max-w-4xl mx-auto px-6 text-center">
     <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight text-brand-black">{{ page.title }}</h1>
-    
+
     <!-- Post metadata -->
     {% assign original_date = page.path | split: "/" | last | split: "-" | slice: 0, 2 | join: '' %}
     {% assign current_date = page.date | date: "%Y%m" %}
@@ -40,7 +40,7 @@ layout: default
     {% else %}
       {% assign is_upcoming = false %}
     {% endif %}
-    
+
     <div class="float-right ml-6 mb-6 w-full md:w-1/2 max-w-md bg-brand-light-blue/10 rounded-lg p-6 border border-brand-light-blue/20 not-prose">
       <h3 class="text-lg font-heading font-bold text-brand-black">
         {% if is_upcoming %}Upcoming Talk{% else %}Past Talk{% endif %}
@@ -79,7 +79,14 @@ layout: default
   <div class="prose prose-lg max-w-none content-styled">
     {% assign content_parts = content | split:'<!--more-->' %}
     {{ content_parts[0] }}
-    
+
+    <!-- Newsletter signup after excerpt -->
+    {% unless page.categories contains 'case-studies' %}
+    <div class="my-12">
+      {% include ai-newsletter-short.html %}
+    </div>
+    {% endunless %}
+
     {% if content_parts.size > 1 %}
       {{ content_parts[1] }}
     {% endif %}
@@ -129,7 +136,7 @@ layout: default
         </svg>
         <span class="ml-2 text-sm font-semibold">BlueSky</span>
       </a>
-      
+
       <!-- LinkedIn -->
       <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url }}"
          target="_blank"
@@ -140,7 +147,7 @@ layout: default
         </svg>
         <span class="ml-2 text-sm font-semibold">LinkedIn</span>
       </a>
-      
+
       <!-- X (Twitter) -->
       <a href="https://twitter.com/intent/tweet?text={{ page.title }}%20{{ site.url }}{{ page.url }}"
          target="_blank"
@@ -197,7 +204,7 @@ layout: default
   {% for tag in page.categories %}
     {% assign tag_posts = site.categories[tag] %}
     {% assign oldest_date = page.date | date: "%s" | minus: 157680000 | date: "%Y-%m-%d" %}
-    
+
     {% for post in tag_posts %}
       {% assign post_date = post.date | date: "%Y-%m-%d" %}
       {% if post.id != page.id and post_date >= oldest_date %}
@@ -210,11 +217,11 @@ layout: default
   {% if related_posts_count > 0 %}
     <div class="border-t border-brand-light-blue/20 pt-8 mt-12">
       <h2 class="text-2xl font-heading font-bold mb-6 text-brand-black">More articles</h2>
-      
+
       {% assign related_posts_array = related_posts | split: "," | uniq %}
       {% for post_id in related_posts_array limit: 5 %}
         {% assign post = site.posts | where: "id", post_id | first %}
-        
+
         <article class="py-6 border-b border-brand-light-blue/10 last:border-0">
           <h3 class="text-xl font-heading font-semibold mb-2">
             <a href="{{ site.baseurl }}{{ post.url }}" class="text-brand-black hover:text-brand-deep-turquoise transition-colors">

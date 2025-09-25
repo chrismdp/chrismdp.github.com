@@ -153,3 +153,5 @@ Most importantly, they will recognise that the question is not whether AI can re
 
 The future belongs not to those who achieve perfect human-AI collaboration, but to those who understand which tasks benefit from AI's consistent mediocrity versus human inconsistent brilliance. The framework is simple. The implications are profound. The organisations that grasp this distinction will thrive. Those that do not will wonder why their expensive AI initiatives keep failing to deliver value.
 
+Thanks to Steve Freeman for comments on earlier drafts of this post.
+
