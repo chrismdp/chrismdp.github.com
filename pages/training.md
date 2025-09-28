@@ -8,40 +8,26 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
 {% include header.html style="overlay" %}
 
 <!-- Hero Section -->
-<section class="relative bg-gradient-to-br from-brand-deep-turquoise to-brand-turquoise text-white pt-32 pb-0 md:pb-20 overflow-hidden">
-  <!-- Background Image - Desktop only -->
-  <div class="hidden md:block absolute bottom-0 right-0 w-full h-2/3 overflow-hidden">
-    <img src="/assets/img/chris-hero-bg.png" alt="Chris Parsons" class="absolute bottom-0 right-0 h-full w-auto object-cover object-bottom">
-  </div>
-
+<section class="relative bg-gradient-to-br from-brand-deep-turquoise to-brand-turquoise text-white pt-32 pb-20 overflow-hidden">
   <div class="w-full px-6 relative z-10">
     <div class="text-center mb-12">
       <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight mx-4">Kickstart Your Team's AI Journey</h1>
       <p class="text-xl md:text-2xl mb-8 text-white mx-4 sm:mx-24">One intensive day of training to transform your team<br/>into systematic AI practitioners who deliver measurable productivity gains.</p>
     </div>
 
-    <div class="grid md:grid-cols-2 gap-12 items-center">
-      <div class="md:ml-8">
-        <div class="bg-brand-deep-turquoise rounded-lg p-6">
-          <div class="rm-area-embed-services"></div>
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-12 items-start">
+        <div>
+          <div class="bg-brand-deep-turquoise rounded-lg p-6">
+            <div class="rm-area-embed-services"></div>
+          </div>
+        </div>
+        <div class="space-y-6">
+          {% include testimonial-ria-vaidya.html %}
+          {% include testimonial-sara-haers-mendez.html %}
         </div>
       </div>
-      <div class="relative z-20">
-        <!-- This div maintains the grid layout but the image is now in the background -->
-      </div>
     </div>
-
-    <!-- Mobile Image - Show below form on mobile -->
-    <div class="md:hidden -mx-6 flex justify-end">
-      <img src="/assets/img/chris-hero-bg.png" alt="Chris Parsons" class="w-1/2 h-auto object-contain">
-    </div>
-  </div>
-</section>
-
-<!-- Rob Bettles Testimonial -->
-<section class="py-12 bg-brand-white">
-  <div class="max-w-4xl mx-auto px-6">
-    {% include testimonial-rob-bettles.html %}
   </div>
 </section>
 
@@ -99,10 +85,10 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
   </div>
 </section>
 
-<!-- Ria Vaidya Testimonial -->
+<!-- Rob Bettles Testimonial -->
 <section class="py-12 bg-brand-deep-turquoise">
   <div class="max-w-4xl mx-auto px-6">
-    {% include testimonial-ria-vaidya.html %}
+    {% include testimonial-rob-bettles.html %}
   </div>
 </section>
 
@@ -189,10 +175,14 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
 </section>
 -->
 
-<!-- Kate Welka Testimonial -->
+<!-- Three Column Testimonials: Kate, Bryan, Xavier -->
 <section class="py-12 bg-brand-deep-turquoise">
-  <div class="max-w-4xl mx-auto px-6">
-    {% include testimonial-kate-welka.html %}
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid md:grid-cols-3 gap-8">
+      {% include testimonial-kate-welka.html %}
+      {% include testimonial-bryan-quach.html %}
+      {% include testimonial-xavier-watkins.html %}
+    </div>
   </div>
 </section>
 
@@ -278,14 +268,6 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
         </ul>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- Sara Haers Méndez Testimonial -->
-
-<section class="py-12 bg-white">
-  <div class="max-w-4xl mx-auto px-6">
-    {% include testimonial-sara-haers-mendez.html %}
   </div>
 </section>
 
