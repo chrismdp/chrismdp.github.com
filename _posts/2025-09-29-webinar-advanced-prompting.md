@@ -3,7 +3,6 @@ layout: post
 title: "Advanced Prompting Webinar: How to Make AI Work For You"
 date: 2025-09-29 08:00:00 +0000
 image: /assets/img/advanced-prompting-webinar.png
-image_portrait: true
 categories:
 - ai
 - webinar
@@ -14,11 +13,11 @@ webinar_date: "2025-10-02T14:00:00+01:00"
 ---
 
 <div class="mb-12">
-  <div class="text-4xl text-brand-black font-bold mb-4">
-      October 2nd<br/>2pm UK / 9am ET
+  <div class="text-4xl text-brand-black font-bold mb-4 text-center">
+    October 2nd<br/>2pm UK / 9am ET
   </div>
 
-  <div class="text-3xl text-brand-black mb-8">
+  <div class="text-3xl text-brand-black mb-8 text-center">
     Move beyond simple prompts and put AI to work with systematic techniques that deliver consistent results.
   </div>
 
