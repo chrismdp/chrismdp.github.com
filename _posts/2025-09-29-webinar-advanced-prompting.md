@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Advanced Prompting: How to Make AI Work For You"
+title: "Advanced Prompting Webinar: How to Make AI Work For You"
 date: 2025-09-29 08:00:00 +0000
 image: /assets/img/advanced-prompting-webinar.png
 image_portrait: true
@@ -14,15 +14,21 @@ webinar_date: "2025-10-02T14:00:00+01:00"
 ---
 
 <div class="mb-12">
-  <p class="text-2xl text-brand-black font-bold mb-4">
-    Next session: October 2nd, 2pm UK / 9am ET
-  </p>
+  <div class="text-4xl text-brand-black font-bold mb-4">
+      October 2nd<br/>2pm UK / 9am ET
+  </div>
 
-  <p class="text-2xl text-brand-black mb-8">
+  <div class="text-3xl text-brand-black mb-8">
     Move beyond simple prompts and put AI to work with systematic techniques that deliver consistent results.
-  </p>
+  </div>
 
-  <div class="p-6 mb-8">
+  <a href="#signup" style="display: block; clear: both" class="bg-brand-deep-turquoise text-center rounded-lg p-8 m-12">
+    <div style="color: white !important; text-decoration: none !important" class="text-3xl font-bold">
+      SIGN UP BELOW
+    </div>
+  </a>
+
+  <div class="bg-brand-light-blue/10 rounded-lg p-6 mb-8">
     <h3 class="text-lg font-bold text-brand-black mb-4">What You'll Learn:</h3>
     <ul class="space-y-2 text-brand-black">
       <li><strong>LLM Fundamentals:</strong> How large language models actually work and why most people get disappointing results</li>
@@ -43,7 +49,7 @@ webinar_date: "2025-10-02T14:00:00+01:00"
     </ul>
   </div>
 
-  <div class="bg-brand-deep-turquoise rounded-lg p-8 text-center mb-12">
+  <div id="signup" class="bg-brand-deep-turquoise rounded-lg p-8 text-center mb-12">
     <div class="rm-area-embed-webinar"></div>
   </div>
 
