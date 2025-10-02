@@ -5,8 +5,8 @@ permalink: /webinar
 excerpt: "Join our monthly webinar series for leaders leveraging AI in their organisations."
 image: /assets/img/ai-agents-production-webinar.png
 image_portrait: false
-kit_tag: webinar7
-webinar_date: "2025-10-02T14:00:00+01:00"
+kit_tag: webinar8
+webinar_date: "2025-11-06T14:00:00+00:00"
 ---
 
 <div class="mb-12">
