@@ -28,8 +28,6 @@ Social media overflows with "vibe coding" demonstrations. These flashy but super
 
 AI is creating opportunities for a renaissance in software craftsmanship through rigorous architecture and human-AI partnership[^ai-dawn], though the infrastructure challenges of autonomous agents remain significant[^agents-not-ready].
 
-{% include ai-newsletter-short.html %}
-
 ## How I Use AI Tools
 
 Here are the key practices I use daily and have found effective.

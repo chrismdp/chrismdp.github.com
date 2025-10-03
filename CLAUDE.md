@@ -72,30 +72,40 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ### Standard Post-Webinar Process
 After each webinar, follow these steps to archive the content and prepare for the next month:
 
-1. **Create webinar write-up blog post**:
-   - Wait for the webinar transcript to be provided
-   - Create a new post in `_posts/` with format: `YYYY-MM-DD-webinar-title.md`
-   - Use the current date for the post date
-   - Convert the webinar transcript into a blog post following the webinar blog post guidelines above
-   - Add categories: `ai`, `webinar`, and any other relevant categories
-   - Include the webinar image if one exists
+#### 1. Create Webinar Write-Up Blog Post
+- [ ] Wait for the webinar transcript to be provided
+- [ ] Create a new post in `_posts/` with format: `YYYY-MM-DD-webinar-title.md`
+- [ ] Use the current date for the post date
+- [ ] Convert the webinar transcript into a blog post following the webinar blog post guidelines above
+- [ ] Add categories: `ai`, `webinar`, and any other relevant categories
+- [ ] Include the webinar image if one exists (check `/assets/img/`)
+- [ ] Add "Tools and Resources" section with markdown link list
+- [ ] Add "Key Takeaway to Remember" section summarising main insights
+- [ ] Add "One Thing to Try This Week" section with actionable next steps
 
-2. **Revert webinar page to generic template**:
-   - Use the generic template from commit `0c4f82f9afe` as the base
-   - Keep the generic title "AI for Technical Leaders" and generic description
-   - Preserve and increment the `kit_tag` from the current webinar page
-   - Update the `webinar_date` field
+#### 2. Extract Kit Newsletter Content
+- [ ] Create markdown summary with three sections:
+  - "Tools & Resources I Mentioned" (bulleted list with descriptions)
+  - "Key Takeaway to Remember" (paragraph format)
+  - "One Thing to Try This Week" (paragraph format with specific prompt)
+- [ ] Format for pasting into Kit email editor
+- [ ] Verify all links use absolute URLs (not relative paths)
+- [ ] Check referral links are included where applicable
 
-3. **Update for next month**:
-   - Increment the `kit_tag` number from current value (e.g., if current is `webinar6` → `webinar7`)
-   - Set `webinar_date` to the first Thursday of the next month at 14:00 UK local time
-   - Use correct timezone offset: `+01:00` for BST (British Summer Time, late March to late October) or `+00:00` for GMT
-   - Example: `"2025-10-02T14:00:00+01:00"` for October 2025 (BST)
-   - Example: `"2025-11-06T14:00:00+00:00"` for November 2025 (GMT)
+#### 3. Update Webinar Pages for Next Month
+- [ ] **Main webinar page** (`pages/webinar.md`):
+  - Increment the `kit_tag` number from current value (e.g., if current is `webinar7` → `webinar8`)
+  - Set `webinar_date` to the first Thursday of the next month at 14:00 UK local time
+  - Use correct timezone offset: `+01:00` for BST (British Summer Time, late March to late October) or `+00:00` for GMT
+    - Example: `"2025-10-02T14:00:00+01:00"` for October 2025 (BST)
+    - Example: `"2025-11-06T14:00:00+00:00"` for November 2025 (GMT)
+- [ ] **Specific webinar landing page** (e.g., `pages/webinar-advanced-prompting.md`):
+  - Remove the `redirect_from: /webinar` field (so it no longer redirects the main URL)
 
-4. **Commit changes**:
-   - Commit the new blog post with message like: "Add webinar write-up: [Title]"
-   - Commit the updated webinar page with message like: "Reset webinar page for next month (webinar7)"
+#### 4. Commit and Push Changes
+- [ ] Commit the new blog post with message like: "Add webinar write-up: [Title]"
+- [ ] Commit the updated webinar page with message like: "Update webinar page for next month (webinar8)"
+- [ ] Push all changes to GitHub
 
 ## Coder Template Management
 
