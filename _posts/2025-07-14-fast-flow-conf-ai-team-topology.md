@@ -29,6 +29,36 @@ Your boss is reading McKinsey's latest report on AI productivity, looking at the
 
 What is going on?
 
+## The Constraint Has Moved
+
+The constraint has shifted, and we need to shift with it.
+
+Duncan Brown observed at [Agile Cambridge](https://mechanicalsurvival.com/blog/team-dynamics-after-ai/){:target="_blank"} this year that "artefact production is easier than ever before." AI makes building things trivially easy. Code, prototypes, designs, analysis. All faster than we have ever seen.
+
+This has made one part of our system faster. But has it made the system faster?
+
+Goldratt's Theory of Constraints taught us in the 1980s that when you remove one bottleneck in any system, the constraint does not disappear. It moves randomly within the system. If you focus on something that is not the constraint, things get slower not faster.
+
+This creates two uncomfortable truths.
+
+First, if we speed up coding and our organisation does not get faster, then coding was never the constraint.
+
+Second, it gets worse. If you speed up coding and it was not the biggest constraint, queues of work can build up elsewhere, and your organisation might actually get slower.
+
+**The question we should all be asking as organisational leaders is not "How can I make coding faster?" but "Where is the constraint now?"**
+
+If coding is no longer the bottleneck, where has it moved to?
+
+The likely candidates are all human and organisational, not technical:
+
+- **Decision making processes** - Perhaps we need approval too slowly or from the wrong people
+- **Strategic thinking** - Perhaps we do not know what we want fast enough
+- **Team structure** - Perhaps the very topology that helped us before is now hindering us
+
+This vision is about more than "use AI tools." It is about how we restructure for fast flow when artefacts are cheap.
+
+What topology will suit an AI first world? First we have to make a big decision.
+
 ## The Temptation of Hybridisation
 
 You have heard stories of solos shipping faster. People doing more than ever before. Why not take this to the logical conclusion? Break the structure completely. Unleash teams of one, loaded up with tools, to achieve specific goals.
