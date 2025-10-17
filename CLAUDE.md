@@ -47,7 +47,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Academic grounding**: References Kahneman, includes research studies, but always with practical application
 - **Democratisation theme**: Frequently explores how technology enables underdogs (juniors with AI competing with seniors)
 - **Future implications focus**: Always ends looking forward to disruption/change rather than just current state
-- **Short, punchy paragraphs**: Rarely more than 3-4 sentences per paragraph, often just 1-2 for emphasis
+- **Narrative flow with focused paragraphs**: Use longer, flowing narrative sentences (avoid "X. Y. Z." triplet patterns), but keep paragraphs short with only 1-2 points per paragraph (2-4 sentences maximum)
+- **Bolded topic sentences**: For framework steps or structured content, bold the first sentence/phrase for scannability
+- **Conceptual distinction**: When explaining steps in a process, clarify WHAT vs HOW (e.g., "discover what the task is" vs "understand how to do it")
 - **"But" as a paragraph starter**: Frequently starts paragraphs with "But" to create contrast and maintain conversational flow
 
 ### Anti-Patterns to Avoid (AI Slop)

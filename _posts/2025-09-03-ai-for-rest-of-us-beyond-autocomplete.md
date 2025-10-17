@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Beyond Autocomplete: Mastering AI Coding Tools for Real Production Work"
-date: 2025-09-03 12:00:00 +0000
+date: 2025-10-16 12:00:00 +0000
 categories:
 - talk
 - ai
@@ -14,6 +14,8 @@ talk_date: 2025-10-15
 talk_url: "https://aifortherestofus.live/london-2025"
 talk_title: "Beyond Autocomplete: Mastering AI Coding Tools for Real Production Work"
 ---
+
+*This post is based on a talk given on 15th October 2025 at [AI For The Rest Of Us](https://aifortherestofus.live){:target="_blank"}.*
 
 Most developers have tried AI coding assistants, but few use them effectively. There is a vast gap between impressive demos and production reality, where your AI is wrong 70 percent of the time, and that is actually fine.
 
