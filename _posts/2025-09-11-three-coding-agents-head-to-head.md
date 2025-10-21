@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Three Coding Agents Head-to-Head: A Complex Refactoring Challenge"
-date: 2025-10-19 09:00:00 +0000
+title: "Three Coding Agents Head-to-Head"
+date: 2025-10-21 09:00:00 +0000
 categories:
 - ai
 - coding
@@ -9,13 +9,29 @@ categories:
 image: /assets/img/coding-agents-boxing-ring.png
 ---
 
-I tested three major coding agents - Claude Code, Codex, and Z.ai - first on a controlled refactoring challenge, then on real development work. My conclusions evolved significantly.
+**October 2025:** Codex with GPT-5 is now my primary coding agent. It just works out the box.
+
+Back in September, I tested three coding agents on a controlled refactoring challenge. Claude Code won decisively. But last week, after Claude's quality seemed to nose-dive, I went back to Codex for real development work.
+
+These tools move fast. What lost in September won in October. Here is how my assessment evolved.
 
 <!--more-->
 
-## The Initial Experiment
+## My Current Winner: Codex (October 2025)
 
-I started by testing three agents on a complex refactoring challenge in my [kaijo.ai](https://kaijo.ai) project: replace a boolean sandboxing system with flexible arbitrary scopes. Three terminals, same task, clock ticking.
+Codex with GPT-5 is like working with that quiet senior developer who just gets stuff done. No "you are absolutely right!" cheerleading. No essays about what it is about to do. Just reads your request, thinks for a moment, then cracks on with sensible, logical steps.
+
+The "just talk to it" nature means minimal friction. You can run multiple Codex instances in separate terminal windows, queuing up different tasks simultaneously. One handling architectural refactoring, another making UI tweaks. The `/status` command shows limits clearly. The Rust-based TUI feels noticeably snappier than Claude Code.
+
+For straightforward coding tasks, Codex wins decisively. It is faster, more direct, and easier to work with for the vast majority of development work.
+
+**Claude Code still excels for writing and thinking work.** When I need to draft blog posts like this one, work through complex architectural decisions, or explore strategic implications, the collaborative approach shines. It asks questions, challenges assumptions, helps clarify fuzzy requirements. The background tasks, session resumption, and double-escape checkpoint revert remain invaluable for sustained creative work.
+
+But for coding? Not right now. At least not for me. It might all change again in November.
+
+## How We Got Here: The September Experiment
+
+Back in September, I tested three agents on a complex refactoring challenge in my [kaijo.ai](https://kaijo.ai) project: replace a boolean sandboxing system with flexible arbitrary scopes. Three terminals, same task, clock ticking.
 
 **[Claude Code](https://claude.ai/code)** analysed deeply, then delivered a comprehensive rewrite with updated tests and edge cases handled. Anonymous code review praised the professional, maintainable code. No bugs found.
 
@@ -23,55 +39,41 @@ I started by testing three agents on a complex refactoring challenge in my [kaij
 
 **[Z.ai](https://docs.z.ai/scenario-example/develop-tools/claude)** used Claude Code's interface with GLM-4.5 underneath - clever architecture, but painfully slow with frequent timeouts. I gave up waiting.
 
-**My conclusion at the time: Claude Code was the clear winner.** It delivered everything perfectly in one go, whilst Codex felt incomplete and Z.ai was unusable.
+**My conclusion in September: Claude Code was the clear winner.** It delivered everything perfectly in one go, whilst Codex felt incomplete and Z.ai was unusable.
 
-**My assessment evolved.** I had spent months tuning Claude Code with custom rules whilst giving Codex default settings and insufficient context. A single controlled test did not tell the full story about how these tools would perform in real development work.
+But that test had limitations. I had spent months tuning Claude Code with custom rules whilst giving Codex default settings and insufficient context. A single controlled test did not tell the full story about how these tools would perform in real development work.
 
 {% include ai-newsletter-short.html %}
 
-## What Real Development Work Revealed
+## Why My Assessment Changed
 
-I went back to Codex a few weeks later for some actual development work: building a complex feature requiring substantial refactoring whilst simultaneously making small UI tweaks across the same codebase.
+A few weeks after the September test, I went back to Codex for actual development work: building a complex feature requiring substantial refactoring whilst simultaneously making small UI tweaks across the same codebase.
 
 After a few hours, different patterns emerged.
 
-## Codex: The "Just Talk To It" Winner for Coding
+**The personality difference mattered more than I expected.** When you need to fix a button or refactor an API handler, you do not want a thought partner analysing philosophical implications. You want someone who will just get it done. Codex delivers exactly that.
 
 [Peter Steinberger's article on agentic coding](https://steipete.me/posts/just-talk-to-it){:target="_blank"} includes a brilliant curve showing two approaches: tools that need careful direction versus tools you can "just talk to". Codex firmly sits in the "just talk to it" category. Claude Code requires substantially more prompting and guidance to achieve similar results.
 
-**The personality difference matters.** Codex feels like working with a matter-of-fact, introverted senior developer. It reads your request, thinks for a moment, then cracks on with sensible, logical steps. No performative enthusiasm. No "you're absolutely right!" responses. Just calm, quiet assistance that sorts things out without fanfare.
+**Codex rewards precise communication.** Yes, it can overwrite files if you are not clear. But after a few iterations, you learn to be explicit about what should and should not change. Turns out Codex does not need elaborate rule files - just clear task descriptions.
 
-When you need to fix a button or refactor an API handler, you do not want a thought partner analysing philosophical implications. You want someone who will just get it done. Codex delivers exactly that.
+**The original test had limitations.** I had months of Claude Code tuning versus default Codex settings. I had not provided enough context. The AI coding landscape changes monthly. What felt limited in September worked smoothly by October. Any single test is just a snapshot.
 
-**The practical workflow wins:** Running multiple Codex instances in separate terminal windows lets you queue up different tasks simultaneously. One handling architectural refactoring, another making UI tweaks. The `/status` command shows limits clearly. The Rust-based TUI feels noticeably snappier than Claude Code.
+Then in October, Claude's quality seemed to nose-dive. At the same time, Codex got GPT-5. The gap widened significantly.
 
-Yes, Codex can overwrite files if you are not clear. But it rewards precise communication. After a few iterations, you learn to be explicit about what should and should not change.
+**The cost calculation shifted.** I was paying £75 monthly for Claude Code. I have downgraded to the £15 plan now that I am primarily using it for writing. Codex costs £200 monthly - not cheap, but worth it given how much more productive it makes me for development work.
 
-**The original test had limitations.** I had months of Claude Code tuning versus default Codex settings. I had not provided enough context. Turns out Codex does not need elaborate rule files - just clear task descriptions.
-
-The AI coding landscape changes monthly. What felt limited in September worked smoothly by October. Any single test is just a snapshot.
-
-## Claude Code: Better for Writing and Thinking
-
-Claude Code excels at different work. When I need to draft blog posts like this one, work through complex architectural decisions, or explore strategic implications of technical choices, the collaborative approach shines. It asks questions, challenges assumptions, helps clarify fuzzy requirements.
-
-The user experience features remain superior for sustained work. Background tasks mean you can let it work whilst doing other things. Session resumption lets you pick up exactly where you left off. Double-escape checkpoint revert proves invaluable when exploring different approaches.
-
-But for straightforward coding tasks, that collaborative tendency becomes exhausting. The "you're absolutely right!" responses. The lengthy explanations of what it is about to do. The desire to be a thought partner when you just want someone to fix a button. It all feels performative and inefficient compared to Codex's matter-of-fact approach.
-
-**The original test likely reflected my months of setup investment.** I had tuned Claude Code with custom rules and detailed configuration files. Those prompts shaped it into something that worked exceptionally well for that specific test. Looking back at Peter Steinberger's curve, I had moved Claude Code towards the "just talk to it" end through careful direction - but that investment should not be necessary for basic coding work.
-
-## The Winner: Different Tools for Different Jobs
-
-After the original test, I concluded Claude Code was the clear winner. After returning to Codex for real development work, my assessment evolved.
-
-**For coding work, Codex wins decisively.** It is faster, more straightforward, and easier to work with for the vast majority of development tasks. The "just talk to it" nature means less friction, less performative conversation, and more time actually building things.
-
-**For writing and thinking work, I still use Claude Code.** When drafting this very article, Claude Code's collaborative approach proved valuable. It asked clarifying questions, helped structure arguments, and acted as the thought partner that makes sense for creative work.
-
-**The cost calculation has shifted.** I was paying £75 monthly for Claude Code. I have downgraded to the £15 plan now that I am primarily using it for writing. Codex costs £200 monthly - not cheap, but worth it given how much more productive it makes me for development work.
+## The Real Lesson: Tools Evolve Fast
 
 A single complex refactoring challenge cannot capture how you will work with a tool across different contexts. The personality fit, the workflow friction, the mental overhead of interaction patterns - these factors revealed themselves through actual usage rather than controlled tests.
+
+More importantly, these tools evolve at an astonishing pace. What felt like a limitation in September worked flawlessly by October. Interface improvements, model updates, and subtle changes in behaviour can shift the value proposition in weeks.
+
+My September conclusion was correct for September. My October conclusion is correct for October. Both can be true.
+
+**Do not lock into long-term contracts.** Even with hefty discounts, avoid committing to a single tool for more than 2-3 months. The landscape is moving too fast. The tool that wins today might lag behind next quarter. Pay monthly, stay flexible, and be ready to switch when the fundamentals shift.
+
+The best approach: try multiple tools on your actual work. Pay attention to personality fit and workflow friction, not just technical correctness on benchmarks. And expect your assessment to evolve as the tools themselves evolve.
 
 ## Detailed Results
 
@@ -85,8 +87,8 @@ Here is a detailed view of what I found:
 
 ## What This Means for Tool Evaluation
 
-**These tools evolve at an astonishing pace.** What felt like a limitation in September worked flawlessly by October. Interface improvements, model updates, and subtle changes in behaviour can shift the value proposition in weeks.
+The landscape evolves too fast for single tests or long-term commitments. What wins this month might lag next month. Interface improvements, model updates, and quality shifts can change everything in weeks.
 
-My evolving assessment highlights an important lesson: single tests have limited value. Real insight emerges from using tools across different contexts and task types. The tool that wins a carefully controlled refactoring challenge might perform differently in actual development work.
+Real insight emerges from using tools across different contexts and task types over time. The tool that wins a carefully controlled refactoring challenge might perform differently in actual development work. And both assessments can become outdated within weeks.
 
-The best approach: try multiple tools on your actual work. Pay attention to personality fit and workflow friction, not just technical correctness on benchmarks. These factors matter more than you might expect.
+Stay flexible. Try multiple tools. Pay attention to personality fit and workflow friction, not just technical correctness on benchmarks. And never lock yourself into contracts longer than 2-3 months, no matter how tempting the discount.
