@@ -8,7 +8,7 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
 {% include header.html style="overlay" %}
 
 <!-- Hero Section -->
-<section class="relative bg-gradient-to-br from-brand-deep-turquoise to-brand-turquoise text-white pt-40 pb-8 md:pb-20 overflow-hidden">
+<section class="relative bg-gradient-to-br from-brand-deep-turquoise to-brand-turquoise text-white pt-40 md:pb-20 overflow-hidden">
   <!-- Background Image - Desktop only -->
   <div class="hidden md:block absolute bottom-0 right-0 w-full h-2/3 overflow-hidden">
     <img src="/assets/img/chris-hero-bg.png" alt="Chris Parsons" class="absolute bottom-0 right-0 h-full w-auto object-cover object-bottom">
@@ -47,7 +47,7 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
     </div>
 
     <!-- Carousel image at the bottom -->
-    <div class="mx-12">
+    <div class="md:mx-12">
       <img src="/assets/img/ai-resources-carousel.png" alt="AI cheat sheets, guides, and carousels" class="w-full">
     </div>
   </div>
@@ -56,16 +56,12 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
 <!-- More About Chris Section -->
 <section class="py-20 bg-white">
   <div class="max-w-4xl mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">Why Leaders Trust My AI Advice</h2>
+    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">More About Me</h2>
 
     <div class="grid md:grid-cols-2 gap-12 items-top">
       <div>
         <p class="text-lg text-brand-black/80 mb-6">
-          I've been in your position. As CTO at Gower Street, we scaled the company from 7 to 50 while building production AI systems. As co-founder at Cherrypick I scaled to 500K users, and built AI-powered systems, and transformed delivery using AI tools.
-        </p>
-
-        <p class="text-lg text-brand-black/80 mb-6">
-          I know what it's like when your board asks for an "AI strategy" but you're not sure where to start. I've seen teams waste months on the wrong tools, and I've helped others achieve 30%+ productivity gains without the usual implementation chaos.
+          I've been a CTO and founder. I've scaled companies whilst building production AI systems and transformed delivery using AI tools.
         </p>
 
         <div class="grid grid-cols-2 gap-4 mb-6">
