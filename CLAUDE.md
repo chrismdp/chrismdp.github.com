@@ -33,6 +33,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Research-heavy posts**: Lead with compelling data/statistics that challenge assumptions, use footnotes for detailed sourcing and additional context
 - **Linking strategy**: Use implicit links naturally within sentences, avoid "check out this post" style linking - prefer contextual integration. Use `{:target="_blank"}` for external links to open in new windows
 - **Footnotes for additional value**: Use footnotes not just for citations but to provide actionable advice and deeper insights that enhance the main narrative
+- **Footnote spacing**: Always include a space between consecutive footnote references (e.g., `[^1] [^2]` not `[^1][^2]`)
 - **Always search for recent articles**: Before writing any blog post, search through recent posts in `_posts/` folder to identify relevant articles to link to implicitly within the content - this improves SEO and provides value to readers
 
 ### Chris's Writing Patterns
@@ -55,6 +56,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ### Anti-Patterns to Avoid (AI Slop)
 - **NEVER use "Here's the X" constructions** - Chris finds these generic and overused
 - **Avoid "The real insight is..." or "Here is what I discovered:"** - These are AI writing clichés that feel inauthentic
+- **No "This is not X. This is Y." patterns** - Avoid choppy contrastive sentences; use flowing alternatives like "This is Y, not X" or "This is not X but Y"
 - **No rhetorical question hooks** - Don't start with "What if I told you..." or similar
 - **Avoid generic transitions** - "Let me tell you", "The brutal truth", "You won't believe this"
 - **Don't use numbered lists** - Chris prefers short paragraphs with headings over bullet points
