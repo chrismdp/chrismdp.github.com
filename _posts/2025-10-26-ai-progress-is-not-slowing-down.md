@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "It Feels AI Progress Is Slowing Down. It Isn't"
+title: "It Feels Like AI Progress Is Slowing Down. It Isn't"
 date: 2025-10-26 09:00:00 +0000
 image: /assets/img/metr-time-horizon-chart.png
 categories:
