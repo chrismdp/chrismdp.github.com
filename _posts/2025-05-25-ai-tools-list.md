@@ -2,6 +2,7 @@
 layout: post
 title: "The Huge List of AI Tools: What's Actually Worth Using in June 2025?"
 date: 2025-06-05 00:00:00 +0000
+full_width: true
 hide_newsletter: true
 categories:
 - ai

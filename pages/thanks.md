@@ -22,23 +22,11 @@ permalink: /thanks
 
   <div class="border-t border-brand-light-blue/20 pt-12">
     <h2 class="text-2xl font-heading font-bold mb-8 text-brand-black">Latest Articles</h2>
-    
-    {% for post in site.posts limit:5 %}
-    <article class="pb-8 mb-8 border-b border-brand-light-blue/20 last:border-0">
-      <h3 class="text-xl font-heading font-bold mb-2">
-        <a href="{{ site.baseurl }}{{ post.url }}" class="text-brand-black hover:text-brand-deep-turquoise transition-colors">{{ post.title }}</a>
-      </h3>
-      <div class="text-sm text-brand-black/60 mb-3">
-        {{ post.date | date: "%B %Y" }}
-      </div>
-      <div class="prose prose-lg mb-4 text-brand-black/80 leading-relaxed">
-        {{ post.excerpt }}
-      </div>
-      <a href="{{ site.baseurl }}{{ post.url }}" class="text-brand-deep-turquoise hover:text-brand-turquoise font-semibold">Read more →</a>
-    </article>
-    {% endfor %}
-    
-    <div class="text-center">
+
+    {% assign latest_posts = site.posts | slice: 0, 5 %}
+    {% include article-list.html posts=latest_posts %}
+
+    <div class="text-center mt-8">
       <a href="{{ site.baseurl }}/articles/" class="inline-block bg-brand-deep-turquoise text-white px-6 py-3 rounded-lg hover:bg-brand-turquoise transition-colors">View All Articles</a>
     </div>
   </div>

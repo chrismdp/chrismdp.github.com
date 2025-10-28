@@ -1,0 +1,78 @@
+<style>
+  .article-card-title a {
+    text-decoration: none;
+  }
+</style>
+<div class="grid md:grid-cols-4 gap-8 mb-12">
+  {% for post in include.posts %}
+    {% if forloop.first %}
+      <!-- Featured article - 3/4 width -->
+      <article class="md:col-span-3 bg-white border border-brand-light-blue/20 rounded-lg overflow-hidden flex flex-col">
+        {% if post.image %}
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            <img alt="{{ post.title | replace: "'", "&#39;" }}" src="{{ post.image }}" class="w-full h-96 object-cover">
+          </a>
+        {% else %}
+          <div class="w-full h-96 bg-brand-light-blue/10"></div>
+        {% endif %}
+
+        <div class="p-6 flex-1 flex flex-col">
+          <h3 class="text-2xl font-heading font-semibold mb-2 article-card-title">
+            <a href="{{ site.baseurl }}{{ post.url }}" class="text-brand-black hover:text-brand-deep-turquoise transition-colors">
+              {{ post.title }}
+            </a>
+          </h3>
+          <div class="text-sm text-brand-black/60 italic mb-4">
+            {% assign original_date = post.path | split: "/" | last | split: "-" | slice: 0, 2 | join: '' %}
+            {% assign current_date = post.date | date: "%Y%m" %}
+            {% if original_date != current_date %}Updated: {% endif %}
+            {{ post.date | date: "%B %Y" }}
+          </div>
+          <div class="prose mb-4 text-brand-black/80 leading-relaxed flex-1">
+            {{ post.excerpt }}
+          </div>
+          <a href="{{ site.baseurl }}{{ post.url }}" class="text-brand-deep-turquoise hover:text-brand-turquoise font-semibold">
+            Read more →
+          </a>
+        </div>
+      </article>
+    {% elsif forloop.index == 2 %}
+      <!-- Sidebar column starts - 1/4 width -->
+      <div class="md:col-span-1 flex flex-col gap-8">
+    {% endif %}
+
+    {% if forloop.index > 1 %}
+      <!-- Sidebar articles -->
+      <article class="bg-white border border-brand-light-blue/20 rounded-lg overflow-hidden flex flex-col">
+        {% if post.image %}
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            <img alt="{{ post.title | replace: "'", "&#39;" }}" src="{{ post.image }}" class="w-full h-32 object-cover">
+          </a>
+        {% else %}
+          <div class="w-full h-32 bg-brand-light-blue/10"></div>
+        {% endif %}
+
+        <div class="p-4 flex-1 flex flex-col">
+          <h3 class="text-lg font-heading font-semibold mb-2 article-card-title">
+            <a href="{{ site.baseurl }}{{ post.url }}" class="text-brand-black hover:text-brand-deep-turquoise transition-colors">
+              {{ post.title }}
+            </a>
+          </h3>
+          <div class="text-sm text-brand-black/60 italic mb-4">
+            {% assign original_date = post.path | split: "/" | last | split: "-" | slice: 0, 2 | join: '' %}
+            {% assign current_date = post.date | date: "%Y%m" %}
+            {% if original_date != current_date %}Updated: {% endif %}
+            {{ post.date | date: "%B %Y" }}
+          </div>
+          <a href="{{ site.baseurl }}{{ post.url }}" class="text-brand-deep-turquoise hover:text-brand-turquoise font-semibold">
+            Read more →
+          </a>
+        </div>
+      </article>
+    {% endif %}
+
+    {% if forloop.last %}
+      </div> <!-- Close sidebar column -->
+    {% endif %}
+  {% endfor %}
+</div>

@@ -20,7 +20,7 @@ layout: default
   </div>
 </section>
 
-<article class="max-w-4xl mx-auto px-6 pb-12">
+<article class="{% if page.full_width %}max-w-7xl{% else %}max-w-4xl{% endif %} mx-auto px-6 pb-12">
 
   <!-- Featured image -->
   {% if page.image %}
