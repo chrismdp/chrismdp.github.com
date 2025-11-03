@@ -12,7 +12,7 @@ venue: "London"
 talk_date: 2025-10-14
 talk_url: "https://www.fastflowconf.com"
 talk_title: "Vision for an AI-First Team Topology: How AI Fundamentally Transforms How We Organise Technical Teams"
-image: /assets/img/tortoise-scooter-hare.png
+image: /assets/img/photo-fast-flow-2025.jpg
 ---
 
 *This post is based on a talk given on 14th October 2025 at [Fast Flow Conf UK](https://www.fastflowconf.com){:target="_blank"}.*
@@ -114,6 +114,8 @@ Trouble was, I built the wrong product.
 I learnt moving fast is exhilarating but not necessarily productive. No one to challenge my assumptions, spot the problems I could not see.
 
 ## Amplification: The Tortoise Gets Wheels
+
+![The Tortoise on a Scooter](/assets/img/tortoise-scooter-hare.png)
 
 So if hybridisation creates hares, how instead do we amplify our stream aligned teams? What do amplified teams look like?
 

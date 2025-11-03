@@ -54,14 +54,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **"But" as a paragraph starter**: Frequently starts paragraphs with "But" to create contrast and maintain conversational flow
 
 ### Anti-Patterns to Avoid (AI Slop)
-- **NEVER use "Here's the X" constructions** - Chris finds these generic and overused
-- **Avoid "The real insight is..." or "Here is what I discovered:"** - These are AI writing clichés that feel inauthentic
-- **No "This is not X. This is Y." patterns** - Avoid choppy contrastive sentences; use flowing alternatives like "This is Y, not X" or "This is not X but Y"
+- **NEVER use "Here's the X" constructions** - Generic and overused
+- **Avoid "The real insight is..." or "Here is what I discovered:"** - AI writing clichés that feel inauthentic
+- **No "This is not X. This is Y." patterns** - Use flowing alternatives like "This is Y, not X"
 - **No rhetorical question hooks** - Don't start with "What if I told you..." or similar
 - **Avoid generic transitions** - "Let me tell you", "The brutal truth", "You won't believe this"
-- **Don't use numbered lists** - Chris prefers short paragraphs with headings over bullet points
+- **Don't use numbered lists** - Prefer short paragraphs with headings over bullet points
 - **No false build-up** - Lead with the most interesting insight, don't save it for the end
 - **Avoid abstract conclusions** - Always end with concrete implications and future-looking statements
+
+See `_roles/sally-social-media-manager/instructions.md` for additional LinkedIn-specific anti-patterns and iteration workflow.
 
 ### Webinar Blog Post Guidelines
 - **Opening hook**: Use compelling statistics or reframe broad claims (e.g., "95% of technical teams cannot ship their AI agents" rather than specific anecdotes)
@@ -281,9 +283,7 @@ People expect content about using AI to build agents and products at high speed,
 - Content structure guidelines (1,250-3,000 characters optimal, 14+ short paragraphs)
 - LinkedIn formatting standards:
   - NO bold text formatting - LinkedIn doesn't render markdown bold
-  - Use emojis (🚨, 💡, ⚡, 🎯, etc.) to structure sections instead of headers
-  - Use numbered emojis (1️⃣ 2️⃣ 3️⃣ 4️⃣) for ordered lists instead of plain numbers or bullets
-  - Convert numbered lists to separate paragraphs with emoji numbers
+  - Use emojis sparingly within flowing text, not as section headers
   - No hashtags needed
 - Performance optimization techniques (engagement hierarchy, timing strategy)
 - **LinkedIn mentions**: Use @ mentions for profile links (e.g., "@Chris Parsons" and "@AI In Action By Chris Parsons")
