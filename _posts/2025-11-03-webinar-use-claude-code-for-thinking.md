@@ -13,19 +13,22 @@ categories:
 - webinar
 ---
 
+
+<p class="text-2xl text-brand-black font-bold mb-4">
+Next session: {{ page.webinar_date | date: "%B %-d, %-I%P %Z" }}
+</p>
+
+<p class="text-2xl text-brand-black mb-8">
+You have probably heard Claude Code is great for shipping features. But what if I told you I use it more for strategy documents than actual coding?
+</p>
+
+<p class="text-lg text-brand-black mb-8">
+Join me for live demonstrations of how I use Claude Code to write blog posts, create LinkedIn articles, and think through business strategy. See real terminal sessions with actual workflows you can use.
+</p>
+
+<!--more-->
+
 <div class="mb-12">
-
-  <p class="text-2xl text-brand-black font-bold mb-4">
-    Next session: {{ page.webinar_date | date: "%B %-d, %-I%P %Z" }}
-  </p>
-
-  <p class="text-2xl text-brand-black mb-8">
-    You have probably heard Claude Code is great for shipping features. But what if I told you I use it more for strategy documents than actual coding?
-  </p>
-
-  <p class="text-lg text-brand-black mb-8">
-    Join me for live demonstrations of how I use Claude Code to write blog posts, create LinkedIn articles, and think through business strategy. See real terminal sessions with actual workflows you can use.
-  </p>
 
   <div class="bg-brand-light-blue/10 rounded-lg p-6 mb-8">
     <h3 class="text-lg font-bold text-brand-black mb-4">What You'll Learn:</h3>
