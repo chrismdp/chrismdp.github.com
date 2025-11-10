@@ -12,7 +12,7 @@ categories:
 
 On November 6, 2025, I gave a webinar about something slightly unconventional: using a coding tool for thinking, writing, and strategy work rather than code.
 
-Claude Code is designed for [writing production code](/coding-with-ai/){:target="_blank"}. The name makes that obvious. But I've discovered something unexpected: whilst I use Cursor for actual coding, Claude Code has become my primary tool for strategic thinking, content creation, and knowledge management.
+Claude Code is designed for [writing production code](/coding-with-ai/){:target="_blank"}. The name makes that obvious. But I've discovered something unexpected: whilst I use Codex for actual coding, Claude Code has become my primary tool for strategic thinking, content creation, and knowledge management.
 
 <!-- more -->
 
