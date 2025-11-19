@@ -14,7 +14,7 @@ On November 6, 2025, I gave a webinar about something slightly unconventional: u
 
 Claude Code is designed for [writing production code](/coding-with-ai/){:target="_blank"}. The name makes that obvious. But I've discovered something unexpected: whilst I use Codex for actual coding, Claude Code has become my primary tool for strategic thinking, content creation, and knowledge management.
 
-<!-- more -->
+<!--more-->
 
 ## Why Claude Code Works Better for Thinking
 
