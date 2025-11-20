@@ -11,7 +11,9 @@ categories:
 
 Gemini 3 is out. The benchmarks are genuinely incredible. But it's hard to know what to do about it.
 
-41% on HLE. 45% on ARC-AGI-2. These are colossal achievements. But it feels like more of the same. Another week, another frontier model. OpenAI, Anthropic, Google - they're all leapfrogging each other every month.
+41% on HLE. 45% on ARC-AGI-2. These are colossal achievements. But it feels like more of the same. Another week, another frontier model. OpenAI, Anthropic, Google - they're all leapfrogging each other every month.[^gpt51]
+
+[^gpt51]: Case in point: whilst writing this post, OpenAI announced [GPT-5.1-Codex-Max](https://openai.com/index/gpt-5-1-codex-max/){:target="_blank"} on November 19th, the day after Gemini 3. Release blindness intensifies.
 
 We've got release blindness because the pace is relentless. Another week, another set of impressive numbers. Traditional benchmarks measure performance on maths problems, coding challenges, and academic exams. Easy to track, easy to compare. Each generation scores higher than the last. It can feel like the pace of improvement is slowing as benchmarks saturate ([it isn't](/ai-progress-is-not-slowing-down/)).
 
