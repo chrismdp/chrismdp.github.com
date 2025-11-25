@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to React to a New Frontier Model"
-date: 2025-11-19 09:00:00 +0000
+date: 2025-11-25 09:00:00 +0000
 image: /assets/img/final_dt_blog_evals_2.gif
 categories:
 - ai
@@ -38,6 +38,7 @@ The findings are striking: frontier models can complete GDPval tasks approximate
 The key metric is time-horizon: the length of tasks that AI agents can complete autonomously with 50% reliability. This has been doubling approximately every seven months for the last six years. AI agents are improving rapidly at autonomous software development and machine learning tasks.[^metr]
 
 [^metr]: See [Measuring AI Ability to Complete Long Tasks](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/){:target="_blank"}. Blog post introducing time-horizon measurement showing exponential growth in task completion capability.
+[^bitter]: Rich Sutton, [The Bitter Lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html){:target="_blank"} (2019). Sutton argues that 70 years of AI research shows general methods that leverage computation scale better than approaches that build in human knowledge. His key insight: "The bitter lesson is that building in how we think we think does not work in the long run." The essay explains why breakthrough progress in chess, Go, speech recognition, and computer vision came from scaling search and learning rather than encoding expert knowledge.
 
 GDPval and METR tell you whether AI can actually do the work, not just score well on tests.
 
@@ -70,3 +71,21 @@ If you don't have an early adopter group yet, create one now. Set them up for sy
 **Start building your internal AI platform now.** Without proper evaluation infrastructure, you won't know whether Gemini 3, GPT-6, Claude 5, or whatever comes next month actually helps your organisation.
 
 The releases won't stop. The benchmarks will keep climbing. The organisations reacting fast are those that can systematically evaluate whether new capabilities translate to real value for the specific tasks and workflows that matter to them.
+
+## The Bitter Lesson for Frontier Model Testing
+
+Finally, you need to stretch the models into new territory. There is a deeper principle at work here, one that explains why testing new models matters so much: The Bitter Lesson.
+
+Rich Sutton's influential 2019 essay argues that general methods leveraging computation ultimately beat hand-crafted approaches.[^bitter] Chess programs conquered grandmasters not through elegant strategy encoding, but through massive search. Go programs won through learning and computation, not mimicking human intuition.
+
+The pattern repeats across 70 years of AI research. Researchers build in what they think intelligence requires. It helps short term. Then it plateaus. Breakthrough progress arrives when someone throws more compute at simpler, more general methods.
+
+This has a crucial implication for how you test frontier models: **do not run your current workflow. Try something you think is impossible.**
+
+Most organisations test whether the new model is 5% better at existing tasks. They run the same prompts, the same workflows, the same constraints they built for the previous generation. That misses the point entirely.
+
+Give the new model a task where you expect it to fail. Something bigger. Something you would never try with the previous generation.
+
+If the bitter lesson is correct (and 70 years of evidence says it is), the new model might succeed precisely because you are not constraining it with your assumptions about what AI can do.
+
+Test whether your workflow needs to change because the model is fundamentally more capable. That is the difference between incremental improvement and capability breakthrough.
