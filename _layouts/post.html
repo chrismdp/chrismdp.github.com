@@ -25,9 +25,19 @@ layout: default
   <!-- Featured image -->
   {% if page.image %}
     {% if page.image_portrait %}
-      <img alt='{{ page.title }}' src='{{ page.image }}' class='rounded-lg float-right ml-6 mb-6 w-1/2 max-w-md'>
+      <div class='float-right ml-6 mb-6 w-1/2 max-w-md'>
+        <img alt='{{ page.title }}' src='{{ page.image }}' class='rounded-lg'>
+        {% if page.image_caption %}
+          <p class='text-sm text-brand-black/60 italic mt-2 text-center'>{{ page.image_caption }}</p>
+        {% endif %}
+      </div>
     {% else %}
-      <img alt='{{ page.title }}' src='{{ page.image }}' class='rounded-lg mb-8 w-full'>
+      <div class='mb-8'>
+        <img alt='{{ page.title }}' src='{{ page.image }}' class='rounded-lg w-full'>
+        {% if page.image_caption %}
+          <p class='text-sm text-brand-black/60 italic mt-2 text-center'>{{ page.image_caption }}</p>
+        {% endif %}
+      </div>
     {% endif %}
   {% endif %}
 

@@ -8,6 +8,7 @@ categories:
 - productivity
 image: /assets/img/ai-feeding-on-itself.png
 image_portrait: true
+image_caption: "I'm loving Nano Banana Pro for infographics! There are plenty more infographics and cheat sheets of all types available when you <a href='/' class='text-brand-deep-turquoise hover:text-brand-turquoise'>subscribe to the newsletter</a>."
 ---
 
 There is a growing concern in AI circles about "model collapse."

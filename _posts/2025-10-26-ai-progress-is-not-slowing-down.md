@@ -3,13 +3,12 @@ layout: post
 title: "It Feels Like AI Progress Is Slowing Down. It Isn't"
 date: 2025-10-26 09:00:00 +0000
 image: /assets/img/metr-time-horizon-chart.png
+image_caption: "AI's ability to complete longer software engineering tasks has been doubling roughly every seven months, reaching approximately two hours by 2025. Source: METR"
 categories:
 - ai
 - industry
 - analysis
 ---
-
-*AI's ability to complete longer software engineering tasks has been doubling roughly every seven months, reaching approximately two hours by 2025. Source: METR*
 
 When GPT-5 launched, Reddit exploded with disappointment. One paying customer called it "the biggest piece of garbage" they had ever seen. Within hours, OpenAI's CEO held an emergency Q&A to defend the model's performance. Gary Marcus summarised it as "overdue, overhyped and underwhelming." Technical founders declared AI had plateaued, engineering leaders dismissed the release as underwhelming, and some began abandoning their AI implementations entirely.
 
