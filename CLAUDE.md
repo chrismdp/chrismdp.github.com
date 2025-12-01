@@ -48,7 +48,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Academic grounding**: References Kahneman, includes research studies, but always with practical application
 - **Democratisation theme**: Frequently explores how technology enables underdogs (juniors with AI competing with seniors)
 - **Future implications focus**: Always ends looking forward to disruption/change rather than just current state
-- **Narrative flow with focused paragraphs**: Use longer, flowing narrative sentences (avoid "X. Y. Z." triplet patterns), but keep paragraphs short with only 1-2 points per paragraph (2-4 sentences maximum)
+- **Narrative flow with longer paragraphs**: Use longer, flowing narrative sentences (avoid "X. Y. Z." triplet patterns), with longer paragraphs of 3-5 sentences to create narrative flow rather than choppy single-sentence paragraphs
 - **Bolded topic sentences**: For framework steps or structured content, bold the first sentence/phrase for scannability
 - **Conceptual distinction**: When explaining steps in a process, clarify WHAT vs HOW (e.g., "discover what the task is" vs "understand how to do it")
 - **"But" as a paragraph starter**: Frequently starts paragraphs with "But" to create contrast and maintain conversational flow
@@ -280,10 +280,10 @@ People expect content about using AI to build agents and products at high speed,
 
 - Voice & tone standards (no contractions, direct conversational style, Grade 5-7 reading level)
 - Hook writing requirements (62/0/50 character format, authority-based openings)
-- Content structure guidelines (1,250-3,000 characters optimal, 14+ short paragraphs)
+- Content structure guidelines (1,250-3,000 characters optimal, longer flowing paragraphs with emoji section headers)
 - LinkedIn formatting standards:
   - NO bold text formatting - LinkedIn doesn't render markdown bold
-  - Use emojis sparingly within flowing text, not as section headers
+  - Use emoji section headers to structure content (e.g., 🔄 The Shift, 💡 Why This Matters)
   - No hashtags needed
 - Performance optimization techniques (engagement hierarchy, timing strategy)
 - **LinkedIn mentions**: Use @ mentions for profile links (e.g., "@Chris Parsons" and "@AI In Action By Chris Parsons")
