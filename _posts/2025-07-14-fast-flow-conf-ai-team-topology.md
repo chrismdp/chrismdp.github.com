@@ -17,6 +17,10 @@ image: /assets/img/photo-fast-flow-2025.jpg
 
 *This post is based on a talk given on 14th October 2025 at [Fast Flow Conf UK](https://www.fastflowconf.com){:target="_blank"}.*
 
+<div class="video-container mb-8">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/8ouoRxWKYQI" title="Vision for an AI-First Team Topology - Fast Flow Conf 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
 You did everything right. You read Team Topologies. You drew the Miro diagrams. You defined your bounded contexts, briefed new platform and enabling teams. You even hired a consultant or two. You completed the reorganisation. Things were working.
 
 Then AI showed up.
