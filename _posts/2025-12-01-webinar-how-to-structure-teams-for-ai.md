@@ -9,6 +9,7 @@ categories:
 - leadership
 description: "The critical org design decision every CTO must make: amplify your multidisciplinary teams or break them into AI-powered solos? Why the wrong choice will slow you down, and what to do instead."
 image: /assets/img/tortoise-scooter-hare.png
+image_caption: "Yes it's cryptic. I'll explain on the call."
 kit_tag: webinar9
 webinar_date: "2025-12-04T14:00:00+00:00"
 redirect_from: /webinar
