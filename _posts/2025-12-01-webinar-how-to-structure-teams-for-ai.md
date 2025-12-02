@@ -33,6 +33,13 @@ redirect_from: /webinar
     How do you structure your teams to take full advantage of AI?
   </p>
 
+</div>
+
+<!--more-->
+
+<div class="mb-12">
+
+
   <div class="bg-brand-light-blue/10 rounded-lg p-6 mb-8">
     <h3 class="text-lg font-bold text-brand-black mb-4">What We Will Cover:</h3>
     <ul class="space-y-2 text-brand-black">
