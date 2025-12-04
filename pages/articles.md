@@ -9,7 +9,14 @@ redirect_from:
 ---
 
 <div class="mb-16">
-  {% assign latest_posts = site.posts | where_exp: "post", "post.webinar_date == nil or post.webinar_date <= site.time" | slice: 0, 4 %}
+  {% assign all_posts = site.posts %}
+  {% assign latest_posts = "" | split: "" %}
+  {% for post in all_posts limit: 20 %}
+    {% if post.webinar_date == nil or post.webinar_date <= site.time %}
+      {% assign latest_posts = latest_posts | push: post %}
+      {% if latest_posts.size >= 4 %}{% break %}{% endif %}
+    {% endif %}
+  {% endfor %}
   {% include article-cards.html posts=latest_posts %}
 </div>
 

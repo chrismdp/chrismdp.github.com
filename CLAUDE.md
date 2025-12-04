@@ -59,6 +59,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **No "This is not X. This is Y." patterns** - Use flowing alternatives like "This is Y, not X"
 - **No rhetorical question hooks** - Don't start with "What if I told you..." or similar
 - **Avoid generic transitions** - "Let me tell you", "The brutal truth", "You won't believe this"
+- **No "uncomfortable truth" phrasing** - Use neutral alternatives like "key insight" or "important point"
 - **Don't use numbered lists** - Prefer short paragraphs with headings over bullet points
 - **No false build-up** - Lead with the most interesting insight, don't save it for the end
 - **Avoid abstract conclusions** - Always end with concrete implications and future-looking statements
@@ -67,6 +68,7 @@ See `_roles/sally-social-media-manager/instructions.md` for additional LinkedIn-
 
 ### Webinar Blog Post Guidelines
 - **Opening hook**: Use compelling statistics or reframe broad claims (e.g., "95% of technical teams cannot ship their AI agents" rather than specific anecdotes)
+- **Anonymise attendee contributions**: Never include specific names, companies, or identifying details from webinar attendees. Generalise their experiences (e.g., "agential teams burning through budgets" not "$10,000 spent by Bob's team")
 - **Webinar context**: Always establish that content comes from a specific webinar with date - "On [date], I gave a webinar about..."
 - **Virtual vs physical**: Use "virtual room" for webinars, not just "room"
 - **Brand consistency**: Cherrypick is always spelled "Cherrypick" (not "CherryPick") and should link to cherrypick.co
