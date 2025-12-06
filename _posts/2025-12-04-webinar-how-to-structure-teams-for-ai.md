@@ -134,7 +134,7 @@ If your code is hard for humans to understand, assume it will be hard for AI to 
 
 As I explored in my [previous webinar on AI rollouts](/webinar-how-not-to-screw-up-your-ai-rollout/), AI amplifies what is already there. Fix the friction first.
 
-### Beware the Lone Wolves
+### Beware the Hares
 
 You will hear success stories about people shipping whole products in a week. Survivorship bias is strong. The reason they could move fast is because they did not have the whole business around them that you do.
 

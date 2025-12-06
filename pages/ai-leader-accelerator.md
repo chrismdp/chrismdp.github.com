@@ -22,7 +22,7 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
 <section class="relative bg-gradient-to-br from-brand-deep-turquoise to-brand-turquoise text-white pt-32 pb-20 overflow-hidden">
   <div class="w-full px-6 relative z-10">
     <div class="text-center mb-12">
-      <p class="text-lg uppercase tracking-wide mb-4 text-white/80">For Senior Technical Leaders</p>
+      <p class="text-lg uppercase tracking-wide mb-4 text-white/80">For Senior Technical Leaders and Fractional CTOs</p>
       <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight mx-4">AI Leader Accelerator</h1>
       <p class="text-xl md:text-2xl mb-8 text-white mx-4 sm:mx-24">The collaborative course that turns technical leaders into AI leaders.</p>
       <p class="text-lg mx-4 sm:mx-24 text-white/90 mb-8">8 weeks. 3 hours online per week, plus your own implementation time. A small group of peers facing the same decisions and learning how to maximise their own and their team's use of AI.</p>
@@ -220,7 +220,7 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
         <h4 class="text-lg font-bold text-brand-deep-turquoise mb-3 text-center">Expert Input</h4>
         <div class="flex items-center justify-center gap-4 mb-4">
           <img src="/assets/img/chris-twitter-headshot.png" alt="Chris Parsons" class="w-12 h-12 rounded-full object-cover">
-          <p class="text-brand-black/70 text-sm max-w-md">I am <strong class="text-brand-black">Chris Parsons</strong>. 25 years in tech leadership, currently Fractional CTO and AI advisor to organisations including Genomics and Cherrypick.</p>
+          <p class="text-brand-black/70 text-sm max-w-md">I am <strong class="text-brand-black">Chris Parsons</strong>. 14 years in senior roles with multiple teams, currently Fractional CTO and AI advisor to organisations including Genomics and Cherrypick.</p>
         </div>
         <p class="text-brand-black/80 text-center">Plus guest experts who have done large-scale rollouts at major organisations, and your own implementation time to put what you learn into practice.</p>
       </div>
@@ -267,11 +267,11 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
         <ul class="space-y-4">
           <li class="flex items-start">
             <i data-lucide="check" class="w-6 h-6 mr-3 text-white flex-shrink-0 mt-1"></i>
-            <span>CTO, VP of Engineering, Engineering Director, or Staff+ Engineer</span>
+            <span>CTO, VP of Engineering, Engineering Director, or Fractional CTO</span>
           </li>
           <li class="flex items-start">
             <i data-lucide="check" class="w-6 h-6 mr-3 text-white flex-shrink-0 mt-1"></i>
-            <span>Running teams or teams of teams</span>
+            <span>Running teams of teams (10+ reports)</span>
           </li>
           <li class="flex items-start">
             <i data-lucide="check" class="w-6 h-6 mr-3 text-white flex-shrink-0 mt-1"></i>
@@ -279,7 +279,7 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
           </li>
           <li class="flex items-start">
             <i data-lucide="check" class="w-6 h-6 mr-3 text-white flex-shrink-0 mt-1"></i>
-            <span>Already experimenting with AI, want strategic clarity on what to do next</span>
+            <span>Want strategic clarity on AI adoption for your organisation</span>
           </li>
         </ul>
       </div>
@@ -294,6 +294,10 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
           <li class="flex items-start">
             <i data-lucide="x" class="w-6 h-6 mr-3 text-white/40 flex-shrink-0 mt-1"></i>
             <span>Junior or mid-level engineers</span>
+          </li>
+          <li class="flex items-start">
+            <i data-lucide="x" class="w-6 h-6 mr-3 text-white/40 flex-shrink-0 mt-1"></i>
+            <span>People between jobs</span>
           </li>
           <li class="flex items-start">
             <i data-lucide="x" class="w-6 h-6 mr-3 text-white/40 flex-shrink-0 mt-1"></i>
@@ -382,7 +386,7 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
         <div class="md:w-2/3">
           <h3 class="text-2xl font-heading font-bold mb-4 text-brand-black">Chris Parsons</h3>
           <div class="space-y-4 text-brand-black/80">
-            <p>25 years in tech leadership, including several years building AI products at startups and scaleups. Now focused on AI adoption, both hands-on implementation and advising technical leaders.</p>
+            <p>14 years in senior roles with multiple teams, including several years building AI products at startups and scaleups. Now focused on AI adoption, both hands-on implementation and advising technical leaders.</p>
             <p><strong>Current work:</strong> Fractional CTO and AI advisor to startups and scaleups including Genomics and <a href="https://cherrypick.co" target="_blank" class="text-brand-deep-turquoise hover:underline">Cherrypick</a>.</p>
             <p>I talk to a lot of technical leaders and I spend a significant chunk of my time keeping up with AI so that I can inject provocation and break old paradigms. Then as a group we pick up the pieces together and figure out what the brave new future looks like.</p>
             <p>That is how we truly become AI leaders.</p>
@@ -405,7 +409,7 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
       <ul class="space-y-3 text-brand-black/80">
         <li class="flex items-start">
           <i data-lucide="gift" class="w-6 h-6 mr-3 text-brand-deep-turquoise flex-shrink-0"></i>
-          <span>Pioneer pricing (38% off future price)</span>
+          <span>Pioneer pricing (up to 44% off future price)</span>
         </li>
         <li class="flex items-start">
           <i data-lucide="infinity" class="w-6 h-6 mr-3 text-brand-deep-turquoise flex-shrink-0"></i>
