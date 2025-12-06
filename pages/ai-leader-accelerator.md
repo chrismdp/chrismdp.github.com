@@ -454,6 +454,40 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
   </div>
 </section>
 
+<!-- FAQ Section -->
+<section class="py-20 bg-white">
+  <div class="max-w-3xl mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">Frequently Asked Questions</h2>
+
+    <div class="space-y-6">
+      <div class="border-b border-brand-light-blue/30 pb-6">
+        <h3 class="text-xl font-heading font-bold mb-3 text-brand-black">Will this be run again in future?</h3>
+        <p class="text-brand-black/80">We plan to run more cohorts, but no future dates have been announced yet. Join now to secure your place in the community and get pioneer pricing.</p>
+      </div>
+
+      <div class="border-b border-brand-light-blue/30 pb-6">
+        <h3 class="text-xl font-heading font-bold mb-3 text-brand-black">Is there a limit to attendees?</h3>
+        <p class="text-brand-black/80">Clinics are limited to 8 people in total so you can honestly discuss your own challenges in a safe environment. Everyone on the course gets personal attention, so we will cap numbers when that is no longer possible.</p>
+      </div>
+
+      <div class="border-b border-brand-light-blue/30 pb-6">
+        <h3 class="text-xl font-heading font-bold mb-3 text-brand-black">What if I miss a session?</h3>
+        <p class="text-brand-black/80">All Monday sessions are recorded. For clinics, multiple sessions run at different times each week so you can find one that works. The community stays active between sessions so you will not fall behind.</p>
+      </div>
+
+      <div class="border-b border-brand-light-blue/30 pb-6">
+        <h3 class="text-xl font-heading font-bold mb-3 text-brand-black">What time zone are the sessions in?</h3>
+        <p class="text-brand-black/80">Monday and Thursday sessions run in UK afternoon time. Clinics run at multiple times throughout the week to accommodate different time zones.</p>
+      </div>
+
+      <div class="pb-6">
+        <h3 class="text-xl font-heading font-bold mb-3 text-brand-black">Can my company pay for this?</h3>
+        <p class="text-brand-black/80">Yes. When we approve your application, send us your invoice details including company name, address, and any VAT or tax numbers as appropriate. We will invoice your company directly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Next Step Section -->
 <section id="apply" class="py-20 bg-gradient-to-br from-brand-turquoise to-brand-deep-turquoise text-white">
   <div class="max-w-4xl mx-auto text-center px-6">

@@ -38,7 +38,7 @@ excerpt: "Thank you for applying to the AI Leader Accelerator."
         <div class="flex-shrink-0 w-12 h-12 bg-brand-deep-turquoise rounded-full flex items-center justify-center text-white font-bold text-xl">2</div>
         <div>
           <h3 class="text-xl font-heading font-bold mb-2 text-brand-black">Application approved</h3>
-          <p class="text-brand-black/80">Once we have approved your application, you will receive an invoice at the email address you provided with your chosen payment option and instructions.</p>
+          <p class="text-brand-black/80">Once we have approved your application, you will receive an invoice at the email address you provided with your chosen payment option and instructions. If your company is paying, reply with your invoice details including company name, address, and any VAT or tax numbers as appropriate.</p>
         </div>
       </div>
 
