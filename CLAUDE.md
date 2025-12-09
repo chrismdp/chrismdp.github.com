@@ -63,6 +63,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Don't use numbered lists** - Prefer short paragraphs with headings over bullet points
 - **No false build-up** - Lead with the most interesting insight, don't save it for the end
 - **Avoid abstract conclusions** - Always end with concrete implications and future-looking statements
+- **Pithy section headings only** - Headings should be 2-4 words max, either a clever play on words or a short fragment. Avoid verbose headings like "The Question Nobody Is Asking" or "Why This Is Genuinely Hard". Prefer punchy alternatives like "The Wrong Debate", "Baked In", "No Clean Fix"
+- **Fewer headings, not more** - Not every section needs a heading. When content flows naturally from one idea to the next, skip the heading entirely. Practical advice sections often work better without a heading after the problem statement
+- **No weak endings** - Cut final sentences that restate what has already been said or add hollow sentiment. If the penultimate paragraph already lands, end there
 
 See `_roles/sally-social-media-manager/instructions.md` for additional LinkedIn-specific anti-patterns and iteration workflow.
 
