@@ -9,7 +9,7 @@ categories:
 - strategy
 ---
 
-I have been [telling people to use AI as a thinking partner](/ai-feeding-on-itself-only-holds-water-if-the-output-is-worse/), not a replacement for thinking. To let it interview them, surface ideas, enhance their output rather than generate it. I still believe that. But I have come to realise it is not enough.
+I have been [telling people to use AI as a thinking partner](/ai-feeding-on-itself/), not a replacement for thinking. To let it interview them, surface ideas, enhance their output rather than generate it. I still believe that. But I have come to realise it is not enough.
 
 Even when you use AI thoughtfully, even when you treat it as a collaborator rather than an answer machine, you are still absorbing something you did not choose.
 
