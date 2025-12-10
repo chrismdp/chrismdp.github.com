@@ -6,9 +6,7 @@ categories:
 - ai
 - writing
 - productivity
-image: /assets/img/ai-feeding-on-itself.png
-image_portrait: true
-image_caption: "I'm loving Nano Banana Pro for infographics! There are plenty more infographics and cheat sheets of all types available when you <a href='/' class='text-brand-deep-turquoise hover:text-brand-turquoise'>subscribe to the newsletter</a>."
+image: /assets/img/ai-feeding-on-itself-title.jpg
 ---
 
 There is a growing concern in AI circles about "model collapse."
@@ -78,6 +76,8 @@ One where models get progressively worse at helping us think. One where they get
 The difference is whether we use them to replace thinking or enhance it.
 
 Every piece of content you create with AI is a vote. Which future are you voting for?
+
+<img src="/assets/img/ai-feeding-on-itself.png" alt="AI Feeding On Itself - Infographic" style="width: 50%;" />
 
 [^collapse]: Recent research has documented the "model collapse" phenomenon extensively. See [Shumailov et al. (2024), "AI Models Collapse When Trained on Recursively Generated Data"](https://arxiv.org/html/2410.12954v1){:target="_blank"} for the foundational analysis of this problem.
 
