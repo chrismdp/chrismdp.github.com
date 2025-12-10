@@ -12,7 +12,7 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
   <div class="flex items-center justify-center gap-6 px-6">
     <span class="text-white font-heading font-bold hidden sm:inline">AI Leader Accelerator</span>
     <div class="flex gap-4">
-      <a href="#apply" class="inline-block bg-white hover:bg-white/90 text-brand-deep-turquoise font-bold py-2 px-6 rounded-lg transition-colors text-sm">Apply Now</a>
+      <a href="#apply" class="inline-block bg-white hover:bg-white/90 text-brand-deep-turquoise font-bold py-2 px-6 rounded-lg transition-colors text-sm">Begin Application</a>
       <a href="#syllabus" class="inline-block bg-white/20 hover:bg-white/30 text-white font-bold py-2 px-6 rounded-lg transition-colors text-sm">See the Syllabus</a>
     </div>
   </div>
@@ -25,7 +25,7 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
       <p class="text-lg uppercase tracking-wide mb-4 text-white/80">For Senior Technical Leaders</p>
       <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight mx-4">AI Leader Accelerator</h1>
       <p class="text-xl md:text-2xl mb-8 text-white mx-4 sm:mx-24">The collaborative 8-week course that turns technical leaders into AI leaders.</p>
-      <p class="text-lg mx-4 sm:mx-24 text-white/90 mb-8">3 hour a week commitment. A small group of peers facing the same decisions and learning how to maximise their own and their team's use of AI.</p>
+      <p class="text-lg mx-4 sm:mx-24 text-white/90 mb-8">3 hours a week commitment. A small group of peers facing the same decisions and learning how to maximise their own and their team's use of AI.</p>
 
       <!-- Countdown Timer -->
       <div class="mb-8">
@@ -51,7 +51,7 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
       </div>
 
       <div class="flex flex-wrap justify-center gap-4">
-        <a href="#apply" class="inline-block bg-white hover:bg-white/90 text-brand-deep-turquoise font-bold py-3 px-8 rounded-lg text-lg transition-colors">Apply Now</a>
+        <a href="#apply" class="inline-block bg-white hover:bg-white/90 text-brand-deep-turquoise font-bold py-3 px-8 rounded-lg text-lg transition-colors">Begin Application</a>
         <a href="#syllabus" class="inline-block bg-white/20 hover:bg-white/30 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors">See the Syllabus</a>
       </div>
     </div>
@@ -90,19 +90,21 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
 <!-- The Situation Section -->
 <section class="py-20 bg-white">
   <div class="max-w-4xl mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-8 text-brand-black">Technical Leadership Used To Be Easier.</h2>
+    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-8 text-brand-black">AI Is a Technology Shift Unlike Any Other.</h2>
 
     <div class="space-y-6 text-xl text-brand-black/80 text-center mb-10">
       <p>Think about how you navigated previous technology shifts. When cloud computing emerged, or when microservices became mainstream, you had time. The technology evolved over years. Best practices became established. You could wait, learn from others, then adopt with confidence.</p>
 
       <p>More importantly, you had your network. When you needed to validate a technical decision, you knew who to call. You had peers at your level who understood the same challenges and could offer honest perspective.</p>
 
-      <p class="text-2xl font-heading font-bold text-brand-black">Then AI arrived. And something broke.</p>
+      <p class="text-2xl font-heading font-bold text-brand-black">AI does not wait for you to be ready.</p>
 
-      <p>Your network still exists, but now nobody knows anything. The landscape changes weekly, best practice from last month is already outdated, and your trusted peers are just as uncertain as you are. Everyone is figuring it out alone.</p>
+      <p>The landscape changes weekly. Best practice from last month is already outdated. And unlike previous shifts, you cannot wait this one out. Your teams are already using AI, your spend is already going out, and the shift is happening whether you are steering it or not.</p>
+
+      <p>Meanwhile, everyone has become an AI expert. Your LinkedIn feed is full of people pushing controversial takes to game algorithms. Vendors want to sell you their solution. Consultants parachute in with frameworks they have never had to implement themselves. The noise-to-signal ratio is terrible, and you have no way to know who to trust.</p>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-6 mt-12 mb-16">
+    <div class="grid md:grid-cols-2 gap-6 mt-12 mb-16">
       <div class="bg-brand-light-blue/20 rounded-lg p-6">
         <p class="text-brand-black/80 italic mb-4">"Everyone is doing cool stuff with AI, and I have no one to talk to about it."</p>
         <p class="text-brand-deep-turquoise font-semibold text-sm">CTO, Media Company</p>
@@ -115,37 +117,41 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
         <p class="text-brand-black/80 italic mb-4">"I am doing a month's work in a day, but I do not know how to move that to my team."</p>
         <p class="text-brand-deep-turquoise font-semibold text-sm">Fractional CTO</p>
       </div>
-    </div>
-  </div>
-  <div class="max-w-6xl mx-auto px-6">
-    <!-- First row: 3 columns -->
-    <div class="grid md:grid-cols-3 gap-6 mb-6">
-      <div class="bg-brand-white rounded-lg p-6 border-l-4 border-brand-orange">
-        <h3 class="text-xl font-heading font-bold mb-3 text-brand-black">You are making decisions alone.</h3>
-        <p class="text-brand-black/80">You have been experimenting with AI, probably more than anyone else in your organisation. But you have nobody at your level to test your thinking against.</p>
-      </div>
-
-      <div class="bg-brand-white rounded-lg p-6 border-l-4 border-brand-orange">
-        <h3 class="text-xl font-heading font-bold mb-3 text-brand-black">Your CEO sends you startup success stories.</h3>
-        <p class="text-brand-black/80">"Look what this company did with five people!" But you have a monolith, compliance requirements, and existing customers. It is not that easy.</p>
-      </div>
-
-      <div class="bg-brand-white rounded-lg p-6 border-l-4 border-brand-orange">
-        <h3 class="text-xl font-heading font-bold mb-3 text-brand-black">Generic training does not help.</h3>
-        <p class="text-brand-black/80">Most AI courses teach tools. You need to figure out where AI fits in your organisation and how to lead your teams through adoption.</p>
+      <div class="bg-brand-light-blue/20 rounded-lg p-6">
+        <p class="text-brand-black/80 italic mb-4">"Everyone is an expert now. The content is mental. It is horrendous knowing who to trust."</p>
+        <p class="text-brand-deep-turquoise font-semibold text-sm">Head of Engineering</p>
       </div>
     </div>
 
-    <!-- Second row: 2 columns -->
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="bg-brand-white rounded-lg p-6 border-l-4 border-brand-orange">
-        <h3 class="text-xl font-heading font-bold mb-3 text-brand-black">You are the filter.</h3>
-        <p class="text-brand-black/80">Caught between board expectations and team reality. Your CEO wants AI transformation yesterday. Your team needs time to adopt properly. You are translating pressure from above into something your organisation can actually execute.</p>
+    <h3 class="text-2xl font-heading font-bold text-center mb-8 text-brand-black">Is This You?</h3>
+    <div class="max-w-3xl mx-auto space-y-4">
+      <div class="flex items-start gap-4 bg-brand-light-blue/10 rounded-lg p-5">
+        <i data-lucide="square" class="w-6 h-6 text-brand-orange flex-shrink-0 mt-0.5"></i>
+        <p class="text-brand-black/80">You have been experimenting with AI, but have nobody at your level to test your thinking against</p>
       </div>
-
-      <div class="bg-brand-white rounded-lg p-6 border-l-4 border-brand-orange">
-        <h3 class="text-xl font-heading font-bold mb-3 text-brand-black">The cost of getting this wrong is high.</h3>
-        <p class="text-brand-black/80">Bad AI investments waste six figures. Shadow AI creates security and compliance risks. Teams that adopt poorly get demoralised. And if your competitors figure this out first, you lose ground you will not easily recover.</p>
+      <div class="flex items-start gap-4 bg-brand-light-blue/10 rounded-lg p-5">
+        <i data-lucide="square" class="w-6 h-6 text-brand-orange flex-shrink-0 mt-0.5"></i>
+        <p class="text-brand-black/80">You see the potential of AI, but your teams are still cautious, and you do not know how to bridge that gap</p>
+      </div>
+      <div class="flex items-start gap-4 bg-brand-light-blue/10 rounded-lg p-5">
+        <i data-lucide="square" class="w-6 h-6 text-brand-orange flex-shrink-0 mt-0.5"></i>
+        <p class="text-brand-black/80">Consultants and vendors are telling you how to implement AI, but none of them have had to roll it out to your team with your constraints</p>
+      </div>
+      <div class="flex items-start gap-4 bg-brand-light-blue/10 rounded-lg p-5">
+        <i data-lucide="square" class="w-6 h-6 text-brand-orange flex-shrink-0 mt-0.5"></i>
+        <p class="text-brand-black/80">Your CEO keeps sending you startup success stories, but you have a monolith, compliance requirements, and existing customers</p>
+      </div>
+      <div class="flex items-start gap-4 bg-brand-light-blue/10 rounded-lg p-5">
+        <i data-lucide="square" class="w-6 h-6 text-brand-orange flex-shrink-0 mt-0.5"></i>
+        <p class="text-brand-black/80">You are caught between board expectations and team reality, translating pressure from above into something your organisation can actually execute</p>
+      </div>
+      <div class="flex items-start gap-4 bg-brand-light-blue/10 rounded-lg p-5">
+        <i data-lucide="square" class="w-6 h-6 text-brand-orange flex-shrink-0 mt-0.5"></i>
+        <p class="text-brand-black/80">You have tried lunch-and-learns and hackathons, but they are not creating the adoption you need</p>
+      </div>
+      <div class="flex items-start gap-4 bg-brand-light-blue/10 rounded-lg p-5">
+        <i data-lucide="square" class="w-6 h-6 text-brand-orange flex-shrink-0 mt-0.5"></i>
+        <p class="text-brand-black/80">The only AI training you can find teaches tools, not how to lead organisational change</p>
       </div>
     </div>
   </div>
@@ -192,7 +198,7 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
 <section class="py-20 bg-brand-white">
   <div class="max-w-5xl mx-auto px-6">
     <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-4 text-brand-black">A Different Approach</h2>
-    <p class="text-xl text-center text-brand-black/80 mb-8">Not a training course. Not a lecture series. A peer network with expert facilitation.</p>
+    <p class="text-xl text-center text-brand-black/80 mb-8">Not a training course or a lecture series. A peer network with expert facilitation.</p>
 
     <div class="bg-white rounded-lg p-8 shadow-lg border border-brand-light-blue/20 mb-12">
       <h3 class="text-2xl font-heading font-bold mb-6 text-brand-deep-turquoise text-center">AI Leader Accelerator</h3>
@@ -321,25 +327,25 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
       <div class="bg-brand-white rounded-lg p-6 border-l-4 border-brand-deep-turquoise">
         <div class="flex items-start mb-3">
           <span class="bg-brand-deep-turquoise text-white text-sm font-bold px-3 py-1 rounded mr-4">Week 1</span>
-          <h3 class="text-xl font-heading font-bold text-brand-black">Advanced Prompting for Leaders</h3>
+          <h3 class="text-xl font-heading font-bold text-brand-black">The AI Landscape</h3>
         </div>
-        <p class="text-brand-black/80">Practical wins for self-use and team enablement. Start with something personal and practical, with immediate value from day one.</p>
+        <p class="text-brand-black/80">AI is a field, not a single tool. We map the landscape together: what the different categories of AI actually are, where they overlap, and why this matters for adoption. Then you chart exactly where your organisation is right now, so you can begin to formulate a strategy from a clear starting point.</p>
       </div>
 
       <div class="bg-brand-white rounded-lg p-6 border-l-4 border-brand-deep-turquoise">
         <div class="flex items-start mb-3">
           <span class="bg-brand-deep-turquoise text-white text-sm font-bold px-3 py-1 rounded mr-4">Week 2</span>
-          <h3 class="text-xl font-heading font-bold text-brand-black">Building the Groundwork</h3>
+          <h3 class="text-xl font-heading font-bold text-brand-black">Level Up Your Own AI Use</h3>
         </div>
-        <p class="text-brand-black/80">AI as an amplifier: it makes good teams better and bad teams worse. Establishing a learning culture, setting expectations, freeing up time for experimentation, and creating an experiment team.</p>
+        <p class="text-brand-black/80">Using AI specifically for senior technical strategy work. How to think and strategise better with AI as your partner. Interactive sharing: hear how others in the group are integrating AI into their leadership workflows.</p>
       </div>
 
       <div class="bg-brand-white rounded-lg p-6 border-l-4 border-brand-deep-turquoise">
         <div class="flex items-start mb-3">
           <span class="bg-brand-deep-turquoise text-white text-sm font-bold px-3 py-1 rounded mr-4">Week 3</span>
-          <h3 class="text-xl font-heading font-bold text-brand-black">Using Advanced Agents for Strategic Thinking</h3>
+          <h3 class="text-xl font-heading font-bold text-brand-black">Leading Multi-Speed Change with High Uncertainty</h3>
         </div>
-        <p class="text-brand-black/80">How agents differ from chat interfaces. Using AI agents for writing, planning, and decision-making. Beyond coding: AI as thinking partner for leadership work.</p>
+        <p class="text-brand-black/80">This is not straightforward change management. AI is many different things at once, your people are at wildly different stages, and some are actively resistant. The old playbooks do not work here. We cover how to navigate fragmented adoption, build your early adopter team, and create momentum when people are moving at different speeds.</p>
       </div>
 
       <div class="bg-brand-white rounded-lg p-6 border-l-4 border-brand-deep-turquoise">
@@ -353,17 +359,25 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
       <div class="bg-brand-white rounded-lg p-6 border-l-4 border-brand-deep-turquoise">
         <div class="flex items-start mb-3">
           <span class="bg-brand-deep-turquoise text-white text-sm font-bold px-3 py-1 rounded mr-4">Week 5</span>
-          <h3 class="text-xl font-heading font-bold text-brand-black">AI in Products</h3>
+          <h3 class="text-xl font-heading font-bold text-brand-black">Using Advanced Agents for Strategic Thinking</h3>
         </div>
-        <p class="text-brand-black/80">Embedding AI into your products. Understanding the product lifecycle with AI, from prototyping to production, and making smart decisions about where AI adds real value.</p>
+        <p class="text-brand-black/80">How agents differ from chat interfaces. Using AI agents for writing, planning, and decision-making. Beyond coding: AI as thinking partner for leadership work.</p>
+      </div>
+
+      <div class="bg-brand-white rounded-lg p-6 border-l-4 border-brand-deep-turquoise">
+        <div class="flex items-start mb-3">
+          <span class="bg-brand-deep-turquoise text-white text-sm font-bold px-3 py-1 rounded mr-4">Week 6</span>
+          <h3 class="text-xl font-heading font-bold text-brand-black">How to Oversee AI in Products</h3>
+        </div>
+        <p class="text-brand-black/80">Not the tactical work, but understanding strategic constraints and important product decisions. Have informed conversations with your product teams about where AI adds real value and where it does not.</p>
       </div>
 
       <div class="bg-brand-light-blue/20 rounded-lg p-6 border-l-4 border-brand-orange">
         <div class="flex items-start mb-3">
-          <span class="bg-brand-orange text-white text-sm font-bold px-3 py-1 rounded mr-4">Weeks 6-8</span>
+          <span class="bg-brand-orange text-white text-sm font-bold px-3 py-1 rounded mr-4">Weeks 7-8</span>
           <h3 class="text-xl font-heading font-bold text-brand-black">Customised Sessions Based on Need</h3>
         </div>
-        <p class="text-brand-black/80">Topics shaped by the cohort. We will build these sessions around what emerges from the first five weeks, addressing your specific challenges with peer support and expert input.</p>
+        <p class="text-brand-black/80">Topics shaped by the cohort. We will build these sessions around what emerges from the first six weeks, addressing your specific challenges with peer support and expert input.</p>
       </div>
     </div>
 
@@ -387,10 +401,9 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
         <div class="md:w-2/3">
           <h3 class="text-2xl font-heading font-bold mb-4 text-brand-black">Chris Parsons</h3>
           <div class="space-y-4 text-brand-black/80">
-            <p>14 years in senior roles with multiple teams, including several years building AI products at startups and scaleups. Now focused on AI adoption, both hands-on implementation and advising technical leaders.</p>
-            <p><strong>Current work:</strong> CTO and Strategic AI Advisor to startups and scaleups including Genomics and <a href="https://cherrypick.co" target="_blank" class="text-brand-deep-turquoise hover:underline">Cherrypick</a>.</p>
-            <p>I talk to a lot of technical leaders and I spend a significant chunk of my time keeping up with AI so that I can inject provocation and break old paradigms. Then as a group we pick up the pieces together and figure out what the brave new future looks like.</p>
-            <p>That is how we truly become AI leaders.</p>
+            <p>I am a CTO myself. I am not a consultant who has read about AI adoption; I am in the trenches making these decisions alongside you. 14 years in senior roles with multiple teams, currently CTO and Strategic AI Advisor to startups and scaleups including Genomics and <a href="https://cherrypick.co" target="_blank" class="text-brand-deep-turquoise hover:underline">Cherrypick</a>.</p>
+            <p>But this programme is not about me having all the answers. It is about creating the peer environment where you can test your thinking against other CTOs and senior technical leaders who understand the same pressures. I facilitate. I provoke. I bring frameworks and challenge assumptions. The real value is what happens when you are surrounded by people solving the same problems.</p>
+            <p>I spend a significant chunk of my time keeping up with AI so you do not have to filter the noise yourself. Then as a group we work through what actually makes sense for your organisation.</p>
           </div>
         </div>
       </div>
@@ -440,14 +453,14 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
         <p class="text-lg text-white/80 mb-1">Pioneer: Pay Upfront</p>
         <p class="text-4xl font-bold text-white mb-4">$4,500</p>
         <p class="text-white/70 text-sm mb-6">10% discount for upfront payment</p>
-        <a href="#apply" class="inline-block bg-white hover:bg-white/90 text-brand-deep-turquoise font-bold py-2 px-6 rounded-lg transition-colors">Apply Now</a>
+        <a href="#apply" class="inline-block bg-white hover:bg-white/90 text-brand-deep-turquoise font-bold py-2 px-6 rounded-lg transition-colors">Begin Application</a>
       </div>
       <div class="bg-white/10 rounded-lg p-8">
         <p class="text-white/60 text-sm mb-2 line-through">Future price: $8,000</p>
         <p class="text-lg text-white/80 mb-1">Pioneer: Two Instalments</p>
         <p class="text-4xl font-bold text-white mb-4">$5,000</p>
         <p class="text-white/70 text-sm mb-6">$2,500 before start, $2,500 at week 4</p>
-        <a href="#apply" class="inline-block bg-white hover:bg-white/90 text-brand-deep-turquoise font-bold py-2 px-6 rounded-lg transition-colors">Apply Now</a>
+        <a href="#apply" class="inline-block bg-white hover:bg-white/90 text-brand-deep-turquoise font-bold py-2 px-6 rounded-lg transition-colors">Begin Application</a>
       </div>
     </div>
 
@@ -485,9 +498,14 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
         <p class="text-brand-black/80">Monday and Thursday sessions run in UK afternoon time. Clinics run at multiple times throughout the week to accommodate different time zones.</p>
       </div>
 
-      <div class="pb-6">
+      <div class="border-b border-brand-light-blue/30 pb-6">
         <h3 class="text-xl font-heading font-bold mb-3 text-brand-black">Can my company pay for this?</h3>
         <p class="text-brand-black/80">Yes. When we approve your application, send us your invoice details including company name, address, and any VAT or tax numbers as appropriate. We will invoice your company directly.</p>
+      </div>
+
+      <div class="pb-6">
+        <h3 class="text-xl font-heading font-bold mb-3 text-brand-black">Is my information kept confidential?</h3>
+        <p class="text-brand-black/80">Yes. All participants sign an NDA as part of the programme agreement. Small group clinics are deliberately curated to reduce competitor conflicts. You can discuss challenges, tools, and techniques openly without concerns about confidentiality. Nothing shared in the programme is discussed outside the group.</p>
       </div>
     </div>
   </div>
@@ -496,7 +514,7 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
 <!-- Next Step Section -->
 <section id="apply" class="py-20 bg-gradient-to-br from-brand-turquoise to-brand-deep-turquoise text-white">
   <div class="max-w-4xl mx-auto px-6 text-center">
-    <h2 class="text-4xl md:text-5xl font-heading font-bold mb-6 text-white">Apply Now</h2>
+    <h2 class="text-4xl md:text-5xl font-heading font-bold mb-6 text-white">Begin Application</h2>
     <p class="text-xl mb-12 text-white/90">Fill in the form below in just a few steps.</p>
 
     <div class="max-w-2xl mx-auto bg-brand-deep-turquoise rounded-lg p-8 border border-brand-turquoise mb-8">
