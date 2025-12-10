@@ -503,27 +503,31 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
       <div class="rm-area-embed-ai-leader-accelerator"></div>
     </div>
 
-    <div class="max-w-2xl mx-auto bg-white/10 rounded-lg p-6 text-left">
+    <div class="max-w-3xl mx-auto bg-white/10 rounded-lg p-6 text-left">
       <h3 class="text-lg font-heading font-bold mb-4">What Happens Next</h3>
-      <div class="grid md:grid-cols-5 gap-4">
+      <div class="grid grid-cols-3 md:grid-cols-6 gap-4">
         <div class="flex flex-col items-center text-center">
-          <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-white text-sm font-bold mb-2">1</div>
-          <p class="text-white/90 text-xs">Confirm your email</p>
+          <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center text-brand-deep-turquoise text-sm font-bold mb-2">1</div>
+          <p class="text-white/90 text-xs">Submit the form</p>
         </div>
         <div class="flex flex-col items-center text-center">
           <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-white text-sm font-bold mb-2">2</div>
-          <p class="text-white/90 text-xs">We review and send invoice</p>
+          <p class="text-white/90 text-xs">Confirm your email</p>
         </div>
         <div class="flex flex-col items-center text-center">
           <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-white text-sm font-bold mb-2">3</div>
-          <p class="text-white/90 text-xs">Complete payment</p>
+          <p class="text-white/90 text-xs">We review and send invoice</p>
         </div>
         <div class="flex flex-col items-center text-center">
           <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-white text-sm font-bold mb-2">4</div>
+          <p class="text-white/90 text-xs">Complete payment</p>
+        </div>
+        <div class="flex flex-col items-center text-center">
+          <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-white text-sm font-bold mb-2">5</div>
           <p class="text-white/90 text-xs">Join the Early Bird Zone</p>
         </div>
         <div class="flex flex-col items-center text-center">
-          <div class="w-8 h-8 bg-brand-orange rounded-full flex items-center justify-center text-white text-sm font-bold mb-2">5</div>
+          <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-white text-sm font-bold mb-2">6</div>
           <p class="text-white/90 text-xs">Programme starts 19 Jan</p>
         </div>
       </div>
