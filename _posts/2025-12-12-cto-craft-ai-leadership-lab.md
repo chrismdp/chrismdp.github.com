@@ -7,6 +7,7 @@ categories:
 - talk
 - leadership
 event_name: "CTO Craft"
+venue: "QEII Centre, London"
 talk_date: 2026-03-09
 talk_url: "https://conference.ctocraft.com/london-2026/"
 talk_title: "The AI Leadership Lab"
