@@ -23,22 +23,21 @@ layout: default
 <article class="{% if page.full_width %}max-w-7xl{% else %}max-w-4xl{% endif %} mx-auto px-6 pb-12">
 
   <!-- Featured image -->
-  {% if page.image %}
-    {% if page.image_portrait %}
-      <div class='float-right ml-6 mb-6 w-1/2 max-w-md'>
-        <img alt='{{ page.title }}' src='{{ page.image }}' class='rounded-lg'>
-        {% if page.image_caption %}
-          <p class='text-sm text-brand-black/60 italic mt-2 text-center'>{{ page.image_caption }}</p>
-        {% endif %}
-      </div>
-    {% else %}
-      <div class='mb-8'>
-        <img alt='{{ page.title }}' src='{{ page.image }}' class='rounded-lg w-full'>
-        {% if page.image_caption %}
-          <p class='text-sm text-brand-black/60 italic mt-2 text-center'>{{ page.image_caption }}</p>
-        {% endif %}
-      </div>
-    {% endif %}
+  {% assign featured_image = page.image | default: "/assets/img/chris-1.9-1.jpg" %}
+  {% if page.image_portrait %}
+    <div class='float-right ml-6 mb-6 w-1/2 max-w-md'>
+      <img alt='{{ page.title }}' src='{{ featured_image }}' class='rounded-lg'>
+      {% if page.image_caption %}
+        <p class='text-sm text-brand-black/60 italic mt-2 text-center'>{{ page.image_caption }}</p>
+      {% endif %}
+    </div>
+  {% else %}
+    <div class='mb-8'>
+      <img alt='{{ page.title }}' src='{{ featured_image }}' class='rounded-lg w-full'>
+      {% if page.image_caption %}
+        <p class='text-sm text-brand-black/60 italic mt-2 text-center'>{{ page.image_caption }}</p>
+      {% endif %}
+    </div>
   {% endif %}
 
   <!-- Talk details callout for talk posts -->
