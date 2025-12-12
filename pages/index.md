@@ -42,8 +42,8 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
 <section class="py-20 bg-brand-white">
   <div class="w-full">
     <div class="text-center mb-12 px-6">
-      <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6 text-brand-black">Try my newsletter above to gain access to all my AI guides</h2>
-      <p class="text-xl text-brand-black/80 mb-8 mx-4 sm:mx-24">Turn AI hype into daily habits that drive real results in your work and outcomes, all in a few minutes a week.</p>
+      <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6 text-brand-black">Try my newsletter to unlock my AI resource library</h2>
+      <p class="text-xl text-brand-black/80 mb-8 mx-4 sm:mx-24">Dozens of free guides and practical AI advice for leaders, delivered weekly.</p>
     </div>
 
     <!-- Carousel image at the bottom -->
