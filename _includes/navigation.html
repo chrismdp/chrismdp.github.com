@@ -1,39 +1,22 @@
 {% assign text_color = include.text_color | default: "brand-black" %}
 {% assign hover_color = include.hover_color | default: "brand-deep-turquoise" %}
 
-<div class="flex md:space-x-8 items-center w-full z-10 flex-wrap md:flex-row justify-center font-heading font-bold">
-   <div class='flex gap-5 px-4 py-2'>
-      <a href="{% if text_color == 'white' %}/services{% else %}/#services{% endif %}" class="text-{{ text_color }} hover:text-{{ hover_color }} transition-colors whitespace-nowrap">Services</a>
-      <a href="/training/" class="text-{{ text_color }} hover:text-{{ hover_color }} transition-colors whitespace-nowrap">Training</a>
-      <a href="/articles/" class="text-{{ text_color }} hover:text-{{ hover_color }} transition-colors whitespace-nowrap">Articles</a>
-   </div>
-
-   <div class='flex flex-row space-x-3 px-4 py-2'>
-      {% if site.linkedin %}
-      <a href="https://linkedin.com/in/{{ site.linkedin }}" class="text-{{ text_color }} hover:text-{{ hover_color }} transition-colors" title="LinkedIn">
-         <span class="sr-only">LinkedIn</span>
-         <svg role="img" class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-         </svg>
-      </a>
-      {% endif %}
-      
-      {% if site.bluesky %}
-      <a href="https://bsky.app/profile/{{ site.bluesky }}" class="text-{{ text_color }} hover:text-{{ hover_color }} transition-colors" title="BlueSky">
-         <span class="sr-only">BlueSky</span>
-         <svg role="img" class="w-5 h-5" fill="currentColor" viewBox="0 0 600 530">
-            <path d="m135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z"/>
-         </svg>
-      </a>
-      {% endif %}
-      
-      {% if site.twitter %}
-      <a href="https://x.com/{{ site.twitter }}" class="text-{{ text_color }} hover:text-{{ hover_color }} transition-colors" title="X (Twitter)">
-         <span class="sr-only">X (Twitter)</span>
-         <svg role="img" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-         </svg>
-      </a>
-      {% endif %}
-   </div>
+<div class="flex flex-wrap items-center w-full z-10 justify-center font-heading font-bold gap-5 px-4 py-2">
+   <a href="{% if text_color == 'white' %}/services{% else %}/#services{% endif %}" class="text-{{ text_color }} hover:text-{{ hover_color }} transition-colors whitespace-nowrap">Services</a>
+   <a href="/articles/" class="text-{{ text_color }} hover:text-{{ hover_color }} transition-colors whitespace-nowrap">Articles</a>
+   {% if site.linkedin %}
+   <a href="https://linkedin.com/in/{{ site.linkedin }}" class="text-{{ text_color }} hover:text-{{ hover_color }} transition-colors" title="LinkedIn">
+      <span class="sr-only">LinkedIn</span>
+      <svg role="img" class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+         <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+      </svg>
+   </a>
+   {% endif %}
+   {% if page.url == '/ai-leader-accelerator/' %}
+   <a href="#apply" class="bg-white text-brand-deep-turquoise hover:bg-brand-light-blue px-3 py-1 rounded-lg transition-colors whitespace-nowrap no-underline">Begin Application</a>
+   {% elsif text_color == 'white' %}
+   <a href="/ai-leader-accelerator/" class="bg-white text-brand-deep-turquoise hover:bg-brand-light-blue px-3 py-1 rounded-lg transition-colors whitespace-nowrap no-underline">AI Leader Accelerator<span class="hidden sm:inline">: Starts Jan 19th</span></a>
+   {% else %}
+   <a href="/ai-leader-accelerator/" class="bg-brand-deep-turquoise text-white hover:bg-brand-turquoise px-3 py-1 rounded-lg transition-colors whitespace-nowrap no-underline">AI Leader Accelerator<span class="hidden sm:inline">: Starts Jan 19th</span></a>
+   {% endif %}
 </div>
