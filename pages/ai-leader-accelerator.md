@@ -19,12 +19,12 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
 </div>
 
 <!-- Hero Section -->
-<section class="relative bg-gradient-to-br from-brand-deep-turquoise to-brand-turquoise text-white pt-32 pb-20 overflow-hidden">
+<section class="relative bg-gradient-to-br from-brand-deep-turquoise to-brand-turquoise text-white pt-40 pb-20 overflow-hidden">
   <div class="w-full px-6 relative z-10">
     <div class="text-center mb-12">
       <p class="text-lg uppercase tracking-wide mb-4 text-white/80">For Senior Technical Leaders</p>
-      <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight mx-4">AI Leader Accelerator</h1>
-      <p class="text-xl md:text-2xl mb-8 text-white mx-4 sm:mx-24">8 weeks to transform how your organisation adopts AI.</p>
+      <h1 class="text-5xl md:text-6xl font-heading font-bold mb-6 leading-tight mx-4">AI Leader Accelerator</h1>
+      <p class="text-2xl md:text-2xl mb-8 text-white mx-4 sm:mx-24">8 weeks to transform how your organisation adopts AI.</p>
 
       <div class="max-w-3xl mx-auto mb-8">
         <div class="grid md:grid-cols-3 gap-4 text-left">
@@ -520,7 +520,6 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
 <section id="apply" class="py-20 bg-gradient-to-br from-brand-turquoise to-brand-deep-turquoise text-white">
   <div class="max-w-4xl mx-auto px-6 text-center">
     <h2 class="text-4xl md:text-5xl font-heading font-bold mb-6 text-white">Begin Application</h2>
-    <p class="text-xl mb-12 text-white/90">Fill in the form below in just a few steps.</p>
 
     <div class="max-w-2xl mx-auto bg-brand-deep-turquoise rounded-lg p-8 border border-brand-turquoise mb-8">
       <div class="rm-area-embed-ai-leader-accelerator"></div>
