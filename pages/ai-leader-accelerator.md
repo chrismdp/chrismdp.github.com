@@ -24,7 +24,7 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
     <div class="text-center mb-12">
       <p class="text-lg uppercase tracking-wide mb-4 text-white/80">For Senior Technical Leaders</p>
       <h1 class="text-5xl md:text-6xl font-heading font-bold mb-6 leading-tight mx-4">AI Leader Accelerator</h1>
-      <p class="text-2xl md:text-2xl mb-8 text-white mx-4 sm:mx-24">8 weeks to transform how your organisation adopts AI.</p>
+      <p class="text-2xl md:text-2xl mb-8 text-white mx-4 sm:mx-24">8 weeks to transform how you and your organisation adopt AI.</p>
 
       <div class="max-w-3xl mx-auto mb-8">
         <div class="grid md:grid-cols-3 gap-4 text-left">

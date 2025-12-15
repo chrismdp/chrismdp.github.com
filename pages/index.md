@@ -56,10 +56,11 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
 <!-- More About Chris Section -->
 <section class="py-20 bg-white">
   <div class="max-w-4xl mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">More About Me</h2>
+    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">More About Chris</h2>
 
     <div class="grid md:grid-cols-2 gap-12 items-top">
       <div>
+        <img src="/assets/img/chris-twitter-headshot.png" alt="Chris Parsons" class="w-32 h-32 rounded-full object-cover mb-6">
         <p class="text-lg text-brand-black/80 mb-6">
           I've been a CTO and founder. I've scaled companies whilst building production AI systems and transformed delivery using AI tools.
         </p>
