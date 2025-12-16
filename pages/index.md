@@ -243,19 +243,27 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
     <p class="text-xl text-center mb-12 text-brand-black/80 max-w-3xl mx-auto">Your board wants AI strategy. Your team needs practical guidance. Your company needs results without implementation disasters.</p>
     <p class="text-xl text-center mb-12 text-brand-black/80 max-w-3xl mx-auto">Here's how I help CEOs and leaders succeed where others fail.</p>
 
-    <!-- AI Strategy & Implementation Plan - Full Width -->
+    <!-- AI Leader Accelerator - Full Width -->
     <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors mb-12">
-      <i data-lucide="map" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
-      <h3 class="text-2xl font-heading font-bold mb-4">AI STRATEGY & IMPLEMENTATION BLUEPRINT</h3>
-      <p class="text-lg font-semibold mb-4 text-brand-black">Get a custom 90-day roadmap that shows your board ROI and gets your team productive</p>
-      <p class="text-brand-black/80 leading-relaxed mb-6">
-        Skip months of trial and error. I'll analyse your current setup, identify the highest-impact opportunities, and create a step-by-step implementation plan that addresses security, team adoption, and measurable productivity gains. Includes team readiness assessment, tool recommendations, and governance framework.
-      </p>
-      <div class="text-sm text-brand-black/60 mb-6">Perfect for: CEOs needing to present AI strategy to boards, teams of 15-100, companies with compliance requirements</div>
+      <div class="flex flex-col md:flex-row gap-8 items-center">
+        <div class="flex-1">
+          <i data-lucide="graduation-cap" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
+          <h3 class="text-2xl font-heading font-bold mb-4">AI LEADER ACCELERATOR</h3>
+          <p class="text-lg font-semibold mb-4 text-brand-black">8 weeks to transform how you and your organisation adopt AI</p>
+          <p class="text-brand-black/80 leading-relaxed mb-6">
+            A peer learning programme for senior technical leaders. Build an AI strategy that fits your organisation, gain confidence to answer board questions on security and compliance, and form a network of CTO peers facing the same challenges. 3 hours per week commitment.
+          </p>
+          <div class="text-sm text-brand-black/60 mb-6">Perfect for: CTOs, VPs of Engineering, and senior technical leaders navigating AI adoption</div>
+          <a href="/ai-leader-accelerator/" class="inline-block bg-brand-deep-turquoise text-white px-6 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">Learn More & Apply →</a>
+        </div>
+        <a href="/ai-leader-accelerator/" class="hidden md:block w-64 flex-shrink-0">
+          <img src="/assets/img/ai-leader-accelerator-launch.png" alt="AI Leader Accelerator" class="w-full h-auto">
+        </a>
+      </div>
     </div>
 
-    <!-- Other Services - Three Columns -->
-    <div class="grid md:grid-cols-3 gap-8 mb-12">
+    <!-- Other Services - Two Columns -->
+    <div class="grid md:grid-cols-2 gap-8 mb-12">
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
         <i data-lucide="users" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
         <h3 class="text-2xl font-heading font-bold mb-4">AI TRAINING INTENSIVES</h3>
@@ -267,30 +275,20 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
       </div>
 
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
-        <i data-lucide="network" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
-        <h3 class="text-2xl font-heading font-bold mb-4">IMPLEMENTATION SUPPORT</h3>
-        <p class="text-lg font-semibold mb-4 text-brand-black">Hands-on help leveraging AI tools without breaking things</p>
-        <p class="text-brand-black/80 leading-relaxed">
-          Custom AI system design and implementation with proper security, monitoring, and governance. I work alongside your team to deploy production-ready AI solutions that scale with your business requirements.
-        </p>
-      </div>
-
-      <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
         <i data-lucide="compass" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
         <h3 class="text-2xl font-heading font-bold mb-4">CTO-LEVEL AI ADVISORY</h3>
         <p class="text-lg font-semibold mb-4 text-brand-black">Direct access when you need experienced perspective</p>
-        <p class="text-brand-black/80 leading-relaxed">
+        <p class="text-brand-black/80 leading-relaxed mb-4">
           Monthly strategic sessions with someone who's been in your position. Get advice on tool selection, team challenges, vendor negotiations, and board communication. Plus urgent access for critical decisions.
         </p>
+        <a href="#contact" class="inline-block bg-brand-deep-turquoise text-white px-6 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">Get in Touch →</a>
       </div>
     </div>
 
 
     <!-- Contact Form -->
-    <div class="max-w-2xl mx-auto">
-      <div class="bg-brand-deep-turquoise rounded-lg p-8 text-center">
-        <h3 class="text-2xl font-heading font-bold text-white mb-4">Ready to Move Beyond AI Experiments?</h3>
-        <p class="text-white/90 mb-6">Let's discuss your specific situation and create a plan that gets your board the results they want and your team the productivity they need.</p>
+    <div id="contact" class="max-w-2xl mx-auto">
+      <div class="bg-brand-deep-turquoise rounded-lg p-8">
         <div class="rm-area-embed-services"></div>
       </div>
     </div>
