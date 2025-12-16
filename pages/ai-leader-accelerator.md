@@ -360,8 +360,8 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
     </div>
 
     <div class="bg-brand-deep-turquoise text-white rounded-lg p-8 mt-12 text-center">
-      <p class="text-xl font-semibold mb-2">One week break for half-term included</p>
-      <p class="text-white/80">19th January to 20th March 2026</p>
+      <p class="text-xl font-semibold mb-2">19th January to 27th March 2026</p>
+      <p class="text-white/80">Running each week except w/c 16th February and w/c 9th March</p>
     </div>
   </div>
 </section>
@@ -406,7 +406,7 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
         <div class="md:w-2/3">
           <h3 class="text-2xl font-heading font-bold mb-4 text-brand-black">Chris Parsons</h3>
           <div class="space-y-4 text-brand-black/80">
-            <p>I am a CTO myself. I am not a consultant who has read about AI adoption; I am in the trenches making these decisions alongside you. 14 years in senior roles with multiple teams, currently CTO and Strategic AI Advisor to startups and scaleups including Genomics and <a href="https://cherrypick.co" target="_blank" class="text-brand-deep-turquoise hover:underline">Cherrypick</a>. I have run dozens of courses for organisations like the BBC, and I bring that experience to this programme.</p>
+            <p>I am a CTO myself. I am not just a consultant who has read about AI adoption; I am in the trenches making these decisions alongside you. 14 years in senior roles with multiple teams, currently CTO and Strategic AI Advisor to startups and scaleups including Genomics and <a href="https://cherrypick.co" target="_blank" class="text-brand-deep-turquoise hover:underline">Cherrypick</a>. I have run dozens of courses for organisations like the BBC, and I bring that experience to this programme.</p>
             <p>This programme works because you are surrounded by CTOs and senior technical leaders who understand the same pressures. I facilitate and provoke, bringing frameworks that challenge assumptions. The value comes from testing your thinking against people solving the same problems.</p>
             <p>I spend a significant chunk of my time keeping up with AI so you do not have to filter the noise yourself. Then as a group we work through what actually makes sense for your organisation.</p>
           </div>
@@ -454,17 +454,17 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
 
     <div class="grid md:grid-cols-2 gap-6 mb-8 max-w-2xl mx-auto">
       <div class="bg-white/10 rounded-lg p-8">
-        <p class="text-white/60 text-sm mb-2 line-through">Future price: $8,000</p>
+        <p class="text-white/60 text-sm mb-2 line-through">Future price: $8,000 USD</p>
         <p class="text-lg text-white/80 mb-1">Pioneer: Pay Upfront</p>
-        <p class="text-4xl font-bold text-white mb-4">$4,500</p>
+        <p class="text-4xl font-bold text-white mb-4">$4,500 <span class="text-xl">USD</span></p>
         <p class="text-white/70 text-sm mb-6">10% discount for upfront payment</p>
         <a href="#apply" class="inline-block bg-white hover:bg-white/90 text-brand-deep-turquoise font-bold py-2 px-6 rounded-lg transition-colors">Begin Application</a>
       </div>
       <div class="bg-white/10 rounded-lg p-8">
-        <p class="text-white/60 text-sm mb-2 line-through">Future price: $8,000</p>
+        <p class="text-white/60 text-sm mb-2 line-through">Future price: $8,000 USD</p>
         <p class="text-lg text-white/80 mb-1">Pioneer: Two Instalments</p>
-        <p class="text-4xl font-bold text-white mb-4">$5,000</p>
-        <p class="text-white/70 text-sm mb-6">$2,500 before start, $2,500 at week 4</p>
+        <p class="text-4xl font-bold text-white mb-4">$5,000 <span class="text-xl">USD</span></p>
+        <p class="text-white/70 text-sm mb-6">$2,500 USD before start, $2,500 USD at week 4</p>
         <a href="#apply" class="inline-block bg-white hover:bg-white/90 text-brand-deep-turquoise font-bold py-2 px-6 rounded-lg transition-colors">Begin Application</a>
       </div>
     </div>
