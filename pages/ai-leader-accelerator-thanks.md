@@ -78,10 +78,24 @@ excerpt: "Thank you for applying to the AI Leader Accelerator."
 <!-- While You're Here Section -->
 <section class="py-20 bg-brand-deep-turquoise text-white">
   <div class="max-w-3xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-heading font-bold mb-4">While You Are Here</h2>
-    <p class="text-xl text-white/90 mb-8">Please fill in a few more questions.</p>
+    <h2 class="text-3xl font-heading font-bold mb-4">While You're Here</h2>
+    <p class="text-xl text-white/90 mb-8">Do feel free to answer a few more questions so I can learn more about you.</p>
     <div class="max-w-xl mx-auto bg-white/10 rounded-lg p-8">
       <div class="rm-area-embed-thanks"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Latest Articles Section -->
+<section class="py-20 bg-white">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-2xl font-heading font-bold mb-8 text-brand-black">Latest Articles</h2>
+
+    {% assign latest_posts = site.posts | slice: 0, 5 %}
+    {% include article-list.html posts=latest_posts %}
+
+    <div class="text-center mt-8">
+      <a href="{{ site.baseurl }}/articles/" class="inline-block bg-brand-deep-turquoise text-white px-6 py-3 rounded-lg hover:bg-brand-turquoise transition-colors">View All Articles</a>
     </div>
   </div>
 </section>
