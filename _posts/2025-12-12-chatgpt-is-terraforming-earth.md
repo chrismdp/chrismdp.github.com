@@ -15,13 +15,13 @@ categories:
 
 Not metaphorically. China's solar overbuild is crashing electricity prices toward zero. AI demand absorbs the surplus. When power is essentially free, we manufacture fuel from thin air instead of drilling for it.
 
-<!--more-->
-
 Solar has become a deflationary technology, following the same exponential cost curves that made computing ubiquitous. In 2024, China installed more solar capacity in a single year than the United States has installed in its entire history.[^1] The world added roughly 600 GW last year, equivalent to installing Australia's entire grid every few months.
 
 None of this was planned. More than $130 billion poured into China's solar industry, driven by what industry leaders have called "blind investments and disorderly financial lending."[^5] China now holds over 80% of global manufacturing capacity across the entire supply chain, with utilisation rates hovering around 50-60%. The industry is producing far more than the market can absorb. Solar hardware costs have collapsed to near $0.10 per watt and continue falling. We have left the era of energy scarcity and entered the era of manufactured energy.
 
 Into this glut arrives the hungriest electricity buyer in history.
+
+<!--more-->
 
 Grid connections take seven years while AI scaling laws operate on months. Tech giants are building dedicated solar installations behind the meter, bypassing the glacial pace of grid development. AI data centre demand is projected to double by 2030, potentially reaching a Japan-sized energy footprint. But unlike households or hospitals, AI loads are flexible. Workloads can shift across hours or days. Compute can relocate to wherever energy is cheapest. Training runs are price-sensitive and will chase arbitrage. This makes AI the perfect absorber of surplus daytime solar. Solar is becoming the world's cheapest input precisely as AI becomes the world's hungriest buyer.
 

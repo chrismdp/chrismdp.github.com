@@ -181,7 +181,7 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
           </div>
           <div class="text-center">
             <p class="font-semibold mb-2 text-brand-black">Thursday Afternoon</p>
-            <p class="text-brand-black/70 text-sm">1 hour to ask questions, hold each other accountable, and celebrate wins</p>
+            <p class="text-brand-black/70 text-sm">1 hour to present your progress, hold each other accountable, and celebrate wins</p>
           </div>
         </div>
       </div>
@@ -299,7 +299,7 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
           <span class="bg-brand-deep-turquoise text-white text-sm font-bold px-3 py-1 rounded mr-4">Week 1</span>
           <h3 class="text-xl font-heading font-bold text-brand-black">The AI Landscape</h3>
         </div>
-        <p class="text-brand-black/80">AI is a field, not a single tool. We map the landscape together: what the different categories of AI actually are, where they overlap, and why this matters for adoption. Then you chart exactly where your organisation is right now, comparing yourself to peers and the wider industry. By the end of this week, you will know whether you are behind and how urgent things actually are.</p>
+        <p class="text-brand-black/80">AI is a field, not a single tool. We map the landscape together and get you signed up for an enterprise-grade and compliant AI tool immediately. We cover the details later, but these tools are ready for professional use today.</p>
       </div>
 
       <div class="bg-brand-white rounded-lg p-6 border-l-4 border-brand-deep-turquoise">
@@ -307,15 +307,15 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
           <span class="bg-brand-deep-turquoise text-white text-sm font-bold px-3 py-1 rounded mr-4">Week 2</span>
           <h3 class="text-xl font-heading font-bold text-brand-black">Level Up Your Own AI Use</h3>
         </div>
-        <p class="text-brand-black/80">Some people seem superhuman with AI. What do they know that others do not? We uncover the techniques and mindsets that separate those getting transformative results from those just scratching the surface. Using AI specifically for senior technical strategy work, how to think and strategise better with AI as your partner, and interactive sharing of how others in the group are integrating AI into their leadership workflows. By the end of this week, you will be actively using AI in your daily work.</p>
+        <p class="text-brand-black/80">We uncover the techniques that separate those getting transformative results from those just scratching the surface and learn how to use AI for senior technical strategy work. By the end of this week, you will be actively using AI in your daily work.</p>
       </div>
 
       <div class="bg-brand-white rounded-lg p-6 border-l-4 border-brand-deep-turquoise">
         <div class="flex items-start mb-3">
           <span class="bg-brand-deep-turquoise text-white text-sm font-bold px-3 py-1 rounded mr-4">Week 3</span>
-          <h3 class="text-xl font-heading font-bold text-brand-black">Leading Multi-Speed Change with High Uncertainty</h3>
+          <h3 class="text-xl font-heading font-bold text-brand-black">Leading Multi-Speed High-Uncertainty Change</h3>
         </div>
-        <p class="text-brand-black/80">Simple change management approaches are insufficient. AI is many different things at once, your people are at wildly different stages, and some are actively resistant. We cover how to work through fragmented adoption, build your early adopter team, and create momentum when people are moving at different speeds. We also cover managing up: how to bring the board along, manage expectations, and confidently handle the "why are we not doing X" conversations when people have read about the latest AI trend. By the end of this week, you will have a concrete next step to move your team forward with AI, wherever they are starting from.</p>
+        <p class="text-brand-black/80">Now that you have hands-on experience, you can map your organisation properly. Where are your early adopters, your quality guardians, and everyone in between? We cover how to work through fragmented adoption and manage up to your board. By the end of this week, you will have a concrete next step to move your team forward.</p>
       </div>
 
       <div class="bg-brand-white rounded-lg p-6 border-l-4 border-brand-deep-turquoise">
@@ -323,7 +323,7 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
           <span class="bg-brand-deep-turquoise text-white text-sm font-bold px-3 py-1 rounded mr-4">Week 4</span>
           <h3 class="text-xl font-heading font-bold text-brand-black">Compliance, Privacy, and Security</h3>
         </div>
-        <p class="text-brand-black/80">The questions your board and team will ask, and how to answer them with confidence. Security, privacy, and deployment decisions. Third-party vendors vs hosting locally. Understanding data retention policies and their ambiguities. Risk management frameworks you can actually defend. By the end of this week, you will be able to answer security and compliance questions with confidence.</p>
+        <p class="text-brand-black/80">The questions your board and team will ask, and how to answer them with confidence. Security, intellectual property, data retention, privacy, deployment decisions, and risk management frameworks you can actually defend. By the end of this week, you will be able to answer compliance questions without hesitation.</p>
       </div>
 
       <div class="bg-brand-white rounded-lg p-6 border-l-4 border-brand-deep-turquoise">
@@ -331,23 +331,23 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
           <span class="bg-brand-deep-turquoise text-white text-sm font-bold px-3 py-1 rounded mr-4">Week 5</span>
           <h3 class="text-xl font-heading font-bold text-brand-black">Using Advanced Agents for Strategic Thinking</h3>
         </div>
-        <p class="text-brand-black/80">How agents differ from chat interfaces. Using agent memory and active journaling to build up a knowledge base your AI can draw on anytime. Beyond one-off tasks: AI as a persistent thinking partner for leadership work. By the end of this week, you will have started building a knowledge base that your AI can draw on anytime you need it.</p>
+        <p class="text-brand-black/80">How agents differ from chat interfaces. Using agent memory to build a knowledge base your AI can draw on anytime. Beyond one-off tasks: AI as a persistent thinking partner for leadership work.</p>
       </div>
 
       <div class="bg-brand-white rounded-lg p-6 border-l-4 border-brand-deep-turquoise">
         <div class="flex items-start mb-3">
           <span class="bg-brand-deep-turquoise text-white text-sm font-bold px-3 py-1 rounded mr-4">Week 6</span>
-          <h3 class="text-xl font-heading font-bold text-brand-black">How to Oversee AI in Products</h3>
+          <h3 class="text-xl font-heading font-bold text-brand-black">Organising Teams for AI Speed</h3>
         </div>
-        <p class="text-brand-black/80">Not the tactical work, but understanding strategic constraints and important decisions when building AI into products and internal tools. Where AI adds real value and where it does not. By the end of this week, you will know how to direct your teams with confidence.</p>
+        <p class="text-brand-black/80">Internal optimisation comes before product building. How to structure your teams to move at AI speed, get quick wins with bug fixing and troubleshooting, and adapt team structures for accelerated individual productivity.</p>
       </div>
 
       <div class="bg-brand-white rounded-lg p-6 border-l-4 border-brand-deep-turquoise">
         <div class="flex items-start mb-3">
           <span class="bg-brand-deep-turquoise text-white text-sm font-bold px-3 py-1 rounded mr-4">Week 7</span>
-          <h3 class="text-xl font-heading font-bold text-brand-black">Organising Teams for AI Speed</h3>
+          <h3 class="text-xl font-heading font-bold text-brand-black">How to Oversee AI in Products</h3>
         </div>
-        <p class="text-brand-black/80">How to structure and organise your teams to move at AI speed. What changes when AI accelerates individual productivity, and how team structures need to adapt. By the end of this week, you will have a concrete understanding of the next steps to take with your teams once AI is embedded.</p>
+        <p class="text-brand-black/80">Strategic constraints and important decisions when building AI into products. Where AI adds real value and where it does not. By the end of this week, you will know how to direct your teams with confidence.</p>
       </div>
 
       <div class="bg-brand-white rounded-lg p-6 border-l-4 border-brand-deep-turquoise">
@@ -355,7 +355,7 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
           <span class="bg-brand-deep-turquoise text-white text-sm font-bold px-3 py-1 rounded mr-4">Week 8</span>
           <h3 class="text-xl font-heading font-bold text-brand-black">Planning for the Future</h3>
         </div>
-        <p class="text-brand-black/80">What is coming next in AI: the power of local models, emerging challenges, and how to stay current. Building your ongoing learning strategy and preparing for what is around the corner. By the end of this week, you will have a plan to keep your AI strategy current as the field evolves.</p>
+        <p class="text-brand-black/80">We look back at how breathtakingly fast AI has evolved, so you understand the pace of change you are planning for. Then we cover what is coming next and how to stay current. By the end of this week, you will have a plan to keep your AI strategy current as the field evolves.</p>
       </div>
     </div>
 
