@@ -26,11 +26,11 @@ excerpt: "Thank you for applying to the AI Leader Accelerator."
     <h2 class="text-3xl font-heading font-bold text-center mb-12 text-brand-black">What Happens Next</h2>
 
     <div class="space-y-8">
-      <div class="flex items-start gap-6">
+      <div id="confirm-email-step" class="flex items-start gap-6 p-4 -m-4 rounded-lg transition-colors">
         <div class="flex-shrink-0 w-12 h-12 bg-brand-deep-turquoise rounded-full flex items-center justify-center text-white font-bold text-xl">1</div>
         <div>
-          <h3 class="text-xl font-heading font-bold mb-2 text-brand-black">Confirm your email</h3>
-          <p class="text-brand-black/80">If you have not already done so, please confirm your email address by clicking the link in the email we send you.</p>
+          <h3 id="confirm-email-heading" class="text-xl font-heading font-bold mb-2 text-brand-black">Confirm your email</h3>
+          <p id="confirm-email-text" class="text-brand-black/80">If you have not already done so, please confirm your email address by clicking the link in the email we send you.</p>
         </div>
       </div>
 
@@ -99,3 +99,19 @@ excerpt: "Thank you for applying to the AI Leader Accelerator."
     </div>
   </div>
 </section>
+
+<script>
+  var params = new URLSearchParams(window.location.search);
+  if (params.has('please_confirm_email')) {
+    var step = document.getElementById('confirm-email-step');
+    step.classList.add('bg-brand-orange/20', 'border-2', 'border-brand-orange');
+    var text = document.getElementById('confirm-email-text');
+    text.innerHTML = '<strong>Please check your email now and click the link to confirm.</strong> You will not receive any emails from me until you do. Please check your junk folders if you cannot find it. The email will come from <strong>chris@chrismdp.com</strong>';
+  }
+  if (params.has('email_confirmed')) {
+    var step = document.getElementById('confirm-email-step');
+    step.classList.add('opacity-50');
+    var heading = document.getElementById('confirm-email-heading');
+    heading.classList.add('line-through');
+  }
+</script>
