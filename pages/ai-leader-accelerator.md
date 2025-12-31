@@ -10,7 +10,7 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
 <!-- Sticky CTA Bar (appears on scroll) -->
 <div id="sticky-cta" class="fixed top-0 left-0 right-0 z-50 bg-brand-deep-turquoise/95 backdrop-blur-sm py-3 transform -translate-y-full transition-transform duration-300">
   <div class="flex items-center justify-center gap-6 px-6">
-    <span class="text-white font-heading font-bold hidden sm:inline">AI Leader Accelerator</span>
+    <span class="text-white font-heading font-bold hidden sm:inline">Signups close 16th Jan</span>
     <div class="flex gap-4">
       <a href="#apply" class="inline-block bg-white hover:bg-white/90 text-brand-deep-turquoise font-bold py-2 px-6 rounded-lg transition-colors text-sm">Begin Application</a>
       <a href="#syllabus" class="inline-block bg-white/20 hover:bg-white/30 text-white font-bold py-2 px-6 rounded-lg transition-colors text-sm">See the Syllabus</a>
@@ -44,7 +44,7 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
 
       <!-- Countdown Timer -->
       <div class="mb-8">
-        <p class="text-white/80 text-sm uppercase tracking-wide mb-4">Programme Starts 19th January 2026</p>
+        <p class="text-xl font-bold text-white mb-4">Signups Close 16th January 5pm UK</p>
         <div id="countdown" class="flex justify-center gap-4 md:gap-8">
           <div class="bg-white/10 rounded-lg p-4 min-w-[80px]">
             <p id="countdown-days" class="text-3xl md:text-4xl font-bold">--</p>
@@ -75,7 +75,7 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
 
 <script>
   function updateCountdown() {
-    const targetDate = new Date('2026-01-19T17:00:00Z');
+    const targetDate = new Date('2026-01-16T17:00:00Z');
     const now = new Date();
     const diff = targetDate - now;
 
@@ -248,7 +248,7 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
           </li>
           <li class="flex items-start">
             <i data-lucide="check" class="w-5 h-5 mr-2 text-white flex-shrink-0 mt-0.5"></i>
-            <span class="text-sm">Running teams of teams (10+ reports)</span>
+            <span class="text-sm">Leading teams of teams, or in charge of tech at a 6+ person startup</span>
           </li>
           <li class="flex items-start">
             <i data-lucide="check" class="w-5 h-5 mr-2 text-white flex-shrink-0 mt-0.5"></i>
@@ -550,7 +550,7 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
         </div>
         <div class="flex flex-col items-center text-center">
           <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-white text-sm font-bold mb-2">6</div>
-          <p class="text-white/90 text-xs">Programme starts 19 Jan</p>
+          <p class="text-white/90 text-xs">Programme starts 19th Jan</p>
         </div>
       </div>
     </div>
