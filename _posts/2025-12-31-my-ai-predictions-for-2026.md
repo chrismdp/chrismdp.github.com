@@ -5,7 +5,7 @@ date: 2025-12-31 12:00:00 +0000
 categories:
 - ai
 - predictions
-image: /assets/img/ai-predictions-2026.png
+image: /assets/img/ai-predictions-2026.jpg
 ---
 
 Everyone says AI progress is slowing down, but I am betting the opposite. I am making some specific predictions for 2026:
