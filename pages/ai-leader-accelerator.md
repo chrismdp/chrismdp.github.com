@@ -102,6 +102,19 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
   setInterval(updateCountdown, 1000);
 </script>
 
+<!-- Free Webinar Banner -->
+<section class="py-6 bg-brand-orange">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="text-center md:text-left">
+        <p class="text-white font-bold text-lg">Free Webinar: Am I Behind in AI?</p>
+        <p class="text-white/90 text-sm">8th January, 2pm UK. A taster of Week 1 content.</p>
+      </div>
+      <a href="/webinar/" class="inline-block bg-white hover:bg-white/90 text-brand-orange font-bold py-2 px-6 rounded-lg transition-colors text-sm whitespace-nowrap">Sign Up Free</a>
+    </div>
+  </div>
+</section>
+
 <!-- The Situation Section -->
 <section class="py-20 bg-white">
   <div class="max-w-4xl mx-auto px-6">

@@ -12,7 +12,9 @@ redirect_from:
   {% assign all_posts = site.posts %}
   {% assign latest_posts = "" | split: "" %}
   {% for post in all_posts limit: 20 %}
-    {% if post.webinar_date == nil or post.webinar_date <= site.time %}
+    {% assign webinar_time = post.webinar_date | date: "%s" | plus: 0 %}
+    {% assign now_time = site.time | date: "%s" | plus: 0 %}
+    {% if post.webinar_date == nil or webinar_time <= now_time %}
       {% assign latest_posts = latest_posts | push: post %}
       {% if latest_posts.size >= 4 %}{% break %}{% endif %}
     {% endif %}
@@ -23,7 +25,9 @@ redirect_from:
 <h2 class="text-2xl font-heading font-bold mb-6 text-brand-black border-t border-brand-light-blue/20 pt-8">All Articles</h2>
 
 {% for post in site.posts %}
-  {% if post.webinar_date == nil or post.webinar_date <= site.time %}
+  {% assign webinar_time = post.webinar_date | date: "%s" | plus: 0 %}
+  {% assign now_time = site.time | date: "%s" | plus: 0 %}
+  {% if post.webinar_date == nil or webinar_time <= now_time %}
   {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
   {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
 
