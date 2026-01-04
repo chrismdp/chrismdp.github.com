@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Webinar: Am I Behind in AI?"
-date: 2026-01-08 14:00:00 +0000
+date: 2026-01-04 14:00:00 +0000
 categories:
 - ai
 - webinar
