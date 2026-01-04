@@ -110,7 +110,7 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
         <p class="text-white font-bold text-lg">Free Webinar: Am I Behind in AI?</p>
         <p class="text-white/90 text-sm">8th January, 2pm UK. A taster of Week 1 content.</p>
       </div>
-      <a href="/webinar/" class="inline-block bg-white hover:bg-white/90 text-brand-orange font-bold py-2 px-6 rounded-lg transition-colors text-sm whitespace-nowrap">Sign Up Free</a>
+      <a href="/webinar" class="inline-block bg-white hover:bg-white/90 text-brand-orange font-bold py-2 px-6 rounded-lg transition-colors text-sm whitespace-nowrap">Sign Up Free</a>
     </div>
   </div>
 </section>

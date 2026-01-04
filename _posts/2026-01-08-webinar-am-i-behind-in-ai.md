@@ -7,6 +7,7 @@ categories:
 - webinar
 - leadership
 redirect_from: /webinar
+redirect_from: /webinar/
 image: /assets/img/am-i-behind-in-ai-webinar.jpg
 kit_tag: webinar10
 webinar_date: "2026-01-08T14:00:00+00:00"

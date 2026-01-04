@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Webinars To Get You Ahead With AI"
-permalink: /webinar
 excerpt: "Join our monthly webinar series for leaders leveraging AI in their organisations."
 image: /assets/img/ai-agents-production-webinar.png
 image_portrait: false
