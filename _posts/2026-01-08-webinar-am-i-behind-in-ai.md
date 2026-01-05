@@ -16,7 +16,7 @@ webinar_date: "2026-01-08T14:00:00+00:00"
 <div class="mb-12">
 
   <p class="text-2xl text-brand-black font-bold mb-4">
-    Wednesday 8th January, 2pm UK
+    Thursday 8th January, 2pm UK
   </p>
 
   <div class="text-lg text-brand-black mb-8 space-y-4">
