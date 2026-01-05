@@ -16,42 +16,34 @@ webinar_date: "2026-01-08T14:00:00+00:00"
 <div class="mb-12">
 
   <p class="text-2xl text-brand-black font-bold mb-4">
-    Next session: {{ page.webinar_date | date: "%B %-d, %-I%P %Z" }}
+    Wednesday 8th January, 2pm UK
   </p>
 
-  <p class="text-2xl text-brand-black mb-8">
-    Everyone wants to know: am I behind with AI? What is everyone else doing? The noise is deafening, the anxiety is real, and most organisations have no way of actually knowing.
-  </p>
-
-  <p class="text-xl text-brand-black mb-8">
-    They are measuring the wrong things and comparing themselves to the wrong benchmarks.
-  </p>
-
-  <p class="text-xl text-brand-black mb-8">
-    By the end of this session, you will know exactly where you stand and how that shapes your rollout.
-  </p>
+  <div class="text-lg text-brand-black mb-8 space-y-4">
+    <p>
+      Should you buy AI subscriptions for everyone or wait? Invest in training now or is it too early? Use Copilot as your CISO says it is compliant, despite mixed team feedback? Push harder on AI in your product despite security concerns, or hold back despite board pressure? How far ahead is everyone else, and are you losing ground?
+    </p>
+    <p>
+      Every technical leader I talk to (and I have talked to lots) is wrestling with these same questions, squeezed between excessive caution on one side and unrealistic optimism on the other. The signal-to-noise ratio on who to trust is terrible.
+    </p>
+    <p>
+      Most organisations are measuring the wrong things and comparing themselves to the wrong benchmarks. They are confusing readiness with maturity, and that confusion wastes months.
+    </p>
+  </div>
 
   <div class="bg-brand-deep-turquoise rounded-lg p-8 text-center mb-12 clear-both">
     <div class="rm-area-embed-webinar"></div>
   </div>
 
-  <div class="mb-8">
+  <div class="bg-brand-light-blue/10 rounded-lg p-6 mb-8">
     <h3 class="text-lg font-bold text-brand-black mb-4">What We Will Cover:</h3>
     <ul class="space-y-2 text-brand-black">
-      <li><strong>The AI landscape:</strong> AI is a field, not a single tool. We will map the different categories, where they overlap, and why this matters for adoption</li>
-      <li><strong>Readiness vs maturity:</strong> Most organisations confuse these two, but you need readiness before maturity matters. We will cover what the difference is and why getting this wrong wastes months</li>
-      <li><strong>Key assessment questions:</strong> Specific questions that reveal where you actually stand, tailored by team type. We will work through the most important ones for engineering, product, and operations</li>
-      <li><strong>What shapes your rollout:</strong> How your assessment should shape your AI adoption strategy, and what to do next</li>
+      <li>Mapping the AI landscape: what is becoming standard vs what is cutting edge</li>
+      <li>Readiness vs maturity: the distinction most organisations miss</li>
+      <li>Hard questions that reveal where your team actually stands compared to others</li>
     </ul>
-  </div>
-
-  <div class="bg-brand-orange/10 rounded-lg p-6 mb-8">
-    <h3 class="text-lg font-bold text-brand-black mb-4">This Is The Opening Framework From The AI Leader Accelerator</h3>
-    <p class="text-brand-black mb-4">
-      This webinar is a condensed version of Week 1 from the <a href="/ai-leader-accelerator/" class="text-brand-deep-turquoise hover:underline">AI Leader Accelerator</a>, an 8-week peer learning programme for senior technical leaders navigating AI adoption.
-    </p>
-    <p class="text-brand-black">
-      If the session resonates, consider joining the pioneer cohort starting 19th January.
+    <p class="mt-4 text-brand-black/80 italic">
+      This is a quick preview of the opening framework from Week 1 of the <a href="/ai-leader-accelerator/" class="text-brand-deep-turquoise hover:underline">AI Leader Accelerator</a>. We will work through it in much more depth on the course.
     </p>
   </div>
 
