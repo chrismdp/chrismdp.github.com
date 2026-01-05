@@ -30,6 +30,11 @@ webinar_date: "2026-01-08T14:00:00+00:00"
       Most organisations are measuring the wrong things and comparing themselves to the wrong benchmarks. They are confusing readiness with maturity, and that confusion wastes months.
     </p>
   </div>
+</div>
+
+<!--more-->
+
+<div class="mb-12">
 
   <div class="bg-brand-deep-turquoise rounded-lg p-8 text-center mb-12 clear-both">
     <div class="rm-area-embed-webinar"></div>
