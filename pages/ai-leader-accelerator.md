@@ -466,18 +466,18 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
     <h2 class="text-3xl md:text-4xl font-heading font-bold mb-12">Investment</h2>
 
     <div class="grid md:grid-cols-2 gap-6 mb-8 max-w-2xl mx-auto">
-      <div class="bg-white/10 rounded-lg p-8">
+      <div class="bg-white/10 rounded-lg p-8 flex flex-col">
         <p class="text-white/60 text-sm mb-2 line-through">Future price: $8,000 USD</p>
         <p class="text-lg text-white/80 mb-1">Pioneer: Pay Upfront</p>
         <p class="text-4xl font-bold text-white mb-4">$4,500 <span class="text-xl">USD</span></p>
-        <p class="text-white/70 text-sm mb-6">10% discount for upfront payment</p>
+        <p class="text-white/70 text-sm mb-6 flex-1">10% discount for upfront payment</p>
         <a href="#apply" class="inline-block bg-white hover:bg-white/90 text-brand-deep-turquoise font-bold py-2 px-6 rounded-lg transition-colors">Begin Application</a>
       </div>
-      <div class="bg-white/10 rounded-lg p-8">
+      <div class="bg-white/10 rounded-lg p-8 flex flex-col">
         <p class="text-white/60 text-sm mb-2 line-through">Future price: $8,000 USD</p>
         <p class="text-lg text-white/80 mb-1">Pioneer: Two Instalments</p>
         <p class="text-4xl font-bold text-white mb-4">$5,000 <span class="text-xl">USD</span></p>
-        <p class="text-white/70 text-sm mb-6">$2,500 USD before start, $2,500 USD at week 4</p>
+        <p class="text-white/70 text-sm mb-6 flex-1">$2,500 USD before start, $2,500 USD at week 4</p>
         <a href="#apply" class="inline-block bg-white hover:bg-white/90 text-brand-deep-turquoise font-bold py-2 px-6 rounded-lg transition-colors">Begin Application</a>
       </div>
     </div>
