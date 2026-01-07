@@ -53,21 +53,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Conceptual distinction**: When explaining steps in a process, clarify WHAT vs HOW (e.g., "discover what the task is" vs "understand how to do it")
 - **"But" as a paragraph starter**: Frequently starts paragraphs with "But" to create contrast and maintain conversational flow
 
-### Anti-Patterns to Avoid (AI Slop)
-- **NEVER use "Here's the X" constructions** - Generic and overused
-- **Avoid "The real insight is..." or "Here is what I discovered:"** - AI writing clichés that feel inauthentic
-- **No "This is not X. This is Y." patterns** - Use flowing alternatives like "This is Y, not X"
-- **No rhetorical question hooks** - Don't start with "What if I told you..." or similar
-- **Avoid generic transitions** - "Let me tell you", "The brutal truth", "You won't believe this"
-- **No "uncomfortable truth" phrasing** - Use neutral alternatives like "key insight" or "important point"
-- **Don't use numbered lists** - Prefer short paragraphs with headings over bullet points
-- **No false build-up** - Lead with the most interesting insight, don't save it for the end
-- **Avoid abstract conclusions** - Always end with concrete implications and future-looking statements
-- **Pithy section headings only** - Headings should be 2-4 words max, either a clever play on words or a short fragment. Avoid verbose headings like "The Question Nobody Is Asking" or "Why This Is Genuinely Hard". Prefer punchy alternatives like "The Wrong Debate", "Baked In", "No Clean Fix"
-- **Fewer headings, not more** - Not every section needs a heading. When content flows naturally from one idea to the next, skip the heading entirely. Practical advice sections often work better without a heading after the problem statement
-- **No weak endings** - Cut final sentences that restate what has already been said or add hollow sentiment. If the penultimate paragraph already lands, end there
+### Writing Style
+**CRITICAL**: Before writing ANY content (LinkedIn posts, blog posts, newsletters, articles), ALWAYS invoke the `writing-style` skill FIRST. Do not draft content without running this skill first.
 
-See `_roles/sally-social-media-manager/instructions.md` for additional LinkedIn-specific anti-patterns and iteration workflow.
+For LinkedIn posts, also invoke the `linkedin-strategy` skill for platform-specific hooks, formatting, and performance optimisation.
 
 ### Webinar Blog Post Guidelines
 - **Opening hook**: Use compelling statistics or reframe broad claims (e.g., "95% of technical teams cannot ship their AI agents" rather than specific anecdotes)
@@ -200,42 +189,7 @@ This is a GitHub Pages-compatible Jekyll blog using a Tailwind CSS theme. The si
 - **Research** (`_research/`) - Internal research documents
 - **Case Studies** (`case-studies/`) - Use `post` layout for proper formatting like blog articles
 
-### Writing Style System
-The project uses Cursor rules (`.cursor/rules/`) that define strict content guidelines:
-
-#### Writing Style Rules (from `style.mdc`)
-**Voice and Tone:**
-- Write in a direct, conversational style
-- Use first person when sharing personal experiences
-- Be confident but not arrogant
-- Challenge conventional wisdom
-- Keep a casual, approachable tone while maintaining expertise
-
-**Structure:**
-- Start with a clear, bold statement of the main argument
-- Follow with a brief explanation of why this matters
-
-**Content:**
-- Draw from personal experience and lessons learned
-- Acknowledge counterarguments but be bold with opinions
-- Focus on practical, actionable insights
-- Call out mistakes and what was learned from them
-
-**Format:**
-- Use bold text sparingly for emphasis
-- Break up long paragraphs
-- Use code blocks or quotes when relevant
-- Remove all dashes, endashes, emdashes and hyphens
-- Keep sections focused and concise
-
-**Language:**
-- Prefer active voice
-- NEVER use contractions
-- Avoid jargon unless necessary
-- Define technical terms when used
-- Keep sentences crisp and direct
-
-#### Blog Post Guidelines (from `blog-posts.mdc`)
+#### Blog Post Guidelines
 ```markdown
 ---
 layout: post
@@ -281,20 +235,15 @@ Newsletter content uses Kit platform following rough template of one story, one 
 People expect content about using AI to build agents and products at high speed, generating revenue quickly, with weekly notes sharing stories, learnings, and tips on getting ahead with AI.
 
 ### Social Media Posts
-**IMPORTANT**: When writing for social media or LinkedIn, you MUST ALWAYS read and follow ALL instruction files in the `_roles/sally-social-media-manager/` folder FIRST before creating any social content. This includes:
+**CRITICAL**: For LinkedIn posts, invoke BOTH skills in order:
+1. `writing-style` - voice, tone, slop patterns
+2. `linkedin-strategy` - hooks, formatting, performance optimisation
 
-- Voice & tone standards (no contractions, direct conversational style, Grade 5-7 reading level)
-- Hook writing requirements (62/0/50 character format, authority-based openings)
-- Content structure guidelines (1,250-3,000 characters optimal, longer flowing paragraphs with emoji section headers)
-- LinkedIn formatting standards:
-  - NO bold text formatting - LinkedIn doesn't render markdown bold
-  - Use emoji section headers to structure content (e.g., 🔄 The Shift, 💡 Why This Matters)
-  - No hashtags needed
-- Performance optimization techniques (engagement hierarchy, timing strategy)
-- **LinkedIn mentions**: Use @ mentions for profile links (e.g., "@Chris Parsons" and "@AI In Action By Chris Parsons")
-- **Draft storage**: Store LinkedIn post drafts in `_drafts/` folder for easy editing and iteration
-
-**CRITICAL**: Always refer to Sally's instructions (`_roles/sally-social-media-manager/instructions.md`) for the latest content structure requirements, paragraph formatting, and performance data. These guidelines override ALL other writing rules when creating social content.
+Key points:
+- **No markdown bold** - LinkedIn displays literal asterisks
+- **No emoji headers** - simple flowing paragraphs
+- **LinkedIn mentions**: Use @ mentions (e.g., "@Chris Parsons" and "@AI In Action By Chris Parsons")
+- **Draft storage**: Store drafts in `_drafts/` folder
 
 ### Reusable Components
 The project uses Jekyll includes for commonly repeated elements:

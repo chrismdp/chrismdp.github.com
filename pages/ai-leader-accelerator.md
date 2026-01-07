@@ -35,7 +35,7 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
             <p class="text-white/90 text-sm"><strong class="text-white">You will gain confidence</strong> to answer board and team questions on security, compliance, and tradeoffs</p>
           </div>
           <div class="bg-white/10 rounded-lg p-4">
-            <p class="text-white/90 text-sm"><strong class="text-white">You will form</strong> a network of CTO peers facing the same challenges that lasts for years</p>
+            <p class="text-white/90 text-sm"><strong class="text-white">You will form</strong> a network of CTO peers facing the same challenges that lasts for years. No more learning alone.</p>
           </div>
         </div>
       </div>
