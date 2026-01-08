@@ -1,0 +1,31 @@
+<!-- Pre-fill form fields from query parameters -->
+<!-- Usage: include prefill-form-fields.html fields="custom*1169294:code,custom*1234567:ref" -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const fieldMappings = [
+      {% assign pairs = include.fields | split: ',' %}
+      {% for pair in pairs %}
+        {% assign parts = pair | split: ':' %}
+        { fieldName: '{{ parts[0] }}', paramName: '{{ parts[1] }}' }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ];
+
+    fieldMappings.forEach(function(mapping) {
+      const paramValue = urlParams.get(mapping.paramName);
+      if (paramValue) {
+        const checkForField = setInterval(function() {
+          const field = document.querySelector('input[name="' + mapping.fieldName + '"]');
+          if (field) {
+            field.value = paramValue;
+            clearInterval(checkForField);
+          }
+        }, 100);
+
+        setTimeout(function() {
+          clearInterval(checkForField);
+        }, 10000);
+      }
+    });
+  });
+</script>

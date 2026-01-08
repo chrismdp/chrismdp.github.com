@@ -6,7 +6,7 @@ excerpt: "Join our monthly webinar series for leaders leveraging AI in their org
 image: /assets/img/ai-agents-production-webinar.png
 image_portrait: false
 kit_tag: webinar11
-webinar_date: "2026-01-15T16:00:00+00:00"
+webinar_date: "2026-01-15T15:30:00+00:00"
 ---
 
 <div class="mb-12">
