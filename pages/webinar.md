@@ -2,7 +2,7 @@
 layout: page
 title: "Webinars To Get You Ahead With AI"
 permalink: /webinar/
-excerpt: "Join our monthly webinar series for leaders leveraging AI in their organisations."
+excerpt: "Join our webinar series for leaders leveraging AI in their organisations."
 image: /assets/img/ai-agents-production-webinar.png
 image_portrait: false
 kit_tag: webinar11
@@ -12,15 +12,15 @@ webinar_date: "2026-01-15T15:30:00+00:00"
 <div class="mb-12">
 
   <p class="text-2xl text-brand-black font-bold mb-4">
-    Next session: {{ page.webinar_date | date: "%B %-d, %-I%P %Z" }}
+    Next session: {{ page.webinar_date | date: "%B %-d, %-I:%M%P %Z" }}
   </p>
 
   <p class="text-2xl text-brand-black mb-8">
-    Join me for monthly live workshops on leveraging AI effectively in your organisation.
+    Join me for live workshops on leveraging AI effectively in your organisation.
   </p>
 
   <div class="bg-brand-light-blue/10 rounded-lg p-6 mb-8">
-    <h3 class="text-lg font-bold text-brand-black mb-4">What We Cover Each Month:</h3>
+    <h3 class="text-lg font-bold text-brand-black mb-4">What We Cover:</h3>
     <ul class="space-y-2 text-brand-black">
       <li><strong>Strategic AI Implementation:</strong> When and how to deploy AI tools and systems effectively in your organisation</li>
       <li><strong>Production Reality:</strong> Moving from impressive demos to reliable AI solutions that deliver business value</li>
@@ -60,23 +60,29 @@ webinar_date: "2026-01-15T15:30:00+00:00"
           month: 'short', 
           timeZone: 'Europe/London'
         };
-        const timeOptions = { 
-          hour: 'numeric', 
+        const timeOptions = {
+          hour: 'numeric',
+          minute: '2-digit',
           hour12: true,
           timeZone: 'Europe/London'
         };
-        
+
         const day = webinarDate.toLocaleDateString('en-GB', dayOptions);
         const month = webinarDate.toLocaleDateString('en-GB', monthOptions);
-        const ukTime = webinarDate.toLocaleTimeString('en-GB', timeOptions).toLowerCase();
+        let ukTime = webinarDate.toLocaleTimeString('en-GB', timeOptions).toLowerCase();
+        // Remove :00 for times on the hour
+        ukTime = ukTime.replace(':00', '');
         const ukFormatted = `${day}${getOrdinalSuffix(day)} ${month}, ${ukTime}`;
-        
-        const etOptions = { 
-          hour: 'numeric', 
+
+        const etOptions = {
+          hour: 'numeric',
+          minute: '2-digit',
           hour12: true,
           timeZone: 'America/New_York'
         };
-        const etTime = webinarDate.toLocaleTimeString('en-US', etOptions).toLowerCase();
+        let etTime = webinarDate.toLocaleTimeString('en-US', etOptions).toLowerCase();
+        // Remove :00 for times on the hour
+        etTime = etTime.replace(':00', '');
         
         titleElement.textContent = `Next Webinar: ${ukFormatted} UK / ${etTime} ET`;
       } else {
