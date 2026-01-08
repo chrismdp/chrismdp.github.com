@@ -102,7 +102,7 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
   setInterval(updateCountdown, 1000);
 </script>
 
-<!-- Free Webinar Banner -->
+<!-- Free Webinar Banner - commented out after webinar completed
 <section class="py-6 bg-brand-orange">
   <div class="max-w-4xl mx-auto px-6">
     <div class="flex flex-col md:flex-row items-center justify-between gap-4">
@@ -114,6 +114,7 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
     </div>
   </div>
 </section>
+-->
 
 <!-- The Situation Section -->
 <section class="py-20 bg-white">
