@@ -117,7 +117,7 @@ The models still need more capability, the integrations need more work, and the 
 
 If you are building elaborate agent orchestration systems, ask yourself what assumptions those systems encode. Are you building complexity because the models need it, or because you do not trust them? Gas Town has seven worker roles and elaborate patrol systems, and Yegge admits the models still need "a lot of elbow grease" to keep running. Better models plus simpler architecture might be the actual answer.
 
-If you are an engineering leader planning AI adoption, reconsider your coordination overhead. The teams that will win are not the ones with the best agent frameworks. They are the ones who can move fast enough to take advantage of what simple loops already enable. That means smaller teams, radical transparency, and a willingness to let agents make decisions humans used to make.
+If you are an engineering leader planning AI adoption, reconsider your coordination overhead. The teams that win will be the ones moving fast enough to take advantage of what simple loops already enable. That means smaller teams, radical transparency, and a willingness to let agents make decisions humans used to make.
 
 If you are an individual developer, Ralph loops work today. You do not need Gas Town or any other elaborate system. A bash loop, a prompt file, and a good model will let you ship code while you sleep. Start there. The complexity can come later, if it ever needs to come at all.
 
