@@ -115,7 +115,7 @@ The models still need more capability, the integrations need more work, and the 
 
 ## What This Means
 
-If you are building elaborate agent orchestration systems, ask yourself what assumptions those systems encode. Are you building complexity because the models need it, or because you do not trust them? Gas Town has seven worker roles and elaborate patrol systems, and Yegge admits the models still need "a lot of elbow grease" to keep running. Perhaps the answer is not better orchestration but better models plus simpler architecture.
+If you are building elaborate agent orchestration systems, ask yourself what assumptions those systems encode. Are you building complexity because the models need it, or because you do not trust them? Gas Town has seven worker roles and elaborate patrol systems, and Yegge admits the models still need "a lot of elbow grease" to keep running. Better models plus simpler architecture might be the actual answer.
 
 If you are an engineering leader planning AI adoption, reconsider your coordination overhead. The teams that will win are not the ones with the best agent frameworks. They are the ones who can move fast enough to take advantage of what simple loops already enable. That means smaller teams, radical transparency, and a willingness to let agents make decisions humans used to make.
 
