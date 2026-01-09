@@ -95,7 +95,7 @@ This double loop structure is why [multi-phase plans feel unnatural](/coding-wit
 
 An agent that can intelligently select which coding task to tackle next can also handle sprint prioritisation. Feed the agent your backlog, your product requirements, your customer feedback. Let it decide what matters most right now based on current context. An agent with access to your codebase, your analytics, and your customer conversations can make better real-time priority decisions than a human working from two-week-old sprint planning notes.
 
-Daniel Jones put it bluntly: one product engineer can look after an entire product now, because human communication is several orders of magnitude too slow. The bottleneck is not coding. It is the coordination overhead between humans trying to agree on what to build next.
+Daniel Jones put it bluntly: one product engineer can look after an entire product now, because human communication is several orders of magnitude too slow. The bottleneck is coordination overhead between humans trying to agree on what to build next.
 
 ## The Speed Problem
 
@@ -107,7 +107,7 @@ This does not scale to big companies. One company Yegge spoke with was getting s
 
 ## From Coding to Business
 
-Simple loops beat complex orchestration for coding. Coding is just one type of knowledge work. The same principle applies to running a business.
+Simple loops beat complex orchestration for coding, and coding is just one type of knowledge work. The same principle applies to running a business.
 
 Marketing, sales, product decisions, customer support: each of these is amenable to the same double-loop structure. An inner loop of an agent doing the task with self-correction. An outer loop selecting which task matters most right now. Human oversight at the strategic level, but execution flowing through automated loops that never tire and never lose context.
 
