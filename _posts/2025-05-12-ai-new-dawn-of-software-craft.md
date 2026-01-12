@@ -39,7 +39,7 @@ The answer is not to shun AI, but to pair it with rigorous architectural pattern
 
 ## Testing and Patterns: The Foundation of AI-Driven Development
 
-Testing remains the backbone of quality in software development. Despite less than one percent of developers using Test Driven Development (TDD) in practice, the rise of AI makes rigorous, test-first approaches more crucial than ever. AI can generate code rapidly, but without tests, there is no guarantee of correctness, reliability, or maintainability.[^8]
+Testing remains the backbone of quality in software development. Despite less than one percent of developers using Test Driven Development (TDD) in practice, the rise of AI makes rigorous, test-first approaches more important than ever. AI can generate code rapidly, but without tests, there is no guarantee of correctness, reliability, or maintainability.[^8]
 
 The uncomfortable truth is that unless you explicitly ask for it, coding agents rarely provide tests by default. They tend to write code in the way most developers do: without tests, because that is what the vast majority of code in the wild looks like, and that is what they are trained on. This is a significant gap, and it is holding us back. We should be demanding more from our tools. Why are we accepting agents that cut corners, when we know that test-first and great practices are what make teams truly fast and resilient?
 
@@ -63,7 +63,7 @@ This partnership is already transforming workflows. Documentation, for example, 
 
 ## The Virtuous Cycle: How Good Architecture Makes AI Better (and Vice Versa)
 
-A well-defined initial architecture acts as a crucial enabler for AI tools. It provides the structure and clarity that AI needs to interpret, generate, and modify code effectively.[^11] In turn, AI can help maintain architectural integrity, detect drift, and automate compliance checking. This creates a virtuous cycle: good architecture makes AI more effective, and AI helps preserve and enhance architectural quality over time.
+A well-defined initial architecture acts as an important enabler for AI tools. It provides the structure and clarity that AI needs to interpret, generate, and modify code effectively.[^11] In turn, AI can help maintain architectural integrity, detect drift, and automate compliance checking. This creates a virtuous cycle: good architecture makes AI more effective, and AI helps preserve and enhance architectural quality over time.
 
 This is not just theory. Case studies already show that AI-driven compliance checking can reduce analysis time from weeks to minutes, while identifying thousands of issues and violations.[^12]
 

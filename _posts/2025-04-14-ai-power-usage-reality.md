@@ -14,7 +14,7 @@ AI power usage generates significant controversy. Headlines paint it as an envir
 
 A ChatGPT query uses 10 times more energy than a Google search. This sounds alarming until one realises it equates to running your hairdryer for six seconds. The entire data centre industry, including all AI operations, accounts for just 1.5% of global electricity consumption.
 
-Here is a rundown of the more pressing issues with AI power usage.
+A rundown of the more pressing issues with AI power usage.
 
 <!--more-->
 

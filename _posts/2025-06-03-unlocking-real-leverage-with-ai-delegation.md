@@ -12,7 +12,7 @@ Starting to delegate to AI feels awkward. It is a lot like hiring your first con
 
 The payoff is real, but the start is always a little rough.
 
-Here is how I do it.
+This is how I do it.
 
 <!--more-->
 
@@ -22,7 +22,7 @@ The first time I tried delegating to an AI agent, it felt exactly like onboardin
 
 Delegation is always awkward at the start, whether you are working with people or machines. The learning curve is part of the process, and the discomfort is a sign you are moving forward.
 
-Here are five principles for getting started:
+Five principles for getting started:
 
 ### Start Small
 Begin with a simple, concrete task. Even if it feels trivial, this gives you a clear baseline. The first attempt will be clumsy - that is normal. Each iteration helps you refine your instructions and identify potential issues.
@@ -66,7 +66,7 @@ If something doesn't work, revisit when a new model comes out. Those who will be
 
 ### An Example
 
-Here is an example. Imagine you receive inbound emails asking for advice. You probably already automate parts of this process, using rules, by marking particular emails as important based on who they are from. Try first to move this process to a workflow tool. (Note: this could get expensive if you get a lot of email, so perhaps do the first pass of filtering via your existing email rules, such as emails not directly addressed to you.)
+An example. Imagine you receive inbound emails asking for advice. You probably already automate parts of this process, using rules, by marking particular emails as important based on who they are from. Try first to move this process to a workflow tool. (Note: this could get expensive if you get a lot of email, so perhaps do the first pass of filtering via your existing email rules, such as emails not directly addressed to you.)
 
 Once that's done, how do you process the rest? Normally, you might read each one and decide: should you reply personally, refer the person to a resource, or have AI draft a first response?
 

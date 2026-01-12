@@ -44,7 +44,7 @@ permalink: /em
 
       <p class="font-semibold text-brand-deep-turquoise">Email checks: 40+ per day → 5 per day</p>
 
-      <p>Em has processed hundreds of emails. She learns what "urgent" means to you specifically. When she gets it wrong, you can teach her through Slack reactions and thread messages, and she'll do better next time..</p>
+      <p>Em has processed hundreds of emails. She learns what "urgent" means to you specifically. When she gets it wrong, you can teach her through Slack reactions and thread messages, and she'll do better next time.</p>
     </div>
   </div>
 
@@ -53,7 +53,7 @@ permalink: /em
     <h2 class="text-3xl font-heading font-bold mb-6 text-brand-black">Production-Ready AI</h2>
 
     <div class="prose prose-lg text-brand-black/80 leading-relaxed space-y-4">
-      <p>Em is not a prototype. She is built with ith internet-first architecture for security. Email content goes to Kaijo for analysis, then no further internet contact to prevent data exfiltration.</p>
+      <p>Em is not a prototype. She is built with internet-first architecture for security. Email content goes to Kaijo for analysis, then no further internet contact to prevent data exfiltration.</p>
 
       <p>An eval system continuously improves her decisions. She learns your definition of urgent, not mine.</p>
     </div>

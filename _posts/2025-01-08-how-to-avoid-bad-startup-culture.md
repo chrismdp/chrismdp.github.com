@@ -17,7 +17,7 @@ This is how we are wired. We are naturally social beings and are strongly predis
 
 A culture grows like plants in a garden. You cannot stop the life from growing, but you can decide how and where it grows. Left unattended, weeds will grow alongside the flowers. The key is recognising this and putting in the work to shape it.
 
-Here is a quick primer on how to do the minimum to avoid bad culture, and how to get good culture going with a little attention every so often.
+This is a quick primer on how to do the minimum to avoid bad culture, and how to get good culture going with a little attention every so often.
 
 <!--more-->
 
@@ -29,7 +29,7 @@ Consider a football team that wastes all its time discussing the best training r
 
 Many years ago in my first startup I learned this the hard way. I sat with my team for several days trying to think through what kind of company we wanted to become. Unfortunately, I paid too much attention to the culture and not enough to our sales funnel. We ran out of money before we could become that company.
 
-Your purpose is to have a great culture. Culture should flow from your mission and goals rather than becoming a distraction from them.  Like a garden, culture is best attended to little and often. If you are still a small team, do the minimum now to set things up and return to it regularly.  At [Cherrypick](https://cherrypick.co) we met for an hour every week with our early team, purely to discuss our company culture. It was a great way to keep the culture alive and evolving intentionally.
+Your purpose is not to have a great culture. Culture should flow from your mission and goals rather than becoming a distraction from them.  Like a garden, culture is best attended to little and often. If you are still a small team, do the minimum now to set things up and return to it regularly.  At [Cherrypick](https://cherrypick.co) we met for an hour every week with our early team, purely to discuss our company culture. It was a great way to keep the culture alive and evolving intentionally.
 
 ### Figure out your values
 
@@ -67,19 +67,19 @@ Given your starting set of people, come up with a list of values that you see on
 
 It is important that people create lists on their own at first to prevent groupthink and ensure proper divergence of ideas. If you do not do this, you are likely to converge on the "highest paid person's opinion" (HiPPO), which is likely to be you if you are the founder.
 
-While HiPPO-driven decisions can be difficult for you to spot, they are obvious to your team. When it happens, you will notice your team gradually disengaging from the process. For them, it feels deeply disempowering - they will see that their input is not truly valued and stop investing in the process. This defeats the whole purpose of involving your team. Values imposed from above will not lead to meaningful behavior change.
+While HiPPO-driven decisions can be difficult for you to spot, they are obvious to your team. When it happens, you will notice your team gradually disengaging from the process. For them, it feels deeply disempowering - they will see that their input is not truly valued and stop investing in the process. This defeats the whole purpose of involving your team. Values imposed from above will not lead to meaningful behaviour change.
 
 ### Use boring culture as a starting point
 
-One way to come up with a list of values is to think about people in your organization or elsewhere that you admire, and think carefully about how they go about their work. Write down the driving principles that you think are important to them and that guide them, even if they would not be able to articulate them themselves. You do not need to be original. Boring culture borrowed from other companies is a good starting point: [Charity Majors](https://charity.wtf/2023/05/01/choose-boring-technology-culture/) writes eloquently about this topic.
+One way to come up with a list of values is to think about people in your organisation or elsewhere that you admire, and think carefully about how they go about their work. Write down the driving principles that you think are important to them and that guide them, even if they would not be able to articulate them themselves. You do not need to be original. Boring culture borrowed from other companies is a good starting point: [Charity Majors](https://charity.wtf/2023/05/01/choose-boring-technology-culture/) writes eloquently about this topic.
 
-If still unsure, Andrew McAfee's [The Geek Way](https://www.amazon.com/Geek-Way-Radical-Transforming-Business/dp/0316436704/ref=sr_1_1) provides an excellent framework of values that have proven successful at many of the world's leading tech companies. The book examines how top tech organizations operate and identifies their common cultural traits, which he distills into four core values. They are worth including on any startup list for discussion.
+If still unsure, Andrew McAfee's [The Geek Way](https://www.amazon.com/Geek-Way-Radical-Transforming-Business/dp/0316436704/ref=sr_1_1) provides an excellent framework of values that have proven successful at many of the world's leading tech companies. The book examines how top tech organisations operate and identifies their common cultural traits, which he distills into four core values. They are worth including on any startup list for discussion.
 
 **Scientific approach**: Decisions should be driven by data and evidence, not authority or tradition. Teams should regularly run experiments and measure outcomes to validate their hypotheses. Most importantly, they must be willing to change direction when the data contradicts their assumptions.
 
 **Speed of execution**: Great teams optimize for rapid learning through quick iterations and small batch sizes. They focus on getting working solutions in front of customers quickly, even if imperfect. They understand that speed of learning is more important than perfection on the first try.
 
-**Openness**: Information should flow freely within the organization, with transparency being the default state. Teams should share context broadly and create environments where ideas can be challenged constructively. This openness extends to mistakes and failures, which are treated as valuable learning opportunities rather than sources of blame.
+**Openness**: Information should flow freely within the organisation, with transparency being the default state. Teams should share context broadly and create environments where ideas can be challenged constructively. This openness extends to mistakes and failures, which are treated as valuable learning opportunities rather than sources of blame.
 
 **Ownership**: Teams should have both the authority and responsibility for their outcomes, not just completing assigned tasks. They should be able to make decisions about their work, especially if they are reversible, which most decisions are. Conversely, they should be held accountable for results. This ownership mindset means caring deeply about the long-term success of initiatives, not just short-term deliverables.
 
@@ -133,7 +133,7 @@ An example: it is likely that as you hire your team it will become more homogeno
 
 Once you have your list, whittle it down to the core set and road test them for a while. The work you have done so far is pointless unless they are used. Keep it low key and treat them as a test, which will help with buy-in. Once you have used them for a bit, revisit them as a team to see if they are still working and decide if you need to tweak them. Keep the conversation going.
 
-Here are some ways to road test your values:
+Some ways to road test your values:
 
 ### Call yourself out when you do not live them
 
@@ -155,7 +155,7 @@ For more serious issues, you can give private feedback. Having these kinds of cr
 
 Values become especially critical during hiring. Every member of your interview panel should be testing for cultural alignment, particularly with core values. While candidates don't need to match every value perfectly, they must align with your core values.
 
-Structure your interview questions specifically around your company values. This allows you to systematically evaluate cultural fit and gives candidates clear insight into what matters to your organization.
+Structure your interview questions specifically around your company values. This allows you to systematically evaluate cultural fit and gives candidates clear insight into what matters to your organisation.
 
 Have each interviewer on your panel focus on evaluating different core values. This approach ensures comprehensive coverage of all values and prevents redundant questioning while giving you multiple perspectives on cultural alignment.
 
@@ -167,12 +167,12 @@ Don't be afraid to reject technically strong candidates if they don't align with
 
 Decision making at all levels should be guided by your values. Use them as a framework for decisions and reference them explicitly when explaining choices to the team. Be willing to take hard stances based on core values, even when it is difficult. This demonstrates your commitment to the culture you are building.
 
-If the team learns how to make decisions using values, they will be able to make better decisions faster. This will compound over time, creating exponential returns as your organization grows. They are a multiplier for your organization's effectiveness by enabling faster decision making and more autonomous teams as everyone learns to act as one.
+If the team learns how to make decisions using values, they will be able to make better decisions faster. This will compound over time, creating exponential returns as your organisation grows. They are a multiplier for your organisation's effectiveness by enabling faster decision making and more autonomous teams as everyone learns to act as one.
 
 The key is to keep your core values few, make them meaningful, and live them consistently. Your team should know them so well they can repeat them like a mantra - even if they roll their eyes while doing so.
 
 ---
 
-Avoiding bad startup culture is a little and often process. Start early, be intentional, and remember that figuring our a first draft of your values is just a starting point. The living out of your values is what makes the culture real, and not the tangled mess of poor culture that knaws at the roots of what you're building and has the potential to bring it down.
+Avoiding bad startup culture is a little and often process. Start early, be intentional, and remember that figuring out a first draft of your values is just a starting point. The living out of your values is what makes the culture real, and not the tangled mess of poor culture that gnaws at the roots of what you're building and has the potential to bring it down.
 
 There is never a more impactful time to shape the way your company works than now. Like a great garden, a good culture is a thing of beauty. Your organisation will get smarter and more healthy over time without needing your involvement. You will help your team do the work of their lives, and make their work experience a joy. I can think of few better reasons to work on your culture than that.

@@ -21,7 +21,7 @@ It has been a great success and we are pleased with the results. Customers are c
 
 However, getting to this point was not straightforward, and we learned many things that can go wrong when building these types of systems.
 
-Here is what we learned about building an LLM-based product that actually works, and ends up in production rather than languishing in an investor deck as a cool tech demo.
+These are the lessons we learned about building an LLM-based product that actually works, and ends up in production rather than languishing in an investor deck as a cool tech demo.
 
 <!--more-->
 
@@ -29,7 +29,7 @@ Here is what we learned about building an LLM-based product that actually works,
 
 The first and most important step is a product one, not a technical one. Before diving into using LLMs, think carefully about whether you need one for the problem you are solving.
 
-It is critical to make sure you have a problem that:
+Make sure you have a problem that:
 
 1. uniquely benefits from an LLM's capabilities,
 2. has an interface that matches how users want to work,

@@ -11,9 +11,9 @@ categories:
 
 Prompting sucks. If you have spent any time working with LLMs, you already know this.
 
-It is not just that prompting is difficult - it is fundamentally broken as an approach to working with AI. It is brittle, model-specific, and endlessly repetitive.
+Prompting is not just difficult. It is fundamentally broken as an approach to working with AI. It is brittle, model-specific, and endlessly repetitive.
 
-Here is why we need to move beyond prompting, and what we can do about it.
+We need to move beyond prompting, and there are things we can do about it.
 
 <!--more-->
 
@@ -51,7 +51,7 @@ When you are stuck in a particular way of doing things, it can be hard to imagin
 
 The answer is to look at our history.  We need to take the lessons learned from software engineering's evolution and apply them to working with AI.
 
-The solution is not to get better at prompting - it is to move beyond it. Three key principles will help us move forward:
+The solution is not to get better at prompting, but to move beyond it. Three key principles will help us move forward:
 
 - **Abstraction**: Moving beyond raw prompts to higher-level concepts
 - **Automated Testing**: Ensuring reliability at scale
@@ -65,7 +65,7 @@ Abstraction eliminates complexity. From assembly language to high-level programm
 
 ### The power of abstraction in computing history
 
-Here is a brief journey through how successive layers of software abstraction made things simpler. At the lowest level, we had machine code - raw numeric opcodes that the CPU executes:
+A brief journey through how successive layers of software abstraction made things simpler. At the lowest level, we had machine code - raw numeric opcodes that the CPU executes:
 
 {% highlight nasm %}
 48 65 6c 6c 6f 2c 20 57 6f 72 6c 64 21 0a      ; "Hello, World!\n"
@@ -122,7 +122,7 @@ echo "Hello, World!"
 
 ### Abstractions in the AI world
 
-The AI world is about to go through this same evolution - moving from raw prompts to higher-level abstractions that hide complexity while preserving control over what matters. The crucial advantage of abstractions is that they hide incidental details that almost every programmer could safely ignore. We need to find the same type of abstractions for AI. What details can most AI developers leave to their tools?
+The AI world is about to go through this same evolution - moving from raw prompts to higher-level abstractions that hide complexity while preserving control over what matters. The advantage of abstractions is that they hide incidental details that almost every programmer could safely ignore. We need to find the same type of abstractions for AI. What details can most AI developers leave to their tools?
 
 To answer this question, I spoke with over a dozen developers and technical leaders building AI systems in early 2025. Their experiences, combined with my own experiments on toy projects, inform the examples below of how teams are trying to build or use abstraction layers for AI apps and how those approaches are working out.
 

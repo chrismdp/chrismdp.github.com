@@ -38,7 +38,7 @@ The new workflow with AI agents is taking shape. Customers want AI decisions to 
 
 Branching strategies must also account for multiple collaborating agents. The concept of "undo" takes on new meaning in an autonomous context. What about actions with side effects that are not reversible, like sending an email? How do you recover? How do we manage the complexity of coordinating multiple agents which might need to undo state changes? This is already hard for humans, requiring flexibility and adaptability. How can we systemise these interactions?
 
-Universal interfaces will become crucial for tracking and managing collective agent actions. New chat interfaces may be necessary to coordinate complex human-agent interactions effectively.
+Universal interfaces will become important for tracking and managing collective agent actions. New chat interfaces may be necessary to coordinate complex human-agent interactions effectively.
 
 ## Beyond RAG: The Next Generation of Knowledge for Personalised Agents
 

@@ -76,7 +76,7 @@ We did this at [Cherrypick](https://cherrypick.co) with our AI enabled meal plan
 
 You will never be as small or be able to move as fast as you can right now. This is a strength. Use it to try a lot of things very quickly. Remember, [code is a liability](/your-code-is-a-liability). Do not build more than you must.
 
-Sometimes founders do not take on the problem they really want to solve—because they cannot envisage a solution. You can help with that. The art of the possible lies with you.
+Sometimes founders do not take on the problem they really want to solve, because they cannot envisage a solution. You can help with that. The art of the possible lies with you.
 
 Demo to potential customers. Listen to what they say to you and iterate. Ask them to commit to paying for you to solve this for them, and then build the proper solution in response. Regularly review what they are telling you in case you need to change direction. State hypotheses in advance and hold them lightly.
 

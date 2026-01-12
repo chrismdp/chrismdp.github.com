@@ -30,7 +30,7 @@ AI is creating opportunities for a renaissance in software craftsmanship through
 
 ## How I Use AI Tools
 
-Here are the key practices I use daily and have found effective.
+These are the key practices I use daily and have found effective.
 
 ### Assume your AI is wrong
 
@@ -64,11 +64,11 @@ With AI-generated code, your existing quality guardrails become even more critic
 
 Decent automatic end-to-end testing has become extremely useful for greenlighting changes more quickly. If all the end-to-end tests pass, I can focus more on reviewing code for security issues rather than functional correctness. This shift in review focus has accelerated my deployment cycle significantly while maintaining confidence in the system's behaviour.
 
-Type hints and strict linting are crucial. They help catch errors early and guide the AI to generate better code. The AI thrives on type information to understand context. However, you do not necessarily need to switch to statically typed languages. Even dynamic languages with good type hinting can work well.
+Type hints and strict linting matter. They help catch errors early and guide the AI to generate better code. The AI thrives on type information to understand context. However, you do not necessarily need to switch to statically typed languages. Even dynamic languages with good type hinting can work well.
 
 ### Keep Changes Small
 
-I have found that keeping changes extremely small is crucial when working with AI. Small, focused pull requests are easier to review thoroughly. I ship to production multiple times a day, reading full diffs to ensure I have understood exactly what the AI has produced.
+I have found that keeping changes extremely small is important when working with AI. Small, focused pull requests are easier to review thoroughly. I ship to production multiple times a day, reading full diffs to ensure I have understood exactly what the AI has produced.
 
 You can quickly lose the thread with larger changes. AI can move faster than you can read and think, even with a lot of coding experience. Break down the task into small pieces. If in doubt, ask the AI itself how to break down the task. It will often give a surprisingly good answer.
 
@@ -80,7 +80,7 @@ This has always been true in software development. All good code practices apply
 
 One of the most transformative changes in my workflow has been how I approach documentation. Rather than a separate task I will probably neglect, it has become an integral part of my development process that enhances collaboration between humans and AI alike.
 
-I keep all documentation directly in the repository. Product requirements, design documents, and technical specifications live alongside the code, providing crucial context for both new team members and AI tools.
+I keep all documentation directly in the repository. Product requirements, design documents, and technical specifications live alongside the code, providing essential context for both new team members and AI tools.
 
 For new projects, I invest in upfront documentation. By documenting architectural choices and project-specific patterns early, the AI makes fewer generic assumptions. This initial investment pays for itself through reduced corrections and clearer direction.
 
@@ -220,7 +220,7 @@ AI is changing everything: how I code, how I write, even how I read and organise
 
 Using AI to write production code is not about replacing human judgment. It is about amplifying it. The imperfection of AI tools forces us to engage our System 2 thinking[^1]. That slower, more deliberate mode of thought where we carefully reason through problems.
 
-This cognitive engagement is crucial. When AI suggests code that seems plausible but feels wrong, it pushes us to articulate why. We have to engage our analytical brain rather than just accepting the path of least resistance. The process of questioning, refining and sometimes overriding AI suggestions exercises exactly the kind of critical thinking that software development demands.
+This cognitive engagement matters. When AI suggests code that seems plausible but feels wrong, it pushes us to articulate why. We have to engage our analytical brain rather than just accepting the path of least resistance. The process of questioning, refining and sometimes overriding AI suggestions exercises exactly the kind of critical thinking that software development demands.
 
 If AI were near perfect, we would slip into System 1 thinking too quickly which allows more AI slop to slip through. We need to prepare for this as AI gets better.
 

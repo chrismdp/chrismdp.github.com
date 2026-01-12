@@ -13,7 +13,7 @@ redirect_from:
 
 "I am not ready for this conversation." We all know that feeling. The endless mental rehearsal. The anxiety building with each imagined scenario.
 
-But what if I told you that AI could be your practice partner for both difficult conversations and deeper self-reflection?
+AI can be your practice partner for both difficult conversations and deeper self-reflection.
 
 <a href="/self-reflection-with-ai"><img src="/assets/img/ai-therapist.jpeg" alt="AI as a therapeutic practice partner" style='border-radius: 12px; margin:0 0 24px 0'/></a>
 

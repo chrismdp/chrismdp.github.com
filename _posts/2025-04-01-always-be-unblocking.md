@@ -27,7 +27,7 @@ This shift in mindset changes everything. You begin to see opportunities everywh
 
 ## What Does This Look Like?
 
-Here are some examples from our experience at Cherrypick:
+Some examples from our experience at Cherrypick:
 
 - Building small tools that let customer support handle password resets without engineering involvement
 - Ensuring multiple people know how to manage license keys and other critical systems
@@ -39,7 +39,7 @@ The best part? This approach compounds. Each obstacle you remove does not just h
 
 ## Speed Through Enablement
 
-In my recent article about [how to avoid bad startup culture](/how-to-avoid-bad-startup-culture), I wrote about how speed of execution is crucial for startups. However, speed is not just about moving fast yourself. It is about enabling everyone around you to move faster too.
+In my recent article about [how to avoid bad startup culture](/how-to-avoid-bad-startup-culture), I wrote about how speed of execution matters for startups. However, speed is not just about moving fast yourself. It is about enabling everyone around you to move faster too.
 
 This is particularly important as your organisation grows. The more people you have, the more valuable it becomes to remove obstacles that slow multiple people down. A day spent building a tool that saves ten people an hour each week is a phenomenal return on investment.
 

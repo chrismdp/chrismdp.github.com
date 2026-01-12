@@ -18,7 +18,7 @@ I will share what I have learned about changing your app's identity without losi
 
 ## The challenge of rebranding
 
-Changing your app's name extends far beyond updating a few strings. The name users see on their phones represents only the beginning. Your App Store presence demands a complete refresh - from screenshots to descriptions. The visual identity needs reimagining, from color palette to iconography. Customer support channels require careful updates. Backend systems and APIs need consideration. Marketing materials and social presence demand synchronized changes.
+Changing your app's name extends far beyond updating a few strings. The name users see on their phones represents only the beginning. Your App Store presence demands a complete refresh - from screenshots to descriptions. The visual identity needs reimagining, from colour palette to iconography. Customer support channels require careful updates. Backend systems and APIs need consideration. Marketing materials and social presence demand synchronized changes.
 
 Each element presents its own risks. The stakes rise exponentially when you have an established user base who knows and trusts your current brand. [Your abstractions are a liability](/your-abstractions-are-a-liability), and your brand represents one of your most critical abstractions.
 
@@ -32,7 +32,7 @@ The key to their success? They treated it as a major engineering project, not ju
 
 ### 1. Minimize technical risk
 
-The team made a crucial early decision: they would change the brand without changing the app's technical identifier. This detail, though seemingly small, dramatically reduced the technical complexity of the transition.
+The team made an important early decision: they would change the brand without changing the app's technical identifier. This detail, though seemingly small, dramatically reduced the technical complexity of the transition.
 
 They also delayed changing technical infrastructure like API domains and email systems. Some of these still run under the old brand name over a year later - and that works perfectly fine. As with any large technical change, attempting everything at once multiplies risk unnecessarily.[^1]
 

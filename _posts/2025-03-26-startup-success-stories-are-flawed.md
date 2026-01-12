@@ -19,7 +19,7 @@ This observation triggered a thought that has been bothering me about how we app
 
 ## The Invisible Board
 
-Here is a typical chess game move list:
+A typical chess game move list:
 
 1. e4 e5
 2. Nf3 Nc6  
@@ -67,7 +67,7 @@ Each piece of advice represents a "move" that worked for someone else. We dutifu
 
 Just as a chess move list cannot convey the full strategic situation, startup advice often fails to capture the invisible forces that shape success or failure. Network effects create resistance or momentum. Technological constraints form boundaries of what is possible. Timing determines whether an identical strategy leads to breakthrough or bankruptcy.
 
-We can take this further: startup business advice is even worse that the chess move list above, because at least the chess list has positional information that helps you infer the board. Our business advice is directly parallel "Pawn Pawn", "Pawn Pawn Knight Knight", which is even more difficult to interpret.
+We can take this further: startup business advice is even worse than the chess move list above, because at least the chess list has positional information that helps you infer the board. Our business advice is directly parallel "Pawn Pawn", "Pawn Pawn Knight Knight", which is even more difficult to interpret.
 
 An example: in the early 2000s, I worked at a gaming company called [Elixir Studios](https://en.wikipedia.org/wiki/Elixir_Studios) that attempted to simulate an entire country. The idea was brilliant. The team was capable. But the hardware of the time created an invisible wall. The moves were right. The wider environment made them impossible. (The company did not survive, although the games were great, and [our founder](https://en.wikipedia.org/wiki/Demis_Hassabis) went on to do great things, so perhaps it was for the best.)
 
