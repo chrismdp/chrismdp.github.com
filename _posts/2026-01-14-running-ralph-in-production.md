@@ -11,6 +11,8 @@ categories:
 
 I wrote about [Ralph loops](/your-agent-orchestrator-is-too-clever/) last week and have since been running them continuously on a real project. Here is what I learned.
 
+The short version: it works. I have shipped more in the past week than I would have in a month of evening coding sessions. The agent runs, commits code, and moves on to the next task while I handle product decisions. But "it works" hides a lot of calibration. The lessons below are about what I had to adjust to make it practical.
+
 <!--more-->
 
 ## The Setup
