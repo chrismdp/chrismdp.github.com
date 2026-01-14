@@ -47,7 +47,7 @@ The principle holds: give Ralph a way to test itself. Automated tests, visual ve
 
 ## Lesson 3: The Two Layer Architecture
 
-Running Ralph PM alongside the build loop solved a coordination problem I did not anticipate.
+Running Ralph PM alongside the build loop solves a coordination problem.
 
 If you add beads by committing directly to main while Ralph is also committing, the commits bleed into each other. Git handles the merges fine but the history becomes confusing. Worse, Ralph might pull mid-work and get confused about state.
 
