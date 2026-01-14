@@ -33,7 +33,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Research-heavy posts**: Lead with compelling data/statistics that challenge assumptions, use footnotes for detailed sourcing and additional context
 - **Linking strategy**: Use implicit links naturally within sentences, avoid "check out this post" style linking - prefer contextual integration. Use `{:target="_blank"}` for external links to open in new windows
 - **Footnotes for additional value**: Use footnotes not just for citations but to provide actionable advice and deeper insights that enhance the main narrative
-- **Footnote spacing**: Always include a space between consecutive footnote references (e.g., `[^1] [^2]` not `[^1][^2]`)
+- **Footnote spacing**: No space between punctuation and footnote (e.g., `methodology.[^1]` not `methodology. [^1]`). But always include a space between consecutive footnote references (e.g., `[^1] [^2]` not `[^1][^2]`)
 - **Always search for recent articles**: Before writing any blog post, search through recent posts in `_posts/` folder to identify relevant articles to link to implicitly within the content - this improves SEO and provides value to readers
 
 ### Chris's Writing Patterns
@@ -221,6 +221,12 @@ EVERYTHING ELSE HERE
 - No numbered/unnumbered lists - prefer short paragraphs with headings
 - Only use H2 (##) and below, never H1 (#)
 - No blank lines before footnote references
+
+**Image Placement:**
+- **Main image = motif**: When creating infographics, extract the main visual motif and use it as `image:` in front matter. This is the hero image shown at top of post.
+- **Infographics via front matter**: Add `infographic: /assets/img/filename.jpg` to front matter. The layout automatically renders the full infographic at 50% width at the end of content.
+- Screenshots and diagrams in content use full width or appropriate sizing
+- Always save images as JPG (not PNG) for smaller file sizes
 
 ### Newsletter System (from `newsletter.mdc`)
 Newsletter content uses Kit platform following rough template of one story, one idea, one question weekly. 

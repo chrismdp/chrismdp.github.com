@@ -17,7 +17,7 @@ The short version: it works. I have shipped more in the past week than I would h
 
 ## The Setup
 
-I am building something new using Greg Isenberg's "demo driven development" methodology. [^1] Rather than coding it myself, I thought I'd try using my version of Ralph for this, building it autonomously while I handle product decisions. My setup is [available on GitHub](https://github.com/chrismdp/ralph){:target="_blank"} if you want to follow along. The architecture has two layers: a Ralph loop that builds, and a Ralph PM that feeds it work.
+I am building something new using Greg Isenberg's "demo driven development" methodology.[^1] Rather than coding it myself, I thought I'd try using my version of Ralph for this, building it autonomously while I handle product decisions. My setup is [available on GitHub](https://github.com/chrismdp/ralph){:target="_blank"} if you want to follow along. The architecture has two layers: a Ralph loop that builds, and a Ralph PM that feeds it work.
 
 [^1]: Greg's [LinkedIn post](https://www.linkedin.com/feed/update/urn:li:activity:7411084410546049024){:target="_blank"} lays out the approach: ship an MVP the same day, design interactions to fit a 10-second screen recording, treat short-form video as a live feedback channel, and iterate daily until the app explains itself. I remember the same idea being discussed in game developer circles around the [indiepocalypse](/why-i-hope-i-ll-weather-the-indiepocalypse/): record a tiny GIF to test whether a game's hook lands before investing in full development. That practice is now coming to apps. It is the lean startup updated for the age of AI-assisted building.
 
