@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ralph Redux: 6 Lessons from Autonomous Agents"
+title: "Ralph Redux: 5 Lessons from Autonomous Agents"
 date: 2026-01-14 12:00:00 +0000
 image: /assets/img/ralph-lessons-motif.jpg
 infographic: /assets/img/ralph-lessons-infographic.jpg
@@ -69,11 +69,7 @@ Smaller beads mean more iterations, more handoffs, more commits. Each iteration 
 
 My current heuristic is that a bead should be completable in one focused session but not trivial. If I would estimate it at under an hour of human work, it is probably right. If it feels like a full day, break it up. This is not scientific and I am still calibrating.
 
-## Lesson 5: Tokens Add Up
-
-Running Ralph continuously burns through tokens fast. I exhausted my Max5 allocation and upgraded to Max20 within the first few hours. The value exceeds the cost, but know this before you start: if you are experimenting with a toy project, the free tier will not last long. If you are building something real, budget for a higher tier from the start.
-
-## Lesson 6: The Output Parsing Problem
+## Lesson 5: The Output Parsing Problem
 
 Most of the complexity in ralph.sh is parsing Claude Code's streaming JSON output, not orchestration logic. The `-p` flag runs Claude in print mode but does not give verbose output, so you cannot see tool calls, reasoning, or intermediate steps. For debugging and monitoring, I needed to construct my own display by parsing the stream-json format:
 
@@ -88,7 +84,7 @@ It is not elegant but it works. Hopefully Anthropic will improve the CLI's verbo
 
 ## Try It Yourself
 
-I have published [my Ralph setup on GitHub](https://github.com/chrismdp/ralph){:target="_blank"}. Copy the files, customise RALPH.md for your stack, create some beads, and run the loop.
+I have published [my Ralph setup on GitHub](https://github.com/chrismdp/ralph){:target="_blank"}. Copy the files, customise RALPH.md for your stack, create some beads, and run the loop. Fair warning: running Ralph continuously burns through tokens fast, and I exhausted my Max5 allocation within a few hours. The value exceeded the cost, so I upgraded to Max20 without hesitation.
 
 Start with a single terminal running ralph.sh. Add the PM layer once you want to feed work in without stopping the builder. The complexity can grow with your needs.
 
