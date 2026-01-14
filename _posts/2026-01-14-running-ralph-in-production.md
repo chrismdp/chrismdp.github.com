@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Running Ralph in Production: Lessons from a Week of Autonomous Agents"
+title: "Ralph Redux: 6 Lessons from Autonomous Agents"
 date: 2026-01-14 12:00:00 +0000
 image: /assets/img/ralph-lessons-motif.jpg
 infographic: /assets/img/ralph-lessons-infographic.jpg
