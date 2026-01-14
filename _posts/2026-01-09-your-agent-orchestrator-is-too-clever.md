@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ralph Loops: Your Agent Orchestrator Is Too Clever"
-date: 2026-01-09 10:00:00 +0000
+date: 2026-01-13 10:00:00 +0000
 image: /assets/img/ralph-loops-main.jpg
 categories:
 - ai
@@ -116,6 +116,45 @@ The critical constraint is ONE task per context window. Without this, agents try
 The `progress.txt` file becomes the handoff document between iterations. Each "engineer" reads what the previous one did, picks up the next task, and leaves notes for whoever comes next.
 
 There is a Ralph Wiggum plugin[^3] in the Claude Code marketplace that automates the loop, though it has room to improve.
+
+## In the Wild
+
+Josh Chisholm created [ralph-kit](https://github.com/joshski/ralph-kit){:target="_blank"}, a ready-to-use template that combines Ralph loops with Beads. If you want to try this approach without setting everything up from scratch, it is a good starting point.
+
+I have been iterating on my own setup and it has grown more sophisticated. The outer loop now waits for new bead issues when none are available, polling every 20 seconds:
+
+{% highlight bash %}
+READY_COUNT=$(bd count --status open 2>/dev/null || echo "0")
+IN_PROGRESS=$(bd count --status in_progress 2>/dev/null || echo "0")
+
+if [ "$READY_COUNT" = "0" ] && [ "$IN_PROGRESS" = "0" ]; then
+    echo "No beads available. Waiting 20s for new work..."
+    sleep 20
+    continue
+fi
+{% endhighlight %}
+
+A separate Claude Code instance feeds in new beads. This could run on a server, acting as a product owner that creates work for the builder loop to consume. The main loop polls for work, picks up whatever is ready, and restarts cleanly when iterations complete.
+
+The script handles interruptions gracefully. Before each iteration, it checks for dirty git state:
+
+{% highlight bash %}
+if git diff --quiet && git diff --cached --quiet; then
+    git fetch --quiet
+    git pull --rebase --quiet || true
+    bd sync 2>/dev/null || true
+else
+    echo "Dirty working tree detected - resuming previous work..."
+fi
+{% endhighlight %}
+
+If the working tree is clean, it pulls fresh changes and syncs beads. If dirty, it skips the pull and resumes where it left off. This means a crashed or stuck iteration does not lose work.
+
+The RALPH.md prompt enforces strict rules about in-progress work. If the agent finds a bead marked in-progress from a previous iteration, it must finish that first before starting anything new. This prevents half-done work from piling up.
+
+For beads that are too large for one context window, the agent is instructed to break them into smaller beads and exit without doing any implementation. The next iteration picks up the smaller pieces. This keeps each context window focused on completable work.
+
+Each iteration ends with an explicit `RALPH_DONE` signal. The loop watches for this to know when to spawn the next engineer. Combined with mandatory git push before session end, this ensures work is never stranded locally.
 
 ## What This Means
 

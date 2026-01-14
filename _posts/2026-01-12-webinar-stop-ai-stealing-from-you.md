@@ -21,14 +21,16 @@ webinar_date: "2026-01-15T15:30:00+00:00"
   </p>
 
   <ul class="space-y-3 text-xl text-brand-black/80 mb-8">
-    <li>"How do I explain AI risk to the board?"</li>
     <li>"What if our data ends up training someone else's model?"</li>
-    <li>"How do I balance innovation with governance?"</li>
-    <li>"My team is already using AI whether I've approved it or not."</li>
+    <li>"How do I stop my team using AI dangerously?"</li>
   </ul>
 
   <p class="text-xl text-brand-black mb-8">
-    I have analysed the T&Cs so you know what to look for. By the end of this session, you will know exactly what OpenAI, Anthropic, and Google do with your data, how to avoid leaking your data, and how local models will help fix this going forward. You will walk away confident enough to greenlight AI tools for your team.
+    That second question is the killer: IBM research last year found 20% of data breaches were caused by shadow AI.
+  </p>
+
+  <p class="text-xl text-brand-black mb-8">
+    I have analysed the T&Cs for OpenAI, Anthropic, and Google, plus the latest AI legislation. We will cover what each tier (consumer, business, enterprise) actually means for your data, how to avoid the new "lethal trifecta" that lets attackers steal data through AI agents, when local models make sense, and what is already illegal (and what is coming).
   </p>
 
   <div class="bg-brand-deep-turquoise rounded-lg p-8 text-center mb-12 clear-both">
@@ -38,11 +40,10 @@ webinar_date: "2026-01-15T15:30:00+00:00"
   <div class="bg-brand-light-blue/10 rounded-lg p-6 mb-8">
     <h3 class="text-lg font-bold text-brand-black mb-4">What We Will Cover:</h3>
     <ul class="space-y-2 text-brand-black">
-      <li><strong>The T&Cs Decoded:</strong> What OpenAI, Anthropic, and Google actually say about data retention, training, and IP</li>
-      <li><strong>Data Exfiltration:</strong> How your data can leak through AI tools and the security basics every CTO should enforce</li>
-      <li><strong>Browser Agents:</strong> Why AI tools with web access create new attack surfaces and what to watch for</li>
-      <li><strong>Tiers of Risk:</strong> A practical framework for which tools to approve for which use cases</li>
-      <li><strong>Local Models:</strong> Where self-hosted AI is heading and why it is not quite ready for most organisations yet</li>
+      <li><strong>The T&Cs Decoded:</strong> What OpenAI, Anthropic, and Google actually say about data retention, training, and IP at consumer, business, and enterprise tiers</li>
+      <li><strong>The Lethal Trifecta:</strong> The three conditions that let attackers steal data through AI agents, and how to avoid them</li>
+      <li><strong>Local Models:</strong> When self-hosted AI makes sense and when it does not</li>
+      <li><strong>The Legal Landscape:</strong> What is already illegal and what legislation is coming</li>
     </ul>
   </div>
 
