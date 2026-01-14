@@ -102,6 +102,13 @@ layout: default
     {% endif %}
   </div>
 
+  <!-- Infographic at end of content -->
+  {% if page.infographic %}
+  <div class="my-8 flex justify-center">
+    <img src="{{ page.infographic }}" alt="{{ page.title }} infographic" style="max-width: 50%;" class="rounded-lg" />
+  </div>
+  {% endif %}
+
   <!-- Webinar link for webinar posts -->
   {% if page.categories contains 'webinar' %}
   <div class="my-12">
@@ -244,7 +251,7 @@ layout: default
             {% if original_date != current_date %}Updated: {% endif %}
             {{ post.date | date: "%B %Y" }}
           </div>
-          <div class="prose prose-lg mb-4 text-brand-black/80 leading-relaxed content-styled">
+          <div class="prose prose-lg mb-4 text-brand-black/80 leading-relaxed content-styled excerpt-text">
             {{ post.excerpt }}
           </div>
           <a href="{{ site.baseurl }}{{ post.url }}" class="text-brand-deep-turquoise hover:text-brand-turquoise font-semibold">
