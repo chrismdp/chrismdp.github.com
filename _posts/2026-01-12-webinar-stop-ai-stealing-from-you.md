@@ -33,6 +33,8 @@ webinar_date: "2026-01-15T15:30:00+00:00"
     I have analysed the T&Cs for OpenAI, Anthropic, and Google, plus the latest AI legislation. We will cover what each tier (consumer, business, enterprise) actually means for your data, how to avoid the new "lethal trifecta" that lets attackers steal data through AI agents, when local models make sense, and what is already illegal (and what is coming).
   </p>
 
+  <!--more-->
+
   <div class="bg-brand-deep-turquoise rounded-lg p-8 text-center mb-12 clear-both">
     <div class="rm-area-embed-webinar"></div>
   </div>
