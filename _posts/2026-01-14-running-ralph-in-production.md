@@ -9,7 +9,7 @@ categories:
 - engineering
 ---
 
-I wrote about [Ralph loops](/your-agent-orchestrator-is-too-clever/) last week and have since been running them continuously on a real project. The theory holds up. The practice taught me things the theory could not.
+I wrote about [Ralph loops](/your-agent-orchestrator-is-too-clever/) last week and have since been running them continuously on a real project. Here is what I learned.
 
 <!--more-->
 
