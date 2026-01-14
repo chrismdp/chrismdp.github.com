@@ -47,11 +47,11 @@ The principle holds: give Ralph a way to test itself. Automated tests, visual ve
 
 ## Lesson 3: The Two Layer Architecture
 
-Running Ralph PM alongside the build loop solves a coordination problem.
+Running Ralph PM alongside the build loop creates a coordination problem.
 
 If you add beads by committing directly to main while Ralph is also committing, the commits bleed into each other. Git handles the merges fine but the history becomes confusing. Worse, Ralph might pull mid-work and get confused about state.
 
-The solution is git worktrees. Beads sync to a separate branch. Ralph PM commits there while the builder commits to main. This eliminates conflicts, keeps history clean, and lets both run simultaneously.
+Git worktrees fix this. Beads sync to a separate branch. Ralph PM commits there while the builder commits to main. This eliminates conflicts, keeps history clean, and lets both run simultaneously.
 
 ```toml
 # In .beads/config.toml
