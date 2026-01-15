@@ -90,3 +90,7 @@ I have published [my Ralph setup on GitHub](https://github.com/chrismdp/ralph){:
 Start with a single terminal running ralph.sh. Add the PM layer once you want to feed work in without stopping the builder. The complexity can grow with your needs.
 
 The agents are good enough now. The orchestration is simple enough to understand. The only thing left is to use it.
+
+---
+
+*Thanks to Sachin Shah for contributions to earlier versions of this article.*
