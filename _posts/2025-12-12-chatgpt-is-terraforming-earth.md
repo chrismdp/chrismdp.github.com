@@ -4,6 +4,7 @@ title: "ChatGPT Is Terraforming Earth"
 date: 2025-12-12 10:00:00 +0000
 image: /assets/img/chatgpt-terraforming-earth.jpg
 image_portrait: true
+infographic: /assets/img/chatgpt-terraforming-earth-infographic.jpg
 categories:
 - ai
 - climate
@@ -59,4 +60,3 @@ China's industrial policy is creating the oversupply. AI is arriving to absorb i
 
 [^5]: Gao Jifan, chairman and CEO of Trina Solar, identified "blind investments, excessive local government efforts, and disorderly financial lending" as key drivers of overcapacity. China now accounts for over 80% of global polysilicon, wafer, cell, and module manufacturing capacity. BNEF expects overcapacity to persist through at least 2027. Sources: [Wood Mackenzie analysis of China's 2024 PV manufacturing guidelines](https://www.woodmac.com/news/opinion/the-impact-of-chinas-2024-pv-manufacturing-guidelines-on-overcapacity-pricing-and-market-dynamics/){:target="_blank"}, [BNEF Energy Transition Supply Chains 2025](https://about.bnef.com/insights/clean-energy/china-dominates-clean-technology-manufacturing-investment-as-tariffs-begin-to-reshape-trade-flows-bloombergnef/){:target="_blank"}.
 
-<img src="/assets/img/chatgpt-terraforming-earth-infographic.jpg" alt="ChatGPT Is Terraforming Earth" style="width: 50%;" />

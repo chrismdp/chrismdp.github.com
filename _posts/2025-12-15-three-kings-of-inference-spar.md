@@ -3,6 +3,7 @@ layout: post
 title: "See Three Kings Of Inference Spar"
 date: 2025-12-15 10:00:00 +0000
 image: /assets/img/three-kings-spar.png
+infographic: /assets/img/three-kings-spar-infographic.jpg
 categories:
 - ai
 - productivity
@@ -94,4 +95,3 @@ If I had to pick one model for research, I would struggle. Claude gives me bread
 
 Running all three and synthesising the best of each gives me something none of them can produce alone.
 
-<img src="/assets/img/three-kings-spar-infographic.jpg" alt="Three Kings of Inference workflow infographic" style="width: 50%;" />

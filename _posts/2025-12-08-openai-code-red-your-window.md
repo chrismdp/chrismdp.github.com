@@ -3,6 +3,7 @@ layout: post
 title: "OpenAI's Code Red Is Your Window"
 date: 2025-12-08 09:00:00 +0000
 image: /assets/img/openai-code-red.png
+infographic: /assets/img/openai-code-red-infographic.jpg
 categories:
 - ai
 - strategy
@@ -69,7 +70,6 @@ The window will not stay open forever. Eventually, capabilities might reach the 
 
 OpenAI's identity crisis is your opening.
 
-<img src="/assets/img/openai-code-red-infographic.jpg" alt="OpenAI's Code Red Is Your Window - Infographic" style="width: 50%;" />
 
 [^code-red]: Details from [Fortune's coverage](https://fortune.com/2025/12/02/sam-altman-declares-code-red-google-gemini-ceo-sundar-pichai/){:target="_blank"} of Altman's internal memo.
 

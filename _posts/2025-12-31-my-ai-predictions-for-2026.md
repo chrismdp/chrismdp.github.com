@@ -6,6 +6,7 @@ categories:
 - ai
 - predictions
 image: /assets/img/ai-predictions-2026.jpg
+infographic: /assets/img/ai-predictions-2026-infographic.jpg
 ---
 
 Everyone says AI progress is slowing down, but I am betting the opposite. I am making some specific predictions for 2026:
@@ -98,6 +99,5 @@ Production agent tooling remains in the diffusion phase. The patterns are emergi
 
 ---
 
-<img src="/assets/img/ai-predictions-2026-infographic.jpg" alt="My AI Predictions for 2026 infographic" style="width: 50%; display: block; margin: 2rem auto;" />
 
 I will revisit these predictions in December 2026. My purpose in making predictions is not to be right, but to be specific enough that I can learn from being wrong. These are bets, not wishes (some of them hopefully will not come true), and I look forward to seeing how they age.
