@@ -20,15 +20,19 @@ Your teams are already using AI. The question is whether they are using it safel
 
 ## What You Are Actually Agreeing To
 
-I analysed the terms and conditions for OpenAI, Anthropic, and Google. The pattern is consistent across all three: free and consumer tools train on your data by default. If your team pastes company strategy documents into a free ChatGPT account, that information could surface in someone else's chat session months later.
+I analysed the terms and conditions for OpenAI, Anthropic, Google, and Microsoft. The pattern is consistent across all four: free and consumer tools train on your data by default. If your team pastes company strategy documents into a free ChatGPT account, that information could surface in someone else's chat session months later.
 
 **OpenAI (ChatGPT)** trains on consumer data by default. Business and enterprise plans disable training, and enterprise offers IP indemnification that no other provider matches. They will defend you against copyright claims arising from generated content.
 
 **Anthropic (Claude)** changed their policy in September 2025.[^6] Consumer plans now opt in to training by default, with 30 day retention if you opt out and five years if you opt in. This applies across all their products: Claude, Claude Code, and co-work. If you reviewed Anthropic's terms six months ago, you need to check again.
 
-**Google (Gemini)** has a critical gotcha: even their Google One AI Premium accounts get consumer terms. You only escape training and get proper data controls when you subscribe to Google Workspace. The premium consumer tier that costs real money still treats your data like a free account.
+**Google (Gemini)** has a gotcha: even their Google One AI Premium accounts get consumer terms. You only escape training and get proper data controls when you subscribe to Google Workspace. The premium consumer tier that costs real money still treats your data like a free account.
 
-The consistent message across all three providers is this: **do not use free AI tools for work.** Pay for the business tier. It costs $14-30 per seat per month depending on provider and removes the training risk entirely. If your organisation has held back from AI because of data concerns, that barrier is lower than you think.
+**Microsoft (Copilot)** follows the same pattern.[^10] The free consumer Copilot trains on your data by default, though you can opt out in settings. Microsoft 365 Copilot for business ($21-30 per user per month on top of your M365 subscription) does not train on customer data. Your prompts and responses stay within your organisation's tenant.
+
+**GitHub Copilot** is the exception that proves the rule.[^11] Even the individual Pro tier ($19/month) does not train on your code, and this setting cannot be enabled. Business ($19/user/month) and Enterprise ($39/user/month) tiers have the same protection. The models were trained on publicly available code, not private repositories. Prompts in your IDE are discarded immediately after returning suggestions.
+
+The consistent message across all four providers is this: **do not use free AI tools for work.** Pay for the business tier. It costs $14-30 per seat per month depending on provider and removes the training risk entirely. If your organisation has held back from AI because of data concerns, that barrier is lower than you think.
 
 ## The Lethal Trifecta
 
@@ -107,3 +111,7 @@ Audit your team's AI tool usage. Check whether anyone is using free tiers or per
 [^8]: The ICO audited AI recruitment tool providers between August 2023 and May 2024, making almost 300 recommendations. See the [full report](https://ico.org.uk/action-weve-taken/audits-and-overview-reports/ai-tools-in-recruitment/){:target="_blank"} for findings on bias testing, data collection, and transparency requirements.
 
 [^9]: Security researchers have demonstrated proof of concept attacks against AI browsers including email theft, calendar harvesting, and persistent memory attacks. See coverage in [TechCrunch](https://techcrunch.com/2025/10/25/the-glaring-security-risks-with-ai-browser-agents/){:target="_blank"} and [The Register](https://www.theregister.com/2025/10/28/ai_browsers_prompt_injection/){:target="_blank"}.
+
+[^10]: Microsoft announced consumer data training in August 2024. See their [transparency announcement](https://www.microsoft.com/en-us/microsoft-copilot/blog/2024/08/16/transparency-and-control-in-consumer-data-use/){:target="_blank"}. Enterprise protections are detailed in the [Microsoft 365 Copilot privacy documentation](https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-privacy){:target="_blank"}.
+
+[^11]: GitHub Copilot's data handling is documented in their [data pipeline security guide](https://resources.github.com/learn/pathways/copilot/essentials/how-github-copilot-handles-data/){:target="_blank"}. Even individual Pro users have training disabled by default with no option to enable it.
