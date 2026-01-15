@@ -12,7 +12,7 @@ image_portrait: true
 infographic: /assets/img/webinar-stop-ai-stealing-advert.jpg
 ---
 
-On 15th January, I gave a webinar about the compliance and security risks lurking in AI adoption. One statistic kept coming up in the conversation: IBM found that 20% of data breaches last year were caused by shadow AI. Those breaches cost $670,000 more than standard incidents and took 185 days to contain.
+On 15th January, I gave a webinar about the compliance and security risks lurking in AI adoption. One statistic kept coming up in the conversation: IBM found that 20% of data breaches last year were caused by shadow AI.[^5] Those breaches cost $670,000 more than standard incidents and took 185 days to contain.
 
 Your teams are already using AI. The question is whether they are using it safely.
 
@@ -24,7 +24,7 @@ I analysed the terms and conditions for OpenAI, Anthropic, and Google. The patte
 
 **OpenAI (ChatGPT)** trains on consumer data by default. Business and enterprise plans disable training, and enterprise offers IP indemnification that no other provider matches. They will defend you against copyright claims arising from generated content.
 
-**Anthropic (Claude)** changed their policy in September 2025. Consumer plans now opt in to training by default, with 30 day retention if you opt out and five years if you opt in. This applies across all their products: Claude, Claude Code, and co-work. If you reviewed Anthropic's terms six months ago, you need to check again.
+**Anthropic (Claude)** changed their policy in September 2025.[^6] Consumer plans now opt in to training by default, with 30 day retention if you opt out and five years if you opt in. This applies across all their products: Claude, Claude Code, and co-work. If you reviewed Anthropic's terms six months ago, you need to check again.
 
 **Google (Gemini)** has a critical gotcha: even their Google One AI Premium accounts get consumer terms. You only escape training and get proper data controls when you subscribe to Google Workspace. The premium consumer tier that costs real money still treats your data like a free account.
 
@@ -52,7 +52,7 @@ I explored this when OpenAI launched Atlas.[^3] Browser agents represent a trans
 
 I use Claude in Chrome myself, but only for specific targeted purposes. I point it at a particular domain and control what it can access. Letting a browser agent do unstructured research across the whole internet terrifies me. You have no idea where it will go or what instructions it might encounter.
 
-My recommendation is not to roll browser agents out to enterprises yet. The risk is too high. Give access only to people who thoroughly understand what they are getting into.
+My recommendation is not to roll browser agents out to enterprises yet. The risk is too high.[^9] Give access only to people who thoroughly understand what they are getting into.
 
 ## Local Models: Higher Privacy, Higher Risk
 
@@ -64,7 +64,7 @@ Local models are an R&D area, not production ready for most organisations. The a
 
 ## What Is Already Illegal
 
-The EU AI Act came into force in February 2025. Several AI practices are now illegal for anyone doing business with EU customers, carrying fines of €35 million or 7% of global turnover:
+The EU AI Act came into force in February 2025.[^7] Several AI practices are now illegal for anyone doing business with EU customers, carrying fines of €35 million or 7% of global turnover:
 
 Manipulative AI using subliminal techniques or dark patterns to influence purchases. Exploiting vulnerable groups such as targeting dementia patients with AI driven sales. Social scoring that denies loans based on social media history. Predictive policing that flags people as criminals based on where they live. Scraping facial recognition databases from publicly available information like LinkedIn. Emotion monitoring that watches employee expressions during Zoom calls. Inferring religion or sexuality from biometrics.
 
@@ -72,7 +72,7 @@ If you deploy AI systems for external use in the EU, you must train the staff wh
 
 From August 2026, new transparency rules apply. You must tell customers when AI is processing their data. AI generated images, audio, and video must be labelled in machine readable ways. Deep fakes and manipulated content must be disclosed. High risk applications in employment, education, and essential services face extra requirements for human oversight, logging, and registration with EU databases.
 
-The UK has no equivalent legislation yet, though UK GDPR Article 22 already requires human review of automated decisions on request. The Equality Act makes companies liable for AI bias. An AI recruitment audit is underway, checking whether hiring tools comply with existing discrimination law.
+The UK has no equivalent legislation yet, though UK GDPR Article 22 already requires human review of automated decisions on request. The Equality Act makes companies liable for AI bias. The ICO completed an AI recruitment audit in 2024, checking whether hiring tools comply with existing discrimination law.[^8]
 
 ## What To Do With This Information
 
@@ -90,10 +90,20 @@ Free AI tools train on your data by default, but business tiers disable this for
 
 Audit your team's AI tool usage. Check whether anyone is using free tiers or personal accounts for work data. If so, upgrade them to business accounts or provide approved alternatives. Shadow AI is the biggest compliance risk most organisations face right now.
 
-[^1]: Simon Willison has extensively documented the prompt injection problem on [his blog](https://simonwillison.net/series/prompt-injection/){:target="_blank"}. The issue remains fundamentally unsolved.
+[^1]: Simon Willison coined the term "lethal trifecta" in his post [The lethal trifecta for AI agents](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/){:target="_blank"}. He explains: "If an agent combines these three features, an attacker can easily trick it into accessing private data and sending it to that attacker."
 
 [^2]: See my previous webinar [How to Ship Your Agent](/webinar-how-to-ship-your-agent/) for more on why demos succeed but production deployments fail.
 
 [^3]: See [Who Wants a Browser?](/who-wants-a-browser/) for my analysis of browser agents and the strategic implications of OpenAI's Atlas launch.
 
 [^4]: OpenAI released GPT-OSS in August 2025 as their first open source model under Apache 2.0 license. See the [announcement](https://openai.com/index/introducing-gpt-oss/){:target="_blank"} for details.
+
+[^5]: IBM's 2025 Cost of a Data Breach Report studied 600 organisations that experienced breaches. See the [full report](https://newsroom.ibm.com/2025-07-30-ibm-report-13-of-organizations-reported-breaches-of-ai-models-or-applications,-97-of-which-reported-lacking-proper-ai-access-controls){:target="_blank"} for methodology and additional findings.
+
+[^6]: Anthropic announced these changes in their [Consumer Terms Update](https://www.anthropic.com/news/updates-to-our-consumer-terms){:target="_blank"}. The changes do not apply to services under Commercial Terms, including Claude for Work, Claude for Government, Claude for Education, or API use.
+
+[^7]: The EU AI Act's prohibited practices are defined in [Article 5](https://artificialintelligenceact.eu/article/5/){:target="_blank"}. AI literacy requirements are in [Article 4](https://artificialintelligenceact.eu/article/4/){:target="_blank"}. Transparency rules are detailed in [Article 50](https://artificialintelligenceact.eu/article/50/){:target="_blank"}.
+
+[^8]: The ICO audited AI recruitment tool providers between August 2023 and May 2024, making almost 300 recommendations. See the [full report](https://ico.org.uk/action-weve-taken/audits-and-overview-reports/ai-tools-in-recruitment/){:target="_blank"} for findings on bias testing, data collection, and transparency requirements.
+
+[^9]: Security researchers have demonstrated proof of concept attacks against AI browsers including email theft, calendar harvesting, and persistent memory attacks. See coverage in [TechCrunch](https://techcrunch.com/2025/10/25/the-glaring-security-risks-with-ai-browser-agents/){:target="_blank"} and [The Register](https://www.theregister.com/2025/10/28/ai_browsers_prompt_injection/){:target="_blank"}.
