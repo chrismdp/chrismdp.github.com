@@ -20,7 +20,9 @@ Your teams are already using AI. The question is whether they are using it safel
 
 ## What You Are Actually Agreeing To
 
-I analysed the terms and conditions for OpenAI, Anthropic, Google, and Microsoft. The pattern is consistent across all four: free and consumer tools train on your data by default. If your team pastes company strategy documents into a free ChatGPT account, that information could surface in someone else's chat session months later.
+I analysed the terms and conditions for OpenAI, Anthropic, Google, and Microsoft. The pattern is consistent across all four: free and consumer tools train on your data by default.
+
+When you paste information into a free AI tool, it can be absorbed into the model during fine-tuning. Your company secrets become part of the model's knowledge, available to surface in someone else's session. Worse: if you send customer PII into a consumer tier, that customer could later search for their own name and see their private information reflected back at them. Training on your data means your data is no longer yours.
 
 **OpenAI (ChatGPT)** trains on consumer data by default. Business and enterprise plans disable training, and enterprise offers IP indemnification that no other provider matches. They will defend you against copyright claims arising from generated content.
 
