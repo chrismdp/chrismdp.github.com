@@ -30,7 +30,7 @@ I analysed the terms and conditions for OpenAI, Anthropic, Google, and Microsoft
 
 **Microsoft (Copilot)** follows the same pattern.[^10] The free consumer Copilot trains on your data by default, though you can opt out in settings. Microsoft 365 Copilot for business ($21-30 per user per month on top of your M365 subscription) does not train on customer data. Your prompts and responses stay within your organisation's tenant.
 
-**GitHub Copilot** is the exception that proves the rule.[^11] Even the individual Pro tier ($19/month) does not train on your code, and this setting cannot be enabled. Business ($19/user/month) and Enterprise ($39/user/month) tiers have the same protection. The models were trained on publicly available code, not private repositories. Prompts in your IDE are discarded immediately after returning suggestions.
+**GitHub Copilot** works differently.[^11] Even the individual Pro tier ($19/month) does not train on your code, and this setting cannot be enabled. Business ($19/user/month) and Enterprise ($39/user/month) tiers have the same protection. The models were trained on publicly available code, not private repositories. Prompts in your IDE are discarded immediately after returning suggestions.
 
 The consistent message across all four providers is this: **do not use free AI tools for work.** Pay for the business tier. It costs $14-30 per seat per month depending on provider and removes the training risk entirely. If your organisation has held back from AI because of data concerns, that barrier is lower than you think.
 
