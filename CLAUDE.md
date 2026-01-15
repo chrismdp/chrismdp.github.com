@@ -13,6 +13,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Always use slug-only links**: Internal blog post links should always be in the format `/slug/` without any date information (e.g., `/coding-with-ai/` not `/2025/03/07/coding-with-ai/`)
 - This matches the Jekyll permalink structure configured in `_config.yml`
 
+### Newsletter Vault Locations
+- **Comics**: `/Users/cp/Library/CloudStorage/GoogleDrive-chris.p@rsons.org/My Drive/chrismdp ltd/Public/Newsletter Vault/Comics`
+- **Infographics**: `/Users/cp/Library/CloudStorage/GoogleDrive-chris.p@rsons.org/My Drive/chrismdp ltd/Public/Newsletter Vault/Infographics`
+
 ### Key Learnings
 - Always read the entire context of a project before starting work
 - Carefully follow existing file structure and guidelines when making modifications
