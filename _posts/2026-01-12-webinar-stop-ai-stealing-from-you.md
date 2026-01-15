@@ -26,7 +26,7 @@ I analysed the terms and conditions for OpenAI, Anthropic, and Google. The patte
 
 **Anthropic (Claude)** changed their policy in September 2025. Consumer plans now opt in to training by default, with 30 day retention if you opt out and five years if you opt in. This applies across all their products: Claude, Claude Code, and co-work. If you reviewed Anthropic's terms six months ago, you need to check again.
 
-**Google (Gemini)** has a critical gotcha: even their Google One AI Premium accounts get consumer terms. You only escape training and get proper data controls when you subscribe to Google Workspace Business Standard or higher. The premium consumer tier that costs real money still treats your data like a free account.
+**Google (Gemini)** has a critical gotcha: even their Google One AI Premium accounts get consumer terms. You only escape training and get proper data controls when you subscribe to Google Workspace. The premium consumer tier that costs real money still treats your data like a free account.
 
 The consistent message across all three providers is this: do not use free AI tools for work. Pay for the business tier. It costs around $15 per seat per month and removes the training risk entirely. If your organisation has held back from AI because of data concerns, that barrier is lower than you think.
 
