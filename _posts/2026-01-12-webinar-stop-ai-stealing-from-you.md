@@ -28,7 +28,7 @@ I analysed the terms and conditions for OpenAI, Anthropic, and Google. The patte
 
 **Google (Gemini)** has a critical gotcha: even their Google One AI Premium accounts get consumer terms. You only escape training and get proper data controls when you subscribe to Google Workspace. The premium consumer tier that costs real money still treats your data like a free account.
 
-The consistent message across all three providers is this: do not use free AI tools for work. Pay for the business tier. It costs around $15 per seat per month and removes the training risk entirely. If your organisation has held back from AI because of data concerns, that barrier is lower than you think.
+The consistent message across all three providers is this: **do not use free AI tools for work.** Pay for the business tier. It costs around $15 per seat per month and removes the training risk entirely. If your organisation has held back from AI because of data concerns, that barrier is lower than you think.
 
 ## The Lethal Trifecta
 
