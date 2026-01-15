@@ -10,7 +10,7 @@ categories:
 - engineering
 ---
 
-I wrote about [Ralph loops](/your-agent-orchestrator-is-too-clever/) last week. Yesterday I built my own version from scratch and ran it continuously on a real project. Here is what I learned.
+I wrote about [Ralph loops](/your-agent-orchestrator-is-too-clever/) last week. Yesterday I built my own version from scratch and ran it continuously on a real project.
 
 The short version: it works. I shipped more in a single day than I would have in hours and hours of evening coding sessions. The agent runs, commits code, and moves on to the next task while I handle product decisions. But "it works" hides a lot of calibration, and the lessons below are about what I had to adjust to make it practical.
 
