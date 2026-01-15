@@ -1,6 +1,6 @@
 {% include content-styles.html %}
 {% for post in include.posts %}
-<article class="py-6 border-b border-brand-light-blue/10 last:border-0">
+<article class="py-6 border-b border-brand-light-blue/10 last:border-0 clear-both">
   <h3 class="text-xl font-heading font-semibold mb-2">
     <a href="{{ site.baseurl }}{{ post.url }}" class="text-brand-black hover:text-brand-deep-turquoise transition-colors">
       {{ post.title }}
@@ -15,13 +15,13 @@
 
   {% if post.image %}
     {% if post.image_portrait %}
-      <img alt="{{ post.title | replace: "'", "&#39;" }}" src="{{ post.image }}" class="rounded-lg float-right ml-6 mb-6 w-2/5">
+      <img alt="{{ post.title | replace: "'", "&#39;" }}" src="{{ post.image }}" class="rounded-lg float-right ml-6 mb-6 w-1/4">
     {% else %}
-      <img alt="{{ post.title | replace: "'", "&#39;" }}" src="{{ post.image }}" class="rounded-lg float-right ml-6 mb-6 w-3/5">
+      <img alt="{{ post.title | replace: "'", "&#39;" }}" src="{{ post.image }}" class="rounded-lg float-right ml-6 mb-6 w-2/5">
     {% endif %}
   {% endif %}
 
-  <div class="prose prose-lg mb-4 text-brand-black/80 leading-relaxed content-styled">
+  <div class="prose prose-lg mb-4 text-brand-black/80 leading-relaxed content-styled excerpt-text">
     {{ post.excerpt }}
   </div>
   <a href="{{ site.baseurl }}{{ post.url }}" class="text-brand-deep-turquoise hover:text-brand-turquoise font-semibold">
