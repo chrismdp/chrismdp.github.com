@@ -53,11 +53,6 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Conceptual distinction**: When explaining steps in a process, clarify WHAT vs HOW (e.g., "discover what the task is" vs "understand how to do it")
 - **"But" as a paragraph starter**: Frequently starts paragraphs with "But" to create contrast and maintain conversational flow
 
-### Writing Style
-**CRITICAL**: Before writing ANY content (LinkedIn posts, blog posts, newsletters, articles), ALWAYS invoke the `writing-style` skill FIRST. Do not draft content without running this skill first.
-
-For LinkedIn posts, also invoke the `linkedin-strategy` skill for platform-specific hooks, formatting, and performance optimisation.
-
 ### Webinar Blog Post Guidelines
 - **Opening hook**: Use compelling statistics or reframe broad claims (e.g., "95% of technical teams cannot ship their AI agents" rather than specific anecdotes)
 - **Anonymise attendee contributions**: Never include specific names, companies, or identifying details from webinar attendees. Generalise their experiences (e.g., "agential teams burning through budgets" not "$10,000 spent by Bob's team")
@@ -241,11 +236,6 @@ Newsletter content uses Kit platform following rough template of one story, one 
 People expect content about using AI to build agents and products at high speed, generating revenue quickly, with weekly notes sharing stories, learnings, and tips on getting ahead with AI.
 
 ### Social Media Posts
-**CRITICAL**: For LinkedIn posts, invoke BOTH skills in order:
-1. `writing-style` - voice, tone, slop patterns
-2. `linkedin-strategy` - hooks, formatting, performance optimisation
-
-Key points:
 - **No markdown bold** - LinkedIn displays literal asterisks
 - **No emoji headers** - simple flowing paragraphs
 - **LinkedIn mentions**: Use @ mentions (e.g., "@Chris Parsons" and "@AI In Action By Chris Parsons")
