@@ -119,7 +119,7 @@ There is a Ralph Wiggum plugin[^3] in the Claude Code marketplace that automates
 
 ## In the Wild
 
-Josh Chisholm created [ralph-kit](https://github.com/joshski/ralph-kit){:target="_blank"}, a ready-to-use template that combines Ralph loops with Beads. If you want to try this approach without setting everything up from scratch, it is a good starting point.
+Josh Chisholm created [ralph-kit](https://github.com/joshski/ralph-kit){:target="_blank"}, a ready-to-use template that combines Ralph loops with Beads. I have also been running this setup in production and wrote up [what I learned](/running-ralph-in-production/), including the two-layer architecture that emerged from actually using it.
 
 I have been iterating on my own setup and it has grown more sophisticated. The outer loop now waits for new bead issues when none are available, polling every 20 seconds:
 
