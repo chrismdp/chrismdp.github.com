@@ -70,6 +70,8 @@ Smaller beads mean more iterations, more handoffs, more commits. Each iteration 
 
 My current heuristic is that a bead should be completable in one focused session but not trivial. If I would estimate it at under an hour of human work, it is probably right. If it feels like a full day, break it up. This is not scientific and I am still calibrating.
 
+There is also the question of what types of work suit autonomous execution at all. Complex technical backend tasks with clear acceptance criteria work best. The agent knows when it is done, tests confirm correctness, and review is straightforward. Design work is different. For UI and visual work I still run Claude Code interactively to "pair on it together" rather like a designer would with an engineer. Opening lots of autonomous tickets to iterate on design creates too long a feedback loop. The review burden also matters: running autonomously generates a lot of code that needs checking, and some types of work create more review overhead than they save in development time.
+
 ## Lesson 5: The Output Parsing Problem
 
 Most of the complexity in ralph.sh is parsing Claude Code's streaming JSON output, not orchestration logic. The `-p` flag runs Claude in print mode but does not give verbose output, so you cannot see tool calls, reasoning, or intermediate steps. For debugging and monitoring, I needed to construct my own display by parsing the stream-json format:
