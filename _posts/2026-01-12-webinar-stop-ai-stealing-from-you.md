@@ -28,7 +28,7 @@ I analysed the terms and conditions for OpenAI, Anthropic, and Google. The patte
 
 **Google (Gemini)** has a critical gotcha: even their Google One AI Premium accounts get consumer terms. You only escape training and get proper data controls when you subscribe to Google Workspace. The premium consumer tier that costs real money still treats your data like a free account.
 
-The consistent message across all three providers is this: **do not use free AI tools for work.** Pay for the business tier. It costs around $15 per seat per month and removes the training risk entirely. If your organisation has held back from AI because of data concerns, that barrier is lower than you think.
+The consistent message across all three providers is this: **do not use free AI tools for work.** Pay for the business tier. It costs $14-30 per seat per month depending on provider and removes the training risk entirely. If your organisation has held back from AI because of data concerns, that barrier is lower than you think.
 
 ## The Lethal Trifecta
 
@@ -84,7 +84,7 @@ Managed AI is safe and useful. Unmanaged AI leaks data, amplifies dysfunction, a
 
 ## Key Takeaway
 
-Free AI tools train on your data by default, but business tiers disable this for around $15 per seat per month. If data privacy concerns have stopped you adopting AI, the barrier is much lower than you thought.
+Free AI tools train on your data by default, but business tiers disable this for $14-30 per seat per month. If data privacy concerns have stopped you adopting AI, the barrier is much lower than you thought.
 
 ## One Thing to Try This Week
 
