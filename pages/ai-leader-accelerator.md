@@ -7,17 +7,6 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
 
 {% include header.html style="overlay" %}
 
-<!-- Sticky CTA Bar (appears on scroll) -->
-<div id="sticky-cta" class="fixed top-0 left-0 right-0 z-50 bg-brand-deep-turquoise/95 backdrop-blur-sm py-3 transform -translate-y-full transition-transform duration-300">
-  <div class="flex items-center justify-center gap-6 px-6">
-    <span class="text-white font-heading font-bold hidden sm:inline">Signups close 16th Jan</span>
-    <div class="flex gap-4">
-      <a href="#apply" class="inline-block bg-white hover:bg-white/90 text-brand-deep-turquoise font-bold py-2 px-6 rounded-lg transition-colors text-sm">Begin Application</a>
-      <a href="#syllabus" class="inline-block bg-white/20 hover:bg-white/30 text-white font-bold py-2 px-6 rounded-lg transition-colors text-sm">See the Syllabus</a>
-    </div>
-  </div>
-</div>
-
 <!-- Hero Section -->
 <section class="relative bg-gradient-to-br from-brand-deep-turquoise to-brand-turquoise text-white pt-40 pb-20 overflow-hidden">
   <div class="w-full px-6 relative z-10">
@@ -42,65 +31,17 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
 
       <p class="text-lg mx-4 sm:mx-24 text-white/70 mb-8">3 hours a week commitment.</p>
 
-      <!-- Countdown Timer -->
       <div class="mb-8">
-        <p class="text-xl font-bold text-white mb-4">Signups Close 16th January 5pm UK</p>
-        <div id="countdown" class="flex justify-center gap-4 md:gap-8">
-          <div class="bg-white/10 rounded-lg p-4 min-w-[80px]">
-            <p id="countdown-days" class="text-3xl md:text-4xl font-bold">--</p>
-            <p class="text-white/70 text-sm">Days</p>
-          </div>
-          <div class="bg-white/10 rounded-lg p-4 min-w-[80px]">
-            <p id="countdown-hours" class="text-3xl md:text-4xl font-bold">--</p>
-            <p class="text-white/70 text-sm">Hours</p>
-          </div>
-          <div class="bg-white/10 rounded-lg p-4 min-w-[80px]">
-            <p id="countdown-minutes" class="text-3xl md:text-4xl font-bold">--</p>
-            <p class="text-white/70 text-sm">Minutes</p>
-          </div>
-          <div class="bg-white/10 rounded-lg p-4 min-w-[80px]">
-            <p id="countdown-seconds" class="text-3xl md:text-4xl font-bold">--</p>
-            <p class="text-white/70 text-sm">Seconds</p>
-          </div>
-        </div>
+        <p class="text-xl font-bold text-white mb-4">Applications are now closed.</p>
+        <p class="text-white/80">For more information about the accelerator please get in touch directly by emailing <a href="mailto:chris@chrismdp.com?subject=AI%20Leader%20Accelerator" class="text-white underline hover:text-brand-light-blue">chris@chrismdp.com</a>.</p>
       </div>
 
       <div class="flex flex-wrap justify-center gap-4">
-        <a href="#apply" class="inline-block bg-white hover:bg-white/90 text-brand-deep-turquoise font-bold py-3 px-8 rounded-lg text-lg transition-colors">Begin Application</a>
         <a href="#syllabus" class="inline-block bg-white/20 hover:bg-white/30 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors">See the Syllabus</a>
       </div>
     </div>
   </div>
 </section>
-
-<script>
-  function updateCountdown() {
-    const targetDate = new Date('2026-01-16T17:00:00Z');
-    const now = new Date();
-    const diff = targetDate - now;
-
-    if (diff <= 0) {
-      document.getElementById('countdown-days').textContent = '0';
-      document.getElementById('countdown-hours').textContent = '0';
-      document.getElementById('countdown-minutes').textContent = '0';
-      document.getElementById('countdown-seconds').textContent = '0';
-      return;
-    }
-
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-    document.getElementById('countdown-days').textContent = days;
-    document.getElementById('countdown-hours').textContent = hours;
-    document.getElementById('countdown-minutes').textContent = minutes;
-    document.getElementById('countdown-seconds').textContent = seconds;
-  }
-
-  updateCountdown();
-  setInterval(updateCountdown, 1000);
-</script>
 
 <!-- Free Webinar Banner - commented out after webinar completed
 <section class="py-6 bg-brand-orange">
@@ -471,15 +412,13 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
         <p class="text-white/60 text-sm mb-2 line-through">Future price: $8,000 USD</p>
         <p class="text-lg text-white/80 mb-1">Pioneer: Pay Upfront</p>
         <p class="text-4xl font-bold text-white mb-4">$4,500 <span class="text-xl">USD</span></p>
-        <p class="text-white/70 text-sm mb-6 flex-1">10% discount for upfront payment</p>
-        <a href="#apply" class="inline-block bg-white hover:bg-white/90 text-brand-deep-turquoise font-bold py-2 px-6 rounded-lg transition-colors">Begin Application</a>
+        <p class="text-white/70 text-sm flex-1">10% discount for upfront payment</p>
       </div>
       <div class="bg-white/10 rounded-lg p-8 flex flex-col">
         <p class="text-white/60 text-sm mb-2 line-through">Future price: $8,000 USD</p>
         <p class="text-lg text-white/80 mb-1">Pioneer: Two Instalments</p>
         <p class="text-4xl font-bold text-white mb-4">$5,000 <span class="text-xl">USD</span></p>
-        <p class="text-white/70 text-sm mb-6 flex-1">$2,500 USD before start, $2,500 USD at week 4</p>
-        <a href="#apply" class="inline-block bg-white hover:bg-white/90 text-brand-deep-turquoise font-bold py-2 px-6 rounded-lg transition-colors">Begin Application</a>
+        <p class="text-white/70 text-sm flex-1">$2,500 USD before start, $2,500 USD at week 4</p>
       </div>
     </div>
 
@@ -530,68 +469,14 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
   </div>
 </section>
 
-<!-- Next Step Section -->
+<!-- Contact Section -->
 <section id="apply" class="py-20 bg-gradient-to-br from-brand-turquoise to-brand-deep-turquoise text-white">
   <div class="max-w-4xl mx-auto px-6 text-center">
-    <h2 class="text-4xl md:text-5xl font-heading font-bold mb-6 text-white">Begin Application</h2>
+    <h2 class="text-4xl md:text-5xl font-heading font-bold mb-6 text-white">Applications Closed</h2>
 
-    <div class="max-w-2xl mx-auto bg-brand-deep-turquoise rounded-lg p-8 border border-brand-turquoise mb-8">
-      <div class="rm-area-embed-ai-leader-accelerator"></div>
-    </div>
-
-    <div class="max-w-3xl mx-auto bg-white/10 rounded-lg p-6 text-left">
-      <h3 class="text-lg font-heading font-bold mb-4">What Happens Next</h3>
-      <div class="grid grid-cols-3 md:grid-cols-6 gap-4">
-        <div class="flex flex-col items-center text-center">
-          <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center text-brand-deep-turquoise text-sm font-bold mb-2">1</div>
-          <p class="text-white/90 text-xs">Submit the form</p>
-        </div>
-        <div class="flex flex-col items-center text-center">
-          <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-white text-sm font-bold mb-2">2</div>
-          <p class="text-white/90 text-xs">Confirm your email</p>
-        </div>
-        <div class="flex flex-col items-center text-center">
-          <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-white text-sm font-bold mb-2">3</div>
-          <p class="text-white/90 text-xs">We review and send invoice</p>
-        </div>
-        <div class="flex flex-col items-center text-center">
-          <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-white text-sm font-bold mb-2">4</div>
-          <p class="text-white/90 text-xs">Complete payment</p>
-        </div>
-        <div class="flex flex-col items-center text-center">
-          <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-white text-sm font-bold mb-2">5</div>
-          <p class="text-white/90 text-xs">Join the Early Bird Zone</p>
-        </div>
-        <div class="flex flex-col items-center text-center">
-          <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-white text-sm font-bold mb-2">6</div>
-          <p class="text-white/90 text-xs">Programme starts 19th Jan</p>
-        </div>
-      </div>
+    <div class="max-w-2xl mx-auto">
+      <p class="text-xl text-white/90 mb-6">Applications for this cohort are now closed.</p>
+      <p class="text-white/80">For more information about the accelerator please get in touch directly by emailing <a href="mailto:chris@chrismdp.com?subject=AI%20Leader%20Accelerator" class="text-white underline hover:text-brand-light-blue">chris@chrismdp.com</a>.</p>
     </div>
   </div>
 </section>
-
-{% include prefill-form-fields.html fields="custom*1169294:code" %}
-
-<!-- Sticky CTA Script -->
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const stickyCta = document.getElementById('sticky-cta');
-    const heroSection = document.querySelector('section');
-
-    function handleScroll() {
-      const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
-
-      if (window.scrollY > heroBottom) {
-        stickyCta.classList.remove('-translate-y-full');
-        stickyCta.classList.add('translate-y-0');
-      } else {
-        stickyCta.classList.add('-translate-y-full');
-        stickyCta.classList.remove('translate-y-0');
-      }
-    }
-
-    window.addEventListener('scroll', handleScroll);
-    handleScroll();
-  });
-</script>

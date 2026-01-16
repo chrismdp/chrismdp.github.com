@@ -1,0 +1,52 @@
+<!-- Countdown Timer -->
+<!-- Usage: Set targetDate in the script to your deadline -->
+<div class="mb-8">
+  <p class="text-xl font-bold text-white mb-4">Signups Close 16th January 5pm UK</p>
+  <div id="countdown" class="flex justify-center gap-4 md:gap-8">
+    <div class="bg-white/10 rounded-lg p-4 min-w-[80px]">
+      <p id="countdown-days" class="text-3xl md:text-4xl font-bold">--</p>
+      <p class="text-white/70 text-sm">Days</p>
+    </div>
+    <div class="bg-white/10 rounded-lg p-4 min-w-[80px]">
+      <p id="countdown-hours" class="text-3xl md:text-4xl font-bold">--</p>
+      <p class="text-white/70 text-sm">Hours</p>
+    </div>
+    <div class="bg-white/10 rounded-lg p-4 min-w-[80px]">
+      <p id="countdown-minutes" class="text-3xl md:text-4xl font-bold">--</p>
+      <p class="text-white/70 text-sm">Minutes</p>
+    </div>
+    <div class="bg-white/10 rounded-lg p-4 min-w-[80px]">
+      <p id="countdown-seconds" class="text-3xl md:text-4xl font-bold">--</p>
+      <p class="text-white/70 text-sm">Seconds</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  function updateCountdown() {
+    const targetDate = new Date('2026-01-16T17:00:00Z');
+    const now = new Date();
+    const diff = targetDate - now;
+
+    if (diff <= 0) {
+      document.getElementById('countdown-days').textContent = '0';
+      document.getElementById('countdown-hours').textContent = '0';
+      document.getElementById('countdown-minutes').textContent = '0';
+      document.getElementById('countdown-seconds').textContent = '0';
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+    document.getElementById('countdown-days').textContent = days;
+    document.getElementById('countdown-hours').textContent = hours;
+    document.getElementById('countdown-minutes').textContent = minutes;
+    document.getElementById('countdown-seconds').textContent = seconds;
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+</script>

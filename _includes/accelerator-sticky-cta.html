@@ -1,0 +1,35 @@
+<!-- Sticky CTA Bar (appears on scroll) -->
+<div id="sticky-cta" class="fixed top-0 left-0 right-0 z-50 bg-brand-deep-turquoise/95 backdrop-blur-sm py-3 transform -translate-y-full transition-transform duration-300">
+  <div class="flex items-center justify-center gap-6 px-6">
+    <span class="text-white font-heading font-bold hidden sm:inline">Signups close 16th Jan</span>
+    <div class="flex gap-4">
+      <a href="#apply" class="inline-block bg-white hover:bg-white/90 text-brand-deep-turquoise font-bold py-2 px-6 rounded-lg transition-colors text-sm">Begin Application</a>
+      <a href="#syllabus" class="inline-block bg-white/20 hover:bg-white/30 text-white font-bold py-2 px-6 rounded-lg transition-colors text-sm">See the Syllabus</a>
+    </div>
+  </div>
+</div>
+
+<!-- Sticky CTA Script - place at bottom of page -->
+<!--
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const stickyCta = document.getElementById('sticky-cta');
+    const heroSection = document.querySelector('section');
+
+    function handleScroll() {
+      const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+
+      if (window.scrollY > heroBottom) {
+        stickyCta.classList.remove('-translate-y-full');
+        stickyCta.classList.add('translate-y-0');
+      } else {
+        stickyCta.classList.add('-translate-y-full');
+        stickyCta.classList.remove('translate-y-0');
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+  });
+</script>
+-->

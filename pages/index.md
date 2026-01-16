@@ -243,45 +243,42 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
     <p class="text-xl text-center mb-12 text-brand-black/80 max-w-3xl mx-auto">Your board wants AI strategy. Your team needs practical guidance. Your company needs results without implementation disasters.</p>
     <p class="text-xl text-center mb-12 text-brand-black/80 max-w-3xl mx-auto">Here's how I help CEOs and leaders succeed where others fail.</p>
 
-    <!-- AI Leader Accelerator - Full Width -->
-    <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors mb-12">
-      <div class="flex flex-col md:flex-row gap-8 items-center">
-        <div class="flex-1">
-          <i data-lucide="graduation-cap" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
-          <h3 class="text-2xl font-heading font-bold mb-4">AI LEADER ACCELERATOR</h3>
-          <p class="text-lg font-semibold mb-4 text-brand-black">8 weeks to transform how you and your organisation adopt AI</p>
-          <p class="text-brand-black/80 leading-relaxed mb-6">
-            A peer learning programme for senior technical leaders. Build an AI strategy that fits your organisation, gain confidence to answer board questions on security and compliance, and form a network of CTO peers facing the same challenges. 3 hours per week commitment.
-          </p>
-          <div class="text-sm text-brand-black/60 mb-6">Perfect for: CTOs, VPs of Engineering, and senior technical leaders navigating AI adoption</div>
-          <a href="/ai-leader-accelerator/" class="inline-block bg-brand-deep-turquoise text-white px-6 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">Learn More & Apply →</a>
-        </div>
-        <a href="/ai-leader-accelerator/" class="hidden md:block w-64 flex-shrink-0">
-          <img src="/assets/img/ai-leader-accelerator-launch.png" alt="AI Leader Accelerator" class="w-full h-auto">
-        </a>
-      </div>
-    </div>
-
-    <!-- Other Services - Two Columns -->
+    <!-- Main Services - Two Columns -->
     <div class="grid md:grid-cols-2 gap-8 mb-12">
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
         <i data-lucide="users" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
-        <h3 class="text-2xl font-heading font-bold mb-4">AI TRAINING INTENSIVES</h3>
-        <p class="text-lg font-semibold mb-4 text-brand-black">Transform your technical team from AI skeptics to AI-first practitioners</p>
+        <h3 class="text-2xl font-heading font-bold mb-4">AI TRAINING</h3>
+        <p class="text-lg font-semibold mb-4 text-brand-black">Modular training that fits your team's needs</p>
         <p class="text-brand-black/80 leading-relaxed mb-4">
-          One-day intensive workshop that gets your team from random ChatGPT questions to systematic AI workflows. Covers security, quality standards, and productivity measurement your leadership team cares about.
+          From half-day foundations to multi-day programmes, with tailored pathways for developers, product managers, researchers, and executives. Transform random ChatGPT questions into systematic AI workflows with security and quality standards built in.
         </p>
         <a href="/training/" class="inline-block bg-brand-deep-turquoise text-white px-6 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">View Details →</a>
       </div>
 
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
         <i data-lucide="compass" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
-        <h3 class="text-2xl font-heading font-bold mb-4">CTO-LEVEL AI ADVISORY</h3>
+        <h3 class="text-2xl font-heading font-bold mb-4">C-LEVEL AI ADVISORY</h3>
         <p class="text-lg font-semibold mb-4 text-brand-black">Direct access when you need experienced perspective</p>
         <p class="text-brand-black/80 leading-relaxed mb-4">
           Monthly strategic sessions with someone who's been in your position. Get advice on tool selection, team challenges, vendor negotiations, and board communication. Plus urgent access for critical decisions.
         </p>
         <a href="#contact" class="inline-block bg-brand-deep-turquoise text-white px-6 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">Get in Touch →</a>
+      </div>
+    </div>
+
+    <!-- AI Leader Accelerator - Smaller -->
+    <div class="bg-brand-light-blue/10 border border-brand-light-blue/30 rounded-lg p-6 mb-12">
+      <div class="flex flex-col md:flex-row gap-6 items-center">
+        <div class="flex-1">
+          <div class="flex items-center gap-3 mb-2">
+            <i data-lucide="graduation-cap" class="w-6 h-6 text-brand-deep-turquoise"></i>
+            <h3 class="text-xl font-heading font-bold">AI Leader Accelerator</h3>
+            <span class="text-sm bg-brand-black/10 text-brand-black/60 px-2 py-1 rounded">Applications closed</span>
+          </div>
+          <p class="text-brand-black/70 text-sm">
+            8-week peer learning programme for senior technical leaders. <a href="/ai-leader-accelerator/" class="text-brand-deep-turquoise hover:underline">Learn more</a> or <a href="mailto:chris@chrismdp.com?subject=AI%20Leader%20Accelerator" class="text-brand-deep-turquoise hover:underline">get in touch</a> for future cohorts.
+          </p>
+        </div>
       </div>
     </div>
 
