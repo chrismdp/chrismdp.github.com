@@ -3,7 +3,6 @@ layout: post
 title: "The Slow And Dangerous Loss Of Self"
 date: 2025-12-09 09:00:00 +0000
 image: /assets/img/slow-dangerous-loss-title.jpg
-infographic: /assets/img/slow-dangerous-loss-infographic.jpg
 categories:
 - ai
 - leadership
