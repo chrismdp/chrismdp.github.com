@@ -10,12 +10,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - This helps with SEO and provides value to readers by creating implicit links between related content
 
 ### Internal Linking
-- **Always use slug-only links**: Internal blog post links should always be in the format `/slug/` without any date information (e.g., `/coding-with-ai/` not `/2025/03/07/coding-with-ai/`)
+- **Blog posts use slug-only links**: Internal blog post links should be in the format `/slug/` without any date information (e.g., `/coding-with-ai/` not `/2025/03/07/coding-with-ai/`)
+- **Newsletters use full absolute URLs**: When linking to blog posts from newsletters, always use `https://www.chrismdp.com/slug/` (e.g., `https://www.chrismdp.com/coding-with-ai/`) so links work in email clients
 - This matches the Jekyll permalink structure configured in `_config.yml`
 
 ### Newsletter Vault Locations
 - **Comics**: `/Users/cp/Library/CloudStorage/GoogleDrive-chris.p@rsons.org/My Drive/chrismdp ltd/Public/Newsletter Vault/Comics`
 - **Infographics**: `/Users/cp/Library/CloudStorage/GoogleDrive-chris.p@rsons.org/My Drive/chrismdp ltd/Public/Newsletter Vault/Infographics`
+- **Naming convention**: Use Capitalised Spaced Names describing the comic or infographic title (e.g., "Things I'll Get To Eventually.jpg", "How to Design with AI.jpg")
 
 ### Key Learnings
 - Always read the entire context of a project before starting work
