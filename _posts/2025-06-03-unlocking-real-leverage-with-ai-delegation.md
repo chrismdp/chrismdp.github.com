@@ -6,6 +6,8 @@ categories:
 - ai
 - engineering
 - automation
+image: /assets/img/replace-work-ai-infographic.jpg
+infographic: /assets/img/replace-work-ai-infographic.jpg
 ---
 
 Starting to delegate to AI feels awkward. It is a lot like hiring your first contractor: you know there is leverage on the other side, but the first steps are messy and uncertain. The myth of the perfect plan holds many people back, but the reality is you just need to begin.

@@ -7,6 +7,7 @@ categories:
 - writing
 - productivity
 image: /assets/img/ai-feeding-on-itself-title.jpg
+infographic: /assets/img/ai-content-fork-infographic.jpg
 ---
 
 There is a growing concern in AI circles about "model collapse."

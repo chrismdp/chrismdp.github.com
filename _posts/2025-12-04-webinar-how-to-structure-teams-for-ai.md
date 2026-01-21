@@ -8,6 +8,7 @@ categories:
 - team-topology
 - leadership
 image: /assets/img/tortoise-scooter-hare.png
+infographic: /assets/img/structure-teams-ai-infographic.jpg
 ---
 
 On 4th December 2025, I gave a webinar about a question that every technical leader is wrestling with: how should we structure our teams now that AI has arrived? The session opened with contributions from attendees already experimenting with AI team structures. The stories were instructive: agentic teams burning through budgets with nothing to show for it, engineers using AI as advanced autocomplete without rethinking workflows, organisations unsure where to put the human in the loop. We can now do things faster than ever, but faster does not automatically mean better.

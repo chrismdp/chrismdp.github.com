@@ -3,6 +3,7 @@ layout: post
 title: "How to React to a New Frontier Model"
 date: 2025-11-25 09:00:00 +0000
 image: /assets/img/final_dt_blog_evals_2.gif
+infographic: /assets/img/react-new-frontier-model-infographic.jpg
 categories:
 - ai
 - strategy
