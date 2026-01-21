@@ -39,17 +39,144 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
 </section>
 
 <!-- Why Subscribe Section -->
-<section class="py-20 bg-brand-white">
+<section class="py-20 bg-brand-white overflow-hidden">
   <div class="w-full">
     <div class="text-center mb-12 px-6">
       <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6 text-brand-black">Try my newsletter to unlock my AI resource library</h2>
       <p class="text-xl text-brand-black/80 mb-8 mx-4 sm:mx-24">Dozens of free guides and practical AI advice for leaders, delivered weekly.</p>
     </div>
 
-    <!-- Carousel image at the bottom -->
-    <div class="md:mx-12">
-      <img src="/assets/img/ai-resources-carousel.png" alt="AI cheat sheets, guides, and carousels" class="w-full">
+    <!-- Infographic Gallery - 3 slots, each cycles through different posts -->
+    <style>
+      .infographic-gallery {
+        --transition-duration: 800ms;
+        --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .gallery-slot {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .gallery-item {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        transition: opacity var(--transition-duration) var(--transition-timing);
+        pointer-events: none;
+      }
+
+      .gallery-item.active {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+
+      /* Mobile: stack and take more width */
+      @media (max-width: 768px) {
+        .infographic-gallery {
+          padding-left: 0.5rem !important;
+          padding-right: 0.5rem !important;
+        }
+        .gallery-grid {
+          grid-template-columns: 1fr !important;
+          gap: 0.75rem !important;
+        }
+        .gallery-slot {
+          height: 340px !important;
+        }
+      }
+    </style>
+
+    {% assign infographic_posts = "" | split: "" %}
+    {% assign sorted_posts = site.posts | sort: "date" | reverse %}
+    {% for post in sorted_posts limit: 30 %}
+      {% if post.infographic %}
+        {% assign infographic_posts = infographic_posts | push: post %}
+      {% endif %}
+      {% if infographic_posts.size >= 9 %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+
+    <div class="infographic-gallery px-6 md:px-12">
+      <div class="gallery-grid grid grid-cols-3 gap-6">
+        <!-- Slot 1: posts 0, 3, 6 -->
+        <div class="gallery-slot" style="height: 420px;" data-cycle-speed="5000">
+          {% for post in infographic_posts %}
+            {% assign mod = forloop.index0 | modulo: 3 %}
+            {% if mod == 0 %}
+          <a href="{{ post.url }}" class="gallery-item {% if forloop.index0 == 0 %}active{% endif %}">
+            <img src="{{ post.infographic }}" alt="{{ post.title }}" loading="{% if forloop.index0 == 0 %}eager{% else %}lazy{% endif %}">
+          </a>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <!-- Slot 2: posts 1, 4, 7 -->
+        <div class="gallery-slot" style="height: 420px;" data-cycle-speed="4000">
+          {% for post in infographic_posts %}
+            {% assign mod = forloop.index0 | modulo: 3 %}
+            {% if mod == 1 %}
+          <a href="{{ post.url }}" class="gallery-item {% if forloop.index0 == 1 %}active{% endif %}">
+            <img src="{{ post.infographic }}" alt="{{ post.title }}" loading="{% if forloop.index0 == 1 %}eager{% else %}lazy{% endif %}">
+          </a>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <!-- Slot 3: posts 2, 5, 8 -->
+        <div class="gallery-slot" style="height: 420px;" data-cycle-speed="6000">
+          {% for post in infographic_posts %}
+            {% assign mod = forloop.index0 | modulo: 3 %}
+            {% if mod == 2 %}
+          <a href="{{ post.url }}" class="gallery-item {% if forloop.index0 == 2 %}active{% endif %}">
+            <img src="{{ post.infographic }}" alt="{{ post.title }}" loading="{% if forloop.index0 == 2 %}eager{% else %}lazy{% endif %}">
+          </a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
     </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const slots = document.querySelectorAll('.gallery-slot');
+
+      slots.forEach(slot => {
+        const items = slot.querySelectorAll('.gallery-item');
+        const totalItems = items.length;
+        if (totalItems === 0) return;
+
+        const cycleSpeed = parseInt(slot.dataset.cycleSpeed) || 5000;
+
+        // Start at random index
+        let currentIndex = Math.floor(Math.random() * totalItems);
+
+        // Clear any server-side active class and set random start
+        items.forEach((item, i) => {
+          item.classList.remove('active');
+        });
+        items[currentIndex].classList.add('active');
+
+        function cycleSlot() {
+          items[currentIndex].classList.remove('active');
+          currentIndex = (currentIndex + 1) % totalItems;
+          items[currentIndex].classList.add('active');
+        }
+
+        // Start cycling with slight random offset to desync slots
+        const randomOffset = Math.random() * 1000;
+        setTimeout(() => {
+          setInterval(cycleSlot, cycleSpeed);
+        }, randomOffset);
+      });
+    });
+    </script>
   </div>
 </section>
 

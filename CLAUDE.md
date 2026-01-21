@@ -162,6 +162,9 @@ docker-compose up -d
 ### Container Development
 The project includes `docker-compose.yaml` for containerized development using Jekyll 3.8. Remove the bundle volume mount for production deployments.
 
+### Jekyll Server
+Chris runs the Jekyll server separately (not via Claude Code). Don't attempt to start `jekyll serve` - it's already running at `localhost:4000`.
+
 ## Architecture Overview
 
 ### Jekyll Site Structure
