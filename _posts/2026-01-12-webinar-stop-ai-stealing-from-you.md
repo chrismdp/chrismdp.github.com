@@ -10,6 +10,7 @@ categories:
 image: /assets/img/webinar-stop-ai-stealing.jpg
 image_portrait: true
 infographic: /assets/img/webinar-stop-ai-stealing-advert.jpg
+infographic_carousel: false
 ---
 
 On 15th January, I gave a webinar about the compliance and security risks lurking in AI adoption. One statistic kept coming up in the conversation: IBM found that 20% of data breaches last year were caused by shadow AI.[^5] Those breaches cost $670,000 more than standard incidents and took 185 days to contain.

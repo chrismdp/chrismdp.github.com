@@ -4,6 +4,7 @@ title: "AI Is Still Searching for a Home"
 date: 2026-01-21 09:00:00 +0000
 image: /assets/img/ai-house-hunt-robot.jpg
 infographic: /assets/img/ai-house-hunt-comic.jpg
+infographic_carousel: false
 categories:
 - ai
 - strategy

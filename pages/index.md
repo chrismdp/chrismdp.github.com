@@ -97,7 +97,7 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
     {% assign infographic_posts = "" | split: "" %}
     {% assign sorted_posts = site.posts | sort: "date" | reverse %}
     {% for post in sorted_posts limit: 30 %}
-      {% if post.infographic %}
+      {% if post.infographic and post.infographic_carousel != false %}
         {% assign infographic_posts = infographic_posts | push: post %}
       {% endif %}
       {% if infographic_posts.size >= 9 %}
