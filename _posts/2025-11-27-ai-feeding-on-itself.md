@@ -7,6 +7,7 @@ categories:
 - writing
 - productivity
 image: /assets/img/ai-feeding-on-itself-title.jpg
+infographic: /assets/img/ai-content-fork-infographic.jpg
 ---
 
 There is a growing concern in AI circles about "model collapse."
@@ -76,8 +77,6 @@ One where models get progressively worse at helping us think. One where they get
 The difference is whether we use them to replace thinking or enhance it.
 
 Every piece of content you create with AI is a vote. Which future are you voting for?
-
-<img src="/assets/img/ai-feeding-on-itself.png" alt="AI Feeding On Itself - Infographic" style="width: 50%;" />
 
 [^collapse]: Recent research has documented the "model collapse" phenomenon extensively. See [Shumailov et al. (2024), "AI Models Collapse When Trained on Recursively Generated Data"](https://arxiv.org/html/2410.12954v1){:target="_blank"} for the foundational analysis of this problem.
 

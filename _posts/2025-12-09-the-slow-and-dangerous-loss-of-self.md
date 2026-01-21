@@ -3,6 +3,7 @@ layout: post
 title: "The Slow And Dangerous Loss Of Self"
 date: 2025-12-09 09:00:00 +0000
 image: /assets/img/slow-dangerous-loss-title.jpg
+infographic: /assets/img/slow-dangerous-loss-infographic.jpg
 categories:
 - ai
 - leadership
@@ -72,5 +73,3 @@ The absence of a perfect solution does not mean doing nothing. It means being th
 There is no such thing as unbiased AI. Every model reflects the choices made in its creation. The question is not whether your AI has values baked in. It does. The question is whether you know what those values are, whether they align with your own, and whether you are consciously choosing to adopt them.
 
 Most organisations have not asked these questions yet. As AI adoption accelerates, as more decisions get made with AI assistance, as more thinking gets outsourced to these systems, the organisations that thrive will be the ones that engaged with this problem early.
-
-<img src="/assets/img/slow-dangerous-loss-final.jpg" alt="The Slow And Dangerous Loss Of Self" style="width: 50%;" />
