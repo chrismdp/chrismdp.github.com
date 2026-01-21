@@ -39,7 +39,7 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
 </section>
 
 <!-- Why Subscribe Section -->
-<section class="py-20 bg-brand-white overflow-hidden">
+<section id="newsletter" class="py-20 bg-brand-white overflow-hidden">
   <div class="w-full">
     <div class="text-center mb-12 px-6">
       <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6 text-brand-black">Try my newsletter to unlock my AI resource library</h2>
@@ -142,6 +142,8 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
         </div>
       </div>
     </div>
+
+    <p class="text-center mt-8 text-brand-black/60">Try my newsletter above to access all my guides in high resolution</p>
 
     <script>
     document.addEventListener('DOMContentLoaded', function() {
