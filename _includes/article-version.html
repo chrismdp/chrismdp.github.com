@@ -1,0 +1,54 @@
+{% assign newer_post = nil %}
+{% assign current_url = page.url %}
+
+{% comment %} Find if any post replaces this one {% endcomment %}
+{% for post in site.posts %}
+  {% if post.replaces == current_url %}
+    {% assign newer_post = post %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% comment %} Follow chain to newest {% endcomment %}
+{% if newer_post %}
+  {% assign checking = true %}
+  {% for i in (1..10) %}
+    {% if checking %}
+      {% assign found_newer = nil %}
+      {% for post in site.posts %}
+        {% if post.replaces == newer_post.url %}
+          {% assign found_newer = post %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+      {% if found_newer %}
+        {% assign newer_post = found_newer %}
+      {% else %}
+        {% assign checking = false %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% if newer_post %}
+<div class="mb-8 bg-brand-orange/10 rounded-lg p-4 border border-brand-orange/20 not-prose">
+  <p class="text-sm text-brand-black">
+    This article has been updated. Read the latest version: <a href="{{ newer_post.url }}" class="text-brand-deep-turquoise hover:text-brand-turquoise font-semibold">{{ newer_post.title }}</a>
+  </p>
+</div>
+{% elsif page.replaces %}
+{% assign replaced_post = nil %}
+{% for post in site.posts %}
+  {% if post.url == page.replaces %}
+    {% assign replaced_post = post %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+{% if replaced_post %}
+<div class="mb-8 bg-brand-light-blue/10 rounded-lg p-4 border border-brand-light-blue/20 not-prose">
+  <p class="text-sm text-brand-black">
+    This article is a newer version of <a href="{{ replaced_post.url }}" class="text-brand-deep-turquoise hover:text-brand-turquoise font-semibold">{{ replaced_post.title }}</a>.
+  </p>
+</div>
+{% endif %}
+{% endif %}

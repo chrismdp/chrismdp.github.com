@@ -3,6 +3,7 @@ layout: post
 title: "Writing and Thinking with AI: Why Repositories Beat Chatbots"
 date: 2025-08-29 00:00:00 +0000
 image: /assets/img/writing-thinking-ai-repositories-vs-chatbots.png
+series: "Where AI Lives"
 categories:
 - ai
 - writing

@@ -4,6 +4,7 @@ title: "Who wants a browser?"
 date: 2025-10-23 09:00:00 +0000
 image: /assets/img/wardley-map-browser-wars.png
 image_portrait: true
+series: "Where AI Lives"
 categories:
 - ai
 - strategy

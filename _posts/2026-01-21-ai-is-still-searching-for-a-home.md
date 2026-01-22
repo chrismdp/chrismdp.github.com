@@ -5,6 +5,7 @@ date: 2026-01-21 09:00:00 +0000
 image: /assets/img/ai-house-hunt-robot.jpg
 infographic: /assets/img/ai-house-hunt-comic.jpg
 infographic_carousel: false
+series: "Where AI Lives"
 categories:
 - ai
 - strategy
