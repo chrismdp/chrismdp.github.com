@@ -1,7 +1,7 @@
 {% if page.series %}
 {% assign series_posts = site.posts | where: "series", page.series | sort: "date" %}
 {% if series_posts.size > 1 %}
-<div class="float-right ml-6 mb-6 w-full md:w-1/2 max-w-md bg-brand-light-blue/10 rounded-lg p-4 border border-brand-light-blue/20 not-prose">
+<div id="series-callout" class="float-right ml-6 mb-6 w-full md:w-1/2 max-w-md bg-brand-light-blue/10 rounded-lg p-4 border border-brand-light-blue/20 not-prose hidden">
   <p class="text-sm text-brand-black mb-2">Part of a series on <strong class="font-bold">{{ page.series }}</strong>:</p>
   <ul class="text-sm space-y-1 list-disc list-inside">
     {% for post in series_posts %}
@@ -9,11 +9,39 @@
       {% if post.url == page.url %}
         <span class="text-brand-black">{{ post.title }} ({{ post.date | date: "%b %Y" }})</span>
       {% else %}
-        <a href="{{ post.url }}" class="text-brand-deep-turquoise hover:text-brand-turquoise">{{ post.title }}</a> ({{ post.date | date: "%b %Y" }})
+        <a href="{{ post.url }}" class="series-link text-brand-deep-turquoise hover:text-brand-turquoise" data-series="{{ page.series }}" data-target-title="{{ post.title }}">{{ post.title }}</a> ({{ post.date | date: "%b %Y" }})
       {% endif %}
     </li>
     {% endfor %}
   </ul>
 </div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  if (typeof posthog !== 'undefined') {
+    posthog.onFeatureFlags(function() {
+      var variant = posthog.getFeatureFlag('series-callout-experiment');
+      if (variant === 'test') {
+        document.getElementById('series-callout').classList.remove('hidden');
+      }
+      // Track that user saw a page with series (for both variants)
+      posthog.capture('series_page_viewed', {
+        series: '{{ page.series }}',
+        variant: variant || 'control'
+      });
+    });
+
+    // Track clicks on series links
+    document.querySelectorAll('.series-link').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        posthog.capture('series_link_clicked', {
+          series: this.dataset.series,
+          target_title: this.dataset.targetTitle,
+          source_url: window.location.pathname
+        });
+      });
+    });
+  }
+});
+</script>
 {% endif %}
 {% endif %}
