@@ -42,8 +42,8 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
 <section id="newsletter" class="py-20 bg-brand-white overflow-hidden">
   <div class="w-full">
     <div class="text-center mb-12 px-6">
-      <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6 text-brand-black">Try my newsletter to unlock my AI resource library</h2>
-      <p class="text-xl text-brand-black/80 mb-8 mx-4 sm:mx-24">Dozens of free guides and practical AI advice for leaders, delivered weekly.</p>
+      <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6 text-brand-black">Try my newsletter above to access dozens of high resolution guides</h2>
+      <p class="text-xl text-brand-black/80 mb-8 mx-4 sm:mx-24">Plus get practical AI advice for leaders, delivered weekly.</p>
     </div>
 
     <!-- Infographic Gallery - 3 slots, each cycles through different posts -->
@@ -142,8 +142,6 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
         </div>
       </div>
     </div>
-
-    <p class="text-center mt-8 text-brand-black/60">Try my newsletter above to access all my guides in high resolution</p>
 
     <script>
     document.addEventListener('DOMContentLoaded', function() {
