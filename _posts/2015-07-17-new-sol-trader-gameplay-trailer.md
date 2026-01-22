@@ -2,6 +2,7 @@
 layout: post
 title: 'Trailer: How it will feel to move around Sol Trader''s cities'
 date: 2015-07-17 17:16:10.000000000 +01:00
+series: "Building Sol Trader"
 categories:
 - sol trader
 - game development

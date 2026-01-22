@@ -3,6 +3,7 @@ layout: post
 title: How Ealdorlight's story stands out
 date: 2017-05-10 11:36:52.000000000 +01:00
 image: "/files/random-book.jpg"
+series: "Building Ealdorlight"
 categories:
 - products
 - ealdorlight

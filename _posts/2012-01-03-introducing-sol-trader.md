@@ -2,6 +2,7 @@
 layout: post
 title: Introducing Sol Trader
 date: 2012-01-03 14:53:53.000000000 +00:00
+series: "Building Sol Trader"
 categories:
 - products
 - code

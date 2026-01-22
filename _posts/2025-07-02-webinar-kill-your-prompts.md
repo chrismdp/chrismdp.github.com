@@ -4,6 +4,7 @@ title: "Kill Your Prompts: Build Agents That Actually Work"
 date: 2025-07-02 15:00:00 +0000
 image: /assets/img/kill-your-prompts.png
 image_portrait: true
+series: "AI In Action Webinars"
 categories:
 - ai
 - engineering

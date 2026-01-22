@@ -2,6 +2,7 @@
 layout: post
 title: Why I wrote Sol Trader's GUI code from scratch
 date: 2015-08-01 23:25:02.000000000 +01:00
+series: "Building Sol Trader"
 categories:
 - sol trader
 - game development

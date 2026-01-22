@@ -2,6 +2,7 @@
 layout: post
 title: 'The Sol Trader Christmas Eve update: moddable missions'
 date: 2015-12-24 07:43:19.000000000 +00:00
+series: "Building Sol Trader"
 categories:
 - indie games
 - game design

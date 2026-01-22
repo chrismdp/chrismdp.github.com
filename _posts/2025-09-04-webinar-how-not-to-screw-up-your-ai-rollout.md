@@ -4,6 +4,7 @@ title: "How Not to Screw Up Your AI Rollout"
 date: 2025-09-04 14:00:00 +0100
 image: /assets/img/ai-rollout-failure-webinar.png
 image_portrait: true
+series: "AI In Action Webinars"
 categories:
 - ai
 - webinar

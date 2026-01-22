@@ -2,6 +2,7 @@
 layout: post
 title: 'Gossip: the best new Sol Trader feature for ages'
 date: 2016-02-09 07:20:37.000000000 +00:00
+series: "Building Sol Trader"
 categories:
 - indie games
 - game design

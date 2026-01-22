@@ -3,6 +3,7 @@ layout: post
 title: Ealdorlight's Kickstarter is live at 4pm today
 date: 2017-06-06 13:28:33.000000000 +01:00
 image: "/files/el-promo.jpg"
+series: "Building Ealdorlight"
 categories:
 - products
 - ealdorlight

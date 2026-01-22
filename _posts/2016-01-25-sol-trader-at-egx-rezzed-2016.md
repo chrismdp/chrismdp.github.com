@@ -2,6 +2,7 @@
 layout: post
 title: 'Sol Trader at EGX Rezzed: 7-9 April 2016'
 date: 2016-01-25 09:54:32.000000000 +00:00
+series: "Building Sol Trader"
 categories:
 - indie games
 - sol trader

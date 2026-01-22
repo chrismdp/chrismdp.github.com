@@ -2,6 +2,7 @@
 layout: post
 title: Task assignment is a team anti-pattern
 date: 2012-09-14 14:06:40.000000000 +01:00
+series: "Team Anti-Patterns"
 categories:
 - process
 - productivity

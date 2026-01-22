@@ -2,6 +2,7 @@
 layout: post
 title: How face generation works in Sol Trader
 date: 2015-05-06 10:52:27.000000000 +01:00
+series: "Building Sol Trader"
 categories:
 - game design
 - sol trader

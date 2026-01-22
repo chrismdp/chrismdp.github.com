@@ -4,6 +4,7 @@ title: "Master Prompt Stacking: The Secret to Making AI Code Like You Do"
 date: 2025-06-06 14:00:00 +0000
 image: /assets/img/stop-ai-agents-breaking-your-code.png
 image_portrait: true
+series: "AI In Action Webinars"
 categories:
 - ai
 - engineering

@@ -4,6 +4,7 @@ title: "How to Ship Your Agent"
 date: 2025-08-07 15:00:00 +0000
 image: /assets/img/ship-your-agent-webinar.png
 image_portrait: true
+series: "AI In Action Webinars"
 categories:
 - ai
 - engineering

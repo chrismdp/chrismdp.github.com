@@ -2,6 +2,7 @@
 layout: post
 title: How I'm using Proxemics in Sol Trader's game design
 date: 2015-04-28 21:01:22.000000000 +01:00
+series: "Building Sol Trader"
 categories:
 - game design
 - sol trader

@@ -2,6 +2,7 @@
 layout: post
 title: "How to Structure Your Teams for AI"
 date: 2025-12-04 14:00:00 +0000
+series: "AI In Action Webinars"
 categories:
 - ai
 - webinar

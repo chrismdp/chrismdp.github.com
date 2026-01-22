@@ -2,6 +2,7 @@
 layout: post
 title: 'Sol Trader: a continuous deployment story'
 date: 2012-03-23 12:13:27.000000000 +00:00
+series: "Building Sol Trader"
 categories:
 - sol trader
 - windows

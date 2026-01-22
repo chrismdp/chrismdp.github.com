@@ -2,6 +2,7 @@
 layout: post
 title: Spring Richclient ~ Session Five ~ Applications, windows, views
 date: 2006-02-03 15:21:00.000000000 +00:00
+series: "Spring Richclient Tutorial"
 categories:
 - richclient
 - java

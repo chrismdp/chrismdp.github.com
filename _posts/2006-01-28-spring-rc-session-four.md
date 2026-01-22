@@ -2,6 +2,7 @@
 layout: post
 title: Spring Richclient ~ Session One ~ Beans, Shmeans and services
 date: 2006-01-28 12:48:00.000000000 +00:00
+series: "Spring Richclient Tutorial"
 categories:
 - richclient
 - java

@@ -2,6 +2,7 @@
 layout: post
 title: "The First Thing A Startup CTO Must Do"
 date: 2024-11-22 08:55:18 +0000
+series: "Startup CTO Field Guide"
 categories:
 - business
 - startup

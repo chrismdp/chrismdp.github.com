@@ -2,6 +2,7 @@
 layout: post
 title: How tone of voice works in Sol Trader's dialogue system
 date: 2015-05-27 11:45:08.000000000 +01:00
+series: "Building Sol Trader"
 categories:
 - game design
 - sol trader

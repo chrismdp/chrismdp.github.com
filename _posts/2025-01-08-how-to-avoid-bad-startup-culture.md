@@ -2,6 +2,7 @@
 layout: post
 title: "How To Avoid Bad Startup Culture"
 date: 2025-02-10 08:00:00 +0000
+series: "Startup CTO Field Guide"
 categories:
 - leadership
 - culture

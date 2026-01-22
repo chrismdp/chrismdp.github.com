@@ -2,6 +2,7 @@
 layout: post
 title: Sol Trader now in Alpha
 date: 2012-05-02 15:37:44.000000000 +01:00
+series: "Building Sol Trader"
 categories:
 - sol trader
 - products

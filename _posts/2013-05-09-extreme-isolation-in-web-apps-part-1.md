@@ -2,6 +2,7 @@
 layout: post
 title: 'Extreme isolation in web apps: part 1'
 date: 2013-05-09 10:34:52.000000000 +01:00
+series: "Extreme Isolation"
 categories:
 - ruby
 - state

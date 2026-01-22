@@ -5,6 +5,7 @@ date: 2025-11-06 09:00:00 +0000
 permalink: /webinar-claude-code-thinking/
 image: /assets/img/use-claude-code-webinar-thinking.png
 image_portrait: false
+series: "AI In Action Webinars"
 categories:
 - ai
 - webinar

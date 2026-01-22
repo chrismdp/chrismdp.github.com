@@ -2,6 +2,7 @@
 layout: post
 title: 'New for 2015: Sol Trader now on Kickstarter'
 date: 2015-01-07 09:57:58.000000000 +00:00
+series: "Building Sol Trader"
 categories:
 - sol trader
 - indie games

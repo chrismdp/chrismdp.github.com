@@ -2,6 +2,7 @@
 layout: post
 title: 'How I''m testing iPhone apps: part 1'
 date: 2011-12-01 22:45:35.000000000 +00:00
+series: "Testing iPhone Apps"
 categories:
 - code
 - ios

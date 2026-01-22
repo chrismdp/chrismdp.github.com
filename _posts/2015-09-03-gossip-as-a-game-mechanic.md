@@ -2,6 +2,7 @@
 layout: post
 title: Gossip as a game mechanic
 date: 2015-09-03 06:21:40.000000000 +01:00
+series: "Building Sol Trader"
 categories:
 - game design
 - sol trader

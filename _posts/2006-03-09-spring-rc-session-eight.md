@@ -2,6 +2,7 @@
 layout: post
 title: Spring Richclient ~ Session Eight ~ Such a bind
 date: 2006-03-09 09:46:00.000000000 +00:00
+series: "Spring Richclient Tutorial"
 categories:
 - richclient
 - java

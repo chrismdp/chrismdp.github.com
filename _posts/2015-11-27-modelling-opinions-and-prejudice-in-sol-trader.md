@@ -2,6 +2,7 @@
 layout: post
 title: Modelling opinions and prejudices in Sol Trader
 date: 2015-11-27 16:51:31.000000000 +00:00
+series: "Building Sol Trader"
 categories:
 - indie games
 - game design

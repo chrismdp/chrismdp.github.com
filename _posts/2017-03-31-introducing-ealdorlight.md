@@ -2,6 +2,7 @@
 layout: post
 title: 'Introducing: Ealdorlight'
 date: 2017-03-31 07:58:50.000000000 +01:00
+series: "Building Ealdorlight"
 categories:
 - products
 - ealdorlight

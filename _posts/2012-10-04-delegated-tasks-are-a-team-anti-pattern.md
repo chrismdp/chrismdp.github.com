@@ -2,6 +2,7 @@
 layout: post
 title: Delegated tasks are a team anti-pattern
 date: 2012-10-04 07:49:57.000000000 +01:00
+series: "Team Anti-Patterns"
 categories:
 - team
 - anti-pattern

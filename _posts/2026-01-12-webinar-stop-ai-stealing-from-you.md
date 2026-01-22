@@ -2,6 +2,7 @@
 layout: post
 title: "Stop AI Stealing From You"
 date: 2026-01-15 15:30:00 +0000
+series: "AI In Action Webinars"
 categories:
 - ai
 - webinar

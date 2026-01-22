@@ -2,6 +2,7 @@
 layout: post
 title: What's next for Sol Trader and me
 date: 2017-02-22 11:51:10.000000000 +00:00
+series: "Building Sol Trader"
 categories:
 - products
 - sol trader

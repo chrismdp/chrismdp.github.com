@@ -2,6 +2,7 @@
 layout: post
 title: How dialogue works in Sol Trader
 date: 2015-05-13 16:29:47.000000000 +01:00
+series: "Building Sol Trader"
 categories:
 - game design
 - sol trader

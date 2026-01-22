@@ -2,6 +2,7 @@
 layout: post
 title: 'Sol Trader: on lighting'
 date: 2012-02-14 22:56:43.000000000 +00:00
+series: "Building Sol Trader"
 categories:
 - products
 - c++

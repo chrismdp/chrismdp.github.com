@@ -2,6 +2,7 @@
 layout: post
 title: Effective bloom in OpenGL for Sol Trader
 date: 2012-02-02 16:28:30.000000000 +00:00
+series: "Building Sol Trader"
 categories:
 - products
 - c++

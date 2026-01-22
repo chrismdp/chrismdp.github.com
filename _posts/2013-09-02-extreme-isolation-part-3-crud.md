@@ -2,6 +2,7 @@
 layout: post
 title: 'Extreme isolation part 3: coding a CRUD app (with full example)'
 date: 2013-09-02 11:22:27.000000000 +01:00
+series: "Extreme Isolation"
 categories:
 - ruby
 - state

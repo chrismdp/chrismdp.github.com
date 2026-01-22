@@ -2,6 +2,7 @@
 layout: post
 title: After a long journey, Sol Trader has been greenlit!
 date: 2015-03-18 09:17:03.000000000 +00:00
+series: "Building Sol Trader"
 categories:
 - sol trader
 - indie games

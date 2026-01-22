@@ -2,6 +2,7 @@
 layout: post
 title: 'Full disclosure: Sol Trader conversation upgrades'
 date: 2016-01-01 16:34:55.000000000 +00:00
+series: "Building Sol Trader"
 categories:
 - indie games
 - game design

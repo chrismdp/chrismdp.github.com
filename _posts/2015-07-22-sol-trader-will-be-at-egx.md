@@ -2,6 +2,7 @@
 layout: post
 title: Sol Trader will be at EGX in September!
 date: 2015-07-22 08:00:00.000000000 +01:00
+series: "Building Sol Trader"
 categories:
 - sol trader
 - game development

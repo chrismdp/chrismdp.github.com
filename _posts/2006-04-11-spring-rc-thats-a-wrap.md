@@ -2,6 +2,7 @@
 layout: post
 title: Spring Richclient ~ That's a wrap
 date: 2006-04-11 15:25:00.000000000 +00:00
+series: "Spring Richclient Tutorial"
 categories:
 - richclient
 - java

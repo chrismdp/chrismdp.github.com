@@ -2,6 +2,7 @@
 layout: post
 title: 'New Sol Trader beta: the science of blame and unforgiveness'
 date: 2015-12-02 10:20:28.000000000 +00:00
+series: "Building Sol Trader"
 categories:
 - indie games
 - game design

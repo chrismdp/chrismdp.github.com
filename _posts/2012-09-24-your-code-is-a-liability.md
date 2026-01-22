@@ -2,6 +2,7 @@
 layout: post
 title: Your Code Is A Liability
 date: 2024-11-25 20:00:31 +0000
+series: "Liabilities"
 categories:
 - code
 - agile

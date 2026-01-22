@@ -2,6 +2,7 @@
 layout: post
 title: Your framework is a liability
 date: 2012-09-28 20:46:31.000000000 +01:00
+series: "Liabilities"
 categories:
 - code
 - ruby

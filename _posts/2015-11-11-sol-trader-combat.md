@@ -2,6 +2,7 @@
 layout: post
 title: Sol Trader combat preview
 date: 2015-11-11 17:03:57.000000000 +00:00
+series: "Building Sol Trader"
 categories:
 - indie games
 - game design

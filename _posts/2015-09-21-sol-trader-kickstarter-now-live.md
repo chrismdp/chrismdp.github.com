@@ -2,6 +2,7 @@
 layout: post
 title: Sol Trader Kickstarter now live!
 date: 2015-09-21 19:48:37.000000000 +01:00
+series: "Building Sol Trader"
 categories:
 - sol trader
 - kickstarter

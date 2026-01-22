@@ -2,6 +2,7 @@
 layout: post
 title: Attempting validated learning with Sol Trader
 date: 2012-05-14 10:18:47.000000000 +01:00
+series: "Building Sol Trader"
 categories:
 - sol trader
 - startup

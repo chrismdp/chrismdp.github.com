@@ -2,6 +2,7 @@
 layout: post
 title: 'Switching Sol Trader from Ruby to C++: one week on'
 date: 2012-01-16 09:38:25.000000000 +00:00
+series: "Building Sol Trader"
 categories:
 - products
 - ruby

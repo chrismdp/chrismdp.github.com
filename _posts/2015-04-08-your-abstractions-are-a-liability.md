@@ -2,6 +2,7 @@
 layout: post
 title: Your abstractions are a liability
 date: 2015-04-08 14:04:44.000000000 +01:00
+series: "Liabilities"
 categories:
 - code
 - c++

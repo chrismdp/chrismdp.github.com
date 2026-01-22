@@ -2,6 +2,7 @@
 layout: post
 title: 3 new screenshots of Sol Trader's new interface
 date: 2015-07-18 13:55:35.000000000 +01:00
+series: "Building Sol Trader"
 categories:
 - sol trader
 - game development

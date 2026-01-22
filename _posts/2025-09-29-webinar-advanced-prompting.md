@@ -3,6 +3,7 @@ layout: post
 title: "Advanced Prompting: How to Put AI to Work"
 date: 2025-10-02 14:00:00 +0100
 image: /assets/img/advanced-prompting-webinar.png
+series: "AI In Action Webinars"
 categories:
 - ai
 - webinar

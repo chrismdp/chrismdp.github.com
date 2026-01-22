@@ -2,6 +2,7 @@
 layout: post
 title: The cunning plans of Sol Trader
 date: 2016-01-12 05:56:28.000000000 +00:00
+series: "Building Sol Trader"
 categories:
 - indie games
 - game design

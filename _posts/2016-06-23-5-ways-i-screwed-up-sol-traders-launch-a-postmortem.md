@@ -2,6 +2,7 @@
 layout: post
 title: '5 ways I screwed up Sol Trader''s launch: a post-mortem'
 date: 2016-06-28 09:00:00.000000000 +01:00
+series: "Building Sol Trader"
 categories:
 - products
 - business

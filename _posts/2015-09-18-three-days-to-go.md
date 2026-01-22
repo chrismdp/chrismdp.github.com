@@ -2,6 +2,7 @@
 layout: post
 title: Three days to go
 date: 2015-09-18 16:08:02.000000000 +01:00
+series: "Building Sol Trader"
 categories:
 - sol trader
 - kickstarter

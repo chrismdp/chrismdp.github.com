@@ -3,6 +3,7 @@ layout: post
 title: "Ealdorlight: A Kickstarter retrospective"
 date: 2017-11-19 22:17:16.000000000 +00:00
 image: "/files/games-you-should-make.png"
+series: "Building Ealdorlight"
 categories:
 - products
 - ealdorlight
