@@ -11,9 +11,9 @@ categories:
 - agents
 ---
 
-AI is house hunting, and it hasn't settled yet.
+The UK government spent months trialling Microsoft 365 Copilot across thousands of civil servants. Users reported 72% satisfaction but no measurable productivity gains.[^copilot] Is Copilot terrible? Perhaps it is not the product that is the problem. Perhaps it is just in the wrong place.
 
-The UK government spent months trialling Microsoft 365 Copilot across thousands of civil servants and found no evidence of productivity gains, despite 72% user satisfaction. Meanwhile, coding agents have quietly become the most transformative tools I use daily, handling everything from [complex refactoring](/your-agent-orchestrator-is-too-clever/) to [writing these blog posts](/today-in-claude-code/).
+AI is house hunting, and it has not settled yet. Meanwhile, coding agents have quietly become the most transformative tools I use daily, handling everything from [complex refactoring](/your-agent-orchestrator-is-too-clever/) to [writing these blog posts](/today-in-claude-code/).
 
 These two experiences point to fundamentally different places where AI might settle. One embeds intelligence inside existing applications. The other places AI outside applications, orchestrating them from above. But the orchestrating approach is evolving in ways that blur this distinction, and the answer to which wins is not obvious.
 
@@ -64,5 +64,7 @@ For senior leaders [making AI investment decisions](/webinar-how-not-to-screw-up
 I do not know which approach wins. Embedded AI might improve enough that the context problem dissolves. Orchestrating agents might become easy enough that everyone uses them. The distinction between the two might disappear entirely as orchestrators learn to embed themselves anywhere.
 
 The tools I reach for most are agents that see my whole context and coordinate across boundaries. The productivity gains that the UK government could not find in Copilot, I find every day in Claude Code. Whether AI should live inside your applications, outside controlling them, or move fluidly between both, remains the question everyone building or using AI products needs to answer.
+
+[^copilot]: The criticism is mounting. TechRadar declared it ["time to admit that Microsoft Copilot was a mistake"](https://www.techradar.com/computing/windows/almost-3-years-later-its-time-to-admit-that-microsoft-copilot-was-a-mistake){:target="_blank"} in December 2025, and Microsoft's CEO reportedly [admitted Copilot integrations "don't really work"](https://ppc.land/microsoft-ceo-admits-copilot-integrations-dont-really-work-as-adoption-falters/){:target="_blank"} as enterprise adoption stalled.
 
 [^1]: AWS has a history of building competing products after observing what third-party tools are popular on its platform. Amazon X-Ray and CloudWatch compete with New Relic, DocumentDB competes with MongoDB, and OpenSearch was forked from Elasticsearch after Elastic changed its licence specifically to prevent AWS from offering it as a managed service. See [Startups Beware: If You Use AWS, Amazon May Have You in Its Crosshairs](https://www.inc.com/sonya-mann/aws-startups-conflict.html){:target="_blank"} for the pattern.
