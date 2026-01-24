@@ -2,8 +2,8 @@
 layout: default
 ---
 {% include content-styles.html %}
-<!-- Hero Section with Post Title -->
-<section class="pt-20 pb-12 bg-white">
+<!-- Hero Section with Post Title - CONTROL (centered) -->
+<section id="hero-control" class="pt-20 pb-12 bg-white">
   <div class="max-w-4xl mx-auto px-6 text-center">
     <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight text-brand-black">{{ page.title }}</h1>
 
@@ -20,7 +20,26 @@ layout: default
   </div>
 </section>
 
-<article class="{% if page.full_width %}max-w-7xl{% else %}max-w-4xl{% endif %} mx-auto px-6 pb-12">
+<!-- Hero Section with Post Title - SIDEBAR (left-aligned, hidden by default) -->
+<section id="hero-sidebar" class="hidden pt-20 pb-8 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <h1 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4 leading-tight text-brand-black">{{ page.title }}</h1>
+
+    <!-- Post metadata -->
+    {% assign original_date = page.path | split: "/" | last | split: "-" | slice: 0, 2 | join: '' %}
+    {% assign current_date = page.date | date: "%Y%m" %}
+    <div class="text-base text-brand-black/60 italic">
+      {% if original_date != current_date %}
+        Updated: {{ page.date | date: "%B %Y" }}
+      {% else %}
+        {{ page.date | date: "%B %Y" }}
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<!-- CONTROL VARIANT: Centered layout (default, hidden when sidebar variant active) -->
+<article id="layout-control" class="{% if page.full_width %}max-w-7xl{% else %}max-w-4xl{% endif %} mx-auto px-6 pb-12">
 
   <!-- Featured image -->
   {% if page.image %}
@@ -92,13 +111,6 @@ layout: default
   <div class="prose prose-lg max-w-none content-styled">
     {% assign content_parts = content | split:'<!--more-->' %}
     {{ content_parts[0] }}
-
-    <!-- Newsletter signup after excerpt -->
-    <!-- {% unless page.categories contains 'case-studies' %} -->
-    <!-- <div class="my-12"> -->
-    <!--   {% include ai-newsletter-short.html %} -->
-    <!-- </div> -->
-    <!-- {% endunless %} -->
 
     {% if content_parts.size > 1 %}
       {{ content_parts[1] }}
@@ -220,7 +232,8 @@ layout: default
     </div>
   {% endif %}
 
-  <!-- Related articles -->
+  <!-- Related articles (control variant - at bottom) -->
+  <div id="related-bottom">
   {% assign related_posts = "" %}
   {% for tag in page.categories %}
     {% assign tag_posts = site.categories[tag] %}
@@ -245,7 +258,7 @@ layout: default
 
         <article class="py-6 border-b border-brand-light-blue/10 last:border-0">
           <h3 class="text-xl font-heading font-semibold mb-2">
-            <a href="{{ site.baseurl }}{{ post.url }}" class="text-brand-black hover:text-brand-deep-turquoise transition-colors">
+            <a href="{{ site.baseurl }}{{ post.url }}" class="related-bottom-link text-brand-black hover:text-brand-deep-turquoise transition-colors" data-title="{{ post.title | escape }}">
               {{ post.title }}
             </a>
           </h3>
@@ -258,16 +271,270 @@ layout: default
           <div class="prose prose-lg mb-4 text-brand-black/80 leading-relaxed content-styled excerpt-text">
             {{ post.excerpt }}
           </div>
-          <a href="{{ site.baseurl }}{{ post.url }}" class="text-brand-deep-turquoise hover:text-brand-turquoise font-semibold">
+          <a href="{{ site.baseurl }}{{ post.url }}" class="related-bottom-link text-brand-deep-turquoise hover:text-brand-turquoise font-semibold" data-title="{{ post.title | escape }}">
             Read more →
           </a>
         </article>
       {% endfor %}
     </div>
   {% endif %}
+  </div>
 
   <!-- Second newsletter signup -->
   <div class="mt-12">
     {% include ai-newsletter-short.html %}
   </div>
 </article>
+
+<!-- TEST VARIANT: Sidebar layout (hidden by default) -->
+<div id="layout-sidebar" class="hidden max-w-7xl mx-auto px-6 pb-12">
+  <div class="flex flex-col lg:flex-row gap-24">
+    <!-- Main content column -->
+    <article class="flex-1 lg:max-w-2xl lg:pr-12 lg:border-r lg:border-brand-light-blue/20">
+      <!-- Featured image -->
+      {% if page.image %}
+      {% if page.image_portrait %}
+        <div class='float-right ml-6 mb-6 w-1/2 max-w-md'>
+          <img alt='{{ page.title }}' src='{{ page.image }}' class='rounded-lg'>
+          {% if page.image_caption %}
+            <p class='text-sm text-brand-black/60 italic mt-2 text-center'>{{ page.image_caption }}</p>
+          {% endif %}
+        </div>
+      {% else %}
+        <div class='mb-8'>
+          <img alt='{{ page.title }}' src='{{ page.image }}' class='rounded-lg w-full'>
+          {% if page.image_caption %}
+            <p class='text-sm text-brand-black/60 italic mt-2 text-center'>{{ page.image_caption }}</p>
+          {% endif %}
+        </div>
+      {% endif %}
+      {% endif %}
+
+      {% include article-version.html %}
+      {% include article-series.html %}
+
+      <!-- Talk details callout for talk posts -->
+      {% if page.categories contains 'talk' %}
+        {% assign today = site.time | date: "%s" %}
+        {% assign talk_date_seconds = page.talk_date | date: "%s" %}
+        {% if talk_date_seconds >= today %}
+          {% assign is_upcoming = true %}
+        {% else %}
+          {% assign is_upcoming = false %}
+        {% endif %}
+
+        <div class="float-right ml-6 mb-6 w-full md:w-1/2 max-w-md bg-brand-light-blue/10 rounded-lg p-6 border border-brand-light-blue/20 not-prose">
+          <h3 class="text-lg font-heading font-bold text-brand-black">
+            {% if is_upcoming %}Upcoming Talk{% else %}Past Talk{% endif %}
+          </h3>
+          <div class="space-y-3 text-sm">
+            <div>
+              <span class="font-semibold text-brand-black">Event:</span>
+              <span class="text-brand-black/80">
+                {% if page.talk_url %}
+                  <a href="{{ page.talk_url }}" target="_blank" class="text-brand-deep-turquoise hover:text-brand-turquoise transition-colors !text-brand-deep-turquoise">{{ page.event_name }}</a>
+                {% else %}
+                  {{ page.event_name }}
+                {% endif %}
+              </span>
+            </div>
+            <div>
+              <span class="font-semibold text-brand-black">Date:</span>
+              <span class="text-brand-black/80">{{ page.talk_date | date: "%B %-d, %Y" }}</span>
+            </div>
+            <div>
+              <span class="font-semibold text-brand-black">Venue:</span>
+              <span class="text-brand-black/80">{{ page.venue }}</span>
+            </div>
+            {% if page.talk_url %}
+            <div class="flex flex-col space-y-4 justify-self-start items-center">
+              <a href="{{ page.talk_url }}" target="_blank" class="inline-block bg-brand-deep-turquoise px-4 py-2 rounded-lg hover:bg-brand-turquoise transition-colors text-sm font-semibold !text-white">
+                View Event →
+              </a>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+
+      <!-- Post content -->
+      <div class="prose prose-lg max-w-none content-styled">
+        {% assign content_parts = content | split:'<!--more-->' %}
+        {{ content_parts[0] }}
+
+        {% if content_parts.size > 1 %}
+          {{ content_parts[1] }}
+        {% endif %}
+      </div>
+
+      <!-- Infographic at end of content -->
+      {% if page.infographic %}
+      <div class="my-8 flex flex-col items-center">
+        <img src="{{ page.infographic }}" alt="{{ page.title }} infographic" style="max-width: 50%;" class="rounded-lg" />
+        <p class="mt-3 text-sm text-brand-black/50">High-res version available to newsletter subscribers</p>
+      </div>
+      {% endif %}
+
+      <!-- Webinar link for webinar posts -->
+      {% if page.categories contains 'webinar' %}
+      <div class="my-12">
+        <div class="text-center bg-brand-light-blue/10 rounded-lg p-6">
+          <h3 class="text-xl font-heading font-semibold mb-4 text-brand-black">Join Future Webinars</h3>
+          <p class="text-brand-black/70 mb-6">Get notified about upcoming live coding sessions and AI development workshops.</p>
+          <a href="/webinar" class="inline-flex items-center px-6 py-3 bg-brand-deep-turquoise text-white rounded-lg hover:bg-brand-turquoise transition-colors font-semibold">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" class="mr-2">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            </svg>
+            View Webinar Details
+          </a>
+        </div>
+      </div>
+      {% endif %}
+
+      <!-- Newsletter signup -->
+      {% unless page.categories contains 'case-studies' %}
+      <div class="my-12">
+        {% include ai-newsletter-short.html %}
+      </div>
+      {% endunless %}
+
+      <!-- Sol Trader widget for relevant posts -->
+      {% if page.categories contains "sol trader" %}
+        <div class="flex justify-center my-8">
+          <iframe src="https://store.steampowered.com/widget/396680/" frameborder="0" width="100%" height="190" class="max-w-2xl"></iframe>
+        </div>
+      {% endif %}
+
+      <!-- Share buttons -->
+      <div class="py-8 border-t border-brand-light-blue/20">
+        <h3 class="text-lg font-heading font-semibold mb-4">Share this article</h3>
+        <div class="flex flex-wrap gap-4">
+          <!-- BlueSky -->
+          <a href="https://bsky.app/intent/compose?text={{ page.title }}%20{{ site.url }}{{ page.url }}"
+             target="_blank"
+             title="Share on BlueSky"
+             class="inline-flex items-center px-4 py-2 bg-[#1185fe] text-white rounded-lg hover:bg-[#0f73d6] transition-colors">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 600 530" xmlns="http://www.w3.org/2000/svg">
+              <path d="m135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z"/>
+            </svg>
+            <span class="ml-2 text-sm font-semibold">BlueSky</span>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url }}"
+             target="_blank"
+             title="Share on LinkedIn"
+             class="inline-flex items-center px-4 py-2 bg-[#0077b5] text-white rounded-lg hover:bg-[#005885] transition-colors">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+            <span class="ml-2 text-sm font-semibold">LinkedIn</span>
+          </a>
+
+          <!-- X (Twitter) -->
+          <a href="https://twitter.com/intent/tweet?text={{ page.title }}%20{{ site.url }}{{ page.url }}"
+             target="_blank"
+             title="Post on X"
+             class="inline-flex items-center px-4 py-2 bg-brand-black text-white rounded-lg hover:bg-brand-black/80 transition-colors">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+            <span class="ml-2 text-sm font-semibold">X</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- More talks section for talk posts -->
+      {% if page.categories contains 'talk' %}
+        <div class="border-t border-brand-light-blue/20 pt-8 mt-12">
+          <h2 class="text-2xl font-heading font-bold mb-6 text-brand-black">More Talks</h2>
+          <div class="space-y-1 mb-12">
+            {% assign today = site.time | date: "%s" %}
+            {% for post in site.categories.talk limit:5 %}
+              {% unless post.url == page.url %}
+              {% assign talk_date_seconds = post.talk_date | date: "%s" %}
+              {% if talk_date_seconds >= today %}
+                {% assign is_upcoming = true %}
+              {% else %}
+                {% assign is_upcoming = false %}
+              {% endif %}
+              <div class="flex flex-col md:flex-row md:items-center gap-2 border-b border-brand-light-blue/10 py-2">
+                <div class="text-sm text-brand-black/60 md:w-32 flex-shrink-0">
+                  {% if is_upcoming %}
+                    Upcoming: {{ post.talk_date | date: "%b %-d" }}
+                  {% else %}
+                    Given on {{ post.talk_date | date: "%b %-d" }}
+                  {% endif %}
+                </div>
+                <div class="flex-1">
+                  <a href="{{ post.url | prepend: site.baseurl }}" class="text-brand-black hover:text-brand-deep-turquoise transition-colors">
+                    {{ post.title }}
+                  </a>
+                </div>
+              </div>
+              {% endunless %}
+            {% endfor %}
+          </div>
+          <a href="{{ site.baseurl }}/talks/" class="inline-flex items-center text-brand-deep-turquoise hover:text-brand-turquoise font-semibold">
+            See all talks →
+          </a>
+        </div>
+      {% endif %}
+    </article>
+
+    <!-- Sidebar column - below article on mobile -->
+    <div class="lg:w-80 flex-shrink-0">
+      {% include related-articles-sidebar.html %}
+    </div>
+  </div>
+</div>
+
+<!-- Sidebar Layout Experiment Script -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  if (typeof posthog !== 'undefined') {
+    posthog.onFeatureFlags(function() {
+      var variant = posthog.getFeatureFlag('sidebar-related-articles');
+
+      if (variant === 'test') {
+        // Show sidebar layout, hide control layout
+        document.getElementById('hero-control').classList.add('hidden');
+        document.getElementById('hero-sidebar').classList.remove('hidden');
+        document.getElementById('layout-control').classList.add('hidden');
+        document.getElementById('layout-sidebar').classList.remove('hidden');
+      }
+
+      // Track that user saw article page (for both variants)
+      posthog.capture('article_page_viewed', {
+        article_title: '{{ page.title | escape }}',
+        article_url: '{{ page.url }}',
+        sidebar_variant: variant || 'control'
+      });
+    });
+
+    // Track clicks on related articles (control variant - bottom)
+    document.querySelectorAll('.related-bottom-link').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        posthog.capture('related_article_clicked', {
+          source: 'bottom',
+          target_title: this.dataset.title,
+          source_url: window.location.pathname,
+          variant: 'control'
+        });
+      });
+    });
+
+    // Track clicks on related articles (test variant - sidebar)
+    document.querySelectorAll('.related-sidebar-link').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        posthog.capture('related_article_clicked', {
+          source: 'sidebar',
+          target_title: this.dataset.title,
+          source_url: window.location.pathname,
+          variant: 'test'
+        });
+      });
+    });
+  }
+});
+</script>
