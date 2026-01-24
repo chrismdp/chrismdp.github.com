@@ -41,6 +41,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Footnotes for additional value**: Use footnotes not just for citations but to provide actionable advice and deeper insights that enhance the main narrative
 - **Footnote spacing**: No space between punctuation and footnote (e.g., `methodology.[^1]` not `methodology. [^1]`). But always include a space between consecutive footnote references (e.g., `[^1] [^2]` not `[^1][^2]`)
 - **Always search for recent articles**: Before writing any blog post, search through recent posts in `_posts/` folder to identify relevant articles to link to implicitly within the content - this improves SEO and provides value to readers
+- **Thanking contributors**: When others contribute insights to an article (from comments, conversations, feedback), add an italicised thanks line at the end of the article before any footnotes. Format: `_Thanks to [Name](LinkedIn URL) and [Name](LinkedIn URL) for their contributions to an earlier version of this article._` Do not attribute specific points inline; instead integrate their insights into the prose and thank them collectively at the end.
 
 ### Chris's Writing Patterns
 - **Provocative titles that deliver**: Prefers counterintuitive headlines that challenge assumptions (e.g., "AI Is Consistently Mediocre. That's Why It's Valuable")

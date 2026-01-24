@@ -12,11 +12,11 @@ categories:
 - agents
 ---
 
-The UK government spent months trialling Microsoft 365 Copilot across thousands of civil servants. Users reported 72% satisfaction but no measurable productivity gains.[^copilot] Is Copilot terrible? Perhaps it is not the product that is the problem. Perhaps it is just in the wrong place.
+Should AI live inside your tools, or sit outside orchestrating them?
 
-AI is house hunting, and it has not settled yet. Meanwhile, coding agents have quietly become the most transformative tools I use daily, handling everything from [complex refactoring](/your-agent-orchestrator-is-too-clever/) to [writing these blog posts](/today-in-claude-code/).
+The UK government spent months trialling Microsoft 365 Copilot across thousands of civil servants. Users reported 72% satisfaction but no measurable productivity gains.[^copilot] Meanwhile, coding agents have quietly become the most transformative tools I use daily, handling everything from [complex refactoring](/your-agent-orchestrator-is-too-clever/) to [writing these blog posts](/today-in-claude-code/).
 
-These two experiences point to fundamentally different places where AI might settle. One embeds intelligence inside existing applications. The other places AI outside applications, orchestrating them from above. But the orchestrating approach is evolving in ways that blur this distinction, and the answer to which wins is not obvious.
+These two experiences point to fundamentally different answers. One embeds intelligence inside existing applications. The other places AI outside applications, orchestrating them from above. AI is house hunting, and it has not settled yet.
 
 <!--more-->
 
@@ -26,7 +26,13 @@ The first approach embeds AI inside existing products as features: autocomplete 
 
 But the UK government trial found that users loved Copilot yet it did not make them measurably more productive. Copilot excelled at mundane tasks like meeting summaries and drafting emails but struggled with complex work. Excel analysis was lower quality. PowerPoint presentations were faster to produce but required more correction afterwards.
 
-This pattern keeps repeating. Embedded AI works brilliantly for routine tasks where [consistent mediocrity is valuable](/ai-is-consistently-mediocre/). AI maintains the same error rate whether processing its first task or its thousandth, and for meeting notes and email drafts that consistency is a feature. For complex analysis, it becomes a problem. Embedded AI only sees what the host application shows it. Your email assistant does not know about your calendar conflicts or the conversation you had in Slack yesterday. Each feature is an island, optimised for a narrow slice of your work. The more your work requires coordinating information across applications, the less embedded AI can help.
+[Ethan Mollick recently pointed out](https://www.linkedin.com/posts/emollick_claude-in-excel-is-really-impressive-so-activity-7420659769209765888-JbyB){:target="_blank"} a telling example: Claude in Excel consistently beats Microsoft's own Excel Copilot. The reason is architectural. Microsoft's agent stays bound to Excel functions like VLOOKUPs. Claude does its own analysis in Python and uses Excel just as a user interface for input and output. As Mollick put it: "The difference between the software being the point (Microsoft's perspective) and the output being the point (Anthropic's perspective)."
+
+Microsoft is not standing still. Copilot is moving towards specialised agents per context with the ability to access data from anywhere in M365, becoming a platform where you can tag different agents into a conversation. But access requires organised data, and most organisations have never had a reason to get their information in order. Claude Code works well for coding precisely because it has access to the whole project including git history. The context is already there.
+
+There is a useful distinction here: Copilot is actually good at pulling in context from Teams conversations, emails, meetings and documents. That is its strength. The problem is taking action. It retrieves knowledge but does not coordinate action between applications. Even if there was a Copilot equivalent of Claude Code, productivity gains might not materialise because managers do not yet know how to restructure workflows around AI. Organisations often switch off features like Agentbuilder simply because it is called "agent," when really it is just a custom GPT.
+
+Embedded AI works brilliantly for routine tasks where [consistent mediocrity is valuable](/ai-is-consistently-mediocre/). AI maintains the same error rate whether processing its first task or its thousandth, and for meeting notes and email drafts that consistency is a feature. For complex analysis, it becomes a problem. Embedded AI only sees what the host application shows it. Your email assistant does not know about your calendar conflicts or the conversation you had in Slack yesterday. Each feature is an island, optimised for a narrow slice of your work. The more your work requires coordinating information across applications, the less embedded AI can help.
 
 The second approach reverses the relationship. Orchestrating AI sits outside applications and controls them. Claude Code manipulates your filesystem, runs tests, checks the build, and iterates until things work. The Model Context Protocol lets agents operate multiple tools through a standard interface. [Browser automation](/who-wants-a-browser/) navigates websites on your behalf.
 
@@ -38,7 +44,7 @@ But orchestrating agents have their own limitations. Security is a constant conc
 
 The orchestrating approach is not standing still. Claude Code started as an orchestrator but is evolving into something more flexible: an agent that can embed itself anywhere whilst retaining its orchestrating power.
 
-Consider what happens when you embed Claude Code inside another application. It brings its full context and capabilities with it. Unlike a simple embedded feature, it can still reach out to other tools through MCP servers, still coordinate across systems, still see the broader picture. The lodger has the landlord's keys.
+Consider what happens when you embed Claude Code inside another application. It brings its full context and capabilities with it. Unlike a simple embedded feature, it can still reach out to other tools through MCP servers, still coordinate across systems, still see the broader picture. This idea defies a housing metaphor: the AI lives in every house in the village, but also owns the land.
 
 Orchestrating agents can also call themselves. [Ralph loops](/your-agent-orchestrator-is-too-clever/) demonstrate this: a bash for loop feeding the same prompt to an agent repeatedly, letting it see its previous work and iterate until done. The agent becomes both the orchestrator and a sub-component of its own workflow. This recursive capability means the boundaries between embedded and orchestrating are dissolving.
 
@@ -60,11 +66,15 @@ Two years from now, most companies will likely have both: a veneer of expected A
 
 For senior leaders [making AI investment decisions](/webinar-how-not-to-screw-up-your-ai-rollout/): do not expect embedded AI features to transform productivity. The UK government data shows that user satisfaction does not equal business impact. If your AI strategy is "add Copilot to everything," recalibrate expectations. The real gains come from orchestrating agents with full context, but those require behaviour change and integration investment. Start evaluating where your teams could benefit from agents that coordinate across systems rather than features that enhance single applications.
 
-## An Open Question
+## Orchestrating Wins
 
-I do not know which approach wins. Embedded AI might improve enough that the context problem dissolves. Orchestrating agents might become easy enough that everyone uses them. The distinction between the two might disappear entirely as orchestrators learn to embed themselves anywhere.
+I think orchestrating AI wins. The tools I reach for most are agents that see my whole context and coordinate across boundaries. The productivity gains that the UK government could not find in Copilot, I find every day in Claude Code. The difference is stark enough that I am willing to call it.
 
-The tools I reach for most are agents that see my whole context and coordinate across boundaries. The productivity gains that the UK government could not find in Copilot, I find every day in Claude Code. Whether AI should live inside your applications, outside controlling them, or move fluidly between both, remains the question everyone building or using AI products needs to answer.
+The icing on the cake is hybrid mode: orchestrating agents that can embed themselves anywhere whilst retaining full context. Claude Code already does this. It can drop into any application, bring its capabilities with it, and still reach out to other tools. This is where AI will settle: not inside your tools, not just outside them, but moving fluidly between both whilst maintaining the broader view that makes it useful.
+
+There is a Star Wars analogy here. Embedded AI might end up being called "the Computer," personified rather like the scene in The Empire Strikes Back where R2-D2 discovers the hyperdrive has been sabotaged. C-3PO asks how he knows, and R2 indicates that Cloud City's central computer told him. "R2-D2, you know better than to trust a strange computer!" Intelligence is there, but it is located and embedded within the system. Orchestrating AI is more like the droid itself: R2-D2 operates independently, manipulates things, and is often our primary interface with technology. Both have their place, but the droids are more generally useful, and the future might be more Star Wars than we think.
+
+_Thanks to Owen Morris and Eleanor Brown for their contributions to an earlier version of this article._
 
 [^copilot]: The criticism is mounting. TechRadar declared it ["time to admit that Microsoft Copilot was a mistake"](https://www.techradar.com/computing/windows/almost-3-years-later-its-time-to-admit-that-microsoft-copilot-was-a-mistake){:target="_blank"} in December 2025, and Microsoft's CEO reportedly [admitted Copilot integrations "don't really work"](https://ppc.land/microsoft-ceo-admits-copilot-integrations-dont-really-work-as-adoption-falters/){:target="_blank"} as enterprise adoption stalled.
 
