@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How To Use Claude Code Skills"
-date: 2026-01-25 09:00:00 +0000
+date: 2026-01-25 08:00 +0000
 series: "Where AI Lives"
 categories:
 - ai
