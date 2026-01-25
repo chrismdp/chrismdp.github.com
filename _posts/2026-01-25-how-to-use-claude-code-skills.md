@@ -29,11 +29,13 @@ The power is in the loading. Skills only take up context when they are active, s
 
 ## Start Simple
 
-The best way to understand skills is to create one, and the best first skill is capturing your tone of voice for writing. Do not start with something complex like a multi-step workflow or an agent that coordinates external APIs. Start with something you can verify immediately: does the output sound like me or not?
+The best way to understand skills is to get started. Do not begin with something complex like a multi-step workflow or an agent that coordinates external APIs. Start with something you can verify immediately: your tone of voice for writing. Does the output sound like me or not?
 
-Think about what you find yourself repeating when you write. Maybe you always want British English spelling, or you prefer short paragraphs, or you have a list of phrases you never want to see. Write these preferences down in a markdown file, give it a clear description that tells Claude when to load it, and you have your first skill. That single skill will teach you more about the concept than any tutorial, because you will see immediately whether Claude follows your instructions and how to refine them when it does not.
+Think about what you find yourself repeating when you write. Maybe you always want British English spelling, or you prefer short paragraphs, or you have a list of phrases you never want to see. Write these preferences down in a `SKILL.md` file, give it a clear description that tells Claude when to load it, and save it in `~/.claude/skills/`. That single skill will teach you more about the concept than any tutorial, because you will see immediately whether Claude follows your instructions and how to refine them when it does not.
 
-The skill itself is just a text file with no magic syntax or special commands. It is instructions written for another entity that happens to be very good at following instructions, and the quality of your output depends entirely on how clearly you articulate what you want.
+You do not need to write skills entirely from scratch. Claude Code can help you create them. Try asking it to "write a skill that extracts my writing style from this article" and paste in a URL or some example text. Ask it to ask you clarifying questions as it goes. This approach is particularly useful for capturing preferences you find hard to articulate: Claude will prompt you for specifics and turn your answers into clear instructions.
+
+Use your first skill for a few days and notice what is missing, what is wrong, and what could be better. Refine it based on what you learn, commit your changes, and keep iterating. The skill itself is just a text file with no magic syntax or special commands. It is instructions written for another entity that happens to be very good at following instructions, and the quality of your output depends entirely on how clearly you articulate what you want.
 
 ## Separate Your Concerns
 
@@ -97,10 +99,4 @@ When you give Claude Code the same context repeatedly, explain the same preferen
 
 ## Getting Started
 
-Create your first skill this week by picking something simple like your tone of voice, your formatting preferences, or a checklist you always follow. Write it down in a `SKILL.md` file, give it a clear description that tells Claude when to load it, and save it in `~/.claude/skills/` so it is available across all your projects.
-
-You do not need to write skills entirely from scratch. Claude Code can help you create them. Try asking it to "write a skill that extracts my writing style from this article" and paste in a URL or some example text. Ask it to ask you clarifying questions as it goes. This approach is particularly useful for capturing preferences you find hard to articulate: Claude will prompt you for specifics and turn your answers into clear instructions.
-
-Use the skill for a few days and notice what is missing, what is wrong, and what could be better. Refine it based on what you learn, commit your changes, and keep iterating. That refinement is the start of building a system that grows with you, where each improvement makes Claude more useful for your specific workflow.
-
-The best skills are simple ones you use every day that save you time on repetitive tasks. Skills let you teach an AI your patterns through carefully crafted instructions rather than through training data, and that teaching compounds over time as your skill library grows.
+Create your first skill this week. Pick something simple, write it down, and use it until you know what to improve. That refinement is the start of building a system that grows with you, where each improvement makes Claude more useful for your specific workflow. The best skills are simple ones you use every day, and the teaching compounds over time as your library grows.
