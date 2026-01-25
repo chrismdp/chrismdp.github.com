@@ -99,6 +99,8 @@ When you give Claude Code the same context repeatedly, explain the same preferen
 
 Create your first skill this week by picking something simple like your tone of voice, your formatting preferences, or a checklist you always follow. Write it down in a `SKILL.md` file, give it a clear description that tells Claude when to load it, and save it in `~/.claude/skills/` so it is available across all your projects.
 
+You do not need to write skills entirely from scratch. Claude Code can help you create them. Try asking it to "write a skill that extracts my writing style from this article" and paste in a URL or some example text. Ask it to ask you clarifying questions as it goes. This approach is particularly useful for capturing preferences you find hard to articulate: Claude will prompt you for specifics and turn your answers into clear instructions.
+
 Use the skill for a few days and notice what is missing, what is wrong, and what could be better. Refine it based on what you learn, commit your changes, and keep iterating. That refinement is the start of building a system that grows with you, where each improvement makes Claude more useful for your specific workflow.
 
 The best skills are simple ones you use every day that save you time on repetitive tasks. Skills let you teach an AI your patterns through carefully crafted instructions rather than through training data, and that teaching compounds over time as your skill library grows.
