@@ -215,7 +215,6 @@ EVERYTHING ELSE HERE
 
 **Blog Post Writing Process:**
 - Start with strong hook and clear statement of main argument
-- Use 1-3-1 sentence pattern (1-2 summary sentences in own paragraph, 3 explanatory sentences in new paragraph, 1-2 summary/transition in new paragraph)
 - Include `<!--more-->` break after introduction
 - End with concrete takeaways or next steps
 - Aim for 1500+ words for long-form pieces
@@ -230,6 +229,7 @@ EVERYTHING ELSE HERE
 **Image Placement:**
 - **Main image = motif**: When creating infographics, extract the main visual motif and use it as `image:` in front matter. This is the hero image shown at top of post.
 - **Infographics via front matter**: Add `infographic: /assets/img/filename.jpg` to front matter. The layout automatically renders the full infographic at 50% width at the end of content.
+- **Blog infographics are low-res**: Resize infographics to ~512px max dimension for blog assets (use `sips -Z 512`). Full resolution goes to Newsletter Vault only.
 - Screenshots and diagrams in content use full width or appropriate sizing
 - Always save images as JPG (not PNG) for smaller file sizes
 
