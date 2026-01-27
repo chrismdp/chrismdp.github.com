@@ -49,6 +49,8 @@ Once you decide to delegate, the next question is how hands-on to be. Shreyas Do
 
 Two questions determine your delegation level. How much does outcome quality matter? A draft email to a colleague has different stakes than a client proposal. And how capable is AI at this task? Some tasks AI handles well today, others require significant human judgment. This changes as models improve, so revisit your assumptions regularly.
 
+<img src="/assets/img/delegation-levels-table.jpg" alt="Choosing Your Delegation Level for AI - table showing five levels from Fire and Forget to Human-Led with AI Boost" class="float-right w-1/2 ml-4 mb-4 rounded-lg" />
+
 These two factors create a spectrum of involvement:
 
 **Fire and forget.** Low stakes, AI is capable. You set it up once and let it run. Email triage rules, calendar scheduling, routine data formatting. Check occasionally to make sure nothing has drifted.
