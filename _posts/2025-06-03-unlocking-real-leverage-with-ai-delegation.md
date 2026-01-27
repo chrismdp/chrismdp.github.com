@@ -1,12 +1,13 @@
 ---
 layout: post
 title: "Unlocking Real Leverage with AI Delegation"
-date: 2025-06-03 09:00:00 +0000
+date: 2026-01-27 09:00:00 +0000
 categories:
 - ai
 - engineering
 - automation
 image: /assets/img/replace-work-ai-infographic.jpg
+image_portrait: true
 infographic: /assets/img/replace-work-ai-infographic.jpg
 ---
 
@@ -20,62 +21,102 @@ This is how I do it.
 
 ## Why AI Delegation Feels Awkward
 
+I used to just code. Then I managed teams. Now I find myself needing management skills again, even when I am not managing people.
+
 The first time I tried delegating to an AI agent, it felt exactly like onboarding a new team member. I was not sure what to hand over or how to check the work. The results were messy and there was a lot of copy/pasting. It took a lot longer than doing it myself.
+
+AI agents are not people to manage and they are not programs to command. They are something new entirely, and that requires a new mental model. I wrote previously about [how engineering managers are often well-suited for AI work](/webinar-how-not-to-screw-up-your-ai-rollout/) because they already think in terms of delegation and non-determinism. But even they have to unlearn old habits.
 
 Delegation is always awkward at the start, whether you are working with people or machines. The learning curve is part of the process, and the discomfort is a sign you are moving forward.
 
-Five principles for getting started:
+## Chat vs Agents
 
-### Start Small
-Begin with a simple, concrete task. Even if it feels trivial, this gives you a clear baseline. The first attempt will be clumsy - that is normal. Each iteration helps you refine your instructions and identify potential issues.
+Before going further, a distinction matters here. Chat interfaces like ChatGPT or Claude.ai are for quick questions. Agents have agency: they can plan, execute, and adapt.
 
-### Expect to Iterate
-The journey to effective AI delegation is not linear. Each round improves your ability to specify requirements and spot problems. Do not expect perfection on the first try. Instead, focus on learning from each attempt.
+Agents work with multi-file context, multi-step reasoning, and persistent context across sessions. Chat just responds to what you type. The shift is from "AI assistant" to "AI thought partner." For delegation to work, [you need the repository approach, not chatbots](/writing-and-thinking-with-ai-why-repositories-beat-chatbots/).
 
-### Use Human Delegation Frameworks
-Apply the same frameworks you use for human delegation. The VSEM framework helps separate vision, strategy, and execution. A GTD approach breaks work into manageable chunks. I wrote more about how to apply these delegation frameworks in AI coding in [this post](/livestream-23rd-may-2025-complex-change/).
+Tools like Claude Code and Cursor are platforms, not just interfaces. Through MCP (Model Context Protocol) and tool chaining, you can build an extensible delegation infrastructure. Your CLAUDE.md file becomes a training document for your AI staff. You are not just delegating individual tasks anymore. You are building a system that compounds.
 
-### Treat it Like Hiring Contractors
-Approach AI delegation like hiring contractors: experiment quickly and move on if something is not working. Do not get stuck trying to make a suboptimal approach work. The goal is to find what works for you.
+I have written more about [how to use Claude Code skills](/how-to-use-claude-code-skills/) to encode your work patterns into reusable prompts. This turns one-off delegation into repeatable systems.
 
-### Embrace the Mess
+## When and How to Delegate
 
-The path to effective AI delegation is not smooth. It is fiddly and sometimes frustrating. But every experiment brings you closer to real leverage. The mess is part of the process - embrace it and keep moving forward.
+Not every task should go to AI. [AI reaches consistency quickly through prompting, but competence slowly through model improvements](/ai-is-consistently-mediocre/). Humans reach competence quickly but consistency slowly.
+
+Deploy AI where uniform mediocrity beats variable excellence: expense categorisation, first-pass code reviews, interview scoring against rubrics. These are tasks where consistency matters more than occasional brilliance, and where human variability causes problems. This reframes the "80% as well as you" concern. It is a strategic advantage, not a compromise.
+
+Once you decide to delegate, the next question is how hands-on to be. Shreyas Doshi's radical delegation framework offers a useful lens: consider both the stakes of the outcome and the capability of the person (or in our case, the AI) handling it.[^1]
+
+Two questions determine your delegation level. How much does outcome quality matter? A draft email to a colleague has different stakes than a client proposal. And how capable is AI at this task? Some tasks AI handles well today, others require significant human judgment. This changes as models improve, so revisit your assumptions regularly.
+
+These two factors create a spectrum of involvement:
+
+**Fire and forget.** Low stakes, AI is capable. You set it up once and let it run. Email triage rules, calendar scheduling, routine data formatting. Check occasionally to make sure nothing has drifted.
+
+**Spot check.** Medium stakes, AI is mostly capable. You review outputs periodically but do not approve each one. Internal summaries, first-draft documentation, research compilation.
+
+**Approve before action.** Higher stakes or lower AI capability. AI drafts, you review and approve before anything goes out. Client communications, code merges, published content.
+
+**Collaborative.** High stakes, complex judgment required. You work together in real-time, AI assists your thinking rather than replacing it. Strategy documents, architectural decisions, sensitive communications.
+
+**Human-led with AI boost.** Critical outcomes, novel situations, high judgment. You lead the work entirely, AI helps with research, drafting, or analysis. Contract negotiations, hiring decisions, crisis response.
+
+One factor people forget: [AI can be phished](/webinar-stop-ai-stealing-from-you/#the-lethal-trifecta). Prompt injection attacks can manipulate agents into leaking data or taking unintended actions. The more autonomous the delegation level, the more you need guardrails and monitoring in place.
+
+Where you draw the line depends on task-relevant maturity. As AI improves at a task (or as you build better prompts and guardrails), you can move down the spectrum. What starts as "approve before action" might become "spot check" after a few months of reliable performance.
 
 ## How to Delegate a Workflow
 
-### Start with a Fixed Task
+The flowchart above walks through my decision process for whether to automate a task at all. Once you have decided to delegate, here is how to actually do it.
 
-Begin with something entirely fixed, without AI, to get used to the tools you have available.
+### Pick Something That Fits
 
-For example, I use n8n to automate a Kit tag addition that creates a Google Calendar entry for [my webinars](/webinar). It was fiddly to create, but it helped me learn how the workflow tool worked.
+Find a task that passes the flowchart test: takes meaningful time, drains your energy or you hate doing it, and would not require endless tweaking to get right. Start there.
 
-If you are more technical, try using n8n. If you are not, Zapier is a great place to start. There are plenty more [tools out there](/ai-tools-list/) if you need more options.
+The bitter lesson applies here: try the simplest approach first. What once required elaborate automation pipelines in n8n or Zapier now often works with a simple prompt and a CLAUDE.md file that knows your preferences. Ask Claude Code to do it directly before reaching for workflow tools.
 
-### Look for Decision Points
+### Find the Decision Point
 
-Once you are comfortable with the tools, look for decision points in your workflow where you would not normally give the job to a computer. Try and find a really simple decision that you make all the time.
+Look for the moment in the task where judgment happens. Where you would not normally give the job to a computer. Try to find a really simple decision that you make all the time.
 
-If you are not sure what an AI might be able to do, ask an AI agent to brainstorm where an agent could help within your workflow. This kind of meta-thinking about strategy is a really important skill to develop in the age of AI.
+If you are not sure what an AI might be able to do, ask an AI agent to brainstorm where an agent could help within your workflow. This kind of meta-thinking about strategy is a really important skill to develop.
 
-### Automate One Thing
+### Automate and Iterate
 
-Pick a small decision to automate. Set up the automation in your chosen tool. Add an AI agent to handle the decision point. Test, iterate, and refine.
+Pick that decision point and automate it. Test, iterate, and refine.
 
-Each experiment will teach you something new about the tool and what AI can do, slowly increasing your leverage over time.
+Each experiment will teach you something new about what AI can do, slowly increasing your leverage over time. If something does not work, revisit when a new model comes out. The tech is moving so fast that what did not work three months ago might just work now.
 
-If something doesn't work, revisit when a new model comes out. Those who will be at the forefront of this will be the ones who are willing to go back and push the boundaries again, and experiment and learn. The tech is moving so fast that what didn't work three months ago might just work now, unlocking big productivity gains.
+### Real Examples
 
-### An Example
+I started with email triage. Imagine you receive inbound emails asking for advice. You probably already automate parts of this process using rules, marking particular emails as important based on who they are from. Try first to move this process to a workflow tool.
 
-An example. Imagine you receive inbound emails asking for advice. You probably already automate parts of this process, using rules, by marking particular emails as important based on who they are from. Try first to move this process to a workflow tool. (Note: this could get expensive if you get a lot of email, so perhaps do the first pass of filtering via your existing email rules, such as emails not directly addressed to you.)
+Once that is done, how do you process the rest? Normally, you might read each one and decide: should you reply personally, refer the person to a resource, or have AI draft a first response? Set up a workflow where AI reviews the email and drafts a reply for you to approve, or marks the email as important for your attention. You can start by automating the triage step, then gradually hand over more of the process as you gain confidence.
 
-Once that's done, how do you process the rest? Normally, you might read each one and decide: should you reply personally, refer the person to a resource, or have AI draft a first response?
+But that was just the beginning. I now run workflows for meeting scheduling from Slack, natural language analytics queries against BigQuery, Slack summarisation to docs, daily check-outs that pull from Linear and GitHub, and pre-meeting briefings from CRM data. Each one started as a single decision point, and each one now runs without my involvement.
 
-This is a perfect decision point to automate. Set up a workflow where AI reviews the email and drafts a reply for you to approve, or marks the email as important for your attention. You can start by automating the triage step, then gradually hand over more of the process as you gain confidence.
+## Surviving the 80% Trap
 
-## The Payoff and Next Steps
+Most people hit 70-80% quality on their first delegation attempt, realise that is not good enough, and have to reverse-engineer everything to start over. This is the process, not failure. The 80% trap catches almost everyone. Knowing it is coming makes it easier to push through.
 
-Delegating is always awkward. It could be the job is done only 80% as well as if you did it. But if we learn to delegate and let go of our perfectionism, real leverage opens us for us. The beauty of the AI age is that this leverage is beginning to be available to all, not just high performing leaders. We need to learn the skills they use to delegate to realise the same benefits.
+The journey to effective AI delegation is not linear. Each round improves your ability to specify requirements and spot problems. Big Design Up Front does not work here. You cannot write a detailed spec and parallelise the work like a traditional software project. Instead, start from use cases and pull through functionality. Let the agent reveal what is needed through iteration.
 
-The awkwardness is a sign you are learning and making progress. Every experiment brings you closer to the kind of leverage that transforms your workflow. You do not need a perfect system; you just need to start. Share your experiences, keep experimenting, and watch as the payoff grows.
+Approach AI delegation like hiring contractors: experiment quickly and move on if something is not working. Do not get stuck trying to make a suboptimal approach work. The goal is to find what works for you.
+
+The path to effective AI delegation is not smooth. It is fiddly and sometimes frustrating. But every experiment brings you closer to real leverage. The mess is part of the process.
+
+## Build Infrastructure, Not Tasks
+
+The contractor metaphor has limits. You are building a delegation system, not just hiring a contractor.
+
+Your CLAUDE.md file and your [skills](/how-to-use-claude-code-skills/) are your operations manual for the AI team. They encode how you work, what you expect, and how decisions should be made. Every time you refine them, you are training your infrastructure to work better without you. Share them with others. Unlike tribal knowledge locked in someone's head, these are portable, forkable, improvable. I have written about [how simple orchestration patterns beat clever engineering](/your-agent-orchestrator-is-too-clever/). A bash loop calling an agent repeatedly outperforms elaborate multi-agent architectures.
+
+One pattern I am exploring: using task managers like Reclaim as a queue, with Claude Code as the executor. When you start a Reclaim task, the agent spins up with context. You are not delegating individual tasks anymore. You are delegating your task system.
+
+## The Payoff
+
+Delegating is always awkward. The job might be done only 80% as well as if you did it. But 80% done consistently, at scale, beats 100% done occasionally by a burned-out human. If we learn to delegate and let go of our perfectionism, real leverage opens up for us. The beauty of the AI age is that this leverage is beginning to be available to all, not just high-performing leaders. We need to learn the skills they use to realise the same benefits.
+
+The awkwardness is a sign you are learning and making progress. Every experiment brings you closer to the kind of leverage that transforms your workflow. You do not need a perfect system. You just need to start.
+
+[^1]: Shreyas Doshi's radical delegation framework considers both impact to the business and the person's confidence level to determine how hands-on a leader should be. The higher the stakes and lower the confidence, the more closely you need to be involved. See his [original thread](https://x.com/shreyas/status/1401598910792011776){:target="_blank"} for more.
