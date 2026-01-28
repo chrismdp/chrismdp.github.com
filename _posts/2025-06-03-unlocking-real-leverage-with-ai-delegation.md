@@ -11,23 +11,15 @@ image_portrait: true
 infographic: /assets/img/replace-work-ai-infographic.jpg
 ---
 
-Starting to delegate to AI feels awkward. It is a lot like hiring your first contractor: you know there is leverage on the other side, but the first steps are messy and uncertain. The myth of the perfect plan holds many people back, but the reality is you just need to begin.
+I used to just code. Then I managed teams. Now I find myself needing management skills again, even when I am not managing people.
 
-The payoff is real, but the start is always a little rough.
-
-This is how I do it.
+The first time I tried delegating to an AI agent, it felt exactly like onboarding a new team member. I was not sure what to hand over or how to check the work. It took a lot longer than doing it myself. But there is real leverage on the other side. This is how I found it.
 
 <!--more-->
 
-## Why AI Delegation Feels Awkward
-
-I used to just code. Then I managed teams. Now I find myself needing management skills again, even when I am not managing people.
-
-The first time I tried delegating to an AI agent, it felt exactly like onboarding a new team member. I was not sure what to hand over or how to check the work. The results were messy and there was a lot of copy/pasting. It took a lot longer than doing it myself.
+## A New Mental Model
 
 AI agents are not people to manage and they are not programs to command. They are something new entirely, and that requires a new mental model. I wrote previously about [how engineering managers are often well-suited for AI work](/webinar-how-not-to-screw-up-your-ai-rollout/) because they already think in terms of delegation and non-determinism. But even they have to unlearn old habits.
-
-Delegation is always awkward at the start, whether you are working with people or machines. The learning curve is part of the process, and the discomfort is a sign you are moving forward.
 
 ## Chat vs Agents
 
@@ -35,7 +27,7 @@ Before going further, a distinction matters here. Chat interfaces like ChatGPT o
 
 Agents work with multi-file context, multi-step reasoning, and persistent context across sessions. Chat just responds to what you type. The shift is from "AI assistant" to "AI thought partner." For delegation to work, [you need the repository approach, not chatbots](/writing-and-thinking-with-ai-why-repositories-beat-chatbots/).
 
-Tools like Claude Code and Cursor are platforms, not just interfaces. Through MCP (Model Context Protocol) and tool chaining, you can build an extensible delegation infrastructure. Your CLAUDE.md file becomes a training document for your AI staff. You are not just delegating individual tasks anymore. You are building a system that compounds.
+Tools like Claude Code and Cursor are platforms, not just interfaces. Through MCP (Model Context Protocol) and tool chaining, you can build an extensible delegation infrastructure. Your CLAUDE.md file becomes a training document for your AI staff. You are building a system that compounds, not just delegating individual tasks.
 
 I have written more about [how to use Claude Code skills](/how-to-use-claude-code-skills/) to encode your work patterns into reusable prompts. This turns one-off delegation into repeatable systems.
 
@@ -115,7 +107,7 @@ The contractor metaphor has limits. You are building a delegation system, not ju
 
 Your CLAUDE.md file and your [skills](/how-to-use-claude-code-skills/) are your operations manual for the AI team. They encode how you work, what you expect, and how decisions should be made. Every time you refine them, you are training your infrastructure to work better without you. Share them with others. Unlike tribal knowledge locked in someone's head, these are portable, forkable, improvable. I have written about [how simple orchestration patterns beat clever engineering](/your-agent-orchestrator-is-too-clever/). A bash loop calling an agent repeatedly outperforms elaborate multi-agent architectures.
 
-One pattern I am exploring: using task managers like Reclaim as a queue, with Claude Code as the executor. When you start a Reclaim task, the agent spins up with context. You are not delegating individual tasks anymore. You are delegating your task system.
+One pattern I am exploring: using task managers like Reclaim as a queue, with Claude Code as the executor. When you start a Reclaim task, the agent spins up with context. You are delegating your task system, not individual tasks.
 
 ## The Payoff
 
