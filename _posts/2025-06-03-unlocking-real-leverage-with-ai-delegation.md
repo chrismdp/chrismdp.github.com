@@ -65,6 +65,8 @@ These two factors create a spectrum of involvement:
 
 One factor people forget: [AI can be phished](/webinar-stop-ai-stealing-from-you/#the-lethal-trifecta). Prompt injection attacks can manipulate agents into leaking data or taking unintended actions. The more autonomous the delegation level, the more you need guardrails and monitoring in place.
 
+This matters more as always-on agents become common. Anthropic recently launched Clawdbot (since renamed Moltbot) which can work autonomously on tasks over hours or days. When AI can act without you in the loop, being intentional about what you delegate becomes critical. Choose your delegation level deliberately, not by default.
+
 Where you draw the line depends on task-relevant maturity. As AI improves at a task (or as you build better prompts and guardrails), you can move down the spectrum. What starts as "approve before action" might become "spot check" after a few months of reliable performance.
 
 ## How to Delegate a Workflow
@@ -117,8 +119,8 @@ One pattern I am exploring: using task managers like Reclaim as a queue, with Cl
 
 ## The Payoff
 
-Delegating is always awkward. The job might be done only 80% as well as if you did it. But 80% done consistently, at scale, beats 100% done occasionally by a burned-out human. If we learn to delegate and let go of our perfectionism, real leverage opens up for us. The beauty of the AI age is that this leverage is beginning to be available to all, not just high-performing leaders. We need to learn the skills they use to realise the same benefits.
+The awkwardness is a sign you are learning and making progress. If we learn to delegate and let go of our perfectionism, real leverage opens up for us. The beauty of the AI age is that this leverage is beginning to be available to all, not just high-performing leaders. We need to learn the skills they use to realise the same benefits.
 
-The awkwardness is a sign you are learning and making progress. Every experiment brings you closer to the kind of leverage that transforms your workflow. You do not need a perfect system. You just need to start.
+Every experiment brings you closer to the kind of leverage that transforms your workflow. You do not need a perfect system. You just need to start.
 
 [^1]: Shreyas Doshi's radical delegation framework considers both impact to the business and the person's confidence level to determine how hands-on a leader should be. The higher the stakes and lower the confidence, the more closely you need to be involved. See his [original thread](https://x.com/shreyas/status/1401598910792011776){:target="_blank"} for more.
