@@ -89,7 +89,7 @@ I started with email triage. Imagine you receive inbound emails asking for advic
 
 Once that is done, how do you process the rest? Normally, you might read each one and decide: should you reply personally, refer the person to a resource, or have AI draft a first response? Set up a workflow where AI reviews the email and drafts a reply for you to approve, or marks the email as important for your attention. You can start by automating the triage step, then gradually hand over more of the process as you gain confidence.
 
-But that was just the beginning. I now run workflows for meeting scheduling from Slack, natural language analytics queries against BigQuery, Slack summarisation to docs, daily check-outs that pull from Linear and GitHub, and pre-meeting briefings from CRM data. Each one started as a single decision point, and each one now runs without my involvement.
+But that was just the beginning. I now have Claude Code skills that handle my daily workflow: processing my inbox of captured thoughts into proper notes and tasks, generating end-of-day summaries with timeline visualisations, creating blog posts with infographics, managing webinar content. Each one started as a single decision point I kept making manually. Now I invoke a skill and the decision is handled.
 
 ## Surviving the 80% Trap
 
