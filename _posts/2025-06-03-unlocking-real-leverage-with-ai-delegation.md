@@ -33,6 +33,8 @@ I have written more about [how to use Claude Code skills](/how-to-use-claude-cod
 
 ## When and How to Delegate
 
+<img src="/assets/img/delegation-levels-table.jpg" alt="Choosing Your Delegation Level for AI - table showing five levels from Fire and Forget to Human-Led with AI Boost" class="float-right w-1/2 ml-4 mb-4 rounded-lg" />
+
 Not every task should go to AI. [AI reaches consistency quickly through prompting, but competence slowly through model improvements](/ai-is-consistently-mediocre/). Humans reach competence quickly but consistency slowly.
 
 Deploy AI where uniform mediocrity beats variable excellence: expense categorisation, first-pass code reviews, interview scoring against rubrics. These are tasks where consistency matters more than occasional brilliance, and where human variability causes problems. This reframes the "80% as well as you" concern. It is a strategic advantage, not a compromise.
@@ -40,8 +42,6 @@ Deploy AI where uniform mediocrity beats variable excellence: expense categorisa
 Once you decide to delegate, the next question is how hands-on to be. Shreyas Doshi's radical delegation framework offers a useful lens: consider both the stakes of the outcome and the capability of the person (or in our case, the AI) handling it.[^1]
 
 Two questions determine your delegation level. How much does outcome quality matter? A draft email to a colleague has different stakes than a client proposal. And how capable is AI at this task? Some tasks AI handles well today, others require significant human judgment. This changes as models improve, so revisit your assumptions regularly.
-
-<img src="/assets/img/delegation-levels-table.jpg" alt="Choosing Your Delegation Level for AI - table showing five levels from Fire and Forget to Human-Led with AI Boost" class="float-right w-1/2 ml-4 mb-4 rounded-lg" />
 
 These two factors create a spectrum of involvement:
 
@@ -57,7 +57,11 @@ These two factors create a spectrum of involvement:
 
 One factor people forget: [AI can be phished](/webinar-stop-ai-stealing-from-you/#the-lethal-trifecta). Prompt injection attacks can manipulate agents into leaking data or taking unintended actions. The more autonomous the delegation level, the more you need guardrails and monitoring in place.
 
-This matters more as always-on agents become common. Anthropic recently launched Clawdbot (since renamed Moltbot) which can work autonomously on tasks over hours or days. When AI can act without you in the loop, being intentional about what you delegate becomes critical. Choose your delegation level deliberately, not by default.
+### Be Careful
+
+<img src="/assets/img/clawdbot-effect-comic.jpg" alt="The Clawdbot Effect - comic showing CEO firing EA for 80% accuracy on Monday, then installing Clawdbot at 3am Tuesday" class="float-right w-1/2 ml-4 mb-4 rounded-lg" />
+
+This matters more as always-on agents become common. Anthropic recently launched Clawdbot (since renamed Moltbot) which can work autonomously on tasks over hours or days. The temptation is obvious: fire the assistant who keeps getting things 80% right and install Clawdbot to save money. But if you would not trust a human with a task unsupervised, you should not trust an AI with it either. The same delegation principles apply. When AI can act without you in the loop, being intentional about what you delegate becomes critical. Choose your delegation level deliberately, not by default.
 
 Where you draw the line depends on task-relevant maturity. As AI improves at a task (or as you build better prompts and guardrails), you can move down the spectrum. What starts as "approve before action" might become "spot check" after a few months of reliable performance.
 
