@@ -2,6 +2,7 @@
 layout: post
 title: "My Week with Clawdbot"
 date: 2026-01-30 09:00:00 +0000
+series: "Where AI Lives"
 categories:
 - ai
 - engineering
