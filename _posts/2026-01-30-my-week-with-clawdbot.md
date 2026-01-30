@@ -17,7 +17,7 @@ You have probably heard about Clawdbot/Moltbot.[^1] YouTube [is full of videos](
 
 I have been using [Claude Code](/how-to-use-claude-code-skills/) for everything: running my daily life, morning routines, content creation. But there are a couple of gaps. It does not automatically learn from our interactions, which Moltbot is supposed to do. And it is tied to my desktop, which I do not love.
 
-It sounded too good to be true. So I gave it a week to try it out..
+It sounded too good to be true. So I gave it a week to try it out.
 
 <!--more-->
 
