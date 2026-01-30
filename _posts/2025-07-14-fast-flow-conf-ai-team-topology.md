@@ -1,7 +1,10 @@
 ---
 layout: post
-title: "The Tortoise on a Scooter: Why AI-First Teams Need Structure, Not Solo Hares"
+title: "AI Teams Need Tortoises Not Hares"
+subtitle: "Tortoise on a Scooter"
 date: 2025-10-14 12:00:00 +0000
+permalink: /ai-teams-need-tortoises-not-hares/
+redirect_from: /fast-flow-conf-ai-team-topology/
 categories:
 - talk
 - ai
@@ -11,7 +14,7 @@ event_name: "Fast Flow Conf UK 2025"
 venue: "London"
 talk_date: 2025-10-14
 talk_url: "https://www.fastflowconf.com"
-talk_title: "Vision for an AI-First Team Topology: How AI Fundamentally Transforms How We Organise Technical Teams"
+talk_title: "AI Teams Need Tortoises Not Hares"
 image: /assets/img/photo-fast-flow-2025.jpg
 ---
 
@@ -129,7 +132,7 @@ With amplification we keep the stable pace of the tortoise, but they get a whole
 
 Coders can feel like superheroes, where coding itself is no longer the constraint.
 
-Whole systems can be built quickly, as OpenAI demonstrated when they [built AgentKit in six weeks](/openai-devday-where-value-lives-in-ai-agent-tooling/){:target="_blank"} instead of six months.
+Whole systems can be built quickly, as OpenAI demonstrated when they [built AgentKit in six weeks](/agentkit-helps-its-competitors/){:target="_blank"} instead of six months.
 
 Coders are able to strategically change whole systems much quicker, and still manage to keep an eye on technical debt. Test coverage becomes so much easier. They can think more about the architecture strategically.
 

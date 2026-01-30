@@ -22,7 +22,7 @@ Claude Code is designed for [writing production code](/coding-with-ai/){:target=
 
 ## Why Claude Code Works Better for Thinking
 
-Claude Code is chattier than [Codex](/three-coding-agents-head-to-head/). For coding, that chattiness can feel like friction. For thinking, it's exactly what you need.
+Claude Code is chattier than [Codex](/which-coding-agent-is-best/). For coding, that chattiness can feel like friction. For thinking, it's exactly what you need.
 
 **Context that persists.** Chat interfaces like Claude.ai or ChatGPT use memory features that are opaque and unreliable. Projects help, but you're always fighting against the limitations of the interface. Claude Code runs within the context of a file system, giving you explicit control over what context matters.
 

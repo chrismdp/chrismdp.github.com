@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "Three Coding Agents Head-to-Head"
+title: "Which Coding Agent Is Best? (Head-to-Head Test)"
 date: 2025-10-21 09:00:00 +0000
+permalink: /which-coding-agent-is-best/
+redirect_from: /three-coding-agents-head-to-head/
 categories:
 - ai
 - coding

@@ -20,7 +20,7 @@ Browsers are today's stylus. They represent adapting web navigation to an agent 
 
 <!--more-->
 
-I have been using [Wardley Maps](https://www.wardleymaps.com/) to try and make sense of the shifts we're seeing in technology due to AI - see my previous maps on [coding](/coding-with-ai/) and [no-code workflow tools](/openai-devday-where-value-lives-in-ai-agent-tooling/). This week, OpenAI launched Atlas, a browser with ChatGPT integration[^atlas], so time to take a look at the browser landscape.
+I have been using [Wardley Maps](https://www.wardleymaps.com/) to try and make sense of the shifts we're seeing in technology due to AI - see my previous maps on [coding](/coding-with-ai/) and [no-code workflow tools](/agentkit-helps-its-competitors/). This week, OpenAI launched Atlas, a browser with ChatGPT integration[^atlas], so time to take a look at the browser landscape.
 
 The tech press framed it as another front in the browser wars. Chrome versus Edge versus Arc versus Atlas. I think this analysis is insufficient.
 
@@ -36,7 +36,7 @@ Users do not want to browse the web. They want to accomplish tasks. We browse on
 
 Browser-based agent integration is transitional. Valuable now, replaceable later. Atlas positions OpenAI to capture users during this shift whilst building towards what comes next.
 
-The timeline for this transition depends entirely on solving security. As I explored in my analysis of [where value lives in AI agent tooling](/openai-devday-where-value-lives-in-ai-agent-tooling/), the infrastructure for autonomy is not ready. Browsers provide a constrained environment where agents can act with some guardrails. Pure agent interfaces require solving security problems we currently do not know how to solve.
+The timeline for this transition depends entirely on solving security. As I explored in my analysis of [where value lives in AI agent tooling](/agentkit-helps-its-competitors/), the infrastructure for autonomy is not ready. Browsers provide a constrained environment where agents can act with some guardrails. Pure agent interfaces require solving security problems we currently do not know how to solve.
 
 ## Value Shifts to the Integration Layer
 
@@ -56,7 +56,7 @@ The value shifts to whoever solves the security problem that enables direct agen
 
 ## Security Remains the Killer Blocker
 
-The lethal trifecta creates catastrophic security risks.[^lethal-trifecta] Never give an agent all three of these simultaneously: private data access, untrusted content exposure, and external communication capability. As I demonstrated in my webinar on [how to ship your agent](/webinar-how-to-ship-your-agent/), this combination turns agents into data exfiltration systems.
+The lethal trifecta creates catastrophic security risks.[^lethal-trifecta] Never give an agent all three of these simultaneously: private data access, untrusted content exposure, and external communication capability. As I demonstrated in my webinar on [how to ship your agent](/is-ai-unshippable/), this combination turns agents into data exfiltration systems.
 
 OpenAI acknowledges this directly in the Atlas announcement. Agent mode carries risk from hidden malicious instructions embedded in web content. Safeguards exist but "will not stop every attack." Users must "weigh the tradeoffs" and monitor agent activities closely.
 
@@ -92,7 +92,7 @@ If you are building agent tooling, the question is not whether Atlas threatens y
 
 The defensible position is solving security for pure agent interfaces, not optimising browser integration. The company that cracks security-preserving autonomy will make browsers irrelevant.
 
-This is why I built [Kaijo](/kaijo/) focused on evaluation frameworks and model-agnostic architectures. Security through systematic evaluation and architectural boundaries is the foundation for what comes next.
+This is why I built [Kaijo](/i-built-kaijo-to-fix-unreliable-ai/) focused on evaluation frameworks and model-agnostic architectures. Security through systematic evaluation and architectural boundaries is the foundation for what comes next.
 
 The bet is on security becoming solvable in the next two to three years. If not, agents remain expensive toys. If so, whoever solves it first defines the post-browser era entirely.
 

@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "AI: The New Dawn of Software Craft"
+title: "AI Might Save Software Craft"
 date: 2025-05-12 01:03:15 +0100
+permalink: /ai-might-save-software-craft/
+redirect_from: /ai-new-dawn-of-software-craft/
 categories:
 - ai
 - development

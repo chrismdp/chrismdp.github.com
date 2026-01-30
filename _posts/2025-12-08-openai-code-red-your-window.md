@@ -60,7 +60,7 @@ OpenAI is spread across model benchmarks, agent tooling, browsers, health, shopp
 
 That means you can do what they cannot: build the compelling user experience for your specific domain, solve the particular problems your customers face, do the hard product work that creates genuine switching costs.
 
-As I explored when [analysing AgentKit's impact](/openai-devday-where-value-lives-in-ai-agent-tooling/), commoditising prototyping actually creates the market for production tools. OpenAI makes it easy to start. You make it work for real.
+As I explored when [analysing AgentKit's impact](/agentkit-helps-its-competitors/), commoditising prototyping actually creates the market for production tools. OpenAI makes it easy to start. You make it work for real.
 
 The same pattern applies to products. OpenAI provides increasingly capable building blocks. You assemble them into something that solves a real problem better than a general-purpose assistant ever could.
 
@@ -73,7 +73,7 @@ OpenAI's identity crisis is your opening.
 
 [^code-red]: Details from [Fortune's coverage](https://fortune.com/2025/12/02/sam-altman-declares-code-red-google-gemini-ceo-sundar-pichai/){:target="_blank"} of Altman's internal memo.
 
-[^agentkit]: See my analysis of [where value lives in AI agent tooling](/openai-devday-where-value-lives-in-ai-agent-tooling/) for how AgentKit commoditises prototyping whilst creating the market for production tools.
+[^agentkit]: See my analysis of [where value lives in AI agent tooling](/agentkit-helps-its-competitors/) for how AgentKit commoditises prototyping whilst creating the market for production tools.
 
 [^atlas]: I explored the browser play in [Who wants a browser?](/who-wants-a-browser/) - browsers are transitional technology for agent integration, not the endgame.
 

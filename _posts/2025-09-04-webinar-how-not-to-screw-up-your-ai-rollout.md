@@ -32,7 +32,7 @@ The teams succeeding with AI have accepted this jaggedness rather than fighting 
 
 The most devastating failure mode I encountered is what I call the debt amplifier. If your codebase is spaghetti without tests, AI will generate more spaghetti - just faster. If your organisation lacks psychological safety, AI will amplify that dysfunction.
 
-This mirrors what I explored when discussing [why AI agents fail in production](/webinar-how-to-ship-your-agent/). Bad foundations lead to bad outcomes, regardless of how sophisticated your AI tools are. The Dunnhumby and GitClear research confirms this: teams with poor code quality see their problems multiply when they add AI to the mix.
+This mirrors what I explored when discussing [why AI agents fail in production](/is-ai-unshippable/). Bad foundations lead to bad outcomes, regardless of how sophisticated your AI tools are. The Dunnhumby and GitClear research confirms this: teams with poor code quality see their problems multiply when they add AI to the mix.
 
 What surprised me most was how this extends beyond technical debt. Organisational debt - outdated structures your company has outgrown - becomes magnified. Cultural debt - the dysfunctions you tolerate - gets amplified[^1]. If your teams do not trust leadership, giving them AI tools will not fix that. It will make it worse.
 
@@ -108,7 +108,7 @@ Use proven patterns. Never mix private data, untrusted input, and internet acces
 
 The most radical changes I am seeing involve complete team restructuring. Some organisations are abandoning Scrum teams entirely, moving to tiny product-engineer-designer triads with broad remits. If coding is no longer the constraint, why maintain developer-heavy team ratios?
 
-The engineers thriving in this model think like product managers but code like developers. They use AI to explore multiple options quickly rather than optimising single solutions. This mirrors the shift I discussed in [moving beyond AI as autocomplete](/ai-for-rest-of-us-beyond-autocomplete/) - the value comes from rapid experimentation, not faster typing.
+The engineers thriving in this model think like product managers but code like developers. They use AI to explore multiple options quickly rather than optimising single solutions. This mirrors the shift I discussed in [moving beyond AI as autocomplete](/ditch-autocomplete/) - the value comes from rapid experimentation, not faster typing.
 
 Dedicated AI enablement teams are emerging in larger organisations. Their sole focus: making everyone else more effective with AI. They develop patterns, provide training, build guardrails. This centralised expertise accelerates organisation-wide adoption whilst managing risks.
 

@@ -71,7 +71,7 @@ Then I asked it to [interview me about the results](/ai-slop-is-real-model-colla
 
 The draft needed refinement. I had a back-and-forth conversation with Opus 4.5, pointing out things I did not like and asking for specific improvements. Some sections felt too abstract, others needed sharper transitions, and the conclusion needed more punch.
 
-Then I ran a slop-checking agent in Claude Code. This agent scans for common AI writing patterns: "Here's the thing" constructions, preachy second-person lecturing, triplet sentence patterns, scaffolding phrases like "This is crucial." Rather than catching each one manually, the agent flags them all and fixes them in one pass. I [continually improve this prompt](/webinar-advanced-prompting/#the-prompt-cycle) as I discover new patterns to avoid.
+Then I ran a slop-checking agent in Claude Code. This agent scans for common AI writing patterns: "Here's the thing" constructions, preachy second-person lecturing, triplet sentence patterns, scaffolding phrases like "This is crucial." Rather than catching each one manually, the agent flags them all and fixes them in one pass. I [continually improve this prompt](/why-your-ai-output-is-slop/#the-prompt-cycle) as I discover new patterns to avoid.
 
 ## Visuals
 
@@ -83,7 +83,7 @@ The overhead is perhaps 20 minutes beyond what single-model research would take.
 
 ## The verdict
 
-These assessments are a snapshot. [Models move fast](/three-coding-agents-head-to-head/), and what wins today may lose next month. When a new frontier model drops, I [run it through this same process](/how-to-react-to-a-new-frontier-model/) to see where it fits. But the pattern of distinct strengths has held across every comparison I have run.
+These assessments are a snapshot. [Models move fast](/which-coding-agent-is-best/), and what wins today may lose next month. When a new frontier model drops, I [run it through this same process](/how-to-react-to-a-new-frontier-model/) to see where it fits. But the pattern of distinct strengths has held across every comparison I have run.
 
 **Claude was the most thorough but the slowest.** It produced the longest output with the most statistics and the most comprehensive source list. It also took noticeably longer to generate. The problem was overconfidence: several specific claims could not be verified, and one date was simply wrong. Claude's strength is breadth and synthesis. Its weakness is presenting uncertain information with the same confidence as verified facts.
 

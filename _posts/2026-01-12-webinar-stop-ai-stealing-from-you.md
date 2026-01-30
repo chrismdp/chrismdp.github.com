@@ -100,7 +100,7 @@ Audit your team's AI tool usage. Check whether anyone is using free tiers or per
 
 [^1]: Simon Willison coined the term "lethal trifecta" in his post [The lethal trifecta for AI agents](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/){:target="_blank"}. He explains: "If an agent combines these three features, an attacker can easily trick it into accessing private data and sending it to that attacker."
 
-[^2]: See my previous webinar [How to Ship Your Agent](/webinar-how-to-ship-your-agent/) for more on why demos succeed but production deployments fail.
+[^2]: See my previous webinar [How to Ship Your Agent](/is-ai-unshippable/) for more on why demos succeed but production deployments fail.
 
 [^3]: See [Who Wants a Browser?](/who-wants-a-browser/) for my analysis of browser agents and the strategic implications of OpenAI's Atlas launch.
 

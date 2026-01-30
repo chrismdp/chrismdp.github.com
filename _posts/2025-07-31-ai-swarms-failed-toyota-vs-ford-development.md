@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "Why AI Swarms Failed Me: The Toyota vs Ford of Software Development"
+title: "Parallel AI Agents Create Unusable Code"
 date: 2025-07-31 12:00:00 +0000
+permalink: /parallel-ai-agents-create-unusable-code/
+redirect_from: /ai-swarms-failed-toyota-vs-ford-development/
 image: /assets/img/ai-swarms-failed-toyota-vs-ford.png
 categories:
 - ai

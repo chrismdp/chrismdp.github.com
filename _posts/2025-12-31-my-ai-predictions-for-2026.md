@@ -57,13 +57,13 @@ Developers and technical leaders will increasingly use Chinese models for cost-s
 
 ## Agent Orchestration Emerges
 
-PRD-driven parallel development becomes more viable as we get better at structuring agents. The top 1% of developers get exponentially faster while most people improve incrementally. A new tool for orchestrating independent coding agents gains meaningful adoption by December 2026. We have already seen [how different the current options are](/three-coding-agents-head-to-head/), and this fragmentation continues before consolidation.
+PRD-driven parallel development becomes more viable as we get better at structuring agents. The top 1% of developers get exponentially faster while most people improve incrementally. A new tool for orchestrating independent coding agents gains meaningful adoption by December 2026. We have already seen [how different the current options are](/which-coding-agent-is-best/), and this fragmentation continues before consolidation.
 
-**Cursor and other AI-native IDEs start to lose market share** as the interaction model shifts. Instead of AI-assisted coding in an IDE, we move toward AI-driven coding with human oversight. The IDE becomes less central when you are reviewing PRs rather than writing code. [Steve Yegge argues](https://www.youtube.com/watch?v=zuJyJP517Uw){:target="_blank"} that Claude Code is not the answer either, and he is right: the [tools are not quite ready yet](/independent-coding-agents-tools-arent-ready/), but 2026 is when they mature.
+**Cursor and other AI-native IDEs start to lose market share** as the interaction model shifts. Instead of AI-assisted coding in an IDE, we move toward AI-driven coding with human oversight. The IDE becomes less central when you are reviewing PRs rather than writing code. [Steve Yegge argues](https://www.youtube.com/watch?v=zuJyJP517Uw){:target="_blank"} that Claude Code is not the answer either, and he is right: the [tools are not quite ready yet](/independent-coding-agents-arent-ready/), but 2026 is when they mature.
 
 **By the end of 2026, 20% of all production code will be written straight to PR** without intermediate human review. This sounds alarming, but think about what it means. If you have good tests, good CI, and good code review processes, why does it matter whether a human or an AI wrote the first draft? The review is what matters.
 
-AI code-writing networks working in tandem start to emerge. Multiple specialised agents collaborating: one for architecture, one for implementation, one for testing, one for documentation. [Swarm approaches have failed me so far](/ai-swarms-failed-toyota-vs-ford-development/), and 2026 is when we figure out how to orchestrate these effectively.
+AI code-writing networks working in tandem start to emerge. Multiple specialised agents collaborating: one for architecture, one for implementation, one for testing, one for documentation. [Swarm approaches have failed me so far](/parallel-ai-agents-create-unusable-code/), and 2026 is when we figure out how to orchestrate these effectively.
 
 ## Developer Job Market Squeeze
 
@@ -89,7 +89,7 @@ This is less a prediction about AI capability and more a prediction about human 
 
 Some things are building but will not reach tipping points in 2026.
 
-[Energy abundance](/ai-power-usage-reality/) and the solar thesis remain on a longer horizon. The infrastructure investments are happening, but the transformation takes longer than optimists expect.
+[Energy abundance](/the-ai-climate-panic-is-wrong/) and the solar thesis remain on a longer horizon. The infrastructure investments are happening, but the transformation takes longer than optimists expect.
 
 [Model collapse](/ai-slop-is-real-model-collapse-isnt/) stays masked by raw capability gains. We will not see clear evidence of AI training on AI output degrading quality, even though it is probably happening. The capability improvements are large enough to hide the effect.
 

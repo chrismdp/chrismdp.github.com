@@ -30,9 +30,9 @@ This approach gets you from chaos to clarity. It is not just for solo work. It i
 ## Vision, Strategy, Execution, Metrics
 I discovered that my approach is basically the same as the VSEM (Vision, Strategy, Execution, Metrics) framework. Let's update it for the AI age:
 
-- **Vision**: Let AI help you explore possibilities. Ask it to generate scenarios, user stories, and potential outcomes. Use prompts like "What would success look like if we could..." to expand your thinking beyond conventional boundaries.  Using [AI as a therapist](/ai-therapists-self-reflection-with-ai/) can help here.
+- **Vision**: Let AI help you explore possibilities. Ask it to generate scenarios, user stories, and potential outcomes. Use prompts like "What would success look like if we could..." to expand your thinking beyond conventional boundaries.  Using [AI as a therapist](/rehearse-hard-conversations-with-ai/) can help here.
 
-- **Strategy**: Use AI to break down your vision into actionable components. Ask questions like "What are the key technical challenges we need to solve?" or "What dependencies should we consider?" AI can help identify blind spots and suggest alternative approaches. This is the dictation and clarification step. You can even build small scripts to test things out, or prototype using a no-code tool (see my [big list of tools if you need guidance](/ai-tools-list/))
+- **Strategy**: Use AI to break down your vision into actionable components. Ask questions like "What are the key technical challenges we need to solve?" or "What dependencies should we consider?" AI can help identify blind spots and suggest alternative approaches. This is the dictation and clarification step. You can even build small scripts to test things out, or prototype using a no-code tool (see my [big list of tools if you need guidance](/the-ai-tools-actually-worth-using/))
 
 - **Execution**: This is where AI shines. You have a plan broken in to meaninful discrete steps. The key is to provide clear context and constraints, then let AI do the heavy lifting. Use an IDE or indepedent coding agents if you've managed to bring enough clarity. You might even be able to run some of these in parallel.
 

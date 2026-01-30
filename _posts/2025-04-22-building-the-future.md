@@ -1,6 +1,9 @@
 ---
-title: "Building the Future"
+layout: post
+title: "The AI Agent Opportunity Is Too Big to Ignore"
 date: 2025-04-22 09:00:00 +0100
+permalink: /ai-agent-opportunity-too-big-to-ignore/
+redirect_from: /building-the-future/
 image: /assets/img/building-the-future.jpeg
 categories:
 - ai
@@ -46,7 +49,7 @@ Building effective AI agents requires solving three concrete knowledge managemen
 
 For example, how should a coding agent access and apply knowledge from a design agent's expertise? Third, we need to implement selective memory systems that can prioritise and prune knowledge based on relevance and recency.
 
-Current RAG systems fall short because they treat all knowledge as equally important. [Graph based RAG](/graph-rag/) offers a promising solution by maintaining relationships between knowledge chunks, but we still need to solve the practical challenges of implementing this at scale. [Mem0](https://mem0.ai/) looks promising but the tech is still unproven.
+Current RAG systems fall short because they treat all knowledge as equally important. [Graph based RAG](/graph-rag-is-the-future/) offers a promising solution by maintaining relationships between knowledge chunks, but we still need to solve the practical challenges of implementing this at scale. [Mem0](https://mem0.ai/) looks promising but the tech is still unproven.
 
 We must develop clear metrics for measuring knowledge relevance and establish protocols for knowledge updates across agent networks. The development of custom communication protocols by agents themselves also raises important questions about risk management and control. We must carefully consider the implications of allowing agents to evolve their own communication methods[^2027].
 

@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "Why AgentKit Creates the Market for Production Agent Tools"
+title: "AgentKit Helps Its Competitors"
 date: 2025-10-07 09:00:00 +0000
+permalink: /agentkit-helps-its-competitors/
+redirect_from: /openai-devday-where-value-lives-in-ai-agent-tooling/
 image: /assets/img/wardley-map-openai-devday.png
 image_portrait: true
 categories:
@@ -27,7 +29,7 @@ ChatKit provides embeddable chat interfaces that developers can customise to mat
 
 The Connector Registry centralises data management across workspaces, consolidating sources like Dropbox, Google Drive, SharePoint, and third-party integrations into a single admin panel.
 
-Enhanced Evals now includes datasets, trace grading, automated prompt optimisation, and third-party model support. The automated prompt optimisation is particularly interesting - OpenAI confirmed they are using GEPA (Gradient-free Evolution for Prompt Adaptation), which was new to me. This validates the approach I have been building into [Kaijo](/kaijo/) - using evaluation data to automatically improve prompts rather than manual prompt engineering. Carlyle reported that "the evaluation platform cut development time on our multi-agent due diligence framework by over 50%, and increased agent accuracy 30%."
+Enhanced Evals now includes datasets, trace grading, automated prompt optimisation, and third-party model support. The automated prompt optimisation is particularly interesting - OpenAI confirmed they are using GEPA (Gradient-free Evolution for Prompt Adaptation), which was new to me. This validates the approach I have been building into [Kaijo](/i-built-kaijo-to-fix-unreliable-ai/) - using evaluation data to automatically improve prompts rather than manual prompt engineering. Carlyle reported that "the evaluation platform cut development time on our multi-agent due diligence framework by over 50%, and increased agent accuracy 30%."
 
 Everything ships at standard API pricing. OpenAI clearly designed this to maximise adoption rather than extract immediate revenue from tooling.
 
@@ -88,7 +90,7 @@ Workflow tools optimise for quick iteration. You want to test an idea fast. You 
 
 Custom-built agents optimise for the other four user needs: reliability, security, cost, and capability.
 
-**Reliability** requires systematic evaluation that catches degradation before users complain. When I built [Kaijo](/kaijo/), the insight was recognising that developers were spending months wrestling with prompt engineering when they should have been building evaluation systems. You need datasets of good and bad examples. You need automated grading. You need trace-level analysis of why agents fail. AgentKit's enhanced Evals move in this direction, but platform vendors face a structural limitation: their business model depends on you using their models, which constrains how deeply they can support multi-model evaluation.
+**Reliability** requires systematic evaluation that catches degradation before users complain. When I built [Kaijo](/i-built-kaijo-to-fix-unreliable-ai/), the insight was recognising that developers were spending months wrestling with prompt engineering when they should have been building evaluation systems. You need datasets of good and bad examples. You need automated grading. You need trace-level analysis of why agents fail. AgentKit's enhanced Evals move in this direction, but platform vendors face a structural limitation: their business model depends on you using their models, which constrains how deeply they can support multi-model evaluation.
 
 **Security** goes beyond guardrails and evaluation. During my webinar on [how to ship your agent](/webinar-how-to-ship-your-agent/), I demonstrated the ["lethal trifecta"](/webinar-how-to-ship-your-agent/#the-security-reality) - never give an agent all three of these simultaneously: private data access, untrusted data input, and unfettered internet access. Evaluation and guardrails are insufficient for full protection. You need architectural boundaries that make certain attacks impossible rather than merely detectable. Workflow tools can add guardrails, but custom-built agents let you implement compartmentalisation at the architecture level.
 
@@ -100,7 +102,7 @@ The economics differ dramatically. A prototyping tool might save you two weeks o
 
 This explains where customers will actually pay. Prototypes are speculative and often disposable. Production systems represent business risk. Willingness to pay follows business risk, not development speed.
 
-This is why AgentKit does not concern me for [Kaijo](/kaijo/). Kaijo targets developers who are happy building traditional systems and do not want to think about the AI bit. They want to write functions, add tests, and let the platform handle prompt optimisation and model selection. With AgentKit, AI is all you can think about. You are constantly working within their workflow paradigm, their visual builder, their constraints.
+This is why AgentKit does not concern me for [Kaijo](/i-built-kaijo-to-fix-unreliable-ai/). Kaijo targets developers who are happy building traditional systems and do not want to think about the AI bit. They want to write functions, add tests, and let the platform handle prompt optimisation and model selection. With AgentKit, AI is all you can think about. You are constantly working within their workflow paradigm, their visual builder, their constraints.
 
 The customisation limitation becomes clearer over time. Workflow tools can only offer what their interface exposes. When you need behaviour that sits outside their visual builder's capabilities, you are stuck. Custom-built agents let you implement whatever your domain requires because you control the entire stack.
 
@@ -130,7 +132,7 @@ Companies building in this space need one or both of these moats. The question i
 
 ## The Three to Five Year Horizon
 
-Fully AI-written workflows remain three to five years away. Agent Builder assists with implementation but does not make architectural decisions. As I discussed analysing [independent coding agents](/independent-coding-agents-tools-arent-ready/), the infrastructure for autonomy is not ready.
+Fully AI-written workflows remain three to five years away. Agent Builder assists with implementation but does not make architectural decisions. As I discussed analysing [independent coding agents](/independent-coding-agents-arent-ready/), the infrastructure for autonomy is not ready.
 
 AgentKit accelerates prototyping commoditisation. What took hours now takes minutes. But this creates a multi-year window for custom agent building tools to establish defensible positions. The gap between commoditised prototyping and autonomous workflows is where value concentrates.
 

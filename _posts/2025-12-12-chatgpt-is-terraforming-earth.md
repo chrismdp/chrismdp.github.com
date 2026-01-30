@@ -38,7 +38,7 @@ Once electricity becomes essentially free during daylight hours, we stop drillin
 
 Energy independence stops being about who controls oil reserves and starts being about who has land and sunlight. The Middle East of the future is Nevada, Australia, and Namibia.
 
-This reframes the [entire conversation about AI power usage](/ai-power-usage-reality/). The real question is whether we can generate electricity cleanly. The answer is becoming yes, in such abundance that we will need to invent new uses for the surplus.
+This reframes the [entire conversation about AI power usage](/the-ai-climate-panic-is-wrong/). The real question is whether we can generate electricity cleanly. The answer is becoming yes, in such abundance that we will need to invent new uses for the surplus.
 
 For most leaders, this feels distant. Most of us are not building hyperscale data centres. But the second-order effects matter.
 

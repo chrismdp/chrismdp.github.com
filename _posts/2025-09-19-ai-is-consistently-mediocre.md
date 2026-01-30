@@ -8,7 +8,7 @@ categories:
 - development
 ---
 
-I discovered something counterintuitive while building [Kaijo](/kaijo/), my AI judging platform. AIs are consistently inconsistent. Humans are inconsistently inconsistent. This fundamental difference changes everything about how we should deploy AI in our organisations.
+I discovered something counterintuitive while building [Kaijo](/i-built-kaijo-to-fix-unreliable-ai/), my AI judging platform. AIs are consistently inconsistent. Humans are inconsistently inconsistent. This fundamental difference changes everything about how we should deploy AI in our organisations.
 
 Most companies deploy AI expecting immediate competence but get consistency instead. Then they feel disappointed when it makes predictable mistakes rather than brilliant insights. We have the progression backwards.
 
@@ -107,7 +107,7 @@ The same pattern emerges in software development. Traditional junior developer t
 
 In my exploration of [coding with AI](/coding-with-ai/), I discovered how AI's consistency helps maintain coding standards and catch errors human reviewers miss when tired. But the progression framework suggests even deeper changes. If AI handles the consistent but mundane work, juniors must jump directly to higher-order thinking. Strategic planning. Architecture decisions. Understanding user needs. Skills that traditionally came after years of groundwork.
 
-Where does that leave inexperienced workers? The optimistic view suggests juniors will leap directly to more strategic, creative work. Paired with AI, they might achieve outcomes previously requiring years of experience. The pessimistic view worries we are removing the bottom rungs of the career ladder. Without foundational practice, will juniors develop the intuition senior roles require? This requires completely rethinking [how we develop talent](/ai-new-dawn-of-software-craft/).
+Where does that leave inexperienced workers? The optimistic view suggests juniors will leap directly to more strategic, creative work. Paired with AI, they might achieve outcomes previously requiring years of experience. The pessimistic view worries we are removing the bottom rungs of the career ladder. Without foundational practice, will juniors develop the intuition senior roles require? This requires completely rethinking [how we develop talent](/ai-might-save-software-craft/).
 
 ### A New Form of Leverage
 
@@ -135,7 +135,7 @@ If companies will not give inexperienced workers a chance, those workers will cr
 
 Armed with AI tools that provide consistency, motivated beginners can bootstrap businesses that previously required teams of experienced professionals. A solo founder with AI can maintain consistent quality across marketing, development, customer service, and operations. Not excellent quality, but consistent quality. And for many customers, consistency beats occasional excellence.
 
-We are already seeing this. Solo developers shipping products that previously required entire teams. Small agencies competing with established consultancies. Individual creators building media empires. AI provides the consistency that enables scale without headcount, though [the infrastructure for truly autonomous agents is not quite ready yet](/independent-coding-agents-tools-arent-ready/).
+We are already seeing this. Solo developers shipping products that previously required entire teams. Small agencies competing with established consultancies. Individual creators building media empires. AI provides the consistency that enables scale without headcount, though [the infrastructure for truly autonomous agents is not quite ready yet](/independent-coding-agents-arent-ready/).
 
 This is not about AI replacing workers. It is about AI enabling workers who lack traditional credentials or experience to compete anyway. The progression framework suggests this is not a temporary arbitrage opportunity but a fundamental shift in how work gets done.
 

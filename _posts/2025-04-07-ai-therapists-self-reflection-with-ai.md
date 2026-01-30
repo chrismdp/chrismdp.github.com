@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "AI Therapists: Self Reflection With AI"
+title: "Rehearse Hard Conversations with AI"
 date: 2025-04-07 09:00:00 +0100
+permalink: /rehearse-hard-conversations-with-ai/
 categories:
 - ai
 - productivity
@@ -9,6 +10,7 @@ categories:
 redirect_from:
 - /self-reflection-with-ai
 - /self-reflection-with-ai/
+- /ai-therapists-self-reflection-with-ai/
 ---
 
 "I am not ready for this conversation." We all know that feeling. The endless mental rehearsal. The anxiety building with each imagined scenario.

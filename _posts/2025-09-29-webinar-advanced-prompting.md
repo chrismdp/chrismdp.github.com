@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "Advanced Prompting: How to Put AI to Work"
+title: "Why Your AI Output Is Slop"
 date: 2025-10-02 14:00:00 +0100
+permalink: /why-your-ai-output-is-slop/
+redirect_from: /webinar-advanced-prompting/
 image: /assets/img/advanced-prompting-webinar.png
 series: "AI In Action Webinars"
 categories:

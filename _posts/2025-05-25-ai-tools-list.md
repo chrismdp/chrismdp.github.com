@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "The Huge List of AI Tools: What's Actually Worth Using in June 2025?"
+title: "The AI Tools Actually Worth Using"
 date: 2025-06-05 00:00:00 +0000
+permalink: /the-ai-tools-actually-worth-using/
+redirect_from: /ai-tools-list/
 full_width: true
 hide_newsletter: true
 categories:

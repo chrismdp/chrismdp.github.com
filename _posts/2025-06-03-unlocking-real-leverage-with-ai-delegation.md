@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "Unlocking Real Leverage with AI Delegation"
+title: "AI Must Be Line Managed"
 date: 2026-01-27 09:00:00 +0000
+permalink: /ai-must-be-line-managed/
+redirect_from: /unlocking-real-leverage-with-ai-delegation/
 categories:
 - ai
 - engineering
@@ -25,7 +27,7 @@ AI agents are not people to manage and they are not programs to command. They ar
 
 Before going further, a distinction matters here. Chat interfaces like ChatGPT or Claude.ai are for quick questions. Agents have agency: they can plan, execute, and adapt.
 
-Agents work with multi-file context, multi-step reasoning, and persistent context across sessions. Chat just responds to what you type. The shift is from "AI assistant" to "AI thought partner." For delegation to work, [you need the repository approach, not chatbots](/writing-and-thinking-with-ai-why-repositories-beat-chatbots/).
+Agents work with multi-file context, multi-step reasoning, and persistent context across sessions. Chat just responds to what you type. The shift is from "AI assistant" to "AI thought partner." For delegation to work, [you need the repository approach, not chatbots](/chatbots-are-the-wrong-tool-for-ai-writing/).
 
 Tools like Claude Code and Cursor are platforms, not just interfaces. Through MCP (Model Context Protocol) and tool chaining, you can build an extensible delegation infrastructure. Your CLAUDE.md file becomes a training document for your AI staff. You are building a system that compounds, not just delegating individual tasks.
 

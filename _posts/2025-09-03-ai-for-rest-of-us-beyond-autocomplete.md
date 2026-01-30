@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "Beyond Autocomplete: Mastering AI Coding Tools for Real Production Work"
+title: "Ditch Autocomplete"
 date: 2025-10-16 12:00:00 +0000
+permalink: /ditch-autocomplete/
+redirect_from: /ai-for-rest-of-us-beyond-autocomplete/
 categories:
 - talk
 - ai
@@ -12,7 +14,7 @@ event_name: "AI for the Rest of Us"
 venue: "Museum of London"
 talk_date: 2025-10-15
 talk_url: "https://aifortherestofus.live/london-2025"
-talk_title: "Beyond Autocomplete: Mastering AI Coding Tools for Real Production Work"
+talk_title: "Ditch Autocomplete"
 ---
 
 *This post is based on a talk given on 15th October 2025 at [AI For The Rest Of Us](https://aifortherestofus.live){:target="_blank"}.*
@@ -45,7 +47,7 @@ Many teams use AI as slightly smarter autocomplete and miss the real power. The 
 
 Each stage requires different mental models and guardrails, because traditional development techniques fail with AI collaboration and new cognitive strategies are needed to prevent overwhelm while maintaining code quality.
 
-The spectrum of [AI coding tools](/three-coding-agents-head-to-head/) ranges from basic autocomplete all the way to cloud-based autonomy. Autocomplete gives you real-time code completion with contextual suggestions, which is where it all started. Smart tooling provides little utilities like commit messages and CLI commands. Inline assist brings AI suggestions directly into your workflow with chat-based modifications. Agent mode operates autonomously within your IDE boundaries, handling file management and execution. [Autonomous mode](/independent-coding-agents-tools-arent-ready/) takes this further with complete task execution across multiple files and steps. Cloud-based autonomy operates on GitHub issues and submits pull requests without you being in the IDE at all.
+The spectrum of [AI coding tools](/which-coding-agent-is-best/) ranges from basic autocomplete all the way to cloud-based autonomy. Autocomplete gives you real-time code completion with contextual suggestions, which is where it all started. Smart tooling provides little utilities like commit messages and CLI commands. Inline assist brings AI suggestions directly into your workflow with chat-based modifications. Agent mode operates autonomously within your IDE boundaries, handling file management and execution. [Autonomous mode](/independent-coding-agents-arent-ready/) takes this further with complete task execution across multiple files and steps. Cloud-based autonomy operates on GitHub issues and submits pull requests without you being in the IDE at all.
 
 The sweet spot for most production work is agent mode and autonomous mode. These give you the most value for the least effort, and this is where you can actually get started with production work. The Prompt Cycle applies here most powerfully.
 
@@ -53,7 +55,7 @@ The sweet spot for most production work is agent mode and autonomous mode. These
 
 Your first attempt will always fail, because [AI produces plausible but incorrect code](/ai-is-consistently-mediocre/) about 70 percent of the time. This is actually fine because it is still faster than writing from scratch, and the Japanese manufacturing principle of Kaizen applies here: continuous improvement. The key mindset shift is that bad outputs are not failures but data you learn from to improve your system.
 
-Working with specs rather than vague requests is critical, because vague requests produce vague results. When you say "add payment" there are actually about twenty questions that should follow: what payment provider, what currencies, how do we handle failures, what about refunds? Use a spec, but keep it fluid rather than rigid documentation, understand every word of your spec and iterate it as you learn. Do not let AI overwrite your specs because they are your source of truth, and [train AI to ask you questions](/webinar-advanced-prompting/) one at a time whilst building.
+Working with specs rather than vague requests is critical, because vague requests produce vague results. When you say "add payment" there are actually about twenty questions that should follow: what payment provider, what currencies, how do we handle failures, what about refunds? Use a spec, but keep it fluid rather than rigid documentation, understand every word of your spec and iterate it as you learn. Do not let AI overwrite your specs because they are your source of truth, and [train AI to ask you questions](/why-your-ai-output-is-slop/) one at a time whilst building.
 
 The [cognitive load of AI pairing](/coding-with-ai/#the-unique-cognitive-load-of-ai-pairing) is different from human pairing, because you need constant verification whilst managing context switching between AI output and your mental model. You need to recognise when to take breaks and spot cognitive fatigue signals, as afternoon sessions feel very different from morning fresh starts.
 

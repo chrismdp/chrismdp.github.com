@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "Independent Coding Agents: The Tools Aren't Ready"
+title: "Independent Coding Agents Aren't Ready"
 date: 2025-08-08 10:00:00 +0000
+permalink: /independent-coding-agents-arent-ready/
+redirect_from: /independent-coding-agents-tools-arent-ready/
 categories:
 - development
 - infrastructure

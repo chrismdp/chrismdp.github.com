@@ -46,7 +46,7 @@ People use AI as a thinking partner. They ask it to interview them, to extract i
 
 Future models train on this enhanced human thinking. The next generation produces even better starting points for human collaboration. Quality compounds over time instead of degrading.
 
-This is not theoretical. I use this approach for [every article I write](/writing-and-thinking-with-ai-why-repositories-beat-chatbots/), including this one.
+This is not theoretical. I use this approach for [every article I write](/chatbots-are-the-wrong-tool-for-ai-writing/), including this one.
 
 ## How To Use AI Without Creating Slop
 

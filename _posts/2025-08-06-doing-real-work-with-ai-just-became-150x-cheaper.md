@@ -66,9 +66,9 @@ The implications extend far beyond cost savings. When AI becomes this cheap, ent
 
 You can now afford to run AI on every user interaction instead of batching requests. You can implement sophisticated quality control by running multiple models and comparing outputs. You can experiment with complex prompt engineering techniques without worrying about burning through your API budget.
 
-This economic shift enables the kind of [real leverage with AI delegation](https://chrismdp.com/unlocking-real-leverage-with-ai-delegation/) that was previously impossible for most teams.
+This economic shift enables the kind of [real leverage with AI delegation](https://chrismdp.com/ai-must-be-line-managed/) that was previously impossible for most teams.
 
-The constraint shifts from "how can we minimise AI usage to control costs" to "how can we leverage abundant, cheap AI to create better experiences?" This represents [the new dawn of software craft](https://chrismdp.com/ai-new-dawn-of-software-craft/) where cost is no longer the limiting factor.
+The constraint shifts from "how can we minimise AI usage to control costs" to "how can we leverage abundant, cheap AI to create better experiences?" This represents [the new dawn of software craft](https://chrismdp.com/ai-might-save-software-craft/) where cost is no longer the limiting factor.
 
 Open source models also enable local deployment, removing API dependencies entirely. A company can host DeepSeek or Qwen on their own infrastructure, eliminating per-token costs after initial setup. For high-volume applications, the economics become even more favourable.
 

@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "Building AI Cheatsheet Generator Live: Lessons from a Four-Hour Stream"
+title: "Four Hours, One AI App, Many Lessons"
 date: 2025-05-15 07:00:00 +0000
+permalink: /four-hours-one-ai-app-many-lessons/
+redirect_from: /livestream-ai-cheatsheet-app/
 categories:
 - ai
 - engineering

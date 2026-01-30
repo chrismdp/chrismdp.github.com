@@ -88,7 +88,7 @@ I want tortoises on scooters. Slow, steady work by small multidisciplinary teams
 
 ### Coders Become True Engineers
 
-Coders can feel like superheroes. OpenAI built [AgentKit in six weeks](/openai-devday-where-value-lives-in-ai-agent-tooling/) instead of six months. Whole systems can be changed quickly. Test coverage becomes easier. Coders can think more strategically about architecture rather than getting lost in implementation details.
+Coders can feel like superheroes. OpenAI built [AgentKit in six weeks](/agentkit-helps-its-competitors/) instead of six months. Whole systems can be changed quickly. Test coverage becomes easier. Coders can think more strategically about architecture rather than getting lost in implementation details.
 
 The speed means prioritisation and tickets become less important. You have a conversation about what to build and you build it that afternoon. The need to order everything carefully reduces.
 

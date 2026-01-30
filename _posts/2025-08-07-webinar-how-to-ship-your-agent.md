@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "How to Ship Your Agent"
+title: "Is AI Unshippable? (Lessons from Doing It)"
 date: 2025-08-07 15:00:00 +0000
+permalink: /is-ai-unshippable/
+redirect_from: /webinar-how-to-ship-your-agent/
 image: /assets/img/ship-your-agent-webinar.png
 image_portrait: true
 series: "AI In Action Webinars"
@@ -48,7 +50,7 @@ These agents seduce you because they work brilliantly in demos. They feel magica
 
 The alternative is workflow agents - discrete steps with focused responsibilities. Each step does one thing well. You can test components independently. You can constrain what each step can access.
 
-This mirrors the architectural principles I discussed in [building the future of software development](/building-the-future/) - we succeed by creating clear boundaries and responsibilities, not by building monolithic systems that try to do everything.
+This mirrors the architectural principles I discussed in [building the future of software development](/ai-agent-opportunity-too-big-to-ignore/) - we succeed by creating clear boundaries and responsibilities, not by building monolithic systems that try to do everything.
 
 The meal planner uses this workflow approach. Step one generates a meal plan. Step two handles changes. When someone says "I want Thai food instead," a different agent with different context handles that specific request. Each step has its own prompt, its own constraints, its own evaluation criteria.
 
@@ -70,7 +72,7 @@ Production agents require systematic evaluation, not occasional manual testing. 
 
 Start with binary evaluation: was this output good or bad? Track basic percentages. An 80% success rate is a meaningful metric. More complex scoring often obscures rather than clarifies performance.
 
-As I explored when [building Kaijo](/kaijo/), the evaluation challenge led us to develop LLM-as-judge systems. Humans start enthusiastically but accuracy drops over time as they get bored. LLMs maintain consistent inconsistency - they are not perfect, but they are predictably imperfect.
+As I explored when [building Kaijo](/i-built-kaijo-to-fix-unreliable-ai/), the evaluation challenge led us to develop LLM-as-judge systems. Humans start enthusiastically but accuracy drops over time as they get bored. LLMs maintain consistent inconsistency - they are not perfect, but they are predictably imperfect.
 
 The breakthrough comes when you use AI to write better prompts based on your evaluation data. Once you have workflow agents with discrete steps, automated evaluation, and collections of good and bad examples, AI can identify patterns you missed and generate more effective instructions than you could write manually.
 

@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "Writing and Thinking with AI: Why Repositories Beat Chatbots"
+title: "Chatbots Are the Wrong Tool for AI Writing"
 date: 2025-08-29 00:00:00 +0000
+permalink: /chatbots-are-the-wrong-tool-for-ai-writing/
+redirect_from: /writing-and-thinking-with-ai-why-repositories-beat-chatbots/
 image: /assets/img/writing-thinking-ai-repositories-vs-chatbots.png
 series: "Where AI Lives"
 categories:
@@ -158,7 +160,7 @@ The next evolution involves taking these repositories online using [Coder](https
 
 This solves several problems: I can work from any device, scale computational resources as needed, and experiment with more advanced AI integrations without affecting my local setup. The repositories remain the source of truth, but the execution environment becomes flexible and scalable. As AI costs continue to plummet (we are seeing [150x cost reductions](/doing-real-work-with-ai-just-became-150x-cheaper/) in just months) these cloud-based workflows become increasingly viable.
 
-The integration is still experimental. I wrote about the current limitations in [Independent Coding Agents: The Tools Aren't Ready](/independent-coding-agents-tools-arent-ready/). But the trajectory is clear. We are moving toward fully autonomous development environments that maintain rich, persistent context across all our knowledge work.
+The integration is still experimental. I wrote about the current limitations in [Independent Coding Agents: The Tools Aren't Ready](/independent-coding-agents-arent-ready/). But the trajectory is clear. We are moving toward fully autonomous development environments that maintain rich, persistent context across all our knowledge work.
 
 ## Getting Started
 
@@ -197,7 +199,7 @@ The future of knowledge work is not human versus AI, or even human plus AI. It i
 
 [^obsidian]: I have been using this Obsidian repository for about three years to capture all my notes, so it already had a pretty good set of context when I started experimenting with AI-assisted knowledge management. The accumulated notes, connections, and patterns gave the AI substantial foundation to work from rather than starting with an empty vault.
 
-[^graphrag]: This approach to understanding connections between pieces of knowledge is similar to what I explored in [Graph RAG: The Future is Relationships](/graph-rag/), where the focus shifts from isolated information retrieval to understanding how knowledge interconnects. Traditional RAG systems retrieve relevant documents, but Graph RAG understands the relationships between concepts, creating a more nuanced and contextual understanding of information.
+[^graphrag]: This approach to understanding connections between pieces of knowledge is similar to what I explored in [Graph RAG: The Future is Relationships](/graph-rag-is-the-future/), where the focus shifts from isolated information retrieval to understanding how knowledge interconnects. Traditional RAG systems retrieve relevant documents, but Graph RAG understands the relationships between concepts, creating a more nuanced and contextual understanding of information.
 
 [^wispr-flow]: [Wispr Flow](https://wisprflow.ai/r?CHRIS104) is an excellent voice-to-text app that transforms spoken thoughts into well-structured text. This is a referral link, but I would recommend Wispr Flow regardless because it genuinely enhances AI-assisted workflows by bridging the gap between brain dumping and structured thinking.
 [^prompting]: As I explored in [Prompting Sucks (And What We Can Do About It)](/beyond-prompting/), the fundamental problem with prompting is that it is brittle, repetitive, and endlessly frustrating. You end up spending more time crafting the perfect prompt than actually getting work done, and the AI never remembers your preferences from one conversation to the next.

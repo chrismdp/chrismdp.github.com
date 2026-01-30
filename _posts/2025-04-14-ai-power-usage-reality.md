@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "The Reality of AI Power Usage"
+title: "The AI Climate Panic Is Wrong"
 date: 2025-04-14 00:00:00 +00:00
+permalink: /the-ai-climate-panic-is-wrong/
+redirect_from: /ai-power-usage-reality/
 image: /assets/img/ai-power-usage.jpeg
 image_portrait: true
 categories:

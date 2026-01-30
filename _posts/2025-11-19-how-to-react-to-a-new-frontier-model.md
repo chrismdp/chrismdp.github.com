@@ -55,7 +55,7 @@ Whilst we wait for proper evaluation data, your response depends on how you're u
 
 Testing AI is not like testing regular code. The outputs are not deterministic. Evaluations score outputs based on criteria rather than checking for exact matches. Did the model understand the task? Was the response useful? Did it avoid common failure modes?
 
-I built [Kaijo](/kaijo/) specifically for this. You need a way to systematically evaluate AI performance on tasks that matter for your business. Bring some examples, or generate them with AI. Let the evaluation system handle the rest - continuously testing and optimising your AI functions against real criteria.
+I built [Kaijo](/i-built-kaijo-to-fix-unreliable-ai/) specifically for this. You need a way to systematically evaluate AI performance on tasks that matter for your business. Bring some examples, or generate them with AI. Let the evaluation system handle the rest - continuously testing and optimising your AI functions against real criteria.
 
 Without evals, you're flying blind. You can't tell if Gemini 3 is actually better for your use case or just better at benchmarks that don't matter to you. [AI's consistent mediocrity](/ai-is-consistently-mediocre/) means you need systematic evaluation, not gut feel.
 

@@ -1,9 +1,11 @@
 ---
 layout: post
-title: "Don't Let Your CEO Install Moltbot"
+title: "Don't Let Your CEO Install Clawdbot"
 date: 2026-01-30 09:00:00 +0000
-permalink: /dont-let-your-ceo-install-moltbot/
-redirect_from: /my-week-with-clawdbot/
+permalink: /dont-let-your-ceo-install-clawdbot/
+redirect_from:
+- /my-week-with-clawdbot/
+- /dont-let-your-ceo-install-moltbot/
 series: "Where AI Lives"
 categories:
 - ai
@@ -57,7 +59,7 @@ Real mitigations have to be external to the agent: operating system sandboxing, 
 
 ## Do Not Believe the Hype
 
-I wrote in my [delegation article](/unlocking-real-leverage-with-ai-delegation/) about the temptation to fire the EA who gets things 80% right and install Clawdbot to save money. The comic at the top of this article captures it: the CEO fires the assistant on Monday, then spends Tuesday at 3am installing the AI replacement. Do not be that person.
+I wrote in my [delegation article](/ai-must-be-line-managed/) about the temptation to fire the EA who gets things 80% right and install Clawdbot to save money. The comic at the top of this article captures it: the CEO fires the assistant on Monday, then spends Tuesday at 3am installing the AI replacement. Do not be that person.
 
 If you are a technical leader: do not let your CEO install this. Do not let your team experiment with it using private data, or even with access to private data. You have to assume that any private data you give it could be leaked.
 

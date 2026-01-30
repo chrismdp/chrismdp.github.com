@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "Kill Your Prompts: Build Agents That Actually Work"
+title: "You Should Kill Your Prompts"
 date: 2025-07-02 15:00:00 +0000
+permalink: /you-should-kill-your-prompts/
+redirect_from: /webinar-kill-your-prompts/
 image: /assets/img/kill-your-prompts.png
 image_portrait: true
 series: "AI In Action Webinars"

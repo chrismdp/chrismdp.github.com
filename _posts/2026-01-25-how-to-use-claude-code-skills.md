@@ -73,7 +73,7 @@ Skills become more valuable over time. Each refinement makes them better at capt
 
 I keep my skills in a dedicated folder that gets synced across machines. Personal skills live in `~/.claude/skills/` and are available across all your projects. Project skills live in `.claude/skills/` and stay with that codebase. When I improve a skill on my laptop, it is available on my desktop. When I try something that does not work, I can revert. The version history becomes a record of how my workflow has evolved.
 
-This also makes skills portable. I can share a skill with someone else by sending them a file. They can read it, understand what it does, and adapt it for their own work. Source control is not just backup: it is documentation. This approach to [treating your work as repositories rather than chat conversations](/writing-and-thinking-with-ai-why-repositories-beat-chatbots/) is what makes AI collaboration compound over time.
+This also makes skills portable. I can share a skill with someone else by sending them a file. They can read it, understand what it does, and adapt it for their own work. Source control is not just backup: it is documentation. This approach to [treating your work as repositories rather than chat conversations](/chatbots-are-the-wrong-tool-for-ai-writing/) is what makes AI collaboration compound over time.
 
 ## Build Your Own
 
@@ -97,7 +97,7 @@ You can also control who invokes a skill. Add `disable-model-invocation: true` t
 
 The people who use Claude Code best are pattern thinkers who keep asking how they can reuse what they just built. Developers learn this through years of [building abstractions](/coding-with-ai/), extracting common parts into functions and modules every time they write similar code twice. That instinct for noticing repetition and eliminating it transfers directly to skills.
 
-When you give Claude Code the same context repeatedly, explain the same preferences across multiple conversations, or correct the same mistakes over and over, you are looking at a skill waiting to be created. The goal is to [automate the routine parts of your work](/unlocking-real-leverage-with-ai-delegation/) so you can focus on the parts that are different each time, which tend to be the interesting parts. Skills handle the repetitive setup, the consistent preferences, and the guardrails you always want in place, leaving you free to think about the actual problem you are trying to solve.
+When you give Claude Code the same context repeatedly, explain the same preferences across multiple conversations, or correct the same mistakes over and over, you are looking at a skill waiting to be created. The goal is to [automate the routine parts of your work](/ai-must-be-line-managed/) so you can focus on the parts that are different each time, which tend to be the interesting parts. Skills handle the repetitive setup, the consistent preferences, and the guardrails you always want in place, leaving you free to think about the actual problem you are trying to solve.
 
 ## Getting Started
 
