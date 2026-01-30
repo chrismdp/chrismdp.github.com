@@ -65,7 +65,7 @@ I discarded the third output's structure entirely, though I kept a few of its st
 
 I gave the two strongest outputs to my "Writing AI" project in Claude Opus 4.5. This project knows exactly how I structure arguments and how I write. Opus 4.5 is still the best model for writing, and it synthesised Gemini's conceptual frame with ChatGPT's factual discipline into a draft that sounded like me.
 
-Then I asked it to [interview me about the results](/ai-feeding-on-itself/). The synthesis was missing my perspective, my take on what mattered most. By asking it to question me, I could add the angles only I could provide: which implications felt most urgent, which objections I had encountered in real conversations, which parts of the argument I found most compelling and why.
+Then I asked it to [interview me about the results](/ai-slop-is-real-model-collapse-isnt/). The synthesis was missing my perspective, my take on what mattered most. By asking it to question me, I could add the angles only I could provide: which implications felt most urgent, which objections I had encountered in real conversations, which parts of the argument I found most compelling and why.
 
 ## Edit
 

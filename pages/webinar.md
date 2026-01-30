@@ -100,7 +100,7 @@ webinar_date: "2026-02-05T14:00:00+00:00"
 <div id="previous-webinars" class="border-t border-brand-light-blue/20 pt-12">
   <h2 class="text-2xl font-heading font-bold mb-6 text-brand-black">Previous Webinars</h2>
   <div class="space-y-1 mb-12">
-    {% for post in site.categories.webinar limit:5 %}
+    {% for post in site.categories.webinar %}
     <div class="flex flex-col md:flex-row md:items-center gap-2 border-b border-brand-light-blue/10 py-2">
       <div class="text-sm text-brand-black/60 md:w-24 flex-shrink-0">
         {{ post.date | date: "%b %-d" }}

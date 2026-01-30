@@ -29,7 +29,7 @@ Agents work with multi-file context, multi-step reasoning, and persistent contex
 
 Tools like Claude Code and Cursor are platforms, not just interfaces. Through MCP (Model Context Protocol) and tool chaining, you can build an extensible delegation infrastructure. Your CLAUDE.md file becomes a training document for your AI staff. You are building a system that compounds, not just delegating individual tasks.
 
-I have written more about [how to use Claude Code skills](/how-to-use-claude-code-skills/) to encode your work patterns into reusable prompts. This turns one-off delegation into repeatable systems.
+I have written more about [how to use Claude Code skills](/skills-are-claude-codes-secret-weapon/) to encode your work patterns into reusable prompts. This turns one-off delegation into repeatable systems.
 
 ## When and How to Delegate
 
@@ -109,7 +109,7 @@ The path to effective AI delegation is not smooth. It is fiddly and sometimes fr
 
 The contractor metaphor has limits. You are building a delegation system, not just hiring a contractor.
 
-Your CLAUDE.md file and your [skills](/how-to-use-claude-code-skills/) are your operations manual for the AI team. They encode how you work, what you expect, and how decisions should be made. Every time you refine them, you are training your infrastructure to work better without you. Share them with others. Unlike tribal knowledge locked in someone's head, these are portable, forkable, improvable. I have written about [how simple orchestration patterns beat clever engineering](/your-agent-orchestrator-is-too-clever/). A bash loop calling an agent repeatedly outperforms elaborate multi-agent architectures.
+Your CLAUDE.md file and your [skills](/skills-are-claude-codes-secret-weapon/) are your operations manual for the AI team. They encode how you work, what you expect, and how decisions should be made. Every time you refine them, you are training your infrastructure to work better without you. Share them with others. Unlike tribal knowledge locked in someone's head, these are portable, forkable, improvable. I have written about [how simple orchestration patterns beat clever engineering](/your-agent-orchestrator-is-too-clever/). A bash loop calling an agent repeatedly outperforms elaborate multi-agent architectures.
 
 One pattern I am exploring: using task managers like Reclaim as a queue, with Claude Code as the executor. When you start a Reclaim task, the agent spins up with context. You are delegating your task system, not individual tasks.
 

@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "My Week with Clawdbot"
+title: "Don't Let Your CEO Install Moltbot"
 date: 2026-01-30 09:00:00 +0000
+permalink: /dont-let-your-ceo-install-moltbot/
+redirect_from: /my-week-with-clawdbot/
 series: "Where AI Lives"
 categories:
 - ai
@@ -15,7 +17,7 @@ You have probably heard about Clawdbot/Moltbot.[^1] YouTube [is full of videos](
 
 [^1]: The [project is on GitHub](https://github.com/moltbot/moltbot){:target="_blank"}. It has just been renamed Moltbot because Clawdbot was too close to Claude for Anthropic's comfort. I will use the new name from now on.
 
-I have been using [Claude Code](/how-to-use-claude-code-skills/) for everything: running my daily life, morning routines, content creation. But there are a couple of gaps. It does not automatically learn from our interactions, which Moltbot is supposed to do. And it is tied to my desktop, which I do not love.
+I have been using [Claude Code](/skills-are-claude-codes-secret-weapon/) for everything: running my daily life, morning routines, content creation. But there are a couple of gaps. It does not automatically learn from our interactions, which Moltbot is supposed to do. And it is tied to my desktop, which I do not love.
 
 It sounded too good to be true. So I gave it a week to try it out.
 

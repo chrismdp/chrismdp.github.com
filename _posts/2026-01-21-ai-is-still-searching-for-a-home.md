@@ -14,7 +14,7 @@ categories:
 
 Should AI live inside your tools, or sit outside orchestrating them?
 
-The UK government spent months trialling Microsoft 365 Copilot across thousands of civil servants. Users reported 72% satisfaction but no measurable productivity gains.[^copilot] Meanwhile, coding agents have quietly become the most transformative tools I use daily, handling everything from [complex refactoring](/your-agent-orchestrator-is-too-clever/) to [writing these blog posts](/today-in-claude-code/).
+The UK government spent months trialling Microsoft 365 Copilot across thousands of civil servants. Users reported 72% satisfaction but no measurable productivity gains.[^copilot] Meanwhile, coding agents have quietly become the most transformative tools I use daily, handling everything from [complex refactoring](/your-agent-orchestrator-is-too-clever/) to [writing these blog posts](/where-did-my-day-go/).
 
 These two experiences point to fundamentally different answers. One embeds intelligence inside existing applications. The other places AI outside applications, orchestrating them from above. AI is house hunting, and it has not settled yet.
 
@@ -36,7 +36,7 @@ Embedded AI works brilliantly for routine tasks where [consistent mediocrity is 
 
 The second approach reverses the relationship. Orchestrating AI sits outside applications and controls them. Claude Code manipulates your filesystem, runs tests, checks the build, and iterates until things work. The Model Context Protocol lets agents operate multiple tools through a standard interface. [Browser automation](/who-wants-a-browser/) navigates websites on your behalf.
 
-Coding agents work well because they have full context. When Claude Code refactors my codebase, it has access to everything it needs. The context is complete and the feedback loops are tight. I can use it [for thinking work](/webinar-use-claude-code-for-thinking/) that has nothing to do with code because it is a general-purpose agent that happens to be good at programming. The rise of [Ralph loops](/your-agent-orchestrator-is-too-clever/) demonstrates this power: a bash for loop feeding the same prompt to an agent repeatedly, letting it see its previous work and iterate until done, with no complex orchestration required.
+Coding agents work well because they have full context. When Claude Code refactors my codebase, it has access to everything it needs. The context is complete and the feedback loops are tight. I can use it [for thinking work](/claude-code-is-for-everything/) that has nothing to do with code because it is a general-purpose agent that happens to be good at programming. The rise of [Ralph loops](/your-agent-orchestrator-is-too-clever/) demonstrates this power: a bash for loop feeding the same prompt to an agent repeatedly, letting it see its previous work and iterate until done, with no complex orchestration required.
 
 But orchestrating agents have their own limitations. Security is a constant concern. I teach the ["lethal trifecta" rule](/webinar-stop-ai-stealing-from-you/) in my workshops: never give an agent all three of private data access, untrusted data input, and unfettered internet access simultaneously. Integration is another challenge because every tool your agent controls needs a connection and every API needs maintenance. The [glue code explosion](/openai-devday-where-value-lives-in-ai-agent-tooling/) adds up fast, and whilst the Model Context Protocol helps standardise connections, we are still early.
 
@@ -50,7 +50,7 @@ Orchestrating agents can also call themselves. [Ralph loops](/your-agent-orchest
 
 Most AI companies face a strategic choice: focus on the API and become infrastructure, risking commoditisation as alternatives emerge, or focus on the interface and become an application, dependent on whatever platform serves your models. Claude Code chose both. It is the interface layer, the thing you talk to directly, but it also has platform characteristics through its extensibility. MCP servers let it connect to arbitrary tools, hooks let it integrate with your workflows, and skills let you customise its behaviour. Other agents can call it, and you can embed it into your own applications.
 
-[I use Claude Code for everything now](/today-in-claude-code/): research, writing, planning, development. The tool has become my primary interface to my computer for knowledge work because it can coordinate across all my applications whilst embedding itself wherever I need it.
+[I use Claude Code for everything now](/where-did-my-day-go/): research, writing, planning, development. The tool has become my primary interface to my computer for knowledge work because it can coordinate across all my applications whilst embedding itself wherever I need it.
 
 ## What This Means for Builders
 

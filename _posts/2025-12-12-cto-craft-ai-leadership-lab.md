@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "New for 2026: The AI Leadership Lab"
+title: "The AI Leadership Lab at CTO Craft"
 date: 2025-12-12 09:00:00 +0000
+permalink: /ai-leadership-lab-cto-craft/
+redirect_from: /cto-craft-ai-leadership-lab/
 categories:
 - ai
 - talk
@@ -11,6 +13,8 @@ venue: "QEII Centre, London"
 talk_date: 2026-03-09
 talk_url: "https://conference.ctocraft.com/london-2026/"
 talk_title: "The AI Leadership Lab"
+image: /assets/img/cto-craft-2026-ai-leadership-lab.jpg
+image_portrait: true
 ---
 
 AI is no longer a passing trend. It is shaping the future of technology and leadership. Whether you are sceptical of the hype or convinced it is essential to your strategy, one thing is clear: avoiding the conversation is not an option.

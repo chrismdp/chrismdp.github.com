@@ -65,7 +65,7 @@
       </article>
     {% endif %}
 
-    {% if forloop.last %}
+    {% if forloop.last and forloop.index > 1 %}
       </div> <!-- Close sidebar column -->
     {% endif %}
   {% endfor %}

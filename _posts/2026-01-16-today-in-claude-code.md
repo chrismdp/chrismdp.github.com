@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "Today in Claude Code: A Skill to Track What You Actually Accomplished"
+title: "Where Did My Day Go? A Claude Code Skill for Remembering"
 date: 2026-01-16 12:00:00 +0000
+permalink: /where-did-my-day-go/
+redirect_from: /today-in-claude-code/
 categories:
 - ai
 - claude-code

@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "AI Feeding On Itself Only Holds Water If The Output Is Worse"
+title: "AI Slop Is Real. Model Collapse Isn't."
 date: 2025-11-27 09:00:00 +0000
+permalink: /ai-slop-is-real-model-collapse-isnt/
+redirect_from: /ai-feeding-on-itself/
 categories:
 - ai
 - writing
@@ -52,7 +54,7 @@ I use AI to help me write almost everything now. But I do not ask it to write fo
 
 Because I have more context than any model. Decades of lived experience. Specific knowledge from building real systems. Patterns I have internalised but not yet verbalised. AI helps me surface that, acting as a thinking partner that asks the questions I need to hear but would not think to ask myself.
 
-When I publish that enhanced thinking, I am contributing to a virtuous cycle instead of a vicious one. The key is treating AI as a question generator, not an answer generator. [Get it to ask you one question at a time](/webinar-claude-code-thinking/), answer thoughtfully, and let the process reveal what you actually think. This is fundamentally different from asking AI to generate content for you.
+When I publish that enhanced thinking, I am contributing to a virtuous cycle instead of a vicious one. The key is treating AI as a question generator, not an answer generator. [Get it to ask you one question at a time](/claude-code-is-for-everything/), answer thoughtfully, and let the process reveal what you actually think. This is fundamentally different from asking AI to generate content for you.
 
 ## The Stakes Are Higher Than You Think
 

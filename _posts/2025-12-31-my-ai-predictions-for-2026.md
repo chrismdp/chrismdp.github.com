@@ -91,7 +91,7 @@ Some things are building but will not reach tipping points in 2026.
 
 [Energy abundance](/ai-power-usage-reality/) and the solar thesis remain on a longer horizon. The infrastructure investments are happening, but the transformation takes longer than optimists expect.
 
-[Model collapse](/ai-feeding-on-itself/) stays masked by raw capability gains. We will not see clear evidence of AI training on AI output degrading quality, even though it is probably happening. The capability improvements are large enough to hide the effect.
+[Model collapse](/ai-slop-is-real-model-collapse-isnt/) stays masked by raw capability gains. We will not see clear evidence of AI training on AI output degrading quality, even though it is probably happening. The capability improvements are large enough to hide the effect.
 
 Evaluation infrastructure does not become standard. Most teams still [evaluate on vibes](/how-to-build-a-robust-llm-application/) rather than proper metrics. The tooling exists, but adoption lags. We are still in the "spreadsheet era" of AI evaluation, tracking things manually rather than systematically.
 

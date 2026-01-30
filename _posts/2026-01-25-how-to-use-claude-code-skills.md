@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "How To Use Claude Code Skills"
+title: "Skills Are Claude Code's Secret Weapon"
 date: 2026-01-25 08:00 +0000
+permalink: /skills-are-claude-codes-secret-weapon/
+redirect_from: /how-to-use-claude-code-skills/
 series: "Where AI Lives"
 categories:
 - ai
@@ -63,7 +65,7 @@ gemini-images/
 
 I did not write the script myself. I pasted in the API documentation and asked Claude Code to build it, having it ask me questions as it went. I needed to know roughly how API keys work, but that was about it. The script lives inside the skill directory and only loads when needed, keeping my normal context clean.
 
-You can also create agents within your skills by adding `context: fork` to the frontmatter. These run in isolated subagents that coordinate multiple steps without cluttering your main conversation. My [morning routine skill](/webinar-claude-code-thinking/), for example, reads my calendar, checks my goals, asks me questions about how I am feeling, and writes a journal entry. All of this is encoded in a skill that I invoke with a single command.
+You can also create agents within your skills by adding `context: fork` to the frontmatter. These run in isolated subagents that coordinate multiple steps without cluttering your main conversation. My [morning routine skill](/claude-code-is-for-everything/), for example, reads my calendar, checks my goals, asks me questions about how I am feeling, and writes a journal entry. All of this is encoded in a skill that I invoke with a single command.
 
 ## Source Control Your Skills
 

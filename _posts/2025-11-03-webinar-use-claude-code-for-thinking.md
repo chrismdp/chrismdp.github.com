@@ -1,8 +1,11 @@
 ---
 layout: post
-title: "How To Use Claude Code for Thinking"
+title: "Claude Code Is For Everything"
 date: 2025-11-06 09:00:00 +0000
-permalink: /webinar-claude-code-thinking/
+permalink: /claude-code-is-for-everything/
+redirect_from:
+- /webinar-claude-code-thinking/
+- /webinar-use-claude-code-for-thinking/
 image: /assets/img/use-claude-code-webinar-thinking.png
 image_portrait: false
 series: "AI In Action Webinars"
