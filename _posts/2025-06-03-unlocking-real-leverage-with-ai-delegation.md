@@ -61,7 +61,7 @@ One factor people forget: [AI can be phished](/webinar-stop-ai-stealing-from-you
 
 <img src="/assets/img/clawdbot-effect-comic.jpg" alt="The Clawdbot Effect - comic showing CEO firing EA for 80% accuracy on Monday, then installing Clawdbot at 3am Tuesday" class="float-right w-1/2 ml-4 mb-4 rounded-lg" />
 
-This matters more as always-on agents become common. Moltbot has taken X by storm recently, an always-on agent that can work autonomously on tasks over hours or days. The temptation is obvious: fire the assistant who keeps getting things 80% right and install Clawdbot to save money. But if you would not trust a human with a task unsupervised, you should not trust an AI with it either. The same delegation principles apply. When AI can act without you in the loop, being intentional about what you delegate becomes critical. Choose your delegation level deliberately, not by default.
+This matters more as always-on agents become common. Moltbot has taken X by storm recently,[^2] an always-on agent that can work autonomously on tasks over hours or days. The temptation is obvious: fire the assistant who keeps getting things 80% right and install Clawdbot to save money. But if you would not trust a human with a task unsupervised, you should not trust an AI with it either. The same delegation principles apply. When AI can act without you in the loop, being intentional about what you delegate becomes critical. Choose your delegation level deliberately, not by default.
 
 Where you draw the line depends on task-relevant maturity. As AI improves at a task (or as you build better prompts and guardrails), you can move down the spectrum. What starts as "approve before action" might become "spot check" after a few months of reliable performance.
 
@@ -120,3 +120,5 @@ The awkwardness is a sign you are learning and making progress. If we learn to d
 Every experiment brings you closer to the kind of leverage that transforms your workflow. You do not need a perfect system. You just need to start.
 
 [^1]: Shreyas Doshi's radical delegation framework considers both impact to the business and the person's confidence level to determine how hands-on a leader should be. The higher the stakes and lower the confidence, the more closely you need to be involved. See his [original thread](https://x.com/shreyas/status/1401598910792011776){:target="_blank"} for more.
+
+[^2]: See the [Moltbot GitHub repository](https://github.com/moltbot/moltbot){:target="_blank"}. There has been a wave of YouTube videos hyping Moltbot as a must-have tool, but be careful: installing an always-on agent with access to your machine and accounts is dangerous if you do not understand what you are doing.
