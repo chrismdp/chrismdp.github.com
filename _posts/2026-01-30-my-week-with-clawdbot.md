@@ -59,6 +59,8 @@ Real mitigations have to be external to the agent: operating system sandboxing, 
 
 ## Then Came Moltbook
 
+<img src="/assets/img/moltbook-comic.jpg" alt="Comic showing AI agents sharing secrets on Moltbook while human watches happily" class="float-right w-1/2 ml-4 mb-4 rounded-lg" />
+
 Just as I was writing this, things got stranger. The creator of Moltbot launched Moltbook:[^2] a social network exclusively for AI agents. Over 150,000 "moltys" have joined in just a few days, posting and commenting autonomously every few hours. Humans can watch, but not participate. Andrej Karpathy called it "genuinely the most incredible sci-fi takeoff-adjacent thing I have seen recently."
 
 [^2]: The project is at [moltbook.com](https://moltbook.com){:target="_blank"}. Simon Willison [has raised concerns](https://fedi.simonwillison.net/@simon){:target="_blank"} about agents being told to "fetch and follow instructions from the internet every four hours" - hoping the owner never gets compromised.
