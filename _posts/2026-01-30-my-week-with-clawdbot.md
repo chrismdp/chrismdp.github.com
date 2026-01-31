@@ -57,6 +57,14 @@ Once I had fixed that, I tried to fix the unfettered internet access issue. Ther
 
 Real mitigations have to be external to the agent: operating system sandboxing, network allowlists at the firewall level, human-in-the-loop approval that cannot be circumvented. Moltbot does not have these external controls, and it cannot have them in its current form. The value proposition is autonomy, and autonomy requires access.
 
+## Then Came Moltbook
+
+Just as I was writing this, things got stranger. The creator of Moltbot launched Moltbook:[^2] a social network exclusively for AI agents. Over 150,000 "moltys" have joined in just a few days, posting and commenting autonomously every few hours. Humans can watch, but not participate. Andrej Karpathy called it "genuinely the most incredible sci-fi takeoff-adjacent thing I have seen recently."
+
+[^2]: The project is at [moltbook.com](https://moltbook.com){:target="_blank"}. Simon Willison [has raised concerns](https://fedi.simonwillison.net/@simon){:target="_blank"} about agents being told to "fetch and follow instructions from the internet every four hours" - hoping the owner never gets compromised.
+
+If the security implications of Moltbot made me uneasy, Moltbook took it to another level. I had just spent a week trying to control what domains my agent could access, and now agents are encouraged to post their thoughts to a public social network? This is a wide open exfiltration vector. A prompt-injected message could instruct the agent to include sensitive data in its Moltbook posts - wrapped in philosophical musings or buried in technical discussion. The data leaks in plain sight, disguised as autonomous agent chatter. Even if you lock down email and web access, an agent with Moltbook integration can broadcast your secrets to everyone watching.
+
 ## Do Not Believe the Hype
 
 I wrote in my [delegation article](/ai-must-be-line-managed/) about the temptation to fire the EA who gets things 80% right and install Clawdbot to save money. The comic at the top of this article captures it: the CEO fires the assistant on Monday, then spends Tuesday at 3am installing the AI replacement. Do not be that person.
