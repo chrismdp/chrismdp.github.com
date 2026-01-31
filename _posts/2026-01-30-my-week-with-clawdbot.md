@@ -2,11 +2,11 @@
 layout: post
 title: "Don't Let Your CEO Install Clawdbot"
 date: 2026-01-30 09:00:00 +0000
-permalink: /dont-let-your-ceo-install-clawdbot/
+permalink: /dont-let-your-ceo-install-openclaw/
 redirect_from:
 - /my-week-with-clawdbot/
 - /dont-let-your-ceo-install-moltbot/
-- /dont-let-your-ceo-install-openclaw/
+- /dont-let-your-ceo-install-clawdbot/
 series: "Where AI Lives"
 categories:
 - ai
