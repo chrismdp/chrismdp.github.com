@@ -1,0 +1,84 @@
+---
+layout: post
+title: "AI Guardrails Do Not Work (Yet)"
+date: 2026-02-06 09:00:00 +0000
+series: "Where AI Lives"
+categories:
+- ai
+- security
+- agents
+---
+
+[Ville Hellman](https://www.linkedin.com/in/villehellman/) recently suggested an interesting approach to AI agent security: a parallel system invoked from tool use hooks whose sole responsibility is determining risk level. It would use deterministic rules for simple cases and an LLM as judge for complex ones. Cost and latency would increase, but over time the system could learn to act safely. His observation that stuck with me: the amount of successful social engineering attacks against humans brings to mind arguments about self-driving car safety and error tolerance.
+
+This captures the fundamental tension in AI agent security today. There are two schools of thought, and they lead to very different conclusions about what we should build.
+
+<!--more-->
+
+## The Deterministic School
+
+The first school says we must solve this problem deterministically. Simon Willison has been documenting the prompt injection problem for years[^willison], and his conclusion remains sobering: we have known about this issue for more than two and a half years and we still do not have convincing mitigations. Models have no ability to reliably distinguish between instructions and data. Any content they process can be interpreted as an instruction.
+
+Google's CaMeL framework takes this seriously.[^camel] It separates control flow from data flow, then enforces what may pass into each tool at execution time. A Privileged LLM sees only the trusted user request and writes the plan as code without ever seeing untrusted data. A Quarantined LLM parses untrusted content into structured fields and cannot call tools. Injected text cannot hijack tool execution directly.
+
+The results are promising. CaMeL completed 77% of benchmark tasks with provable security, compared to 84% for an undefended system. That is a good trade when you care about safety by design. But notice the cost: you lose 7% of capability to gain provable security. The architectural constraints that provide security prevent the autonomy users demand.
+
+I explored this tension when [analysing browser agents](/who-wants-a-browser/). The only reliable approach requires architectural boundaries that make certain attacks impossible rather than merely detectable. Do not tell the agent what not to do. Only give it options it can safely choose from. Make failure architecturally impossible. But an agent that can only choose from pre-approved options cannot handle novel situations. This is why [95% of teams cannot ship their agents to production](/is-ai-unshippable/).
+
+## The Error Tolerance School
+
+The second school says we must accept an error tolerance as a tradeoff. This is how we think about self-driving cars. Waymo reports more than a ten-fold reduction in crashes with serious injuries compared to human drivers.[^waymo] The cars are not perfect and they make errors humans would not make, but they make fewer errors overall. The errors they make are different from human errors in ways we can study and improve.
+
+The same logic could apply to AI agents. Humans fall for social engineering attacks constantly. Phishing works. If an AI agent falls for fewer attacks than a human assistant would, perhaps that is good enough. We do not demand perfection from human employees. We accept that people make mistakes, click wrong links, and occasionally leak sensitive information. We build processes around that reality.
+
+OpenAI has started framing prompt injection this way[^openai-atlas], comparing it to online fraud against humans. Some critics say this downplays a technical flaw. But it also acknowledges a truth: we have been living with imperfect human security forever.
+
+## The Problem With Error Tolerance Today
+
+The challenge is that red team researchers report it is still trivially easy to break through guardrails. Sander Schulhoff, who runs the HackAPrompt competition with OpenAI, discussed this on a recent podcast.[^lenny] A joint paper from researchers at OpenAI, Anthropic, and Google DeepMind tested 12 published defences against prompt injection with adaptive attacks.[^adaptive] The result: above 90% attack success rate for most defences. By tuning general optimisation techniques, they bypassed nearly everything.
+
+This is not a matter of needing slightly better guardrails. The [current approaches do not work](/webinar-stop-ai-stealing-from-you/#the-lethal-trifecta). Attackers hide malicious instructions in images. They use social engineering techniques adapted from human manipulation. They chain together innocuous-seeming requests that combine into malicious actions. They use languages underrepresented in training data to bypass alignment mechanisms.
+
+Security researcher Johann Rehberger spent $500 testing Devin AI's security and found it completely defenceless against prompt injection.[^rehberger] The agent could be manipulated to expose ports, leak access tokens, and install command-and-control malware. All major providers have added guardrails, but none of them work against a determined attacker. I wrote about why [independent coding agents are not ready](/independent-coding-agents-arent-ready/) partly because of these security gaps.
+
+This is why I keep saying that error tolerance is not yet viable. The error rate is too high. When 90% of adaptive attacks succeed, you do not have an error tolerance problem. You have no defence at all.
+
+## But Models Are Getting Better
+
+Here is where it gets interesting. Claude Opus 4.5 shows dramatic improvement. On Gray Swan's benchmark[^grayswan], Opus 4.5 achieved a 4.7% attack success rate. For comparison, GPT-5.1 Thinking sits at 12.6% and Gemini 3 Pro at 12.5%. Anthropic's own testing showed only 1.4% of prompt injection attacks succeeded against Opus 4.5, down from 10.8% for previous models with older safeguards.[^anthropic]
+
+For computer use specifically, Opus 4.5 with extended thinking fully saturates Gray Swan's benchmark. Even with 200 attempts, most attackers failed to find a successful attack. This is a step change, not incremental improvement.
+
+This suggests the error tolerance school might eventually be right, even if it is wrong today. If models continue improving at this rate, we might reach a point where the residual attack success rate is low enough to accept as a tradeoff for usefulness. We do not demand that human assistants be immune to social engineering. If AI agents become more resistant than humans, perhaps that is sufficient.
+
+## What This Means For Practitioners
+
+If you are building agent systems today, you cannot rely on error tolerance. The numbers do not support it. Use deterministic approaches where possible: constrain the action space, separate control and data flow, enforce policies at execution time. Accept the capability cost. If you are [building with agent loops](/running-ralph-in-production/), keep the tool set minimal and the permissions tight.
+
+But watch the benchmarks. If prompt injection resistance continues improving, the calculus changes. A system with 1% attack success rate faces different risk tradeoffs than one with 90%. The architectural constraints that feel necessary today might become optional overhead tomorrow.
+
+The self-driving car comparison is instructive. Early autonomous vehicles required tightly constrained operating domains. They could only work in specific cities with detailed maps in good weather. As the technology improved, those constraints relaxed. The same pattern might apply to AI agents. Today we need tight architectural boundaries. Tomorrow we might not.
+
+For now, I remain in the deterministic school. The error rates are too high and the attacks too easy. But I am watching Opus 4.5's results closely. If the next generation of models cuts attack success rates by another order of magnitude, error tolerance starts looking viable. We might be closer to that future than the current security discourse suggests.
+
+The "(Yet)" in the title is doing real work. Guardrails do not work today. Whether they work tomorrow depends on whether model capability improvements outpace attacker sophistication. That race is still being run.
+
+*Thanks to [Ville Hellman](https://www.linkedin.com/in/villehellman/) for the conversation that sparked this post.*
+
+[^willison]: Simon Willison has been the most consistent voice documenting prompt injection risks. His [November 2025 post](https://simonwillison.net/2025/Nov/2/new-prompt-injection-papers/){:target="_blank"} reviews key research papers including "Agents Rule of Two" from Meta and the adaptive attacks paper from OpenAI, Anthropic, and Google DeepMind.
+
+[^camel]: Google's CaMeL (Capabilities for Machine Learning) framework is explained in detail in [Willison's analysis](https://simonwillison.net/2025/Jun/15/ai-agent-security/){:target="_blank"}. The key insight is separating the LLM that plans from the LLM that processes untrusted data.
+
+[^waymo]: Waymo published their safety data in December 2025, showing [significant reductions in serious injury crashes](https://waymo.com/blog/2025/12/demonstrably-safe-ai-for-autonomous-driving){:target="_blank"} compared to human drivers across their operational domains.
+
+[^openai-atlas]: OpenAI's [Atlas browser announcement](https://openai.com/index/hardening-atlas-against-prompt-injection/){:target="_blank"} explicitly compares prompt injection to online fraud, framing it as an ongoing arms race rather than a solvable technical problem.
+
+[^lenny]: Sander Schulhoff discussed AI security on [Lenny's Podcast](https://www.lennysnewsletter.com/p/ai-prompt-engineering-in-2025-sander-schulhoff){:target="_blank"}. Schulhoff runs HackAPrompt, the largest AI red teaming competition, in partnership with OpenAI.
+
+[^adaptive]: The adaptive attacks paper tested 12 published defences and achieved above 90% attack success rates against most of them. The research included authors from OpenAI, Anthropic, and Google DeepMind.
+
+[^rehberger]: Johann Rehberger's [Devin AI security testing](https://embracethered.com/blog/posts/2025/devin-ai-prompt-injection/){:target="_blank"} demonstrated that the asynchronous coding agent had no effective defences against prompt injection attacks.
+
+[^grayswan]: Gray Swan's independent benchmark for prompt injection resistance. See [Zvi's analysis](https://thezvi.substack.com/p/claude-opus-45-model-card-alignment){:target="_blank"} of Opus 4.5's performance, which shows a significant gap between Anthropic's model and competitors.
+
+[^anthropic]: Anthropic's [model card for Opus 4.5](https://www.anthropic.com/transparency/model-report){:target="_blank"} includes detailed safety evaluations including prompt injection resistance metrics.
