@@ -322,6 +322,9 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
         {% assign upcoming_talks = "" | split: "" %}
         {% assign past_talks = "" | split: "" %}
         {% for talk in talk_posts %}
+          {% assign post_time = talk.date | date: "%s" | plus: 0 %}
+          {% assign now_time = site.time | date: "%s" | plus: 0 %}
+          {% if post_time > now_time %}{% continue %}{% endif %}
           {% assign talk_date_seconds = talk.talk_date | date: "%s" %}
           {% if talk_date_seconds >= today %}
             {% assign upcoming_talks = upcoming_talks | push: talk %}
