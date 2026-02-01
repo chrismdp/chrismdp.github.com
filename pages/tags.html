@@ -10,7 +10,7 @@ permalink: /tags/
 {% for tag in tags_list %}{% if tag %}<h3 id="{{ tag | replace: ' ', '-' }}" class="linked-section">{{ tag | downcase }}</h3>
 <hr>
 <div class="post-list" style="margin-bottom:40px">
-    {% for post in site.categories[tag] %}<div class="tag-entry">
+    {% for post in site.categories[tag] %}{% assign post_time = post.date | date: "%s" | plus: 0 %}{% assign now_time = site.time | date: "%s" | plus: 0 %}{% if post_time > now_time %}{% continue %}{% endif %}<div class="tag-entry">
     <a href="{{- site.url -}}{{- post.url -}}">{{- post.title -}}</a>
     <time class='text-xs opacity-50' datetime="{{- post.date | date_to_xmlschema -}}"> {{- post.date | date: "%b %Y" -}}</time>
 </div>{%- endfor -%}

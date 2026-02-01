@@ -101,6 +101,9 @@ webinar_date: "2026-02-05T14:00:00+00:00"
   <h2 class="text-2xl font-heading font-bold mb-6 text-brand-black">Previous Webinars</h2>
   <div class="space-y-1 mb-12">
     {% for post in site.categories.webinar %}
+      {% assign post_time = post.date | date: "%s" | plus: 0 %}
+      {% assign now_time = site.time | date: "%s" | plus: 0 %}
+      {% if post_time > now_time %}{% continue %}{% endif %}
     <div class="flex flex-col md:flex-row md:items-center gap-2 border-b border-brand-light-blue/10 py-2">
       <div class="text-sm text-brand-black/60 md:w-24 flex-shrink-0">
         {{ post.date | date: "%b %-d" }}
@@ -118,8 +121,14 @@ webinar_date: "2026-02-05T14:00:00+00:00"
 <div class="border-t border-brand-light-blue/20 pt-12">
   <h2 class="text-2xl font-heading font-bold mb-6 text-brand-black">More AI Articles</h2>
   <div class="space-y-1 mb-12">
-    {% for post in site.categories.ai limit:5 %}
+    {% assign shown_count = 0 %}
+    {% for post in site.categories.ai %}
+      {% assign post_time = post.date | date: "%s" | plus: 0 %}
+      {% assign now_time = site.time | date: "%s" | plus: 0 %}
+      {% if post_time > now_time %}{% continue %}{% endif %}
       {% unless post.categories contains 'webinar' %}
+        {% if shown_count >= 5 %}{% break %}{% endif %}
+        {% assign shown_count = shown_count | plus: 1 %}
       <div class="flex flex-col md:flex-row md:items-center gap-2 border-b border-brand-light-blue/10 py-2">
         <div class="text-sm text-brand-black/60 md:w-24 flex-shrink-0">
           {{ post.date | date: "%b %-d" }}

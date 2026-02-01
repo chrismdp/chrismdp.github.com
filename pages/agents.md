@@ -82,7 +82,13 @@ If you want to see how I work, request an agent audit or join a workshop. I am h
 
 <hr/>
 
-{% for post in site.categories.ai limit:5 %}
+{% assign shown_count = 0 %}
+{% for post in site.categories.ai %}
+   {% assign post_time = post.date | date: "%s" | plus: 0 %}
+   {% assign now_time = site.time | date: "%s" | plus: 0 %}
+   {% if post_time > now_time %}{% continue %}{% endif %}
+   {% if shown_count >= 5 %}{% break %}{% endif %}
+   {% assign shown_count = shown_count | plus: 1 %}
    <div class="post-preview py-4">
    <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 

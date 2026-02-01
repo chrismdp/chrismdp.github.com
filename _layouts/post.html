@@ -233,6 +233,9 @@ layout: default
       <div class="space-y-1 mb-12">
         {% assign today = site.time | date: "%s" %}
         {% for post in site.categories.talk limit:5 %}
+          {% assign post_time = post.date | date: "%s" | plus: 0 %}
+          {% assign now_time = site.time | date: "%s" | plus: 0 %}
+          {% if post_time > now_time %}{% continue %}{% endif %}
           {% unless post.url == page.url %}
           {% assign talk_date_seconds = post.talk_date | date: "%s" %}
           {% if talk_date_seconds >= today %}
@@ -496,6 +499,9 @@ layout: default
           <div class="space-y-1 mb-12">
             {% assign today = site.time | date: "%s" %}
             {% for post in site.categories.talk limit:5 %}
+              {% assign post_time = post.date | date: "%s" | plus: 0 %}
+              {% assign now_time = site.time | date: "%s" | plus: 0 %}
+              {% if post_time > now_time %}{% continue %}{% endif %}
               {% unless post.url == page.url %}
               {% assign talk_date_seconds = post.talk_date | date: "%s" %}
               {% if talk_date_seconds >= today %}
