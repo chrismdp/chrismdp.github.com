@@ -68,7 +68,13 @@
                <div>
                   <h3 class="font-bold text-lg mb-4">LATEST ARTICLES</h3>
                   <ul class="space-y-2">
-                     {% for post in site.posts limit:3 %}
+                     {% assign footer_count = 0 %}
+                     {% for post in site.posts %}
+                       {% assign post_time = post.date | date: "%s" | plus: 0 %}
+                       {% assign now_time = site.time | date: "%s" | plus: 0 %}
+                       {% if post_time > now_time %}{% continue %}{% endif %}
+                       {% if footer_count >= 3 %}{% break %}{% endif %}
+                       {% assign footer_count = footer_count | plus: 1 %}
                      <li>
                         <a href="{{ site.baseurl }}{{ post.url }}" class="text-gray-400 hover:text-white transition-colors">
                            {{ post.title | truncate: 40 }}

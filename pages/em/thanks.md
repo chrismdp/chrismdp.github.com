@@ -23,7 +23,13 @@ permalink: /em/thanks
   <div class="border-t border-brand-light-blue/20 pt-12">
     <h2 class="text-2xl font-heading font-bold mb-8 text-brand-black">Latest Articles</h2>
 
-    {% for post in site.posts limit:5 %}
+    {% assign shown_count = 0 %}
+    {% for post in site.posts %}
+      {% assign post_time = post.date | date: "%s" | plus: 0 %}
+      {% assign now_time = site.time | date: "%s" | plus: 0 %}
+      {% if post_time > now_time %}{% continue %}{% endif %}
+      {% if shown_count >= 5 %}{% break %}{% endif %}
+      {% assign shown_count = shown_count | plus: 1 %}
     <article class="pb-8 mb-8 border-b border-brand-light-blue/20 last:border-0">
       <h3 class="text-xl font-heading font-bold mb-2">
         <a href="{{ site.baseurl }}{{ post.url }}" class="text-brand-black hover:text-brand-deep-turquoise transition-colors">{{ post.title }}</a>
