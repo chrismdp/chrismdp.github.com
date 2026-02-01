@@ -14,7 +14,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Newsletters use full absolute URLs**: When linking to blog posts from newsletters, always use `https://www.chrismdp.com/slug/` (e.g., `https://www.chrismdp.com/coding-with-ai/`) so links work in email clients
 - This matches the Jekyll permalink structure configured in `_config.yml`
 
-### Newsletter Vault Locations
+### Google Drive Access (gog CLI)
+- **Tool**: Use `gog` CLI for Google Drive operations (upload, download, search, list)
+- **Claude Remote folder**: Upload files for Chris to review to the "Claude Remote" folder (ID: `1I3-GWoWaRXeHxC3aMeljpI8UscsTGCU1`)
+- **Upload command**: `gog drive upload /path/to/file.jpg --parent 1I3-GWoWaRXeHxC3aMeljpI8UscsTGCU1 --name "Descriptive Name.jpg"`
+- **Search**: `gog drive search "query"` to find files/folders
+- **List folder**: `gog drive ls --folder <folderId>`
+- **VPS clipboard workaround**: When working on VPS via Termius (no pbcopy), upload text to Claude Remote folder as a .txt file. Open on phone via Google Drive app to copy/paste into LinkedIn etc.
+
+### Newsletter Vault Locations (macOS paths - use gog CLI on Linux)
 - **Comics**: `/Users/cp/Library/CloudStorage/GoogleDrive-chris.p@rsons.org/My Drive/chrismdp ltd/Public/Newsletter Vault/Comics`
 - **Infographics**: `/Users/cp/Library/CloudStorage/GoogleDrive-chris.p@rsons.org/My Drive/chrismdp ltd/Public/Newsletter Vault/Infographics`
 - **Naming convention**: Use Capitalised Spaced Names describing the comic or infographic title (e.g., "Things I'll Get To Eventually.jpg", "How to Design with AI.jpg")

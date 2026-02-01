@@ -2,10 +2,12 @@
 layout: post
 title: "Doing Real Work with AI Just Became 150x Cheaper"
 date: 2025-08-06 10:00:00 +0000
+series: "Local AI"
 categories:
 - ai
 - economics
 - open-source
+- local-ai
 ---
 
 **Open source AI models now cost 150 times less than frontier models whilst delivering comparable performance.** This is not just a pricing anomaly. This is the quiet revolution that will reshape how we think about artificial intelligence access and deployment.

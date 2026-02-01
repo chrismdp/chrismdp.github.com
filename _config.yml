@@ -66,6 +66,9 @@ excerpt_separator: <!--more-->
 
 # Defaults
 
+future: true
+preview_passcode: "draft2026"
+
 safe: true
 plugins:
   - jekyll-redirect-from

@@ -12,6 +12,7 @@ redirect_from:
   {% assign all_posts = site.posts %}
   {% assign latest_posts = "" | split: "" %}
   {% for post in all_posts limit: 20 %}
+    {% if post.preview %}{% continue %}{% endif %}
     {% assign webinar_time = post.webinar_date | date: "%s" | plus: 0 %}
     {% assign now_time = site.time | date: "%s" | plus: 0 %}
     {% if post.webinar_date == nil or webinar_time <= now_time %}
@@ -25,6 +26,9 @@ redirect_from:
 <h2 class="text-2xl font-heading font-bold mb-6 text-brand-black border-t border-brand-light-blue/20 pt-8">All Articles</h2>
 
 {% for post in site.posts %}
+  {% assign post_time = post.date | date: "%s" | plus: 0 %}
+  {% assign now_time = site.time | date: "%s" | plus: 0 %}
+  {% if post_time > now_time %}{% continue %}{% endif %}
   {% assign webinar_time = post.webinar_date | date: "%s" | plus: 0 %}
   {% assign now_time = site.time | date: "%s" | plus: 0 %}
   {% if post.webinar_date == nil or webinar_time <= now_time %}

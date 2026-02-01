@@ -97,6 +97,9 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
     {% assign infographic_posts = "" | split: "" %}
     {% assign sorted_posts = site.posts | sort: "date" | reverse %}
     {% for post in sorted_posts limit: 30 %}
+      {% assign post_time = post.date | date: "%s" | plus: 0 %}
+      {% assign now_time = site.time | date: "%s" | plus: 0 %}
+      {% if post_time > now_time %}{% continue %}{% endif %}
       {% if post.infographic and post.infographic_carousel != false %}
         {% assign infographic_posts = infographic_posts | push: post %}
       {% endif %}
@@ -432,7 +435,15 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
   <div class="max-w-4xl mx-auto px-6">
     <h2 class="text-3xl font-heading font-bold mb-8 text-brand-black">Latest Articles</h2>
 
-    {% assign latest_posts = site.posts | slice: 0, 3 %}
+    {% assign latest_posts = "" | split: "" %}
+    {% for post in site.posts limit: 10 %}
+      {% assign post_time = post.date | date: "%s" | plus: 0 %}
+      {% assign now_time = site.time | date: "%s" | plus: 0 %}
+      {% if post_time <= now_time %}
+        {% assign latest_posts = latest_posts | push: post %}
+        {% if latest_posts.size >= 3 %}{% break %}{% endif %}
+      {% endif %}
+    {% endfor %}
     {% include article-list.html posts=latest_posts %}
 
     <div class="text-center space-x-4 mt-8">
