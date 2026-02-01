@@ -10,6 +10,9 @@ Only includes posts that have images (for quality filtering).
   {% assign oldest_date = page.date | date: "%s" | minus: 157680000 | date: "%Y-%m-%d" %}
 
   {% for post in tag_posts %}
+    {% assign post_time = post.date | date: "%s" | plus: 0 %}
+    {% assign now_time = site.time | date: "%s" | plus: 0 %}
+    {% if post_time > now_time %}{% continue %}{% endif %}
     {% assign post_date = post.date | date: "%Y-%m-%d" %}
     {% if post.id != page.id and post_date >= oldest_date and post.image %}
       {% assign related_posts = related_posts | append: post.id | append: "," %}
