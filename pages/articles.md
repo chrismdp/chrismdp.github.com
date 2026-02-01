@@ -12,9 +12,10 @@ redirect_from:
   {% assign all_posts = site.posts %}
   {% assign latest_posts = "" | split: "" %}
   {% for post in all_posts limit: 20 %}
-    {% if post.preview %}{% continue %}{% endif %}
-    {% assign webinar_time = post.webinar_date | date: "%s" | plus: 0 %}
+    {% assign post_time = post.date | date: "%s" | plus: 0 %}
     {% assign now_time = site.time | date: "%s" | plus: 0 %}
+    {% if post_time > now_time %}{% continue %}{% endif %}
+    {% assign webinar_time = post.webinar_date | date: "%s" | plus: 0 %}
     {% if post.webinar_date == nil or webinar_time <= now_time %}
       {% assign latest_posts = latest_posts | push: post %}
       {% if latest_posts.size >= 4 %}{% break %}{% endif %}
