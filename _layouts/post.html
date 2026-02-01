@@ -537,9 +537,17 @@ layout: default
 {% if is_future_post %}
 </div><!-- end preview-content -->
 <script>
-function checkPreviewCode() {
+async function sha256(message) {
+  const msgBuffer = new TextEncoder().encode(message);
+  const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+async function checkPreviewCode() {
   var code = document.getElementById('preview-code').value;
-  if (code === '{{ site.preview_passcode }}') {
+  var hash = await sha256(code);
+  if (hash === '{{ site.preview_passcode_hash }}') {
     showPreview();
   } else {
     alert('Incorrect preview code');
@@ -552,10 +560,17 @@ function showPreview() {
   sessionStorage.setItem('preview_authenticated', 'true');
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', async function() {
   var urlParams = new URLSearchParams(window.location.search);
   var previewCode = urlParams.get('preview');
-  if (previewCode === '{{ site.preview_passcode }}' || sessionStorage.getItem('preview_authenticated') === 'true') {
+  if (previewCode) {
+    var hash = await sha256(previewCode);
+    if (hash === '{{ site.preview_passcode_hash }}') {
+      showPreview();
+      return;
+    }
+  }
+  if (sessionStorage.getItem('preview_authenticated') === 'true') {
     showPreview();
   }
 });

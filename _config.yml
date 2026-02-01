@@ -67,7 +67,7 @@ excerpt_separator: <!--more-->
 # Defaults
 
 future: true
-preview_passcode: "draft2026"
+preview_passcode_hash: "229aee5c0a655ecaf8c65c192f6598b82107ecf68397dc4a5eb7286edc3de478"
 
 safe: true
 plugins:
