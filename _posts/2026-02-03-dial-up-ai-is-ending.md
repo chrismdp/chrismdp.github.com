@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Dial-Up AI Is Ending"
-date: 2026-02-03 09:00:00 +0000
+date: 2026-02-02 09:00:00 +0000
 series: "Local AI"
 image: /assets/img/dial-up-ai-comic.jpg
 image_portrait: true
