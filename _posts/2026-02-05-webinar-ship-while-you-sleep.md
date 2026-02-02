@@ -17,7 +17,7 @@ kit_tag: webinar12
 webinar_date: "2026-02-05T14:00:00+00:00"
 ---
 
-What if you could assign a task to an AI agent before bed and wake up to find it done? I've been experimenting with this but haven't taken the plunge yet. In this webinar I'll explore why, and what it would take to trust an agent overnight.
+What if you could assign a task to an AI agent before bed and wake up to find it done? We're closer to this than most people realise. In this webinar I'll show you exactly what it takes to get there.
 
 <!--more-->
 
@@ -32,11 +32,11 @@ What if you could assign a task to an AI agent before bed and wake up to find it
   </p>
 
   <p class="text-xl text-brand-black mb-8">
-    Autonomous coding agents can now run for hours on complex tasks. But I haven't let one run overnight yet. The token costs, the risk of runaway loops, the question of whether I'd actually trust the output in the morning... there's a gap between what's possible and what I'm willing to try.
+    The tools are ready. Claude Code can run for hours, make decisions, and recover from errors. Token limits, permission boundaries, and checkpoints already exist. What's missing isn't the technology. It's the playbook.
   </p>
 
   <p class="text-xl text-brand-black mb-8">
-    In this session, I'll share my experiments so far, what's holding me back, and we'll figure out together what it would take to actually ship while we sleep.
+    In this session, we'll map out exactly what it takes to go from interesting experiment to trusted overnight workflow.
   </p>
 
   <div class="bg-brand-deep-turquoise rounded-lg p-8 text-center mb-12 clear-both">
@@ -46,10 +46,10 @@ What if you could assign a task to an AI agent before bed and wake up to find it
   <div class="mb-8">
     <h3 class="text-lg font-bold text-brand-black mb-4">What We Will Cover:</h3>
     <ul class="space-y-2 text-brand-black">
-      <li><strong>My Experiments So Far:</strong> What I've tried with autonomous agents, what worked, and what made me nervous</li>
-      <li><strong>The Trust Gap:</strong> Why it's hard to let an agent run unsupervised, even when the tools support it</li>
-      <li><strong>Guardrails That Matter:</strong> Token limits, permissions, and checkpoints that could make overnight runs safer</li>
-      <li><strong>What Would It Take:</strong> Working through the barriers together to figure out when this becomes practical</li>
+      <li><strong>Task Patterns That Work:</strong> Which tasks are safe to hand off completely, and how to scope them for unsupervised runs</li>
+      <li><strong>Guardrail Configuration:</strong> Token limits, permissions, and checkpoints that prevent expensive surprises</li>
+      <li><strong>Verification Steps:</strong> How to trust the output in the morning without reviewing every line</li>
+      <li><strong>The Path Forward:</strong> What's left to figure out, and how to close the gap</li>
     </ul>
   </div>
 
