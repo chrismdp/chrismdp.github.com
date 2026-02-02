@@ -141,12 +141,38 @@ layout: default
   {% if page.infographic %}
   <div class="my-8 flex flex-col items-center">
     <img src="{{ page.infographic }}" alt="{{ page.title }} infographic" style="max-width: 50%;" class="rounded-lg" />
-    <p class="mt-3 text-sm text-brand-black/50">High-res version available to newsletter subscribers</p>
+    {% unless page.kit_tag %}<p class="mt-3 text-sm text-brand-black/50">High-res version available to newsletter subscribers</p>{% endunless %}
   </div>
   {% endif %}
 
-  <!-- Webinar link for webinar posts -->
+  <!-- Previous Webinars section for webinar posts -->
   {% if page.categories contains 'webinar' %}
+  <div id="previous-webinars" class="border-t border-brand-light-blue/20 pt-12">
+    <h2 class="text-2xl font-heading font-bold mb-6 text-brand-black">Previous Webinars</h2>
+    <div class="space-y-1 mb-12">
+      {% for post in site.categories.webinar %}
+        {% assign post_time = post.date | date: "%s" | plus: 0 %}
+        {% assign now_time = site.time | date: "%s" | plus: 0 %}
+        {% if post_time > now_time %}{% continue %}{% endif %}
+        {% if post.url == page.url %}{% continue %}{% endif %}
+      <div class="flex flex-col md:flex-row md:items-center gap-2 border-b border-brand-light-blue/10 py-2">
+        <div class="text-sm text-brand-black/60 md:w-24 flex-shrink-0">
+          {{ post.date | date: "%b %-d" }}
+        </div>
+        <div class="flex-1">
+          <a href="{{ post.url | prepend: site.baseurl }}" class="text-brand-black hover:text-brand-deep-turquoise transition-colors">
+            {{ post.title }}
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  {% endif %}
+
+  <!-- Webinar link for webinar write-ups (not landing pages) -->
+  {% if page.categories contains 'webinar' and page.kit_tag == nil %}
   <div class="my-12">
     <div class="text-center bg-brand-light-blue/10 rounded-lg p-6">
       <h3 class="text-xl font-heading font-semibold mb-4 text-brand-black">Join Future Webinars</h3>
@@ -161,8 +187,8 @@ layout: default
   </div>
   {% endif %}
 
-  <!-- Newsletter signup -->
-  {% unless page.categories contains 'case-studies' %}
+  <!-- Newsletter signup (skip for webinar landing pages which have signup in content) -->
+  {% unless page.categories contains 'case-studies' or page.kit_tag %}
   <div class="my-12">
     {% include ai-newsletter-short.html %}
   </div>
@@ -408,12 +434,38 @@ layout: default
       {% if page.infographic %}
       <div class="my-8 flex flex-col items-center">
         <img src="{{ page.infographic }}" alt="{{ page.title }} infographic" style="max-width: 50%;" class="rounded-lg" />
-        <p class="mt-3 text-sm text-brand-black/50">High-res version available to newsletter subscribers</p>
+        {% unless page.kit_tag %}<p class="mt-3 text-sm text-brand-black/50">High-res version available to newsletter subscribers</p>{% endunless %}
       </div>
       {% endif %}
 
-      <!-- Webinar link for webinar posts -->
+      <!-- Previous Webinars section for webinar posts -->
       {% if page.categories contains 'webinar' %}
+      <div id="previous-webinars" class="border-t border-brand-light-blue/20 pt-12">
+        <h2 class="text-2xl font-heading font-bold mb-6 text-brand-black">Previous Webinars</h2>
+        <div class="space-y-1 mb-12">
+          {% for post in site.categories.webinar %}
+            {% assign post_time = post.date | date: "%s" | plus: 0 %}
+            {% assign now_time = site.time | date: "%s" | plus: 0 %}
+            {% if post_time > now_time %}{% continue %}{% endif %}
+            {% if post.url == page.url %}{% continue %}{% endif %}
+          <div class="flex flex-col md:flex-row md:items-center gap-2 border-b border-brand-light-blue/10 py-2">
+            <div class="text-sm text-brand-black/60 md:w-24 flex-shrink-0">
+              {{ post.date | date: "%b %-d" }}
+            </div>
+            <div class="flex-1">
+              <a href="{{ post.url | prepend: site.baseurl }}" class="text-brand-black hover:text-brand-deep-turquoise transition-colors">
+                {{ post.title }}
+              </a>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      {% endif %}
+
+      <!-- Webinar link for webinar write-ups (not landing pages) -->
+      {% if page.categories contains 'webinar' and page.kit_tag == nil %}
       <div class="my-12">
         <div class="text-center bg-brand-light-blue/10 rounded-lg p-6">
           <h3 class="text-xl font-heading font-semibold mb-4 text-brand-black">Join Future Webinars</h3>
@@ -428,8 +480,8 @@ layout: default
       </div>
       {% endif %}
 
-      <!-- Newsletter signup -->
-      {% unless page.categories contains 'case-studies' %}
+      <!-- Newsletter signup (skip for webinar landing pages which have signup in content) -->
+      {% unless page.categories contains 'case-studies' or page.kit_tag %}
       <div class="my-12">
         {% include ai-newsletter-short.html %}
       </div>
