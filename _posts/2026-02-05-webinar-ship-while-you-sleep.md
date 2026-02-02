@@ -17,7 +17,7 @@ kit_tag: webinar12
 webinar_date: "2026-02-05T14:00:00+00:00"
 ---
 
-What if you could assign a task to an AI agent before bed and wake up to find it done? I'll show you how to run autonomous coding agents overnight, including real failures and what I learned from them.
+What if you could assign a task to an AI agent before bed and wake up to find it done? I've been experimenting with this but haven't taken the plunge yet. In this webinar I'll explore why, and what it would take to trust an agent overnight.
 
 <!--more-->
 
@@ -32,11 +32,11 @@ What if you could assign a task to an AI agent before bed and wake up to find it
   </p>
 
   <p class="text-xl text-brand-black mb-8">
-    Autonomous coding agents are no longer science fiction. Tools like Claude Code can now run for hours on complex tasks, making decisions, writing code, and recovering from errors without your involvement. But making this work reliably requires understanding the patterns that succeed and the failure modes that burn through your token budget with nothing to show for it.
+    Autonomous coding agents can now run for hours on complex tasks. But I haven't let one run overnight yet. The token costs, the risk of runaway loops, the question of whether I'd actually trust the output in the morning... there's a gap between what's possible and what I'm willing to try.
   </p>
 
   <p class="text-xl text-brand-black mb-8">
-    By the end of this session, you will understand how to structure overnight agent runs, what guardrails actually matter, and how to wake up to useful work instead of expensive chaos.
+    In this session, I'll share my experiments so far, what's holding me back, and we'll figure out together what it would take to actually ship while we sleep.
   </p>
 
   <div class="bg-brand-deep-turquoise rounded-lg p-8 text-center mb-12 clear-both">
@@ -46,10 +46,10 @@ What if you could assign a task to an AI agent before bed and wake up to find it
   <div class="mb-8">
     <h3 class="text-lg font-bold text-brand-black mb-4">What We Will Cover:</h3>
     <ul class="space-y-2 text-brand-black">
-      <li><strong>What Ralph Loops Actually Are:</strong> The pattern behind running autonomous agents on extended tasks, named after leaving them running overnight</li>
-      <li><strong>Setting Up Guardrails:</strong> Token limits, timeout configurations, and permission boundaries that prevent runaway costs</li>
-      <li><strong>Task Definition That Works:</strong> How to scope tasks so agents can make meaningful progress without getting stuck in loops</li>
-      <li><strong>My Failures and Lessons:</strong> Real examples of overnight runs that went wrong and what I changed to fix them</li>
+      <li><strong>My Experiments So Far:</strong> What I've tried with autonomous agents, what worked, and what made me nervous</li>
+      <li><strong>The Trust Gap:</strong> Why it's hard to let an agent run unsupervised, even when the tools support it</li>
+      <li><strong>Guardrails That Matter:</strong> Token limits, permissions, and checkpoints that could make overnight runs safer</li>
+      <li><strong>What Would It Take:</strong> Working through the barriers together to figure out when this becomes practical</li>
     </ul>
   </div>
 
