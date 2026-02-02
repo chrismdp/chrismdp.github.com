@@ -3,8 +3,7 @@ layout: post
 title: "Dial-Up AI Is Ending"
 date: 2026-02-03 09:00:00 +0000
 series: "Local AI"
-image: /assets/img/dial-up-ai-motif.jpg
-infographic: /assets/img/dial-up-ai-comic.jpg
+image: /assets/img/dial-up-ai-comic.jpg
 categories:
 - ai
 - local-ai
