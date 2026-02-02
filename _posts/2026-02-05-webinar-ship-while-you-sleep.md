@@ -32,7 +32,7 @@ What if you could assign a task to an AI agent before bed and wake up to find it
   </p>
 
   <p class="text-xl text-brand-black mb-8">
-    The tools are ready. Claude Code can run for hours, make decisions, and recover from errors. Token limits, permission boundaries, and checkpoints already exist. What's missing isn't the technology. It's the playbook.
+    The tools are ready. Claude Code can run for hours, make decisions, and recover from errors. Token limits, permission boundaries, and checkpoints already exist. What's missing is the playbook.
   </p>
 
   <p class="text-xl text-brand-black mb-8">
