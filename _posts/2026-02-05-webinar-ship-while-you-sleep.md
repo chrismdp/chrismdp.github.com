@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Webinar: Ship While You Sleep"
-date: 2026-02-05 14:00:00 +0000
+date: 2026-02-02 10:00:00 +0000
 categories:
 - ai
 - webinar
