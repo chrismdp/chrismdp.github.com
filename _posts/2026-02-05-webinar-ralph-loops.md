@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Webinar: Ralph Loops - Run AI Agents While You Sleep"
+title: "Webinar: Ship While You Sleep"
 date: 2026-02-05 14:00:00 +0000
 categories:
 - ai

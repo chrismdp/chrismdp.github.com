@@ -60,6 +60,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Historical parallels**: Connects current disruptions to past ones (Charlie Chaplin/industrial revolution to AI revolution)
 - **Sectional progression**: Likes consolidated sections with subsections (e.g., "Hidden Advantages of Consistency" with multiple H3 subheadings)
 - **Mid-article refinement**: Often revises structure during writing - consolidating related concepts under unified headings
+- **Combine thin sections**: When a section is too short (1-2 paragraphs), merge it with the next section rather than leaving thin content
 - **Academic grounding**: References Kahneman, includes research studies, but always with practical application
 - **Democratisation theme**: Frequently explores how technology enables underdogs (juniors with AI competing with seniors)
 - **Future implications focus**: Always ends looking forward to disruption/change rather than just current state
@@ -67,55 +68,6 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Bolded topic sentences**: For framework steps or structured content, bold the first sentence/phrase for scannability
 - **Conceptual distinction**: When explaining steps in a process, clarify WHAT vs HOW (e.g., "discover what the task is" vs "understand how to do it")
 - **"But" as a paragraph starter**: Frequently starts paragraphs with "But" to create contrast and maintain conversational flow
-
-### Webinar Blog Post Guidelines
-- **Opening hook**: Use compelling statistics or reframe broad claims (e.g., "95% of technical teams cannot ship their AI agents" rather than specific anecdotes)
-- **Anonymise attendee contributions**: Never include specific names, companies, or identifying details from webinar attendees. Generalise their experiences (e.g., "agential teams burning through budgets" not "$10,000 spent by Bob's team")
-- **Webinar context**: Always establish that content comes from a specific webinar with date - "On [date], I gave a webinar about..."
-- **Virtual vs physical**: Use "virtual room" for webinars, not just "room"
-- **Brand consistency**: Cherrypick is always spelled "Cherrypick" (not "CherryPick") and should link to cherrypick.co
-- **Case study linking**: Link to relevant case studies when mentioning specific examples (e.g., meal generator case study)
-- **Avoid clunky phrasing**: Don't spell out percentages in prose - use "80% success rate" not "eighty percent good responses"
-- **Tools and resources**: Extract tools mentioned in webinars as markdown link lists for easy reference
-- **Key takeaways**: Always include a clear takeaway and actionable "try this week" suggestion
-
-### Standard Post-Webinar Process
-After each webinar, follow these steps to archive the content and prepare for the next month:
-
-#### 1. Create Webinar Write-Up Blog Post
-- [ ] Wait for the webinar transcript to be provided
-- [ ] Create a new post in `_posts/` with format: `YYYY-MM-DD-webinar-title.md`
-- [ ] Use the current date for the post date
-- [ ] Convert the webinar transcript into a blog post following the webinar blog post guidelines above
-- [ ] Add categories: `ai`, `webinar`, and any other relevant categories
-- [ ] Include the webinar image if one exists (check `/assets/img/`)
-- [ ] Add "Tools and Resources" section with markdown link list
-- [ ] Add "Key Takeaway to Remember" section summarising main insights
-- [ ] Add "One Thing to Try This Week" section with actionable next steps
-
-#### 2. Extract Kit Newsletter Content
-- [ ] Create markdown summary with three sections:
-  - "Tools & Resources I Mentioned" (bulleted list with descriptions)
-  - "Key Takeaway to Remember" (paragraph format)
-  - "One Thing to Try This Week" (paragraph format with specific prompt)
-- [ ] Format for pasting into Kit email editor
-- [ ] Verify all links use absolute URLs (not relative paths)
-- [ ] Check referral links are included where applicable
-
-#### 3. Update Webinar Pages for Next Month
-- [ ] **Main webinar page** (`pages/webinar.md`):
-  - Increment the `kit_tag` number from current value (e.g., if current is `webinar7` → `webinar8`)
-  - Set `webinar_date` to the first Thursday of the next month at 14:00 UK local time
-  - Use correct timezone offset: `+01:00` for BST (British Summer Time, late March to late October) or `+00:00` for GMT
-    - Example: `"2025-10-02T14:00:00+01:00"` for October 2025 (BST)
-    - Example: `"2025-11-06T14:00:00+00:00"` for November 2025 (GMT)
-- [ ] **Specific webinar landing page** (e.g., `pages/webinar-advanced-prompting.md`):
-  - Remove the `redirect_from: /webinar` field (so it no longer redirects the main URL)
-
-#### 4. Commit and Push Changes
-- [ ] Commit the new blog post with message like: "Add webinar write-up: [Title]"
-- [ ] Commit the updated webinar page with message like: "Update webinar page for next month (webinar8)"
-- [ ] Push all changes to GitHub
 
 ## Coder Template Management
 
@@ -189,7 +141,9 @@ This is a GitHub Pages-compatible Jekyll blog using a Tailwind CSS theme. The si
 ### Key Layout Components
 - `_layouts/default.html` - Base template with Tailwind config and custom brand colors
 - `_layouts/post.html` - Post template with newsletter integration, social sharing, and webinar links
-  - **Webinar posts**: Posts tagged 'webinar' automatically show "Join Future Webinars" section after article content
+  - **Webinar posts**: Layout automatically shows "Previous Webinars" section after infographic
+  - **Webinar write-ups** (no `kit_tag`): Also show "Join Future Webinars" CTA and newsletter signup
+  - **Webinar landing pages** (have `kit_tag`): Skip "Join Future Webinars" CTA and newsletter (signup form is in content)
 - `_layouts/page.html` - Simple page template with title and content
 - `_includes/ai-newsletter-short.html` - Newsletter signup component
 - Custom Tailwind config with brand colors: `brand-white`, `brand-turquoise`, `brand-deep-turquoise`, `brand-light-blue`, `brand-black`, `brand-orange`
@@ -237,7 +191,9 @@ EVERYTHING ELSE HERE
 **Image Placement:**
 - **Main image = motif**: When creating infographics, extract the main visual motif and use it as `image:` in front matter. This is the hero image shown at top of post.
 - **Infographics via front matter**: Add `infographic: /assets/img/filename.jpg` to front matter. The layout automatically renders the full infographic at 50% width at the end of content.
-- **Blog infographics are low-res**: Resize infographics to ~512px max dimension for blog assets (use `sips -Z 512`). Full resolution goes to Newsletter Vault only.
+- **Blog infographics are low-res**: Resize infographics to ~512px max dimension for blog assets. Full resolution goes to Newsletter Vault only.
+- **Webinar adverts and extracted motifs can be high-res**: Don't resize these - copy at full resolution
+- **Image resizing**: Use `magick` on Linux (not `sips` which is macOS only). Preserve aspect ratio by specifying only one dimension.
 - Screenshots and diagrams in content use full width or appropriate sizing
 - Always save images as JPG (not PNG) for smaller file sizes
 
