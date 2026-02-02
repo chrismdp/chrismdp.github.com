@@ -4,13 +4,14 @@ title: "Dial-Up AI Is Ending"
 date: 2026-02-03 09:00:00 +0000
 series: "Local AI"
 image: /assets/img/dial-up-ai-comic.jpg
+image_portrait: true
 categories:
 - ai
 - local-ai
 - economics
 ---
 
-In the early 90s, I remember horse-trading computer time with my sister. She wanted to call her friends; I wanted to get online. We had one phone line between us, and it was a zero-sum game that required constant negotiation and the occasional bribe.
+In the mid-90s, I remember horse-trading computer time with my sister. She wanted to call her friends; I wanted to get online. We had one phone line between us, and it was a zero-sum game that required constant negotiation and the occasional bribe.
 
 When I won, I would count the minutes carefully, dialling up to Yahoo, doing what I needed, and disconnecting as quickly as possible. Every minute online was a minute my sister could not use the phone, and a minute on the bill my parents would notice. Being online was an *event* that you planned and rationed carefully. Streaming video, background downloads, always-on chat: these were fantasies for a future we could barely imagine.
 
