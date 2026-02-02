@@ -21,7 +21,7 @@ AI is about to have its broadband moment.
 
 <!--more-->
 
-## Speculate Freely
+## Own Your AI
 
 To be fair, we already have "unlimited" plans. Claude Max, ChatGPT Plus, and similar subscriptions are expensive but they allow unlimited usage for the cases we can imagine. For interactive work, the meter has effectively stopped.
 
@@ -41,7 +41,7 @@ This is just one example, and we have no idea what will become possible when the
 
 **Ambient AI** becomes possible. Voice assistants that do not cost per query, background agents monitoring and processing, AI that runs continuously rather than on-demand: the model that seemed wasteful yesterday becomes obvious tomorrow.
 
-## Expensive but Free
+## Counting Kills
 
 Per-token, local inference is more expensive than cloud inference. Cloud providers batch requests across thousands of users, sharing the cost of loading model weights into memory. Your Raspberry Pi runs batch-size-one, bearing the full cost alone.[^piotr]
 
@@ -51,7 +51,7 @@ This is exactly the dial-up to broadband dynamic. Per-minute, dial-up was probab
 
 The same shift is happening with AI. When you own the hardware, the marginal cost drops to electricity. You stop asking "should I use AI for this?" and start asking "why would I not?"
 
-## Good Enough Now
+## Frontier Is Overrated
 
 The gap between local and cloud model quality is shrinking fast. [AI progress is not slowing down](/ai-progress-is-not-slowing-down/) the way sceptics claim. Every few months, a new open model matches what was state-of-the-art a year ago. DeepSeek, Qwen, Llama, and now OpenAI's own open source releases are converging on frontier performance.
 
@@ -59,7 +59,7 @@ To be clear, running the absolute frontier locally still requires serious hardwa
 
 When state-of-the-art equivalent models run on commodity hardware, every cost-prohibitive use case becomes viable. The interesting applications will not be "do the same things cheaper." They will be entirely new categories that we cannot justify today, the same way always-on video calls and background downloads were unjustifiable in the dial-up era.
 
-## Your Move
+## Think Bigger
 
 The shift is already happening for those paying attention. [I predicted](/my-ai-predictions-for-2026/) that Chinese models would reach frontier levels in 2026, enabling cheap API access for cost-sensitive applications. Local models are even cheaper than that.
 
