@@ -27,7 +27,7 @@ To be fair, we already have "unlimited" plans. Claude Max, ChatGPT Plus, and sim
 
 But what else might we do if AI was truly unlimited? I have written before about how [real work with AI became 150 times cheaper](/doing-real-work-with-ai-just-became-150x-cheaper/) as open source models matured. That shift was about cloud pricing. The next shift is about ownership: when you run AI locally on hardware you already paid for, the meter stops entirely, and new possibilities open up.
 
-## What Happens When the Meter Stops
+## Beyond the Meter
 
 A friend of mine, [Romilly Cocking](https://www.linkedin.com/in/romilly/){:target="_blank"}, is building something that would not even occur to you with a chat subscription. He has a Raspberry Pi with a DVB-T dongle receiving Freeview broadcasts, and Whisper transcribes every word from BBC News, twenty-four hours a day, seven days a week.
 
@@ -61,15 +61,15 @@ To be clear, running the absolute frontier locally still requires serious hardwa
 
 When state-of-the-art equivalent models run on commodity hardware, every cost-prohibitive use case becomes viable. The interesting applications will not be "do the same things cheaper." They will be entirely new categories that we cannot justify today, the same way always-on video calls and background downloads were unjustifiable in the dial-up era.
 
-## Stop Counting
+## Fire Up Your Imagination
 
 The shift is already happening for those paying attention. [I predicted](/my-ai-predictions-for-2026/) that Chinese models would reach frontier levels in 2026, enabling cheap API access for cost-sensitive applications. Local models are even cheaper than that.
 
-The mindset change matters more than the technology. Stop thinking about AI as a service you pay per use and start thinking about it as infrastructure you own. The use cases that seem wasteful today, like continuous transcription, speculative processing, and ambient AI, become obvious when the meter stops running.
+If you lead a technical team, the mindset change matters more than the technology. Stop thinking about AI as a service you pay per use and start thinking about it as infrastructure you own. The use cases that seem wasteful today, like continuous transcription, speculative processing, and ambient AI, become obvious when the meter stops running.
 
 Unmetered internet gave us social media, video on demand, and an explosion of content so vast that it birthed the large language models we use today. What will unmetered AI give us?
 
-We are limited only by our imagination.
+We are limited only by our imagination. Start imagining now.
 
 [^piotr]: For more on why batch size matters for inference economics, see Piotr Mazurek's [LLM Inference Economics from First Principles](https://blog.basingse.ai/p/the-economics-of-ai-inference){:target="_blank"}.
 
