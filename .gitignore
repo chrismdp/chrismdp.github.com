@@ -11,3 +11,5 @@ _roles
 _newsletters
 .claude/settings.local.json
 .leann
+**.ck/
+.bundle

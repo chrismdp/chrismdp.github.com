@@ -6,6 +6,10 @@ categories:
 - ai
 - claude-code
 - productivity
+# INTERNAL TODOs:
+# - [ ] Consider linking to VPS-install.md guide (in vault) - could publish as companion piece
+# - [ ] Potentially add section on "Setting up your own VPS for mobile access"
+# - [ ] Review VPS-install.md for any sensitive info before publishing/linking
 ---
 
 I posted a warning on LinkedIn last week: Claude Code works on your phone via Termius. You won't be able to stop using it.

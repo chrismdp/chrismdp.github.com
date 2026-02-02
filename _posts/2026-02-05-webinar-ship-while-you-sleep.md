@@ -10,13 +10,14 @@ categories:
 redirect_from:
 - /webinar
 - /webinar/
+- /webinar-ralph-loops/
 image: /assets/img/ralph-loops-webinar.jpg
 infographic: /assets/img/ralph-loops-webinar-advert.jpg
 kit_tag: webinar12
 webinar_date: "2026-02-05T14:00:00+00:00"
 ---
 
-Ralph Loops let you run autonomous coding agents overnight. You define a task, set guardrails, and let the agent work while you sleep. I'll explain how I've been running these, including the failures and what I learned from them.
+What if you could assign a task to an AI agent before bed and wake up to find it done? I'll show you how to run autonomous coding agents overnight, including real failures and what I learned from them.
 
 <!--more-->
 
