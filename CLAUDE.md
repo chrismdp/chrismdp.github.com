@@ -196,6 +196,7 @@ EVERYTHING ELSE HERE
 - **Image resizing**: Use `magick` on Linux (not `sips` which is macOS only). Preserve aspect ratio by specifying only one dimension.
 - Screenshots and diagrams in content use full width or appropriate sizing
 - Always save images as JPG (not PNG) for smaller file sizes
+- **Portrait images**: When the hero image is portrait orientation (comics are typically portrait), add `image_portrait: true` to front matter for proper layout handling
 
 ### Newsletter System (from `newsletter.mdc`)
 Newsletter content uses Kit platform following rough template of one story, one idea, one question weekly. 
