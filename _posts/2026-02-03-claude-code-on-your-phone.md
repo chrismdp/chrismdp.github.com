@@ -175,8 +175,10 @@ Run `claude` once to authenticate. You will need your Anthropic API key, or you 
 
 Add your VPS as a new host in Termius using your server's IP address or hostname. If you set up your key earlier, it should connect without a password. Connect and you should land directly in your tmux session with Claude Code ready to go.
 
-![Termius running Claude Code on iPhone](/assets/img/termius-claude-code.jpg){: .w-50 }
-_Editing this blog post to add a section on Moltbook, Saturday lunchtime while making coffee._
+<figure class="float-right w-1/3 ml-6 mb-4">
+<img src="/assets/img/termius-claude-code.jpg" alt="Termius running Claude Code on iPhone" class="rounded-lg" />
+<figcaption class="text-sm text-brand-black/60 mt-2 text-center italic">Editing a blog post, Saturday lunchtime while making coffee.</figcaption>
+</figure>
 
 ## Automation
 
