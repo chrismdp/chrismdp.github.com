@@ -54,7 +54,7 @@ fixedNav: 'true' # true or false
 
 permalink: /:title/
 markdown: kramdown
-exclude: [_site, CHANGELOG.md, LICENSE, README.md, vendor, CLAUDE.md]
+exclude: [_site, CHANGELOG.md, LICENSE, README.md, vendor, CLAUDE.md, "*.tmp.*"]
 
 excerpt_separator: <!--more-->
 

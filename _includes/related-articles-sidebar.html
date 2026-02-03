@@ -31,7 +31,7 @@ Only includes posts that have images (for quality filtering).
       {% assign post = site.posts | where: "id", post_id | first %}
       <article class="group">
         <a href="{{ site.baseurl }}{{ post.url }}" class="related-sidebar-link block" data-title="{{ post.title | escape }}">
-          <img src="{{ post.image }}" alt="{{ post.title | escape }}" class="w-full rounded-lg mb-2">
+          <img src="{{ post.image }}" alt="{{ post.title | escape }}" class="w-3/5 mx-auto rounded-lg mb-2">
           <h4 class="font-heading font-semibold leading-snug text-brand-black group-hover:text-brand-deep-turquoise transition-colors">
             {{ post.title }}
           </h4>
