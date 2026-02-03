@@ -27,11 +27,11 @@ To be fair, we already have "unlimited" plans. Claude Max, ChatGPT Plus, and sim
 
 But what else might we do if AI was truly unlimited? I have written before about how [real work with AI became 150 times cheaper](/doing-real-work-with-ai-just-became-150x-cheaper/) as open source models matured. That shift was about cloud pricing. The next shift is about ownership: when you run AI locally on hardware you already paid for, the meter stops entirely, and new possibilities open up.
 
-A friend of mine, [Romilly Cocking](https://www.linkedin.com/in/romilly/){:target="_blank"}, is building something that would not even occur to you with a chat subscription. He has a Raspberry Pi with a DVB-T dongle receiving Freeview broadcasts, and Whisper transcribes every word from BBC News, twenty-four hours a day, seven days a week.
+A friend of mine, [Romilly Cocking](https://www.linkedin.com/in/romilly/){:target="_blank"}, is building something that would not even occur to you with a chat subscription. He has a Raspberry Pi with a DVB-T dongle receiving Freeview broadcasts from BBC News, twenty-four hours a day, seven days a week. A separate workstation runs Whisper to transcribe the recordings at set times.
 
-The elegance is that it is completely legitimate: just watching television and taking notes, automated, with no APIs, no authentication, and no terms of service concerns. "What was in the news this week?" becomes a semantic search over transcribed broadcasts.
+The elegance is that it is completely legitimate: just watching television and taking notes, automated, with no APIs, no authentication, and no terms of service concerns. "What was in the news this week?" becomes a semantic search over transcribed broadcasts. The new GenAI hat for the Pi might eventually bring the transcription onto the device itself.
 
-Via cloud APIs, this would cost hundreds per month, but via local Whisper on a Raspberry Pi it costs nothing after the hardware. The idea only makes sense when AI is unmetered, and the point is not just the cost savings. Romilly never had to ask "is this worth it?" because the question stopped existing.
+Via cloud APIs, this would cost hundreds per month, but via local hardware it costs nothing after the initial investment. The idea only makes sense when AI is unmetered, and the point is not just the cost savings. Romilly never had to ask "is this worth it?" because the question stopped existing.
 
 This is just one example, and we have no idea what will become possible when the constraints disappear entirely. When you stop counting, new categories of use become obvious.
 
@@ -72,3 +72,5 @@ We are limited only by our imagination. Start imagining now.
 [^piotr]: For more on why batch size matters for inference economics, see Piotr Mazurek's [LLM Inference Economics from First Principles](https://blog.basingse.ai/p/the-economics-of-ai-inference){:target="_blank"}.
 
 [^kimi]: Kimi K2.5 is a one trillion parameter mixture-of-experts model that activates 32 billion parameters per token across 384 experts. Full precision requires approximately 500GB of VRAM for model weights alone, leaving limited headroom for the KV cache needed during inference. See Caleb Bryce's breakdown of [the total cost of ownership for running state-of-the-art models locally](https://www.youtube.com/watch?v=SmYNK0kqaDI){:target="_blank"} for detailed calculations.
+
+Thanks to Romilly Cocking for contributions to earlier drafts of this post.

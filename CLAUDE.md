@@ -23,7 +23,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **VPS clipboard workaround**: When working on VPS via Termius (no pbcopy), upload text to Claude Remote folder as a .txt file. Open on phone via Google Drive app to copy/paste into LinkedIn etc.
 
 ### Newsletter Vault Locations (macOS paths - use gog CLI on Linux)
-- **Comics**: `/Users/cp/Library/CloudStorage/GoogleDrive-chris.p@rsons.org/My Drive/chrismdp ltd/Public/Newsletter Vault/Comics`
+- **Comics folder ID** (for gog CLI): `1GGQoswjRVrsJxQ_s0ugna0tAw5n3-heB`
+- **Comics macOS path**: `/Users/cp/Library/CloudStorage/GoogleDrive-chris.p@rsons.org/My Drive/chrismdp ltd/Public/Newsletter Vault/Comics`
 - **Infographics**: `/Users/cp/Library/CloudStorage/GoogleDrive-chris.p@rsons.org/My Drive/chrismdp ltd/Public/Newsletter Vault/Infographics`
 - **Naming convention**: Use Capitalised Spaced Names describing the comic or infographic title (e.g., "Things I'll Get To Eventually.jpg", "How to Design with AI.jpg")
 
@@ -49,7 +50,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Footnotes for additional value**: Use footnotes not just for citations but to provide actionable advice and deeper insights that enhance the main narrative
 - **Footnote spacing**: No space between punctuation and footnote (e.g., `methodology.[^1]` not `methodology. [^1]`). But always include a space between consecutive footnote references (e.g., `[^1] [^2]` not `[^1][^2]`)
 - **Always search for recent articles**: Before writing any blog post, search through recent posts in `_posts/` folder to identify relevant articles to link to implicitly within the content - this improves SEO and provides value to readers
-- **Thanking contributors**: When others contribute insights to an article (from comments, conversations, feedback), add an italicised thanks line at the end of the article before any footnotes. Format: `_Thanks to [Name](LinkedIn URL) and [Name](LinkedIn URL) for their contributions to an earlier version of this article._` Do not attribute specific points inline; instead integrate their insights into the prose and thank them collectively at the end.
+- **Thanking contributors**: When others contribute insights to an article (from comments, conversations, feedback), add an unformatted thanks line at the very end of the article (after footnotes). Format: `Thanks to Name and Name for conversations that shaped this post.` No italics, no LinkedIn links unless specifically requested. Do not attribute specific points inline; instead integrate their insights into the prose and thank them collectively at the end.
+- **Avoid duplication between text and footnotes**: Keep main text generic and high-level; move specific details (costs, percentages, technical specifics) to footnotes. If the same fact appears in both, remove it from the text.
 
 ### Chris's Writing Patterns
 - **Provocative titles that deliver**: Prefers counterintuitive headlines that challenge assumptions (e.g., "AI Is Consistently Mediocre. That's Why It's Valuable")
