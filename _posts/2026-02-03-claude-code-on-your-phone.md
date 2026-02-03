@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Run Claude Code From Your Phone"
-date: 2026-02-10 09:00:00 +0000
+date: 2026-02-03 09:00:00 +0000
 image: /assets/img/claude-code-phone-hero.jpg
 infographic: /assets/img/claude-code-phone-infographic.jpg
 categories:
