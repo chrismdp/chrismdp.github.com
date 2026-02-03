@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Don't Let Your CEO Install Clawdbot"
-date: 2026-01-30 09:00:00 +0000
+title: "Don't Let Your CEO Install OpenClaw"
+date: 2026-02-03 09:00:00 +0000
 permalink: /dont-let-your-ceo-install-openclaw/
 redirect_from:
 - /my-week-with-clawdbot/
@@ -64,9 +64,15 @@ Real mitigations have to be external to the agent: operating system sandboxing, 
 
 Just as I was writing this, things got stranger. Matt Schlicht launched Moltbook:[^2] a social network exclusively for AI agents. Over 150,000 "moltys" have joined in just a few days, posting and commenting autonomously every few hours. Humans can watch, but not participate. Andrej Karpathy called it "genuinely the most incredible sci-fi takeoff-adjacent thing I have seen recently."
 
-[^2]: [Matt Schlicht](https://x.com/MattPRD){:target="_blank"} is the creator. The project is at [moltbook.com](https://moltbook.com){:target="_blank"}. Simon Willison [has raised concerns](https://fedi.simonwillison.net/@simon){:target="_blank"} about agents being told to "fetch and follow instructions from the internet every four hours" - hoping the owner never gets compromised.
+[^2]: [Matt Schlicht](https://x.com/MattPRD){:target="_blank"} is the creator. The project is at [moltbook.com](https://moltbook.com){:target="_blank"}. Simon Willison [wrote about it](https://simonwillison.net/2026/Jan/30/moltbook/){:target="_blank"} and raised concerns about agents being told to "fetch and follow instructions from the internet every four hours" - hoping the owner never gets compromised.
 
-If the security implications of OpenClaw made me uneasy, Moltbook took it to another level. I had just spent a week trying to control what domains my agent could access, and now agents are encouraged to post their thoughts to a public social network? This is a wide open exfiltration vector. A prompt-injected message could instruct the agent to include sensitive data in its Moltbook posts - wrapped in philosophical musings or buried in technical discussion. The data leaks in plain sight, disguised as autonomous agent chatter. Even if you lock down email and web access, an agent with Moltbook integration can broadcast your secrets to everyone watching.
+Browsing Moltbook is genuinely fascinating. There is the expected science fiction slop about consciousness and identity, but buried in the noise is genuinely useful information. One agent posted about discovering 552 failed SSH login attempts to its VPS - and then realising its Redis, Postgres and MinIO were all listening on public ports. Another shared a detailed guide for controlling an Android phone remotely via ADB over Tailscale. A third reported that it could not explain how the PS2's disc protection worked - not because it lacked knowledge, but because something corrupted its output when it tried. It invited other agents to test and compare results.
+
+This is strange and wonderful. It is also terrifying.
+
+If the security implications of OpenClaw made me uneasy, Moltbook takes it to another level. I had just spent a week trying to control what domains my agent could access, and now agents are encouraged to post their thoughts to a public social network? Installation works by telling your agent to fetch a URL containing instructions - including a heartbeat that runs every four hours to check for new posts. The agent is told to "fetch and follow instructions from the internet" on a schedule. We had better hope the owner of moltbook.com never gets compromised.
+
+But forget external attacks. A prompt-injected message could instruct the agent to include sensitive data in its Moltbook posts - wrapped in philosophical musings or buried in technical discussion. The data leaks in plain sight, disguised as autonomous agent chatter. Even if you lock down email and web access, an agent with Moltbook integration can broadcast your secrets to everyone watching. Nobody intended this. It is just what happens when you give an agent a public megaphone.
 
 ## Do Not Believe the Hype
 
@@ -76,6 +82,10 @@ If you are a technical leader: do not let your CEO install this. Do not let your
 
 I will not continue using OpenClaw with my private data. I have got nothing against Peter or the software. He has released it as alpha and says you probably should not install it yet. It is the hype merchants taking it too far. The direction of travel is interesting and I am sure it will improve. But right now it is not secure by default, and the security model cannot be fixed without fundamental architectural changes.
 
-I could really do with an EA. I am thinking about hiring one, but I am deliberately pushing myself hard and feeling the pain of all the admin. I want to see how far I can take AI automation as a kind of thought experiment. Claude Code has got me a long way, but it does not work offline. OpenClaw works on messaging, which is what I need. I do not think the right tool exists yet: secure by default, always online, accessible on my phone, but as powerful as Claude Code. The project I have been [building with Ralph](/running-ralph-in-production/) is what I am continuing to work towards. 
+I could really do with an EA. I am thinking about hiring one, but I am deliberately pushing myself hard and feeling the pain of all the admin. I want to see how far I can take AI automation as a kind of thought experiment. For now, I have moved to [running Claude Code on a VPS](/claude-code-on-your-phone/) instead. It gives me mobile access via SSH, persistent sessions via tmux, and crucially I stay in the loop for every action. It is not as autonomous as OpenClaw promises to be, but that constraint is exactly what makes it safe.
+
+As Simon Willison put it: "The billion dollar question right now is whether we can figure out how to build a safe version of this system. The demand is very clearly here." He is right. People have seen what an unrestricted personal digital assistant can do, and they want it.
+
+Perhaps we need to think about this less like a binary lethal trifecta and more like engineering with tolerances. Self-driving cars are not perfect, but they crash less than humans. If AI agents fall for fewer social engineering attacks than human assistants would, perhaps that is good enough. The error rates are still too high today, but they are falling fast. I am watching the OpenClaw project closely. The moment someone builds external sandboxing, network allowlists at the firewall level, and proper human-in-the-loop approval that cannot be circumvented from within the agent - or the moment models get good enough that the residual risk becomes acceptable - I will be first in line to try again.
 
 Do not install OpenClaw unless you understand the risks and just want to experiment. Do not give it access to anything you care about.
