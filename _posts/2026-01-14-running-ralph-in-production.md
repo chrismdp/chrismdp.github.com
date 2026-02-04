@@ -55,11 +55,11 @@ Running Ralph PM alongside the build loop creates a coordination problem. If you
 
 Git worktrees fix this. Beads sync to a separate branch while the builder commits to main, which eliminates conflicts, keeps history clean, and lets both run simultaneously. The config is simple:
 
-```toml
+{% highlight toml %}
 # In .beads/config.toml
 [sync]
 branch = "beads-sync"
-```
+{% endhighlight %}
 
 There is also the problem of in-progress beads. When one Ralph session gets interrupted or runs out of context, the next session inherits whatever state was left behind: uncommitted changes, failing tests, half-finished work. Early on Ralph would just assume the previous session had succeeded and close the bead, even when the work was incomplete. I added a decision table to RALPH.md that forces each session to assess the situation before proceeding: check the working tree, run the tests, read the comments, and only then decide whether to continue the work, fix what is broken, or block the bead for human attention. This small addition eliminated an entire class of silent failures.
 
@@ -79,12 +79,12 @@ There is also the question of what types of work suit autonomous execution at al
 
 Most of the complexity in ralph.sh is parsing Claude Code's streaming JSON output, not orchestration logic. The `-p` flag runs Claude in print mode but does not give verbose output, so you cannot see tool calls, reasoning, or intermediate steps. For debugging and monitoring, I needed to construct my own display by parsing the stream-json format:
 
-```bash
+{% highlight bash %}
 claude --permission-mode acceptEdits --verbose --print "Read @RALPH.md..." --output-format stream-json | while read -r line; do
     type=$(echo "$line" | jq -r '.type // empty' 2>/dev/null)
     # ... parse and display
 done
-```
+{% endhighlight %}
 
 It is not elegant but it works. Hopefully Anthropic will improve the CLI's verbose output options and make this unnecessary.
 

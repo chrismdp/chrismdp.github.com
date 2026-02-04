@@ -38,11 +38,11 @@ The broader open source ecosystem has been building towards this moment. **DeepS
 
 This shift is already happening. Claude Flow has integrated open models directly into workflows, allowing seamless routing between different AI models[^6]. You can configure your environment to use GPT OSS models whilst maintaining the familiar experience:
 
-```bash
+{% highlight bash %}
 export ANTHROPIC_BASE_URL="https://openrouter.ai/api/v1"
 export ANTHROPIC_AUTH_TOKEN="your_key"
 export ANTHROPIC_MODEL="openai/gpt-oss-120b"
-```
+{% endhighlight %}
 
 The system enables flexible model switching based on specific task requirements[^7].
 

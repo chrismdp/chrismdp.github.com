@@ -24,7 +24,7 @@ I built a [Claude Code skill](https://gist.github.com/chrismdp/29b3c5504504fe9ad
 
 The skill produces markdown output that looks like this:
 
-```markdown
+{% highlight markdown %}
 ## Claude Code Activity
 
 ### Token Usage
@@ -51,7 +51,7 @@ The skill produces markdown output that looks like this:
 ### Other
 - Migrated skills to private submodule repo
 - Follow-up email drafted
-```
+{% endhighlight %}
 
 The format works well for daily standups, personal records, or just satisfying that nagging feeling of wanting to know where your time went. I paste mine into my daily notes in Obsidian.
 
