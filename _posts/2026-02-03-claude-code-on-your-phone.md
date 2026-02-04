@@ -48,37 +48,37 @@ You need a basic Linux VPS with SSH access. Any provider works, but I recommend 
 
 Once you have your server, SSH in and start setting up your environment:
 
-```bash
+{% highlight bash %}
 ssh root@your-server-ip
-```
+{% endhighlight %}
 
 ### Base System Setup
 
 Start with a fresh Ubuntu 24.04 installation. Update everything and install the core packages you will need for development and terminal work.
 
-```bash
+{% highlight bash %}
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y git curl jq tmux python3 python3-pip build-essential
-```
+{% endhighlight %}
 
 Create a non-root user if your VPS provider gave you only root access. Working as root is asking for trouble, and Claude Code should run under a regular user account with sudo privileges when needed.
 
-```bash
+{% highlight bash %}
 sudo adduser yourname
 sudo usermod -aG sudo yourname
-```
+{% endhighlight %}
 
 Switch to your new user:
 
-```bash
+{% highlight bash %}
 su - yourname
-```
+{% endhighlight %}
 
 Set up your directory structure. I keep code repositories in `~/code`, personal scripts in `~/bin`, and let Claude Code manage its own configuration in `~/.claude`. Create a logical structure that makes sense for how you work, and stick to it.
 
-```bash
+{% highlight bash %}
 mkdir -p ~/code ~/bin ~/.local/bin ~/.config
-```
+{% endhighlight %}
 
 ### SSH Keys and Security
 
@@ -86,42 +86,42 @@ Copy your SSH public key to the server for passwordless login. This is essential
 
 On your local machine, if you do not already have an SSH key:
 
-```bash
+{% highlight bash %}
 ssh-keygen -t ed25519 -C "your-email@example.com"
-```
+{% endhighlight %}
 
 Copy the public key to your server:
 
-```bash
+{% highlight bash %}
 ssh-copy-id yourname@your-server-ip
-```
+{% endhighlight %}
 
 You can do the same from your phone. [Termius](https://termius.com/){:target="_blank"} is an SSH client for iOS and Android that handles keys properly. To generate a key in Termius, go to Keychain, tap the plus icon, select "Generate Key", and give it a name. Then hold down on the key, tap "Share", and "Export to Host" to push it to your VPS.
 
 Once key-based auth works from both devices, consider disabling password authentication entirely. This makes your server significantly more secure against brute-force attacks:
 
-```bash
+{% highlight bash %}
 sudo sed -i 's/#PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config
 sudo sed -i 's/PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config
 sudo systemctl restart ssh
-```
+{% endhighlight %}
 
 ### Hardening Your Server
 
 Your VPS is accessible to the entire internet, so take a few minutes to lock it down. Install fail2ban to automatically block IP addresses that attempt brute-force attacks:
 
-```bash
+{% highlight bash %}
 sudo apt install -y fail2ban
 sudo systemctl enable fail2ban
 sudo systemctl start fail2ban
-```
+{% endhighlight %}
 
 Enable the firewall and allow only SSH traffic:
 
-```bash
+{% highlight bash %}
 sudo ufw allow 22
 sudo ufw enable
-```
+{% endhighlight %}
 
 These two steps block the most common attacks. If you plan to run web services on the same VPS, you can open additional ports later with `ufw allow 80` and `ufw allow 443`.
 
@@ -131,18 +131,18 @@ tmux is the critical piece that makes mobile access practical. Without it, closi
 
 Create a configuration file that makes tmux pleasant to use:
 
-```bash
+{% highlight bash %}
 cat > ~/.tmux.conf << 'EOF'
 set -g mouse on
 set -g default-terminal "tmux-256color"
 setw -g mode-keys vi
 set -g status-right "%H:%M"
 EOF
-```
+{% endhighlight %}
 
 Add this to your `~/.bashrc` to automatically attach to tmux when you SSH in:
 
-```bash
+{% highlight bash %}
 cat >> ~/.bashrc << 'EOF'
 
 # Auto-attach to tmux
@@ -150,7 +150,7 @@ if command -v tmux &>/dev/null && [ -z "$TMUX" ]; then
     tmux attach -t main 2>/dev/null || tmux new -s main
 fi
 EOF
-```
+{% endhighlight %}
 
 Now every SSH connection drops you straight into your persistent session.
 
@@ -158,16 +158,16 @@ Now every SSH connection drops you straight into your persistent session.
 
 Claude Code requires Node.js. Install the LTS version:
 
-```bash
+{% highlight bash %}
 curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 sudo apt install -y nodejs
-```
+{% endhighlight %}
 
 Then install Claude Code globally:
 
-```bash
+{% highlight bash %}
 npm install -g @anthropic-ai/claude-code
-```
+{% endhighlight %}
 
 Run `claude` once to authenticate. You will need your Anthropic API key, or you can use `claude login` to authenticate via the browser. Since the VPS cannot open browser windows, you will need to copy the URL it prints, open it on your local machine, complete authentication, then copy the resulting key back to the terminal. This is fiddly but only needs doing once.
 
@@ -186,15 +186,15 @@ A VPS enables automation that would be impractical on a laptop that sleeps and w
 
 Here is a [simple vault sync script](https://github.com/chrismdp/dotfiles/blob/master/bin/vault-sync.sh){:target="_blank"} that keeps a repository backed up automatically. Add it to crontab to run every few minutes:
 
-```bash
+{% highlight bash %}
 crontab -e
-```
+{% endhighlight %}
 
 Then add this line:
 
-```bash
+{% highlight bash %}
 */5 * * * * ~/bin/vault-sync.sh
-```
+{% endhighlight %}
 
 Your work saves itself. No more "did I commit that before I left the house" anxiety.
 
