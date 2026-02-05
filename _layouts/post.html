@@ -141,7 +141,7 @@ layout: default
   {% if page.infographic %}
   <div class="my-8 flex flex-col items-center">
     <img src="{{ page.infographic }}" alt="{{ page.title }} infographic" style="max-width: 50%;" class="rounded-lg" />
-    {% unless page.kit_tag %}<p class="mt-3 text-sm text-brand-black/50">High-res version available to newsletter subscribers</p>{% endunless %}
+    {% unless page.kit_tag or page.categories contains 'webinar' %}<p class="mt-3 text-sm text-brand-black/50">High-res version available to newsletter subscribers</p>{% endunless %}
   </div>
   {% endif %}
 
@@ -434,7 +434,7 @@ layout: default
       {% if page.infographic %}
       <div class="my-8 flex flex-col items-center">
         <img src="{{ page.infographic }}" alt="{{ page.title }} infographic" style="max-width: 50%;" class="rounded-lg" />
-        {% unless page.kit_tag %}<p class="mt-3 text-sm text-brand-black/50">High-res version available to newsletter subscribers</p>{% endunless %}
+        {% unless page.kit_tag or page.categories contains 'webinar' %}<p class="mt-3 text-sm text-brand-black/50">High-res version available to newsletter subscribers</p>{% endunless %}
       </div>
       {% endif %}
 
