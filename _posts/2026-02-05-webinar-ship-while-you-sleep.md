@@ -83,7 +83,9 @@ The basic setup I use is [available on GitHub](https://github.com/chrismdp/ralph
 
 ## Key Takeaway
 
-Context beats intelligence. A mediocre model with full project context will outperform the best model running blind. Every time your agent blocks or makes a poor decision, ask yourself what context it was missing and make that context permanently available. The compound effect of this approach is what makes autonomous coding viable.
+This is not fully autonomous yet. Token costs are real, visual feedback does not work for every platform, and plenty of tasks still need a human in the loop. But the signs are there. I can hand off well-scoped tasks overnight and wake up to working code more often than not. The gap is closing, and it is closing faster than I expected.
+
+Context beats intelligence. A mediocre model with full project context will outperform the best model running blind. Every time your agent blocks or makes a poor decision, ask yourself what context it was missing and make that context permanently available. That compound investment in context is what will close the remaining gap.
 
 ## One Thing to Try This Week
 
