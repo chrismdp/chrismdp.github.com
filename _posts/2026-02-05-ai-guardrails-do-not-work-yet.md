@@ -59,8 +59,6 @@ This suggests the error tolerance school might eventually be right, even if it i
 
 If you are building agent systems today, the numbers do not support relying on error tolerance. Use deterministic approaches where possible: constrain the action space, separate control and data flow, enforce policies at execution time, and accept the capability cost that comes with them. If you are [building with agent loops](/running-ralph-in-production/), keep the tool set minimal and the permissions tight.
 
-The direction of travel makes this urgent. Anthropic recently shipped Agent Teams for Claude Code[^agent-teams], an experimental feature that coordinates multiple Claude Code instances working together with shared task lists and inter-agent messaging. One session acts as team lead, spawning teammates that each work independently in their own context window. This is the "ship while you sleep" architecture: a team of agents researching, building, and reviewing in parallel while you are away. But every agent in that team is a potential attack surface. If one teammate processes untrusted data and gets hijacked, it can message other teammates directly. The more autonomous the system, the higher the stakes for getting guardrails right.
-
 But watch the benchmarks, because if prompt injection resistance continues improving, the calculus changes. A system with a 1% attack success rate faces very different risk tradeoffs than one with 90%, and the architectural constraints that feel necessary today might become optional overhead tomorrow. Early autonomous vehicles could only work in specific cities with detailed maps in good weather, but as the technology improved those constraints relaxed. The same pattern might apply to AI agents.
 
 For now, I remain in the deterministic school because the error rates are too high and the attacks too easy. I [uninstalled OpenClaw](/dont-let-your-ceo-install-openclaw/) for exactly this reason. But I am watching each new model's benchmark results closely, and if the next generation cuts attack success rates by another order of magnitude, error tolerance starts looking viable. Guardrails do not work today, and whether they work tomorrow depends on whether model capability improvements outpace attacker sophistication.
@@ -84,7 +82,5 @@ For now, I remain in the deterministic school because the error rates are too hi
 [^anthropic]: Anthropic's [model card for Opus 4.5](https://www.anthropic.com/transparency/model-report){:target="_blank"} includes detailed safety evaluations including prompt injection resistance metrics.
 
 [^opus46]: Anthropic's [Opus 4.6 announcement](https://www.anthropic.com/news/introducing-claude-opus-4-6){:target="_blank"} describes the model's safety profile and enhanced cybersecurity abilities. The system card includes their most comprehensive set of safety evaluations to date.
-
-[^agent-teams]: Claude Code's [Agent Teams](https://code.claude.com/docs/en/agent-teams){:target="_blank"} is currently experimental and disabled by default. It enables a lead session to spawn teammates, assign tasks via a shared task list, and have agents message each other directly. All teammates inherit the lead's permission settings.
 
 Thanks to Ville Hellman and Dave Cunningham for conversations that shaped this post.
