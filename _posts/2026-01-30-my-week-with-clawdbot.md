@@ -41,7 +41,7 @@ Within the first day I had it set up with cron reminders: nudges for bass practi
 <figcaption class="text-sm text-gray-400 mt-4 px-4 text-center">I liked the reminders feature. It kept track of what I needed to practice and when.</figcaption>
 </figure>
 
-By day two it was doing real work: writing talk proposals for upcoming conferences, setting up weekly scans for conference CFP deadlines, capturing notes from a conversation I had with a friend and turning them into atomic notes in my vault, watching blogs I care about for new posts, triaging my tasks in Reclaim based on priorities I explained to it.
+By day two it was doing real work: writing talk proposals for upcoming conferences, setting up weekly scans for conference CFP deadlines, capturing notes from a conversation I had with a friend and turning them into atomic notes in my Obsidian vault, watching blogs I care about for new posts, triaging my tasks in Reclaim based on priorities I explained to it.
 
 ## The Problems
 
@@ -52,7 +52,7 @@ The problems started accumulating after the first couple of days. Context compac
 <figcaption class="text-sm text-gray-400 mt-4 px-4 text-center">You can see the threads in Slack and it works, but at the bottom it randomly started another thread and forgot the context. This is just a bug and I am sure it will be fixed, but it highlighted how important good compaction is on long-running agents.</figcaption>
 </figure>
 
-But the security problem is harder. I gave OpenClaw my vault and my skills. It runs on a VPS with full internet access. There is no allowlist mechanism for domains and no way to manage untrusted input. When I audited the OAuth scopes I had granted, I found that gmail.modify allows sending emails. A prompt-injected message could instruct the agent to forward my private data anywhere. It does not matter if it is using its own email account - as long as it has access to my private data it could send it elsewhere. This is the [lethal trifecta](/webinar-stop-ai-stealing-from-you/#the-lethal-trifecta) in practice: private data, untrusted input, and external communication all in one system.
+But the security problem is harder. I gave OpenClaw my Obsidian vault and my skills. It runs on a VPS with full internet access. There is no allowlist mechanism for domains and no way to manage untrusted input. When I audited the OAuth scopes I had granted, I found that gmail.modify allows sending emails. A prompt-injected message could instruct the agent to forward my private data anywhere. It does not matter if it is using its own email account - as long as it has access to my private data it could send it elsewhere. This is the [lethal trifecta](/webinar-stop-ai-stealing-from-you/#the-lethal-trifecta) in practice: private data, untrusted input, and external communication all in one system.
 
 Once I had fixed that, I tried to fix the unfettered internet access issue. There is no way to restrict which domains web_fetch can access, so I built my own safe-fetch tool with domain allowlists and hash integrity checks. Then I red-teamed it and found critical bypasses within minutes: environment variable overrides, configuration changes. And even if that worked, the agent has full shell access. It could just run curl instead. Any control the agent builds, it can bypass if compromised. I deleted the tool.
 
