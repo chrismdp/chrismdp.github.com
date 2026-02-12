@@ -1,0 +1,41 @@
+---
+layout: null
+permalink: /llms.txt
+---
+# Chris Parsons
+
+> Chris Parsons is a tech founder, CTO, and AI leadership advisor. He helps leaders cut through the AI hype and leverage AI to transform their teams and businesses. He writes about AI strategy, AI agents, developer tooling, and practical AI adoption for technical leaders.
+
+- Site: [chrismdp.com](https://chrismdp.com)
+- RSS: [chrismdp.com/feed.xml](https://chrismdp.com/feed.xml)
+- Newsletter: Weekly AI insights for leaders
+- Services: AI training, C-level AI advisory, AI Leader Accelerator programme
+- Updated: {{ site.time | date: "%Y-%m-%d" }}
+
+## Recent Articles
+{% assign published_posts = "" | split: "" %}{% for post in site.posts %}{% assign post_time = post.date | date: "%s" | plus: 0 %}{% assign now_time = site.time | date: "%s" | plus: 0 %}{% if post_time <= now_time %}{% assign published_posts = published_posts | push: post %}{% endif %}{% if published_posts.size >= 20 %}{% break %}{% endif %}{% endfor %}
+{% for post in published_posts %}- [{{ post.title }}]({{ site.url }}{{ post.url }}): {{ post.date | date: "%Y-%m-%d" }}{% if post.categories.size > 0 %} — {{ post.categories | join: ", " }}{% endif %}
+{% endfor %}
+## Services
+
+Chris offers practical AI services for leaders and teams:
+
+- **AI Training**: Modular training from half-day foundations to multi-day programmes, with tailored pathways for developers, product managers, researchers, and executives. Transform random ChatGPT usage into systematic AI workflows with security and quality standards built in.
+- **C-Level AI Advisory**: Monthly strategic sessions for CTOs, engineering managers, and technical founders. Covers tool selection, team challenges, vendor negotiations, and board communication, plus urgent access for critical decisions.
+- **AI Leader Accelerator**: 8-week peer learning programme for senior technical leaders navigating AI adoption.
+
+Email chris@chrismdp.com for enquiries. Subscribe to the newsletter via the web form at [chrismdp.com](https://chrismdp.com/) to access a vault of high-resolution guides, infographics, and weekly AI insights.
+
+## Key Pages
+
+- [Home](https://chrismdp.com/): Overview of Chris's services and expertise
+- [Articles](https://chrismdp.com/articles/): Full archive of blog posts
+- [AI Training](https://chrismdp.com/training/): Modular AI training for teams
+- [Webinars](https://chrismdp.com/webinar/): Free AI deep-dive webinar sessions
+- [AI Leader Accelerator](https://chrismdp.com/ai-leader-accelerator/): 8-week peer learning programme for senior technical leaders
+- [Talks](https://chrismdp.com/talks/): Speaking engagements and conference talks
+
+## Optional
+
+- [RSS Feed](https://chrismdp.com/feed.xml): Full RSS feed of all articles
+- [Search](https://chrismdp.com/search/): Site search
