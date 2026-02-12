@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qwen-Image-Max vs Gemini Benchmark Report</title>
+<style>
+  :root {
+    --turquoise: #1ac8db;
+    --deep-turquoise: #0292b7;
+    --light-blue: #99dfec;
+    --black: #333333;
+    --orange: #fe8745;
+    --bg: #fafafa;
+    --card-bg: #ffffff;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--black);
+    line-height: 1.6;
+    padding: 0;
+  }
+
+  header {
+    background: linear-gradient(135deg, var(--deep-turquoise), var(--turquoise));
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  header .subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    font-weight: 300;
+  }
+
+  header .date {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    opacity: 0.7;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .executive-summary {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border-left: 4px solid var(--orange);
+  }
+
+  .executive-summary h2 {
+    color: var(--deep-turquoise);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .verdict-box {
+    background: linear-gradient(135deg, #f0fdff, #e8f8fc);
+    border: 2px solid var(--turquoise);
+    border-radius: 8px;
+    padding: 1.2rem 1.5rem;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .score-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .score-card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    padding: 1.2rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+
+  .score-card .label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #888;
+    margin-bottom: 0.3rem;
+  }
+
+  .score-card .winner {
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+
+  .score-card .winner.gemini { color: var(--deep-turquoise); }
+  .score-card .winner.qwen { color: var(--orange); }
+  .score-card .winner.draw { color: #888; }
+
+  .test-section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    overflow: hidden;
+  }
+
+  .test-header {
+    padding: 1.5rem 2rem 1rem;
+    border-bottom: 1px solid #eee;
+  }
+
+  .test-header h2 {
+    color: var(--deep-turquoise);
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .test-header .test-number {
+    background: var(--turquoise);
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .test-header .prompt-summary {
+    margin-top: 0.5rem;
+    color: #666;
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+
+  .comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+
+  .comparison-col {
+    padding: 1.5rem;
+    position: relative;
+  }
+
+  .comparison-col:first-child {
+    border-right: 1px solid #eee;
+  }
+
+  .comparison-col h3 {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid;
+  }
+
+  .comparison-col h3.qwen-label {
+    color: var(--orange);
+    border-color: var(--orange);
+  }
+
+  .comparison-col h3.gemini-label {
+    color: var(--deep-turquoise);
+    border-color: var(--deep-turquoise);
+  }
+
+  .comparison-col img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 1rem;
+  }
+
+  .file-info {
+    font-size: 0.75rem;
+    color: #999;
+    margin-bottom: 0.5rem;
+  }
+
+  .analysis {
+    padding: 1.5rem 2rem;
+    background: #f8f9fa;
+    border-top: 1px solid #eee;
+  }
+
+  .analysis h4 {
+    color: var(--black);
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+  }
+
+  .criteria-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .criteria-table th {
+    text-align: left;
+    padding: 0.5rem 0.8rem;
+    background: #eef;
+    font-weight: 600;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .criteria-table td {
+    padding: 0.5rem 0.8rem;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+  }
+
+  .criteria-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .criteria-table .criterion {
+    font-weight: 600;
+    white-space: nowrap;
+    width: 20%;
+  }
+
+  .pass { color: #16a34a; }
+  .fail { color: #dc2626; }
+  .meh { color: #ca8a04; }
+
+  .test-verdict {
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+    text-align: center;
+  }
+
+  .test-verdict.gemini-wins {
+    background: linear-gradient(135deg, #e8f8fc, #d0f0f8);
+    color: var(--deep-turquoise);
+    border: 1px solid var(--turquoise);
+  }
+
+  .test-verdict.qwen-wins {
+    background: linear-gradient(135deg, #fff4ed, #ffe8d6);
+    color: #c2410c;
+    border: 1px solid var(--orange);
+  }
+
+  .conclusions {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    margin-bottom: 2rem;
+  }
+
+  .conclusions h2 {
+    color: var(--deep-turquoise);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .conclusions h3 {
+    color: var(--black);
+    margin: 1.2rem 0 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  .conclusions ul {
+    margin-left: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .conclusions li {
+    margin-bottom: 0.4rem;
+  }
+
+  .recommendation {
+    background: linear-gradient(135deg, #f0fdff, #e8f8fc);
+    border: 2px solid var(--turquoise);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .recommendation h3 {
+    color: var(--deep-turquoise);
+    margin: 0 0 0.5rem 0;
+  }
+
+  .metadata {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    margin-bottom: 2rem;
+    font-size: 0.85rem;
+    color: #666;
+  }
+
+  .metadata h3 {
+    color: var(--black);
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .metadata-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 2rem;
+  }
+
+  .metadata-grid dt {
+    font-weight: 600;
+    color: var(--black);
+  }
+
+  .metadata-grid dd {
+    margin-bottom: 0.3rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem;
+    color: #999;
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: 768px) {
+    .comparison {
+      grid-template-columns: 1fr;
+    }
+    .comparison-col:first-child {
+      border-right: none;
+      border-bottom: 1px solid #eee;
+    }
+    header h1 { font-size: 1.8rem; }
+    .container { padding: 1rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Qwen-Image-Max vs Gemini</h1>
+  <div class="subtitle">Image Generation Benchmark Report</div>
+  <div class="date">11 February 2026 &middot; 4 tests &middot; 8 images</div>
+</header>
+
+<div class="container">
+
+  <!-- Executive Summary -->
+  <div class="executive-summary">
+    <h2>Executive Summary</h2>
+    <p>Qwen-Image-2.0 was announced on 10 February 2026 by Alibaba's Qwen team, claiming superior text rendering and native 2K output. The model is currently in invitation-only beta; the publicly available <strong>qwen-image-max</strong> on DashScope was tested instead. This report compares it head-to-head with <strong>Gemini nano-banana-pro-preview</strong> (the model behind the <code>/gemini-images</code> skill) across four use cases matching the existing image generation templates.</p>
+
+    <div class="verdict-box">
+      Gemini wins 3&ndash;1 overall. Text accuracy, style adherence, and resolution make it the clear choice for the current workflow.
+    </div>
+
+    <div class="score-cards">
+      <div class="score-card">
+        <div class="label">Comic Strip</div>
+        <div class="winner gemini">Gemini</div>
+      </div>
+      <div class="score-card">
+        <div class="label">Infographic</div>
+        <div class="winner gemini">Gemini</div>
+      </div>
+      <div class="score-card">
+        <div class="label">Presentation</div>
+        <div class="winner qwen">Qwen</div>
+      </div>
+      <div class="score-card">
+        <div class="label">Text Rendering</div>
+        <div class="winner gemini">Gemini</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TEST 1: Comic -->
+  <div class="test-section">
+    <div class="test-header">
+      <h2><span class="test-number">1</span> Comic Strip</h2>
+      <div class="prompt-summary">A 4-panel comic about a developer over-engineering a simple button with abstraction layers. Hand-drawn colored-pencil style in brand colours.</div>
+    </div>
+    <div class="comparison">
+      <div class="comparison-col">
+        <h3 class="qwen-label">Qwen qwen-image-max</h3>
+        <div class="file-info">928&times;1664 &middot; 2,515 KB</div>
+        <img src="qwen-comic.jpg" alt="Qwen comic output">
+      </div>
+      <div class="comparison-col">
+        <h3 class="gemini-label">Gemini nano-banana-pro-preview</h3>
+        <div class="file-info">~1500&times;2000 (2K) &middot; 1,613 KB</div>
+        <img src="gemini-comic.jpg" alt="Gemini comic output">
+      </div>
+    </div>
+    <div class="analysis">
+      <h4>Analysis</h4>
+      <table class="criteria-table">
+        <tr>
+          <th>Criteria</th><th>Qwen</th><th>Gemini</th>
+        </tr>
+        <tr>
+          <td class="criterion">Style match</td>
+          <td class="meh">Semi-realistic digital illustration. Not the hand-drawn pencil aesthetic requested.</td>
+          <td class="pass">Nails the whimsical colored-pencil look. Exactly on-brand.</td>
+        </tr>
+        <tr>
+          <td class="criterion">Storytelling</td>
+          <td class="meh">3 panels, adequate but compressed narrative.</td>
+          <td class="pass">5 panels with better arc. Added superhero cape gag &mdash; creative embellishment.</td>
+        </tr>
+        <tr>
+          <td class="criterion">Speech bubble text</td>
+          <td class="pass">Legible, fewer words.</td>
+          <td class="pass">More text, all legible, funnier dialogue.</td>
+        </tr>
+        <tr>
+          <td class="criterion">Code/class name labels</td>
+          <td class="fail">Garbled and blurry on the Jenga blocks.</td>
+          <td class="pass">Readable: "AbstractFactoryProviderManagerService", etc.</td>
+        </tr>
+        <tr>
+          <td class="criterion">Brand colours</td>
+          <td class="meh">Generic blue/teal. Not distinctly on-brand.</td>
+          <td class="pass">Closer to the turquoise/orange palette specified.</td>
+        </tr>
+        <tr>
+          <td class="criterion">Copyright footer</td>
+          <td class="pass">Present and correct.</td>
+          <td class="pass">Present and correct.</td>
+        </tr>
+      </table>
+      <div class="test-verdict gemini-wins">Winner: Gemini &mdash; better style adherence, storytelling, and text accuracy on labels.</div>
+    </div>
+  </div>
+
+  <!-- TEST 2: Infographic -->
+  <div class="test-section">
+    <div class="test-header">
+      <h2><span class="test-number">2</span> Infographic</h2>
+      <div class="prompt-summary">"5 Signs Your AI Strategy Is Actually Working" &mdash; portrait infographic with puzzle-piece rocket centrepiece, 5 numbered points, and newsletter CTA footer.</div>
+    </div>
+    <div class="comparison">
+      <div class="comparison-col">
+        <h3 class="qwen-label">Qwen qwen-image-max</h3>
+        <div class="file-info">928&times;1664 &middot; 2,281 KB</div>
+        <img src="qwen-infographic.jpg" alt="Qwen infographic output">
+      </div>
+      <div class="comparison-col">
+        <h3 class="gemini-label">Gemini nano-banana-pro-preview</h3>
+        <div class="file-info">~1856&times;2304 (2K) &middot; 1,554 KB</div>
+        <img src="gemini-infographic.jpg" alt="Gemini infographic output">
+      </div>
+    </div>
+    <div class="analysis">
+      <h4>Analysis</h4>
+      <table class="criteria-table">
+        <tr>
+          <th>Criteria</th><th>Qwen</th><th>Gemini</th>
+        </tr>
+        <tr>
+          <td class="criterion">Title</td>
+          <td class="pass">Present and bold.</td>
+          <td class="pass">Present, bolder, with better styling.</td>
+        </tr>
+        <tr>
+          <td class="criterion">Central motif</td>
+          <td class="pass">Puzzle rocket present, reasonable quality.</td>
+          <td class="pass">Excellent puzzle rocket, more whimsical and engaging.</td>
+        </tr>
+        <tr>
+          <td class="criterion">Text accuracy</td>
+          <td class="fail"><strong>Multiple typos:</strong> "ausks" (asks), "juss" (just), "proj oject" (project), "dalloring" (delivering). Dealbreaker.</td>
+          <td class="pass"><strong>All text correct.</strong> Zero typos across all 5 points.</td>
+        </tr>
+        <tr>
+          <td class="criterion">Layout</td>
+          <td class="meh">Text down one side only. Less dynamic composition.</td>
+          <td class="pass">Text arranged around centrepiece with supporting illustrations (people, gears, charts, rubbish bin).</td>
+        </tr>
+        <tr>
+          <td class="criterion">Footer</td>
+          <td class="fail">Says <strong>"2024"</strong> &mdash; wrong year.</td>
+          <td class="pass">Correct: "2026", includes chrismdp.com.</td>
+        </tr>
+      </table>
+      <div class="test-verdict gemini-wins">Winner: Gemini &mdash; decisive. Qwen's text typos and wrong year in the footer are disqualifying for professional use.</div>
+    </div>
+  </div>
+
+  <!-- TEST 3: Presentation -->
+  <div class="test-section">
+    <div class="test-header">
+      <h2><span class="test-number">3</span> Presentation Slide</h2>
+      <div class="prompt-summary">Widescreen 16:9 slide showing an S-curve "AI Adoption Curve" with three labelled phases and an orange "You are here" arrow. Minimalist, max 10 words.</div>
+    </div>
+    <div class="comparison">
+      <div class="comparison-col">
+        <h3 class="qwen-label">Qwen qwen-image-max</h3>
+        <div class="file-info">1664&times;928 &middot; 1,983 KB</div>
+        <img src="qwen-presentation.jpg" alt="Qwen presentation output">
+      </div>
+      <div class="comparison-col">
+        <h3 class="gemini-label">Gemini nano-banana-pro-preview</h3>
+        <div class="file-info">1920&times;1080 (1K) &middot; 199 KB</div>
+        <img src="gemini-presentation.jpg" alt="Gemini presentation output">
+      </div>
+    </div>
+    <div class="analysis">
+      <h4>Analysis</h4>
+      <table class="criteria-table">
+        <tr>
+          <th>Criteria</th><th>Qwen</th><th>Gemini</th>
+        </tr>
+        <tr>
+          <td class="criterion">Data visualisation</td>
+          <td class="pass"><strong>Excellent.</strong> Proper S-curve with dot clusters showing density changes. Reads like a real chart.</td>
+          <td class="meh">Abstract swooping line. More artistic but less informative as a data viz.</td>
+        </tr>
+        <tr>
+          <td class="criterion">Text labels</td>
+          <td class="pass">All three labels perfect and well-placed on the x-axis.</td>
+          <td class="pass">All three labels present and readable.</td>
+        </tr>
+        <tr>
+          <td class="criterion">"You are here" arrow</td>
+          <td class="pass">Orange arrow pointing down at the correct position on the curve.</td>
+          <td class="meh">Orange arrow present but positioned at the bottom, disconnected from the curve.</td>
+        </tr>
+        <tr>
+          <td class="criterion">Wobbly border</td>
+          <td class="pass">Turquoise sketch border, present.</td>
+          <td class="pass">Turquoise sketch border, present.</td>
+        </tr>
+        <tr>
+          <td class="criterion">Minimalism</td>
+          <td class="pass">Clean, tight, information-dense without clutter.</td>
+          <td class="pass">Spacious, visually appealing but curve itself is less useful.</td>
+        </tr>
+      </table>
+      <div class="test-verdict qwen-wins">Winner: Qwen &mdash; the S-curve with clustered dots is a genuinely better data visualisation. More useful as an actual presentation slide.</div>
+    </div>
+  </div>
+
+  <!-- TEST 4: Text Rendering -->
+  <div class="test-section">
+    <div class="test-header">
+      <h2><span class="test-number">4</span> Text Rendering (Quote Card)</h2>
+      <div class="prompt-summary">Peter Drucker quote card with precise typography, turquoise border, orange flourishes, and "chrismdp.com" below. This tests pure text rendering &mdash; Qwen's claimed strength.</div>
+    </div>
+    <div class="comparison">
+      <div class="comparison-col">
+        <h3 class="qwen-label">Qwen qwen-image-max</h3>
+        <div class="file-info">1328&times;1328 &middot; 1,621 KB</div>
+        <img src="qwen-text.jpg" alt="Qwen text rendering output">
+      </div>
+      <div class="comparison-col">
+        <h3 class="gemini-label">Gemini nano-banana-pro-preview</h3>
+        <div class="file-info">1024&times;1024 (1K) &middot; 106 KB</div>
+        <img src="gemini-text.jpg" alt="Gemini text rendering output">
+      </div>
+    </div>
+    <div class="analysis">
+      <h4>Analysis</h4>
+      <table class="criteria-table">
+        <tr>
+          <th>Criteria</th><th>Qwen</th><th>Gemini</th>
+        </tr>
+        <tr>
+          <td class="criterion">Quote text</td>
+          <td class="pass">Perfect rendering, elegant serif font.</td>
+          <td class="pass">Perfect rendering, elegant serif font.</td>
+        </tr>
+        <tr>
+          <td class="criterion">Attribution</td>
+          <td class="pass">"&mdash; Peter Drucker" &mdash; correct.</td>
+          <td class="pass">"&mdash; Peter Drucker" &mdash; correct.</td>
+        </tr>
+        <tr>
+          <td class="criterion">URL text</td>
+          <td class="fail"><strong>"chrasmedp.com"</strong> &mdash; misspelled. Letters transposed.</td>
+          <td class="pass"><strong>"chrismdp.com"</strong> &mdash; correct.</td>
+        </tr>
+        <tr>
+          <td class="criterion">Orange flourishes</td>
+          <td class="pass">Present, small and subtle.</td>
+          <td class="pass">Present, more ornate and decorative.</td>
+        </tr>
+        <tr>
+          <td class="criterion">Border</td>
+          <td class="pass">Turquoise border present.</td>
+          <td class="pass">Turquoise border present.</td>
+        </tr>
+        <tr>
+          <td class="criterion">Overall composition</td>
+          <td class="meh">Dark surround outside the border feels off-brand. More compact.</td>
+          <td class="pass">Clean, spacious, white surround. On-brand.</td>
+        </tr>
+      </table>
+      <div class="test-verdict gemini-wins">Winner: Gemini &mdash; ironic given Qwen's text-rendering claims. The misspelled URL ("chrasmedp.com") is exactly the kind of error that can't ship.</div>
+    </div>
+  </div>
+
+  <!-- Conclusions -->
+  <div class="conclusions">
+    <h2>Conclusions &amp; Recommendations</h2>
+
+    <h3>Where Gemini excels</h3>
+    <ul>
+      <li><strong>Text accuracy</strong> &mdash; Zero errors across all 4 tests. Qwen had typos in 2 of 4 (infographic and quote card), which is a dealbreaker for professional content.</li>
+      <li><strong>Style adherence</strong> &mdash; Consistently delivers the hand-drawn colored-pencil aesthetic that the brand templates specify. Qwen defaults to a more photorealistic digital illustration style.</li>
+      <li><strong>Resolution</strong> &mdash; Native 2K output (up to 2304px tall for infographics). Qwen caps at 1664&times;928, which can't meet the infographic template spec of 1856&times;2304.</li>
+      <li><strong>Creative interpretation</strong> &mdash; Added the superhero cape in the comic, the rubbish bin for "killed projects" in the infographic. More inventive with the brief.</li>
+    </ul>
+
+    <h3>Where Qwen excels</h3>
+    <ul>
+      <li><strong>Data visualisation</strong> &mdash; The presentation slide S-curve was genuinely better composed, with dot clusters that communicate density changes intuitively.</li>
+      <li><strong>File weight</strong> &mdash; Consistently higher-resolution output files (1.6&ndash;2.5 MB vs Gemini's 0.1&ndash;1.6 MB), suggesting more detail per pixel.</li>
+      <li><strong>Price</strong> &mdash; $0.075/image vs Gemini's usage-based pricing. 100 free images on signup.</li>
+    </ul>
+
+    <h3>Key limitations of Qwen-Image-Max</h3>
+    <ul>
+      <li><strong>Max resolution 1664&times;928</strong> &mdash; Can't produce the 1856&times;2304 infographics or 1920&times;1080 presentation slides at native resolution.</li>
+      <li><strong>Text rendering errors</strong> &mdash; Despite marketing claims about superior text handling, produced "ausks", "juss", "dalloring", and "chrasmedp.com" in testing.</li>
+      <li><strong>Style rigidity</strong> &mdash; Tends toward photorealistic rather than adapting to the requested hand-drawn aesthetic.</li>
+      <li><strong>No inline image return</strong> &mdash; Returns a temporary URL (expires in 24h) rather than base64 data, adding complexity to automation.</li>
+    </ul>
+
+    <div class="recommendation">
+      <h3>Recommendation</h3>
+      <p><strong>Stick with Gemini for the <code>/gemini-images</code> skill.</strong> Qwen-Image-Max is not a viable replacement for any of the current template types. The text accuracy problems alone are disqualifying &mdash; you can't publish infographics with "dalloring" instead of "delivering".</p>
+      <p style="margin-top: 0.8rem;">Worth revisiting when <strong>Qwen-Image-2.0</strong> gets a public API (currently invitation-only on Bailian). The 2.0 model claims 2048&times;2048 native output and improved text rendering, which could address the two biggest gaps. Monitor the DashScope model list for a <code>qwen-image-2.0</code> or updated <code>qwen-image-max</code> model name.</p>
+      <p style="margin-top: 0.8rem;"><strong>One possible niche use:</strong> If you ever need chart/diagram-style slides where data visualisation matters more than brand aesthetics, Qwen could serve as a secondary option.</p>
+    </div>
+  </div>
+
+  <!-- Metadata -->
+  <div class="metadata">
+    <h3>Test Metadata</h3>
+    <dl class="metadata-grid">
+      <dt>Date</dt>
+      <dd>11 February 2026</dd>
+      <dt>Qwen model</dt>
+      <dd>qwen-image-max (DashScope Singapore)</dd>
+      <dt>Gemini model</dt>
+      <dd>nano-banana-pro-preview (gemini-3-pro-image-preview)</dd>
+      <dt>Qwen API</dt>
+      <dd>DashScope International &mdash; dashscope-intl.aliyuncs.com</dd>
+      <dt>Gemini API</dt>
+      <dd>generativelanguage.googleapis.com/v1beta</dd>
+      <dt>Prompt extension</dt>
+      <dd>Disabled for Qwen (prompt_extend: false) to test raw prompt following</dd>
+      <dt>Qwen sizes used</dt>
+      <dd>928&times;1664 (portrait), 1664&times;928 (landscape), 1328&times;1328 (square)</dd>
+      <dt>Gemini sizes used</dt>
+      <dd>2K (comic, infographic), 1K (presentation, text)</dd>
+    </dl>
+  </div>
+
+</div>
+
+<footer>
+  Generated by Claude Code &middot; 11 February 2026
+</footer>
+
+</body>
+</html>
