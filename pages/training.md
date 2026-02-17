@@ -17,10 +17,12 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
 
     <div class="max-w-6xl mx-auto">
       <div class="grid md:grid-cols-2 gap-12 items-start">
-        <div>
+        <div class="space-y-6">
           <div class="bg-brand-deep-turquoise rounded-lg p-6">
+            <p class="text-lg text-white/90 font-semibold mb-4">Answer a few quick questions to learn more:</p>
             <div class="rm-area-embed-services"></div>
           </div>
+          {% include testimonial-kate-welka.html %}
         </div>
         <div class="space-y-6">
           {% include testimonial-ria-vaidya.html %}
@@ -179,7 +181,7 @@ excerpt: "Transform your team from random ChatGPT questions to shipping AI featu
 <section class="py-12 bg-brand-deep-turquoise">
   <div class="max-w-6xl mx-auto px-6">
     <div class="grid md:grid-cols-3 gap-8">
-      {% include testimonial-kate-welka.html %}
+      {% include testimonial-vijay-pawar.html %}
       {% include testimonial-bryan-quach.html %}
       {% include testimonial-xavier-watkins.html %}
     </div>
