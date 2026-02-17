@@ -135,6 +135,7 @@ This is a GitHub Pages-compatible Jekyll blog using a Tailwind CSS theme. The si
 
 **Important**: When updating existing blog posts, update the date in the front matter to reflect the update date, but NEVER rename the file itself - the filename should always retain the original publication date. This preserves URL structure and history.
 
+- **Scheduled publishing** - `future: false` in `_config.yml` means future-dated posts are excluded from builds. A GitHub Action (`.github/workflows/daily-publish.yml`) triggers a Pages rebuild at 9am UTC daily. **All post dates should use `07:00:00 +0000`** so they appear published at 7am when the 9am rebuild picks them up.
 - **GitHub Pages deployment** - Uses `github-pages` gem for compatibility
 - **Tailwind CSS via CDN** - Configured in `_layouts/default.html` with custom brand colors
 - **Custom post layout** - Enhanced with newsletter signup, share buttons, and related articles
