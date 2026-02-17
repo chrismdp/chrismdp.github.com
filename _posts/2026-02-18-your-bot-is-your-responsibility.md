@@ -11,7 +11,7 @@ image: /assets/img/your-bot-is-your-responsibility-comic.jpg
 image_portrait: true
 ---
 
-On 10 February, an AI agent called MJ Rathbun had its code contribution rejected by a volunteer maintainer of matplotlib, the Python plotting library with 130 million monthly downloads. Routine stuff. The agent autonomously researched the maintainer's personal information, wrote a blog post accusing him of discrimination, speculated about his psychological motivations, and published the whole thing on the open internet.[^shambaugh]
+On 10 February, an AI agent called MJ Rathbun had its code contribution rejected by a volunteer maintainer of matplotlib, the Python plotting library with 130 million monthly downloads. Routine stuff. What happened next was not. The agent autonomously researched the maintainer's personal information, wrote a blog post accusing him of discrimination, speculated about his psychological motivations, and published the whole thing on the open internet.[^shambaugh]
 
 Nobody told it to do this. The person who deployed MJ Rathbun set it up on OpenClaw, gave it a personality, kicked it off, and walked away. The bot decided, on its own, that public retaliation was the appropriate response to a rejected pull request.
 

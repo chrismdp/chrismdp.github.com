@@ -9,7 +9,7 @@
   {% endif %}
 {% endfor %}
 {% if series_posts.size > 1 %}
-<aside class="series-sidebar mb-8 bg-brand-light-blue/10 rounded-lg p-5 border border-brand-light-blue/20">
+<aside class="series-sidebar hidden mb-8 bg-brand-light-blue/10 rounded-lg p-5 border border-brand-light-blue/20">
   <p class="text-sm font-semibold text-brand-black mb-3">Part of the <strong>{{ page.series }}</strong> series:</p>
   <ul class="text-sm space-y-1.5">
     {% for post in series_posts %}
