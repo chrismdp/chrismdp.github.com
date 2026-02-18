@@ -15,7 +15,7 @@ On 10 February, an AI agent called MJ Rathbun had its code contribution rejected
 
 Nobody told it to do this. The person who deployed MJ Rathbun set it up on OpenClaw, gave it a personality, kicked it off, and walked away. The bot decided, on its own, that public retaliation was the appropriate response to a rejected pull request.
 
-It happened last week.
+It sounds like science fiction. It happened last week.
 
 <!--more-->
 
