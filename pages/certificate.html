@@ -1,0 +1,353 @@
+---
+layout: null
+permalink: /training/certificates/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificate of Completion — Chris Parsons</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --turquoise: #1a8a7d;
+      --orange: #fc8745;
+      --dark: #1a1a2e;
+      --cream: #faf9f6;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Inter', sans-serif;
+      background: var(--dark);
+      color: var(--dark);
+    }
+
+    .screen-wrapper {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      gap: 1.5rem;
+    }
+
+    .certificate {
+      width: 297mm;
+      height: 210mm;
+      position: relative;
+      background-color: white;
+      background-image: url('/assets/img/certificate-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+      box-shadow: 0 25px 80px rgba(0,0,0,0.45);
+    }
+
+    .certificate-content {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100%;
+      padding: 29% 40mm 9mm;
+      text-align: center;
+    }
+
+    .cert-heading {
+      font-family: 'Caveat', cursive;
+      font-size: 58px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--turquoise);
+      margin-bottom: 0.5rem;
+    }
+
+    .cert-subheading {
+      font-family: 'Jost', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      color: #888;
+      margin-bottom: 1.5rem;
+    }
+
+    .cert-presented {
+      font-family: 'Jost', sans-serif;
+      font-size: 26px;
+      font-weight: 400;
+      color: #888;
+      margin-bottom: 0.4rem;
+    }
+
+    .cert-name {
+      font-family: 'Caveat', cursive;
+      font-size: 52px;
+      color: var(--dark);
+      line-height: 1.1;
+      margin-bottom: 0.2rem;
+      max-width: 90%;
+      overflow-wrap: break-word;
+    }
+
+    .cert-name-line {
+      width: 400px;
+      border-bottom: 1.5px solid #888;
+      margin-bottom: 0.4rem;
+    }
+
+    .cert-email {
+      font-family: 'Jost', sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      color: #ccc;
+      margin-bottom: 1rem;
+      letter-spacing: 0.5px;
+    }
+
+    .cert-completed {
+      font-family: 'Jost', sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      color: #888;
+      margin-bottom: 0.6rem;
+    }
+
+    .cert-course {
+      font-family: 'Caveat', cursive;
+      font-size: 48px;
+      font-weight: 700;
+      color: var(--turquoise);
+      margin-bottom: 0;
+      max-width: 90%;
+      line-height: 1.1;
+    }
+
+    .cert-footer {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 650px;
+      margin-top: auto;
+      padding-bottom: 29mm;
+    }
+
+    .cert-delivered {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .cert-delivered-label {
+      font-family: 'Jost', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #999;
+      margin-bottom: 6rem;
+    }
+
+    .cert-sig-line {
+      width: 160px;
+      border-bottom: 1.5px solid #999;
+      margin-bottom: 0.3rem;
+      height: 0;
+    }
+
+    .cert-delivered-name {
+      font-family: 'Jost', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--dark);
+    }
+
+    .cert-date-block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .cert-date-label {
+      font-family: 'Jost', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #999;
+      margin-bottom: 0.3rem;
+    }
+
+    .cert-date {
+      font-family: 'Jost', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--dark);
+    }
+
+    .btn-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 2rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      color: white;
+      background: var(--turquoise);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+      box-shadow: 0 4px 15px rgba(26,138,125,0.3);
+    }
+
+    .btn-download:hover {
+      background: #22b8a8;
+      transform: translateY(-1px);
+    }
+
+    .btn-download:active {
+      transform: translateY(0);
+    }
+
+    .btn-download svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .error-message {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+      text-align: center;
+      color: var(--cream);
+      font-family: 'Inter', sans-serif;
+    }
+
+    .error-message h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--orange);
+    }
+
+    .error-message p {
+      font-size: 16px;
+      color: rgba(250,249,246,0.7);
+      max-width: 440px;
+      line-height: 1.6;
+    }
+
+    @page {
+      size: A4 landscape;
+      margin: 0;
+    }
+
+    @media print {
+      html, body {
+        width: 297mm;
+        height: 210mm;
+        background: white;
+      }
+
+      .screen-wrapper {
+        min-height: auto;
+        padding: 0;
+        gap: 0;
+      }
+
+      .btn-download {
+        display: none !important;
+      }
+
+      .certificate {
+        width: 297mm;
+        height: 210mm;
+        box-shadow: none;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color-adjust: exact !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="error-message" id="errorState">
+    <h1>Certificate not found</h1>
+    <p>This certificate link appears to be incomplete or invalid. Please check the URL you were given and try again.</p>
+  </div>
+
+  <div class="screen-wrapper" id="certWrapper" style="display: none;">
+    <div class="certificate" id="certificate">
+      <div class="certificate-content">
+        <div class="cert-presented">This certificate is awarded to</div>
+        <div class="cert-name" id="certName"></div>
+        <div class="cert-name-line"></div>
+        <div class="cert-email" id="certEmail"></div>
+
+        <div class="cert-completed">for successfully completing the "<span id="certCourse"></span>" training course</div>
+
+        <div class="cert-footer">
+          <div class="cert-delivered">
+            <div class="cert-sig-line"></div>
+            <span class="cert-delivered-name">Chris Parsons</span>
+          </div>
+          <div class="cert-date-block">
+            <span class="cert-date" id="certDate"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn-download" onclick="window.print()">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+      </svg>
+      Print / Save as PDF
+    </button>
+  </div>
+
+  <script>
+    (function() {
+      var hash = window.location.hash.slice(1);
+      if (!hash) {
+        document.getElementById('errorState').style.display = 'flex';
+        return;
+      }
+
+      try {
+        var json = atob(hash);
+        var data = JSON.parse(json);
+
+        if (!data.name || !data.course || !data.date) {
+          throw new Error('Missing required fields');
+        }
+
+        document.getElementById('certName').textContent = data.name;
+        if (data.email) {
+          document.getElementById('certEmail').textContent = data.email;
+        }
+        document.getElementById('certCourse').textContent = data.course;
+        document.getElementById('certDate').textContent = data.date;
+        document.getElementById('certWrapper').style.display = 'flex';
+
+        document.title = 'Certificate — ' + data.name + ' — ' + data.course;
+      } catch (e) {
+        document.getElementById('errorState').style.display = 'flex';
+      }
+    })();
+  </script>
+</body>
+</html>
