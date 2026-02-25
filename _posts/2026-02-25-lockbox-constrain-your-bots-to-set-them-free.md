@@ -54,6 +54,9 @@ Every tool and Bash command falls into one of four categories:
 
 Detection happens at the harness level through a PreToolUse hook that fires before every tool call. The hook checks session state stored in `/tmp/` and blocks the tool before it executes. The agent never gets a chance to run a blocked action. The environment polices the agent, not the agent itself.
 
+![Lockbox blocking an acting tool in a locked session and prompting the agent to enter plan mode](/assets/img/lockbox-in-action.jpg)
+*Lockbox catches a gmail batch modify command after untrusted data entered the session. The agent acknowledges the block and moves to plan mode.*
+
 ## The escape hatch
 
 When Lockbox blocks an action, it instructs Claude Code to enter plan mode and write out exactly what it wants to do. It also gives hints about how to avoid locking the session in the first place, for example by deferring untrusted fetches until after external actions are complete. All concrete data goes inline in the plan: the exact email body, the branch name, the deployment target, with no vague references. Then you exit plan mode and select "Clear context and bypass permissions" in Claude Code. This destroys the locked conversation and starts a clean agent that executes from your plan.
