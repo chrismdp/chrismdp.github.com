@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Code Review Is Dying"
-date: 2026-02-25 12:00:00 +0000
+date: 2026-02-24 07:00:00 +0000
 series: "Where AI Lives"
 categories:
   - ai
