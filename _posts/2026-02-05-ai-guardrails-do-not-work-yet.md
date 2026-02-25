@@ -2,7 +2,7 @@
 layout: post
 title: "AI Guardrails Do Not Work (Yet)"
 date: 2026-02-05 20:00:00 +0000
-series: "Where AI Lives"
+series: "Securing AI Agents"
 categories:
 - ai
 - security

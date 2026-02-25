@@ -2,6 +2,7 @@
 layout: post
 title: "Lockbox: Constrain Your Bots To Set Them Free"
 date: 2026-02-25 07:00:00 +0000
+series: "Securing AI Agents"
 categories:
 - ai
 - security
