@@ -65,11 +65,13 @@ The delegate starts clean, executes the concrete action, and its taint is discar
 
 Lockbox also hints at how to avoid locking in the first place, for example by deferring untrusted fetches until after external actions are complete. But when locking does happen, the delegation flow gives you two focused review points instead of hundreds of identical permission prompts.
 
+If delegation keeps failing, Lockbox suggests plan mode as a last resort. The agent writes out exactly what it wants to do, you exit plan mode and select "Clear context and bypass permissions" in Claude Code, which destroys the locked conversation and starts a clean agent executing from your plan. This is heavier — you lose your current thread of context — so delegation is always the first option.
+
 ## Relax your permissions
 
 With Lockbox running, you can approve every WebFetch without reading the prompt. The session locks automatically when external data enters, and dangerous follow-up actions are structurally blocked. Otherwise you either block WebFetch entirely, crippling your agent, or approve each one manually and hope you catch the malicious page among dozens of legitimate ones.
 
-There is a second benefit. The delegate sub-agent always starts with a clean, focused context rather than inheriting the full conversation history of the locked session. Long agent sessions accumulate thousands of tokens, and the agent gradually loses focus as its context fills up. By routing external actions through a delegate, the action itself executes with minimal context — just the specific instruction you reviewed. The locked session carries on with its accumulated knowledge for local work, while the dangerous actions get the clarity of a fresh start.
+There is a second benefit. When you run `echo 'lockbox:clean'` after reviewing the delegate's results, the lock releases and your session continues normally. This creates natural checkpoints in your workflow. You fetch external content, work locally, delegate any external actions through a clean agent, review the results, and release. Each cycle is a focused unit of work with clear boundaries rather than one long session where you lose track of what the agent has been exposed to.
 
 ## Three layers
 
