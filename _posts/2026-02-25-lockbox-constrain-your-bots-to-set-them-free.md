@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Lockbox: Constrain Your Bots To Set Them Free"
-date: 2026-02-25 07:00:00 +0000
+date: 2026-02-26 07:00:00 +0000
 series: "Securing AI Agents"
 categories:
 - ai
@@ -54,20 +54,22 @@ Every tool and Bash command falls into one of four categories:
 
 Detection happens at the harness level through a PreToolUse hook that fires before every tool call. The hook checks session state stored in `/tmp/` and blocks the tool before it executes. The agent never gets a chance to run a blocked action. The environment polices the agent, not the agent itself.
 
-![Lockbox blocking an acting tool in a locked session and prompting the agent to enter plan mode](/assets/img/lockbox-in-action.jpg)
-*Lockbox catches a gmail batch modify command after untrusted data entered the session. The agent acknowledges the block and moves to plan mode.*
+![Lockbox blocking an acting tool in a locked session and offering to delegate the action](/assets/img/lockbox-in-action.jpg)
+*Lockbox catches a gmail batch modify command after untrusted data entered the session. The agent acknowledges the block and offers to delegate.*
 
 ## The escape hatch
 
-When Lockbox blocks an action, it instructs Claude Code to enter plan mode and write out exactly what it wants to do. It also gives hints about how to avoid locking the session in the first place, for example by deferring untrusted fetches until after external actions are complete. All concrete data goes inline in the plan: the exact email body, the branch name, the deployment target, with no vague references. Then you exit plan mode and select "Clear context and bypass permissions" in Claude Code. This destroys the locked conversation and starts a clean agent that executes from your plan.
+When Lockbox blocks an action, the agent stops and tells you what happened. If you ask it to proceed, it spawns a **delegate sub-agent** — a clean agent that runs outside the locked session's context with independent lockbox state. You review the delegate's instructions before it runs (approval point one), then review the results and clear the lock with `echo 'lockbox:clean'` (approval point two).
 
-The clean agent works from a plan you reviewed, not from a conversation that may contain adversarial instructions. This implements the plan-then-execute pattern from the research, adapted for a single-user CLI workflow rather than a multi-agent architecture.
+The delegate starts clean, executes the concrete action, and its taint is discarded when it finishes. The parent session's lock remains intact throughout — the locked session never gets a chance to influence the external action directly. The delegate works from a specific instruction you reviewed, not from a conversation that may contain adversarial content. This implements the dual LLM pattern from the research, adapted for a single-user CLI workflow: the locked session is the quarantined context, the delegate is the privileged executor.
+
+Lockbox also hints at how to avoid locking in the first place, for example by deferring untrusted fetches until after external actions are complete. But when locking does happen, the delegation flow gives you two focused review points instead of hundreds of identical permission prompts.
 
 ## Relax your permissions
 
 With Lockbox running, you can approve every WebFetch without reading the prompt. The session locks automatically when external data enters, and dangerous follow-up actions are structurally blocked. Otherwise you either block WebFetch entirely, crippling your agent, or approve each one manually and hope you catch the malicious page among dozens of legitimate ones.
 
-There is a second benefit to the regular context clears. Long agent sessions accumulate thousands of tokens of conversation history, and the agent gradually loses focus as its context fills up. Lockbox's plan-then-execute cycle forces regular resets at well-defined points, so your agent starts each phase with a clean, focused context rather than dragging along everything it has seen and done. You know exactly what the agent is working from, and it stays sharp.
+There is a second benefit. The delegate sub-agent always starts with a clean, focused context rather than inheriting the full conversation history of the locked session. Long agent sessions accumulate thousands of tokens, and the agent gradually loses focus as its context fills up. By routing external actions through a delegate, the action itself executes with minimal context — just the specific instruction you reviewed. The locked session carries on with its accumulated knowledge for local work, while the dangerous actions get the clarity of a fresh start.
 
 ## Three layers
 
