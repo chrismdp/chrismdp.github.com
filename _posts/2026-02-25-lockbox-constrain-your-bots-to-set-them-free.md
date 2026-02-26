@@ -71,8 +71,6 @@ If delegation keeps failing, Lockbox suggests plan mode as a last resort. The ag
 
 With Lockbox running, you can approve every WebFetch without reading the prompt. The session locks automatically when external data enters, and dangerous follow-up actions are structurally blocked. Otherwise you either block WebFetch entirely, crippling your agent, or approve each one manually and hope you catch the malicious page among dozens of legitimate ones.
 
-There is a second benefit. When you run `echo 'lockbox:clean'` after reviewing the delegate's results, the lock releases and your session continues normally. This creates natural checkpoints in your workflow. You fetch external content, work locally, delegate any external actions through a clean agent, review the results, and release. Each cycle is a focused unit of work with clear boundaries rather than one long session where you lose track of what the agent has been exposed to.
-
 ## Three layers
 
 Lockbox ships sensible defaults, but every team uses different tools. Configuration uses a three-layer hierarchy:
