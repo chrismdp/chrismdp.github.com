@@ -56,8 +56,8 @@ Every tool and Bash command falls into one of four categories:
 
 Detection happens at the harness level through a PreToolUse hook that fires before every tool call. The hook checks session state stored in `/tmp/` and blocks the tool before it executes. The agent never gets a chance to run a blocked action. The environment polices the agent, not the agent itself.
 
-![Lockbox blocking an acting tool in a locked session and offering to delegate the action](/assets/img/lockbox-in-action.jpg)
-*Lockbox catches a gmail batch modify command after untrusted data entered the session. The agent acknowledges the block and offers to delegate.*
+![Lockbox blocking a git push in a locked session and offering to delegate the action](/assets/img/lockbox-in-action.jpg)
+*Lockbox blocks a git push after tainted data entered the session via a sub-agent. The agent acknowledges the block and offers to delegate.*
 
 ## The escape hatch
 
