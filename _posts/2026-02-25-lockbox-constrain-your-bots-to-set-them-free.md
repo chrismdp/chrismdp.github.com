@@ -52,6 +52,8 @@ Every tool and Bash command falls into one of four categories:
 
 **Unsafe acting** tools do both. WebFetch, for example, both reads external data and can be used to exfiltrate via URL parameters. These lock the session on first use and are blocked on subsequent use, preventing a read-then-act cycle in a single command.
 
+![Lockbox tool categories as a 2x2 matrix: safe and unsafe on the left, acting and unsafe acting on the right](/assets/img/lockbox-2x2-matrix.jpg)
+
 Detection happens at the harness level through a PreToolUse hook that fires before every tool call. The hook checks session state stored in `/tmp/` and blocks the tool before it executes. The agent never gets a chance to run a blocked action. The environment polices the agent, not the agent itself.
 
 ![Lockbox blocking an acting tool in a locked session and offering to delegate the action](/assets/img/lockbox-in-action.jpg)
