@@ -97,6 +97,14 @@ Later layers override earlier ones. Within each category, new patterns prepend t
 }
 ```
 
+## Limitations
+
+**Dangerous mode.** Lockbox's hooks still fire with `--dangerously-skip-permissions`, so the session locks normally when external data enters. But delegation requires user approval — that is the single security gate — and dangerous mode would auto-approve it, removing the only protection. Lockbox detects this and disables delegation entirely, leaving you locked with no escape hatch.
+
+The alternative is `acceptEdits` mode with permissive allow lists. You get nearly the same frictionless experience, but Lockbox's delegate approval still requires your explicit review. That one gate is what makes the whole model work.
+
+**Session transcript taint.** Claude Code session transcripts (`.jsonl` files) may contain tainted data from previous sessions. Sub-agents and plan mode can read these files, reintroducing prompt injection content. Lockbox classifies reading these files as `unsafe`, locking the session just as if you had fetched an untrusted web page.
+
 ## Try it
 
 Lockbox is early and actively developed. If something gets blocked that should not have, or something gets through that should not have, [open an issue](https://github.com/chrismdp/lockbox/issues){:target="_blank"}. Every workflow surfaces patterns the defaults do not cover, and your feedback makes the classifications better for everyone. I would love to hear how it works for you.
