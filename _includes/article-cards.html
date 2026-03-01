@@ -5,7 +5,7 @@
 </style>
 {% if include.mode == "featured" %}
   {% assign post = include.posts[0] %}
-  <article class="bg-white border border-brand-light-blue/20 rounded-lg overflow-hidden flex flex-col">
+  <article class="bg-white overflow-hidden flex flex-col">
     {% assign card_image = post.image | default: "/assets/img/chris-1.9-1.jpg" %}
     <a href="{{ site.baseurl }}{{ post.url }}">
       <img alt="{{ post.title | replace: "'", "&#39;" }}" src="{{ card_image }}" class="{% unless post.image_portrait %}w-full{% endunless %} max-h-[400px] object-contain" {% if post.image_portrait %}style="max-height: 200px; width: auto; margin: 0 auto;"{% endif %}>
