@@ -49,7 +49,7 @@ redirect_from:
     {% include ai-newsletter-short.html %}
   </div>
 
-  <div class="md:w-72 lg:w-80 flex flex-col gap-6 flex-shrink-0">
-    {% include article-cards.html posts=latest_posts mode="sidebar" %}
+  <div class="md:w-72 lg:w-80 flex-shrink-0">
+    {% include related-articles-sidebar.html mode="recent" limit=12 title="Recent Articles" %}
   </div>
 </div>

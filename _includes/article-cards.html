@@ -8,7 +8,7 @@
   <article class="bg-white border border-brand-light-blue/20 rounded-lg overflow-hidden flex flex-col">
     {% assign card_image = post.image | default: "/assets/img/chris-1.9-1.jpg" %}
     <a href="{{ site.baseurl }}{{ post.url }}">
-      <img alt="{{ post.title | replace: "'", "&#39;" }}" src="{{ card_image }}" class="{% unless post.image_portrait %}w-full{% endunless %} h-96 object-cover" {% if post.image_portrait %}style="max-height: 36rem; width: auto; margin: 0 auto;"{% endif %}>
+      <img alt="{{ post.title | replace: "'", "&#39;" }}" src="{{ card_image }}" class="{% unless post.image_portrait %}w-full{% endunless %} max-h-[400px] object-contain" {% if post.image_portrait %}style="max-height: 200px; width: auto; margin: 0 auto;"{% endif %}>
     </a>
 
     <div class="p-6 flex-1 flex flex-col">
@@ -31,34 +31,6 @@
       </a>
     </div>
   </article>
-
-{% elsif include.mode == "sidebar" %}
-  {% for post in include.posts %}
-    {% if forloop.first %}{% continue %}{% endif %}
-    <article class="bg-white border border-brand-light-blue/20 rounded-lg overflow-hidden flex flex-col">
-      {% assign card_image = post.image | default: "/assets/img/chris-1.9-1.jpg" %}
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        <img alt="{{ post.title | replace: "'", "&#39;" }}" src="{{ card_image }}" class="{% unless post.image_portrait %}w-full{% endunless %} h-32 object-cover" {% if post.image_portrait %}style="max-height: 15rem; width: auto; margin: 0 auto;"{% endif %}>
-      </a>
-
-      <div class="p-4 flex-1 flex flex-col">
-        <h3 class="text-lg font-heading font-semibold mb-2 article-card-title">
-          <a href="{{ site.baseurl }}{{ post.url }}" class="text-brand-black hover:text-brand-deep-turquoise transition-colors">
-            {{ post.title }}
-          </a>
-        </h3>
-        <div class="text-sm text-brand-black/60 italic mb-4">
-          {% assign original_date = post.path | split: "/" | last | split: "-" | slice: 0, 2 | join: '' %}
-          {% assign current_date = post.date | date: "%Y%m" %}
-          {% if original_date != current_date %}Updated: {% endif %}
-          {{ post.date | date: "%B %Y" }}
-        </div>
-        <a href="{{ site.baseurl }}{{ post.url }}" class="text-brand-deep-turquoise hover:text-brand-turquoise font-semibold">
-          Read more →
-        </a>
-      </div>
-    </article>
-  {% endfor %}
 
 {% else %}
   <!-- Legacy: full grid layout -->

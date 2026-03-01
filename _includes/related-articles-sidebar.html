@@ -1,37 +1,61 @@
 {% comment %}
-Related articles sidebar for A/B test variant.
-BBC-style layout: text-only list with titles and dates.
-Only includes posts that have images (for quality filtering).
+Article sidebar - BBC-style layout with images, titles, and dates.
+Used on both individual post pages (category-filtered) and the articles page (recent posts).
+
+Parameters:
+  include.limit  - number of articles to show (default: 5)
+  include.title  - sidebar heading (default: "More to explore")
+  include.mode   - "recent" to show recent posts, omit for category-based filtering
 {% endcomment %}
 
-{% assign related_posts = "" %}
-{% for tag in page.categories %}
-  {% assign tag_posts = site.categories[tag] %}
-  {% assign oldest_date = page.date | date: "%s" | minus: 157680000 | date: "%Y-%m-%d" %}
+{% assign sidebar_limit = include.limit | default: 5 %}
+{% assign sidebar_title = include.title | default: "More to explore" %}
+{% assign sidebar_posts = "" | split: "" %}
 
-  {% for post in tag_posts %}
+{% if include.mode == "recent" %}
+  {% for post in site.posts %}
     {% assign post_time = post.date | date: "%s" | plus: 0 %}
     {% assign now_time = site.time | date: "%s" | plus: 0 %}
     {% if post_time > now_time %}{% continue %}{% endif %}
-    {% assign post_date = post.date | date: "%Y-%m-%d" %}
-    {% if post.id != page.id and post_date >= oldest_date and post.image %}
-      {% assign related_posts = related_posts | append: post.id | append: "," %}
+    {% assign webinar_time = post.webinar_date | date: "%s" | plus: 0 %}
+    {% if post.webinar_date and webinar_time > now_time %}{% continue %}{% endif %}
+    {% if post.image %}
+      {% assign sidebar_posts = sidebar_posts | push: post %}
+      {% if sidebar_posts.size >= sidebar_limit %}{% break %}{% endif %}
     {% endif %}
   {% endfor %}
-{% endfor %}
+{% else %}
+  {% assign related_ids = "" %}
+  {% for tag in page.categories %}
+    {% assign tag_posts = site.categories[tag] %}
+    {% assign oldest_date = page.date | date: "%s" | minus: 157680000 | date: "%Y-%m-%d" %}
+    {% for post in tag_posts %}
+      {% assign post_time = post.date | date: "%s" | plus: 0 %}
+      {% assign now_time = site.time | date: "%s" | plus: 0 %}
+      {% if post_time > now_time %}{% continue %}{% endif %}
+      {% assign post_date = post.date | date: "%Y-%m-%d" %}
+      {% if post.id != page.id and post_date >= oldest_date and post.image %}
+        {% assign related_ids = related_ids | append: post.id | append: "," %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+  {% assign related_ids_array = related_ids | split: "," | uniq %}
+  {% for post_id in related_ids_array limit: sidebar_limit %}
+    {% assign found_post = site.posts | where: "id", post_id | first %}
+    {% assign sidebar_posts = sidebar_posts | push: found_post %}
+  {% endfor %}
+{% endif %}
 
-{% assign related_posts_array = related_posts | split: "," | uniq %}
-{% assign related_posts_count = related_posts_array | size %}
+{% assign sidebar_count = sidebar_posts | size %}
 
-{% if related_posts_count > 0 %}
-<aside class="related-sidebar">
-  <h3 class="text-xl font-heading font-bold mb-6 text-brand-black border-b-2 border-brand-deep-turquoise pb-2">More to explore</h3>
+{% if sidebar_count > 0 %}
+<aside class="related-sidebar not-prose">
+  <h3 class="text-xl font-heading font-bold mb-6 text-brand-black border-b-2 border-brand-deep-turquoise pb-2">{{ sidebar_title }}</h3>
   <div class="space-y-10">
-    {% for post_id in related_posts_array limit: 5 %}
-      {% assign post = site.posts | where: "id", post_id | first %}
+    {% for post in sidebar_posts %}
       <article class="group">
         <a href="{{ site.baseurl }}{{ post.url }}" class="related-sidebar-link block" data-title="{{ post.title | escape }}">
-          <img src="{{ post.image }}" alt="{{ post.title | escape }}" class="w-3/5 mx-auto rounded-lg mb-2">
+          <img src="{{ post.image }}" alt="{{ post.title | escape }}" class="block w-3/5 mx-auto rounded-lg mb-2">
           <h4 class="font-heading font-semibold leading-snug text-brand-black group-hover:text-brand-deep-turquoise transition-colors">
             {{ post.title }}
           </h4>
