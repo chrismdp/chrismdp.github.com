@@ -190,6 +190,7 @@ EVERYTHING ELSE HERE
 - No numbered/unnumbered lists - prefer short paragraphs with headings
 - Only use H2 (##) and below, never H1 (#)
 - No blank lines before footnote references
+- **Credit lines**: When thanking someone for feedback, say "Thanks to [Name] for feedback on an earlier version of this post." Do not specify what the feedback was about.
 
 **Image Placement:**
 - **Main image = motif**: When creating infographics, extract the main visual motif and use it as `image:` in front matter. This is the hero image shown at top of post.

@@ -24,7 +24,7 @@ After a week, here is what works for me:
 
 [^wispr]: [Wispr Flow](https://wisprflow.ai/r?CHRIS104){:target="_blank"} is an excellent voice-to-text app. This is a referral link, but I would recommend it regardless.
 
-**Code** of all kinds: quick fixes, new features, refactoring. I have tried mobile coding before and every attempt failed because typing code on a phone is miserable. Brackets, semicolons, precise indentation, all painful on a touchscreen. Claude Code inverts this. You are not typing code, you are having a conversation, and Claude handles the translation.
+**Code** of all kinds: quick fixes, new features, refactoring. I have tried mobile coding before and every attempt failed because typing code on a phone is miserable. Brackets, semicolons, precise indentation, all painful on a touchscreen. Claude Code inverts this. You are having a conversation, and Claude writes the code.
 
 **Reminders and automation**. I have a heartbeat script running on the server every thirty minutes that spawns a small Claude Code prompt to check my reminders. I have a Max 20 subscription, so I can afford the tokens. When something needs attention, it pings me via Telegram. The server never sleeps, so the reminders work.
 
@@ -127,7 +127,7 @@ These two steps block the most common attacks. If you plan to run web services o
 
 ### tmux: Persistent Sessions
 
-tmux is the critical piece that makes mobile access practical. Without it, closing your SSH connection kills whatever you were running. With tmux, your session persists on the server. You can disconnect, reconnect hours later from a different device, and find everything exactly as you left it.
+tmux is what makes mobile access practical. Without it, closing your SSH connection kills whatever you were running. With tmux, your session persists on the server. You can disconnect, reconnect hours later from a different device, and find everything exactly as you left it.
 
 Create a configuration file that makes tmux pleasant to use:
 
@@ -169,36 +169,104 @@ Then install Claude Code globally:
 npm install -g @anthropic-ai/claude-code
 {% endhighlight %}
 
-Run `claude` once to authenticate. You will need your Anthropic API key, or you can use `claude login` to authenticate via the browser. Since the VPS cannot open browser windows, you will need to copy the URL it prints, open it on your local machine, complete authentication, then copy the resulting key back to the terminal. This is fiddly but only needs doing once.
+Now authenticate Claude Code. You can either log in via the browser (easier if you have an Anthropic account with a Max subscription) or set an API key manually.
+
+**Option A: Browser login (recommended)**
+
+Run the login command on your VPS:
+
+{% highlight bash %}
+claude login
+{% endhighlight %}
+
+Claude Code will print a URL and a one-time code. It looks something like this:
+
+{% highlight text %}
+To login, open this URL in your browser:
+https://console.anthropic.com/oauth/authorize?...
+Then enter this code: XXXX-XXXX
+{% endhighlight %}
+
+Copy that URL and open it in a browser on your phone or laptop. Sign in to your Anthropic account, paste the one-time code when prompted, and approve the connection. Back on your VPS terminal, Claude Code will detect the authorisation and confirm you are logged in.
+
+**Option B: API key**
+
+If you prefer to use an API key, create one at [console.anthropic.com/settings/keys](https://console.anthropic.com/settings/keys){:target="_blank"}. Be aware that API access is pay-as-you-go and can get expensive quickly, especially with heavy use. A Max subscription (Option A) gives you a predictable monthly cost. To use an API key, set it as an environment variable on your VPS:
+
+{% highlight bash %}
+export ANTHROPIC_API_KEY="sk-ant-..."
+{% endhighlight %}
+
+Add this line to your `~/.bashrc` so it persists across sessions:
+
+{% highlight bash %}
+echo 'export ANTHROPIC_API_KEY="sk-ant-..."' >> ~/.bashrc
+{% endhighlight %}
+
+Run `claude` to verify everything connects. Either way, authentication only needs doing once.
 
 ### Connecting from Your Phone
 
 Add your VPS as a new host in Termius using your server's IP address or hostname. If you set up your key earlier, it should connect without a password. Connect and you should land directly in your tmux session with Claude Code ready to go.
 
-<figure class="float-right w-1/3 ml-6 mb-4">
+<figure class="mx-auto w-1/3 mb-6">
 <img src="/assets/img/termius-claude-code.jpg" alt="Termius running Claude Code on iPhone" class="rounded-lg" />
 <figcaption class="text-sm text-brand-black/60 mt-2 text-center italic">Editing a blog post, Saturday lunchtime while making coffee.</figcaption>
 </figure>
 
 ## Automation
 
-A VPS enables automation that would be impractical on a laptop that sleeps and wakes unpredictably. I run cron jobs that sync my notes to git every five minutes, export Claude Code session logs for later review, and ping me via Telegram when something needs attention.
+A VPS enables automation that would be impractical on a laptop that sleeps and wakes unpredictably. The server never closes its lid, never reboots for updates at inconvenient times, and never loses WiFi.
 
-Here is a [simple vault sync script](https://github.com/chrismdp/dotfiles/blob/master/bin/vault-sync.sh){:target="_blank"} that keeps a repository backed up automatically. Add it to crontab to run every few minutes:
+### Git Sync
 
-{% highlight bash %}
-crontab -e
+I have a [vault sync script](https://github.com/chrismdp/dotfiles/blob/master/bin/vault-sync.sh){:target="_blank"} that commits and pushes any changes in a repository. To schedule it, ask Claude Code:
+
+> "Set up a cron job to run ~/bin/vault-sync.sh every 5 minutes"
+
+Claude will edit your crontab for you. Your work saves itself. No more "did I commit that before I left the house" anxiety.
+
+### Session Log Export
+
+Claude Code stores conversation logs locally in `~/.claude/projects/`. I wrote about [building a skill to summarise these into daily activity reports](/where-did-my-day-go/), and originally exported them via a cron job running overnight. That worked when Claude Code only ran on one machine. Once I started running it on the VPS and my laptop, session logs were scattered across machines and the cron job only saw whichever machine it ran on.
+
+The fix was Claude Code's `SessionEnd` hook. Every time a session ends, a hook fires automatically and exports that session's logs to a shared git repository. The vault sync cron job (above) pushes them, and every machine's sessions end up in the same place. The hook configuration in `~/.claude/settings.json` looks like this:
+
+{% highlight json %}
+{
+  "hooks": {
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.claude/skills/today-in-claude-code/export_claude_sessions.py --today",
+            "async": true
+          }
+        ]
+      }
+    ]
+  }
+}
 {% endhighlight %}
 
-Then add this line:
+The export script writes each day's sessions to a file tagged with the machine's hostname, so two machines exporting the same day do not overwrite each other. Each evening I run a skill that reads all exported sessions and produces a summary of everything I built, debugged, and discussed across every device.
 
-{% highlight bash %}
-*/5 * * * * ~/bin/vault-sync.sh
-{% endhighlight %}
+### Telegram Notifications
 
-Your work saves itself. No more "did I commit that before I left the house" anxiety.
+I have a [heartbeat script](https://gist.github.com/chrismdp/64c2947fbd1e8b640aa3036412995209){:target="_blank"} that runs every fifteen minutes via cron. It spawns a small Claude Code prompt that checks a reminders file, compares it against the current time, and sends a Telegram message if something needs attention.
 
-## The Honest Assessment
+Setting up a Telegram bot takes two minutes: message [@BotFather](https://t.me/botfather){:target="_blank"} on Telegram, run `/newbot`, and save the token it gives you. Then find your chat ID by messaging [@userinfobot](https://t.me/userinfobot){:target="_blank"}. Save both values to `~/.secret_env` and the heartbeat script handles the rest.
+
+I keep a `REMINDERS.md` file with entries like `every day 08:00 - Check email` and `2026-03-15 09:00 - Call the dentist`. The heartbeat spawns Claude Code, which reads the file, checks the current time, and calls a send script for anything that matches. I use this for meeting prep reminders, follow-up nudges, and deadline warnings. To set up the schedule, ask Claude Code:
+
+> "Set up a cron job to run ~/bin/heartbeat.sh every 15 minutes between 6am and 11pm"
+
+The server is always awake, so the reminders always fire.
+
+Fair warning: this grows. My single heartbeat prompt now checks reminders, triages email, prepares meeting briefings, and monitors content schedules. It works, but a single prompt doing everything is inefficient and slow. I am planning to split it into multiple focused cron jobs, each handling one concern, similar to how [OpenClaw](/dont-let-your-ceo-install-openclaw/) runs separate scheduled agents for different tasks. Start simple with reminders and let it evolve from there.
+
+## Watch Out for Burnout
 
 Mobile Claude Code makes certain things easier and makes overwork more convenient. Whether that is net positive depends entirely on your discipline.
 
@@ -215,3 +283,5 @@ If you struggle with work-life separation, this setup might make things worse. I
 I wrote about [how I use AI tools daily](/coding-with-ai/) and [why repositories beat chatbots for writing and thinking](/writing-and-thinking-with-ai-why-repositories-beat-chatbots/), and this setup has become central to both workflows. If you want to extend it further with custom skills and automation, [I covered that process too](/how-to-use-claude-code-skills/).
 
 The server is always on, the session is always waiting, and my phone is always in my pocket. Whether that is a superpower or a trap is up to you.
+
+Thanks to [Adam Martin](https://www.linkedin.com/in/adam-martin-b3ba4414a/){:target="_blank"} for feedback on an earlier version of this post.
