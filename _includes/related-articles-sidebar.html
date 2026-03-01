@@ -10,7 +10,11 @@ Parameters:
 
 {% assign sidebar_limit = include.limit | default: 5 %}
 {% assign sidebar_offset = include.offset | default: 0 %}
-{% assign sidebar_title = include.title | default: "More to explore" %}
+{% if include.title == "" %}
+  {% assign sidebar_title = "" %}
+{% else %}
+  {% assign sidebar_title = include.title | default: "More to explore" %}
+{% endif %}
 {% assign sidebar_posts = "" | split: "" %}
 
 {% if include.mode == "recent" %}
@@ -56,7 +60,7 @@ Parameters:
 
 {% if sidebar_count > 0 %}
 <aside class="related-sidebar not-prose">
-  <h3 class="text-xl font-heading font-bold mb-6 text-brand-black border-b-2 border-brand-deep-turquoise pb-2">{{ sidebar_title }}</h3>
+  {% if sidebar_title != "" %}<h3 class="text-xl font-heading font-bold mb-6 text-brand-black border-b-2 border-brand-deep-turquoise pb-2">{{ sidebar_title }}</h3>{% endif %}
   <div class="space-y-10">
     {% for post in sidebar_posts %}
       <article class="group">
