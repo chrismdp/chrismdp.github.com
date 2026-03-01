@@ -8,7 +8,7 @@
   <article class="bg-white overflow-hidden flex flex-col">
     {% assign card_image = post.image | default: "/assets/img/chris-1.9-1.jpg" %}
     <a href="{{ site.baseurl }}{{ post.url }}">
-      <img alt="{{ post.title | replace: "'", "&#39;" }}" src="{{ card_image }}" class="{% unless post.image_portrait %}w-full{% endunless %} max-h-[400px] object-contain" {% if post.image_portrait %}style="max-height: 200px; width: auto; margin: 0 auto;"{% endif %}>
+      <img alt="{{ post.title | replace: "'", "&#39;" }}" src="{{ card_image }}" class="{% unless post.image_portrait %}w-full{% endunless %} max-h-[400px] object-contain" {% if post.image_portrait %}style="width: auto; margin: 0 auto;"{% endif %}>
     </a>
 
     <div class="p-6 flex-1 flex flex-col">

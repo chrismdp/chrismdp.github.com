@@ -10,18 +10,19 @@ Parameters:
 
 {% assign sidebar_limit = include.limit | default: 5 %}
 {% assign sidebar_offset = include.offset | default: 0 %}
+{% comment %}Liquid's default filter treats "" as falsy, so we check explicitly to allow suppressing the heading{% endcomment %}
 {% if include.title == "" %}
   {% assign sidebar_title = "" %}
 {% else %}
   {% assign sidebar_title = include.title | default: "More to explore" %}
 {% endif %}
 {% assign sidebar_posts = "" | split: "" %}
+{% assign now_time = site.time | date: "%s" | plus: 0 %}
 
 {% if include.mode == "recent" %}
   {% assign skipped = 0 %}
   {% for post in site.posts %}
     {% assign post_time = post.date | date: "%s" | plus: 0 %}
-    {% assign now_time = site.time | date: "%s" | plus: 0 %}
     {% if post_time > now_time %}{% continue %}{% endif %}
     {% assign webinar_time = post.webinar_date | date: "%s" | plus: 0 %}
     {% if post.webinar_date and webinar_time > now_time %}{% continue %}{% endif %}
@@ -35,24 +36,25 @@ Parameters:
     {% endif %}
   {% endfor %}
 {% else %}
-  {% assign related_ids = "" %}
+  {% assign seen_ids = "" %}
+  {% assign oldest_date = page.date | date: "%s" | minus: 157680000 | date: "%Y-%m-%d" %}
   {% for tag in page.categories %}
     {% assign tag_posts = site.categories[tag] %}
-    {% assign oldest_date = page.date | date: "%s" | minus: 157680000 | date: "%Y-%m-%d" %}
     {% for post in tag_posts %}
       {% assign post_time = post.date | date: "%s" | plus: 0 %}
-      {% assign now_time = site.time | date: "%s" | plus: 0 %}
       {% if post_time > now_time %}{% continue %}{% endif %}
+      {% assign webinar_time = post.webinar_date | date: "%s" | plus: 0 %}
+      {% if post.webinar_date and webinar_time > now_time %}{% continue %}{% endif %}
       {% assign post_date = post.date | date: "%Y-%m-%d" %}
       {% if post.id != page.id and post_date >= oldest_date and post.image %}
-        {% assign related_ids = related_ids | append: post.id | append: "," %}
+        {% unless seen_ids contains post.id %}
+          {% assign seen_ids = seen_ids | append: post.id | append: "," %}
+          {% assign sidebar_posts = sidebar_posts | push: post %}
+          {% if sidebar_posts.size >= sidebar_limit %}{% break %}{% endif %}
+        {% endunless %}
       {% endif %}
     {% endfor %}
-  {% endfor %}
-  {% assign related_ids_array = related_ids | split: "," | uniq %}
-  {% for post_id in related_ids_array limit: sidebar_limit %}
-    {% assign found_post = site.posts | where: "id", post_id | first %}
-    {% assign sidebar_posts = sidebar_posts | push: found_post %}
+    {% if sidebar_posts.size >= sidebar_limit %}{% break %}{% endif %}
   {% endfor %}
 {% endif %}
 
