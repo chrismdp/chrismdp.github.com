@@ -50,6 +50,6 @@ redirect_from:
   </div>
 
   <div class="md:w-72 lg:w-80 flex-shrink-0">
-    {% include related-articles-sidebar.html mode="recent" limit=12 title="Recent Articles" %}
+    {% include related-articles-sidebar.html mode="recent" limit=12 offset=1 title="Recent Articles" %}
   </div>
 </div>

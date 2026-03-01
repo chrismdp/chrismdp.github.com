@@ -9,10 +9,12 @@ Parameters:
 {% endcomment %}
 
 {% assign sidebar_limit = include.limit | default: 5 %}
+{% assign sidebar_offset = include.offset | default: 0 %}
 {% assign sidebar_title = include.title | default: "More to explore" %}
 {% assign sidebar_posts = "" | split: "" %}
 
 {% if include.mode == "recent" %}
+  {% assign skipped = 0 %}
   {% for post in site.posts %}
     {% assign post_time = post.date | date: "%s" | plus: 0 %}
     {% assign now_time = site.time | date: "%s" | plus: 0 %}
@@ -20,6 +22,10 @@ Parameters:
     {% assign webinar_time = post.webinar_date | date: "%s" | plus: 0 %}
     {% if post.webinar_date and webinar_time > now_time %}{% continue %}{% endif %}
     {% if post.image %}
+      {% if skipped < sidebar_offset %}
+        {% assign skipped = skipped | plus: 1 %}
+        {% continue %}
+      {% endif %}
       {% assign sidebar_posts = sidebar_posts | push: post %}
       {% if sidebar_posts.size >= sidebar_limit %}{% break %}{% endif %}
     {% endif %}
