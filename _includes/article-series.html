@@ -9,9 +9,9 @@
   {% endif %}
 {% endfor %}
 {% if series_posts.size > 1 %}
-<aside class="series-sidebar hidden mb-8 bg-brand-light-blue/10 rounded-lg p-5 border border-brand-light-blue/20">
-  <p class="text-sm font-semibold text-brand-black mb-3">Part of the <strong>{{ page.series }}</strong> series:</p>
-  <ul class="text-sm space-y-1.5">
+<aside class="series-bottom hidden mt-12 mb-8 bg-brand-light-blue/10 rounded-lg p-6 border border-brand-light-blue/20">
+  <p class="text-base font-semibold text-brand-black mb-4">This article is part of the <strong>{{ page.series }}</strong> series:</p>
+  <ul class="text-sm space-y-2">
     {% for post in series_posts %}
     <li>
       {% if post.url == page.url %}
@@ -28,9 +28,9 @@
 document.addEventListener('DOMContentLoaded', function() {
   if (typeof posthog !== 'undefined') {
     posthog.onFeatureFlags(function() {
-      var variant = posthog.getFeatureFlag('series-sidebar-experiment');
+      var variant = posthog.getFeatureFlag('series-bottom-experiment');
       if (variant === 'test') {
-        document.querySelectorAll('.series-sidebar').forEach(function(el) {
+        document.querySelectorAll('.series-bottom').forEach(function(el) {
           el.classList.remove('hidden');
         });
       }
