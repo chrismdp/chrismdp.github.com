@@ -10,7 +10,8 @@ categories:
 redirect_from:
 - /webinar
 - /webinar/
-image: /assets/img/webinar-let-ai-do-your-work.jpg
+image: /assets/img/webinar-let-ai-do-your-work-motif.jpg
+infographic: /assets/img/webinar-let-ai-do-your-work.jpg
 kit_tag: webinar13
 webinar_date: "2026-03-05T14:00:00+00:00"
 series: "AI In Action Webinars"
