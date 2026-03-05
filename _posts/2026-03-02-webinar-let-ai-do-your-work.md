@@ -1,123 +1,79 @@
 ---
 layout: post
 title: "Webinar: Let AI Do Your Work"
-date: 2026-03-01 14:00:00 +0000
+date: 2026-03-05 14:00:00 +0000
 categories:
 - ai
 - webinar
 - leadership
 - automation
-redirect_from:
-- /webinar
-- /webinar/
 image: /assets/img/webinar-let-ai-do-your-work-motif.jpg
 infographic: /assets/img/webinar-let-ai-do-your-work.jpg
-kit_tag: webinar13
-webinar_date: "2026-03-05T14:00:00+00:00"
 series: "AI In Action Webinars"
 ---
 
-<div class="mb-12">
+I used to think the big AI transformation would be about embedding AI into products. The transformation that matters right now is people using AI to do their own work, across their entire workflow, not just inside an IDE.
 
-  <p class="text-2xl text-brand-black font-bold mb-4">
-    Next session: {{ page.webinar_date | date: "%B %-d, %-I:%M%P %Z" }}
-  </p>
+On 5 March 2026, I gave a webinar showing how I use AI to run my consulting business. Not a curated demo of one feature, but the full picture: 44 custom skills that handle everything from morning planning to slide generation to strategic thinking. Three developments over the last six months made this possible, and they have changed my working life more than anything since I first started programming.
 
-  <p class="text-xl text-brand-black mb-8">
-    Most technical leaders have AI in one place: developer tooling. Copilot, maybe some ChatGPT. That is a fraction of what is possible.
-  </p>
+<!--more-->
 
-  <p class="text-xl text-brand-black mb-4">
-    I use AI to run my entire consulting business:
-  </p>
+## Three Changes That Matter
 
-  <ul class="text-xl text-brand-black mb-8 space-y-2 ml-6 list-disc">
-    <li>Morning routines that review my calendar, triage email and plan my day</li>
-    <li>LinkedIn posts written, refined and scheduled before my coffee gets cold</li>
-    <li>Xero reconciliation, runway spreadsheet reviews, contract drafting straight into Google Docs</li>
-    <li>Training slides built from transcripts of previous sessions</li>
-    <li>Inbox dumps processed into a personal knowledge base</li>
-    <li>Even the reminder that pinged me to write this webinar page came from an AI agent running on a cron job</li>
-  </ul>
+The first is [MCP](https://modelcontextprotocol.io/introduction){:target="_blank"}, which connects AI tools to everything else on your computer: email, calendar, Google Drive, spreadsheets. The second is AI that runs on your machine rather than trapped behind a website. [Claude Code](/coding-with-ai/) sitting on my operating system, reading and writing files, running shell commands, is far more capable than any chatbot. The third is that the models themselves crossed an inflection point around the end of November. Claude Code with Opus 4.6 understands poorly worded dictations, generates better code, and reasons about complex multi-step workflows in ways that were not possible six months ago.
 
-  <p class="text-xl text-brand-black mb-8">
-    In this session I will walk through all of it live, show you what works, what does not, and where to start in your own organisation.
-  </p>
+These three things together are why I went from a handful of simple automations to 44 interconnected skills that handle a substantial portion of my working week.
 
-  <!--more-->
+## What Skills Are
 
-  <div class="bg-brand-deep-turquoise rounded-lg p-8 text-center mb-12 clear-both">
-    <div class="rm-area-embed-webinar"></div>
-  </div>
+Anthropic introduced [skills](/how-to-use-claude-code-skills/) as chunks of knowledge you make available to AI on demand. I compared it to The Matrix: Neo does not know kung fu, but he knows he does not know kung fu, and he can pull in the knowledge when he needs it. A skill is a markdown file that teaches Claude Code how to do a specific part of your job. Some are simple style guidance, others are multi-phase workflows with scripts, semantic search, and feedback loops.
 
-  <div class="mb-8">
-    <h3 class="text-lg font-bold text-brand-black mb-4">What We Will Cover:</h3>
-    <ul class="space-y-2 text-brand-black">
-      <li><strong>Beyond the IDE:</strong> Where AI creates value outside of code completion, and why most organisations are leaving 90% of the opportunity on the table</li>
-      <li><strong>The Infrastructure Mindset:</strong> What changes when you treat AI as business infrastructure rather than a chatbot you occasionally ask questions</li>
-      <li><strong>Where to Start:</strong> A practical framework for identifying your highest value AI opportunities, starting with the boring stuff that eats your week</li>
-      <li><strong>Live Walkthrough:</strong> How AI runs across my consulting business end to end, from morning routines through client delivery</li>
-    </ul>
-  </div>
+The key difference from custom GPTs is that skills are interconnected. They load together, combine freely, and build on each other. My strategic thinking skill can pull in my writing style skill, which can trigger my slop checker, which can hand off to my image generation skill. Custom GPTs are isolated islands, but skills are a network.
 
-  <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    function getOrdinalSuffix(day) {
-      const num = parseInt(day);
-      if (num >= 11 && num <= 13) return 'th';
-      switch (num % 10) {
-        case 1: return 'st';
-        case 2: return 'nd';
-        case 3: return 'rd';
-        default: return 'th';
-      }
-    }
+## Content Without the Content Treadmill
 
-    function updateWebinarTitle() {
-      const titleElement = document.querySelector('.rm-area-embed-webinar .rm-title');
-      if (titleElement) {
-        const webinarDate = new Date('{{ page.webinar_date }}');
-        const dayOptions = {
-          day: 'numeric',
-          timeZone: 'Europe/London'
-        };
-        const monthOptions = {
-          month: 'short',
-          timeZone: 'Europe/London'
-        };
-        const timeOptions = {
-          hour: 'numeric',
-          minute: '2-digit',
-          hour12: true,
-          timeZone: 'Europe/London'
-        };
+The first skill I demonstrated was Content, which manages my entire LinkedIn pipeline. I post daily, and without this skill I would spend most of my morning on it. Instead, I dump a half-formed idea and the skill loads my content strategy, searches my vault for related concepts using [CK semantic search](https://github.com/chrismdp/ck){:target="_blank"}, checks what I have posted recently, and generates a content plan. It knows my two-pillar strategy, my audience rules, my posting schedule.
 
-        const day = webinarDate.toLocaleDateString('en-GB', dayOptions);
-        const month = webinarDate.toLocaleDateString('en-GB', monthOptions);
-        let ukTime = webinarDate.toLocaleTimeString('en-GB', timeOptions).toLowerCase();
-        ukTime = ukTime.replace(':00', '');
-        const ukFormatted = `${day}${getOrdinalSuffix(day)} ${month}, ${ukTime}`;
+A separate service pulls engagement data from LinkedIn into my vault, and the Content skill analyses which posts performed well and why. During the webinar it told me that historical metaphors are my best-performing format, and suggested finding one that challenges leaders' thinking about AI adoption. That kind of data-driven content adjustment used to require a social media manager. Now it happens inside a single conversation.
 
-        const etOptions = {
-          hour: 'numeric',
-          minute: '2-digit',
-          hour12: true,
-          timeZone: 'America/New_York'
-        };
-        let etTime = webinarDate.toLocaleTimeString('en-US', etOptions).toLowerCase();
-        etTime = etTime.replace(':00', '');
+## Slides From a Single File
 
-        titleElement.textContent = `Next Webinar: ${ukFormatted} UK / ${etTime} ET`;
-      } else {
-        setTimeout(updateWebinarTitle, 500);
-      }
-    }
+The slides for this webinar were generated by AI on the morning of the session. The Slides skill works from a markdown outline where each slide has a heading, topic, illustration description, and presenter notes. The illustration descriptions are fed to [Gemini's image generation API](https://ai.google.dev/gemini-api/docs/image-generation){:target="_blank"} through a custom Images skill that contains specific prompts for my brand colours, design style, and different slide types. The AI evaluates each generated image before presenting it and often improves the result automatically.
 
-    updateWebinarTitle();
-  });
-  </script>
+The output goes straight into Google Slides via a command-line tool that handles the Google Workspace API. Presenter notes are extracted automatically. If a slide does not work, I regenerate just that one. The whole deck, from outline to finished presentation, took about two hours.
 
-  <div class="text-center text-sm text-brand-black/60 mb-8">
-    All attendees receive the full recording and any resources mentioned
-  </div>
-</div>
+## AI That Asks Questions
+
+The skill that surprises people most is Strategic Thinking. It interrogates your thinking until the strategy is sharp, using Richard Rumelt's framework from *Good Strategy Bad Strategy* to detect fluff and push for specifics.
+
+I demonstrated it with an engineering challenge: cutting a deployment cycle from two weeks to daily. The AI immediately identified that as a goal, not a strategy, and started digging into the underlying obstacles. Is it a manual QA bottleneck? A release approval process? Fear of breaking production? It is Socratic, not generative, and it knows my patterns well enough to call out when I am chasing a shiny object instead of addressing the real constraint.
+
+## The Skill That Builds Skills
+
+The most important part of any agile process is the retrospective. The same principle applies to working with AI. My Retro skill analyses the entire conversation for moments where I corrected the AI, disagreed with its approach, or wasted time on a dead end. It then proposes durable improvements: a new rule in a skill file, a pattern to add to project instructions, a workflow to restructure.
+
+This is how I went from zero skills to 44. Not by sitting down and designing them all at once, but by using AI, noticing what went wrong, and running a retro that writes the lesson into the system. A skill typically takes six to twelve iterations to get right. Each iteration is a 1% improvement that compounds over time.
+
+Writing your own skills matters. Downloading someone else's carries risks, from prompt injection to simply not matching how you work. The retro discipline is what turns a generic AI assistant into one that knows your specific workflow, preferences, and patterns.
+
+## Getting Started
+
+You do not need 44 skills. You need one repetitive task, one AI session, and the discipline to run a retro afterwards. Pick something you do every week: content, email triage, planning, whatever it is. Use AI to do it. Pay attention to where it goes wrong. At the end, write down what you learned in a file that persists.
+
+Next time you do that task, AI starts from a better place, and the skills compound from there.
+
+## Tools and Resources
+
+- [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview){:target="_blank"} - the AI coding tool that runs on your machine
+- [MCP (Model Context Protocol)](https://modelcontextprotocol.io/introduction){:target="_blank"} - connects AI tools to your workspace
+- [CK semantic search](https://github.com/chrismdp/ck){:target="_blank"} - embedding-based codebase and vault search
+- [Skills are Claude Code's Secret Weapon](/how-to-use-claude-code-skills/) - my guide to building and using skills
+- [Good Strategy Bad Strategy](https://www.amazon.co.uk/Good-Strategy-Bad-difference-matters/dp/1781256179){:target="_blank"} by Richard Rumelt - the framework behind the Strategic Thinking skill
+
+## Key Takeaway
+
+The gap between "AI as chatbot" and "AI as business infrastructure" is closing fast, but only for people who invest in context. Every skill you write, every retro you run, every piece of workflow knowledge you encode makes the next session more capable than the last. Anyone can start with one task and iterate from there.
+
+## One Thing to Try This Week
+
+Pick one task you do every week that drains your energy. Open Claude Code (or whichever AI tool you prefer), do the task with AI, and write down every moment where you had to correct it or it made a wrong assumption. Save those observations in a markdown file alongside your project. Next time you do the task, paste that file into context first. You have just built your first skill.
