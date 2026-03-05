@@ -14,7 +14,7 @@ series: "AI In Action Webinars"
 
 I used to think the big AI transformation would be about embedding AI into products. The transformation that matters right now is people using AI to do their own work, across their entire workflow, not just inside an IDE.
 
-On 5 March 2026, I gave a webinar showing how I use AI to run my consulting business. Not a curated demo of one feature, but the full picture: 44 custom skills that handle everything from morning planning to slide generation to strategic thinking. Three developments over the last six months made this possible, and they have changed my working life more than anything since I first started programming.
+On 5 March 2026, I gave a webinar showing the full picture of how I use AI to run my consulting business: 44 custom skills that handle everything from morning planning to slide generation to strategic thinking. Three developments over the last six months made this possible, and they have changed my working life more than anything since I first started programming.
 
 <!--more-->
 
