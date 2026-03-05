@@ -12,7 +12,7 @@ infographic: /assets/img/webinar-let-ai-do-your-work.jpg
 series: "AI In Action Webinars"
 ---
 
-I used to think the big AI transformation would be about embedding AI into products. The transformation that matters right now is people using AI to do their own work, across their entire workflow, not just inside an IDE.
+I used to think the big AI transformation would be about embedding AI into products. The transformation that matters right now is people using AI to do their own work, across their entire workflow.
 
 On 5 March 2026, I gave a webinar showing the full picture of how I use AI to run my consulting business: 44 custom skills that handle everything from morning planning to slide generation to strategic thinking. Three developments over the last six months made this possible, and they have changed my working life more than anything since I first started programming.
 
@@ -22,13 +22,11 @@ On 5 March 2026, I gave a webinar showing the full picture of how I use AI to ru
 
 The first is [MCP](https://modelcontextprotocol.io/introduction){:target="_blank"}, which connects AI tools to everything else on your computer: email, calendar, Google Drive, spreadsheets. The second is AI that runs on your machine rather than trapped behind a website. [Claude Code](/coding-with-ai/) sitting on my operating system, reading and writing files, running shell commands, is far more capable than any chatbot. The third is that the models themselves crossed an inflection point around the end of November. Claude Code with Opus 4.6 understands poorly worded dictations, generates better code, and reasons about complex multi-step workflows in ways that were not possible six months ago.
 
-These three things together are why I went from a handful of simple automations to 44 interconnected skills that handle a substantial portion of my working week.
-
 ## What Skills Are
 
 Anthropic introduced [skills](/how-to-use-claude-code-skills/) as chunks of knowledge you make available to AI on demand. I compared it to The Matrix: Neo does not know kung fu, but he knows he does not know kung fu, and he can pull in the knowledge when he needs it. A skill is a markdown file that teaches Claude Code how to do a specific part of your job. Some are simple style guidance, others are multi-phase workflows with scripts, semantic search, and feedback loops.
 
-The key difference from custom GPTs is that skills are interconnected. They load together, combine freely, and build on each other. My strategic thinking skill can pull in my writing style skill, which can trigger my slop checker, which can hand off to my image generation skill. Custom GPTs are isolated islands, but skills are a network.
+The key difference from custom GPTs is that skills are interconnected. They load together, combine freely, and build on each other. My strategic thinking skill can pull in my writing style skill, which can trigger my slop checker, which can hand off to my image generation skill. Skills are a network, and that is what makes them powerful.
 
 ## Content Without the Content Treadmill
 
@@ -44,7 +42,7 @@ The output goes straight into Google Slides via a command-line tool that handles
 
 ## AI That Asks Questions
 
-The skill that surprises people most is Strategic Thinking. It interrogates your thinking until the strategy is sharp, using Richard Rumelt's framework from *Good Strategy Bad Strategy* to detect fluff and push for specifics.
+Strategic Thinking interrogates your thinking until the strategy is sharp, using Richard Rumelt's framework from *Good Strategy Bad Strategy* to detect fluff and push for specifics.
 
 I demonstrated it with an engineering challenge: cutting a deployment cycle from two weeks to daily. The AI immediately identified that as a goal, not a strategy, and started digging into the underlying obstacles. Is it a manual QA bottleneck? A release approval process? Fear of breaking production? It is Socratic, not generative, and it knows my patterns well enough to call out when I am chasing a shiny object instead of addressing the real constraint.
 
@@ -52,9 +50,9 @@ I demonstrated it with an engineering challenge: cutting a deployment cycle from
 
 The most important part of any agile process is the retrospective. The same principle applies to working with AI. My Retro skill analyses the entire conversation for moments where I corrected the AI, disagreed with its approach, or wasted time on a dead end. It then proposes durable improvements: a new rule in a skill file, a pattern to add to project instructions, a workflow to restructure.
 
-This is how I went from zero skills to 44. Not by sitting down and designing them all at once, but by using AI, noticing what went wrong, and running a retro that writes the lesson into the system. A skill typically takes six to twelve iterations to get right. Each iteration is a 1% improvement that compounds over time.
+This is how I went from zero skills to 44: using AI, noticing what went wrong, and running a retro that writes the lesson into the system. A skill typically takes six to twelve iterations to get right. Each iteration is a 1% improvement that compounds over time.
 
-Writing your own skills matters. Downloading someone else's carries risks, from prompt injection to simply not matching how you work. The retro discipline is what turns a generic AI assistant into one that knows your specific workflow, preferences, and patterns.
+Writing your own skills matters. Downloading someone else's carries risks, from prompt injection to simply not matching how you work. The retro discipline is how you end up with an AI assistant that knows your specific workflow, preferences, and patterns.
 
 ## Getting Started
 
