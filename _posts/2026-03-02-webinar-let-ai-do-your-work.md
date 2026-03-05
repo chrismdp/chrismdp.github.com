@@ -8,7 +8,7 @@ categories:
 - leadership
 - automation
 image: /assets/img/webinar-let-ai-do-your-work-motif.jpg
-infographic: /assets/img/webinar-let-ai-do-your-work.jpg
+infographic: /assets/img/webinar-let-ai-do-your-work-infographic.jpg
 series: "AI In Action Webinars"
 ---
 
