@@ -19,54 +19,56 @@ excerpt: "From a two-hour executive briefing to full-day intensives for develope
       <div class="grid md:grid-cols-2 gap-12 items-start">
         <!-- Left: Course Overview -->
         <div class="space-y-4">
-          <div class="pt-2 pb-1">
-            <p class="text-xs uppercase tracking-wider text-white/50 font-semibold pl-2">Executive Track</p>
+          <div class="rounded-lg border border-white/30 overflow-hidden bg-white/20">
+            <div class="bg-white/10 px-5 py-2">
+              <p class="text-xs uppercase tracking-wider text-white/70 font-semibold">Executive Track</p>
+            </div>
+            <a href="#ai-briefing" class="block hover:bg-white/10 transition-colors p-5">
+              <div class="flex items-center justify-between mb-1">
+                <h3 class="text-lg font-heading font-bold">The AI Briefing</h3>
+                <span class="text-sm text-white/70">2 hours</span>
+              </div>
+              <p class="text-sm text-white/90">For boards and leadership teams. An honest, jargon-free picture of where AI is and what to do about it.</p>
+            </a>
           </div>
-          <a href="#ai-briefing" class="block bg-white/10 hover:bg-white/15 transition-colors rounded-lg p-5 border border-white/20">
-            <div class="flex items-center justify-between mb-1">
-              <h3 class="text-lg font-heading font-bold">The AI Briefing</h3>
-              <span class="text-sm text-white/70">2 hours</span>
-            </div>
-            <p class="text-sm text-white/80">For boards and leadership teams. An honest, jargon-free picture of where AI is and what to do about it.</p>
-          </a>
 
-          <div class="rounded-lg border border-white/20 overflow-hidden mt-2">
-            <div class="bg-white/5 px-5 py-2">
-              <p class="text-xs uppercase tracking-wider text-white/50 font-semibold">Developer Track</p>
+          <div class="rounded-lg border border-white/30 overflow-hidden bg-white/20">
+            <div class="bg-white/10 px-5 py-2">
+              <p class="text-xs uppercase tracking-wider text-white/70 font-semibold">Developer Track</p>
             </div>
-            <a href="#agentic-engineering" class="block bg-white/10 hover:bg-white/15 transition-colors p-5 border-b border-white/10">
+            <a href="#agentic-engineering" class="block hover:bg-white/10 transition-colors p-5 border-b border-white/15">
               <div class="flex items-center justify-between mb-1">
                 <h3 class="text-lg font-heading font-bold">Unlocking Agentic Engineering</h3>
                 <span class="text-sm text-white/70">Full day</span>
               </div>
-              <p class="text-sm text-white/80">From AI foundations to fluent coding with agents. Graduated trust building on your own codebase.</p>
+              <p class="text-sm text-white/90">From AI foundations to fluent coding with agents. Graduated trust building on your own codebase.</p>
             </a>
-            <a href="#custom-agentic-systems" class="block bg-white/10 hover:bg-white/15 transition-colors p-5">
+            <a href="#custom-agentic-systems" class="block hover:bg-white/10 transition-colors p-5">
               <div class="flex items-center justify-between mb-1">
                 <h3 class="text-lg font-heading font-bold">Building Custom Agentic Systems</h3>
                 <span class="text-sm text-white/70">Full day</span>
               </div>
-              <p class="text-sm text-white/80">Production-grade agent architecture, evaluation, and deployment. Advanced.</p>
+              <p class="text-sm text-white/90">Production-grade agent architecture, evaluation, and deployment. Advanced.</p>
             </a>
           </div>
 
-          <div class="rounded-lg border border-white/20 overflow-hidden mt-2">
-            <div class="bg-white/5 px-5 py-2">
-              <p class="text-xs uppercase tracking-wider text-white/50 font-semibold">Business Track</p>
+          <div class="rounded-lg border border-white/30 overflow-hidden bg-white/20">
+            <div class="bg-white/10 px-5 py-2">
+              <p class="text-xs uppercase tracking-wider text-white/70 font-semibold">Business Track</p>
             </div>
-            <a href="#agentic-knowledge-work" class="block bg-white/10 hover:bg-white/15 transition-colors p-5 border-b border-white/10">
+            <a href="#agentic-knowledge-work" class="block hover:bg-white/10 transition-colors p-5 border-b border-white/15">
               <div class="flex items-center justify-between mb-1">
                 <h3 class="text-lg font-heading font-bold">Unlocking Agentic Knowledge Work</h3>
                 <span class="text-sm text-white/70">Full day</span>
               </div>
-              <p class="text-sm text-white/80">For ops, finance, product, and HR. Hands-on with Claude, Gemini, and Custom GPTs.</p>
+              <p class="text-sm text-white/90">For ops, finance, product, and HR. Hands-on with Claude, Gemini, and Custom GPTs.</p>
             </a>
-            <a href="#agentic-operating-system" class="block bg-white/10 hover:bg-white/15 transition-colors p-5">
+            <a href="#agentic-operating-system" class="block hover:bg-white/10 transition-colors p-5">
               <div class="flex items-center justify-between mb-1">
                 <h3 class="text-lg font-heading font-bold">The Agentic Operating System</h3>
                 <span class="text-sm text-white/70">Full day</span>
               </div>
-              <p class="text-sm text-white/80">Build agents that automate business processes across your organisation. Advanced.</p>
+              <p class="text-sm text-white/90">Build agents that automate business processes across your organisation. Advanced.</p>
             </a>
           </div>
         </div>
