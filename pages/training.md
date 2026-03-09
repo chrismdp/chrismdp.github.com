@@ -12,7 +12,8 @@ excerpt: "From a two-hour executive briefing to full-day intensives for develope
   <div class="w-full px-6 relative z-10">
     <div class="text-center mb-12">
       <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight mx-4">AI Training That Sticks</h1>
-      <p class="text-xl md:text-2xl mb-8 text-white mx-4 sm:mx-24">Your people using AI to do their best work,<br/>starting the day after training.</p>
+      <p class="text-xl md:text-2xl mb-4 text-white mx-4 sm:mx-24">Your people using AI to do their best work,<br/>starting the day after training.</p>
+      <p class="text-lg mb-8 text-white/80 mx-4 sm:mx-24">Book a single session or combine courses into a tailored programme.</p>
     </div>
 
     <div class="max-w-6xl mx-auto">
@@ -39,14 +40,14 @@ excerpt: "From a two-hour executive briefing to full-day intensives for develope
             <a href="#agentic-engineering" class="block hover:bg-white/10 transition-colors p-5 border-b border-white/15">
               <div class="flex items-center justify-between mb-1">
                 <h3 class="text-lg font-heading font-bold">Unlocking Agentic Engineering</h3>
-                <span class="text-sm text-white/70">Full day</span>
+                <span class="text-sm text-white/70">1 day</span>
               </div>
               <p class="text-sm text-white/90">From AI foundations to fluent coding with agents. Graduated trust building on your own codebase.</p>
             </a>
             <a href="#custom-agentic-systems" class="block hover:bg-white/10 transition-colors p-5">
               <div class="flex items-center justify-between mb-1">
                 <h3 class="text-lg font-heading font-bold">Building Custom Agentic Systems</h3>
-                <span class="text-sm text-white/70">Full day</span>
+                <span class="text-sm text-white/70">1 day</span>
               </div>
               <p class="text-sm text-white/90">Production-grade agent architecture, evaluation, and deployment. Advanced.</p>
             </a>
@@ -59,14 +60,14 @@ excerpt: "From a two-hour executive briefing to full-day intensives for develope
             <a href="#agentic-knowledge-work" class="block hover:bg-white/10 transition-colors p-5 border-b border-white/15">
               <div class="flex items-center justify-between mb-1">
                 <h3 class="text-lg font-heading font-bold">Unlocking Agentic Knowledge Work</h3>
-                <span class="text-sm text-white/70">Full day</span>
+                <span class="text-sm text-white/70">1 day</span>
               </div>
-              <p class="text-sm text-white/90">For ops, finance, product, and HR. Hands-on with Claude, Gemini, and Custom GPTs.</p>
+              <p class="text-sm text-white/90">For ops, finance, product, and HR. Hands-on with whatever tools you already have.</p>
             </a>
             <a href="#agentic-operating-system" class="block hover:bg-white/10 transition-colors p-5">
               <div class="flex items-center justify-between mb-1">
                 <h3 class="text-lg font-heading font-bold">The Agentic Operating System</h3>
-                <span class="text-sm text-white/70">Full day</span>
+                <span class="text-sm text-white/70">1 day</span>
               </div>
               <p class="text-sm text-white/90">Build agents that automate business processes across your organisation. Advanced.</p>
             </a>
@@ -159,12 +160,12 @@ excerpt: "From a two-hour executive briefing to full-day intensives for develope
 <!-- Two Tracks Intro -->
 <section class="py-16 bg-white">
   <div class="max-w-4xl mx-auto px-6 text-center">
-    <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6 text-brand-black">Two Tracks, Built to Stack</h2>
+    <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6 text-brand-black">Buy What You Need, Build From There</h2>
     <p class="text-lg text-brand-black/80 mb-4">
-      Every organisation has two groups that need AI training: the people who write code and the people who do not. Each track starts with foundations built in and progresses to advanced agentic work.
+      Every course is individually bookable. Start with just the executive briefing, run a single day for your developers, or combine courses across both tracks into a multi-day programme. Each course stands alone, but they are designed to build on each other.
     </p>
     <p class="text-lg text-brand-black/80">
-      Run one track or both. Each course stands alone, but they are designed to build on each other.
+      Two tracks cover the two groups that need AI training: the people who write code and the people who do not.
     </p>
   </div>
 </section>
@@ -175,7 +176,7 @@ excerpt: "From a two-hour executive briefing to full-day intensives for develope
     <div class="text-center mb-12">
       <span class="text-sm font-semibold text-brand-orange uppercase tracking-wider">Developer Track</span>
       <h2 class="text-3xl md:text-4xl font-heading font-bold mt-2 text-brand-black">Unlocking Agentic Engineering</h2>
-      <p class="text-lg text-brand-black/60 mt-2">Full day, on-site or remote, for teams of 10-40</p>
+      <p class="text-lg text-brand-black/60 mt-2">1 day, on-site or remote, for teams of 10-40</p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-12 items-start">
@@ -224,96 +225,13 @@ excerpt: "From a two-hour executive briefing to full-day intensives for develope
   </div>
 </section>
 
-<!-- Bryan Quach Testimonial -->
-<section class="py-12 bg-brand-deep-turquoise">
-  <div class="max-w-4xl mx-auto px-6">
-    {% include testimonial-bryan-quach.html %}
-  </div>
-</section>
-
-<!-- Unlocking Agentic Knowledge Work -->
-<section class="py-20 bg-white" id="agentic-knowledge-work">
-  <div class="max-w-6xl mx-auto px-6">
-    <div class="text-center mb-12">
-      <span class="text-sm font-semibold text-brand-orange uppercase tracking-wider">Business Track</span>
-      <h2 class="text-3xl md:text-4xl font-heading font-bold mt-2 text-brand-black">Unlocking Agentic Knowledge Work</h2>
-      <p class="text-lg text-brand-black/60 mt-2">Full day, on-site or remote, for teams of 10-40</p>
-    </div>
-
-    <div class="grid md:grid-cols-2 gap-12 items-start">
-      <div>
-        <p class="text-lg text-brand-black/80 mb-6">
-          AI tools are not just for developers. Product managers, operations leads, finance teams, and HR professionals can get dramatic productivity gains from Claude, Gemini, and ChatGPT, but only if they learn to use them properly.
-        </p>
-        <p class="text-lg text-brand-black/80 mb-6">
-          This course starts with AI foundations and moves quickly into hands-on work with the tools your team already has access to. Custom GPTs, Gemini Gems, Claude Projects, and workflow agents: your team builds real solutions to their own problems during the session.
-        </p>
-        <div class="bg-brand-light-blue/10 rounded-lg p-6 mt-8">
-          <h4 class="font-semibold text-brand-black mb-2">Who this is for</h4>
-          <p class="text-brand-black/80 text-sm">Product managers, operations, finance, HR, marketing, research, and any knowledge worker who uses AI tools but wants to get dramatically more from them.</p>
-        </div>
-      </div>
-      <div class="bg-white rounded-lg p-8 shadow-md border border-brand-light-blue/20">
-        <h3 class="text-xl font-heading font-bold mb-6 text-brand-black">Your team will leave able to</h3>
-        <div class="space-y-4">
-          <div class="flex items-start">
-            <i data-lucide="check-circle" class="w-5 h-5 mr-3 text-brand-deep-turquoise mt-0.5 flex-shrink-0"></i>
-            <p class="text-brand-black/80">Understand how LLMs work and what that means for their daily work</p>
-          </div>
-          <div class="flex items-start">
-            <i data-lucide="check-circle" class="w-5 h-5 mr-3 text-brand-deep-turquoise mt-0.5 flex-shrink-0"></i>
-            <p class="text-brand-black/80">Use advanced prompting techniques that get consistently better results</p>
-          </div>
-          <div class="flex items-start">
-            <i data-lucide="check-circle" class="w-5 h-5 mr-3 text-brand-deep-turquoise mt-0.5 flex-shrink-0"></i>
-            <p class="text-brand-black/80">Build Custom GPTs, Gemini Gems, and Claude Projects for repeatable workflows</p>
-          </div>
-          <div class="flex items-start">
-            <i data-lucide="check-circle" class="w-5 h-5 mr-3 text-brand-deep-turquoise mt-0.5 flex-shrink-0"></i>
-            <p class="text-brand-black/80">Understand what agents are and where they can save hours of manual work</p>
-          </div>
-          <div class="flex items-start">
-            <i data-lucide="check-circle" class="w-5 h-5 mr-3 text-brand-deep-turquoise mt-0.5 flex-shrink-0"></i>
-            <p class="text-brand-black/80">Evaluate AI output critically and know when not to trust it</p>
-          </div>
-          <div class="flex items-start">
-            <i data-lucide="check-circle" class="w-5 h-5 mr-3 text-brand-deep-turquoise mt-0.5 flex-shrink-0"></i>
-            <p class="text-brand-black/80">Apply what they learned to their own work before they leave the room</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Three Column Testimonials -->
-<section class="py-12 bg-brand-deep-turquoise">
-  <div class="max-w-6xl mx-auto px-6">
-    <div class="grid md:grid-cols-3 gap-8">
-      {% include testimonial-vijay-pawar.html %}
-      {% include testimonial-training-5.html %}
-      {% include testimonial-xavier-watkins.html %}
-    </div>
-  </div>
-</section>
-
-<!-- Advanced Courses Intro -->
-<section class="py-16 bg-brand-white">
-  <div class="max-w-4xl mx-auto px-6 text-center">
-    <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6 text-brand-black">Go Deeper</h2>
-    <p class="text-lg text-brand-black/80">
-      Once your team has the foundations, these advanced courses take them from using AI tools to building AI systems. Available as follow-on days or as part of a multi-week programme.
-    </p>
-  </div>
-</section>
-
 <!-- Building Custom Agentic Systems -->
 <section class="py-20 bg-white" id="custom-agentic-systems">
   <div class="max-w-6xl mx-auto px-6">
     <div class="text-center mb-12">
       <span class="text-sm font-semibold text-brand-orange uppercase tracking-wider">Developer Track &middot; Advanced</span>
       <h2 class="text-3xl md:text-4xl font-heading font-bold mt-2 text-brand-black">Building Custom Agentic Systems</h2>
-      <p class="text-lg text-brand-black/60 mt-2">Full day, on-site or remote &middot; Requires Unlocking Agentic Engineering</p>
+      <p class="text-lg text-brand-black/60 mt-2">1 day, on-site or remote &middot; Requires Unlocking Agentic Engineering</p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-12 items-start">
@@ -358,13 +276,75 @@ excerpt: "From a two-hour executive briefing to full-day intensives for develope
   </div>
 </section>
 
+<!-- Bryan Quach Testimonial -->
+<section class="py-12 bg-brand-deep-turquoise">
+  <div class="max-w-4xl mx-auto px-6">
+    {% include testimonial-bryan-quach.html %}
+  </div>
+</section>
+
+<!-- Unlocking Agentic Knowledge Work -->
+<section class="py-20 bg-brand-white" id="agentic-knowledge-work">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <span class="text-sm font-semibold text-brand-orange uppercase tracking-wider">Business Track</span>
+      <h2 class="text-3xl md:text-4xl font-heading font-bold mt-2 text-brand-black">Unlocking Agentic Knowledge Work</h2>
+      <p class="text-lg text-brand-black/60 mt-2">1 day, on-site or remote, for teams of 10-40</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12 items-start">
+      <div>
+        <p class="text-lg text-brand-black/80 mb-6">
+          AI tools are not just for developers. Product managers, operations leads, finance teams, and HR professionals can get dramatic productivity gains, but only if they learn to use the tools properly.
+        </p>
+        <p class="text-lg text-brand-black/80 mb-6">
+          This course starts with AI foundations and moves quickly into hands-on work with whatever your team already has access to — ChatGPT, Claude, Gemini, or all three. Deep research, custom agents, repeatable workflows: your team builds real solutions to their own problems during the session.
+        </p>
+        <div class="bg-brand-light-blue/10 rounded-lg p-6 mt-8">
+          <h4 class="font-semibold text-brand-black mb-2">Who this is for</h4>
+          <p class="text-brand-black/80 text-sm">Product managers, operations, finance, HR, marketing, research, and any knowledge worker who uses AI tools but wants to get dramatically more from them.</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg p-8 shadow-md border border-brand-light-blue/20">
+        <h3 class="text-xl font-heading font-bold mb-6 text-brand-black">Your team will leave able to</h3>
+        <div class="space-y-4">
+          <div class="flex items-start">
+            <i data-lucide="check-circle" class="w-5 h-5 mr-3 text-brand-deep-turquoise mt-0.5 flex-shrink-0"></i>
+            <p class="text-brand-black/80">Understand how LLMs work and what that means for their daily work</p>
+          </div>
+          <div class="flex items-start">
+            <i data-lucide="check-circle" class="w-5 h-5 mr-3 text-brand-deep-turquoise mt-0.5 flex-shrink-0"></i>
+            <p class="text-brand-black/80">Use advanced prompting techniques that get consistently better results</p>
+          </div>
+          <div class="flex items-start">
+            <i data-lucide="check-circle" class="w-5 h-5 mr-3 text-brand-deep-turquoise mt-0.5 flex-shrink-0"></i>
+            <p class="text-brand-black/80">Build custom agents, projects, and repeatable workflows in whichever platform you use</p>
+          </div>
+          <div class="flex items-start">
+            <i data-lucide="check-circle" class="w-5 h-5 mr-3 text-brand-deep-turquoise mt-0.5 flex-shrink-0"></i>
+            <p class="text-brand-black/80">Understand what agents are and where they can save hours of manual work</p>
+          </div>
+          <div class="flex items-start">
+            <i data-lucide="check-circle" class="w-5 h-5 mr-3 text-brand-deep-turquoise mt-0.5 flex-shrink-0"></i>
+            <p class="text-brand-black/80">Evaluate AI output critically and know when not to trust it</p>
+          </div>
+          <div class="flex items-start">
+            <i data-lucide="check-circle" class="w-5 h-5 mr-3 text-brand-deep-turquoise mt-0.5 flex-shrink-0"></i>
+            <p class="text-brand-black/80">Apply what they learned to their own work before they leave the room</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- The Agentic Operating System -->
-<section class="py-20 bg-brand-white" id="agentic-operating-system">
+<section class="py-20 bg-white" id="agentic-operating-system">
   <div class="max-w-6xl mx-auto px-6">
     <div class="text-center mb-12">
       <span class="text-sm font-semibold text-brand-orange uppercase tracking-wider">Business Track &middot; Advanced</span>
       <h2 class="text-3xl md:text-4xl font-heading font-bold mt-2 text-brand-black">The Agentic Operating System</h2>
-      <p class="text-lg text-brand-black/60 mt-2">Full day, on-site or remote &middot; Requires Unlocking Agentic Knowledge Work</p>
+      <p class="text-lg text-brand-black/60 mt-2">1 day, on-site or remote &middot; Requires Unlocking Agentic Knowledge Work</p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-12 items-start">
@@ -409,6 +389,16 @@ excerpt: "From a two-hour executive briefing to full-day intensives for develope
   </div>
 </section>
 
+<!-- Testimonials -->
+<section class="py-12 bg-brand-deep-turquoise">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      {% include testimonial-vijay-pawar.html %}
+      {% include testimonial-xavier-watkins.html %}
+    </div>
+  </div>
+</section>
+
 <!-- Ongoing Coaching -->
 <section class="py-16 bg-brand-white">
   <div class="max-w-4xl mx-auto px-6">
@@ -446,7 +436,7 @@ excerpt: "From a two-hour executive briefing to full-day intensives for develope
       <div class="text-center">
         <i data-lucide="building-2" class="w-10 h-10 mb-4 text-brand-deep-turquoise mx-auto"></i>
         <h3 class="text-lg font-heading font-bold mb-2 text-brand-black">On-site or Remote</h3>
-        <p class="text-sm text-brand-black/80">Delivered wherever your team works. In-person for maximum impact, remote for distributed teams.</p>
+        <p class="text-sm text-brand-black/80">Delivered wherever your team works. In-person for maximum impact, remote split over shorter sessions for distributed teams.</p>
       </div>
       <div class="text-center">
         <i data-lucide="settings" class="w-10 h-10 mb-4 text-brand-deep-turquoise mx-auto"></i>
