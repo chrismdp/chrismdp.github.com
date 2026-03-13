@@ -114,7 +114,7 @@ excerpt: "From a two-hour executive briefing to full-day intensives for develope
           Instead of slides full of vendor logos and hand-waving about "transformation," you get live demonstrations with your team's real problems and a frank conversation about what to do next.
         </p>
         <p class="text-lg text-brand-black/80">
-          Leaders leave with an updated mental model of AI and a clear sense of what to prioritise.
+          Leaders leave with an updated mental model of AI, a clear sense of what to prioritise, and an honest assessment of which tools are worth their team's attention.
         </p>
       </div>
       <div class="bg-white rounded-lg p-8 shadow-md border border-brand-light-blue/20">

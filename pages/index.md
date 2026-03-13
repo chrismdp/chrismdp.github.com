@@ -281,15 +281,59 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
       <div class="bg-white rounded-lg p-6 shadow-md">
         <div class="flex items-center mb-4">
           <a href="https://www.linkedin.com/in/ianozsvald/" target="_blank" class="flex items-center">
-            <img src="/assets/img/testimonials/ian-o.jpeg" alt="Ian O" class="w-12 h-12 rounded-full mr-4 object-cover">
+            <img src="/assets/img/testimonials/ian-o.jpeg" alt="Ian Ozsvald" class="w-12 h-12 rounded-full mr-4 object-cover">
             <div>
-              <div class="font-semibold">Ian O</div>
-              <div class="text-sm text-brand-black/70">Data Science Leader</div>
+              <div class="font-semibold">Ian Ozsvald</div>
+              <div class="text-sm text-brand-black/70">Founder of RebelAI, Mor Consulting</div>
             </div>
           </a>
         </div>
         {% include five-star.html %}
-        <p class="text-brand-black italic">"Chris has clearly learned a lot about the world of being a delivery-focused CTO"</p>
+        <p class="text-brand-black italic">"Chris has a wealth of experience on both the CTO side and the AI-enablement side. He's fun to work with, thoughtful and sitting at the cutting edge."</p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8 mt-8">
+      <div class="bg-white rounded-lg p-6 shadow-md">
+        <div class="flex items-center mb-4">
+          <a href="https://www.linkedin.com/in/darendavidtaylor/" target="_blank" class="flex items-center">
+            <img src="/assets/img/testimonials/daren-taylor.jpeg" alt="Daren David Taylor" class="w-12 h-12 rounded-full mr-4 object-cover">
+            <div>
+              <div class="font-semibold">Daren David Taylor</div>
+              <div class="text-sm text-brand-black/70">Agentic Software Builder</div>
+            </div>
+          </a>
+        </div>
+        {% include five-star.html %}
+        <p class="text-brand-black italic">"I joined Chris's webinar on using Claude skills to run parts of his business and it genuinely blew my mind. I spent the entire weekend trying to get AI to run my life as well."</p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 shadow-md">
+        <div class="flex items-center mb-4">
+          <a href="https://www.linkedin.com/in/niksilver/" target="_blank" class="flex items-center">
+            <img src="/assets/img/testimonials/nik-silver.jpeg" alt="Nik Silver" class="w-12 h-12 rounded-full mr-4 object-cover">
+            <div>
+              <div class="font-semibold">Nik Silver</div>
+              <div class="text-sm text-brand-black/70">Director at Silver Works Ltd</div>
+            </div>
+          </a>
+        </div>
+        {% include five-star.html %}
+        <p class="text-brand-black italic">"Chris's AI webinars are incredibly human."</p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 shadow-md">
+        <div class="flex items-center mb-4">
+          <a href="https://www.linkedin.com/in/eoinwoods/" target="_blank" class="flex items-center">
+            <img src="/assets/img/testimonials/eoin-woods.jpeg" alt="Eoin Woods" class="w-12 h-12 rounded-full mr-4 object-cover">
+            <div>
+              <div class="font-semibold">Eoin Woods</div>
+              <div class="text-sm text-brand-black/70">Software Architecture | Fractional CTO</div>
+            </div>
+          </a>
+        </div>
+        {% include five-star.html %}
+        <p class="text-brand-black italic">"Great person to go to to work out what really works and what doesn't in AI for software development and the wider business."</p>
       </div>
     </div>
   </div>
@@ -393,7 +437,7 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
         <h3 class="text-2xl font-heading font-bold mb-4">C-LEVEL AI ADVISORY</h3>
         <p class="text-lg font-semibold mb-4 text-brand-black">Direct access when you need experienced perspective</p>
         <p class="text-brand-black/80 leading-relaxed mb-4">
-          Monthly strategic sessions with someone who's been in your position. Get advice on tool selection, team challenges, vendor negotiations, and board communication. Plus urgent access for critical decisions.
+          Monthly strategic sessions with someone who's been in your position. Cut through the vendor noise — evaluate competing tools with someone who's seen what actually works, and build an adoption roadmap grounded in real experience. Plus ongoing guidance on team challenges, board communication, and critical decisions.
         </p>
         <a href="#contact" class="inline-block bg-brand-deep-turquoise text-white px-6 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">Get in Touch →</a>
       </div>
@@ -425,10 +469,13 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
   </div>
 </section>
 
-<!-- TFC Case Study Section -->
+<!-- Case Study & Client Testimonials Section -->
 <section class="py-20 bg-brand-deep-turquoise">
-  <div class="max-w-4xl mx-auto px-6">
-    {% include testimonial-tfc.html %}
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-8">
+      {% include testimonial-tfc.html %}
+      {% include testimonial-alexandra-eavis.html %}
+    </div>
   </div>
 </section>
 
