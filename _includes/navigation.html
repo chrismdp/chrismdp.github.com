@@ -3,6 +3,7 @@
 
 <div class="flex flex-wrap items-center w-full z-10 justify-center font-heading font-bold gap-5 px-4 py-2">
    <a href="{% if text_color == 'white' %}/services{% else %}/#services{% endif %}" class="text-{{ text_color }} hover:text-{{ hover_color }} transition-colors whitespace-nowrap">Services</a>
+   <a href="/training" class="text-{{ text_color }} hover:text-{{ hover_color }} transition-colors whitespace-nowrap">Training</a>
    <a href="/articles/" class="text-{{ text_color }} hover:text-{{ hover_color }} transition-colors whitespace-nowrap">Articles</a>
    {% if site.linkedin %}
    <a href="https://linkedin.com/in/{{ site.linkedin }}" class="text-{{ text_color }} hover:text-{{ hover_color }} transition-colors" title="LinkedIn">
