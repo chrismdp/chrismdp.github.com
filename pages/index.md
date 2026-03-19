@@ -183,6 +183,17 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
   </div>
 </section>
 
+<!-- Newsletter/AI Content Testimonials -->
+<section class="py-20 bg-brand-deep-turquoise">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid md:grid-cols-3 gap-8">
+      {% include testimonial-daren-taylor.html %}
+      {% include testimonial-adam-murphy.html %}
+      {% include testimonial-nik-silver.html %}
+    </div>
+  </div>
+</section>
+
 <!-- More About Chris Section -->
 <section class="py-20 bg-white">
   <div class="max-w-4xl mx-auto px-6">
@@ -266,20 +277,6 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
 
       <div class="bg-white rounded-lg p-6 shadow-md">
         <div class="flex items-center mb-4">
-          <a href="https://www.linkedin.com/in/roisiproven/" target="_blank" class="flex items-center">
-            <img src="/assets/img/testimonials/roisi-p.jpeg" alt="Roisi P" class="w-12 h-12 rounded-full mr-4 object-cover">
-            <div>
-              <div class="font-semibold">Roisi P</div>
-              <div class="text-sm text-brand-black/70">Product Leader</div>
-            </div>
-          </a>
-        </div>
-        {% include five-star.html %}
-        <p class="text-brand-black italic">"If you're looking for someone to help build a great team, or you need someone experienced to help develop a sound tech strategy, I would thoroughly recommend Chris."</p>
-      </div>
-
-      <div class="bg-white rounded-lg p-6 shadow-md">
-        <div class="flex items-center mb-4">
           <a href="https://www.linkedin.com/in/ianozsvald/" target="_blank" class="flex items-center">
             <img src="/assets/img/testimonials/ian-o.jpeg" alt="Ian Ozsvald" class="w-12 h-12 rounded-full mr-4 object-cover">
             <div>
@@ -291,36 +288,25 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
         {% include five-star.html %}
         <p class="text-brand-black italic">"Chris has a wealth of experience on both the CTO side and the AI-enablement side. He's fun to work with, thoughtful and sitting at the cutting edge."</p>
       </div>
+
+      <div class="bg-white rounded-lg p-6 shadow-md">
+        <div class="flex items-center mb-4">
+          <a href="https://www.linkedin.com/in/roisiproven/" target="_blank" class="flex items-center">
+            <img src="/assets/img/testimonials/roisi-p.jpeg" alt="Roisi P" class="w-12 h-12 rounded-full mr-4 object-cover">
+            <div>
+              <div class="font-semibold">Roisi P</div>
+              <div class="text-sm text-brand-black/70">Product Leader</div>
+            </div>
+          </a>
+        </div>
+        {% include five-star.html %}
+        <p class="text-brand-black italic">"If you're looking for someone to help build a great team, or you need someone experienced to help develop a sound tech strategy, I would thoroughly recommend Chris."</p>
+      </div>
     </div>
 
     <div class="grid md:grid-cols-3 gap-8 mt-8">
-      <div class="bg-white rounded-lg p-6 shadow-md">
-        <div class="flex items-center mb-4">
-          <a href="https://www.linkedin.com/in/darendavidtaylor/" target="_blank" class="flex items-center">
-            <img src="/assets/img/testimonials/daren-taylor.jpeg" alt="Daren David Taylor" class="w-12 h-12 rounded-full mr-4 object-cover">
-            <div>
-              <div class="font-semibold">Daren David Taylor</div>
-              <div class="text-sm text-brand-black/70">Agentic Software Builder</div>
-            </div>
-          </a>
-        </div>
-        {% include five-star.html %}
-        <p class="text-brand-black italic">"I joined Chris's webinar on using Claude skills to run parts of his business and it genuinely blew my mind. I spent the entire weekend trying to get AI to run my life as well."</p>
-      </div>
-
-      <div class="bg-white rounded-lg p-6 shadow-md">
-        <div class="flex items-center mb-4">
-          <a href="https://www.linkedin.com/in/niksilver/" target="_blank" class="flex items-center">
-            <img src="/assets/img/testimonials/nik-silver.jpeg" alt="Nik Silver" class="w-12 h-12 rounded-full mr-4 object-cover">
-            <div>
-              <div class="font-semibold">Nik Silver</div>
-              <div class="text-sm text-brand-black/70">Director at Silver Works Ltd</div>
-            </div>
-          </a>
-        </div>
-        {% include five-star.html %}
-        <p class="text-brand-black italic">"Chris's AI webinars are incredibly human."</p>
-      </div>
+      {% include testimonial-al-hepworth.html %}
+      {% include testimonial-robin-carswell.html %}
 
       <div class="bg-white rounded-lg p-6 shadow-md">
         <div class="flex items-center mb-4">
@@ -336,6 +322,7 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
         <p class="text-brand-black italic">"Great person to go to to work out what really works and what doesn't in AI for software development and the wider business."</p>
       </div>
     </div>
+
   </div>
 </section>
 
@@ -442,23 +429,6 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
         <a href="#contact" class="inline-block bg-brand-deep-turquoise text-white px-6 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">Get in Touch →</a>
       </div>
     </div>
-
-    <!-- AI Leader Accelerator - Smaller -->
-    <div class="bg-brand-light-blue/10 border border-brand-light-blue/30 rounded-lg p-6 mb-12">
-      <div class="flex flex-col md:flex-row gap-6 items-center">
-        <div class="flex-1">
-          <div class="flex items-center gap-3 mb-2">
-            <i data-lucide="graduation-cap" class="w-6 h-6 text-brand-deep-turquoise"></i>
-            <h3 class="text-xl font-heading font-bold">AI Leader Accelerator</h3>
-            <span class="text-sm bg-brand-black/10 text-brand-black/60 px-2 py-1 rounded">Applications closed</span>
-          </div>
-          <p class="text-brand-black/70 text-sm">
-            8-week peer learning programme for senior technical leaders. <a href="/ai-leader-accelerator/" class="text-brand-deep-turquoise hover:underline">Learn more</a> or <a href="mailto:chris@chrismdp.com?subject=AI%20Leader%20Accelerator" class="text-brand-deep-turquoise hover:underline">get in touch</a> for future cohorts.
-          </p>
-        </div>
-      </div>
-    </div>
-
 
     <!-- Contact Form -->
     <div id="contact" class="max-w-2xl mx-auto">

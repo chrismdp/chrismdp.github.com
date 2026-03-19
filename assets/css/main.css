@@ -180,6 +180,14 @@ figure {
   .ai-newsletter-photo-mobile {
     display: block !important;
   }
+  .rm-select-display {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  .rm-select-display select.rm-input {
+    width: 100% !important;
+    min-width: unset !important;
+  }
 }
 
 @media (min-width: 601px) {

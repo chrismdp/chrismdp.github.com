@@ -95,6 +95,14 @@ permalink: /webinar/
     updateWebinarTitle();
   });
   </script>
+
+  <div class="bg-brand-deep-turquoise rounded-lg p-8 mb-12">
+    <div class="grid md:grid-cols-3 gap-6">
+      {% include testimonial-daren-taylor.html %}
+      {% include testimonial-adam-murphy.html %}
+      {% include testimonial-nik-silver.html %}
+    </div>
+  </div>
 </div>
 
 <div id="previous-webinars" class="border-t border-brand-light-blue/20 pt-12">
