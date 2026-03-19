@@ -76,9 +76,9 @@ excerpt: "From a two-hour executive briefing to full-day intensives for develope
 
         <!-- Right: Testimonials -->
         <div class="space-y-6">
-          {% include testimonial-rob-bettles.html %}
-          {% include testimonial-ria-vaidya.html %}
-          {% include testimonial-sara-haers-mendez.html %}
+          {% include testimonial.html style="full" name="Rob Bettles" role="Software Manager" image="rob-bettles.jpg" linkedin="http://www.linkedin.com/in/rob-bettles" quote="I thought the content was pitched at a very good level - interesting for people who have used AI before but not so complicated as to turn off people who are completely new to the field. I really enjoyed it and feel like I have some useful strategies now for using AI in my day-to-day work." %}
+          {% include testimonial.html style="full" name="Ria Vaidya" role="Lead User Researcher" image="ria-vaidya.jpg" linkedin="https://www.linkedin.com/in/ria-v-096a3599/" quote="It was an extremely comprehensive session building up from the basics of LLMs to all sorts of applications in product, engineering and other functions. Chris was an extremely effective presenter and took the time to answer our (many) questions - we were hooked!" %}
+          {% include testimonial.html style="full" name="Sara Haers Méndez" role="Product Manager" image="sara-haers-mendez.jpg" linkedin="https://www.linkedin.com/in/sara-haers-m%C3%A9ndez-61934511a/" quote="Excellent balance of theory and practice! Chris delivered content at just the right pace, mixing technical depth with practical applications we can implement immediately. The hands-on tasks were particularly valuable, and I especially appreciated learning about building workflow agents - a concept fairly new to me. Really valuable course for our team... we'll definitely be putting this to use!" %}
         </div>
       </div>
     </div>
@@ -153,7 +153,7 @@ excerpt: "From a two-hour executive briefing to full-day intensives for develope
 <!-- Rob Bettles Testimonial -->
 <section class="py-12 bg-brand-deep-turquoise">
   <div class="max-w-4xl mx-auto px-6">
-    {% include testimonial-kate-welka.html %}
+    {% include testimonial.html style="full" name="Kate Welka" role="Lead Product Manager" image="kate-welka.jpg" linkedin="https://linkedin.com/in/katiewelka" quote="I learned a lot about prompting that made me think differently about how to use AI. I feel I'm coming out of this workshop with a much more intelligent approach." %}
   </div>
 </section>
 
@@ -279,7 +279,7 @@ excerpt: "From a two-hour executive briefing to full-day intensives for develope
 <!-- Bryan Quach Testimonial -->
 <section class="py-12 bg-brand-deep-turquoise">
   <div class="max-w-4xl mx-auto px-6">
-    {% include testimonial-bryan-quach.html %}
+    {% include testimonial.html style="full" name="Bryan Quach" role="Software Engineer" image="bryan-quach.jpg" linkedin="https://www.linkedin.com/in/bryanquach/" quote="Very informative... I liked the structure of progressing from the high-level basics of LLM mechanics into applications and interfacing with AI in various ways." %}
   </div>
 </section>
 
@@ -393,8 +393,8 @@ excerpt: "From a two-hour executive briefing to full-day intensives for develope
 <section class="py-12 bg-brand-deep-turquoise">
   <div class="max-w-6xl mx-auto px-6">
     <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-      {% include testimonial-vijay-pawar.html %}
-      {% include testimonial-xavier-watkins.html %}
+      {% include testimonial.html style="full" name="Vijay Pawar" role="Senior Software Developer" image="vijay-pawar.jpeg" linkedin="https://www.linkedin.com/in/vijaypawar2007/" quote="Recently attended training from Chris and it wasn't just helpful but I am able to apply the knowledge from it in my work. Keep up the great work Chris!" %}
+      {% include testimonial.html style="full" name="Xavier Watkins" role="Associate Director of Software Engineering" image="xavier-watkins.jpg" linkedin="https://www.linkedin.com/in/xwatkins/" quote="Great and varied!" %}
     </div>
   </div>
 </section>

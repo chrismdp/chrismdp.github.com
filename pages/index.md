@@ -187,9 +187,9 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
 <section class="py-20 bg-brand-deep-turquoise">
   <div class="max-w-6xl mx-auto px-6">
     <div class="grid md:grid-cols-3 gap-8">
-      {% include testimonial-daren-taylor.html %}
-      {% include testimonial-adam-murphy.html %}
-      {% include testimonial-nik-silver.html %}
+      {% include testimonial.html name="Daren David Taylor" role="Agentic Software Builder" image="daren-taylor.jpeg" linkedin="https://www.linkedin.com/in/darendavidtaylor/" quote="I joined Chris's webinar on using Claude skills to run parts of his business and it genuinely blew my mind. I spent the entire weekend trying to get AI to run my life as well." %}
+      {% include testimonial.html name="Adam Murphy" role="CTO at Qlearsite" image="adam-murphy.jpeg" linkedin="https://www.linkedin.com/in/adam-b-murphy/" quote="I highly recommend Chris Parsons' AI webinars, they are at the cutting-edge, while at the same time incredibly grounded and practical." %}
+      {% include testimonial.html name="Nik Silver" role="Director at Silver Works Ltd" image="nik-silver.jpeg" linkedin="https://www.linkedin.com/in/niksilver/" quote="Chris's AI webinars are incredibly human." %}
     </div>
   </div>
 </section>
@@ -261,66 +261,15 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
     <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-white">What Leaders Say</h2>
 
     <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-white rounded-lg p-6 shadow-md">
-        <div class="flex items-center mb-4">
-          <a href="https://www.linkedin.com/in/tamosauskas/" target="_blank" class="flex items-center">
-            <img src="/assets/img/testimonials/tadas-t.jpeg" alt="Tadas T" class="w-12 h-12 rounded-full mr-4 object-cover">
-            <div>
-              <div class="font-semibold">Tadas T</div>
-              <div class="text-sm text-brand-black/70">CTO</div>
-            </div>
-          </a>
-        </div>
-        {% include five-star.html %}
-        <p class="text-brand-black italic">"Fantastic at building self-sufficient teams and giving them what they need."</p>
-      </div>
-
-      <div class="bg-white rounded-lg p-6 shadow-md">
-        <div class="flex items-center mb-4">
-          <a href="https://www.linkedin.com/in/ianozsvald/" target="_blank" class="flex items-center">
-            <img src="/assets/img/testimonials/ian-o.jpeg" alt="Ian Ozsvald" class="w-12 h-12 rounded-full mr-4 object-cover">
-            <div>
-              <div class="font-semibold">Ian Ozsvald</div>
-              <div class="text-sm text-brand-black/70">Founder of RebelAI, Mor Consulting</div>
-            </div>
-          </a>
-        </div>
-        {% include five-star.html %}
-        <p class="text-brand-black italic">"Chris has a wealth of experience on both the CTO side and the AI-enablement side. He's fun to work with, thoughtful and sitting at the cutting edge."</p>
-      </div>
-
-      <div class="bg-white rounded-lg p-6 shadow-md">
-        <div class="flex items-center mb-4">
-          <a href="https://www.linkedin.com/in/roisiproven/" target="_blank" class="flex items-center">
-            <img src="/assets/img/testimonials/roisi-p.jpeg" alt="Roisi P" class="w-12 h-12 rounded-full mr-4 object-cover">
-            <div>
-              <div class="font-semibold">Roisi P</div>
-              <div class="text-sm text-brand-black/70">Product Leader</div>
-            </div>
-          </a>
-        </div>
-        {% include five-star.html %}
-        <p class="text-brand-black italic">"If you're looking for someone to help build a great team, or you need someone experienced to help develop a sound tech strategy, I would thoroughly recommend Chris."</p>
-      </div>
+      {% include testimonial.html name="Tadas T" role="CTO" image="tadas-t.jpeg" linkedin="https://www.linkedin.com/in/tamosauskas/" quote="Fantastic at building self-sufficient teams and giving them what they need." %}
+      {% include testimonial.html name="Ian Ozsvald" role="Founder of RebelAI, Mor Consulting" image="ian-o.jpeg" linkedin="https://www.linkedin.com/in/ianozsvald/" quote="Chris has a wealth of experience on both the CTO side and the AI-enablement side. He's fun to work with, thoughtful and sitting at the cutting edge." %}
+      {% include testimonial.html name="Roisi P" role="Product Leader" image="roisi-p.jpeg" linkedin="https://www.linkedin.com/in/roisiproven/" quote="If you're looking for someone to help build a great team, or you need someone experienced to help develop a sound tech strategy, I would thoroughly recommend Chris." %}
     </div>
 
     <div class="grid md:grid-cols-3 gap-8 mt-8">
-      {% include testimonial-al-hepworth.html %}
-      {% include testimonial-robin-carswell.html %}
-
-      <div class="bg-white rounded-lg p-6 shadow-md">
-        <div class="flex items-center mb-4">
-          <a href="https://www.linkedin.com/in/eoinwoods/" target="_blank" class="flex items-center">
-            <img src="/assets/img/testimonials/eoin-woods.jpeg" alt="Eoin Woods" class="w-12 h-12 rounded-full mr-4 object-cover">
-            <div>
-              <div class="font-semibold">Eoin Woods</div>
-              <div class="text-sm text-brand-black/70">Software Architecture | Fractional CTO</div>
-            </div>
-          </a>
-        </div>
-        {% include five-star.html %}
-        <p class="text-brand-black italic">"Great person to go to to work out what really works and what doesn't in AI for software development and the wider business."</p>
-      </div>
+      {% include testimonial.html name="Al Hepworth" role="CTO, Peach Solutions" image="al-hepworth.jpeg" linkedin="https://www.linkedin.com/in/al-hepworth-3247931/" quote="Chris has helped me and my teams stay up to date and re-imagine what is possible. He's demonstrated novel ways to get the most out of the new technology on many occasions." %}
+      {% include testimonial.html name="Robin Carswell" role="CPTO / Portfolio" image="robin-carswell.jpeg" linkedin="https://www.linkedin.com/in/robincarswell/" quote="Chris is an invaluable part of the UK AI ecosystem." %}
+      {% include testimonial.html name="Eoin Woods" role="Software Architecture | Fractional CTO" image="eoin-woods.jpeg" linkedin="https://www.linkedin.com/in/eoinwoods/" quote="Great person to go to to work out what really works and what doesn't in AI for software development and the wider business." %}
     </div>
 
   </div>
@@ -443,8 +392,8 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
 <section class="py-20 bg-brand-deep-turquoise">
   <div class="max-w-6xl mx-auto px-6">
     <div class="grid md:grid-cols-2 gap-8">
-      {% include testimonial-tfc.html %}
-      {% include testimonial-alexandra-eavis.html %}
+      {% include testimonial.html style="full" name="Tom Foster Carter" role="CEO, Cherrypick" image="tfc.jpeg" linkedin="https://www.linkedin.com/in/tomfostercarter/" quote="We built a production LLM meal generator that made our customers happier and increased revenue. Our AI system reduced customer plan changes by 30% (meaning happier customers) and increased basket usage by 14% (meaning more revenue per customer). We shipped major new features including health scores while maintaining high quality delivery." link_url="/case-studies/gpt-meal-generator" link_text="Read full case study" %}
+      {% include testimonial.html style="full" name="Alexandra Eavis" role="Chief Product & Technology Officer, Genomics" image="alexandra-eavis.jpeg" linkedin="https://www.linkedin.com/in/alexandraeavis/" quote="The team and I have really benefited from and enjoyed working with Chris. He has worked cross functionally to raise our organisational AI maturity, increasing both our internal productivity and effectiveness, and clarifying the path to production for our agentic tooling. Would recommend as a great way to augment internal capabilities." %}
     </div>
   </div>
 </section>

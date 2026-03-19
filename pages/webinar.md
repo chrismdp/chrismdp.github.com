@@ -98,9 +98,9 @@ permalink: /webinar/
 
   <div class="bg-brand-deep-turquoise rounded-lg p-8 mb-12">
     <div class="grid md:grid-cols-3 gap-6">
-      {% include testimonial-daren-taylor.html %}
-      {% include testimonial-adam-murphy.html %}
-      {% include testimonial-nik-silver.html %}
+      {% include testimonial.html name="Daren David Taylor" role="Agentic Software Builder" image="daren-taylor.jpeg" linkedin="https://www.linkedin.com/in/darendavidtaylor/" quote="I joined Chris's webinar on using Claude skills to run parts of his business and it genuinely blew my mind. I spent the entire weekend trying to get AI to run my life as well." %}
+      {% include testimonial.html name="Adam Murphy" role="CTO at Qlearsite" image="adam-murphy.jpeg" linkedin="https://www.linkedin.com/in/adam-b-murphy/" quote="I highly recommend Chris Parsons' AI webinars, they are at the cutting-edge, while at the same time incredibly grounded and practical." %}
+      {% include testimonial.html name="Nik Silver" role="Director at Silver Works Ltd" image="nik-silver.jpeg" linkedin="https://www.linkedin.com/in/niksilver/" quote="Chris's AI webinars are incredibly human." %}
     </div>
   </div>
 </div>

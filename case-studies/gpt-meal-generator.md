@@ -58,7 +58,7 @@ Beyond the meal generator itself, we shipped major additional features including
 <!-- TFC Testimonial Section -->
 <section class="py-20 bg-brand-deep-turquoise">
   <div class="max-w-4xl mx-auto px-6">
-    {% include testimonial-tfc.html %}
+    {% include testimonial.html style="full" name="Tom Foster Carter" role="CEO, Cherrypick" image="tfc.jpeg" linkedin="https://www.linkedin.com/in/tomfostercarter/" quote="We built a production LLM meal generator that made our customers happier and increased revenue. Our AI system reduced customer plan changes by 30% (meaning happier customers) and increased basket usage by 14% (meaning more revenue per customer). We shipped major new features including health scores while maintaining high quality delivery." link_url="/case-studies/gpt-meal-generator" link_text="Read full case study" %}
   </div>
 </section>
 
