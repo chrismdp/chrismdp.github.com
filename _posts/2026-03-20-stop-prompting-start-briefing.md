@@ -103,6 +103,8 @@ That is back-briefing and debriefing. The two steps that turn an unreliable agen
 
 None of this is rocket science. Intent, back-brief, bound, debrief. It is repeatable, it is consistent, and it compounds. The best time to start building your agent factory was 24th November 2025, when Claude Opus 4.5 came out[^5] and made this whole thing possible. I have been building mine since then and it took months of iteration to get right. The second best time to start is now.
 
+I am building the Briefing Cycle into my [advanced day 2 training course](/training) where I show how this works in practice with real agents. If you want to see it live, get in touch.
+
 &nbsp;
 
 [^1]: [The Enterprise AI Trust Gap](https://fortune.com/2025/12/09/harvard-business-review-survey-only-6-percent-companies-trust-ai-agents/), Fortune / HBR Analytic Services / Workato, December 2025, n=603 business and technology leaders.
