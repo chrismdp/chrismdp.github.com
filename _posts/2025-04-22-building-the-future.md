@@ -23,6 +23,8 @@ Read on for several key areas I am exploring.
 
 ## Beyond Prompting
 
+{% include shareable-quote.html text="The right abstractions will make prompting as obsolete as punch cards." %}
+
 The limitations of prompting as a primary interface for AI systems are becoming increasingly apparent. As I explored [in my previous post](/beyond-prompting), prompting is fundamentally broken as an approach to working with AI. It is brittle, model-specific, and endlessly repetitive.
 
 The solution lies not in getting better at prompting, but in moving beyond it entirely. We need to develop higher-level abstractions that hide complexity while preserving control over what matters. This evolution mirrors the progression from machine code to high-level programming languages in traditional software development.

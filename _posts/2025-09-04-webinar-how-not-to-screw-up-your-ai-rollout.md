@@ -30,6 +30,8 @@ The teams succeeding with AI have accepted this jaggedness rather than fighting 
 
 ### The Debt Amplifier
 
+{% include shareable-quote.html text="If your codebase is spaghetti without tests, AI will generate more spaghetti - just faster." %}
+
 The most devastating failure mode I encountered is what I call the debt amplifier. If your codebase is spaghetti without tests, AI will generate more spaghetti - just faster. If your organisation lacks psychological safety, AI will amplify that dysfunction.
 
 This mirrors what I explored when discussing [why AI agents fail in production](/is-ai-unshippable/). Bad foundations lead to bad outcomes, regardless of how sophisticated your AI tools are. The Dunnhumby and GitClear research confirms this: teams with poor code quality see their problems multiply when they add AI to the mix.
@@ -73,6 +75,8 @@ Consider hiring additional capacity specifically to create learning space. This 
 ### Cultural Foundation: Safety Beats Speed
 
 Creating psychological safety around AI adoption is non-negotiable. Your teams are scared. The rhetoric about AI replacing jobs is everywhere. When you say "efficiency", they hear "redundancy".
+
+{% include shareable-quote.html text="When you say 'efficiency', they hear 'redundancy'." %}
 
 Address the elephant in the room directly. Tell them explicitly: "We are training you to be more effective and employable, not replaceable." Give them permission to push back, to question, to fail. Most resistance comes from fear, not inability.
 

@@ -30,6 +30,8 @@ Whenever we give something away, there's a risk that it won't be done in quite t
 
 ## There's delegation, then there's abdication
 
+{% include shareable-quote.html text="The best people don't need managing, but they do need leading." %}
+
 When we take goal setting too far, we just tend to stop giving people goals altogether and let them figure out their own jobs. This is dangerous: the best people don't need managing, but they do need leading. Our role as a leader is to paint an exciting vision of the future, and then let our team figure out how to get there.
 
 ## Micromanagement has many levels

@@ -53,6 +53,8 @@ These are delegation problems, not prompting problems. The difference matters, b
 
 Stephen Bungay's [*The Art of Action*](https://www.goodreads.com/book/show/9973202-the-art-of-action) describes how the Prussian military rebuilt itself after being destroyed by Napoleon at Jena. Their core insight: orders get garbled across long chains of command. The further the decision-maker is from the action, the worse the outcome. Micromanagement does not scale.
 
+{% include shareable-quote.html text="Set the intent, not the method." %}
+
 Their solution was *Auftragstaktik*: mission command. Set the intent, not the method. Tell your subordinates what you want to achieve and why, then let them figure out how. The critical mechanism that makes this work is back-briefing: after receiving orders, the subordinate restates the plan in their own words. The commander listens for misunderstanding and corrects before anyone moves.
 
 <img src="/images/2026/prussian-army-back-briefing.jpg" alt="Comic: The Prussian Army Solved Your AI Reliability Problem 200 Years Ago" />

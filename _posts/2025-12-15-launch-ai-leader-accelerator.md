@@ -13,6 +13,8 @@ I have been working on something new for the past few months, and it is ready to
 
 The [AI Leader Accelerator](/ai-leader-accelerator/) is an eight week peer learning programme for senior technical leaders managing AI adoption. It starts on 19th January 2026.
 
+{% include shareable-quote.html text="The consultants selling AI solutions have never had to roll out change to a real engineering team with real constraints." %}
+
 Over the past year, I have had dozens of conversations with CTOs, VPs of Engineering, and Heads of Technology about AI. The same pattern keeps emerging.
 
 They are personally experimenting with AI tools. Some are getting genuinely transformative results. But they have nobody at their level to test their thinking against. The consultants selling AI solutions have never had to roll out change to a real engineering team with real constraints. The courses available teach tools, not how to lead organisational change.

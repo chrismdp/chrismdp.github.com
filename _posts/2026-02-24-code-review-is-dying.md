@@ -46,6 +46,8 @@ Then work towards AI-assisted review. Use the same models that generate code to 
 
 ## Upgrade Both Sides
 
+{% include shareable-quote.html text="Upgrade both sides of the conversation, or accept that the side you left manual is now the constraint on everything." %}
+
 If you lead a team, this is your problem now. Your developers are already using AI to write code faster, whether you have formally adopted it or not. Your review process was designed for a world where code arrived at human speed, and that world ended months ago.
 
 Every week you do not upgrade the review side, the bottleneck gets worse. Your best reviewers take on more load, your less experienced ones learn to rubber-stamp, and the codebase accumulates decisions that nobody evaluated. The cost is invisible until it is not.

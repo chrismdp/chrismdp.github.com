@@ -84,6 +84,8 @@ This is why AgentKit ships at standard API pricing. OpenAI is not monetising pro
 
 ## Where Value Concentrates: Building Custom Agents
 
+{% include shareable-quote.html text="Willingness to pay follows business risk, not development speed." %}
+
 The strategic battleground is building custom agents for production, not prototyping. This distinction matters for anyone building or buying in this space.
 
 Workflow tools optimise for quick iteration. You want to test an idea fast. You want to show stakeholders something impressive. You want to iterate on prompts and workflows without writing code. AgentKit excels at this, as do platforms like [n8n](https://n8n.io){:target="_blank"} for integration-heavy workflows.
@@ -109,6 +111,8 @@ The customisation limitation becomes clearer over time. Workflow tools can only 
 ## Defensive Moats in a Commoditising Market
 
 If workflow tools commoditise, which companies maintain defensible positions? Two different types of moats emerge from this analysis, both resistant to commoditisation but for different reasons.
+
+{% include shareable-quote.html text="Features without defensibility commoditise immediately." %}
 
 **There is no longer a build moat.** OpenAI reportedly built AgentKit in six weeks. That development speed signals something important: implementation time is not the constraint. Thinking time is. Six weeks is not enough time for significant product innovation. This is a land grab, not a carefully considered product strategy. That leaves plenty of space for others to innovate on features that require deeper product thinking.
 
@@ -143,6 +147,8 @@ When AI can generate workflows from natural language, customers will still need 
 ## Strategic Implications
 
 OpenAI's move to commoditise prototyping creates the market for production tools rather than threatening it.
+
+{% include shareable-quote.html text="More prototypes mean more teams discovering they need production tools." %}
 
 **If you are building in this space**, position as the natural next step after prototyping. Your message: "Prototyped with AgentKit? Now build it properly." Do not compete on prototyping speed. You will lose. Own the production stage. Build for teams that validated their concepts and now need what workflow tools cannot deliver. Establish defensible moats through network effects or positioning advantages.
 

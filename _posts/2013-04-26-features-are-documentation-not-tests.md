@@ -40,6 +40,8 @@ I've written many scenarios like this in the past: I'm sure many of us have. Wha
 
 ## It doesn't read like English
 
+{% include shareable-quote.html text="In my experience, those who are the best at coding are often the worst at writing features. They tend to think of steps like code and apply good coding principles to them." %}
+
 Scenarios like this are easy to code, because all the information you need is right there. However, they don't read well: they are very repetitious in their use of language and are difficult to scan. They don't read like English.
 
 In my experience, those who are the best at coding are often the worst at writing features. They tend to think of steps like code and apply good coding principles to them. For example, they try to reuse steps as much as possible (the DRY principle), and give steps all the information they need to run (the Dependency Injection principle).

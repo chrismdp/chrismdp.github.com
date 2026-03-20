@@ -67,6 +67,8 @@ Then in October, Claude's quality seemed to nose-dive. At the same time, Codex g
 
 ## The Real Lesson: Tools Evolve Fast
 
+{% include shareable-quote.html text="My September conclusion was correct for September. My October conclusion is correct for October. Both can be true." %}
+
 A single complex refactoring challenge cannot capture how you will work with a tool across different contexts. The personality fit, the workflow friction, the mental overhead of interaction patterns - these factors revealed themselves through actual usage rather than controlled tests.
 
 More importantly, these tools evolve at an astonishing pace. What felt like a limitation in September worked flawlessly by October. Interface improvements, model updates, and subtle changes in behaviour can shift the value proposition in weeks.

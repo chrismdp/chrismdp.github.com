@@ -26,6 +26,8 @@ Games are different from business software: there are many more unexpected side 
 
 ## 2. I launched too soon to avoid big press deadlines
 
+{% include shareable-quote.html text="I should have finished the game, then planned the launch, not the other way around." %}
+
 The initial launch was timed to avoid E3 and the launch of No Man's Sky. In hindsight, I don't think this mattered at all. People still played Sol Trader in any case and I believe they would have anyway. Plenty of sites have already reviewed it - the reviews were mostly positive thankfully - and No Man's Sky was delayed last minute by a few months.
 
 I should have finished the game, then planned the launch, not the other way around. By pushing myself to hit a deadline, I missed some of the gameplay flaws that I  mentioned earlier.

@@ -36,6 +36,8 @@ If you are working at a a startup, much of your company will not survive contact
 
 Thinking of code as a liability puts AI into perspective. It is possible to churn out code using language models and it may have some value. Who decides whether it is providing the feature? We need strong developers to determine this.
 
+{% include shareable-quote.html text="Code is a liability, but coders are a clear asset." %}
+
 Code is a liability, but coders are a clear asset.
 
 ## Do not compromise on quality

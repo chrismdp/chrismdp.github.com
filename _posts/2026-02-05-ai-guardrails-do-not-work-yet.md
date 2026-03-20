@@ -33,11 +33,15 @@ I explored this tension when [analysing browser agents](/who-wants-a-browser/). 
 
 The second school says we must accept an error tolerance as a tradeoff. This is how we think about self-driving cars. Waymo reports more than a ten-fold reduction in crashes with serious injuries compared to human drivers.[^waymo] But it does not matter that they are ten times as safe. What matters is human perception, and we still have work to do convincing people that autonomous vehicles are safe despite what the stats say. We are in exactly the same place with AI agents.
 
+{% include shareable-quote.html text="We do not demand perfection from human employees. Why do we demand it from AI agents?" %}
+
 The same logic applies. Humans fall for social engineering attacks constantly. Phishing works. If an AI agent falls for fewer attacks than a human assistant would, perhaps that is good enough. We do not demand perfection from human employees. We accept that people make mistakes, click wrong links, and occasionally leak sensitive information. This is the only way [tools like OpenClaw](/dont-let-your-ceo-install-openclaw/) will ever be considered "safe": when we redefine "safe" as a relative term that includes tolerances. Not safe as in "cybersecurity", but safe as in "bridge" or "driving in traffic". The problem, as the comic above illustrates, is knowing what level of tolerance we will accept.
 
 OpenAI has started framing prompt injection this way.[^openai-atlas] Some critics say this downplays a technical flaw. But it also acknowledges a truth: we have been living with imperfect human security forever.
 
 ## The Problem With Error Tolerance Today
+
+{% include shareable-quote.html text="When 90% of adaptive attacks succeed, you have no defence at all." %}
 
 The challenge is that red team researchers report it is still trivially easy to break through guardrails. Sander Schulhoff put it bluntly: bypassing guardrails is so easy that most people should not bother with them.[^lenny] A joint paper tested published defences against prompt injection with adaptive attacks and achieved above 90% attack success rate for most of them.[^adaptive]
 

@@ -100,4 +100,6 @@ Production agent tooling remains in the diffusion phase. The patterns are emergi
 ---
 
 
+{% include shareable-quote.html text="My purpose in making predictions is not to be right, but to be specific enough that I can learn from being wrong." %}
+
 I will revisit these predictions in December 2026. My purpose in making predictions is not to be right, but to be specific enough that I can learn from being wrong. These are bets, not wishes (some of them hopefully will not come true), and I look forward to seeing how they age.

@@ -100,6 +100,8 @@ Feature files are [bookmarks for conversation](/2010/02/the-story-card-is-not-th
 
 ## Get the customer input
 
+{% include shareable-quote.html text="If you are not showing the customer the feature files you are missing out on 90% of the value of Cucumber." %}
+
 I'm not sure if this feature had originally been run past the customer, but this point is so important that it's worth restating anyway:
 
 *If you're not showing the customer the feature files you're missing out on 90% of the value of Cucumber.*

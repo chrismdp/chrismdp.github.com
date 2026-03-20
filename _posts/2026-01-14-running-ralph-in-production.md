@@ -23,6 +23,8 @@ The short version: it works. I shipped more in a single day than I would have in
 
 I am building something new using Greg Isenberg's "demo driven development" methodology.[^1] Rather than coding it myself, I thought I'd try using my version of Ralph for this, building autonomously while I handle product decisions. My setup is [available on GitHub](https://github.com/chrismdp/ralph){:target="_blank"} if you want to follow along.
 
+{% include shareable-quote.html text="I shipped more in a single day than I would have in hours and hours of evening coding sessions." %}
+
 The core idea is treating agents as a relay team. Each engineer picks up where the last one left off, completes one bead of work, commits, and exits. The loop script spawns the next engineer, who reads what was just done and continues. No single agent needs to hold the whole project in context because each one inherits state from the codebase and the bead comments left by previous sessions.
 
 <img src="/assets/img/ralph-two-layer-setup.png" alt="Two-layer Ralph setup: PM on the left, builder on the right" style="max-width: 100%; margin: 1.5rem 0;" />
@@ -89,6 +91,8 @@ done
 It is not elegant but it works. Hopefully Anthropic will improve the CLI's verbose output options and make this unnecessary.
 
 ## Try It Yourself
+
+{% include shareable-quote.html text="The agents are good enough now. The orchestration is simple enough to understand. The only thing left is to use it." %}
 
 I have published [my Ralph setup on GitHub](https://github.com/chrismdp/ralph){:target="_blank"}. Copy the files, customise RALPH.md for your stack, create some beads, and run the loop. Fair warning: running Ralph continuously burns through tokens fast, and I exhausted my Max5 allocation within a few hours. The value exceeded the cost, so I upgraded to Max20 without hesitation.
 

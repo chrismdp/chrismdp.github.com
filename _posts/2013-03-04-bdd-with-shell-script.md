@@ -123,6 +123,8 @@ This will print out any comment which contains a word we might use to describe t
 
 ## You don't _need_ BDD tools
 
+{% include shareable-quote.html text="We do not need to use BDD tools to use BDD principles." %}
+
 There's nothing to stop you going through this process using Cucumber and Aruba to drive tests being run on the command line. It would also be reasonably easy to build a minature framework around this to help us with pretty printing and better errors.
 
 The tests we have above will cause us to tend to writing unit tests around small standalone tools doing one thing well, which is a [old and proven philosophy of systems architecture](http://en.wikipedia.org/wiki/Unix_philosophy).

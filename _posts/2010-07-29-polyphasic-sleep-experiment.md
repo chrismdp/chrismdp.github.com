@@ -48,6 +48,8 @@ I learnt that *our society isn't set up for daytime naps.* This might improve in
 
 *Your cognitive performance is super impaired when your brain thinks you should be sleeping.* This sounds obvious :) but I didn't think of it before starting: I was expecting to have lots of tasks done, but looking through my list at 3am when I was super tired only elicted perhaps one or two things I could manage. A lot of my work requires a fair amount of concentration, and I just couldn't manage it. 
 
+{% include shareable-quote.html text="Many of the old tasks on your list are not incomplete through lack of time, but through lack of motivation." %}
+
 This would hopefully have ceased to be a problem after a couple of weeks when I'd have stopped feeling so tired, but it also threw up another problem, and the biggest lesson I learnt: *many of the old tasks on your list aren't incomplete through lack of time, but through lack of motivation.* If you remove lack of time from the equation, you start to see what you've been procrastinating about because you really just don't want to do it. That was a challenge, and led me to think deeper about some of the things on my list that I've been putting on.
 
 ## Would I try it again? 

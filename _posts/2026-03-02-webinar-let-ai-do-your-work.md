@@ -70,6 +70,8 @@ Next time you do that task, AI starts from a better place, and the skills compou
 
 ## Key Takeaway
 
+{% include shareable-quote.html text="Every skill you write, every retro you run, every piece of workflow knowledge you encode makes the next session more capable than the last." %}
+
 The gap between "AI as chatbot" and "AI as business infrastructure" is closing fast, but only for people who invest in context. Every skill you write, every retro you run, every piece of workflow knowledge you encode makes the next session more capable than the last. Anyone can start with one task and iterate from there.
 
 ## One Thing to Try This Week

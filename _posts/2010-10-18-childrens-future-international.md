@@ -31,6 +31,8 @@ We're picky about code quality. Your patches might get sent back for improvement
 
 ## Why should I help?
 
+{% include shareable-quote.html text="We coders have a unique gift which can be used to bring huge benefit to the world. We have the power to help people do real tangible good." %}
+
 We don't often stop to think about this, but we coders have a unique gift which can be used to bring huge benefit to the world. We have the power to help people do _real tangible good._ The reward we get through helping out in this particular project is the satisfaction of helping to ensure that very vulnerable children get to live and go to school in a safe community. Oh, and your name on the commit list on the README :)
 
 There's more: thinking ahead a little, it's possible that we might be able to build a system which lots of charities can use for free to organise their processes, save themselves lots of money, leaving themselves more resources to do greater things. Wouldn't that be cool? This is starting already: there is another charity interested in building off the current codebase.

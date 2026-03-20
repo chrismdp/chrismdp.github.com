@@ -22,6 +22,8 @@ The core insight from the session: if coding speeds up but your organisation doe
 
 ## The Constraint Has Shifted
 
+{% include shareable-quote.html text="If coding speeds up but your organisation does not get faster, coding was never the bottleneck." %}
+
 Since Agile and Cloud arrived, our organisational principles have been fairly static. We drew bounded contexts, built platform teams to support product teams, and used frameworks like [Team Topologies](https://teamtopologies.com/){:target="_blank"} to structure our organisations effectively. Those principles worked well for two decades.
 
 Then AI showed up.
@@ -39,6 +41,8 @@ If coding is no longer the bottleneck, where has it moved? The likely candidates
 **Strategic thinking.** Perhaps we do not know what we want fast enough. We reach the end of the work and realise what we built was not valuable.
 
 **Team structure.** Perhaps the very organisation that helped us before is now hindering us.
+
+{% include shareable-quote.html text="The irony of AI is striking. By introducing human-like automation, it brings human work into greater focus." %}
 
 The irony of AI is striking. By introducing human-like automation, it brings human work into greater focus. We have to think harder about how we interact, behave, and work with each other.
 

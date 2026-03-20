@@ -72,6 +72,8 @@ Do not ask AI to write your article. Give it your messy transcript or bullet poi
 
 ## The Choice
 
+{% include shareable-quote.html text="Every piece of content you create with AI is a vote. Which future are you voting for?" %}
+
 We are not just choosing between lazy and thoughtful. We are choosing between two different futures for AI capability.
 
 One where models get progressively worse at helping us think. One where they get progressively better.

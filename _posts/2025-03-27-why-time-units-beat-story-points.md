@@ -20,6 +20,8 @@ This realisation emerged from years of watching teams struggle with abstract est
 
 ## The Problem with Points
 
+{% include shareable-quote.html text="We have created an entire vocabulary to avoid saying what we actually mean." %}
+
 Story points promise to free us from the burden of time estimation. They offer a theoretical framework for measuring complexity and effort without committing to specific timeframes. 
 
 The reality proves different. Product owners immediately ask what a point means in days. Stakeholders create spreadsheets converting points to hours. We end up doing time estimation anyway, just with extra steps and confusion.

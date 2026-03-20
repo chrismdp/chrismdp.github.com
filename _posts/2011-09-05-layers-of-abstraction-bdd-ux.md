@@ -41,6 +41,8 @@ If you think about it, the three layers represent the different and progressive 
 
 ## From general to specific
 
+{% include shareable-quote.html text="It is more agile to keep things as high level as possible for as long as possible." %}
+
 As we create features, we are iterating from the general to the specific; from the high level to the detail. To determine all the granular behaviour up front (and all the precise graphical designs) is inefficient: we are likely to change our minds about the detail. Yet this is what many user experience practioners and designers try to do: if not for the whole project, then for whole sections of the project.
 
 For example, if you're doing more than a dozen wireframes or so in advance, are you doing too much thinking ahead of time? Why not resist, have more agility, and let the completion of some of the features guide your future thinking? Likewise, I have often been presented with dozens of perfect photoshop mockups to code up, often without any clear direction on the behaviour represented within them. It is more agile to keep things as high level as possible for as long as possible. How about producing a guidance mockup and a style guide, and then sitting down and guiding the developers on the design when they come to build the feature?

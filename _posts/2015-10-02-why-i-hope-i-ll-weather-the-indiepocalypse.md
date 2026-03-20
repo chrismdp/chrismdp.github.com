@@ -82,6 +82,8 @@ Making a simply "good" game isn't going to cut it. There's so much about games a
 
 ## I'm not going to give up
 
+{% include shareable-quote.html text="I would release it even if I knew now it was going to make no money. I am sure that people will enjoy it and I believe in the design: this game just needs to be made." %}
+
 This all might not be enough. Perhaps no one wants to buy this game and that would be sad: although [comments like this one from YouTube](https://www.youtube.com/watch?v=TveGxRbgQ10&lc=z12yufyaltu0thzrl04chp0xpse3d5jbkn40k) fill me with encouragment! Part of the reason to [do two Kickstarters](https://www.kickstarter.com/projects/852671098/sol-trader) was validation of the core concept to ensure there's enough of a market. I believe I've had enough validation of the idea to continue pushing at it!
 
 <a href='https://www.kickstarter.com/projects/852671098/sol-trader'><img src='https://ksr-ugc.imgix.net/assets/004/613/111/d5321c9a29c59cb04830518262b88e78_original.png?v=1443777758&w=680&fit=max&auto=format&lossless=true&s=c9c23c67b9addcf2e2f4b9ff18a2a793'/></a>

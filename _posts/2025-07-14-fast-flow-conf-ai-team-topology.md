@@ -96,6 +96,8 @@ This is not just about design systems. This same pattern threatens open source l
 
 ### Loss of Diverse Thought
 
+{% include shareable-quote.html text="AI does not fight with you. Even when you ask AI to disagree, it cannot truly challenge your intentions the way a human with a different perspective can." %}
+
 Your skills are the senses through which you perceive problems. A designer sees interaction problems. A developer sees technical constraints. A product manager sees customer needs. They are looking at the same thing, but they see completely different possibilities. They argue. They fight. They bring their own perspectives.
 
 AI does not fight with you. Even when you ask AI to disagree, it cannot truly challenge your intentions the way a human with a different perspective can. Homogeneous thinking leads to bias reinforcement. And bias reinforcement leads to slower real progress.
@@ -167,6 +169,8 @@ Now AI can take care of the routine, they are freer to work on problem solving a
 Design tools need the most work, but this is the direction of travel. Designers are being freed to be truly strategic.
 
 ## Strategy Becomes the Bottleneck
+
+{% include shareable-quote.html text="The bottleneck is no longer 'can we build it?' but 'should we build it?'" %}
 
 The fundamental thread through these: strategic. I believe strategy and thinking well will be the new constraint with AI. Strategy is not goals or vision statements, it is a path to achieve those goals. Here again diverse perspectives will win.
 
@@ -251,6 +255,8 @@ Refactoring tech debt is a great place to start learning about AI. It is unconst
 [^refactoring-ai]: When using AI for refactoring, start with well-tested code that has good coverage. Ask AI to improve code structure whilst keeping tests green. Focus on extracting methods, improving naming, removing duplication, and modernising patterns. The safety net of existing tests means you can move fast whilst learning what AI does well. This builds confidence before tackling more complex greenfield work.
 
 ### Second: Amplify Your Teams
+
+{% include shareable-quote.html text="Speed without direction equals waste." %}
 
 Beware the lone wolf success stories. You will hear isolated stories of individuals succeeding on their own. They are either exceptional or got lucky. Survivorship bias is strong.
 

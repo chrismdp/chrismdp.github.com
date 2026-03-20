@@ -21,6 +21,8 @@ In the midst of all of that, we neglect this one thing at our peril.
 
 ## Work on your relationship with your CEO
 
+{% include shareable-quote.html text="Fissures in your relationship will become deeper cracks under pressure." %}
+
 Nothing else matters as much at first. If there are communication problems, work on them. Figure out the kind of company you want to build together.
 
 It is likely there are few other team members at the moment. There will never be a smaller company or fewer relationships to manage than now. Make the most of this precious focus time while you have it. It does not last.

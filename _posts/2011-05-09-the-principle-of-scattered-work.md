@@ -22,4 +22,6 @@ Alexander advocated scattering the workplaces amongst people's homes so that "ea
 
 I can testify to this: I am loving working from home. The combination of focused Pomodoros for work, siting my desk next to french doors out to my garden, using my 3-5 minute breaks to hold my baby and do a few small chores has taken the pressure off our busy lives. Thank God for the Internet and remote working.
 
+{% include shareable-quote.html text="Do you really need that big office, with countless drones scurrying around in front of you, for anything else other than your own ego?" %}
+
 If you go into an office everyday, is there a way of making it easier to work from home? If you run a company, how can you make your workplaces more decentralised and local? Do you really need that big office, with countless drones scurrying around in front of you, for anything else other than your own ego?

@@ -29,6 +29,8 @@ Happily, we can take YAGNI a level further to help us out.
 
 ## Extreme YAGNI
 
+{% include shareable-quote.html text="We can practice extreme YAGNI at the level of our features. If there is a quick way to make our feature files work, nothing stops us taking shortcuts to get things working quickly." %}
+
 Often in TDD, and especially when teaching it, I will encourage people to take shortcuts that might seem silly in their production code. For example, when writing a simple supermarket checkout class in Javascript, we might start with a test like this:
 
 {% highlight javascript %}

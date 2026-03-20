@@ -62,6 +62,8 @@ One practical gotcha: if you run a project management process updating your issu
 
 ## Everything Is a Loop
 
+{% include shareable-quote.html text="We are moving from a world where execution is the bottleneck to one where imagination is." %}
+
 The realisation that keeps hitting me is how loopable most knowledge work is. A software developer checks the backlog, reviews outstanding PRs, picks a task, completes it, pushes it up, and repeats. A product manager checks analytics, reviews experiment results, updates the backlog, talks to engineers, and repeats. Both are loops.
 
 I now have a heartbeat script running on my VPS every 20 minutes. It checks reminders, scans my email, runs through a list of automated checks. I got Claude Code to [set up a full A/B experiment](/posthog-experiment/) on my blog, autonomously: experiment design, JavaScript implementation, deployment, and monitoring. That took about 10 minutes to set up.
@@ -84,6 +86,8 @@ The basic setup I use is [available on GitHub](https://github.com/chrismdp/ralph
 - [Claude Code Chrome extension](https://chromewebstore.google.com/detail/claude-code-browser-tool/flhnpokbfmajlnbmahdbmppmdgceilom){:target="_blank"} - browser access for visual feedback in autonomous runs
 
 ## Key Takeaway
+
+{% include shareable-quote.html text="Context beats intelligence. A mediocre model with full project context will outperform the best model running blind." %}
 
 This is not fully autonomous yet. Token costs are real, visual feedback does not work for every platform, and plenty of tasks still need a human in the loop. But I can hand off well-scoped tasks overnight and wake up to working code more often than not, and that gap is closing faster than I expected.
 

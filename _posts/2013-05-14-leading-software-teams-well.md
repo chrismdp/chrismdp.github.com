@@ -14,6 +14,8 @@ I'm just on the way back from the [Scottish Ruby Conference](http://scottishruby
 
 It's refreshing to talk about something both non-technical, which makes it more accessible, and something that's as universally essential as leadership. The talk is titled for software teams, but it's equally applicable to any kind of team. It charts my experiences as a wannabe leader at the tender age of 22, through to a frustrated manager who no longer writes code for a living.
 
+{% include shareable-quote.html text="We are totally unable to control anyone. We can show leadership no matter what our organisational position." %}
+
 The talk is centered on the following ideas:
 
 * we can lead either through freedom or fear;

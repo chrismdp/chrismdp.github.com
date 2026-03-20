@@ -78,6 +78,8 @@ Google Cloud have been a fantastic partner to Cherrypick over the years, and the
 
 ## Starting Your Journey
 
+{% include shareable-quote.html text="A working system in production teaches you more than any number of prototypes." %}
+
 If you are building with LLMs, start with these principles:
 
 **First, validate the problem genuinely needs LLM capabilities.** Can you explain why traditional approaches fail? If not, use traditional approaches.

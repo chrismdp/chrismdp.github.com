@@ -30,6 +30,8 @@ Understanding this changes how you use AI. If you ask it to "complete the senten
 
 ## The Context Problem
 
+{% include shareable-quote.html text="Just like a team with 10 priorities has no priorities, an AI with 1,000 pieces of context cannot figure out what actually matters." %}
+
 Every AI interaction involves layers you control and layers you do not:
 
 **You control:**
@@ -94,6 +96,8 @@ Effective prompting is iterative. Here is the workflow I use for any repeatable 
 **Try it.** Test your prompt on a specific task. See how it does.
 
 **Decide quickly.** If the output is 80% good, continue refining within that chat. If it is less than 80% good or makes fundamental mistakes, throw it away and start over with an improved prompt.
+
+{% include shareable-quote.html text="Never argue with AI. If you find yourself going back and forth, stop. Start fresh." %}
 
 This is counterintuitive. People see all that generated content and think, "I cannot waste all that work." But it did not take hours. It took seconds. It is much faster to retry with a better prompt than to spend an hour arguing with AI to fix output from a bad prompt.
 

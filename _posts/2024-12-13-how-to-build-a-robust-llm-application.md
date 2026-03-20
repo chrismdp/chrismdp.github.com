@@ -106,6 +106,8 @@ We did not want to wait for enough data to try new prompts and models, so we use
 
 This produces a verifiable set of results, although it takes a lot of human involvement at the moment. The next steps are to use LLMs to automate the process of both running evaluations and improving the prompts. We have thousands of generated plans stored along with automatic and expert evaluations, so it is now possible to prompt an LLM with sufficient examples to learn how to both evaluate plans and improve prompts.
 
+{% include shareable-quote.html text="Too many applications are poorly thought through and end up becoming cool demos for investor decks or just another chatbot." %}
+
 LLMs are powerful tools if used in the right way. Too many applications are poorly thought through and end up becoming cool demos for investor decks or just another chatbot.
 
 Do not let this stop you. If you have a problem that benefits from LLMs, where you can mitigate the inevitable drawbacks, and you can design the right interface and cost model to make it work, then you can create the future.

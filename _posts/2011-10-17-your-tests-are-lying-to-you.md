@@ -22,6 +22,8 @@ Eventually your tests will get to the point where they're lying to you: they're 
 
 ## The problem
 
+{% include shareable-quote.html text="Eventually your tests will get to the point where they are lying to you: they are telling you your code works whereas actually it only works by coincidence." %}
+
 To look at this further, let's try to write a conference simulator for a new website that tries to predict how many people might attend an upcoming event: 
 
 {% highlight ruby %}

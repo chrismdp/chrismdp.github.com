@@ -33,6 +33,8 @@ I'm building Sol Trader as a game that I would like to play. That means focusing
 
 ## Invisible features
 
+{% include shareable-quote.html text="Invisible features aren't really features at all." %}
+
 What I'd forgotten is this: at the moment, the only way that players interact with characters is indirectly through the stock market system, with prices going up or down as sales and purchases are made. There isn't a way to easily see the difference more complex personalities will make: at best, prices might fluctuate slightly differently, but that won't easily be perceivable.
 
 I'd forgotten to ask, "Why? What's the reason I need this feature?" A nice system to store actor personality is all very well, and satisfies my curiosity about how to build such a system, but it doesn't directly lead to a change in behaviour my customers can see. Invisible features aren't really features at all.

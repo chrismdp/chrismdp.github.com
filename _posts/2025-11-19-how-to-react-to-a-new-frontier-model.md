@@ -75,6 +75,8 @@ The releases won't stop. The benchmarks will keep climbing. The organisations re
 
 ## The Bitter Lesson for Frontier Model Testing
 
+{% include shareable-quote.html text="Do not run your current workflow. Try something you think is impossible." %}
+
 Finally, you need to stretch the models into new territory. There is a deeper principle at work here, one that explains why testing new models matters so much: The Bitter Lesson.
 
 Rich Sutton's influential 2019 essay argues that general methods leveraging computation ultimately beat hand-crafted approaches.[^bitter] Chess programs conquered grandmasters not through elegant strategy encoding, but through massive search. Go programs won through learning and computation, not mimicking human intuition.

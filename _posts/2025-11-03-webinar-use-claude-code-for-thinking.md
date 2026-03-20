@@ -102,6 +102,8 @@ You don't need Obsidian yet. You don't need embeddings or calendar integration. 
 
 ## Key Takeaway to Remember
 
+{% include shareable-quote.html text="AI works best as a question generator, not an answer generator." %}
+
 **AI works best as a question generator, not an answer generator.** Get it to ask you one question at a time, answer thoughtfully, and let the process reveal what you actually think. Combined with persistent context in a file system, this becomes a genuinely powerful way to externalise and structure your thinking.
 
 The best way to think with AI is to stop asking it what to think and start letting it ask you better questions.

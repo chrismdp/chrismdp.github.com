@@ -78,6 +78,8 @@ Can you simplify with time-based estimates (for example days/weeks) instead?
 
 ## Step 3: Act
 
+{% include shareable-quote.html text="Improving team performance does not start with a framework. It starts with seeing clearly." %}
+
 You do not need to fix everything at once. Just start here:
 
 1. **Measure cycle time.** If the team does not know how quickly they can deliver, track it over a few weeks.

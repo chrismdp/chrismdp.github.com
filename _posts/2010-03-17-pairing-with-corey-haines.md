@@ -32,6 +32,8 @@ The summary of these lessons is another more general one:
 
 And finally, a meta-lesson:
 
+{% include shareable-quote.html text="Extend your pairing gene pool. It is amazing how much you learn when you pair with someone outside your immediate sphere." %}
+
 *Extend your pairing gene pool.* It's amazing how much you learn when you pair with someone outside your immediate sphere. Rather like when I first paired with [Enrique](http://blog.nexwerk.com), I learnt about stuff I would never have heard of otherwise. 
 
 I spent two hours working with Corey and it was a pleasure. Sadly we live a few thousand miles apart, but I'm looking forward to remote pairing sessions in the future.

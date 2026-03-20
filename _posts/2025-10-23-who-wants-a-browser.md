@@ -30,9 +30,11 @@ Security remains the critical unsolved blocker. Until we solve how to build secu
 
 ## The New Browser Wars
 
+{% include shareable-quote.html text="Users want to accomplish tasks. We browse only because tasks still live on websites." %}
+
 Another example: for decades, Coca-Cola and Pepsi obsessed over cola market share whilst the actual competitive dynamics shifted entirely beneath them. Health-conscious consumers moved to bottled water, energy drinks, and specialised beverages. Today their cola rivalry appears quaint compared to the fragmented beverage landscape.[^cola-wars]
 
-Users do not want to browse the web. They want to accomplish tasks. We browse only because tasks live on websites. When agents can book restaurants or process expenses directly, browsers become unnecessary overhead.
+Users want to accomplish tasks, and we browse only because tasks still live on websites. When agents can book restaurants or process expenses directly, browsers become unnecessary overhead.
 
 Browser-based agent integration is transitional. Valuable now, replaceable later. Atlas positions OpenAI to capture users during this shift whilst building towards what comes next.
 
@@ -65,6 +67,8 @@ This is admirably honest. It is also a damning admission. We are shipping agent 
 Current security approaches are fundamentally inadequate. Prompt injection attacks become more sophisticated daily. Attackers hide malicious instructions in images that agents process as text. They use social engineering techniques adapted from human manipulation to confuse AI systems. They chain together innocuous-seeming requests that combine into malicious actions.
 
 Evaluation and guardrails cannot solve this problem. You cannot evaluate your way to security when attack patterns evolve faster than evaluation datasets. You cannot build guardrails that catch every malicious instruction when the instruction space is infinite and creativity favours attackers.
+
+{% include shareable-quote.html text="Security remains the only battle that actually matters." %}
 
 The only robust approach requires architectural boundaries that make certain attacks impossible rather than merely detectable. As I explored when [building Cherrypick's meal generator](/how-to-build-a-robust-llm-application/), security comes from constraining the possibility space. Do not tell the agent what not to do. Only give it options it can safely choose from. Make failure architecturally impossible.
 

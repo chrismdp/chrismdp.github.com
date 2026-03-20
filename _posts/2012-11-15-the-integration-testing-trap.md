@@ -27,6 +27,8 @@ It's useful to have a few integration tests at points in our codebases where the
 
 Some people use the terms for integration and acceptance tests interchangeably. They may be written similarly, but _integration tests are not the same thing as acceptance tests._ They are still written for the developer's benefit. They are still ensuring that we're building the thing right, not ensuring that we're building the right thing.
 
+{% include shareable-quote.html text="In order to do BDD properly there has to be a level of testing that isn't about us, but is about our customer." %}
+
 Acceptance tests are a whole different ball game. When writing them, our tests are focused on the customer and on what they want built, rather than ensuring our own code fits together well. They're oriented entirely around what the customer sees, not what we see. As developers, they're not actually for us at all.
 
 We probably need both types of test in our system. Many developers, however, though diligently writing integration tests, have never written an acceptance test in their life. By conflating the two ideas, we're missing the point: in order to do BDD properly _there has to be a level of testing that isn't about us, but is about our customer._

@@ -44,6 +44,8 @@ This new build with gossip in will be out to Insider backers in the next few day
 
 ## Game design is luck that you can influence
 
+{% include shareable-quote.html text="I now know that I do not know how to make a great game, but I do know how to go about being lucky enough to discover one." %}
+
 Game design can be such an enigma. Some features that you work away on for ages never seem to be that fun, whereas a small thing that only took a few hours, and that I debated including at all, has proven to add a huge amount to the feel of the game.
 
 I posted this a while back:

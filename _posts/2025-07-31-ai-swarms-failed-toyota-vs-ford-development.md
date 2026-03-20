@@ -32,6 +32,8 @@ For a few hours, I managed four parallel streams of development, each with full 
 
 ## The Cognitive Load Problem
 
+{% include shareable-quote.html text="Product decisions cannot be parallelised." %}
+
 The reality hit me quickly: context switching every few seconds. That is not hyperbole. My brain was burning from the constant task switching required to keep four separate development streams moving forward. I became the bottleneck in my own optimisation attempt, frantically jumping between conversations, trying to make product decisions on the fly while simultaneously managing technical coordination.
 
 While the Claudes churned out code, I found myself constantly making judgement calls: Should this be a REST endpoint or GraphQL? What should the user actually be able to do with this feature? How do these four different approaches fit together? How should the graph relationships work between different node types? These were just the obvious decisions. There were hundreds of smaller choices that emerged during development: error handling approaches, data validation strategies, API response formats, authentication flows, logging patterns. Trying to specify all of these upfront in a PRD would have created an unwieldy document that still missed the contextual nuances that only emerged during implementation. The problem was not technical coordination, which actually worked reasonably well. The problem was that **product decisions cannot be parallelised**.
@@ -88,6 +90,8 @@ I learned this approach from <a href="https://www.youtube.com/@MollyRocket" targ
 I have identified my first use case, but that is a story for another post.
 
 ## The Bottom Line
+
+{% include shareable-quote.html text="AI swarms feel like productivity, but they are productivity theatre. They optimise for the feeling of progress rather than actual progress." %}
 
 AI swarms feel like productivity, but they are productivity theatre. They optimise for the feeling of progress rather than actual progress. The entire industry seems to have fallen for the same trap: write a comprehensive PRD, break it down, parallelise the work, and expect better results. But if PRDs worked well for AI development, why are so many teams struggling with the same coordination problems, integration nightmares, and duplicated effort that I experienced?
 

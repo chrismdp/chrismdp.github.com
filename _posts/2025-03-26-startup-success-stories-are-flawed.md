@@ -74,6 +74,8 @@ An example: in the early 2000s, I worked at a gaming company called [Elixir Stud
 
 ## Beyond the Move List
 
+{% include shareable-quote.html text="The real question is not what moves led to success but what forces made those moves possible." %}
+
 We talk about headwinds and tailwinds in business. About going uphill or downhill. These metaphors hint at forces we can feel but cannot see. Forces that no case study or advice article fully captures. Forces that determine whether copying someone else's "moves" will lead to success or failure.
 
 Perhaps what we need is not more move lists. Not more step by step guides or success stories. Perhaps we need new ways to map and understand these invisible forces.

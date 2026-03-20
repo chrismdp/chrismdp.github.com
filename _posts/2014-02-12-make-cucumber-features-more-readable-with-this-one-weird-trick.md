@@ -15,6 +15,8 @@ redirect_from:
 
 -- [Blaise Pascal](http://en.wikipedia.org/wiki/Blaise_Pascal)
 
+{% include shareable-quote.html text="It is easy to write an obscure feature: it takes a lot less effort to ramble and choose the first words that come to mind, rather than crafting carefully considered prose." %}
+
 If you've got an issue with your customers not reading your feature files, then try this: it'll help ensure their eyes stop glazing over.
 
 As I travel around coaching teams doing BDD, a common problem I see with Gherkin features is that they are nigh on unreadable except by the people that wrote them... and even then, the writers often have trouble explaining what they mean.

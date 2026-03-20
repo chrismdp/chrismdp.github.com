@@ -20,7 +20,9 @@ The challenge: could I take a complex change, break it down, and actually finish
 
 ## The Two Stage Method: Dictate, Then Delegate
 
-I have learned that the biggest blocker for most teams using AI is not technical skill, or ability to review, or the complexity of the change, but _clarity_. You need a way to cut through the noise, get a plan, and keep moving. My two stage method is simple.
+{% include shareable-quote.html text="Most teams using AI struggle with clarity far more than technical skill." %}
+
+I have learned that the biggest blocker for most teams using AI is lack of _clarity_, far more than technical skill, ability to review, or the complexity of the change. You need a way to cut through the noise, get a plan, and keep moving. My two stage method is simple.
 
 1. **Rough Guide**: I dictate everything I know into Wispr Flow[^wispr]. Sources, ideas, what needs figuring out. I get it all out, no matter how messy.
 2. **Plan and Execute**: I ask for a plan in `docs/changes`. Then I start a new chat, clearing out all the cruft. From there, I go step by step, focusing only on the next action.

@@ -22,6 +22,8 @@ I showed a virtual room full of technical leaders why this gap between demo succ
 
 ## The Product Problem Disguised as a Technical Problem
 
+{% include shareable-quote.html text="The fastest path to production is often removing the AI entirely." %}
+
 Every conversation about agents in production starts with the same assumption: we have a technical problem to solve. But after helping dozens of teams navigate this transition, I have learned that most agent failures stem from product decisions, not technical limitations.
 
 Three of the five pillars for production agents are product decisions. The most important question is not "how do we build this agent better" but "should we be building an agent at all?"

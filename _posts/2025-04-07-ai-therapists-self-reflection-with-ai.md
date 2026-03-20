@@ -35,11 +35,13 @@ The beauty lies in its simplicity. Each question creates space for deeper unders
 
 ## A Personal Example: When Sending an Email Feels Overwhelming
 
+{% include shareable-quote.html text="Those were old wounds masquerading as current limitations." %}
+
 Recently, I found myself hesitating to send an important email to a mailing list. A simple task, yet I felt inexplicably nervous. Using the self-reflection prompt, I discovered something surprising.
 
 My reluctance had nothing to do with the email itself. The real fear was about what would happen after sending it. The responses would require me to step further outside my comfort zone. Through this questioning process, I uncovered that I was still carrying grief and loss from work-related events from the previous year.
 
-This realisation was powerful. These were not valid reasons to avoid action. They were old wounds masquerading as current limitations. Once I understood this, I could send the email with confidence.
+This realisation was powerful. These were old wounds masquerading as current limitations. Once I understood this, I could send the email with confidence.
 
 ## Why This Approach Works
 

@@ -13,6 +13,8 @@ redirect_from:
 
 -- [Benjamin Franklin](http://en.wikipedia.org/wiki/Benjamin_Franklin)
 
+{% include shareable-quote.html text="Certification is just recommendation mass produced." %}
+
 It is often argued that certification is a bad thing. I would say that certification is not good or bad: it is rather the certifier and the manner of the certification that can be good or bad.
 
 *Certification is just recommendation mass produced.*

@@ -12,6 +12,8 @@ categories:
 
 Your laptop is a terrible development environment. It sleeps when you close the lid, loses state when you reboot, and chains you to a single device. The solution is obvious once you see it: run your development environment on a cheap cloud server and connect from whatever device is in front of you.
 
+{% include shareable-quote.html text="The server is the constant, and my devices are just windows into it." %}
+
 I spent a week with [OpenClaw](/dont-let-your-ceo-install-openclaw/), the always-on Claude agent that promised to solve this problem, but it did not deliver. So I uninstalled it and set up Claude Code on a VPS instead. The setup costs less than a coffee subscription, and now I connect from my laptop at my desk, from my phone on the train, from an iPad at a conference. The server is the constant, and my devices are just windows into it. Whether that is a superpower or a recipe for burnout depends on your discipline.
 
 <!--more-->
@@ -267,6 +269,8 @@ The server is always awake, so the reminders always fire.
 Fair warning: this grows. My single heartbeat prompt now checks reminders, triages email, prepares meeting briefings, and monitors content schedules. It works, but a single prompt doing everything is inefficient and slow. I am planning to split it into multiple focused cron jobs, each handling one concern, similar to how [OpenClaw](/dont-let-your-ceo-install-openclaw/) runs separate scheduled agents for different tasks. Start simple with reminders and let it evolve from there.
 
 ## Watch Out for Burnout
+
+{% include shareable-quote.html text="The friction that kept me from working everywhere was also protecting my downtime." %}
 
 Mobile Claude Code makes certain things easier and makes overwork more convenient. Whether that is net positive depends entirely on your discipline.
 

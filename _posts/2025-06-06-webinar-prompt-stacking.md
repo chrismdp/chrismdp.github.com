@@ -64,6 +64,8 @@ One participant asked about evaluation: how do you know if a prompt change actua
 
 ## What This Revealed About Team Dynamics
 
+{% include shareable-quote.html text="You cannot copy and paste your way to AI productivity any more than you can copy and paste your way to good software." %}
+
 The implications went beyond individual productivity. When teams share rule files, they create a shared understanding of how to work with AI. Junior developers inherit the accumulated wisdom of seniors. Team conventions get enforced automatically. Knowledge becomes code.
 
 I have watched teams transform their AI adoption by treating prompt rules like they treat code. Version control them. Review them. Refactor them. Share them. The same engineering disciplines that make code maintainable make AI interactions predictable.

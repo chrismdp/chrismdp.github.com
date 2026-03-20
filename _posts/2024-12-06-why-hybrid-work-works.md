@@ -57,6 +57,8 @@ If you are intentional, you can make anything work. Everyone is different, so th
 
 ## Make office days worth the effort
 
+{% include shareable-quote.html text="If office days are special, and managed fairly, your team will not mind them nearly as much." %}
+
 At Cherrypick, office days are special.
 
 We make sure everyone plans to be in the office on the same days, so we maximise in-person time together. We then all spend the rest of the week at home: less meetings, more focused work.

@@ -21,6 +21,8 @@ So what's the best way to fill a real apartment of this size? *Plan the furnitur
 
 ## "Off the shelf" software is a showroom
 
+{% include shareable-quote.html text="The solution you have just purchased is never a solution to your specific problem. It is a general solution to the problem the vendor thought you would have." %}
+
 Buying software is a little like this. Whether you're a startup or an existing business, it's tempting to buy an off the shelf solution to solve all your problems. It seems so easy, and the vendors often promise so much. It's like the beautiful showroom apartment: it's affordable, it all fits together so beautifully, and you can start using it straight away.
 
 This can work when the problem is well defined, you have a truly blank slate, or the software is just one piece of the puzzle, but most businesses are rougher round the edges that off the shelf software would like. The solution you've just purchased is never a solution to your specific problem: it's a general solution to the problem the vendor thought you would have a few months or years ago when they thought up the product. Inevitably the solution is for a slightly different problem to the one you have now. In the case of startups, which don't even know what the problem they're trying to solve is yet, they can be constrained by off the shelf software extremely quickly.

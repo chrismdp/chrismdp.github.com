@@ -34,6 +34,8 @@ That "waste" energy from AI solar farms is exactly that free electricity.
 
 Terraform Industries has built container-sized units that do precisely this.[^3] Instead of curtailing that midday spike, we feed it into machines that convert sunlight and air into pipeline-grade natural gas. **Input: sunlight plus air. Output: methane.** Carbon becomes a circular industrial input rather than a pollutant extracted from underground. The synthesis plants soak up whatever the batteries cannot store.
 
+{% include shareable-quote.html text="The Middle East of the future is Nevada, Australia, and Namibia." %}
+
 Once electricity becomes essentially free during daylight hours, we stop drilling for fossil fuels and start manufacturing them from air. Desalination becomes trivial. Synthetic ammonia production gets cheap, shifting the cost structure of global food. Plastics become carbon-neutral.
 
 Energy independence stops being about who controls oil reserves and starts being about who has land and sunlight. The Middle East of the future is Nevada, Australia, and Namibia.

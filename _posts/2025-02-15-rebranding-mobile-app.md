@@ -79,9 +79,11 @@ Pick a quiet period when you can afford some disruption. This provides space to 
 
 ## Beyond rebranding
 
+{% include shareable-quote.html text="Your users care about solving their problems with your app, not your rebrand." %}
+
 These principles apply to any major user-facing change in your app. Incremental development behind feature flags, extensive testing in production, clear communication, careful timing, and reversibility form the foundations of safe change in any critical system.[^2]
 
-Remember: your users do not care about your rebrand. They care about using your app to solve their problems. Your job is to help them transition so smoothly that they barely notice anything has changed.
+Remember: your users care about solving their problems with your app, not your rebrand. Your job is to help them transition so smoothly that they barely notice anything has changed.
 
 That defines success.
 

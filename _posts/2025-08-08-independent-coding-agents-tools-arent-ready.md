@@ -92,6 +92,8 @@ The "simple" setup guides assume knowledge of reverse proxies, SSL certificate m
 
 ## The Deeper Security Problem
 
+{% include shareable-quote.html text="No amount of infrastructure isolation fixes the core trust problem." %}
+
 I only realised this one a bit late: the infrastructure complexity was actually masking a more fundamental issue. AI coding agents with broad permissions are not safe, regardless of where they run.
 
 Even `--dangerously-skip-permissions` in a perfectly isolated environment misses the point. Coding agents can be duped by untrusted data. If they have internet access and can execute commands, they could easily exfiltrate code or credentials. Plus, if you leave private project context in your documentation, that could make its way to a third party. The attack vectors are not about local vs. remote infrastructure - they are about the inherent unpredictability of AI behaviour when exposed to adversarial inputs.

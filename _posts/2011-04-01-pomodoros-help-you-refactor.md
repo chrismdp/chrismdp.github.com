@@ -15,6 +15,8 @@ redirect_from:
 
 -- Francesco Cirillo, [The Pomodoro Technique](http://www.pomodorotechnique.com/)
 
+{% include shareable-quote.html text="What is the single most important part of Test Driven Development not to miss? Refactoring. What is the part of TDD that is most often missed? Refactoring." %}
+
 What's the single most important part of Test Driven Development not to miss? Refactoring. What's the part of TDD that's most often missed? Refactoring.
 
 With refactoring, we work our way toward a great design, clean code, and flexible organic tests. Without refactoring, we have ugly brittle test suites and uglier code. We know this. What I don't always do is take advantage of the moments I have when I can effectively refactor for free.

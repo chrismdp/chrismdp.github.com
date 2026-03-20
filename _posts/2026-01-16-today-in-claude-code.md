@@ -16,6 +16,8 @@ You know that feeling at the end of a day with Claude Code? You have been produc
 
 <!--more-->
 
+{% include shareable-quote.html text="The speed that makes them valuable also makes your work invisible." %}
+
 This is the strange paradox of working with AI coding assistants. The speed that makes them valuable also makes your work invisible. You finish a task, move to the next one, finish that, move again. Hours later you have shipped features, fixed bugs, written documentation, and refactored code, but the details have blurred together into a vague sense of having been busy.
 
 I built a [Claude Code skill](https://gist.github.com/chrismdp/29b3c5504504fe9ad2ff3310fa2a2a99){:target="_blank"} to solve this problem. It generates a comprehensive daily summary of everything you accomplished, grouped by theme, with token usage and costs included. At the end of each day, you run the skill and get a clear picture of what you actually did.

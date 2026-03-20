@@ -39,6 +39,8 @@ The comparison table gave me an immediate sense of relative strengths. One outpu
 
 ## Fact-check
 
+{% include shareable-quote.html text="Confidence and correctness are not the same thing." %}
+
 I asked ChatGPT 5.2 to fact-check all three responses against current web sources, marking each major claim as supported, partially supported, or unverifiable.[^1]
 
 [^1]: Ethan Mollick has [noted](https://www.linkedin.com/posts/emollick_i-have-found-gpt-52-thinking-to-be-a-surprisingly-activity-7406432277490053120-YFCP){:target="_blank"} that GPT-5.2 Thinking is "a surprisingly deep second-opinion/fact checker" that can find and gently correct errors requiring research to verify, including checking dates against source code on GitHub.

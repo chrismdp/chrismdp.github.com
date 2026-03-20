@@ -29,6 +29,8 @@ Before going further, a distinction matters here. Chat interfaces like ChatGPT o
 
 Agents work with multi-file context, multi-step reasoning, and persistent context across sessions. Chat just responds to what you type. The shift is from "AI assistant" to "AI thought partner." For delegation to work, [you need the repository approach, not chatbots](/chatbots-are-the-wrong-tool-for-ai-writing/).
 
+{% include shareable-quote.html text="Your CLAUDE.md file becomes a training document for your AI staff." %}
+
 Tools like Claude Code and Cursor are platforms, not just interfaces. Through MCP (Model Context Protocol) and tool chaining, you can build an extensible delegation infrastructure. Your CLAUDE.md file becomes a training document for your AI staff. You are building a system that compounds, not just delegating individual tasks.
 
 I have written more about [how to use Claude Code skills](/skills-are-claude-codes-secret-weapon/) to encode your work patterns into reusable prompts. This turns one-off delegation into repeatable systems.
@@ -60,6 +62,8 @@ These two factors create a spectrum of involvement:
 One factor people forget: [AI can be phished](/webinar-stop-ai-stealing-from-you/#the-lethal-trifecta). Prompt injection attacks can manipulate agents into leaking data or taking unintended actions. The more autonomous the delegation level, the more you need guardrails and monitoring in place.
 
 ### Be Careful
+
+{% include shareable-quote.html text="If you would not trust a human with a task unsupervised, you should not trust an AI with it either." %}
 
 <img src="/assets/img/clawdbot-effect-comic.jpg" alt="The Clawdbot Effect - comic showing CEO firing EA for 80% accuracy on Monday, then installing Clawdbot at 3am Tuesday" class="float-right w-1/2 ml-4 mb-4 rounded-lg" />
 

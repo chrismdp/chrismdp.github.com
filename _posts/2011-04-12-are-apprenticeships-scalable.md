@@ -29,6 +29,8 @@ If you try and use an apprenticeship model in this context, you run into severe 
 
 ## A different way
 
+{% include shareable-quote.html text="Our current university system is designed to create great professors, not great practitioners." %}
+
 *Why don't universities do real software projects?* Why can't we have master practitioners being paid by real clients to do real work, and have the students along for a ride, learning as they go?
 
 The funding issues will be cleared up as business will be paying. Students work for free, or perhaps room and board. Either way they won't be saddled by exhorbitant fees.

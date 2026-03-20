@@ -33,9 +33,11 @@ Understanding AI's consistency reveals several counterintuitive advantages that 
 
 ### Consistent Quality, Not Identical Output
 
+{% include shareable-quote.html text="A mediocre expense processor that never gets tired beats a brilliant one every time." %}
+
 When I say AI is consistently inconsistent, I do not mean it produces identical outputs. I mean it maintains a consistent quality level. An AI with a 15% error rate will maintain that 15% error rate whether processing its first item or its thousandth. A human might start at 5% errors but drift to 40% by Friday afternoon.
 
-Consider expense processing. I do not need a brilliant expense processor. I need a mediocre expense processor that never gets tired. An AI that correctly categorises 85% of expenses consistently beats a human who starts at 95% accuracy but drops to 60% after two hours of mind-numbing receipt scanning.
+Consider expense processing. A mediocre expense processor that never gets tired beats a brilliant one every time. An AI that correctly categorises 85% of expenses consistently beats a human who starts at 95% accuracy but drops to 60% after two hours of mind-numbing receipt scanning.
 
 This consistent mediocrity becomes powerful at scale. When converting large datasets or scoring hundreds of candidates, uniform error rates are actually preferable to variable human performance. You can plan for consistent 15% errors. You cannot plan for human variability that ranges from 5% to 40% depending on coffee levels, time of day, or proximity to the weekend.
 
@@ -131,6 +133,8 @@ But here's the deeper mistake: if you restrict people to narrow job descriptions
 
 ### The Coming Disruption
 
+{% include shareable-quote.html text="If companies will not give inexperienced workers a chance, those workers will create new companies that will." %}
+
 If companies will not give inexperienced workers a chance, those workers will create new companies that will.
 
 Armed with AI tools that provide consistency, motivated beginners can bootstrap businesses that previously required teams of experienced professionals. A solo founder with AI can maintain consistent quality across marketing, development, customer service, and operations. Not excellent quality, but consistent quality. And for many customers, consistency beats occasional excellence.
@@ -140,6 +144,8 @@ We are already seeing this. Solo developers shipping products that previously re
 This is not about AI replacing workers. It is about AI enabling workers who lack traditional credentials or experience to compete anyway. The progression framework suggests this is not a temporary arbitrage opportunity but a fundamental shift in how work gets done.
 
 ## Conclusion
+
+{% include shareable-quote.html text="Stop expecting AI to be brilliant. Start expecting AI to be boringly reliable." %}
 
 Understanding that AI provides consistency before competence, while humans achieve competence before consistency, changes everything about deployment strategy. Stop expecting AI to be brilliant. Start expecting AI to be boringly reliable.
 

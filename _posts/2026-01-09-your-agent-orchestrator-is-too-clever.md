@@ -16,6 +16,8 @@ The most sophisticated agent orchestration system I have seen this year is Gas T
 
 ## The Bitter Lesson Strikes Again
 
+{% include shareable-quote.html text="The history of AI is littered with clever systems that were eventually surpassed by dumber methods running on better hardware." %}
+
 Richard Sutton's bitter lesson in AI is simple: general methods that scale with computation beat specialised approaches that encode human knowledge. The history of AI is littered with clever systems that were eventually surpassed by dumber methods running on better hardware. Chess engines, image recognition, language models: scale and simplicity win every time.
 
 This lesson keeps playing out in agent orchestration. Teams build elaborate multi-agent systems with specialised roles, complex handoffs, and sophisticated state machines. I [tried this myself last year](/parallel-ai-agents-create-unusable-code/), running four Claude instances in parallel with a detailed PRD. The result was duplicated code, impossible coordination overhead, and a completely unusable codebase. Meanwhile, a technique called Ralph loops achieves better outcomes with a bash for loop. Feed an agent the same prompt repeatedly, let it see its previous work in the files, and watch it iterate until done. That is the entire architecture.
@@ -163,6 +165,8 @@ Each iteration ends with an explicit `RALPH_DONE` signal. The loop watches for t
 If you are building elaborate agent orchestration systems, ask yourself what assumptions those systems encode. Are you building complexity because the models need it, or because you do not trust them? Better models plus simpler architecture might be the actual answer.
 
 If you are an engineering leader planning AI adoption, reconsider your coordination overhead. The teams that win will be the ones moving fast enough to take advantage of what simple loops already enable. That means smaller teams, radical transparency, and a willingness to let agents make decisions humans used to make.
+
+{% include shareable-quote.html text="A bash loop, a prompt file, and a good model will let you ship code while you sleep." %}
 
 If you are an individual developer, Ralph loops work today. You do not need Gas Town or any other elaborate system. A bash loop, a prompt file, and a good model will let you ship code while you sleep. Start there. The complexity can come later, if it ever needs to come at all.
 

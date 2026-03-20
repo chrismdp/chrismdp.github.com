@@ -45,6 +45,8 @@ Note the [Kanban limits to work in progress](http://leanca.mp/2011/12/better-lea
 
 ## Freed from featuritis
 
+{% include shareable-quote.html text="Features by themselves mean nothing. They are actually a drag on your product, as you have to spend time and effort maintaining them." %}
+
 I've really enjoyed freeing myself from the continual focus on "features features features". Features by themselves mean nothing: they are actually a drag on your product, as you have to spend time and effort maintaining them. It's only the value that your customers gain from them that's important. Focusing on theories has meant that I'm always making progress, even if I'm simply learning what doesn't work.
 
 ## Hang on: where is creativity in all this?

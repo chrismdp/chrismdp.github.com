@@ -58,6 +58,8 @@ Your job is to use your skills to help the team figure out these five things. He
 
 ## Identify the bigger problem
 
+{% include shareable-quote.html text="Solutions are fleeting, problems are eternal." %}
+
 Join customer research calls. Deeply understand the challenges your customers face. Fall in love with the problems they have. Solutions are fleeting, problems are eternal.
 
 Do not delegate this to a product manager or the CEO, however competent they are. This is especially true if you are a co-founder. Seeing a problem first hand will elicit sparks of technical insight. Bring that insight to team discussions. Enlighten your team on what is possible.

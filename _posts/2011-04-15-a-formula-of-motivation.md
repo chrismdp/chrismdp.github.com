@@ -35,6 +35,8 @@ This is all about raising our confidence in whether we can get it done. Remind y
 
 ## Remind yourself why you're doing it
 
+{% include shareable-quote.html text="The tasks you feel the least like doing are the ones you feel best about having done." %}
+
 In other words, raise your perception of the value gained through doing the task. What is the task achieving for your? What good things will happen when it's done? Remember, the tasks you feel the least like doing are the ones you feel best about having done: there's value in that in itself. After this, if you still cannot see the value, why are you doing this in the first place?
 
 ## Reduce distractions

@@ -13,15 +13,17 @@ categories:
 - productivity
 ---
 
-The absolute best way to do AI-assisted writing right now is not through chat interfaces. It is repositories.
+The absolute best way to do AI-assisted writing right now is repositories, not chat interfaces.
 
-After months of experimenting with different approaches to AI-powered writing and knowledge management, I have discovered something counterintuitive: the most powerful way to work with AI is not through polished chat interfaces like Claude.ai or ChatGPT. It is by treating your writing projects as living repositories that grow smarter over time.
+After months of experimenting with different approaches to AI-powered writing and knowledge management, I have discovered something counterintuitive: the most powerful way to work with AI is treating your writing projects as living repositories that grow smarter over time, not polished chat interfaces like Claude.ai or ChatGPT.
 
-This shift from disposable conversations to persistent, context-rich workspaces has transformed how I write, research, and organise knowledge. The difference is not just incremental. It is a fundamental reimagining of what AI collaboration can be.
+This shift from disposable conversations to persistent, context-rich workspaces has transformed how I write, research, and organise knowledge. The difference is a fundamental reimagining of what AI collaboration can be.
 
 <!--more-->
 
 ## The Problem with Chat Interfaces vs The Repository Approach
+
+{% include shareable-quote.html text="The most powerful way to work with AI is repositories, not polished chat interfaces." %}
 
 Traditional AI chat interfaces feel impressive at first. You type a question, get an instant response, and move on. But this interaction model has fundamental limitations when it comes to serious knowledge work.
 
@@ -52,6 +54,8 @@ The AI suggests improvements based on my writing patterns, understanding not jus
 This persistent context creates a virtuous cycle. The more I work within these repositories, the better the AI becomes at understanding my needs and preferences. It learns not just from our current conversation, but from the entire history of the project. This is exactly the kind of context management that makes [building robust LLM applications](/how-to-build-a-robust-llm-application/) possible: deep understanding rather than shallow pattern matching.
 
 ### Living the Science Fiction Future
+
+{% include shareable-quote.html text="The AI does not just search. It understands. It finds connections I have missed, surfaces forgotten commitments, and builds a semantic map of my thinking." %}
 
 In 1992, Kim Stanley Robinson wrote about an AI research assistant that reads everything and connects ideas across an entire knowledge base. In his [Mars Trilogy](https://www.kimstanleyrobinson.info/content/mars-trilogy)[^mars], the character Jon Boone uses an AI system that surfaces insights he might have missed. It felt like distant science fiction at the time.
 
@@ -105,6 +109,8 @@ My blog writing process has evolved to leverage this repository-based approach c
 First, I brain dump everything into Claude Code while the blog repository is open. Random thoughts, half-formed opinions, struggles, and insights, all captured through voice dictation using Wispr Flow[^wispr-flow]. Unlike working with a fresh chat interface, the AI can immediately draw connections to my other work, suggest relevant links to previous articles, and propose structures that fit my established patterns.
 
 The editing process becomes collaborative in ways that feel impossible with traditional chat interfaces. I go through paragraph by paragraph, but the AI can reference my CLAUDE.md style guide, understand my typical argument patterns, and maintain consistency with my voice across the entire body of work. These style guides become living documents that evolve with my practice, similar to how I maintain architectural patterns when [coding with AI](/coding-with-ai/).
+
+{% include shareable-quote.html text="Whenever the AI makes a mistake, I treat it like feedback to an employee. I explain what went wrong, why it matters, and how to do better next time." %}
 
 Every time I go through the process of writing an article or doing a review, I am constantly updating and tweaking my rules files. Whenever the AI makes a mistake, I treat it like feedback to an employee. I explain what went wrong, why it matters, and how to do better next time. Then I update the relevant CLAUDE.md or role file so the same mistake does not happen again. This creates a genuine learning system rather than static instructions.
 
@@ -179,6 +185,8 @@ Repository-based AI collaboration points toward a future where our knowledge sys
 This approach has implications far beyond writing blog posts. It represents a fundamentally different model for knowledge work in the age of AI. Traditional productivity systems assume human cognition as the bottleneck. We create systems for capturing and organising information because our brains cannot hold it all. But when AI can understand and connect vast amounts of information, the bottleneck shifts from memory to context management.
 
 The challenge becomes not just capturing information, but creating systems where AI can understand the relationships, priorities, and patterns that make that information useful. Repositories provide this structure. They create persistent contexts where both human and AI understanding can compound over time.
+
+{% include shareable-quote.html text="The AI becomes genuinely helpful rather than merely impressive." %}
 
 Repository-based AI work requires more upfront setup than firing up a chat interface. You need to think about information architecture, maintain consistent documentation, and invest time in creating the context that makes AI collaboration effective. You need to keep updating the rules. The cognitive overhead is different. Instead of quick, disposable interactions, you are building systems intended to evolve over months or years.
 

@@ -25,6 +25,8 @@ Twelve years later, in 2016, I spent the entire of 6th June glued to [Steam](htt
 
 Over the last year, I've been keeping busy doing two things. One is to support Sol Trader as much as I can with countless updates and patches. I've also been very busy working on a new game, <a href='http://ealdorlight.com'>Ealdorlight</a>, a medieval RPG-style take on Sol Trader's mechanics, with turn-based combat, realistic damage and great graphics. [I announced Ealdorlight in March](http://chrismdp.com/2017/03/introducing-ealdorlight/) and demonstrated it at Rezzed, strengthening my hope that the idea was a good one.
 
+{% include shareable-quote.html text="The Kickstarter community is one of the kindest, most positive on the Internet." %}
+
 I decided fairly early on that I wanted to take Ealdorlight to Kickstarter. Sol Trader's successful Kickstarter was a brilliant experience. The Kickstarter community is one of the kindest, most positive on the Internet. I also needed funding for this game: Sol Trader was self-funded through many long evenings and contracting work, and for Ealdorlight I need a bigger team to realise the vision. It's built in Unreal Engine 4, which simultaneously saves me loads of development time and means I need a bigger team to pull off the realistic art style I've gone for.
 
 As time came near to launch, the first anniversary of Sol Trader's released seemed an appropriate day to launch the campaign. So today, 6th June 2017, I will spend the entire day glued to Kickstarter as my [campaign goes live](https://www.kickstarter.com/projects/chrismdp/460088710?token=b18de00d) at 4pm today.

@@ -36,6 +36,8 @@ Why is this important? It's a valuable exercise for a couple of reasons:
 
 ## BDD solo is why BDD matters in the first place
 
+{% include shareable-quote.html text="BDD is about the communication in the team, not the tools." %}
+
 Sometimes we confuse the concepts behind BDD with the tools used to practice BDD, like 3 amigo meetings, story breakdown and Cucumber.
 
 BDD isn't about the tools we use, it's about the communication in the team. It's about having the right conversations at the right times, hammering things out together, airing and refining thoughts and ideas, beating out ambiguity and forging common goals. This is why it matters.

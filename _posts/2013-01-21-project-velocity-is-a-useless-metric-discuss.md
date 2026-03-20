@@ -99,6 +99,8 @@ Chris: "True. It's the same learning though. A CFD will show your learning histo
 
 ## The verdict
 
+{% include shareable-quote.html text="There's nothing quite like shipping working software to gain people's confidence." %}
+
 True to all good conversations, this one ended with me having a slightly different point of view to the one I came in with:
 
 **Velocity isn't entirely useless.** Matt's game of "1 story = 1 point" will help a team to make a move away from an overreliance on a Big Agile approach, where a meaningless metric might hold sway over a common sense look at what's really going on inside a team.

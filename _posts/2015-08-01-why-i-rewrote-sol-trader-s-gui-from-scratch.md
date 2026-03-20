@@ -41,6 +41,8 @@ This is a fancy way of saying "the game code fits together well." Now I'm writin
 
 ## Summary: Is the "Not Invented Here" principle overrated?
 
+{% include shareable-quote.html text="Perhaps we need to focus more on not reinventing concepts and less on not rewriting code." %}
+
 In hindsight, I definitely made the right decision. Build speed is so important because the shorter our debug loop the faster we can [iterate towards fun](/2015/04/how-to-choose-between-realism-and-fun/). Writing my own tiny GUI library within my game has meant that now there are no external barriers to a smooth frame rate.
 
 I can now understand why there aren't that many well established game GUI libraries out there. It's relatively easy to write just enough GUI for what we need, and relatively difficult to write enough GUI so that everyone can use it.

@@ -15,6 +15,8 @@ infographic: /assets/img/claude-code-skills-infographic.jpg
 
 Skills are Claude Code's secret weapon, but most people never create any because they do not see the value. Once you understand what skills can do, you start building a small, carefully curated set that represents how you actually work, refined over time as you discover what saves you effort and what gets in the way.
 
+{% include shareable-quote.html text="When you find yourself explaining the same preferences to Claude Code twice, that repetition is a signal: you have a skill waiting to be written." %}
+
 Start with "pattern thinking", and it comes naturally once you look for it. After every task, ask yourself what is reusable here and what would help you next time. Coders learn this instinct through years of extracting common functionality into libraries and modules, but the skill transfers to anyone willing to notice their own repetition. When you find yourself explaining the same preferences to Claude Code twice, that repetition is a signal: you have a skill waiting to be written.
 
 <!--more-->
@@ -76,6 +78,8 @@ I keep my skills in a dedicated folder that gets synced across machines. Persona
 This also makes skills portable. I can share a skill with someone else by sending them a file. They can read it, understand what it does, and adapt it for their own work. Source control is not just backup: it is documentation. This approach to [treating your work as repositories rather than chat conversations](/chatbots-are-the-wrong-tool-for-ai-writing/) is what makes AI collaboration compound over time.
 
 ## Build Your Own
+
+{% include shareable-quote.html text="Do not import too many skills from others. Skills represent how you work, not how someone else works." %}
 
 Do not import too many skills from others, because skills represent how you work rather than how someone else works. Their preferences are not your preferences, their workflow is not your workflow, and the value of a skill comes from it matching your thinking precisely. Looking at examples helps you understand what is possible and how other people structure their instructions, but the skills you actually use every day need to be ones you wrote yourself.
 

@@ -14,6 +14,8 @@ When GPT-5 launched, Reddit exploded with disappointment. One paying customer ca
 
 The same week, whilst people were declaring the end of progress, two measurement systems told a completely different story. METR published data showing GPT-5's time-horizon for completing software engineering tasks had doubled from roughly 30 minutes to 2 hours, continuing an exponential trend that has seen this metric double approximately every seven months since 2019.[^metr-blog] [^metr-paper] GDPval, which has industry experts blind-grade AI deliverables for actual tasks across 44 occupations, showed frontier models now approach expert quality, with performance more than doubling from GPT-4o to GPT-5 in roughly a year.[^gdpval] These were not 10% bumps on benchmark scores but fundamental expansions in the complexity and duration of work models could reliably complete.
 
+{% include shareable-quote.html text="The gap between what the data shows and what people believe is one of the most consequential misunderstandings in technology right now." %}
+
 The gap between what the data shows and what people believe is one of the most consequential misunderstandings in technology right now. Not because the sceptics are wrong to notice something feels different, but because they are measuring the wrong things at precisely the moment when incremental improvements are compounding into breakthrough capabilities. The question is not whether progress is happening but why it feels like it is not.
 
 <!--more-->
@@ -37,6 +39,8 @@ This is the **performance versus competence gap**, and it explains the blasé at
 GDPval and METR target competence directly. Can the model reliably complete messy, multi-step, real-world work? The answer, measured properly, shows steady exponential progress even as traditional benchmarks plateau.[^gdpval] [^metr-blog] [^metr-paper] We are hitting real limits on one type of scaling whilst experiencing exponential progress on another. We are measuring the wrong things and then declaring progress has stopped.
 
 ### Breakthroughs Arrive as Thresholds, Not Smooth Curves
+
+{% include shareable-quote.html text="The danger is walking away at 40% success, unaware that you are one reliability improvement from 60% success and production viability." %}
 
 Consider an AI handling a workflow with ten sequential steps, each requiring an independent decision. If each step succeeds 70% of the time, the entire workflow completes successfully only about 3% of the time. Bump that per-step reliability to 85%, and suddenly the end-to-end success rate jumps to 20%. Push it to 95%, and you hit 60% completion.
 
@@ -73,6 +77,8 @@ The cadence of major releases has been remarkably consistent: GPT-3 in June 2020
 But that is not how it felt.
 
 ChatGPT launched in November 2022, more than two years after GPT-3. It used GPT-3.5, which was not fundamentally more capable than GPT-3 but was packaged in an interface that made AI accessible to everyone. The cultural moment was so explosive that it compressed our sense of time. GPT-3 had been quietly improving for years. We just did not notice until ChatGPT made it undeniable.
+
+{% include shareable-quote.html text="We recalibrated expectations based on a compressed moment, then declared the natural cadence a slowdown." %}
 
 This created a warped baseline. We expect ChatGPT-level shocks every few months. When steady two-year cycles continue delivering improvements, they feel slow by comparison. We recalibrated expectations based on a compressed moment, then declared the natural cadence a slowdown.
 

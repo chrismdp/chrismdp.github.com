@@ -33,6 +33,8 @@ These distinctions are essential to prevent useless arguments about the relevant
 
 ## The concept should outlive the practice and tools
 
+{% include shareable-quote.html text="If we cannot envisage discarding a practice or tool, perhaps we haven't fully grasped the concepts behind it yet." %}
+
 Test-driven development (TDD) is a good example of a series of concepts that has outgrown the tool and the practices that were originally associated with it. Most people don't think of [JUnit](http://en.wikipedia.org/wiki/JUnit) when they think of TDD, but the first TDD implementations used it extensively. The concept (test-driven coding) has transcended the tool (JUnit + Java).
 
 TDD is also universally introduced using a form of practice called the "TDD cycle." We are encouraged to write tests, then write code, then refactor. However, as the coder becomes more familar with this cycle and follows it instinctively, TDD becomes much more about design than about "Red, Green, Refactor." The coder outgrows the practice (although they may never abandon it entirely) and becomes intimately associated with the concept. This concept in TDD's case can be quite difficult to describe, but might be partially summarised as *clean, reliable code.*

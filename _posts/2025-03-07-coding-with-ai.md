@@ -36,6 +36,8 @@ These are the key practices I use daily and have found effective.
 
 ### Assume your AI is wrong
 
+{% include shareable-quote.html text="To go fast, get really good at reading and understanding code fast." %}
+
 When I first wrote this in March 2025, I estimated my AI coding assistant was wrong about 70% of the time. Now with Claude Code, it gets things wrong less frequently, though complex tasks still require careful review. That is fine by me.
 
 When Claude Code generates code for me, it is not always perfect on the first try. It can misunderstand requirements, make incorrect assumptions about my codebase, or produce code that needs refinement.
@@ -69,6 +71,8 @@ Decent automatic end-to-end testing has become extremely useful for greenlightin
 Type hints and strict linting matter. They help catch errors early and guide the AI to generate better code. The AI thrives on type information to understand context. However, you do not necessarily need to switch to statically typed languages. Even dynamic languages with good type hinting can work well.
 
 ### Keep Changes Small
+
+{% include shareable-quote.html text="AI can move faster than you can read and think, even with a lot of coding experience." %}
 
 I have found that keeping changes extremely small is important when working with AI. Small, focused pull requests are easier to review thoroughly. I ship to production multiple times a day, reading full diffs to ensure I have understood exactly what the AI has produced.
 
@@ -179,6 +183,8 @@ The value chain is shifting toward these higher order capabilities that transcen
 These human capabilities align closely with deep product knowledge and architectural intuition. Experienced engineers develop an intuitive sense for when something is not right. Such capabilities are difficult for AI to replicate because they require understanding the boundaries of our knowledge. A language model trained on known data cannot, by definition, predict what it has never seen. It cannot know what it does not know.
 
 ## How Are We Going to Train the Next Generation?
+
+{% include shareable-quote.html text="The actual coding was never the job, and now it is less of the job than ever." %}
 
 One of the most thought provoking questions in this new landscape concerns how we will develop the next generation of senior engineers. As Meri Williams observed in response to my Wardley map, it is going to be interesting how we develop people into senior engineers now the traditional ways (handwriting ever more complex code but starting super simply) are likely to fall by the wayside.
 

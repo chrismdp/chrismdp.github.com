@@ -30,6 +30,8 @@ As a first step, I spent the first part of the week trying to simplify my life d
 
 If something I'm doing doesn't fit into this list, then I've decided to work towards removing it from my life.
 
+{% include shareable-quote.html text="More than ever in this present age of mass distraction, our headspace is the key limiting factor to productivity and achievement." %}
+
 More than ever in this present age of mass distraction, our headspace is the key limiting factor to productivity and achievement. It's a resource to be managed and conserved. I'm only a week in, but have benefited hugely from the reduced focus already, and my job satisfaction is much improved.
 
 If you made a list such as the one above, what would be on it? What should we remove in order to conserve headspace, and to focus on what counts?

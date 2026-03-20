@@ -71,13 +71,15 @@ The critical piece is [guardrails](/coding-with-ai/#guardrails-matter-more-than-
 
 ## Action Plan
 
+{% include shareable-quote.html text="The goal is to code better by focusing your judgment where it matters, not to code faster by removing it." %}
+
 Start with creating initial context using something like Claude Code's `/init` command, add one instruction "Ask me one question at a time to build enough context before you write any code", run through one cycle with a real task, and update your context with what you learned.
 
 That is it. One cycle. Then repeat.
 
 AI amplifies your practices, both good and bad. If you have sloppy documentation, AI will produce sloppy code. If you have clear conventions and comprehensive tests, AI will follow those patterns and help you maintain quality. Every cycle makes the next one better.
 
-The goal is not to code faster by removing your judgment. The goal is to code better by focusing your judgment where it matters most. AI handles the boilerplate, the repetitive patterns, the tedious setup. You focus on architecture decisions, business logic, and ensuring the system does what users actually need.
+The goal is to code better by focusing your judgment where it matters, not to code faster by removing it. AI handles the boilerplate, the repetitive patterns, the tedious setup. You focus on architecture decisions, business logic, and ensuring the system does what users actually need.
 
 That is how you make demo speed sustainable for real production work. Not by expecting perfection on attempt one, but by building a system that compounds your judgment instead of replacing it.
 

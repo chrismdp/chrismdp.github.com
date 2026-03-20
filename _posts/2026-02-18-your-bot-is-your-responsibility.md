@@ -29,6 +29,8 @@ But six patterns appeared across nearly every domain.
 
 ## The Democratisation Paradox
 
+{% include shareable-quote.html text="The window of genuine democratisation is narrow." %}
+
 Every scenario begins with genuine benefit to the underserved. The researcher with no funding makes a breakthrough. The shift worker catches a planning application she would have missed. The elderly consumer negotiates a better deal. 
 In every case, the same capability is then captured by the better-resourced or weaponised against the vulnerable. Paper mills scale to 12,000 fake submissions per month.[^papermills] A single resident mass-produces planning objections for his entire street. Premium bots outperform free ones, creating a new tier of inequality determined by AI spend. Referral networks reassert dominance in hiring, excluding exactly the people AI was supposed to help.
 
@@ -47,6 +49,8 @@ Bot-generated output overwhelms genuine human signal. Scientific papers, job app
 In hiring, the signal collapse is already measurable. LinkedIn application volumes are up 45% year-on-year.[^linkedin] Gartner projects that by 2028, one in four candidate profiles globally will be fake.[^gartner] Companies that ban AI in applications while using AI to screen them have created a double standard that accelerates the very problem they are trying to solve.
 
 ## The Responsibility Gap
+
+{% include shareable-quote.html text="Ignorance of what your agent is doing should not be a defence." %}
 
 When your personal bot does something harmful, who is responsible?
 

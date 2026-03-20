@@ -10,7 +10,7 @@ categories:
 - local-ai
 ---
 
-**Open source AI models now cost 150 times less than frontier models whilst delivering comparable performance.** This is not just a pricing anomaly. This is the quiet revolution that will reshape how we think about artificial intelligence access and deployment.
+**Open source AI models now cost 150 times less than frontier models whilst delivering comparable performance.** This is the quiet revolution that will reshape how we think about artificial intelligence access and deployment.
 
 August 5th, 2025 will be remembered as a pivotal day in AI history. While the [AI industry celebrates Anthropic's latest Claude Opus 4.1 release](https://www.anthropic.com/news/claude-opus-4-1){:target="_blank"} - achieving 74.5% on SWE-bench Verified and commanding premium pricing - OpenAI simultaneously released something far more disruptive: [their first open source models since 2019](https://openai.com/index/introducing-gpt-oss/){:target="_blank"}.
 
@@ -58,6 +58,8 @@ Both paths serve important purposes, but only one is sustainable for the majorit
 
 ## What This Changes
 
+{% include shareable-quote.html text="A startup spending £1,000 per month on Claude Opus 4.1 could run the same workload on GPT OSS 120B for £6.67." %}
+
 Most AI applications do not require frontier model performance. If you are building a customer service chatbot, analysing documents, or generating marketing copy, do you really need the absolute pinnacle of AI capability? Or would you prefer a model that delivers 85% of the performance at 0.67% of the cost?
 
 The mathematics are compelling. A startup spending £1,000 per month on Claude Opus 4.1 could run the same workload on GPT OSS 120B for £6.67. That £993.33 difference each month could fund additional developers, marketing, or infrastructure.
@@ -78,6 +80,8 @@ Local hosting also solves data privacy concerns that prevent many organisations 
 
 ## Why This Revolution is Quiet
 
+{% include shareable-quote.html text="The quiet revolution is already here." %}
+
 The AI industry narrative remains focused on frontier models because they generate more excitement. Headlines about Claude Opus 4.1's "advanced coding performance" and GitHub Copilot integration drive more engagement than stories about incremental improvements to open source models.
 
 But revolutions often happen quietly. Personal computers did not announce themselves with fanfare - they gradually became good enough and cheap enough to transform how we work. The internet followed the same pattern, slowly becoming indispensable rather than dramatically disrupting everything overnight.
@@ -92,7 +96,7 @@ The gap will only widen. Open source development moves faster than closed source
 
 Meanwhile, frontier models face increasing development costs as they push against fundamental scaling limits. The economic incentives favour the democratisation path for all but the most specialised applications.
 
-**The quiet revolution is not coming. It is here.** The only question is whether you will recognise it in time to benefit from it.
+**The quiet revolution is already here.** The only question is whether you will recognise it in time to benefit from it.
 
 [^1]: Claude Opus 4.1, released August 5th 2025, represents Anthropic's flagship model with advanced coding performance (74.5% on SWE-bench Verified), improved research capabilities, and enhanced "detail tracking and agentic search" - priced at $15 per million input tokens and $75 per million output tokens. [OpenRouter Claude Opus 4.1 Pricing](https://openrouter.ai/anthropic/claude-opus-4.1)
 [^2]: GPT OSS 120B, released August 5th 2025 as OpenAI's first open source models since 2019, represents a dramatic shift with pricing at just $0.10 per million input tokens and $0.50 per million output tokens - released under Apache 2.0 licence for free use. [OpenRouter GPT OSS 120B Pricing](https://openrouter.ai/openai/gpt-oss-120b)

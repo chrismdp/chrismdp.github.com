@@ -24,6 +24,8 @@ Recently I showed a (virtual) room full of technical leaders how to kill their p
 
 I have watched dozens of teams build what I call "loops and tools" agents. The pattern is always the same. You start by writing a massive prompt that tries to handle every possible scenario. You give the agent access to a dozen different tools. You wrap the whole thing in a loop and hope for the best. 
 
+{% include shareable-quote.html text="The last 30% is where dreams go to die." %}
+
 These agents seduce you because they get you 70% of the way there on day one. You show your boss, they love it, and everyone gets excited about the possibilities. But that last 30% is where dreams go to die. The agent starts doing unexpected things. It gets confused by edge cases. It runs up massive bills by looping endlessly. You add more instructions to the prompt to handle each new failure mode, and before you know it, you have a 2000 word prompt that nobody understands anymore.
 
 The alternative is what I call workflow agents. They look boring at first. They feel like you are just writing regular code with some AI sprinkled in. But here is the thing: they actually work in production.
@@ -101,6 +103,8 @@ Fourth, collect examples of good and bad outputs. Feed these back into your syst
 Finally, let the system improve itself. Use AI to write better prompts based on your examples. Run experiments. Measure results. Iterate.
 
 This is not theoretical. I demonstrated these techniques live, showing how to transform a complex multi step agent from an unreliable mess into a predictable system. The recording shows every step, including the parts where things went wrong and how the framework helped recover.
+
+{% include shareable-quote.html text="Stop writing prompts like it is 2023. Start building systems that actually deliver value in production." %}
 
 Stop writing prompts like it is 2023. Stop believing that if you just find the perfect words, your agent will magically work. Start building systems that actually deliver value in production.
 

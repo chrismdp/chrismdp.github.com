@@ -50,6 +50,8 @@ When I ask an AI to draft an email, the output needs to be scannable in seconds.
 
 ## Review Is the Job
 
+{% include shareable-quote.html text="Better review interfaces for humans will unlock more AI productivity than better models ever will." %}
+
 The question I keep asking, both for myself and when [working with engineering teams](/services): for every task we delegate to an AI, how long does it take us to verify the result? If the answer is "almost as long as doing it ourselves," something is wrong. Either we need to change how the agent presents its work, or we need an intermediate check that removes the human from the loop entirely, or this particular task does not benefit from delegation.
 
 A team that generates five approaches and verifies all five in an afternoon will outpace a team that generates one and waits a week for feedback. The bottleneck moved from "how fast can we build?" to "how fast can I tell whether this is right?"
@@ -58,7 +60,7 @@ I am experimenting with this myself. I have dozens of concurrent projects manage
 
 ![Review app showing project cards with status badges, a "What I Need From You" section, and a direction input for the worker agent.](/images/2026/review-app.png)
 
-It is early days, and I do not have all the answers yet. But I am increasingly convinced that the biggest gains in AI productivity will not come from better models. They will come from better interfaces for the humans who have to review what those models produce.
+It is early days, and I do not have all the answers yet. But I am increasingly convinced that the biggest gains in AI productivity will come from better interfaces for the humans reviewing what models produce, not from better models themselves.
 
 [^lockbox]: Lockbox replaces a hundred identical permission prompts with one focused review by structurally constraining what agents can do after reading untrusted data.
 

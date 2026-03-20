@@ -30,6 +30,8 @@ My plan is to write plenty of tightly connected story arcs that are triggered on
 
 ## Identity
 
+{% include shareable-quote.html text="Knowledge of who we truly are affects many areas of our lives for the better." %}
+
 Ealdorlight is set within a low fantasy world, and there's no traditional magic. The player gets more powerful through discovering key pieces of knowledge about their past. These insights into of your real past feed directly into your character's stats, skills and abilities.
 
 I've long been fascinated with identity: knowledge of who we truly are affects many areas of our lives for the better. In Ealdorlight I wanted to tell a story which takes this to an almost supernatural level. By removing the player from their birth family, they start as an entirely normal person within the world. It's only after their early game encounter with the Ealdorlight and the discovery of their past that things begin to change.

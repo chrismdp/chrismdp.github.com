@@ -17,6 +17,8 @@ If your company is sick, you need to fix it. That means courageous decisions onl
 
 It's important to fix a sick company, but more important to work on your company's long term health. Then it won't constantly get sick, and you won't have to be endlessly treating it.
 
+{% include shareable-quote.html text="A healthy business makes 80% of the same decisions you would, at all levels, if you had the greater context and expertise that exists at each level." %}
+
 A healthy business makes 80% of the same decisions you would, at all levels, if you had the greater context and expertise that exists at each level. You must align your company around how decisions should be made.
 
 How to stay healthy? Exercise. Work a little on your company each week or month, and keep it fit.

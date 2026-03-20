@@ -36,6 +36,8 @@ We also made a number of other changes to the site to make it more robust:
 
 ## Lessons learnt
 
+{% include shareable-quote.html text="Being agile is not just about how flexible you are during development, but how responsive you can be when there are problems." %}
+
 * Run your load tests again after any configuration change, even if it shouldn't make a difference. If we'd done this, we'd have spotted the firewall configuration issue before the public did.
 * Set up proper measuring tools before the event. It took us a while to find the best cause of action with the search server because we were relying on [New Relic](http://newrelic.com) to monitor the application servers only. Once we had Munin running we could more easily make more CPUs available to the search server.
 

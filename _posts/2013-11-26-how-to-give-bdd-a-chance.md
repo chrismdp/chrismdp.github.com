@@ -36,6 +36,8 @@ If we're not helping our team look good with a suggestion, then we are going to 
 
 ## I wish I was the project lead!
 
+{% include shareable-quote.html text="Mandate a switch to BDD and at best you will get mannequin BDD: a team that goes through the motions but loses its soul, and delivers none of the benefits." %}
+
 It's common for team members to wish they could become the lead on their team, because *then* they'd be able to change things and do it properly! Right?
 
 Let me burst the bubble: leads have no more intrinsic ability to drive adoption than the rest of us. In fact, it's worse for them, because everything they suggest is viewed with added scrutiny as a potential fad.

@@ -41,6 +41,8 @@ Automatic Kaijo evaluation: I plan to tell [Kaijo](https://kaijo.ai) about the e
 
 ## Lessons Learned from Live Coding
 
+{% include shareable-quote.html text="AI-first coding is a force multiplier. I achieved more in four hours than I could have managed in a full day solo." %}
+
 Building live is exhilarating and exhausting. The pressure to deliver in real time forces you to make decisions quickly and trust your tools. Here is what stood out:
 
 AI-first coding is a force multiplier. I achieved more in four hours than I could have managed in a full day solo. The AI handled boilerplate, suggested fixes, and kept me moving forward.

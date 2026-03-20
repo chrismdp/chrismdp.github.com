@@ -43,6 +43,8 @@ This is just one example, and we have no idea what will become possible when the
 
 ## Counting Kills
 
+{% include shareable-quote.html text="The psychological shift mattered more than the economics." %}
+
 Per-token, local inference is more expensive than cloud inference. Cloud providers batch requests across thousands of users, sharing the cost of loading model weights into memory. Your Raspberry Pi runs batch-size-one, bearing the full cost alone.[^piotr]
 
 But you have already paid for the hardware, there is no meter running, and the "expensive" tokens are free.

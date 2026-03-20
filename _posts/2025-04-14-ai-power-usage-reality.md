@@ -22,6 +22,8 @@ A rundown of the more pressing issues with AI power usage.
 
 ## We can power AI with clean energy
 
+{% include shareable-quote.html text="A ChatGPT query uses 10 times more energy than a Google search. This sounds alarming until one realises it equates to running your hairdryer for six seconds." %}
+
 Data centres power everything from email to streaming services to artificial intelligence. The total energy footprint of all data centres in the world remains remarkably modest at 1.5% of global electricity use. This figure includes all AI operations, from training to inference.
 
 To put this in perspective, AI operations consume approximately 54 TWh annually, representing just 0.2% of global energy output. By comparison, Bitcoin mining alone uses 175 TWh, nearly triple AI usage, accounting for 0.6% of global energy. Unlike AI which drives technological progress and can help solve climate challenges, cryptocurrency mining provides questionable utility while consuming significant resources.

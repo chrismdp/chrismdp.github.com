@@ -16,6 +16,8 @@ you slow coding type!"</p>
 <p>Then again, some people choose platforms, frameworks and even programming languages based on how easy it is to do TDD using them. If they can't do TDD ea
 sily, they pick something else. They're that committed to it.</p>
 <p>The hare starts out faster. The tortoise is much slower out of the gate. </p>
+{% include shareable-quote.html text="The finish line is when the customer has a working product, not when the code is written." %}
+
 <p>The tortoise knows that the finish line isn't when the code is written, it's when the customer has a working product. The hare might think they've finish
 ed, so they sit down and have a nap (or to stretch the analogy slightly, get bogged down fixing unnecessary bugs). That's when the tortoise overtakes.</p>
 <p>I used to be a hare, running frantically back and forth over the whole codebase, changing things here and there until I thought I was done with a feature

@@ -38,6 +38,8 @@ If you are still writing most of the code yourself, you are behind the cutting e
 
 ## Readiness Matters More Than Adoption
 
+{% include shareable-quote.html text="If you are here asking whether you are behind, you probably are not. The people who are behind think AI is a fad that will pass." %}
+
 Many leaders measure adoption by asking how many people are using AI, but readiness is the more important question: are we set up for AI to succeed? One report showed that 77% of employees take AI training when offered, but only 42% know how to identify where AI could improve their work. [^5] They are taking the training but cannot apply it, which points to a readiness problem rather than an adoption problem.
 
 Consider a quadrant with adoption on one axis and readiness on the other.
@@ -55,6 +57,8 @@ Whether you are behind depends on your team, your readiness, and your organisati
 ## What to Do Next
 
 Prioritise readiness over adoption. Well-documented processes, good testing, and accessible data are the foundations that determine whether AI amplifies your organisation or destabilises it. Measure readiness before measuring how many people have subscriptions.
+
+{% include shareable-quote.html text="That single shift from answer-getter to thinking partner is where the most significant benefits begin." %}
 
 Then ask yourself where you sit on the personal AI adoption curve. If you are still using it like Google, asking for facts and translations, try asking it to interview you about a problem you are wrestling with. Say: "Ask me one question at a time to help me understand why this project is stuck." That single shift from answer-getter to thinking partner is where the most significant benefits begin.
 

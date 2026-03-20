@@ -54,6 +54,8 @@ That satisfies our understand of Snakes and Ladders, and gives us more freedom i
 
 Right? *Wrong.*
 
+{% include shareable-quote.html text="The customer is always right about how the software should behave, even when it violates our commonly understood assumptions about the world." %}
+
 The important thing to remember is that the customer is always right about how the software should behave, even when it violates our commonly understood assumptions about the world. The software they want you to build might require a different implementation of Snakes and Ladders. They might have a 3 year-old daughter they're planning to play the game with, who always wants to be given a headstart. In this case, we've not delivered what they want, simply because it makes life easier for us. We've let our assumptions and our concerns for good design drive out the features, rather than letting the features drive our design.
 
 There's another possibility: when the customer wrote this scenario, they simply used "starts on position X" as a shortcut and don't really care if it's possible to do this in real life. In this case, we can work with them to write the scenario so as not to cheapen our design for the sake of easier feature writing.

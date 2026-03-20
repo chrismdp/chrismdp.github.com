@@ -17,6 +17,8 @@ In the past, we've spent a bunch of time arguing about which of these devices be
 
 A couple of weeks ago, Enrique spent some time teaching us an early version of our one-day agile workshop. Through the ensuing discussion, I finally got to an important insight about what a story actually is, or rather what it isn't.
 
+{% include shareable-quote.html text="The story is simply the team's understanding of the work to be done: nothing more." %}
+
 The story is not the terminology, or which precise language you use to describe it. It's not the text on the card at all in the fact, or even the card itself. It's not the line in Pivotal Tracker and it's not the task in Basecamp.
 
 All of the tools we use represent some facet of the story, and help kick-start discussion. They remind us of the story, but they are not the story itself. 

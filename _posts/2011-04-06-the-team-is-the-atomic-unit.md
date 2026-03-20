@@ -9,6 +9,8 @@ redirect_from:
 - "/2011/04/the-team-is-the-atomic-unit"
 - "/2011/04/the-team-is-the-atomic-unit/"
 ---
+{% include shareable-quote.html text="Your team or business is perfectly designed to achieve the result you are currently getting." %}
+
 When something goes wrong, it's not "his fault", it's "our fault".
 
 Unless we're in the unenviable position of hiring or firing team members, then we don't have to worry about individual team performance. When I asked how many people at the [recent software craftsmanship gathering](http://lanyrd.com/2011/how-can-craftsmanship-move-the-industry-forwards/) were in this position, less than 10% of the people there put their hands up. Chances are it isn't our job to worry about any individual's performance except our own.

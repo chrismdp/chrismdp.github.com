@@ -17,6 +17,8 @@ image: /assets/img/cto-craft-2026-ai-leadership-lab.jpg
 image_portrait: true
 ---
 
+{% include shareable-quote.html text="Whether you are sceptical of the hype or convinced it is essential to your strategy, one thing is clear: avoiding the conversation is not an option." %}
+
 AI is no longer a passing trend. It is shaping the future of technology and leadership. Whether you are sceptical of the hype or convinced it is essential to your strategy, one thing is clear: avoiding the conversation is not an option.
 
 <!--more-->

@@ -125,6 +125,8 @@ It seems simple, but the amount of code I've been able to simplify with this two
 
 ## Summary
 
+{% include shareable-quote.html text="The wrong abstraction is far worse than no abstraction at all." %}
+
 Removing useless abstractions by inlining methods and variables where appropriate helps us to see where the real seams of our code are. It helps us to pick apart unhelpful or mistakenly classified objects and leads us to a better understanding of OO.
 
 The wrong abstraction is (far) worse than no abstraction at all.

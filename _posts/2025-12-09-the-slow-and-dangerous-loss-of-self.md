@@ -18,6 +18,8 @@ Even when you use AI thoughtfully, even when you treat it as a collaborator rath
 
 ## The Wrong Debate
 
+{% include shareable-quote.html text="We instinctively question AI that comes from cultures different to our own. We do not question AI that reflects assumptions we already hold." %}
+
 We are having the wrong conversations about AI. Everyone debates whether it will take jobs, whether it hallucinates too much, whether it is truly intelligent. Almost nobody is asking the question that will define the next decade: whose values are baked into these models, and what happens when we outsource our thinking to them?
 
 A senior technical leader said something to me recently that I have not been able to shake: "We think about sovereignty when we look at Chinese models. We worry about using them. But we do not think about it when using US models. We need to understand what is going into our models because otherwise we are outsourcing our brains, our decision-making, our cultural responses to a model. Whatever goes into the training data defines the culture."

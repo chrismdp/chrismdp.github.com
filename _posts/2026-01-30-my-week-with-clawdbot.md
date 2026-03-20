@@ -45,6 +45,8 @@ By day two it was doing real work: writing talk proposals for upcoming conferenc
 
 ## The Problems
 
+{% include shareable-quote.html text="Any control the agent builds, it can bypass if compromised." %}
+
 The problems started accumulating after the first couple of days. Context compaction means OpenClaw forgets what you were discussing mid-conversation. It lost the train of thought mid-thread, forgot preferences I had told it specifically, and lost track when I had two conversations going at once. Unlike Claude Code, you cannot see what it is thinking or course-correct when something goes sideways. These are fixable issues for an alpha.
 
 <figure class="my-8">
@@ -55,6 +57,8 @@ The problems started accumulating after the first couple of days. Context compac
 But the security problem is harder. I gave OpenClaw my Obsidian vault and my skills. It runs on a VPS with full internet access. There is no allowlist mechanism for domains and no way to manage untrusted input. When I audited the OAuth scopes I had granted, I found that gmail.modify allows sending emails. A prompt-injected message could instruct the agent to forward my private data anywhere. It does not matter if it is using its own email account - as long as it has access to my private data it could send it elsewhere. This is the [lethal trifecta](/webinar-stop-ai-stealing-from-you/#the-lethal-trifecta) in practice: private data, untrusted input, and external communication all in one system.
 
 Once I had fixed that, I tried to fix the unfettered internet access issue. There is no way to restrict which domains web_fetch can access, so I built my own safe-fetch tool with domain allowlists and hash integrity checks. Then I red-teamed it and found critical bypasses within minutes: environment variable overrides, configuration changes. And even if that worked, the agent has full shell access. It could just run curl instead. Any control the agent builds, it can bypass if compromised. I deleted the tool.
+
+{% include shareable-quote.html text="Real mitigations have to be external to the agent." %}
 
 Real mitigations have to be external to the agent: operating system sandboxing, network allowlists at the firewall level, human-in-the-loop approval that cannot be circumvented. OpenClaw does not have these external controls, and it cannot have them in its current form. The value proposition is autonomy, and autonomy requires access.
 

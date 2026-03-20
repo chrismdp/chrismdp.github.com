@@ -34,5 +34,7 @@ small wins, quick feedback, and constant celebration. Decentralise decisions,
 give people ownership in their areas, and act like they're as good as you know
 they are.
 
+{% include shareable-quote.html text="If middle and upper management could be persuaded to give up control and provide leadership instead, your scale matters much less than you might think." %}
+
 If middle and upper management could be persuaded to give up control and
 provide leadership instead, your scale matters much less than you might think.

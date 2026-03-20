@@ -13,11 +13,13 @@ categories:
 
 The most impactful engineers I know do not just write code. They remove obstacles for others.
 
-Your impact is not measured by the code you write. It is measured by how much faster your entire team moves because of you. At Cherrypick, we call this "always be unblocking" and it has become one of our core values.
+Your real impact is how much faster your entire team moves because of you. At Cherrypick, we call this "always be unblocking" and it has become one of our core values.
 
 <!--more-->
 
 ## From Adder to Multiplier
+
+{% include shareable-quote.html text="Your real impact is how much faster your entire team moves because of you." %}
 
 Most engineers start their careers focused on individual contribution. They measure success by features shipped and code committed. This makes sense: technical excellence matters. However, the best engineers evolve beyond this. They transform from adders into multipliers.
 
@@ -74,4 +76,4 @@ The relationships you build through this work will outlast your job and even you
 
 The next time you are deciding what to work on, consider this: the highest impact work you could do today might not be writing new code. It might be removing the barriers that are slowing others down.
 
-Because in the end, your real impact is not measured by the code you wrote. Your impact is measured by how much faster your team moved because you were there. 
+Because in the end, your real impact is how much faster your team moved because you were there.

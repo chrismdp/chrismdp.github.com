@@ -36,9 +36,13 @@ When you paste information into a free AI tool, it can be absorbed into the mode
 
 **GitHub Copilot** works differently.[^11] Even the individual Pro tier ($19/month) does not train on your code, and this setting cannot be enabled. Business ($19/user/month) and Enterprise ($39/user/month) tiers have the same protection. The models were trained on publicly available code, not private repositories. Prompts in your IDE are discarded immediately after returning suggestions.
 
+{% include shareable-quote.html text="Shadow AI is the biggest compliance risk most organisations face right now." %}
+
 The consistent message across all four providers is this: **do not use free AI tools for work.** Pay for the business tier. It costs $14-30 per seat per month depending on provider and removes the training risk entirely. If your organisation has held back from AI because of data concerns, that barrier is lower than you think.
 
 ## The Lethal Trifecta
+
+{% include shareable-quote.html text="AI can be phished just like humans can be phished. The difference is that AI gets phished faster." %}
 
 Beyond terms and conditions, there is a deeper security problem that remains fundamentally unsolved. Simon Willison calls it the lethal trifecta.[^1] If your AI agent has access to three things simultaneously, you have created a data exfiltration system: untrusted content (emails, web pages, user input), private data (anything you would not want shared), and external communication (internet access).
 

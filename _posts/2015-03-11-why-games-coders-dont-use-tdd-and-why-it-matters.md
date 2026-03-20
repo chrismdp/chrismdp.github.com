@@ -54,6 +54,8 @@ Let's look at expert coders in the games industry and discover what they do to g
 
 ## What are games developers missing?
 
+{% include shareable-quote.html text="Sometimes TDD is dismissed because we cannot imagine how we might begin to test our code. This says more about the quality of our code than the merits of TDD as a practice." %}
+
 Games developers have a number of techniques that give them similar benefits to TDD. We see that by writing usage code first, developers get good feedback on their design as they go. Code verification over time is taken care of through judicious use of assertions and using automated tests with risky code.
 
 The area that games developers miss out by not using TDD is in the reduction of code size and complexity. However, in high performance computing, the size of the compiled system and the branching complexity are constant concerns. There's a real performance penalty through having too much code, breaking branch prediction and accessing memory too often by jumping the execution path all over the place. The fastest and most efficient code boils down to data transformation as functionally as is possible within the obvious constraints of the gaming environment.

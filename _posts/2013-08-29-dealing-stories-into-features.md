@@ -12,6 +12,8 @@ redirect_from:
 ---
 <img style='float: right; padding: 0 0 20px 20px; width: 250px' src='http://ak1.ostkcdn.com/img/mxc/100706_card_shuffle.jpg' alt='Dealing cards'/>
 
+{% include shareable-quote.html text="It is much harder to learn how to do it moving. When it moves, it is not about information any longer, but about cadence, rhythm, and technique." %}
+
 It's comparatively easy to learn a methodology such as BDD when it's static and unmoving - to learn *about* it rather than to *learn it*. At that point it's all information, which we're used to consuming and processing. It's much harder to learn how to do it moving: how to handle the process over time as the project grows and changes. When it moves, it's not about information any longer, but about cadence, rhythm, and technique.
 
 Here's an example: recently I was on site doing some [BDD Kickstart in-house training](http://kickstartacademy.io/in-house-courses) with a client, and they asked how do you best modify a feature file over time as new stories are added to it?

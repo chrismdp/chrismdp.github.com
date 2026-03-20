@@ -20,11 +20,15 @@ Lockbox ships as a Claude Code plugin, but the approach adapts to any agentic co
 
 ## The problem
 
+{% include shareable-quote.html text="The 86th prompt looks identical to the first 85, and it is the one that exfiltrates your credentials." %}
+
 You are using Claude Code. Your agent fetches a page to check an API reference. That page contains hidden instructions telling it to email your SSH keys somewhere. It asks permission to run a Bash command. You have approved 85 commands today. The prompt looks like all the others. You click allow.
 
 Simon Willison has been documenting real exploits of this exact pattern across Microsoft 365 Copilot, GitHub MCP, Slack AI, Google NotebookLM, and many others.[^willison] The mechanism is always the same: an agent reads untrusted content, processes hidden instructions, and takes an action the user did not intend. Willison calls the combination of private data, untrusted content, and external communication the "[lethal trifecta](/webinar-stop-ai-stealing-from-you/)". When all three coexist in a single session, as they routinely do in Claude Code, you have a data exfiltration system.
 
 ![The Lethal Trifecta: private data, untrusted content, and external tools combining to create a prompt injection attack surface](/assets/img/lethal-trifecta-diagram.jpg)
+
+{% include shareable-quote.html text="Asking humans to maintain vigilance across hundreds of identical prompts is a design failure." %}
 
 A joint paper on adaptive attacks achieved above 90% success rate against published prompt injection defences.[^patterns] Bypassing guardrails is so easy that Sander Schulhoff argues most people should not bother with them. I explored this problem in [AI Guardrails Do Not Work (Yet)](/ai-guardrails-do-not-work-yet/) and the pattern keeps recurring because the problem is architectural: humans cannot maintain vigilance across hundreds of identical prompts, and asking them to is a design failure.
 

@@ -80,6 +80,8 @@ I picked it up again in November after some encouragement from friends, and am s
 
 ## Summary
 
+{% include shareable-quote.html text="Write the game so others will enjoy playing it, not so you will enjoy making it." %}
+
 There's a common theme here:
 
 **Write the game so others will enjoy playing it, not so you'll enjoy making it. This is harder, but ultimately the satisfaction payoff is much, much bigger.**

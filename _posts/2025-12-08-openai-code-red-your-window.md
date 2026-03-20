@@ -18,6 +18,8 @@ I have been trying to understand OpenAI's strategy for a while now, and the code
 
 ## The Strategic Puzzle
 
+{% include shareable-quote.html text="You cannot win a commoditisation race by running faster." %}
+
 Every technology company eventually decides: are you a product business using technology to create great user experiences, or are you a platform business building infrastructure others depend on?
 
 Apple chose product. They control hardware, software, and services to deliver experiences competitors cannot match. Amazon chose platform. AWS serves competitors because infrastructure revenue matters more than protecting retail margins.

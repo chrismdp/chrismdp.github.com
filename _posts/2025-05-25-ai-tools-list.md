@@ -61,6 +61,8 @@ table a:hover {
 
 ## Search, Chat & Discovery
 
+{% include shareable-quote.html text="Claude feels like a tool that is great at writing. GPT feels like an assistant. Gemini feels like a robot." %}
+
 While each major AI model offers unique strengths, I've found distinct personalities in the three main assistants I use. **Claude feels like a tool that's great at writing** - exceptional for creative tasks with superior artifact creation and canvas capabilities. I pay for Claude Max and find it worth every penny. **GPT feels like an assistant** with lots of bells and whistles - great images, amazing real-time voice, fantastic for general chat, but just not as good at the fundamentals as Claude. I still use it regularly though. **Gemini feels like a robot** - it's great at researching and being thorough, but it's still a bit soulless. For research and analytical work, Google's suite remains solid, while OpenAI's tools excel at search and quick interactive conversations.
 
 | **Capability** | **[Google](https://ai.google){:target="_blank"}** | **[OpenAI](https://openai.com){:target="_blank"}** | **[Anthropic](https://anthropic.com){:target="_blank"}** | **Other Alternatives** |

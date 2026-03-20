@@ -15,7 +15,7 @@ AI is not the death knell for the software crafting movement. With the right arc
 
 The idea that AI could enable a new era of software quality and pride in craft is not as far-fetched as it sounds. I have seen the debate shift from fear of replacement to excitement about new possibilities. The industry is at a crossroads, and the choices we make now will define the next generation of software.
 
-But there is a real danger: most AI coding assistants today do not embody the best practices of our craft. They generate code at speed, but almost never write tests unless explicitly told to. This is not a minor oversight. It is a fundamental flaw that risks undermining the very quality and maintainability we seek. If we do not demand better, we risk letting AI amplify our worst habits rather than our best.
+But there is a real danger: most AI coding assistants today do not embody the best practices of our craft. They generate code at speed, but almost never write tests unless explicitly told to, a fundamental flaw that risks undermining the very quality and maintainability we seek. If we do not demand better, we risk letting AI amplify our worst habits rather than our best.
 
 This is the moment to ask whether AI will force us to rediscover what software crafting[^terms] truly means in the AI age.
 
@@ -41,6 +41,8 @@ The answer is not to shun AI, but to pair it with rigorous architectural pattern
 
 ## Testing and Patterns: The Foundation of AI-Driven Development
 
+{% include shareable-quote.html text="Coding agents rarely write tests unless you explicitly ask. We have somehow accepted this as normal." %}
+
 Testing remains the backbone of quality in software development. Despite less than one percent of developers using Test Driven Development (TDD) in practice, the rise of AI makes rigorous, test-first approaches more important than ever. AI can generate code rapidly, but without tests, there is no guarantee of correctness, reliability, or maintainability.[^8]
 
 The uncomfortable truth is that unless you explicitly ask for it, coding agents rarely provide tests by default. They tend to write code in the way most developers do: without tests, because that is what the vast majority of code in the wild looks like, and that is what they are trained on. This is a significant gap, and it is holding us back. We should be demanding more from our tools. Why are we accepting agents that cut corners, when we know that test-first and great practices are what make teams truly fast and resilient?
@@ -54,6 +56,8 @@ Patterns serve as the shared language between human and machine. They provide a 
 AI requires structure to excel. The modularity and explicit interfaces provided by these patterns create bounded contexts where it can operate with greater efficacy and precision. I have found this approach valuable [in my own code already](/coding-with-ai).
 
 ## Trust, Transparency, and the Human-AI Partnership
+
+{% include shareable-quote.html text="The future is not AI versus human, but AI and human in partnership." %}
 
 Trust is the linchpin of effective AI adoption. Developers need to trust that AI-generated code is not only functional, but also readable, secure, and aligned with architectural principles.[^10] This requires transparency and explainability. AI must be able to show its reasoning, justify its decisions, and provide clear, actionable feedback.
 

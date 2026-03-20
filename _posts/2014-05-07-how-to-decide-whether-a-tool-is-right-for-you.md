@@ -43,6 +43,8 @@ So why do we get so hung up on one particular tool? When something works for us,
 
 ## How to decide whether a software tool is right for you
 
+{% include shareable-quote.html text="There are as yet very few absolutes with software tools. We are still way too primitive in our discipline for many of those." %}
+
 It doesn't matter whether it's TDD, Vim, Git, Refactoring, OO, Functional programming, JavaScript, RubyMotion, etc. Follow the following advice repeatedly, substituting your own values:
 
 > If you haven't tried tool X, give it a go. Many have found it helpful in areas Y and Z. Some have also found it applicable in areas A and B, but your mileage may vary. Some don't get on with it, and a few hate it and say no-one should use it. Learn it properly before making any final decision about its usefulness to yourself and others. This will take &lt;an amount of days/months/years&gt; to do. Continue using it as long as it's helpful to you.

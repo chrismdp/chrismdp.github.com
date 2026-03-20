@@ -24,6 +24,8 @@ This is a quick primer on how to do the minimum to avoid bad culture, and how to
 
 ## How to get good culture started
 
+{% include shareable-quote.html text="Your purpose is not to have a great culture. Culture should flow from your mission and goals rather than becoming a distraction from them." %}
+
 You need to be intentional with your culture, but you also need a successful business and to achieve your goals. Paying too much attention too early is wasteful.
 
 Consider a football team that wastes all its time discussing the best training regime that suits everyone, rather than focusing on winning matches. They might have endless meetings about team dynamics and communication styles, while their competitors are out practicing and improving. The purpose is not about being a team - that is simply what you are. The purpose is about winning matches and achieving results.
@@ -63,6 +65,8 @@ The values conversation should begin with the co-founders and the early team. Wh
 **If you already have a larger team**, start with the handful of people who report to you directly. Once you are sure about the culture you can run bigger workshops with the rest of the team. This journey will take longer, and uncover more issues.
 
 ### Beware of hippos: come up with individual lists of values
+
+{% include shareable-quote.html text="While HiPPO-driven decisions can be difficult for you to spot, they are obvious to your team." %}
 
 Given your starting set of people, come up with a list of values that you see on display within your team, and that you might want to see, or might not want to see. Ask the team to work for a while on their own list, then bring them together for discussion, combining and removing duplicates.
 
@@ -145,6 +149,8 @@ If you discover an example of where you are not living out the agreed values, ca
 We have a "celebrations" channel in Slack where we post examples of people successfully living out our values. This is a great way to reinforce them and encourage the team to do the same.
 
 ### Steer away from failure
+
+{% include shareable-quote.html text="Your culture is what you tolerate." %}
 
 Call out examples of where values are not being followed. Exactly how you do this will be guided by your values themselves. My approach is to be as public as possible. Feedback in public is powerful as it is a signal to the rest of the team that you are serious, and they get to see your most important job, which is to make sure the culture is what you say it is. Your culture is what you tolerate.
 

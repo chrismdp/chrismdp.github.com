@@ -22,6 +22,8 @@ These two experiences point to fundamentally different answers. One embeds intel
 
 ## Location Is Everything
 
+{% include shareable-quote.html text="AI is house hunting, and it has not settled yet." %}
+
 The first approach embeds AI inside existing products as features: autocomplete in your editor, smart suggestions in email, chat assistants within Slack, AI-generated summaries inside documents. This is the Copilot model, and it is easy to deploy incrementally because users do not need to change how they work. The AI enhances existing workflows rather than replacing them, which is why every major software vendor is racing to add these features.
 
 But the UK government trial found that users loved Copilot yet it did not make them measurably more productive. Copilot excelled at mundane tasks like meeting summaries and drafting emails but struggled with complex work. Excel analysis was lower quality. PowerPoint presentations were faster to produce but required more correction afterwards.
@@ -67,6 +69,8 @@ Two years from now, most companies will likely have both: a veneer of expected A
 For senior leaders [making AI investment decisions](/webinar-how-not-to-screw-up-your-ai-rollout/): do not expect embedded AI features to transform productivity. The UK government data shows that user satisfaction does not equal business impact. If your AI strategy is "add Copilot to everything," recalibrate expectations. The real gains come from orchestrating agents with full context, but those require behaviour change and integration investment. Start evaluating where your teams could benefit from agents that coordinate across systems rather than features that enhance single applications.
 
 ## Orchestrating Wins
+
+{% include shareable-quote.html text="The productivity gains that the UK government could not find in Copilot, I find every day in Claude Code." %}
 
 I think orchestrating AI wins. The tools I reach for most are agents that see my whole context and coordinate across boundaries. The productivity gains that the UK government could not find in Copilot, I find every day in Claude Code. The difference is stark enough that I am willing to call it.
 

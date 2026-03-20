@@ -68,6 +68,8 @@ In this case, we could argue our code is being defensive: it avoided the crash t
 
 ## "If we're going to fail, we should fail quickly."
 
+{% include shareable-quote.html text="When we fail, we should fail hard. Really hard." %}
+
 The programmer using our code probably made a mistake here. If we fail immediately, it's very easy for them to see where the error is. If we accept pretty much anything, and return '0' (or much worse, '-999' or some other abomination) we're just going to get incorrect prices: we're going to hide and propagate the error down the call stack and make it much harder to debug.
 
 This is a tricky balance and it depends on the situation, but in general I think these principles are helpful to deciding what to do:

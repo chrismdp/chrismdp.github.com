@@ -27,6 +27,8 @@ What does all this mean for web developers? We must pay the same attention to ho
 
 Is the user thinking about the task they want to perform, or how to make the system we've written do the task they want to perform? It's a subtle yet crucial difference.
 
+{% include shareable-quote.html text="It is doing the last 5% that separates great developers from merely good developers." %}
+
 The last 5% we need to put into a feature will probably take us 50% of the total effort, but it's worth it. It's the last 5% that helps our web app rise above the sea of mediocre sites out there and be something truly great. It's doing the last 5% that separates great developers from merely good developers. Who wants to be merely good?
 
 User experience is everything. What can we do to put in that extra 5%, so our users can experience something wonderful?

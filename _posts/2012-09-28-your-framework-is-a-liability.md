@@ -18,6 +18,8 @@ Your framework is a liability.
 
 Every library you import before you start the project means more for someone else to digest and understand. Each complex 'clever' library equals another few minutes per team member trying to interpret why you imported it, how to use it, and where the configuration goes. Every framework you decide to use is a early decision about how your project will fundamentally work, which might turn out to be the wrong one. Each library is an opportunity for someone else to introduce a bug into your project.
 
+{% include shareable-quote.html text="The only asset a framework or library gives you is a faster route to your feature. Anything else will drag you down." %}
+
 *The only asset a framework or library gives you is a faster route to your feature.* Anything else will drag you down.
 
 If your framework is heavy and onerous, then your code will have a large net negative liability before you've even begun. You'll be constrained to follow a certain set of patterns, which you might end up fighting against later on. Work on the app first: your <anacronym title="minimum viable product">MVP</anacronym> might not even need the benefits your framework provides.

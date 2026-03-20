@@ -23,7 +23,9 @@ Having one individual responsible for a task *takes responsibility away from the
 
 *This issue is compounded if the team's work in progress limit is too high.* If there are nine team members, and nine things currently in progress, then in the best case each person will have nine things to do, and in the worst case one person will have all nine things to do and the other eight people will be sitting around waiting for them to finish, putting enormous pressure on those who are the bottleneck. The more items of work that are currently in progress, the more than a focus on assignment will bite you.
 
-Assignment *promotes a command and control attitude.* Sometimes, each member of a "team" is actually being managed individually and has their own stream of work. This can produce output in certain cases, but the individuals being managed are not a team: they're a collection of individuals who might happen to sit together.
+{% include shareable-quote.html text="Manage people individually and you end up with a collection of people who happen to sit together, not a team." %}
+
+Assignment *promotes a command and control attitude.* Sometimes, each member of a "team" is actually being managed individually and has their own stream of work. This can produce output in certain cases, but the individuals being managed are just a collection of people who happen to sit together.
 
 Individual assignment can *create silos of information.* If one person is responsible for a task, and everyone has their own tasks or types of work, then it's harder to work as a team: the knowledge is held only with a few people, rather than across everyone. [Pairing](/tags#pairing) dramatically helps break these silos down.
 

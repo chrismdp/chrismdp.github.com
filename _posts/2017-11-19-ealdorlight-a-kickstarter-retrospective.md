@@ -28,6 +28,8 @@ It's also taken a while to think through the campaign properly. Some things are 
 
 ## I rushed the design
 
+{% include shareable-quote.html text="I was asking people to trust me to create a great RPG without much proof I can do that yet." %}
+
 Sol Trader was barely six months out before I powered into a new title. I didn’t give the design enough thought before going public with it. If I'm honest, there were some big design holes in the pitch. I still believe that I can close those holes, but I was asking people to trust me to create a great RPG without much proof I can do that yet. The days of blind trust on Kickstarter are long behind us, and I should have closed those holes ahead of time and provided more evidence.
 
 ## I overreached on scope

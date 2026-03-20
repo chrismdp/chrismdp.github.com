@@ -46,6 +46,8 @@ Because this is not how I use Cucumber, I used to discourage this long form styl
 
 ## Developers: who are we to judge?
 
+{% include shareable-quote.html text="There is not one way to use a tool. There are only ways that give value, and ways that increase or decrease friction." %}
+
 Firstly, developers: I don't think we should be saying "you can't write tests like this."
 
 Just because people are not using the tool how we might expect them to, their use of it is not invalid. It's very tempting to say "you're doing it wrong", because these feature look so much like the "bad features" developers are taught to eradicate from their codebases. However, we have to understand that they're simply using the tool for a different set of advantages it provides: it allows them to quickly run through expected functionality on a multitude of different places.

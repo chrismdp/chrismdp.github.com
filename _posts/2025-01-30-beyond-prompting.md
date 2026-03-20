@@ -41,6 +41,8 @@ The parallels are striking:
 
 ## The false promise of prompt engineering
 
+{% include shareable-quote.html text="Creating a new job title around a broken paradigm will not fix the underlying problems." %}
+
 Companies are now hiring "Prompt Engineers". They are training their developers in better prompting. This is treating the symptom, not the cause.
 
 Creating a new job title around a broken paradigm will not fix the underlying problems. We do not need the 20th century version of punchcard operators. We need to fundamentally rethink how we interact with AI systems.
@@ -151,6 +153,8 @@ I did not end up building a full production system with DSPy, but I saw enough p
 The abstractions do not hide away knowledge. You still need to know how all the pieces work and how to assemble them. You still need to know how to prompt, and you can get stuck when things go wrong. This type of abstraction might be useful for some, but I see it as more of a gimmick than a real step forward in my own productivity.
 
 ### Finding the Right Level of Abstraction
+
+{% include shareable-quote.html text="The right abstractions will make prompting as obsolete as punch cards." %}
 
 None of these abstractions are perfect. The right abstractions for AI will emerge through continued experimentation and real-world usage. Different use cases will require different abstractions. What works for a chatbot may not work for a document processing pipeline. We will likely see a rich ecosystem of options emerge. That can only be a good thing.
 
