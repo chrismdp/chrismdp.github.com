@@ -31,7 +31,9 @@ layout: default
     {% assign original_date = page.path | split: "/" | last | split: "-" | slice: 0, 2 | join: '' %}
     {% assign current_date = page.date | date: "%Y%m" %}
     <div class="text-base text-brand-black/60 italic">
-      {% if original_date != current_date %}
+      {% if page.categories contains 'case-studies' %}
+        {{ page.date | date: "%B %Y" }}
+      {% elsif original_date != current_date %}
         Updated: {{ page.date | date: "%B %Y" }}
       {% else %}
         {{ page.date | date: "%B %Y" }}
@@ -278,6 +280,36 @@ layout: default
 
     <!-- Sidebar column - below article on mobile -->
     <div class="lg:w-80 flex-shrink-0">
+      {% if page.categories contains 'case-studies' %}
+      {% assign case_studies = "" | split: "" %}
+      {% for pg in site.pages %}
+        {% if pg.categories contains 'case-studies' %}
+          {% if pg.url != page.url %}
+            {% assign case_studies = case_studies | push: pg %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      {% if case_studies.size > 0 %}
+      <aside class="not-prose mb-10">
+        <h3 class="text-xl font-heading font-bold mb-6 text-brand-black border-b-2 border-brand-deep-turquoise pb-2">More Case Studies</h3>
+        <div class="space-y-6">
+          {% for post in case_studies %}
+          <article class="group">
+            <a href="{{ site.baseurl }}{{ post.url }}" class="related-sidebar-link block" data-title="{{ post.title | escape }}">
+              {% if post.image %}
+              <img src="{{ post.image }}" alt="{{ post.title | escape }}" class="block w-3/5 mx-auto rounded-lg mb-2">
+              {% endif %}
+              <h4 class="font-heading font-semibold leading-snug text-brand-black group-hover:text-brand-deep-turquoise transition-colors">
+                {{ post.title }}
+              </h4>
+              <div class="text-sm text-brand-black/50">{{ post.date | date: "%b %Y" }}</div>
+            </a>
+          </article>
+          {% endfor %}
+        </div>
+      </aside>
+      {% endif %}
+      {% endif %}
       {% include related-articles-sidebar.html %}
     </div>
   </div>

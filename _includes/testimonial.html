@@ -1,5 +1,19 @@
 {% assign style = include.style | default: "compact" %}
-{% if style == "full" %}
+{% if style == "bordered" %}
+<div class="border-2 border-brand-deep-turquoise/30 rounded-lg p-6 my-8 not-prose">
+  <div class="flex items-center mb-3">
+    <a href="{{ include.linkedin }}" target="_blank" style="text-decoration: none;" class="flex gap-4 items-center">
+      <img src="/assets/img/testimonials/{{ include.image }}" alt="{{ include.name }}" class="w-14 h-14 rounded-full object-cover">
+      <div>
+        <div class="text-base font-semibold text-brand-black">{{ include.name }}</div>
+        <div class="text-sm text-brand-black/70">{{ include.role }}</div>
+      </div>
+    </a>
+  </div>
+  {% include five-star.html %}
+  <p class="text-brand-black italic">"{{ include.quote }}"</p>
+</div>
+{% elsif style == "full" %}
 <div class="bg-white rounded-lg p-8">
   <div class="flex items-center mb-4">
     <a href="{{ include.linkedin }}" target="_blank" style="text-decoration: none;" class="flex gap-4 items-center">
