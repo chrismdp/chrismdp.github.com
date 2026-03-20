@@ -5,11 +5,26 @@ date: 2024-06-01 00:00:00 +0000
 permalink: /case-studies/gpt-meal-generator
 excerpt: "How we built a production LLM system that reduced plan changes by 30% and increased basket usage by 14%"
 image: /assets/img/meal-generator.jpg
-image_portrait: true
 categories:
 - ai
 - case-studies
 ---
+
+<div style="clear: both;"></div>
+
+<div class="border-2 border-brand-deep-turquoise/30 rounded-lg p-6 mb-8 not-prose">
+  <div class="flex items-center mb-3">
+    <a href="https://www.linkedin.com/in/scaleupdad/" target="_blank" style="text-decoration: none;" class="flex gap-4 items-center">
+      <img src="/assets/img/testimonials/tfc.jpeg" alt="Tom Foster Carter" class="w-14 h-14 rounded-full object-cover">
+      <div>
+        <div class="text-base font-semibold text-brand-black">Tom Foster Carter</div>
+        <div class="text-sm text-brand-black/70">CEO, Cherrypick</div>
+      </div>
+    </a>
+  </div>
+  {% include five-star.html %}
+  <p class="text-brand-black italic">"We built a production LLM meal generator that made our customers happier and increased revenue. Our AI system reduced customer plan changes by 30% (meaning happier customers) and increased basket usage by 14% (meaning more revenue per customer). We shipped major new features including health scores while maintaining high quality delivery."</p>
+</div>
 
 ## The Challenge
 
@@ -52,15 +67,6 @@ The system delivered measurable business impact that validated our approach. Cus
 These improvements came from a production-ready system serving real customers daily. The multi-layered evaluation framework proved its worth during launch, catching quality issues before they reached users. Despite initial concerns about LLM costs, the system operates comfortably within budget constraints thanks to careful interface design.
 
 Beyond the meal generator itself, we shipped major additional features including a health scores system while maintaining high delivery standards. The evaluation infrastructure we built became reusable for future AI features, creating lasting value beyond this single project.
-
-<div style="clear: both;"></div>
-
-<!-- TFC Testimonial Section -->
-<section class="py-20 bg-brand-deep-turquoise">
-  <div class="max-w-4xl mx-auto px-6">
-    {% include testimonial.html style="full" name="Tom Foster Carter" role="CEO, Cherrypick" image="tfc.jpeg" linkedin="https://www.linkedin.com/in/tomfostercarter/" quote="We built a production LLM meal generator that made our customers happier and increased revenue. Our AI system reduced customer plan changes by 30% (meaning happier customers) and increased basket usage by 14% (meaning more revenue per customer). We shipped major new features including health scores while maintaining high quality delivery." link_url="/case-studies/gpt-meal-generator" link_text="Read full case study" %}
-  </div>
-</section>
 
 ## Key Learnings
 
