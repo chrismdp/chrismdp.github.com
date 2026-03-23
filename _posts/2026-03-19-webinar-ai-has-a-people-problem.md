@@ -11,6 +11,7 @@ image: /assets/img/webinar-ai-people-problem.jpg
 kit_tag: webinar14
 webinar_date: "2026-03-26T17:00:00+00:00"
 series: "AI In Action Webinars"
+redirect_from: /webinar
 ---
 
 <div class="mb-12">
@@ -20,11 +21,11 @@ series: "AI In Action Webinars"
   </p>
 
   <p class="text-2xl text-brand-black mb-8">
-    Two patterns show up in every organisation adopting AI. Your best people work themselves into the ground. Your most technical people will not touch it.
+    AI adoption has its own jagged frontier. The same tools create completely different problems for different people on the same team.
   </p>
 
   <p class="text-xl text-brand-black mb-8">
-    AI tools create a random reinforcement pattern like a slot machine: sometimes the output is brilliant, sometimes mediocre, and the variable reward schedule keeps power users pulling the lever until they burn out. Meanwhile, experienced engineers who formed a view of AI early on have frozen that impression in place, whether they dismissed it after one bad experience or adopted it at surface level and stopped there. Either way, they are not updating their thinking, and they are not asking for help. Both problems land on your desk, and neither has a technical fix.
+    AI tools create a random reinforcement pattern like a slot machine: sometimes the output is brilliant, sometimes mediocre, and the variable reward schedule keeps power users pulling the lever until they burn out. Experienced engineers who formed a view of AI early on have frozen that impression in place. And a large group in the middle adopted it at surface level, quietly plateaued, and are not asking for the help they need. All of these problems land on your desk, and none has a technical fix.
   </p>
 
   <p class="text-xl text-brand-black mb-8">
