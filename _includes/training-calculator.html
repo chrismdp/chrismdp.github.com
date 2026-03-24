@@ -1,0 +1,292 @@
+<!-- AI Training ROI Calculator -->
+<div id="training-calculator" class="max-w-4xl mx-auto bg-white rounded-2xl p-6 md:p-8 border border-brand-light-blue/20 shadow-md">
+  <h2 class="text-2xl font-heading font-bold mb-1 text-brand-black text-center">What&rsquo;s AI training worth to your organisation?</h2>
+  <p class="text-brand-black/50 text-center mb-8 text-sm">Based on peer-reviewed research from Harvard, MIT, and Stanford</p>
+
+  <div class="grid md:grid-cols-2 gap-8">
+    <!-- Inputs -->
+    <div class="space-y-5">
+      <div>
+        <label for="calc-employees" class="block text-brand-black/80 text-sm font-medium mb-1.5">Total employees</label>
+        <input type="number" id="calc-employees" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-brand-black placeholder-gray-400 focus:outline-none focus:border-brand-turquoise transition-colors" placeholder="e.g. 200" min="1">
+      </div>
+      <div>
+        <label for="calc-technical" class="block text-brand-black/80 text-sm font-medium mb-1.5">Of those, how many are technical?</label>
+        <input type="number" id="calc-technical" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-brand-black placeholder-gray-400 focus:outline-none focus:border-brand-turquoise transition-colors" placeholder="e.g. 50" min="0">
+      </div>
+      <div>
+        <label for="calc-tech-salary" class="block text-brand-black/80 text-sm font-medium mb-1.5">Average technical salary</label>
+        <div class="relative">
+          <button type="button" id="calc-currency-tech" class="absolute left-0 top-0 bottom-0 w-10 flex items-center justify-center text-brand-deep-turquoise hover:text-brand-turquoise text-sm font-medium cursor-pointer transition-colors z-10 rounded-l-xl" title="Click to change currency"></button>
+          <input type="number" id="calc-tech-salary" class="w-full bg-gray-50 border border-gray-200 rounded-xl pl-10 pr-4 py-3 text-brand-black placeholder-gray-400 focus:outline-none focus:border-brand-turquoise transition-colors" min="0" step="10000">
+        </div>
+      </div>
+      <div>
+        <label for="calc-nontech-salary" class="block text-brand-black/80 text-sm font-medium mb-1.5">Average non-technical salary</label>
+        <div class="relative">
+          <button type="button" id="calc-currency-nontech" class="absolute left-0 top-0 bottom-0 w-10 flex items-center justify-center text-brand-deep-turquoise hover:text-brand-turquoise text-sm font-medium cursor-pointer transition-colors z-10 rounded-l-xl" title="Click to change currency"></button>
+          <input type="number" id="calc-nontech-salary" class="w-full bg-gray-50 border border-gray-200 rounded-xl pl-10 pr-4 py-3 text-brand-black placeholder-gray-400 focus:outline-none focus:border-brand-turquoise transition-colors" min="0" step="10000">
+        </div>
+      </div>
+      <p class="text-brand-black/30 text-xs mt-1">Click the currency symbol to switch between £ / $ / €</p>
+    </div>
+
+    <!-- Outputs -->
+    <div class="flex flex-col">
+      <!-- Placeholder -->
+      <div id="calc-placeholder" class="flex-1 flex items-center justify-center min-h-[280px]">
+        <div class="text-center">
+          <svg class="w-10 h-10 mx-auto mb-3 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+          <p class="text-gray-400 text-sm">Enter your number of employees to see<br/>what AI training is worth</p>
+        </div>
+      </div>
+
+      <!-- Results -->
+      <div id="calc-results" class="space-y-4 hidden">
+        <!-- Productivity gains -->
+        <div class="bg-brand-light-blue/10 rounded-xl p-5 border border-brand-light-blue/20">
+          <p class="text-xs font-semibold text-brand-black/40 uppercase tracking-wider mb-4">Annual productivity gains</p>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between items-baseline">
+                <span class="text-brand-black/60 text-sm">Conservative (10%)</span>
+                <span id="calc-conservative" class="text-xl font-heading font-bold text-brand-deep-turquoise tabular-nums"></span>
+              </div>
+              <p class="text-brand-black/40 text-xs mt-0.5" id="calc-conservative-detail"></p>
+            </div>
+            <div class="border-t border-brand-light-blue/20 pt-4">
+              <div class="flex justify-between items-baseline">
+                <span class="text-brand-black/60 text-sm">Moderate (20%)</span>
+                <span id="calc-moderate" class="text-2xl font-heading font-bold text-brand-deep-turquoise tabular-nums"></span>
+              </div>
+              <p class="text-brand-black/40 text-xs mt-0.5" id="calc-moderate-detail"></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cost of not training -->
+        <div class="bg-red-50 rounded-xl p-5 border border-red-200/50">
+          <p class="text-xs font-semibold text-red-600/70 uppercase tracking-wider mb-2">The cost of not training</p>
+          <p class="text-brand-black/70 text-sm leading-relaxed">Your people are already using AI. Harvard/BCG research found that without training, AI users were <strong class="text-red-600">19 percentage points less likely</strong> to get correct answers on tasks outside AI&rsquo;s capability frontier. They over-trust it on the wrong tasks and under-use it on the right ones.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sources -->
+  <div id="calc-sources" class="mt-6 pt-4 border-t border-gray-200 hidden">
+    <p class="text-brand-black/30 text-xs leading-relaxed">
+      Sources:
+      <a href="https://www.bain.com/insights/ai-in-financial-services-survey-shows-productivity-gains-across-the-board/" target="_blank" class="underline hover:text-brand-deep-turquoise">Bain 2024</a> (20% avg productivity gain, 109 FS firms) &middot;
+      <a href="https://www.hbs.edu/faculty/Pages/item.aspx?num=64700" target="_blank" class="underline hover:text-brand-deep-turquoise">Harvard/BCG 2023</a> (758 consultants, 12.2% more tasks, 25.1% faster, 40%+ quality &mdash; but 19pp less accurate without guidance) &middot;
+      <a href="https://www.science.org/doi/10.1126/science.adh2586" target="_blank" class="underline hover:text-brand-deep-turquoise">MIT 2023</a> (40% time reduction, 18% quality increase) &middot;
+      <a href="https://www.nber.org/system/files/working_papers/w31161/w31161.pdf" target="_blank" class="underline hover:text-brand-deep-turquoise">Stanford/MIT 2023</a> (14% productivity increase, 34% for novice workers)
+    </p>
+  </div>
+</div>
+
+<script>
+(function() {
+  var currencies = [
+    { code: 'GBP', symbol: '\u00A3', locale: 'en-GB', techSalary: 65000, nontechSalary: 45000 },
+    { code: 'USD', symbol: '$', locale: 'en-US', techSalary: 120000, nontechSalary: 80000 },
+    { code: 'EUR', symbol: '\u20AC', locale: 'de-DE', techSalary: 70000, nontechSalary: 55000 }
+  ];
+
+  function detectCurrencyIndex() {
+    try {
+      var lang = (navigator.language || navigator.userLanguage || 'en-GB').toLowerCase();
+      var country = lang.split('-')[1] || '';
+      if (country === 'us' || country === 'ca' || country === 'au') return 1;
+      if (country === 'gb' || country === 'uk') return 0;
+      if (lang.startsWith('en') && !country) return 0;
+      var euroCountries = ['de','fr','it','es','nl','be','at','pt','fi','ie','gr','lu','sk','si','ee','lv','lt','mt','cy','hr'];
+      if (euroCountries.indexOf(country) !== -1) return 2;
+      if (['de','fr','it','es','nl','pt'].indexOf(lang.split('-')[0]) !== -1 && !country) return 2;
+    } catch(e) {}
+    return 0;
+  }
+
+  var currencyIndex = detectCurrencyIndex();
+
+  var inputs = {
+    employees: document.getElementById('calc-employees'),
+    technical: document.getElementById('calc-technical'),
+    techSalary: document.getElementById('calc-tech-salary'),
+    nontechSalary: document.getElementById('calc-nontech-salary')
+  };
+  var currencyBtnTech = document.getElementById('calc-currency-tech');
+  var currencyBtnNontech = document.getElementById('calc-currency-nontech');
+  var results = document.getElementById('calc-results');
+  var placeholder = document.getElementById('calc-placeholder');
+  var sources = document.getElementById('calc-sources');
+  var conservative = document.getElementById('calc-conservative');
+  var moderate = document.getElementById('calc-moderate');
+  var conservativeDetail = document.getElementById('calc-conservative-detail');
+  var moderateDetail = document.getElementById('calc-moderate-detail');
+
+  var hasInteracted = false;
+  var hasCompleted = false;
+  var animationFrames = {};
+  var salaryManuallyEdited = { tech: false, nontech: false };
+
+  function cur() { return currencies[currencyIndex]; }
+
+  function formatCurrency(n) {
+    var c = cur();
+    return c.symbol + Math.round(n).toLocaleString(c.locale);
+  }
+
+  function applyCurrency() {
+    var c = cur();
+    currencyBtnTech.textContent = c.symbol;
+    currencyBtnNontech.textContent = c.symbol;
+    if (!salaryManuallyEdited.tech) {
+      inputs.techSalary.value = c.techSalary;
+    }
+    if (!salaryManuallyEdited.nontech) {
+      inputs.nontechSalary.value = c.nontechSalary;
+    }
+  }
+
+  function cycleCurrency() {
+    currencyIndex = (currencyIndex + 1) % currencies.length;
+    salaryManuallyEdited = { tech: false, nontech: false };
+    applyCurrency();
+    if (canCalculate()) calculate();
+  }
+
+  currencyBtnTech.addEventListener('click', cycleCurrency);
+  currencyBtnNontech.addEventListener('click', cycleCurrency);
+
+  inputs.techSalary.addEventListener('input', function() { salaryManuallyEdited.tech = true; });
+  inputs.nontechSalary.addEventListener('input', function() { salaryManuallyEdited.nontech = true; });
+
+  function animateValue(el, target) {
+    var id = el.id;
+    if (animationFrames[id]) cancelAnimationFrame(animationFrames[id]);
+
+    var current = parseInt((el.dataset.currentValue || '0'), 10);
+    var startTime = null;
+    var duration = 400;
+
+    function step(timestamp) {
+      if (!startTime) startTime = timestamp;
+      var progress = Math.min((timestamp - startTime) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      var value = Math.round(current + (target - current) * eased);
+      el.textContent = formatCurrency(value);
+      if (progress < 1) {
+        animationFrames[id] = requestAnimationFrame(step);
+      } else {
+        el.dataset.currentValue = target;
+      }
+    }
+
+    if (current === target) {
+      el.textContent = formatCurrency(target);
+      return;
+    }
+    el.dataset.currentValue = current;
+    animationFrames[id] = requestAnimationFrame(step);
+  }
+
+  function calculate() {
+    var employees = parseInt(inputs.employees.value, 10);
+    if (!employees || employees < 1) { hideResults(); return; }
+
+    // Default technical to 25% of employees if not specified
+    var technical = inputs.technical.value !== '' ? parseInt(inputs.technical.value, 10) : Math.round(employees * 0.25);
+    if (isNaN(technical) || technical < 0) technical = Math.round(employees * 0.25);
+
+    var techSalary = parseFloat(inputs.techSalary.value) || cur().techSalary;
+    var nontechSalary = parseFloat(inputs.nontechSalary.value) || cur().nontechSalary;
+
+    var nonTechnical = Math.max(0, employees - technical);
+    var totalPayroll = (technical * techSalary) + (nonTechnical * nontechSalary);
+
+    var conservativeVal = totalPayroll * 0.10;
+    var moderateVal = totalPayroll * 0.20;
+
+    animateValue(conservative, conservativeVal);
+    animateValue(moderate, moderateVal);
+
+    conservativeDetail.textContent =
+      formatCurrency(totalPayroll) + ' total payroll \u00D7 10% improvement';
+    moderateDetail.textContent =
+      formatCurrency(totalPayroll) + ' total payroll \u00D7 20% improvement (Bain FS average)';
+
+    showResults();
+
+    if (!hasCompleted) {
+      hasCompleted = true;
+      if (typeof posthog !== 'undefined') {
+        posthog.capture('training_calculator_completed', {
+          employees: employees,
+          technical_staff: technical,
+          non_technical_staff: nonTechnical,
+          avg_technical_salary: techSalary,
+          avg_non_technical_salary: nontechSalary,
+          total_payroll: totalPayroll,
+          conservative_value: conservativeVal,
+          moderate_value: moderateVal,
+          currency: cur().code
+        });
+      }
+    }
+  }
+
+  function showResults() {
+    results.classList.remove('hidden');
+    placeholder.classList.add('hidden');
+    sources.classList.remove('hidden');
+  }
+
+  function hideResults() {
+    results.classList.add('hidden');
+    placeholder.classList.remove('hidden');
+    sources.classList.add('hidden');
+  }
+
+  function canCalculate() {
+    return inputs.employees.value && parseInt(inputs.employees.value, 10) > 0;
+  }
+
+  Object.keys(inputs).forEach(function(key) {
+    inputs[key].addEventListener('input', function() {
+      if (!hasInteracted) {
+        hasInteracted = true;
+        if (typeof posthog !== 'undefined') {
+          posthog.capture('training_calculator_interacted');
+        }
+      }
+      if (canCalculate()) {
+        calculate();
+      } else {
+        hideResults();
+      }
+    });
+  });
+
+  // Viewport tracking
+  if ('IntersectionObserver' in window) {
+    var calcEl = document.getElementById('training-calculator');
+    var viewTracked = false;
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting && !viewTracked) {
+          viewTracked = true;
+          if (typeof posthog !== 'undefined') {
+            posthog.capture('training_calculator_viewed');
+          }
+          observer.disconnect();
+        }
+      });
+    }, { threshold: 0.3 });
+    observer.observe(calcEl);
+  }
+
+  // Initialise currency display and pre-fill salaries
+  applyCurrency();
+})();
+</script>

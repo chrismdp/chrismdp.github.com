@@ -85,6 +85,25 @@ excerpt: "From a two-hour executive briefing to full-day intensives for develope
   </div>
 </section>
 
+<!-- Why Training Matters -->
+<section class="py-20 bg-brand-white">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-heading font-bold mb-8 text-brand-black text-center">Using AI Without Training Is Dangerous</h2>
+    <p class="text-lg text-brand-black/80 mb-6">
+      Adoption is running ahead of policy in most organisations. The only question is whether they use it well or badly. Without training, people paste confidential data into tools with no guardrails, accept wrong answers they cannot spot, and quietly lose the judgment that made them good at their jobs in the first place.
+    </p>
+    <p class="text-lg text-brand-black/80 mb-6">
+      <a href="https://www.hbs.edu/faculty/Pages/item.aspx?num=64700" target="_blank" class="underline text-brand-deep-turquoise hover:text-brand-turquoise">Harvard and BCG</a> studied 758 consultants and found that without proper guidance, AI users were <strong>19 percentage points less likely</strong> to produce correct answers on tasks outside AI&rsquo;s capability frontier. They over-trust the tool on the wrong tasks and under-use it on the right ones. Training is about accuracy, not adoption.
+    </p>
+    <p class="text-lg text-brand-black/80">
+      <a href="https://www.bain.com/insights/ai-in-financial-services-survey-shows-productivity-gains-across-the-board/" target="_blank" class="underline text-brand-deep-turquoise hover:text-brand-turquoise">Bain</a> found an average <strong>20% productivity improvement</strong> across 109 financial services firms. <a href="https://www.science.org/doi/10.1126/science.adh2586" target="_blank" class="underline text-brand-deep-turquoise hover:text-brand-turquoise">MIT</a> measured <strong>40% faster task completion</strong> with 18% higher quality. <a href="https://www.nber.org/system/files/working_papers/w31161/w31161.pdf" target="_blank" class="underline text-brand-deep-turquoise hover:text-brand-turquoise">Stanford</a> tracked 5,000 customer support agents and saw 14% more issues resolved per hour, <strong>rising to 34% for junior staff</strong>.
+    </p>
+  </div>
+  <div class="max-w-5xl mx-auto px-6 mt-12">
+    {% include training-calculator.html %}
+  </div>
+</section>
+
 <!-- CTA Section -->
 <section class="py-12 bg-brand-deep-turquoise">
   <div class="max-w-2xl mx-auto text-center px-6">
