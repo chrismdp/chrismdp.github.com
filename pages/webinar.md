@@ -4,8 +4,8 @@ title: "Webinars To Get You Ahead With AI"
 excerpt: "Join our webinar series for leaders leveraging AI in their organisations."
 image: /assets/img/webinar-mosaic.jpg
 image_portrait: false
-kit_tag: webinar14
-webinar_date: "2026-03-26T17:00:00+00:00"
+kit_tag: webinar15
+webinar_date: "2026-04-02T14:00:00+01:00"
 permalink: /webinar/
 ---
 
