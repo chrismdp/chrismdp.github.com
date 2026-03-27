@@ -85,7 +85,7 @@ Every organisation adopting AI will find these seven personas on their teams. Ea
 
 ## One Thing to Try This Week
 
-Pick one person on your team and figure out which persona they most resemble right now. Do not tell them. Instead, have a conversation about how their work with AI is going. Listen for the signals: are they working too many hours, dismissing the tools, struggling to learn, confused about their role, feeling left behind, rubber-stamping output, or shipping code they cannot explain? The persona gives you a framework for understanding the conversation, not a label for the person.
+Pick one person on your team and ask them how their work with AI is going. Listen for the signals: working too many hours, dismissing the tools, struggling to learn, confused about their role, feeling left behind, rubber-stamping output, or shipping code they cannot explain. The personas give you a vocabulary for the conversation.
 
 [^1]: [Variable reward schedules](https://en.wikipedia.org/wiki/Reinforcement#Schedules){:target="_blank"} — the same reinforcement pattern that makes slot machines compulsive
 [^2]: Steve Yegge, [The AI Vampire](https://steve-yegge.medium.com/the-ai-vampire-eda6e4f07163){:target="_blank"}
