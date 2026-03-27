@@ -8,6 +8,7 @@ categories:
 - leadership
 - teams
 image: /assets/img/webinar-ai-people-problem.jpg
+infographic: /assets/img/seven-people-problems-infographic.jpg
 series: "AI In Action Webinars"
 ---
 
