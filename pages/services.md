@@ -83,9 +83,13 @@ redirect_from:
         <h2 class="text-2xl font-heading font-bold mb-4 text-brand-black">C-Level AI Advisory</h2>
         <p class="text-lg font-semibold mb-4 text-brand-black">Direct access when you need experienced perspective</p>
         <p class="text-brand-black/80 leading-relaxed mb-4">
-          Monthly strategic sessions with someone who has been in your position. Cut through the vendor noise, evaluate competing tools with someone who has seen what actually works, and build an adoption roadmap grounded in real experience.
+          Whether you are getting started or already adopted and need to unlock real value, I provide monthly strategic sessions with someone who has been in your position. Cut through the vendor noise, get your board comfortable, and turn AI experiments into measurable business outcomes.
         </p>
         <div class="space-y-2 mb-6 text-brand-black/80">
+          <div class="flex items-start">
+            <i data-lucide="check" class="w-4 h-4 mr-2 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
+            <span>Board communication, governance, and getting sceptical leadership on board</span>
+          </div>
           <div class="flex items-start">
             <i data-lucide="check" class="w-4 h-4 mr-2 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
             <span>AI strategy and adoption roadmaps</span>
@@ -93,10 +97,6 @@ redirect_from:
           <div class="flex items-start">
             <i data-lucide="check" class="w-4 h-4 mr-2 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
             <span>Tool evaluation and vendor selection</span>
-          </div>
-          <div class="flex items-start">
-            <i data-lucide="check" class="w-4 h-4 mr-2 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
-            <span>Board communication and governance</span>
           </div>
           <div class="flex items-start">
             <i data-lucide="check" class="w-4 h-4 mr-2 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
@@ -137,7 +137,7 @@ redirect_from:
 <section id="contact" class="py-20 bg-gradient-to-br from-brand-deep-turquoise to-brand-turquoise text-white">
   <div class="max-w-4xl mx-auto text-center px-6">
     <h2 class="text-4xl md:text-5xl font-heading font-bold mb-6 text-white">Let's Talk</h2>
-    <p class="text-xl mb-8 text-white/90">Answer a few questions and I will get back to you with a tailored proposal.</p>
+    <p class="text-xl mb-8 text-white/90">Fill in the form and we will jump on a call to discuss.</p>
     <div class="max-w-2xl mx-auto bg-brand-deep-turquoise/50 rounded-lg p-8 border border-brand-turquoise">
       <div class="rm-area-embed-services"></div>
     </div>
