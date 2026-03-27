@@ -137,7 +137,7 @@ redirect_from:
 <section id="contact" class="py-20 bg-gradient-to-br from-brand-deep-turquoise to-brand-turquoise text-white">
   <div class="max-w-4xl mx-auto text-center px-6">
     <h2 class="text-4xl md:text-5xl font-heading font-bold mb-6 text-white">Let's Talk</h2>
-    <p class="text-xl mb-8 text-white/90">Fill in the form and we will jump on a call to discuss.</p>
+    <p class="text-xl mb-8 text-white/90">Fill in the form to book a call.</p>
     <div class="max-w-2xl mx-auto bg-brand-deep-turquoise/50 rounded-lg p-8 border border-brand-turquoise">
       <div class="rm-area-embed-services"></div>
     </div>
