@@ -20,14 +20,14 @@ redirect_from:
 
   <div class="w-full px-6 relative z-10">
     <div class="text-center mb-16">
-      <h1 class="text-4xl md:text-7xl font-heading font-bold mb-6 leading-tight mx-6">Helping Bosses Boss AI</h1>
-      <p class="text-xl md:text-3xl mb-8 text-white mx-6 sm:mx-32">I work with C-levels to make their teams<br/>incredibly productive with AI.</p>
+      <h1 class="text-4xl md:text-7xl font-heading font-bold mb-6 leading-tight mx-6">Make Your Team Incredibly Productive With AI</h1>
+      <p class="text-xl md:text-3xl mb-8 text-white mx-6 sm:mx-32">Training, advisory, and hands-on support<br/>for C-levels and founders.</p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-12 items-start">
       <div class="md:ml-8 space-y-6">
         {% include testimonial.html style="full" name="Alexandra Eavis" role="Chief Product & Technology Officer, Genomics" image="alexandra-eavis.jpeg" linkedin="https://www.linkedin.com/in/alexandraeavis/" quote="The team and I have really benefited from and enjoyed working with Chris. He has worked cross functionally to raise our organisational AI maturity, increasing both our internal productivity and effectiveness, and clarifying the path to production for our agentic tooling. Would recommend as a great way to augment internal capabilities." %}
-        {% include testimonial.html style="full" name="Tom Foster Carter" role="CEO, Cherrypick" image="tfc.jpeg" linkedin="https://www.linkedin.com/in/tomfostercarter/" quote="We built a production LLM meal generator that made our customers happier and increased revenue. Our AI system reduced customer plan changes by 30% (meaning happier customers) and increased basket usage by 14% (meaning more revenue per customer)." link_url="/case-studies/gpt-meal-generator" link_text="Read full case study" %}
+        {% include testimonial.html style="full" name="Tom Foster Carter" role="CEO, Cherrypick" image="tfc.jpeg" linkedin="https://www.linkedin.com/in/tomfostercarter/" quote="Chris helped us build a production LLM meal generator that made our customers happier and increased revenue. Our AI system reduced customer plan changes by 30% (meaning happier customers) and increased basket usage by 14% (meaning more revenue per customer)." link_url="/case-studies/gpt-meal-generator" link_text="Read full case study" %}
       </div>
       <div class="relative z-20">
         <!-- Grid layout maintained for image positioning -->
@@ -100,7 +100,7 @@ redirect_from:
           </div>
           <div class="flex items-start">
             <i data-lucide="check" class="w-4 h-4 mr-2 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
-            <span>Technical due diligence and architecture review</span>
+            <span>Technical due diligence and architecture review, including regulated sectors</span>
           </div>
         </div>
         <div class="mt-auto">
@@ -183,9 +183,9 @@ redirect_from:
         <div class="bg-brand-white rounded-lg p-6">
           <h3 class="text-xl font-heading font-bold mb-3 text-brand-black flex items-center">
             <i data-lucide="zap" class="w-6 h-6 mr-3 text-brand-deep-turquoise"></i>
-            High-Impact Enabler
+            Delivers Fast
           </h3>
-          <p class="text-brand-black/80">{{ 'now' | date: "%Y" | minus: 2001 }} years in tech leadership. I go into organisations and deliver value fast, for leaders who need quick high impact results.</p>
+          <p class="text-brand-black/80">{{ 'now' | date: "%Y" | minus: 2001 }} years in tech leadership. I go into organisations and deliver value fast, for leaders who need results now.</p>
         </div>
       </div>
     </div>

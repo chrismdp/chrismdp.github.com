@@ -23,7 +23,7 @@ categories:
     </a>
   </div>
   {% include five-star.html %}
-  <p class="text-brand-black italic">"We built a production LLM meal generator that made our customers happier and increased revenue. Our AI system reduced customer plan changes by 30% (meaning happier customers) and increased basket usage by 14% (meaning more revenue per customer). We shipped major new features including health scores while maintaining high quality delivery."</p>
+  <p class="text-brand-black italic">"Chris helped us build a production LLM meal generator that made our customers happier and increased revenue. Our AI system reduced customer plan changes by 30% (meaning happier customers) and increased basket usage by 14% (meaning more revenue per customer). We shipped major new features including health scores while maintaining high quality delivery."</p>
 </div>
 
 ## The Challenge
