@@ -143,6 +143,7 @@ This is a GitHub Pages-compatible Jekyll blog using a Tailwind CSS theme. The si
 
 ### Key Layout Components
 - `_layouts/default.html` - Base template with Tailwind config and custom brand colors
+  - **Overlay header exclusion list**: Pages with their own `{% include header.html style="overlay" %}` (hero pages with transparent nav) must be added to the exclusion list in `default.html` (line ~45) to prevent a duplicate default white header rendering. Currently excludes: `/`, `/training/`, `/services`, `/ai-leader-accelerator/`, `/ai-leader-accelerator/thanks/`. If you create a new page with an overlay hero, add it to this list.
 - `_layouts/post.html` - Post template with newsletter integration, social sharing, and webinar links
   - **Webinar posts**: Layout automatically shows "Previous Webinars" section after infographic
   - **Webinar write-ups** (no `kit_tag`): Also show "Join Future Webinars" CTA and newsletter signup

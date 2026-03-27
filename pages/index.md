@@ -349,56 +349,6 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
 </section>
 
 
-<!-- Services Section -->
-<section id="services" class="py-20 bg-white">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">My Services</h2>
-    <p class="text-xl text-center mb-12 text-brand-black/80 max-w-3xl mx-auto">Your board wants AI strategy. Your team needs practical guidance. Your company needs results without implementation disasters.</p>
-    <p class="text-xl text-center mb-12 text-brand-black/80 max-w-3xl mx-auto">Here's how I help CEOs and leaders succeed where others fail.</p>
-
-    <!-- Main Services - Two Columns -->
-    <div class="grid md:grid-cols-2 gap-8 mb-12">
-      <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
-        <i data-lucide="users" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
-        <h3 class="text-2xl font-heading font-bold mb-4">AI TRAINING</h3>
-        <p class="text-lg font-semibold mb-4 text-brand-black">Modular training that fits your team's needs</p>
-        <p class="text-brand-black/80 leading-relaxed mb-4">
-          From half-day foundations to multi-day programmes, with tailored pathways for developers, product managers, researchers, and executives. Transform random ChatGPT questions into systematic AI workflows with security and quality standards built in.
-        </p>
-        <a href="/training/" class="inline-block bg-brand-deep-turquoise text-white px-6 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">View Details →</a>
-      </div>
-
-      <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors">
-        <i data-lucide="compass" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
-        <h3 class="text-2xl font-heading font-bold mb-4">C-LEVEL AI ADVISORY</h3>
-        <p class="text-lg font-semibold mb-4 text-brand-black">Direct access when you need experienced perspective</p>
-        <p class="text-brand-black/80 leading-relaxed mb-4">
-          Monthly strategic sessions with someone who's been in your position. Cut through the vendor noise — evaluate competing tools with someone who's seen what actually works, and build an adoption roadmap grounded in real experience. Plus ongoing guidance on team challenges, board communication, and critical decisions.
-        </p>
-        <a href="#contact" class="inline-block bg-brand-deep-turquoise text-white px-6 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">Get in Touch →</a>
-      </div>
-    </div>
-
-    <!-- Contact Form -->
-    <div id="contact" class="max-w-2xl mx-auto">
-      <div class="bg-brand-deep-turquoise rounded-lg p-8">
-        <div class="rm-area-embed-services"></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Case Study & Client Testimonials Section -->
-<section class="py-20 bg-brand-deep-turquoise">
-  <div class="max-w-6xl mx-auto px-6">
-    <div class="grid md:grid-cols-2 gap-8">
-      {% include testimonial.html style="full" name="Tom Foster Carter" role="CEO, Cherrypick" image="tfc.jpeg" linkedin="https://www.linkedin.com/in/tomfostercarter/" quote="We built a production LLM meal generator that made our customers happier and increased revenue. Our AI system reduced customer plan changes by 30% (meaning happier customers) and increased basket usage by 14% (meaning more revenue per customer). We shipped major new features including health scores while maintaining high quality delivery." link_url="/case-studies/gpt-meal-generator" link_text="Read full case study" %}
-      {% include testimonial.html style="full" name="Alexandra Eavis" role="Chief Product & Technology Officer, Genomics" image="alexandra-eavis.jpeg" linkedin="https://www.linkedin.com/in/alexandraeavis/" quote="The team and I have really benefited from and enjoyed working with Chris. He has worked cross functionally to raise our organisational AI maturity, increasing both our internal productivity and effectiveness, and clarifying the path to production for our agentic tooling. Would recommend as a great way to augment internal capabilities." %}
-    </div>
-  </div>
-</section>
-
-
 <!-- Latest Articles Section -->
 <section class="py-20 bg-white">
   <div class="max-w-4xl mx-auto px-6">
