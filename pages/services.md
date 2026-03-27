@@ -21,7 +21,7 @@ redirect_from:
   <div class="w-full px-6 relative z-10">
     <div class="text-center mb-16">
       <h1 class="text-4xl md:text-7xl font-heading font-bold mb-6 leading-tight mx-6">I Make Teams Incredibly Productive With AI</h1>
-      <p class="text-xl md:text-3xl mb-8 text-white mx-6 sm:mx-32">I help C-levels and founders leverage AI<br/>through training and strategic advisory support.</p>
+      <p class="text-xl md:text-3xl mb-8 text-white mx-6 sm:mx-32">I help C-levels and founders leverage AI for their teams<br/>through training and strategic advisory support.</p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-12 items-start">
