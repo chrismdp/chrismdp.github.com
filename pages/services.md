@@ -20,8 +20,8 @@ redirect_from:
 
   <div class="w-full px-6 relative z-10">
     <div class="text-center mb-16">
-      <h1 class="text-4xl md:text-7xl font-heading font-bold mb-6 leading-tight mx-6">Make Your Team Incredibly Productive With AI</h1>
-      <p class="text-xl md:text-3xl mb-8 text-white mx-6 sm:mx-32">Training, advisory, and hands-on support<br/>for C-levels and founders.</p>
+      <h1 class="text-4xl md:text-7xl font-heading font-bold mb-6 leading-tight mx-6">I Make Teams Incredibly Productive With AI</h1>
+      <p class="text-xl md:text-3xl mb-8 text-white mx-6 sm:mx-32">I help C-levels and founders leverage AI<br/>through training and strategic advisory support.</p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-12 items-start">
@@ -131,66 +131,7 @@ redirect_from:
   </div>
 </section>
 
-<!-- More About Chris -->
-<section class="py-20 bg-white">
-  <div class="max-w-4xl mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">More About Chris</h2>
-
-    <div class="grid md:grid-cols-2 gap-12 items-top">
-      <div>
-        <img src="/assets/img/chris-twitter-headshot.png" alt="Chris Parsons" class="w-32 h-32 rounded-full object-cover mb-6">
-        <p class="text-lg text-brand-black/80 mb-6">
-          I've been a CTO and founder. I've scaled companies whilst building production AI systems and transformed delivery using AI tools.
-        </p>
-
-        <div class="grid grid-cols-2 gap-4 mb-6">
-          <div class="text-center p-4 bg-brand-white rounded-lg border border-brand-light-blue/20">
-            <div class="text-2xl font-bold text-brand-deep-turquoise">5</div>
-            <div class="text-sm text-brand-black/70">Startups Founded</div>
-          </div>
-          <div class="text-center p-4 bg-brand-white rounded-lg border border-brand-light-blue/20">
-            <div class="text-2xl font-bold text-brand-deep-turquoise">2</div>
-            <div class="text-sm text-brand-black/70">Startups VC-backed</div>
-          </div>
-          <div class="text-center p-4 bg-brand-white rounded-lg border border-brand-light-blue/20">
-            <div class="text-2xl font-bold text-brand-deep-turquoise">$1M+</div>
-            <div class="text-sm text-brand-black/70">ARR Bootstrapped</div>
-          </div>
-          <div class="text-center p-4 bg-brand-white rounded-lg border border-brand-light-blue/20">
-            <div class="text-2xl font-bold text-brand-deep-turquoise">4</div>
-            <div class="text-sm text-brand-black/70">AI Systems Shipped to Production</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="space-y-6">
-        <div class="bg-brand-white rounded-lg p-6">
-          <h3 class="text-xl font-heading font-bold mb-3 text-brand-black flex items-center">
-            <i data-lucide="rocket" class="w-6 h-6 mr-3 text-brand-deep-turquoise"></i>
-            Experienced Tech Founder
-          </h3>
-          <p class="text-brand-black/80">Scaled teams from 5-50. Built agencies, B2B, and B2C startups. VC-backed and bootstrapped experience.</p>
-        </div>
-
-        <div class="bg-brand-white rounded-lg p-6">
-          <h3 class="text-xl font-heading font-bold mb-3 text-brand-black flex items-center">
-            <i data-lucide="bot" class="w-6 h-6 mr-3 text-brand-deep-turquoise"></i>
-            AI Systems Expert
-          </h3>
-          <p class="text-brand-black/80">Production AI systems with full evaluation frameworks, not demos. Real systems serving 500K+ users.</p>
-        </div>
-
-        <div class="bg-brand-white rounded-lg p-6">
-          <h3 class="text-xl font-heading font-bold mb-3 text-brand-black flex items-center">
-            <i data-lucide="zap" class="w-6 h-6 mr-3 text-brand-deep-turquoise"></i>
-            Delivers Fast
-          </h3>
-          <p class="text-brand-black/80">{{ 'now' | date: "%Y" | minus: 2001 }} years in tech leadership. I go into organisations and deliver value fast, for leaders who need results now.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+{% include about-chris.html %}
 
 <!-- Let's Talk -->
 <section id="contact" class="py-20 bg-gradient-to-br from-brand-deep-turquoise to-brand-turquoise text-white">

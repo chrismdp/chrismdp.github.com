@@ -194,66 +194,7 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
   </div>
 </section>
 
-<!-- More About Chris Section -->
-<section class="py-20 bg-white">
-  <div class="max-w-4xl mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-brand-black">More About Chris</h2>
-
-    <div class="grid md:grid-cols-2 gap-12 items-top">
-      <div>
-        <img src="/assets/img/chris-twitter-headshot.png" alt="Chris Parsons" class="w-32 h-32 rounded-full object-cover mb-6">
-        <p class="text-lg text-brand-black/80 mb-6">
-          I've been a CTO and founder. I've scaled companies whilst building production AI systems and transformed delivery using AI tools.
-        </p>
-
-        <div class="grid grid-cols-2 gap-4 mb-6">
-          <div class="text-center p-4 bg-brand-white rounded-lg border border-brand-light-blue/20">
-            <div class="text-2xl font-bold text-brand-deep-turquoise">5</div>
-            <div class="text-sm text-brand-black/70">Startups Founded</div>
-          </div>
-          <div class="text-center p-4 bg-brand-white rounded-lg border border-brand-light-blue/20">
-            <div class="text-2xl font-bold text-brand-deep-turquoise">2</div>
-            <div class="text-sm text-brand-black/70">Startups VC-backed</div>
-          </div>
-          <div class="text-center p-4 bg-brand-white rounded-lg border border-brand-light-blue/20">
-            <div class="text-2xl font-bold text-brand-deep-turquoise">$1M+</div>
-            <div class="text-sm text-brand-black/70">ARR Bootstrapped</div>
-          </div>
-          <div class="text-center p-4 bg-brand-white rounded-lg border border-brand-light-blue/20">
-            <div class="text-2xl font-bold text-brand-deep-turquoise">4</div>
-            <div class="text-sm text-brand-black/70">AI Systems Shipped to Production</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="space-y-6">
-        <div class="bg-brand-white rounded-lg p-6">
-          <h3 class="text-xl font-heading font-bold mb-3 text-brand-black flex items-center">
-            <i data-lucide="rocket" class="w-6 h-6 mr-3 text-brand-deep-turquoise"></i>
-            Experienced Tech Founder
-          </h3>
-          <p class="text-brand-black/80">Scaled teams from 5-50. Built agencies, B2B, and B2C startups. VC-backed and bootstrapped experience.</p>
-        </div>
-
-        <div class="bg-brand-white rounded-lg p-6">
-          <h3 class="text-xl font-heading font-bold mb-3 text-brand-black flex items-center">
-            <i data-lucide="bot" class="w-6 h-6 mr-3 text-brand-deep-turquoise"></i>
-            AI Systems Expert
-          </h3>
-          <p class="text-brand-black/80">Production AI systems with full evaluation frameworks, not demos. Real systems serving 500K+ users.</p>
-        </div>
-
-        <div class="bg-brand-white rounded-lg p-6">
-          <h3 class="text-xl font-heading font-bold mb-3 text-brand-black flex items-center">
-            <i data-lucide="zap" class="w-6 h-6 mr-3 text-brand-deep-turquoise"></i>
-            High-Impact Enabler
-          </h3>
-          <p class="text-brand-black/80">{{ 'now' | date: "%Y" | minus: 2001 }} years in tech leadership. I go into organisations and deliver value fast, for leaders who need quick high impact results.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+{% include about-chris.html %}
 
 <!-- Testimonials Section -->
 <section class="py-20 bg-brand-deep-turquoise">
