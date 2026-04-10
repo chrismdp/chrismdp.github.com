@@ -14,7 +14,7 @@ categories:
 
 What if the AI already knew what you were working on? What if it remembered what you decided last week, what your board presentation covers, what your team structure looks like, because it had read your notes?
 
-That is what happens when you put Claude Code in a folder. You do not need to know how to code, and you do not need for what goes in the folder. You just need something on your mind, and about ten minutes.
+That is what happens when you put Claude Code in a folder. You do not need to know how to code, and you do not need a plan for what goes in the folder. You just need something on your mind, and about ten minutes.
 
 <!--more-->
 
@@ -26,18 +26,20 @@ The technical bit: open your terminal. On a Mac, search for "Terminal" in Spotli
 curl -fsSL https://claude.ai/install.sh | bash
 ```
 
-If this already feels like too much and you have access to a Claude Max plan, use Cowork[^5] instead, which is in research preview at the moment. It will let you work in a local folder of files without touching the terminal. Claude Code has some powerful features that Cowork does not have yet, and they could well be useful as your knowledge base grows, but Cowork will continue to improve so will get you a bunch of the
+This downloads and runs the Claude Code installer. It will not touch anything else on your machine.
+
+If this already feels like too much and you have access to a Claude Max plan, use Cowork[^5] instead, which is in research preview at the moment. It will let you work in a local folder of files without touching the terminal. Claude Code has some powerful features that Cowork does not have yet, and they could well be useful as your knowledge base grows, but Cowork will continue to improve and is a perfectly good starting point.
 
 ## Step 2: Create a folder and give Claude some instructions
 
-Paste these commands into the terminal. This will create a folder in your home directory called "notes". You can find it in Finder on a Mac by typing `open ~/notes` into your terminal, or in Explorer on Windows.
+Paste these commands into the terminal. This will create a folder in your home directory called "notes". You can also just create a folder called "notes" in your home directory using Finder on a Mac or Explorer on Windows, if you prefer.
 
 ```
 mkdir ~/notes
 cd ~/notes
 ```
 
-Now create a file called `CLAUDE.md` in the folder. This is a set of standing instructions that Claude reads at the start of every session. Open it in any text editor and paste this in:
+Now create a file called `CLAUDE.md` in the folder. This is a set of standing instructions that Claude reads at the start of every session. Open it in TextEdit on a Mac or Notepad on Windows and paste this in:
 
 ```markdown
 # My Notes
@@ -72,7 +74,7 @@ Claude will help you think it through, ask questions, and suggest angles you had
 
 Next time you run Claude Code from the same folder, it reads everything in there. Just open up your terminal program again, type `cd ~/notes` and `claude` again. That note from yesterday is now context for today's conversation. You do not need to re-explain who you are, what you are working on, or what you decided last time. It picks up where you left off.
 
-Each note you add is context for every future conversation.
+Each note you add is context for every future conversation. As the folder grows, Claude reads what it needs rather than loading everything at once, so you do not need to worry about it slowing down.
 
 ## Step 5: Browse your notes with Obsidian
 
@@ -82,9 +84,9 @@ If you want a visual companion for your notes folder, download Obsidian[^4] and 
 
 After a few weeks you can ask things like "what have I been working on this month?" or "what did I decide about the hiring plan?" and get a real answer drawn from your own notes. Every note makes the whole thing richer.
 
-Andrej Karpathy described this as the "LLM wiki" pattern[^3]: instead of the AI re-deriving knowledge from scratch every time you ask a question, it works from a persistent, compounding set of notes. The knowledge is compiled once and then kept current.
+Andrej Karpathy, former head of AI at Tesla, described this as the "LLM wiki" pattern[^3]: instead of the AI re-deriving knowledge from scratch every time you ask a question, it works from a persistent, compounding set of notes. The knowledge is compiled once and then kept current.
 
-If you have used tools like OpenClaw, this is the same idea under the hood, except here everything is plain text in a folder you own. You can open any file, read it, move it, back it up.
+Everything is plain text in a folder you own. You can open any file, read it, move it, back it up. Nothing is locked inside a proprietary format.[^7]
 
 ## What comes next
 
@@ -98,3 +100,4 @@ For now, just start with the empty folder and whatever is on your mind today.
 [^4]: [Obsidian](https://obsidian.md/){:target="_blank"}: free to download and use. The paid Sync feature is optional; for this setup you do not need it.
 [^5]: [Claude Cowork](https://claude.com/product/cowork){:target="_blank"}: an autonomous agent in the Claude desktop app that can work directly with files on your computer. Currently in research preview and available on Max plans.
 [^6]: [Wispr Flow](https://wisprflow.ai/r?CHRIS104){:target="_blank"}: dictation that works everywhere on your Mac. I use it constantly when working with Claude Code (referral link, but I would recommend it regardless).
+[^7]: Anthropic does not use your conversations or files to train models on paid plans. See their [data privacy policy](https://www.anthropic.com/privacy){:target="_blank"} for details. If you work in a regulated industry, check with your compliance team before putting sensitive data in any AI tool.
