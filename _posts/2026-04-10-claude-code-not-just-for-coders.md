@@ -82,7 +82,7 @@ If you want a visual companion for your notes folder, download Obsidian[^4] and 
 
 ## Why this works
 
-After a few weeks you can ask things like "what have I been working on this month?" or "what did I decide about the hiring plan?" and get a real answer drawn from your own notes. Every note makes the whole thing richer.
+After a few weeks you can ask things like "what have I been working on this month?" or "what did I decide about the hiring plan?" and get a real answer drawn from your own notes. The questions that get interesting are the ones that connect things across weeks: "I had a conversation about team structure last month and a similar one yesterday, what changed in my thinking?" or "given everything I have noted about the Q1 figures, what should I actually say to the board?" Every note makes the whole thing richer.
 
 Andrej Karpathy, former head of AI at Tesla, described this as the "LLM wiki" pattern[^3]: instead of the AI re-deriving knowledge from scratch every time you ask a question, it works from a persistent, compounding set of notes. The knowledge is compiled once and then kept current.
 
@@ -95,7 +95,7 @@ The folder starts with notes, but it does not stop there. In the future I will c
 For now, just start with the empty folder and whatever is on your mind today.
 
 [^1]: The native installer handles everything. No need to install Node.js or any other dependencies. Works on macOS, Linux, and Windows. See the [full setup guide](https://code.claude.com/docs/en/overview){:target="_blank"} for all installation options including the desktop app, VS Code extension, and web version.
-[^2]: [Claude Code documentation](https://docs.anthropic.com/en/docs/claude-code){:target="_blank"}: a Claude Pro, Max, or Team subscription includes Claude Code access, or you can use API billing on the Anthropic Console.
+[^2]: [Claude Code documentation](https://docs.anthropic.com/en/docs/claude-code){:target="_blank"}: a Claude Pro ($20/month), Max ($100/month), or Team subscription includes Claude Code access, or you can use API billing on the Anthropic Console. Pro is enough to get started.
 [^3]: Andrej Karpathy's [llm-wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f){:target="_blank"}: instead of retrieving from raw documents at query time, the LLM incrementally builds and maintains a persistent wiki. The knowledge is compiled once and kept current, not re-derived on every query.
 [^4]: [Obsidian](https://obsidian.md/){:target="_blank"}: free to download and use. The paid Sync feature is optional; for this setup you do not need it.
 [^5]: [Claude Cowork](https://claude.com/product/cowork){:target="_blank"}: an autonomous agent in the Claude desktop app that can work directly with files on your computer. Currently in research preview and available on Max plans.
