@@ -64,7 +64,7 @@ Write your prompts, evaluations, and orchestration logic so that swapping one fr
 
 ### Keep The Receipts
 
-In a post-takeover world, export controls on training data are plausible, as are domestic provenance rules, particularly if a major incident is traced to scraped personal data or copyrighted material. If you are building on a proprietary model, check the provider's training-data disclosures against what regulators are already asking for; if you are fine-tuning a model yourself, keep a plain-text manifest alongside the model listing provider, model version, training-data disclosure level, your fine-tuning corpus source and dates, and prompt templates held in version control. The version you want by the end of the week is a one-page manifest exported from your CI pipeline, covering every model, version, and dataset touching production. It is cheaper to keep current than to reconstruct later.
+In a post-takeover world, export controls on training data are plausible, as are domestic provenance rules, particularly if a major incident is traced to scraped personal data or copyrighted material. If you are building on a proprietary model, check the provider's training-data disclosures against what regulators are already asking for; if you are fine-tuning a model yourself, keep a plain-text manifest alongside the model listing provider, model version, training-data disclosure level, your fine-tuning corpus source and dates, and prompt templates held in version control. A one-page manifest versioned alongside your code, covering every model, version, and dataset touching production, is cheaper to keep current than to reconstruct later.
 
 ### Draft The Seizure Plan
 
@@ -76,7 +76,7 @@ If your product's competitive advantage depends on having Mythos-class capabilit
 
 ### Audit The Cyber Prompts
 
-If your engineers are using AI to find vulnerabilities in your own stack, you are building exactly the capability that made Mythos too dangerous to release, which is fine for now but first on any future regulatory list. The Glasswing announcement is explicit that Anthropic will gate cyber capability first and most carefully, so assume the state will eventually do the same for everyone else. The version you want by the end of the week is a log of every AI-assisted vulnerability-hunting prompt that touches your stack, with sensitive context kept out of prompts that go to third parties.
+If your engineers are using AI to find vulnerabilities in your own stack, you are building exactly the capability that made Mythos too dangerous to release, which is fine for now but first on any future regulatory list. The Glasswing announcement is explicit that Anthropic will gate cyber capability first and most carefully, so assume the state will eventually do the same for everyone else. Keep a log of every AI-assisted vulnerability-hunting prompt that touches your stack, with sensitive context kept out of prompts that go to third parties.
 
 ## The Bet On The Table
 
