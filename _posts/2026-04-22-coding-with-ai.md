@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Coding with AI"
+title: "How I Use AI to Code"
 date: 2026-04-22 12:00:00 +00:00
 permalink: /coding-with-ai/
 replaces: /coding-with-ai-march-2025/
@@ -97,4 +97,7 @@ The move is to spec the problem, not the solution. The problem is stable and nee
 In practice this means the brief names the constraints, the users, the existing shape of the system, and the criteria that would make a change good, and leaves the implementation decisions open. "We need an audit log for every write, searchable by user, retained for seven years, and it has to work without slowing the hot path" gives an agent everything it needs to propose a design, argue against your obvious first idea, and come back with two or three options it can defend. "Add a Postgres table called audit_log with these eight columns and this index" does not. The first version lets the machine do the thinking. The second makes it your stenographer.
 
 Do not use a Ralph loop or an agent pipeline blindly. Work out the right thing to build together, or give the agent enough context to make good decisions on its own. Those are the two modes that work. The trap is doing neither: writing too much detail too early, handing it to the machine, and assuming the detail will carry the thinking. It will not.
+
+[^a16z]: Kimberly Tan, [Where Enterprises are Actually Adopting AI](https://www.a16z.news/p/ai-adoption-by-the-numbers){:target="_blank"}, a16z, April 2026. Found 29% of Fortune 500 and 19% of Global 2000 are paying enterprise AI customers, with coding the dominant use case by nearly an order of magnitude.
+[^karpathy]: Andrej Karpathy, [Software in the Era of AI](https://www.youtube.com/watch?v=LCEmiRjPEtQ){:target="_blank"}, YC AI Startup School. Karpathy's argument is that many small generation-then-verification cycles beat one large run: errors caught early are cheap, course corrections are cheap when the divergence is one step deep, and the agent stays on a tight leash.
 
