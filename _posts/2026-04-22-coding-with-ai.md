@@ -98,7 +98,7 @@ The move is to spec the problem, not the solution. The problem is stable and nee
 
 In practice this means the brief names the constraints, the users, the existing shape of the system, and the criteria that would make a change good, and leaves the implementation decisions open. "We need an audit log for every write, searchable by user, retained for seven years, and it has to work without slowing the hot path" gives an agent everything it needs to propose a design, argue against your obvious first idea, and come back with two or three options it can defend. "Add a Postgres table called audit_log with these eight columns and this index" does not. The first version lets the machine do the thinking. The second makes it your stenographer.
 
-Do not use a Ralph loop or an agent pipeline blindly. Work out the right thing to build together, or give the agent enough context to make good decisions on its own. Those are the two modes that work. The trap is doing neither: writing too much detail too early, handing it to the machine, and assuming the detail will carry the thinking. It will not.
+Do not use a [Ralph loop](/ralph-loops-aie-europe/) or an agent pipeline blindly. Work out the right thing to build together, or give the agent enough context to make good decisions on its own. Those are the two modes that work. The trap is doing neither: writing too much detail too early, handing it to the machine, and assuming the detail will carry the thinking. It will not.
 
 ## The Context Sweet Spot
 
