@@ -29,7 +29,7 @@ I spoke at [AI for the Rest of Us London 2025](https://aifortherestofus.live/lon
 
 I delivered the Prompt Cycle framework in this talk, which is five steps that turn [AI coding](/coding-with-ai/) from one-shot attempts into a system that gets better every time you use it. The core principle is simple but powerful: your first AI attempt will always fail, and that is fine. Bad outputs are not failure, they are data you can learn from.
 
-<img src="/assets/img/prompt-cycle-diagram.png" alt="The Prompt Cycle Framework" style="float: right; margin-left: 20px; margin-bottom: 20px; max-width: 400px; width: 100%;" />
+{% include inline-image.html src="/assets/img/prompt-cycle-diagram.png" alt="The Prompt Cycle Framework" %}
 
 **Project Context.** Start with repository-specific rules that prevent repeated mistakes. These rules live in files like CLAUDE.md and give AI the guardrails it needs to understand your codebase conventions. This is your foundation.
 

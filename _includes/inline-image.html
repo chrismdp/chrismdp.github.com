@@ -1,0 +1,21 @@
+{%- comment -%}
+Inline image that floats right or left with standardised width and margins.
+
+Params:
+  src       Image URL (required)
+  alt       Alt text (required)
+  align     "right" (default) or "left"
+  width     CSS width, e.g. "45%" (default) or "250px"
+  link      Optional href to wrap the image in
+  caption   Optional caption HTML rendered below the image
+  rounded   "false" to disable rounded corners (default rounded)
+
+Rendered as a single line to avoid Kramdown reparsing inner HTML as markdown.
+{%- endcomment -%}
+{%- assign align = include.align | default: "right" -%}
+{%- assign width = include.width | default: "45%" -%}
+{%- if align == "left" -%}{%- assign margin = "0 1.5rem 1rem 0" -%}{%- else -%}{%- assign margin = "0 0 1rem 1.5rem" -%}{%- endif -%}
+{%- if include.rounded == "false" -%}{%- assign img_class = "" -%}{%- else -%}{%- assign img_class = ' class="rounded-lg"' -%}{%- endif -%}
+{%- capture img -%}<img src="{{ include.src }}" alt="{{ include.alt }}"{{ img_class }} />{%- endcapture -%}
+{%- if include.link -%}{%- capture inner -%}<a href="{{ include.link }}">{{ img }}</a>{%- endcapture -%}{%- else -%}{%- assign inner = img -%}{%- endif -%}
+{%- if include.caption -%}<div style="width: {{ width }}; float: {{ align }}; margin: {{ margin }};">{{ inner }}<span class="text-sm italic block mt-2">{{ include.caption }}</span></div>{%- else -%}<div style="width: {{ width }}; float: {{ align }}; margin: {{ margin }};">{{ inner }}</div>{%- endif -%}

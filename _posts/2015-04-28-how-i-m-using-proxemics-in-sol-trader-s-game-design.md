@@ -13,9 +13,7 @@ redirect_from:
 - "/2015/04/how-i-m-using-proxemics-in-sol-trader-s-game-design"
 - "/2015/04/how-i-m-using-proxemics-in-sol-trader-s-game-design/"
 ---
-<div style='float: right; padding: 0 0 10px 20px; width: 250px'><img src='/files/new-relationships.gif' alt='new relationships'/>
-<div style='color: #999; padding-top: 5px'>Your relationships, shown closest first. Your relationship with your father has cooled lately...</div>
-</div>
+{% include inline-image.html src="/files/new-relationships.gif" alt="new relationships" caption="Your relationships, shown closest first. Your relationship with your father has cooled lately..." %}
 
 I've been trying to get to the heart of [Sol Trader](http://soltrader.net)'s gameplay in recent months. I've been working on [rewriting the history generation system in pure C](/2015/04/how-i-doubled-the-speed-of-my-game-by-giving-up-on-c-plus-plus), and concentrating on the interactions between the player and the characters in the game.
 

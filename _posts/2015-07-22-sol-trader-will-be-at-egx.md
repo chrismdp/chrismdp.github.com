@@ -13,7 +13,7 @@ redirect_from:
 - "/2015/07/sol-trader-will-be-at-egx"
 - "/2015/07/sol-trader-will-be-at-egx/"
 ---
-<img style='float: right; padding: 0 0 20px 20px; width: 250px' src='/files/egx.png' alt='EGX logo'/>
+{% include inline-image.html src="/files/egx.png" alt="EGX logo" %}
 
 Now that it's almost reached the playable demo stage, I've been wanting an opportunity to show [Sol Trader](http://soltrader.net) off in person. So we will be taking the game to EGX 2015 with our own booth!
 
@@ -23,7 +23,7 @@ My friend [Richard Patching](http://twitter.com/patchfx) and I will be in the Re
 
 ## Latest development plan
 
-<a href="http://imgur.com/5BGQzgs"><img src="http://i.imgur.com/5BGQzgs.png" title="source: imgur.com" style='float: right; padding: 0 0 20px 20px; width: 250px'/></a>
+{% include inline-image.html src="http://i.imgur.com/5BGQzgs.png" alt="Sol Trader development plan" link="http://imgur.com/5BGQzgs" %}
 
 After finishing the new GUI and the city mode interface last week, the next
 major thing to do is to revamp the space mode again. We now have a continuous

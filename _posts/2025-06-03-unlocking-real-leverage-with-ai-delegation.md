@@ -37,7 +37,7 @@ I have written more about [how to use Claude Code skills](/skills-are-claude-cod
 
 ## When and How to Delegate
 
-<img src="/assets/img/delegation-levels-table.jpg" alt="Choosing Your Delegation Level for AI - table showing five levels from Fire and Forget to Human-Led with AI Boost" class="float-right w-1/2 ml-4 mb-4 rounded-lg" />
+{% include inline-image.html src="/assets/img/delegation-levels-table.jpg" alt="Choosing Your Delegation Level for AI - table showing five levels from Fire and Forget to Human-Led with AI Boost" %}
 
 Not every task should go to AI. [AI reaches consistency quickly through prompting, but competence slowly through model improvements](/ai-is-consistently-mediocre/). Humans reach competence quickly but consistency slowly.
 
@@ -65,7 +65,7 @@ One factor people forget: [AI can be phished](/webinar-stop-ai-stealing-from-you
 
 {% include shareable-quote.html text="If you would not trust a human with a task unsupervised, you should not trust an AI with it either." %}
 
-<img src="/assets/img/clawdbot-effect-comic.jpg" alt="The Clawdbot Effect - comic showing CEO firing EA for 80% accuracy on Monday, then installing Clawdbot at 3am Tuesday" class="float-right w-1/2 ml-4 mb-4 rounded-lg" />
+{% include inline-image.html src="/assets/img/clawdbot-effect-comic.jpg" alt="The Clawdbot Effect - comic showing CEO firing EA for 80% accuracy on Monday, then installing Clawdbot at 3am Tuesday" %}
 
 This matters more as always-on agents become common. Moltbot (formerly Clawdbot) has taken X by storm recently,[^2] an always-on agent that can work autonomously on tasks over hours or days. The temptation is obvious: fire the assistant who keeps getting things 80% right and install Clawdbot to save money. But if you would not trust a human with a task unsupervised, you should not trust an AI with it either. The same delegation principles apply. When AI can act without you in the loop, being intentional about what you delegate becomes critical. Choose your delegation level deliberately, not by default. I wrote more about this in [my week with Clawdbot](/my-week-with-clawdbot/).
 

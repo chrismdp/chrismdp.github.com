@@ -11,7 +11,7 @@ redirect_from:
 - "/2015/05/never-ever-ever-ever-ever-give-up"
 - "/2015/05/never-ever-ever-ever-ever-give-up/"
 ---
-<div style='float: right; padding: 0 0 10px 20px; width: 200px'><img src='/files/winston-churchill.jpg' alt='Winston Churchill'/></div>
+{% include inline-image.html src="/files/winston-churchill.jpg" alt="Winston Churchill" %}
 
 Just don't do it. You've come so far. Don't believe that just because you're stuck you can never make it through.
 

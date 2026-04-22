@@ -16,9 +16,7 @@ I've recently designed a dialogue system for [Sol Trader](http://soltrader.net).
 
 ## Dialogue research
 
-<div style='float: right; padding: 0 0 10px 20px; width: 350px'><img src='/files/sol-trader-conversation-preview.png' alt='new conversation preview'/>
-<div style='color: #999; padding-top: 5px'>A basic preview of the new dialogue interface</div>
-</div>
+{% include inline-image.html src="/files/sol-trader-conversation-preview.png" alt="new conversation preview" caption="A basic preview of the new dialogue interface" %}
 
 There are a number of different methods of doing conversations in games, summarised informatively in [these](http://www.gamasutra.com/view/feature/3719/defining_dialogue_systems.php) [two](http://www.gamasutra.com/view/news/114503/Analysis_Conversation_Design_In_Games.php) excellent Gamasutra articles. I've summarised the most relevant ones here:
 

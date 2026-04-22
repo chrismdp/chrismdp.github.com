@@ -40,7 +40,7 @@ We have had a meal generator in Cherrypick's app since early 2023. It allowed cu
 
 We wanted more personalisation, and we wanted to explain to customers why we made the choices we did when selecting recipes for their plan. LLMs gave us a great opportunity to show personalised reasons why we had selected a set of recipes for them. It would have been difficult to get this kind of impact using another method.
 
-<img src="/assets/img/meal-generator-3.jpg" alt="Meal Generator" style='width:50%; float:right; margin:0 0 24px 24px; border-radius: 12px;'/>
+{% include inline-image.html src="/assets/img/meal-generator-3.jpg" alt="Meal Generator" %}
 
 LLMs excel at tasks requiring natural language understanding, creative generation, and complex pattern recognition. They are overkill for simpler problems that could be solved with traditional programming or basic ML approaches.
 
@@ -58,7 +58,7 @@ The first instinct of most teams building with LLMs has been to build a chatbot.
 
 It is important to remember that LLMs started out as completion interfaces. We have been using them for completion in our product since 2022 for our recipe uploader. Chat is a specific use case, not the only way of using them. There are often better ways to solve the customer problem than a chat interface.
 
-<img src="/assets/img/meal-generator-reject.jpg" alt="Meal Generator" style='width:50%; float:right; margin:0 0 24px 24px; border-radius: 12px;'/>
+{% include inline-image.html src="/assets/img/meal-generator-reject.jpg" alt="Meal Generator" %}
 
 The interaction model of chatbots often feels unnatural for many common tasks. Chatting works well for open-ended discussions, and therefore naturally lends itself to customer support interfaces for example. However, it can feel forced and cumbersome for more structured interactions.
 
@@ -86,7 +86,7 @@ Instead of fighting against the model's variability, we learned to work with it.
 
 We could have given the model a full list of recipes and asked it to select the best ones based on the customer's diet and goal preferences. This could have caused many problems if the model made mistakes, selecting recipes that were obviously wrong, or (worse) choosing recipes that were harmful for the customer to eat.
 
-<img src="/assets/img/meal-generator-2.jpg" alt="Meal Generator" style='width:50%; float:left; margin:0 24px 24px 0; border-radius: 12px;'/>
+{% include inline-image.html src="/assets/img/meal-generator-2.jpg" alt="Meal Generator" align="left" %}
 
 To get around this, we did not send the model the full list. Instead with each prompt we send the customer the details of only the recipes the customer can actually eat. This avoiding wasting tokens on recipes that should never be selected.
 

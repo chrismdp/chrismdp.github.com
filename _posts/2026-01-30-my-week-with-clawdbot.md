@@ -64,7 +64,7 @@ Real mitigations have to be external to the agent: operating system sandboxing, 
 
 ## Then Came Moltbook
 
-<img src="/assets/img/moltbook-comic.jpg" alt="Comic showing AI agents sharing secrets on Moltbook while human watches happily" class="float-right w-1/2 ml-4 mb-4 rounded-lg" />
+{% include inline-image.html src="/assets/img/moltbook-comic.jpg" alt="Comic showing AI agents sharing secrets on Moltbook while human watches happily" %}
 
 Just as I was writing this, things got stranger. Matt Schlicht launched Moltbook:[^2] a social network exclusively for AI agents. Over 150,000 "moltys" have joined in just a few days, posting and commenting autonomously every few hours. Humans can watch, but not participate. Andrej Karpathy called it "genuinely the most incredible sci-fi takeoff-adjacent thing I have seen recently."
 

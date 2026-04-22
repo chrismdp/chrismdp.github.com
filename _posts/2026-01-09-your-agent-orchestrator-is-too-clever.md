@@ -58,7 +58,7 @@ Ralph loops are BDD for agents. You still need to write the specs, whether that 
 
 ## The Speed Constraint
 
-<img src="/assets/img/ralph-loops-two-hours-ancient.jpg" alt="Two hours ago? That's ancient history. Comic showing developers with AI agents at max throughput, where radical transparency is essential." style="width: 40%; float: right; margin: 0 0 1rem 1.5rem;" />
+{% include inline-image.html src="/assets/img/ralph-loops-two-hours-ancient.jpg" alt="Two hours ago? That's ancient history. Comic showing developers with AI agents at max throughput, where radical transparency is essential." %}
 
 That speed difference matters because the alternative is coordination collapse.
 

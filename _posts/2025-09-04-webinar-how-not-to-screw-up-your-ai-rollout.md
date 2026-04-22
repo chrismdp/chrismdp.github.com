@@ -88,7 +88,7 @@ The most successful rollouts I observed came from organisations with existing ge
 
 ### Strategic Approach: Find the Real Bottlenecks
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Survivorship-bias.svg/960px-Survivorship-bias.svg.png" alt="Survivorship bias diagram showing a bomber with bullet holes" style="float: right; margin: 0 0 20px 20px; width: 300px;">
+{% include inline-image.html src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Survivorship-bias.svg/960px-Survivorship-bias.svg.png" alt="Survivorship bias diagram showing a bomber with bullet holes" %}
 
 The bomber survivorship bias diagram perfectly illustrates the strategic challenge: reinforce where the bullet holes are not (the critical areas where hit planes never returned), not where they are (the areas planes could survive). The obvious places to apply AI are rarely the right ones. Just because you can make developers code faster does not mean you should. If coding is not your bottleneck, faster coding makes things worse.
 

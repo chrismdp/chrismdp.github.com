@@ -10,7 +10,7 @@ redirect_from:
 - "/2013/08/dealing-stories-into-features"
 - "/2013/08/dealing-stories-into-features/"
 ---
-<img style='float: right; padding: 0 0 20px 20px; width: 250px' src='http://ak1.ostkcdn.com/img/mxc/100706_card_shuffle.jpg' alt='Dealing cards'/>
+{% include inline-image.html src="http://ak1.ostkcdn.com/img/mxc/100706_card_shuffle.jpg" alt="Dealing cards" %}
 
 {% include shareable-quote.html text="It is much harder to learn how to do it moving. When it moves, it is not about information any longer, but about cadence, rhythm, and technique." %}
 

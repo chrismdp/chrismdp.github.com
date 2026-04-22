@@ -21,8 +21,7 @@ There's a new beta [available on the forums](http://forums.soltrader.net) if you
 
 ## Dudley and Meredith
 
-<div style='float: right; padding: 0 0 10px 20px; width: 250px'><a href="http://imgur.com/ghsvz3w"><img src="http://i.imgur.com/ghsvz3w.png" title="source: imgur.com"/></a>
-</div>
+{% include inline-image.html src="http://i.imgur.com/ghsvz3w.png" alt="Dudley and Meredith" link="http://imgur.com/ghsvz3w" %}
 
 In the example on the left, we can see that an acrimonious divorce of Meredith's parents has left an indelible mark on her childhood. She now has a very low opinion of her father, Dudley.
 
@@ -37,7 +36,7 @@ As the game goes on, the player will get embroiled in these relationships betwee
 
 ## Sarina's spiral of doom
 
-<div style='float: right; padding: 0 0 10px 20px; width: 250px'><a href="http://imgur.com/nXel9PP"><img src="http://i.imgur.com/nXel9PP.png" title="source: imgur.com"/></a></div>
+{% include inline-image.html src="http://i.imgur.com/nXel9PP.png" alt="Sarina's spiral of doom" link="http://imgur.com/nXel9PP" %}
 
 Another example: the sad tale of Sarina, our older half sister. I picked Dagny and Warren in history generation to be my character's parents, knowing that Dagny was cheating on her husband Hayden, mostly to see what happened. Little did I know how much it would affect Sarina, Dagny and Hayden's eight year old daughter. When she found out about my birth, she got very upset.
 
