@@ -51,9 +51,11 @@ On top of that harness sit three practical pieces.
 
 The single shift I would most like engineering leaders to take away is this: your most senior engineers should be training the AI to write better code, rather than writing it themselves or reviewing every diff by hand.
 
-We were heading towards a future where humans sit at the end of a ten-agent pipeline, rubber-stamping diffs they did not write and barely understand. That is not a career, it is what [Cory Doctorow](https://pluralistic.net/2022/04/17/revenge-of-the-chef/#boss-babbage) calls a reverse centaur: the human as an organic appendage to a machine that is generating the real work. I have sat with too many teams where the senior engineer is quietly becoming the slowest, most exhausted person in the room, buried in PRs generated faster than they can read.
+We were heading towards a future where humans sit at the end of a ten-agent pipeline, rubber-stamping diffs they did not write and barely understand. That is not a career, it is what [Cory Doctorow](https://pluralistic.net/2022/04/17/revenge-of-the-chef/#boss-babbage) calls a reverse centaur: the human as an organic appendage to a machine that is generating the real work. I have sat with too many teams where the senior engineer is quietly becoming the slowest, most exhausted person in the room, [buried in PRs generated faster than they can read](/code-review-is-dying/).
 
-Four skills separate the senior engineer from the prompter:
+{% include inline-image.html src="/assets/img/code-review-is-dying-comic.jpg" alt="Comic: a cheerful robot hoses a torrent of PR papers at an exhausted developer at a desk labelled 'CODE REVIEW', saying 'I can go faster if you like.' PRs cover the floor." %}
+
+Separate the senior agentic engineer from the basic AI prompter:
 
 1. **Noticing when the agent has gone wrong**, often three prompts before it becomes obvious in the diff. Pattern recognition built up from real work, not something you can teach in an afternoon.
 2. **Extracting the lesson into the right place.** Project-specific rules belong in the CLAUDE.md for this repo. Generic rules should be refactored into a skill file and reused everywhere.
@@ -70,7 +72,7 @@ We used to call this taste. It still is taste, and it now compounds into the har
 
 {% include inline-image.html src="/assets/img/treat-agent-blocks-as-context-failures.jpg" alt="Three-panel comic. Day 1: a manager tells an agent 'just use PostgreSQL' and relaxes. Six months later the same manager is drowning in a queue of agents asking 'tabs or spaces?'. Meanwhile another team has given their agents a 'How We Make Decisions' book and is working happily." %}
 
-Teams starting out usually ask me some version of "how do I get started with prompting the AI?" Many of them turn up already half-convinced they need spec-driven development first, because that is what they have heard is the proper way in. I am not keen on it, at least in the form it usually shows up, and I will come back to why in a moment. The prompt is not where the problem lives. The harness is.
+Teams starting out usually ask me some version of "how do I get started with prompting the AI?" Many of them turn up already half-convinced they need spec-driven development first, because that is what they have heard is the proper way in. I am not keen on it, at least in the form it usually shows up, and I will come back to why in a moment. The work is not chasing the perfect prompt. It is building, over time, a harness so good that the prompts can stay almost boring.
 
 When an agent gets stuck on something that should be trivial, treat it as a context failure, not a prompt failure. The answer sits in the harness around the request, not in rewording what you asked. Teams that realise this early stop fighting their prompts and start investing in CLAUDE.md, skill files, and the small ontology of decisions their agent needs to make unassisted.
 
@@ -98,6 +100,75 @@ In practice this means the brief names the constraints, the users, the existing 
 
 Do not use a Ralph loop or an agent pipeline blindly. Work out the right thing to build together, or give the agent enough context to make good decisions on its own. Those are the two modes that work. The trap is doing neither: writing too much detail too early, handing it to the machine, and assuming the detail will carry the thinking. It will not.
 
-[^a16z]: Kimberly Tan, [Where Enterprises are Actually Adopting AI](https://www.a16z.news/p/ai-adoption-by-the-numbers){:target="_blank"}, a16z, April 2026. Found 29% of Fortune 500 and 19% of Global 2000 are paying enterprise AI customers, with coding the dominant use case by nearly an order of magnitude.
-[^karpathy]: Andrej Karpathy, [Software in the Era of AI](https://www.youtube.com/watch?v=LCEmiRjPEtQ){:target="_blank"}, YC AI Startup School. Karpathy's argument is that many small generation-then-verification cycles beat one large run: errors caught early are cheap, course corrections are cheap when the divergence is one step deep, and the agent stays on a tight leash.
+## The Context Sweet Spot
+
+<img src="/assets/img/context-sweet-spot.png" alt="Graph showing output quality as a curve against amount of context. With too little context (none, key details) you get generic slop. Full spec hits the sweet spot at the top of the curve. With everything you have, quality drops sharply as the model drowns in noise." style="max-width: 100%; display: block; margin: 1.5rem auto;" />
+
+Knowing when to reset is not a senior skill in itself. It is a specific balance to learn, and it sits underneath the four skills above. Output quality is a curve against context. Too little, and you get generic slop. Too much, and the model drowns in what it has been fed and the output gets vaguer and more confident at the same time. Full spec, with the right key details and nothing beyond that, is the sweet spot.
+
+Claude Code and the current generation of harnesses need reset less often than they did a year ago. The discipline still matters, though, and it matters more the moment you move to cheaper or open-source harnesses where the model forgives you less. Learning the feel of the curve is transferable even if today's specific harness absorbs most of the work for you.
+
+Engineers who have been at this for a while know the signs you have drifted off the peak: the third useless refactor of a function that worked fine twenty minutes ago, the agent cheerfully restating the same wrong assumption in different words, the creeping sense that you are the one being led round in circles. The move is to stop, throw the conversation away, and restart with a cleaner brief and a smaller chunk. The agent does not get tired or embarrassed, so neither should you. Resetting is cheaper than correcting, almost every time.
+
+Research has confirmed what practitioners feel daily: LLMs perform significantly worse in multi-turn conversations than single-turn ones, and when they take a wrong turn they tend to stay lost[^llm-lost]. That structural property holds more strongly for cheaper and open-source models, which is where a growing share of coding will run over the next year. Knowing the feel of the curve is transferable in a way that the specific behaviour of any given harness is not.
+
+## Feedback Is The New Bottleneck
+
+Once the loops are running and the agent is producing, the constraint moves. A year ago the bottleneck was code generation. Now it is [verification](/feedback-is-the-new-bottleneck/). How fast can you tell whether what was generated is right?
+
+A team that can generate five approaches and verify all five in an afternoon will outpace a team that generates one and waits a week for feedback. The game is not "how fast can we build" any more. It is "how fast can we tell whether this is right". That shifts where to invest. Build better review surfaces, not better prompts. Make feedback unnecessary where you can by having the agent verify against a realistic environment before it asks a human, and make feedback instant where you cannot. MIT's measurement that developers believed they were 20% faster with AI while delivery was measured at 20% slower[^mit] is the feedback bottleneck showing up in the numbers. The coding itself is undoubtedly faster. Everything around the coding, review, verification, integration, rework when the agent got it wrong, is measurably slower, and developers do not count that part as "the slow bit" because the coding felt so quick. The slow work ended up eclipsing the fast work.
+
+I have written [more on this elsewhere](/feedback-is-the-new-bottleneck/), but the short version for coding is: if verifying an AI-generated change takes almost as long as writing it yourself, either the agent's output needs to present differently, or the verification needs to move to an automated gate, or that particular task should not have been delegated.
+
+## What Still Goes Wrong
+
+{% include inline-image.html src="/assets/img/your-engineers-think-theyve-survived-ai.jpg" alt="Comic showing four engineers in a small wooden boat floating in debris, a giant wave labelled 'CLOUD AGENTS' curling behind them. One engineer says 'Glad that's over.' while the wave looms." %}
+
+Vibe coding is still the dominant failure mode for teams getting started. Install Claude Code, give it broad instructions, let it run, ship whatever comes out. It looks fast until it meets production. If your codebase is spaghetti without tests, AI generates more spaghetti, faster. Your guardrails matter more now, not less.
+
+The second failure mode is review fatigue. Teams with strong quality instincts burn out their most conscientious reviewers first, because they are the ones reading everything rather than skimming. If your senior engineers spend their days approving diffs, you have structurally built the review-approval-monkey job and you should expect people to quit it.
+
+The third is invisible dependencies. Your AI is quietly doing things you did not ask it to, noticing anomalies, proofreading numbers, second-guessing vague framings. When the next model ships, some of those hidden dependencies break without warning, and nothing in your playbook warns you that they existed. Before upgrading, audit what your AI does beyond what you asked it to, not just the things you explicitly requested.
+
+The fourth is premature relief. If you have got through the first wave of IDE-based AI coding and your team is working in Claude Code or Codex, do not assume the adjustment is over. Cloud agents and autonomous orchestration are the next wave, and the survival strategy for each wave is different. The teams that thought "glad that's over" a year ago are often the ones struggling most now.
+
+## Training The Next Generation
+
+{% include inline-image.html src="/assets/img/practice-with-your-team-not-just-licences.jpg" alt="Comic showing a nervous software engineer on stage holding a guitar labelled Claude Code with a $1,999.99 price tag. A stagehand whispers from the wings: Just play it! The audience waits in darkness." %}
+
+The question I have been asked most often this year, and still have not fully answered, is how we develop the next generation of senior engineers when the traditional ladder of handwriting ever-more-complex code is disappearing.
+
+A year on, I am clearer on one part of the answer. Pairing with juniors and showing them how you work with AI is the single best use of your time. Sit with them while they drive Claude Code and teach them when to reset, what to put in CLAUDE.md, how to spec the problem rather than the solution, how to feel the context sweet spot. The specific code they produce matters less than the instincts they build about when the agent is about to go wrong and what to do when it does.
+
+Buying licences is not the same as practising together. An expensive tool shoved into an untrained engineer's hands, under the spotlight of a real deadline, produces exactly the stage fright you would expect. Teams that invest in pairing, internal training, and explicit drills in the safe setting pull ahead of teams that buy seats and hope. Licences are cheap. The practice is where the value sits.
+
+The second part is that the skills that matter most are now the ones that used to come latest in a traditional career: architectural taste, knowing when to throw work away, recognising when a requirement is underspecified, spotting the part of the problem that does the real work. If juniors can develop those earlier, they become senior faster. If they cannot, the AI will out-produce them indefinitely on the bits they used to be paid for.
+
+## What To Do Next
+
+If you are starting from cold in April 2026:
+
+Install Claude Code. Run it in a repo you already know. Write a short CLAUDE.md with the conventions of that repo, the things a new engineer would want to know on their first day. Ship one small change through Claude Code, read the diff, and note where it surprised you. That is your first skill file.
+
+Start pairing with a colleague who is a couple of steps ahead. Watch them reset. Watch them catch drift. Watch what they choose not to delegate. Most of what is worth learning is in the small judgement calls that do not show up in blog posts.
+
+Pick one loop you run by hand every week, the weekly release notes, the backlog grooming, the repetitive code review pass, and write it as a skill plus a Ralph-style loop. It does not have to be fully autonomous on the first attempt. The goal is to get a feedback loop running so you can refine it next week.
+
+Write things down in markdown, not in a tool. Tools churn. Your notes should outlive them.
+
+And if you are a senior engineer worried that your job is quietly turning into approving diffs: it is. The way out is to train the AI so the diffs are right the first time, to make yourself the person on the team who shapes the harness, and to make that work the visible thing you are measured on. That role compounds in a way that reviewing never will.
+
+## Conclusion
+
+The core argument from March 2025 has not changed. Using AI to write production code amplifies human judgement rather than replacing it. What has changed is where that judgement gets applied. The work that pays off is shaping the harness, training the agent, and building the feedback loops that make the next hundred diffs better than the last, rather than reviewing individual diffs one by one.
+
+Coding with AI is now the default. The question is whether you are doing it as a reviewer, a prompter, or a trainer. The trainer role compounds. The other two shrink. Pick accordingly.
+
+[^a16z]: Kimberly Tan, [Where Enterprise AI is Actually Working](https://www.a16z.news/p/ai-adoption-by-the-numbers){:target="_blank"}, a16z, April 2026. 29% of the Fortune 500 and ~19% of the Global 2000 are live, paying customers of leading AI startups. Coding dominates by nearly an order of magnitude because it is verifiable, text-dense, and has tight feedback loops.
+
+[^karpathy]: Andrej Karpathy, [Software in the Era of AI](https://www.youtube.com/watch?v=LCEmiRjPEtQ){:target="_blank"}, YC AI Startup School, 2025. "I'm always scared to get way too big diffs. I always go in small incremental chunks. I want to make sure that everything is good. I want to spin this loop very, very fast." The loop frequency matters more than the loop size.
+
+[^llm-lost]: Laban, P., Hayashi, H., Zhou, Y., & Neville, J. (2025). [LLMs Get Lost In Multi-Turn Conversation](https://arxiv.org/abs/2505.06120){:target="_blank"}. arXiv:2505.06120. Models perform significantly worse in multi-turn conversations than single-turn ones, and when they take a wrong turn they tend to stay lost.
+
+[^mit]: The 20%-slower finding is attributed to an MIT study from 2024/2025, corroborated independently at CTO Craft Con in March 2026 by two presentations that measured end-to-end delivery rather than self-reported speed: [Will Lytle (Plandek)](https://plandek.com/){:target="_blank"} and [Yigit Darcin (Trendyol)](https://trendyol.com/){:target="_blank"}. Both saw teams delivering roughly 20% slower despite engineers reporting they felt faster, with the overhead landing in code review queues, test coverage gaps, requirement ambiguity, and deployment pipelines. Ryan Greenblatt at Redwood Research offers a complementary framing: instead of measuring perceived speed-up, measure "serial speed-up", the factor you would have to work faster to be indifferent to losing AI tools. He estimates roughly 1.6x at Anthropic/OpenAI in April 2026, versus the 3x to 20x that people commonly perceive. The gap is the feedback bottleneck.
 
