@@ -76,7 +76,7 @@ Teams starting out usually ask me some version of "how do I get started with pro
 
 When an agent gets stuck on something that should be trivial, treat it as a context failure, not a prompt failure. The answer sits in the harness around the request, not in rewording what you asked. Teams that realise this early stop fighting their prompts and start investing in CLAUDE.md, skill files, and the small ontology of decisions their agent needs to make unassisted.
 
-A good harness has four things. A clear set of standing instructions in CLAUDE.md. A set of skill files for rules you want actively enforced. A verification loop the agent can run against itself, whether that is tests, a type checker, a linter, or a headless browser clicking through the app. And a way to feed lessons back into the first three when the agent gets something wrong. Without the feedback loop the scaffolding rots, as Rahul Garg described well in his feedback flywheel piece on Martin Fowler's site[^garg].
+A good harness has four things. A clear set of **standing instructions** in CLAUDE.md. A set of **skill files** for rules you want actively enforced. A **verification loop** the agent can run against itself, whether that is tests, a type checker, a linter, or a headless browser clicking through the app. And a **feedback loop** that feeds lessons back into the first three when the agent gets something wrong. Without the feedback loop the scaffolding rots, as Rahul Garg described well in his feedback flywheel piece on Martin Fowler's site[^garg].
 
 Once the harness is in place, the prompts themselves can be almost boring. Most of the time I just need to say something like "here are a few files to look at, this is roughly what I want, figure out the rest." The agent knows the conventions, reaches for the right tools, and verifies its own work. This is the point at which AI coding starts to feel like the apprentice you wanted, rather than the confidently wrong intern you keep having to undo.
 
@@ -124,13 +124,13 @@ I have written [more on this elsewhere](/feedback-is-the-new-bottleneck/), but t
 
 {% include inline-image.html src="/assets/img/your-engineers-think-theyve-survived-ai.jpg" alt="Comic showing four engineers in a small wooden boat floating in debris, a giant wave labelled 'CLOUD AGENTS' curling behind them. One engineer says 'Glad that's over.' while the wave looms." %}
 
-Vibe coding is still the dominant failure mode for teams getting started. Install Claude Code, give it broad instructions, let it run, ship whatever comes out. It looks fast until it meets production. If your codebase is spaghetti without tests, AI generates more spaghetti, faster. Your guardrails matter more now, not less.
+**Accidental vibe coding** is still the dominant failure mode for teams getting started. Install Claude Code, give it broad instructions, let it run, ship whatever comes out. It looks fast until it meets production. If your codebase is spaghetti without tests, AI generates more spaghetti, faster. Your guardrails matter more now, not less.
 
-The second failure mode is review fatigue. Teams with strong quality instincts burn out their most conscientious reviewers first, because they are the ones reading everything rather than skimming. If your senior engineers spend their days approving diffs, you have structurally built the review-approval-monkey job and you should expect people to quit it.
+The second failure mode is **review fatigue**. Teams with strong quality instincts burn out their most conscientious reviewers first, because they are the ones reading everything rather than skimming. If your senior engineers spend their days approving diffs, you have structurally built the review-approval-monkey job and you should expect people to quit it.
 
-The third is invisible dependencies. Your AI is quietly doing things you did not ask it to, noticing anomalies, proofreading numbers, second-guessing vague framings. When the next model ships, some of those hidden dependencies break without warning, and nothing in your playbook warns you that they existed. Before upgrading, audit what your AI does beyond what you asked it to, not just the things you explicitly requested.
+The third is **invisible dependencies**. Your AI is quietly doing things you did not ask it to, noticing anomalies, proofreading numbers, second-guessing vague framings. When the next model ships, some of those hidden dependencies break without warning, and nothing in your playbook warns you that they existed. Before upgrading, audit what your AI does beyond what you asked it to, not just the things you explicitly requested.
 
-The fourth is premature relief. If you have got through the first wave of IDE-based AI coding and your team is working in Claude Code or Codex, do not assume the adjustment is over. Cloud agents and autonomous orchestration are the next wave, and the survival strategy for each wave is different. The teams that thought "glad that's over" a year ago are often the ones struggling most now.
+The fourth is **premature relief**. If you have got through the first wave of IDE-based AI coding and your team is working in Claude Code or Codex, do not assume the adjustment is over. Cloud agents and autonomous orchestration are the next wave, and the survival strategy for each wave is different. The teams that thought "glad that's over" a year ago are often the ones struggling most now.
 
 ## Training The Next Generation
 
@@ -148,13 +148,13 @@ The second part is that the skills that matter most are now the ones that used t
 
 If you are starting from cold in April 2026:
 
-Install Claude Code. Run it in a repo you already know. Write a short CLAUDE.md with the conventions of that repo, the things a new engineer would want to know on their first day. Ship one small change through Claude Code, read the diff, and note where it surprised you. That is your first skill file.
+**Install Claude Code** and run it in a repo you already know. Write a short CLAUDE.md with the conventions of that repo, the things a new engineer would want to know on their first day. Ship one small change through Claude Code, read the diff, and note where it surprised you. That is your first skill file.
 
-Start pairing with a colleague who is a couple of steps ahead. Watch them reset. Watch them catch drift. Watch what they choose not to delegate. Most of what is worth learning is in the small judgement calls that do not show up in blog posts.
+**Start pairing** with a colleague who is a couple of steps ahead. Watch them reset. Watch them catch drift. Watch what they choose not to delegate. Most of what is worth learning is in the small judgement calls that do not show up in blog posts.
 
-Pick one loop you run by hand every week, the weekly release notes, the backlog grooming, the repetitive code review pass, and write it as a skill plus a Ralph-style loop. It does not have to be fully autonomous on the first attempt. The goal is to get a feedback loop running so you can refine it next week.
+**Automate one weekly loop**. Pick something you run by hand every week, the weekly release notes, the backlog grooming, the repetitive code review pass, and write it as a skill plus a Ralph-style loop. It does not have to be fully autonomous on the first attempt. The goal is to get a feedback loop running so you can refine it next week.
 
-Write things down in markdown, not in a tool. Tools churn. Your notes should outlive them.
+**Write in markdown**, not in a tool. Tools churn. Your notes should outlive them.
 
 And if you are a senior engineer worried that your job is quietly turning into approving diffs: it is. The way out is to train the AI so the diffs are right the first time, to make yourself the person on the team who shapes the harness, and to make that work the visible thing you are measured on. That role compounds in a way that reviewing never will.
 
