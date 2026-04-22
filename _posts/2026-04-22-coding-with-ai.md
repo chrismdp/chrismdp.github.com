@@ -45,15 +45,15 @@ On top of that harness sit three practical pieces.
 
 **Skill files.** A [skill file](/skills-are-claude-codes-secret-weapon/) in `.claude/skills/` is treated as a rule Claude actively enforces, not background reading it may or may not consult. A testing standards document sitting in `docs/` drifts out of use. The same file moved into `.claude/skills/` gets followed. Put your coding conventions, API rules, and test standards in skill files, and let Claude update them when it learns something new. I am running nearly 70 of these now across my projects. A handful are public; you can see them at [airskills.ai/chrismdp](https://airskills.ai/chrismdp) if you want a starting shape to copy from.
 
-**[A portable vault](/build-an-ai-knowledge-base-from-scratch/).** All of this lives in Markdown, in its own repository, separate from any single project. It holds the context that would otherwise fragment across a dozen project repos: concept notes, decision trails, people, prior thinking, running project state. Skills can invoke it directly, so the agent working on one codebase can pull from everything I have written or captured about the problem space without that knowledge having to live inside the code repo. Tool-agnostic markdown is the hedge against a world where tools churn faster than workflows. Crystallised knowledge about context windows, about how to frame a brief, about when to reset, will hold up for years. Fluid knowledge about a specific tool's keyboard shortcuts will not. Invest in the first, not the second.
+**A portable vault.** All of this lives in Markdown, [in its own repository](/build-an-ai-knowledge-base-from-scratch/), separate from any single project. It holds the context that would otherwise fragment across a dozen project repos: concept notes, decision trails, people, prior thinking, running project state. Skills can invoke it directly, so the agent working on one codebase can pull from everything I have written or captured about the problem space without that knowledge having to live inside the code repo. Tool-agnostic markdown is the hedge against a world where tools churn faster than workflows. Crystallised knowledge about context windows, about how to frame a brief, about when to reset, will hold up for years. Fluid knowledge about a specific tool's keyboard shortcuts will not. Invest in the first, not the second.
 
 ## From Approver to Trainer
 
 The single shift I would most like engineering leaders to take away is this: your most senior engineers should be training the AI to write better code, rather than writing it themselves or reviewing every diff by hand.
 
-We were heading towards a future where humans sit at the end of a ten-agent pipeline, rubber-stamping diffs they did not write and barely understand. That is not a career, it is what [Cory Doctorow](https://pluralistic.net/2022/04/17/revenge-of-the-chef/#boss-babbage) calls a reverse centaur: the human as an organic appendage to a machine that is generating the real work. I have sat with too many teams where the senior engineer is quietly becoming the slowest, most exhausted person in the room, [buried in PRs generated faster than they can read](/code-review-is-dying/).
-
 {% include inline-image.html src="/assets/img/code-review-is-dying-comic.jpg" alt="Comic: a cheerful robot hoses a torrent of PR papers at an exhausted developer at a desk labelled 'CODE REVIEW', saying 'I can go faster if you like.' PRs cover the floor." %}
+
+We were heading towards a future where humans sit at the end of a ten-agent pipeline, rubber-stamping diffs they did not write and barely understand. That is not a career, it is what Cory Doctorow calls a reverse centaur: the human as an organic appendage to a machine that is generating the real work[^doctorow]. I have sat with too many teams where the senior engineer is quietly becoming the slowest, most exhausted person in the room, [buried in PRs generated faster than they can read](/code-review-is-dying/).
 
 Separate the senior agentic engineer from the basic AI prompter:
 
@@ -167,6 +167,8 @@ Coding with AI is now the default. The question is whether you are doing it as a
 [^a16z]: Kimberly Tan, [Where Enterprise AI is Actually Working](https://www.a16z.news/p/ai-adoption-by-the-numbers){:target="_blank"}, a16z, April 2026. 29% of the Fortune 500 and ~19% of the Global 2000 are live, paying customers of leading AI startups. Coding dominates by nearly an order of magnitude because it is verifiable, text-dense, and has tight feedback loops.
 
 [^karpathy]: Andrej Karpathy, [Software in the Era of AI](https://www.youtube.com/watch?v=LCEmiRjPEtQ){:target="_blank"}, YC AI Startup School, 2025. "I'm always scared to get way too big diffs. I always go in small incremental chunks. I want to make sure that everything is good. I want to spin this loop very, very fast." The loop frequency matters more than the loop size.
+
+[^doctorow]: Cory Doctorow, [Revenge of the Chef](https://pluralistic.net/2022/04/17/revenge-of-the-chef/#boss-babbage){:target="_blank"}, Pluralistic, April 2022. The "reverse centaur" framing: a human chained to a machine's pace, acting as an organic appendage instead of the machine acting as the human's amplifier.
 
 [^llm-lost]: Laban, P., Hayashi, H., Zhou, Y., & Neville, J. (2025). [LLMs Get Lost In Multi-Turn Conversation](https://arxiv.org/abs/2505.06120){:target="_blank"}. arXiv:2505.06120. Models perform significantly worse in multi-turn conversations than single-turn ones, and when they take a wrong turn they tend to stay lost.
 
