@@ -2,6 +2,8 @@
 layout: post
 title: "Coding with AI: How To Do It Well And What It Means For The Industry"
 date: 2025-08-28 00:00:00 +00:00
+permalink: /coding-with-ai-march-2025/
+archived: true
 categories:
 - development
 - ai

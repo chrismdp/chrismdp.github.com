@@ -1,7 +1,7 @@
 {% assign newer_post = nil %}
 {% assign current_url = page.url %}
 
-{% comment %} Find if any post replaces this one {% endcomment %}
+{% comment %} Find if any post replaces this one (chain-aware) {% endcomment %}
 {% for post in site.posts %}
   {% if post.replaces == current_url %}
     {% assign newer_post = post %}
@@ -31,9 +31,11 @@
 {% endif %}
 
 {% if newer_post %}
-<div class="mb-8 bg-brand-orange/10 rounded-lg p-4 border border-brand-orange/20 not-prose">
+<div class="mb-8 bg-brand-orange/10 rounded-lg p-4 border-l-4 border-brand-orange not-prose">
   <p class="text-sm text-brand-black">
-    This article has been updated. Read the latest version: <a href="{{ newer_post.url }}" class="text-brand-deep-turquoise hover:text-brand-turquoise font-semibold">{{ newer_post.title }}</a>
+    <strong>This is the {{ page.date | date: "%B %Y" }} version.</strong>
+    An updated version was published on {{ newer_post.date | date: "%-d %B %Y" }}:
+    <a href="{{ newer_post.url }}" class="text-brand-deep-turquoise hover:text-brand-turquoise font-semibold">{{ newer_post.title }}</a>.
   </p>
 </div>
 {% elsif page.replaces %}
@@ -45,9 +47,11 @@
   {% endif %}
 {% endfor %}
 {% if replaced_post %}
-<div class="mb-8 bg-brand-light-blue/10 rounded-lg p-4 border border-brand-light-blue/20 not-prose">
+<div class="mb-8 bg-green-50 rounded-lg p-4 border-l-4 border-green-500 not-prose">
   <p class="text-sm text-brand-black">
-    This article is a newer version of <a href="{{ replaced_post.url }}" class="text-brand-deep-turquoise hover:text-brand-turquoise font-semibold">{{ replaced_post.title }}</a>.
+    <strong>Updated {{ page.date | date: "%-d %B %Y" }}.</strong>
+    This replaces the {{ replaced_post.date | date: "%B %Y" }} version, which is archived at
+    <a href="{{ replaced_post.url }}" class="text-brand-deep-turquoise hover:text-brand-turquoise font-semibold">{{ replaced_post.title }}</a>.
   </p>
 </div>
 {% endif %}
