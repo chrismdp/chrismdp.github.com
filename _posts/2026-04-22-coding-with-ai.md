@@ -59,7 +59,7 @@ Separate the senior agentic engineer from the basic AI prompter:
 
 1. **Noticing when the agent has gone wrong**, often three prompts before it becomes obvious in the diff. Pattern recognition built up from real work, not something you can teach in an afternoon.
 2. **Extracting the lesson into the right place.** Project-specific rules belong in the CLAUDE.md for this repo. Generic rules should be refactored into a skill file and reused everywhere.
-3. **Codifying the rules and patterns** your future agents will need. Today's spot-fix becomes next week's standing instruction, which becomes next month's enforced rule. The harness gets smarter because you made it.
+3. **Codifying the rules and patterns** your future agents will need, as skill files. Today's spot-fix becomes tomorrow's skill file, and from there it is a standing instruction for every future session. The harness gets smarter because you put the lesson somewhere durable.
 4. **Teaching others how to work with AI.** The discipline does not transmit by osmosis. If you have found the groove, the best use of your time is sitting with colleagues who have not.
 
 Training the harness around your codebase is now as important as creating a good architecture for the codebase itself. Both compound every future decision; both get harder to change the longer you leave them; both are the quiet reason one team ships cleanly while another is stuck in rework.
@@ -126,7 +126,7 @@ I have written [more on this elsewhere](/feedback-is-the-new-bottleneck/), but t
 
 **Accidental vibe coding** is still the dominant failure mode for teams getting started. Install Claude Code, give it broad instructions, let it run, ship whatever comes out. It looks fast until it meets production. If your codebase is spaghetti without tests, AI generates more spaghetti, faster. Your guardrails matter more now, not less.
 
-The second failure mode is **review fatigue**. Teams with strong quality instincts burn out their most conscientious reviewers first, because they are the ones reading everything rather than skimming. If your senior engineers spend their days approving diffs, you have structurally built the review-approval-monkey job and you should expect people to quit it.
+The second failure mode is **review fatigue**. Teams with strong quality instincts burn out their most conscientious reviewers first, because they are the ones reading everything rather than skimming. If your senior engineers spend their days approving diffs, you have structurally built the review-approval-monkey job and you should expect people to quit it. The fix is almost always upstream: write skill files for the issues that keep surfacing in review, and most of those diffs stop needing human eyes at all.
 
 The third is **invisible dependencies**. Your AI is quietly doing things you did not ask it to, noticing anomalies, proofreading numbers, second-guessing vague framings. When the next model ships, some of those hidden dependencies break without warning, and nothing in your playbook warns you that they existed. Before upgrading, audit what your AI does beyond what you asked it to, not just the things you explicitly requested.
 
@@ -138,7 +138,7 @@ The fourth is **premature relief**. If you have got through the first wave of ID
 
 The question I have been asked most often this year, and still have not fully answered, is how we develop the next generation of senior engineers when the traditional ladder of handwriting ever-more-complex code is disappearing.
 
-A year on, I am clearer on one part of the answer. Pairing with juniors and showing them how you work with AI is the single best use of your time. Sit with them while they drive Claude Code and teach them when to reset, what to put in CLAUDE.md, how to spec the problem rather than the solution, how to feel the context sweet spot. The specific code they produce matters less than the instincts they build about when the agent is about to go wrong and what to do when it does.
+A year on, I am clearer on one part of the answer. Pairing with juniors and showing them how you work with AI is the single best use of your time. Sit with them while they drive Claude Code and teach them when to reset, what to put in CLAUDE.md, when to promote a lesson into a skill file, how to spec the problem rather than the solution, how to feel the context sweet spot. The specific code they produce matters less than the instincts they build about when the agent is about to go wrong and what to do when it does.
 
 Buying licences is not the same as practising together. An expensive tool shoved into an untrained engineer's hands, under the spotlight of a real deadline, produces exactly the stage fright you would expect. Teams that invest in pairing, internal training, and explicit drills in the safe setting pull ahead of teams that buy seats and hope. Licences are cheap. The practice is where the value sits.
 
@@ -149,6 +149,8 @@ The second part is that the skills that matter most are now the ones that used t
 If you are starting from cold in April 2026:
 
 **Install Claude Code** and run it in a repo you already know. Write a short CLAUDE.md with the conventions of that repo, the things a new engineer would want to know on their first day. Ship one small change through Claude Code, read the diff, and note where it surprised you. That is your first skill file.
+
+**Ship a skill file every week.** Pick one recurring annoyance, a convention the agent keeps missing, a gotcha in your codebase, a review comment you have made three times, and write it up in `.claude/skills/`. Iterate on it as the agent uses it. You should have ten by month end and the harness will be visibly smarter for it.
 
 **Start pairing** with a colleague who is a couple of steps ahead. Watch them reset. Watch them catch drift. Watch what they choose not to delegate. Most of what is worth learning is in the small judgement calls that do not show up in blog posts.
 
@@ -162,7 +164,7 @@ And if you are a senior engineer worried that your job is quietly turning into a
 
 The core argument from March 2025 has not changed. Using AI to write production code amplifies human judgement rather than replacing it. What has changed is where that judgement gets applied. The work that pays off is shaping the harness, training the agent, and building the feedback loops that make the next hundred diffs better than the last, rather than reviewing individual diffs one by one.
 
-Coding with AI is now the default. The question is whether you are doing it as a reviewer, a prompter, or a trainer. The trainer role compounds. The other two shrink. Pick accordingly.
+Coding with AI is now the default. The question is whether you are doing it as a reviewer, a prompter, or a trainer. The trainer role compounds. You leave behind markdown, a CLAUDE.md, a bank of skill files, tests the agent can run against itself, that makes every future diff better. The other two roles shrink. Pick accordingly.
 
 [^a16z]: Kimberly Tan, [Where Enterprise AI is Actually Working](https://www.a16z.news/p/ai-adoption-by-the-numbers){:target="_blank"}, a16z, April 2026. 29% of the Fortune 500 and ~19% of the Global 2000 are live, paying customers of leading AI startups. Coding dominates by nearly an order of magnitude because it is verifiable, text-dense, and has tight feedback loops.
 
