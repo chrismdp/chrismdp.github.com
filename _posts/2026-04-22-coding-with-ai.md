@@ -17,7 +17,9 @@ If you are still tied to your IDE, whether Cursor or Copilot, you are working a 
 
 I wrote the [previous version of this post](/coding-with-ai-march-2025/) in March 2025, updated it once in August, and it has been linked from almost everything I have written about AI engineering since. The fundamentals from that post still hold: keep changes small, build guardrails, document ruthlessly, and make sure every change gets verified before it ships. One thing has had to move with the volume. "Verified" used to mean "read by you". With modern agent throughput, it has to mean "checked by tests, by type checkers, by automated gates, or by you where your judgement matters". The check still happens; it just does not always happen in your head.
 
-One distinction has hardened over the last year, and it matters for what follows: vibe coding and agentic engineering are different practices. Vibe coding, where you do not really check the results and just look at the output, is fine unless you are shipping. Agentic engineering is the other thing. It does not mean reading every diff. It means making a measured call about which diffs need your eyes and which do not. I tend to skim UI diffs. I read security and database diffs carefully. That judgement, about where to spend your attention, is itself a senior skill and one worth getting good at. Every diff still gets checked; not always by you. Tests, type checkers, and automated gates pick up the rest, and you are training the agent so the diffs that do reach your eyes are the ones worth the attention. Conflating the two is how people end up shipping vibe-coded output into production and getting burned.
+One distinction has hardened over the last year, and it matters for what follows: vibe coding and agentic engineering are different practices. Vibe coding, where you do not really check the results and just look at the output, is fine unless you are shipping. Agentic engineering is the other thing. It does not mean reading every diff. It means making a measured call about which diffs need your eyes and which do not. I tend to skim UI diffs. I read security and database diffs carefully.
+
+That judgement, about where to spend your attention, is itself a senior skill and one worth getting good at. Every diff still gets checked; not always by you. Tests, type checkers, and automated gates pick up the rest, and you are training the agent so the diffs that do reach your eyes are the ones worth the attention. Conflating the two is how people end up shipping vibe-coded output into production and getting burned.
 
 <!--more-->
 
@@ -72,7 +74,7 @@ We used to call this taste. It still is taste, and it now compounds into the har
 
 {% include inline-image.html src="/assets/img/treat-agent-blocks-as-context-failures.jpg" alt="Three-panel comic. Day 1: a manager tells an agent 'just use PostgreSQL' and relaxes. Six months later the same manager is drowning in a queue of agents asking 'tabs or spaces?'. Meanwhile another team has given their agents a 'How We Make Decisions' book and is working happily." %}
 
-Teams starting out usually ask me some version of "how do I get started with prompting the AI?" Many of them turn up already half-convinced they need spec-driven development first, because that is what they have heard is the proper way in. I am not keen on it, at least in the form it usually shows up, and I will come back to why in a moment. Prompts matter less than the harness around them, and harnesses take time to build well.
+Teams starting out usually ask me some version of "how do I get started with prompting the AI?" Many of them turn up already half-convinced they need spec-driven development first, because that is what they have heard is the proper way in. I am not keen on it, at least in the form it usually shows up, and I will come back to why in a moment.
 
 When an agent gets stuck on something that should be trivial, treat it as a context failure, not a prompt failure. The answer sits in the harness around the request, not in rewording what you asked. Teams that realise this early stop fighting their prompts and start investing in CLAUDE.md, skill files, and the small ontology of decisions their agent needs to make unassisted.
 
@@ -143,6 +145,8 @@ A year on, I am clearer on one part of the answer. Pairing with juniors and show
 Buying licences is not the same as practising together. An expensive tool shoved into an untrained engineer's hands, under the spotlight of a real deadline, produces exactly the stage fright you would expect. Teams that invest in pairing, internal training, and explicit drills in the safe setting pull ahead of teams that buy seats and hope. Licences are cheap. The practice is where the value sits.
 
 The second part is that the skills that matter most are now the ones that used to come latest in a traditional career: architectural taste, knowing when to throw work away, recognising when a requirement is underspecified, spotting the part of the problem that does the real work. If juniors can develop those earlier, they become senior faster. If they cannot, the AI will out-produce them indefinitely on the bits they used to be paid for.
+
+This is what I teach in my [AI training for engineering teams](/training/): the pairing shape, the instincts, and the skill-file discipline done deliberately rather than discovered through trial.
 
 ## What To Do Next
 
