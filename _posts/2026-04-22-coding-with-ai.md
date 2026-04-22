@@ -104,7 +104,7 @@ Do not use a [Ralph loop](/ralph-loops-aie-europe/) or an agent pipeline blindly
 
 <img src="/assets/img/context-sweet-spot.png" alt="Graph showing output quality as a curve against amount of context. With too little context (none, key details) you get generic slop. Full spec hits the sweet spot at the top of the curve. With everything you have, quality drops sharply as the model drowns in noise." style="max-width: 100%; display: block; margin: 1.5rem auto;" />
 
-Knowing when to reset is not a senior skill in itself. It is a specific balance to learn, and it sits underneath the four skills above. Output quality is a curve against context. Too little, and you get generic slop. Too much, and the model drowns in what it has been fed and the output gets vaguer and more confident at the same time. Full spec, with the right key details and nothing beyond that, is the sweet spot.
+Knowing when to reset is actually an early and important skill to learn, a specific balance that sits underneath the four skills above. Output quality is a curve against context. Too little, and you get generic slop. Too much, and the model drowns in what it has been fed and the output gets vaguer and more confident at the same time. Full spec, with the right key details and nothing beyond that, is the sweet spot.
 
 Claude Code and the current generation of harnesses need reset less often than they did a year ago. The discipline still matters, though, and it matters more the moment you move to cheaper or open-source harnesses where the model forgives you less. Learning the feel of the curve is transferable even if today's specific harness absorbs most of the work for you.
 
