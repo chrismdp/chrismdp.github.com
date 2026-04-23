@@ -176,6 +176,8 @@ The core argument from March 2025 has not changed. Using AI to write production 
 
 Coding with AI is now the default. The question is whether you are doing it as a reviewer, a prompter, or a trainer. The trainer role compounds. You leave behind markdown, a CLAUDE.md, a bank of skill files, tests the agent can run against itself, that makes every future diff better. The other two roles shrink. Pick accordingly.
 
+Thanks to Rob Bowley and Willem van den Ende for feedback on an earlier version of this post.
+
 [^a16z]: Kimberly Tan, [Where Enterprise AI is Actually Working](https://www.a16z.news/p/ai-adoption-by-the-numbers){:target="_blank"}, a16z, April 2026. 29% of the Fortune 500 and ~19% of the Global 2000 are live, paying customers of leading AI startups. Coding dominates by nearly an order of magnitude because it is verifiable, text-dense, and has tight feedback loops.
 
 [^pi]: [Pi](https://pi.dev/){:target="_blank"} is a minimal, highly customisable coding harness by Mario Zechner that works with any model. It also powers OpenClaw, so it sits at a level of abstraction I reach for when I want the moving parts visible rather than hidden behind a polished CLI.
