@@ -15,7 +15,7 @@ How is a user to see the hard work we put in to fashioning a particular system, 
 
 When they encounter a bug with our software, it's a failure of user experience. The "user" should not have "experienced" a bug in the system. When we build software, we try our hardest through all sorts of techniques and practices to create a system that is bug free. We are unconsciously thinking of user experience, even if we're not aware of it.
 
-Obie Fernandez recently [gave a talk](http://skillsmatter.com/podcast/ajax-ria/obie-fernandez-blood-sweat-and-rails) in which he made the statement "Perception is Reality". He's right. What a user perceives to be the case with the software they are using is what is real to them. 
+Obie Fernandez recently gave a talk in which he made the statement "Perception is Reality". He's right. What a user perceives to be the case with the software they are using is what is real to them. 
 
 What use is it if our software is beautifully designed internally, but pig ugly to look at and difficult to use? The user's perception of the software will be that it's bad software. We might disagree with them all we like, but their perception is impossible to change, and we shouldn't try to change it. Let's instead change our software so that it's perceived to be good software.
 
