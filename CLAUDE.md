@@ -150,6 +150,8 @@ This is a GitHub Pages-compatible Jekyll blog using a Tailwind CSS theme. The si
   - **Webinar landing pages** (have `kit_tag`): Skip "Join Future Webinars" CTA and newsletter (signup form is in content)
 - `_layouts/page.html` - Simple page template with title and content
 - `_includes/ai-newsletter-short.html` - Newsletter signup component
+- `_includes/about-chris.html` - "More About Chris" bio section (shared between homepage and /services)
+- **Extract shared sections proactively**: When adding the same HTML block to multiple pages, extract it as an `_includes/` partial immediately. Do not duplicate HTML across pages and wait for the user to notice.
 - Custom Tailwind config with brand colors: `brand-white`, `brand-turquoise`, `brand-deep-turquoise`, `brand-light-blue`, `brand-black`, `brand-orange`
 
 ### Content Architecture
