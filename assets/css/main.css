@@ -108,6 +108,10 @@ h2, h3 {
   padding-bottom: 0.5em;
 }
 
+h3 {
+  font-size: 1.25em;
+}
+
 figure {
   padding: 16px 12px;
   border-radius: 8px;

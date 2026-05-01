@@ -9,7 +9,7 @@
   {% endif %}
 {% endfor %}
 {% if series_posts.size > 1 %}
-<aside class="series-bottom hidden mt-12 mb-8 bg-brand-light-blue/10 rounded-lg p-6 border border-brand-light-blue/20">
+<aside class="series-bottom mt-12 mb-8 bg-brand-light-blue/10 rounded-lg p-6 border border-brand-light-blue/20">
   <p class="text-base font-semibold text-brand-black mb-4">This article is part of the <strong>{{ page.series }}</strong> series:</p>
   <ul class="text-sm space-y-2">
     {% for post in series_posts %}
@@ -17,40 +17,12 @@
       {% if post.url == page.url %}
         <div class="text-brand-black/60 font-medium">{{ post.title }} <span class="text-brand-black/40 italic">(this article)</span></div>
       {% else %}
-        <a href="{{ post.url }}" class="series-link text-brand-deep-turquoise hover:text-brand-turquoise transition-colors block" data-series="{{ page.series }}" data-target-title="{{ post.title | escape }}">{{ post.title }}</a>
+        <a href="{{ post.url }}" class="text-brand-deep-turquoise hover:text-brand-turquoise transition-colors block">{{ post.title }}</a>
         <div class="text-brand-black/40 text-xs">{{ post.date | date: "%b %y" }}</div>
       {% endif %}
     </li>
     {% endfor %}
   </ul>
 </aside>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  if (typeof posthog !== 'undefined') {
-    posthog.onFeatureFlags(function() {
-      var variant = posthog.getFeatureFlag('series-bottom-experiment');
-      if (variant === 'test') {
-        document.querySelectorAll('.series-bottom').forEach(function(el) {
-          el.classList.remove('hidden');
-        });
-      }
-      posthog.capture('series_page_viewed', {
-        series: '{{ page.series }}',
-        variant: variant || 'control'
-      });
-    });
-
-    document.querySelectorAll('.series-link').forEach(function(link) {
-      link.addEventListener('click', function(e) {
-        posthog.capture('series_link_clicked', {
-          series: this.dataset.series,
-          target_title: this.dataset.targetTitle,
-          source_url: window.location.pathname
-        });
-      });
-    });
-  }
-});
-</script>
 {% endif %}
 {% endif %}
