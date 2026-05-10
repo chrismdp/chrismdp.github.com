@@ -90,7 +90,7 @@ A clean install does not save you from the patterns that sink Ralph loops in pro
 
 Two practical caveats sit alongside those. Manual testing for things that cannot be automated still needs a human in the loop, marked `status: blocked` with a note. And token cost matters: running Ralph continuously eats through quota, a Max20 plan is the realistic floor for sustained autonomous work, and the value has exceeded the cost on every project I have run it against, though I am planning to try Ralph loops with [Pi](https://pi.dev/){:target="_blank"} and open-source models soon, which should bring the floor down.
 
-The bottleneck that has not gone away, and the one I [could not answer cleanly at AIE Europe](/ralph-loops-aie-europe/), is review. The loop produces work faster than I can read it, and the apprenticeship rung that used to teach junior engineers how to read code well is the same rung Ralph has eaten. I do not have a clean answer yet, and I am working on it.
+Review is still the bottleneck I [could not answer cleanly at AIE Europe](/ralph-loops-aie-europe/). The loop produces work faster than I can read it, and the apprenticeship rung that used to teach junior engineers how to read code well is the same rung Ralph has eaten. I do not have a clean answer yet, and I am working on it.
 
 ## Distribution Was The Friction
 
