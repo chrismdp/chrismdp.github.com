@@ -22,7 +22,7 @@ Four months of running Ralph in production taught me which moving parts to cut. 
 
 ## What The Skill Does
 
-The install drops two files into `~/.claude/skills/ralph/` (and Cursor, Pi, or whatever else you have configured). `SKILL.md` is the instructions every engineer in the relay reads at the start of its turn: how to pick the next ticket, claim it, do the work, mark it done, and exit. `ralph.sh` is the bash loop that spawns those engineers and streams their output.
+The install drops two files into `~/.claude/skills/ralph/` (and Cursor, Pi, or whatever else you have configured). `SKILL.md` is the instructions every engineer in the relay reads at the start of its turn: how to pick the next ticket, claim it, do the work, mark it done, and exit. `ralph.sh` is the bash loop that spawns those engineers and streams their output. The relay instructions used to live in a `RALPH.md` you copied into every project; they live in the skill now, and project-specific overrides go in `CLAUDE.md` or `AGENTS.md` where they get loaded automatically.
 
 Edit `~/.claude/skills/ralph/SKILL.md` however you want and your changes stay local. When I push an update upstream, [incorporation](https://airskills.ai/docs/concepts/incorporation) handles the merge: your agent reads the new version, explains what changed, and you decide in a sentence what to pull in. You do not have to choose between forking and staying current.
 
@@ -74,13 +74,7 @@ Write a ticket using the example above as a template, then:
 
 The loop reads the next ticket, hands it to a Claude Code session running the `/ralph` skill, watches the session work the ticket through `doing` to `done`, and then spawns the next engineer. Ctrl-C stops it cleanly; if you run out of tickets it waits for new ones, and if you exhaust the iteration budget it exits with a summary of what is left.
 
-## What I Cut
-
-The bundled `ralph-pm` skill is gone. Its job was managing beads through conversation, which was useful when beads was the queue but redundant when the queue is just markdown files. In a planning terminal, invoke `/ralph` and ask it to draft the tickets you want: the same skill that runs the loop also knows how to author the tickets that go into it. The PM side of Ralph is just `/ralph` running in a different window.
-
-`RALPH.md` is gone too. The instructions used to live in a 167-line file you copied into every project and customised to your stack; the skill carries them now, and project-specific overrides go in `CLAUDE.md` or `AGENTS.md`. Those load at session start regardless of which agent is reading them, and the `/ralph` skill yields to them when they conflict.
-
-The two-layer setup with a separate Ralph PM terminal is still useful, just lighter: on longer sessions you still want a planning terminal alongside the build loop, and now it is plain `claude` open in a window editing ticket files directly, with no skill required and no beads commands to remember.
+For longer sessions, run a second terminal alongside the build loop. Plain `claude` open in a window: type `/ralph` and ask it to draft the tickets you want, since the same skill that runs the loop also knows how to author the tickets that go into it. The PM side of Ralph is just `/ralph` running in a different window.
 
 ## What Still Goes Wrong
 
