@@ -14,7 +14,7 @@ categories:
 
 I've made it easier than ever to get started with Ralph: `npx airskills add chrismdp/ralph` and you are running.
 
-Ralph is an autonomous engineering loop. A bash script spawns a fresh Claude Code session, hands it the next markdown ticket from your repo's queue, lets the agent do the work and flip the ticket from `todo` to `done`, then spawns the next session. [Geoffrey Huntley](https://ghuntley.com/ralph/){:target="_blank"} wrote the original in two lines of bash and named it after Ralph Wiggum, the Simpsons character who keeps trying the same thing until it works. [Airskills](https://airskills.ai) is the registry that ships the skill: one command installs it into Claude Code, Cursor, or any other agent setup it detects on your machine, and the [incorporation](https://airskills.ai/docs) protocol keeps upstream changes from clobbering your local edits.
+Ralph is an autonomous engineering loop. A bash script spawns a fresh Claude Code session, hands it the next markdown ticket from your repo's queue, lets the agent do the work and flip the ticket from `todo` to `done`, then spawns the next session. [Geoffrey Huntley](https://ghuntley.com/ralph/){:target="_blank"} wrote the original in two lines of bash and named it after Ralph Wiggum, the Simpsons character who keeps trying the same thing until it works. [Airskills](https://airskills.ai) is the registry that ships the skill: one command installs it into Claude Code, Cursor, or any other agent setup it detects on your machine, and the [incorporation](https://airskills.ai/docs/concepts/incorporation) protocol keeps upstream changes from clobbering your local edits.
 
 Four months of running Ralph in production taught me which moving parts to cut. Even when you have decided [the agent orchestrator is too clever](/your-agent-orchestrator-is-too-clever/), the setup around the loop wants to grow: a ticket database, a separate skill for managing it, a copy of `RALPH.md` per project. None of that is Ralph. The version I run now keeps the primitive, which is a loop, a prompt, a queue, and an agent that knows when it is done, and drops everything else.
 
@@ -24,7 +24,7 @@ Four months of running Ralph in production taught me which moving parts to cut. 
 
 The install drops two files into `~/.claude/skills/ralph/` (and Cursor, Pi, or whatever else you have configured). `SKILL.md` is the instructions every engineer in the relay reads at the start of its turn: how to pick the next ticket, claim it, do the work, mark it done, and exit. `ralph.sh` is the bash loop that spawns those engineers and streams their output.
 
-Edit `~/.claude/skills/ralph/SKILL.md` however you want and your changes stay local. When I push an update upstream, [incorporation](https://airskills.ai/docs) handles the merge: your agent reads the new version, explains what changed, and you decide in a sentence what to pull in. You do not have to choose between forking and staying current.
+Edit `~/.claude/skills/ralph/SKILL.md` however you want and your changes stay local. When I push an update upstream, [incorporation](https://airskills.ai/docs/concepts/incorporation) handles the merge: your agent reads the new version, explains what changed, and you decide in a sentence what to pull in. You do not have to choose between forking and staying current.
 
 ## Files Beat Beads
 
