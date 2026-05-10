@@ -54,7 +54,7 @@ A user lands on the homepage and sees a login form with email and password field
 
 Status flips through `todo` to `doing` to `done`, with `blocked` for human-only work. The current engineer reads frontmatter to find the next file, edits it to claim the ticket, commits the implementation alongside the status flip, and exits, and the next engineer picks the next file after that. There is no database, no separate branch, and no sync step.
 
-Beads still works as a fallback: if the loop finds no ticket directory but spots an initialised `.beads/` and a `bd` binary, it falls back to the old workflow. I have not removed beads support, only demoted it.
+Beads still works as a fallback: if the loop finds no ticket directory but spots an initialised `.beads/` and a `bd` binary, it falls back to the old workflow.
 
 ## Try It
 
