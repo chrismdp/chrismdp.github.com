@@ -5,8 +5,7 @@ excerpt: "Join our webinar series for leaders leveraging AI in their organisatio
 image: /assets/img/webinar-mosaic.jpg
 image_portrait: false
 kit_tag: webinar15
-webinar_date: "2026-05-07T14:00:00+01:00"
-permalink: /webinar/
+webinar_date: "2026-05-14T15:00:00+01:00"
 ---
 
 <div class="mb-12">
