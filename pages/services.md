@@ -26,7 +26,7 @@ redirect_from:
 
     <div class="grid md:grid-cols-2 gap-12 items-start">
       <div class="md:ml-8 space-y-6">
-        {% include testimonial.html style="full" name="Alexandra Eavis" role="Chief Product & Technology Officer, Genomics" image="alexandra-eavis.jpeg" linkedin="https://www.linkedin.com/in/alexandraeavis/" quote="The team and I have really benefited from and enjoyed working with Chris. He has worked cross functionally to raise our organisational AI maturity, increasing both our internal productivity and effectiveness, and clarifying the path to production for our agentic tooling. Would recommend as a great way to augment internal capabilities." %}
+        {% include testimonial.html style="full" name="Alexandra Eavis" role="Chief Product & Technology Officer, Genomics" image="alexandra-eavis.jpeg" linkedin="https://www.linkedin.com/in/alexandraeavis/" quote="The team and I have really benefited from and enjoyed working with Chris. He has worked cross functionally to raise our organisational AI maturity, increasing both our internal productivity and effectiveness, and clarifying the path to production for our agentic tooling. Would recommend as a great way to augment internal capabilities." link_url="/case-studies/genomics/" link_text="Read full case study" %}
         {% include testimonial.html style="full" name="Tom Foster Carter" role="CEO, Cherrypick" image="tfc.jpeg" linkedin="https://www.linkedin.com/in/tomfostercarter/" quote="Chris helped us build a production LLM meal generator that made our customers happier and increased revenue. Our AI system reduced customer plan changes by 30% (meaning happier customers) and increased basket usage by 14% (meaning more revenue per customer)." link_url="/case-studies/gpt-meal-generator" link_text="Read full case study" %}
       </div>
       <div class="relative z-20">
@@ -101,6 +101,68 @@ redirect_from:
           <div class="flex items-start">
             <i data-lucide="check" class="w-4 h-4 mr-2 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
             <span>Technical due diligence and architecture review, including regulated sectors</span>
+          </div>
+        </div>
+        <div class="mt-auto">
+          <a href="#contact" class="inline-block bg-brand-deep-turquoise text-white px-6 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">Get in Touch →</a>
+        </div>
+      </div>
+
+      <!-- AI Readiness Assessment -->
+      <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors flex flex-col">
+        <i data-lucide="gauge" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
+        <h2 class="text-2xl font-heading font-bold mb-4 text-brand-black">AI Readiness Assessment</h2>
+        <p class="text-lg font-semibold mb-4 text-brand-black">Know where AI lands before you commit the budget</p>
+        <p class="text-brand-black/80 leading-relaxed mb-4">
+          Engineering teams often run months ahead with AI while operational teams sit behind, picking up shadow tools and the occasional data leak in between. Before signing off a major training rollout or company-wide deployment, get an evidence-based picture of where AI produces real gains, role by role, so investment flows to the functions that return it first.
+        </p>
+        <div class="space-y-2 mb-6 text-brand-black/80">
+          <div class="flex items-start">
+            <i data-lucide="check" class="w-4 h-4 mr-2 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
+            <span>Readiness diagnostic tuned to your tools, vocabulary, and operating model</span>
+          </div>
+          <div class="flex items-start">
+            <i data-lucide="check" class="w-4 h-4 mr-2 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
+            <span>Role-by-role map of where AI lands and where it does not</span>
+          </div>
+          <div class="flex items-start">
+            <i data-lucide="check" class="w-4 h-4 mr-2 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
+            <span>Shadow tool audit and governance gaps surfaced</span>
+          </div>
+          <div class="flex items-start">
+            <i data-lucide="check" class="w-4 h-4 mr-2 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
+            <span>Board-ready findings to support the investment case</span>
+          </div>
+        </div>
+        <div class="mt-auto">
+          <a href="#contact" class="inline-block bg-brand-deep-turquoise text-white px-6 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">Get in Touch →</a>
+        </div>
+      </div>
+
+      <!-- Just Get Started With AI -->
+      <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors flex flex-col">
+        <i data-lucide="rocket" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
+        <h2 class="text-2xl font-heading font-bold mb-4 text-brand-black">Just Get Started With AI</h2>
+        <p class="text-lg font-semibold mb-4 text-brand-black">Working AI workflows built for your team, not another course</p>
+        <p class="text-brand-black/80 leading-relaxed mb-4">
+          Most people in operational roles — finance, operations, marketing, HR, customer-facing teams — still use AI like an advanced Google search, one question at a time, copying answers into emails. The fastest way past that is not another training course but working AI workflows installed in the work itself. I lead a strong team of senior AI engineers and consultants who design and build the workflows for you, so they arrive ready to use and your people get going from day one.
+        </p>
+        <div class="space-y-2 mb-6 text-brand-black/80">
+          <div class="flex items-start">
+            <i data-lucide="check" class="w-4 h-4 mr-2 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
+            <span>Delivered by a strong team of senior AI engineers and consultants</span>
+          </div>
+          <div class="flex items-start">
+            <i data-lucide="check" class="w-4 h-4 mr-2 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
+            <span>Fixed-scope sprint, typically two workflows over three weeks</span>
+          </div>
+          <div class="flex items-start">
+            <i data-lucide="check" class="w-4 h-4 mr-2 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
+            <span>Built around real work in your tools, not generic demos</span>
+          </div>
+          <div class="flex items-start">
+            <i data-lucide="check" class="w-4 h-4 mr-2 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
+            <span>Live working demo and a business case memo per workflow</span>
           </div>
         </div>
         <div class="mt-auto">
