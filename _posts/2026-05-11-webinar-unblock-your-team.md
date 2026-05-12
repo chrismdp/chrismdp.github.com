@@ -18,11 +18,11 @@ webinar_date: "2026-05-14T15:00:00+01:00"
 excerpt: "A live webinar for engineering leaders on team productivity with AI."
 ---
 
-**Next session: {{ page.webinar_date | date: "%B %-d, %-I:%M%P %Z" }}**
+**Next session: {{ page.webinar_date | date: "%B %-d, %-I:%M%P" }} UK**
 
 Your power user is not making your team faster.
 
-AI leverage in a team comes from propagation. The playbooks, conventions, and patterns your best engineer has worked out need to live somewhere AI can run against them directly, the way that engineer would. Most teams put theirs in a Notion page nobody reads. That does not propagate.
+When one engineer ships ten times faster with AI, the bottleneck moves. It stops being how fast they code and starts being everything around them — code review, requirements, QA, deployment, and the gap between what the senior knows and what the rest of the team can do. Unblocking those constraints is the work. Most teams don't do it. They drop a rule or two into CLAUDE.md and move on. Nobody has the conversation with the senior engineer about how she actually works. Nobody deliberately watches where the rest of the team gets stuck. So her playbook never becomes something an AI can run on behalf of the whole team — it stays in her head, and the constraint stays where it is.
 
 <div class="bg-brand-deep-turquoise rounded-lg p-8 text-center mb-12 clear-both"><div class="rm-area-embed-webinar"></div></div>
 
