@@ -8,7 +8,9 @@ categories:
 - teams
 - leadership
 - productivity
-image: /assets/img/unblock-your-team-webinar.jpg
+image: /assets/img/productive-individuals-do-not-make-productive-firms.jpg
+image_portrait: true
+infographic: /assets/img/spacex-fix-any-process-infographic.png
 series: "AI In Action Webinars"
 ---
 
