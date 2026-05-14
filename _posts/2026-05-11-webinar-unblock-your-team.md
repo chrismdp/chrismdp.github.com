@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Webinar: Unblock Your Team"
-date: 2026-05-14 17:00:00 +0100
+date: 2026-05-14 16:00:00 +0100
 categories:
 - ai
 - webinar
@@ -68,7 +68,7 @@ Until the team has those patterns, the team does not benefit. The constraint has
 
 The first instinct teams have is to create a channel: `#ai-tips`, a Notion page, an "AI Wins" wiki. It does not work; the posts go in, nobody reads them. What works is active surfacing: getting the patterns onto people's screens whether they asked for them or not. A client of mine had an engineer who had built a brilliant little query-builder tool using AI. Nobody else on the team knew it existed until he demoed it in a sprint review, and by the end of the week half the team were using it. The channel is the archive; the demo is the surface.
 
-The layer above demos is *skills*: short markdown files that codify how a particular thing is done at this particular company, that can be loaded by anyone's AI to get the benefit. The Perplexity team make this point well in a recent piece on how they design skills internally: you only need a skill when the agent will get the task wrong without special context, or where the behaviour has to be extremely consistent across runs. Writing a skill that restates things the model already knows (their example: a sequence of git commands the model can already execute correctly) is good documentation and a poor skill[^perplexity]. Skills only earn their keep when they contain something the public training set does not have: your company's tone of voice, your team's idiosyncratic conventions, the specific shape of your internal APIs, the way you do code review here.
+The layer above demos is *skills*: short markdown files that codify how a particular thing is done at this particular company, that can be loaded by anyone's AI to get the benefit. The Perplexity team make this point well in a recent piece on how they design skills internally: you only need a skill when the agent will get the task wrong without special context, or where the behaviour has to be extremely consistent across runs. Writing a skill that restates things the model already knows (their example: a sequence of git commands the model can already execute correctly) is good documentation and a poor skill[^perplexity][^skillbench]. Skills only earn their keep when they contain something the public training set does not have: your company's tone of voice, your team's idiosyncratic conventions, the specific shape of your internal APIs, the way you do code review here.
 
 This is where I am putting most of my building energy at the moment, because there are not good tools yet for managing skills as a shared organisational asset, propagating them across teams, and letting non-technical people contribute. GitHub is not the right shape for this: skills are not code, and they should not be managed with diffs and pull requests. I have a tool called [Airskills](https://airskills.ai) that I demoed briefly at the end of the session. It is currently free, very early, and people are signing up faster than I can keep up with. If you have a team and you are wrestling with skill propagation, give it a try and tell me what is missing.
 
@@ -111,3 +111,4 @@ Pick one team and run this exercise: find the engineer who feels most productive
 [^deming]: W. Edwards Deming, *Out of the Crisis*, 2nd edition (MIT Press, 2000), p. 315: "94% belongs to the system (responsibility of management), 6% special."
 [^dora]: Google Cloud, [State of DevOps Report 2024](https://cloud.google.com/devops/state-of-devops).
 [^perplexity]: Perplexity Research, [Designing, Refining, and Maintaining Agent Skills at Perplexity](https://research.perplexity.ai/articles/designing-refining-and-maintaining-agent-skills-at-perplexity), May 2026. The piece walks through their internal taxonomy of when a skill earns its keep and when it does not.
+[^skillbench]: SkillBench (105 researchers, 7,000+ test runs) found that carefully curated skills improved task pass rates by 16.2 percentage points; self-generated skills added zero benefit. A complementary ETH Zurich study on CLAUDE.md files found that auto-generated context files decreased coding task performance by 3% and increased costs by 20%. Both studies confirm the same underlying pattern: generic content already in the model's training set adds noise rather than signal. Only company-specific context — tone of voice, internal conventions, proprietary workflows — provides measurable lift.
