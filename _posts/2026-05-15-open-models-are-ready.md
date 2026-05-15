@@ -67,7 +67,7 @@ I wrote about the open source cost argument in August last year, [Doing Real Wor
 
 George Hotz made the same point more sharply in April: frontier closed-source models cost at least 10x more to produce than the best open-weight alternatives, and the open models are only about six months behind on capability. At that gap-closure rate, any moat based on model quality depreciates within months.[^6]
 
-For the work my system does, reading project notes, making bounded decisions, executing tool calls, writing updates, DeepSeek V4 Pro is good enough. And good enough at 10% of the cost changes the design space.
+For the work my system does, reading project notes, making bounded decisions, executing tool calls, writing updates, DeepSeek V4 Pro is good enough. And good enough at 10% of the cost changes the game.
 
 Thanks to Willem van den Ende for the [Pi setup guide](https://willemvandenende.com/blog/engineering/how-to-get-started-with-the-pi-coding-agent-on-a-vps) and the conversations that shaped this migration.
 
