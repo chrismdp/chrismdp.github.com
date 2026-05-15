@@ -2,8 +2,6 @@
 layout: post
 title: "Open Models Are Ready"
 date: 2026-05-15 07:00:00 +0000
-image: /assets/img/open-models-are-ready-comic.jpg
-image_portrait: true
 categories:
 - ai
 - open-source
@@ -21,7 +19,7 @@ Here is which models worked, which ones did not, how to set it up with OpenRoute
 
 ## The Metered Bill Changes Everything
 
-Anthropic's announcement about `claude -p` and the Agent SDK moving to metered pricing made me think harder about whether I wanted this dependency to deepen. If the tools I rely on for worker orchestration move to metered billing, running my current agent usage could cost thousands a month. Something had to change. I started porting everything to Pi and testing every open source model I could get my hands on.
+Anthropic's announcement about `claude -p` and the Agent SDK moving to metered pricing made me think harder about whether I wanted this dependency to deepen. If the tools I rely on for worker orchestration move to metered billing, running my current agent usage could cost $10,000 a month. Something had to change. I started porting everything to Pi and testing every open source model I could get my hands on.
 
 ## Three Failures, One Winner
 
@@ -42,6 +40,8 @@ Every thirty minutes, Pi spawns three sub-agents in parallel to check that the p
 All three reviewers found only minor issues: the workers are doing fine on DeepSeek V4 Pro at about 10% of the cost of Opus. The sub-agent that picked up the most inconsistencies was Flash.
 
 Flash surprised me: it is the smaller, cheaper variant, $0.14 per million input tokens and $0.28 per million output tokens.[^2] I expected the weakest reviewer but it was the most alert, catching edge cases the larger models glossed over. It is also a little overeager, like a junior developer: thorough and looking hard, but raising things that are not actually problems. That is a feature, not a bug. I would rather filter false positives than miss real ones.
+
+{% include image.html url="/assets/img/open-models-are-ready-comic.jpg" description="Which model would you trust?" %}
 
 What happens when the reviewers disagree? You do not know which one is right, so you run more models. When Opus and Flash conflict on a call, I send a third arbiter, usually another Pro instance, to break the tie.
 
