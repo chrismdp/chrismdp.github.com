@@ -41,9 +41,11 @@ Every thirty minutes, Pi spawns three sub-agents in parallel to check that the p
 
 All three reviewers found only minor issues: the workers are doing fine on DeepSeek V4 Pro at about 10% of the cost of Opus. The sub-agent that picked up the most inconsistencies was Flash.
 
-Flash surprised me: it is the smaller, cheaper variant, $0.14 per million input tokens and $0.28 per million output tokens.[^2] I expected the weakest reviewer but it was the most alert, catching edge cases the larger models glossed over. It is also a little overeager, like a junior developer: thorough and looking hard, but raising things that are not actually problems. That is a feature, not a bug. I would rather filter false positives than miss real ones. The lesson here is not just that cheap models can review. It is that cheap models with focused context — a clear job, specific success criteria, a narrow scope — outperform expensive general-purpose models on that job. Opus is trying to understand everything. Flash just needs to catch what looks off.
+Flash surprised me: it is the smaller, cheaper variant, $0.14 per million input tokens and $0.28 per million output tokens.[^2] I expected the weakest reviewer but it was the most alert, catching edge cases the larger models glossed over.
 
-{% include image.html url="/assets/img/open-models-are-ready-comic.jpg" description="Which model would you trust?" %}
+{% include inline-image.html src="/assets/img/open-models-are-ready-comic.jpg" alt="Which model would you trust?" width="35%" %}
+
+It is also a little overeager, like a junior developer: thorough and looking hard, but raising things that are not actually problems. That is a feature, not a bug. I would rather filter false positives than miss real ones. The lesson here is not just that cheap models can review. It is that cheap models with focused context — a clear job, specific success criteria, a narrow scope — outperform expensive general-purpose models on that job. Opus is trying to understand everything. Flash just needs to catch what looks off.
 
 What happens when the reviewers disagree? You do not know which one is right, so you run more models. When Opus and Flash conflict on a call, I send a third arbiter, usually another Pro instance, to break the tie.
 
