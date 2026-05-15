@@ -55,7 +55,7 @@ With DeepSeek V4 Pro I am looking at roughly $40 per day for current token volum
 
 ## Your Data Is Not Their Training Data
 
-I access DeepSeek V4 Pro through OpenRouter rather than DeepSeek's own API. OpenRouter gives you a single endpoint that routes to multiple providers and handles billing. The killer feature for privacy-conscious setups is the **do not train** setting: in your OpenRouter account settings, turn off data sharing so your prompts and completions are not used for model training. DeepSeek's own API is cheaper by a notable margin but trains on your data by default. There is an opt-out there too, but OpenRouter makes the privacy choice simpler and lets you switch between providers without changing your code.
+I access DeepSeek V4 Pro through OpenRouter rather than DeepSeek's own API. OpenRouter gives you a single endpoint that routes to multiple providers and handles billing. The killer feature for privacy-conscious setups is the **do not train** setting: in your OpenRouter account settings, turn off data sharing so your prompts and completions are not used for model training. DeepSeek's own API is cheaper by a notable margin but trains on your data by default. OpenRouter makes the privacy choice simpler and lets you switch between providers without changing your code.
 
 If privacy is a hard requirement, look for OpenRouter providers that offer Zero Data Retention (ZDR). I use these for the same reason I wrote about in [Stop AI Stealing From You](/stop-ai-stealing-from-you/).
 
@@ -73,7 +73,7 @@ Thanks to Willem van den Ende for the [Pi setup guide](https://willemvandenende.
 
 [^fn-evals]: I wrote about model evaluation and the need for continuous monitoring in [How to React to a New Frontier Model](/how-to-react-to-a-new-frontier-model/) last year. The same principle applies when you swap model families entirely.
 
-[^fn-june2025]: I wrote about the state of AI tooling in June last year in [AI Needs More From You](/ai-needs-more-from-you/) — the landscape has changed faster than anyone expected.
+[^fn-june2025]: I wrote about the state of AI tooling in June last year in [AI Needs More From You](/ai-needs-more-from-you/) — the landscape has changed faster than anyone expected. I ran a webinar that month and it's painful to look back at: the models stumbled on things the current generation handles easily, and the writing I could get with AI assistance was much worse than what comes out now. Sorry.
 
 [^fn-pi-philosophy]: Pi ships with powerful defaults and explicitly skips features like plan mode and sub-agent displays. The philosophy, quoting Mario Zechner's design, is that "simplicity is achieved when there is nothing left to take away." The Agentic Harness Engineering paper showed Terminal-Bench scores improving from 69.7% to 77.0% through ten iterations of harness refinement alone, beating a human-designed baseline with fewer tokens. The latest Artificial Analysis Coding Agent Index measures model-plus-harness pairs rather than models in isolation, and finds cost per task varying by more than 30x across the same models in different harnesses. For engineering leaders the point is straightforward: the toolchain that gives you the most leverage is not the most expensive model but the most minimal harness.
 
