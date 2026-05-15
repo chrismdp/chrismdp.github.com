@@ -1,0 +1,84 @@
+---
+layout: post
+title: "Open Models Are Ready"
+date: 2026-05-15 07:00:00 +0000
+image: /assets/img/open-models-are-ready-comic.jpg
+image_portrait: true
+categories:
+- ai
+- open-source
+- economics
+- agents
+---
+
+I run a custom Kanban board as markdown files in an Obsidian vault, with multi-step projects for everything and background worker agents doing the work using systemd, cron and `claude -p`. Useful but expensive: the whole thing runs on a Claude Max subscription at about $200 per month, and I was hitting the limits before the cycle ended.
+
+So I spent this week migrating everything to [Pi](https://pi.dev) running on DeepSeek V4 Pro via OpenRouter. Within a few hours the system was making the decisions I would make, at a fraction of the token cost, and the cheapest model in my stack caught the most bugs.
+
+Here is which models worked, which ones did not, how to set it up with OpenRouter so your data stays private, and whether the economics hold up under production conditions.
+
+<!--more-->
+
+## The Ceiling Is Built In
+
+Anthropic's announcement about `claude -p` and the Agent SDK moving to metered pricing made me think harder about whether I wanted this dependency to deepen. If the tools I rely on for worker orchestration are locked into a usage tier that caps out under load, my system design has a ceiling built in. I started porting everything to Pi and testing every open source model I could get my hands on.
+
+## Three Failures, One Winner
+
+I spent two days cycling through models: Kimi K2.6, MiniMax M1, Tencent's Hy3 preview. None of them delivered. They were competent at simple completions but could not hold context across a multi-step worker task. Every one of them felt like June 2025 frontier: impressive in isolation, unreliable under load.[^fn-june2025]
+
+My workers do not answer one question and stop. They read a project file, understand where the previous agent left off, make a decision about what to do next, execute tool calls, check the result, and write an update before exiting. That requires sustained reasoning across a sequence of decisions, not single-turn Q&A. The open weight models I tested fell apart after two or three steps.
+
+One Model rose above the rest. DeepSeek V4 Pro held the thread across the full worker cycle from the first test.
+
+I moved my background worker to it on Friday morning and by the afternoon I was running production tasks through it.
+
+## The Cheapest Reviewer
+
+When you swap the model your agent system runs on, how do you know it is still working correctly? The problem is invisible: agents build things in a black box, and you are not watching every output. I had to know this was working before I could trust it, so I built evals into the system itself.
+
+Every thirty minutes, Pi spawns three sub-agents in parallel to check that the primary worker is doing its job correctly: one running Claude Opus 4.7 (my reference standard), one running DeepSeek V4 Pro, and one running DeepSeek V4 Flash.[^1] Each reads the latest worker and heartbeat logs, evaluates whether the decisions are sound and the instructions are being followed, and reports back.[^fn-evals]
+
+All three reviewers found only minor issues: the workers are doing fine on DeepSeek V4 Pro at about 10% of the cost of Opus. The sub-agent that picked up the most inconsistencies was Flash.
+
+Flash surprised me: it is the smaller, cheaper variant, $0.14 per million input tokens and $0.28 per million output tokens.[^2] I expected the weakest reviewer but it was the most alert, catching edge cases the larger models glossed over. It is also a little overeager, like a junior developer: thorough and looking hard, but raising things that are not actually problems. That is a feature, not a bug. I would rather filter false positives than miss real ones.
+
+What happens when the reviewers disagree? You do not know which one is right, so you run more models. When Opus and Flash conflict on a call, I send a third arbiter, usually another Pro instance, to break the tie.
+
+## When Monitoring Costs a Coffee
+
+With DeepSeek V4 Pro I am looking at roughly $40 per day for current token volume on heavy sessions.[^3] That is expensive in absolute terms but still far cheaper than running the same workload on Opus metered. If I can shift more of the workload to Flash, and the early results suggest I can, it drops to more like $2 per day. 
+
+## Your Data Is Not Their Training Data
+
+I access DeepSeek V4 Pro through OpenRouter rather than DeepSeek's own API. OpenRouter gives you a single endpoint that routes to multiple providers and handles billing. The killer feature for privacy-conscious setups is the **do not train** setting: in your OpenRouter account settings, turn off data sharing so your prompts and completions are not used for model training. DeepSeek's own API is cheaper by a notable margin but trains on your data by default. There is an opt-out there too, but OpenRouter makes the privacy choice simpler and lets you switch between providers without changing your code.
+
+If privacy is a hard requirement, look for OpenRouter providers that offer Zero Data Retention (ZDR). I use these for the same reason I wrote about in [Stop AI Stealing From You](/stop-ai-stealing-from-you/).
+
+Pi made the rest of the migration straightforward. The extension model, where the agent writes its own NPM packages to add capabilities, meant I never had to fork the harness. I asked Pi to build an extension that prevents it from running commands I have flagged as irreversible decisions. It read my existing guidance, understood the pattern, and built it. When running as a bot it denies irreversible actions by default; when running interactively it asks first.[^4]
+
+## Good Enough Changes Everything
+
+I wrote about the open source cost argument in August last year, [Doing Real Work with AI Just Became 150x Cheaper](/doing-real-work-with-ai-just-became-150x-cheaper/), when OpenAI released their first open models and the economics flipped. At the time the argument was theoretical: the cost advantage was clear but the capability gap still required caveats.
+
+George Hotz made the same point more sharply in April: frontier closed-source models cost at least 10x more to produce than the best open-weight alternatives, and the open models are only about six months behind on capability. At that gap-closure rate, any moat based on model quality depreciates within months.[^6]
+
+For the work my system does, reading project notes, making bounded decisions, executing tool calls, writing updates, DeepSeek V4 Pro is good enough. And good enough at 10% of the cost changes the design space.
+
+Thanks to Willem van den Ende for the [Pi setup guide](https://willemvandenende.com/blog/engineering/how-to-get-started-with-the-pi-coding-agent-on-a-vps) and the conversations that shaped this migration.
+
+[^fn-evals]: I wrote about model evaluation and the need for continuous monitoring in [How to React to a New Frontier Model](/how-to-react-to-a-new-frontier-model/) last year. The same principle applies when you swap model families entirely.
+
+[^fn-june2025]: I wrote about the state of AI tooling in June last year in [AI Needs More From You](/ai-needs-more-from-you/) — the landscape has changed faster than anyone expected.
+
+[^fn-pi-philosophy]: Pi ships with powerful defaults and explicitly skips features like plan mode and sub-agent displays. The philosophy, quoting Mario Zechner's design, is that "simplicity is achieved when there is nothing left to take away." The Agentic Harness Engineering paper showed Terminal-Bench scores improving from 69.7% to 77.0% through ten iterations of harness refinement alone, beating a human-designed baseline with fewer tokens. The latest Artificial Analysis Coding Agent Index measures model-plus-harness pairs rather than models in isolation, and finds cost per task varying by more than 30x across the same models in different harnesses. For engineering leaders the point is straightforward: the toolchain that gives you the most leverage is not the most expensive model but the most minimal harness.
+
+[^1]: Pi does not have explicit sub-agent features in its UI, but I just got it to build a subagent module using the builtin template. It took about five minutes: one simple task agent that Pi spawns via its own extension system.
+
+[^2]: DeepSeek V4 Flash pricing via the official API. At OpenRouter prices may vary slightly but remain in the same order of magnitude. Flash is the 284B total, 13B active parameter variant; Pro is the 1.6T total, 49B active parameter MoE.
+
+[^3]: Current throughput is roughly equivalent to what I was running on Claude Max: continuous worker polling, project scanning, and health checks across about a dozen active projects. The $40/day figure includes the Pro model for primary workers and Flash for monitoring sub-agents.
+
+[^4]: Pi's extension system is TypeScript distributed via NPM. You ask Pi to write the extension, it hot-reloads into the running session, and you iterate live. Most harnesses are built for the model to use. Pi is built to be extended by the model.
+
+[^6]: George Hotz, "AI Has No Moat," April 2026. Hotz's broader argument is that the model layer itself is indefensible given the pace of open weight release. The harness layer, tools, orchestration, feedback loops, is where durable value accumulates.
