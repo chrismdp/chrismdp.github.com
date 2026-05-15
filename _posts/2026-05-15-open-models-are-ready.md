@@ -19,9 +19,9 @@ Here is which models worked, which ones did not, how to set it up with OpenRoute
 
 <!--more-->
 
-## The Ceiling Is Built In
+## The Metered Bill Changes Everything
 
-Anthropic's announcement about `claude -p` and the Agent SDK moving to metered pricing made me think harder about whether I wanted this dependency to deepen. If the tools I rely on for worker orchestration are locked into a usage tier that caps out under load, my system design has a ceiling built in. I started porting everything to Pi and testing every open source model I could get my hands on.
+Anthropic's announcement about `claude -p` and the Agent SDK moving to metered pricing made me think harder about whether I wanted this dependency to deepen. If the tools I rely on for worker orchestration move to metered billing, running my current agent usage could cost thousands a month. Something had to change. I started porting everything to Pi and testing every open source model I could get my hands on.
 
 ## Three Failures, One Winner
 

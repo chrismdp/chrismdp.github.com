@@ -26,6 +26,8 @@ There is now enough independent data to call it. Will Lytle at Plandek presented
 
 This is a systems problem, not an AI problem and not a people problem. W. Edwards Deming spent the second half of his life arguing that ninety-four percent of the performance of any organisation is a property of the system, and only six percent is down to the people in it[^deming]. A bad system, he said, will beat a good person every time. We took a software delivery lifecycle we had spent decades reasonably optimising and injected a step-change in coding speed into one part of it. The rest of the system breaks because we broke it.
 
+![Deming: a bad system will beat a good person every time. 94% belongs to the system, 6% special.](/assets/img/deming-94-percent-system.png)
+
 Eli Goldratt's Theory of Constraints picks this up: the system has a single throughput-limiting bottleneck, and improving anywhere else is decoration. AI removes the coding bottleneck, so the constraint moves. Your job as a technical leader is to find where it went, and decide whether to fix it, redesign it, or delete it.
 
 ## Three Places It Goes
@@ -48,6 +50,8 @@ The 2024 DORA report puts it bluntly: AI does not fix a team, it amplifies what 
 
 When you find the constraint at a handoff, the temptation is to throw automation at it. Resist that. SpaceX's five-step approach is one of the cleanest pieces of process thinking I have come across: make the requirements less dumb, find the owner of each step and delete the step if no one will own it, simplify what is left, accelerate it, *then* automate, last. If you have not had to add back at least ten percent of the process afterwards because you went too far, you did not delete enough.
 
+![Set fire to the process — the SpaceX move: five steps to streamline anything. 1. Make requirements less dumb. 2. Find the owner and delete the step. 3. Simplify. 4. Accelerate. 5. Automate last.](/assets/img/spacex-five-step-process-slide.png)
+
 Most teams skip straight to step five and automate a broken process. That is the win they bought. Deleting process is only safe with the right nets underneath: automated tests, type checks and linters, small changes that are cheap to review and easy to roll back, and Ship-Show-Ask routing so not every change pays the same gate cost.
 
 ### Knowledge Stays Stuck
@@ -59,6 +63,8 @@ The first instinct is to create a channel: `#ai-tips`, a Notion page, an "AI Win
 The layer above demos is *skills*: short markdown files that codify how a particular thing is done at this particular company, that can be loaded by anyone's AI to get the benefit. The Perplexity team make this point well in a recent piece on how they design skills internally: you only need a skill when the agent will get the task wrong without special context, or where the behaviour has to be extremely consistent across runs. Writing a skill that restates things the model already knows (their example: a sequence of git commands the model can already execute correctly) is good documentation and a poor skill[^perplexity][^skillbench]. Skills only earn their keep when they contain something the public training set does not have: your company's tone of voice, your team's idiosyncratic conventions, the specific shape of your internal APIs, the way you do code review here.
 
 There are not good tools yet for managing skills as a shared organisational asset, propagating them across teams, and letting non-technical people contribute. GitHub is not the right shape for it: skills are not code. I am building [Airskills](https://airskills.ai) to solve this. It is currently free and very early. If you have a team wrestling with skill propagation, give it a try and tell me what is missing.
+
+[![Airskills — share skills seamlessly with your team. airskills.ai](/assets/img/airskills-share-skills.png)](https://airskills.ai)
 
 ## Keep Tweaking
 
