@@ -51,7 +51,7 @@ What happens when the reviewers disagree? You do not know which one is right, so
 
 ## What It Actually Costs
 
-Yesterday came in at $47 on DeepSeek V4 Pro: workers, monitoring sub-agents, and some interactive coding alongside. The baseline for workers and monitoring on their own looks closer to $25-30 a day, but it is early and I want more runs before I trust the figures.[^3] That is still too much, even though it is a small fraction of the equivalent on Opus metered. Shifting more of the workload to Flash should bring it down, and I will know in a couple of weeks how much.
+Yesterday came in at $47 on DeepSeek V4 Pro: workers, monitoring sub-agents, and some interactive coding alongside. The baseline for workers and monitoring on their own looks closer to $25-35 a day, but it is early and I want more runs before I trust the figures.[^3] With the workers off Claude, my Max $200 subscription now covers the rest of my interactive use without hitting limits. The DeepSeek spend is still too much, even though it is a small fraction of the equivalent on Opus metered. Shifting more of the workload to Flash should bring it down, and I will know in a couple of weeks how much.
 
 ## Your Data Is Not Their Training Data
 
