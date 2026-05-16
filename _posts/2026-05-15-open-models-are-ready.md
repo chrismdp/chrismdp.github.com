@@ -11,7 +11,7 @@ categories:
 - agents
 ---
 
-I run a custom Kanban board as markdown files in an Obsidian vault, with multi-step projects for everything and background worker agents doing the work using systemd, cron and `claude -p`. Useful but expensive: the whole thing runs on a Claude Max subscription at about $200 per month, and I was hitting the limits before the cycle ended.
+I run a custom Kanban board as markdown files in an Obsidian vault, with multi-step projects for everything and background worker agents doing the work using systemd, cron and `claude -p`. Useful but expensive: the whole thing fits within a Claude Max subscription at about $200 per month alongside my normal interactive use, and I was hitting the limits before the cycle ended.
 
 So I spent this week migrating my background worker fleet to [Pi](https://pi.dev) running on DeepSeek V4 Pro via OpenRouter. Within a few hours the system was making the decisions I would make, at a fraction of the token cost, and the cheapest model in my stack caught the most bugs. I have also been running my own interactive coding through Pi on the same model, and although it costs a little more than Claude Max today, the gap is closing and the path off Claude is proven.
 
