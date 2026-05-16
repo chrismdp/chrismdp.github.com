@@ -13,7 +13,7 @@ categories:
 
 I run a custom Kanban board as markdown files in an Obsidian vault, with multi-step projects for everything and background worker agents doing the work using systemd, cron and `claude -p`. Useful but expensive: the whole thing runs on a Claude Max subscription at about $200 per month, and I was hitting the limits before the cycle ended.
 
-So I spent this week migrating everything to [Pi](https://pi.dev) running on DeepSeek V4 Pro via OpenRouter. Within a few hours the system was making the decisions I would make, at a fraction of the token cost, and the cheapest model in my stack caught the most bugs.
+So I spent this week migrating my background worker fleet to [Pi](https://pi.dev) running on DeepSeek V4 Pro via OpenRouter. Within a few hours the system was making the decisions I would make, at a fraction of the token cost, and the cheapest model in my stack caught the most bugs. I have also been running my own interactive coding through Pi on the same model, and although it costs a little more than Claude Max today, the gap is closing and the path off Claude is proven.
 
 Here is which models worked, which ones did not, how to set it up with OpenRouter so your data stays private, and whether the economics hold up under production conditions.
 
@@ -21,7 +21,7 @@ Here is which models worked, which ones did not, how to set it up with OpenRoute
 
 ## The Metered Bill Changes Everything
 
-Anthropic's announcement about `claude -p` and the Agent SDK moving to metered pricing made me think harder about whether I wanted this dependency to deepen. If the tools I rely on for worker orchestration move to metered billing, running my current agent usage could cost $10,000 a month. Something had to change. I started porting everything to Pi and testing every open source model I could get my hands on.
+Anthropic's announcement about `claude -p` and the Agent SDK moving to metered pricing made me think harder about whether I wanted this dependency to deepen. Running all my Claude Code use at metered rates would cost about $10,000 a month, and the June change only hits about a quarter of that (the workers that run through `claude -p`), but I read it as a signal. Unmetered plans are not going to last, and I would rather drive my per-token cost down across the stack before the rest follows. I started porting everything to Pi and testing every open source model I could get my hands on.
 
 ## Three Failures, One Winner
 
@@ -68,6 +68,8 @@ I wrote about the open source cost argument in August last year, [Doing Real Wor
 George Hotz made the same point more sharply in April: frontier closed-source models cost at least 10x more to produce than the best open-weight alternatives, and the open models are only about six months behind on capability. At that gap-closure rate, any moat based on model quality depreciates within months.[^6]
 
 For the work my system does, reading project notes, making bounded decisions, executing tool calls, writing updates, DeepSeek V4 Pro is good enough. And good enough at 10% of the cost changes the game.
+
+The workers are done, and my interactive Claude Code use is tested on the same stack and ready to move when Max follows `claude -p` into metered pricing. The only reason my interactive work is still on Claude is that Max remains the cheapest option this month.
 
 Thanks to Willem van den Ende for the [Pi setup guide](https://willemvandenende.com/blog/engineering/how-to-get-started-with-the-pi-coding-agent-on-a-vps) and the conversations that shaped this migration.
 
