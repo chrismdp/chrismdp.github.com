@@ -71,7 +71,7 @@ For the work my system does, reading project notes, making bounded decisions, ex
 
 The workers are done, and my interactive Claude Code use is tested on the same stack and ready to move when Max follows `claude -p` into metered pricing. The only reason my interactive work is still on Claude is that Max remains the cheapest option this month.
 
-Thanks to Willem van den Ende for the [Pi setup guide](https://willemvandenende.com/blog/engineering/how-to-get-started-with-the-pi-coding-agent-on-a-vps) and the conversations that shaped this migration.
+Thanks to Willem van den Ende for the [Pi setup guide](https://willemvandenende.com/blog/engineering/how-to-get-started-with-the-pi-coding-agent-on-a-vps) and the conversations that shaped this migration. Thanks to Rob Bowley for feedback on earlier drafts of this post.
 
 [^fn-evals]: I wrote about model evaluation and the need for continuous monitoring in [How to React to a New Frontier Model](/how-to-react-to-a-new-frontier-model/) last year. The same principle applies when you swap model families entirely.
 
