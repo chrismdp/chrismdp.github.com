@@ -49,9 +49,9 @@ It is also a little overeager, like a junior developer: thorough and looking har
 
 What happens when the reviewers disagree? You do not know which one is right, so you run more models. When Opus and Flash conflict on a call, I send a third arbiter, usually another Pro instance, to break the tie.
 
-## When Monitoring Costs a Coffee
+## What It Actually Costs
 
-With DeepSeek V4 Pro I am looking at roughly $40 per day for current token volume on heavy sessions.[^3] That is expensive in absolute terms but still far cheaper than running the same workload on Opus metered. If I can shift more of the workload to Flash, and the early results suggest I can, it drops to more like $2 per day. 
+Yesterday came in at $47 on DeepSeek V4 Pro: workers, monitoring sub-agents, and some interactive coding alongside. The baseline for workers and monitoring on their own looks closer to $25-30 a day, but it is early and I want more runs before I trust the figures.[^3] That is still too much, even though it is a small fraction of the equivalent on Opus metered. Shifting more of the workload to Flash should bring it down, and I will know in a couple of weeks how much.
 
 ## Your Data Is Not Their Training Data
 
@@ -83,7 +83,7 @@ Thanks to Willem van den Ende for the [Pi setup guide](https://willemvandenende.
 
 [^2]: DeepSeek V4 Flash pricing via the official API. At OpenRouter prices may vary slightly but remain in the same order of magnitude. Flash is the 284B total, 13B active parameter variant; Pro is the 1.6T total, 49B active parameter MoE.
 
-[^3]: Current throughput is roughly equivalent to what I was running on Claude Max: continuous worker polling, project scanning, and health checks across about a dozen active projects. The $40/day figure includes the Pro model for primary workers and Flash for monitoring sub-agents.
+[^3]: Throughput is roughly equivalent to what I was running on Claude Max: continuous worker polling, project scanning, and health checks across about a dozen active projects. The number bounces day to day depending on how much interactive coding runs alongside, so I am treating early figures as a ballpark.
 
 [^4]: Pi's extension system is TypeScript distributed via NPM. You ask Pi to write the extension, it hot-reloads into the running session, and you iterate live. Most harnesses are built for the model to use. Pi is built to be extended by the model.
 
