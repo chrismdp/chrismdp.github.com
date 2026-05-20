@@ -97,7 +97,7 @@ The chat-with-everything model of AI is a dead end for the work that matters mos
 
 I have hit on a compromise. Some simple work the AI does end to end and hands me a result I can use. Other more complex work the AI prepares so I can decide faster, then stops. Confusing the two costs you more time correcting than you ever saved.
 
-The agent needs to do more than say "I can help with that". It has to know what I said I wanted to be doing, and tell me to keep at it even when it is hard or boring. This is the gym trainer for your mind. The reason most of us would let the AI write the strategy is that strategy is hard, the deadline is tomorrow, and the chat window is right there. A productivity stack that lets you do the easy thing every time is not a productivity stack — it is a treadmill continually producing average work.
+The agent needs to do more than say "I can help with that". It has to know what I said I wanted to be doing, and tell me to keep at it even when it is hard or boring. This is the gym trainer for your mind. The reason most of us would let the AI write the strategy is that strategy is hard, the deadline is tomorrow, and the chat window is right there. A productivity stack that lets you do the easy thing every time is just treadmill continually producing average work.
 
 ## The Chat Box Reinforces This
 
