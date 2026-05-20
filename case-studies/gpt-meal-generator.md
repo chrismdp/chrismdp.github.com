@@ -8,6 +8,7 @@ image: /assets/img/meal-generator.jpg
 categories:
 - ai
 - case-studies
+live: true
 ---
 
 <div style="clear: both;"></div>

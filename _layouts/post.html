@@ -283,7 +283,7 @@ layout: default
       {% if page.categories contains 'case-studies' %}
       {% assign case_studies = "" | split: "" %}
       {% for pg in site.pages %}
-        {% if pg.categories contains 'case-studies' %}
+        {% if pg.categories contains 'case-studies' and pg.live %}
           {% if pg.url != page.url %}
             {% assign case_studies = case_studies | push: pg %}
           {% endif %}
