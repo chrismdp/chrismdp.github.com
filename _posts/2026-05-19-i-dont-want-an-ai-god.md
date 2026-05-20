@@ -129,6 +129,8 @@ I am not the only one reaching for this shape. OpenClaw is infrastructure for ex
 
 Another analogy that makes this click for me is microservices versus the monolith. Microservices win because the people who interact with them have a clear interface and a known remit, and I suspect individual agents will be the same — especially for anything used by a team. Perhaps the right answer will [be both types in different contexts](/ai-is-still-searching-for-a-home/):
 
+For my part, I am dismantling my own orchestrator in favour of this shape — a small army of bounded agents, each one narrower than the whole. I will let you know in six months whether it holds up.
+
 {% include inline-image.html src="/assets/img/ai-god-house-hunt.jpg" alt="Comic of an AI house-hunting: embedded living inside an app, orchestrating from headquarters, or living in a mobile RV. Two estate agents at the end conclude they should probably update the brochures." align="center" width="45%" %}
 
 ## Cowork, And What Comes Next
@@ -137,11 +139,11 @@ However, the current mainstream tools are not right for this yet, and yet they a
 
 The patterns I have described map onto Cowork cleanly. The heartbeat is a scheduled agent, the triage is a scheduled agent with inbox access, the worker is a scheduled agent that picks one project and exits, and the review board is an artefact they all read from and write to. The primitives are there; someone with more time than me could rebuild this on Cowork in a few weeks.
 
-But tools like Cowork are not the finished product: they are stuck-together products will cause an explosion of stuck-together systems like mine. They have some of the right primitives like connectors, schedules and proper memory, but they are not yet the right product and do not facilitate the creation of the right product.
+But tools like Cowork are not the finished product. They are stuck-together products that will cause an explosion of stuck-together systems like mine. They have some of the right primitives — connectors, schedules and proper memory — but they are not yet the right product, and they do not facilitate the creation of the right product.
 
 {% include inline-image.html src="/assets/img/ai-god-market.jpg" alt="Four-panel comic titled 'Personal AI Coworker Annual Prototype Market'. Top-left: Spark by Google, a stall labelled Est. 2024 selling a stack of Gmail/Docs/Drive/Meet plus 'Skills', $100/month, badge says 'runs in cloud!'. Top-right: Cowork (Anthropic + Microsoft), Word/Excel/Teams/Outlook plus Claude and 'Skills', $20/month (unmetered for enterprise). Bottom-left: OpenClaw, a hand-built rig with a lobster on top, 'Skills', Free (hardware and tokens not included). Bottom-right: Hermes New, a slightly tatty stall with signs reading 'Just killed OpenClaw' and 'Everything else same as OpenClaw'. The personal AI coworker market in one frame." align="center" width="80%" %}
 
-That is the real risk with all of this shipping now. Productising the chat-window-with-an-agent-attached at that scale is going to cement the sticky-tape pattern in hundreds of millions of users' workflows at exactly the moment we are starting to realise the pattern is the wrong shape. The schedule and the shared space will get baked in alongside the bit that needs replacing.
+The risk is two-pronged. Cowork, Copilot Cowork and Spark are productising the chat-window-with-an-agent-attached at the scale of hundreds of millions of users, cementing the wrong primitive into workflows just as we are starting to realise it is the wrong shape. And by being _good enough but not right_, they will push the rest of us to build our own homebrew versions of the same shape — sticky-tape orchestrators no one can maintain, which drift into doing things we should not be asking of them and accidentally become the omniscient gods this post argues against. The schedule and the shared space will get baked in alongside the bit that needs replacing.
 
 Just like AI, we are converging on a solution when we should still be diverging. 
 
