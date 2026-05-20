@@ -145,7 +145,7 @@ That is the real risk with all of this shipping now. Productising the chat-windo
 
 Just like AI, we are converging on a solution when we should still be diverging. 
 
-For now: as you give more and more info to AI, keep the work you love, the work you are good at and want to stay good at, the work that is your judgement and nobody else's. Hand off everything else, but watch out for the creation one all-knowing helper, just because it has the data and forces you to use it in a certain way.
+For now: as you give more and more info to AI, keep the work you love, the work you are good at and want to stay good at, the work that is your judgement and nobody else's. Hand off everything else, but watch out for the accidental creation of one all-knowing helper, just because it has the data and forces you to use it in a certain way.
 
 [^cowork]: [Claude Cowork](https://claude.com/product/cowork){:target="_blank"} is Anthropic's autonomous agent running in the Claude desktop app, working directly with files on your computer. It is currently in research preview on Max plans. [Microsoft's Copilot Cowork](https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/){:target="_blank"} follows the same pattern for Office: agents that run alongside you on a schedule, in a shared space, rather than living inside a chat window. Both are essentially betting that the chat window is the wrong primitive for serious work.
 
