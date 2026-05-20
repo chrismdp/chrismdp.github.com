@@ -129,7 +129,7 @@ I am not the only one reaching for this shape. OpenClaw is infrastructure for ex
 
 Another analogy that makes this click for me is microservices versus the monolith. Microservices win because the people who interact with them have a clear interface and a known remit, and I suspect individual agents will be the same — especially for anything used by a team. Perhaps the right answer will [be both types in different contexts](/ai-is-still-searching-for-a-home/):
 
-For my part, I am dismantling my own orchestrator in favour of this shape — a small army of bounded agents, each one narrower than the whole. I will let you know in six months whether it holds up.
+For my part, I am dismantling my own orchestrator in favour of this shape — a small army of bounded agents, each one narrower than the whole. I will let you know whether it holds up.
 
 {% include inline-image.html src="/assets/img/ai-god-house-hunt.jpg" alt="Comic of an AI house-hunting: embedded living inside an app, orchestrating from headquarters, or living in a mobile RV. Two estate agents at the end conclude they should probably update the brochures." align="center" width="45%" %}
 
