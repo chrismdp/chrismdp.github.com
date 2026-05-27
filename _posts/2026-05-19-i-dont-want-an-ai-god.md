@@ -91,7 +91,7 @@ There is something specific going on here. An AI optimises hard for the problem 
 
 This is why the strongest use of AI in strategic work is not asking it for answers but having it ask you the questions. When you give the AI "help me think through this" as its goal, its convergent instinct locks onto producing good questions, and good questions force you to do the expansive thinking yourself.
 
-This kind of thinking is what [I get paid for](/services). It is the work I love, the work I am good at, the work I want to keep doing. When I outsourced it to an agent that knew everything about me, the only thing I removed from the loop was my own judgement. What I actually wanted was the opposite: an assistant that surfaced the right context at the right time so I could make the call faster, not one that made the call for me.
+This kind of thinking is what [I get paid for](/services). It is the work I love, the work I am good at, the work I want to keep doing. When I outsourced it to an agent that knew everything about me, the only thing I removed from the loop was my own judgement. Addy Osmani calls this [cognitive surrender](https://addyosmani.com/blog/cognitive-surrender/){:target="_blank"}: the moment you stop forming your own answer and the AI's output quietly becomes yours.[^stayhuman] What I actually wanted was the opposite: an assistant that surfaced the right context at the right time so I could make the call faster, not one that made the call for me. Ethan Mollick frames the alternative as [choosing to stay human](https://www.oneusefulthing.org/p/choosing-to-stay-human){:target="_blank"} — deciding *when and how* to lean on AI rather than defaulting to it without thinking.
 
 The chat-with-everything model of AI is a dead end for the work that matters most. I do not want to deal with an omniscient god — it's too tempting to abdicate hard work that I should do.
 
@@ -154,6 +154,8 @@ For now: as you give more and more info to AI, keep the work you love, the work 
 [^spark]: [Gemini Spark](https://blog.google/innovation-and-ai/products/gemini-app/next-evolution-gemini-app/){:target="_blank"} is Google's "24/7 personal AI agent", announced at I/O 2026 on 19 May. It runs on Google Cloud virtual machines rather than your own hardware, integrates with Gmail, Docs and the rest of Workspace, extends to third-party tools via MCP, and is coming to Chrome as an agentic browser later this summer. Same primitive as Cowork, productised for hundreds of millions of consumer subscribers rather than enterprise pilots.
 
 [^codex]: [OpenAI Codex](https://openai.com/codex/){:target="_blank"}. OpenAI's autonomous coding agent, available as a desktop app on macOS and Windows alongside cloud worktrees for parallel agentic work.
+
+[^stayhuman]: Osmani's [*Cognitive Surrender*](https://addyosmani.com/blog/cognitive-surrender/){:target="_blank"} draws the line between *offloading* (you keep the judgement, hand off the mechanics) and *surrender* (you stop forming a view at all). Mollick's [*Choosing to Stay Human*](https://www.oneusefulthing.org/p/choosing-to-stay-human){:target="_blank"} is the practical counterpart: the cost is not just average output but the atrophy of the very skill you were trying to apply.
 
 [^openclaw]: [OpenClaw](https://github.com/openclaw/openclaw){:target="_blank"}. Open-source under Apache 2.0; an independent foundation is currently standing up in Switzerland to keep the project vendor-neutral, with NVIDIA filling the security backlog in the meantime.
 
