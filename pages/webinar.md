@@ -2,9 +2,6 @@
 layout: page
 title: "Webinars To Get You Ahead With AI"
 excerpt: "Join our webinar series for leaders leveraging AI in their organisations."
-permalink: /webinar/
-redirect_from:
-- /webinar
 image: /assets/img/webinar-mosaic.jpg
 image_portrait: false
 kit_tag: webinar16
