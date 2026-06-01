@@ -28,7 +28,11 @@ description: "The flat-rate AI era is ending. Cheap tokens, metered pricing, and
   </p>
 
   <p class="text-xl text-brand-black mb-8">
-    Max-tier prices are already climbing, and agentic usage burns through tokens at a rate no flat fee absorbs forever. The unlimited era was an acquisition strategy, not a business model. I have already started hedging my own work: moving the bulk of it off the most expensive frontier models since the autonomous-model shift, leaning on what my tier still gives away cheaply, and planning for the day that stops. When the meter comes back, your dependence on cheap frontier access becomes a line item your CFO will question, and a supplier relationship you never chose to be locked into.
+    Agentic usage burns through tokens at a rate no flat fee absorbs forever, and the gap is already stark: Claude Opus at full tilt costs £80 to £100 an hour, while frontier-class open-source models rent for £15 to £25. The unlimited era was an acquisition strategy, not a business model. I have already moved the bulk of my own heavy work off Opus and onto cheaper models, and I am planning now for the day the flat-rate generosity stops. When the meter comes back, your dependence on cheap frontier access becomes a line item your CFO will question, and a supplier relationship you never chose to be locked into.
+  </p>
+
+  <p class="text-xl text-brand-black mb-8">
+    This is not only about cost. Running your own models is about control: your data, your intellectual property, and your uptime stop depending on someone else's pricing, terms, and roadmap.
   </p>
 
   <p class="text-xl text-brand-black mb-8">
@@ -112,7 +116,7 @@ description: "The flat-rate AI era is ending. Cheap tokens, metered pricing, and
     <ul class="space-y-2 text-brand-black">
       <li><strong>The economics shift:</strong> why flat-rate frontier access was always temporary, and what the autonomous-model pricing change is really signalling</li>
       <li><strong>What you actually own:</strong> rented frontier tokens versus models you run yourself, and where the line should sit</li>
-      <li><strong>Local and open-source models in practice:</strong> what the frontier-class open weights can and cannot do, and the honest hardware reality</li>
+      <li><strong>Local and open-source models in practice:</strong> what the frontier-class open weights can and cannot do, the data and IP control you get back, and the honest hardware reality from a single used GPU to a rented cluster</li>
       <li><strong>Building for a metered world:</strong> what to keep on frontier, what to move, and how to decide</li>
     </ul>
   </div>
