@@ -32,7 +32,7 @@ description: "The flat-rate AI era is ending. Cheap tokens, metered pricing, and
   </p>
 
   <p class="text-xl text-brand-black mb-8">
-    By the end of this session you will know which of your AI workflows are exposed to a metered world, where running your own models genuinely makes sense, and how to build an AI strategy that does not depend on a pricing page you do not control.
+    By the end of this session you will know which of your AI workflows are exposed to a metered world, where running your own models makes sense, and how to build an AI strategy that does not depend on a pricing page you do not control.
   </p>
 
 <!--more-->
