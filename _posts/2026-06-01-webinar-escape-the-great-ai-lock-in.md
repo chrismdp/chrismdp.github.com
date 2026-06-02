@@ -11,6 +11,7 @@ redirect_from:
 - /webinar
 - /webinar/
 image: /assets/img/escape-the-great-ai-lock-in-webinar.jpg
+image_portrait: true
 kit_tag: webinar16
 webinar_date: "2026-06-04T14:00:00+01:00"
 series: "AI In Action Webinars"
@@ -27,6 +28,12 @@ description: "The flat-rate AI era is ending. Cheap tokens, metered pricing, and
     Your team runs on AI that feels free. Flat monthly fee, unlimited frontier models, no meter running. That is about to change, and the workflows you have quietly built on cheap tokens are more exposed than they look.
   </p>
 
+<!--more-->
+
+  <div class="bg-brand-deep-turquoise rounded-lg p-8 text-center mb-12 clear-both">
+    <div class="rm-area-embed-webinar"></div>
+  </div>
+
   <p class="text-xl text-brand-black mb-8">
     Agentic usage burns through tokens at a rate no flat fee absorbs forever, and the gap is already stark: Claude Opus at full tilt costs £80 to £100 an hour, while frontier-class open-source models rent for £15 to £25. The unlimited era was an acquisition strategy, not a business model. I have already moved the bulk of my own heavy work off Opus and onto cheaper models, and I am planning now for the day the flat-rate generosity stops. When the meter comes back, your dependence on cheap frontier access becomes a line item your CFO will question, and a supplier relationship you never chose to be locked into.
   </p>
@@ -38,12 +45,6 @@ description: "The flat-rate AI era is ending. Cheap tokens, metered pricing, and
   <p class="text-xl text-brand-black mb-8">
     By the end of this session you will know which of your AI workflows are exposed to a metered world, where running your own models makes sense, and how to build an AI strategy that does not depend on a pricing page you do not control.
   </p>
-
-<!--more-->
-
-  <div class="bg-brand-deep-turquoise rounded-lg p-8 text-center mb-12 clear-both">
-    <div class="rm-area-embed-webinar"></div>
-  </div>
 
   <p class="text-lg text-brand-black mb-8 text-center">
     If you cannot make it, sign up anyway to grab the recording and slides.
