@@ -35,7 +35,7 @@ description: "The flat-rate AI era is ending. Cheap tokens, metered pricing, and
   </div>
 
   <p class="text-xl text-brand-black mb-8">
-    Agentic usage burns through tokens at a rate no flat fee absorbs forever, and the gap is already stark: Claude Opus at full tilt costs £80 to £100 an hour, while frontier-class open-source models rent for £15 to £25. The unlimited era was an acquisition strategy, not a business model. I have already moved the bulk of my own heavy work off Opus and onto cheaper models, and I am planning now for the day the flat-rate generosity stops. When the meter comes back, your dependence on cheap frontier access becomes a line item your CFO will question, and a supplier relationship you never chose to be locked into.
+    Agentic usage burns through tokens at a rate no flat fee absorbs forever, and the gap is already stark: Claude Opus at full tilt can cost £80 to £100 an hour, while frontier-class open-source models rent for £15 to £25. The unlimited era was an acquisition strategy, not a business model. I have already moved the bulk of my own heavy work off Opus and onto cheaper models, and I am planning now for the day the flat-rate generosity stops. When the meter comes back, your dependence on cheap frontier access becomes a line item your CFO will question, and a supplier relationship you never chose to be locked into.
   </p>
 
   <p class="text-xl text-brand-black mb-8">
