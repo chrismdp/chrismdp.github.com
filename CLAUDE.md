@@ -113,7 +113,9 @@ cd .coder/templates && coder templates push -d blog -y blog
 bundle install
 
 # Serve locally with live reload (use this for development)
-bundle exec jekyll serve
+# --future shows scheduled (future-dated) posts locally so you can preview them.
+# Production keeps future: false in _config.yml, so scheduling still works there.
+bundle exec jekyll serve --future
 
 # Build site for production
 bundle exec jekyll build

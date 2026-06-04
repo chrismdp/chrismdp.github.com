@@ -4,7 +4,7 @@ layout: default
 {% assign page_time = page.date | date: "%s" | plus: 0 %}
 {% assign now_time = site.time | date: "%s" | plus: 0 %}
 {% assign is_future_post = false %}
-{% if page_time > now_time %}{% assign is_future_post = true %}{% endif %}
+{% if page_time > now_time and jekyll.environment == "production" %}{% assign is_future_post = true %}{% endif %}
 {% if is_future_post %}
 <!-- Preview Protection -->
 <div id="preview-gate" class="min-h-screen flex items-center justify-center bg-brand-white">

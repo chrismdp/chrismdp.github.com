@@ -2,7 +2,7 @@ version: '3.7'
 services:
   site:
     container_name: jekyll
-    command: jekyll serve --watch --drafts
+    command: jekyll serve --watch --drafts --future
     image: jekyll/jekyll:3.8
     volumes: 
       - "./:/srv/jekyll"
