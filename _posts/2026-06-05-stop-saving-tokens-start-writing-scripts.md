@@ -52,6 +52,8 @@ The same shape is all over my setup. My home skill has a script that knows how t
 
 Skills are how this stays manageable. A skill is a small, named parcel of capability: a bit of prompt that carries the judgement, plus the scripts it leans on for the repeatable parts. Loose on their own, the scripts would be a drawer of utilities you forget you own. Wrapped in a skill, they become something the model reaches for at the right moment, with instructions for how to use them and when to leave them alone. I have written before about [why skills are Claude Code's secret weapon](/skills-are-claude-codes-secret-weapon/) and [what belongs in your AI knowledge base](/what-to-put-in-your-ai-knowledge-base/): the skill is the unit where prompt and script meet.
 
+{% include callout.html text="Managing a growing pile of skills across your agents and machines gets messy quickly. That is the problem <a href='https://airskills.ai/chrismdp' class='text-brand-deep-turquoise underline' target='_blank'>airskills</a> solves: it keeps every skill in one source of truth and syncs them everywhere, so adding, updating, and sharing them stays easy as the collection grows. You can browse and install mine there with a single command." %}
+
 ## Workflows Come Back, Smaller
 
 The newest piece arrived this week. The latest Claude Code, running on Opus 4.8, ships a feature called Workflows: a way to orchestrate agents from a script. You write plain JavaScript that spawns sub-agents, fans them out in parallel, pipelines them through stages, and collects structured results. The control flow is deterministic. The loops, the branching, and the order of operations are fixed in code. What happens inside each step is still an agent doing agent things.
