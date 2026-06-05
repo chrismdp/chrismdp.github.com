@@ -1,0 +1,212 @@
+{% comment %}
+  Print styling for case studies — turns a case-study page into a clean,
+  branded A4 PDF when printed from the browser (Cmd/Ctrl+P → Save as PDF).
+  Echoes the chrismdp.com proposal house style: serif (Georgia/Mackinac feel)
+  headings, DM Sans body, deep-turquoise accents, branded masthead + footer.
+  Loaded from post.html only when page.categories contains 'case-studies'.
+{% endcomment %}
+
+<!-- Print-only branded masthead (appears once, top of first page) -->
+<div class="cs-print-masthead" aria-hidden="true">
+  <span class="cs-pm-name">Chris Parsons</span>
+  <span class="cs-pm-tag">AI Training &amp; Advisory</span>
+</div>
+
+<style>
+  /* Screen: keep the print-only furniture hidden */
+  .cs-print-masthead,
+  .cs-print-footer { display: none; }
+
+  @media print {
+    /* ----------------------------------------------------------------- */
+    /*  Page geometry                                                     */
+    /* ----------------------------------------------------------------- */
+    @page {
+      size: A4;
+      margin: 11mm 16mm 15mm;
+    }
+
+    html, body {
+      background: #ffffff !important;
+      color: #3a4750 !important;
+      font-family: 'DM Sans', system-ui, sans-serif !important;
+      font-size: 10.8pt;
+      line-height: 1.55;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    /* ----------------------------------------------------------------- */
+    /*  Strip site chrome and interactive widgets                         */
+    /* ----------------------------------------------------------------- */
+    header[role="banner"],
+    footer.bg-brand-black,
+    #preview-gate,
+    .cs-no-print,
+    .rm-area-embed-services { display: none !important; }
+
+    /* ----------------------------------------------------------------- */
+    /*  Collapse the two-column layout to a single full-width column      */
+    /* ----------------------------------------------------------------- */
+    main { display: block !important; }
+    .max-w-7xl { max-width: none !important; }
+    .lg\:flex-row { display: block !important; }
+    article.flex-1 {
+      max-width: none !important;
+      padding: 0 !important;
+      width: 100% !important;
+    }
+
+    /* ----------------------------------------------------------------- */
+    /*  Branded masthead + running footer                                 */
+    /* ----------------------------------------------------------------- */
+    .cs-print-masthead {
+      display: flex !important;
+      align-items: baseline;
+      justify-content: space-between;
+      border-bottom: 2.5px solid #1ac8db;
+      padding-bottom: 3mm;
+      margin-bottom: 6mm;
+    }
+    .cs-pm-name {
+      font-family: 'Mackinac', Georgia, 'Times New Roman', serif;
+      font-weight: 700;
+      font-size: 16pt;
+      color: #0292b7;
+      letter-spacing: -0.01em;
+    }
+    .cs-pm-tag {
+      font-size: 8.5pt;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #6b8089;
+      font-weight: 600;
+    }
+
+    .cs-print-footer {
+      display: flex !important;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10mm;
+      padding-top: 3mm;
+      border-top: 1px solid #dceaf1;
+      font-size: 8.5pt;
+      letter-spacing: 0.05em;
+      color: #6b8089;
+    }
+    .cs-print-footer span:last-child { color: #0292b7; font-weight: 700; }
+
+    /* ----------------------------------------------------------------- */
+    /*  Title block (the hero)                                            */
+    /* ----------------------------------------------------------------- */
+    section.pt-20 {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+    section.pt-20 .max-w-7xl { padding-left: 0 !important; padding-right: 0 !important; }
+    section.pt-20 .max-w-7xl > h1 {
+      font-family: 'Mackinac', Georgia, 'Times New Roman', serif !important;
+      font-size: 25pt !important;
+      line-height: 1.1 !important;
+      color: #17282f !important;
+      margin-bottom: 0 !important;
+    }
+    section.pt-20 .max-w-7xl > h1::after {
+      content: "";
+      display: block;
+      width: 90px;
+      height: 4px;
+      margin-top: 4mm;
+      background: #1ac8db;
+      border-radius: 4px;
+    }
+    section.pt-20 .max-w-7xl > div {
+      font-size: 9.5pt !important;
+      color: #6b8089 !important;
+      margin-top: 3mm;
+    }
+
+    .max-w-7xl.mx-auto.px-6.pb-12 { padding-bottom: 0 !important; }
+
+    /* ----------------------------------------------------------------- */
+    /*  Featured / inline images                                          */
+    /* ----------------------------------------------------------------- */
+    article img {
+      page-break-inside: avoid;
+      max-width: 100% !important;
+      border-radius: 8px;
+    }
+    article .mb-8 > img { max-height: 75mm; object-fit: cover; width: 100% !important; }
+    .content-styled img.float-right { max-width: 42% !important; }
+
+    /* ----------------------------------------------------------------- */
+    /*  Body copy                                                         */
+    /* ----------------------------------------------------------------- */
+    .content-styled p { font-size: 10.8pt !important; line-height: 1.55 !important; orphans: 3; widows: 3; }
+    .content-styled h2,
+    .content-styled h3 {
+      font-family: 'Mackinac', Georgia, 'Times New Roman', serif !important;
+      color: #17282f !important;
+      page-break-after: avoid;
+    }
+    .content-styled h2 { font-size: 16pt !important; margin-top: 7mm !important; }
+    .content-styled h3 { font-size: 13pt !important; }
+    .content-styled a { color: #0292b7 !important; text-decoration: none; }
+
+    /* ----------------------------------------------------------------- */
+    /*  Intro callout → branded lead box                                  */
+    /* ----------------------------------------------------------------- */
+    .content-styled div[class*="bg-brand-light-blue"] {
+      background: #eaf7fb !important;
+      border: none !important;
+      border-left: 4px solid #1ac8db !important;
+      border-radius: 8px !important;
+      padding: 6mm 7mm !important;
+      margin: 0 0 7mm 0 !important;
+      page-break-inside: avoid;
+    }
+    .content-styled div[class*="bg-brand-light-blue"] p:last-child { margin-bottom: 0 !important; }
+
+    /* ----------------------------------------------------------------- */
+    /*  Testimonials → tidy cards that never split across a page          */
+    /* ----------------------------------------------------------------- */
+    .cs-testimonial {
+      border: 1px solid #d4ecf6 !important;
+      border-left: 4px solid #0292b7 !important;
+      border-radius: 10px !important;
+      background: #f7fcfe !important;
+      padding: 5mm 6mm !important;
+      margin: 5mm 0 !important;
+      page-break-inside: avoid;
+    }
+    .cs-testimonial img { width: 12mm !important; height: 12mm !important; }
+    .cs-testimonial p { font-size: 10.5pt !important; color: #17282f !important; }
+    /* Lucide stars render as <svg>; keep them brand orange when printing */
+    .cs-testimonial svg { color: #fc8745 !important; fill: #fc8745 !important; }
+
+    /* ----------------------------------------------------------------- */
+    /*  Closing CTA box → branded turquoise panel                         */
+    /* ----------------------------------------------------------------- */
+    .content-styled div:has(> .rm-area-embed-services) {
+      background: linear-gradient(160deg, #0292b7, #1ac8db) !important;
+      border: none !important;
+      border-radius: 14px !important;
+      padding: 9mm 12mm !important;
+      margin-top: 8mm !important;
+      page-break-inside: avoid;
+    }
+    .content-styled div:has(> .rm-area-embed-services) h3 {
+      color: #ffffff !important;
+      font-family: 'Mackinac', Georgia, 'Times New Roman', serif !important;
+    }
+    .content-styled div:has(> .rm-area-embed-services) p { display: none !important; }
+    .content-styled div:has(> .rm-area-embed-services)::after {
+      content: "Find out more at chrismdp.com/services";
+      display: block;
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 11pt;
+      margin-top: 2mm;
+    }
+  }
+</style>

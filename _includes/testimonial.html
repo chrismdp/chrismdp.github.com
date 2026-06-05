@@ -1,6 +1,6 @@
 {% assign style = include.style | default: "compact" %}
 {% if style == "bordered" %}
-<div class="border-2 border-brand-deep-turquoise/30 rounded-lg p-6 my-8 not-prose">
+<div class="border-2 border-brand-deep-turquoise/30 rounded-lg p-6 my-8 not-prose cs-testimonial">
   <div class="flex items-center mb-3">
     {% if include.linkedin and include.linkedin != "" %}<a href="{{ include.linkedin }}" target="_blank" style="text-decoration: none;" class="flex gap-4 items-center">{% else %}<div class="flex gap-4 items-center">{% endif %}
       {% if include.image and include.image != "" %}<img src="/assets/img/testimonials/{{ include.image }}" alt="{{ include.name }}" class="w-14 h-14 rounded-full object-cover">{% endif %}

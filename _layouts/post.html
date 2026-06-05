@@ -22,6 +22,7 @@ layout: default
 <div id="preview-content" class="hidden">
 {% endif %}
 {% include content-styles.html %}
+{% if page.categories contains 'case-studies' %}{% include case-study-print.html %}{% endif %}
 <!-- Hero Section with Post Title -->
 <section class="pt-20 pb-8 bg-white">
   <div class="max-w-7xl mx-auto px-6">
@@ -187,7 +188,7 @@ layout: default
       {% endif %}
 
       <!-- Share buttons -->
-      <div class="py-8 border-t border-brand-light-blue/20">
+      <div class="py-8 border-t border-brand-light-blue/20 cs-no-print">
         <h3 class="text-lg font-heading font-semibold mb-4">Share this article</h3>
         <div class="flex flex-wrap gap-4">
           <!-- BlueSky -->
@@ -275,11 +276,11 @@ layout: default
           </a>
         </div>
       {% endif %}
-      {% include article-series.html %}
+      <div class="cs-no-print">{% include article-series.html %}</div>
     </article>
 
     <!-- Sidebar column - below article on mobile -->
-    <div class="lg:w-80 flex-shrink-0">
+    <div class="lg:w-80 flex-shrink-0 cs-no-print">
       {% if page.categories contains 'case-studies' %}
       {% assign case_studies = "" | split: "" %}
       {% for pg in site.pages %}
@@ -314,6 +315,15 @@ layout: default
     </div>
   </div>
 </div>
+
+{% if page.categories contains 'case-studies' %}
+<div class="max-w-7xl mx-auto px-6">
+  <div class="cs-print-footer" aria-hidden="true">
+    <span>Chris Parsons &middot; AI Training &amp; Advisory</span>
+    <span>chrismdp.com</span>
+  </div>
+</div>
+{% endif %}
 
 {% if is_future_post %}
 </div><!-- end preview-content -->

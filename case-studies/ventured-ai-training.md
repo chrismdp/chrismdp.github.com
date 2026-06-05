@@ -43,7 +43,7 @@ The work went beyond delivering training. Alongside the sessions, the engagement
 **Want to build a team that improves itself?** Chris works with organisations to turn AI tool investment into productivity gains, from first training sessions through to ongoing advisory. All training is customised around your team's real work and where people are right now, whether that is ten people in one office or three hundred across multiple time zones.
 
 <div class="bg-white rounded-lg p-8 text-center mt-12 border border-brand-light-blue/20">
-  <h3 class="text-2xl font-heading font-bold text-brand-black mb-4">From AI access to AI capability</h3>
+  <h3 class="text-2xl font-heading font-bold text-brand-black mb-4">Get real value from the AI you already have</h3>
   <p class="text-brand-black/80 mb-6">Get customised AI training built around your team's real work. Fill in the form to get started:</p>
   <div class="rm-area-embed-services"></div>
 </div>
