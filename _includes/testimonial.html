@@ -2,13 +2,13 @@
 {% if style == "bordered" %}
 <div class="border-2 border-brand-deep-turquoise/30 rounded-lg p-6 my-8 not-prose">
   <div class="flex items-center mb-3">
-    <a href="{{ include.linkedin }}" target="_blank" style="text-decoration: none;" class="flex gap-4 items-center">
-      <img src="/assets/img/testimonials/{{ include.image }}" alt="{{ include.name }}" class="w-14 h-14 rounded-full object-cover">
+    {% if include.linkedin and include.linkedin != "" %}<a href="{{ include.linkedin }}" target="_blank" style="text-decoration: none;" class="flex gap-4 items-center">{% else %}<div class="flex gap-4 items-center">{% endif %}
+      {% if include.image and include.image != "" %}<img src="/assets/img/testimonials/{{ include.image }}" alt="{{ include.name }}" class="w-14 h-14 rounded-full object-cover">{% endif %}
       <div>
         <div class="text-base font-semibold text-brand-black">{{ include.name }}</div>
         <div class="text-sm text-brand-black/70">{{ include.role }}</div>
       </div>
-    </a>
+    {% if include.linkedin and include.linkedin != "" %}</a>{% else %}</div>{% endif %}
   </div>
   {% include five-star.html %}
   <p class="text-brand-black italic">"{{ include.quote }}"</p>
@@ -16,13 +16,13 @@
 {% elsif style == "full" %}
 <div class="bg-white rounded-lg p-8">
   <div class="flex items-center mb-4">
-    <a href="{{ include.linkedin }}" target="_blank" style="text-decoration: none;" class="flex gap-4 items-center">
-      <img src="/assets/img/testimonials/{{ include.image }}" alt="{{ include.name }}" class="w-16 h-16 rounded-full object-cover">
+    {% if include.linkedin and include.linkedin != "" %}<a href="{{ include.linkedin }}" target="_blank" style="text-decoration: none;" class="flex gap-4 items-center">{% else %}<div class="flex gap-4 items-center">{% endif %}
+      {% if include.image and include.image != "" %}<img src="/assets/img/testimonials/{{ include.image }}" alt="{{ include.name }}" class="w-16 h-16 rounded-full object-cover">{% endif %}
       <div>
         <div class="text-lg font-semibold text-brand-black">{{ include.name }}</div>
         <div class="text-sm text-brand-black/70">{{ include.role }}</div>
       </div>
-    </a>
+    {% if include.linkedin and include.linkedin != "" %}</a>{% else %}</div>{% endif %}
   </div>
   {% include five-star.html %}
   <p class="text-brand-black italic mb-4">"{{ include.quote }}"</p>
@@ -33,13 +33,13 @@
 {% else %}
 <div class="bg-white rounded-lg p-6 shadow-md">
   <div class="flex items-center mb-4">
-    <a href="{{ include.linkedin }}" target="_blank" style="text-decoration: none;" class="flex items-center">
-      <img src="/assets/img/testimonials/{{ include.image }}" alt="{{ include.name }}" class="w-12 h-12 rounded-full mr-4 object-cover">
+    {% if include.linkedin and include.linkedin != "" %}<a href="{{ include.linkedin }}" target="_blank" style="text-decoration: none;" class="flex items-center">{% else %}<div class="flex items-center">{% endif %}
+      {% if include.image and include.image != "" %}<img src="/assets/img/testimonials/{{ include.image }}" alt="{{ include.name }}" class="w-12 h-12 rounded-full mr-4 object-cover">{% endif %}
       <div>
         <div class="font-semibold">{{ include.name }}</div>
         <div class="text-sm text-brand-black/70">{{ include.role }}</div>
       </div>
-    </a>
+    {% if include.linkedin and include.linkedin != "" %}</a>{% else %}</div>{% endif %}
   </div>
   {% include five-star.html %}
   <p class="text-brand-black italic">"{{ include.quote }}"</p>
