@@ -26,7 +26,7 @@ The engagement began with a full day in-person for the UK engineering team in Le
 
 Within weeks, engineers were applying the techniques to live work, and the most striking results came from people working well outside their comfort zone. Christian Fayolle shipped the first AI feature in Ravenna, one of VenturEd's US products.
 
-{% include testimonial.html style="bordered" name="Christian Fayolle" role="Engineer, VenturEd Solutions" image="christian-fayolle.jpg" linkedin="https://www.linkedin.com/in/christianfayolle/" quote="The stack was PHP and Apache, and I'd never used either before. But I knew what I wanted the outcome to be, and it took about two days to get the feature built. The key change is just knowing what you want to do rather than how to do it." %}
+{% include testimonial.html style="bordered" name="Christian Fayolle" role="Principal AI Engineer, VenturEd Solutions" image="christian-fayolle.jpg" linkedin="https://www.linkedin.com/in/christianfayolle/" quote="The stack was PHP and Apache, and I'd never used either before. But I knew what I wanted the outcome to be, and it took about two days to get the feature built. The key change is just knowing what you want to do rather than how to do it." %}
 
 The same pattern showed up across the India team. A product that had not been touched in six months, because there had never been the right people with the time to take it on, was suddenly moving again. An engineer who had never seen the language worked through the entire codebase with AI, documented it, and started shipping changes.
 
