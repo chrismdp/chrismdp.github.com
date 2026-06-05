@@ -40,7 +40,7 @@ No single result mattered as much as the calibration that developed across the t
 
 Forming the two pods was a deliberate bet on pioneering these techniques in-house. As word of the reverse-engineering result spread, other engineers wanted in, and leadership declined all external vendor responses to a large product RFP because internal progress had already exceeded what those vendors were proposing.
 
-**Want to build an engineering team that compounds its AI capability?** Chris works with technical organisations to take AI experiments and scale them across the whole team, from first training through to ongoing coaching and advisory. All training is built around your codebase, your bottlenecks, and where your team is right now.
+**Want to build an engineering team that compounds its AI capability?** Chris works with organisations to take AI experiments and scale them across the whole team, from first training through to ongoing coaching and advisory. All training is built around your codebase, your bottlenecks, and where your team is right now.
 
 <div class="bg-white rounded-lg p-8 text-center mt-12 border border-brand-light-blue/20">
   <h3 class="text-2xl font-heading font-bold text-brand-black mb-4">From experiments to engineering velocity</h3>

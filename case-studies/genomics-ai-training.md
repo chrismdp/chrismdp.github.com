@@ -54,7 +54,7 @@ What started as a single training day grew into an ongoing partnership. Two furt
 
 The training created a shared language across the organisation. Once a team understands what AI can and cannot do, every conversation about strategy, product, and process has traction.
 
-**Want similar results for your team?** Chris works with technical organisations to turn AI tool investment into real productivity gains. Training is customised around your tech stack, your problems, and your team's skill levels, from ten-person startups to two-hundred-person engineering organisations, on-site or remote.
+**Want similar results for your team?** Chris works with organisations to turn AI tool investment into real productivity gains. Training is customised around your work, your problems, and your team's skill levels, from ten-person startups to two-hundred-person organisations, on-site or remote.
 
 <div class="bg-white rounded-lg p-8 text-center mt-12 border border-brand-light-blue/20">
   <h3 class="text-2xl font-heading font-bold text-brand-black mb-4">Turn AI tools into AI confidence</h3>
