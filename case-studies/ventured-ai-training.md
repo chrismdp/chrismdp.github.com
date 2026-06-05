@@ -16,7 +16,7 @@ VenturEd Solutions, an edtech company serving more than a million students acros
 
 </div>
 
-{% include testimonial.html style="bordered" name="Rob Rainey" role="Chief Product & Technology Officer, VenturEd Solutions" image="rob-rainey.jpg" linkedin="https://www.linkedin.com/in/rob-rainey/" quote="Insight pointed us in the direction of a couple of full-blown organisations they'd used for AI training. But in the end, we used Chris, and he's been great. We've had some fantastic outcomes so far." %}
+{% include testimonial.html style="bordered" name="Rob Rainey" role="Chief Product & Technology Officer, VenturEd Solutions" image="rob-rainey.jpg" linkedin="https://www.linkedin.com/in/rob-rainey/" quote="We were recommended some large organisations for AI training. But in the end, we used Chris, and he's been great. We've had some fantastic outcomes so far." %}
 
 VenturEd had made a solid start. Microsoft 365 Copilot was available across the company, and engineering teams had access to the strongest AI models. But access to tools and knowing how to unlock value from them are different things. When we surveyed the teams before training, that gap was clear.
 
