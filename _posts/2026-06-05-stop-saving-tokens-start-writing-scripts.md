@@ -22,6 +22,8 @@ Adding a bit of old-fashioned programming back in makes things more powerful sti
 
 ## Prompt Diets Do Not Work
 
+<img src="/assets/img/stop-saving-tokens-start-writing-scripts-caveman.jpg" alt="A glum caveman in a cave clutches an enormously long bill titled AI BILL that spills across the floor, saying: Me grunt to save token. Bill still big. His unimpressed partner points at a mammoth painted on the cave wall and replies: Paint hunt on wall once. Not under waterfall every day." style="width: 45%; float: right; margin: 0 0 1rem 1.5rem;" />
+
 Plenty of people are trying to get that bill down with prompt tricks. Caveman mode, if you have not come across it yet, strips everything back to terse, grunt-like instructions and asks for equally terse output.[^2] Fewer words in, fewer words out, smaller bill.
 
 It works at the margin. The trouble is that the expensive part of an agent is rarely the words you typed, but the model thinking through the same problem again, writing the same helper again, and rediscovering the same structure it worked out yesterday. You cannot diet your way out of repeated work. You have to remove the work.
