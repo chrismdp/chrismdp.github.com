@@ -27,7 +27,7 @@ Unmetered became metered, and that is the whole story in miniature. If you are o
 
 ![A taxi fare meter clocking up the year, little robots polishing it: the meter just came back on for AI.](/assets/img/the-meter-came-back-on-slide.jpg)
 
-I pulled my own numbers to make it concrete. Last month, on one machine, with a couple of weeks off for the bank holidays, I racked up about $5,000 of equivalent Claude usage. My heaviest single day was around $300 to $400. One weekend, building a small side project while not even sitting at my desk, just prompting at odd moments and running a few [Ralph loops](https://chrismdp.com/running-ralph-in-production), came to $540 of effective use. I do not actually pay that, because I am on the flat Max plan. But that is the number staring back at me if the flat plan goes away. At the moment you can still run Codex in a genuinely unmetered way. I do a lot of that. I fully expect it to disappear too.
+I pulled my own numbers to make it concrete. Last month, on one machine, with a couple of weeks off for the bank holidays, I racked up about $5,000 of equivalent Claude usage. My heaviest single day was around $300 to $400. One weekend, building a small side project while not even sitting at my desk, just prompting at odd moments and running a few [Ralph loops](https://chrismdp.com/running-ralph-in-production), came to $540 of effective use. I do not actually pay that, because I am on the flat Max plan. But that is the number staring back at me if the flat plan goes away. At the moment you can still run Codex in a genuinely unmetered way. I do a lot of that. I fully expect it to disappear too. Uber has already hit this problem: after Bloomberg reported that it burned through its 2026 AI coding budget in four months, the company capped agentic coding tools at $1,500 a month per employee per tool.[^uber]
 
 ## Cheap tokens hid the real problem
 
@@ -51,9 +51,9 @@ And switching is harder than it feels. Zapier found[^zapier] that 89% of executi
 
 ## Open models are closer than they look
 
-Open models are not as far behind as the gap feels. On benchmarks they lag the frontier by roughly four to eight months, and benchmarks flatter them, but my own month of heavy use lines up with that. DeepSeek's flash model feels about a year behind a frontier model, and it is only a flash model. DeepSeek Pro feels like where the frontier was last September or October. Something clicked at the end of November 2025 when Opus 4.5 crossed a threshold and AI felt much better; open models are not there yet, but there is every reason to expect a similar tipping point for them. Adoption is already moving: by April, roughly one in three teams was running some kind of open model.
+Open models are not as far behind as the gap feels. On benchmarks they lag the frontier by roughly four to eight months, and benchmarks flatter them, but my own month of heavy use lines up with that. DeepSeek's flash model feels about a year behind a frontier model, and it is only a flash model. DeepSeek Pro feels like where the frontier was last September or October. Something clicked at the end of November 2025 when Opus 4.5 crossed a threshold and AI felt much better; open models are not there yet, but there is every reason to expect a similar tipping point for them. By April, roughly one in three teams was running some kind of open model, and Google has now shipped Gemma 4 as a 12B multimodal open model with quantisation-aware checkpoints designed for mobile and laptop hardware.[^gemma12b][^gemmaqat]
 
-"Local" just means open-weight models you can realistically download and run yourself. To run something near the open frontier you want about 48GB of RAM at the floor and really 128GB to be comfortable. But the smartest model you can run on a laptop has improved nearly fivefold in two years, faster than Moore's Law.[^moore] The other trick is the harness: strong rules, skills and prompting around a small model.
+"Local" just means open-weight models you can realistically download and run yourself. To run something near the open frontier you want about 48GB of RAM at the floor and really 128GB to be comfortable. But the smartest model you can run on a laptop has improved nearly fivefold in two years, faster than Moore's Law.[^moore] Nvidia is pushing the same shift from data centre to desktop; The Economist describes Jensen Huang's AI strategy as coming to the PC.[^nvidia] Small models also need a harness: strong rules, skills and prompting wrapped around them. Evaluation is getting easier too: Google is making Kaggle benchmarks runnable locally, because open models only help when you can prove which workflows they can safely carry.[^kaggle]
 
 {% include inline-image.html src="/assets/img/harness-small-model-beats-frontier-slide.jpg" alt="A small robot driving a powered mech suit, knocking out a much larger frontier robot." align="center" width="100%" caption="We are far better at building harnesses than we were a year ago, and a well-harnessed flash model can do real work." %}
 
@@ -85,6 +85,16 @@ Pick your single most token-hungry workflow, the one you would never dare run if
 
 [^zapier]: Zapier, ["AI vendor lock-in survey"](https://zapier.com/blog/ai-vendor-lock-in-survey/), based on 542 US C-level executives with active paid AI contracts, surveyed late January to early February 2026.
 
+[^uber]: Simon Willison, ["Uber Caps Usage of AI Tools Like Claude Code to Manage Costs"](https://simonwillison.net/2026/Jun/3/uber-caps-usage/), citing Bloomberg reporting that Uber burned through its 2026 AI coding budget in four months and introduced a $1,500 monthly cap per employee per agentic coding tool.
+
 [^moore]: ["Two Years of Local AI on a Laptop: When Open Models Outpaced Moore's Law"](https://huggingface.co/blog/mishig/local-moores-law). The smartest open-weight model on a 128GB MacBook Pro rose from a score of 10 (Llama 3 70B, May 2024) to 47 (DeepSeek V4 Flash, May 2026) on unchanged hardware.
+
+[^gemma12b]: Google, ["Introducing Gemma 4 12B: a unified, encoder-free multimodal model"](https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/), 3 June 2026.
+
+[^gemmaqat]: Google, ["Gemma 4 QAT models: Optimizing model compression for mobile and laptop efficiency"](https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/), 5 June 2026.
+
+[^nvidia]: The Economist, ["Nvidia wants to supercharge your laptop"](https://www.economist.com/business/2026/06/02/nvidia-wants-to-supercharge-your-laptop), 2 June 2026.
+
+[^kaggle]: Google, ["Kaggle is making AI benchmark creation effortless"](https://blog.google/innovation-and-ai/technology/developers-tools/build-kaggle--benchmarks-locally/), 4 June 2026.
 
 [^tunguz]: Tomasz Tunguz, ["Localmaxxing"](https://tomtunguz.com/localmaxxing/), 11 May 2026: 1,400 tasks tracked over five weeks, roughly half succeeding on a local 35B model at a 2.1x speed-up over Opus 4.5.
