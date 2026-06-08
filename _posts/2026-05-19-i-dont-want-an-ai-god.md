@@ -14,6 +14,8 @@ If you have been anywhere near the AI engineering crowd for the past year, you w
 
 For myself, I have taken Ralph loops pretty far. I run it [twenty-four hours a day](/open-models-are-ready/) and use it for writing, calendars, client work, code: pretty much everything. The first automation I moved to my loop was an n8n workflow that wrote my newsletter and used to break at two o'clock every Monday afternoon! I rebuilt it as a complex skill with Claude Code commands, shell scripts, and a generous amount of sticky tape. I added more and more skills in this way, and now I have a full system running almost everything - more on this below.
 
+<!--more-->
+
 It has become easier to build these types of systems. Anthropic launched Cowork[^cowork], a non-programmer version of Claude Code, and Microsoft followed with a deal to move this to Office. Codex Desktop[^codex] now has many of the same features. And yesterday Google announced Gemini Spark[^spark], its own 24/7 cloud-hosted agent for Workspace using MCP connections. These tools are all betting that the next interface for AI is not a chat window, but a place where agents quietly run on a schedule and produce artefacts you can review. They are productising the sticky tape I put together manually.
 
 Trouble is, I am not sure we should be using this kind of system at all.
@@ -24,7 +26,6 @@ There are two hard questions we need to grapple with:
 
 This article is about both, and about what I learned from running my own orchestration long enough to break the model.
 
-<!--more-->
 
 ## Closing The Open Loops
 

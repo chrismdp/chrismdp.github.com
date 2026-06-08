@@ -8,6 +8,7 @@ image: /assets/img/instem-social.jpg
 categories:
 - ai
 - case-studies
+live: true
 ---
 
 <div class="bg-brand-light-blue/10 rounded-lg p-6 mb-8 border border-brand-light-blue/20">
@@ -36,7 +37,7 @@ The weekly sessions continued over the following two months, working with a smal
 
 No single result mattered as much as the calibration that developed across the team. Engineers learned to distinguish between the parts of their work where AI adds immediate leverage and the parts where the surrounding process needs to be in better shape first. Theory of Constraints thinking entered their vocabulary, the team agreed to set up DORA flow metrics to replace guesswork with evidence, and the case for feature flags and continuous delivery over long-lived branches took hold. The team started to make evidence-based decisions about where to apply AI, rather than reaching for it by default.
 
-{% include testimonial.html style="bordered" name="Simon Burtonshaw" role="Engineer, Instem" image="simon-burtonshaw.jpg" linkedin="https://www.linkedin.com/in/simon-burtonshaw/" quote="All my thinking goes towards more interesting problems now, and I find that really liberating." %}
+{% include testimonial.html style="bordered" name="Simon Burtonshaw" role="Software Development Team Leader, Instem" image="simon-burtonshaw.jpg" linkedin="https://www.linkedin.com/in/simon-burtonshaw/" quote="All my thinking goes towards more interesting problems now, and I find that really liberating." %}
 
 Forming the two pods was a deliberate bet on pioneering these techniques in-house. As word of the reverse-engineering result spread, other engineers wanted in, and leadership declined all external vendor responses to a large product RFP because internal progress had already exceeded what those vendors were proposing.
 
