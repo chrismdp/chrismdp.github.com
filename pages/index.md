@@ -183,13 +183,12 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
   </div>
 </section>
 
-<!-- Newsletter/AI Content Testimonials -->
+<!-- Featured Case Study Testimonials -->
 <section class="py-20 bg-brand-deep-turquoise">
   <div class="max-w-6xl mx-auto px-6">
-    <div class="grid md:grid-cols-3 gap-8">
-      {% include testimonial.html name="Daren David Taylor" role="Agentic Software Builder" image="daren-taylor.jpeg" linkedin="https://www.linkedin.com/in/darendavidtaylor/" quote="I joined Chris's webinar on using Claude skills to run parts of his business and it genuinely blew my mind. I spent the entire weekend trying to get AI to run my life as well." %}
-      {% include testimonial.html name="Adam Murphy" role="CTO at Qlearsite" image="adam-murphy.jpeg" linkedin="https://www.linkedin.com/in/adam-b-murphy/" quote="I highly recommend Chris Parsons' AI webinars, they are at the cutting-edge, while at the same time incredibly grounded and practical." %}
-      {% include testimonial.html name="Nik Silver" role="Director at Silver Works Ltd" image="nik-silver.jpeg" linkedin="https://www.linkedin.com/in/niksilver/" quote="Chris's AI webinars are incredibly human." %}
+    <div class="grid md:grid-cols-2 gap-8">
+      {% include testimonial.html style="full" name="Tom Foster Carter" role="CEO, Cherrypick" image="tfc.jpeg" linkedin="https://www.linkedin.com/in/tomfostercarter/" quote="Chris helped us build a production LLM meal generator that made our customers happier and increased revenue. Our AI system reduced customer plan changes by 30% (meaning happier customers) and increased basket usage by 14% (meaning more revenue per customer)." link_url="/case-studies/gpt-meal-generator" link_text="Read full case study" %}
+      {% include testimonial.html style="full" name="Mick Davison" role="SVP Product Engineering, Instem" image="mick-davison.jpg" linkedin="https://www.linkedin.com/in/mick-davison/" quote="From where we were in February to where we are now, there's a complete difference. The majority of engineering is completely converted. We see a stark difference now." link_url="/case-studies/instem/" link_text="Read the Instem case study" %}
     </div>
   </div>
 </section>
@@ -213,14 +212,6 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
       {% include testimonial.html name="Eoin Woods" role="Software Architecture | Fractional CTO" image="eoin-woods.jpeg" linkedin="https://www.linkedin.com/in/eoinwoods/" quote="Great person to go to to work out what really works and what doesn't in AI for software development and the wider business." %}
     </div>
 
-  </div>
-</section>
-
-<!-- Client Case Study -->
-<section class="py-20 bg-brand-white">
-  <div class="max-w-4xl mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-8 text-brand-black">AI adoption that spread through engineering</h2>
-    {% include testimonial.html style="full" name="Mick Davison" role="SVP Product Engineering, Instem" image="mick-davison.jpg" linkedin="https://www.linkedin.com/in/mick-davison/" quote="From where we were in February to where we are now, there's a complete difference. The majority of engineering is completely converted. We see a stark difference now." link_url="/case-studies/instem/" link_text="Read the Instem case study" %}
   </div>
 </section>
 
@@ -297,6 +288,16 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
   </div>
 </section>
 
+<!-- Webinar Testimonials -->
+<section class="py-20 bg-brand-deep-turquoise">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid md:grid-cols-3 gap-8">
+      {% include testimonial.html name="Daren David Taylor" role="Agentic Software Builder" image="daren-taylor.jpeg" linkedin="https://www.linkedin.com/in/darendavidtaylor/" quote="I joined Chris's webinar on using Claude skills to run parts of his business and it genuinely blew my mind. I spent the entire weekend trying to get AI to run my life as well." %}
+      {% include testimonial.html name="Adam Murphy" role="CTO at Qlearsite" image="adam-murphy.jpeg" linkedin="https://www.linkedin.com/in/adam-b-murphy/" quote="I highly recommend Chris Parsons' AI webinars, they are at the cutting-edge, while at the same time incredibly grounded and practical." %}
+      {% include testimonial.html name="Nik Silver" role="Director at Silver Works Ltd" image="nik-silver.jpeg" linkedin="https://www.linkedin.com/in/niksilver/" quote="Chris's AI webinars are incredibly human." %}
+    </div>
+  </div>
+</section>
 
 <!-- Latest Articles Section -->
 <section class="py-20 bg-white">

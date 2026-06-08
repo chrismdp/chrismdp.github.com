@@ -145,12 +145,12 @@ redirect_from:
         <h2 class="text-2xl font-heading font-bold mb-4 text-brand-black">Just Get Started With AI</h2>
         <p class="text-lg font-semibold mb-4 text-brand-black">Working AI workflows built for your team, not another course</p>
         <p class="text-brand-black/80 leading-relaxed mb-4">
-          Most people in operational roles — finance, operations, marketing, HR, customer-facing teams — still use AI like an advanced Google search, one question at a time, copying answers into emails. The fastest way past that is not another training course but working AI workflows installed in the work itself. I lead a strong team of senior AI engineers and consultants who design and build the workflows for you, so they arrive ready to use and your people get going from day one.
+          Most people in operational roles — finance, operations, marketing, HR, customer-facing teams — still use AI like an advanced Google search, one question at a time, copying answers into emails. The fastest way past that is not another training course but working AI workflows installed in the work itself. I run a network of forward deployed engineers — senior AI engineers and consultants who embed with your team, build the workflows around your real work, and hand them over ready to use so your people get going from day one.
         </p>
         <div class="space-y-2 mb-6 text-brand-black/80">
           <div class="flex items-start">
             <i data-lucide="check" class="w-4 h-4 mr-2 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
-            <span>Delivered by a strong team of senior AI engineers and consultants</span>
+            <span>Delivered by a network of forward deployed engineers who embed with your team</span>
           </div>
           <div class="flex items-start">
             <i data-lucide="check" class="w-4 h-4 mr-2 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
