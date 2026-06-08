@@ -216,6 +216,14 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
   </div>
 </section>
 
+<!-- Client Case Study -->
+<section class="py-20 bg-brand-white">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-8 text-brand-black">AI adoption that spread through engineering</h2>
+    {% include testimonial.html style="full" name="Mick Davison" role="SVP Product Engineering, Instem" image="mick-davison.jpg" linkedin="https://www.linkedin.com/in/mick-davison/" quote="From where we were in February to where we are now, there's a complete difference. The majority of engineering is completely converted. We see a stark difference now." link_url="/case-studies/instem/" link_text="Read the Instem case study" %}
+  </div>
+</section>
+
 <!-- Proof Section -->
 <section class="py-20 bg-white">
   <div class="max-w-6xl mx-auto px-6">
