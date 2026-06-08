@@ -187,12 +187,12 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
 <section class="py-20 bg-brand-deep-turquoise">
   <div class="max-w-6xl mx-auto px-6">
     <div class="grid md:grid-cols-2 gap-8">
-      {% include testimonial.html style="full" name="Tom Foster Carter" role="CEO, Cherrypick" image="tfc.jpeg" linkedin="https://www.linkedin.com/in/tomfostercarter/" quote="Chris helped us build a production LLM meal generator that made our customers happier and increased revenue. Our AI system reduced customer plan changes by 30% (meaning happier customers) and increased basket usage by 14% (meaning more revenue per customer)." link_url="/case-studies/gpt-meal-generator" link_text="Read full case study" %}
       {% include testimonial.html style="full" name="Mick Davison" role="SVP Product Engineering, Instem" image="mick-davison.jpg" linkedin="https://www.linkedin.com/in/mickdavison/" quote="From where we were in February to where we are now, there's a complete difference. The majority of engineering is completely converted. We see a stark difference now." link_url="/case-studies/instem/" link_text="Read the Instem case study" %}
+      {% include testimonial.html style="full" name="Tom Foster Carter" role="CEO, Cherrypick" image="tfc.jpeg" linkedin="https://www.linkedin.com/in/tomfostercarter/" quote="Chris helped us build a production LLM meal generator that made our customers happier and increased revenue. Our AI system reduced customer plan changes by 30% (meaning happier customers) and increased basket usage by 14% (meaning more revenue per customer)." link_url="/case-studies/gpt-meal-generator" link_text="Read full case study" %}
     </div>
 
     <div class="text-center mt-12">
-      <a href="/services" class="inline-block bg-white text-brand-deep-turquoise text-lg font-semibold px-8 py-4 rounded-lg hover:bg-brand-white transition-colors">See more about my services →</a>
+      <a href="/services" class="inline-block bg-white text-brand-deep-turquoise text-lg font-semibold px-8 py-4 rounded-lg hover:bg-brand-white transition-colors">See how I turn AI into real business results →</a>
     </div>
   </div>
 </section>
