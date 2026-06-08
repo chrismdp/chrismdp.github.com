@@ -17,7 +17,7 @@ Instem's engineering teams had been running experiments with agentic tools for m
 
 </div>
 
-{% include testimonial.html style="bordered" name="Mick Davison" role="SVP Product Engineering, Instem" image="mick-davison.jpg" linkedin="https://www.linkedin.com/in/mick-davison/" quote="From where we were in February to where we are now, there's a complete difference. The majority of engineering is completely converted. We see a stark difference now." %}
+{% include testimonial.html style="bordered" name="Mick Davison" role="SVP Product Engineering, Instem" image="mick-davison.jpg" linkedin="https://www.linkedin.com/in/mickdavison/" quote="From where we were in February to where we are now, there's a complete difference. The majority of engineering is completely converted. We see a stark difference now." %}
 
 Instem builds enterprise software for the life sciences industry. Their engineering teams had seen what agentic tools could do in early experiments, and one engineer had spent two months exploring Claude in depth, but the knowledge was scattered. The question Mick Davison, SVP Product Engineering, was asking was not whether AI worked but how to scale it across fifteen engineers working in traditional scrum teams, running sprint cycles on a large legacy codebase.
 
