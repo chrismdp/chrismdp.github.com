@@ -143,9 +143,9 @@ redirect_from:
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors flex flex-col">
         <i data-lucide="rocket" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
         <h2 class="text-2xl font-heading font-bold mb-4 text-brand-black">Just Get Started With AI</h2>
-        <p class="text-lg font-semibold mb-4 text-brand-black">Working AI workflows built for your team, not another course</p>
+        <p class="text-lg font-semibold mb-4 text-brand-black">Working AI workflows built for your team</p>
         <p class="text-brand-black/80 leading-relaxed mb-4">
-          Most people in operational roles — finance, operations, marketing, HR, customer-facing teams — still use AI like an advanced Google search, one question at a time, copying answers into emails. The fastest way past that is not another training course but working AI workflows installed in the work itself. I run a network of forward deployed engineers — senior AI engineers and consultants who embed with your team, build the workflows around your real work, and hand them over ready to use so your people get going from day one.
+          Most people in operational roles — finance, operations, marketing, HR, customer-facing teams — still use AI like an advanced Google search, one question at a time, copying answers into emails. The fastest way past that is working AI workflows installed in the work itself. I run a network of forward deployed engineers — senior AI engineers and consultants who embed with your team, build the workflows around your real work, and hand them over ready to use so your people get going from day one.
         </p>
         <div class="space-y-2 mb-6 text-brand-black/80">
           <div class="flex items-start">
