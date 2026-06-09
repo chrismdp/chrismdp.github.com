@@ -22,7 +22,7 @@ description: |
   I help leaders cut through the hype and leverage AI to transform their teams and dodge the chaotic hype that wastes time and money.
 
 # This is mostly for testing
-url: "https://chrismdp.com" # the base hostname & protocol for your site
+url: "https://www.chrismdp.com" # canonical host - must match CNAME (www); non-www 301-redirects to www
 
 # Add colorful permalinks to headers
 # change colors in _includes/permalinks.html

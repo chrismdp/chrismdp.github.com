@@ -50,7 +50,7 @@ There are a few caveats with Unity builds that we should be aware of:
 
 **One compilation unit means no code isolation**
 
-The `static` keyword will stop working as we expect: we won't be able to constrain variables and methods to one file any longer. The [power of good naming](/2012/09/-the-power-of-good-naming) helps us out here. We also have to be disciplined about keeping our code modular and not referring to code that we shouldn't.
+The `static` keyword will stop working as we expect: we won't be able to constrain variables and methods to one file any longer. The [power of good naming](/the-power-of-good-naming/) helps us out here. We also have to be disciplined about keeping our code modular and not referring to code that we shouldn't.
 
 **We still need to discover platform-specific properties**
 

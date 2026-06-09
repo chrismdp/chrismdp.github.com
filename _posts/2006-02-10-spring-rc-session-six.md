@@ -61,7 +61,7 @@ protected JComponent createControl() {
 <h3>The Tree</h3>
 <p>The createOwnerManagerTree() method is fairly straightforward Java Swing component construction also, except that there are a number of utility classes and interfaces built into Spring Rich Client which help you out. The FocusableTreeCellRenderer class, for example, makes the tree cells work a little more like windows trees (therefore, how people expect them to work, for better or worse). Choosing what to display in each tree cell is standard Swing API legwork, except that Spring Rich Client makes it easy to pick an icon - see this snippet from the custom treeCellRenderer:</p>
 <p>{% highlight java %}this.setIcon(getIconSource().getIcon("owner.bullet"));{% endhighlight %}</p>
-<p>That refers to our plumbed in icon source bean, which we looked at in <a href="/node/11">Session Four</a>. Let's be mischievous and change this icon to the spring logo, and see what happens:</p>
+<p>That refers to our plumbed in icon source bean, which we looked at in <a href="/spring-rc-session-four/">Session Four</a>. Let's be mischievous and change this icon to the spring logo, and see what happens:</p>
 <p><code>owner.bullet=spring-logo.gif</code></p>
 <p>This is what we get:</p>
 <p><img src="/files/rcp-6-4.jpg"> </p>

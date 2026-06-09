@@ -93,7 +93,7 @@ redirect_from:
 </bean>
 {% endhighlight %}</p>
 <p>I need a data access object (DAO) wired into the "OptionsCommand", as the command has got to load and save the options from somewhere...</p>
-<p>Ok, so we create a new command class in OptionsCommand.java and come to writing doExecuteCommand() (see <a href="/node/17">session seven</a> for details on writing commands). First we need the existing options, and then we need to create a FormModel based on these options, as explained above:</p>
+<p>Ok, so we create a new command class in OptionsCommand.java and come to writing doExecuteCommand() (see <a href="/spring-rc-session-seven/">session seven</a> for details on writing commands). First we need the existing options, and then we need to create a FormModel based on these options, as explained above:</p>
 <p>{% highlight java %}
 final Options opt = optionsDao.getOptions();
 optionsForm = new OptionsForm(FormModelHelper.createFormModel(opt));

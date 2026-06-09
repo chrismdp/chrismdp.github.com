@@ -57,7 +57,7 @@ Yesterday came in at $47 on DeepSeek V4 Pro: workers, monitoring sub-agents, and
 
 I access DeepSeek V4 Pro through OpenRouter rather than DeepSeek's own API. OpenRouter gives you a single endpoint that routes to multiple providers and handles billing. The killer feature for privacy-conscious setups is the **do not train** setting: in your OpenRouter account settings, turn off data sharing so your prompts and completions are not used for model training. DeepSeek's own API is cheaper by a notable margin but trains on your data by default. OpenRouter makes the privacy choice simpler and lets you switch between providers without changing your code.
 
-If privacy is a hard requirement, look for OpenRouter providers that offer Zero Data Retention (ZDR). I use these for the same reason I wrote about in [Stop AI Stealing From You](/stop-ai-stealing-from-you/).
+If privacy is a hard requirement, look for OpenRouter providers that offer Zero Data Retention (ZDR). I use these for the same reason I wrote about in [Stop AI Stealing From You](/webinar-stop-ai-stealing-from-you/).
 
 Pi made the rest of the migration straightforward. The extension model, where the agent writes its own NPM packages to add capabilities, meant I never had to fork the harness. I asked Pi to build an extension that prevents it from running commands I have flagged as irreversible decisions. It read my existing guidance, understood the pattern, and built it. When running as a bot it denies irreversible actions by default; when running interactively it asks first.[^4]
 

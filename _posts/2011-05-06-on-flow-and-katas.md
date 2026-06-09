@@ -19,7 +19,7 @@ I first read about the concept of Flow when researching the psychology behind [t
 <a href='http://en.wikipedia.org/wiki/File:Challenge_vs_skill.svg'><img src="http://upload.wikimedia.org/wikipedia/commons/f/f6/Challenge_vs_skill.svg" alt="Challenge vs Skill"/></a>
 </div>
 
-This diagram fascinates me. Perhaps this teaches us that the reason experts enjoy [Katas](/2011/03/are-coding-katas-really-worth-it) is that they're a form of relaxation, whereas perhaps they instil a sense of apathy in beginners.
+This diagram fascinates me. Perhaps this teaches us that the reason experts enjoy Katas is that they're a form of relaxation, whereas perhaps they instil a sense of apathy in beginners.
 
 We have to encourage our apprentices to push through apathy, and even boredom, by gradually increasing the challenge level. As their skill level increases, the challenge level drops, so the same tasks become relaxing.
 

@@ -66,7 +66,7 @@ One practical gotcha: if you run a project management process updating your issu
 
 The realisation that keeps hitting me is how loopable most knowledge work is. A software developer checks the backlog, reviews outstanding PRs, picks a task, completes it, pushes it up, and repeats. A product manager checks analytics, reviews experiment results, updates the backlog, talks to engineers, and repeats. Both are loops.
 
-I now have a heartbeat script running on my VPS every 20 minutes. It checks reminders, scans my email, runs through a list of automated checks. I got Claude Code to [set up a full A/B experiment](/posthog-experiment/) on my blog, autonomously: experiment design, JavaScript implementation, deployment, and monitoring. That took about 10 minutes to set up.
+I now have a heartbeat script running on my VPS every 20 minutes. It checks reminders, scans my email, runs through a list of automated checks. I got Claude Code to set up a full A/B experiment on my blog, autonomously: experiment design, JavaScript implementation, deployment, and monitoring. That took about 10 minutes to set up.
 
 The constraint I face now is not the agent's ability to write code but my own ability to think of things for the agent to do. We are moving from a world where execution is the bottleneck to one where imagination is, and I am not sure we are ready for what that means. But running these loops has given me a glimpse of it.
 

@@ -25,7 +25,7 @@ That's partly why TDD is so powerful: we receive instant feedback on what we're 
 
 ## Feedback validates us and our work
 
-The validation of our work is one of the things that lies at the root of [pairing](/2010/01/pairing-works-for-everthing): the constant code review and the camaderie keeps us motivated and working on something longer than we can manage on our own. I've found programming on [Sol Trader](http://soltrader.net) alone to be an enlightening experience - I've learnt how important it is to have others working alongside me. I now have a graphics expert reviewing my code, and more design and artistic help to keep me motivated to turn out releases.
+The validation of our work is one of the things that lies at the root of [pairing](/pairing-works-for-everything/): the constant code review and the camaderie keeps us motivated and working on something longer than we can manage on our own. I've found programming on [Sol Trader](http://soltrader.net) alone to be an enlightening experience - I've learnt how important it is to have others working alongside me. I now have a graphics expert reviewing my code, and more design and artistic help to keep me motivated to turn out releases.
 
 It's also incredibly motivating to receive a "thank you!" or "looks great!" There's a lot of power in simple encouragement. If we know our work is appreciated and valued, we'll likely to work longer and with more energy on that next killer feature.
 
