@@ -52,7 +52,7 @@ When I ask an AI to draft an email, the output needs to be scannable in seconds.
 
 {% include shareable-quote.html text="Better review interfaces for humans will unlock more AI productivity than better models ever will." %}
 
-The question I keep asking, both for myself and when [working with engineering teams](/services): for every task we delegate to an AI, how long does it take us to verify the result? If the answer is "almost as long as doing it ourselves," something is wrong. Either we need to change how the agent presents its work, or we need an intermediate check that removes the human from the loop entirely, or this particular task does not benefit from delegation.
+The question I keep asking, both for myself and when [working with engineering teams](/services/): for every task we delegate to an AI, how long does it take us to verify the result? If the answer is "almost as long as doing it ourselves," something is wrong. Either we need to change how the agent presents its work, or we need an intermediate check that removes the human from the loop entirely, or this particular task does not benefit from delegation.
 
 A team that generates five approaches and verifies all five in an afternoon will outpace a team that generates one and waits a week for feedback. The bottleneck moved from "how fast can we build?" to "how fast can I tell whether this is right?"
 

@@ -192,7 +192,7 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
     </div>
 
     <div class="text-center mt-12">
-      <a href="/services" class="inline-block bg-white text-brand-deep-turquoise text-lg font-semibold px-8 py-4 rounded-lg hover:bg-brand-white transition-colors">See how I turn AI into real business results →</a>
+      <a href="/services/" class="inline-block bg-white text-brand-deep-turquoise text-lg font-semibold px-8 py-4 rounded-lg hover:bg-brand-white transition-colors">See how I turn AI into real business results →</a>
     </div>
   </div>
 </section>

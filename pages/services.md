@@ -1,9 +1,10 @@
 ---
 layout: default
 title: "AI Advisory and Training"
-permalink: /services
+permalink: /services/
 excerpt: "I help CTOs, engineering managers, and technical founders deliver real AI results for their teams. Training, advisory, and hands-on support."
 redirect_from:
+  - /services
   - /coaching
   - /cto
   - /ai
