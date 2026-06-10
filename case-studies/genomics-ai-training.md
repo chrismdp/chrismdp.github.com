@@ -8,6 +8,7 @@ image: /assets/img/genomics-office.jpg
 categories:
 - ai
 - case-studies
+live: true
 ---
 
 <div class="bg-brand-light-blue/10 rounded-lg p-6 mb-8 border border-brand-light-blue/20">
