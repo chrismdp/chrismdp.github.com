@@ -2,7 +2,9 @@
 layout: post
 title: "Case Study: GPT Meal Generator"
 date: 2024-06-01 00:00:00 +0000
-permalink: /case-studies/gpt-meal-generator
+permalink: /case-studies/gpt-meal-generator/
+redirect_from:
+  - /case-studies/gpt-meal-generator
 excerpt: "How we built a production LLM system that reduced plan changes by 30% and increased basket usage by 14%"
 image: /assets/img/meal-generator.jpg
 categories:

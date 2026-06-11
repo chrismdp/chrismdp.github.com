@@ -1,7 +1,9 @@
 ---
 layout: page
 title: Post-Workshop Questionnaire
-permalink: /workshop/feedback
+permalink: /workshop/feedback/
+redirect_from:
+  - /workshop/feedback
 ---
 
 <div class="bg-brand-white rounded-lg p-8 border border-brand-light-blue/20 mb-12">

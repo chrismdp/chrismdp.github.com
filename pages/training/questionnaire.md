@@ -1,7 +1,9 @@
 ---
 layout: page
 title: Pre-Training Questionnaire
-permalink: /training/questionnaire
+permalink: /training/questionnaire/
+redirect_from:
+  - /training/questionnaire
 ---
 
 <div class="bg-brand-white rounded-lg p-8 border border-brand-light-blue/20 mb-12">

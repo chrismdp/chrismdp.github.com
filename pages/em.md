@@ -1,7 +1,9 @@
 ---
 layout: default
 title: "Em: Never Miss An Important Email"
-permalink: /em
+permalink: /em/
+redirect_from:
+  - /em
 ---
 
 <!-- Hero Section -->

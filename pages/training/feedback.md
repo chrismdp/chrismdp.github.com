@@ -1,7 +1,9 @@
 ---
 layout: page
 title: Post-Training Questionnaire
-permalink: /training/feedback
+permalink: /training/feedback/
+redirect_from:
+  - /training/feedback
 ---
 
 <div class="bg-brand-white rounded-lg p-8 border border-brand-light-blue/20 mb-12">

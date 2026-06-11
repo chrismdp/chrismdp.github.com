@@ -1,7 +1,9 @@
 ---
 layout: default
 title: Thanks!
-permalink: /em/thanks
+permalink: /em/thanks/
+redirect_from:
+  - /em/thanks
 ---
 
 <!-- Hero Section with Page Title -->

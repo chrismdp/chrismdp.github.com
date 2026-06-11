@@ -1,7 +1,9 @@
 ---
 layout: page
 title: Training Check-In
-permalink: /training/check-in
+permalink: /training/check-in/
+redirect_from:
+  - /training/check-in
 ---
 
 <div class="bg-brand-white rounded-lg p-8 border border-brand-light-blue/20 mb-12">

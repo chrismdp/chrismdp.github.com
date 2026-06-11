@@ -188,7 +188,7 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
   <div class="max-w-6xl mx-auto px-6">
     <div class="grid md:grid-cols-2 gap-8">
       {% include testimonial.html style="full" name="Mick Davison" role="SVP Product Engineering, Instem" image="mick-davison.jpg" linkedin="https://www.linkedin.com/in/mickdavison/" quote="From where we were in February to where we are now, there's a complete difference. The majority of engineering is completely converted. We see a stark difference now." link_url="/case-studies/instem/" link_text="Read the Instem case study" %}
-      {% include testimonial.html style="full" name="Tom Foster Carter" role="CEO, Cherrypick" image="tfc.jpeg" linkedin="https://www.linkedin.com/in/tomfostercarter/" quote="Chris helped us build a production LLM meal generator that made our customers happier and increased revenue. Our AI system reduced customer plan changes by 30% (meaning happier customers) and increased basket usage by 14% (meaning more revenue per customer)." link_url="/case-studies/gpt-meal-generator" link_text="Read full case study" %}
+      {% include testimonial.html style="full" name="Tom Foster Carter" role="CEO, Cherrypick" image="tfc.jpeg" linkedin="https://www.linkedin.com/in/tomfostercarter/" quote="Chris helped us build a production LLM meal generator that made our customers happier and increased revenue. Our AI system reduced customer plan changes by 30% (meaning happier customers) and increased basket usage by 14% (meaning more revenue per customer)." link_url="/case-studies/gpt-meal-generator/" link_text="Read full case study" %}
     </div>
 
     <div class="text-center mt-12">
@@ -286,7 +286,7 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
         <h3 class="text-xl font-heading font-bold mb-2">Production AI Systems</h3>
         <p class="text-2xl font-bold min-h-16 text-brand-deep-turquoise mb-2">Three evaluation frameworks built</p>
         <p class="text-brand-black/80 min-h-24 mb-4">From Cherrypick's meal generator to complex internal tools, I build systems with robust evaluation from day one</p>
-        <a href="/case-studies/gpt-meal-generator" target="_blank" class="inline-block bg-brand-deep-turquoise text-white px-4 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">Read case study →</a>
+        <a href="/case-studies/gpt-meal-generator/" target="_blank" class="inline-block bg-brand-deep-turquoise text-white px-4 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">Read case study →</a>
       </div>
     </div>
   </div>
