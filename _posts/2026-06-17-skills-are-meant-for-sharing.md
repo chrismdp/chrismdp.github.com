@@ -14,13 +14,13 @@ categories:
 
 One of the engineers on a team I train built something genuinely clever: a tool that turned plain questions into the gnarly database queries his team ran by hand a dozen times a day. It saved hours. For weeks, nobody else knew it existed. Then he showed it off in a sprint review, and within a week half the team was using it.
 
-The gap between a) someone building something useful with AI and b) everybody else getting the benefit is hidden, but very expensive. When economists ran a controlled trial across 66 firms and more than 7,000 knowledge workers, the people given AI each saved around two hours a week, yet the researchers found no measurable change at the level of the firm. The gains stayed personal and never became embedded in the organisation.[^nber]
+The gap between a) someone building something useful with AI and b) everybody else getting the benefit is hidden, but very expensive. Time to change that.
 
 <!--more-->
 
 ## We Don't Share AI
 
-A year ago the problem was getting AI into people's hands at all. Now your best people are brilliant with it, but that brilliance stays locked up with them. Microsoft found that more than three-quarters of people now bring their own AI tools to work, and over half will not admit to using AI on their most important tasks.[^byoai] All the prompting and the hard-won workflows live in one person's head, or buried in their private chat history.
+A year ago the problem was getting AI into people's hands at all. Now your best people are brilliant with it, but that brilliance stays locked up with them. Microsoft found that more than three-quarters of people now bring their own AI tools to work, and over half will not admit to using AI on their most important tasks.[^byoai] All the prompting and the hard-won workflows live in one person's head, or buried in their private chat history. When economists ran a controlled trial across 66 firms and more than 7,000 knowledge workers, the people given AI each saved around two hours a week, yet the researchers found no measurable change at the level of the firm. The gains stayed personal and never became embedded in the organisation.[^nber]
 
 For a leader this is familiar ground. It is the same problem as any other kind of siloing or expertise lock-in. The stakes are simply higher with AI: break the silos and it compounds fast; leave them in place and it never really gets off the ground.
 
