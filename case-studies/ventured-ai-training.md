@@ -5,6 +5,11 @@ date: 2026-04-30 07:00:00 +0000
 permalink: /case-studies/ventured/
 excerpt: "VenturEd's teams span three continents. After training engineers in Leicester, the US, and India, the US team overhauled one of Ravenna's most complex areas, and an India team picked up a product that had not moved in six months."
 image: /assets/img/ventured-social.jpg
+client_quote: "We were recommended some large organisations for AI training. But in the end, we used Chris, and he's been great. We've had some fantastic outcomes so far."
+client_name: "Rob Rainey"
+client_role: "Chief Product & Technology Officer, VenturEd Solutions"
+client_image: "rob-rainey.jpg"
+client_linkedin: "https://www.linkedin.com/in/rob-rainey/"
 infographic: /assets/img/ventured-ai-training-proof-slide.jpg
 infographic_carousel: false
 live: true

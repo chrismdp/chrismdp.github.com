@@ -5,6 +5,11 @@ date: 2026-05-07 07:00:00 +0000
 permalink: /case-studies/instem/
 excerpt: "Instem's engineering teams had been experimenting with agentic tools for months. In the first coaching session, one engineer reported shipping a month and a half of work in three days. They stood up two pods to pioneer agentic engineering in-house."
 image: /assets/img/instem-social.jpg
+client_quote: "From where we were in February to where we are now, there's a complete difference. The majority of engineering is completely converted. We see a stark difference now."
+client_name: "Mick Davison"
+client_role: "SVP Product Engineering, Instem"
+client_image: "mick-davison.jpg"
+client_linkedin: "https://www.linkedin.com/in/mickdavison/"
 infographic: /assets/img/instem-ai-training-proof-slide.jpg
 infographic_carousel: false
 categories:

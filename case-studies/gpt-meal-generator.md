@@ -7,6 +7,11 @@ redirect_from:
   - /case-studies/gpt-meal-generator
 excerpt: "How we built a production LLM system that reduced plan changes by 30% and increased basket usage by 14%"
 image: /assets/img/meal-generator.jpg
+client_quote: "Chris helped us build a production LLM meal generator that made our customers happier and increased revenue. Our AI system reduced customer plan changes by 30% (meaning happier customers) and increased basket usage by 14% (meaning more revenue per customer)."
+client_name: "Tom Foster Carter"
+client_role: "CEO, Cherrypick"
+client_image: "tfc.jpeg"
+client_linkedin: "https://www.linkedin.com/in/tomfostercarter/"
 categories:
 - ai
 - case-studies

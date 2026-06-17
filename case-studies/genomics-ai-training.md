@@ -5,6 +5,11 @@ date: 2026-03-17 07:00:00 +0000
 permalink: /case-studies/genomics/
 excerpt: "Genomics had 40 Claude licences, GitHub Copilot across engineering, and 76% daily AI usage. Most of the team still described themselves as beginners."
 image: /assets/img/genomics-office.jpg
+client_quote: "The team and I have really benefited from and enjoyed working with Chris. He has worked cross functionally to raise our organisational AI maturity, increasing both our internal productivity and effectiveness, and clarifying the path to production for our agentic tooling. Would recommend as a great way to augment internal capabilities."
+client_name: "Alexandra Eavis"
+client_role: "Chief Product & Technology Officer, Genomics"
+client_image: "alexandra-eavis.jpeg"
+client_linkedin: "https://www.linkedin.com/in/alexandra-eavis-8690326/"
 infographic: /assets/img/genomics-ai-training-proof-slide.jpg
 infographic_carousel: false
 categories:

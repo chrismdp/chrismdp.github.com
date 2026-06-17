@@ -130,6 +130,16 @@ The project includes `docker-compose.yaml` for containerized development using J
 ### Jekyll Server and Build
 Chris runs the Jekyll server and build separately (not via Claude Code). Don't attempt to start `jekyll serve` or run `jekyll build` - they're already running in another process.
 
+### Always Verify Layout With a Screenshot
+When changing anything visual (a new page, a layout, CSS, an include), **don't rely on the built HTML alone — capture a screenshot and look at it, then iterate.** The live server is already serving at `http://localhost:4000`, and headless Chrome is available:
+
+```bash
+google-chrome-stable --headless --disable-gpu --no-sandbox --hide-scrollbars \
+  --window-size=900,2400 --screenshot=/tmp/check.png "http://localhost:4000/<path>/"
+```
+
+Then `Read` the PNG. Grepping the HTML catches missing content but **misses rendered bugs** — e.g. turquoise button text on a turquoise background reads as "present" in HTML but is invisible on screen. This page taught the lesson: the `.content-styled` wrapper (specificity `0,1,1`) silently overrode Tailwind utilities (`text-white`, `no-underline`, image `margin`/`height`), producing an empty-looking CTA and a mis-placed avatar that only a screenshot revealed. Fix such overrides with inline `style="..."` (the `_includes/testimonial.html` pattern) or a higher-specificity selector.
+
 ## Architecture Overview
 
 ### Jekyll Site Structure
