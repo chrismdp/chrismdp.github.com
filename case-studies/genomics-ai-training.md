@@ -17,7 +17,7 @@ Genomics invested in AI tools across their 160-person biotech, but the team need
 
 </div>
 
-{% include testimonial.html style="bordered" name="Alexandra Eavis" role="Chief Product & Technology Officer, Genomics" image="alexandra-eavis.jpeg" linkedin="https://www.linkedin.com/in/alexandraeavis/" quote="The team and I have really benefited from and enjoyed working with Chris. He has worked cross functionally to raise our organisational AI maturity, increasing both our internal productivity and effectiveness, and clarifying the path to production for our agentic tooling. Would recommend as a great way to augment internal capabilities." %}
+{% include testimonial.html style="bordered" name="Alexandra Eavis" role="Chief Product & Technology Officer, Genomics" image="alexandra-eavis.jpeg" linkedin="https://www.linkedin.com/in/alexandra-eavis-8690326/" quote="The team and I have really benefited from and enjoyed working with Chris. He has worked cross functionally to raise our organisational AI maturity, increasing both our internal productivity and effectiveness, and clarifying the path to production for our agentic tooling. Would recommend as a great way to augment internal capabilities." %}
 
 Genomics had already done what most companies struggle with. They had invested in the tools: forty Claude licences, GitHub Copilot across engineering, Gemini for the wider team. Seventy-six percent of their 47 technical staff used AI daily. The CEO and tech leads were already using Claude Code to prototype during meetings and maintain applications with leaner teams.
 
