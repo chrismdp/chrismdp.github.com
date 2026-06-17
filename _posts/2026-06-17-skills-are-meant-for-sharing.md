@@ -24,7 +24,7 @@ A year ago the problem was getting AI into people's hands at all. Now your best 
 
 For a leader this is familiar ground. It is the same problem as any other kind of siloing or expertise lock-in. The stakes are simply higher with AI: break the silos and it compounds fast; leave them in place and it never really gets off the ground.
 
-**What makes this suddenly fixable is the skill.** A skill is a set of instructions you write once and your AI loads when it is relevant, and I went into [what a skill is and how to build one](/skills-are-claude-codes-secret-weapon/) in an earlier post. They can also bundle in [scripts that turn a workflow into runnable code](/stop-saving-tokens-start-writing-scripts/), which makes them a powerful symbiosis of AI creativity and repeatable process. Because everything travels together in one file, a skill can in theory move between people, which is exactly what you need to stop the siloing.
+**What makes this suddenly fixable is the skill.** A skill is a set of instructions you write once and your AI loads when it is relevant, and I went into [what a skill is and how to build one](/skills-are-claude-codes-secret-weapon/) in an earlier post. They can also bundle in [scripts that turn a workflow into runnable code](/stop-saving-tokens-start-writing-scripts/), which makes them a powerful symbiosis of AI creativity and repeatable process. Because everything travels together in one bundle, a skill can in theory move between people, which is exactly what you need to stop the siloing.
 
 ## Specific, not generic
 
@@ -34,7 +34,7 @@ It is the same lesson Perplexity's team reached writing skills in production: if
 
 ## Have Context, Won't Travel
 
-**On their own, though, skills do not travel well.** Copies drift: your laptop has version three, a colleague has version one, and nobody is sure which is right. They rot as the underlying tools change underneath them. The off-the-shelf options do not fit either: model vendors like Anthropic have plugin systems that can hold skills, but those are unwieldy and tie you to one vendor, and getting skills in and out of ChatGPT still means passing zip files around.
+**On their own, though, skills do not travel well.** Copies drift: your laptop has version three, a colleague has version one, and nobody is sure which is right. They rot as the underlying tools change underneath them. The off-the-shelf options do not fit either: model vendors like Anthropic have plugin systems that can hold skills, but those are unwieldy and tie you to one vendor, and getting skills in and out of ChatGPT or Claude Chat still means passing zip files around!
 
 Even a Git repository, the engineer's instinct, is the wrong shape for this. Skills are not code, and many people who most need to contribute one do not write pull requests. What about the salesperson with a proposal workflow worth copying or the operations lead who has tuned a reconciliation process down to ten minutes?
 
