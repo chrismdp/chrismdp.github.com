@@ -5,6 +5,8 @@ date: 2026-03-17 07:00:00 +0000
 permalink: /case-studies/genomics/
 excerpt: "Genomics had 40 Claude licences, GitHub Copilot across engineering, and 76% daily AI usage. Most of the team still described themselves as beginners."
 image: /assets/img/genomics-office.jpg
+infographic: /assets/img/genomics-ai-training-proof-slide.jpg
+infographic_carousel: false
 categories:
 - ai
 - case-studies

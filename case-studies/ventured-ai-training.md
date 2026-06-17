@@ -5,6 +5,8 @@ date: 2026-04-30 07:00:00 +0000
 permalink: /case-studies/ventured/
 excerpt: "VenturEd's teams span three continents. After training engineers in Leicester, the US, and India, the US team overhauled one of Ravenna's most complex areas, and an India team picked up a product that had not moved in six months."
 image: /assets/img/ventured-social.jpg
+infographic: /assets/img/ventured-ai-training-proof-slide.jpg
+infographic_carousel: false
 live: true
 categories:
 - ai

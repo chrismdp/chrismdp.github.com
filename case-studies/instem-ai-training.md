@@ -5,6 +5,8 @@ date: 2026-05-07 07:00:00 +0000
 permalink: /case-studies/instem/
 excerpt: "Instem's engineering teams had been experimenting with agentic tools for months. In the first coaching session, one engineer reported shipping a month and a half of work in three days. They stood up two pods to pioneer agentic engineering in-house."
 image: /assets/img/instem-social.jpg
+infographic: /assets/img/instem-ai-training-proof-slide.jpg
+infographic_carousel: false
 categories:
 - ai
 - case-studies
