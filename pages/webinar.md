@@ -8,7 +8,7 @@ permalink: /webinar/
 redirect_from:
 - /webinar
 kit_tag: webinar17
-webinar_date: "2026-07-02T14:00:00+01:00"
+webinar_date: "2026-07-09T14:00:00+01:00"
 ---
 
 <div class="mb-12">
