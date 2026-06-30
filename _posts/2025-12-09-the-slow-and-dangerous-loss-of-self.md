@@ -34,6 +34,8 @@ Ask an AI model about work-life balance and you will get answers shaped by US pr
 
 The training data for major models comes predominantly from English-language Western sources. The values embedded in responses reflect liberal US cultural assumptions. The "correct" answers to ambiguous questions align with specific cultural viewpoints. This is fine if you are comfortable with that and aware of it. It is problematic if you are not aware of it at all.
 
+Six months after I first wrote this, *The Economist* made this concrete. They put 25 frontier models through the World Values Survey, the poll that has tracked human beliefs across more than a hundred countries since 1981, and found the models do not sit at any neutral human centre. They cluster in the rich-country, secular, self-expression corner of the map, and often hold those beliefs more strongly than any actual nation. OpenAI's GPT models came out more secular than any country on earth, and asked the same questions in English, most models answered like American Democrats.[^economist] Ask ChatGPT, DeepSeek and Mistral how to handle a quarrel with your in-laws and you get three culturally different answers. Those beliefs hit hardest not on facts but on advice, which is exactly where we are tempted to hand a judgement to the machine. Dangerous stuff.
+
 ## Data vs Values
 
 Data sovereignty is a problem we understand. We have dealt with it for years: where is data stored, who has access, what jurisdictions apply. We can audit it. We can require data stays in specific countries. We can see where the servers are.
@@ -75,3 +77,5 @@ The absence of a perfect solution does not mean doing nothing. It means being th
 There is no such thing as unbiased AI. Every model reflects the choices made in its creation. The question is not whether your AI has values baked in. It does. The question is whether you know what those values are, whether they align with your own, and whether you are consciously choosing to adopt them.
 
 Most organisations have not asked these questions yet. As AI adoption accelerates, as more decisions get made with AI assistance, as more thinking gets outsourced to these systems, the organisations that thrive will be the ones that engaged with this problem early.
+
+[^economist]: *The Economist*, [*AI models' values are very different from most people's*](https://www.economist.com/briefing/2026/06/25/ai-models-values-are-very-different-from-most-peoples){:target="_blank"}, 25 June 2026. The investigation scored 25 frontier models against the World Values Survey and the VOTER Survey, finding that models fall overwhelmingly into the secular, self-expression quadrant populated by wealthy countries, that no model reflects the worldviews of most African or Muslim countries, and that a model's answers shift with the language of the question: the lower a country's press freedom, the more pro-regime its language's outputs become.
