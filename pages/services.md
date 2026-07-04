@@ -52,7 +52,7 @@ redirect_from:
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors flex flex-col">
         <i data-lucide="compass" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
         <h2 class="text-2xl font-heading font-bold mb-4 text-brand-black">CEO and Exec Team Advisory</h2>
-        <p class="text-lg font-semibold mb-4 text-brand-black">Unrestricted access to someone who has founded and run companies</p>
+        <p class="text-lg font-semibold mb-4 text-brand-black">Unrestricted access to an AI expert who has founded and run companies</p>
         <p class="text-brand-black/80 leading-relaxed mb-4">
           Ad-hoc access via Slack, WhatsApp, email or call for you and your exec team, shaped around the decisions in front of you. Cut through the vendor noise, get your board comfortable, and turn AI experiments into measurable business outcomes.
         </p>
