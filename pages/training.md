@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "AI Training Courses"
+title: "AI Upskilling Workshops"
 permalink: /training/
-excerpt: "From a two-hour executive briefing to full-day intensives for developers and business teams. Courses that turn AI curiosity into real productivity."
+excerpt: "From a two-hour executive briefing to full-day hands-on workshops for developers and business teams. Upskilling that turns AI curiosity into measurable results."
 ---
 
 {% include header.html style="overlay" %}
@@ -11,9 +11,9 @@ excerpt: "From a two-hour executive briefing to full-day intensives for develope
 <section class="relative bg-gradient-to-br from-brand-deep-turquoise to-brand-turquoise text-white pt-32 pb-20 overflow-hidden">
   <div class="w-full px-6 relative z-10">
     <div class="text-center mb-12">
-      <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight mx-4">AI Training That Sticks</h1>
-      <p class="text-xl md:text-2xl mb-4 text-white mx-4 sm:mx-24">Your people using AI to do their best work,<br/>starting the day after training.</p>
-      <p class="text-lg mb-8 text-white/80 mx-4 sm:mx-24">Book a single session or combine courses into a tailored programme.</p>
+      <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight mx-4">Upskilling That Sticks</h1>
+      <p class="text-xl md:text-2xl mb-4 text-white mx-4 sm:mx-24">Your people using AI to do their best work,<br/>starting the day after the workshop.</p>
+      <p class="text-lg mb-8 text-white/80 mx-4 sm:mx-24">Book a single workshop or combine them into a tailored programme.</p>
     </div>
 
     <div class="max-w-6xl mx-auto">
@@ -85,15 +85,15 @@ excerpt: "From a two-hour executive briefing to full-day intensives for develope
   </div>
 </section>
 
-<!-- Why Training Matters -->
+<!-- Why Upskilling Matters -->
 <section class="py-20 bg-brand-white">
   <div class="max-w-4xl mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-heading font-bold mb-8 text-brand-black text-center">Using AI Without Training Is Dangerous</h2>
+    <h2 class="text-3xl md:text-4xl font-heading font-bold mb-8 text-brand-black text-center">Using AI Without Guidance Is Dangerous</h2>
     <p class="text-lg text-brand-black/80 mb-6">
-      Adoption is running ahead of policy in most organisations. The only question is whether they use it well or badly. Without training, people paste confidential data into tools with no guardrails, accept wrong answers they cannot spot, and quietly lose the judgment that made them good at their jobs in the first place.
+      Adoption is running ahead of policy in most organisations. The only question is whether they use it well or badly. Left to work it out alone, people paste confidential data into tools with no guardrails, accept wrong answers they cannot spot, and quietly lose the judgment that made them good at their jobs in the first place.
     </p>
     <p class="text-lg text-brand-black/80 mb-6">
-      <a href="https://www.hbs.edu/faculty/Pages/item.aspx?num=64700" target="_blank" class="underline text-brand-deep-turquoise hover:text-brand-turquoise">Harvard and BCG</a> studied 758 consultants and found that without proper guidance, AI users were <strong>19 percentage points less likely</strong> to produce correct answers on tasks outside AI&rsquo;s capability frontier. They over-trust the tool on the wrong tasks and under-use it on the right ones. Training is about accuracy, not adoption.
+      <a href="https://www.hbs.edu/faculty/Pages/item.aspx?num=64700" target="_blank" class="underline text-brand-deep-turquoise hover:text-brand-turquoise">Harvard and BCG</a> studied 758 consultants and found that without proper guidance, AI users were <strong>19 percentage points less likely</strong> to produce correct answers on tasks outside AI&rsquo;s capability frontier. They over-trust the tool on the wrong tasks and under-use it on the right ones. Upskilling is about accuracy, not adoption.
     </p>
     <p class="text-lg text-brand-black/80">
       <a href="https://www.bain.com/insights/ai-in-financial-services-survey-shows-productivity-gains-across-the-board/" target="_blank" class="underline text-brand-deep-turquoise hover:text-brand-turquoise">Bain</a> found an average <strong>20% productivity improvement</strong> across 109 financial services firms. <a href="https://www.science.org/doi/10.1126/science.adh2586" target="_blank" class="underline text-brand-deep-turquoise hover:text-brand-turquoise">MIT</a> measured <strong>40% faster task completion</strong> with 18% higher quality. <a href="https://www.nber.org/system/files/working_papers/w31161/w31161.pdf" target="_blank" class="underline text-brand-deep-turquoise hover:text-brand-turquoise">Stanford</a> tracked 5,000 customer support agents and saw 14% more issues resolved per hour, <strong>rising to 34% for junior staff</strong>.
@@ -181,10 +181,10 @@ excerpt: "From a two-hour executive briefing to full-day intensives for develope
   <div class="max-w-4xl mx-auto px-6 text-center">
     <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6 text-brand-black">Buy What You Need, Build From There</h2>
     <p class="text-lg text-brand-black/80 mb-4">
-      Every course is individually bookable. Start with just the executive briefing, run a single day for your developers, or combine courses across both tracks into a multi-day programme. Each course stands alone, but they are designed to build on each other.
+      Every workshop is individually bookable. Start with just the executive briefing, run a single day for your developers, or combine workshops across both tracks into a multi-day programme. Each workshop stands alone, but they are designed to build on each other.
     </p>
     <p class="text-lg text-brand-black/80">
-      Two tracks cover the two groups that need AI training: the people who write code and the people who do not.
+      Two tracks cover the two groups whose work AI changes: the people who write code and the people who do not.
     </p>
   </div>
 </section>
@@ -204,7 +204,7 @@ excerpt: "From a two-hour executive briefing to full-day intensives for develope
           Most developers are using AI as a faster autocomplete. The real gains come from treating AI as a capable junior developer: one that can read your codebase, understand your architecture, and ship code under your supervision.
         </p>
         <p class="text-lg text-brand-black/80 mb-6">
-          This course builds from AI foundations through to working fluently with coding agents. Your team learns graduated trust: starting with read-only exploration, progressing to supervised changes, and ending the day with confident agentic workflows on their own codebases.
+          This workshop builds from AI foundations through to working fluently with coding agents. Your team learns graduated trust: starting with read-only exploration, progressing to supervised changes, and ending the day with confident agentic workflows on their own codebases.
         </p>
         <div class="bg-brand-light-blue/10 rounded-lg p-6 mt-8">
           <h4 class="font-semibold text-brand-black mb-2">Who this is for</h4>
@@ -256,7 +256,7 @@ excerpt: "From a two-hour executive briefing to full-day intensives for develope
     <div class="grid md:grid-cols-2 gap-12 items-start">
       <div>
         <p class="text-lg text-brand-black/80 mb-6">
-          Building production-grade agents that your customers and colleagues rely on requires more than prompt engineering. This course covers the architecture, patterns, and hard-won lessons behind reliable agentic systems.
+          Building production-grade agents that your customers and colleagues rely on requires more than prompt engineering. This workshop covers the architecture, patterns, and hard-won lessons behind reliable agentic systems.
         </p>
         <p class="text-lg text-brand-black/80 mb-6">
           Your team learns to build agents that work in the real world: handling failures gracefully, managing costs, integrating with existing systems, and passing the kind of evaluation that gives you confidence in production.
@@ -317,7 +317,7 @@ excerpt: "From a two-hour executive briefing to full-day intensives for develope
           AI tools are not just for developers. Product managers, operations leads, finance teams, and HR professionals can get dramatic productivity gains, but only if they learn to use the tools properly.
         </p>
         <p class="text-lg text-brand-black/80 mb-6">
-          This course starts with AI foundations and moves quickly into hands-on work with whatever your team already has access to — ChatGPT, Claude, Gemini, or all three. Deep research, custom agents, repeatable workflows: your team builds real solutions to their own problems during the session.
+          This workshop starts with AI foundations and moves quickly into hands-on work with whatever your team already has access to: ChatGPT, Claude, Gemini, or all three. Deep research, custom agents, repeatable workflows: your team builds real solutions to their own problems during the session.
         </p>
         <div class="bg-brand-light-blue/10 rounded-lg p-6 mt-8">
           <h4 class="font-semibold text-brand-black mb-2">Who this is for</h4>
@@ -428,7 +428,7 @@ excerpt: "From a two-hour executive briefing to full-day intensives for develope
         <span class="ml-auto text-sm bg-brand-turquoise text-white px-3 py-1 rounded-full">Add-on</span>
       </div>
       <p class="text-lg text-brand-black/80 mb-6">
-        Training days create momentum, and coaching keeps it going. Weekly sessions with your team to troubleshoot adoption challenges, review real work, and push into more advanced techniques as confidence grows.
+        Workshops create momentum, and coaching keeps it going. Weekly sessions with your team to troubleshoot adoption challenges, review real work, and push into more advanced techniques as confidence grows.
       </p>
       <div class="grid md:grid-cols-3 gap-6">
         <div>

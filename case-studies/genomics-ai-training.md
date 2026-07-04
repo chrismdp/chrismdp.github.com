@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Case Study: AI Training and Advisory at Genomics"
+title: "Case Study: AI Transformation at Genomics"
 date: 2026-03-17 07:00:00 +0000
 permalink: /case-studies/genomics/
 excerpt: "Genomics had 40 Claude licences, GitHub Copilot across engineering, and 76% daily AI usage. Most of the team still described themselves as beginners."

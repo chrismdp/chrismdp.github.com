@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Case Study: AI Engineering Training at Instem"
+title: "Case Study: AI Engineering Transformation at Instem"
 date: 2026-05-07 07:00:00 +0000
 permalink: /case-studies/instem/
 excerpt: "Instem's engineering teams had been experimenting with agentic tools for months. In the first coaching session, one engineer reported shipping a month and a half of work in three days. They stood up two pods to pioneer agentic engineering in-house."

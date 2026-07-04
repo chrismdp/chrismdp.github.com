@@ -361,7 +361,7 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
         <div class="md:w-2/3">
           <h3 class="text-2xl font-heading font-bold mb-4 text-brand-black">Chris Parsons</h3>
           <div class="space-y-4 text-brand-black/80">
-            <p>I am a CTO myself. I am not just a consultant who has read about AI adoption; I am in the trenches making these decisions alongside you. 14 years in senior roles with multiple teams, currently CTO and Strategic AI Advisor to startups and scaleups including Genomics and <a href="https://cherrypick.co" target="_blank" class="text-brand-deep-turquoise hover:underline">Cherrypick</a>. I have run dozens of courses for organisations like the BBC, and I bring that experience to this programme.</p>
+            <p>I am a CTO myself. I am in the trenches making these decisions alongside you, not a consultant who has only read about AI adoption. 14 years in senior roles with multiple teams, currently CTO and Strategic AI Advisor to startups and scaleups including Genomics and <a href="https://cherrypick.co" target="_blank" class="text-brand-deep-turquoise hover:underline">Cherrypick</a>. I have upskilled dozens of teams at organisations like the BBC, and I bring that experience to this programme.</p>
             <p>This programme works because you are surrounded by CTOs and senior technical leaders who understand the same pressures. I facilitate and provoke, bringing frameworks that challenge assumptions. The value comes from testing your thinking against people solving the same problems.</p>
             <p>I spend a significant chunk of my time keeping up with AI so you do not have to filter the noise yourself. Then as a group we work through what actually makes sense for your organisation.</p>
           </div>
@@ -443,7 +443,7 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
 
       <div class="border-b border-brand-light-blue/30 pb-6">
         <h3 class="text-xl font-heading font-bold mb-3 text-brand-black">Is there a limit to attendees?</h3>
-        <p class="text-brand-black/80">Clinics are limited to 8 people in total so you can honestly discuss your own challenges in a safe environment. Everyone on the course gets personal attention, so we will cap numbers when that is no longer possible.</p>
+        <p class="text-brand-black/80">Clinics are limited to 8 people in total so you can honestly discuss your own challenges in a safe environment. Everyone on the programme gets personal attention, so we will cap numbers when that is no longer possible.</p>
       </div>
 
       <div class="border-b border-brand-light-blue/30 pb-6">

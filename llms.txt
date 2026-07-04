@@ -9,7 +9,7 @@ permalink: /llms.txt
 - Site: [chrismdp.com](https://www.chrismdp.com)
 - RSS: [chrismdp.com/feed.xml](https://www.chrismdp.com/feed.xml)
 - Newsletter: Weekly AI insights for leaders
-- Services: AI training, C-level AI advisory, AI Leader Accelerator programme
+- Services: AI transformation, C-level AI advisory, whole-team upskilling, AI Leader Accelerator programme
 - Updated: {{ site.time | date: "%Y-%m-%d" }}
 
 ## Recent Articles
@@ -18,10 +18,10 @@ permalink: /llms.txt
 {% endfor %}
 ## Services
 
-Chris offers practical AI services for leaders and teams:
+Chris helps companies transform how they work with AI:
 
-- **AI Training**: Modular training from half-day foundations to multi-day programmes, with tailored pathways for developers, product managers, researchers, and executives. Transform random ChatGPT usage into systematic AI workflows with security and quality standards built in.
-- **C-Level AI Advisory**: Monthly strategic sessions for CTOs, engineering managers, and technical founders. Covers tool selection, team challenges, vendor negotiations, and board communication, plus urgent access for critical decisions.
+- **C-Level AI Advisory**: Monthly strategic sessions for CEOs, founders, and technology leaders. Covers AI strategy, tool selection, team challenges, vendor negotiations, and board communication, plus urgent access for critical decisions.
+- **Whole-Team Upskilling**: Hands-on workshops from a two-hour executive briefing to multi-day programmes, with tailored pathways for developers, product managers, researchers, and executives. Transform random ChatGPT usage into systematic AI workflows with security and quality standards built in.
 - **AI Leader Accelerator**: 8-week peer learning programme for senior technical leaders navigating AI adoption.
 
 Email chris@chrismdp.com for enquiries. Subscribe to the newsletter via the web form at [chrismdp.com](https://www.chrismdp.com/) to access a vault of high-resolution guides, infographics, and weekly AI insights.
@@ -30,7 +30,7 @@ Email chris@chrismdp.com for enquiries. Subscribe to the newsletter via the web 
 
 - [Home](https://www.chrismdp.com/): Overview of Chris's services and expertise
 - [Articles](https://www.chrismdp.com/articles/): Full archive of blog posts
-- [AI Training](https://www.chrismdp.com/training/): Modular AI training for teams
+- [AI Upskilling Workshops](https://www.chrismdp.com/training/): Hands-on AI workshops for teams
 - [Webinars](https://www.chrismdp.com/webinar/): Free AI deep-dive webinar sessions
 - [AI Leader Accelerator](https://www.chrismdp.com/ai-leader-accelerator/): 8-week peer learning programme for senior technical leaders
 - [Talks](https://www.chrismdp.com/talks/): Speaking engagements and conference talks

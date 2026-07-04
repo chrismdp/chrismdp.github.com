@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "AI Advisory and Training"
+title: "AI Transformation and Advisory"
 permalink: /services/
-excerpt: "I help CTOs, engineering managers, and technical founders deliver real AI results for their teams. Training, advisory, and hands-on support."
+excerpt: "I help CEOs, founders, and technology leaders transform how their companies work with AI. Strategic advisory, whole-team upskilling, and hands-on support focused on business outcomes."
 redirect_from:
   - /services
   - /coaching
@@ -22,7 +22,7 @@ redirect_from:
   <div class="w-full px-6 relative z-10">
     <div class="text-center mb-16">
       <h1 class="text-4xl md:text-7xl font-heading font-bold mb-6 leading-tight mx-6">I Make Teams Incredibly Productive With AI</h1>
-      <p class="text-xl md:text-3xl mb-8 text-white mx-6 sm:mx-32">I help C-levels and founders leverage AI for their teams<br/>through training, workflows and strategic advisory support.</p>
+      <p class="text-xl md:text-3xl mb-8 text-white mx-6 sm:mx-32">I help CEOs and founders transform how their companies work with AI<br/>through strategic advisory, whole-team upskilling and working AI systems.</p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-12 items-start">
@@ -48,44 +48,13 @@ redirect_from:
   <div class="max-w-6xl mx-auto px-6">
     <div class="grid md:grid-cols-2 gap-8">
 
-      <!-- AI Training -->
-      <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors flex flex-col">
-        <i data-lucide="users" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
-        <h2 class="text-2xl font-heading font-bold mb-4 text-brand-black">AI Training</h2>
-        <p class="text-lg font-semibold mb-4 text-brand-black">Get your whole team using AI properly</p>
-        <p class="text-brand-black/80 leading-relaxed mb-4">
-          From a two-hour executive briefing to full-day intensives for developers and business teams. Separate tracks for people who write code and people who do not. Every session uses your tech stack, your workflows, and your actual problems.
-        </p>
-        <div class="space-y-2 mb-6 text-brand-black/80">
-          <div class="flex items-start">
-            <i data-lucide="check" class="w-4 h-4 mr-2 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
-            <span>Executive AI briefings for boards and leadership</span>
-          </div>
-          <div class="flex items-start">
-            <i data-lucide="check" class="w-4 h-4 mr-2 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
-            <span>Agentic engineering for developer teams</span>
-          </div>
-          <div class="flex items-start">
-            <i data-lucide="check" class="w-4 h-4 mr-2 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
-            <span>AI knowledge work for business teams</span>
-          </div>
-          <div class="flex items-start">
-            <i data-lucide="check" class="w-4 h-4 mr-2 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
-            <span>Ongoing coaching to embed the habits</span>
-          </div>
-        </div>
-        <div class="mt-auto">
-          <a href="/training/" class="inline-block bg-brand-deep-turquoise text-white px-6 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">View Training Courses →</a>
-        </div>
-      </div>
-
       <!-- C-Level AI Advisory -->
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors flex flex-col">
         <i data-lucide="compass" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
         <h2 class="text-2xl font-heading font-bold mb-4 text-brand-black">C-Level AI Advisory</h2>
         <p class="text-lg font-semibold mb-4 text-brand-black">Direct access when you need experienced perspective</p>
         <p class="text-brand-black/80 leading-relaxed mb-4">
-          Whether you are getting started or already adopted and need to unlock real value, I provide monthly strategic sessions with someone who has been in your position. Cut through the vendor noise, get your board comfortable, and turn AI experiments into measurable business outcomes.
+          Whether you are getting started or already adopted and want more value from it, I provide monthly strategic sessions with someone who has been in your position. Cut through the vendor noise, get your board comfortable, and turn AI experiments into measurable business outcomes.
         </p>
         <div class="space-y-2 mb-6 text-brand-black/80">
           <div class="flex items-start">
@@ -110,13 +79,44 @@ redirect_from:
         </div>
       </div>
 
+      <!-- Whole-Team Upskilling -->
+      <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors flex flex-col">
+        <i data-lucide="users" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
+        <h2 class="text-2xl font-heading font-bold mb-4 text-brand-black">Whole-Team Upskilling</h2>
+        <p class="text-lg font-semibold mb-4 text-brand-black">Change how your company works with AI</p>
+        <p class="text-brand-black/80 leading-relaxed mb-4">
+          From a two-hour executive briefing to full-day hands-on workshops for developers and business teams. Separate tracks for people who write code and people who do not. Every workshop uses your tech stack, your workflows, and your actual problems, so the new way of working starts the same week.
+        </p>
+        <div class="space-y-2 mb-6 text-brand-black/80">
+          <div class="flex items-start">
+            <i data-lucide="check" class="w-4 h-4 mr-2 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
+            <span>Executive AI briefings for boards and leadership</span>
+          </div>
+          <div class="flex items-start">
+            <i data-lucide="check" class="w-4 h-4 mr-2 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
+            <span>Agentic engineering for developer teams</span>
+          </div>
+          <div class="flex items-start">
+            <i data-lucide="check" class="w-4 h-4 mr-2 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
+            <span>AI knowledge work for business teams</span>
+          </div>
+          <div class="flex items-start">
+            <i data-lucide="check" class="w-4 h-4 mr-2 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
+            <span>Ongoing coaching to embed the habits</span>
+          </div>
+        </div>
+        <div class="mt-auto">
+          <a href="/training/" class="inline-block bg-brand-deep-turquoise text-white px-6 py-2 rounded-lg hover:bg-brand-turquoise transition-colors">Explore the Workshops →</a>
+        </div>
+      </div>
+
       <!-- AI Readiness Assessment -->
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors flex flex-col">
         <i data-lucide="gauge" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
         <h2 class="text-2xl font-heading font-bold mb-4 text-brand-black">AI Readiness Assessment</h2>
         <p class="text-lg font-semibold mb-4 text-brand-black">Know where AI lands before you commit the budget</p>
         <p class="text-brand-black/80 leading-relaxed mb-4">
-          Engineering teams often run months ahead with AI while operational teams sit behind, picking up shadow tools and the occasional data leak in between. Before signing off a major training rollout or company-wide deployment, get an evidence-based picture of where AI produces real gains, role by role, so investment flows to the functions that return it first.
+          Engineering teams often run months ahead with AI while operational teams sit behind, picking up shadow tools and the occasional data leak in between. Before signing off a major upskilling programme or company-wide deployment, get an evidence-based picture of where AI produces real gains, role by role, so investment flows to the functions that return it first.
         </p>
         <div class="space-y-2 mb-6 text-brand-black/80">
           <div class="flex items-start">
