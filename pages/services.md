@@ -51,10 +51,10 @@ redirect_from:
       <!-- C-Level AI Advisory -->
       <div class="bg-white border-2 border-brand-light-blue/30 rounded-lg p-8 hover:border-brand-deep-turquoise transition-colors flex flex-col">
         <i data-lucide="compass" class="w-8 h-8 mb-4 text-brand-deep-turquoise"></i>
-        <h2 class="text-2xl font-heading font-bold mb-4 text-brand-black">C-Level AI Advisory</h2>
-        <p class="text-lg font-semibold mb-4 text-brand-black">Direct access when you need experienced perspective</p>
+        <h2 class="text-2xl font-heading font-bold mb-4 text-brand-black">CEO and Exec Team Advisory</h2>
+        <p class="text-lg font-semibold mb-4 text-brand-black">Unrestricted access to someone who has been in your position</p>
         <p class="text-brand-black/80 leading-relaxed mb-4">
-          Whether you are getting started or already adopted and want more value from it, I provide monthly strategic sessions with someone who has been in your position. Cut through the vendor noise, get your board comfortable, and turn AI experiments into measurable business outcomes.
+          Ad-hoc access via Slack, WhatsApp, email or call for you and your exec team, shaped around the decisions in front of you. Cut through the vendor noise, get your board comfortable, and turn AI experiments into measurable business outcomes.
         </p>
         <div class="space-y-2 mb-6 text-brand-black/80">
           <div class="flex items-start">
@@ -63,15 +63,15 @@ redirect_from:
           </div>
           <div class="flex items-start">
             <i data-lucide="check" class="w-4 h-4 mr-2 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
-            <span>AI strategy and adoption roadmaps</span>
+            <span>A rollout that sticks, sequenced across technical and non-technical teams</span>
           </div>
           <div class="flex items-start">
             <i data-lucide="check" class="w-4 h-4 mr-2 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
-            <span>Tool evaluation and vendor selection</span>
+            <span>AI spend that pays its way: token economics that tell a value story, not just a cost one</span>
           </div>
           <div class="flex items-start">
             <i data-lucide="check" class="w-4 h-4 mr-2 text-brand-deep-turquoise mt-1 flex-shrink-0"></i>
-            <span>Technical due diligence and architecture review, including regulated sectors</span>
+            <span>AI-proficient hiring, AI ownership, and technical due diligence, including regulated sectors</span>
           </div>
         </div>
         <div class="mt-auto">

@@ -9,7 +9,7 @@ permalink: /llms.txt
 - Site: [chrismdp.com](https://www.chrismdp.com)
 - RSS: [chrismdp.com/feed.xml](https://www.chrismdp.com/feed.xml)
 - Newsletter: Weekly AI insights for leaders
-- Services: AI transformation, C-level AI advisory, whole-team upskilling, AI Leader Accelerator programme
+- Services: AI transformation, CEO and exec team advisory, whole-team upskilling, AI Leader Accelerator programme
 - Updated: {{ site.time | date: "%Y-%m-%d" }}
 
 ## Recent Articles
@@ -20,7 +20,7 @@ permalink: /llms.txt
 
 Chris helps companies transform how they work with AI:
 
-- **C-Level AI Advisory**: Monthly strategic sessions for CEOs, founders, and technology leaders. Covers AI strategy, tool selection, team challenges, vendor negotiations, and board communication, plus urgent access for critical decisions.
+- **CEO and Exec Team Advisory**: Unrestricted ad-hoc access for CEOs, founders, and exec teams. Covers rollout sequencing, AI-proficient hiring, token economics, AI ownership, vendor selection, and board communication.
 - **Whole-Team Upskilling**: Hands-on workshops from a two-hour executive briefing to multi-day programmes, with tailored pathways for developers, product managers, researchers, and executives. Transform random ChatGPT usage into systematic AI workflows with security and quality standards built in.
 - **AI Leader Accelerator**: 8-week peer learning programme for senior technical leaders navigating AI adoption.
 
