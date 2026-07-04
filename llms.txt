@@ -4,7 +4,7 @@ permalink: /llms.txt
 ---
 # Chris Parsons
 
-> Chris Parsons is a tech founder, CTO, and AI leadership advisor. He helps leaders cut through the AI hype and leverage AI to transform their teams and businesses. He writes about AI strategy, AI agents, developer tooling, and practical AI adoption for technical leaders.
+> Chris Parsons is a tech founder, CTO, and AI leadership advisor. He helps CEOs and exec teams cut through the AI hype and leverage AI to transform their companies. He writes about AI strategy, AI agents, developer tooling, and practical AI adoption for technical leaders.
 
 - Site: [chrismdp.com](https://www.chrismdp.com)
 - RSS: [chrismdp.com/feed.xml](https://www.chrismdp.com/feed.xml)

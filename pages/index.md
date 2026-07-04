@@ -2,7 +2,7 @@
 layout: default
 title: "Cut Through the AI Chaos"
 permalink: /
-excerpt: "I help leaders cut through the hype and help them leverage AI to transform their business."
+excerpt: "I help CEOs and exec teams cut through the hype and leverage AI to transform their business."
 ---
 
 {% include header.html style="overlay" %}
@@ -17,7 +17,7 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
   <div class="w-full px-6 relative z-10">
     <div class="text-center mb-16">
       <h1 class="text-4xl md:text-7xl font-heading font-bold mb-6 leading-tight mx-6">Cut Through The AI Chaos</h1>
-      <p class="text-xl md:text-3xl mb-8 text-white mx-6 sm:mx-32">I help leaders leverage AI to transform their teams<br/>and dodge the chaotic hype that wastes time and money</p>
+      <p class="text-xl md:text-3xl mb-8 text-white mx-6 sm:mx-32">I help CEOs and exec teams leverage AI to transform their companies<br/>and dodge the chaotic hype that wastes time and money</p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -43,7 +43,7 @@ excerpt: "I help leaders cut through the hype and help them leverage AI to trans
   <div class="w-full">
     <div class="text-center mb-12 px-6">
       <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6 text-brand-black">Try my newsletter above to access dozens of high resolution guides</h2>
-      <p class="text-xl text-brand-black/80 mb-8 mx-4 sm:mx-24">Plus get practical AI advice for leaders, delivered weekly.</p>
+      <p class="text-xl text-brand-black/80 mb-8 mx-4 sm:mx-24">Plus get practical AI advice for CEOs and exec teams, delivered weekly.</p>
     </div>
 
     <!-- Infographic Gallery - 3 slots, each cycles through different posts -->
