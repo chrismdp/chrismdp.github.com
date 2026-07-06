@@ -38,16 +38,19 @@ description: "A plain briefing for CEOs on the AI decisions only they can make: 
     If you cannot make it, sign up anyway to grab the recording and slides.
   </p>
 
-  <p class="text-xl text-brand-black mb-8">
-    The AI rollouts I see start with tools: subscriptions bought, a policy written, a pilot blessed. Six months later the demos are impressive and the business results are thin, because the missing investment is nearly always people. Your teams are worried, they want to do the right thing, and they have been handed a login instead of the time and space to learn. Upskilling your people, not just giving them tools, is the decision that delivers the real gains.
-  </p>
+  <div class="mb-8">
+    <h3 class="text-lg font-bold text-brand-black mb-4">What We Will Cover:</h3>
+    <ul class="space-y-2 text-brand-black">
+      <li><strong>People before tools:</strong> why learning time beats licences, and what to say no to so your teams can say yes to AI</li>
+      <li><strong>It starts with you:</strong> why a CEO who does not use AI cannot set direction on it, and the fastest way to build your own fluency</li>
+      <li><strong>Which AIs to bet on:</strong> one frontier provider or a diversified spread, and what the rest of the business needs beyond engineering</li>
+      <li><strong>The Chief AI Officer question:</strong> when to appoint one, why interim beats permanent, and AI in your product versus AI for productivity</li>
+      <li><strong>Governance that enables:</strong> which risks are real, which are overblown, and how to tell the difference</li>
+    </ul>
+  </div>
 
   <p class="text-xl text-brand-black mb-8">
-    And it starts with you: a CEO who does not use AI personally cannot see the potential or the limitations, and every downstream call gets harder to judge: which platforms to back, who to hire, how much governance is enough. Saying yes to AI properly means saying no to another initiative, and that trade is yours alone to make. This session gives you my current answers, straight, with the reasoning behind them.
-  </p>
-
-  <p class="text-xl text-brand-black mb-8">
-    By the end of this session you will know the handful of decisions to make before September: how to fund real learning time and what to stop to pay for it, which AI platforms deserve your money, whether to appoint an AI leader and how to define the role, and the governance posture that unlocks value instead of gating it.
+    By the end of this session you will know the handful of decisions to make before September, with my straight answers and the reasoning behind them.
   </p>
 
   <p class="text-lg text-brand-black mb-8 text-center">
@@ -115,17 +118,6 @@ description: "A plain briefing for CEOs on the AI decisions only they can make: 
     updateWebinarTitle();
   });
   </script>
-
-  <div class="mb-8">
-    <h3 class="text-lg font-bold text-brand-black mb-4">What We Will Cover:</h3>
-    <ul class="space-y-2 text-brand-black">
-      <li><strong>People before tools:</strong> why learning time beats licences, what it costs, and what to say no to so your teams can say yes to AI</li>
-      <li><strong>It starts with you:</strong> why a CEO who does not use AI cannot set direction on it, and the fastest way to build your own fluency</li>
-      <li><strong>Which AIs to bet on:</strong> one frontier provider or a diversified spread, what your engineers should be fluent in, and what the rest of the business needs</li>
-      <li><strong>The Chief AI Officer question:</strong> when to appoint one, why interim beats permanent, and the difference between AI in your product and AI for productivity</li>
-      <li><strong>Governance that enables:</strong> what an enabling but safe posture looks like, which risks are real, which are overblown, and how to tell the difference</li>
-    </ul>
-  </div>
 
   <div class="text-center text-sm text-brand-black/60 mb-8">
     All attendees receive the full recording and any resources mentioned
