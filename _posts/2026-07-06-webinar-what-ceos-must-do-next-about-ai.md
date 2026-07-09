@@ -27,6 +27,8 @@ It is hard to be credible on any of this from the outside. Ask your CTO or CIO t
 
 Beyond this fundamental point, here are six decisions and trade offs you will need to make.
 
+![A hand-drawn dial ringed with the six decisions only a CEO can make: time or just a licence, one bet or many, where does AI live, a Chief AI Officer, and governance that helps or hides.](/assets/img/ceo-decisions-only-you-can-make-dial.jpg)
+
 ## Time, or just tools?
 
 This is the decision that matters most, and it is the one every other decision leans on. Will your people get real time to learn, or will you hand them a licence and hope?
@@ -36,6 +38,8 @@ Giving people time is not free. It means saying goodbye to some of your targets 
 I have said the "people need time and space" line so many times that it has started to sound trite, and I have run a lot of workshops built entirely around it. But the honest version is that you do not have to: you can wait. We just need to be clear on what waiting actually costs.
 
 If you buy AI tools, know that you are buying into something nowhere near finished. The most powerful AI tools today are the ones that let people build their own AI tools. This means the next couple of years will bring a huge proliferation of custom code inside ordinary businesses, much of it [built once and shared across teams as reusable skills](/skills-are-meant-for-sharing/). (I think we are heading for a renaissance of forward-deployed engineers, people who sit next to the work and build the specific thing it needs, but we are not there yet.)
+
+![A hand-drawn "Personal AI Coworker: Annual Prototype Market" with four duct-taped vendor stalls: today's most powerful AI tools are nowhere near finished.](/assets/img/personal-ai-coworker-prototype-market.jpg)
 
 Buying licences against today's immature tools is buying a moving target. If you wait instead, your best people get itchy feet as AI takes on a life of its own outside work, and you have to help them learn the future or watch them leave to find it. And you end up buying AI capability later, once someone else has worked out how to package it, which is less effort but leaves you permanently a step behind. If you are in an industry where being a step behind on AI genuinely does not matter[^laggards], then wait by all means. If you are in software, or consulting, or anything where the work itself is the product, that is a dangerous place to be.
 
@@ -58,6 +62,8 @@ Is your governance helping people use AI well, or is it mostly teaching them to 
 The popular line, that "AI will not take your job but someone using AI will", is only half right. The better version is that AI will not take your job, but it will take the bits of your job you never liked. Work gets reshuffled and consolidated, the same number of people get more done, and eventually, once the tools mature and we have built enough of our own, people will not even need to learn AI for it to handle those parts. We are a long way from that.
 
 Most people assume AI is coming for engineering first. It is actually the hardest part of the company to sort out, because software delivery is a very complex subsystem and engineers hold deeply ingrained, and now disrupted, ideas about how it should be done. The simpler early wins are everywhere else in the business, in finance, operations, marketing and support. This should not be an engineering-only programme. Roll it out to everyone now, or you build a two-speed company where one function races ahead and the rest quietly falls behind. I made the fuller version of this argument in [how not to screw up your AI rollout](/webinar-how-not-to-screw-up-your-ai-rollout/) and in [unblock your team](/webinar-unblock-your-team/).
+
+![A hand-drawn office floor with slices of work lifted from finance, operations, marketing, support and engineering: this is not just an engineering programme.](/assets/img/not-just-engineering-slices-of-work.jpg)
 
 ## The hire you will need
 
