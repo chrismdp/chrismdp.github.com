@@ -7,9 +7,6 @@ categories:
 - webinar
 - leadership
 - strategy
-redirect_from:
-- /webinar
-- /webinar/
 image: /assets/img/what-ceos-must-do-next-about-ai-webinar.jpg
 image_portrait: true
 series: "AI In Action Webinars"
