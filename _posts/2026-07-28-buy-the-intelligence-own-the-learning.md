@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Buy the Intelligence, Own the Learning"
+title: "Intelligence Cost Is Collapsing"
 date: 2026-07-28 07:00:00 +0000
 permalink: /buy-the-intelligence-own-the-learning/
 description: "AI models are becoming substitutable and intelligence is getting cheap. The durable advantage for CEOs is institutional learning: optionality, pioneers, and avoiding lock-in."
