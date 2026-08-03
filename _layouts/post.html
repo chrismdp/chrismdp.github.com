@@ -157,8 +157,9 @@ layout: default
 
       {% endif %}
 
-      <!-- Webinar link for webinar write-ups (not landing pages) -->
-      {% if page.categories contains 'webinar' and page.kit_tag == nil %}
+      <!-- Webinar link for webinar write-ups (not landing pages), only while a session is scheduled -->
+      {% assign webinar_page = site.pages | where: "url", "/webinar" | first %}
+      {% if page.categories contains 'webinar' and page.kit_tag == nil and webinar_page.webinar_date %}
       <div class="my-12">
         <div class="text-center bg-brand-light-blue/10 rounded-lg p-6">
           <h3 class="text-xl font-heading font-semibold mb-4 text-brand-black">Join Future Webinars</h3>

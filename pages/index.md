@@ -233,12 +233,14 @@ excerpt: "I help CEOs and exec teams cut through the hype and leverage AI to tra
         {% assign webinar_page = site.pages | where: "url", "/webinar" | first %}
         {% if webinar_page.webinar_date %}
           <p class="text-2xl min-h-16 font-bold text-brand-deep-turquoise mb-2">Next sessions: {{ webinar_page.webinar_date | date: "%B %-d, %-I%P UK" }}</p>
+          <p class="text-brand-black/80 mb-4 min-h-24">Join me for a hype-free AI deep-dive, and learn exactly how to leverage AI that works now</p>
+          <a href="/webinar" target="_blank" class="inline-block bg-brand-deep-turquoise text-white px-4 py-2 rounded-lg hover:bg-brand-turquoise transition-colors mr-2 align-center">Reserve your place →</a>
+          <a href="/webinar#previous-webinars" class="mt-2 inline-block text-brand-black px-4 py-2 rounded-lg hover:bg-brand-black/80 transition-colors">See previous webinars →</a>
         {% else %}
           <p class="text-2xl min-h-16 font-bold text-brand-deep-turquoise mb-2">Next webinar coming soon</p>
+          <p class="text-brand-black/80 mb-4 min-h-24">Hype-free AI deep-dives for leaders. Every past session is written up in full, and the next date lands in the newsletter first</p>
+          <a href="/webinar#previous-webinars" target="_blank" class="inline-block bg-brand-deep-turquoise text-white px-4 py-2 rounded-lg hover:bg-brand-turquoise transition-colors mr-2 align-center">Read the write-ups →</a>
         {% endif %}
-        <p class="text-brand-black/80 mb-4 min-h-24">Join me for a hype-free AI deep-dive, and learn exactly how to leverage AI that works now</p>
-        <a href="/webinar" target="_blank" class="inline-block bg-brand-deep-turquoise text-white px-4 py-2 rounded-lg hover:bg-brand-turquoise transition-colors mr-2 align-center">Reserve your place →</a>
-        <a href="/webinar#previous-webinars" class="mt-2 inline-block text-brand-black px-4 py-2 rounded-lg hover:bg-brand-black/80 transition-colors">See previous webinars →</a>
       </div>
 
       <div class="bg-brand-white rounded-lg p-6 hover:shadow-lg transition-shadow border border-brand-light-blue/20">

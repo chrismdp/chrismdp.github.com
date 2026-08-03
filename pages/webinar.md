@@ -1,17 +1,16 @@
 ---
 layout: page
 title: "Webinars To Get You Ahead With AI"
-excerpt: "Join our webinar series for leaders leveraging AI in their organisations."
+excerpt: "Hype-free AI deep-dives for leaders, with every past session written up in full."
 image: /assets/img/webinar-mosaic.jpg
 image_portrait: false
 permalink: /webinar/
 redirect_from: [/webinar]
-kit_tag: webinar18
-webinar_date: "2026-08-06T14:00:00+01:00"
 ---
 
 <div class="mb-12">
 
+  {% if page.webinar_date %}
   <p class="text-2xl text-brand-black font-bold mb-4">
     Next session: {{ page.webinar_date | date: "%B %-d, %-I:%M%P %Z" }}
   </p>
@@ -19,6 +18,15 @@ webinar_date: "2026-08-06T14:00:00+01:00"
   <p class="text-2xl text-brand-black mb-8">
     Join me for live workshops on leveraging AI effectively in your organisation.
   </p>
+  {% else %}
+  <p class="text-2xl text-brand-black font-bold mb-4">
+    No live session scheduled right now.
+  </p>
+
+  <p class="text-2xl text-brand-black mb-8">
+    The webinar series is on a break while I focus on shorter formats. Every past session is written up below, and the newsletter is where the next date gets announced first.
+  </p>
+  {% endif %}
 
   <div class="bg-brand-light-blue/10 rounded-lg p-6 mb-8">
     <h3 class="text-lg font-bold text-brand-black mb-4">What We Cover:</h3>
@@ -31,6 +39,7 @@ webinar_date: "2026-08-06T14:00:00+01:00"
     </ul>
   </div>
 
+  {% if page.webinar_date %}
   <div class="bg-brand-deep-turquoise rounded-lg p-8 text-center mb-12">
     <div class="rm-area-embed-webinar"></div>
   </div>
@@ -96,6 +105,7 @@ webinar_date: "2026-08-06T14:00:00+01:00"
     updateWebinarTitle();
   });
   </script>
+  {% endif %}
 
   <div class="bg-brand-deep-turquoise rounded-lg p-8 mb-12">
     <div class="grid md:grid-cols-3 gap-6">
