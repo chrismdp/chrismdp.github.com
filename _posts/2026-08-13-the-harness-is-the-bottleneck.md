@@ -30,7 +30,7 @@ I completed 52 runs from 1 to 13 August, costing $13.09 in total and a median of
 
 Four of the graded runs were rejected because the work was not good enough, but double that failed for reasons that have nothing to do with the model at all!
 
-Two of those hit a roughly 258k-token context ceiling while the model was still editing, so they were cut off mid-change and never given room to finish (this has since been raised to 1M). Three more were invalid because my coordinator showed the worker an already-landed solution from the control, which contaminated the run before it started. The rest were discarded or inconclusive for similar reasons of my own making.
+Two of those ran out of context while the model was still editing, so they were cut off mid-change and never given room to finish. That was my own doing: I had capped the context at 256k in my harness config, when Flash will happily take a million tokens. Three more were invalid because my coordinator showed the worker an already-landed solution from the control, which contaminated the run before it started. The rest were discarded or inconclusive for similar reasons of my own making.
 
 ## Harness changes will fix it
 
@@ -44,7 +44,7 @@ If a premium model finishes most tickets in one pass, that loop is superfluous. 
 
 Cost per token is a poor guide on its own, because a model that grinds through twice as many turns costs twice as much at the same rate. The number worth tracking is what a completed task costs, counting everything I paid for the runs that finished nothing.
 
-All 52 runs cost $13.09 and 20 of them shipped clean, so a clean change works out at about 65 cents. That price carries every failure alongside it: the contaminated runs, the ones the context ceiling cut off, and the four rejects, and some of those failure modes are already fixed. Counting the 16 that shipped after fixes brings it down to about 36 cents, although that number quietly leaves out Opus's review and fixing time, which is now the most expensive bit!
+All 52 runs cost $13.09 and 20 of them shipped clean, so a clean change works out at about 65 cents. That price carries every failure alongside it: the contaminated runs, the ones my context cap cut off, and the four rejects, and some of those failure modes are already fixed. Counting the 16 that shipped after fixes brings it down to about 36 cents, although that number quietly leaves out Opus's review and fixing time, which is now the most expensive bit!
 
 ## What changes now
 
