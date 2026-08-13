@@ -16,9 +16,13 @@ It does not beat the best premium coding models: it is slower, stops early more 
 
 <!--more-->
 
+Over the past few months I have learned a lot about running [Ralph loops](/running-ralph-loops-is-easy/), and got more proactive at breaking work into tickets a worker can pick up and finish without me. I am currently using GitHub issues for this and running loops with Opus as the orchestrator, fanning out to models of varying strength depending on task complexity.[^delegate]
+
+Throughput is the obvious gain, but there is a clear side benefit: any ticket written to be delegated doubles as an A/B test. The same piece of work can go to several models at once, run in parallel, and be judged on what comes back.
+
 In May I moved my whole background worker fleet onto DeepSeek V4 Pro and wrote that [open models are ready](/open-models-are-ready/). The open question from that post was how much further the cheaper Flash variant could take the same work, and how far it would pull the daily bill down. The earlier preview versions of Flash were not quite good enough, but the new one definitely is.
 
-I have been running Flash as a challenger model in my own software factory. I give the same bounded software ticket to more than one model in parallel, then review what each one produced, with the premium model as the control.
+So Flash has been running in my software factory as the challenger, taking the same bounded tickets as the premium model that serves as my control, and I review what each one produced.
 
 I completed 52 runs from 1 to 13 August, costing $13.09 in total and a median of $0.19 each. I have graded 48 of them by running the tests myself and getting Opus to read the diff against the ticket. Fully 36 produced work I would merge: 20 shipped clean and 16 shipped with fixes. All for less than the price of three coffees.
 
@@ -32,7 +36,7 @@ Two of those hit a roughly 258k-token context ceiling while the model was still 
 
 DeepSeek often gets a long way into a ticket, then stops before the work is complete. A one-shot comparison marks that as failure, but a persistent process can treat it as partial progress and carry on.
 
-Ralph loops, which I wrote about in [Ralph In One Line, No Setup](/running-ralph-loops-is-easy/), are probably the answer here. The loop keeps a ticket in the repository, gives one agent turn to the work, records the state, then passes context to the next turn. If we do not get to the end of the ticket, the next job just picks the same ticket up again.
+Ralph loops are probably the answer here. The loop keeps a ticket in the repository, gives one agent turn to the work, records the state, then passes context to the next turn. If we do not get to the end of the ticket, the next job just picks the same ticket up again.
 
 If a premium model finishes most tickets in one pass, that loop is superfluous. But with a cheap model that gets most of the way there for cents, we might as well go back to the techniques that worked well last year.
 
@@ -51,5 +55,7 @@ But in May I was still asking whether a cheap open model could hold the thread a
 If you run engineering teams, you are probably paying per token (I am still on a Max plan, long may those continue), and this could be a much cheaper option. Measure which model, harness and review process gives you accepted work at the best price, then put the effort into the harness rather than the model. Pi is a good place to start: it is a minimal coding harness that works with any model, and I wrote about how I use it in [Coding With AI](/coding-with-ai/).[^pi]
 
 Raw intelligence is coming to everyone, at pennies on the dollar. Is your organisation poised to take advantage?
+
+[^delegate]: The routing rules live in my [delegate skill](https://airskills.ai/chrismdp/delegate){:target="_blank"}, which covers how a ticket gets matched to a model by cost and difficulty, and how a challenger is benched against a control on the same work. Install it with `airskills add chrismdp/delegate`.
 
 [^pi]: [Pi](https://pi.dev/){:target="_blank"} is by Mario Zechner. It keeps the moving parts visible instead of hiding them behind a polished CLI, which is what makes the harness something you can measure and improve rather than a black box you either trust or do not.
