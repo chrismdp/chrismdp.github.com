@@ -8,7 +8,7 @@ archived: true
 image: /assets/img/ralph-lessons-motif.jpg
 infographic: /assets/img/ralph-lessons-infographic.jpg
 excerpt: "Treat documentation as compound investment, give agents visibility through automated tests not browser automation, use git worktrees to separate PM from builder, size tasks for single focused sessions, and parse Claude's JSON output for proper monitoring."
-series: "Building Ralph"
+series: "Software Factory"
 categories:
 - ai
 - engineering

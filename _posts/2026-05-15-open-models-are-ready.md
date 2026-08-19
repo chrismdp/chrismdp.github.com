@@ -4,6 +4,7 @@ title: "Open Models Are Ready"
 date: 2026-05-15 07:00:00 +0000
 image: /assets/img/daily-driver-deepseek-barchart.jpg
 image_portrait: true
+series: "Software Factory"
 categories:
 - ai
 - open-source

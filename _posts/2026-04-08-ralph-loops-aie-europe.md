@@ -7,7 +7,7 @@ categories:
 - ai
 - engineering
 image: /assets/img/ralph-loops-aie-europe.jpg
-series: "Building Ralph"
+series: "Software Factory"
 ---
 
 Last week I ran a two-hour Ralph loops workshop at AI Engineer Europe in Amsterdam, with about a hundred engineers, live coding, and a Q&A that went harder than the talk itself. Video below.

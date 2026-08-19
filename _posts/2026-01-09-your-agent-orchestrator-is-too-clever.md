@@ -4,7 +4,7 @@ title: "Your Agent Orchestrator Is Too Clever"
 date: 2026-01-13 10:00:00 +0000
 image: /assets/img/ralph-loops-main.jpg
 infographic: /assets/img/orchestrator-too-clever-infographic.jpg
-series: "Building Ralph"
+series: "Software Factory"
 categories:
 - ai
 - engineering

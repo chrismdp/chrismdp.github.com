@@ -6,7 +6,7 @@ permalink: /running-ralph-loops-is-easy/
 replaces: /running-ralph-loops-is-easy-january-2026/
 image: /assets/img/ralph-lessons-motif.jpg
 infographic: /assets/img/ralph-lessons-infographic.jpg
-series: "Building Ralph"
+series: "Software Factory"
 categories:
 - ai
 - engineering
