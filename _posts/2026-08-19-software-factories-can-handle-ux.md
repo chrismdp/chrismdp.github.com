@@ -68,6 +68,6 @@ If you run product or engineering, give your designers a surface where they can 
 
 And get designers into the code. Perhaps it is time to abandon Figma for Claude Design and HTML prototypes.
 
-[^gojko]: Gojko described this three layer pattern to me directly in August 2026, and I have not seen a published write up of it, so treat it as a practitioner's account of one application rather than evidence that it improves outcomes in general.
+[^gojko]: [Gojko Adzic](https://www.linkedin.com/in/gojko/){:target="_blank"} described this three layer pattern to me directly in August 2026, and I have not seen a published write up of it, so treat it as a practitioner's account of one application rather than evidence that it improves outcomes in general.
 
 [^delegate]: Which worker picks the ticket up, and on which model, is decided by the routing rules in my [delegate skill](https://airskills.ai/chrismdp/delegate){:target="_blank"}, which matches a ticket to a model by cost and difficulty. Install it with `airskills add chrismdp/delegate`.
