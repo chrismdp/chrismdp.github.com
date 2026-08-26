@@ -1,26 +1,6 @@
 ---
 layout: default
 ---
-{% assign page_time = page.date | date: "%s" | plus: 0 %}
-{% assign now_time = site.time | date: "%s" | plus: 0 %}
-{% assign is_future_post = false %}
-{% if page_time > now_time and jekyll.environment == "production" %}{% assign is_future_post = true %}{% endif %}
-{% if is_future_post %}
-<!-- Preview Protection -->
-<div id="preview-gate" class="min-h-screen flex items-center justify-center bg-brand-white">
-  <div class="text-center max-w-md mx-auto px-6">
-    <h1 class="text-3xl font-heading font-bold mb-4 text-brand-black">Preview Post</h1>
-    <p class="text-brand-black/70 mb-6">This article isn't published yet. Enter the preview code to view it.</p>
-    <input type="text" id="preview-code" placeholder="Enter preview code"
-           class="w-full px-4 py-3 border border-brand-light-blue/30 rounded-lg mb-4 focus:outline-none focus:border-brand-deep-turquoise">
-    <button onclick="checkPreviewCode()"
-            class="w-full bg-brand-deep-turquoise text-white px-6 py-3 rounded-lg hover:bg-brand-turquoise transition-colors">
-      View Preview
-    </button>
-  </div>
-</div>
-<div id="preview-content" class="hidden">
-{% endif %}
 {% include content-styles.html %}
 {% if page.categories contains 'case-studies' %}{% include case-study-print.html %}{% endif %}
 <!-- Hero Section with Post Title -->
@@ -326,48 +306,6 @@ layout: default
 </div>
 {% endif %}
 
-{% if is_future_post %}
-</div><!-- end preview-content -->
-<script>
-async function sha256(message) {
-  const msgBuffer = new TextEncoder().encode(message);
-  const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
-  const hashArray = Array.from(new Uint8Array(hashBuffer));
-  return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
-}
-
-async function checkPreviewCode() {
-  var code = document.getElementById('preview-code').value;
-  var hash = await sha256(code);
-  if (hash === '{{ site.preview_passcode_hash }}') {
-    showPreview();
-  } else {
-    alert('Incorrect preview code');
-  }
-}
-
-function showPreview() {
-  document.getElementById('preview-gate').classList.add('hidden');
-  document.getElementById('preview-content').classList.remove('hidden');
-  sessionStorage.setItem('preview_authenticated', 'true');
-}
-
-document.addEventListener('DOMContentLoaded', async function() {
-  var urlParams = new URLSearchParams(window.location.search);
-  var previewCode = urlParams.get('preview');
-  if (previewCode) {
-    var hash = await sha256(previewCode);
-    if (hash === '{{ site.preview_passcode_hash }}') {
-      showPreview();
-      return;
-    }
-  }
-  if (sessionStorage.getItem('preview_authenticated') === 'true') {
-    showPreview();
-  }
-});
-</script>
-{% endif %}
 
 <!-- Article Tracking Script -->
 <script>

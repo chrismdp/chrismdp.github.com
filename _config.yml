@@ -67,7 +67,6 @@ excerpt_separator: <!--more-->
 # Defaults
 
 future: false
-preview_passcode_hash: "19f62dd40af8ec99e6e713523e882c8666269f8fb06f6964b36171472f21d6fe"
 
 safe: true
 plugins:
