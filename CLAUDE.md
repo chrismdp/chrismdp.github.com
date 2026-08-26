@@ -1,269 +1,45 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+chrismdp.github.com is the Jekyll site behind https://www.chrismdp.com. It builds on GitHub Pages through the `github-pages` gem, with Tailwind CSS loaded from a CDN. Permalinks are `/:title/` and carry no date. The excerpt separator is `<!--more-->`. Plugins are `jekyll-sitemap` and `jekyll-redirect-from`.
 
-## Memories and Insights
+## Safety rails
 
-### LEANN Integration
-- **Search for relevant posts**: Use LEANN (`mcp__leann-server__leann_search`) to find related articles to link to when writing blog posts
-- **Update LEANN index**: `leann build blog-vault --force --embedding-mode openai --embedding-model text-embedding-3-small --docs *`
-- This helps with SEO and provides value to readers by creating implicit links between related content
+- **This repo is public.** Everything committed here is published. Never commit anything Chris has not agreed to make public.
+- **Never rename a post file.** To update an existing post, change `date:` in the front matter and leave the filename alone. The filename holds the original publication date. Renaming it breaks the URL and every link that points at it.
+- **Never invent claims about Chris's experience.** Numbers such as "implementing AI at 20+ companies" must come from existing published content or from Chris himself.
+- **Always verify a source before citing it.** Find the real article or paper. Never cite a statistic you have not traced to its origin.
+- **Never name a client in public content.** Anonymise every reference, such as "inbound sales lead" or "training enquiry". Only name a client who has a published case study.
 
-### Internal Linking
-- **Blog posts use slug-only links**: Internal blog post links should be in the format `/slug/` without any date information (e.g., `/coding-with-ai/` not `/2025/03/07/coding-with-ai/`)
-- **Newsletters use full absolute URLs**: When linking to blog posts from newsletters, always use `https://www.chrismdp.com/slug/` (e.g., `https://www.chrismdp.com/coding-with-ai/`) so links work in email clients
-- This matches the Jekyll permalink structure configured in `_config.yml`
+## Publishing schedule
 
-### Google Drive Access (gog CLI)
-- **Tool**: Use `gog` CLI for Google Drive operations (upload, download, search, list)
-- **Claude Remote folder**: Upload files for Chris to review to the "Claude Remote" folder (ID: `1I3-GWoWaRXeHxC3aMeljpI8UscsTGCU1`)
-- **Upload command**: `gog drive upload /path/to/file.jpg --parent 1I3-GWoWaRXeHxC3aMeljpI8UscsTGCU1 --name "Descriptive Name.jpg"`
-- **Search**: `gog drive search "query"` to find files/folders
-- **List folder**: `gog drive ls --folder <folderId>`
-- **VPS clipboard workaround**: When working on VPS via Termius (no pbcopy), upload text to Claude Remote folder as a .txt file. Open on phone via Google Drive app to copy/paste into LinkedIn etc.
+`future: false` in `_config.yml` keeps future-dated posts out of the build. The `.github/workflows/daily-publish.yml` action triggers a Pages rebuild at 09:00 UTC each day. Give every post a date of `07:00:00 +0000` so it is live when that rebuild runs.
 
-### Newsletter Vault Locations (macOS paths - use gog CLI on Linux)
-- **Comics folder ID** (for gog CLI): `1GGQoswjRVrsJxQ_s0ugna0tAw5n3-heB`
-- **Comics macOS path**: `/Users/cp/Library/CloudStorage/GoogleDrive-chris.p@rsons.org/My Drive/chrismdp ltd/Public/Newsletter Vault/Comics`
-- **Infographics**: `/Users/cp/Library/CloudStorage/GoogleDrive-chris.p@rsons.org/My Drive/chrismdp ltd/Public/Newsletter Vault/Infographics`
-- **Naming convention**: Use Capitalised Spaced Names describing the comic or infographic title (e.g., "Things I'll Get To Eventually.jpg", "How to Design with AI.jpg")
-
-### Key Learnings
-- Always read the entire context of a project before starting work
-- Carefully follow existing file structure and guidelines when making modifications
-- Prioritize preserving existing content when updating files
-- Be precise and methodical in interpreting instructions
-- Ask clarifying questions if any part of the instruction is ambiguous
-- Use tool invocations as the primary method of interaction
-- Maintain a consistent and professional tone in all interactions
-- **Never make up claims about experience**: Don't invent numbers like "implementing AI at 20+ companies" or similar claims unless explicitly confirmed in existing content
-- **Always verify sources**: When citing statistics or research (like Writer's 41% statistic), search for the actual source to ensure accuracy
-
-### Content Creation Insights
-- When writing blog posts from transcripts, focus on extracting key insights rather than following the transcript structure
-- Transform "I showed people X" language into "What I learned/discovered" for a more humble, authoritative tone
-- Avoid appearing arrogant or preachy - aim for confident but approachable expertise
-- For webinar posts, emphasise personal discovery and honest admissions of limitations
-- Always include image references when provided - check if image files need to be copied to `/assets/img/`
-- **Research-heavy posts**: Lead with compelling data/statistics that challenge assumptions, use footnotes for detailed sourcing and additional context
-- **Linking strategy**: Only internal links (to other blog posts) should be inline. External links should always be in footnotes with `{:target="_blank"}` to open in new tabs. Avoid "check out this post" style linking - prefer contextual integration for internal links.
-- **Footnotes for additional value**: Use footnotes not just for citations but to provide actionable advice and deeper insights that enhance the main narrative
-- **Footnote spacing**: No space between punctuation and footnote (e.g., `methodology.[^1]` not `methodology. [^1]`). But always include a space between consecutive footnote references (e.g., `[^1] [^2]` not `[^1][^2]`)
-- **Always search for recent articles**: Before writing any blog post, search through recent posts in `_posts/` folder to identify relevant articles to link to implicitly within the content - this improves SEO and provides value to readers
-- **Thanking contributors**: When others contribute insights to an article (from comments, conversations, feedback), add an unformatted thanks line at the very end of the article (after footnotes). Format: `Thanks to Name and Name for conversations that shaped this post.` No italics, no LinkedIn links unless specifically requested. Do not attribute specific points inline; instead integrate their insights into the prose and thank them collectively at the end.
-- **Avoid duplication between text and footnotes**: Keep main text generic and high-level; move specific details (costs, percentages, technical specifics) to footnotes. If the same fact appears in both, remove it from the text.
-
-### Chris's Writing Patterns
-- **Provocative titles that deliver**: Prefers counterintuitive headlines that challenge assumptions (e.g., "AI Is Consistently Mediocre. That's Why It's Valuable")
-- **Framework-driven thinking**: Creates 2x2 matrices and visual frameworks to explain complex concepts - these should be referenced and explained in detail
-- **Personal discovery narrative**: Often structures posts around "I discovered/realised X while building Y" - maintains authority while staying humble
-- **Concrete over abstract**: Always grounds theoretical insights in specific examples (expense processing, code reviews, interview scoring)
-- **Nuanced acknowledgment**: Recognises both sides - "This is humbling but powerful" or "optimistic view... pessimistic view..." without false balance
-- **Historical parallels**: Connects current disruptions to past ones (Charlie Chaplin/industrial revolution to AI revolution)
-- **Sectional progression**: Likes consolidated sections with subsections (e.g., "Hidden Advantages of Consistency" with multiple H3 subheadings)
-- **Mid-article refinement**: Often revises structure during writing - consolidating related concepts under unified headings
-- **Combine thin sections**: When a section is too short (1-2 paragraphs), merge it with the next section rather than leaving thin content
-- **Academic grounding**: References Kahneman, includes research studies, but always with practical application
-- **Democratisation theme**: Frequently explores how technology enables underdogs (juniors with AI competing with seniors)
-- **Future implications focus**: Always ends looking forward to disruption/change rather than just current state
-- **Narrative flow with longer paragraphs**: Use longer, flowing narrative sentences (avoid "X. Y. Z." triplet patterns), with longer paragraphs of 3-5 sentences to create narrative flow rather than choppy single-sentence paragraphs
-- **Bolded topic sentences**: For framework steps or structured content, bold the first sentence/phrase for scannability
-- **Conceptual distinction**: When explaining steps in a process, clarify WHAT vs HOW (e.g., "discover what the task is" vs "understand how to do it")
-- **"But" as a paragraph starter**: Frequently starts paragraphs with "But" to create contrast and maintain conversational flow
-
-## Coder Template Management
-
-### Pushing Templates
-
-When working with Coder templates, the correct syntax for pushing templates is:
+## Commands
 
 ```bash
-# Push template from current directory (must contain main.tf)
-coder templates push -y template-name
-
-# Push template from specific directory
-cd /path/to/templates/parent && coder templates push -d template-folder -y template-name
-
-# Push with update message
-coder templates push -d template-folder -y -m "Update description" template-name
-
-# Example for blog template
-cd .coder/templates && coder templates push -d blog -y blog
-```
-
-**Key Points:**
-
-- Template name goes at the END of the command
-- Use `-d` flag to specify directory containing main.tf
-- Use `-y` to bypass confirmation prompts
-- Must be run from parent directory of template folder when using `-d`
-- Template directory must contain main.tf file
-
-### Common Errors:
-
-- ❌ `coder templates push blog .coder/templates/blog/` (wrong argument order)
-- ❌ `coder templates push --directory .coder/templates/blog/ blog` (wrong flag syntax)
-- ✅ `coder templates push -d blog -y blog` (correct from templates parent dir)
-
-## Development Commands
-
-### Local Development
-```bash
-# Install dependencies
 bundle install
-
-# Serve locally with live reload (use this for development)
-# --future shows scheduled (future-dated) posts locally so you can preview them.
-# Production keeps future: false in _config.yml, so scheduling still works there.
-bundle exec jekyll serve --future
-
-# Build site for production
+bundle exec jekyll serve --future   # local preview; --future shows scheduled posts
 bundle exec jekyll build
-
-# Build with Docker (alternative)
-docker-compose up -d
+docker-compose up -d                # containerised alternative, Jekyll 3.8
 ```
 
-### Container Development
-The project includes `docker-compose.yaml` for containerized development using Jekyll 3.8. Remove the bundle volume mount for production deployments.
+**Chris runs the Jekyll server and build himself.** A live server is already serving http://localhost:4000. Do not start `jekyll serve` and do not run `jekyll build`. For a production deployment from the container, remove the bundle volume mount.
 
-### Jekyll Server and Build
-Chris runs the Jekyll server and build separately (not via Claude Code). Don't attempt to start `jekyll serve` or run `jekyll build` - they're already running in another process.
+## British English
 
-### Always Verify Layout With a Screenshot
-When changing anything visual (a new page, a layout, CSS, an include), **don't rely on the built HTML alone — capture a screenshot and look at it, then iterate.** The live server is already serving at `http://localhost:4000`, and headless Chrome is available:
+Use British English everywhere — posts, pages, UI text, and code comments. Watch for "ise" and "isation" not "ize" and "ization" (realise, organisation, optimisation), "our" not "or" (colour, behaviour, flavour), "re" not "er" (centre, theatre), "ence" not "ense" (defence, licence as a noun), and a single "l" in words such as modelling and travelling.
 
-```bash
-google-chrome-stable --headless --disable-gpu --no-sandbox --hide-scrollbars \
-  --window-size=900,2400 --screenshot=/tmp/check.png "http://localhost:4000/<path>/"
-```
+## Where the rest of the guidance lives
 
-Then `Read` the PNG. Grepping the HTML catches missing content but **misses rendered bugs** — e.g. turquoise button text on a turquoise background reads as "present" in HTML but is invisible on screen. This page taught the lesson: the `.content-styled` wrapper (specificity `0,1,1`) silently overrode Tailwind utilities (`text-white`, `no-underline`, image `margin`/`height`), producing an empty-looking CTA and a mis-placed avatar that only a screenshot revealed. Fix such overrides with inline `style="..."` (the `_includes/testimonial.html` pattern) or a higher-specificity selector.
+Global skills own most of this work. Load them rather than working from memory:
 
-## Architecture Overview
+- `/blog` — the whole post workflow: titles, retrieval of Chris's own material, polish, comics, infographics, slop check, LinkedIn promotion. Chris writes the first draft, and the skill takes over after that.
+- `/case-studies` — everything about pages in `case-studies/`.
+- `/writing-style` and `/slop-check` — voice, titles, and AI slop patterns.
+- `/seo` — discoverability and AI citation.
+- `/images` — infographics, comics, motif extraction, provenance records.
+- `/content`, `/linkedin`, `/newsletter` — post tracking, LinkedIn, and the newsletter.
+- `/gws` — every `gog` and `gws` command, including Drive uploads.
 
-### Jekyll Site Structure
-This is a GitHub Pages-compatible Jekyll blog using a Tailwind CSS theme. The site architecture follows Jekyll conventions with some key customizations:
-
-**Important**: When updating existing blog posts, update the date in the front matter to reflect the update date, but NEVER rename the file itself - the filename should always retain the original publication date. This preserves URL structure and history.
-
-- **Scheduled publishing** - `future: false` in `_config.yml` means future-dated posts are excluded from builds. A GitHub Action (`.github/workflows/daily-publish.yml`) triggers a Pages rebuild at 9am UTC daily. **All post dates should use `07:00:00 +0000`** so they appear published at 7am when the 9am rebuild picks them up.
-- **GitHub Pages deployment** - Uses `github-pages` gem for compatibility
-- **Tailwind CSS via CDN** - Configured in `_layouts/default.html` with custom brand colors
-- **Custom post layout** - Enhanced with newsletter signup, share buttons, and related articles
-- **Content collections** - Standard Jekyll posts plus newsletter collection
-
-### Key Layout Components
-- `_layouts/default.html` - Base template with Tailwind config and custom brand colors
-  - **Overlay header exclusion list**: Pages with their own `{% include header.html style="overlay" %}` (hero pages with transparent nav) must be added to the exclusion list in `default.html` (line ~45) to prevent a duplicate default white header rendering. Currently excludes: `/`, `/training/`, `/services/`, `/ai-leader-accelerator/`, `/ai-leader-accelerator/thanks/`. If you create a new page with an overlay hero, add it to this list.
-- `_layouts/post.html` - Post template with newsletter integration, social sharing, and webinar links
-  - **Webinar posts**: Layout automatically shows "Previous Webinars" section after infographic
-  - **Webinar write-ups** (no `kit_tag`): Also show "Join Future Webinars" CTA and newsletter signup
-  - **Webinar landing pages** (have `kit_tag`): Skip "Join Future Webinars" CTA and newsletter (signup form is in content)
-- `_layouts/page.html` - Simple page template with title and content
-- `_includes/ai-newsletter-short.html` - Newsletter signup component
-- `_includes/about-chris.html` - "More About Chris" bio section (shared between homepage and /services)
-- **Extract shared sections proactively**: When adding the same HTML block to multiple pages, extract it as an `_includes/` partial immediately. Do not duplicate HTML across pages and wait for the user to notice.
-- Custom Tailwind config with brand colors: `brand-white`, `brand-turquoise`, `brand-deep-turquoise`, `brand-light-blue`, `brand-black`, `brand-orange`
-
-### Content Architecture
-- **Posts** (`_posts/`) - Blog articles with date-based naming: `YYYY-MM-DD-title.md`
-- **Newsletters** (`_newsletters/`) - Newsletter content collection
-- **Pages** (`pages/`) - Static pages like services, archive, search
-  - Articles page uses markdown formatting - avoid HTML, let page layout handle styling
-- **Research** (`_research/`) - Internal research documents
-- **Case Studies** (`case-studies/`) - Use `post` layout for proper formatting like blog articles
-
-#### Blog Post Guidelines
-```markdown
----
-layout: post
-title: "YOUR TITLE HERE"
-date: YYYY-MM-DD HH:MM:SS +0000
-categories:
-- ai
-- engineering
-- rag
----
-
-ADD TOP PARAGRAPH OR TWO HERE TO HOOK IN READER
-
-<!--more-->
-
-EVERYTHING ELSE HERE
-```
-
-**Blog Post Writing Process:**
-- Start with strong hook and clear statement of main argument
-- Include `<!--more-->` break after introduction
-- End with concrete takeaways or next steps
-- Aim for 1500+ words for long-form pieces
-- Link to related posts in `_posts/` folder
-- Use British English spelling throughout
-- Use markdown footnotes for asides, extra detail, and references
-- No vertical bar (|) in link titles
-- No numbered/unnumbered lists - prefer short paragraphs with headings
-- Only use H2 (##) and below, never H1 (#)
-- No blank lines before footnote references
-- **Credit lines**: When thanking someone for feedback, say "Thanks to [Name] for feedback on an earlier version of this post." Do not specify what the feedback was about.
-
-**Image Placement:**
-- **Main image = motif**: When creating infographics, extract the main visual motif and use it as `image:` in front matter. This is the hero image shown at top of post.
-- **Infographics via front matter**: Add `infographic: /assets/img/filename.jpg` to front matter. The layout automatically renders the full infographic at 50% width at the end of content.
-- **Blog infographics are low-res**: Resize infographics to ~512px max dimension for blog assets. Full resolution goes to Newsletter Vault only.
-- **Webinar adverts and extracted motifs can be high-res**: Don't resize these - copy at full resolution
-- **Image resizing**: Use `magick` on Linux (not `sips` which is macOS only). Preserve aspect ratio by specifying only one dimension.
-- Screenshots and diagrams in content use full width or appropriate sizing
-- Always save images as JPG (not PNG) for smaller file sizes
-- **Portrait images**: When the hero image is portrait orientation (comics are typically portrait), add `image_portrait: true` to front matter for proper layout handling
-
-### Newsletter System (from `newsletter.mdc`)
-Newsletter content uses Kit platform following rough template of one story, one idea, one question weekly. 
-
-**Newsletter Style:**
-- Less formal and more intimate than blog posts
-- More enthusiastic tone
-- Do not make things up - only use what is known to be true
-- Ask for stories as needed
-
-**Newsletter Context:**
-People expect content about using AI to build agents and products at high speed, generating revenue quickly, with weekly notes sharing stories, learnings, and tips on getting ahead with AI.
-
-### Social Media Posts
-- **No markdown bold** - LinkedIn displays literal asterisks
-- **No emoji headers** - simple flowing paragraphs
-- **LinkedIn mentions**: Use @ mentions (e.g., "@Chris Parsons" and "@AI In Action By Chris Parsons")
-- **Draft storage**: Store drafts in `_drafts/` folder
-
-### Reusable Components
-The project uses Jekyll includes for commonly repeated elements:
-
-- `_includes/five-star.html` - Consistent 5-star rating display using brand orange SVG stars
-  - Usage: `{% include five-star.html %}` 
-  - Always use this instead of emoji stars or inline SVG for testimonials and reviews
-  - Maintains consistent styling and color (`brand-orange: #fc8745`) across the site
-- `_includes/testimonial-tfc.html` - Tom Foster Carter testimonial component (currently commented out)
-
-### Icons
-- **Use Lucide icons** (lucide.dev) for all icons throughout the site
-- Never use emojis for UI elements, navigation, or decoration
-- Lucide icons should be inline SVG with appropriate sizing and brand colors
-- Standard icon size: 24x24 for inline, 32x32 for section headers, 40x40 for feature cards
-- Apply `text-brand-deep-turquoise` class for colored icons
-
-## Configuration
-- Site config in `_config.yml` - includes social media links, author info, and Jekyll settings
-- Uses `jekyll-sitemap` and `jekyll-redirect-from` plugins
-- Permalink structure: `/:title/`
-- Custom excerpt separator: `<!--more-->`
-
-## Language and Spelling
-- **Always use British English spelling** throughout the site
-- Common differences to watch for:
-  - "ise/isation" not "ize/ization" (realise, organisation, optimisation)
-  - "our" not "or" (colour, behaviour, flavour)
-  - "re" not "er" (centre, theatre)
-  - "ence" not "ense" (defence, licence as noun)
-  - Single "l" in words like "modelling", "travelling"
-- Apply British spelling to all content: pages, posts, UI text, and code comments
-
+Repo rules in `.claude/rules/` load when you open a file they match. Background material sits in `.claude/references/`:
+`chris-writing-patterns.md` for post shape and phrasing, `newsletter-and-social.md` for the older newsletter and LinkedIn notes, and `working-practice.md` for general working notes and the VPS clipboard workaround.
