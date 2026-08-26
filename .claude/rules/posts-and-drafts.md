@@ -67,7 +67,7 @@ EVERYTHING ELSE
 - **Portrait heroes need a flag.** Comics are usually portrait. Add `image_portrait: true` so the layout handles them.
 - **Resize infographics for the blog** to about 512px on the longest side. Full resolution goes to the Newsletter Vault only.
 - **Webinar adverts and extracted motifs stay high resolution.** Do not resize them. Copy them at full resolution.
-- **Resize with `magick` on this machine.** `sips` is macOS only and is not available here. Give one dimension only so the aspect ratio is preserved. `/blog` and its `references/assets.md` are written for macOS and use `sips` — substitute `magick`.
+- **Resize with `convert` on this machine.** `sips` is macOS only. This box runs ImageMagick 6, so the binary is `convert` and there is no `magick`. Use `convert <file> -resize 512x512\> <file>` — the `>` only shrinks, and one dimension pair preserves the aspect ratio.
 - Always save images as JPG, never PNG, for a smaller file.
 - Screenshots and diagrams in the body use full width or whatever size suits them.
 - When Chris supplies an image, check whether the file needs copying into `/assets/img/`.
