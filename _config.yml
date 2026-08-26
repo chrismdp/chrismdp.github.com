@@ -66,6 +66,11 @@ excerpt_separator: <!--more-->
 
 # Defaults
 
+# Keep future: false. It is the only thing stopping an unpublished, future-dated
+# post going live. The github-pages gem DEFAULTS future to true (DEFAULTS in
+# lib/github-pages/configuration.rb), and it is not in that gem's OVERRIDES list,
+# so this line is what wins on GitHub Pages. Delete it and every future-dated
+# draft in _posts publishes on the next build.
 future: false
 
 safe: true
