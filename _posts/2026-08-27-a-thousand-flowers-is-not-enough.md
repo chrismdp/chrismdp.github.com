@@ -30,7 +30,7 @@ The reason is not mysterious:
 Neither works without the other. An expert without engineers produces a prototype nobody can safely run, and engineers without the expert produce a beautifully built version of the wrong process that no one uses.
 
 
-A two-tier world for workflow replacement is currently forming. Below roughly 5,000 employees, most vendors hand you documentation and an onboarding flow and wish you well. The huge companies who get deployment support from that $10bn splurge, and everyone else has to make do.
+A two-tier world for workflow replacement is currently forming. Below roughly 5,000 employees, most vendors hand you documentation and an onboarding flow and wish you well. The huge companies get deployment support from that $10bn splurge, and everyone else has to make do.
 
 This post is about the second group - how do we build proper repeatable workflows that save us time if we are not 5,000 people?
 
