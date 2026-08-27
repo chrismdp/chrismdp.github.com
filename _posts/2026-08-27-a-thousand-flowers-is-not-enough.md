@@ -38,7 +38,7 @@ This post is about the second group - how do we build proper repeatable workflow
 
 Start by rolling out a decent AI tool to everyone, and provide kickstart training and coaching alongside it. (I went through the whole sequence, and the ways it goes wrong, in [my webinar on how not to screw up your AI rollout](/webinar-how-not-to-screw-up-your-ai-rollout/).) Encourage early automations and artefacts, while being clear with everyone that these are prototypes. Build a culture of sharing wins, and note that this means considerably more than a Slack channel nobody reads after week three. Measure and observe usage, and learn from the key users who are automating their own workflows.
 
-Let a thousand flowers bloom. One team uses Copilot as autocomplete and calls it a day. Another runs agents in tight loops with tests and reviews. A product owner starts prototyping real software instead of mocking screens. A support team turns recurring tickets into automation without telling anyone, because they know exactly where the work hurts and nobody in the centre of excellence ever asked them. A marketing team starts producing content. Everyone starts producing emails that look suspiciously like AI.
+There is a famous article about engineering at Twitter that describes exactly this process, and calls it letting a thousand flowers bloom.[^seibel] The phrase is itself a slight variation on a speech by Mao Zedong in the 1950s. One team uses Copilot as autocomplete and calls it a day. Another runs agents in tight loops with tests and reviews. A product owner starts prototyping real software instead of mocking screens. A support team turns recurring tickets into automation without telling anyone, because they know exactly where the work hurts and nobody in the centre of excellence ever asked them. A marketing team starts producing content. Everyone starts producing emails that look suspiciously like AI.
 
 It feels productive, and it is genuinely useful as discovery and communication artefacts, but the organisation often still moves at the same speed, because none of it has become anything anyone else can use.
 
@@ -102,5 +102,7 @@ If the answer in your company is nobody, you will get a thousand flowers, but it
 [^lemkin]: Jason Lemkin, [Who gets an FDE and who doesn't](https://www.saastr.com/who-gets-an-fde-and-who-doesnt-the-great-b2b-ai-debate-right-now/){:target="_blank"}, SaaStr. The 60-80% versus 20% figures are Zendesk's own, so treat them as a vendor's account of its own product rather than an independent measurement.
 
 [^tunguz]: Tomasz Tunguz, [The $10B FDE Boom](https://tomtunguz.com/the-10b-fde-boom/){:target="_blank"}. Also the source for the spending figure at the top of this post.
+
+[^seibel]: Peter Seibel, [Let a 1,000 flowers bloom. Then rip 999 of them out by the roots.](https://gigamonkeys.com/flowers/){:target="_blank"}, written while he led the Engineering Effectiveness group at Twitter. His second stage is the same one this post argues for: once the sprawl is doing more harm than good, pick the tools you will support and support the heck out of them. Mao's original was a hundred flowers, in 1956.
 
 [^glaser]: Robert Glaser, [When everyone has AI and the company still learns nothing](https://www.robert-glaser.de/when-everyone-has-ai-and-the-company-still-learns-nothing/){:target="_blank"}.
