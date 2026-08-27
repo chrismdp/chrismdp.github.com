@@ -42,7 +42,7 @@ There is a famous article about engineering at Twitter that describes exactly th
 
 It feels productive, and it is genuinely useful as discovery and communication artefacts, but the organisation often still moves at the same speed, because none of it has become anything anyone else can use.
 
-Two things stop the flowers growing wild becoming a well maintained garden:
+Two things stop the flowers growing wild becoming a well-maintained garden:
 
 1. Everyone builds the same workflow slightly differently, so there is no shared process and nothing stable to improve. Each version is tied to the person who made it, sharing is rudimentary, and nobody can manage the sprawl. Ten people solve the same problem ten times, because none of the previous solutions are findable or trustworthy enough to reuse.
 
@@ -79,7 +79,7 @@ So ask these questions before they start (rather than after they leave!)
 - Can we run, improve and re-platform this workflow without them?
 - Is this transferring capability into our people, or becoming our AI operating layer?
 
-Ensure the artefacts are named as yours in the contract and someone internal alongside anyone external from day one, so that you own a capability rather than renting your own work practices for ever afterward.
+Ensure the artefacts are named as yours in the contract and someone internal alongside anyone external from day one, so that you own a capability rather than renting your own work practices for ever afterwards.
 
 ## Turn The Flowers Into A Garden
 
