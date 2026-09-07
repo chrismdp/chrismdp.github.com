@@ -15,6 +15,7 @@ image_portrait: true
 kit_tag: webinar18
 webinar_date: "2026-09-10T14:30:00+01:00"
 series: "AI In Action Webinars"
+excerpt: "AI rollouts fail by default. Who in your company owns the AI workflows people have already built, and who fixes them when the model changes or the person who made them leaves? This session is about the part of an AI rollout that never gets budgeted: the engineers who turn prototypes into workflows that last."
 description: "AI rollouts fail by default. Who owns the AI workflows your people have already built? Why rollouts built on Cowork, Copilot and Claude Code stall after the demos, the engineers nobody budgets for, and what a rollout looks like when it sticks."
 ---
 
