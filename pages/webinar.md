@@ -7,7 +7,7 @@ image_portrait: false
 permalink: /webinar/
 redirect_from: [/webinar]
 kit_tag: webinar18
-webinar_date: "2026-09-10T14:00:00+01:00"
+webinar_date: "2026-09-10T14:30:00+01:00"
 ---
 
 <div class="mb-12">
