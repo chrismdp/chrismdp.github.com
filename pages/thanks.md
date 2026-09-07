@@ -41,7 +41,10 @@ redirect_from:
       var embed = card.querySelector('.rm-area-embed-thanks');
       var observer = new MutationObserver(reveal);
       function reveal() {
-        if (embed.childElementCount > 0) {
+        // RightMessage always inserts an empty wrapper div, so look for real content.
+        var hasContent = embed.textContent.trim().length > 0 ||
+          embed.querySelector('input, button, a, img, h1, h2, h3, p');
+        if (hasContent) {
           card.hidden = false;
           observer.disconnect();
         }
