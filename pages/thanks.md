@@ -27,13 +27,29 @@ redirect_from:
 </script>
 
 <div class="max-w-4xl mx-auto px-6 pb-12">
-  <div class="bg-brand-white rounded-lg p-8 border border-brand-light-blue/20 mb-12">
+  <div id="thanks-questions" class="bg-brand-white rounded-lg p-8 border border-brand-light-blue/20 mb-12" hidden>
     <p class="text-lg text-brand-black/80 mb-6 text-center">
       Would you mind <strong>taking 20 seconds</strong> to answer a few quick questions?
     </p>
-    
     <div class="rm-area-embed-thanks"></div>
   </div>
+  <script>
+    // Show the questions card only once RightMessage has rendered something into it.
+    // Subscribers who have already answered everything get nothing, so the card stays hidden.
+    (function () {
+      var card = document.getElementById('thanks-questions');
+      var embed = card.querySelector('.rm-area-embed-thanks');
+      var observer = new MutationObserver(reveal);
+      function reveal() {
+        if (embed.childElementCount > 0) {
+          card.hidden = false;
+          observer.disconnect();
+        }
+      }
+      observer.observe(embed, { childList: true, subtree: true });
+      reveal();
+    })();
+  </script>
 
   <div class="border-t border-brand-light-blue/20 pt-12">
     <h2 class="text-2xl font-heading font-bold mb-8 text-brand-black">Latest Articles</h2>
