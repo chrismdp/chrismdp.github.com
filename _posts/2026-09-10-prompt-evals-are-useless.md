@@ -38,7 +38,7 @@ On an ordinary turn the game sees only the last three passages of the story, and
 
 ## All My Evals Are Code
 
-This feels to me like an extension of Behaviour Driven Development, which I [wrote about at length in earlier days](/cucumber-isnt-a-testing-tool/), driving the whole system from the outside with end to end scenarios, only here the thing being checked is far more subjective and nuanced.[^bdd] So Astra and I drew on this and starting putting a new system together.
+This feels to me like an extension of Behaviour Driven Development, which I [wrote about at length in earlier days](/cucumber-isnt-a-testing-tool/), driving the whole system from the outside with end to end scenarios, only here the thing being checked is far more subjective and nuanced.[^bdd] So Astra and I drew on this and started putting a new system together.
 
 I organise my tests and my evals into one pyramid. Ordinary software tests sit underneath, covering the game rules, the dice and the saving of progress, so the evals above them only ever have to question the model and the harness around it. The replay cases, which only check prompts, sit in the middle. Each saves the exact request and the model's answer, and the replay command sends that request to the model again, refusing to run if the game has changed since the case was saved.
 
