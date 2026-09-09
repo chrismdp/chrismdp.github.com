@@ -8,6 +8,7 @@ categories:
 - webinar
 - leadership
 image: /assets/img/am-i-behind-in-ai-webinar.jpg
+excerpt: "On 8th January 2026, I gave a webinar tackling a question that preoccupies every technical leader I speak to: am I behind in AI? The data is confusing. Gartner says 88% of organisations have not realised significant value from AI tools. Stanford says productivity gains of 14% to 66% are possible when AI is done right. Some early adopters are struggling whilst late starters are thriving, and something strange is happening."
 ---
 
 On 8th January 2026, I gave a webinar tackling a question that preoccupies every technical leader I speak to: am I behind in AI? The data is confusing. Gartner says 88% of organisations have not realised significant value from AI tools. [^1] Stanford says productivity gains of 14% to 66% are possible when AI is done right. [^2] [^3] Some early adopters are struggling whilst late starters are thriving, and something strange is happening.

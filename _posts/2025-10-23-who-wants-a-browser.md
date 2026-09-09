@@ -11,6 +11,7 @@ categories:
 - business
 - agents
 - security
+excerpt: "I watched the Apple keynote live in 2007 with baited breath, not sure what was coming. I clearly remember Steve Jobs' crushing disdain for an entire generation of smartphone products. \"Who wants a stylus? You have to get them, put them away, you lose them. Yuck!\""
 ---
 I watched the Apple keynote live in 2007 with baited breath, not sure what was coming. I clearly remember Steve Jobs' crushing disdain for an entire generation of smartphone products. "Who wants a stylus? You have to get them, put them away, you lose them. Yuck!"[^stylus]
 

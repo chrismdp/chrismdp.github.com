@@ -12,6 +12,7 @@ categories:
 - ai
 - economics
 - strategy
+excerpt: "I am just back from a family holiday, and the model releases that happened while I was away show that AI models are becoming interchangeable faster than AI strategies can keep up. If your AI strategy is a bet on one vendor's model staying ahead, think again: whatever intelligence you are paying for today, every competitor you have will be able to rent next quarter. And if you run a normal business rather than an AI lab, that changes your budget, not your ambition."
 ---
 
 I am just back from a family holiday, and the model releases that happened while I was away show that AI models are becoming interchangeable faster than AI strategies can keep up. If your AI strategy is a bet on one vendor's model staying ahead, think again: whatever intelligence you are paying for today, every competitor you have will be able to rent next quarter. And if you run a normal business rather than an AI lab, that changes your budget, not your ambition.

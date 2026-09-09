@@ -12,6 +12,7 @@ image: /assets/img/ai-and-your-org-chart.jpg
 image_portrait: true
 infographic: /assets/img/which-slices-become-skills.jpg
 published: true
+excerpt: "Ask most people how they feel about AI and the answer is worry, not excitement. A recent Pew poll found that only 16 percent of Americans think AI will have a positive impact on society, while almost a third expect it to harm them personally, even as more people use AI chatbots than ever before. The more people use it, the less they seem to trust it."
 ---
 
 Ask most people how they feel about AI and the answer is worry, not excitement. A recent Pew poll found that only 16 percent of Americans think AI will have a positive impact on society, while almost a third expect it to harm them personally, even as more people use AI chatbots than ever before.[^pew] The more people use it, the less they seem to trust it.

@@ -8,6 +8,7 @@ categories:
 - strategy
 image: /assets/img/let-a-thousand-flowers-bloom-engineers.jpg
 image_portrait: true
+excerpt: "AI companies have committed nearly $10bn in the last year to Forward Deployed Engineering teams. OpenAI has bought Tomoro and Northslope outright. Anthropic launched a services firm with Blackstone, Goldman Sachs and Hellman & Friedman behind it, explicitly aimed at mid-size companies. AWS is standing up its own unit. Google Cloud compressed its FDE interview process from weeks down to two days, which tells you how badly they want the people."
 ---
 
 AI companies have committed nearly $10bn in the last year to Forward Deployed Engineering teams. OpenAI has bought Tomoro and Northslope outright.[^openai] Anthropic launched a services firm with Blackstone, Goldman Sachs and Hellman & Friedman behind it, explicitly aimed at mid-size companies.[^anthropic] AWS is standing up its own unit.[^aws] Google Cloud compressed its FDE interview process from weeks down to two days, which tells you how badly they want the people.[^pulse]

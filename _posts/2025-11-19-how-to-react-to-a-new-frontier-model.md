@@ -8,6 +8,7 @@ categories:
 - ai
 - strategy
 - evaluation
+excerpt: "Gemini 3 is out. The benchmarks are genuinely incredible. But it's hard to know what to do about it. 41% on HLE. 45% on ARC-AGI-2. These are colossal achievements. But it feels like more of the same. Another week, another frontier model. OpenAI, Anthropic, Google - they're all leapfrogging each other every month."
 ---
 
 Gemini 3 is out. The benchmarks are genuinely incredible. But it's hard to know what to do about it.

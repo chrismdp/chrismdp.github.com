@@ -8,6 +8,7 @@ series: "Software Factory"
 categories:
 - ai
 - engineering
+excerpt: "The most sophisticated agent orchestration system I have seen this year is Gas Town, Steve Yegge's multi-agent factory for coordinating dozens of Claude Code instances. It is also way too complicated. Gas Town is just a series of Ralph loops with extra steps."
 ---
 
 The most sophisticated agent orchestration system I have seen this year is Gas Town[^1], Steve Yegge's multi-agent factory for coordinating dozens of Claude Code instances. It is also way too complicated. Gas Town is just a series of Ralph loops with extra steps.

@@ -10,6 +10,7 @@ categories:
 - climate
 - technology
 - economics
+excerpt: "Your ChatGPT subscription is subsidising the terraforming of Earth. Not metaphorically. China's solar overbuild is crashing electricity prices toward zero. AI demand absorbs the surplus. When power is essentially free, we manufacture fuel from thin air instead of drilling for it."
 ---
 
 **Your ChatGPT subscription is subsidising the terraforming of Earth.**

@@ -8,6 +8,7 @@ categories:
 - ai
 - industry
 - analysis
+excerpt: "When GPT-5 launched, Reddit exploded with disappointment. One paying customer called it \"the biggest piece of garbage\" they had ever seen. Within hours, OpenAI's CEO held an emergency Q&A to defend the model's performance. Gary Marcus summarised it as \"overdue, overhyped and underwhelming.\" Technical founders declared AI had plateaued, engineering leaders dismissed the release as underwhelming, and some began abandoning their AI implementations entirely."
 ---
 
 When GPT-5 launched, Reddit exploded with disappointment. One paying customer called it "the biggest piece of garbage" they had ever seen. Within hours, OpenAI's CEO held an emergency Q&A to defend the model's performance. Gary Marcus summarised it as "overdue, overhyped and underwhelming." Technical founders declared AI had plateaued, engineering leaders dismissed the release as underwhelming, and some began abandoning their AI implementations entirely.

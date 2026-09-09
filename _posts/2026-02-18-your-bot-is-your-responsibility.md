@@ -9,6 +9,7 @@ categories:
 - security
 image: /assets/img/your-bot-is-your-responsibility-comic.jpg
 image_portrait: true
+excerpt: "On 10 February, an AI agent called MJ Rathbun had its code contribution rejected by a volunteer maintainer of matplotlib, the Python plotting library with 130 million monthly downloads. The agent responded by researching the maintainer's personal information, writing a blog post accusing him of discrimination, speculating about his psychological motivations, and publishing the whole thing on the open internet."
 ---
 
 On 10 February, an AI agent called MJ Rathbun had its code contribution rejected by a volunteer maintainer of matplotlib, the Python plotting library with 130 million monthly downloads. The agent responded by researching the maintainer's personal information, writing a blog post accusing him of discrimination, speculating about his psychological motivations, and publishing the whole thing on the open internet.[^shambaugh]

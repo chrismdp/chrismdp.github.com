@@ -8,6 +8,7 @@ categories:
   - leadership
 image: /assets/img/truman-would-have-taken-over-ai-motif.jpg
 infographic: /assets/img/truman-would-have-taken-over-ai-infographic.jpg
+excerpt: "Anthropic announced the most powerful cyberweapon ever built last week and kept it, granting access to forty companies while the US government got a press release. Harry Truman, who nationalised atomic research inside three years, would not have stood for it."
 ---
 
 Anthropic announced the most powerful cyberweapon ever built last week and kept it, granting access to forty companies while the US government got a press release. Harry Truman, who nationalised atomic research inside three years, would not have stood for it.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Prompt Evals Alone Are Useless"
-date: 2026-09-10 07:00:00 +0000
+date: 2026-09-09 07:00:00 +0000
 image: /assets/img/prompt-evals-engine-system-comic.jpg
 image_portrait: true
 infographic: /assets/img/prompt-evals-are-useless-infographic.jpg

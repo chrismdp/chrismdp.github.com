@@ -10,6 +10,7 @@ categories:
 - ai
 - strategy
 - agents
+excerpt: "Should AI live inside your tools, or sit outside orchestrating them? The UK government spent months trialling Microsoft 365 Copilot across thousands of civil servants. Users reported 72% satisfaction but no measurable productivity gains. Meanwhile, coding agents have quietly become the most transformative tools I use daily, handling everything from complex refactoring to writing these blog posts."
 ---
 
 Should AI live inside your tools, or sit outside orchestrating them?

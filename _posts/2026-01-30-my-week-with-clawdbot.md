@@ -14,6 +14,7 @@ categories:
 - automation
 image: /assets/img/clawdbot-effect-comic.jpg
 image_portrait: true
+excerpt: "You have probably heard about Clawdbot / Moltbot / OpenClaw. YouTube is full of videos telling you to buy a dedicated Mac Mini, install it, and let it work for you around the clock. It is an always-on Claude agent that runs on your machine with access to your files, your calendar, and the internet. It can work autonomously on tasks while you sleep. Peter Steinberger (@steipete) has released this as an alpha and knows it needs work - it is not a finished product. The way people have been talking though it feels like it's the next new thing after Claude Code."
 ---
 
 You have probably heard about Clawdbot / Moltbot / OpenClaw.[^1] YouTube [is full of videos](https://www.youtube.com/results?search_query=clawdbot){:target="_blank"} telling you to buy a dedicated Mac Mini, install it, and let it work for you around the clock. It is an always-on Claude agent that runs on your machine with access to your files, your calendar, and the internet. It can work autonomously on tasks while you sleep. Peter Steinberger ([@steipete](https://github.com/steipete){:target="_blank"}) has released this as an alpha and knows it needs work - it is not a finished product. The way people have been talking though it feels like it's the next new thing after Claude Code.

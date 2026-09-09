@@ -9,6 +9,7 @@ categories:
 - engineering
 - livestream
 - webinar
+excerpt: "I built an entire AI-powered app live, in front of an audience, in just four hours. Did I finish it? Not quite. Did I learn a huge amount? Absolutely. Here is what happened, what I learned, and why I will do it again."
 ---
 
 I built an entire AI-powered app live, in front of an audience, in just four hours. Did I finish it? Not quite. Did I learn a huge amount? Absolutely. Here is what happened, what I learned, and why I will do it again.

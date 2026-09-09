@@ -9,6 +9,7 @@ categories:
 - development
 - architecture
 - craftsmanship
+excerpt: "AI is not the death knell for the software crafting movement. With the right architectural constraints, it might just be the catalyst for its rebirth."
 ---
 
 AI is not the death knell for the software crafting movement. With the right architectural constraints, it might just be the catalyst for its rebirth.

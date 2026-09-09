@@ -8,6 +8,7 @@ categories:
   - ai
   - engineering
   - productivity
+excerpt: "I recently wrote about how code review is dying as a gatekeeping mechanism. Pull requests take seconds to create and hours to evaluate. Since writing that post, the problem has become personal."
 ---
 
 I recently wrote about how [code review is dying](/code-review-is-dying/) as a gatekeeping mechanism. Pull requests take seconds to create and hours to evaluate. Since writing that post, the problem has become personal.

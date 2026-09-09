@@ -8,6 +8,7 @@ categories:
 - ai
 - strategy
 - business
+excerpt: "Sam Altman declared \"code red\" at OpenAI last week, marshalling resources to improve ChatGPT as Gemini 3 and Claude Opus 4.5 gain ground. The company is delaying advertising, health agents, shopping agents, and the Pulse personal assistant to focus on catching up on benchmarks."
 ---
 
 Sam Altman declared "code red" at OpenAI last week, marshalling resources to improve ChatGPT as Gemini 3 and Claude Opus 4.5 gain ground. The company is delaying advertising, health agents, shopping agents, and the Pulse personal assistant to focus on catching up on benchmarks.[^code-red]
