@@ -64,6 +64,12 @@ The purpose sentence tells whoever reads the result what to expect: the player h
 
 The combat report leaves the story column marked "Not graded; coordinator inspection is required." and hands it to the coordinator, which is Astra in Codex or Fable in Claude Code. The coordinator compares the story and the recorded results with the expected outcome, then traces any mismatch through the saved game, the answer format and the code to find where the fix belongs. The cause can be an event several turns earlier, which is why the judge also needs a longer session.
 
+This morning I needed to know whether the AI checking the game's maps was judging them properly. Astra made me a review form with the whole map and enlarged regions to inspect. It asked me to describe what I could see before revealing the geography the game required, then kept the earlier AI judgements hidden until I had made my own assessment.
+
+I found this extraordinary. Astra had made me a form to help it work out whether it was judging another AI correctly. The AI spotted the problems but did not know how to fix them, so I gave it some pointers from my game-development experience. I have never worked in such a light-touch, high-level way before.
+
+{% include inline-image.html src="/assets/img/prompt-evals-map-review.jpg" alt="Astra's map review form showing the whole game map and three enlarged regions, with my feedback on terrain blending, colour changes and broken roads." align="center" width="100%" caption="The review form Astra built, with my notes from inspecting the map." %}
+
 ## The Long Session Is the Real Test
 
 The model's memory is trimmed as a story grows, and that trimming can lose the details that make a story worth following long before any single reply looks broken. One six turn scenario tests whether the ledger keeps the cup debt alive after the loan drops out of the three passages the model can see. The game must remember the debt until the cup is returned, and that test is what exposed routine actions being counted as progress.
