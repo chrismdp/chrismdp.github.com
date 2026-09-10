@@ -4,8 +4,8 @@ title: "Webinars To Get You Ahead With AI"
 excerpt: "Hype-free AI deep-dives for leaders, with every past session written up in full."
 image: /assets/img/webinar-mosaic.jpg
 image_portrait: false
-kit_tag: webinar18
-webinar_date: "2026-09-10T14:30:00+01:00"
+permalink: /webinar/
+redirect_from: [/webinar]
 ---
 
 <div class="mb-12">
