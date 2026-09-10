@@ -26,7 +26,7 @@ Peter Seibel called this letting a thousand flowers bloom at Twitter.[^seibel] T
 
 ## Finish the work
 
-Little's law says the time to finish anything equals the unfinished work divided by the rate work gets finished. AI has raised the unfinished work. A pile of prototypes, meaning early working versions only one person can use, makes teams feel busy without finishing more. The business only speeds up when work leaves the building as a result people can use and trust.
+Little's law says the time to finish anything equals the unfinished work divided by the rate work gets finished. AI has raised the unfinished work. A pile of prototypes, meaning early working versions only one person can use, does not change what the business gets done. It adds noise: more half-built things to keep track of, and more for whoever has to check them. The business only speeds up when work leaves the building as a result people can use and trust.
 
 ![Little's law: lead time equals work in progress divided by throughput. A conveyor piled with half-built boxes labelled prototype, and one small door labelled shared workflow.](/assets/img/littles-law-prototype-inventory.jpg)
 
@@ -37,6 +37,8 @@ A tool can also seem to work while hiding a serious fault. One executive built a
 Writing code faster does not help if it then waits longer for someone to check it. A study of ten thousand developers found that heavy AI use produced 98% more pieces of work for review.[^faros] Reviews took 91% longer, while the pace of delivery stayed the same. [Feedback Is the New Bottleneck](/feedback-is-the-new-bottleneck/) brings together the sources on these delays.
 
 Those figures describe software teams, but the same problem can arise elsewhere. A finance worker can use AI to compare a hundred sets of accounts, but someone still has to check them. The slowest step has moved from doing the work to reviewing it.
+
+![An AI champion says "Look, you can send these letters seven times faster now!" while a colleague tosses another envelope onto a mountain of unopened post that is burying two coworkers.](/assets/img/seven-times-faster-letters-pile.jpg)
 
 ## Tools need support
 
@@ -62,7 +64,7 @@ AI can cut the time it takes to build something, but the systems it connects to 
 
 One finance team needed to check sales orders against customer purchase orders. Each sales order arrived in the finance system, but someone still had to find the matching purchase order. The purchase order arrived as a PDF or email, sometimes in another language. Someone compared the amounts, codes and terms, then chased anything that did not match. This took one or two people several hours a week.
 
-The first version ran in one person's AI tool. It showed that AI could do the job and helped define the checks. Nobody else could use it or knew it existed. Turning it into a shared process meant deciding how it would run and who would review it.
+This is work I did recently with the team. We did not want it to start life as one person's private tool that nobody else could use or knew about, so we mapped the process first, decided how it would run and who would review it, and then built it.
 
 ![The engineered purchase order checker: new sales order, find the purchase order, read the details, compare, then weekly summary or exceptions to a finance person. Annotated with defined trigger, limited access, a record of what it did, and explicit human review.](/assets/img/purchase-order-checker-engineered-version.jpg)
 
@@ -74,7 +76,7 @@ When outside engineers do this work, whether a vendor, a consultancy or me, the 
 
 ## Questions from attendees
 
-One attendee asked how to let people try AI while keeping data safe. My answer was to use company accounts and let tools read data without changing it. Turn on features as people learn to use them, and explain which tools are allowed. Banning AI can push people towards personal accounts. Technical staff can make the same mistakes as anyone else.
+One attendee asked how to let people try AI while keeping data safe. My answer was to use company accounts and let tools read data without changing it. Turn on features as people learn to use them, and explain which tools are allowed. Banning AI can push people towards personal accounts.
 
 They also asked about a single view of all the AI processes staff had built. I did not know of a platform that offered one. Usage counts do not explain what people are doing. Seeing the content of their work also raises questions about privacy. Talk to frequent users to find useful ideas, and to those who avoid AI to understand why.
 
