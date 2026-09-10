@@ -6,6 +6,8 @@ image: /assets/img/webinar-mosaic.jpg
 image_portrait: false
 permalink: /webinar/
 redirect_from: [/webinar]
+kit_tag: webinar19
+webinar_date: "2026-10-08T14:00:00+01:00"
 ---
 
 <div class="mb-12">
