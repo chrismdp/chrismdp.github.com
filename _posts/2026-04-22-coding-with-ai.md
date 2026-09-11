@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "How I Use AI to Code"
-date: 2026-04-22 12:00:00 +00:00
-permalink: /coding-with-ai/
+title: How I Use AI to Code
+date: 2026-04-22 12:00:00+00:00
+permalink: /coding-with-ai-april-2026/
 replaces: /coding-with-ai-march-2025/
 categories:
 - development
@@ -11,6 +11,7 @@ categories:
 - craftsmanship
 image: /assets/img/ai-coding-superbikes-motif.jpg
 infographic: /assets/img/ai-coding-superbikes-infographic.jpg
+archived: true
 ---
 
 If you are still tied to your IDE, whether Cursor or Copilot, you are working a year behind. Coding turned out to be AI's home territory. The best tooling has moved out of the editor and onto the command line, and the senior engineer's job is to train the AI, not review its output.
