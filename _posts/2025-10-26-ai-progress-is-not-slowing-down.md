@@ -1,142 +1,97 @@
 ---
 layout: post
-title: "It Feels Like AI Progress Is Slowing Down. It Isn't"
-date: 2025-10-26 09:00:00 +0000
-image: /assets/img/metr-time-horizon-chart.png
-image_caption: "AI's ability to complete longer software engineering tasks has been doubling roughly every seven months, reaching approximately two hours by 2025. Source: METR"
+title: AI Progress Is Accelerating. Here Is Why It Feels Slow
+date: 2026-09-11 07:00:00 +0000
+image: /assets/img/metr-time-horizons-2026.jpg
+image_caption: METR Time Horizon 1.1, updated May 2026. Human task duration at 50% predicted success. Estimates above 16 hours are omitted because METR considers them unreliable.
 categories:
 - ai
 - industry
 - analysis
-excerpt: "When GPT-5 launched, Reddit exploded with disappointment. One paying customer called it \"the biggest piece of garbage\" they had ever seen. Within hours, OpenAI's CEO held an emergency Q&A to defend the model's performance. Gary Marcus summarised it as \"overdue, overhyped and underwhelming.\" Technical founders declared AI had plateaued, engineering leaders dismissed the release as underwhelming, and some began abandoning their AI implementations entirely."
+excerpt: AI progress still compounds through longer task horizons, better tools and lower costs. See which measures leaders should track beyond benchmark hype.
+permalink: /ai-progress-is-not-slowing-down/
 ---
 
-When GPT-5 launched, Reddit exploded with disappointment. One paying customer called it "the biggest piece of garbage" they had ever seen. Within hours, OpenAI's CEO held an emergency Q&A to defend the model's performance. Gary Marcus summarised it as "overdue, overhyped and underwhelming." Technical founders declared AI had plateaued, engineering leaders dismissed the release as underwhelming, and some began abandoning their AI implementations entirely.
+AI progress is accelerating in the length of bounded technical tasks that systems can complete, whilst better tools and lower costs make more work worth delegating. It can feel slow because those gains are hard to see in a chat window. A more reliable answer to a familiar question rarely feels like a breakthrough, even when the system behind it can now finish work that defeated it last year.
 
-The same week, whilst people were declaring the end of progress, two measurement systems told a completely different story. METR published data showing GPT-5's time-horizon for completing software engineering tasks had doubled from roughly 30 minutes to 2 hours, continuing an exponential trend that has seen this metric double approximately every seven months since 2019.[^metr-blog] [^metr-paper] GDPval, which has industry experts blind-grade AI deliverables for actual tasks across 44 occupations, showed frontier models now approach expert quality, with performance more than doubling from GPT-4o to GPT-5 in roughly a year.[^gdpval] These were not 10% bumps on benchmark scores but fundamental expansions in the complexity and duration of work models could reliably complete.
-
-{% include shareable-quote.html text="The gap between what the data shows and what people believe is one of the most consequential misunderstandings in technology right now." %}
-
-The gap between what the data shows and what people believe is one of the most consequential misunderstandings in technology right now. Not because the sceptics are wrong to notice something feels different, but because they are measuring the wrong things at precisely the moment when incremental improvements are compounding into breakthrough capabilities. The question is not whether progress is happening but why it feels like it is not.
+The useful question is how much work AI can complete to an acceptable standard, at what cost, and with how much human help. A system can improve substantially and still cost your team more in review than it saves.
 
 <!--more-->
 
-## Why Progress Feels Like Stagnation
+## Why It Feels Slow
 
-### We Are Measuring the Wrong Things
+Fluent conversation quickly becomes ordinary. Once a model can write a plausible email or explain a piece of code, another improvement in either task is easy to miss. Expectations rise too: yesterday's impressive demo becomes today's minimum standard. GPT-5 launched on 7 August 2025, but no release date tells you whether a model makes your work easier.[^gpt5]
 
-Traditional benchmarks measure performance on maths problems, coding challenges, and academic exams. These metrics dominated AI evaluation for years because they were easy to track and compare. Each generation scored higher than the last (GPT-4 over GPT-3.5, GPT-5 over GPT-4), and progress looked linear and predictable.
+Progress also arrives unevenly. An agent can solve a difficult bug and then lose track of a requirement. If that requirement matters to you, the failure is real, even when the benchmark score improves. Disappointment with a particular tool is useful evidence about that tool, but a poor basis for judging the whole field.
 
-Then these benchmarks started saturating. Models began hitting ceiling effects on popular tests. The Massive Multitask Language Understanding benchmark, once a key measure of progress, now sees frontier models approaching human-expert scores with diminishing headroom for gains. Incremental improvements yield smaller returns. The obvious conclusion: we are hitting limits.
+The distinction matters when deciding whether to revisit a failed experiment. In [How to React to a New Frontier Model](/how-to-react-to-a-new-frontier-model/), I argue for testing familiar work alongside tasks you previously expected to fail. Keep the old failures: they give you something concrete to compare when a new model or a better setup arrives.
 
-This conclusion feels intuitive because some limits are genuinely real. We are approaching fundamental constraints that make continued scaling harder. The world contains roughly 300 trillion tokens of high-quality human text suitable for training. At current consumption rates, frontier models will exhaust essentially all available internet text by 2026-2032.[^data-limits] Training on AI-generated content to continue scaling leads to model collapse, where models progressively lose nuance and misperceive reality as errors compound across generations.[^model-collapse] The easy gains from throwing more data at larger models are genuinely diminishing.
+## Longer Task Horizons
 
-The critical mistake is conflating these real constraints on one dimension of progress (raw model scale and benchmark performance) with overall progress on what actually matters for deployment.
+METR's task horizon measures difficulty through human completion time. At the 50% horizon, an AI system is predicted to succeed half the time on tasks of that duration. The hours describe how long the human takes, rather than how long the AI runs.[^metr-paper]
 
-A model that scores 5% higher on coding tests but still makes the same frustrating mistakes in production does not feel meaningfully better. When developers shrug at new releases despite higher benchmark scores, they are not wrong to notice the disconnect. They are just measuring performance (test scores) instead of competence (reliable completion of real work).
+METR expanded its task suite in January 2026. Its current data puts several 2026 systems in the range of roughly five to six hours, with Claude Opus 4.6 around twelve hours. The latter estimate has especially wide uncertainty. The revised data fits a doubling roughly every four months for models released since 2023.[^metr-data] Compounding means each doubling adds more hours of task difficulty than the last. That is the acceleration I mean, without claiming that the doubling time keeps shrinking. The fitted rate depends on the period and task selection, so it is a poor timetable for predicting when a particular job becomes automated.[^metr-update]
 
-This is the **performance versus competence gap**, and it explains the blasé attitude perfectly.
+METR measures a model-plus-scaffold system. The scaffold supplies tools and manages the loop of instructions, actions and results. Tasks are bounded technical work, mainly software engineering, machine learning and cybersecurity, with clear success criteria. The human comparison is a skilled but low-context person, closer to a new contractor than a colleague who knows your systems.[^metr-current]
 
-GDPval and METR target competence directly. Can the model reliably complete messy, multi-step, real-world work? The answer, measured properly, shows steady exponential progress even as traditional benchmarks plateau.[^gdpval] [^metr-blog] [^metr-paper] We are hitting real limits on one type of scaling whilst experiencing exponential progress on another. We are measuring the wrong things and then declaring progress has stopped.
+Fifty per cent reliability is insufficient for unattended deployment in most workflows. METR warns that estimates above 16 hours are unreliable with its current task suite, so the chart excludes those points. These measurements do not establish that agents can replace a working day across arbitrary jobs.[^metr-current]
 
-### Breakthroughs Arrive as Thresholds, Not Smooth Curves
+For your team, a longer reliable task horizon means an agent can carry a useful piece of work further before someone has to redirect it. Establish that horizon at the success rate your work requires. A benchmark measured at 50% gives you a reason to test, not a production acceptance standard.
 
-{% include shareable-quote.html text="The danger is walking away at 40% success, unaware that you are one reliability improvement from 60% success and production viability." %}
+## Tools That Catch Mistakes
 
-Consider an AI handling a workflow with ten sequential steps, each requiring an independent decision. If each step succeeds 70% of the time, the entire workflow completes successfully only about 3% of the time. Bump that per-step reliability to 85%, and suddenly the end-to-end success rate jumps to 20%. Push it to 95%, and you hit 60% completion.
+An agent that can run a test, inspect the failure and try a repair has a way to recover. Giving it access to the right files, a working environment and evidence of success can change what it finishes. METR's research links longer task horizons to improvements in reliability, recovery from mistakes, reasoning and tool use.[^metr-paper]
 
-This is not linear improvement but crossing a threshold where a workflow flips from "fails constantly" to "works most of the time."
+Verification needs more than asking the same model whether it did a good job. In March 2026, Anthropic described a coding setup with a separate evaluator that used the application and reported specific faults. The evaluator still needed tuning because it accepted weak work too readily. The authors also found that stronger models made some checks unnecessary overhead on easier tasks.[^harness]
 
-When reliability improvements push workflows from 40% success to 60% success, that might cross the viability threshold for production deployment. But it does not create obvious "this is so much smarter" moments in casual conversation. The model still makes mistakes. It just makes fewer of them in ways that matter for multi-step tasks.
+My own experience in [The Harness Is the Bottleneck](/the-harness-is-the-bottleneck/) shows how much the surrounding software matters. Clear tickets, continuation after a stopped run, and review all affect whether generated code becomes accepted work. A model comparison that ignores those parts can mistake a broken setup for a capability limit.
 
-This explains why companies often report sudden breakthroughs with AI tools. They are not experiencing smooth capability curves. They are hitting thresholds where compounding reliability crosses into viability for their specific workflow.
+That is also why [Prompt Evals Alone Are Useless](/prompt-evals-are-useless/) tests the wider system. Evals are repeatable checks of AI behaviour. A good answer in one call cannot prove that an application remembers earlier decisions or works when someone uses its screens. Test through to the outcome, then use the failures to improve the tools and the instructions.
 
-The danger is walking away at 40% success, unaware that you are one reliability improvement from 60% success and production viability. The incremental improvement feels pointless until it suddenly is not.
+## Cheaper Successful Work
 
-### The Improvements Are Invisible
+Falling prices let teams try work that previously cost too much. Epoch AI's 2025 analysis found sharp declines in the price of reaching fixed benchmark scores, though the rate varied widely by task.[^costs] It does not establish what a finished piece of work costs your business.
 
-The technical innovations driving threshold crossings are less about making models "smarter" in ways that show up in casual conversation, and more about making them reliably complete multi-step tasks. Progress has shifted from raw scale to engineering across the entire stack.
+A cheap model can spend the saving on retries, or leave expensive repairs for a person. A stronger model can cost more per call and less per accepted result. In [my August coding comparison](/the-harness-is-the-bottleneck/), the cheaper model's bill left out the premium model used to review and fix its work.
 
-**Test-time compute for reasoning.** Models now allocate "thinking time" before responding, using reinforcement learning to determine how to use that time effectively. Performance improves both with more training and with more time spent thinking.[^o1] Systems like Claude's "extended thinking" feature let you toggle a thinking budget to trade latency for reliability.[^extended-thinking] [^think-tool] But there is nuance here: research has identified five failure modes when models reason longer, including distraction by irrelevant details and overfitting to spurious patterns.[^reasoning-failures] Extended reasoning can help or hurt depending on task complexity. The innovation is not just allowing longer thought, but training systems to allocate reasoning time strategically.
+For a batch of comparable tasks, divide the total cost by the number of accepted completions. Include failed attempts, tools, human review and repair. Allocate setup and ongoing maintenance costs across a realistic volume of work. Hold the acceptance standard steady, so a falling bill cannot hide declining quality.
 
-**Agentic tool use and verification.** Instead of generating a complete answer in one go, models can now call external tools, check their work, and retry when something fails. This converts brittle text generation into plans plus actions plus verification loops. Research like Meta's Toolformer showed that many LLM limitations can be overcome not by scaling models larger, but by giving them access to calculators, search engines, and domain-specific APIs.[^toolformer] METR explicitly attributes time-horizon gains to improved tool use and error recovery.[^metr-paper] Retrieval-augmented generation systems pair models with external knowledge bases, addressing both knowledge cutoffs and hallucinations by letting models query information on the fly rather than memorising everything during training. The challenge is context pollution, where retrieving too much irrelevant information degrades performance, requiring careful filtering and relevance ranking.
+Lower costs and better recovery can reinforce each other. Cheaper attempts leave room for verification and another try, whilst better verification catches faults before they reach a person. This only pays off if the whole process produces useful work for less. A low token price alone cannot tell you that.
 
-**Self-verification and reflective reasoning.** Models are gaining the ability to critique and refine their own outputs. Self-consistency techniques generate multiple solutions and pick the most common result. More sophisticated systems like GeneAgent implement four-stage cycles: generation, self-verification against domain databases, correction, and summary.[^self-verification] This metacognitive approach catches hallucinations and enforces evidence-based claims, dramatically improving factual accuracy without requiring larger base models. The overhead is latency and compute, but selective application to high-stakes queries makes it practical.
+## Has AI Peaked?
 
-**Sparse expert routing.** Mixture-of-Experts architectures activate only a subset of parameters for each token, allowing much higher capacity at similar latency and cost. Recent MoE implementations achieve roughly 2.5× parameter efficiency, matching dense 7B model performance with only 2.8B active parameters per token.[^moe-efficiency] This decouples total model capacity from computational cost, enabling models to scale knowledge breadth without proportional runtime increases. Combined with techniques like Gemini 1.5's approach,[^gemini-moe] this delivers better competence at the same price point, which feels like no improvement if you are not tracking costs.
+The evidence does not support a broad claim that AI has peaked. Longer technical task horizons and improving systems give us concrete reasons to keep testing. They do not prove that progress will continue at the same rate, or that every new model improves every workflow.
 
-**Long-context capabilities.** Models can now maintain and retrieve information from increasingly large working sets, reducing failures on multi-document or multi-hour tasks. Position encoding advances like LongRoPE extend usable context towards the multi-million-token regime.[^longrope] Early models handled thousands of tokens; current systems manage hundreds of thousands. This enables new categories of work like analysing entire codebases or maintaining conversation state across hours-long sessions, though attention mechanisms' quadratic scaling still imposes practical limits.
+Some tasks remain poor candidates for delegation because success depends on unstated context, judgement or coordination with people. If the whole process fails to beat your existing approach at the required quality, defer investment. Retest when a relevant model or tool change addresses a recorded failure.
 
-**Infrastructure and efficiency improvements.** Speculative decoding delivers 2-3× faster generation whilst matching base model quality.[^speculative] PagedAttention increases throughput 2-4× through better memory management.[^paged-attention] FlashAttention-2 doubles attention speed whilst reducing memory usage.[^flash-attention] Low-precision arithmetic (8-bit and 4-bit quantization) cuts inference costs substantially without meaningful quality loss,[^nvfp4] making frontier models deployable on fewer GPUs. NVIDIA's H100 provides roughly 3-4× faster training and inference throughput compared to previous generation accelerators.[^h100-performance] Model distillation compresses large models into smaller ones whilst preserving most capability. These engineering advances make existing model architectures dramatically cheaper and faster to deploy, effectively extending the runway of current approaches.
+## What Leaders Can Track
 
-You cannot easily demo "look how much faster the attention kernel is" or "see how we route to sparse experts." These improvements show up in reliability, throughput, and cost, not in conversation quality. But together they push per-step reliability past the threshold where entire categories of work become viable. More importantly, they enable the exponential competence gains measured by GDPval and METR even as traditional benchmarks plateau.
+Choose a recurring task your team already knows how to judge and name the business outcome it serves. Keep a representative set of examples, including previous failures, and compare results during a pilot and after relevant model or tool changes. Record three measures together.
 
-### We Warped Our Sense of Time
+For example, test drafting a monthly supplier report from approved records. Define success before running it: every figure matches its source, required sections are present, and a reviewer finds no unsupported claims. Compare with the existing manual process. Time saved creates capacity for other work, but only becomes a cash saving if expenditure falls.
 
-The cadence of major releases has been remarkably consistent: GPT-3 in June 2020, GPT-4 in March 2022, GPT-5 in late 2024. Roughly two years between each.
+### Successful Task Horizon
 
-But that is not how it felt.
+Track the longest class of task the system completes at your required success rate. Use human completion time as a rough size measure, and record accepted and attempted task counts beside it. Keep the task mix comparable and record the model, tools and allowed human help.
 
-ChatGPT launched in November 2022, more than two years after GPT-3. It used GPT-3.5, which was not fundamentally more capable than GPT-3 but was packaged in an interface that made AI accessible to everyone. The cultural moment was so explosive that it compressed our sense of time. GPT-3 had been quietly improving for years. We just did not notice until ChatGPT made it undeniable.
+### Cost Per Successful Completion
 
-{% include shareable-quote.html text="We recalibrated expectations based on a compressed moment, then declared the natural cadence a slowdown." %}
+Divide the full cost of all attempts by accepted results. Include review and repair, and compare against the existing way of doing the work. Keep latency visible too: a cheap result that arrives too late can still be useless.
 
-This created a warped baseline. We expect ChatGPT-level shocks every few months. When steady two-year cycles continue delivering improvements, they feel slow by comparison. We recalibrated expectations based on a compressed moment, then declared the natural cadence a slowdown.
+### Human Review Required
 
-The novelty wore off. Once you have a fluent conversational AI, making it more reliable or faster or cheaper does not produce the same shock. But those "boring" improvements compound into order-of-magnitude shifts in what is economically viable.
+Record the minutes people spend checking, correcting and redirecting each task, including failed attempts. Separate completions that need routine approval from those that need substantial repair. Completing the same valuable work at the same standard with less cost or human effort is progress worth measuring, even before you delegate anything larger.
 
-## What Is Actually at Stake
+[^gpt5]: OpenAI, [Introducing GPT-5](https://openai.com/index/introducing-gpt-5/){:target="_blank"}, 7 August 2025.
 
-The perception gap shapes investment decisions, hiring strategies, and product roadmaps across the industry. When people believe AI has plateaued whilst it is actually crossing reliability thresholds into new categories of viable work, they abandon promising approaches one improvement away from viability. When they cargo-cult the bubble narrative, they swing from believing AI will solve everything to believing it will solve nothing. Both positions miss the actual story: incremental reliability improvements compounding into breakthrough capabilities for specific workflows.
+[^metr-paper]: METR, [Measuring AI Ability to Complete Long Software Tasks](https://arxiv.org/abs/2503.14499){:target="_blank"}. The paper defines the 50% horizon and discusses the capabilities associated with its growth.
 
-The companies making good decisions track the right metrics: not "does this feel smarter in casual conversation" but "can this reliably complete economically valuable multi-step tasks." Training compute for frontier models has grown roughly 4-5× per year through 2024,[^compute-trends] but algorithmic efficiency improvements have been halving the compute required approximately every eight months.[^algorithmic-progress] We are not in a holding pattern waiting for new models but in a phase where progress comes from engineering across the entire stack. GDPval and METR measure the combined effect, and both show exponential progress continuing.[^gdpval] [^metr-blog] [^metr-paper]
+[^metr-data]: METR's [Time Horizon 1.1 data](https://metr.org/assets/benchmark_results_1_1.yaml){:target="_blank"}, retrieved 11 September 2026. The dashboard's last listed update is 8 May 2026. The chart uses post-2023 estimates at or below 16 hours, with uncertainty intervals clipped at that limit. It does not plot the higher estimate for Claude Mythos Preview (early). The current fit since 2023 gives a doubling time of about 129 days and excludes central estimates above 16 hours.
 
-## What This Means for You
+[^metr-update]: METR, [Time Horizon 1.1](https://metr.org/blog/2026-1-29-time-horizon-1-1/){:target="_blank"}, 29 January 2026. The update expanded the suite to 228 tasks and explains why changing the task mix changes the fitted trend. Most longer tasks still used estimated human durations.
 
-Stop expecting revolutionary leaps every quarter. Start tracking time-horizons for economically valuable work in your domain. Deploy AI where threshold effects have already crossed viability. Monitor adjacent categories where another 20% reliability improvement might flip workflows from broken to viable.
+[^metr-current]: METR, [Task-Completion Time Horizons of Frontier AI Models](https://metr.org/time-horizons/){:target="_blank"}, checked 11 September 2026. The methodology and FAQ explain scaffolds, human baselines, domain limits and the warning above 16 hours.
 
-The perception gap itself is the story. We are living through continuous exponential improvement in AI's ability to complete real work whilst simultaneously feeling like progress has stalled because casual conversations do not feel dramatically different. GDPval shows expert-level work quality more than doubling in a year, METR shows task time-horizons doubling every seven months, and infrastructure innovations are pushing reliability past viability thresholds. But these improvements arrive as invisible systems work and threshold crossings rather than flashy conversational breakthroughs.
+[^harness]: Anthropic, [Harness design for long-running application development](https://www.anthropic.com/engineering/harness-design-long-running-apps){:target="_blank"}, 24 March 2026. These are the authors' experiments, rather than an independent estimate of productivity gains.
 
-Progress has not slowed down. It crossed a threshold where the improvements that matter most are invisible to casual observation but transformative for production deployment. The question is whether you are measuring the right things to see it.
-
-[^gdpval]: See [Measuring the performance of our models on real-world tasks](https://openai.com/index/gdpval/){:target="_blank"}. GDPval evaluation framework showing frontier models approaching expert quality with >2× improvement from GPT-4o to GPT-5.
-
-[^metr-blog]: See [Measuring AI Ability to Complete Long Tasks](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/). Blog post introducing time-horizon measurement showing exponential growth in task completion capability.
-
-[^metr-paper]: See [Measuring AI Ability to Complete Long Tasks](https://arxiv.org/abs/2503.14499){:target="_blank"}. Academic paper showing time-horizon doubling approximately every 7 months, driven by reliability, error recovery, reasoning, and tool use.
-
-[^o1]: [Learning to reason with LLMs](https://openai.com/index/learning-to-reason-with-llms/){:target="_blank"}. OpenAI o1 technical report showing performance improvements with both more training and test-time compute ("thinking time").
-
-[^extended-thinking]: [Claude's extended thinking](https://www.anthropic.com/news/visible-extended-thinking){:target="_blank"}. Introduction of thinking budget toggle in Claude 3.7 Sonnet, trading latency for reliability.
-
-[^think-tool]: [The "think" tool: Enabling Claude to stop and think](https://www.anthropic.com/engineering/claude-think-tool){:target="_blank"}. Technical explanation of explicit thinking tool for reducing mistakes during multi-step reasoning.
-
-[^speculative]: [Looking back at speculative decoding](https://research.google/blog/looking-back-at-speculative-decoding/){:target="_blank"}. Retrospective on speculative decoding achieving 2-3× faster inference without quality loss.
-
-[^flash-attention]: [FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning](https://arxiv.org/abs/2307.08691){:target="_blank"}. Paper describing ~2× faster attention kernels with improved memory efficiency.
-
-[^paged-attention]: [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180){:target="_blank"}. vLLM paper showing 2-4× throughput improvements via KV-cache paging and sharing.
-
-[^longrope]: [LongRoPE: Extending LLM Context Window Beyond 2 Million Tokens](https://arxiv.org/html/2402.13753v1){:target="_blank"}. Position encoding technique extending usable context to multi-million-token regime.
-
-[^gemini-moe]: [Introducing Gemini 1.5, Google's next-generation AI model](https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/){:target="_blank"}. Announcement of Gemini 1.5 using Mixture-of-Experts for efficient training and serving.
-
-[^algorithmic-progress]: [Algorithmic Progress in Language Models](https://arxiv.org/pdf/2403.05812){:target="_blank"}. Epoch AI research showing algorithmic efficiency improvements halving required compute approximately every 8 months.
-
-[^compute-trends]: [Machine Learning Trends](https://epoch.ai/trends){:target="_blank"}. Dataset tracking frontier training compute growth at roughly 4-5× per year through 2024.
-
-[^nvfp4]: [Introducing NVFP4 for Efficient and Accurate Low-Precision Inference](https://developer.nvidia.com/blog/introducing-nvfp4-for-efficient-and-accurate-low-precision-inference/){:target="_blank"}. Technical introduction to 4-bit inference on Blackwell-generation GPUs with near-FP8 quality.
-
-[^data-limits]: [Will we run out of data? Limits of LLM scaling based on human-generated data](https://epoch.ai/blog/will-we-run-out-of-data-limits-of-llm-scaling-based-on-human-generated-data){:target="_blank"}. Analysis estimating ~300 trillion tokens of quality training data, potentially exhausted by frontier models between 2026-2032.
-
-[^model-collapse]: [AI models collapse when trained on recursively generated data](https://www.nature.com/articles/s41586-024-07566-y){:target="_blank"}. Research demonstrating how training on AI-generated content causes models to progressively lose distributional accuracy and nuance.
-
-[^reasoning-failures]: [Longer reasoning can mislead LLMs](https://www.anthropic.com/research/longer-reasoning-can-mislead){:target="_blank"}. Study identifying five failure modes when models reason longer, including distraction and spurious pattern overfitting.
-
-[^toolformer]: [Toolformer: Language Models Can Teach Themselves to Use Tools](https://arxiv.org/abs/2302.04761){:target="_blank"}. Meta research showing LLM limitations addressed through API access to calculators, search engines, and domain tools rather than scaling alone.
-
-[^self-verification]: [GeneAgent: Self-verification in LLM-based automatic literature mining for gene function](https://www.nature.com/articles/s41467-024-52851-2){:target="_blank"}. System implementing generation-verification-correction cycles to catch hallucinations and enforce evidence-based claims in biomedical domain.
-
-[^moe-efficiency]: [Mixture-of-Experts Meets Instruction Tuning](https://arxiv.org/abs/2305.14705){:target="_blank"}. Research showing MoE achieving ~2.5× parameter efficiency, matching dense 7B performance with 2.8B active parameters.
-
-[^h100-performance]: [NVIDIA H100 Tensor Core GPU](https://www.nvidia.com/en-us/data-center/h100/){:target="_blank"}. Technical specifications showing 3-4× training and inference throughput improvements over A100 generation.
+[^costs]: Epoch AI, [LLM inference prices have fallen rapidly but unequally across tasks](https://epoch.ai/data-insights/llm-inference-price-trends){:target="_blank"}, 12 March 2025. This study tracks prices at fixed benchmark performance levels, rather than total costs of deployed workflows.
