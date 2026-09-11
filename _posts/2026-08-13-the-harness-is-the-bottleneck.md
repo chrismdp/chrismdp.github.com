@@ -19,6 +19,8 @@ It does not beat the best premium coding models: it is slower, stops early more 
 
 By harness I mean everything around the model that turns a nearly finished attempt into work I will merge: the ticket that says what done looks like, the tests that prove it, the loop that lets a stopped run carry on, the isolation that keeps one attempt from standing on top of another, and the review at the end. The model writes the code, but the harness decides whether that code ever lands.
 
+{% include inline-image.html src="/assets/img/treat-agent-blocks-as-context-failures.jpg" alt="One manager becomes overwhelmed by agents asking repeated questions, while another gives agents a guide explaining how decisions are made." align="right" width="40%" %}
+
 Over the past few months I have learned a lot about running [Ralph loops](/running-ralph-loops-is-easy/), and got more proactive at breaking work into tickets a worker can pick up and finish without me. I am currently using GitHub issues for this and running loops with Opus as the orchestrator, fanning out to models of varying strength depending on task complexity.[^delegate]
 
 Throughput is the obvious gain, but any ticket written to be delegated also doubles as an A/B test. The same piece of work can go to several models at once, run in parallel, and be judged on what comes back.
