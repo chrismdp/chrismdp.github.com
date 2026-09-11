@@ -64,6 +64,8 @@ Astra built me a review form with the whole map and enlarged regions. It let me 
 
 I wrote about that in [Prompt Evals Alone Are Useless](/prompt-evals-are-useless/). What struck me was how much of the review process the AI had built for me. I was giving it direction about what good meant, and it was finding ways to make that judgement possible. I am editing this blog post in the same way: filling in a form with comments for the AI on each paragraph.
 
+{% include inline-image.html src="/assets/img/coding-with-ai-blog-review.jpg" alt="The review form for this post, showing its title, feedback fields and an Edit or comment control beneath the opening paragraph." align="center" width="100%" link="/assets/img/coding-with-ai-blog-review.jpg" caption="The form I used to review the post you are reading." %}
+
 ## Ensuring Good Code Gets Written
 
 Years ago, I remember [Jeffrey Fredrick](https://www.linkedin.com/in/jfredrick/){:target="_blank"} telling me that my job as a CTO was not to make good decisions, but to ensure that good decisions were made. That is how I now feel about coding. My job is not to write good code. It is to ensure that good code is written.
