@@ -10,8 +10,8 @@ categories:
 - code
 - craftsmanship
 image: "/assets/img/ai-coding-superbikes-motif.jpg"
-excerpt: AI writes the code. I direct the work through Fable, Astra, rapid design
-  feedback and tests of the whole system. This is how my coding workflow changed.
+excerpt: AI writes the code. I direct the work through Fable High and Astra High,
+  rapid design feedback and tests of the whole system. This is how my coding workflow changed.
 ---
 
 Coding with AI feels like the wrong title for these articles now. I am not coding with AI any longer. The AI is doing the coding, and I am doing the direction.
@@ -22,7 +22,7 @@ This is a bigger change than getting faster at writing software. I spend my time
 
 ## A Conversation With the Codebase
 
-The Fable model in Claude Code and Astra in Codex are now my default workhorses for code. It is expensive: I am running the top-end subscription plans for both. But switching between them and asking them to review each other's work has been the biggest unlock I have experienced so far. I can keep building with one, then have the other investigate what it has done and challenge its decisions.
+Fable High and Astra High thinking are now my default workhorses for code: Fable High in Claude Code, Astra High in Codex. It is expensive: I am running the top-end subscription plans for both. But switching between them and asking them to review each other's work has been the biggest unlock I have experienced so far. I can keep building with one, then have the other investigate what it has done and challenge its decisions.
 
 With these models, I need far fewer tokens and review steps to get the work finished. That saves me time and attention, which is valuable enough to justify the cost.
 
