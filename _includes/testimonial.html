@@ -33,8 +33,8 @@
 {% else %}
 <div class="bg-white rounded-lg p-6 shadow-md">
   <div class="flex items-center mb-4">
-    {% if include.linkedin and include.linkedin != "" %}<a href="{{ include.linkedin }}" target="_blank" style="text-decoration: none;" class="flex items-center">{% else %}<div class="flex items-center">{% endif %}
-      {% if include.image and include.image != "" %}<img src="/assets/img/testimonials/{{ include.image }}" alt="{{ include.name }}" class="w-12 h-12 rounded-full mr-4 object-cover">{% endif %}
+    {% if include.linkedin and include.linkedin != "" %}<a href="{{ include.linkedin }}" target="_blank" style="text-decoration: none;" class="flex gap-4 items-center">{% else %}<div class="flex gap-4 items-center">{% endif %}
+      {% if include.image and include.image != "" %}<img src="/assets/img/testimonials/{{ include.image }}" alt="{{ include.name }}" class="w-12 h-12 shrink-0 rounded-full object-cover" style="height: 3rem; margin: 0;">{% endif %}
       <div>
         <div class="font-semibold">{{ include.name }}</div>
         <div class="text-sm text-brand-black/70">{{ include.role }}</div>
