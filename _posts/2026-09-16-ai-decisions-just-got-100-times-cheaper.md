@@ -11,7 +11,7 @@ categories:
 - agents
 - leadership
 description: "TypeSafe's Jev is a new class of model that decides instead of talking. What that means for anyone building AI products, and for the leaders paying for them."
-excerpt: "Prompt engineering has always been rubbish. I wrote early last year about how it is the punch card era of programming all over again. If AI was so good at writing its own text, why could it not write the prompts as well?"
+excerpt: "Prompt engineering has always been rubbish. Now there is a way to take the current solutions even further."
 ---
 
 Prompt engineering has always been rubbish. I wrote early last year about how it is [the punch card era of programming all over again](/beyond-prompting/). If AI was so good at writing its own text, why could it not write the prompts as well?
