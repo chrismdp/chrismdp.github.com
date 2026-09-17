@@ -11,10 +11,10 @@ categories:
 - agents
 - leadership
 description: "TypeSafe's Jev is a new class of model that decides instead of talking. What that means for anyone building AI products, and for the leaders paying for them."
-excerpt: "I tried it. Here are the results. Prompt engineering has always been rubbish, and now there is a way to take the current solutions even further."
+excerpt: "A new kind of model is out that makes decisions instead of writing text. I tried it. Here are the results."
 ---
 
-*Update, 17 September 2026: I tried it. [Here are the results](#i-tried-it).*
+A new kind of model is out. It makes decisions instead of writing text, it answers in well under a second, and it costs a hundred times less than the models you are used to. I tried it on everything I am building, and [the results are at the bottom of this post](#i-tried-it). First, some background on why it matters.
 
 Prompt engineering has always been rubbish. I wrote early last year about how it is [the punch card era of programming all over again](/beyond-prompting/). If AI was so good at writing its own text, why could it not write the prompts as well?
 
