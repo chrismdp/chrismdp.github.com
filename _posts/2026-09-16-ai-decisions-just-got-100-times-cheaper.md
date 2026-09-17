@@ -58,19 +58,11 @@ This is very powerful for systems that mix AI with regular code. We can hit any 
 
 Jev is behind a waitlist for now, but the approach is not exclusive to TypeSafe. Qwen's open reranker models on Hugging Face already answer a yes or no question with a probability read straight from the model rather than generated as text, and more will follow.[^qwen]
 
-## Where I Will Use It
+## I Tried It
 
 In the [text adventure I am building](/prompt-evals-are-useless/), a change in the world has to be checked against every subsystem that might care about it, and a decision model can work out which ones need updating and whether an LLM needs to run at all. For [my email triage](/stop-prompting-start-briefing/), I can ask a batch of questions about importance, urgency and safety, including who a message concerns, quickly and cheaply, and discard anything that is not relevant before an expensive model ever sees it. For batch jobs like the recipe importer or [meal generator](/case-studies/gpt-meal-generator/) at Cherrypick, choosing between a few hundred ingredient types when reading a recipe, and deciding how complex it is to cook, is exactly this shape.
 
-## Decisions Just Got Cheaper
-
-AI engineers need to learn it. Chief executives and their leadership teams need to know that simple AI decisions on large amounts of data potentially got hundreds of times cheaper overnight. That matters for any content filtering, triaging or routing your teams do, whether you thought it was too expensive to hand to AI, or whether people are currently doing it by pasting things into Claude.
-
-Within six to twelve months, once more models are trained this way, this kind of decision model will be in every custom AI product, and you can bet today that the frontier labs are either scrambling to build their own or scrambling to buy TypeSafe.
-
-## I Tried It
-
-*Update, 17 September 2026.* As expected, there are a ton of little places I can apply this to the agent builds I am running at the moment: the successor to my Telegram bots, which is more productionised and which I will talk more about soon, and the text adventure I have been working on in the background, so I tried it. I got Fable to read both codebases, work out from the documentation where a decision model could stand in for a decision an LLM makes today, and run side by side tests against Claude Sonnet 5 and DeepSeek V4.1 Flash using the [eval setup I already had in place](/prompt-evals-are-useless/). Across email triage, the game's action interpreter, recipe classification, my link reading agent and ten public benchmarks, that added up to around sixteen thousand decisions. Here is what I found.
+As expected, there are a ton of little places to apply this in the agent builds I am running at the moment, including the successor to my Telegram bots, which is more productionised and which I will talk more about soon. So I tried it. I got Fable to read both codebases, work out from the documentation where a decision model could stand in for a decision an LLM makes today, and run side by side tests against Claude Sonnet 5 and DeepSeek V4.1 Flash using the [eval setup I already had in place](/prompt-evals-are-useless/). Across email triage, the game's action interpreter, recipe classification, my link reading agent and ten public benchmarks, that added up to around sixteen thousand decisions. Here is what I found.
 
 It is good at closed lists. Sorting ingredient lines into twenty supermarket categories, it agreed with the reference answer 99% of the time, just ahead of Sonnet. It picked the right country from capital, region, languages and currency alone at every size up to the full list of 240, and given a made up list of a thousand shop orders, each with a status, it answered "is this order delivered" for every one of them in a single call, in just over a second, without a single mistake. On the ten public benchmarks it matched DeepSeek Flash and Sonnet 5 within a point or two, and beat both on toxicity. I tried injecting instructions into the input, and it seemed safe. French, German and Japanese scored the same as English. The probabilities are honest. When it is unsure it says so, and when it is confident it is nearly always right. The LLMs claimed near certainty on almost everything, including a fifth of the emails they dismissed that I needed to see. On email triage itself it was about as good as DeepSeek Flash and Sonnet at deciding what needed my attention: it agreed with my current setup three times in four where they managed four in five, and where it disagreed, an independent judge sided with it more often than not. That is useful. It can take the clear two thirds of my inbox in under a second and hand the rest to a bigger model.
 
@@ -81,6 +73,12 @@ It is still a model. It makes nuanced decisions, it gets some of them wrong, and
 On reliability it held at ten requests a second for five minutes with no errors and every answer under a second. At twenty a second it started to fall over, with one request in ten taking eight seconds or more and a handful failing outright. Fine for the jobs I have in mind, and not something I would put a queue of a million items behind today.
 
 I am not going to deploy it just yet, because it is one service and it has been public for a couple of days. I am keeping a very close eye on the technology in general, and when more than one provider offers a model like this, especially somewhere like OpenRouter, I am all for it.
+
+## Decisions Just Got Cheaper
+
+AI engineers need to learn it. Chief executives and their leadership teams need to know that simple AI decisions on large amounts of data potentially got hundreds of times cheaper overnight. That matters for any content filtering, triaging or routing your teams do, whether you thought it was too expensive to hand to AI, or whether people are currently doing it by pasting things into Claude.
+
+Within six to twelve months, once more models are trained this way, this kind of decision model will be in every custom AI product, and you can bet today that the frontier labs are either scrambling to build their own or scrambling to buy TypeSafe.
 
 [^dspy]: [DSPy](https://dspy.ai){:target="_blank"} is a framework from Stanford for programming language models rather than prompting them. You declare what each step should do, give it examples, and it writes and improves the prompts for you.
 
