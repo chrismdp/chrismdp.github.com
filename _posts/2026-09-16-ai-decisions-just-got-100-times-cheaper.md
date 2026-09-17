@@ -11,8 +11,10 @@ categories:
 - agents
 - leadership
 description: "TypeSafe's Jev is a new class of model that decides instead of talking. What that means for anyone building AI products, and for the leaders paying for them."
-excerpt: "Prompt engineering has always been rubbish. Now there is a way to take the current solutions even further."
+excerpt: "I tried it. Here are the results. Prompt engineering has always been rubbish, and now there is a way to take the current solutions even further."
 ---
+
+*Update, 17 September 2026: I tried it. [Here are the results](#i-tried-it).*
 
 Prompt engineering has always been rubbish. I wrote early last year about how it is [the punch card era of programming all over again](/beyond-prompting/). If AI was so good at writing its own text, why could it not write the prompts as well?
 
@@ -65,6 +67,20 @@ In the [text adventure I am building](/prompt-evals-are-useless/), a change in t
 AI engineers need to learn it. Chief executives and their leadership teams need to know that simple AI decisions on large amounts of data potentially got hundreds of times cheaper overnight. That matters for any content filtering, triaging or routing your teams do, whether you thought it was too expensive to hand to AI, or whether people are currently doing it by pasting things into Claude.
 
 Within six to twelve months, once more models are trained this way, this kind of decision model will be in every custom AI product, and you can bet today that the frontier labs are either scrambling to build their own or scrambling to buy TypeSafe.
+
+## I Tried It
+
+*Update, 17 September 2026.* As expected, there are a ton of little places I can apply this to the agent builds I am running at the moment: the successor to my Telegram bots, which is more productionised and which I will talk more about soon, and the text adventure I have been working on in the background, so I tried it. I got Fable to read both codebases, work out from the documentation where a decision model could stand in for a decision an LLM makes today, and run side by side tests against Claude Sonnet 5 and DeepSeek V4.1 Flash using the [eval setup I already had in place](/prompt-evals-are-useless/). Across email triage, the game's action interpreter, recipe classification, my link reading agent and ten public benchmarks, that added up to around sixteen thousand decisions. Here is what I found.
+
+It is good at closed lists. Sorting ingredient lines into twenty supermarket categories, it agreed with the reference answer 99% of the time, just ahead of Sonnet. It picked the right country from capital, region, languages and currency alone at every size up to the full list of 240, and given a made up list of a thousand shop orders, each with a status, it answered "is this order delivered" for every one of them in a single call, in just over a second, without a single mistake. On the ten public benchmarks it matched DeepSeek Flash and Sonnet 5 within a point or two, and beat both on toxicity. I tried injecting instructions into the input, and it seemed safe. French, German and Japanese scored the same as English. The probabilities are honest. When it is unsure it says so, and when it is confident it is nearly always right. The LLMs claimed near certainty on almost everything, including a fifth of the emails they dismissed that I needed to see. On email triage itself it was about as good as DeepSeek Flash and Sonnet at deciding what needed my attention: it agreed with my current setup three times in four where they managed four in five, and where it disagreed, an independent judge sided with it more often than not. That is useful. It can take the clear two thirds of my inbox in under a second and hand the rest to a bigger model.
+
+It is bad at anything that needs the rules read. In the game, with one untuned prompt, it called every attack and every persuasion a risky roll, and it asked for clarification far more often than it should. That may be my prompt rather than the model. I gave every model one prompt and no tuning round, so treat the game numbers as a first pass. Unsurprisingly, it cannot multiply: "is 17 times 23 more than 400" came out right three times in four, with a bias to no, so do computation in code. Its confidence does not fall when the input is nonsense. I gave it a weather report where a customer complaint should have been and asked whether the customer wanted a refund, a replacement or an explanation, and it picked explanation at 0.99. That was my mistake as much as its. There was no option for "this is not a complaint", and it will not invent one, so give it every option it needs to make a good decision, including the one that says the question does not apply. And there are some hard limits: at most 255 options in a choice, ten levels on a score, and about 32,000 tokens of context.
+
+It is still a model. It makes nuanced decisions, it gets some of them wrong, and better models will make better decisions whatever the speed and the price. The important point is that this is the first model of its type. There will be more of them, and more powerful ones, able to make these kinds of decisions far better than this one can. A fair comparison gives each model a couple of rounds of revision before you judge it, and I would expect the game results in particular to move.
+
+On reliability it held at ten requests a second for five minutes with no errors and every answer under a second. At twenty a second it started to fall over, with one request in ten taking eight seconds or more and a handful failing outright. Fine for the jobs I have in mind, and not something I would put a queue of a million items behind today.
+
+I am not going to deploy it just yet, because it is one service and it has been public for a couple of days. I am keeping a very close eye on the technology in general, and when more than one provider offers a model like this, especially somewhere like OpenRouter, I am all for it.
 
 [^dspy]: [DSPy](https://dspy.ai){:target="_blank"} is a framework from Stanford for programming language models rather than prompting them. You declare what each step should do, give it examples, and it writes and improves the prompts for you.
 
