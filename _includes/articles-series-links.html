@@ -1,0 +1,12 @@
+<section aria-labelledby="browse-series" class="my-10 border-y border-brand-light-blue/30 py-6">
+  <h2 id="browse-series" class="text-2xl font-heading font-bold" style="margin-top: 0;">Explore a series</h2>
+  <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3" style="list-style: none; padding-left: 0;">
+    {% for entry in site.data.article_collections %}
+      {% assign collection = entry[1] %}
+      {% unless collection.archive %}
+      <li style="margin: 0;"><a href="{{ collection.url | relative_url }}">{{ collection.name }}</a></li>
+      {% endunless %}
+    {% endfor %}
+  </ul>
+  <p style="margin-bottom: 0;"><a href="{{ '/series/' | relative_url }}">All series, including the archive →</a></p>
+</section>
