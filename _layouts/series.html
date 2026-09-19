@@ -14,7 +14,6 @@ layout: page
 {% unless collection.oldest_first %}{% assign collection_posts = collection_posts | reverse %}{% endunless %}
 <section aria-labelledby="series-articles">
   <h2 id="series-articles">Articles in the series</h2>
-  <p>{% if collection.oldest_first %}Earliest first.{% else %}Latest first.{% endif %}</p>
   <div class="divide-y divide-brand-light-blue/30">
     {% assign now_time = site.time | date: "%s" | plus: 0 %}
     {% for post in collection_posts %}
