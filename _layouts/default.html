@@ -118,8 +118,11 @@
          });
       </script>
       
+      <!-- RightMessage visibility + form-submission analytics (must load before the RightMessage snippet below) -->
+      <script src="{{ site.baseurl }}/assets/js/rm-analytics.js"></script>
+
       <!-- RightMessage -->
-      <script type="text/javascript"> 
+      <script type="text/javascript">
          (function(p, a, n, d, o, b, c) {
          window.RM = window.RM || [];
          o = n.createElement('script'); o.type = 'text/javascript'; o.async = true; o.src = 'https://t.rightmessage.com/'+p+'.js';
