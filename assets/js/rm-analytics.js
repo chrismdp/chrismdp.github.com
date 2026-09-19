@@ -21,10 +21,31 @@
  *                         question screen).
  *   rm_form_submitted  - once per widget+offer, on RightMessage's own
  *                         lead-capture success signal, before it redirects.
+ *   rm_newsletter_experiment_assigned - once per page, the moment RightMessage's
+ *                         bus reports the visitor is on the known native
+ *                         variant of the newsletter popup headline test (see
+ *                         below), regardless of whether the popup has been
+ *                         shown on screen yet. This is an assignment event,
+ *                         not a visibility event.
  *
  * Property allowlist: widget_id, widget_type, flow_id, offer_id, is_newsletter,
  * experiment_id, experiment_variant, page_path. Never email, name, form
  * answers, or the raw RightMessage payload.
+ *
+ * Newsletter popup headline experiment bridge: for the one native
+ * RightMessage split test that PostHog needs to analyse (pid 1563064411, on
+ * widget wdg_trpf409s / offer ofr_VqL5OY0S), every rm_offer_viewed,
+ * rm_form_submitted and rm_newsletter_experiment_assigned event for that
+ * exact widget+offer also carries an explicit
+ * "$feature/newsletter-popup-headline" property, set to RightMessage's own
+ * variant id (never PostHog's getFeatureFlag - this is a read of RM's
+ * existing assignment, not a call into PostHog's own flag/experiment
+ * evaluation). PostHog treats a "$feature/<key>" event property as an
+ * explicit override of that flag's value for the event, taking precedence
+ * over whatever PostHog would otherwise have assigned. Only fires once the
+ * variant is one of the two known native variant ids - an unassigned or
+ * stale/unknown value is left off, never guessed as control. No other offer
+ * or experiment ever gets this property.
  *
  * RightMessage's own PostHog integration (RM dashboard > Settings >
  * Integrations, config.settings.integrations) sends a differently-shaped
@@ -44,7 +65,16 @@
   // active split-test clone).
   var NEWSLETTER_OFFER_IDS = ["ofr_xi6l3r4n", "ofr_VqL5OY0S"];
 
+  // The one native RightMessage split test bridged to a PostHog feature
+  // flag - see the file header comment above.
+  var NEWSLETTER_EXPERIMENT_WIDGET_ID = "wdg_trpf409s";
+  var NEWSLETTER_EXPERIMENT_OFFER_ID = "ofr_VqL5OY0S";
+  var NEWSLETTER_EXPERIMENT_PID = "1563064411";
+  var NEWSLETTER_EXPERIMENT_FEATURE_KEY = "newsletter-popup-headline";
+  var NEWSLETTER_EXPERIMENT_KNOWN_VARIANTS = ["control", "var_newsletter_benefit_202609"];
+
   var widgetState = {}; // widgetId -> { el, visible, currentOffer, widgetViewedSent, offerViewedSent: {offerId:true}, formSubmittedSent: {offerId:true} }
+  var newsletterExperimentAssignedSent = false; // once per page, not per widget - there is only one such experiment
   var splitTestIndex = []; // [{resourceType, resourceId, pid, variantIds:[...]}]
   var widgetMeta = {}; // widgetId -> { type, flowId }
   var observedElements = typeof WeakSet === "function" ? new WeakSet() : null;
@@ -109,6 +139,12 @@
   function recheckWidget(widgetId) {
     var state = widgetState[widgetId];
     if (!state || !state.el) return;
+    // Assignment is not a visibility event - attempt it (and retry it if an
+    // earlier attempt could not reach PostHog) on every recheck, ahead of
+    // the visibility gate below.
+    if (state.currentOffer) {
+      maybeEmitNewsletterExperimentAssigned(widgetId, state.currentOffer.offerId, state.currentOffer.flowId);
+    }
     state.visible = computeVisibility(state.el);
     if (state.visible) {
       maybeEmitWidgetViewed(widgetId);
@@ -205,6 +241,19 @@
     return getExperimentFields("flow", flowId);
   }
 
+  // Only for the one exact widget+offer+experiment this bridge covers, and
+  // only once RightMessage has assigned one of its two known native
+  // variants - never for any other offer/experiment, and never a guess.
+  function newsletterExperimentFeatureProps(widgetId, offerId, experimentFields) {
+    if (widgetId !== NEWSLETTER_EXPERIMENT_WIDGET_ID) return {};
+    if (offerId !== NEWSLETTER_EXPERIMENT_OFFER_ID) return {};
+    if (!experimentFields || experimentFields.experiment_id !== NEWSLETTER_EXPERIMENT_PID) return {};
+    if (NEWSLETTER_EXPERIMENT_KNOWN_VARIANTS.indexOf(experimentFields.experiment_variant) === -1) return {};
+    var props = {};
+    props["$feature/" + NEWSLETTER_EXPERIMENT_FEATURE_KEY] = experimentFields.experiment_variant;
+    return props;
+  }
+
   // --- Building allowlisted properties ---
 
   function baseWidgetProps(widgetId, flowId) {
@@ -239,13 +288,35 @@
     props.is_newsletter = NEWSLETTER_OFFER_IDS.indexOf(offerId) !== -1;
     var experimentFields = getExperimentFieldsForOffer(offerId, props.flow_id);
     for (var k in experimentFields) props[k] = experimentFields[k];
+    var featureProps = newsletterExperimentFeatureProps(widgetId, offerId, experimentFields);
+    for (var fk in featureProps) props[fk] = featureProps[fk];
     if (capture("rm_offer_viewed", props)) state.offerViewedSent[offerId] = true;
+  }
+
+  // Fires the moment RightMessage's bus reports the visitor on the known
+  // native variant of the bridged experiment - before any visibility check,
+  // and once per page. If capture() could not reach PostHog (suppressed,
+  // not loaded yet, opted out), the page is not marked as sent, so the next
+  // recheckWidget() retries it; an unknown/unassigned variant is likewise
+  // never marked as sent, and never reported as control.
+  function maybeEmitNewsletterExperimentAssigned(widgetId, offerId, flowId) {
+    if (newsletterExperimentAssignedSent) return;
+    var experimentFields = getExperimentFieldsForOffer(offerId, flowId);
+    var featureProps = newsletterExperimentFeatureProps(widgetId, offerId, experimentFields);
+    if (!featureProps["$feature/" + NEWSLETTER_EXPERIMENT_FEATURE_KEY]) return;
+    var props = baseWidgetProps(widgetId, flowId);
+    props.offer_id = offerId;
+    props.is_newsletter = NEWSLETTER_OFFER_IDS.indexOf(offerId) !== -1;
+    for (var k in experimentFields) props[k] = experimentFields[k];
+    for (var fk in featureProps) props[fk] = featureProps[fk];
+    if (capture("rm_newsletter_experiment_assigned", props)) newsletterExperimentAssignedSent = true;
   }
 
   function handleOfferExposure(data) {
     var widgetId = data.widgetId;
     if (!widgetId) return;
     getState(widgetId).currentOffer = { offerId: data.offerId, flowId: data.offerFunnelId };
+    maybeEmitNewsletterExperimentAssigned(widgetId, data.offerId, data.offerFunnelId);
     recheckWidget(widgetId); // the DOM may not show the offer yet; recheckWidget re-verifies
   }
 
@@ -276,6 +347,8 @@
     props.is_newsletter = NEWSLETTER_OFFER_IDS.indexOf(offerId) !== -1;
     var experimentFields = getExperimentFieldsForOffer(offerId, props.flow_id);
     for (var k in experimentFields) props[k] = experimentFields[k];
+    var featureProps = newsletterExperimentFeatureProps(widgetId, offerId, experimentFields);
+    for (var fk in featureProps) props[fk] = featureProps[fk];
     // A real browser transport (sendBeacon) so the request has the best
     // chance of reaching the network before RightMessage's post-submission
     // redirect unloads the page.

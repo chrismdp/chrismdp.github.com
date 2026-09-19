@@ -43,6 +43,7 @@ ALLOWED_PROP_KEYS = {
     "experiment_id",
     "experiment_variant",
     "page_path",
+    "$feature/newsletter-popup-headline",
 }
 
 # RightMessage's own integration code calls other posthog methods too (e.g.
