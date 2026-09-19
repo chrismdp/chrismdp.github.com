@@ -84,6 +84,15 @@ def test_known_control_variant_gets_assignment_event_before_visible(context):
     assert not ph_events(page, "rm_offer_viewed"), "the widget is not on screen - only assignment fires"
 
 
+def test_assignment_does_not_wait_for_popup_dom_to_mount(context):
+    page = new_fixture_page(context, '<p>Article only</p>', extra_setup=popup_setup("control"))
+    emit_popup_offer_exposure(page)
+    settle(page)
+    assert len(ph_events(page, "rm_newsletter_experiment_assigned")) == 1
+    assert not ph_events(page, "rm_widget_viewed")
+    assert not ph_events(page, "rm_offer_viewed")
+
+
 def test_known_named_variant_gets_assignment_event_before_visible(context):
     page = new_fixture_page(context, POPUP_BODY_HIDDEN, extra_setup=popup_setup(POPUP_VARIANT_ID))
     emit_popup_offer_exposure(page)
