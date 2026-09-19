@@ -37,9 +37,9 @@ redirect_from:
     {% assign this_year = post.date | date: "%Y" %}
     {% if this_year != current_year %}
       {% assign current_year = this_year %}
-      <h3 class="text-xl font-heading font-semibold mt-6 mb-3 text-brand-black">{{ this_year }}</h3>
+<h3 class="text-xl font-heading font-semibold mt-6 mb-3 text-brand-black">{{ this_year }}</h3>
     {% endif %}
-    <p class="mb-1"><strong>{{ post.date | date: "%-d %b" }}</strong> - <a href="{{ post.url | prepend: site.baseurl }}" class="text-brand-deep-turquoise hover:text-brand-turquoise">{{ post.title }}</a></p>
+<p class="mb-1"><strong>{{ post.date | date: "%-d %b" }}</strong> - <a href="{{ post.url | prepend: site.baseurl }}" class="text-brand-deep-turquoise hover:text-brand-turquoise">{{ post.title }}</a></p>
   {% endif %}
 {% endfor %}
 
