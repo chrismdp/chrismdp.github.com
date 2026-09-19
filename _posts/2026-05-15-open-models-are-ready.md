@@ -5,6 +5,7 @@ date: 2026-05-15 07:00:00 +0000
 image: /assets/img/daily-driver-deepseek-barchart.jpg
 image_portrait: true
 series: "Software Factory"
+article_collection: open-models
 categories:
 - ai
 - open-source

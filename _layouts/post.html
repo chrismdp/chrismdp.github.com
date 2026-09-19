@@ -28,6 +28,8 @@ layout: default
   <div class="flex flex-col lg:flex-row lg:justify-between gap-8 lg:gap-0">
     <!-- Main content column -->
     <article class="flex-1 lg:max-w-2xl lg:pr-12">
+      {% include article-collection-banner.html %}
+
       <!-- Featured image -->
       {% if page.image %}
       {% if page.image_portrait %}

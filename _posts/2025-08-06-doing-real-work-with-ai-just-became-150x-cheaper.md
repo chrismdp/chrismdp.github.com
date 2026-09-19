@@ -3,6 +3,7 @@ layout: post
 title: "Doing Real Work with AI Just Became 150x Cheaper"
 date: 2025-08-06 10:00:00 +0000
 series: "Local AI"
+article_collection: open-models
 categories:
 - ai
 - economics

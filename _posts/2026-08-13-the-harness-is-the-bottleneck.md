@@ -5,6 +5,7 @@ date: 2026-08-13 07:00:00 +0000
 image: /assets/img/harness-bottleneck-stats.jpg
 image_portrait: true
 series: "Software Factory"
+article_collection: open-models
 categories:
 - ai
 - engineering

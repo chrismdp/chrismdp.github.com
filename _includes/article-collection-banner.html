@@ -1,0 +1,7 @@
+{% assign article_collection = site.data.article_collections[page.article_collection] %}
+{% if article_collection %}
+<aside aria-label="Article series" class="mb-8 rounded-lg border border-brand-light-blue/40 bg-brand-light-blue/10 px-5 py-4 text-base leading-relaxed text-brand-black">
+  This is part of the <strong>{{ article_collection.name }}</strong> series.
+  <a href="{{ article_collection.url | relative_url }}" class="font-medium text-brand-deep-turquoise underline underline-offset-4 hover:text-brand-black">See this page for more<span class="sr-only"> articles in the {{ article_collection.name }} series</span></a>.
+</aside>
+{% endif %}
