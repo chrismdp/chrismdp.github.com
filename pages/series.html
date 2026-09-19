@@ -1,0 +1,23 @@
+---
+layout: page
+title: Article Series
+excerpt: Follow a topic through a collection of related articles.
+permalink: /series/
+---
+{% for group in (1..2) %}
+<section class="mb-12" aria-labelledby="series-group-{{ group }}">
+  <h2 id="series-group-{{ group }}">{% if group == 1 %}AI and leadership{% else %}From the archive{% endif %}</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+  {% for entry in site.data.article_collections %}
+    {% assign collection = entry[1] %}
+    {% if group == 1 and collection.archive %}{% continue %}{% endif %}
+    {% if group == 2 and collection.archive == false %}{% continue %}{% endif %}
+    <article class="rounded-lg border border-brand-light-blue/40 bg-brand-light-blue/10 p-6">
+      <h3 style="margin-top: 0;"><a href="{{ collection.url | relative_url }}">{{ collection.name }}</a></h3>
+      <p style="margin-bottom: 0;">{{ collection.description }}</p>
+    </article>
+  {% endfor %}
+  </div>
+</section>
+{% endfor %}
+<p><a href="{{ '/articles/' | relative_url }}">Browse all articles</a></p>

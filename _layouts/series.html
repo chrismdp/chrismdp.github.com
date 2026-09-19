@@ -1,0 +1,30 @@
+---
+layout: page
+---
+{% assign collection = site.data.article_collections[page.collection_key] %}
+<nav aria-label="Series navigation" class="mb-8"><a href="{{ '/series/' | relative_url }}">Browse all series</a></nav>
+{% if collection.archive %}
+<p class="rounded-lg border border-brand-light-blue/40 bg-brand-light-blue/10 px-5 py-4">From the archive. These articles describe the tools and practices of their time.</p>
+{% endif %}
+{% if collection.series %}
+  {% assign collection_posts = site.posts | where: "series", collection.series | sort: "date" %}
+{% else %}
+  {% assign collection_posts = site.posts | where: "article_collection", page.collection_key | sort: "date" %}
+{% endif %}
+{% unless collection.oldest_first %}{% assign collection_posts = collection_posts | reverse %}{% endunless %}
+<section aria-labelledby="series-articles">
+  <h2 id="series-articles">Articles in the series</h2>
+  <p>{% if collection.oldest_first %}Earliest first.{% else %}Latest first.{% endif %}</p>
+  <div class="divide-y divide-brand-light-blue/30">
+    {% assign now_time = site.time | date: "%s" | plus: 0 %}
+    {% for post in collection_posts %}
+      {% assign post_time = post.date | date: "%s" | plus: 0 %}
+      {% if post_time > now_time %}{% continue %}{% endif %}
+    <article class="py-5 flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6">
+      <time datetime="{{ post.date | date: '%Y-%m-%d' }}" class="text-sm text-brand-black/60 sm:w-32 shrink-0">{{ post.date | date: "%-d %B %Y" }}</time>
+      <h3 style="margin: 0;" class="text-xl font-heading font-semibold"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{{ content }}

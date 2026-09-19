@@ -11,6 +11,9 @@
 {% if series_posts.size > 1 %}
 <aside class="series-bottom mt-12 mb-8 bg-brand-light-blue/10 rounded-lg p-6 border border-brand-light-blue/20">
   <p class="text-base font-semibold text-brand-black mb-4">This article is part of the <strong>{{ page.series }}</strong> series:</p>
+  {% for entry in site.data.article_collections %}
+    {% if entry[1].series == page.series %}<p class="text-sm mb-4"><a href="{{ entry[1].url | relative_url }}">Visit the {{ page.series }} series page</a></p>{% break %}{% endif %}
+  {% endfor %}
   <ul class="text-sm space-y-2">
     {% for post in series_posts %}
     <li>

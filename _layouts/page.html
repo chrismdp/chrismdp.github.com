@@ -22,7 +22,7 @@ layout: default
     {% if page.image_portrait %}
       <img alt='{{ page.title }}' src='{{ page.image }}' class='rounded-lg float-right ml-6 mb-6 w-1/2 max-w-md'>
     {% else %}
-      <img alt='{{ page.title }}' src='{{ page.image }}' class='rounded-lg mb-8 w-full'>
+      <img alt='{{ page.title }}' src='{{ page.image }}' class='rounded-lg mb-8 w-full'{% if page.collection_key %} style='max-height: 22rem; object-fit: contain;'{% endif %}>
     {% endif %}
   {% endif %}
 

@@ -8,6 +8,8 @@ redirect_from:
   - /all/
 ---
 
+[Browse articles by series](/series/)
+
 {% assign all_posts = site.posts %}
 {% assign latest_posts = "" | split: "" %}
 {% for post in all_posts limit: 20 %}

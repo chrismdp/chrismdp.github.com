@@ -1,3 +1,105 @@
 open-models:
   name: Open Models
-  url: /open-models/
+  url: /series/open-models/
+  description: 'Running real work on open models: the costs, the results, and the
+    harnesses that help them finish the job.'
+  archive: false
+software-factory:
+  name: Software Factory
+  url: /series/software-factory/
+  description: Building and running agents that can take software from a brief to
+    a checked result.
+  archive: false
+  series: Software Factory
+where-ai-lives:
+  name: Where AI Lives
+  url: /series/where-ai-lives/
+  description: How AI fits into our tools, working habits and organisations.
+  archive: false
+  series: Where AI Lives
+claude-code-for-leaders:
+  name: Claude Code for Leaders
+  url: /series/claude-code-for-leaders/
+  description: Using Claude Code for knowledge, thinking and the work of leadership.
+  archive: false
+  series: Claude Code for Leaders
+securing-ai-agents:
+  name: Securing AI Agents
+  url: /series/securing-ai-agents/
+  description: Giving agents useful access while keeping responsibility for what they
+    can do.
+  archive: false
+  series: Securing AI Agents
+local-ai:
+  name: Local AI
+  url: /series/local-ai/
+  description: What changes when running AI becomes cheaper and more accessible.
+  archive: false
+  series: Local AI
+ai-in-action-webinars:
+  name: AI In Action Webinars
+  url: /series/ai-in-action-webinars/
+  description: Practical sessions on adopting AI, with recordings and written follow-ups.
+  archive: false
+  series: AI In Action Webinars
+startup-cto-field-guide:
+  name: Startup CTO Field Guide
+  url: /series/startup-cto-field-guide/
+  description: Hiring, culture and the decisions that shape a startup engineering
+    team.
+  archive: false
+  series: Startup CTO Field Guide
+team-anti-patterns:
+  name: Team Anti-Patterns
+  url: /series/team-anti-patterns/
+  description: How task assignment, job titles and delegation can get in a team’s
+    way.
+  archive: true
+  series: Team Anti-Patterns
+  oldest_first: true
+liabilities:
+  name: Liabilities
+  url: /series/liabilities/
+  description: The costs of owning code, frameworks and abstractions.
+  archive: true
+  series: Liabilities
+  oldest_first: true
+extreme-isolation:
+  name: Extreme Isolation
+  url: /series/extreme-isolation/
+  description: A three-part exploration of separating a web application’s domain from
+    the things that change.
+  archive: true
+  series: Extreme Isolation
+  oldest_first: true
+testing-iphone-apps:
+  name: Testing iPhone Apps
+  url: /series/testing-iphone-apps/
+  description: A two-part account of testing iPhone applications in 2011.
+  archive: true
+  series: Testing iPhone Apps
+  oldest_first: true
+spring-richclient-tutorial:
+  name: Spring Richclient Tutorial
+  url: /series/spring-richclient-tutorial/
+  description: The original 2006 tutorial, from the introduction through the coding
+    sessions.
+  archive: true
+  series: Spring Richclient Tutorial
+  oldest_first: true
+building-sol-trader:
+  name: Building Sol Trader
+  url: /series/building-sol-trader/
+  description: The development of Sol Trader, from early experiments to launch and
+    its aftermath.
+  archive: true
+  series: Building Sol Trader
+  oldest_first: true
+building-ealdorlight:
+  name: Building Ealdorlight
+  url: /series/building-ealdorlight/
+  description: Designing Ealdorlight, launching its Kickstarter and looking back on
+    the campaign.
+  archive: true
+  series: Building Ealdorlight
+  oldest_first: true
