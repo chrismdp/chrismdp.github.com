@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Why AI-Fast Teams Still Ship Slowly"
+title: "Why AI-First Teams Still Ship Slowly"
 date: 2025-12-04 14:00:00 +0000
 permalink: /why-ai-fast-teams-still-ship-slowly/
 redirect_from: /webinar-how-to-structure-teams-for-ai/

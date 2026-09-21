@@ -72,7 +72,7 @@ I have ideas, not answers, but some of them seem to be working.
 
 - [Stop Prompting, Start Briefing](/stop-prompting-start-briefing/) on why mental model shifts matter more than prompt engineering
 - [AI Must Be Line Managed](/ai-must-be-line-managed/) on preventing the reverse centaur problem
-- [Why AI-Fast Teams Still Ship Slowly](/why-ai-fast-teams-still-ship-slowly/) on team structure and the Marvin problem
+- [Why AI-First Teams Still Ship Slowly](/why-ai-fast-teams-still-ship-slowly/) on team structure and the Marvin problem
 - [Feedback Is the New Bottleneck](/feedback-is-the-new-bottleneck/) on where the real constraint moves when coding gets fast
 - The AI Vampire[^2] by Steve Yegge on who captures the value of AI productivity
 - [AI training for technical teams](/training) for mindset-shift workshops, not feature demos
