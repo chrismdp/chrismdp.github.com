@@ -12,7 +12,7 @@ excerpt: "Donald Trump wants a better name for artificial intelligence. On Satur
 
 Donald Trump wants a better name for artificial intelligence. On Saturday he called the words "inaccurate, and very ineloquent", and asked his followers to vote between Superior Intelligence, Extreme Intelligence and Supreme Intelligence.[^poll] He is right that the name is wrong, and I have a better option than any of his three.
 
-I think we should call it **Machine Intelligence**.
+Let's call it **Machine Intelligence**.
 
 <!--more-->
 
@@ -27,8 +27,6 @@ John McCarthy coined the term in his 1955 proposal for the Dartmouth summer work
 "Artificial" implies that the intelligence is not real. Biology has had the monopoly on intelligence until now, so we have conflated the two for our entire existence and built our assumptions on top of that. That monopoly is over. I suggested Machine Intelligence in a WhatsApp group with other AI experts, and I have not heard a better name. It covers any intelligence produced by machines, and says nothing about real or fake or about biology. The term has a history of its own too: Donald Michie convened the first Machine Intelligence Workshop at Edinburgh in 1965, and the university founded a Department of Machine Intelligence and Perception the year after.[^michie]
 
 Trump has more important work to do than naming things. He could make an information-sharing deal with China that lets them catch up to the level of OpenAI's Astra, in return for slowing further work.[^deal] UN inspectors would get access to AI labs worldwide, and he could share a Nobel Peace Prize for it. That deal matters far more than what we call any of it. But he is right about the name, and "artificial" has to go. Once it is gone, we can no longer get away from the fact that machine intelligence is real, and here to stay.
-
-I think we should call it **Machine Intelligence**.
 
 [^poll]: Trump posted the poll on Truth Social and [on X](https://x.com/realDonaldTrump/status/2101350559328416142){:target="_blank"} on 19 September 2026. [The Hill](https://thehill.com/homenews/administration/6099834-trump-proposes-new-a-i-names/){:target="_blank"} and [TechCrunch](https://techcrunch.com/2026/09/19/trump-suggests-rebranding-ai-with-a-new-name-says-hes-also-creating-an-ai-force/){:target="_blank"} both covered it. A day later he dropped Supreme Intelligence, "probably because of its relationship to the Supreme Court", and restarted the vote with the other two.
 
