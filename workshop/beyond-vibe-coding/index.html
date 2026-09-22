@@ -115,6 +115,11 @@ body.notesmode .notesview{display:grid;gap:18px;max-width:900px;margin:0 auto;pa
 .notesview .nv-next{border-top:2px dashed var(--ink);padding-top:12px;color:var(--muted)}
 .notesview .nv-next b{color:var(--ink)}
 .notesview .nv-hint{font-size:.85rem;color:var(--muted)}
+/* fullscreen: no bar, no hint, slide fills the screen */
+body.fullscreen .bar,body.fullscreen .hint{display:none}
+body.fullscreen .wrap.main{padding-block:0;max-width:none}
+body.fullscreen.deckmode .slide{min-height:100vh;padding:clamp(28px,4vw,64px);align-content:center}
+body.fullscreen .foot{display:none}
 /* deck mode */
 body.deckmode .deck{gap:0}
 body.deckmode .slide{display:none;min-height:calc(100vh - 140px);border:0;border-radius:0;background:var(--paper)}
@@ -136,6 +141,7 @@ body:not(.deckmode) .hint{display:none}
   <span class="spacer"></span>
   <button id="modeBtn" aria-pressed="false" title="D">Deck mode</button>
   <button id="notesBtn" aria-pressed="false" title="N">Presenter notes</button>
+  <button id="fsBtn" title="F">Fullscreen</button>
   <button id="popBtn" title="Open a notes window. Or open this link again and press P.">Notes window</button>
   <span class="counter" id="counter"></span>
 </div></div>
@@ -156,7 +162,7 @@ claude</pre>
 <!-- 1b -->
 <section class="slide">
   <h2>What did you try before today?</h2>
-  <p class="lead">Eight questions. Hands up for each one that fits.</p>
+  <img src="img/hands.jpg" alt="" style="max-width:min(100%,720px);max-height:55vh;object-fit:contain;justify-self:center">
   <div class="notes"><span class="label">09:31 · 3 min · What I say</span><ol><li>Did you build with Lovable, v0, Bolt or Cursor?</li><li>Did you run Claude Code or Codex in a terminal?</li><li>Did you use your GitHub account more than once?</li><li>Did you make a commit and watch a build run?</li><li>Did you work on your team's code, beyond side projects?</li><li>Did you release software for other people?</li><li>Did you release software for paying customers?</li><li>Did you use Cloudflare before today?</li></ol><p>Keep your hand up for each question that fits. If you shipped software for paying customers, can you help your table today? If you already know commits and builds, we can spend longer on deployment. If the terminal is new to you, I will talk through the first prompt.</p></div>
 </section>
 
@@ -200,7 +206,7 @@ You can use your own idea if it follows these rules.</pre></div>
     <div><b>2 · Building and deploying your first application</b><span>10:10. Cloudflare on every push, then Next.js.</span></div>
     <div><b>3 · Using tests as your AI safety net</b><span>11:30. A failing test for the locked door, then green.</span></div>
     <div><b>4 · Continuous integration in practice</b><span>11:45. A broken change that never goes live.</span></div>
-    <div><b>5 · Linting, type safety &amp; agent standards</b><span>11:55. The type check, the linter, CLAUDE.md and AGENTS.md.</span></div>
+    <div><b>5 · Linting, type safety &amp; agent standards</b><span>11:55. The type check, the linter, AGENTS.md.</span></div>
     <div><b>6 · Building your first production-ready feature</b><span>12:13. Your idea. Then questions.</span></div>
   </div>
   <p class="muted">Break 11:00 to 11:15. Finish at 13:00.</p>
@@ -212,19 +218,30 @@ You can use your own idea if it follows these rules.</pre></div>
   <h2>The practices you will leave with</h2>
   <p class="lead">Each one is something a CTO sets up on day one. Today you set them up yourself, in this order.</p>
   <div class="five seven">
-    <div><b>1 · Source control</b><span>Every change is a save point. Small commits, often.</span></div>
-    <div><b>2 · Automatic deployment</b><span>Push to main and it is live. Set up before it matters.</span></div>
-    <div><b>3 · Tests</b><span>Say what true looks like first. Then make it true.</span></div>
-    <div><b>4 · Builds and continuous integration</b><span>Every push is checked. A broken change never ships.</span></div>
-    <div><b>5 · Types and linting</b><span>Checks on every line that you did not have to write.</span></div>
-    <div><b>6 · Rules for the agent</b><span>CLAUDE.md and AGENTS.md carry the standards between sessions.</span></div>
-    <div><b>7 · Design first</b><span>The screen, then the behaviour, then the code.</span></div>
+    <div><b>1 · Outside in</b><span>Prototype first. The screen, then the behaviour, then the code.</span></div>
+    <div><b>2 · Source control</b><span>Every change is a save point. Small commits, often.</span></div>
+    <div><b>3 · Automatic deployment</b><span>Push to main and it is live. Set up before it matters.</span></div>
+    <div><b>4 · Tests</b><span>Say what true looks like first. Then make it true.</span></div>
+    <div><b>5 · Builds and continuous integration</b><span>Every push is checked. A broken change never ships.</span></div>
+    <div><b>6 · Types and linting</b><span>Checks on every line that you did not have to write.</span></div>
+    <div><b>7 · Rules for the agent</b><span>AGENTS.md carries the standards between sessions.</span></div>
   </div>
-  <p class="muted">On the way: secrets stay out of the code, a bad deploy is one revert away, and you learn when to bring in an engineer.</p>
+  <p class="muted">On the way: secrets stay out of the code and out of the chat, you read a script before you run it, a bad deploy is one revert away, and you learn when to bring in an engineer.</p>
   <div class="notes"><span class="label">09:37 · 1 min · What I say</span><p>One minute. Do not explain them here; each gets its own slide after you have done it. Say only: these are the seven habits, you will have done all of them by one o'clock, and none of them needs you to read code.</p></div>
 </section>
 
 <!-- 4 -->
+<section class="slide">
+  <div class="motif">
+    <div>
+      <p class="muted" style="font-size:1.1rem;font-weight:700;color:var(--turq-deep)">Step 1</p>
+      <p class="big">Outside in</p>
+      <p class="lead" style="margin-top:14px">Prototype first. The screen, then the behaviour, then the code.</p>
+    </div>
+    <img src="img/design.jpg" alt="">
+  </div>
+</section>
+
 <section class="slide">
   <h2>Make a game you can play</h2>
   <div class="two">
@@ -237,7 +254,9 @@ You can use your own idea if it follows these rules.</pre></div>
 (Using Codex? Try first: Generate a real image for each room and show it above the description. If it says it cannot, use the SVG line.)
 Give each room a different colour and mood.
 Add a small map that marks my room.
-Make the rooms fade as I move between them.</pre></div>
+Make the rooms fade as I move between them.
+
+Each time, add: Do not make it a full app yet. Keep it in one file, as a reference for the proper app.</pre></div>
     </div>
   </div>
   <div class="notes"><span class="label">09:35 · 20 min · After the check · 3 min</span><p>Claude Code cannot generate real images, so its illustrations are SVG drawings. Codex may be able to: if a table gets a real image, show the room. Play it before you ask for another change. Does the room name match the map? Does the movement make sense? Give the agent a design change and look again. Leaving it as a design experiment is a success, not a failure. Today we will keep going and put this game online.</p></div>
@@ -261,6 +280,17 @@ Make the rooms fade as I move between them.</pre></div>
     </ul>
   </div>
   <div class="notes"><span class="label">09:52 · 3 min · What I say</span><p>Three minutes, taken from step 1. Walk the folder on the projector. The point: this is a project, not a file. One file is the page, one is the logic you wrote in plain language, one is the compiled copy the browser runs, and two are settings. The agent's names may differ a little from mine; the shape is the same. After the next step a hidden <code>.git</code> folder appears: that is the history.</p></div>
+</section>
+
+<section class="slide">
+  <div class="motif">
+    <div>
+      <p class="muted" style="font-size:1.1rem;font-weight:700;color:var(--turq-deep)">Step 2</p>
+      <p class="big">Source control</p>
+      <p class="lead" style="margin-top:14px">Every change is a save point.</p>
+    </div>
+    <img src="img/source.jpg" alt="">
+  </div>
 </section>
 
 <section class="slide">
@@ -309,6 +339,17 @@ Make the rooms fade as I move between them.</pre></div>
 
 <!-- 6 -->
 <section class="slide">
+  <div class="motif">
+    <div>
+      <p class="muted" style="font-size:1.1rem;font-weight:700;color:var(--turq-deep)">Step 3</p>
+      <p class="big">Automatic deployment</p>
+      <p class="lead" style="margin-top:14px">Push to main and it is live. Set it up before it matters.</p>
+    </div>
+    <img src="img/deploy.jpg" alt="">
+  </div>
+</section>
+
+<section class="slide">
   <h2>Give GitHub access to Cloudflare</h2>
   <ul class="steps">
     <li>Sign in at <b>dash.cloudflare.com</b>.</li>
@@ -324,9 +365,10 @@ Make the rooms fade as I move between them.</pre></div>
 <section class="slide">
   <h2>Put the game on your phone</h2>
   <div class="two">
-    <div class="prompt"><div class="label">Copy to the agent <button class="copy">Copy</button></div><pre>Set up automatic deployment to Cloudflare Workers. Use a GitHub Actions workflow that runs the TypeScript build, then uses wrangler to deploy the built site as static assets, on every push to main. I will provide a Cloudflare API token and account ID. Use the GitHub CLI to store them as GitHub Actions secrets. Name them CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID. Push the changes. Wait for the workflow to finish. Give me the live URL.</pre></div>
+    <div class="prompt"><div class="label">Copy to the agent <button class="copy">Copy</button></div><pre>Set up automatic deployment to Cloudflare Workers. Use a GitHub Actions workflow that runs the TypeScript build, then uses wrangler to deploy the built site as static assets, on every push to main. It needs a Cloudflare API token and account ID as GitHub Actions secrets, named CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID. Do not ask me to paste them into this chat. Write a short script that asks me for them in my terminal and stores them with the GitHub CLI. Show me the script and explain every line before I run it. After I have run it, push the changes, wait for the workflow to finish, and give me the live URL.</pre></div>
     <div>
       <div class="checks">
+        <div class="check red"><span class="mark">!</span><span>Read the script before you run it. It must do two things: ask for the token and the account ID, and store them with <code>gh secret set</code>. Anything else, do not run it. Not sure? Ask the person next to you to read it too.</span></div>
         <div class="check"><span class="mark">✓</span><span>Check: the live URL opens on your phone.</span></div>
         <div class="check"><span class="mark">✓</span><span>Check: the Actions tab on GitHub shows a green tick.</span></div>
       </div>
@@ -334,13 +376,13 @@ Make the rooms fade as I move between them.</pre></div>
       <div class="checks"><div class="check"><span class="mark">✓</span><span>Check: reload your phone. The title changes within a minute.</span></div></div>
     </div>
   </div>
-  <div class="notes"><span class="label">10:15 · 25 min · After the check · 5 min</span><p>Open the live URL on your phone. The live URL is the address of your deployed app. Your phone loads the app from Cloudflare. After the title change, reload that same address. If you finish early, ask the agent to explain the workflow file or add a custom domain.</p></div>
+  <div class="notes"><span class="label">10:15 · 25 min · After the check · 5 min</span><p>The agent will not take the token in chat, and it is right. It writes a script and asks you to run it in your own terminal. That is the moment to say: never run code you have not read. Two lines of gh secret set is all it needs. Read them. If you cannot tell, hand the screen to a neighbour or to me. This is the one habit today that protects you from a bad actor, and it takes thirty seconds. Open the live URL on your phone. The live URL is the address of your deployed app. Your phone loads the app from Cloudflare. After the title change, reload that same address. If you finish early, ask the agent to explain the workflow file or add a custom domain.</p></div>
 </section>
 
 <section class="slide">
   <h2>Deploy while the app is small</h2>
   <div class="motif">
-    <ul class="benefits"><li>Each push to main sends the app to Cloudflare.</li><li>Set up deployment while the app has one file.</li><li>Use the same workflow as the app grows.</li><li>Share the live URL to show your latest change.</li><li>This is continuous integration and deployment: checked, then shipped, on every push.</li><li>Your token lives in GitHub's secrets, never in the code. A bad deploy is one revert away.</li></ul>
+    <ul class="benefits"><li>Each push to main sends the app to Cloudflare.</li><li>Set up deployment while the app has one file.</li><li>Use the same workflow as the app grows.</li><li>Share the live URL to show your latest change.</li><li>This is continuous integration and deployment: checked, then shipped, on every push.</li><li>Your token lives in GitHub's secrets, never in the code, never in a chat. A bad deploy is one revert away.</li><li>Never run a script you have not read. Thirty seconds, every time.</li></ul>
     <img src="img/deploy.jpg" alt="">
   </div>
   <div class="notes"><span class="label">10:40 · 5 min · What I say</span><p>A workflow is a set of commands that GitHub runs. This one sends the app to Cloudflare after each push to main. We set it up while the app has one file. After the break, we will add checks to stop a broken change going live.</p></div>
@@ -366,9 +408,20 @@ Make the rooms fade as I move between them.</pre></div>
 
 <!-- 10 -->
 <section class="slide">
+  <div class="motif">
+    <div>
+      <p class="muted" style="font-size:1.1rem;font-weight:700;color:var(--turq-deep)">Step 4</p>
+      <p class="big">A real app, same rails</p>
+      <p class="lead" style="margin-top:14px">Next.js and TypeScript inside the pipeline you already have.</p>
+    </div>
+    <img src="img/tools.jpg" alt="">
+  </div>
+</section>
+
+<section class="slide">
   <h2>Turn it into a real app</h2>
   <div class="two">
-    <div class="prompt"><div class="label">Copy to the agent <button class="copy">Copy</button></div><pre>Create a new Next.js app in TypeScript with create-next-app and move the game into it. Keep the design unchanged. Add the files needed to run it on Cloudflare Workers with the OpenNext adapter. Update the GitHub Actions workflow to deploy on each push to main. Run the app locally. Open it in my browser. Commit the changes. Push them. Give me the live URL.</pre></div>
+    <div class="prompt"><div class="label">Copy to the agent <button class="copy">Copy</button></div><pre>Create a new Next.js app in TypeScript with create-next-app. Rebuild the game inside it, using the one-file prototype as the reference. Keep the design unchanged. Add the files needed to run it on Cloudflare Workers with the OpenNext adapter. Update the GitHub Actions workflow to deploy on each push to main. Run the app locally. Open it in my browser. Commit the changes. Push them. Give me the live URL.</pre></div>
     <div>
       <div class="checks"><div class="check"><span class="mark">✓</span><span>Check: Next.js serves the same design at the same live URL.</span></div></div>
       </div>
@@ -376,7 +429,33 @@ Make the rooms fade as I move between them.</pre></div>
   <div class="notes"><span class="label">11:15 · 15 min · After the check · 3 min</span><p>The design, the URL and the workflow have not changed, and underneath there is now a Next.js app in TypeScript. That is the scaffold the page promised, done in one prompt because the rails were already there.</p></div>
 </section>
 
+<section class="slide">
+  <h2>Why a framework, and why this one</h2>
+  <div class="motif">
+    <ul class="benefits">
+      <li>Optional. The one-file game works as it is.</li>
+      <li>Next.js does the caching, the routing and the build for you.</li>
+      <li>It is the React setup the agent knows best. Not the best framework. The one the AI is best at.</li>
+      <li>When the app grows, or the design work gets serious, it gives the agent a structure to hang the work on.</li>
+      <li>Better than a pile of vibe-coded JavaScript.</li>
+    </ul>
+    <img src="img/tools.jpg" alt="">
+  </div>
+  <div class="notes"><span class="label">11:30 · 3 min · What I say</span><p>Strictly optional, but useful. Next.js handles a whole bunch of static caching for you. It builds a standard React structure into your app. Not necessarily the best framework, but the one the AI knows best, and that is what matters when the agent is doing the work. When you make something much more complex, or want to do a lot of design work, it gives the agent a real structure to hang that work off. I prefer this to vibe-coding very JavaScript apps with no shape to them.</p></div>
+</section>
+
 <!-- 11 -->
+<section class="slide">
+  <div class="motif">
+    <div>
+      <p class="muted" style="font-size:1.1rem;font-weight:700;color:var(--turq-deep)">Step 5</p>
+      <p class="big">Tests and builds</p>
+      <p class="lead" style="margin-top:14px">Say what true looks like first. A broken change never ships.</p>
+    </div>
+    <img src="img/tests.jpg" alt="">
+  </div>
+</section>
+
 <section class="slide">
   <h2>Test the locked door first</h2>
   <div class="two">
@@ -422,6 +501,17 @@ Make the rooms fade as I move between them.</pre></div>
 
 <!-- 12b -->
 <section class="slide">
+  <div class="motif">
+    <div>
+      <p class="muted" style="font-size:1.1rem;font-weight:700;color:var(--turq-deep)">Step 6</p>
+      <p class="big">Types and linting</p>
+      <p class="lead" style="margin-top:14px">Checks on every line that you did not have to write.</p>
+    </div>
+    <img src="img/typing.jpg" alt="">
+  </div>
+</section>
+
+<section class="slide">
   <h2>Break the types, then run the linter</h2>
   <div class="two">
     <div>
@@ -447,17 +537,39 @@ Make the rooms fade as I move between them.</pre></div>
 
 <!-- 13 -->
 <section class="slide">
+  <div class="motif">
+    <div>
+      <p class="muted" style="font-size:1.1rem;font-weight:700;color:var(--turq-deep)">Step 7</p>
+      <p class="big">Rules for the agent</p>
+      <p class="lead" style="margin-top:14px">AGENTS.md carries the standards between sessions.</p>
+    </div>
+    <img src="img/rules.jpg" alt="">
+  </div>
+</section>
+
+<section class="slide">
   <h2>Keep the rules between sessions</h2>
   <div class="two">
-    <div class="prompt"><div class="label">Copy to the agent <button class="copy">Copy</button></div><pre>This project may already have a CLAUDE.md and an AGENTS.md from the scaffold. Keep what is there and add these rules to both files. Before changing behaviour, write a failing test. Before saying a change is done, run tests, lint and the type check. If a check fails, do not push. Commit after each small change. Ask before adding a library. Save the same rules in AGENTS.md.</pre></div>
+    <div class="prompt"><div class="label">Copy to the agent <button class="copy">Copy</button></div><pre>This project may already have an AGENTS.md from the scaffold. Keep what is there and add these rules to it. Before changing behaviour, write a failing test. Before saying a change is done, run tests, lint and the type check. If a check fails, do not push. Commit after each small change. Ask before adding a library.</pre></div>
     <div class="checks">
       <div class="check"><span class="mark">✓</span><span>Check: restart the agent. Ask for the rules. It lists five.</span></div>
     </div>
   </div>
-  <div class="notes"><span class="label">12:06 · 7 min · After the check · 2 min</span><p>Close the agent and start a new session. Ask: "Which project rules must you follow?" Listen for all five rules. Claude Code reads CLAUDE.md. Codex and Cursor read AGENTS.md. The files give the next session the same instructions. Add rules for choices that the automated checks cannot make.</p></div>
+  <div class="notes"><span class="label">12:06 · 7 min · After the check · 2 min</span><p>Close the agent and start a new session. Ask: "Which project rules must you follow?" Listen for all five rules. Claude Code, Codex and Cursor all read AGENTS.md. The files give the next session the same instructions. Add rules for choices that the automated checks cannot make.</p></div>
 </section>
 
 <!-- 14 -->
+<section class="slide">
+  <div class="motif">
+    <div>
+      <p class="muted" style="font-size:1.1rem;font-weight:700;color:var(--turq-deep)">Step 8</p>
+      <p class="big">Your feature</p>
+      <p class="lead" style="margin-top:14px">Plan, design, test, push.</p>
+    </div>
+    <img src="img/database.jpg" alt="">
+  </div>
+</section>
+
 <section class="slide">
   <h2>Build a feature of your own</h2>
   <div class="two">
@@ -501,7 +613,7 @@ Redraw the room illustrations in a style you choose. Art-direct the agent.</pre>
       <li>Deploy on every push, while the app is one file.</li>
       <li>Make it a typed app. Same workflow, same URL.</li>
       <li>Write the failing test for the next rule. Make it pass. Deploy only when tests, lint and types pass.</li>
-      <li>Write the project rules in CLAUDE.md and AGENTS.md.</li>
+      <li>Write the project rules in AGENTS.md.</li>
       <li>Every feature: design, then test, then push.</li>
     </ul>
     <div>
@@ -519,7 +631,7 @@ Redraw the room illustrations in a style you choose. Art-direct the agent.</pre>
     <div><b>Scaffold a modern application using AI</b><span>Step 4, one prompt.</span></div>
     <div><b>Deploy using GitHub and Cloudflare</b><span>Step 3, then every push.</span></div>
     <div><b>Use testing, linting and CI to improve AI-generated code</b><span>Steps 5 and 6.</span></div>
-    <div><b>Configure AI coding agents to follow your team's standards</b><span>Step 7, CLAUDE.md and AGENTS.md.</span></div>
+    <div><b>Configure AI coding agents to follow your team's standards</b><span>Step 7, AGENTS.md.</span></div>
     <div><b>Build features with confidence using production-ready workflows</b><span>Step 8, your feature.</span></div>
   </div>
   <div class="prompt"><div class="label">Name someone to talk to</div><pre>Before I ship this, I must speak to ______.</pre></div>
@@ -536,7 +648,7 @@ Redraw the room illustrations in a style you choose. Art-direct the agent.</pre>
   <p class="nv-hint">Notes window. <kbd>→</kbd> <kbd>←</kbd> move both windows. <kbd>P</kbd> back to slides.</p>
 </div>
 <span class="foot">© Chris Parsons 2026</span>
-<p class="hint"><kbd>→</kbd> <kbd>←</kbd> change slide · <kbd>N</kbd> show notes · <kbd>D</kbd> switch view · <kbd>Home</kbd> go to start</p>
+<p class="hint"><kbd>→</kbd> <kbd>←</kbd> change slide · <kbd>N</kbd> show notes · <kbd>F</kbd> fullscreen · <kbd>D</kbd> switch view · <kbd>Home</kbd> go to start</p>
 </div>
 
 <script>
@@ -583,6 +695,11 @@ Redraw the room illustrations in a style you choose. Art-direct the agent.</pre>
   window.addEventListener('storage',function(e){
     if(e.key==='bvc-slide'){var n=parseInt(e.newValue||'0',10); if(!isNaN(n)&&n!==i){i=n; show(i)}}
   });
+  function setFullscreen(on){
+    body.classList.toggle('fullscreen',on);
+    if(on){setMode(true)}
+  }
+  document.getElementById('fsBtn').addEventListener('click',function(){setFullscreen(true)});
   document.getElementById('popBtn').addEventListener('click',function(){
     try{localStorage.setItem('bvc-open-notes','1')}catch(e){}
     var w=null; try{w=window.open(location.href.split('#')[0],'bvcnotes','width=760,height=700')}catch(e){}
@@ -595,6 +712,8 @@ Redraw the room illustrations in a style you choose. Art-direct the agent.</pre>
     var deck=body.classList.contains('deckmode');
     if(e.key==='d'||e.key==='D'){setMode(!deck);return}
     if(e.key==='p'||e.key==='P'){setNotesMode(!body.classList.contains('notesmode'));return}
+    if(e.key==='f'||e.key==='F'){setFullscreen(!body.classList.contains('fullscreen'));return}
+    if(e.key==='Escape'&&body.classList.contains('fullscreen')){setFullscreen(false);return}
     if(e.key==='n'||e.key==='N'){setNotes(!body.classList.contains('shownotes'));return}
     if(!deck&&!body.classList.contains('notesmode'))return;
     if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' '){e.preventDefault();show(i+1)}
