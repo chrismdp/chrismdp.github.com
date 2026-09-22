@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Beyond Vibe Coding</title>
+<meta name="description" content="Prompts and run sheet for the Beyond Vibe Coding workshop at design+AI, Brighton, 24 September 2026.">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Source+Code+Pro:wght@400;500&display=swap">
+<style>
+/* Chris Parsons brand: white paper, charcoal ink, turquoise fills, orange only for the action. Hand-sketched borders. */
+:root{
+  --paper:#FFFFFF; --ink:#333333; --muted:#5F6B6D; --line:#333333;
+  --turq:#1AC8DB; --turq-deep:#0292B7; --sky:#99DFEC; --sky-pale:#EAF8FB; --orange:#FC8745;
+  --good:#0292B7; --bad:#D9531E; --note-ground:#FFF4EC; --note-ink:#4A2E14;
+  --sketch:255px 15px 225px 15px / 15px 225px 15px 255px;
+}
+html,body{height:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;font-size:18px;line-height:1.45}
+*{box-sizing:border-box}
+h1,h2,h3{font-family:"DM Sans",system-ui,sans-serif;text-wrap:balance;margin:0;line-height:1.05;color:var(--ink);letter-spacing:-.01em}
+h1{font-size:clamp(2.4rem,6vw,4.6rem);font-weight:700}
+h2{font-size:clamp(1.7rem,4vw,2.9rem);font-weight:700}
+h3{font-size:1.4rem;font-weight:700}
+p{margin:0}
+a{color:var(--turq-deep)}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px;padding-block:16px}
+
+/* top bar */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);border-bottom:2px solid var(--ink)}
+.bar .wrap{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding-block:10px}
+.brand{font-family:"DM Sans",system-ui,sans-serif;font-weight:700;font-size:1rem;color:var(--ink)}
+.spacer{flex:1}
+.bar button{font:inherit;font-size:.85rem;font-weight:500;padding:6px 14px;border:2px solid var(--ink);border-radius:var(--sketch);background:var(--paper);color:var(--ink);cursor:pointer}
+.bar button[aria-pressed="true"]{background:var(--turq);border-color:var(--ink)}
+.bar button:focus-visible,.copy:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+.counter{font-variant-numeric:tabular-nums;color:var(--muted);font-size:.9rem;min-width:4ch;text-align:right}
+
+/* slides */
+.deck{display:flex;flex-direction:column;gap:28px}
+.slide{background:var(--paper);border:2px solid var(--ink);border-radius:var(--sketch);padding:clamp(22px,3.5vw,46px);display:grid;gap:22px;position:relative}
+.slide.tone{background:var(--turq);border-color:var(--ink)}
+.slide.tone .eyebrow{color:var(--ink)}
+.slide.tone .muted{color:var(--ink);opacity:.8}
+.eyebrow{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.eyebrow .tag{background:var(--sky);color:var(--ink);padding:3px 12px;border:2px solid var(--ink);border-radius:var(--sketch);letter-spacing:.06em}
+.slide.tone .eyebrow .tag{background:var(--paper)}
+.eyebrow .clock{font-variant-numeric:tabular-nums}
+.muted{color:var(--muted)}
+.lead{font-size:1.2rem;max-width:62ch}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+@media (max-width:820px){.two{grid-template-columns:1fr}}
+
+/* prompt boxes: the thing attendees copy */
+.prompt{background:var(--sky-pale);color:var(--ink);border:2px solid var(--ink);border-radius:var(--sketch);padding:16px 20px;display:grid;gap:10px}
+.slide.tone .prompt{background:var(--paper)}
+.prompt .label{display:flex;align-items:center;gap:10px;font-family:"DM Sans",system-ui,sans-serif;font-size:.95rem;font-weight:700;color:var(--turq-deep);text-transform:none;letter-spacing:0}
+.prompt pre{margin:0;white-space:pre-wrap;font-family:"Source Code Pro",ui-monospace,SFMono-Regular,Menlo,monospace;font-size:1rem;line-height:1.5;overflow-x:auto}
+.copy{margin-left:auto;font-family:"DM Sans",system-ui,sans-serif;font-size:.8rem;font-weight:700;padding:5px 12px;border:2px solid var(--ink);border-radius:var(--sketch);background:var(--orange);color:var(--ink);cursor:pointer}
+.copy[data-done="1"]{background:var(--turq)}
+
+/* checks */
+.check{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start;padding:10px 0;border-top:1px dashed var(--ink)}
+.check:first-of-type{border-top:0}
+.check .mark{width:28px;height:28px;border-radius:50%;border:2px solid var(--ink);background:var(--turq);color:var(--ink);display:grid;place-items:center;font-weight:700;font-size:.9rem}
+.check.red .mark{background:var(--orange)}
+.checks{display:grid}
+.steps{display:grid;gap:10px;counter-reset:s;padding:0;margin:0;list-style:none}
+.steps li{position:relative;padding-left:2.6rem;line-height:1.5}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:.1rem;font-family:"DM Sans",system-ui,sans-serif;font-weight:700;font-size:1.25rem;color:var(--turq-deep);line-height:1}
+.slide.tone .steps li::before{color:var(--ink)}
+.notes{background:var(--note-ground);color:var(--note-ink);border:2px dashed var(--orange);border-radius:var(--sketch);padding:14px 18px;font-size:.95rem;display:grid;gap:8px}
+.notes .label{font-family:"DM Sans",system-ui,sans-serif;font-size:.9rem;font-weight:700;color:var(--orange)}
+.big{font-family:"DM Sans",system-ui,sans-serif;font-size:clamp(2.4rem,7vw,5rem);font-weight:700;line-height:1;color:var(--ink)}
+.five{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+@media (max-width:900px){.five{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.five{grid-template-columns:1fr}}
+.five div{border:2px solid var(--ink);border-radius:var(--sketch);padding:14px;display:grid;gap:6px;background:var(--paper)}
+.five.six{grid-template-columns:repeat(3,1fr)}
+@media (max-width:820px){.five.six{grid-template-columns:1fr}}
+.five b{font-family:"DM Sans",system-ui,sans-serif;font-size:1.05rem;line-height:1.2;color:var(--turq-deep)}
+.five span{font-size:.9rem;color:var(--muted)}
+.slide.tone .five div{background:var(--paper)}
+kbd{font-family:"Source Code Pro",monospace;font-size:.8rem;border:1px solid var(--ink);border-radius:4px;padding:1px 6px;background:var(--paper);color:var(--ink)}
+code{font-family:"Source Code Pro",monospace;font-size:.95em}
+
+/* footer, the brand mark */
+.foot{position:fixed;right:14px;bottom:calc(8px + env(safe-area-inset-bottom,0px));font-size:.7rem;color:var(--muted);opacity:.7;pointer-events:none;z-index:6}
+
+.motif{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;align-items:center}
+@media (max-width:820px){.motif{grid-template-columns:1fr}}
+.motif img{max-width:100%;max-height:52vh;object-fit:contain;justify-self:center}
+.benefits{display:grid;gap:12px;padding:0;margin:0;list-style:none;font-size:1.15rem}
+.benefits li{display:grid;grid-template-columns:1.4rem 1fr;gap:10px;align-items:baseline}
+.benefits li::before{content:"";width:.9rem;height:.9rem;border:2px solid var(--ink);border-radius:50%;background:var(--turq);display:inline-block;transform:translateY(.05rem)}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media (max-width:820px){.cols{grid-template-columns:1fr}}
+.cols div{border:2px solid var(--ink);border-radius:var(--sketch);padding:14px 16px;display:grid;gap:8px;align-content:start;background:var(--paper)}
+.cols div.pick{background:var(--sky-pale)}
+.cols b{font-family:"DM Sans",system-ui,sans-serif;font-size:1.15rem;line-height:1.2;color:var(--turq-deep)}
+.cols p{font-size:.95rem}
+
+/* notes window */
+.notes ol{margin:0;padding-left:1.3rem;display:grid;gap:4px}
+.notesview{display:none}
+body.notesmode .deck,body.notesmode .hint,body.notesmode .foot{display:none}
+body.notesmode .notesview{display:grid;gap:18px;max-width:900px;margin:0 auto;padding:24px 20px}
+.notesview .nv-count{font-size:1rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.notesview .nv-title{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:700;line-height:1.1}
+.notesview .nv-notes{font-size:1.3rem;line-height:1.5;display:grid;gap:10px}
+.notesview .nv-notes ol{padding-left:1.4rem;display:grid;gap:6px}
+.notesview .nv-next{border-top:2px dashed var(--ink);padding-top:12px;color:var(--muted)}
+.notesview .nv-next b{color:var(--ink)}
+.notesview .nv-hint{font-size:.85rem;color:var(--muted)}
+/* deck mode */
+body.deckmode .deck{gap:0}
+body.deckmode .slide{display:none;min-height:calc(100vh - 140px);border:0;border-radius:0;background:var(--paper)}
+body.deckmode .slide.tone{background:var(--turq)}
+body.deckmode .slide.active{display:grid;align-content:start}
+body.deckmode .notes{display:none}
+body.deckmode.shownotes .notes{display:grid}
+body.deckmode .wrap.main{max-width:1280px}
+.hint{font-size:.85rem;color:var(--muted);padding-block:12px}
+body:not(.deckmode) .hint{display:none}
+@media (prefers-reduced-motion:no-preference){.copy{transition:background .2s}}
+</style>
+</head>
+<body>
+
+
+<div class="bar"><div class="wrap">
+  <span class="brand">Beyond Vibe Coding · design+AI · Lighthouse, Brighton · 24 September 2026</span>
+  <span class="spacer"></span>
+  <button id="modeBtn" aria-pressed="false" title="D">Deck mode</button>
+  <button id="notesBtn" aria-pressed="false" title="N">Presenter notes</button>
+  <button id="popBtn" title="Open a notes window. Or open this link again and press P.">Notes window</button>
+  <span class="counter" id="counter"></span>
+</div></div>
+
+<div class="wrap main"><div class="deck" id="deck">
+
+<!-- 1 -->
+<section class="slide tone">
+  <h1>Beyond Vibe Coding</h1>
+  <p class="lead">Beyond Vibe Coding: from prototyping to shipping like an engineer. Build a lighthouse game and put it online. The agent writes all the code. Ask questions the whole way through.</p>
+  <div class="prompt"><div class="label">Start here</div><pre>mkdir lighthouse
+cd lighthouse
+claude</pre>
+<p class="muted" style="font-family:'DM Sans',sans-serif;font-size:.95rem;margin-top:6px">Using Codex? Type <code>codex</code> instead of <code>claude</code>. Windows: do this inside the Ubuntu window.</p></div>
+  <div class="notes"><span class="label">09:30 · What I say</span><p>The terminal is the window where you run commands. Open Claude Code or Codex there. If your setup is unfinished, work with someone next to you. The agent writes the code. You decide what to build and check that it works.</p></div>
+</section>
+
+<!-- 1b -->
+<section class="slide">
+  <h2>What did you try before today?</h2>
+  <p class="lead">Eight questions. Hands up for each one that fits.</p>
+  <div class="notes"><span class="label">09:31 · 3 min · What I say</span><ol><li>Did you build with Lovable, v0, Bolt or Cursor?</li><li>Did you run Claude Code or Codex in a terminal?</li><li>Did you use your GitHub account more than once?</li><li>Did you make a commit and watch a build run?</li><li>Did you work on your team's code, beyond side projects?</li><li>Did you release software for other people?</li><li>Did you release software for paying customers?</li><li>Did you use Cloudflare before today?</li></ol><p>Keep your hand up for each question that fits. If you shipped software for paying customers, can you help your table today? If you already know commits and builds, we can spend longer on deployment. If the terminal is new to you, I will talk through the first prompt.</p></div>
+</section>
+
+<!-- 1c -->
+<section class="slide">
+  <h2>Different types of coding agents</h2>
+  <div class="cols">
+    <div><b>Claude chat or ChatGPT</b><p>MCP connects chat to other tools. Chat can read from those tools. It cannot edit or run files on your machine.</p></div>
+    <div><b>Claude Cowork or ChatGPT Work</b><p>Works on files in a separate workspace. Its command tools are limited.</p></div>
+    <div class="pick"><b>Claude Code or Codex</b><p>Edits files and installs software on your machine. Runs commands and reads the results. Builds software.</p></div>
+  </div>
+  <p class="lead">Use Claude Code or Codex for every step today.</p>
+  <div class="notes"><span class="label">09:33 · 2 min · What I say</span><p>Use Claude Code or Codex today. The agent must run a command and read the result. When a test fails, it can read the error and change the code. Keep the terminal open so you can see that happen.</p></div>
+</section>
+
+<!-- 2 -->
+<section class="slide">
+  <h2>Check what the agent gives you</h2>
+  <div class="two">
+    <div>
+      <ul class="steps">
+        <li>Give the agent one instruction at a time.</li>
+        <li>Look for the check after each step.</li>
+        <li>Keep the app and its data in the browser until 12:15.</li>
+        <li>If you get stuck, work with someone next to you.</li>
+        <li>Ask questions all morning. Put your hand up. Ask the agent too: it can explain any line it wrote.</li>
+      </ul>
+    </div>
+    <div class="prompt"><div class="label">Build this game</div><pre>Build a text adventure in a lighthouse. Put four rooms on a 2×2 grid. Move with the arrow keys. Each room describes the view and the exits.
+You can use your own idea if it follows these rules.</pre></div>
+  </div>
+  <div class="notes"><span class="label">09:35 · What I say</span><p>You can copy each prompt from this page. After the agent finishes, look for the check beside it. Put your hand up if the result differs. In our game, you can judge the movement by playing it. The venue gave us the setting: Lighthouse.</p></div>
+</section>
+
+<!-- 3 -->
+<section class="slide">
+  <h2>Six parts, in this order</h2>
+  <p class="lead">Set up the rails before the feature. Everything today is that one habit.</p>
+  <div class="five six">
+    <div><b>1 · Why setup matters first</b><span>09:35. A prototype, then git and GitHub.</span></div>
+    <div><b>2 · Building and deploying your first application</b><span>10:10. Cloudflare on every push, then Next.js.</span></div>
+    <div><b>3 · Using tests as your AI safety net</b><span>11:30. A failing test for the locked door, then green.</span></div>
+    <div><b>4 · Continuous integration in practice</b><span>11:45. A broken change that never goes live.</span></div>
+    <div><b>5 · Linting, type safety &amp; agent standards</b><span>11:55. The type check, the linter, CLAUDE.md and AGENTS.md.</span></div>
+    <div><b>6 · Building your first production-ready feature</b><span>12:13. Your idea. Then questions.</span></div>
+  </div>
+  <p class="muted">Break 11:00 to 11:15. Finish at 13:00.</p>
+  <div class="notes"><span class="label">09:36 · 1 min · What I say</span><p>These six are the headings on the workshop page you booked from. We do them in this order. The same deployment setup carries us all morning: one HTML file at ten, a tested TypeScript app at half twelve.</p></div>
+</section>
+
+<!-- 4 -->
+<section class="slide">
+  <h2>Make a game you can play</h2>
+  <div class="two">
+    <div class="prompt"><div class="label">Copy to the agent <button class="copy">Copy</button></div><pre>Create one index.html file for a tiny text adventure set in a lighthouse. Use four rooms on a 2×2 grid. Put the Spiral Stair at the top left and the Lamp Room at the top right. Put the Keeper's Kitchen at the bottom left and the Rocks at the bottom right. Start the player on the Rocks. Show the current room name. Describe what the player can see in two sentences. Show which directions the player can go. Use the arrow keys to move the player. If a direction is blocked, show a short message that says why. Use plain HTML and CSS. Write the game logic in TypeScript and compile it with tsc to a JavaScript file that the page loads. No frameworks. When the page is ready, run the build and open it in my browser.</pre></div>
+    <div>
+      <div class="checks">
+        <div class="check"><span class="mark">✓</span><span>Check: the page opens. Arrows move you. Walls show a message.</span></div>
+      </div>
+      <div class="prompt" style="margin-top:14px"><div class="label">Try these changes, one at a time</div><pre>Draw an illustration for each room as inline SVG, all in one hand-drawn style, and show it above the description.
+(Using Codex? Try first: Generate a real image for each room and show it above the description. If it says it cannot, use the SVG line.)
+Give each room a different colour and mood.
+Add a small map that marks my room.
+Make the rooms fade as I move between them.</pre></div>
+    </div>
+  </div>
+  <div class="notes"><span class="label">09:35 · 20 min · After the check · 3 min</span><p>Claude Code cannot generate real images, so its illustrations are SVG drawings. Codex may be able to: if a table gets a real image, show the room. Play it before you ask for another change. Does the room name match the map? Does the movement make sense? Give the agent a design change and look again. Leaving it as a design experiment is a success, not a failure. Today we will keep going and put this game online.</p></div>
+</section>
+
+<!-- 4b -->
+<!-- 4a -->
+<section class="slide">
+  <h2>Look at what it made</h2>
+  <div class="two">
+    <div>
+      <div class="prompt"><div class="label">Open the folder <button class="copy">Copy</button></div><pre>open .</pre></div>
+      <p class="muted" style="margin-top:8px">Mac: <code>open .</code> · Windows, inside Ubuntu: <code>explorer.exe .</code> · Or tell the agent: "Open this folder for me."</p>
+    </div>
+    <ul class="steps">
+      <li><code>index.html</code>: the page. What the browser shows.</li>
+      <li><code>game.ts</code>: the game logic, in TypeScript. This is the file you can read.</li>
+      <li><code>dist/game.js</code>: the same logic, compiled for the browser. Never edit this one.</li>
+      <li><code>package.json</code> and <code>tsconfig.json</code>: the project's name, its build command, its TypeScript settings.</li>
+      <li><code>node_modules</code>: other people's code the build needs. Do not open it. Do not commit it.</li>
+    </ul>
+  </div>
+  <div class="notes"><span class="label">09:52 · 3 min · What I say</span><p>Three minutes, taken from step 1. Walk the folder on the projector. The point: this is a project, not a file. One file is the page, one is the logic you wrote in plain language, one is the compiled copy the browser runs, and two are settings. The agent's names may differ a little from mine; the shape is the same. After the next step a hidden <code>.git</code> folder appears: that is the history.</p></div>
+</section>
+
+<section class="slide">
+  <h2>Sign in to GitHub</h2>
+  <div class="two">
+    <ul class="steps">
+      <li>Create a free account at <b>github.com</b>. Confirm your email.</li>
+      <li>Install gh from <b>cli.github.com</b>. On Mac: <code>brew install gh</code>.</li>
+      <li>Run <code>gh auth login</code>: <b>GitHub.com</b>, <b>HTTPS</b>, <b>Login with a web browser</b>.</li>
+      <li>Check: <code>gh auth status</code> shows that you are signed in.</li>
+    </ul>
+    <div>
+      <div class="prompt"><div class="label">Ask the agent for help <button class="copy">Copy</button></div><pre>Check whether the gh command is signed in to GitHub. If it is not, tell me what to type. Give me one step at a time. Wait for me after each step.</pre></div>
+      <div class="prompt" style="margin-top:14px"><div class="label">After you sign in</div><pre>I am signed in to GitHub. Continue.</pre></div>
+    </div>
+  </div>
+  <div class="notes"><span class="label">09:55 · What I say</span><p>If you still need GitHub access, raise your hand. Someone at your table can help. The GitHub CLI is the gh command. On Windows, install it inside Ubuntu using the Linux instructions at cli.github.com. For gh auth login, choose GitHub.com, HTTPS and Login with a web browser. Copy the code into the browser and finish signing in yourself.</p></div>
+</section>
+
+<!-- 5 -->
+<section class="slide">
+  <h2>Save your first two versions</h2>
+  <div class="two">
+    <div class="prompt"><div class="label">Copy to the agent <button class="copy">Copy</button></div><pre>Set up git in this folder. Make the first commit. If git asks who I am, set my name and email for this project and try again. Create a public GitHub repo called lighthouse. Push to the repo. Show me the repo URL.</pre></div>
+    <div class="checks">
+      <div class="check"><span class="mark">✓</span><span>Check: the GitHub repo contains <code>index.html</code>.</span></div>
+    </div>
+  </div>
+  <div class="two">
+    <div class="prompt"><div class="label">Change the map, then save <button class="copy">Copy</button></div><pre>Add a border to the map. Commit the change. Push it.</pre></div>
+    <div class="checks">
+      <div class="check"><span class="mark">✓</span><span>Check: GitHub shows two commits. Open the first version.</span></div>
+    </div>
+  </div>
+  <div class="notes"><span class="label">09:55 · 15 min · After the check · 3 min</span><p>Git keeps the history of your files. A repo holds those files and their history. A commit is a save point. Push sends your commits to GitHub. Open the first commit and compare it with the second. Small commits help you find the change you want to undo.</p></div>
+</section>
+
+<section class="slide">
+  <h2>Try changes you can undo</h2>
+  <div class="motif">
+    <ul class="benefits"><li>Return to an earlier version after a mistake.</li><li>Try a design change with a saved version to return to.</li><li>Share changes with another person or agent.</li><li>Read the history to see what changed and why.</li></ul>
+    <img src="img/source.jpg" alt="">
+  </div>
+  <div class="notes"><span class="label">10:07 · 3 min · What I say</span><p>Tools such as Lovable can make commits for you. Open the history yourself and see what each commit changed. Ask the agent for small commits. If a design change makes things worse, you can find it and return to the earlier version.</p></div>
+</section>
+
+<!-- 6 -->
+<section class="slide">
+  <h2>Give GitHub access to Cloudflare</h2>
+  <ul class="steps">
+    <li>Sign in at <b>dash.cloudflare.com</b>.</li>
+    <li>Open <b>My Profile</b> → <b>API Tokens</b> → <b>Create Token</b>.</li>
+    <li>Choose <b>Edit Cloudflare Workers</b>. Create the token. Save it somewhere private.</li>
+    <li>From the dashboard home, copy your <b>Account ID</b>.</li>
+    <li>If Cloudflare asks for a <b>workers.dev</b> subdomain, choose a name.</li>
+  </ul>
+  <div class="notes"><span class="label">10:10 · 5 min · What I say</span><p>The API token gives GitHub permission to deploy to Cloudflare. The account ID tells it which account to use. Open your profile at the top right, then My Profile, API Tokens and Create Token. Choose Edit Cloudflare Workers, continue and create the token. Cloudflare shows it once, so copy it somewhere safe. Copy the Account ID from the right of the dashboard home. Never show your token on a shared screen.</p></div>
+</section>
+
+<!-- 7 -->
+<section class="slide">
+  <h2>Put the game on your phone</h2>
+  <div class="two">
+    <div class="prompt"><div class="label">Copy to the agent <button class="copy">Copy</button></div><pre>Set up automatic deployment to Cloudflare Workers. Use a GitHub Actions workflow that runs the TypeScript build, then uses wrangler to deploy the built site as static assets, on every push to main. I will provide a Cloudflare API token and account ID. Use the GitHub CLI to store them as GitHub Actions secrets. Name them CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID. Push the changes. Wait for the workflow to finish. Give me the live URL.</pre></div>
+    <div>
+      <div class="checks">
+        <div class="check"><span class="mark">✓</span><span>Check: the live URL opens on your phone.</span></div>
+        <div class="check"><span class="mark">✓</span><span>Check: the Actions tab on GitHub shows a green tick.</span></div>
+      </div>
+      <div class="prompt" style="margin-top:14px"><div class="label">Change the live page <button class="copy">Copy</button></div><pre>Set the page title to "Lighthouse, by [your name]". Commit the change. Push it.</pre></div>
+      <div class="checks"><div class="check"><span class="mark">✓</span><span>Check: reload your phone. The title changes within a minute.</span></div></div>
+    </div>
+  </div>
+  <div class="notes"><span class="label">10:15 · 25 min · After the check · 5 min</span><p>Open the live URL on your phone. The live URL is the address of your deployed app. Your phone loads the app from Cloudflare. After the title change, reload that same address. If you finish early, ask the agent to explain the workflow file or add a custom domain.</p></div>
+</section>
+
+<section class="slide">
+  <h2>Deploy while the app is small</h2>
+  <div class="motif">
+    <ul class="benefits"><li>Each push to main sends the app to Cloudflare.</li><li>Set up deployment while the app has one file.</li><li>Use the same workflow as the app grows.</li><li>Share the live URL to show your latest change.</li><li>This is continuous integration and deployment: checked, then shipped, on every push.</li></ul>
+    <img src="img/deploy.jpg" alt="">
+  </div>
+  <div class="notes"><span class="label">10:40 · 5 min · What I say</span><p>A workflow is a set of commands that GitHub runs. This one sends the app to Cloudflare after each push to main. We set it up while the app has one file. After the break, we will add checks to stop a broken change going live.</p></div>
+</section>
+
+<!-- 8 -->
+<section class="slide">
+  <h2>Check all three before the break</h2>
+  <div class="checks">
+    <div class="check"><span class="mark">1</span><span>Check: your GitHub repo has at least three commits.</span></div>
+    <div class="check"><span class="mark">2</span><span>Check: the live <code>workers.dev</code> URL opens on your phone.</span></div>
+    <div class="check"><span class="mark">3</span><span>Check: your last push changed the live page.</span></div>
+  </div>
+  <p class="lead">If a check is missing, raise your hand. If all three pass, help the next table.</p>
+  <div class="notes"><span class="label">10:45 · 15 min · What I say</span><p>Open the repo and the live URL beside each other. If you are stuck on the Cloudflare token, put your hand up and I will come over. Before we start again, everyone must have these three checks or work with someone who does.</p></div>
+</section>
+
+<!-- 9 -->
+<section class="slide tone">
+  <p class="big">Take a break</p>
+  <p class="lead">11:00 to 11:15. Come back for types and tests.</p>
+</section>
+
+<!-- 10 -->
+<section class="slide">
+  <h2>Turn it into a real app</h2>
+  <div class="two">
+    <div class="prompt"><div class="label">Copy to the agent <button class="copy">Copy</button></div><pre>Create a new Next.js app in TypeScript with create-next-app and move the game into it. Keep the design unchanged. Add the files needed to run it on Cloudflare Workers with the OpenNext adapter. Update the GitHub Actions workflow to deploy on each push to main. Run the app locally. Open it in my browser. Commit the changes. Push them. Give me the live URL.</pre></div>
+    <div>
+      <div class="checks"><div class="check"><span class="mark">✓</span><span>Check: Next.js serves the same design at the same live URL.</span></div></div>
+      </div>
+  </div>
+  <div class="notes"><span class="label">11:15 · 15 min · After the check · 3 min</span><p>The design, the URL and the workflow have not changed, and underneath there is now a Next.js app in TypeScript. That is the scaffold the page promised, done in one prompt because the rails were already there.</p></div>
+</section>
+
+<!-- 11 -->
+<section class="slide">
+  <h2>Test the locked door first</h2>
+  <div class="two">
+    <div class="prompt"><div class="label">Copy to the agent <button class="copy">Copy</button></div><pre>Add this rule: the Lamp Room door stays locked until the player visits the Keeper's Kitchen. Put the room-movement rules in a plain function that does not need a browser. First, write a failing test for this behaviour. At the start, pressing up from the Rocks must leave the player on the Rocks. The message must be "The lamp room door is locked." After visiting the Keeper's Kitchen, pressing up from the Rocks must take the player into the Lamp Room. Run the test. Show me that it fails. Then change the code to make it pass.</pre></div>
+    <div class="checks">
+      <div class="check red"><span class="mark">✗</span><span>Check: the test fails first, with red output.</span></div>
+      <div class="check"><span class="mark">✓</span><span>Check: the same test passes after the code changes.</span></div>
+    </div>
+  </div>
+  <div class="two">
+    <div class="prompt"><div class="label">Run the checks before deployment <button class="copy">Copy</button></div><pre>Add lint and the type check alongside the tests. Update the workflow for pushes to main. Deploy only if tests, lint and the type check all pass. Push the changes.</pre></div>
+    <div class="checks"><div class="check"><span class="mark">✓</span><span>Check: GitHub shows three passing checks before deployment.</span></div></div>
+  </div>
+  <div class="notes"><span class="label">11:30 · 12 min · What I say</span><p>The game lets you enter the Lamp Room today. Our new rule must fail its first test because we have not added the lock. Read the failure before the agent fixes it. The game must remember a visit to the Keeper's Kitchen. Lint checks the code for common mistakes. Add all three checks to the workflow before deployment.</p></div>
+</section>
+
+<section class="slide">
+  <h2>Check behaviour without reading code</h2>
+  <div class="motif">
+    <ul class="benefits"><li>Write down the behaviour you expect.</li><li>See the test fail before the agent changes the code.</li><li>Run the same test after later changes.</li><li>Stop deployment when a check fails.</li></ul>
+    <img src="img/tests.jpg" alt="">
+  </div>
+  <div class="notes"><span class="label">11:42 · 3 min · What I say</span><p>You chose a rule you can check by playing the game. The test checks that rule after later changes too. A green tick proves the rules were followed. It does not approve the design. You still choose what the game does and whether it is worth keeping. If you need help before shipping, ask an engineer.</p></div>
+</section>
+
+<!-- 12 -->
+<section class="slide">
+  <h2>Stop a broken change<br>going live</h2>
+  <p class="lead">This error is planned. It is the input to the next step.</p>
+  <div class="two">
+    <div class="prompt"><div class="label">Remove the lock <button class="copy">Copy</button></div><pre>Change the code so the Lamp Room door never locks. Leave the test unchanged. Commit the change. Push it.</pre></div>
+    <div class="checks">
+      <div class="check red"><span class="mark">✗</span><span>Check: GitHub shows a red cross.</span></div>
+      <div class="check"><span class="mark">✓</span><span>Check: reload your phone. The live game still locks the door.</span></div>
+    </div>
+  </div>
+  <div class="two">
+    <div class="prompt"><div class="label">Give the agent the failed run <button class="copy">Copy</button></div><pre>Read the failed workflow run. Fix the cause of the failure. Push the fix.</pre></div>
+    <div class="checks"><div class="check"><span class="mark">✓</span><span>Check: GitHub shows a green tick and the fix goes live.</span></div></div>
+  </div>
+  <div class="notes"><span class="label">11:45 · 10 min · After the check · 5 min</span><p>This error is planned. It is the input to the next step. Look at the failed run on GitHub, then play the live game. The door must still lock there. Some machines pass first time and some show a different error. That is variation, not a mistake. Read the failure you have before you ask the agent to fix it.</p></div>
+</section>
+
+<!-- 12b -->
+<section class="slide">
+  <h2>Break the types, then run the linter</h2>
+  <div class="two">
+    <div>
+<div class="prompt" ><div class="label">Make a type error <button class="copy">Copy</button></div><pre>Change the move function to take a number for the direction instead of a word. Leave the code that calls it unchanged. Run the type check. Show me the result.</pre></div>
+      <div class="checks"><div class="check red"><span class="mark">✗</span><span>Check: the type check names the error. Then restore the function.</span></div></div>
+      <div class="prompt" style="margin-top:14px"><div class="label">Break the linter, on purpose <button class="copy">Copy</button></div><pre>Add an unused variable near the top of the game component. Run the linter. Show me what it reports. Then remove the variable, run the linter again and show me it is clean.</pre></div>
+      <div class="checks"><div class="check"><span class="mark">✓</span><span>Check: the linter names a file and a line. Then it reports nothing.</span></div></div>
+
+    
+    </div>
+    <div class="notes"><span class="label">11:55 · 8 min · After the check · 3 min</span><p>A type says what kind of value the code expects. Our move function expects a direction word. We changed it to expect a number, but the caller still sends a word. Read the line named by the type check. Then tell the agent: "Restore the move function to take a word for the direction." Lint is the same idea for style and common mistakes: it reads every line, and the agent fixes what it names.</p></div>
+  </div>
+</section>
+
+<section class="slide">
+  <h2>Checks you did not write</h2>
+  <div class="motif">
+    <ul class="benefits"><li>Find mismatched values before deployment.</li><li>Read the error to find the line that failed.</li><li>Give the agent the error so it can fix the code.</li><li>Get checks that you did not write yourself.</li><li>Lint applies your conventions on every line. Nobody reviews style by eye.</li></ul>
+    <img src="img/typing.jpg" alt="">
+  </div>
+  <div class="notes"><span class="label">12:03 · 3 min · What I say</span><p>The type check found a mismatch before you played the game. The agent can use that error to find the line and fix it. TypeScript adds checks throughout the code, like tests you did not write. Types cannot tell you whether the door locks at the right time. The next step tests that rule.</p></div>
+</section>
+
+<!-- 13 -->
+<section class="slide">
+  <h2>Keep the rules between sessions</h2>
+  <div class="two">
+    <div class="prompt"><div class="label">Copy to the agent <button class="copy">Copy</button></div><pre>This project may already have a CLAUDE.md and an AGENTS.md from the scaffold. Keep what is there and add these rules to both files. Before changing behaviour, write a failing test. Before saying a change is done, run tests, lint and the type check. If a check fails, do not push. Commit after each small change. Ask before adding a library. Save the same rules in AGENTS.md.</pre></div>
+    <div class="checks">
+      <div class="check"><span class="mark">✓</span><span>Check: restart the agent. Ask for the rules. It lists five.</span></div>
+    </div>
+  </div>
+  <div class="notes"><span class="label">12:06 · 7 min · After the check · 2 min</span><p>Close the agent and start a new session. Ask: "Which project rules must you follow?" Listen for all five rules. Claude Code reads CLAUDE.md. Codex and Cursor read AGENTS.md. The files give the next session the same instructions. Add rules for choices that the automated checks cannot make.</p></div>
+</section>
+
+<!-- 14 -->
+<section class="slide">
+  <h2>Build a feature of your own</h2>
+  <div class="two">
+    <ul class="steps">
+      <li><b>Design the screen.</b> Use fixed example data. Change the look first.</li>
+      <li><b>Test the behaviour.</b> Write a failing test, then change the code.</li>
+      <li><b>Put it online.</b> Commit and push. Check the live URL.</li>
+    </ul>
+    <div class="prompt"><div class="label">Choose an idea</div><pre>Add a fifth room with its own rule.
+Pick up a key in the Keeper's Kitchen. Show it in an inventory.
+Remember my room when I reload the page.
+Redraw the room illustrations in a style you choose. Art-direct the agent.</pre></div>
+  </div>
+  <div class="two">
+    <div class="prompt"><div class="label">Extra · move rooms to D1 <button class="copy">Copy</button></div><pre>Move the rooms into a Cloudflare D1 database. Create the database with wrangler. Write a migration to create a rooms table and add the four rooms. Apply the migration locally, then remotely. Add the binding to the wrangler configuration. Load the rooms from the database in a route handler. Keep the movement rules pure so the existing tests still pass. Make the GitHub Actions workflow apply migrations before deployment. Push the changes. Give me the live URL.</pre></div>
+    <div class="prompt"><div class="label">Then add a room without deployment <button class="copy">Copy</button></div><pre>Add a fifth room called the Cellar below the Keeper's Kitchen. Use one SQL insert against the remote database. Do not change any code. Do not deploy.</pre>
+<p class="muted" style="font-family:'DM Sans',sans-serif;font-size:.9rem">Check: reload the live URL. The Cellar appears without a deployment.</p></div>
+  </div>
+  <div class="notes"><span class="label">12:13 · 32 min · What I say</span><p>Start with the screen: "Add a screen for X. Hard-code the data. Open it in my browser." The hard-coded version will look wrong in places, because the data is fake. That is expected until the behaviour lands. Change the design until it looks right. Then ask: "Write a failing test for X. Change the code to make it pass." Finish with: "Commit the change. Push it." If you finish early, try D1 with the token from step 3. Check that it grants D1 access. D1 stores the room data outside the browser for the first time. Keep movement rules pure: they take values and return results without reading the database. If it fails, ask the agent to remember your room after a reload instead.</p></div>
+</section>
+
+<section class="slide">
+  <h2>Change rooms without changing code</h2>
+  <div class="motif">
+    <ul class="benefits"><li>Keep the room data outside the browser.</li><li>Show each player the same set of rooms.</li><li>Add the Cellar with one SQL insert.</li><li>Change the room data without deploying new code.</li></ul>
+    <img src="img/database.jpg" alt="">
+  </div>
+  <div class="notes"><span class="label">12:48 · 2 min · What I say</span><p>If you tried D1, show us the Cellar at your live URL. A database stores data that the app reads. D1 holds the rooms in a table outside the browser. One SQL insert adds the Cellar to that table. The app reads the extra room without a new deployment. Your position and visited rooms still stay in the browser.</p></div>
+</section>
+
+<!-- 15 -->
+
+<!-- 14b -->
+<section class="slide">
+  <h2>A workflow for your next project</h2>
+  <div class="two">
+    <ul class="steps">
+      <li>Prototype the screen as one file. Change the look until it is right.</li>
+      <li>Put it in git. Push it to GitHub.</li>
+      <li>Deploy on every push, while the app is one file.</li>
+      <li>Make it a typed app. Same workflow, same URL.</li>
+      <li>Write the failing test for the next rule. Make it pass. Deploy only when tests, lint and types pass.</li>
+      <li>Write the project rules in CLAUDE.md and AGENTS.md.</li>
+      <li>Every feature: design, then test, then push.</li>
+    </ul>
+    <div>
+      <p class="lead">What the page said you would leave with:</p>
+      <ul class="benefits" style="margin-top:10px;font-size:1rem"><li>A Next.js + TypeScript application built on production-ready foundations</li><li>A GitHub repository with CI configured</li><li>Automated testing and linting workflows</li><li>A reusable CLAUDE.md / AGENTS.md setup</li><li>A workflow you can immediately apply to future projects</li></ul>
+      <p class="muted" style="margin-top:12px">This page stays up. Your app is in your GitHub and on your Cloudflare. chrismdp.com/coding-with-ai has the longer version.</p>
+    </div>
+  </div>
+  <div class="notes"><span class="label">12:45 · 3 min · What I say</span><p>This list is the workflow. On Monday it is the same for a real product as it was today for a lighthouse. The order matters more than the tools. Then the close.</p></div>
+</section>
+
+<section class="slide tone">
+  <h2>What you learned</h2>
+  <div class="five">
+    <div><b>Scaffold a modern application using AI</b><span>Step 4, one prompt.</span></div>
+    <div><b>Deploy using GitHub and Cloudflare</b><span>Step 3, then every push.</span></div>
+    <div><b>Use testing, linting and CI to improve AI-generated code</b><span>Steps 5 and 6.</span></div>
+    <div><b>Configure AI coding agents to follow your team's standards</b><span>Step 7, CLAUDE.md and AGENTS.md.</span></div>
+    <div><b>Build features with confidence using production-ready workflows</b><span>Step 8, your feature.</span></div>
+  </div>
+  <div class="prompt"><div class="label">Name someone to talk to</div><pre>Before I ship this, I must speak to ______.</pre></div>
+  <p class="lead">You just did what a CTO does on day one of a product. The agent typed. You judged. Take the app and its checks to your next conversation with an engineer.</p>
+  <div class="notes"><span class="label">12:50 · 10 min · What I say</span><p>You can take an engineer a live URL, a repo and tests for the behaviour you want. Those give you something concrete to discuss. Before you ship to users, talk about what else the app needs. Write the name of one person to speak to. Then we have time for questions. There is more at chrismdp.com/coding-with-ai.</p></div>
+</section>
+
+</div>
+<div class="notesview" id="notesview">
+  <div class="nv-count" id="nvCount"></div>
+  <div class="nv-title" id="nvTitle"></div>
+  <div class="nv-notes" id="nvNotes"></div>
+  <div class="nv-next" id="nvNext"></div>
+  <p class="nv-hint">Notes window. <kbd>→</kbd> <kbd>←</kbd> move both windows. <kbd>P</kbd> back to slides.</p>
+</div>
+<span class="foot">© Chris Parsons 2026</span>
+<p class="hint"><kbd>→</kbd> <kbd>←</kbd> change slide · <kbd>N</kbd> show notes · <kbd>D</kbd> switch view · <kbd>Home</kbd> go to start</p>
+</div>
+
+<script>
+(function(){
+  var slides=[].slice.call(document.querySelectorAll('.slide'));
+  var body=document.body, i=0;
+  var modeBtn=document.getElementById('modeBtn'), notesBtn=document.getElementById('notesBtn'), counter=document.getElementById('counter');
+  function show(n){
+    i=Math.max(0,Math.min(slides.length-1,n));
+    slides.forEach(function(s,k){s.classList.toggle('active',k===i)});
+    counter.textContent=body.classList.contains('deckmode')?(i+1)+' / '+slides.length:slides.length+' slides';
+    try{localStorage.setItem('bvc-slide',String(i))}catch(e){}
+    renderNotes();
+    if(body.classList.contains('deckmode')) window.scrollTo(0,0);
+  }
+  function setMode(deck){
+    body.classList.toggle('deckmode',deck);
+    modeBtn.setAttribute('aria-pressed',deck?'true':'false');
+    modeBtn.textContent=deck?'List mode':'Deck mode';
+    try{localStorage.setItem('bvc-mode',deck?'deck':'list')}catch(e){}
+    show(i);
+  }
+  function setNotes(on){
+    body.classList.toggle('shownotes',on);
+    notesBtn.setAttribute('aria-pressed',on?'true':'false');
+    try{localStorage.setItem('bvc-notes',on?'1':'0')}catch(e){}
+  }
+  function titleOf(s){var h=s.querySelector('h1,h2,.big');return h?h.textContent.trim():''}
+  function renderNotes(){
+    if(!body.classList.contains('notesmode'))return;
+    var s=slides[i], n=s.querySelector('.notes'), lab=s.querySelector('.notes .label');
+    document.getElementById('nvCount').textContent=(i+1)+' / '+slides.length+(lab?' · '+lab.textContent:'');
+    document.getElementById('nvTitle').textContent=titleOf(s);
+    var nn=document.getElementById('nvNotes'); nn.innerHTML='';
+    if(n){var c=n.cloneNode(true); var l=c.querySelector('.label'); if(l)l.remove(); nn.innerHTML=c.innerHTML}else{nn.textContent='No notes on this slide.'}
+    document.getElementById('nvNext').innerHTML=(i+1<slides.length)?'Next: <b>'+titleOf(slides[i+1])+'</b>':'Last slide.';
+  }
+  function setNotesMode(on){
+    body.classList.toggle('notesmode',on);
+    if(on){body.classList.add('deckmode')}
+    document.title=on?'Notes · Beyond Vibe Coding':'Beyond Vibe Coding';
+    show(i);
+  }
+  window.addEventListener('storage',function(e){
+    if(e.key==='bvc-slide'){var n=parseInt(e.newValue||'0',10); if(!isNaN(n)&&n!==i){i=n; show(i)}}
+  });
+  document.getElementById('popBtn').addEventListener('click',function(){
+    try{localStorage.setItem('bvc-open-notes','1')}catch(e){}
+    var w=null; try{w=window.open(location.href.split('#')[0],'bvcnotes','width=760,height=700')}catch(e){}
+    if(!w){alert('The pop-up was blocked. Open the deck link in a second window and press P.')}
+  });
+  modeBtn.addEventListener('click',function(){setMode(!body.classList.contains('deckmode'))});
+  notesBtn.addEventListener('click',function(){setNotes(!body.classList.contains('shownotes'))});
+  document.addEventListener('keydown',function(e){
+    if(e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA')return;
+    var deck=body.classList.contains('deckmode');
+    if(e.key==='d'||e.key==='D'){setMode(!deck);return}
+    if(e.key==='p'||e.key==='P'){setNotesMode(!body.classList.contains('notesmode'));return}
+    if(e.key==='n'||e.key==='N'){setNotes(!body.classList.contains('shownotes'));return}
+    if(!deck&&!body.classList.contains('notesmode'))return;
+    if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' '){e.preventDefault();show(i+1)}
+    if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();show(i-1)}
+    if(e.key==='Home'){show(0)}
+    if(e.key==='End'){show(slides.length-1)}
+  });
+  [].forEach.call(document.querySelectorAll('.copy'),function(b){
+    b.addEventListener('click',function(){
+      var pre=b.closest('.prompt').querySelector('pre');
+      var text=pre.textContent;
+      function done(){b.textContent='Copied';b.dataset.done='1';setTimeout(function(){b.textContent='Copy';delete b.dataset.done},1500)}
+      try{navigator.clipboard.writeText(text).then(done,function(){fallback()})}catch(e){fallback()}
+      function fallback(){var r=document.createRange();r.selectNodeContents(pre);var s=getSelection();s.removeAllRanges();s.addRange(r);try{document.execCommand('copy');done()}catch(e){}}
+    });
+  });
+  var wide=window.matchMedia('(min-width: 900px)').matches, mode='list', saved=0, notes=false;
+  try{mode=localStorage.getItem('bvc-mode')||(wide?'deck':'list');saved=parseInt(localStorage.getItem('bvc-slide')||'0',10)||0;notes=localStorage.getItem('bvc-notes')==='1'}catch(e){mode=wide?'deck':'list'}
+  i=saved; setNotes(notes); setMode(mode==='deck');
+  var openNotes=false; try{openNotes=localStorage.getItem('bvc-open-notes')==='1'; if(openNotes)localStorage.removeItem('bvc-open-notes')}catch(e){}
+  if(window.name==='bvcnotes'||openNotes){setNotesMode(true)}
+})();
+</script>
+
+</body>
+</html>
