@@ -78,6 +78,8 @@ a{color:var(--turq-deep)}
 @media (max-width:520px){.five{grid-template-columns:1fr}}
 .five div{border:2px solid var(--ink);border-radius:var(--sketch);padding:14px;display:grid;gap:6px;background:var(--paper)}
 .five.six{grid-template-columns:repeat(3,1fr)}
+.five.seven{grid-template-columns:repeat(4,1fr)}
+@media (max-width:900px){.five.seven{grid-template-columns:1fr 1fr}}
 @media (max-width:820px){.five.six{grid-template-columns:1fr}}
 .five b{font-family:"DM Sans",system-ui,sans-serif;font-size:1.05rem;line-height:1.2;color:var(--turq-deep)}
 .five span{font-size:.9rem;color:var(--muted)}
@@ -205,6 +207,23 @@ You can use your own idea if it follows these rules.</pre></div>
   <div class="notes"><span class="label">09:36 · 1 min · What I say</span><p>These six are the headings on the workshop page you booked from. We do them in this order. The same deployment setup carries us all morning: one HTML file at ten, a tested TypeScript app at half twelve.</p></div>
 </section>
 
+<!-- 3b -->
+<section class="slide">
+  <h2>The practices you will leave with</h2>
+  <p class="lead">Each one is something a CTO sets up on day one. Today you set them up yourself, in this order.</p>
+  <div class="five seven">
+    <div><b>1 · Source control</b><span>Every change is a save point. Small commits, often.</span></div>
+    <div><b>2 · Automatic deployment</b><span>Push to main and it is live. Set up before it matters.</span></div>
+    <div><b>3 · Tests</b><span>Say what true looks like first. Then make it true.</span></div>
+    <div><b>4 · Builds and continuous integration</b><span>Every push is checked. A broken change never ships.</span></div>
+    <div><b>5 · Types and linting</b><span>Checks on every line that you did not have to write.</span></div>
+    <div><b>6 · Rules for the agent</b><span>CLAUDE.md and AGENTS.md carry the standards between sessions.</span></div>
+    <div><b>7 · Design first</b><span>The screen, then the behaviour, then the code.</span></div>
+  </div>
+  <p class="muted">On the way: secrets stay out of the code, a bad deploy is one revert away, and you learn when to bring in an engineer.</p>
+  <div class="notes"><span class="label">09:37 · 1 min · What I say</span><p>One minute. Do not explain them here; each gets its own slide after you have done it. Say only: these are the seven habits, you will have done all of them by one o'clock, and none of them needs you to read code.</p></div>
+</section>
+
 <!-- 4 -->
 <section class="slide">
   <h2>Make a game you can play</h2>
@@ -321,7 +340,7 @@ Make the rooms fade as I move between them.</pre></div>
 <section class="slide">
   <h2>Deploy while the app is small</h2>
   <div class="motif">
-    <ul class="benefits"><li>Each push to main sends the app to Cloudflare.</li><li>Set up deployment while the app has one file.</li><li>Use the same workflow as the app grows.</li><li>Share the live URL to show your latest change.</li><li>This is continuous integration and deployment: checked, then shipped, on every push.</li></ul>
+    <ul class="benefits"><li>Each push to main sends the app to Cloudflare.</li><li>Set up deployment while the app has one file.</li><li>Use the same workflow as the app grows.</li><li>Share the live URL to show your latest change.</li><li>This is continuous integration and deployment: checked, then shipped, on every push.</li><li>Your token lives in GitHub's secrets, never in the code. A bad deploy is one revert away.</li></ul>
     <img src="img/deploy.jpg" alt="">
   </div>
   <div class="notes"><span class="label">10:40 · 5 min · What I say</span><p>A workflow is a set of commands that GitHub runs. This one sends the app to Cloudflare after each push to main. We set it up while the app has one file. After the break, we will add checks to stop a broken change going live.</p></div>
@@ -442,6 +461,7 @@ Make the rooms fade as I move between them.</pre></div>
 <section class="slide">
   <h2>Build a feature of your own</h2>
   <div class="two">
+    <div class="prompt" style="margin-bottom:14px"><div class="label">Before anything <button class="copy">Copy</button></div><pre>Tell me your plan for this feature before you change any code. Then wait for me.</pre></div>
     <ul class="steps">
       <li><b>Design the screen.</b> Use fixed example data. Change the look first.</li>
       <li><b>Test the behaviour.</b> Write a failing test, then change the code.</li>
@@ -457,7 +477,7 @@ Redraw the room illustrations in a style you choose. Art-direct the agent.</pre>
     <div class="prompt"><div class="label">Then add a room without deployment <button class="copy">Copy</button></div><pre>Add a fifth room called the Cellar below the Keeper's Kitchen. Use one SQL insert against the remote database. Do not change any code. Do not deploy.</pre>
 <p class="muted" style="font-family:'DM Sans',sans-serif;font-size:.9rem">Check: reload the live URL. The Cellar appears without a deployment.</p></div>
   </div>
-  <div class="notes"><span class="label">12:13 · 32 min · What I say</span><p>Start with the screen: "Add a screen for X. Hard-code the data. Open it in my browser." The hard-coded version will look wrong in places, because the data is fake. That is expected until the behaviour lands. Change the design until it looks right. Then ask: "Write a failing test for X. Change the code to make it pass." Finish with: "Commit the change. Push it." If you finish early, try D1 with the token from step 3. Check that it grants D1 access. D1 stores the room data outside the browser for the first time. Keep movement rules pure: they take values and return results without reading the database. If it fails, ask the agent to remember your room after a reload instead.</p></div>
+  <div class="notes"><span class="label">12:13 · 32 min · What I say</span><p>Plan first: one line, no document. Read the plan, correct it in plain words, then let it build. That is all the spec a change this size needs; the design and the test are the rest of it. Start with the screen: "Add a screen for X. Hard-code the data. Open it in my browser." The hard-coded version will look wrong in places, because the data is fake. That is expected until the behaviour lands. Change the design until it looks right. Then ask: "Write a failing test for X. Change the code to make it pass." Finish with: "Commit the change. Push it." If you finish early, try D1 with the token from step 3. Check that it grants D1 access. D1 stores the room data outside the browser for the first time. Keep movement rules pure: they take values and return results without reading the database. If it fails, ask the agent to remember your room after a reload instead.</p></div>
 </section>
 
 <section class="slide">
