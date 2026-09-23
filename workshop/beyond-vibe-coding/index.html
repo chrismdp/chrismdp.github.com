@@ -325,7 +325,7 @@ Each time, add: Do not make it a full app yet. Keep it in one file, as a referen
       <div class="check"><span class="mark">✓</span><span>Check: GitHub shows two commits. Open the first version.</span></div>
     </div>
   </div>
-  <div class="notes"><span class="label">09:55 · 15 min · After the check · 3 min</span><p>Git keeps the history of your files. A repo holds those files and their history. A commit is a save point. Push sends your commits to GitHub. Open the first commit and compare it with the second. Small commits help you find the change you want to undo.</p></div>
+  <div class="notes"><span class="label">09:55 · 15 min · After the check · 3 min</span><p>Git keeps the history of your files. A repo holds those files and their history. A commit is a save point. Push sends your commits to GitHub. Open the first commit and compare it with the second. Small commits help you find the change you want to undo.</p><p>The repo is public on purpose. Secrets never go in the code, public or private. That is one of the rules of a twelve-factor app: settings and secrets live outside the code. So a public repo costs you nothing, and you can show it to anyone.</p></div>
 </section>
 
 <section class="slide">
@@ -382,10 +382,10 @@ Each time, add: Do not make it a full app yet. Keep it in one file, as a referen
 <section class="slide">
   <h2>Deploy while the app is small</h2>
   <div class="motif">
-    <ul class="benefits"><li>Each push to main sends the app to Cloudflare.</li><li>Set up deployment while the app has one file.</li><li>Use the same workflow as the app grows.</li><li>Share the live URL to show your latest change.</li><li>This is continuous integration and deployment: checked, then shipped, on every push.</li><li>Your token lives in GitHub's secrets, never in the code, never in a chat. A bad deploy is one revert away.</li><li>Never run a script you have not read. Thirty seconds, every time.</li></ul>
+    <ul class="benefits"><li>Each push to main sends the app to Cloudflare.</li><li>Set up deployment while the app has one file.</li><li>Use the same workflow as the app grows.</li><li>Share the live URL to show your latest change.</li><li>This is continuous integration and deployment: checked, then shipped, on every push.</li><li><span>Your token lives in GitHub's secrets, never in the code, never in a chat. A bad deploy is one revert away. See <a href="https://12factor.net/config" target="_blank" rel="noopener">12factor.net/config</a>.</span></li><li>Never run a script you have not read. Thirty seconds, every time.</li></ul>
     <img src="img/deploy.jpg" alt="">
   </div>
-  <div class="notes"><span class="label">10:40 · 5 min · What I say</span><p>A workflow is a set of commands that GitHub runs. This one sends the app to Cloudflare after each push to main. We set it up while the app has one file. After the break, we will add checks to stop a broken change going live.</p></div>
+  <div class="notes"><span class="label">10:40 · 5 min · What I say</span><p>A workflow is a set of commands that GitHub runs. This one sends the app to Cloudflare after each push to main. We set it up while the app has one file. After the break, we will add checks to stop a broken change going live.</p><p>If the live site shows an error, copy the error, paste it into the agent and ask it to fix it. Then push. The same workflow takes the fix live.</p></div>
 </section>
 
 <!-- 8 -->
@@ -421,12 +421,12 @@ Each time, add: Do not make it a full app yet. Keep it in one file, as a referen
 <section class="slide">
   <h2>Turn it into a real app</h2>
   <div class="two">
-    <div class="prompt"><div class="label">Copy to the agent <button class="copy">Copy</button></div><pre>Create a new Next.js app in TypeScript with create-next-app. Rebuild the game inside it, using the one-file prototype as the reference. Keep the design unchanged. Add the files needed to run it on Cloudflare Workers with the OpenNext adapter. Update the GitHub Actions workflow to deploy on each push to main. Run the app locally. Open it in my browser. Commit the changes. Push them. Give me the live URL.</pre></div>
+    <div class="prompt"><div class="label">Copy to the agent <button class="copy">Copy</button></div><pre>Create a new Next.js app in TypeScript with create-next-app. Rebuild the game inside it, using the one-file prototype as the reference. Keep the design unchanged. Add the files needed to run it on Cloudflare Workers with the OpenNext adapter. Update the GitHub Actions workflow to deploy on each push to main. Run the app locally and open it in my browser. Wait for me to check it. When I say it looks right, commit the changes, push them and give me the live URL.</pre></div>
     <div>
-      <div class="checks"><div class="check"><span class="mark">✓</span><span>Check: Next.js serves the same design at the same live URL.</span></div></div>
+      <div class="checks"><div class="check"><span class="mark">✓</span><span>Check it locally first. That is your preview. Say go only when it looks right.</span></div><div class="check"><span class="mark">✓</span><span>Check: Next.js serves the same design at the same live URL.</span></div></div>
       </div>
   </div>
-  <div class="notes"><span class="label">11:15 · 15 min · After the check · 3 min</span><p>The design, the URL and the workflow have not changed, and underneath there is now a Next.js app in TypeScript. That is the scaffold the page promised, done in one prompt because the rails were already there.</p></div>
+  <div class="notes"><span class="label">11:15 · 15 min · After the check · 3 min</span><p>The design, the URL and the workflow have not changed, and underneath there is now a Next.js app in TypeScript. That is the scaffold the page promised, done in one prompt because the rails were already there.</p><p>From now on you see every change on your own laptop before it goes live. The local copy is your preview. Nothing reaches the live URL until you say go. Later, Cloudflare can also give each branch its own preview URL, so you can share a change with someone else before it goes live.</p></div>
 </section>
 
 <section class="slide">
@@ -438,6 +438,7 @@ Each time, add: Do not make it a full app yet. Keep it in one file, as a referen
       <li>It is the React setup the agent knows best. Not the best framework. The one the AI is best at.</li>
       <li>When the app grows, or the design work gets serious, it gives the agent a structure to hang the work on.</li>
       <li>Better than a pile of vibe-coded JavaScript.</li>
+      <li>Some choices are hard to undo: the framework, the database, sign-in, the shape of your data. Take your time on those. Change the rest freely.</li>
     </ul>
     <img src="img/tools.jpg" alt="">
   </div>
@@ -550,12 +551,12 @@ Each time, add: Do not make it a full app yet. Keep it in one file, as a referen
 <section class="slide">
   <h2>Keep the rules between sessions</h2>
   <div class="two">
-    <div class="prompt"><div class="label">Copy to the agent <button class="copy">Copy</button></div><pre>This project may already have an AGENTS.md from the scaffold. Keep what is there and add these rules to it. Before changing behaviour, write a failing test. Before saying a change is done, run tests, lint and the type check. If a check fails, do not push. Commit after each small change. Ask before adding a library.</pre></div>
+    <div class="prompt"><div class="label">Copy to the agent <button class="copy">Copy</button></div><pre>This project may already have an AGENTS.md from the scaffold. Keep what is there and add these rules to it. Before changing behaviour, write a failing test. Before saying a change is done, run tests, lint and the type check. If a check fails, do not push. Commit after each small change. Ask before adding a library. Before you push, run the app locally and wait for me to check it.</pre></div>
     <div class="checks">
-      <div class="check"><span class="mark">✓</span><span>Check: restart the agent. Ask for the rules. It lists five.</span></div>
+      <div class="check"><span class="mark">✓</span><span>Check: restart the agent. Ask for the rules. It lists six.</span></div>
     </div>
   </div>
-  <div class="notes"><span class="label">12:06 · 7 min · After the check · 2 min</span><p>Close the agent and start a new session. Ask: "Which project rules must you follow?" Listen for all five rules. Claude Code, Codex and Cursor all read AGENTS.md. The files give the next session the same instructions. Add rules for choices that the automated checks cannot make.</p></div>
+  <div class="notes"><span class="label">12:06 · 7 min · After the check · 2 min</span><p>Close the agent and start a new session. Ask: "Which project rules must you follow?" Listen for all six rules. Claude Code, Codex and Cursor all read AGENTS.md. The files give the next session the same instructions. Add rules for choices that the automated checks cannot make.</p></div>
 </section>
 
 <!-- 14 -->
@@ -564,7 +565,7 @@ Each time, add: Do not make it a full app yet. Keep it in one file, as a referen
     <div>
       <p class="muted" style="font-size:1.1rem;font-weight:700;color:var(--turq-deep)">Step 8</p>
       <p class="big">Your feature</p>
-      <p class="lead" style="margin-top:14px">Plan, design, test, push.</p>
+      <p class="lead" style="margin-top:14px">Plan, design, test, check, push.</p>
     </div>
     <img src="img/database.jpg" alt="">
   </div>
@@ -577,6 +578,7 @@ Each time, add: Do not make it a full app yet. Keep it in one file, as a referen
     <ul class="steps">
       <li><b>Design the screen.</b> Use fixed example data. Change the look first.</li>
       <li><b>Test the behaviour.</b> Write a failing test, then change the code.</li>
+      <li><b>Check it locally.</b> Look at it on your laptop. Change it until it is right.</li>
       <li><b>Put it online.</b> Commit and push. Check the live URL.</li>
     </ul>
     <div class="prompt"><div class="label">Choose an idea</div><pre>Add a fifth room with its own rule.
@@ -601,6 +603,24 @@ Redraw the room illustrations in a style you choose. Art-direct the agent.</pre>
   <div class="notes"><span class="label">12:48 · 2 min · What I say</span><p>If you tried D1, show us the Cellar at your live URL. A database stores data that the app reads. D1 holds the rooms in a table outside the browser. One SQL insert adds the Cellar to that table. The app reads the extra room without a new deployment. Your position and visited rooms still stay in the browser.</p></div>
 </section>
 
+<section class="slide">
+  <h2>Extra: change the shape with a migration</h2>
+  <div class="motif">
+    <ul class="benefits"><li>A migration is a small numbered file that changes the database's shape. For example, it adds a table or a column.</li><li>It lives in git, next to the code.</li><li>It runs in order, the same on your laptop and on the live site.</li><li>Your workflow applies it before each deploy, so the database and the code stay in step.</li><li>Shape goes through migrations. Content, like the Cellar, can go straight in.</li></ul>
+    <img src="img/database.jpg" alt="">
+  </div>
+  <div class="notes"><span class="label">Extra · only if tables tried D1 · 3 min · What I say</span><p>You wrote a migration in the D1 prompt: it created the rooms table. Every change to the shape of the database goes the same way. A new file, numbered, committed, and run by the workflow before it deploys. Nobody changes the live database's shape by hand, because then your laptop and the live site no longer match. Adding the Cellar was different: that was content, not shape, so one insert was fine.</p></div>
+</section>
+
+<section class="slide">
+  <h2>Extra: data is harder to undo than code</h2>
+  <div class="motif">
+    <ul class="benefits"><li>Code goes back with one revert. Deleted data does not.</li><li>A migration that drops a column deletes that data for good.</li><li>D1 can restore the database to any minute in the last 7 days on the free plan, or 30 on the paid plan.</li><li><span>For a copy you keep, <code>wrangler d1 export</code> saves the database to a file.</span></li><li>Store data about people, and you are responsible for it: what you keep, who can see it, how you delete it. That is GDPR.</li></ul>
+    <img src="img/source.jpg" alt="">
+  </div>
+  <div class="notes"><span class="label">Extra · only if tables tried D1 · 3 min · What I say</span><p>Everything this morning could be undone with git. Data is the exception. Before a migration that removes anything, make a backup: ask the agent to export the database first. D1 also keeps a history you can restore from, with wrangler d1 time-travel restore, but the restore overwrites what is there now. The bigger line is people. The lighthouse stores rooms. The moment your app stores names, emails or anything about a person, the stakes change, and that is a conversation with an engineer before you ship.</p></div>
+</section>
+
 <!-- 15 -->
 
 <!-- 14b -->
@@ -614,7 +634,7 @@ Redraw the room illustrations in a style you choose. Art-direct the agent.</pre>
       <li>Make it a typed app. Same workflow, same URL.</li>
       <li>Write the failing test for the next rule. Make it pass. Deploy only when tests, lint and types pass.</li>
       <li>Write the project rules in AGENTS.md.</li>
-      <li>Every feature: design, then test, then push.</li>
+      <li>Every feature: design, then test, then check it locally, then push.</li>
     </ul>
     <div>
       <p class="lead">What the page said you would leave with:</p>
@@ -636,7 +656,7 @@ Redraw the room illustrations in a style you choose. Art-direct the agent.</pre>
   </div>
   <div class="prompt"><div class="label">Name someone to talk to</div><pre>Before I ship this, I must speak to ______.</pre></div>
   <p class="lead">You just did what a CTO does on day one of a product. The agent typed. You judged. Take the app and its checks to your next conversation with an engineer.</p>
-  <div class="notes"><span class="label">12:50 · 10 min · What I say</span><p>You can take an engineer a live URL, a repo and tests for the behaviour you want. Those give you something concrete to discuss. Before you ship to users, talk about what else the app needs. Write the name of one person to speak to. Then we have time for questions. There is more at chrismdp.com/coding-with-ai.</p></div>
+  <div class="notes"><span class="label">12:50 · 10 min · What I say</span><p>You can take an engineer a live URL, a repo and tests for the behaviour you want. Those give you something concrete to discuss. Before you ship to users, talk about what else the app needs. Write the name of one person to speak to. Then we have time for questions. There is more at chrismdp.com/coding-with-ai.</p><p>Where to go next: sign-in. The moment the app has a login, the risk goes up. You now hold other people's accounts and you decide who can see what. That is a good time to bring in an engineer.</p></div>
 </section>
 
 </div>
