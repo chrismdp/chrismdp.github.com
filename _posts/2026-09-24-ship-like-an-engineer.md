@@ -18,7 +18,7 @@ description: "Nine engineering practices that turn an AI-built prototype into an
 
 *This post is based on a workshop given on 24th September 2026 at [design+AI](https://designplusaisummit.com){:target="_blank"}.*
 
-Building a working prototype with AI is easy now: ask Claude to build you something cool and it will. Shipping that prototype, so that it is live and useful and does not fall over, is a different problem. On Thursday I spent a morning in Brighton with a room of designers and product people working through the practices engineers rely on to make that second part possible. Nobody wrote a line of code, because the agent wrote all of it and we spent the time learning what to tell it.
+Building a working prototype with AI is easy now: ask Claude to build you something cool and it will. Shipping that prototype, so that it is live and useful and does not fall over, is a different problem. On Thursday I spent a morning in Brighton with a room of designers and product people working through the practices engineers rely on to make that second part possible. We did not write any code ourselves. The agent did all of that, and our job was to know what to ask it for.
 
 <!--more-->
 
