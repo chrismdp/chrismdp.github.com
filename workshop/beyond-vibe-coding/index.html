@@ -39,7 +39,7 @@ a{color:var(--turq-deep)}
 
 /* slides */
 .deck{display:flex;flex-direction:column;gap:28px}
-.slide{background:var(--paper);border:2px solid var(--ink);border-radius:var(--sketch);padding:clamp(22px,3.5vw,46px);display:grid;gap:22px;position:relative}
+.slide{background:var(--paper);border:2px solid var(--ink);border-radius:var(--sketch);padding:clamp(22px,3.5vw,46px);padding-bottom:64px;display:grid;gap:22px;position:relative}
 .slide.tone{background:var(--turq);border-color:var(--ink)}
 .slide.tone .eyebrow{color:var(--ink)}
 .slide.tone .muted{color:var(--ink);opacity:.8}
@@ -121,7 +121,7 @@ body.notesmode .notesview{display:grid;gap:18px;max-width:900px;margin:0 auto;pa
 /* fullscreen: no bar, no hint, slide fills the screen */
 body.fullscreen .bar,body.fullscreen .hint{display:none}
 body.fullscreen .wrap.main{padding-block:0;max-width:none}
-body.fullscreen.deckmode .slide{min-height:100vh;padding:clamp(28px,4vw,64px);align-content:center}
+body.fullscreen.deckmode .slide{min-height:100vh;padding:clamp(28px,4vw,64px);padding-bottom:80px;align-content:center}
 body.fullscreen .foot{display:none}
 /* deck mode */
 body.deckmode .deck{gap:0}
@@ -141,7 +141,8 @@ body:not(.deckmode) .hint{display:none}
 .nv-help{font-size:.95rem;color:var(--muted);display:grid;gap:6px}.nv-help b{color:var(--ink)}.nv-help ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:4px 18px}
 .helpdlg{position:fixed;inset:0;z-index:60;display:none;place-items:center;background:rgba(0,0,0,.45)}.helpdlg.on{display:grid}.helpdlg .nv-help{background:var(--paper);color:var(--ink);border:2px solid var(--ink);border-radius:var(--sketch);padding:24px 28px;max-width:760px;width:calc(100% - 32px);font-size:1.05rem}
 .helpdlg .nv-only{display:none}
-.credit{position:absolute;right:16px;bottom:10px;font-size:.75rem;color:var(--muted);text-decoration:none;opacity:.8}.credit:hover{text-decoration:underline;opacity:1}.notesview .credit{position:static}.slide.horror .credit{color:#bbb}.slide.tone .credit{color:var(--ink)}
+.credit,.slide-url{position:absolute;bottom:10px;font-size:.75rem;color:var(--muted);text-decoration:none;opacity:.8}.credit{right:16px}.slide-url{left:16px}.credit:hover,.slide-url:hover{text-decoration:underline;opacity:1}.notesview .credit{position:static}.slide.horror .credit,.slide.horror .slide-url{color:#bbb}.slide.tone .credit,.slide.tone .slide-url{color:var(--ink)}
+@media(max-width:700px){.slide-url{bottom:30px}.slide{padding-bottom:76px}body.fullscreen.deckmode .slide{padding-bottom:90px}}
 body:not(.deckmode):not(.shownotes) .notes{display:none}
 body.fullscreen.deckmode .wrap.main{max-width:none;padding-inline:0}body.fullscreen.deckmode .slide.active{align-content:center}
 .osgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.osgrid .prompt pre{white-space:pre-wrap}.os-mac{background:#e6f6fa!important}.os-win{background:#fff0e6!important;border-color:var(--orange)!important}.os-linux{background:#f0f0ec!important}@media (max-width:560px){.osgrid{grid-template-columns:1fr}}
@@ -846,8 +847,11 @@ The tests for the behaviour you want.</pre></div>
 <script>
 (function(){
   var slides=[].slice.call(document.querySelectorAll('.slide'));
-  // One credit, added to every slide.
-  slides.forEach(function(sl){var c=document.createElement('a'); c.className='credit'; c.href='https://www.chrismdp.com/'; c.target='_blank'; c.rel='noopener'; c.textContent='© Chris Parsons'; sl.appendChild(c)});
+  // Workshop link and credit, added to every slide.
+  slides.forEach(function(sl){
+    var url=document.createElement('a'); url.className='slide-url'; url.href='https://www.chrismdp.com/workshop/beyond-vibe-coding/'; url.target='_blank'; url.rel='noopener'; url.textContent='chrismdp.com/workshop/beyond-vibe-coding'; sl.appendChild(url);
+    var c=document.createElement('a'); c.className='credit'; c.href='https://www.chrismdp.com/'; c.target='_blank'; c.rel='noopener'; c.textContent='© Chris Parsons'; sl.appendChild(c);
+  });
   var body=document.body, i=0;
   var modeBtn=document.getElementById('modeBtn'), notesBtn=document.getElementById('notesBtn'), counter=document.getElementById('counter');
   function show(n){
