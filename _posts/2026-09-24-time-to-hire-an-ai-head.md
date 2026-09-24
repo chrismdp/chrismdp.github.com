@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Time To Hire An AI Head"
-date: 2026-09-28 09:00:00 +0100
+date: 2026-09-24 09:00:00 +0100
 published: true
 series: "Software Factory"
 article_collection: open-models
