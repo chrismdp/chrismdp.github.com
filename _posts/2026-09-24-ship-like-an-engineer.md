@@ -74,7 +74,7 @@ We then broke the build on purpose, by telling the agent to change the code and 
 
 ## 6. Make Mistakes Harder
 
-Four plus four is eight, but the text "4" plus the text "4" is "44", because adding two pieces of text just joins them together. Computers treat numbers and text differently, and JavaScript, the language of the web, tries to be clever about guessing which one you mean. In a big program, that cleverness makes it hard to work out what is going on. TypeScript makes the types explicit, so mistakes show up early. The easier it is for a person to reason about the code, the easier it is for an agent too. If you are not a programmer, the advice is short: tell the agent to use TypeScript.
+Four plus four is eight, but the text "4" plus the text "4" is "44", because adding two pieces of text just joins them together. Computers treat numbers and text differently, and JavaScript, the language of the web, tries to be clever about guessing which one you mean. In a big program, that cleverness makes it hard to work out what is going on. TypeScript makes the types explicit, so mistakes show up early. The easier it is for a person to reason about the code, the easier it is for an agent too. If you are not a programmer, the advice is short: tell the agent to use a typed language (TypeScript is a good default if you are building for the web).
 
 Linting is the tidying part. A linter checks that the code is consistent and well formed and flags anything left lying around, such as code nothing uses any more. Developers used to argue endlessly about whether to indent with tabs or spaces. In the end, bored CTOs handed the decision to the linter, and nobody has to care any more. Lint and type checks go into the build alongside the tests.
 
