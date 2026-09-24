@@ -104,7 +104,7 @@ AI can do a huge amount of this on its own, but there are a few times when I wou
 
 ## Engineering Is Unlocked
 
-Engineering is not scary, and it is not out of reach. None of these practices needs you to write code. They are things you can ask an agent to do today, and you can keep asking it questions until you understand what it did.
+Engineering is not scary, and it is not out of reach. None of these practices needs you to write code. They are things you can ask an agent to set up for you today.
 
 Take a prototype you have already built and open it in Claude Code or Codex. Ask the agent to put it in Git, publish it to GitHub and set it up so that every push deploys it automatically. Then ask it to explain each step it took, one at a time, until you could explain it to someone else.
 
