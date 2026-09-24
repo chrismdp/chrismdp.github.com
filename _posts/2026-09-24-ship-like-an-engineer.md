@@ -22,8 +22,6 @@ Building a working prototype with AI is easy now: ask Claude to build you someth
 
 <!--more-->
 
-{% include inline-image.html src="/assets/img/beyond-vibe-coding-design-ai-workshop.jpg" alt="Chris Parsons smiling in front of a projected title slide reading Beyond Vibe Coding: From prototyping to shipping like an engineer, with an illustration of a robot holding a laptop beside a lighthouse" align="center" width="100%" %}
-
 There is a mystique around engineers and how they work, but we are not always that clever, and our whole job is managing complexity. The systems we build are too complicated to hold in our heads, so over the years we have built up habits that let us keep going without everything falling over. I think of them as the foundations under a building, without which you can only go so high before it collapses. A lot of these habits are about being lazy in a disciplined way, so that you do not have to think about the same thing twice.
 
 That matters even more now. I do not know any engineers who still write code by hand, because they tell the AI what to write. Agents are good at making sensible decisions, but they still need nudging, and whether you type the code yourself or tell an agent to type it, you have to know the important things to say so that it does not make a mess. All the slides and prompts from the session are on the [Beyond Vibe Coding workshop page](/workshop/beyond-vibe-coding/), which has both the version I delivered and an updated one.
