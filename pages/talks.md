@@ -3,6 +3,8 @@ layout: page
 title: Talks
 permalink: /talks/
 full_width: true
+redirect_from:
+  - /workshop/
 ---
 
 {% assign today = 'now' | date: '%s' %}

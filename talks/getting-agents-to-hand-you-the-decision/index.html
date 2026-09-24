@@ -1,0 +1,621 @@
+---
+layout: null
+title: "Getting agents to hand you the decision"
+sitemap: false
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Hand You the Decision</title>
+<meta name="description" content="Slides for Getting agents to hand you the decision, AI Anonymous, 25 September 2026.">
+<script>
+/* EVENT SETTINGS. Edit this one object for each event. Leave a value empty ('') to hide it.
+   eventLine:    shown in the top bar and on the title slide, e.g. 'Event name · City · date'
+   wifiNetwork:  venue Wi-Fi network name. When empty, the Wi-Fi box on the setup slide is hidden.
+   wifiPassword: venue Wi-Fi password.
+   breakLength:  length of the break, e.g. '15 minutes'. */
+window.BVC_EVENT = {
+  eventLine: 'AI Anonymous · 25 September 2026',
+  wifiNetwork: '',
+  wifiPassword: '',
+  breakLength: ''
+};
+</script>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Source+Code+Pro:wght@400;500&display=swap">
+<style>
+/* Chris Parsons brand: white paper, charcoal ink, turquoise fills, orange only for the action. Hand-sketched borders. */
+:root{
+  --paper:#FFFFFF; --ink:#333333; --muted:#5F6B6D; --line:#333333;
+  --turq:#1AC8DB; --turq-deep:#0292B7; --sky:#99DFEC; --sky-pale:#EAF8FB; --orange:#FC8745;
+  --good:#0292B7; --bad:#D9531E; --note-ground:#FFF4EC; --note-ink:#4A2E14;
+  --sketch:255px 15px 225px 15px / 15px 225px 15px 255px;
+}
+html,body{height:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;font-size:18px;line-height:1.45}
+*{box-sizing:border-box}
+h1,h2,h3{font-family:"DM Sans",system-ui,sans-serif;text-wrap:balance;margin:0;line-height:1.05;color:var(--ink);letter-spacing:-.01em}
+h1{font-size:clamp(2.4rem,6vw,4.6rem);font-weight:700}
+h2{font-size:clamp(1.7rem,4vw,2.9rem);font-weight:700}
+h3{font-size:1.4rem;font-weight:700}
+p{margin:0}
+a{color:var(--turq-deep)}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px;padding-block:16px}
+
+/* top bar */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);border-bottom:2px solid var(--ink)}
+.bar .wrap{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding-block:10px}
+.brand{font-family:"DM Sans",system-ui,sans-serif;font-weight:700;font-size:1rem;color:var(--ink)}
+.spacer{flex:1}
+.bar button{font:inherit;font-size:.85rem;font-weight:500;padding:6px 14px;border:2px solid var(--ink);border-radius:var(--sketch);background:var(--paper);color:var(--ink);cursor:pointer}
+.bar button[aria-pressed="true"]{background:var(--turq);border-color:var(--ink)}
+.bar button:focus-visible,.copy:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+.counter{font-variant-numeric:tabular-nums;color:var(--muted);font-size:.9rem;min-width:4ch;text-align:right}
+
+/* slides */
+.deck{display:flex;flex-direction:column;gap:28px}
+.slide{background:var(--paper);border:2px solid var(--ink);border-radius:var(--sketch);padding:clamp(22px,3.5vw,46px);padding-bottom:64px;display:grid;gap:22px;position:relative}
+.slide.tone{background:var(--turq);border-color:var(--ink)}
+.slide.tone .eyebrow{color:var(--ink)}
+.slide.tone .muted{color:var(--ink);opacity:.8}
+.eyebrow{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.eyebrow .tag{background:var(--sky);color:var(--ink);padding:3px 12px;border:2px solid var(--ink);border-radius:var(--sketch);letter-spacing:.06em}
+.slide.tone .eyebrow .tag{background:var(--paper)}
+.eyebrow .clock{font-variant-numeric:tabular-nums}
+.muted{color:var(--muted)}
+.lead{font-size:1.2rem;max-width:62ch}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+@media (max-width:820px){.two{grid-template-columns:1fr}}
+
+/* prompt boxes: the thing attendees copy */
+.prompt{background:var(--sky-pale);color:var(--ink);border:2px solid var(--ink);border-radius:var(--sketch);padding:16px 20px;display:grid;gap:10px}
+.slide.tone .prompt{background:var(--paper)}
+.prompt .label{display:flex;align-items:center;gap:10px;font-family:"DM Sans",system-ui,sans-serif;font-size:.95rem;font-weight:700;color:var(--turq-deep);text-transform:none;letter-spacing:0}
+.prompt pre{margin:0;white-space:pre-wrap;font-family:"Source Code Pro",ui-monospace,SFMono-Regular,Menlo,monospace;font-size:1rem;line-height:1.5;overflow-x:auto}
+.copy{margin-left:auto;font-family:"DM Sans",system-ui,sans-serif;font-size:.8rem;font-weight:700;padding:5px 12px;border:2px solid var(--ink);border-radius:var(--sketch);background:var(--orange);color:var(--ink);cursor:pointer}
+.copy[data-done="1"]{background:var(--turq)}
+
+/* checks */
+.check{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start;padding:10px 0;border-top:1px dashed var(--ink)}
+.check:first-of-type{border-top:0}
+.check .mark{width:28px;height:28px;border-radius:50%;border:2px solid var(--ink);background:var(--turq);color:var(--ink);display:grid;place-items:center;font-weight:700;font-size:.9rem}
+.check.red .mark{background:var(--orange)}
+.checks{display:grid}
+.steps{display:grid;gap:10px;counter-reset:s;padding:0;margin:0;list-style:none}
+.steps li{position:relative;padding-left:2.6rem;line-height:1.5}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:.1rem;font-family:"DM Sans",system-ui,sans-serif;font-weight:700;font-size:1.25rem;color:var(--turq-deep);line-height:1}
+.slide.tone .steps li::before{color:var(--ink)}
+.notes{background:var(--note-ground);color:var(--note-ink);border:2px dashed var(--orange);border-radius:var(--sketch);padding:14px 18px;font-size:.95rem;display:grid;gap:8px}
+.notes .label{font-family:"DM Sans",system-ui,sans-serif;font-size:.9rem;font-weight:700;color:var(--orange)}
+.big{font-family:"DM Sans",system-ui,sans-serif;font-size:clamp(2.4rem,7vw,5rem);font-weight:700;line-height:1;color:var(--ink)}
+.five{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+@media (max-width:900px){.five{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.five{grid-template-columns:1fr}}
+.five div{border:2px solid var(--ink);border-radius:var(--sketch);padding:14px;display:grid;gap:6px;background:var(--paper)}
+.five.six{grid-template-columns:repeat(3,1fr)}
+.five.seven{grid-template-columns:repeat(4,1fr)}
+@media (max-width:900px){.five.seven{grid-template-columns:1fr 1fr}}
+@media (max-width:820px){.five.six{grid-template-columns:1fr}}
+.five b{font-family:"DM Sans",system-ui,sans-serif;font-size:1.05rem;line-height:1.2;color:var(--turq-deep)}
+.five span{font-size:.9rem;color:var(--muted)}
+.slide.tone .five div{background:var(--paper)}
+kbd{font-family:"Source Code Pro",monospace;font-size:.8rem;border:1px solid var(--ink);border-radius:4px;padding:1px 6px;background:var(--paper);color:var(--ink)}
+code{font-family:"Source Code Pro",monospace;font-size:.95em}
+
+/* footer, the brand mark */
+.foot{position:fixed;right:14px;bottom:calc(8px + env(safe-area-inset-bottom,0px));font-size:.7rem;color:var(--muted);opacity:.7;pointer-events:none;z-index:6}
+
+.motif{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;align-items:center}
+@media (max-width:820px){.motif{grid-template-columns:1fr}}
+.motif img{max-width:100%;max-height:52vh;object-fit:contain;justify-self:center}
+.closing-visual{display:grid;grid-template-columns:minmax(0,1fr) minmax(160px,200px);gap:12px;align-items:center}
+.closing-visual .qr-link{display:grid;gap:8px;justify-items:center;font-size:.9rem;font-weight:700;text-align:center}
+.closing-visual .qr-link img{width:100%;height:auto;max-height:none;display:block}
+.benefits{display:grid;gap:12px;padding:0;margin:0;list-style:none;font-size:1.15rem}
+.benefits li{display:grid;grid-template-columns:1.4rem 1fr;gap:10px;align-items:baseline}
+.benefits li::before{content:"";width:.9rem;height:.9rem;border:2px solid var(--ink);border-radius:50%;background:var(--turq);display:inline-block;transform:translateY(.05rem)}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media (max-width:820px){.cols{grid-template-columns:1fr}}
+.cols div{border:2px solid var(--ink);border-radius:var(--sketch);padding:14px 16px;display:grid;gap:8px;align-content:start;background:var(--paper)}
+.cols div.pick{background:var(--sky-pale)}
+.cols b{font-family:"DM Sans",system-ui,sans-serif;font-size:1.15rem;line-height:1.2;color:var(--turq-deep)}
+.cols p{font-size:.95rem}
+
+/* notes window */
+.notes ol{margin:0;padding-left:1.3rem;display:grid;gap:4px}
+.notesview{display:none}
+body.notesmode .deck,body.notesmode .hint,body.notesmode .foot{display:none}
+body.notesmode .notesview{display:grid;gap:18px;max-width:900px;margin:0 auto;padding:24px 20px}
+.notesview .nv-count{font-size:1rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.notesview .nv-title{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:700;line-height:1.1}
+.notesview .nv-notes{font-size:1.3rem;line-height:1.5;display:grid;gap:10px}
+.notesview .nv-notes ol{padding-left:1.4rem;display:grid;gap:6px}
+.notesview .nv-next{border-top:2px dashed var(--ink);padding-top:12px;color:var(--muted)}
+.notesview .nv-next b{color:var(--ink)}
+.notesview .nv-hint{font-size:.85rem;color:var(--muted)}
+/* fullscreen: no bar, no hint, slide fills the screen */
+body.fullscreen .bar,body.fullscreen .hint{display:none}
+body.fullscreen .wrap.main{padding-block:0;max-width:none}
+body.fullscreen.deckmode .slide{min-height:100vh;padding:clamp(28px,4vw,64px);padding-bottom:80px;align-content:center}
+body.fullscreen .foot{display:none}
+/* deck mode */
+body.deckmode .deck{gap:0}
+body.deckmode .slide{display:none;min-height:calc(100vh - 140px);border:0;border-radius:0;background:var(--paper)}
+body.deckmode .slide.tone{background:var(--turq)}
+body.deckmode .slide.active{display:grid;align-content:start}
+body.deckmode .notes{display:none}
+body.deckmode.shownotes .notes{display:grid}
+body.deckmode .wrap.main{max-width:1280px}
+.hint{font-size:.85rem;color:var(--muted);padding-block:12px}
+body:not(.deckmode) .hint{display:none}
+@media (prefers-reduced-motion:no-preference){.copy{transition:background .2s}}
+.slide.horror,.deck .slide.horror{background:#111 !important;border-color:#111}.slide.horror h1{color:var(--orange);letter-spacing:.01em}.slide.horror .lead{color:#f4f4f4}.slide.horror .prompt{background:#1b1b1b;border-color:var(--orange);color:#f4f4f4}.slide.horror .prompt .label{color:var(--orange)}.slide.horror .prompt pre{color:var(--orange)}.slide.horror .prompt .muted,.slide.horror .prompt code{color:#cfcfcf}
+.jump{position:fixed;right:28px;bottom:28px;z-index:50;display:none;font-family:"DM Sans",system-ui,sans-serif;font-weight:700;font-size:clamp(3rem,9vw,7rem);line-height:1;color:var(--paper);background:var(--ink);padding:14px 28px;border-radius:var(--sketch);font-variant-numeric:tabular-nums;letter-spacing:.06em}.jump.on{display:block}
+.nine{grid-template-columns:repeat(3,1fr)}@media (max-width:560px){.nine{grid-template-columns:1fr}}
+.nv-thumbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}.nv-thumb{position:relative;aspect-ratio:16/10;overflow:hidden;border:2px solid var(--ink);border-radius:6px;background:var(--paper);cursor:pointer;padding:0}.nv-thumb.current{outline:4px solid var(--orange);outline-offset:1px}.nv-thumb .nv-num{position:absolute;right:4px;bottom:3px;z-index:2;font:700 .8rem 'DM Sans',system-ui,sans-serif;background:var(--ink);color:var(--paper);padding:1px 6px;border-radius:4px}.nv-thumb .slide{display:grid!important;position:absolute;left:0;top:0;width:1280px;height:800px;min-height:0!important;transform-origin:0 0;pointer-events:none;overflow:hidden;align-content:start}.nv-thumb .slide .notes{display:none!important}
+.nv-help{font-size:.95rem;color:var(--muted);display:grid;gap:6px}.nv-help b{color:var(--ink)}.nv-help ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:4px 18px}
+.helpdlg{position:fixed;inset:0;z-index:60;display:none;place-items:center;background:rgba(0,0,0,.45)}.helpdlg.on{display:grid}.helpdlg .nv-help{background:var(--paper);color:var(--ink);border:2px solid var(--ink);border-radius:var(--sketch);padding:24px 28px;max-width:760px;width:calc(100% - 32px);font-size:1.05rem}
+.helpdlg .nv-only{display:none}
+.credit,.slide-url{position:absolute;bottom:10px;font-size:.75rem;color:var(--muted);text-decoration:none;opacity:.8}.credit{right:16px}.slide-url{left:16px}.credit:hover,.slide-url:hover{text-decoration:underline;opacity:1}.notesview .credit{position:static}.slide.horror .credit,.slide.horror .slide-url{color:#bbb}.slide.tone .credit,.slide.tone .slide-url{color:var(--ink)}
+@media(max-width:700px){.slide-url{bottom:30px}.slide{padding-bottom:76px}body.fullscreen.deckmode .slide{padding-bottom:90px}}
+body:not(.deckmode):not(.shownotes) .notes{display:none}
+body.fullscreen.deckmode .wrap.main{max-width:none;padding-inline:0}body.fullscreen.deckmode .slide.active{align-content:center}
+/* deck QR codes: small on the title slide, big on the setup slide so it scans from the back of the room */
+.deck-qr{display:flex;align-items:center;gap:14px;font-size:.95rem}
+.deck-qr img{width:120px;height:120px;border:2px solid var(--ink);border-radius:6px;background:#fff;flex:none}
+.deck-qr b{color:var(--turq-deep);overflow-wrap:break-word}
+.door-qr{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:18px;align-items:center}
+.door-qr img{width:100%;height:auto;border:2px solid var(--ink);border-radius:6px;background:#fff;display:block}
+.door-qr .label-sm{font-weight:700;color:var(--turq-deep)}
+.door-qr .door-url{font-family:"Source Code Pro",monospace;font-size:1.15rem;font-weight:500;overflow-wrap:break-word;margin-top:6px}
+@media (max-width:560px){.door-qr{grid-template-columns:1fr;justify-items:center;text-align:center}.door-qr img{max-width:260px}}
+.perm{margin:0;padding-left:1.2rem;display:grid;gap:4px;font-size:.95rem}
+[data-needs].is-empty{display:none!important}
+.osgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.osgrid .prompt pre{white-space:pre-wrap}.os-mac{background:#e6f6fa!important}.os-win{background:#fff0e6!important;border-color:var(--orange)!important}.os-linux{background:#f0f0ec!important}@media (max-width:560px){.osgrid{grid-template-columns:1fr}}
+/* print: Print → Save as PDF gives one slide per page, with no notes and no buttons */
+@page{size:A4 landscape;margin:10mm}
+@media print{
+  .bar,.hint,.foot,.jump,.helpdlg,.notesview,.notes,.copy,.print-hide{display:none!important}
+  body{font-size:14px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .slide{gap:14px!important}
+  .prompt{padding:10px 14px}
+  .prompt pre{font-size:.82rem;line-height:1.4}
+  .wrap.main{max-width:none!important;padding:0!important}
+  .deck{display:block!important}
+  .slide,body.deckmode .slide{display:grid!important;min-height:0!important;height:auto;border:0!important;border-radius:0;padding:8mm 10mm 14mm!important;break-after:page;page-break-after:always;break-inside:avoid;align-content:start}
+  .slide:last-child{break-after:auto;page-break-after:auto}
+  .motif img{max-height:120mm}
+  .door-qr{grid-template-columns:60mm 1fr}
+  .hero{min-height:0}
+  .hero img.hero-img{max-height:110mm}
+  .slide.tone,body.deckmode .slide.tone{background:#fff!important}
+  .slide,body.deckmode .slide{min-height:calc(100vh - 2mm)!important;box-sizing:border-box;position:relative}
+  .slide-url,.credit{bottom:5mm}
+}
+/* talk additions */
+img.wide-ill{justify-self:center;max-width:100%;max-height:46vh;object-fit:contain}
+.hero .lead{font-size:clamp(1.2rem,2.4vw,1.8rem)}
+.hero .fn{font-size:clamp(.95rem,1.5vw,1.15rem);opacity:.85;margin-top:18px}
+.hero{display:grid;justify-items:center;text-align:center;gap:18px;align-content:center;min-height:60vh}
+.hero .stack{justify-items:center;gap:10px}
+.hero img.hero-img{max-height:48vh;max-width:100%;object-fit:contain}
+.hero .lead{margin-inline:auto}
+
+img.ill.solo{max-height:30vh;justify-self:center;max-width:100%}
+
+.motif img.ill{max-height:34vh}
+.slide .motif .stack{align-content:center}
+
+.bar .brand:focus:not(:focus-visible){outline:none}
+.bar .counter{white-space:nowrap}
+
+.placeholder{border:2px dashed var(--ink);border-radius:var(--sketch);padding:40px 20px;text-align:center;color:var(--muted)}
+.shotslot{display:grid}
+
+.quote{margin:0;border-left:6px solid var(--turq);padding:6px 0 6px 20px;font-size:clamp(1.15rem,2.2vw,1.55rem);line-height:1.4;max-width:60ch;display:grid;gap:8px}
+.slide.tone .quote{border-left-color:var(--paper)}
+.quote.reply{border-left-color:var(--orange)}
+.quote cite{font-style:normal;font-size:.9rem;color:var(--muted)}
+.slide.tone .quote cite{color:var(--ink);opacity:.8}
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.stats.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media (max-width:820px){.stats,.stats.four{grid-template-columns:1fr 1fr}}
+.stats div{border:2px solid var(--ink);border-radius:var(--sketch);padding:16px;display:grid;gap:6px;align-content:start}
+.stats .big{color:var(--turq-deep);font-variant-numeric:tabular-nums}
+.stats span:not(.big){color:var(--muted);font-size:.95rem}
+.loop{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-weight:700}
+.loop span{border:2px solid var(--ink);border-radius:var(--sketch);padding:8px 14px;background:var(--sky-pale)}
+.loop span.slow{background:var(--sky)}
+.loop span.bad{background:var(--orange)}
+.loop i{font-style:normal;color:var(--muted)}
+.card{border:2px solid var(--ink);border-radius:var(--sketch);padding:16px 18px;display:grid;gap:10px;align-content:start;background:var(--paper)}
+.card.pick{background:var(--sky-pale)}
+.card b{font-size:1.2rem;color:var(--turq-deep)}
+.tablewrap{overflow-x:auto}
+.ladder{border-collapse:collapse;width:100%;font-size:1.05rem}
+.ladder th,.ladder td{text-align:left;padding:12px 14px;border-bottom:1px dashed var(--ink)}
+.ladder th{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.ladder tr.pick td{background:var(--sky-pale);font-weight:700}
+.shotrow{display:grid;grid-template-columns:1.3fr .7fr;gap:22px;align-items:start}
+@media (max-width:820px){.shotrow{grid-template-columns:1fr}}
+.shot{max-width:100%;max-height:62vh;object-fit:contain;object-position:top;border:2px solid var(--ink);border-radius:8px;justify-self:center}
+.stack{display:grid;gap:18px;align-content:start}
+.open{justify-self:start;font-weight:700;text-decoration:none;color:var(--ink);background:var(--orange);border:2px solid var(--ink);border-radius:var(--sketch);padding:10px 18px}
+.open:focus-visible{outline:3px solid var(--turq-deep);outline-offset:2px}
+.big-open{font-size:1.3rem;padding:14px 24px}
+</style>
+</head>
+<body>
+
+
+<div class="bar"><div class="wrap">
+  <span class="brand">Hand you the decision<span data-event="eventLine" data-prefix=" · "></span></span>
+  <span class="spacer"></span>
+  <button id="modeBtn" aria-pressed="false" title="D">Deck mode</button>
+  <button id="notesBtn" aria-pressed="false" title="N">Presenter notes</button>
+  <button id="fsBtn" title="F">Fullscreen</button>
+  <button id="popBtn" title="Open a notes window. Or open this link again and press P.">Notes window</button>
+  <span class="counter" id="counter"></span>
+</div></div>
+
+<div class="wrap main"><div class="deck content-styled" id="deck">
+
+<!-- 1 -->
+<section class="slide tone">
+  <div class="hero">
+    <img class="ill hero-img" src="img/boring-code-cut.png" alt="">
+    <div class="stack"><p class="big">I no longer read code*</p><p class="lead">It's just SO BORING.</p><p class="fn">* or my vault, or most of what my agents make</p></div>
+  </div>
+  <div class="notes"><span class="label">0:00 · 1 min · What I say</span><p>Say the line. Let the laugh land. Then straight away: for production code that matters, I still do. It is still boring. Then point at the asterisk: or my vault, or most of what my agents make. That is the real problem: I have stopped reading the raw output of everything.</p></div>
+</section>
+
+<!-- 2 -->
+<section class="slide">
+  <h2>Reading the output doesn't tell me if the intent is right</h2>
+  <div class="loop">
+    <span>Brief</span><i>→</i><span>Build</span><i>→</i><span class="slow">CI</span><i>→</i><span class="slow">Deploy</span><i>→</i><span>Click around</span><i>→</i><span class="bad">"That's not what I meant"</span>
+  </div>
+  <div class="motif">
+    <ul class="benefits"><li>The code shows what it does, not what I meant.</li><li>The app shows what I meant, after an age of CI.</li><li>I don't want to stop running tests.</li></ul>
+    <img class="ill" src="img/intent-loop.jpg" alt="">
+  </div>
+  <div class="notes"><span class="label">0:01 · 1 min · What I say</span><p>The code tells me what it does. It rarely tells me whether that is what I meant. Using the app does tell me, but only after the build, CI and the deploy. By the time I find the intent was wrong, I have burnt a whole loop. And I don't want to stop running tests. So how do I reconcile that?</p></div>
+</section>
+
+<!-- 3 -->
+<section class="slide">
+  <h2>Where do all my ideas go?</h2>
+  <p class="lead">This is where a lack of feedback hurts you, even if you never write code. My second-brain vault had the same problem.</p>
+  <div class="motif">
+    <blockquote class="quote"><span>"I know my agents have been cracking on getting things done, checking and recording things, but <em>where</em> the information goes I'm not sure about… can I retrieve the ideas easily, or have they all been covered in AI slop?"</span><cite>My daily note, Monday 14 September, written by hand</cite></blockquote>
+    <img class="ill" src="img/filing-robots.jpg" alt="">
+  </div>
+  <div class="stats">
+    <div><span class="big">14</span><span>agents with their own scheduled jobs</span></div>
+    <div><span class="big">741</span><span>source files filed in the last month</span></div>
+  </div>
+  <div class="notes"><span class="label">0:02 · 2 min · What I say</span><p>I wrote this by hand. I was beyond worried about only ever talking to my agents: I was having a moment. I stopped reading my Obsidian vault. After a while I got worried about what the AI was putting in it. Read the quote. Then: "the slight feeling of having to trust subordinates that I don't quite trust." Fourteen named agents with their own scheduled jobs. 741 new source files filed into my vault in a month: a fifth of everything I have ever saved there. How many did I read?</p></div>
+</section>
+
+<!-- 4 -->
+<section class="slide">
+  <h2>Loops make this worse</h2>
+  <div class="two">
+    <blockquote class="quote"><span>"These things let loose are a disaster. They basically dilute the message each iteration… How do you keep it in the right direction even if out of control, without taking AN ABSOLUTE AGE?"</span><cite>David, on WhatsApp, 14 September</cite></blockquote>
+    <blockquote class="quote reply"><span>"Getting it to present the exact information you need really clearly so you can make quick decisions. I'm thinking the kind of feedback that teams prep for execs."</span><cite>Me</cite></blockquote>
+  </div>
+  <img class="ill wide-ill" src="img/faded-message.jpg" alt="Robots in a circle playing Chinese whispers: the thought bubbles escalate from a kitten to a city-stomping monster, and the robots grow more alarmed.">
+  <div class="notes"><span class="label">0:04 · 1 min · What I say</span><p>David asked the question that started this talk. Point at David. Every loop iteration dilutes the message a little more. My answer was a whole throwaway editing interface to answer one complex question with trade-offs. That is the talk.</p></div>
+</section>
+
+<!-- 5 -->
+<section class="slide tone">
+  <div class="hero">
+    <img class="ill hero-img" src="img/handed-decision-cut.png" alt="">
+    <div class="stack">
+      <h1>Getting agents to hand you the decision</h1>
+      <p class="lead">How can we get agents to hand us good decisions, just like an exec gets?</p>
+      <p class="muted">Delegation, not abdication · Chris Parsons · AI Anonymous · 25 September 2026</p>
+    </div>
+  </div>
+  <div class="notes"><span class="label">0:05 · 1 min · What I say</span><p>An exec does not read the raw work. Their team hands them a decision: the options, the trade-offs and a cheap way to give an answer. I want my agents to do the same. The agent does the work. The judgement stays with me.</p></div>
+</section>
+
+<!-- 6 -->
+<section class="slide">
+  <div class="eyebrow"><span class="tag">How not to do it</span></div>
+  <h2>Two ways to fail</h2>
+  <div class="two">
+    <div class="card"><b>Abdication</b><p>"If AI is building everything and you are no longer looking, you have abdicated rather than delegated."</p><p class="muted">Loops "amplify judgement when the human understands the work, and amplify abdication when the human uses the loop to avoid understanding it." Addy Osmani</p></div>
+    <div class="card"><b>The approval monkey</b><p>"35 things to do, mostly reviewing reasonable but not great draft emails… reduced to some kind of glorified approval monkey."</p><p class="muted">Me, April 2026</p></div>
+  </div>
+  <img class="ill solo" src="img/two-fails.jpg" alt="">
+  <div class="notes"><span class="label">0:06 · 2 min · What I say</span><p>Here's how not to do it! A human "on the loop" for a dozen systems is effectively out of the loop. More review makes you the approval monkey. Less review is abdication. The way out is a change of format.</p></div>
+</section>
+
+<!-- 7 -->
+<section class="slide">
+  <h2>Richer feedback, earlier</h2>
+  <div class="motif">
+    <blockquote class="quote"><span>"A massively underrated part of coding now is getting the AI to make it easy for you to know whether what it has done is correct. That is work I can ask it to do, just as I ask it to build a feature."</span><cite>Me, in "(I Am No Longer) Coding With AI", 11 September 2026 · chrismdp.com/coding-with-ai</cite></blockquote>
+    <img class="ill" src="img/richer-feedback.jpg" alt="">
+  </div>
+  <div class="notes"><span class="label">0:08 · 1 min · What I say</span><p>Keep the tests: they check the code does what it says. They cannot tell you whether you asked for the right thing, and using the app tells you only after the whole loop. A review page the agent builds tells you in minutes. A review page is a normal request now. Building the editor is cheaper than describing your edits in chat. Three examples.</p></div>
+</section>
+
+<!-- 8 -->
+<section class="slide">
+  <div class="eyebrow"><span class="tag">Example 1</span></div>
+  <h2>Does this map fit the world?</h2>
+  <div class="shotrow">
+    <img class="shot" src="/assets/img/prompt-evals-map-review.jpg" alt="The map review form: the whole game map, three enlarged regions, and my notes under each one.">
+    <ul class="benefits"><li>An AI checks every generated map.</li><li>Was that AI judging properly?</li><li>Astra built me a page to find out.</li><li>My notes: "the fade shouldn't be there", "broken roads".</li></ul>
+  </div>
+  <div class="notes"><span class="label">0:09 · 2 min · What I say</span><p>I am building a text adventure. An AI checks every generated map, and I did not know whether to trust its judgement. So Astra built me this: the whole map, three enlarged regions, and under each one, "What do you see here?" I gave it game-development taste without opening the code.</p></div>
+</section>
+
+<!-- 9 -->
+<section class="slide">
+  <h2>Blind reviews and bias</h2>
+  <div class="motif">
+    <ul class="steps">
+      <li><b>Describe what you see.</b> Before you are told anything.</li>
+      <li><b>Then the requirements.</b> The geography the game needed.</li>
+      <li><b>Then the earlier AI judgements.</b> Hidden until you have committed.</li>
+    </ul>
+    <img class="ill" src="img/blind-review.jpg" alt="">
+  </div>
+  <blockquote class="quote"><span>"Astra had made me a form to help it work out whether it was judging another AI correctly."</span></blockquote>
+  <div class="notes"><span class="label">0:11 · 2 min · What I say</span><p>If I see the AI's verdict first, I anchor on it and nod along. So the page hides it until I have committed. I was not reviewing the map. I was checking the reviewer, blind. That is how you manage a fleet you do not fully trust. And I did not design the page: "What struck me was how much of the review process the AI had built for me."</p></div>
+</section>
+
+<!-- 10 -->
+<section class="slide">
+  <div class="eyebrow"><span class="tag">Example 2</span></div>
+  <h2>My first review page for editing a blog post</h2>
+  <div class="shotrow">
+    <img class="shot" src="/assets/img/coding-with-ai-blog-review.jpg" alt="The review form for the coding-with-AI post, with a comment control under each paragraph.">
+    <div class="stack">
+      <ul class="benefits"><li>A comment box under every paragraph.</li><li>Three rounds: draft, comments, changes, new page.</li><li>Every round kept what I asked for and what changed.</li></ul>
+      <a class="open" href="https://claude.ai/artifact/Lwz5qyRxQaCyh85UvMPt7k" target="_blank" rel="noopener">Open the review page ↗</a>
+    </div>
+  </div>
+  <div class="notes"><span class="label">0:13 · 1 min · What I say</span><p>Background: my blog is a Jekyll site, so every post is a text file, and editing with an agent meant describing each change in chat: "the third paragraph, second sentence…". This was the first time I asked for a page instead. The coding-with-AI post, reviewed three times on a page. Open it only if there is time.</p></div>
+</section>
+
+<!-- 11 -->
+<section class="slide">
+  <div class="eyebrow"><span class="tag">Example 3 · Live demo · 4 min</span></div>
+  <h2>The Jev label sheet</h2>
+  <div class="shotrow">
+    <img class="shot" src="/assets/img/talk-jev-label-sheet.jpg" alt="The Jev label sheet: made-up twins of real emails, each with Urgent, Important, Digest or Noise controls, a note, and a Looks right button.">
+    <div class="stack">
+      <p class="lead">How should my email triage work, and is the new model better than the old one?</p>
+      <ul class="benefits"><li>Hundreds of made-up twins of my real emails. Every name invented.</li><li>"Looks right", or change it. A note for the rule behind the call.</li></ul>
+      <a class="open big-open" href="https://claude.ai/artifact/CiG6FMJkqkMefRmNwuvXLa" target="_blank" rel="noopener">Open the label sheet ↗</a>
+    </div>
+  </div>
+  <div class="notes"><span class="label">0:14 · 4 min · What I say</span><p>Each email shows its current label, what the old system thought and what the new model thought. j and k to move, 1 to 4 to label. Show a newsletter where the old and new models disagree. Label it. Add a note such as "urgent only if the digest is after 5pm". Reload: it is still there. If the network fails, talk over the screenshot.</p></div>
+</section>
+
+<!-- 12 -->
+<section class="slide">
+  <div class="eyebrow"><span class="tag">Live demo · 2 min</span></div>
+  <h2>Meta slide: I reviewed this deck the same way</h2>
+  <div class="shotrow">
+    <div class="shotslot"><img class="shot" src="/assets/img/talk-deck-review.jpg" alt="Me commenting on this slide deck: a highlighted phrase on a slide, a comment box, and the review panel listing my notes." onerror="this.hidden=true;this.nextElementSibling.hidden=false"><p class="placeholder" hidden>Screenshot goes here: /assets/img/talk-deck-review.jpg</p></div>
+    <ul class="benefits"><li>Select any text on a slide and comment on it.</li><li>Or leave a note on the whole slide.</li><li>Export the notes as JSON. The agent reads them and edits the deck.</li><li>It only runs on my machine.</li></ul>
+  </div>
+  <div class="notes"><span class="label">0:18 · 2 min · What I say</span><p>One more example: this deck. I reviewed it the same way: a small script on my own blog, only running on my machine. Demo: select a phrase on this slide, comment, then open the panel and show the JSON the agent reads. It started as a review tool for blog posts, and I asked the agent to extend it to slides this afternoon.</p></div>
+</section>
+
+<!-- 13 -->
+<section class="slide">
+  <h2>The page remembers now</h2>
+  <p class="lead">Easy to build these now: artifacts remember.</p>
+  <div class="two">
+    <div class="card"><b>Claude artifacts</b><p>A published page can store data, for each person or shared between everyone who opens it.</p></div>
+    <div class="card"><b>Codex Sites</b><p>Codex builds and hosts small web apps with their own data and files. In preview since June.</p></div>
+  </div>
+  <div class="motif">
+    <ul class="benefits"><li>My answers persist.</li><li>The agent reads them back.</li><li>A second person can review too.</li></ul>
+    <img class="ill" src="img/remembering-page.jpg" alt="">
+  </div>
+  <div class="notes"><span class="label">0:20 · 1 min · What I say</span><p>That reload is the new part. The review page stops being a disposable picture and becomes a working tool. And it is easy to build these now. Questions?</p></div>
+</section>
+
+<!-- 14 -->
+<section class="slide tone">
+  <div class="hero">
+    <img class="ill hero-img" src="img/questions-cut.png" alt="">
+    <div class="stack"><p class="big">Questions? Feedback?</p></div>
+  </div>
+  <div class="notes"><span class="label">0:21 · Discussion</span><p>Open it up.</p></div>
+</section>
+
+</div>
+<div class="notesview" id="notesview">
+  <div class="nv-count" id="nvCount"></div>
+  <div class="nv-title" id="nvTitle"></div>
+  <div class="nv-notes" id="nvNotes"></div>
+  <div class="nv-next" id="nvNext"></div>
+  <div class="nv-help">
+    <p><b>Shortcuts.</b> They work in either window, and both windows move together.</p>
+    <ul>
+      <li><kbd>→</kbd> <kbd>Space</kbd> <kbd>PageDown</kbd> next slide</li>
+      <li><kbd>←</kbd> <kbd>PageUp</kbd> previous slide</li>
+      <li><kbd>Home</kbd> first slide · <kbd>End</kbd> last slide</li>
+      <li>Type a number, then <kbd>Enter</kbd>: go to that slide</li>
+      <li><kbd>Esc</kbd> clear a number you are typing, or leave fullscreen</li>
+      <li><kbd>P</kbd> switch this window between notes and slides</li>
+      <li><kbd>N</kbd> open the notes window</li>
+      <li><kbd>?</kbd> show or hide this help</li>
+      <li><kbd>F</kbd> fullscreen: hide the top bar and footer</li>
+      <li><kbd>D</kbd> switch between deck and one long page</li>
+      <li>Reload either window and the other reloads too</li>
+      <li class="nv-only">Click a picture below to go to that slide</li>
+    </ul>
+  </div>
+  <div class="nv-thumbs" id="nvThumbs"></div>
+  <p style="text-align:right"><a class="credit" href="https://www.chrismdp.com/" target="_blank" rel="noopener">© Chris Parsons</a></p>
+</div>
+
+<div class="jump" id="jump" aria-live="polite"></div>
+<div class="helpdlg" id="helpdlg" role="dialog" aria-label="Keyboard shortcuts"></div>
+<p class="hint"><kbd>→</kbd> <kbd>←</kbd> change slide · <kbd>N</kbd> notes window · <kbd>?</kbd> help · <kbd>F</kbd> fullscreen · <kbd>D</kbd> switch view · <kbd>Home</kbd> go to start</p>
+</div>
+
+<script>
+(function(){
+  // Fill in the event settings from BVC_EVENT at the top of the file. Empty values hide their block.
+  var ev=window.BVC_EVENT||{};
+  [].forEach.call(document.querySelectorAll('[data-event]'),function(el){
+    var v=(ev[el.getAttribute('data-event')]||'').trim();
+    el.textContent=v?(el.getAttribute('data-prefix')||'')+v+(el.getAttribute('data-suffix')||''):'';
+  });
+  [].forEach.call(document.querySelectorAll('[data-needs]'),function(el){
+    el.classList.toggle('is-empty',!(ev[el.getAttribute('data-needs')]||'').trim());
+  });
+  var printLink=document.getElementById('printLink');
+  if(printLink)printLink.addEventListener('click',function(e){e.preventDefault();window.print()});
+  var slides=[].slice.call(document.querySelectorAll('.slide'));
+  // Workshop link and credit, added to every slide.
+  slides.forEach(function(sl){
+    var url=document.createElement('a'); url.className='slide-url'; url.href='https://www.chrismdp.com/talks/getting-agents-to-hand-you-the-decision/'; url.target='_blank'; url.rel='noopener'; url.textContent='chrismdp.com/talks/getting-agents-to-hand-you-the-decision'; sl.appendChild(url);
+    var c=document.createElement('a'); c.className='credit'; c.href='https://www.chrismdp.com/'; c.target='_blank'; c.rel='noopener'; c.textContent='© Chris Parsons'; sl.appendChild(c);
+  });
+  var body=document.body, i=0;
+  var modeBtn=document.getElementById('modeBtn'), notesBtn=document.getElementById('notesBtn'), counter=document.getElementById('counter');
+  function show(n){
+    i=Math.max(0,Math.min(slides.length-1,n));
+    slides.forEach(function(s,k){s.classList.toggle('active',k===i)});
+    counter.textContent=body.classList.contains('deckmode')?(i+1)+' / '+slides.length:slides.length+' slides';
+    try{localStorage.setItem('hyd-slide',String(i))}catch(e){}
+    renderNotes();
+    if(body.classList.contains('deckmode')) window.scrollTo(0,0);
+  }
+  window.deckGo=function(n){show(n)};
+  (function(b){if(!b)return;b.style.cursor='pointer';b.title='Back to the first slide';b.setAttribute('role','button');b.tabIndex=0;function toTop(){if(document.body.classList.contains('deckmode'))show(0);window.scrollTo(0,0)}b.addEventListener('click',toTop);b.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toTop()}})})(document.querySelector('.bar .brand'));
+  function setMode(deck){
+    body.classList.toggle('deckmode',deck);
+    modeBtn.setAttribute('aria-pressed',deck?'true':'false');
+    modeBtn.textContent=deck?'List mode':'Deck mode';
+    try{localStorage.setItem('hyd-mode',deck?'deck':'list')}catch(e){}
+    show(i);
+  }
+  function setNotes(on){
+    body.classList.toggle('shownotes',on);
+    notesBtn.setAttribute('aria-pressed',on?'true':'false');
+    try{localStorage.setItem('hyd-notes',on?'1':'0')}catch(e){}
+  }
+  function titleOf(s){var h=s.querySelector('h1,h2,.big');return h?h.textContent.trim():''}
+  function renderNotes(){
+    if(!body.classList.contains('notesmode'))return;
+    var s=slides[i], n=s.querySelector('.notes'), lab=s.querySelector('.notes .label');
+    document.getElementById('nvCount').textContent=(i+1)+' / '+slides.length+(lab?' · '+lab.textContent:'');
+    document.getElementById('nvTitle').textContent=titleOf(s);
+    var nn=document.getElementById('nvNotes'); nn.innerHTML='';
+    if(n){var c=n.cloneNode(true); var l=c.querySelector('.label'); if(l)l.remove(); nn.innerHTML=c.innerHTML}else{nn.textContent='No notes on this slide.'}
+    document.getElementById('nvNext').innerHTML=(i+1<slides.length)?'Next: <b>'+titleOf(slides[i+1])+'</b>':'Last slide.';
+    buildThumbs();
+    [].forEach.call(document.querySelectorAll('.nv-thumb'),function(t,k){t.classList.toggle('current',k===i); if(k===i&&t.scrollIntoView)t.scrollIntoView({block:'nearest'})});
+  }
+  // Small pictures of every slide under the notes. Click one to jump there.
+  var thumbsBuilt=false;
+  function buildThumbs(){
+    if(thumbsBuilt)return; thumbsBuilt=true;
+    var box=document.getElementById('nvThumbs');
+    slides.forEach(function(sl,k){
+      var t=document.createElement('button'); t.className='nv-thumb'; t.title=(k+1)+' · '+titleOf(sl);
+      var c=sl.cloneNode(true); c.classList.remove('active');
+      var num=document.createElement('span'); num.className='nv-num'; num.textContent=(k+1<10?'0':'')+(k+1);
+      t.appendChild(c); t.appendChild(num); box.appendChild(t);
+      t.addEventListener('click',function(){show(k)});
+    });
+    function fit(){[].forEach.call(box.querySelectorAll('.nv-thumb'),function(t){var sc=t.clientWidth/1280; t.firstChild.style.transform='scale('+sc+')'})}
+    fit(); window.addEventListener('resize',fit);
+  }
+  function setNotesMode(on){
+    body.classList.toggle('notesmode',on);
+    if(on){body.classList.add('deckmode')}
+    document.title=on?'Notes · Hand You the Decision':'Hand You the Decision';
+    try{sessionStorage.setItem('hyd-notesmode',on?'1':'0')}catch(e){}
+    show(i);
+  }
+  window.addEventListener('storage',function(e){
+    if(e.key==='hyd-slide'){var n=parseInt(e.newValue||'0',10); if(!isNaN(n)&&n!==i){i=n; show(i)}}
+    if(e.key==='hyd-reload'&&e.newValue){try{sessionStorage.setItem('hyd-peer-reload','1')}catch(x){} location.reload()}
+  });
+  function setFullscreen(on){
+    body.classList.toggle('fullscreen',on);
+    if(on){setMode(true)}
+  }
+  document.getElementById('fsBtn').addEventListener('click',function(){setFullscreen(true)});
+  document.getElementById('popBtn').addEventListener('click',function(){
+    var w=null; try{w=window.open(location.href.split('#')[0],'hydnotes','width=760,height=700')}catch(e){}
+    if(!w){alert('The pop-up was blocked. Open the deck link in a second window and press P.')}
+  });
+  modeBtn.addEventListener('click',function(){setMode(!body.classList.contains('deckmode'))});
+  notesBtn.addEventListener('click',function(){setNotes(!body.classList.contains('shownotes'))});
+  var helpEl=document.getElementById('helpdlg');
+  helpEl.appendChild(document.querySelector('.nv-help').cloneNode(true));
+  helpEl.addEventListener('click',function(e){if(e.target===helpEl)toggleHelp(false)});
+  function toggleHelp(on){helpEl.classList.toggle('on',on===undefined?!helpEl.classList.contains('on'):on)}
+  // Type a slide number, then press Enter to jump. A number with no slide just clears.
+  var jumpEl=document.getElementById('jump'), jumpBuf='', jumpTimer=null;
+  function jumpShow(){jumpEl.textContent=jumpBuf; jumpEl.classList.toggle('on',jumpBuf.length>0)}
+  function jumpReset(){jumpBuf=''; clearTimeout(jumpTimer); jumpShow()}
+  document.addEventListener('keydown',function(e){
+    if(e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA')return;
+    if(e.metaKey||e.ctrlKey||e.altKey)return;
+    if(/^[0-9]$/.test(e.key)&&!e.metaKey&&!e.ctrlKey&&!e.altKey){
+      if(jumpBuf.length<3)jumpBuf+=e.key;
+      clearTimeout(jumpTimer); jumpTimer=setTimeout(jumpReset,5000); jumpShow();
+      return;
+    }
+    if(e.key==='Enter'&&jumpBuf){e.preventDefault(); var n=parseInt(jumpBuf,10); jumpReset(); if(n>=1&&n<=slides.length)show(n-1); return}
+    if(e.key==='Escape'&&jumpBuf){jumpReset();return}
+    var deck=body.classList.contains('deckmode');
+    if(e.key==='d'||e.key==='D'){setMode(!deck);return}
+    if(e.key==='p'||e.key==='P'){setNotesMode(!body.classList.contains('notesmode'));return}
+    if(e.key==='f'||e.key==='F'){setFullscreen(!body.classList.contains('fullscreen'));return}
+    if(e.key==='n'||e.key==='N'){if(window.name!=='hydnotes')document.getElementById('popBtn').click();return}
+    if(e.key==='?'){toggleHelp();return}
+    if(e.key==='Escape'&&helpEl.classList.contains('on')){toggleHelp(false);return}
+    if(e.key==='Escape'&&body.classList.contains('fullscreen')){setFullscreen(false);return}
+    if(!deck&&!body.classList.contains('notesmode'))return;
+    if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' '){e.preventDefault();show(i+1)}
+    if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();show(i-1)}
+    if(e.key==='Home'){show(0)}
+    if(e.key==='End'){show(slides.length-1)}
+  });
+  [].forEach.call(document.querySelectorAll('.copy'),function(b){
+    b.addEventListener('click',function(){
+      var pre=b.closest('.prompt').querySelector('pre');
+      var text=pre.textContent;
+      function done(){b.textContent='Copied';b.dataset.done='1';setTimeout(function(){b.textContent='Copy';delete b.dataset.done},1500)}
+      try{navigator.clipboard.writeText(text).then(done,function(){fallback()})}catch(e){fallback()}
+      function fallback(){var r=document.createRange();r.selectNodeContents(pre);var s=getSelection();s.removeAllRanges();s.addRange(r);try{document.execCommand('copy');done()}catch(e){}}
+    });
+  });
+  var wide=window.matchMedia('(min-width: 900px)').matches, mode='list', saved=0, notes=false;
+  try{mode=localStorage.getItem('hyd-mode')||(wide?'deck':'list');saved=parseInt(localStorage.getItem('hyd-slide')||'0',10)||0;notes=localStorage.getItem('hyd-notes')==='1'}catch(e){mode=wide?'deck':'list'}
+  i=saved; setNotes(notes); setMode(mode==='deck');
+  var openNotes=false; try{openNotes=localStorage.getItem('hyd-open-notes')==='1'; if(openNotes)localStorage.removeItem('hyd-open-notes')}catch(e){}
+  var keepNotes=false; try{keepNotes=sessionStorage.getItem('hyd-notesmode')==='1'}catch(e){}
+  if(window.name==='hydnotes'||openNotes||keepNotes){setNotesMode(true)}
+  // Reloading one window reloads the other. A reload caused by the other window does not echo back.
+  try{
+    var nav=performance.getEntriesByType('navigation')[0];
+    if(sessionStorage.getItem('hyd-peer-reload')){sessionStorage.removeItem('hyd-peer-reload')}
+    else if(nav&&nav.type==='reload'){localStorage.setItem('hyd-reload',String(Date.now()))}
+  }catch(e){}
+})();
+</script>
+
+{% if jekyll.environment == "development" %}{% include dev-review.html %}{% endif %}
+</body>
+</html>

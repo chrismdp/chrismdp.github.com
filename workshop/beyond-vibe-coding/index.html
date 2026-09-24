@@ -1,3 +1,8 @@
+---
+layout: null
+title: "Beyond Vibe Coding"
+sitemap: false
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,7 +43,7 @@ footer a{color:var(--turq-deep)}
 </style>
 </head>
 <body>
-<main>
+<main class="content-styled">
   <p class="kicker">Workshop · Chris Parsons</p>
   <h1>Beyond Vibe Coding</h1>
   <p class="lead">From prototyping to shipping like an engineer. Pick the version of the slides you want.</p>
@@ -65,5 +70,6 @@ footer a{color:var(--turq-deep)}
   if(location.hash){document.getElementById('v1link').href='v1/'+location.hash}
 })();
 </script>
+{% if jekyll.environment == "development" %}{% include dev-review.html %}{% endif %}
 </body>
 </html>

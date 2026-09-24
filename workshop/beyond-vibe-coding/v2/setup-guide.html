@@ -1,3 +1,9 @@
+---
+layout: null
+title: "Setup Guide · Beyond Vibe Coding"
+sitemap: false
+permalink: /workshop/beyond-vibe-coding/v2/setup-guide.html
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,7 +54,7 @@ code{font-family:"Source Code Pro",ui-monospace,monospace;font-size:.92em;backgr
 </style>
 </head>
 <body>
-<main>
+<main class="content-styled">
   <p class="kicker">Attendee setup guide</p>
   <h1>Beyond Vibe Coding</h1>
   <p class="lead">From prototyping to shipping like an engineer · Chris Parsons</p>
@@ -106,5 +112,6 @@ code{font-family:"Source Code Pro",ui-monospace,monospace;font-size:.92em;backgr
   </div>
   <p class="muted">Slides and prompts: <a href="./">chrismdp.com/workshop/beyond-vibe-coding/v2</a> · © <a href="https://www.chrismdp.com/">Chris Parsons</a></p>
 </main>
+{% if jekyll.environment == "development" %}{% include dev-review.html %}{% endif %}
 </body>
 </html>

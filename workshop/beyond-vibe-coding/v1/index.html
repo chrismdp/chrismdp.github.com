@@ -1,3 +1,8 @@
+---
+layout: null
+title: "Beyond Vibe Coding"
+sitemap: false
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -146,6 +151,22 @@ body:not(.deckmode) .hint{display:none}
 body:not(.deckmode):not(.shownotes) .notes{display:none}
 body.fullscreen.deckmode .wrap.main{max-width:none;padding-inline:0}body.fullscreen.deckmode .slide.active{align-content:center}
 .osgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.osgrid .prompt pre{white-space:pre-wrap}.os-mac{background:#e6f6fa!important}.os-win{background:#fff0e6!important;border-color:var(--orange)!important}.os-linux{background:#f0f0ec!important}@media (max-width:560px){.osgrid{grid-template-columns:1fr}}
+@media print{
+  .bar,.hint,.foot,.jump,.helpdlg,.notesview,.notes,.copy,.print-hide{display:none!important}
+  body{font-size:14px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .slide{gap:14px!important}
+  .prompt{padding:10px 14px}
+  .prompt pre{font-size:.82rem;line-height:1.4}
+  .wrap.main{max-width:none!important;padding:0!important}
+  .deck{display:block!important}
+  .slide,body.deckmode .slide{display:grid!important;min-height:0!important;height:auto;border:0!important;border-radius:0;padding:8mm 10mm 14mm!important;break-after:page;page-break-after:always;break-inside:avoid;align-content:start}
+  .slide:last-child{break-after:auto;page-break-after:auto}
+  .motif img{max-height:120mm}
+  .door-qr{grid-template-columns:60mm 1fr}
+  .slide.tone,body.deckmode .slide.tone{background:#fff!important}
+  .slide,body.deckmode .slide{min-height:calc(100vh - 2mm)!important;box-sizing:border-box;position:relative}
+  .slide-url,.credit{bottom:5mm}
+}
 </style>
 </head>
 <body>
@@ -161,7 +182,7 @@ body.fullscreen.deckmode .wrap.main{max-width:none;padding-inline:0}body.fullscr
   <span class="counter" id="counter"></span>
 </div></div>
 
-<div class="wrap main"><div class="deck" id="deck">
+<div class="wrap main"><div class="deck content-styled" id="deck">
 
 <!-- title -->
 <section class="slide">
@@ -862,6 +883,8 @@ The tests for the behaviour you want.</pre></div>
     renderNotes();
     if(body.classList.contains('deckmode')) window.scrollTo(0,0);
   }
+  window.deckGo=function(n){show(n)};
+  (function(b){if(!b)return;b.style.cursor='pointer';b.title='Back to the first slide';b.setAttribute('role','button');b.tabIndex=0;function toTop(){if(document.body.classList.contains('deckmode'))show(0);window.scrollTo(0,0)}b.addEventListener('click',toTop);b.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toTop()}})})(document.querySelector('.bar .brand'));
   function setMode(deck){
     body.classList.toggle('deckmode',deck);
     modeBtn.setAttribute('aria-pressed',deck?'true':'false');
@@ -979,5 +1002,6 @@ The tests for the behaviour you want.</pre></div>
 })();
 </script>
 
+{% if jekyll.environment == "development" %}{% include dev-review.html %}{% endif %}
 </body>
 </html>

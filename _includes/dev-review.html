@@ -1,0 +1,341 @@
+<!-- Development-only review tool: select text in the article, comment on it, export the comments as JSON. Included from _layouts/post.html only when jekyll.environment is "development". -->
+<style>
+  ::highlight(dev-review) { background: #fde68a; color: inherit; }
+  ::highlight(dev-review-active) { background: #f59e0b; color: #111; }
+  .dr-btn { font: 600 13px/1 system-ui, sans-serif; border: 1px solid #d4d4d8; background: #fff; color: #18181b; border-radius: 6px; padding: 7px 10px; cursor: pointer; }
+  .dr-btn:hover { background: #f4f4f5; }
+  .dr-btn:focus-visible { outline: 2px solid #2563eb; outline-offset: 2px; }
+  .dr-primary { background: #18181b; color: #fff; border-color: #18181b; }
+  .dr-primary:hover { background: #3f3f46; }
+  .dr-float { position: absolute; z-index: 10000; box-shadow: 0 4px 12px rgba(0,0,0,.15); }
+  .dr-pop, .dr-panel { position: fixed; z-index: 10001; background: #fff; color: #18181b; border: 1px solid #d4d4d8; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,.18); font: 14px/1.45 system-ui, sans-serif; }
+  .dr-pop { width: min(420px, calc(100vw - 32px)); padding: 14px; left: 50%; top: 20%; transform: translateX(-50%); }
+  .dr-pop blockquote { margin: 0 0 10px; padding: 6px 10px; border-left: 3px solid #f59e0b; background: #fffbeb; max-height: 120px; overflow: auto; font-size: 13px; }
+  .dr-pop textarea { width: 100%; min-height: 110px; box-sizing: border-box; font: 14px/1.45 system-ui, sans-serif; padding: 8px; border: 1px solid #d4d4d8; border-radius: 6px; resize: vertical; }
+  .dr-row { display: flex; gap: 8px; justify-content: flex-end; margin-top: 10px; flex-wrap: wrap; }
+  .dr-toggle { position: fixed; right: 16px; bottom: 16px; z-index: 10000; box-shadow: 0 4px 12px rgba(0,0,0,.15); }
+  .dr-panel { right: 16px; bottom: 60px; width: min(380px, calc(100vw - 32px)); max-height: 70vh; display: flex; flex-direction: column; }
+  .dr-panel header { padding: 12px 14px; border-bottom: 1px solid #e4e4e7; font-weight: 700; display: flex; justify-content: space-between; align-items: center; }
+  .dr-list { overflow: auto; padding: 8px 14px; flex: 1; }
+  .dr-item { border-bottom: 1px solid #f4f4f5; padding: 8px 0; cursor: pointer; }
+  .dr-item:last-child { border-bottom: 0; }
+  .dr-item q { display: block; color: #71717a; font-size: 12px; margin-bottom: 4px; }
+  .dr-item p { margin: 0; white-space: pre-wrap; }
+  .dr-item .dr-meta { display: flex; justify-content: space-between; align-items: center; margin-top: 4px; font-size: 12px; color: #a1a1aa; }
+  .dr-link { background: none; border: 0; color: #b91c1c; cursor: pointer; font-size: 12px; padding: 0; }
+  .dr-empty { color: #71717a; font-size: 13px; }
+  .dr-panel footer { padding: 10px 14px; border-top: 1px solid #e4e4e7; display: flex; gap: 6px; flex-wrap: wrap; }
+  .dr-status { font-size: 12px; color: #15803d; min-height: 1em; padding: 0 14px 8px; }
+  .dr-panel[hidden], .dr-float[hidden], .dr-pop[hidden] { display: none !important; }
+  @media print {
+    .dr-toggle, .dr-panel, .dr-float, .dr-pop { display: none !important; }
+    ::highlight(dev-review), ::highlight(dev-review-active) { background: transparent; }
+  }
+</style>
+<script>
+(function () {
+  var article = document.querySelector('.content-styled');
+  if (!article) return;
+
+  var FILE = {{ page.path | jsonify }};
+  var TITLE = {{ page.title | jsonify }};
+  var KEY = 'dev-review:' + location.pathname;
+  var CONTEXT = 40;
+  var comments = load();
+  var pending = null;
+
+  function load() {
+    try { return JSON.parse(localStorage.getItem(KEY)) || []; } catch (e) { return []; }
+  }
+  function save() {
+    try { localStorage.setItem(KEY, JSON.stringify(comments)); } catch (e) {}
+  }
+
+  // Map the article's text nodes to one flat string, so a quote can be found again after reload.
+  function textIndex() {
+    var nodes = [], text = '';
+    var walker = document.createTreeWalker(article, NodeFilter.SHOW_TEXT);
+    while (walker.nextNode()) {
+      nodes.push({ node: walker.currentNode, start: text.length });
+      text += walker.currentNode.nodeValue;
+    }
+    return { nodes: nodes, text: text };
+  }
+  function offsetOf(idx, node, offset) {
+    for (var i = 0; i < idx.nodes.length; i++) if (idx.nodes[i].node === node) return idx.nodes[i].start + offset;
+    // Element boundaries (a triple-click or a whole heading): count the text before the point.
+    if (node.nodeType === 1 && article.contains(node)) {
+      var r = document.createRange();
+      r.setStart(article, 0);
+      r.setEnd(node, offset);
+      return r.toString().length;
+    }
+    return -1;
+  }
+  function rangeAt(idx, start, end) {
+    var r = document.createRange(), s = false;
+    for (var i = 0; i < idx.nodes.length; i++) {
+      var n = idx.nodes[i], len = n.node.nodeValue.length;
+      if (!s && start <= n.start + len) { r.setStart(n.node, start - n.start); s = true; }
+      if (s && end <= n.start + len) { r.setEnd(n.node, end - n.start); return r; }
+    }
+    return null;
+  }
+  function locate(idx, c) {
+    var at = idx.text.indexOf(c.prefix + c.quote);
+    if (at >= 0) return at + c.prefix.length;
+    return idx.text.indexOf(c.quote);
+  }
+  // Slide decks: every .slide is a section, labelled "Slide N: title".
+  var slides = [].slice.call(article.querySelectorAll('.slide'));
+  function slideLabel(s) {
+    var h = s.querySelector('h1, h2, .big');
+    return 'Slide ' + (slides.indexOf(s) + 1) + (h ? ': ' + h.textContent.trim() : '');
+  }
+  function currentSlide() {
+    var active = article.querySelector('.slide.active');
+    if (active && active.offsetParent) return active;
+    for (var i = 0; i < slides.length; i++) {
+      if (slides[i].getBoundingClientRect().bottom > window.innerHeight / 3) return slides[i];
+    }
+    return slides[slides.length - 1];
+  }
+
+  function sectionFor(node) {
+    var el = node.nodeType === 1 ? node : node.parentElement, found = '';
+    var slide = el.closest && el.closest('.slide');
+    if (slide) return slideLabel(slide);
+    var heads = article.querySelectorAll('h2, h3');
+    for (var i = 0; i < heads.length; i++) {
+      if (heads[i].compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING) found = heads[i].textContent.trim();
+    }
+    return found;
+  }
+
+  function paint(activeId) {
+    if (!window.CSS || !CSS.highlights || typeof Highlight === 'undefined') return;
+    var idx = textIndex(), all = new Highlight(), active = new Highlight();
+    comments.forEach(function (c) {
+      if (!c.quote) return;
+      var at = locate(idx, c);
+      if (at < 0) return;
+      var r = rangeAt(idx, at, at + c.quote.length);
+      if (r) (c.id === activeId ? active : all).add(r);
+    });
+    CSS.highlights.set('dev-review', all);
+    CSS.highlights.set('dev-review-active', active);
+  }
+
+  // Floating "Comment" button on selection.
+  var floatBtn = el('button', 'dr-btn dr-primary dr-float', 'Comment (C)');
+  floatBtn.hidden = true;
+  document.body.appendChild(floatBtn);
+
+  document.addEventListener('mouseup', function (e) {
+    if (e.target.closest && e.target.closest('.dr-pop, .dr-panel, .dr-float, .dr-toggle')) return;
+    setTimeout(function () {
+      var sel = window.getSelection();
+      if (!sel || sel.isCollapsed || !sel.rangeCount) { floatBtn.hidden = true; return; }
+      var range = sel.getRangeAt(0);
+      if (!article.contains(range.commonAncestorContainer)) { floatBtn.hidden = true; return; }
+      var idx = textIndex();
+      var start = offsetOf(idx, range.startContainer, range.startOffset);
+      var end = offsetOf(idx, range.endContainer, range.endOffset);
+      if (start < 0 || end <= start) { floatBtn.hidden = true; return; }
+      pending = {
+        quote: idx.text.slice(start, end),
+        prefix: idx.text.slice(Math.max(0, start - CONTEXT), start),
+        suffix: idx.text.slice(end, end + CONTEXT),
+        section: sectionFor(range.startContainer)
+      };
+      var rect = range.getBoundingClientRect();
+      floatBtn.style.top = (window.scrollY + rect.bottom + 6) + 'px';
+      floatBtn.style.left = (window.scrollX + rect.left) + 'px';
+      floatBtn.hidden = false;
+    }, 0);
+  });
+  floatBtn.addEventListener('mousedown', function (e) { e.preventDefault(); });
+  floatBtn.addEventListener('click', function () { floatBtn.hidden = true; openEditor(pending); });
+
+  // Press C with text selected to comment on it.
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'c' && e.key !== 'C') return;
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var t = e.target;
+    if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;
+    if (floatBtn.hidden || !pending) return;
+    e.preventDefault();
+    e.stopImmediatePropagation();
+    floatBtn.hidden = true;
+    openEditor(pending);
+  }, true);
+
+  function openEditor(target, existing) {
+    var pop = el('div', 'dr-pop');
+    pop.setAttribute('role', 'dialog');
+    if (target && target.quote) {
+      var bq = el('blockquote', '', target.quote);
+      pop.appendChild(bq);
+    } else if (target && target.section) {
+      pop.appendChild(el('div', '', 'Note on ' + target.section));
+    } else {
+      pop.appendChild(el('div', '', 'General note on the whole ' + (slides.length ? 'deck' : 'post')));
+    }
+    var ta = el('textarea');
+    ta.id = 'dev-review-comment';
+    ta.placeholder = 'Your comment (Ctrl/Cmd+Enter to save, Esc to cancel)';
+    if (existing) ta.value = existing.comment;
+    pop.appendChild(ta);
+    var row = el('div', 'dr-row');
+    var cancel = el('button', 'dr-btn', 'Cancel');
+    var ok = el('button', 'dr-btn dr-primary', existing ? 'Update' : 'Save');
+    row.appendChild(cancel); row.appendChild(ok); pop.appendChild(row);
+    document.body.appendChild(pop);
+    ta.focus();
+
+    function close() { pop.remove(); }
+    function commit() {
+      var text = ta.value.trim();
+      if (!text) { close(); return; }
+      if (existing) {
+        existing.comment = text;
+      } else {
+        comments.push({
+          id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
+          quote: target ? target.quote : '',
+          prefix: target ? target.prefix : '',
+          suffix: target ? target.suffix : '',
+          section: target ? target.section : '',
+          comment: text,
+          created: new Date().toISOString()
+        });
+      }
+      save(); close(); window.getSelection().removeAllRanges(); paint(); render();
+    }
+    cancel.addEventListener('click', close);
+    ok.addEventListener('click', commit);
+    ta.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') close();
+      if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) commit();
+    });
+  }
+
+  // Panel.
+  var toggle = el('button', 'dr-btn dr-primary dr-toggle');
+  var panel = el('div', 'dr-panel');
+  panel.hidden = true;
+  var header = el('header');
+  header.appendChild(el('span', '', 'Review comments'));
+  var closeBtn = el('button', 'dr-btn', 'Close');
+  header.appendChild(closeBtn);
+  var list = el('div', 'dr-list');
+  var status = el('div', 'dr-status');
+  var footer = el('footer');
+  var noteBtn = el('button', 'dr-btn', 'General note');
+  var slideBtn = el('button', 'dr-btn', 'Note on this slide');
+  var copyBtn = el('button', 'dr-btn dr-primary', 'Copy JSON');
+  var dlBtn = el('button', 'dr-btn', 'Download JSON');
+  var clearBtn = el('button', 'dr-btn', 'Clear all');
+  (slides.length ? [slideBtn, noteBtn, copyBtn, dlBtn, clearBtn] : [noteBtn, copyBtn, dlBtn, clearBtn])
+    .forEach(function (b) { footer.appendChild(b); });
+  slideBtn.addEventListener('click', function () {
+    var s = currentSlide();
+    if (s) openEditor({ quote: '', prefix: '', suffix: '', section: slideLabel(s) });
+  });
+  [header, list, status, footer].forEach(function (n) { panel.appendChild(n); });
+  document.body.appendChild(toggle);
+  document.body.appendChild(panel);
+
+  toggle.addEventListener('click', function () { panel.hidden = !panel.hidden; });
+  closeBtn.addEventListener('click', function () { panel.hidden = true; });
+  noteBtn.addEventListener('click', function () { openEditor(null); });
+  clearBtn.addEventListener('click', function () {
+    if (clearBtn.dataset.armed) {
+      comments = []; save(); paint(); render();
+      delete clearBtn.dataset.armed; clearBtn.textContent = 'Clear all';
+    } else {
+      clearBtn.dataset.armed = '1'; clearBtn.textContent = 'Click again to clear';
+      setTimeout(function () { delete clearBtn.dataset.armed; clearBtn.textContent = 'Clear all'; }, 3000);
+    }
+  });
+  copyBtn.addEventListener('click', function () {
+    var json = exportJson();
+    navigator.clipboard.writeText(json).then(function () { flash('Copied ' + comments.length + ' comments'); },
+      function () { flash('Copy failed, use Download'); });
+  });
+  dlBtn.addEventListener('click', function () {
+    var blob = new Blob([exportJson()], { type: 'application/json' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    var parts = FILE.replace(/\/index\.html$/, '').split('/');
+    a.download = parts.pop().replace(/\.(md|html)$/, '') + '.review.json';
+    a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+  });
+
+  function exportJson() {
+    return JSON.stringify({
+      file: FILE,
+      title: TITLE,
+      url: location.pathname,
+      exported: new Date().toISOString(),
+      comments: comments.map(function (c) {
+        return { section: c.section, quote: c.quote, prefix: c.prefix, suffix: c.suffix, comment: c.comment };
+      })
+    }, null, 2);
+  }
+
+  function render() {
+    toggle.textContent = 'Review (' + comments.length + ')';
+    list.innerHTML = '';
+    if (!comments.length) {
+      list.appendChild(el('p', 'dr-empty', slides.length ? 'Select text on a slide, then press C or click Comment. Or add a note on this slide.' : 'Select text in the post, then press C or click Comment.'));
+      return;
+    }
+    comments.forEach(function (c) {
+      var item = el('div', 'dr-item');
+      if (c.quote) item.appendChild(el('q', '', c.quote.length > 120 ? c.quote.slice(0, 120) + '…' : c.quote));
+      item.appendChild(el('p', '', c.comment));
+      var meta = el('div', 'dr-meta');
+      meta.appendChild(el('span', '', c.section || (c.quote ? '' : 'General note')));
+      var del = el('button', 'dr-link', 'Delete');
+      del.addEventListener('click', function (e) {
+        e.stopPropagation();
+        comments = comments.filter(function (x) { return x.id !== c.id; });
+        save(); paint(); render();
+      });
+      meta.appendChild(del);
+      item.appendChild(meta);
+      item.addEventListener('click', function () { focusComment(c); });
+      item.addEventListener('dblclick', function () { openEditor(c, c); });
+      list.appendChild(item);
+    });
+  }
+
+  function focusComment(c) {
+    paint(c.id);
+    var m = /^Slide (\d+)/.exec(c.section || '');
+    if (m && typeof window.deckGo === 'function') window.deckGo(parseInt(m[1], 10) - 1);
+    if (!c.quote) return;
+    var idx = textIndex(), at = locate(idx, c);
+    if (at < 0) { flash('Quote no longer found in the post'); return; }
+    var r = rangeAt(idx, at, at + c.quote.length);
+    var rect = r && r.getBoundingClientRect();
+    if (rect) window.scrollTo({ top: window.scrollY + rect.top - window.innerHeight / 3, behavior: 'smooth' });
+  }
+
+  function flash(msg) {
+    status.textContent = msg;
+    setTimeout(function () { status.textContent = ''; }, 2500);
+  }
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text) n.textContent = text;
+    return n;
+  }
+
+  paint();
+  render();
+})();
+</script>
