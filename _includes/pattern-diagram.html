@@ -1,0 +1,153 @@
+{%- comment -%}
+Box-and-line pattern diagrams for the post "Junior Everything, Head of Everything".
+Usage: {% include pattern-diagram.html pattern="head-of" %}
+Patterns: head-of, do-not-manage, expert-den, room-to-think, junior-head-of, explain-strategy.
+Motifs live in /assets/img/junior-everything/. Arrows are inline SVG pointing right; CSS rotates them.
+{%- endcomment -%}
+{%- assign pd_img = site.baseurl | append: "/assets/img/junior-everything/" -%}
+{%- capture a -%}<svg class="pd-arr" viewBox="0 0 48 48" aria-hidden="true"><path d="M4 25 C 14 22, 26 27, 41 24"/><path d="M33 16 L42 24 L33 32"/></svg>{%- endcapture -%}
+{%- unless pd_css_done -%}
+{%- assign pd_css_done = true -%}
+<style>
+.pd{--ink:#333333;--muted:#5F6B6D;--turq:#1AC8DB;--turq-deep:#0292B7;--sky:#99DFEC;--sky-pale:#EAF8FB;--orange:#FC8745;--sketch:255px 15px 225px 15px / 15px 225px 15px 255px;
+background:#FFFFFF;color:var(--ink);border:2px solid var(--ink);border-radius:var(--sketch);padding:24px 20px;margin:2rem 0;font-family:"DM Sans",system-ui,sans-serif;line-height:1.25;color-scheme:light}
+.pd *{box-sizing:border-box}
+.pd img{mix-blend-mode:multiply;display:block;margin:0 auto;max-width:100%;height:auto;object-fit:contain;border:0;box-shadow:none;border-radius:0}
+.pd-node{display:flex;flex-direction:column;align-items:center;gap:6px;border:2px solid var(--ink);border-radius:var(--sketch);background:#FFFFFF;padding:10px 12px 8px;min-width:0}
+.pd-node img{height:110px;width:auto}
+.pd-node.sm img{height:72px}
+.pd-node.lg img{height:140px}
+.pd-node.hot{border-color:var(--orange);border-width:3px;background:#FFF4EC}
+.pd-node.faint{opacity:.5;border-style:dashed}
+.pd-node.bare{border:0;padding:0;background:transparent}
+.pd-label{font-weight:700;font-size:.95rem;text-align:center;color:var(--ink);white-space:nowrap}
+.pd-sub{font-size:.8rem;color:var(--muted);text-align:center;font-weight:500}
+.pd-tag{font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--orange);color:var(--ink);padding:2px 10px;border:2px solid var(--ink);border-radius:var(--sketch)}
+.pd-arr{width:44px;height:44px;flex:none;fill:none;stroke:currentColor;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;color:var(--ink)}
+.pd-arr.l{transform:rotate(180deg)}
+.pd-arr.d{transform:rotate(90deg)}
+.pd-arr.u{transform:rotate(-90deg)}
+.pd-arr.dash path:first-child{stroke-dasharray:4 5}
+.pd-o .pd-arr,.pd-arr.o{color:var(--orange)}
+.pd-o .pd-flabel,.pd-flabel.pd-o{color:#C75A1E}
+.pd-flow{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+.pd-flow-pair{display:flex;align-items:center;justify-content:center;gap:28px}
+.pd-flow-pair.stack{flex-direction:column;gap:4px}
+.pd-flabel{font-size:.78rem;color:var(--muted);font-weight:500;text-align:center;white-space:nowrap}
+.pd-v{display:flex;flex-direction:column;align-items:center;gap:6px}
+.pd-row{display:flex;align-items:center;justify-content:center;gap:10px}
+.pd-juniors{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;width:100%;max-width:520px}
+.pd-juniors .pd-node{padding:8px 4px 6px}
+.pd-q{font-weight:700;color:#C75A1E;font-size:1.1rem;letter-spacing:.15em}
+.pd-pile img{height:56px;width:auto}
+.pd-sep{align-self:stretch;border-left:2px dashed var(--sky);margin:0 8px}
+/* do-not-manage */
+.pd-swamp{display:grid;grid-template-columns:auto 1fr auto 1fr auto;grid-template-areas:"j1 f1 you f2 j3" "j2 f1 you f2 j4";gap:10px 6px;align-items:center;justify-items:center}
+.pd-swamp .j1{grid-area:j1}.pd-swamp .j2{grid-area:j2}.pd-swamp .j3{grid-area:j3}.pd-swamp .j4{grid-area:j4}
+.pd-swamp .f1{grid-area:f1}.pd-swamp .f2{grid-area:f2}.pd-swamp .you{grid-area:you}
+.pd-swamp .you{border-color:var(--orange);border-width:3px}
+.pd-row.tight{gap:4px}
+.pd-row.tight .pd-node img{height:84px}
+.pd-row.tight .pd-node.sm img{height:56px}
+.pd-row.tight .pd-arr{width:36px;height:36px}
+/* three levels */
+.pd-levels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;align-items:end}
+.pd-levels .pd-node{height:100%;justify-content:flex-end}
+.pd-scale{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:4px 10px;margin-top:14px}
+.pd-scale .bar{height:0;border-top:3px solid var(--turq-deep);position:relative;border-radius:2px}
+.pd-scale .bar::after{content:"";position:absolute;right:-2px;top:-9px;border:7px solid transparent;border-left:12px solid var(--turq-deep);border-right:0}
+.pd-scale .bar.cost{border-top-color:var(--muted)}
+.pd-scale .bar.cost::after{border-left-color:var(--muted)}
+.pd-scale span{font-size:.8rem;font-weight:700;color:var(--muted)}
+@media (max-width:600px){
+.pd{padding:18px 12px}
+.pd-row.stack-sm{flex-direction:column}
+.pd-row.stack-sm .pd-sep{border-left:0;border-top:2px dashed var(--sky);align-self:stretch;margin:6px 0}
+.pd-row.stack-sm .pd-arr.r{transform:rotate(90deg)}
+.pd-row.stack-sm .pd-arr.l{transform:rotate(-90deg)}
+.pd-row.stack-sm .pd-flow-pair.stack{flex-direction:row;gap:28px}
+.pd-node img{height:88px}
+.pd-node.lg img{height:110px}
+.pd-node.sm img{height:60px}
+.pd-juniors{gap:6px}
+.pd-juniors .pd-node img{height:52px}
+.pd-juniors .pd-label{font-size:.8rem}
+.pd-swamp{grid-template-columns:1fr 1fr;grid-template-areas:"you you" "f1 f2" "j1 j3" "j2 j4";gap:8px}
+.pd-swamp .pd-arr.r,.pd-swamp .pd-arr.l{transform:rotate(90deg)}
+.pd-swamp .pd-flow-pair.stack{flex-direction:row;gap:14px}
+.pd-levels .pd-node{padding:8px 4px 6px}
+.pd-tag{white-space:nowrap;font-size:.6rem;letter-spacing:.02em;padding:2px 6px}
+.pd-levels .pd-label{font-size:.82rem;white-space:normal}
+.pd-row.tight .pd-node img{height:88px}
+.pd-row.tight .pd-arr{width:44px;height:44px}
+.pd-flabel{white-space:normal}
+}
+</style>
+{%- endunless -%}
+{%- if include.pattern == "head-of" -%}
+<figure class="pd" data-pattern="{{ include.pattern }}" role="img" aria-label="You hand an outcome to a Head. The Head briefs four juniors, collects their results and hands you one finished result.">
+<div class="pd-v">
+<div class="pd-node"><img src="{{ pd_img }}you.jpg" alt=""><span class="pd-label">You</span></div>
+<div class="pd-flow-pair"><div class="pd-flow">{{ a | replace: 'pd-arr"', 'pd-arr d"' }}<span class="pd-flabel">outcome</span></div><div class="pd-flow pd-o">{{ a | replace: 'pd-arr"', 'pd-arr u"' }}<span class="pd-flabel">one finished result</span></div></div>
+<div class="pd-node lg"><img src="{{ pd_img }}head-of.jpg" alt=""><span class="pd-label">Head</span></div>
+<div class="pd-flow-pair"><div class="pd-flow">{{ a | replace: 'pd-arr"', 'pd-arr d"' }}<span class="pd-flabel">briefs</span></div><div class="pd-flow">{{ a | replace: 'pd-arr"', 'pd-arr u dash"' }}<span class="pd-flabel">results to review</span></div></div>
+<div class="pd-juniors">
+<div class="pd-node sm"><img src="{{ pd_img }}junior.jpg" alt=""><span class="pd-label">Junior</span></div>
+<div class="pd-node sm"><img src="{{ pd_img }}junior.jpg" alt=""><span class="pd-label">Junior</span></div>
+<div class="pd-node sm"><img src="{{ pd_img }}junior.jpg" alt=""><span class="pd-label">Junior</span></div>
+<div class="pd-node sm"><img src="{{ pd_img }}junior.jpg" alt=""><span class="pd-label">Junior</span></div>
+</div>
+</div>
+</figure>
+{%- elsif include.pattern == "do-not-manage" -%}
+<figure class="pd" data-pattern="{{ include.pattern }}" role="img" aria-label="You sit in the middle of four juniors, pushing a pile of context to each one while questions come back from all of them.">
+<div class="pd-swamp">
+<div class="pd-node sm j1"><img src="{{ pd_img }}junior.jpg" alt=""><span class="pd-label">Junior</span></div>
+<div class="pd-node sm j2"><img src="{{ pd_img }}junior.jpg" alt=""><span class="pd-label">Junior</span></div>
+<div class="pd-flow f1"><div class="pd-pile"><img src="{{ pd_img }}context-pile.jpg" alt=""></div><div class="pd-flow-pair stack">{{ a | replace: 'pd-arr"', 'pd-arr l"' }}<span class="pd-q">???</span></div><span class="pd-flabel">context, every time</span></div>
+<div class="pd-node lg you"><img src="{{ pd_img }}you.jpg" alt=""><span class="pd-label">You</span><span class="pd-sub">managing everyone</span></div>
+<div class="pd-flow f2"><div class="pd-pile"><img src="{{ pd_img }}context-pile.jpg" alt=""></div><div class="pd-flow-pair stack">{{ a | replace: 'pd-arr"', 'pd-arr r"' }}<span class="pd-q">???</span></div><span class="pd-flabel">context, every time</span></div>
+<div class="pd-node sm j3"><img src="{{ pd_img }}junior.jpg" alt=""><span class="pd-label">Junior</span></div>
+<div class="pd-node sm j4"><img src="{{ pd_img }}junior.jpg" alt=""><span class="pd-label">Junior</span></div>
+</div>
+</figure>
+{%- elsif include.pattern == "expert-den" -%}
+<figure class="pd" data-pattern="{{ include.pattern }}" role="img" aria-label="The Head carries a brief with the problem, the evidence and the doubt to an expert in their den, and brings a second opinion back. You are not involved.">
+<div class="pd-row stack-sm">
+<div class="pd-node sm faint"><img src="{{ pd_img }}you.jpg" alt=""><span class="pd-label">You</span><span class="pd-sub">not involved</span></div>
+<div class="pd-sep"></div>
+<div class="pd-node"><img src="{{ pd_img }}head-of.jpg" alt=""><span class="pd-label">Head</span></div>
+<div class="pd-flow"><div class="pd-pile"><img src="{{ pd_img }}brief.jpg" alt=""></div><span class="pd-flabel">problem, evidence, doubt</span><div class="pd-flow-pair stack">{{ a | replace: 'pd-arr"', 'pd-arr r"' }}<span class="pd-o">{{ a | replace: 'pd-arr"', 'pd-arr l"' }}</span></div><span class="pd-flabel pd-o">second opinion</span></div>
+<div class="pd-node lg"><img src="{{ pd_img }}expert.jpg" alt=""><span class="pd-label">Expert</span><span class="pd-sub">incomprehensible, annoying</span></div>
+</div>
+</figure>
+{%- elsif include.pattern == "room-to-think" -%}
+<figure class="pd" data-pattern="{{ include.pattern }}" role="img" aria-label="The same Head twice: frazzled among coffee cups at low effort, then calm and rested at high effort.">
+<div class="pd-row stack-sm">
+<div class="pd-node lg"><img src="{{ pd_img }}head-of-frazzled.jpg" alt=""><span class="pd-label">Head</span><span class="pd-sub">low effort</span></div>
+<div class="pd-flow">{{ a | replace: 'pd-arr"', 'pd-arr r"' }}<span class="pd-flabel">same model, more thinking</span></div>
+<div class="pd-node lg hot"><img src="{{ pd_img }}head-of-rested.jpg" alt=""><span class="pd-label">Head</span><span class="pd-sub">high effort</span></div>
+</div>
+</figure>
+{%- elsif include.pattern == "junior-head-of" -%}
+<figure class="pd" data-pattern="{{ include.pattern }}" role="img" aria-label="Three levels side by side: junior everything (GLM 5.3 Flash), junior Head (Opus 5.5) and head of everything (Astra, Fable). Capability and cost both rise from left to right. The junior Head in the middle is the sweet spot.">
+<div class="pd-levels">
+<div class="pd-node sm"><img src="{{ pd_img }}junior.jpg" alt=""><span class="pd-label">Junior everything</span><span class="pd-sub">GLM 5.3 Flash</span></div>
+<div class="pd-node hot"><span class="pd-tag">sweet spot</span><img src="{{ pd_img }}junior-head-of.jpg" alt=""><span class="pd-label">Junior Head</span><span class="pd-sub">Opus 5.5</span></div>
+<div class="pd-node lg"><img src="{{ pd_img }}head-of.jpg" alt=""><span class="pd-label">Head of everything</span><span class="pd-sub">Astra, Fable</span></div>
+</div>
+<div class="pd-scale"><span>Capability</span><div class="bar"></div><span>Cost</span><div class="bar cost"></div></div>
+</figure>
+{%- elsif include.pattern == "explain-strategy" -%}
+<figure class="pd" data-pattern="{{ include.pattern }}" role="img" aria-label="The Head reads the vault of notes and archive, writes you a short brief, and you make the decision.">
+<div class="pd-row stack-sm tight">
+<div class="pd-node"><img src="{{ pd_img }}vault.jpg" alt=""><span class="pd-label">Vault</span><span class="pd-sub">notes and archive</span></div>
+<div class="pd-flow">{{ a | replace: 'pd-arr"', 'pd-arr r"' }}<span class="pd-flabel">reads it all</span></div>
+<div class="pd-node"><img src="{{ pd_img }}head-of.jpg" alt=""><span class="pd-label">Head</span></div>
+<div class="pd-flow">{{ a | replace: 'pd-arr"', 'pd-arr r"' }}<span class="pd-flabel">explains</span></div>
+<div class="pd-node sm bare"><img src="{{ pd_img }}brief.jpg" alt=""><span class="pd-label">Short brief</span></div>
+<div class="pd-flow">{{ a | replace: 'pd-arr"', 'pd-arr r o"' }}</div>
+<div class="pd-node hot"><img src="{{ pd_img }}you.jpg" alt=""><span class="pd-label">You decide</span></div>
+</div>
+</figure>
+{%- endif -%}
