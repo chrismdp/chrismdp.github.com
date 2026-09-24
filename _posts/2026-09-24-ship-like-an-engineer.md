@@ -102,10 +102,6 @@ AI can do a huge amount of this on its own, but there are a few times when I wou
 
 {% include inline-image.html src="/assets/img/beyond-vibe-coding-slide-engineer.jpg" alt="Workshop slide: When to talk to an engineer. A robot shows its work to a robot in a hard hat holding a magnifying glass." align="center" width="100%" %}
 
-## What I Changed Afterwards
-
-Getting the app deployed to Cloudflare took too much fiddling for the room, with tokens and secrets to sort out before anything went live, so the next version of the workshop deploys to Vercel's free Hobby plan instead, which connects straight to GitHub with no token to copy, and adds a Neon database from inside Vercel.
-
 ## Key Takeaway
 
 The agent writes all the code now, but you still need to know what to ask it for. Engineers have spent decades building habits that make complicated software manageable: small versions you can rewind, deployment on every change, tests that stop a bad change going live, and data you treat with care. You need to know those habits exist, ask the agent to set them up, and keep asking it questions until you understand what it has done. I go further into how I work with agents in [my post on coding with AI](/coding-with-ai/).
