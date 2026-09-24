@@ -24,7 +24,7 @@ Building a working prototype with AI is easy now: ask Claude to build you someth
 
 There is a mystique around engineers and how they work, but we are not always that clever, and our whole job is managing complexity. The systems we build are too complicated to hold in our heads, so over the years we have built up habits that let us keep going without everything falling over. I think of them as the foundations under a building, without which you can only go so high before it collapses. A lot of these habits are about being lazy in a disciplined way, so that you do not have to think about the same thing twice.
 
-That matters even more now. I do not know any engineers who still write code by hand, because they tell the AI what to write. Agents are good at making sensible decisions, but they still need nudging, and whether you type the code yourself or tell an agent to type it, you have to know the important things to say so that it does not make a mess. All the slides and prompts from the session are on the [Beyond Vibe Coding workshop page](/workshop/beyond-vibe-coding/), which has both the version I delivered and an updated one.
+That matters even more now. I do not know any engineers who still write code by hand, because they tell the AI what to write. Agents are good at making sensible decisions, but they still need nudging, and whether you type the code yourself or tell an agent to type it, you have to know the important things to say so that it does not make a mess.
 
 We built a small lighthouse adventure game (we were in the Lighthouse centre, after all) in Claude Code or Codex in the terminal. The terminal gives the agent the most access to your machine and your files, so it can do the most for you. Then we worked through nine steps.
 
@@ -92,7 +92,7 @@ AI can do a huge amount of this on its own, but there are a few times when I wou
 
 ## What I Changed Afterwards
 
-Getting the app deployed to Cloudflare took too much fiddling for the room, with tokens and secrets to sort out before anything went live, so I have updated the slides. Version 2 deploys to Vercel's free Hobby plan instead, which connects straight to GitHub with no token to copy, and adds a Neon database from inside Vercel. Both versions are on the [workshop page](/workshop/beyond-vibe-coding/), so you can follow either one at your own pace.
+Getting the app deployed to Cloudflare took too much fiddling for the room, with tokens and secrets to sort out before anything went live, so the next version of the workshop deploys to Vercel's free Hobby plan instead, which connects straight to GitHub with no token to copy, and adds a Neon database from inside Vercel.
 
 ## Key Takeaway
 
