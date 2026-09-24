@@ -80,7 +80,7 @@ Linting is the tidying part. I admitted I did not know where the name came from,
 
 ## 7. Write Your Decisions Down
 
-By this point we had made a number of design decisions about the codebase: Next.js, strict TypeScript, tests first, linting. Other people would choose differently, so the agent needs to be told. That is what an AGENTS.md file is for: it sits at the top of your project and the agent reads it before every session. There is no point writing "be a really good programmer" in it, because that is already built in. Use it for your particular decisions and context: what the app is for, who it is aimed at, where your style guide lives, and rules like "commit after each small change" or "ask me before adding libraries".
+By this point we had made a number of design decisions about the codebase: Next.js, strict TypeScript, tests first, linting. Other people would choose differently, so the agent needs to be told. That is what an AGENTS.md file is for[^agents-md]: it sits at the top of your project and the agent reads it before every session. There is no point writing "be a really good programmer" in it, because that is already built in. Use it for your particular decisions and context: what the app is for, who it is aimed at, where your style guide lives, and rules like "commit after each small change" or "ask me before adding libraries".
 
 ## 8. Build Features Quickly
 
@@ -115,3 +115,4 @@ The agent writes all the code now, but you still need to know what to ask it for
 Take a prototype you have already built and open it in Claude Code or Codex. Ask the agent to put it in Git, publish it to GitHub and set it up so that every push deploys it automatically. Then ask it to explain each step it took, one at a time, until you could explain it to someone else.
 
 [^twelve-factor]: [III. Config](https://12factor.net/config){:target="_blank"}, The Twelve-Factor App.
+[^agents-md]: Claude Code used to read only CLAUDE.md, but [Anthropic added AGENTS.md support](https://github.com/anthropics/claude-code/releases/tag/v2.1.277){:target="_blank"} on 18th September 2026. In a project with no CLAUDE.md it now reads AGENTS.md, so one file works for Claude Code, Codex and most other agents.
