@@ -196,6 +196,7 @@ body.fullscreen.deckmode .wrap.main{max-width:none;padding-inline:0}body.fullscr
   .slide-url,.credit{bottom:5mm}
 }
 /* talk additions */
+.benefits.inline{display:flex;flex-wrap:wrap;gap:10px 32px}
 img.wide-ill{justify-self:center;max-width:100%;max-height:46vh;object-fit:contain}
 .hero .lead{font-size:clamp(1.2rem,2.4vw,1.8rem)}
 .hero .fn{font-size:clamp(.95rem,1.5vw,1.15rem);opacity:.85;margin-top:18px}
@@ -416,14 +417,14 @@ img.ill.solo{max-height:30vh;justify-self:center;max-width:100%}
 <section class="slide">
   <h2>The page remembers now</h2>
   <p class="lead">Easy to build these now: artifacts remember.</p>
-  <div class="two">
-    <div class="card"><b>Claude artifacts</b><p>A published page can store data, for each person or shared between everyone who opens it.</p></div>
-    <div class="card"><b>Codex Sites</b><p>Codex builds and hosts small web apps with their own data and files. In preview since June.</p></div>
-  </div>
   <div class="motif">
-    <ul class="benefits"><li>My answers persist.</li><li>The agent reads them back.</li><li>A second person can review too.</li></ul>
+    <div class="stack">
+      <div class="card"><b>Claude artifacts</b><p>A published page can store data, for each person or shared between everyone who opens it.</p></div>
+      <div class="card"><b>Codex Sites</b><p>Codex builds and hosts small web apps with their own data and files. In preview since June.</p></div>
+    </div>
     <img class="ill" src="img/remembering-page.jpg" alt="">
   </div>
+  <ul class="benefits inline"><li>My answers persist.</li><li>The agent reads them back.</li><li>A second person can review too.</li></ul>
   <div class="notes"><span class="label">0:20 · 1 min · What I say</span><p>That reload is the new part. The review page stops being a disposable picture and becomes a working tool. And it is easy to build these now. Questions?</p></div>
 </section>
 

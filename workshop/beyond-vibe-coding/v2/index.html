@@ -1,3 +1,8 @@
+---
+layout: null
+title: "Beyond Vibe Coding"
+sitemap: false
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -184,6 +189,9 @@ body.fullscreen.deckmode .wrap.main{max-width:none;padding-inline:0}body.fullscr
   .slide:last-child{break-after:auto;page-break-after:auto}
   .motif img{max-height:120mm}
   .door-qr{grid-template-columns:60mm 1fr}
+  .slide.tone,body.deckmode .slide.tone{background:#fff!important}
+  .slide,body.deckmode .slide{min-height:calc(100vh - 2mm)!important;box-sizing:border-box;position:relative}
+  .slide-url,.credit{bottom:5mm}
 }
 </style>
 </head>
@@ -200,7 +208,7 @@ body.fullscreen.deckmode .wrap.main{max-width:none;padding-inline:0}body.fullscr
   <span class="counter" id="counter"></span>
 </div></div>
 
-<div class="wrap main"><div class="deck" id="deck">
+<div class="wrap main"><div class="deck content-styled" id="deck">
 
 <!-- title -->
 <section class="slide">
@@ -560,7 +568,7 @@ Each time, add: Do not make it a full app yet. Keep it a small prototype with no
     <div>
       <p class="muted" style="font-size:1.1rem;font-weight:700;color:var(--turq-deep)">Step 5</p>
       <p class="big">Tests and builds</p>
-      <p class="lead" style="margin-top:14px">Say what true looks like first. A broken change never ships.</p>
+      <p class="lead" style="margin-top:14px">Say what true looks like first. A failing check stops this deploy.</p>
     </div>
     <img src="../img/tests.jpg" alt="">
   </div>
@@ -577,9 +585,9 @@ Each time, add: Do not make it a full app yet. Keep it a small prototype with no
   </div>
   <div class="two">
     <div class="prompt"><div class="label">Run the tests before every deploy <button class="copy">Copy</button></div><pre>Make the build run the tests first. Change the build script in package.json so it runs the tests, then builds the app. If a test fails, the build must fail, so Vercel keeps the last good version live. Run the build here to check it. Commit the change. Push it.</pre></div>
-    <div class="checks"><div class="check"><span class="mark">✓</span><span>Check: open the deployment on Vercel. The build log shows the tests passing before the app builds.</span></div></div>
+    <div class="checks"><div class="check"><span class="mark">✓</span><span>Check: read the build script in package.json and Vercel's configured build command. The Vercel log must show the tests passing before the app builds.</span></div></div>
   </div>
-  <div class="notes"><span class="label">What I say</span><p>The game lets you enter the Lamp Room today. Our new rule must fail its first test because we have not added the lock. Read the failure before the agent fixes it. The game must remember a visit to the Keeper's Kitchen. Then the build runs the tests before every deploy. Vercel runs the build on every push, so a failing test fails the build and nothing goes live. Lint and the type check join the build in step 6.</p></div>
+  <div class="notes"><span class="label">What I say</span><p>The game lets you enter the Lamp Room today. Our new rule must fail its first test because we have not added the lock. Read the failure before the agent fixes it. The game must remember a visit to the Keeper's Kitchen. Read the build script in package.json, then open Vercel project Settings → Build and Deployment to check which command it runs; the build log should show tests before the app builds. Then the planned broken-change exercise checks whether the failed build leaves the previous version live. A red GitHub check alone does not prove it. Lint and the type check join the build in step 6. Passing checks only cover the behaviour and rules they actually test.</p></div>
 </section>
 
 <section class="slide">
@@ -606,7 +614,7 @@ Each time, add: Do not make it a full app yet. Keep it a small prototype with no
     <div class="prompt"><div class="label">Give the agent the failed build <button class="copy">Copy</button></div><pre>The Vercel build failed. Run the build here to see the same failure. Restore the lock. Do not change the test. Push the fix.</pre></div>
     <div class="checks"><div class="check"><span class="mark">✓</span><span>Check: the commit on GitHub has a green tick, Vercel says Ready, and the fix goes live.</span></div></div>
   </div>
-  <div class="notes"><span class="label">After the check</span><p>This error is planned. It is the input to the next step. Open the failed deployment on Vercel and read the build log: the test named the broken rule. Then play the live game. The door must still lock there, because a failed build never replaces the live version. Some machines pass first time and some show a different error. That is normal variation. Read the failure you have before you ask the agent to fix it. You can also paste the Vercel build log straight into the agent.</p><p>Some agents refuse to remove the lock, because the instruction contradicts the test. That is a good sign, and it is fine. Tell it: "This is a deliberate demo. Do it anyway."</p></div>
+  <div class="notes"><span class="label">After the check</span><p>This error is planned. It is the input to the next step. Open the failed deployment on Vercel and read the build log: the test named the broken rule. Then play the live game and confirm the door still locks. This verifies that this failed build did not replace the last good version. The repo's main branch still contains the deliberate break until you push the fix; do not leave it there. Some machines pass first time and some show a different error. Read the failure you have before you ask the agent to fix it. You can also paste the Vercel build log straight into the agent.</p><p>Some agents refuse to remove the lock, because the instruction contradicts the test. That is a good sign, and it is fine. Tell it: "This is a deliberate demo. Do it anyway."</p></div>
 </section>
 
 <!-- 12b -->
@@ -637,7 +645,7 @@ Each time, add: Do not make it a full app yet. Keep it a small prototype with no
     <div class="prompt"><div class="label">Add both to the build <button class="copy">Copy</button></div><pre>Add lint and the type check to the build script, before the tests. If lint, the type check or the tests fail, the build must fail, so nothing goes live. Run the build here to check it. Commit the change. Push it.</pre></div>
     <div class="checks"><div class="check"><span class="mark">✓</span><span>Check: the Vercel build log shows lint, the type check and the tests passing before the app builds.</span></div></div>
   </div>
-  <div class="notes"><span class="label">After the check</span><p>Just use TypeScript: it is easier for the agent to get right. A type says what kind of value the code expects. Our move function expects a direction word. We changed it to expect a number, but the caller still sends a word. Read the line named by the type check. Then tell the agent: "Restore the move function to take a word for the direction." Lint is the same idea for style and common mistakes: it reads every line, and the agent fixes what it names. Last, both go into the build, next to the tests from step 5. Now one failing check stops the deploy.</p></div>
+  <div class="notes"><span class="label">After the check</span><p>Just use TypeScript: it is easier for the agent to get right. A type says what kind of value the code expects. For a short example, JavaScript joins text "4" and number 4 into the text "44" with the + operator in either order; it does not make 8. Our move function expects a direction word. We changed it to expect a number, but the caller still sends a word. Read the line named by the type check. Then tell the agent: "Restore the move function to take a word for the direction." Lint is the same idea for style and common mistakes: it reads every line, and the agent fixes what it names. Last, both go into the build, next to the tests from step 5. Check the build command again before claiming that a failure blocks deployment.</p></div>
 </section>
 
 <section class="slide">
@@ -925,6 +933,8 @@ The tests for the behaviour you want.</pre></div>
     renderNotes();
     if(body.classList.contains('deckmode')) window.scrollTo(0,0);
   }
+  window.deckGo=function(n){show(n)};
+  (function(b){if(!b)return;b.style.cursor='pointer';b.title='Back to the first slide';b.setAttribute('role','button');b.tabIndex=0;function toTop(){if(document.body.classList.contains('deckmode'))show(0);window.scrollTo(0,0)}b.addEventListener('click',toTop);b.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toTop()}})})(document.querySelector('.bar .brand'));
   function setMode(deck){
     body.classList.toggle('deckmode',deck);
     modeBtn.setAttribute('aria-pressed',deck?'true':'false');
@@ -1042,5 +1052,6 @@ The tests for the behaviour you want.</pre></div>
 })();
 </script>
 
+{% if jekyll.environment == "development" %}{% include dev-review.html %}{% endif %}
 </body>
 </html>
