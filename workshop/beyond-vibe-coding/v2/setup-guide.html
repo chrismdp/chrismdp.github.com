@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Setup Guide · Beyond Vibe Coding</title>
+<meta name="description" content="The five checks to finish before the Beyond Vibe Coding workshop: terminal, Node.js, GitHub, Vercel and a paid AI coding agent.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Source+Code+Pro:wght@400;500&display=swap">
+<style>
+:root{
+  --paper:#FFFFFF; --ink:#333333; --muted:#5F6B6D;
+  --turq:#1AC8DB; --turq-deep:#0292B7; --sky:#99DFEC; --sky-pale:#EAF8FB; --orange:#FC8745;
+  --sketch:255px 15px 225px 15px / 15px 225px 15px 255px;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;font-size:17px;line-height:1.5}
+main{max-width:900px;margin:0 auto;padding:32px 16px 48px;display:grid;gap:18px}
+h1{font-size:clamp(2rem,6vw,3.2rem);line-height:1.05;margin:0}
+h2{font-size:1.25rem;margin:0;display:flex;gap:12px;align-items:center}
+h2 .n{display:inline-grid;place-items:center;width:34px;height:34px;flex:none;border:2px solid var(--ink);border-radius:50%;background:var(--turq);font-size:1rem}
+p{margin:0}
+a{color:var(--turq-deep)}
+code{font-family:"Source Code Pro",ui-monospace,monospace;font-size:.92em;background:var(--sky-pale);padding:1px 5px;border-radius:4px}
+.kicker{font-weight:700;color:var(--turq-deep);text-transform:uppercase;letter-spacing:.08em;font-size:.8rem}
+.lead{font-size:1.1rem}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:680px){.grid{grid-template-columns:1fr}}
+.card{border:2px solid var(--ink);border-radius:var(--sketch);padding:16px 18px;display:grid;gap:8px;align-content:start;break-inside:avoid}
+.card.wide{grid-column:1/-1}
+.check{font-weight:700;color:var(--turq-deep)}
+.check::before{content:"✓ "}
+.agents{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:680px){.agents{grid-template-columns:1fr}}
+.agents div{background:var(--sky-pale);border-radius:8px;padding:10px 12px}
+.muted{color:var(--muted)}
+.print{justify-self:start;font:inherit;font-size:.9rem;font-weight:700;padding:6px 14px;border:2px solid var(--ink);border-radius:var(--sketch);background:var(--orange);color:var(--ink);cursor:pointer}
+@page{size:A4;margin:12mm}
+@media print{
+  body{font-size:12.5px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  main{padding:0;gap:10px;max-width:none}
+  .print{display:none}
+  .grid{grid-template-columns:1fr 1fr}
+  .agents{grid-template-columns:1fr 1fr}
+  a{color:var(--ink)}
+}
+</style>
+</head>
+<body>
+<main>
+  <p class="kicker">Attendee setup guide</p>
+  <h1>Beyond Vibe Coding</h1>
+  <p class="lead">From prototyping to shipping like an engineer · Chris Parsons</p>
+  <p>Please finish these five checks before the workshop. Bring the laptop and charger you will use. You need permission to install software. If IT locks down your work laptop, bring a personal one.</p>
+  <button class="print" type="button" onclick="window.print()">Print / save as PDF</button>
+
+  <div class="grid">
+    <section class="card">
+      <h2><span class="n">1</span>Open a terminal</h2>
+      <p>Mac or Linux: use your normal Terminal.</p>
+      <p>Windows: open PowerShell as administrator, run <code>wsl --install</code>, then restart. Open the new Ubuntu window and do every step below inside it.</p>
+      <p class="check">Check: you can open Terminal or Ubuntu.</p>
+    </section>
+
+    <section class="card">
+      <h2><span class="n">2</span>Install Node.js</h2>
+      <p>Install the current LTS version from <a href="https://nodejs.org/">nodejs.org</a>. On Windows, install it inside Ubuntu. Then run:</p>
+      <p><code>node --version</code></p>
+      <p class="check">Check: it prints a version number.</p>
+    </section>
+
+    <section class="card">
+      <h2><span class="n">3</span>Set up GitHub</h2>
+      <p>Create a free account at <a href="https://github.com/">github.com</a>. Install the GitHub CLI from <a href="https://cli.github.com/">cli.github.com</a>.</p>
+      <p>Run <code>gh auth login</code>, then <code>gh auth status</code>.</p>
+      <p class="check">Check: <code>gh auth status</code> says you are logged in.</p>
+    </section>
+
+    <section class="card">
+      <h2><span class="n">4</span>Create a Vercel account</h2>
+      <p>Sign up at <a href="https://vercel.com/signup">vercel.com</a> with <b>Continue with GitHub</b>. Choose the free <b>Hobby</b> plan. No payment card is needed.</p>
+      <p class="muted">Hobby is for personal projects. At work, use your company's team plan.</p>
+      <p class="check">Check: you can sign in at vercel.com with GitHub.</p>
+    </section>
+
+    <section class="card wide">
+      <h2><span class="n">5</span>Install one paid AI coding agent</h2>
+      <p>Choose one and follow its installation guide. Company-managed accounts sometimes turn off command-line access, so test yours before the day.</p>
+      <div class="agents">
+        <div><b>Claude Code</b> (recommended)<br>Needs a paid Claude plan, such as Pro or Max.<br><a href="https://code.claude.com/docs/en/quickstart">Installation guide</a></div>
+        <div><b>Codex CLI</b><br>Needs a paid ChatGPT plan, such as Plus or Pro.<br><a href="https://developers.openai.com/codex/cli">Installation guide</a></div>
+      </div>
+      <p class="check">Check: in an empty folder, start your agent and ask "What folder am I in?" It answers correctly.</p>
+    </section>
+
+    <section class="card">
+      <h2>Optional preparation</h2>
+      <p>Bring a small feature idea for the last part. "A form that saves entries and shows them in a list" is about the right size. There is no required reading.</p>
+    </section>
+
+    <section class="card">
+      <h2>If setup gets stuck</h2>
+      <p>Bring what you have and arrive a little early, so we can sort it out before we start. Pairing with another attendee is the fallback, and it works well.</p>
+    </section>
+  </div>
+  <p class="muted">Slides and prompts: <a href="./">chrismdp.com/workshop/beyond-vibe-coding/v2</a> · © <a href="https://www.chrismdp.com/">Chris Parsons</a></p>
+</main>
+</body>
+</html>
