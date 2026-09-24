@@ -102,13 +102,9 @@ AI can do a huge amount of this on its own, but there are a few times when I wou
 
 {% include inline-image.html src="/assets/img/beyond-vibe-coding-slide-engineer.jpg" alt="Workshop slide: When to talk to an engineer. A robot shows its work to a robot in a hard hat holding a magnifying glass." align="center" width="100%" %}
 
-## Key Takeaway
+Take a prototype you have already built and open it in Claude Code or Codex. Ask the agent to put it in Git, publish it to GitHub and set it up so that every push deploys it automatically. Then ask it to explain each step it took, one at a time, until you could explain it to someone else.
 
 The agent writes all the code now, but you still need to know what to ask it for. Engineers have spent decades building habits that make complicated software manageable: small versions you can rewind, deployment on every change, tests that stop a bad change going live, and data you treat with care. You need to know those habits exist, ask the agent to set them up, and keep asking it questions until you understand what it has done. I go further into how I work with agents in [my post on coding with AI](/coding-with-ai/).
-
-## One Thing to Try
-
-Take a prototype you have already built and open it in Claude Code or Codex. Ask the agent to put it in Git, publish it to GitHub and set it up so that every push deploys it automatically. Then ask it to explain each step it took, one at a time, until you could explain it to someone else.
 
 [^twelve-factor]: [III. Config](https://12factor.net/config){:target="_blank"}, The Twelve-Factor App.
 [^agents-md]: Claude Code used to read only CLAUDE.md, but [Anthropic added AGENTS.md support](https://github.com/anthropics/claude-code/releases/tag/v2.1.277){:target="_blank"} on 18th September 2026. In a project with no CLAUDE.md it now reads AGENTS.md, so one file works for Claude Code, Codex and most other agents.
