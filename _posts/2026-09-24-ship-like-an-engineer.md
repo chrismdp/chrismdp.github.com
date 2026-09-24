@@ -94,7 +94,7 @@ The last step moved the game's rooms out of the code and into a database. A data
 
 Data brings its own risks, and I used the recent NATS air traffic control failure as an analogy. The faulty software was rolled back quickly, but the disruption took days to clear, because planes and crews were all in the wrong places. Code is like that software: you can roll it back fast. If a bug has sprayed bad data through your system, cleaning it up can take far longer. Changing the shape of the data, such as adding a table or renaming a column, is done with a migration: a small file in your project that describes the change and runs as part of the build, and the agent writes it for you. If you store anything about people, you also need to think about regulations like GDPR.
 
-If any of this gets too technical, ask the agent to explain it again in simpler terms. I often ask it to explain things as if I were 15. I tried asking it to explain things as if I were five, but I got a lot of fluffy bunny analogies.
+If any of this gets too technical, ask the agent to explain it again in simpler terms. I often ask it to explain things as if I were 15. (I tried asking it to explain things as if I were five, but I got a lot of fluffy bunny analogies.)
 
 ## Call an Engineer For These
 
