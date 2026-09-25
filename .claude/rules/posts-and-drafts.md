@@ -1,7 +1,6 @@
 ---
 paths:
   - "_posts/**"
-  - "_drafts/**"
   - "case-studies/**"
 ---
 
