@@ -10,6 +10,8 @@ categories:
 - engineering
 - agents
 - leadership
+redirect_from:
+- /ai-decisions-just-got-100-times-cheaper/
 description: "TypeSafe's Jev is a new class of model that decides instead of talking. What that means for anyone building AI products, and for the leaders paying for them."
 excerpt: "A new kind of model is out that makes decisions instead of writing text. I tried it. Here are the results."
 ---
@@ -74,9 +76,11 @@ On reliability it held at ten requests a second for five minutes with no errors 
 
 I am not going to deploy it just yet, because it is one service and it has been public for a couple of days. I am keeping a very close eye on the technology in general, and when more than one provider offers a model like this, especially somewhere like OpenRouter, I am all for it.
 
+**Update, 25 September:** That did not take long! Within two days of the launch, six open clones of Jev had appeared, all built from public models because TypeSafe has not released its own.[^clones] This is good news if you are buying rather than building, because a variety of companies producing these models is what keeps you independent of any one vendor. The clones show that the architecture is easy to reproduce, but none of them comes with evidence you can check. Treat every number, from TypeSafe or from a clone, as a claim until you have tested it on your own data.
+
 ## Decisions Just Got Cheaper
 
-AI engineers need to learn it. Chief executives and their leadership teams need to know that simple AI decisions on large amounts of data potentially got hundreds of times cheaper overnight. That matters for any content filtering, triaging or routing your teams do, whether you thought it was too expensive to hand to AI, or whether people are currently doing it by pasting things into Claude.
+AI engineers need to learn this in detail. Chief executives and their leadership teams need to know that simple AI decisions on large amounts of data potentially got hundreds of times cheaper overnight. That matters for any content filtering, triaging or routing your teams do, whether you thought it was too expensive to hand to AI, or whether people are currently doing it by pasting things into Claude.
 
 Within six to twelve months, once more models are trained this way, this kind of decision model will be in every custom AI product, and you can bet today that the frontier labs are either scrambling to build their own or scrambling to buy TypeSafe.
 
@@ -93,3 +97,5 @@ Within six to twelve months, once more models are trained this way, this kind of
 [^smarthome]: The [smart home assistant demo](https://docs.typesafe.ai/demos/smart-home){:target="_blank"} in TypeSafe's documentation. The code asks every question at once rather than waiting for one answer before asking the next, splits a multi part request into atomic commands with an LLM, and delegates to a conversational model only for questions it cannot answer with a typed decision.
 
 [^qwen]: The [Qwen3 Reranker models](https://huggingface.co/Qwen/Qwen3-Reranker-8B){:target="_blank"} judge whether a document meets a query and return the answer as the probability of "yes" read from the model's own output layer, rather than as generated text. It is one question at a time and not calibrated the way TypeSafe claims, but the shape of the idea is the same.
+
+[^clones]: Latent Space's AI News roundup, [Here are 6 Clones of Jev in 2 days](https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in){:target="_blank"}, lists Laya, DiffusionGemmaJev, Bespoke Nimble, SemIf (formerly OpenJev), Jevlike and Kev-0.5B, which is small enough to run on a MacBook. Bespoke Nimble, a fine-tune of Qwen3.5-9B, reports 90% on its own curated eval against 93% for Jev. Laya's confidence scores are based on entropy and are not calibrated, and calibration is the property that makes a decision model useful as a router.
