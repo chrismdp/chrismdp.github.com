@@ -148,7 +148,7 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
             <img src="/assets/img/chris-twitter-headshot.png" alt="Chris Parsons" class="w-16 h-16 rounded-full object-cover flex-shrink-0">
             <div>
               <p class="text-brand-black font-semibold mb-1">Chris Parsons</p>
-              <p class="text-brand-black/70 text-sm">14 years in senior roles with multiple teams. Currently CTO and Strategic AI Advisor to organisations including Genomics and Cherrypick.</p>
+              <p class="text-brand-black/70 text-sm">14 years in senior roles with multiple teams. Former CTO, now Strategic AI Advisor to organisations including Genomics, and co-founder and tech advisor at Cherrypick.</p>
             </div>
           </div>
           <div class="flex items-start gap-4">
@@ -361,7 +361,7 @@ excerpt: "A peer learning programme for senior technical leaders navigating AI a
         <div class="md:w-2/3">
           <h3 class="text-2xl font-heading font-bold mb-4 text-brand-black">Chris Parsons</h3>
           <div class="space-y-4 text-brand-black/80">
-            <p>I am a CTO myself. I am in the trenches making these decisions alongside you, not a consultant who has only read about AI adoption. 14 years in senior roles with multiple teams, currently CTO and Strategic AI Advisor to startups and scaleups including Genomics and <a href="https://cherrypick.co" target="_blank" class="text-brand-deep-turquoise hover:underline">Cherrypick</a>. I have upskilled dozens of teams at organisations like the BBC, and I bring that experience to this programme.</p>
+            <p>I have been a CTO myself. I am in the trenches making these decisions alongside you, not a consultant who has only read about AI adoption. 14 years in senior roles with multiple teams, currently Strategic AI Advisor to startups and scaleups including Genomics, and co-founder and tech advisor at <a href="https://cherrypick.co" target="_blank" class="text-brand-deep-turquoise hover:underline">Cherrypick</a>. I have upskilled dozens of teams at organisations like the BBC, and I bring that experience to this programme.</p>
             <p>This programme works because you are surrounded by CTOs and senior technical leaders who understand the same pressures. I facilitate and provoke, bringing frameworks that challenge assumptions. The value comes from testing your thinking against people solving the same problems.</p>
             <p>I spend a significant chunk of my time keeping up with AI so you do not have to filter the noise yourself. Then as a group we work through what actually makes sense for your organisation.</p>
           </div>
