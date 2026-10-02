@@ -22,7 +22,7 @@ How do we get out of this mess? By remembering that writing was never just about
 
 <!--more-->
 
-{% include inline-image.html src="/assets/img/debbie-appraisal.jpg" alt="In a performance review, Laura stares into space while offering Debbie a hollow appraisal about the impact of her journey. Debbie considers prompting Laura for a raise." align="center" width="70%" %}
+{% include inline-image.html src="/assets/img/debbie-appraisal.jpg?v=20261002" alt="In a performance review, Laura stares into space while offering Debbie a hollow appraisal about the impact of her journey. Debbie considers prompting Laura for a raise." align="center" width="70%" %}
 
 ## Writing Is Where Thinking Happens
 
