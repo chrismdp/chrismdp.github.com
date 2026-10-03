@@ -449,6 +449,16 @@
     "image": "/assets/comics/dark-factories-specify-everything-upfront.jpg",
     "url": "/comics/dark-factories-specify-everything-upfront/"
   },
+  "/assets/img/debbie-appraisal.jpg": {
+    "alt": "Debbie Appraisal — a comic by Chris Parsons.",
+    "image": "/assets/comics/debbie-appraisal.jpg",
+    "url": "/comics/debbie-appraisal/"
+  },
+  "/assets/img/debbie-appraisal.jpg?v=20261002": {
+    "alt": "Debbie Appraisal — a comic by Chris Parsons.",
+    "image": "/assets/comics/debbie-appraisal.jpg",
+    "url": "/comics/debbie-appraisal/"
+  },
   "/assets/img/dial-up-ai-comic.jpg": {
     "alt": "Dial-Up AI Is Ending — a comic by Chris Parsons.",
     "image": "/assets/comics/dial-up-ai-is-ending.jpg",
