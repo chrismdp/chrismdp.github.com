@@ -58,8 +58,8 @@ The thinking does not always have to happen at the keyboard. Sometimes it happen
 
 Once I have a draft, I refine using an AI. I ask the AI what it thinks my argument is. On the first draft of this post, it told me the title promised one argument and the body made another, and that my best paragraph was buried at the bottom of a list, and it was right, so I rewrote the structure and only then did I let it help tidy the prose. I fact check and chat to the AI about various sections or things that feel "off".
 
-<img src="/assets/img/human-in-the-loop-department.jpg" alt="A Human-in-the-Loop Department where three exhausted staff sit at a desk with two big buttons. One presses YES while the NO button is covered in cobwebs. Caption: When the job title said rapid decision making, this was not what Richard had in mind. Checking every line only counts if you are willing to press no."
-     style="width: 45%; float: right; margin: 0 0 1rem 1.5rem;" />
+<a href="/comics/human-in-the-loop-department/"><img src="/assets/comics/human-in-the-loop-department.jpg" alt="A Human-in-the-Loop Department where three exhausted staff sit at a desk with two big buttons. One presses YES while the NO button is covered in cobwebs. Caption: When the job title said rapid decision making, this was not what Richard had in mind. Checking every line only counts if you are willing to press no."
+     style="width: 45%; float: right; margin: 0 0 1rem 1.5rem;" /></a>
 
 Finally, I read every line and ask myself whether I stand behind it. Some writers go further than this. Thomas Ptacek will not use a single word an LLM suggests, because the phrasing carries a style you can smell.[^ptacek] I can see the appeal, and it is a reasonable rule if you want it. My line is looser: the ideas, the evidence and the judgement have to be mine, and I need to recognise the meaning of every sentence.
 

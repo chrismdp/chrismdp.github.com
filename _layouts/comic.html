@@ -1,0 +1,27 @@
+---
+layout: default
+---
+{% assign comic = site.data.comics | where: 'slug', page.comic_slug | first %}
+{% assign comic_index = 0 %}
+{% for item in site.data.comics %}
+  {% if item.slug == comic.slug %}{% assign comic_index = forloop.index0 %}{% break %}{% endif %}
+{% endfor %}
+{% assign previous_index = comic_index | minus: 1 %}
+{% assign next_index = comic_index | plus: 1 %}
+{% if comic_index > 0 %}{% assign previous_comic = site.data.comics[previous_index] %}{% endif %}
+{% assign next_comic = site.data.comics[next_index] %}
+<link rel="stylesheet" href="{{ '/assets/css/comics.css' | relative_url }}">
+<article class="comic-page">
+  <p class="comic-eyebrow"><a href="{{ '/comics/' | relative_url }}">Comics by Chris Parsons</a></p>
+  <h1>{{ page.title | escape }}</h1>
+  {% include comic-nav.html %}
+  <figure>
+    <a href="{{ comic.image | relative_url }}" aria-label="Open {{ comic.title | escape }} at full resolution">
+      <img class="comic-art" src="{{ comic.image | relative_url }}" alt="{{ comic.alt | escape }}" width="{{ comic.width }}" height="{{ comic.height }}" fetchpriority="high">
+    </a>
+  </figure>
+  {% include comic-nav.html %}
+  <p class="comic-original"><a href="{{ comic.image | relative_url }}">View full-resolution image</a> · <a href="{{ comic.image | relative_url }}" download>Download</a></p>
+  <p class="comic-permalink">Permanent link: <a href="{{ page.url | absolute_url }}">{{ page.url | absolute_url }}</a></p>
+</article>
+<script src="{{ '/assets/js/comics.js' | relative_url }}" defer></script>

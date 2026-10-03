@@ -1,0 +1,5 @@
+<nav class="comic-nav" aria-label="Comic navigation">
+  {% if previous_comic %}<a href="{{ previous_comic.url | relative_url }}" rel="prev">← Previous</a>{% else %}<span aria-disabled="true">← Previous</span>{% endif %}
+  <button type="button" data-random-comic hidden>Random</button>
+  {% if next_comic %}<a href="{{ next_comic.url | relative_url }}" rel="next">Next →</a>{% else %}<span aria-disabled="true">Next →</span>{% endif %}
+</nav>

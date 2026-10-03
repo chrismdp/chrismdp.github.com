@@ -1,0 +1,27 @@
+.comic-page { max-width: 1000px; margin: 0 auto; padding: 4rem 1rem; text-align: center; color: #333; }
+.comic-page h1 { font: 700 clamp(1.6rem, 4vw, 2.6rem)/1.2 'DM Sans', sans-serif; margin: 1rem 0 1.5rem; }
+.comic-page a { color: #02647e; text-decoration: underline; text-underline-offset: .2em; }
+.comic-eyebrow { font-size: .9rem; }
+.comic-nav { display: flex; justify-content: center; gap: .6rem; margin: 1.5rem 0; }
+.comic-nav a, .comic-nav button, .comic-nav span { padding: .65rem 1rem; border: 2px solid #333; border-radius: .3rem; font: 600 .95rem/1.3 'DM Sans', sans-serif; text-decoration: none; background: #fff; color: #333; }
+.comic-nav button { cursor: pointer; }
+.comic-nav [hidden] { display: none; }
+.comic-nav a:hover, .comic-nav button:hover { background: #333; color: #fff; }
+.comic-nav span { opacity: .4; }
+.comic-page a:focus-visible, .comic-page button:focus-visible { outline: 3px solid #0292b7; outline-offset: 4px; }
+.comic-art { display: block; width: auto; max-width: 100%; height: auto; margin: 0 auto; }
+.comic-original { margin: 1.5rem 0 .75rem; }
+.comic-permalink { font-size: .8rem; overflow-wrap: anywhere; }
+.comic-archive-page { max-width: 1200px; }
+.comic-archive { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2rem 1.25rem; list-style: none; padding: 0; text-align: left; margin: 2rem auto; }
+.comic-archive li { min-width: 0; }
+.comic-page .comic-card { display: block; text-decoration: none; }
+.comic-thumbnail { display: block; aspect-ratio: 3 / 4; padding: .5rem; border: 1px solid #e2e2e2; border-radius: .3rem; background: #fff; }
+.comic-thumbnail img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.comic-card-title { display: block; margin-top: .75rem; font: 600 .95rem/1.4 'DM Sans', sans-serif; }
+.comic-card:hover .comic-thumbnail { border-color: #0292b7; }
+.comic-card:hover .comic-card-title { text-decoration: underline; text-underline-offset: .2em; }
+@media (max-width: 899px) { .comic-archive { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 639px) { .comic-archive { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem .75rem; } }
+@media (max-width: 359px) { .comic-archive { grid-template-columns: 1fr; } }
+@media (max-width: 400px) { .comic-nav { gap: .4rem; } .comic-nav a, .comic-nav button, .comic-nav span { padding: .65rem .6rem; } }

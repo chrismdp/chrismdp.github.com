@@ -32,16 +32,19 @@ layout: default
 
       <!-- Featured image -->
       {% if page.image %}
+      {% assign hero_comic = site.data.comic_images[page.image] %}
+      {% assign hero_image = hero_comic.image | default: page.image %}
+      {% assign hero_alt = hero_comic.alt | default: page.title %}
       {% if page.image_portrait %}
         <div class='float-right ml-6 mb-6 w-1/2 max-w-md'>
-          <img alt='{{ page.title }}' src='{{ page.image }}' class='rounded-lg'>
+          {% if hero_comic %}<a href="{{ hero_comic.url }}">{% endif %}<img alt="{{ hero_alt | escape }}" src="{{ hero_image }}" class="rounded-lg">{% if hero_comic %}</a>{% endif %}
           {% if page.image_caption %}
             <p class='text-sm text-brand-black/60 italic mt-2 text-center'>{{ page.image_caption }}</p>
           {% endif %}
         </div>
       {% else %}
         <div class='mb-8'>
-          <img alt='{{ page.title }}' src='{{ page.image }}' class='rounded-lg w-full'>
+          {% if hero_comic %}<a href="{{ hero_comic.url }}">{% endif %}<img alt="{{ hero_alt | escape }}" src="{{ hero_image }}" class="rounded-lg w-full">{% if hero_comic %}</a>{% endif %}
           {% if page.image_caption %}
             <p class='text-sm text-brand-black/60 italic mt-2 text-center'>{{ page.image_caption }}</p>
           {% endif %}

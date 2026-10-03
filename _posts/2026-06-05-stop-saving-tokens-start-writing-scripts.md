@@ -22,7 +22,7 @@ Adding a bit of old-fashioned programming back in makes things more powerful sti
 
 ## Prompt Diets Do Not Work
 
-<img src="/assets/img/stop-saving-tokens-start-writing-scripts-caveman.jpg" alt="A glum caveman in a cave clutches an enormously long bill titled AI BILL that spills across the floor, saying: Me grunt to save token. Bill still big. His unimpressed partner points at a mammoth painted on the cave wall and replies: Paint hunt on wall once. Not under waterfall every day." style="width: 45%; float: right; margin: 0 0 1rem 1.5rem;" />
+<a href="/comics/caveman-mode-token-bill/"><img src="/assets/comics/caveman-mode-token-bill.jpg" alt="A glum caveman in a cave clutches an enormously long bill titled AI BILL that spills across the floor, saying: Me grunt to save token. Bill still big. His unimpressed partner points at a mammoth painted on the cave wall and replies: Paint hunt on wall once. Not under waterfall every day." style="width: 45%; float: right; margin: 0 0 1rem 1.5rem;" /></a>
 
 Plenty of people are trying to get that bill down with prompt tricks. Caveman mode, if you have not come across it yet, strips everything back to terse, grunt-like instructions and asks for equally terse output.[^2] Fewer words in, fewer words out, smaller bill.
 
@@ -40,7 +40,7 @@ So it might sound odd to say that workflows are coming back. They are, in a smal
 
 ## Let It Write The Script Once
 
-<img src="/assets/img/stop-saving-tokens-start-writing-scripts-comic.jpg" alt="Sam, in his gilet with a coffee mug, tells a sceptical arms-crossed Charlie: I did not get the agents to write scripts, I just run a loop a thousand times in parallel and pick the best result. Charlie asks what his monthly spend is. Sam, proud: 43,794 dollars, cool huh? Behind them, glum suited financiers reluctantly hand sacks of cash to delighted robots." style="width: 45%; float: right; margin: 0 0 1rem 1.5rem;" />
+<a href="/comics/just-run-the-loop-in-parallel/"><img src="/assets/comics/just-run-the-loop-in-parallel.jpg" alt="Sam, in his gilet with a coffee mug, tells a sceptical arms-crossed Charlie: I did not get the agents to write scripts, I just run a loop a thousand times in parallel and pick the best result. Charlie asks what his monthly spend is. Sam, proud: 43,794 dollars, cool huh? Behind them, glum suited financiers reluctantly hand sacks of cash to delighted robots." style="width: 45%; float: right; margin: 0 0 1rem 1.5rem;" /></a>
 
 Agents are good at writing scripts. Give a model a clear, repeatable job and it will produce tidy, deterministic code that does the same thing every time. The mistake is letting it do that on every run. Ask it once, keep the script, and from then on the skill calls the script instead of generating it again.
 
